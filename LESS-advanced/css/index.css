@@ -247,6 +247,13 @@ header .logo {
 .contact p {
   margin: 40px 0;
 }
+.contact:active {
+  background-color: #b36302;
+  -webkit-transform: translate(-20px, 20px);
+  -moz-transform: translate(-20px, 20px);
+  -ms-transform: translate(-20px, 20px);
+  -o-transform: translate(-20px, 20px);
+}
 /* Footer Styles */
 footer {
   text-align: center;
