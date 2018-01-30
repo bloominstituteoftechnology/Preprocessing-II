@@ -202,6 +202,11 @@ header .logo {
   -ms-transform: scale(3);
   -o-transform: scale(3);
 }
+.cta img:hover {
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
