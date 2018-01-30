@@ -136,17 +136,17 @@ body {
 }
 @media (max-width: 1100px)  {
   body {
-    background: #87cefa;
+    background: #228b22;
   }
 }
 @media (max-width: 768px)  {
   body {
-    background: #a9dcfb;
+    background: #29a829;
   }
 }
 @media (max-width: 400px)  {
   body {
-    background: #c2e6fc;
+    background: #2ebc2e;
   }
 }
 h1,
@@ -255,9 +255,6 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
-}
-.main-content .top-content .text-content h4 {
-  height: 100px;
 }
 .main-content .middle-img {
   display: block;
