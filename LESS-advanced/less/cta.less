@@ -16,6 +16,10 @@
         margin: 0 82px 0 0;
     }
 
+    h1 {
+        .skew(20deg, 0deg);
+    }
+
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
@@ -23,11 +27,16 @@
         width: 170px;
         height: 32px;
         margin-top: 10px;
+        .translate(35px, 0);
         cursor: pointer;
 
         &:hover {
             background: black;
             color: white;
         }
+    }
+
+    img:hover {
+        .opacity();
     }
 }// cta
