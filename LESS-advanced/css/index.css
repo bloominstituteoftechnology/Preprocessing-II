@@ -222,6 +222,12 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.main-content .bottom-content p:hover {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
