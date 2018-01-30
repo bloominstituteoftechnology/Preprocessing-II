@@ -215,6 +215,12 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+.main-content .middle-img:hover {
+  -webkit-transform: skew(20deg, 5deg);
+  -moz-transform: skew(20deg, 5deg);
+  -ms-transform: skew(20deg, 5deg);
+  -o-transform: skew(20deg, 5deg);
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
