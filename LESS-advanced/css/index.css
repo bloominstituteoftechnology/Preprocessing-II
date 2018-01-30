@@ -265,6 +265,7 @@ header .logo {
   margin: 40px 0;
 }
 .contact:hover {
+  background: #e6e6e6;
   -webkit-transform: skew(20deg, 10deg);
   -moz-transform: skew(20deg, 10deg);
   -ms-transform: skew(20deg, 10deg);
