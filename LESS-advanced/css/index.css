@@ -175,6 +175,10 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 .cta .cta-text {
   font-size: 72px;
@@ -185,9 +189,13 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
-  -webkit-opacity: 0.65;
-  -moz-opacity: 0.65;
-  opacity: 0.65;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -197,9 +205,13 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
-  -webkit-opacity: 0.65;
-  -moz-opacity: 0.65;
-  opacity: 0.65;
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
 }
 .cta .cta-text button:hover {
   background: black;

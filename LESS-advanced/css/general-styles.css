@@ -5,6 +5,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  background-color: grey;
 }
 h1,
 h2,
