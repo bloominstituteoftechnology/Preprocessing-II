@@ -2,10 +2,17 @@
 
 // Mixins below variables
 
+// .button-creator(200px, 200px);
+.button-creator(@width, @height, @background) {
+	width: @width;
+	height: @height;
+	background: @background;
+}
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
+	opacity: 		    @opacity;
 }
 
 .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
