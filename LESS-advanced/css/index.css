@@ -245,3 +245,9 @@ footer {
     background: #1485CC;
   }
 }
+.container h1:hover {
+  color: #0000ff;
+}
+.container h4:hover {
+  color: #008ae0;
+}

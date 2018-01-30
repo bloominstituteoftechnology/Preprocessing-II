@@ -1,3 +1,4 @@
+@import "variables";
 @import "reset";
 @import "general-styles";
 @import "header";
@@ -5,11 +6,12 @@
 @import "main-content";
 @import "contact";
 @import "footer";
-@import "variables";
+
 
 @phone: ~ '(max-width: 400px)';
 @tablet: ~'(max-width: 768px)';
 @laptop: ~'(max-width: 1100px)';
+
 
 .custom-button(@width, @height, @background-color) {
   width: @width;
@@ -21,20 +23,37 @@
   }
 }
 
+.header-color(@color) {
+  @color: @color;
+}
+
 .container {
+
   @media @laptop {
     background: #0DC899;
+
   }
 
   @media @tablet {
     background: #43777F;
+
   }
 
   @media @phone {
     background: #1485CC;
   }
 
+  h1 {
+    &:hover {
+      color: saturate(blue, 6%);
+    }
+  }
 
+  h4 {
+    &:hover {
+      color: saturate(#1485CC, 25%);
+    }
+  }
 }
 
 
