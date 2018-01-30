@@ -147,6 +147,21 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 1100px) {
+  .container {
+    background-color: maroon;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    background-color: mediumslateblue;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    background-color: purple;
+  }
+}
 header {
   width: 100%;
   display: flex;
