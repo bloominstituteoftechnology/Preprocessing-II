@@ -264,6 +264,12 @@ header .logo {
 .contact p {
   margin: 40px 0;
 }
+.contact:hover {
+  -webkit-transform: skew(20deg, 10deg);
+  -moz-transform: skew(20deg, 10deg);
+  -ms-transform: skew(20deg, 10deg);
+  -o-transform: skew(20deg, 10deg);
+}
 /* Footer Styles */
 footer {
   text-align: center;
