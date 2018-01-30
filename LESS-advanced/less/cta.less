@@ -14,25 +14,12 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-        @media @laptop {
-            .scale(.8);
-        }
-     
-        @media @tablet {
-            .scale(.7);
-        }
-     
-        @media @phone {
-            .scale(.5);
-        }
     }
 
     .cta-text button {
+        .button--maker(32px, 170px, white);
         border: 1px double black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
         margin-top: 10px;
         cursor: pointer;
 
@@ -46,17 +33,6 @@
         &:hover {
             .opacity(.5);
             .rotate(180deg);
-        }
-        @media @laptop {
-            .scale(.8);
-        }
-     
-        @media @tablet {
-            .scale(.7);
-        }
-     
-        @media @phone {
-            .scale(.5);
         }
     }
 }// cta

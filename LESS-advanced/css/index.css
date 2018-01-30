@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background: grey;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background: slategray;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background: slateblue;
+  }
+}
 h1,
 h2,
 h3,
@@ -150,6 +168,36 @@ h5 {
 header {
   width: 100%;
   display: flex;
+}
+header nav {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+@media (max-width: 1100px) {
+  header nav {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
 }
 header nav ul {
   margin-top: 140px;
@@ -186,30 +234,6 @@ header .logo:hover {
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
-@media (max-width: 1100px) {
-  header .logo {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-  }
-}
-@media (max-width: 768px) {
-  header .logo {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-  }
-}
-@media (max-width: 400px) {
-  header .logo {
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-  }
-}
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
@@ -226,36 +250,12 @@ header .logo:hover {
   align-items: center;
   margin: 0 82px 0 0;
 }
-@media (max-width: 1100px) {
-  .cta .cta-text {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-  }
-}
-@media (max-width: 768px) {
-  .cta .cta-text {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-  }
-}
-@media (max-width: 400px) {
-  .cta .cta-text {
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-  }
-}
 .cta .cta-text button {
+  height: 32px;
+  width: 170px;
+  background-color: white;
   border: 1px double black;
   font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -271,30 +271,6 @@ header .logo:hover {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-}
-@media (max-width: 1100px) {
-  .cta .cta__img {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-  }
-}
-@media (max-width: 768px) {
-  .cta .cta__img {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-  }
-}
-@media (max-width: 400px) {
-  .cta .cta__img {
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-  }
 }
 /* Main Content Styles */
 .main-content {
@@ -321,30 +297,6 @@ header .logo:hover {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
-}
-@media (max-width: 1100px) {
-  .main-content .middle-img {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-  }
-}
-@media (max-width: 768px) {
-  .main-content .middle-img {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-  }
-}
-@media (max-width: 400px) {
-  .main-content .middle-img {
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-  }
 }
 .main-content .bottom-content {
   display: flex;

@@ -6,6 +6,18 @@ header {
 
 
     nav {
+        .scale(1.3);
+        @media @laptop {
+            .scale(1);
+        }
+     
+        @media @tablet {
+            .scale(.8);
+        }
+     
+        @media @phone {
+            .scale(.7);
+        }
         ul {
             margin-top: 140px; 
             width: 610px;
@@ -36,17 +48,6 @@ header {
             .rotate(0deg);
             .opacity(.5);
 
-        }
-        @media @laptop {
-            .scale(.8);
-        }
-     
-        @media @tablet {
-            .scale(.7);
-        }
-     
-        @media @phone {
-            .scale(.5);
         }
     }
 }// header
