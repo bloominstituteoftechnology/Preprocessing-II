@@ -1,5 +1,9 @@
 // Variables on top
 
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+
 // Mixins below variables
 
 .opacity (@opacity: 0.5) {
@@ -66,4 +70,21 @@
 	-moz-perspective: 	@value;
 	-ms-perspective: 	@value;
 	perspective: 		@value;
+}
+
+.my-button(@background: white, @width: 170px, @height: 32px) {
+	border: 1px double black;
+	font-size: 16px;
+	background: @background;
+	width: @width;
+	height: @height;
+	margin-top: 10px;
+	cursor: pointer;
+
+	&:hover {
+		background: black;
+		color: white;
+		.scale(1.3);
+		.transition(0.5s)
+	}
 }

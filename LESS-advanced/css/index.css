@@ -147,6 +147,21 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 1100px) {
+  body {
+    background: yellow;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background: limegreen;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background: tan;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -209,13 +224,21 @@ header .logo:hover {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
+  background: red;
+  width: 200px;
+  height: 40px;
   margin-top: 10px;
   cursor: pointer;
 }
