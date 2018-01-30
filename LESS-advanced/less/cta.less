@@ -20,6 +20,11 @@
         }
     }
 
+    .cta-img {
+        .keyframes(fade-in, {0% {opacity: 0;} 100% {opacity: 1;}});
+        .animation(fade-in 3s linear infinite alternate);
+    }
+
     .cta-text .cta-btn1 {
         border: 1px double black;
         font-size: 16px;
@@ -45,8 +50,4 @@
             .translate(48px, 17px);
         }
     }
-
-    // .cta-img {
-    //     opacity: 50%;
-    // }
 }// cta

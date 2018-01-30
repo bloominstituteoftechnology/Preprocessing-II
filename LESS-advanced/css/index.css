@@ -187,6 +187,33 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-animation: 0.01s linear 0s infinite alternate move_logo;
+  -moz-animation: 0.01s linear 0s infinite alternate move_logo;
+  animation: 0.01s linear 0s infinite alternate move_logo;
+}
+@-moz-keyframes move_logo {
+  from {
+    margin-left: -1%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+@-webkit-keyframes move_logo {
+  from {
+    margin-left: -1%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+@keyframes move_logo {
+  from {
+    margin-left: -1%;
+  }
+  to {
+    margin-left: 10%;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -208,6 +235,35 @@ header .logo {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+}
+.cta .cta-img {
+  -webkit-animation: fade-in 3s linear infinite alternate;
+  -moz-animation: fade-in 3s linear infinite alternate;
+  animation: fade-in 3s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .cta .cta-text .cta-btn1 {
   border: 1px double black;

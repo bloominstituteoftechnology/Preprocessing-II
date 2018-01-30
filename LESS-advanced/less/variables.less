@@ -16,10 +16,16 @@
 	opacity: 		@opacity;
 }
 
-.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
-	-webkit-animation: @name @duration @delay @ease;
-	-moz-animation:    @name @duration @delay @ease;
-	-ms-animation:     @name @duration @delay @ease;
+.keyframes (@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
 }
 
 .transition (@transition) {
