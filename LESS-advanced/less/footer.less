@@ -3,4 +3,13 @@
 footer {
     text-align: center;
     margin: 40px 0 20px;
+    @media @phone {
+        .scale(0.25);
+    }
+    @media @tablet {
+        .scale(0.5);
+    }
+    @media @laptop {
+        .scale(0.75);
+    }
 }
