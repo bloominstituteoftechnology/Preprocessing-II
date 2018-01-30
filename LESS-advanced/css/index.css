@@ -159,11 +159,11 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: #d85858;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: #800000;
 }
 header .logo {
   align-self: flex-end;
@@ -184,19 +184,36 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
 }
 .cta .cta-text button {
+  width: 110px;
+  height: 50px;
+  background: gray;
   border: 1px double black;
   font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.cta img {
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+  -webkit-transform: skew(25deg, 15deg);
+  -moz-transform: skew(25deg, 15deg);
+  -ms-transform: skew(25deg, 15deg);
+  -o-transform: skew(25deg, 15deg);
 }
 /* Main Content Styles */
 .main-content {
