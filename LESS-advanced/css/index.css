@@ -133,6 +133,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  background-color: grey;
 }
 h1,
 h2,
@@ -184,6 +185,9 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.65;
+  -moz-opacity: 0.65;
+  opacity: 0.65;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -193,6 +197,9 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-opacity: 0.65;
+  -moz-opacity: 0.65;
+  opacity: 0.65;
 }
 .cta .cta-text button:hover {
   background: black;
