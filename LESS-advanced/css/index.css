@@ -175,6 +175,12 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+.cta img {
+  -webkit-transform: skew(5deg, 7deg);
+  -moz-transform: skew(5deg, 7deg);
+  -ms-transform: skew(5deg, 7deg);
+  -o-transform: skew(5deg, 7deg);
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -184,6 +190,13 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -197,6 +210,10 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: translate(3px, 3px);
+  -moz-transform: translate(3px, 3px);
+  -ms-transform: translate(3px, 3px);
+  -o-transform: translate(3px, 3px);
 }
 /* Main Content Styles */
 .main-content {
