@@ -168,6 +168,23 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-animation: logo-spin infinite 4s linear;
+  -moz-animation: logo-spin infinite 4s linear;
+  -ms-animation: logo-spin infinite 4s linear;
+}
+@keyframes logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
