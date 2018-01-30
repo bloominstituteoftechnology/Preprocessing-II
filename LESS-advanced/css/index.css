@@ -231,3 +231,18 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+@media (max-width: 1100px) {
+  .container {
+    background: #0DC899;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    background: #43777F;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    background: #1485CC;
+  }
+}
