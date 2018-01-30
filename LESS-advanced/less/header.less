@@ -30,9 +30,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .transition(1.5s);
         .skew(10deg, 20deg);
         &:hover {
+            .rotate(0deg);
             .opacity(.5);
+
         }
         @media @laptop {
             .scale(.8);
