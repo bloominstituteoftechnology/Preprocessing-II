@@ -256,6 +256,9 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content h4 {
+  height: 100px;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
