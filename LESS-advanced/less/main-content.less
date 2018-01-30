@@ -1,5 +1,7 @@
 /* Main Content Styles */
 
+
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -12,16 +14,29 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    
+    .text-content:hover {
+        .rotate(2deg);
+    }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    
+    &:hover {
+        .skew(0deg, 2deg);
+    }
+
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+
+    .text-content:hover {
+        .scale(1.1);
+    }
 }
 
 .main-content .bottom-content p {
