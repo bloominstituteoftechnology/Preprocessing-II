@@ -14,6 +14,13 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        cursor: pointer;
+
+        h1 {
+            &:not(:active) {
+                .animation(jiggle, 1000ms, 1, @easing-bezier);
+            }
+        }
     }
 
     .cta-text button {
@@ -28,6 +35,13 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    .img {
+        cursor: pointer;
+        &:not(:active) {
+            .animation(summon, 1000ms, 1, @easing-bezier);
         }
     }
 }// cta

@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -126,6 +126,117 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  background-color: white;
+}
+@media (max-width: 1100px) {
+  body {
+    background-color: white;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: gray;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background-color: black;
+  }
+}
+@keyframes jiggle {
+  0% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: rotate(10);
+    -moz-transform: rotate(10);
+    -ms-transform: rotate(10);
+    -o-transform: rotate(10);
+  }
+  30% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: rotate(-10);
+    -moz-transform: rotate(-10);
+    -ms-transform: rotate(-10);
+    -o-transform: rotate(-10);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: rotate(30);
+    -moz-transform: rotate(30);
+    -ms-transform: rotate(30);
+    -o-transform: rotate(30);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: rotate(-45);
+    -moz-transform: rotate(-45);
+    -ms-transform: rotate(-45);
+    -o-transform: rotate(-45);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: rotate(15);
+    -moz-transform: rotate(15);
+    -ms-transform: rotate(15);
+    -o-transform: rotate(15);
+  }
+}
+@keyframes summon {
+  0% {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+  50% {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  100% {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    -o-transform: skew(0deg, 0deg);
+  }
+  50% {
+    -webkit-transform: skew(3deg, 3deg);
+    -moz-transform: skew(3deg, 3deg);
+    -ms-transform: skew(3deg, 3deg);
+    -o-transform: skew(3deg, 3deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    -o-transform: skew(0deg, 0deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -152,7 +263,7 @@ header {
   display: flex;
 }
 header nav ul {
-  margin-top: 140px;
+  margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
@@ -168,6 +279,12 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  cursor: pointer;
+}
+header .logo:not(:active) {
+  -webkit-animation: wiggle 500ms 10 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -moz-animation: wiggle 500ms 10 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -ms-animation: wiggle 500ms 10 cubic-bezier(0.46, 0.37, 0.46, 0.84);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -184,6 +301,12 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  cursor: pointer;
+}
+.cta .cta-text h1:not(:active) {
+  -webkit-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -moz-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -ms-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -197,6 +320,14 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta .img {
+  cursor: pointer;
+}
+.cta .img:not(:active) {
+  -webkit-animation: summon 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -moz-animation: summon 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -ms-animation: summon 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
 }
 /* Main Content Styles */
 .main-content {

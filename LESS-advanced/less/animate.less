@@ -1,0 +1,31 @@
+@keyframes jiggle {
+    0% { .scale(1.1);
+        .rotate(10);
+    }
+    30% { .scale(1);
+        .rotate(-10);
+    }
+    60% { .scale(1.2);
+        .rotate(30);
+    }
+    75% { .scale(0.9);
+        .rotate(-45);
+    }
+    100% { .scale(1);
+        .rotate(15);
+    }
+}
+
+@keyframes summon {
+    0% { .opacity(1); }
+    50% { .opacity(0);
+        .scale(0.7);
+    }
+    100% { .opacity(1); }
+}
+
+@keyframes wiggle {
+    0% { .skew(0deg, 0deg); }
+    50% { .skew(3deg, 3deg); }
+    100% { .skew(0deg, 0deg); }
+}
