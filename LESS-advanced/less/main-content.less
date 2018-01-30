@@ -1,5 +1,14 @@
 /* Main Content Styles */
 
+// variables
+@peach-schnapps: #FFE0DA;
+@pink-lady: #FFF3DA;
+@spring-sun: #F9FFDA;
+
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -7,6 +16,7 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+
     .top-content {
         display: flex;
         justify-content: space-around;
@@ -25,6 +35,18 @@
             padding-right: 20px;
         }
     } // .bottom-content
+    
+    @media @laptop {
+        background: @spring-sun;
+    }
+
+    @media @tablet {
+        background: @pink-lady;
+    }
+
+    @media @phone {
+        background: @peach-schnapps;
+    }
 } // .main-content
 
 
