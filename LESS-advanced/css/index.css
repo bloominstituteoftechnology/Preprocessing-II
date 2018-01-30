@@ -193,6 +193,9 @@ header .logo {
 .cta .cta-text button:hover {
   background: linear-gradient(45deg, green, #2953A0);
 }
+.cta img {
+  filter: opacity(0.5);
+}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
