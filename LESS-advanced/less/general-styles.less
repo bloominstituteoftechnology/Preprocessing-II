@@ -19,3 +19,16 @@ h1, h2, h3, h4, h5 {
     width: 880px;
     margin: auto;
 }
+
+// @min768: ~"(min-width: 768px)";
+// .element {
+//     @media @min768 {
+//         font-size: 1.2rem;
+//     }
+// }
+@max400: ~"(max-width: 400px)";
+body {
+    @media @max400 {
+        background-color: gray;
+    }
+}

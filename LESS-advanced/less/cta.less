@@ -14,6 +14,10 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        &:hover {
+            .opacity(0.2);
+        }
     }
 
     .cta-text button {
@@ -28,6 +32,8 @@
         &:hover {
             background: black;
             color: white;
+            .rotate(20deg);
+            .translate3d(10px, 0, 0px);
         }
     }
 }// cta
