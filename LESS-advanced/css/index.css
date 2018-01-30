@@ -147,12 +147,13 @@ h5 {
   width: 880px;
   margin: auto;
 }
-@media (max-width: 400px) {
+@media (max-width: 1100px) {
   .container {
-    -webkit-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -ms-transform: scale(0.25);
-    -o-transform: scale(0.25);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    background-color: orangered;
   }
 }
 @media (max-width: 768px) {
@@ -161,14 +162,16 @@ h5 {
     -moz-transform: scale(0.5);
     -ms-transform: scale(0.5);
     -o-transform: scale(0.5);
+    background-color: green;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 400px) {
   .container {
-    -webkit-transform: scale(0.75);
-    -moz-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-    -o-transform: scale(0.75);
+    -webkit-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    background-color: blue;
   }
 }
 header {
@@ -300,28 +303,4 @@ header .logo:hover {
 footer {
   text-align: center;
   margin: 40px 0 20px;
-}
-@media (max-width: 400px) {
-  footer {
-    -webkit-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -ms-transform: scale(0.25);
-    -o-transform: scale(0.25);
-  }
-}
-@media (max-width: 768px) {
-  footer {
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-  }
-}
-@media (max-width: 1100px) {
-  footer {
-    -webkit-transform: scale(0.75);
-    -moz-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-    -o-transform: scale(0.75);
-  }
 }

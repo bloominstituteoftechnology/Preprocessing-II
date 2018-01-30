@@ -18,13 +18,16 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
-    @media @phone {
-        .scale(0.25);
+    @media @laptop {
+        .scale(0.75);
+        background-color: orangered;
     }
     @media @tablet {
         .scale(0.5);
+        background-color: green;
     }
-    @media @laptop {
-        .scale(0.75);
+    @media @phone {
+        .scale(0.25);
+        background-color: blue;
     }
 }
