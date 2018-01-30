@@ -3,8 +3,69 @@
 @import "header";
 @import "cta";
 @import "main-content";
+@import "variables"; // #1 -- Where is the best place to put this??? 
 @import "contact";
 @import "footer";
+
+// #3
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+@bigger-than-laptop: ~"(min-width: 1100px)";
+
+
+// #4: Recreate the CTA button using your own custom mixin that takes values for width, height, and background color.
+.cta__button(@width, @height, @background-color) {
+    width: @width;
+    height: @height;
+    background-color: @background-color;
+}
+
+
+body {
+.cta {
+    
+    .animation { // Not working, not sure how to implement this.
+        @name: example;
+        @duration: 3s;
+        delay: 3s;
+        
+
+    }
+
+}
+
+header { // Used Nesting -- probably not the best idea for this exercise :/
+    .logo{
+        .opacity; // Turns 'Inreases the Opacity of the 'Great Idea' Logo by 50%
+    }
+}
+
+.cta .cta-text button {
+    .cta__button(170px, 32px, rgb(140, 140, 235))
+  }
+
+.main-content .middle-img { // #5: Use a function to lower the opacity of the image inside the cta class.
+    .opacity;
+}
+
+
+// #3 Use escaping to create 3 unique media queries using (max-width) with values of 400px, 768px, and 1100px.  Use those media queries to change the background color of the web page at those pixel widths.
+@media @bigger-than-laptop {
+    background: turquoise;
+}
+@media @laptop {
+    background: sandybrown;
+}
+@media @tablet {
+    background: royalblue;
+}
+@media @phone {
+    background: goldenrod;
+}
+
+} // body
+
 
 
 
