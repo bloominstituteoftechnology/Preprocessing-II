@@ -1,10 +1,13 @@
+@import "variables";
+
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    height: 380px;
+    position: relative;
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +17,10 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        position: absolute;
+        left: 60px;
+        top: 55px;
+        .animation(appear_left);
     }
 
     .cta-text button {
@@ -24,10 +31,20 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .transition(500ms);
 
         &:hover {
             background: black;
             color: white;
+            width: 190px;
+            height: 52px;
+            border-radius: 10px;
         }
+    }
+
+    img {
+        position: absolute;
+        right: 60px;
+        .animation(appear_right);
     }
 }// cta

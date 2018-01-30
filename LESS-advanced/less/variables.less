@@ -1,5 +1,31 @@
 // Variables on top
+@keyframes appear_left {
+    from {
+    	 position: absolute;
+        left: -100px;
+        top: 55px;
+        opacity: 0;
+    }
+    to {
+    	 position: absolute;
+        left: 60px;
+        top: 55px;
+        opacity: 1;
+    }
+}
 
+@keyframes appear_right {
+    from {
+    	position: absolute;
+        right: -100px;
+        opacity: 0;
+    }
+    to {
+    	position: absolute;
+        right: 60px;
+        opacity: 1;
+    }
+}
 // Mixins below variables
 
 .opacity (@opacity: 0.5) {
@@ -8,10 +34,16 @@
 	opacity: 		@opacity;
 }
 
-.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
-	-webkit-animation: @name @duration @delay @ease;
-	-moz-animation:    @name @duration @delay @ease;
-	-ms-animation:     @name @duration @delay @ease;
+// .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+// 	-webkit-animation: @name @duration @delay @ease;
+// 	-moz-animation:    @name @duration @delay @ease;
+// 	-ms-animation:     @name @duration @delay @ease;
+// }
+
+.animation (@name, @duration: 1.1s) {
+	-webkit-animation: @name @duration;
+	-moz-animation: @name @duration;
+	-ms-animation: @name @duration;
 }
 
 .transition (@transition) {

@@ -1,3 +1,11 @@
+@keyframes test {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: red;
+  }
+}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
@@ -6,6 +14,7 @@
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+  animation: test 1000ms;
 }
 .main-content .top-content {
   display: flex;
