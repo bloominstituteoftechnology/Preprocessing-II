@@ -2,6 +2,14 @@
 
 // Mixins below variables
 
+// .button-creator(200px, 200px, white, 25%)
+.button-creator (@width, @height, @background, @border-radius) {
+	width: @width;
+	height: @height;
+	background: @background;
+	border-radius: @border-radius;
+}
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;

@@ -209,7 +209,7 @@ header .logo {
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
-.cta .cta-text button {
+.cta .cta-text .cta-btn1 {
   border: 1px double black;
   font-size: 16px;
   background: white;
@@ -218,13 +218,27 @@ header .logo {
   margin-top: 10px;
   cursor: pointer;
 }
-.cta .cta-text button:hover {
+.cta .cta-text .cta-btn1:hover {
   background: black;
   color: white;
   -webkit-transform: rotate(16deg);
   -moz-transform: rotate(16deg);
   -ms-transform: rotate(16deg);
   -o-transform: rotate(16deg);
+}
+.cta .cta-text .cta-btn2 {
+  width: 170px;
+  height: 32px;
+  background: green;
+  border-radius: 25%;
+}
+.cta .cta-text .cta-btn2:hover {
+  background: black;
+  color: white;
+  -webkit-transform: translate(48px, 17px);
+  -moz-transform: translate(48px, 17px);
+  -ms-transform: translate(48px, 17px);
+  -o-transform: translate(48px, 17px);
 }
 /* Main Content Styles */
 .main-content {
