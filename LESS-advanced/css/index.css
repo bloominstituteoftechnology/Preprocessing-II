@@ -256,6 +256,24 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .Features__button {
+  width: 50px;
+  height: 18px;
+  margin: 10px 0 10px 0;
+  background: red;
+  color: white;
+  outline: none;
+}
+.main-content .top-content .Features__button:hover {
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -o-transform: scale(4);
+}
+.main-content .top-content .Features__button:active {
+  color: black;
+  background: #00ffff;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;

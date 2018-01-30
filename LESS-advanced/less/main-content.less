@@ -1,16 +1,24 @@
 /* Main Content Styles */
 
-#main-content() {
-  .button {
-    height: 100px;
+#button-creator() {
+  .button(@width: 25px, @height: 18px, @bkgdColor: white, @btnColor: black) {
+    width: @width;
+    height: @height;
+
+    margin: 10px 0 10px 0;
+
+    background: @bkgdColor;
+    color: @btnColor;
+  }
+}
+
+#anim-creator() {
+  .scaleUp() {
+    .scale(4);
   }
 
-  .button--large {
-    height: 22px;
-  }
-
-  .button--lala {
-    //
+  .invert(@btnColor) {
+    background: spin(@btnColor, 180);
   }
 }
 
@@ -26,6 +34,23 @@
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+
+  .Features__button {
+    @backgroundColor: red;
+
+    #button-creator > .button(50px, 18px, @backgroundColor, white);
+
+    &:hover {
+      #anim-creator > .scaleUp;
+    }
+
+    &:active {
+      color: black;
+      #anim-creator > .invert(@backgroundColor);
+    }
+
+    outline: none;
+  }
 }
 
 .main-content .middle-img {
