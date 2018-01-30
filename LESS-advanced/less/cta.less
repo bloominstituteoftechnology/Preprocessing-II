@@ -14,6 +14,17 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @laptop {
+            .scale(.8);
+        }
+     
+        @media @tablet {
+            .scale(.7);
+        }
+     
+        @media @phone {
+            .scale(.5);
+        }
     }
 
     .cta-text button {
@@ -28,6 +39,23 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    .cta__img {
+        &:hover {
+            .opacity(.5);
+        }
+        @media @laptop {
+            .scale(.8);
+        }
+     
+        @media @tablet {
+            .scale(.7);
+        }
+     
+        @media @phone {
+            .scale(.5);
         }
     }
 }// cta

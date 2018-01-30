@@ -4,6 +4,7 @@ header {
     width: 100%;
     display: flex;
 
+
     nav {
         ul {
             margin-top: 140px; 
@@ -29,5 +30,16 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @laptop {
+            .scale(.8);
+        }
+     
+        @media @tablet {
+            .scale(.7);
+        }
+     
+        @media @phone {
+            .scale(.5);
+        }
     }
 }// header
