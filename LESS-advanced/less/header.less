@@ -12,6 +12,10 @@ header {
             display: flex;
 
             li {
+                &:hover {
+                    .translate(10px); 
+                    .transition(0.5s);                   
+                }
 
                 a {
                     text-decoration: none;
@@ -29,5 +33,9 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        &:hover {
+            .rotate(-20deg);
+            .transition(1s);            
+        }
     }
 }// header
