@@ -189,11 +189,12 @@ header .logo {
   width: 170px;
   height: 32px;
   background-color: white;
+  border-radius: 25px;
 }
 .cta .cta-text button:hover {
-  background: linear-gradient(45deg, green, #2953A0);
+  background: linear-gradient(45deg, #078550, #2953A0);
 }
-.cta img {
+.cta img:hover {
   filter: opacity(0.5);
 }
 /* Main Content Styles */
