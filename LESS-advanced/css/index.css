@@ -198,6 +198,12 @@ header .logo {
   background: black;
   color: white;
 }
+.cta .cta-text button:active {
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -o-transform: scale(4);
+}
 .cta img:hover {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
