@@ -21,11 +21,12 @@
     }
 
     .cta-text button {
+        .createButton(170px, 32px, white);
         border: 1px double black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        // background: white;
+        // width: 170px;
+        // height: 32px;
         margin-top: 10px;
         .translate(35px, 0);
         cursor: pointer;
@@ -35,8 +36,11 @@
             color: white;
         }
     }
-
-    img:hover {
-        .opacity();
+    img {
+        opacity: 0.5;
+        &:hover {
+            .opacity(1);
+        }
     }
+    
 }// cta
