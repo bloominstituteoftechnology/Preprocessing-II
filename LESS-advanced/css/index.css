@@ -160,11 +160,11 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #c87b7b;
+  color: #3b5998;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: #4d0000;
+  color: black;
 }
 header .logo {
   align-self: flex-end;
@@ -200,7 +200,7 @@ header .logo {
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: #3b5998;
   color: white;
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
@@ -231,14 +231,16 @@ header .logo {
 }
 .main-content .top-content button {
   color: red;
-  background-color: #21205f;
+  background-color: #3b5998;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  margin: 25px 0px 0px 30%;
 }
 .main-content .top-content button:hover {
   background-color: black;
@@ -253,14 +255,16 @@ header .logo {
 }
 .main-content .bottom-content button {
   color: red;
-  background-color: #21205f;
+  background-color: #3b5998;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  margin: 25px 0px 0px 50px;
 }
 .main-content .bottom-content button:hover {
   background-color: black;
