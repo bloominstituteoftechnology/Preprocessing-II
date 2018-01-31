@@ -7,6 +7,16 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    background-color: @default-bg-color;
+    @media @laptop {
+        background-color: @default-bg-color - #111;
+    }
+    @media @tablet {
+        background-color: @default-bg-color - #222;
+    }
+    @media @phone {
+        background-color: @default-bg-color - #333;
+    }
 }
 
 h1, h2, h3, h4, h5 {
