@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background-color: lightblue;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background-color: yellow;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background-color: pink;
+  }
+}
 h1,
 h2,
 h3,
@@ -142,6 +160,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #800080;
 }
 .container {
   width: 880px;
@@ -156,6 +175,10 @@ header nav ul {
   width: 610px;
   justify-content: space-between;
   display: flex;
+  -webkit-transform: skew(25deg, -10deg);
+  -moz-transform: skew(25deg, -10deg);
+  -ms-transform: skew(25deg, -10deg);
+  -o-transform: skew(25deg, -10deg);
 }
 header nav ul li a {
   text-decoration: none;
@@ -168,6 +191,19 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transition: 1.5s ease 0.2s;
+  -moz-transition: 1.5s ease 0.2s;
+  -ms-transition: 1.5s ease 0.2s;
+  -o-transition: 1.5s ease 0.2s;
+}
+header .logo:hover {
+  -webkit-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+  -o-transform: rotate(720deg);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -178,25 +214,34 @@ header .logo {
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
-  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transition: font-size 0.5s 0.2s;
+  -moz-transition: font-size 0.5s 0.2s;
+  -ms-transition: font-size 0.5s 0.2s;
+  -o-transition: font-size 0.5s 0.2s;
+}
+.cta .cta-text:hover {
+  font-size: 100px;
 }
 .cta .cta-text button {
+  width: 400px;
+  height: 50px;
+  background-color: yellow;
+  color: #404040;
   border: 1px double black;
-  font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
+  font-size: 30px;
   margin-top: 10px;
   cursor: pointer;
 }
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
+.cta .image:hover {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
 }
 /* Main Content Styles */
 .main-content {
@@ -207,17 +252,148 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content {
+  flex-basis: 10%;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .first-button {
+  width: 20;
+  height: 30;
+  background-color: #1fd187;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+}
+.main-content .top-content .first-button:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  background-color: orange;
+}
+.main-content .top-content .second-button {
+  width: 20;
+  height: 30;
+  background-color: green;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.main-content .top-content .second-button:hover {
+  -webkit-transform: skew(0deg, 40deg);
+  -moz-transform: skew(0deg, 40deg);
+  -ms-transform: skew(0deg, 40deg);
+  -o-transform: skew(0deg, 40deg);
+  background-color: orange;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  padding: 20px;
+}
+.main-content .middle-img:hover {
+  -webkit-animation: disappear 2s 0 ease;
+  -moz-animation: disappear 2s 0 ease;
+  -ms-animation: disappear 2s 0 ease;
+  animation-iteration-count: infinite;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    background-color: black;
+  }
+  10% {
+    opacity: .8;
+    background-color: blue;
+  }
+  20% {
+    opacity: .6;
+    background-color: pink;
+  }
+  30% {
+    opacity: .4;
+    background-color: yellow;
+  }
+  40% {
+    opacity: .2;
+    background-color: purple;
+  }
+  50% {
+    opacity: 0;
+    background-color: red;
+  }
+  60% {
+    opacity: .3;
+    background-color: orange;
+  }
+  70% {
+    opacity: .5;
+    background-color: brown;
+  }
+  80% {
+    opacity: .7;
+    background-color: gray;
+  }
+  90% {
+    opacity: .9;
+    background-color: green;
+  }
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .third-button {
+  width: 20;
+  height: 30;
+  background-color: grey;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+}
+.main-content .bottom-content .third-button:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  background-color: orange;
+}
+.main-content .bottom-content .fourth-button {
+  width: 40;
+  height: 20;
+  background-color: pink;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.main-content .bottom-content .fourth-button:hover {
+  -webkit-transform: skew(0deg, -40deg);
+  -moz-transform: skew(0deg, -40deg);
+  -ms-transform: skew(0deg, -40deg);
+  -o-transform: skew(0deg, -40deg);
+  background-color: orange;
+}
+.main-content .bottom-content .fifth-button {
+  width: 30;
+  height: 30;
+  background-color: red;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+}
+.main-content .bottom-content .fifth-button:hover {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  background-color: orange;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
@@ -230,4 +406,83 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+#header-buttons .button1 {
+  width: 20;
+  height: 30;
+  background-color: #1fd187;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+}
+#header-buttons .button1:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  background-color: orange;
+}
+#header-buttons .button2 {
+  width: 20;
+  height: 30;
+  background-color: green;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+#header-buttons .button2:hover {
+  -webkit-transform: skew(0deg, 40deg);
+  -moz-transform: skew(0deg, 40deg);
+  -ms-transform: skew(0deg, 40deg);
+  -o-transform: skew(0deg, 40deg);
+  background-color: orange;
+}
+#header-buttons .button3 {
+  width: 20;
+  height: 30;
+  background-color: grey;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+}
+#header-buttons .button3:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  background-color: orange;
+}
+#header-buttons .button4 {
+  width: 40;
+  height: 20;
+  background-color: pink;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+#header-buttons .button4:hover {
+  -webkit-transform: skew(0deg, -40deg);
+  -moz-transform: skew(0deg, -40deg);
+  -ms-transform: skew(0deg, -40deg);
+  -o-transform: skew(0deg, -40deg);
+  background-color: orange;
+}
+#header-buttons .button5 {
+  width: 30;
+  height: 30;
+  background-color: red;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+}
+#header-buttons .button5:hover {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  background-color: orange;
 }
