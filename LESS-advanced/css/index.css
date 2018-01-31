@@ -198,13 +198,13 @@ header .logo {
   -o-transform: rotate(-5deg);
 }
 .cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
-  width: 170px;
   height: 32px;
-  margin-top: 10px;
+  width: 170px;
+  background: white;
+  font-size: 16px;
   cursor: pointer;
+  border: 1px double black;
+  margin-top: 10px;
   -webkit-opacity: 0.25;
   -moz-opacity: 0.25;
   opacity: 0.25;
