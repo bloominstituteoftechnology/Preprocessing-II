@@ -5,6 +5,13 @@
 @tablet: ~"(max-width: 768px)";
 @phone: ~"(max-width: 400px)";
 
+.button-creator(@width, @height, @background-color, @font-family, @font-size) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+	font-family: @font-family;
+	font-size: @font-size;
+}
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;

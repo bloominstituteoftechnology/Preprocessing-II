@@ -230,13 +230,11 @@ header .logo:hover {
   -o-transform: skew(23deg, 38deg);
 }
 .cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
   width: 170px;
   height: 32px;
-  margin-top: 10px;
-  cursor: pointer;
+  background-color: white;
+  font-family: "sans-serif";
+  font-size: 16px;
 }
 .cta .cta-text button:hover {
   background: black;
