@@ -6,6 +6,7 @@
     justify-content: flex-end;
 
     .cta-text {
+        
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -17,17 +18,22 @@
     }
 
     .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        background: rgb(133, 116, 230);
         margin-top: 10px;
+        border-radius: 50%;
         cursor: pointer;
+        .button-creator(170px, 170px, 16px);
 
         &:hover {
             background: black;
             color: white;
+            .scale(0.8);
+
         }
+    }
+
+    img {
+        .rotate(20deg);
+        .opacity(0.8);
     }
 }// cta
