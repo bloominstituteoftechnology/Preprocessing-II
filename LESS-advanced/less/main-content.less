@@ -17,11 +17,19 @@
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    .animation(move_eye, 3s, 0s, infinite alternate);
+    
+    @keyframes move_eye { 
+        from { margin-left: -50%; } 
+        to { margin-left: 70%; }  
+    }
+        
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+
 }
 
 .main-content .bottom-content p {
