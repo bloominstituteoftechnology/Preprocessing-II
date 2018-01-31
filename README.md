@@ -3,6 +3,7 @@
 At this point, you have been introduced to LESS variables, nesting, mixins, escaping, importing and more.  This project incorporates a small amount of everything. You will need to be able to navigate the file structure and make the following updates:
 
 ## Tasks
+// VERY IMPORTANT NOTE! -- You can use the files.less to add changes instead of rebuilding the whole tree in the index.less.  In this assignment 
 
 1. Import the variables.less into the index.less file
 2. Use 5 different mixins from the variables.less file in anyway you want throughout the site (Hint, google the CSS properties if you don't know what they do!).
@@ -14,5 +15,16 @@ Everything listed here can be completed by studying the documentation here:  htt
 
 ## Stretch
 
+// For this you may want to check the button-creator thing that you did in class!
+
 Create unique buttons for each heading in the main-content section.  (Use a namespace!).  Try out a fun mixin on hover for each button.
+
+============================================================================================================
+
+/* QUESTIONS */
+
+    /* 
+    How did you get the ALL of the tags/divs/classes printed out and seperated by commas in the
+    index.css file???
+    */
 
