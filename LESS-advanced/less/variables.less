@@ -2,11 +2,7 @@
 
 // Mixins below variables
 
-.opacity (@opacity: 0.5) {
-	-webkit-opacity: 	@opacity;
-	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
-}
+
 
 .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
 	-webkit-animation: @name @duration @delay @ease;
@@ -66,4 +62,11 @@
 	-moz-perspective: 	@value;
 	-ms-perspective: 	@value;
 	perspective: 		@value;
+}
+
+
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
 }
