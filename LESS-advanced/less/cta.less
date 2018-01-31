@@ -4,7 +4,7 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    .custom-CTA(150px, 150px, red);
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +14,7 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .perspective(10px);
     }
 
     .cta-text button {
@@ -28,6 +29,7 @@
         &:hover {
             background: black;
             color: white;
+            .translate(50px, 50px);
         }
     }
 }// cta
