@@ -1,5 +1,62 @@
 /* Main Content Styles */
 
+#button-styles() {
+    .style-1 {
+        width: 100px;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        border: 1px solid black;
+        background-color: grey;
+        border-radius: 50px;
+        &:hover {
+            background-color: black;
+        }
+
+        &:active {
+            .rotate(90deg);
+        }
+    }
+
+    .style-2 {
+        width: 100px;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        border: 1px solid red;
+        background-color: darkred;
+        border-radius: 0px;
+        &:hover {
+            background-color: orangered;
+            .scale(1.2);
+        }
+
+        &:active {
+            background-color: yellow;
+            .scale(0.2);
+        }
+    }
+
+    .style-3 {
+        width: 170px;
+        padding: 20px;
+        text-align: left;
+        display: block;
+        border: 3px dashed purple;
+        background-color: darkcyan;
+        border-radius: 10px;
+        &:hover {
+            background-color: orangered;
+            .skew(12deg, 16deg);
+        }
+
+        &:active {
+            background-color: greenyellow;
+            .translate(42px, 20px);
+        }
+    }
+}
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -12,7 +69,7 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
-    .scale(2);
+    .scale(1.2);
 }
 
 .main-content .middle-img {
@@ -27,4 +84,29 @@
 
 .main-content .bottom-content p {
     padding-right: 20px;
+}
+
+.text-content .text-content-button-1 {
+    color: orange;
+    #button-styles > .style-1;
+}
+
+.text-content .text-content-button-2 {
+    color: black;
+    #button-styles > .style-2;
+}
+
+.text-content .text-content-button-3 {
+    color: lightsalmon;
+    #button-styles > .style-3;
+}
+
+.text-content .text-content-button-4 {
+    color: gold;
+    #button-styles > .style-2;
+}
+
+.text-content .text-content-button-5 {
+    color: burlywood;
+    #button-styles > .style-1;
 }

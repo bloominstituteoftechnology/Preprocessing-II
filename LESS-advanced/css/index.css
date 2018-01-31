@@ -308,10 +308,10 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  -o-transform: scale(2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 .main-content .middle-img {
   display: block;
@@ -323,6 +323,116 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.text-content .text-content-button-1 {
+  color: orange;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 1px solid black;
+  background-color: grey;
+  border-radius: 50px;
+}
+.text-content .text-content-button-1:hover {
+  background-color: black;
+}
+.text-content .text-content-button-1:active {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.text-content .text-content-button-2 {
+  color: black;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 1px solid red;
+  background-color: darkred;
+  border-radius: 0px;
+}
+.text-content .text-content-button-2:hover {
+  background-color: orangered;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.text-content .text-content-button-2:active {
+  background-color: yellow;
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+}
+.text-content .text-content-button-3 {
+  color: lightsalmon;
+  width: 170px;
+  padding: 20px;
+  text-align: left;
+  display: block;
+  border: 3px dashed purple;
+  background-color: darkcyan;
+  border-radius: 10px;
+}
+.text-content .text-content-button-3:hover {
+  background-color: orangered;
+  -webkit-transform: skew(12deg, 16deg);
+  -moz-transform: skew(12deg, 16deg);
+  -ms-transform: skew(12deg, 16deg);
+  -o-transform: skew(12deg, 16deg);
+}
+.text-content .text-content-button-3:active {
+  background-color: greenyellow;
+  -webkit-transform: translate(42px, 20px);
+  -moz-transform: translate(42px, 20px);
+  -ms-transform: translate(42px, 20px);
+  -o-transform: translate(42px, 20px);
+}
+.text-content .text-content-button-4 {
+  color: gold;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 1px solid red;
+  background-color: darkred;
+  border-radius: 0px;
+}
+.text-content .text-content-button-4:hover {
+  background-color: orangered;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.text-content .text-content-button-4:active {
+  background-color: yellow;
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+}
+.text-content .text-content-button-5 {
+  color: burlywood;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 1px solid black;
+  background-color: grey;
+  border-radius: 50px;
+}
+.text-content .text-content-button-5:hover {
+  background-color: black;
+}
+.text-content .text-content-button-5:active {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 /* Contact Styles */
 .contact {
