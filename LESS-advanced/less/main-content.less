@@ -1,3 +1,4 @@
+@import "variables";
 /* Main Content Styles */
 
 .main-content {
@@ -14,9 +15,18 @@
     justify-content: space-around;
 }
 
+
+
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    .keyframes(fade-in;{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+		});
+
+    .animation(fade-in 8s linear infinite alternate);
+    
 }
 
 .main-content .bottom-content {
