@@ -1,3 +1,15 @@
+#heading-buton {
+    .button {
+      display: block;
+      border: 1px solid black;
+      background-color: grey;
+      &:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
 /* Main Content Styles */
 
 .main-content {
@@ -7,7 +19,12 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+
+   h1, h2, h3, h4, h5 {
+    #heading-buton > .button;
+   }
 }
+
 
 .main-content .top-content {
     display: flex;

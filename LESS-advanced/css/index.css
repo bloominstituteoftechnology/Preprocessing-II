@@ -220,6 +220,15 @@ header .logo {
   background: black;
   color: white;
 }
+#heading-buton .button {
+  display: block;
+  border: 1px solid black;
+  background-color: grey;
+}
+#heading-buton .button:hover {
+  background-color: white;
+  cursor: pointer;
+}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
@@ -228,6 +237,23 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+}
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5 {
+  display: block;
+  border: 1px solid black;
+  background-color: grey;
+}
+.main-content h1:hover,
+.main-content h2:hover,
+.main-content h3:hover,
+.main-content h4:hover,
+.main-content h5:hover {
+  background-color: white;
+  cursor: pointer;
 }
 .main-content .top-content {
   display: flex;
