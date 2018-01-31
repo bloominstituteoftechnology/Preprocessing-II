@@ -5,6 +5,8 @@
 
 @easing-bezier: cubic-bezier(0.46, 0.37, 0.46, 0.84);
 
+@comp-color: #FA6900;
+
 
 // Mixins below variables
 
@@ -72,4 +74,15 @@
 	-moz-perspective: 	@value;
 	-ms-perspective: 	@value;
 	perspective: 		@value;
+}
+
+
+.button-creator (@width, @height, @color, @border-color, @font-size) {
+	width: @width;
+	height: @height;
+	background-color: @color;
+	border: 1px double @border-color;
+	box-shadow: 0px 0px 0px @border-color, 1px 1px 0px @border-color, 2px 2px 0px @border-color, 3px 3px 0px @border-color, 4px 4px 0px @border-color, 0px 4px 20px rgba(0,0,0,.2);
+	font-size: @font-size;
+	cursor: pointer;
 }

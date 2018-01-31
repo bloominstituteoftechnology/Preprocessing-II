@@ -158,26 +158,18 @@ body {
     -o-transform: scale(1);
   }
   40% {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
   }
-  70% {
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    -webkit-transform: rotate(-1.4deg);
-    -moz-transform: rotate(-1.4deg);
-    -ms-transform: rotate(-1.4deg);
-    -o-transform: rotate(-1.4deg);
+  60% {
+    -webkit-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -o-transform: scale(0.97);
   }
-  80% {
-    -webkit-transform: scale(0.95);
-    -moz-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    -o-transform: scale(0.95);
+  75% {
     -webkit-transform: rotate(1deg);
     -moz-transform: rotate(1deg);
     -ms-transform: rotate(1deg);
@@ -247,6 +239,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #f36a08;
 }
 .container {
   width: 880px;
@@ -276,9 +269,9 @@ header .logo {
   cursor: pointer;
 }
 header .logo:not(:active) {
-  -webkit-animation: wiggle 500ms 10 cubic-bezier(0.46, 0.37, 0.46, 0.84);
-  -moz-animation: wiggle 500ms 10 cubic-bezier(0.46, 0.37, 0.46, 0.84);
-  -ms-animation: wiggle 500ms 10 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -webkit-animation: wiggle 500ms 4 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -moz-animation: wiggle 500ms 4 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -ms-animation: wiggle 500ms 4 cubic-bezier(0.46, 0.37, 0.46, 0.84);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -287,7 +280,7 @@ header .logo:not(:active) {
   justify-content: flex-end;
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 83px;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -297,26 +290,40 @@ header .logo:not(:active) {
   margin: 0 82px 0 0;
   cursor: pointer;
 }
+.cta .cta-text h1 {
+  color: #fb7819;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15), 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
 .cta .cta-text h1:not(:active) {
   -webkit-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
   -moz-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
   -ms-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
 }
 .cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
   width: 170px;
   height: 32px;
-  margin-top: 10px;
+  background-color: white;
+  border: 1px double black;
+  box-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 0px 4px 20px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
   cursor: pointer;
+  margin-top: 10px;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background-color: black;
   color: white;
+}
+.cta .cta-text button:active {
+  background-color: #161616;
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
 }
 .cta .img {
   cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
 }
 .cta .img:not(:active) {
   -webkit-animation: summon 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
@@ -336,6 +343,28 @@ header .logo:not(:active) {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content button {
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  border: 1px double black;
+  box-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 0px 4px 20px rgba(0, 0, 0, 0.2);
+  font-size: 9px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+}
+.main-content .top-content button:hover {
+  background-color: black;
+  color: white;
+}
+.main-content .top-content button:active {
+  background-color: #161616;
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -343,6 +372,28 @@ header .logo:not(:active) {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content button {
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  border: 1px double black;
+  box-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 0px 4px 20px rgba(0, 0, 0, 0.2);
+  font-size: 9px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+}
+.main-content .bottom-content button:hover {
+  background-color: black;
+  color: white;
+}
+.main-content .bottom-content button:active {
+  background-color: #161616;
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
 }
 .main-content .bottom-content p {
   padding-right: 20px;
