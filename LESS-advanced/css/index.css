@@ -245,6 +245,12 @@ header .logo {
   background: #3e2723;
   color: white;
 }
+.cta .cta-image {
+  -webkit-transform: skew(-5deg, -5deg);
+  -moz-transform: skew(-5deg, -5deg);
+  -ms-transform: skew(-5deg, -5deg);
+  -o-transform: skew(-5deg, -5deg);
+}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
@@ -268,6 +274,9 @@ header .logo {
 }
 .main-content .bottom-content:p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content {
+  padding-right: 5px;
 }
 /* Contact Styles */
 .contact p {
