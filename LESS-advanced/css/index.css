@@ -199,6 +199,8 @@ header .logo {
   -moz-transform: skew(5deg, 7deg);
   -ms-transform: skew(5deg, 7deg);
   -o-transform: skew(5deg, 7deg);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 .cta .cta-text {
   font-size: 72px;

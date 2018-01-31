@@ -79,3 +79,8 @@
 	background-color: @color;
 	box-shadow: @x @y @blur @color - #333;
 }
+
+.change-img-opacity (@opacity, @amount) {
+	opacity: @opacity;
+	filter: alpha(opacity=@amount);
+}
