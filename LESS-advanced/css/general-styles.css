@@ -5,7 +5,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
-  background-color: grey;
+  background-color: #D7CCC8;
 }
 h1,
 h2,
@@ -15,6 +15,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #48322e;
 }
 .container {
   width: 880px;

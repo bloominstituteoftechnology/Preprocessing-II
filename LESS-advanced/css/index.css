@@ -133,7 +133,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
-  background-color: grey;
+  background-color: #D7CCC8;
 }
 h1,
 h2,
@@ -152,10 +152,6 @@ h5 {
 header {
   width: 100%;
   display: flex;
-  -webkit-transform: skew(-5deg, -3deg);
-  -moz-transform: skew(-5deg, -3deg);
-  -ms-transform: skew(-5deg, -3deg);
-  -o-transform: skew(-5deg, -3deg);
 }
 header nav ul {
   margin-top: 140px;
@@ -165,11 +161,11 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: #3e2723;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: #BF360C;
 }
 header .logo {
   align-self: flex-end;
@@ -252,17 +248,17 @@ header .logo {
 }
 @media (max-width: 1100px) {
   .main-content {
-    background: #F9FFDA;
+    background: #d3b8ae;
   }
 }
 @media (max-width: 768px) {
   .main-content {
-    background: #FFF3DA;
+    background: #8d6e63;
   }
 }
 @media (max-width: 400px) {
   .main-content {
-    background: #FFE0DA;
+    background: #BE9C91;
   }
 }
 /* Contact Styles */

@@ -1,9 +1,11 @@
 // Header Styles
+@tia-maria: #BF360C;
+@english-walnut: #3e2723;
 
 header {
     width: 100%;
     display: flex;
-    .skew(-5deg);
+    // .skew(5deg);
 
     nav {
         ul {
@@ -16,11 +18,11 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: #b0b0b0;
+                    color: @english-walnut;
 
                     &:hover {
                         text-decoration: underline;
-                        color: black;
+                        color: @tia-maria;
                     }
                 } // a
             } // li
@@ -32,4 +34,4 @@ header {
         margin: 28px 0 0 91px;
         .translate(-40px);
     }
-}// header
+} // header
