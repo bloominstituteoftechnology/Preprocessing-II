@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (min-width:1100px) {
+  html,
+  body {
+    background: #42f4eb;
+  }
+}
+@media (max-width:768px) {
+  html,
+  body {
+    background: #f44277;
+  }
+}
+@media (max-width:400px) {
+  html,
+  body {
+    background: #f48042;
+  }
+}
 h1,
 h2,
 h3,
@@ -188,9 +206,6 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
-  -webkit-opacity: 0.35;
-  -moz-opacity: 0.35;
-  opacity: 0.35;
   -webkit-transform: skew(15deg, 15deg);
   -moz-transform: skew(15deg, 15deg);
   -ms-transform: skew(15deg, 15deg);
@@ -213,6 +228,11 @@ header .logo {
   background: black;
   color: white;
 }
+.cta .top-img {
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
@@ -225,6 +245,41 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .top-content .text-content .first {
+  color: green;
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 3px solid green;
+}
+.main-content .top-content .text-content .first:hover {
+  background-color: white;
+}
+.main-content .top-content .text-content .second {
+  color: blue;
+  display: block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border: 3px solid gold;
+}
+.main-content .top-content .text-content .second:hover {
+  background-color: red;
+}
+.main-content .top-content .text-content:hover {
+  -webkit-animation: buttonani pulse 2s infinite;
+  -moz-animation: buttonani pulse 2s infinite;
+  -ms-animation: buttonani pulse 2s infinite;
+}
+@keyframes buttonani {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
 }
 .main-content .middle-img {
   display: block;

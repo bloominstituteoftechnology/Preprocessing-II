@@ -12,6 +12,28 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    .text-content {
+      
+        .first {
+        color: green;
+        #lambda-style > .button1;
+        }
+        .second {
+        color:blue;
+        #lambda-style > .button2;
+        }
+        &:hover {
+        .animation(buttonani, pulse, 2s, infinite);
+        }
+        @keyframes buttonani {
+        0% {
+         background-color: #001F3F;
+         }
+         100% {
+           background-color: #FF4136;
+         }
+        }
+    }
 }
 
 .main-content .middle-img {
