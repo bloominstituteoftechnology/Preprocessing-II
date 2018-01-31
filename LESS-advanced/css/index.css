@@ -186,10 +186,9 @@ header .logo {
   margin: 0 82px 0 0;
 }
 .cta .cta-text button {
-  width: 170px;
-  height: 32px;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
 }
 .cta .cta-text button:hover {
   background: linear-gradient(45deg, #078550, #2953A0);
@@ -221,6 +220,51 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.features {
+  color: white;
+  background-color: #333333;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+}
+.features:hover {
+  background: linear-gradient(45deg, #078550, #2953A0);
+}
+.about {
+  color: white;
+  background-color: #FFBC67;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+}
+.about:hover {
+  background: linear-gradient(45deg, #078550, #2953A0);
+}
+.services {
+  color: white;
+  background-color: #DA727E;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+}
+.services:hover {
+  background: linear-gradient(45deg, #078550, #2953A0);
+}
+.product {
+  color: white;
+  background-color: #AC6C82;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+}
+.product:hover {
+  background: linear-gradient(45deg, #078550, #2953A0);
+}
+.vision {
+  color: white;
+  background-color: #455C7B;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+}
+.vision:hover {
+  background: linear-gradient(45deg, #078550, #2953A0);
+}
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
@@ -229,6 +273,9 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+body {
+  background: #FFFFFF;
 }
 @media (max-width: 1100px) {
   .container {
@@ -245,9 +292,7 @@ footer {
     background: #1485CC;
   }
 }
-.container h1:hover {
-  color: #0000ff;
-}
+.container h1:hover,
 .container h4:hover {
-  color: #008ae0;
+  color: #0000ff;
 }
