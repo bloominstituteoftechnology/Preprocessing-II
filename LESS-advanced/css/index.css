@@ -1,3 +1,18 @@
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -147,6 +162,16 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 50%;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -168,6 +193,17 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+}
+.button {
+  -webkit-transform: skew(5deg, 10deg);
+  -moz-transform: skew(5deg, 10deg);
+  -ms-transform: skew(5deg, 10deg);
+  -o-transform: skew(5deg, 10deg);
+  background: #383838;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -175,7 +211,7 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
-.cta .cta-text {
+.cta-text {
   font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
@@ -185,7 +221,7 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
-.cta .cta-text button {
+.cta-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
@@ -193,8 +229,11 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-animation: slide-in 300ms 1ms ease;
+  -moz-animation: slide-in 300ms 1ms ease;
+  -ms-animation: slide-in 300ms 1ms ease;
 }
-.cta .cta-text button:hover {
+.cta-text button:hover {
   background: black;
   color: white;
 }
@@ -214,6 +253,11 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 60%;
+  }
 }
 .main-content .bottom-content {
   display: flex;
