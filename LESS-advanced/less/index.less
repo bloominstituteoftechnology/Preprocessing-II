@@ -5,16 +5,34 @@
 @import "main-content";
 @import "contact";
 @import "footer";
-@import "variables.less"
+@import "variables";
 
+@min400: ~"(min-width:400px)";
+.container{
+    @media @min400{
+        background-color: rgb(45, 160, 160);
+    }
+}
 
+@min768: ~"(min-width:768px)";
+.container{
+    @media @min768{
+        background-color: rgb(87, 13, 156);
+    }
+}
 
+@min1100: ~"(min-width:1100px)";
+.container{
+    @media @min1100{
+        background-color: rgb(230, 44, 44);
+    }
+}
 
+@color: rgb(7, 7, 122);
 
-
-
-
-
+h1,h2,h3,h4{
+    color:color(@color);
+}
 
 
 
