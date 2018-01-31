@@ -17,6 +17,9 @@
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    &:hover {     // & means this could also be .middle-img:hover
+			.opacity(0.8);
+	 }
 }
 
 .main-content .bottom-content {
@@ -26,4 +29,8 @@
 
 .main-content .bottom-content p {
     padding-right: 20px;
+}
+
+h4 {
+  color: darken(#b2fff2, 15%);
 }

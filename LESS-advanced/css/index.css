@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background: red;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background: purple;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background: green;
+  }
+}
 h1,
 h2,
 h3,
@@ -169,6 +187,12 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+header .logo:hover {
+  -webkit-transform: rotate(0.5turn);
+  -moz-transform: rotate(0.5turn);
+  -ms-transform: rotate(0.5turn);
+  -o-transform: rotate(0.5turn);
+}
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
@@ -188,15 +212,29 @@ header .logo {
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
   width: 170px;
   height: 32px;
+  background: white;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transform: skew(-20deg, 0);
+  -moz-transform: skew(-20deg, 0);
+  -ms-transform: skew(-20deg, 0);
+  -o-transform: skew(-20deg, 0);
+}
+.cta img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 /* Main Content Styles */
 .main-content {
@@ -215,12 +253,20 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+.main-content .middle-img:hover {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+h4 {
+  color: #65ffe5;
 }
 /* Contact Styles */
 .contact p {
