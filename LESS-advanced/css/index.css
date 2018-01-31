@@ -258,10 +258,9 @@ header .logo {
 }
 .main-content .top-content .Features__button {
   width: 50px;
-  height: 18px;
   margin: 10px 0 10px 0;
-  background: red;
-  color: white;
+  background: #ffff00;
+  color: black;
   outline: none;
 }
 .main-content .top-content .Features__button:hover {
@@ -271,8 +270,22 @@ header .logo {
   -o-transform: scale(4);
 }
 .main-content .top-content .Features__button:active {
-  color: black;
-  background: #00ffff;
+  color: white;
+  background: #0000ff;
+}
+.main-content .top-content .About__button {
+  width: 150px;
+  margin: 10px 0 10px 0;
+  outline: none;
+}
+.main-content .top-content .About__button:hover {
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -o-transform: scale(4);
+}
+.main-content .top-content .About__button:active {
+  display: none;
 }
 .main-content .middle-img {
   display: block;
@@ -291,8 +304,76 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .bottom-content .Services__button {
+  width: 75px;
+  margin: 10px 0 10px 0;
+}
+.main-content .bottom-content .Services__button:active {
+  -webkit-transform: translate(100px, 0px);
+  -moz-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  -o-transform: translate(100px, 0px);
+  outline: none;
+  background: none;
+}
+.main-content .bottom-content .Product__button {
+  width: 150px;
+  margin: 10px 0 10px 0;
+  background: #4f5b66;
+  color: #fac863;
+  outline: none;
+}
+.main-content .bottom-content .Product__button:hover {
+  -webkit-animation: button-fade infinite 1000ms alternate;
+  -moz-animation: button-fade infinite 1000ms alternate;
+  -ms-animation: button-fade infinite 1000ms alternate;
+}
+.main-content .bottom-content .Product__button:active {
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -o-transform: scale(4);
+  -webkit-animation: button-fade infinite 100ms alternate;
+  -moz-animation: button-fade infinite 100ms alternate;
+  -ms-animation: button-fade infinite 100ms alternate;
+}
+.main-content .bottom-content .Vision__button {
+  width: 75px;
+  margin: 10px 0 10px 0;
+}
+.main-content .bottom-content .Vision__button:hover {
+  -webkit-animation: button-spin infinite 1500ms linear;
+  -moz-animation: button-spin infinite 1500ms linear;
+  -ms-animation: button-spin infinite 1500ms linear;
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@keyframes button-fade {
+  from {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+  to {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+}
+@keyframes button-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 /* Contact Styles */
 .contact p {

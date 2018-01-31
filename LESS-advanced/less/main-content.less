@@ -1,14 +1,25 @@
 /* Main Content Styles */
 
 #button-creator() {
-  .button(@width: 25px, @height: 18px, @bkgdColor: white, @btnColor: black) {
+  .button(@width: 25px, @bkgdColor: white, @btnColor: black) {
     width: @width;
-    height: @height;
 
     margin: 10px 0 10px 0;
 
     background: @bkgdColor;
     color: @btnColor;
+  }
+
+  .button--med() {
+    width: 75px;
+
+    margin: 10px 0 10px 0;
+  }
+
+  .button--large() {
+    width: 150px;
+
+    margin: 10px 0 10px 0;
   }
 }
 
@@ -19,6 +30,22 @@
 
   .invert(@btnColor) {
     background: spin(@btnColor, 180);
+  }
+
+  .hideMe() {
+    display: none;
+  }
+
+  .moveMe(@xDirect: 100px, @yDirect: 0px) {
+    .translate(@xDirect,  @yDirect);
+  }
+
+  .fadeMe(@cycle: 400ms) {
+    .animation(button-fade, infinite, @cycle, alternate);
+  }
+
+  .spinMe(@cycle: 1s) {
+    .animation(button-spin, infinite, @cycle, linear);
   }
 }
 
@@ -36,17 +63,31 @@
   justify-content: space-around;
 
   .Features__button {
-    @backgroundColor: red;
+    @backgroundColor: #ffff00;
 
-    #button-creator > .button(50px, 18px, @backgroundColor, white);
+    #button-creator > .button(50px, @backgroundColor, black);
 
     &:hover {
       #anim-creator > .scaleUp;
     }
 
     &:active {
-      color: black;
+      color: white;
       #anim-creator > .invert(@backgroundColor);
+    }
+
+    outline: none;
+  }
+
+  .About__button {
+    #button-creator > .button--large;
+
+    &:hover {
+      #anim-creator > .scaleUp;
+    }
+
+    &:active {
+      #anim-creator > .hideMe;
     }
 
     outline: none;
@@ -67,8 +108,62 @@
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+
+  .Services__button {
+    #button-creator > .button--med;
+
+    &:active {
+      #anim-creator > .moveMe();
+      outline: none;
+      background: none;
+    }
+  }
+
+  .Product__button {
+    @backgroundColor: #4f5b66;
+    @fontColor: #fac863;
+    #button-creator
+      > .button(@width: 150px, @bkgdColor: @backgroundColor, @btnColor: @fontColor);
+
+    &:hover {
+      #anim-creator > .fadeMe(1000ms);
+    }
+
+    &:active {
+      #anim-creator > .scaleUp();
+      #anim-creator > .fadeMe(100ms);
+    }
+
+    outline: none;
+  }
+
+  .Vision__button {
+    #button-creator > .button--med;
+
+    &:hover {
+      #anim-creator > .spinMe(1500ms);
+    }
+  }
 }
 
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+
+@keyframes button-fade {
+  from {
+    .opacity(1);
+  }
+  to {
+    .opacity(0);
+  }
+}
+
+@keyframes button-spin {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
 }
