@@ -171,18 +171,12 @@ h5 {
 }
 header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 header nav ul {
-  margin-top: 140px;
+  margin-top: 40px;
   width: 610px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-between;
   display: flex;
 }
 header nav ul .li-one:hover {
@@ -270,8 +264,7 @@ header nav ul .li-six a {
   color: purple;
 }
 header .logo {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   margin: 28px 0 0 91px;
 }
 header .logo:hover {
@@ -286,31 +279,18 @@ header .logo:hover {
 }
 /* Call To Action (CTA) Styles */
 .cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 72px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
   margin: 0 82px 0 0;
 }
 .cta .cta-text h1:hover {
@@ -357,22 +337,16 @@ header .logo:hover {
   line-height: 18px;
 }
 .main-content .top-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
 .main-content .bottom-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
