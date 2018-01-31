@@ -146,54 +146,54 @@ body {
 }
 @keyframes jiggle {
   0% {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -webkit-transform: rotate(10);
-    -moz-transform: rotate(10);
-    -ms-transform: rotate(10);
-    -o-transform: rotate(10);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
   30% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
-    -webkit-transform: rotate(-10);
-    -moz-transform: rotate(-10);
-    -ms-transform: rotate(-10);
-    -o-transform: rotate(-10);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
   }
   60% {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
-    -webkit-transform: rotate(30);
-    -moz-transform: rotate(30);
-    -ms-transform: rotate(30);
-    -o-transform: rotate(30);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
   }
   75% {
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
-    -webkit-transform: rotate(-45);
-    -moz-transform: rotate(-45);
-    -ms-transform: rotate(-45);
-    -o-transform: rotate(-45);
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
   }
   100% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
-    -webkit-transform: rotate(15);
-    -moz-transform: rotate(15);
-    -ms-transform: rotate(15);
-    -o-transform: rotate(15);
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
   }
 }
 @keyframes summon {
@@ -304,9 +304,9 @@ header .logo:not(:active) {
   cursor: pointer;
 }
 .cta .cta-text h1:not(:active) {
-  -webkit-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
-  -moz-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
-  -ms-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -webkit-animation: jiggle 1100ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -moz-animation: jiggle 1100ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -ms-animation: jiggle 1100ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
 }
 .cta .cta-text button {
   border: 1px double black;
