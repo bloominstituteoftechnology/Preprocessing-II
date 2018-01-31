@@ -171,34 +171,107 @@ h5 {
 }
 header {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 header nav ul {
   margin-top: 140px;
   width: 610px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-header nav ul li:hover {
-  -webkit-transform: translate(10px, 0);
-  -moz-transform: translate(10px, 0);
-  -ms-transform: translate(10px, 0);
-  -o-transform: translate(10px, 0);
+header nav ul .li-one:hover {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-header nav ul li a {
+header nav ul .li-one a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: fuchsia;
 }
-header nav ul li a:hover {
-  text-decoration: underline;
+header nav ul .li-two:hover {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+header nav ul .li-two a {
+  text-decoration: none;
+  color: orange;
+}
+header nav ul .li-three:hover {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+header nav ul .li-three a {
+  text-decoration: none;
   color: black;
 }
+header nav ul .li-four:hover {
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+header nav ul .li-four a {
+  text-decoration: none;
+  color: red;
+}
+header nav ul .li-five:hover {
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+header nav ul .li-five a {
+  text-decoration: none;
+  color: green;
+}
+header nav ul .li-six:hover {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+header nav ul .li-six a {
+  text-decoration: none;
+  color: purple;
+}
 header .logo {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin: 28px 0 0 91px;
 }
 header .logo:hover {
@@ -213,18 +286,31 @@ header .logo:hover {
 }
 /* Call To Action (CTA) Styles */
 .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 82px 0 0;
 }
 .cta .cta-text h1:hover {
@@ -271,16 +357,22 @@ header .logo:hover {
   line-height: 18px;
 }
 .main-content .top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
 .main-content .bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
