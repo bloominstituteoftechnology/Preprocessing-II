@@ -6,6 +6,21 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: #3FE915;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #F70A0A;
+  }
+}
+@media only screen and (max-width: 479px) {
+  body {
+    background-color: #1539E9;
+  }
+}
 h1,
 h2,
 h3,
