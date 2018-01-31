@@ -1,5 +1,5 @@
 /* Call To Action (CTA) Styles */
-
+@import "variables.less";
 .cta {
     display: flex;
     margin-top: 72px;
@@ -14,20 +14,45 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .opacity();
+        .skew(30deg, 15deg);
+       
+
+
+
+    }
+
+    @keyframes example{
+        from{top:0px;}
+        to{top:500px;}
     }
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
+        background: blue;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-
+        .scale(1.2);
+        .rotate(3deg);
         &:hover {
-            background: black;
+            background: green;
             color: white;
+            .transition(2s);
         }
+        position:relative;
+        .animation(example);
     }
+    .cta-text button:hover{
+        width:300px;
+        height:60px;
+    }
+    .cta-text .start{
+        background: green;
+        width:100px;
+        height:300px;
+    }
+
 }// cta
