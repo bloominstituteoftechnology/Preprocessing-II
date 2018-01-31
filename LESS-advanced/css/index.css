@@ -225,14 +225,19 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  color: #ffffff;
+  width: 15;
+  height: 15;
+  background-color: slategray;
+  box-shadow: 10px 5px 5px #3d4d5d;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
-  -webkit-transform: translate(3px, 3px);
-  -moz-transform: translate(3px, 3px);
-  -ms-transform: translate(3px, 3px);
-  -o-transform: translate(3px, 3px);
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
 }
 /* Main Content Styles */
 .main-content {

@@ -72,4 +72,10 @@
 	perspective: 		@value;
 }
 
-
+.button-changer (@value: 10, @color, @x, @y, @blur) {
+	color: tint(@color, 200%);
+	width: @value;
+	height: @value;
+	background-color: @color;
+	box-shadow: @x @y @blur @color - #333;
+}
