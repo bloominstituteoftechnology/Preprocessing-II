@@ -10,11 +10,11 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: #c87b7b;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: #4d0000;
 }
 header .logo {
   align-self: flex-end;
