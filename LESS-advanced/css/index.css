@@ -142,10 +142,30 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  h1: rgba(0, 0, 0, 0.5);
+  h2: rgba(0, 0, 0, 0.5);
+  h3: rgba(0, 0, 0, 0.5);
+  h4: rgba(0, 0, 0, 0.5);
+  h5: rgba(0, 0, 0, 0.5);
 }
 .container {
   width: 880px;
   margin: auto;
+}
+@media (max-width: 1100px) {
+  .container {
+    background: blue;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    background: red;
+  }
 }
 header {
   width: 100%;
@@ -188,15 +208,19 @@ header .logo {
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: blueviolet;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: blueviolet;
   color: white;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 /* Main Content Styles */
 .main-content {
