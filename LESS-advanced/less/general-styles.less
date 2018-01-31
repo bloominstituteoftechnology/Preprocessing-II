@@ -1,3 +1,7 @@
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+
 // General Styles
 
 * {
@@ -7,6 +11,16 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+
+    @media @laptop {
+        background: rgb(156, 148, 148);
+    }
+    @media @tablet {
+        background: purple;
+    }
+    @media @phone {
+        background: red;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -20,15 +34,22 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
-// @min768: ~"(min-width: 768px)";
-// .element {
-//     @media @min768 {
-//         font-size: 1.2rem;
-//     }
+// @phone: ~"(max-width: 400px)";
+// @tablet: ~"(max-width: 768px)";
+// @laptop: ~"(max-width: 1100px)";
+
+// button {
+//   color: white;
+//   @media @laptop {
+//     font-size: 1.2rem;
+//     background: black;
+//   }
+//   @media @tablet {
+//     font-size: 1.2rem;
+//     background: purple;
+//   }
+//   @media @phone {
+//     font-size: 1.2rem;
+//     background: red;
+//   }
 // }
-@max400: ~"(max-width: 400px)";
-body {
-    @media @max400 {
-        background-color: gray;
-    }
-}
