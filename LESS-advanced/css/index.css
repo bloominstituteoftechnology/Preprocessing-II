@@ -135,6 +135,24 @@ body {
   font-family: 'Titillium Web', sans-serif;
   background-color: #D7CCC8;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background: #d3b8ae;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background: #8d6e63;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background: #BE9C91;
+  }
+}
 h1,
 h2,
 h3,
@@ -250,21 +268,6 @@ header .logo {
 }
 .main-content .bottom-content:p {
   padding-right: 20px;
-}
-@media (max-width: 1100px) {
-  .main-content {
-    background: #d3b8ae;
-  }
-}
-@media (max-width: 768px) {
-  .main-content {
-    background: #8d6e63;
-  }
-}
-@media (max-width: 400px) {
-  .main-content {
-    background: #BE9C91;
-  }
 }
 /* Contact Styles */
 .contact p {
