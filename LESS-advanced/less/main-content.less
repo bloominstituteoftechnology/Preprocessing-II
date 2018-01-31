@@ -9,10 +9,8 @@
    line-height: 18px;
 }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-    .features {
+#button-style() {
+    .features-btn {
         border: 1px double black;
         font-size: 16px;
         background: white;
@@ -20,7 +18,6 @@
         height: 32px;
         margin: 10px 0;
         cursor: pointer;
-        .button-changer(100px, @features-btn-color, 10px, 5px, 5px);
 
         &:hover {
             background: black;
@@ -28,7 +25,7 @@
             .translate(5px, 3px);
         } // &:hover
     } // .features
-    .about {
+    .about-btn {
         border: 1px double black;
         font-size: 16px;
         background: white;
@@ -36,14 +33,70 @@
         height: 32px;
         margin: 10px 0;
         cursor: pointer;
-        .button-changer(100px, @about-btn-color, 10px, 5px, 5px);
-
         &:hover {
             background: black;
             color: white;
             .translate(5px, 3px);
         } // &:hover
     } // .about
+    .services-btn {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin: 10px 0;
+        cursor: pointer;
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(5px, 3px);
+        } // &:hover
+    } // .services
+    .product-btn {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin: 10px 0;
+        cursor: pointer;
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(5px, 3px);
+        } // &:hover
+    } // .product
+    .vision-btn {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin: 10px 0;
+        cursor: pointer;
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(5px, 3px);
+        } // &:hover
+    } // .vision
+}
+
+.main-content .top-content {
+    display: flex;
+    justify-content: space-around;
+    #features {
+        #button-style.features-btn;
+        .button-changer(100px, @features-btn-color, 10px, 5px, 5px);
+    } // #features
+    #about {
+        #button-style.about-btn;
+        .button-changer(100px, @about-btn-color, 10px, 5px, 5px);
+    } // #about
 } // .main-content .top-content
 
 .main-content .middle-img {
@@ -54,55 +107,19 @@
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
-    .services {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin: 10px 0;
-        cursor: pointer;
+    #services {
+        #button-style.services-btn;
         .button-changer(100px, @services-btn-color, 10px, 5px, 5px);
-
-        &:hover {
-            background: black;
-            color: white;
-            .translate(5px, 3px);
-        } // &:hover
-    } // .services
-    .product {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin: 10px 0;
-        cursor: pointer;
+    } // #services
+    #product {
+        #button-style.product-btn;
         .button-changer(100px, @product-btn-color, 10px, 5px, 5px);
-
-        &:hover {
-            background: black;
-            color: white;
-            .translate(5px, 3px);
-        } // &:hover
-    } // .product
-    .vision {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin: 10px 0;
-        cursor: pointer;
+    } // #product
+    #vision {
+        #button-style.vision-btn;
         .button-changer(100px, @vision-btn-color, 10px, 5px, 5px);
-
-        &:hover {
-            background: black;
-            color: white;
-            .translate(5px, 3px);
-        } // &:hover
-    } // .vision
-}
+    } // #vision
+} // .main-content .bottom-content
 
 .main-content .bottom-content p {
     padding-right: 20px;
