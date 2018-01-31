@@ -1,9 +1,43 @@
 /* Call To Action (CTA) Styles */
+@import "variables";
 
+@mobile: ~"(min-width: 400px)";
+@tablet: ~"(min-width: 768px)";
+@dsktop: ~"(min-width: 1100px)";
+
+body {
+    @media @mobile {
+        background-color:blue;
+    }
+    @media @tablet {
+        background-color:red;
+    }
+    @media @dsktop {
+        background-color:brown;
+    }
+}
+  
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    
+    .button (@width, @height, @bgColor) {
+        width:@width;
+        height:@height;
+        background-color:@bgColor;
+    }
+    
+    .border (@npx, @color) {
+        border:@npx solid @color;
+    }
+    
+    img {
+        width: 1000px;
+        .skew (1deg, 6deg);
+         opacity: 0.2;
+        .border(5px, black);
+    }
 
     .cta-text {
         font-size: 72px;
@@ -15,16 +49,31 @@
         align-items: center;
         margin: 0 82px 0 0;
     }
+    
+    .txt-blck {
+        color: black;
+    }
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
         margin-top: 10px;
         cursor: pointer;
-
+        color:black;
+        
+        @media @mobile {
+            .button(172px, 32px, black);
+            color:white;
+        }
+        @media @tablet {
+            .button(172px, 32px, yellow);
+            .txt-blck;
+        }
+        @media @dsktop {
+            .button(172px, 32px, orange);
+            .txt-blck; 
+        }
+        
         &:hover {
             background: black;
             color: white;

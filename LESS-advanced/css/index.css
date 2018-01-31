@@ -170,10 +170,34 @@ header .logo {
   margin: 28px 0 0 91px;
 }
 /* Call To Action (CTA) Styles */
+@media (min-width: 400px) {
+  body {
+    background-color: blue;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+@media (min-width: 1100px) {
+  body {
+    background-color: brown;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+.cta img {
+  width: 1000px;
+  -webkit-transform: skew(1deg, 6deg);
+  -moz-transform: skew(1deg, 6deg);
+  -ms-transform: skew(1deg, 6deg);
+  -o-transform: skew(1deg, 6deg);
+  opacity: 0.2;
+  border: 5px solid black;
 }
 .cta .cta-text {
   font-size: 72px;
@@ -185,14 +209,39 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+.cta .txt-blck {
+  color: black;
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  color: black;
+}
+@media (min-width: 400px) {
+  .cta .cta-text button {
+    width: 172px;
+    height: 32px;
+    background-color: black;
+    color: white;
+  }
+}
+@media (min-width: 768px) {
+  .cta .cta-text button {
+    width: 172px;
+    height: 32px;
+    background-color: yellow;
+    color: black;
+  }
+}
+@media (min-width: 1100px) {
+  .cta .cta-text button {
+    width: 172px;
+    height: 32px;
+    background-color: orange;
+    color: black;
+  }
 }
 .cta .cta-text button:hover {
   background: black;
