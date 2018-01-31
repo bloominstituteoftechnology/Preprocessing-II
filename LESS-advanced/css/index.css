@@ -209,21 +209,22 @@ header .logo {
 .cta .cta-text button {
   height: 32px;
   width: 170px;
-  background: white;
+  background: #D7CCC8;
   font-size: 16px;
   cursor: pointer;
-  border: 1px double black;
+  border: 1px double #3e2723;
+  color: black;
   margin-top: 10px;
-  -webkit-opacity: 0.25;
-  -moz-opacity: 0.25;
-  opacity: 0.25;
+  -webkit-opacity: 0.45;
+  -moz-opacity: 0.45;
+  opacity: 0.45;
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   -o-transform: rotate(5deg);
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: #3e2723;
   color: white;
 }
 /* Main Content Styles */

@@ -1,4 +1,7 @@
 /* Call To Action (CTA) Styles */
+@english-walnut: #3e2723;
+@cement: #8d6e63;
+@swirl: #D7CCC8;
 
 .cta {
     display: flex;
@@ -20,14 +23,15 @@
     }
 
     .cta-text button {
-        .button-creator(32px, 170px, white, 16px);
-        border: 1px double black;
+        .button-creator(32px, 170px, @swirl, 16px);
+        border: 1px double @english-walnut;
+        color: black;
         margin-top: 10px;
-        .opacity(0.25);
+        .opacity(0.45);
         .rotate(5deg);
 
         &:hover {
-            background: black;
+            background: @english-walnut;
             color: white;
         }
     } // .cta-text
