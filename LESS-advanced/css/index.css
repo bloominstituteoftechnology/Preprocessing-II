@@ -170,6 +170,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: translate(-40px, 0);
+  -moz-transform: translate(-40px, 0);
+  -ms-transform: translate(-40px, 0);
+  -o-transform: translate(-40px, 0);
 }
 /* Call To Action (CTA) Styles */
 .cta {
