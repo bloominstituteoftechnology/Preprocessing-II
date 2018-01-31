@@ -211,13 +211,13 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  width: 200px;
+  height: 42px;
+  background-color: #7e9bc7;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
 }
 /* Main Content Styles */
 .main-content {

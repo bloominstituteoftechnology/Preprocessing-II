@@ -1,3 +1,9 @@
+.mixin-cta-button (@width; @height; @background) {
+    width: @width;
+    height: @height;
+    background-color: @background;
+}
+
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -24,11 +30,12 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        
+        .mixin-cta-button(200px; 42px; rgb(126, 155, 199));
 
         &:hover {
             background: black;
             color: white;
-            .opacity();
         }
     }
 }// cta
