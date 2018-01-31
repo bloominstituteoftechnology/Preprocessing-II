@@ -1,12 +1,15 @@
 // Variables on top
 
+@cta-blue: rgba(0,65,128, 0.75);
+
 // Mixins below variables
 
 // .button-creator(200px, 200px);
-.button-creator(@width, @height, @background) {
+.button-creator(@width, @height, @background, @shadow) {
 	width: @width;
 	height: @height;
 	background: @background;
+	box-shadow: @shadow;
 }
 
 .opacity (@opacity: 0.5) {
