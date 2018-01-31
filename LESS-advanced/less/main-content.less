@@ -1,7 +1,8 @@
 /* Main Content Styles */
+@base: #f04615;
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -12,6 +13,7 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    .scale(0.7);
 }
 
 .main-content .middle-img {
@@ -22,6 +24,7 @@
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    color: saturate(@base, 70%);
 }
 
 .main-content .bottom-content p {
