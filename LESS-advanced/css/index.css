@@ -152,6 +152,10 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  -webkit-transform: skew(-5deg, -3deg);
+  -moz-transform: skew(-5deg, -3deg);
+  -ms-transform: skew(-5deg, -3deg);
+  -o-transform: skew(-5deg, -3deg);
 }
 header nav ul {
   margin-top: 140px;
