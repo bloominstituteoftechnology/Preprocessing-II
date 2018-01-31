@@ -12,7 +12,39 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
-}
+    .features {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin: 10px 0;
+        cursor: pointer;
+        .button-changer(100px, @features-btn-color, 10px, 5px, 5px);
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(5px, 3px);
+        } // &:hover
+    } // .features
+    .about {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin: 10px 0;
+        cursor: pointer;
+        .button-changer(100px, @about-btn-color, 10px, 5px, 5px);
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(5px, 3px);
+        } // &:hover
+    } // .about
+} // .main-content .top-content
 
 .main-content .middle-img {
     display: block;
@@ -22,8 +54,57 @@
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    .services {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin: 10px 0;
+        cursor: pointer;
+        .button-changer(100px, @services-btn-color, 10px, 5px, 5px);
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(5px, 3px);
+        } // &:hover
+    } // .services
+    .product {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin: 10px 0;
+        cursor: pointer;
+        .button-changer(100px, @product-btn-color, 10px, 5px, 5px);
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(5px, 3px);
+        } // &:hover
+    } // .product
+    .vision {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin: 10px 0;
+        cursor: pointer;
+        .button-changer(100px, @vision-btn-color, 10px, 5px, 5px);
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(5px, 3px);
+        } // &:hover
+    } // .vision
 }
 
 .main-content .bottom-content p {
     padding-right: 20px;
 }
+
