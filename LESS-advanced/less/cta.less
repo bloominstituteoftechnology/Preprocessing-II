@@ -14,6 +14,7 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .transform(@string: skewY(355deg));
     }
 
     .cta-text button {
@@ -24,10 +25,12 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .scale(@factor: 1.25);
 
         &:hover {
             background: black;
             color: white;
+            .transition(@transition: 1s);
         }
     }
 }// cta
