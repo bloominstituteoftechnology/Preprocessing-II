@@ -267,6 +267,79 @@ header .logo:hover {
 }
 h4 {
   color: #65ffe5;
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+}
+#main .button {
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+}
+#features {
+  color: #4ef84e;
+}
+#features:hover {
+  border-radius: 50%;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+#about {
+  color: #65ffe5;
+}
+#about:hover {
+  -webkit-transform: skew(-20deg, 0);
+  -moz-transform: skew(-20deg, 0);
+  -ms-transform: skew(-20deg, 0);
+  -o-transform: skew(-20deg, 0);
+}
+#services {
+  color: #bb8fbb;
+}
+#services:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+#product {
+  color: #ffd0d7;
+}
+#product:hover {
+  -webkit-transform: rotate(0.5turn);
+  -moz-transform: rotate(0.5turn);
+  -ms-transform: rotate(0.5turn);
+  -o-transform: rotate(0.5turn);
+}
+#vision {
+  color: #ce944b;
+  background: yellow;
+}
+#vision:hover {
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+#contact {
+  color: #ff5147;
+  background: navy;
+}
+#contact:hover {
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  background: #8080ff;
 }
 /* Contact Styles */
 .contact p {
