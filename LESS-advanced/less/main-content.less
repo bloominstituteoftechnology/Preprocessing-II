@@ -9,21 +9,53 @@
    line-height: 18px;
 }
 
-.main-content .top-content {
+.main-content {
+    flex-basis: 10%;
+    .top-content {
     display: flex;
     justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
+        .first-button {
+            #header-buttons > .button1;
+        }
+        .second-button {
+            #header-buttons > .button2;
+        }
+    }
+    .middle-img {
+        display: block;
+        margin: 30px auto;
+        padding:20px;
+        &:hover {
+        .animation(disappear); 
+        animation-iteration-count: infinite;
+        }
+    }
+    @keyframes disappear{
+        0%{opacity:1;background-color: black;}
+        10%{opacity:.8;background-color: blue;}
+        20%{opacity:.6;background-color: pink;}
+        30%{opacity:.4;background-color: yellow;}
+        40%{opacity:.2;background-color: purple;}
+        50%{opacity:0;background-color: red;}
+        60%{opacity:.3;background-color: orange;}
+        70%{opacity:.5;background-color: brown;}
+        80%{opacity:.7;background-color: gray;}
+        90%{opacity:.9;background-color: green;}
+    }
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+        .third-button {
+            #header-buttons > .button3;
+        }
+        .fourth-button {
+            #header-buttons > .button4;
+        }
+        .fifth-button {
+            #header-buttons > .button5;
+        }
+        p {
+            padding-right: 20px;
+        }
+    }   
 }

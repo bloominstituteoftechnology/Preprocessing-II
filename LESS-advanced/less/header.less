@@ -3,6 +3,7 @@
 header {
     width: 100%;
     display: flex;
+    
 
     nav {
         ul {
@@ -10,12 +11,14 @@ header {
             width: 610px;
             justify-content: space-between;
             display: flex;
+            .skew(25deg,-10deg);
 
             li {
 
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    
 
                     &:hover {
                         text-decoration: underline;
@@ -26,8 +29,15 @@ header {
         }
     }
 
+
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .transition(1.5s ease .2s);
+
+        &:hover {
+            .rotate(720deg);
+            .opacity(0);
+        }
     }
 }// header

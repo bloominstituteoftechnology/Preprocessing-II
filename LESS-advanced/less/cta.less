@@ -8,26 +8,30 @@
     .cta-text {
         font-size: 72px;
         text-align: center;
-        letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .transition(font-size 0.5s .2s);
+        
+        &:hover {
+            font-size: 100px;
+        }
+
+        button {
+            .custom-button(400px,50px, yellow);
+            color: average(green, purple);
+            border: 1px double black;
+            font-size: 30px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
     }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
+    .image {
         &:hover {
-            background: black;
-            color: white;
+            .scale(.5);
         }
     }
 }// cta
