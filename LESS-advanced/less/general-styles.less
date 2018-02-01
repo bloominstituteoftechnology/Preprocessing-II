@@ -7,12 +7,30 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    @media @laptop {
+        background-color: lightblue;
+    }
+    @media @tablet {
+        background-color: palegoldenrod;
+    }
+    @media @phone {
+        background-color: palegreen;
+    }
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    @media @laptop {
+        color: mix(black, lightblue);
+    }
+    @media @tablet {
+        color: mix(black, palegoldenrod);
+    }
+    @media @phone {
+        color: mix(black, palegreen);
+    }
 }
 
 .container {

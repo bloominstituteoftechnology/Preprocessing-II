@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background-color: lightblue;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background-color: palegoldenrod;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background-color: palegreen;
+  }
+}
 h1,
 h2,
 h3,
@@ -142,6 +160,33 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+}
+@media (max-width: 1100px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #576c73;
+  }
+}
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #777455;
+  }
+}
+@media (max-width: 400px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #4c7e4c;
+  }
 }
 .container {
   width: 880px;
@@ -188,15 +233,20 @@ header .logo {
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  height: 32px;
+  width: 170px;
+  background-color: white;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta img:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 /* Main Content Styles */
 .main-content {
@@ -211,13 +261,31 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content:hover {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+.main-content .middle-img:hover {
+  -webkit-transform: skew(0deg, 2deg);
+  -moz-transform: skew(0deg, 2deg);
+  -ms-transform: skew(0deg, 2deg);
+  -o-transform: skew(0deg, 2deg);
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .text-content:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .main-content .bottom-content p {
   padding-right: 20px;
