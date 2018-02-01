@@ -1,3 +1,4 @@
+@import "variables";
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -14,6 +15,7 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        text-shadow: 4px 4px 3px grey;
     }
 
     .cta-text button {
@@ -24,10 +26,24 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        box-shadow: 2px 3px 4px 2px black;
 
         &:hover {
             background: black;
             color: white;
+            box-shadow: 2px 3px 4px 2px grey;
         }
     }
+    img {
+        border: 1px solid white;
+        border-radius: 190px;
+        box-shadow: 2px 3px 4px 2px black;
+        .keyframes(fade-in;{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+		});
+
+	.animation(fade-in 4s linear infinite alternate)
+    }
+    
 }// cta

@@ -134,6 +134,21 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: #3FE915;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #F70A0A;
+  }
+}
+@media only screen and (max-width: 479px) {
+  body {
+    background-color: #1539E9;
+  }
+}
 h1,
 h2,
 h3,
@@ -157,6 +172,12 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+header nav ul li {
+  -webkit-transform: rotate(-0.05turn);
+  -moz-transform: rotate(-0.05turn);
+  -ms-transform: rotate(-0.05turn);
+  -o-transform: rotate(-0.05turn);
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
@@ -168,6 +189,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(-0.05turn);
+  -moz-transform: rotate(-0.05turn);
+  -ms-transform: rotate(-0.05turn);
+  -o-transform: rotate(-0.05turn);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -184,6 +209,7 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  text-shadow: 4px 4px 3px grey;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -193,10 +219,44 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  box-shadow: 2px 3px 4px 2px black;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  box-shadow: 2px 3px 4px 2px grey;
+}
+.cta img {
+  border: 1px solid white;
+  border-radius: 190px;
+  box-shadow: 2px 3px 4px 2px black;
+  -webkit-animation: fade-in 4s linear infinite alternate;
+  -moz-animation: fade-in 4s linear infinite alternate;
+  animation: fade-in 4s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* Main Content Styles */
 .main-content {
@@ -214,6 +274,33 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-animation: fade-in 8s linear infinite alternate;
+  -moz-animation: fade-in 8s linear infinite alternate;
+  animation: fade-in 8s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .main-content .bottom-content {
   display: flex;

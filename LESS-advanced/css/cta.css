@@ -13,6 +13,7 @@
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  text-shadow: 4px 4px 3px grey;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -22,8 +23,42 @@
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  box-shadow: 2px 3px 4px 2px black;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  box-shadow: 2px 3px 4px 2px grey;
+}
+.cta img {
+  border: 1px solid white;
+  border-radius: 190px;
+  box-shadow: 2px 3px 4px 2px black;
+  -webkit-animation: fade-in 4s linear infinite alternate;
+  -moz-animation: fade-in 4s linear infinite alternate;
+  animation: fade-in 4s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
