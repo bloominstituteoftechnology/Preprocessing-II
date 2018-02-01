@@ -34,16 +34,16 @@
 	opacity: 		@opacity;
 }
 
-// .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
-// 	-webkit-animation: @name @duration @delay @ease;
-// 	-moz-animation:    @name @duration @delay @ease;
-// 	-ms-animation:     @name @duration @delay @ease;
-// }
-
-.animation (@name, @duration: 1.1s) {
+.custom-animation (@name, @duration: 1.1s) {
 	-webkit-animation: @name @duration;
 	-moz-animation: @name @duration;
 	-ms-animation: @name @duration;
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
 }
 
 .transition (@transition) {
@@ -98,4 +98,8 @@
 	-moz-perspective: 	@value;
 	-ms-perspective: 	@value;
 	perspective: 		@value;
+}
+
+.border(@default-color: red, @default-px: 1px){
+	border: @default-px solid @default-color; 
 }

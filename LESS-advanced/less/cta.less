@@ -1,5 +1,3 @@
-@import "variables";
-
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -9,7 +7,7 @@
     height: 380px;
     position: relative;
     .cta-text {
-        font-size: 72px;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -20,12 +18,12 @@
         position: absolute;
         left: 60px;
         top: 55px;
-        .animation(appear_left);
+        .custom-animation(appear_left);
     }
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.6rem;
         background: white;
         width: 170px;
         height: 32px;
@@ -45,6 +43,6 @@
     img {
         position: absolute;
         right: 60px;
-        .animation(appear_right);
+        .custom-animation(appear_right);
     }
 }// cta
