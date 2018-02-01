@@ -1,0 +1,24 @@
+// #3 Use escaping to create 3 unique media queries using (max-width) with values of 400px, 768px, and 1100px.  
+    // Use those media queries to change the background color of the web page at those pixel widths.
+
+body {
+
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+@bigger-than-laptop: ~"(min-width: 1100px)";
+
+
+@media @bigger-than-laptop {
+    background: royalblue;
+}
+@media @laptop {
+    background: rgba(0, 129, 250, 0.836);
+}
+@media @tablet {
+    background: turquoise;
+}
+@media @phone {
+    background: rgb(241, 124, 222);
+}
+}

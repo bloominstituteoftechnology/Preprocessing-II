@@ -1,5 +1,29 @@
 /* Main Content Styles */
 
+// button-creator MIXIN
+
+@white: white;
+.dimensions(@width, @height) { // from .button-creator() mixin
+  width: @width;
+  height: @height;
+  
+}
+.basics(@radius) { // from .border-radius() mixin
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+            }  
+
+// tint MIXIN used on button 2b
+
+@tinted-color: tint(black, 50%);
+
+
+
+
+// LESS PROPERTIES
+
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -12,7 +36,46 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+
 }
+
+.main-content {
+    .top-buttons {
+        text-align: center;
+        letter-spacing: 2px;
+        display: flex;
+        flex-flow: column;
+        align-items: right;
+        margin: 0 82px 0 0;
+        padding: 5px 0px 0px 0px;
+        
+
+        .main__button1a {
+            font-size: 12pt;
+            background: @white;
+            border: 3px solid gray;
+            padding: 5px;
+            .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
+            // .basics(50%); // circle option -- can also use percent
+            &:hover {
+                background: rgb(78, 1, 68);
+                color: white;
+        }
+    }
+        .main__button1b {
+            font-size: 12pt;
+            background: @white;
+            border: 3px solid gray;
+            padding: 5px;
+            .dimensions(120px,35px); // LESS recog the () here and knows THIS IS A MIXIN
+            // .basics(50%); // circle -- can also use percent
+            &:hover {
+                background: rgb(0, 88, 88);
+                color: white;
+            }
+        }
+    }
+} 
 
 .main-content .middle-img {
     display: block;
@@ -27,3 +90,55 @@
 .main-content .bottom-content p {
     padding-right: 20px;
 }
+
+.main-content {
+    .bottom-buttons {
+        text-align: center;
+        letter-spacing: 2px;
+        display: flex;
+        flex-flow: column;
+        align-items: right;
+        margin: 0 82px 0 0;
+        padding: 5px 0px 0px 0px;
+        .main__button2a {
+            font-size: 12pt;
+            background: @white;
+            border: 3px solid gray;
+            padding: 5px;
+            justify-content: right;
+            .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
+            // .basics(50%); // can also use percent
+            &:hover {
+                background: rgb(75, 75, 0);
+                color: white;
+            }
+        }
+        .main__button2b {
+            font-size: 12pt;
+            background: @white;
+            border: 3px solid gray;
+            padding: 5px;
+            .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
+            // .basics(50%); // can also use percent
+            color: @tint-color;
+            &:hover {
+                background: rgb(0, 51, 0);
+                color: white;
+            }
+        }
+        .main__button2c {
+            font-size: 12pt;
+            background: @white;
+            border: 3px solid gray;
+            padding: 5px;
+            .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
+            // .basics(50%); // can also use percent
+            box-shadow: 10px 5px 5px beige;
+            &:hover {
+                background: rgb(78, 1, 1);
+                color: white;
+            }
+        }
+    }
+} 
+

@@ -147,6 +147,26 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (min-width: 1100px) {
+  body {
+    background: royalblue;
+  }
+}
+@media (max-width: 1100px) {
+  body {
+    background: rgba(0, 129, 250, 0.836);
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background: turquoise;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background: #f17cde;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -159,7 +179,7 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: black;
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -168,8 +188,62 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-animation: fade-in 4s linear infinite alternate;
+  -moz-animation: fade-in 4s linear infinite alternate;
+  animation: fade-in 4s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* Call To Action (CTA) Styles */
+@-moz-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
@@ -183,16 +257,36 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 120px 0 0;
+}
+.cta .cta-text h1 {
+  font-size: 40px;
+  color: #595959;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  -webkit-transform: skew(0deg, -5deg);
+  -moz-transform: skew(0deg, -5deg);
+  -ms-transform: skew(0deg, -5deg);
+  -o-transform: skew(0deg, -5deg);
+}
+.cta .top-img {
+  -webkit-animation: rotation 8s infinite linear;
+  -moz-animation: rotation 8s infinite linear;
+  animation: rotation 8s infinite linear;
 }
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
+  margin-top: 10px;
+  box-shadow: 10x 5x 5x red;
+  cursor: pointer;
   width: 170px;
   height: 32px;
-  margin-top: 10px;
-  cursor: pointer;
+  background-color: white;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 .cta .cta-text button:hover {
   background: black;
@@ -211,6 +305,39 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-buttons {
+  text-align: center;
+  letter-spacing: 2px;
+  display: flex;
+  flex-flow: column;
+  align-items: right;
+  margin: 0 82px 0 0;
+  padding: 5px 0px 0px 0px;
+}
+.main-content .top-buttons .main__button1a {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  width: 125px;
+  height: 35px;
+}
+.main-content .top-buttons .main__button1a:hover {
+  background: #4e0144;
+  color: white;
+}
+.main-content .top-buttons .main__button1b {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  width: 120px;
+  height: 35px;
+}
+.main-content .top-buttons .main__button1b:hover {
+  background: #005858;
+  color: white;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -221,6 +348,54 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-buttons {
+  text-align: center;
+  letter-spacing: 2px;
+  display: flex;
+  flex-flow: column;
+  align-items: right;
+  margin: 0 82px 0 0;
+  padding: 5px 0px 0px 0px;
+}
+.main-content .bottom-buttons .main__button2a {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  justify-content: right;
+  width: 125px;
+  height: 35px;
+}
+.main-content .bottom-buttons .main__button2a:hover {
+  background: #4b4b00;
+  color: white;
+}
+.main-content .bottom-buttons .main__button2b {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  width: 125px;
+  height: 35px;
+  color: #595959;
+}
+.main-content .bottom-buttons .main__button2b:hover {
+  background: #003300;
+  color: white;
+}
+.main-content .bottom-buttons .main__button2c {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  width: 125px;
+  height: 35px;
+  box-shadow: 10px 5px 5px beige;
+}
+.main-content .bottom-buttons .main__button2c:hover {
+  background: #4e0101;
+  color: white;
 }
 /* Contact Styles */
 .contact p {
