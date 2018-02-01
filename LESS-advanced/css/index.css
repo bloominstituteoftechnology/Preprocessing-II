@@ -134,6 +134,21 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: #009688;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #2196F3;
+  }
+}
+@media only screen and (max-width: 479px) {
+  body {
+    background-color: #F44336;
+  }
+}
 h1,
 h2,
 h3,
@@ -142,6 +157,18 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover {
+  opacity: 0;
 }
 .container {
   width: 880px;
@@ -159,15 +186,47 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: #000000;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 header nav ul li a:hover {
-  text-decoration: underline;
-  color: black;
+  -webkit-animation: fade-in 0.4s linear infinite alternate;
+  -moz-animation: fade-in 0.4s linear infinite alternate;
+  animation: fade-in 0.4s linear infinite alternate;
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+header .logo:hover {
+  -webkit-transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
+  -moz-transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
+  -ms-transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
+  -o-transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
+  transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -197,6 +256,9 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
 }
 /* Main Content Styles */
 .main-content {

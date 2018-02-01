@@ -1,5 +1,12 @@
 // General Styles
 
+@laptop: ~"only screen and (max-width: 1100px)";
+@tablet: ~"only screen and (max-width: 768px)";
+@smartphone: ~"only screen and (max-width: 479px)";
+@background-color--red: #F44336;
+@background-color--blue: #2196F3;
+@background-color--green: #009688;
+
 * {
     box-sizing: border-box;
 }
@@ -9,10 +16,27 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+body {
+    @media @laptop {
+        background-color: @background-color--green;
+    }
+    @media @tablet {
+        background-color: @background-color--blue;
+    } 
+    @media @smartphone {
+        background-color: @background-color--red;
+    }
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    .transition(all, 0.5s, ease-in); 
+
+    &:hover {
+        opacity: 0;
+    }
 }
 
 .container {

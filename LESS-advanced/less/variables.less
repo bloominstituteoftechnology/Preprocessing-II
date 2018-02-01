@@ -2,16 +2,35 @@
 
 // Mixins below variables
 
+
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
 }
 
-.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
-	-webkit-animation: @name @duration @delay @ease;
-	-moz-animation:    @name @duration @delay @ease;
-	-ms-animation:     @name @duration @delay @ease;
+// .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+// 	-webkit-animation: @name @duration @delay @ease;
+// 	-moz-animation:    @name @duration @delay @ease;
+// 	-ms-animation:     @name @duration @delay @ease;
+// }
+
+.animation (@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    animation: @arguments;
+}
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
 }
 
 .transition (@transition) {
@@ -20,11 +39,19 @@
 	-ms-transition:     @transition; 
 	-o-transition:      @transition;  
 }
-.transform(@string){
-	-webkit-transform: @string;
-	-moz-transform: 	 @string;
-	-ms-transform: 		 @string;
-	-o-transform: 		 @string;
+// .transform(@string){
+// 	-webkit-transform: @string;
+// 	-moz-transform: 	 @string;
+// 	-ms-transform: 		 @string;
+// 	-o-transform: 		 @string;
+// }
+
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+	-webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 }
 
 .scale (@factor) {
@@ -41,12 +68,22 @@
 	-o-transform: 		 rotate(@deg);
 }
 
+
 .skew (@deg, @deg2) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.transition (@prop: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+	}
+
 
 .translate (@x, @y:0) {
 	-webkit-transform:       translate(@x, @y);

@@ -1,5 +1,6 @@
 // Header Styles
 
+
 header {
     width: 100%;
     display: flex;
@@ -15,11 +16,16 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: #b0b0b0;
+                    color: #000000;
+                    .keyframes(fade-in; {
+                        0% { opacity: 0; }
+                        100% { opacity: 1; }
+                    });
 
                     &:hover {
-                        text-decoration: underline;
-                        color: black;
+                        //text-decoration: underline;
+                        //color: black;
+                        .animation(fade-in 0.4s linear infinite alternate);
                     }
                 }
             }
@@ -29,5 +35,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+       
+     &:hover {
+        .transform(5deg, 2.0, 1deg, 0px);
+        }
     }
+
 }// header
