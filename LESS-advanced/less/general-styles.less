@@ -13,9 +13,19 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    color: fade(rgb(32, 0, 22), 80%);
 }
 
 .container {
+    @media @max1100 {
+        background: blue;
+    }
+    @media @max768 {
+        background: rgb(236, 0, 0);
+    }
+    @media @max400 {
+        background: rgb(43, 209, 57);
+    }
     width: 880px;
     margin: auto;
 }
