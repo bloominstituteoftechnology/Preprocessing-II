@@ -1,5 +1,8 @@
 // Header Styles
 
+@text-normal-color: #b0b0b0;
+@text-hover-color: black;
+
 header {
     width: 100%;
     display: flex;
@@ -15,11 +18,13 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: #b0b0b0;
+                    // color: mix(@text-normal-color,black, 70%);
+                       color: #3b5998;
 
                     &:hover {
                         text-decoration: underline;
-                        color: black;
+                        // color: mix(@text-hover-color, #3b5998, 70%);
+                           color: black;
                     }
                 }
             }
