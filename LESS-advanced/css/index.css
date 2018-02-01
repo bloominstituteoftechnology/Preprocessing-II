@@ -241,6 +241,9 @@ header .logo:hover {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-box-shadow: 3px 15px;
+  -moz-box-shadow: 3px 15px;
+  box-shadow: 3px 15px;
 }
 /* Main Content Styles */
 .main-content {
