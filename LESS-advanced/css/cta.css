@@ -13,6 +13,21 @@
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transform: skew(30deg, 15deg);
+  -moz-transform: skew(30deg, 15deg);
+  -ms-transform: skew(30deg, 15deg);
+  -o-transform: skew(30deg, 15deg);
+}
+@keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 500px;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -22,8 +37,28 @@
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  position: relative;
+  -webkit-animation: example 300ms 0 ease;
+  -moz-animation: example 300ms 0 ease;
+  -ms-animation: example 300ms 0 ease;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+}
+.cta .cta-text button:hover {
+  width: 300px;
+  height: 60px;
 }
