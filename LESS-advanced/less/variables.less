@@ -62,12 +62,22 @@
 	-o-transform: 		 rotate(@deg);
 }
 
+
 .skew (@deg, @deg2) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.transition (@prop: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+	}
+
 
 .translate (@x, @y:0) {
 	-webkit-transform:       translate(@x, @y);
