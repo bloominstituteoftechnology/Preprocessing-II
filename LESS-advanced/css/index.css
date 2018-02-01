@@ -168,6 +168,13 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  -webkit-transform: translate(-200px, -75%);
+  -moz-transform: translate(-200px, -75%);
+  -ms-transform: translate(-200px, -75%);
+  -o-transform: translate(-200px, -75%);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -184,6 +191,10 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: skewY(355deg);
+  -moz-transform: skewY(355deg);
+  -ms-transform: skewY(355deg);
+  -o-transform: skewY(355deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -193,10 +204,18 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 /* Main Content Styles */
 .main-content {
