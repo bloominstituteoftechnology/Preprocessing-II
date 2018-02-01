@@ -1,6 +1,23 @@
 // Variables on top
+@phoneWidth: ~"(max-width: 400px)";
+@tabletWidth: ~"(max-width: 768px)";
+@laptopWidth: ~"(max-width: 1100px)";
 
 // Mixins below variables
+
+.customButton (@width, @height, @bgcolor: turquoise) {
+	width: @width;
+	height: @height;
+	background-color: @bgcolor;
+	border: 1px double black;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+	&:hover {
+		background-color: darken(@bgcolor, 75%);
+		.scale(3);
+	}
+}
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;

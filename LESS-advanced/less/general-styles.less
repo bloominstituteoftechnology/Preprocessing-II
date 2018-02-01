@@ -13,9 +13,22 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    color: tint(black, 50%);
 }
 
 .container {
     width: 880px;
     margin: auto;
+
+    @media @laptopWidth {
+        background-color: maroon;
+    }
+
+    @media @tabletWidth {
+        background-color: mediumslateblue;
+    }
+
+    @media @phoneWidth {
+        background-color: purple;
+    }
 }
