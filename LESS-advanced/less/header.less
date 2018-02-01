@@ -1,9 +1,12 @@
 // Header Styles
+@import "variables.less";
 
 header {
     width: 100%;
     display: flex;
-
+    &:hover {
+        .skew(20deg, 10deg);
+    }
     nav {
         ul {
             margin-top: 140px; 
@@ -15,11 +18,11 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: #b0b0b0;
+                    color: #0c7c4e;
 
                     &:hover {
                         text-decoration: underline;
-                        color: black;
+                        color: rgb(129, 26, 26);
                     }
                 }
             }
