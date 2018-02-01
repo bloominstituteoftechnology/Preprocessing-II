@@ -1,21 +1,47 @@
 // General Styles
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+body {
+	@phone: ~"(max-width: 400px) ";
+	@tablet: ~"(max-width: 768px) ";
+	@laptop: ~"(max-width: 1100px) ";
+	@bkgdColor: #228b22;
+
+	@media @laptop {
+		background: @bkgdColor;
+	}
+
+	@media @tablet {
+		background: lighten(@bkgdColor, 7%);
+	}
+
+	@media @phone {
+		background: lighten(@bkgdColor, 12%);
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+
+	color: lighten(#87cefa, 12%);
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+	width: 880px;
+	margin: auto;
 }
