@@ -22,3 +22,26 @@ h1, h2, h3, h4, h5 {
     margin: auto;
     border:1px solid gray;
 }
+
+.laptop, .tablet, .phone {
+	font-size: 2rem;
+	display: none;
+}
+
+.laptop {
+	@media @laptop {
+		display: block;
+	}
+}
+
+.tablet {
+	@media @tablet {
+		display: block;
+	}
+}
+
+.phone {
+	@media @phone {
+		display: block;
+	}
+}
