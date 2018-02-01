@@ -5,16 +5,59 @@
 @import "main-content";
 @import "contact";
 @import "footer";
+// Exercise #1
+@import "variables";
 
+// Exercise #2
+.main-content .top-content {
+  .opacity();
+}
 
+header {
+  .logo {
+    .rotate(35deg);
+  }
+}
 
+.main-content .middle-img {
+  .scale(0.7);
+}
 
+.cta .cta-text {
+  .translate(40px, 40px);
+}
 
+.contact {
+  .translate3d(250px);
+}
 
+// Exercise #3
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
 
+* {
+  @media @laptop {
+    background: red;
+  }
 
+  @media @tablet {
+    background: blue;
+  }
 
+  @media @phone {
+    background: green;
+  }
+}
 
+// Exercise #4
+.cta .cta-text button {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+}
 
-
-
+// Exercise #5
+h1, h4 {
+  color: color("red");
+}
