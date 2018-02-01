@@ -2,13 +2,56 @@
 
 // Mixins below variables
 
+//.button-creator(200px, 200px)
+
+.button-creator(@width, @height, @font-size) {
+	width: @width;
+	height: @height;
+	font-size: @font-size;
+	background: red;
+}
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
 }
+// namespace button creator
+#lambda-style() {
+	.button1 {
+	display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border: 3px solid green;
+    &:hover {
+      background-color: white
+    } 
+ }
+ 	.button2 {
+ 	display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 3px solid gold;
+    &:hover {
+      background-color: red;
+    }
+}
 
-.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+}
+@laptop: ~"(min-width:1100px)";
+@tablet: ~"(max-width:768px)";
+@phone: ~"(max-width:400px)";
+
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+
+
+.animation (@name, @duration, @delay, @ease: ease) {
 	-webkit-animation: @name @duration @delay @ease;
 	-moz-animation:    @name @duration @delay @ease;
 	-ms-animation:     @name @duration @delay @ease;

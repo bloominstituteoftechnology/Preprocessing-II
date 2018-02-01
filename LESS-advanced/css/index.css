@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (min-width:1100px) {
+  html,
+  body {
+    background: #42f4eb;
+  }
+}
+@media (max-width:768px) {
+  html,
+  body {
+    background: #f44277;
+  }
+}
+@media (max-width:400px) {
+  html,
+  body {
+    background: #f48042;
+  }
+}
 h1,
 h2,
 h3,
@@ -168,6 +186,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: translate(30deg, 30deg);
+  -moz-transform: translate(30deg, 30deg);
+  -ms-transform: translate(30deg, 30deg);
+  -o-transform: translate(30deg, 30deg);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -184,6 +206,10 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -193,10 +219,19 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  width: 60px;
+  height: 20px;
+  font-size: 40;
+  background: red;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta .top-img {
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
 }
 /* Main Content Styles */
 .main-content {
@@ -211,9 +246,55 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content .first {
+  color: green;
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 3px solid green;
+}
+.main-content .top-content .text-content .first:hover {
+  background-color: white;
+}
+.main-content .top-content .text-content .second {
+  color: blue;
+  display: block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border: 3px solid gold;
+}
+.main-content .top-content .text-content .second:hover {
+  background-color: red;
+}
+.main-content .top-content .text-content:hover {
+  -webkit-animation: buttonani pulse 2s infinite;
+  -moz-animation: buttonani pulse 2s infinite;
+  -ms-animation: buttonani pulse 2s infinite;
+}
+@keyframes buttonani {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-animation: move_eye 3s 0s infinite alternate;
+  -moz-animation: move_eye 3s 0s infinite alternate;
+  -ms-animation: move_eye 3s 0s infinite alternate;
+}
+@keyframes move_eye {
+  from {
+    margin-left: -50%;
+  }
+  to {
+    margin-left: 70%;
+  }
 }
 .main-content .bottom-content {
   display: flex;
