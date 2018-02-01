@@ -1,8 +1,31 @@
 /* Call To Action (CTA) Styles */
+@media (min-width: 400px) {
+  body {
+    background-color: blue;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+@media (min-width: 1100px) {
+  body {
+    background-color: green;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+.cta img {
+  border: 0px solid blue;
+  width: 1000px;
+  -webkit-transform: skew(1deg, 6deg);
+  -moz-transform: skew(1deg, 6deg);
+  -ms-transform: skew(1deg, 6deg);
+  -o-transform: skew(1deg, 6deg);
 }
 .cta .cta-text {
   font-size: 72px;
