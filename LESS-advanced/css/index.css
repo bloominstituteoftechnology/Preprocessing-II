@@ -126,6 +126,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 50%;
+		}
+
+		@media @phone {
+			width: 100%;
+		}
+	}
+
+*/
 * {
   box-sizing: border-box;
 }
@@ -133,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -145,17 +161,42 @@ h5 {
   color: #a6a6a6;
 }
 .container {
-  width: 880px;
+  width: 100%;
   margin: auto;
 }
 header {
   width: 100%;
+  position: fixed;
   display: flex;
+  background-color: white;
+  top: 0px;
+}
+header nav {
+  width: 99%;
+  border: 2px solid red;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  display: flex;
+  font-size: 1.6rem;
+  top: 15px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 }
 header nav ul {
-  margin-top: 140px;
-  width: 610px;
-  justify-content: space-between;
+  border: 1px dotted blue;
+  width: 60%;
+  justify-content: space-around;
   display: flex;
 }
 header nav ul li a {
@@ -166,9 +207,13 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
-header .logo {
-  align-self: flex-end;
-  margin: 28px 0 0 91px;
+header nav .logo {
+  min-width: 100px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  margin: 10px 0 0 0;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -187,11 +232,21 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    width: 100%;
+  }
+}
 .cta .cta-text button {
   width: 150px;
   height: 35px;
   background: rgba(0, 65, 128, 0.75);
-  box-shadow: 25px 5px 10px green inset;
+  box-shadow: 5px 5px 10px green;
   color: white;
   border: 1px double black;
   font-size: 16px;
@@ -203,6 +258,16 @@ header .logo {
 }
 .cta .cta-image {
   flood-color: #a6a6a6;
+}
+@media (max-width: 768px) {
+  .cta .cta-image {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-image {
+    width: 100%;
+  }
 }
 /* Main Content Styles */
 .main-content {

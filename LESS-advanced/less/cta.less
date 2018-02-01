@@ -7,6 +7,8 @@
     color: @cta-tint;
 
     .cta-text {
+        @media @tablet {width: 50%;}
+		@media @phone {width: 100%;}
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -18,7 +20,7 @@
     }
 
     .cta-text button {
-        .button-creator(150px, 35px, @cta-blue, 25px 5px 10px green inset);
+        .button-creator(150px, 35px, @cta-blue, 5px 5px 10px green);
         color: white;
         border: 1px double black;
         font-size: 16px;
@@ -31,6 +33,8 @@
     }
 
     .cta-image {
+        @media @tablet {width: 50%;}
+		@media @phone {width: 100%;}
         flood-color: @cta-tint;
     }
 }// cta
