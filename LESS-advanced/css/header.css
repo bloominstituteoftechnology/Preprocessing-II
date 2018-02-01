@@ -19,4 +19,21 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  animation: 0.01s linear 0s infinite alternate move_logo;
+}
+@-webkit-keyframes move_logo {
+  from {
+    margin-left: -1%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+@keyframes move_logo {
+  from {
+    margin-left: -1%;
+  }
+  to {
+    margin-left: 10%;
+  }
 }

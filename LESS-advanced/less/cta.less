@@ -14,9 +14,18 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        &:hover {
+            .opacity();
+        }
     }
 
-    .cta-text button {
+    .cta-img {
+        .keyframes(fade-in, {0% {opacity: 0;} 100% {opacity: 1;}});
+        .animation(fade-in 3s linear infinite alternate);
+    }
+
+    .cta-text .cta-btn1 {
         border: 1px double black;
         font-size: 16px;
         background: white;
@@ -28,6 +37,17 @@
         &:hover {
             background: black;
             color: white;
+            .rotate(16deg);
+        }
+    }
+
+    .cta-text .cta-btn2 {
+        .button-creator(170px, 32px, green, 25%);
+
+        &:hover {
+            background: black;
+            color: white;
+            .translate(48px, 17px);
         }
     }
 }// cta

@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background: green;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background: orange;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background: red;
+  }
+}
 h1,
 h2,
 h3,
@@ -142,6 +160,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #662000;
 }
 .container {
   width: 880px;
@@ -168,6 +187,33 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-animation: 0.01s linear 0s infinite alternate move_logo;
+  -moz-animation: 0.01s linear 0s infinite alternate move_logo;
+  animation: 0.01s linear 0s infinite alternate move_logo;
+}
+@-moz-keyframes move_logo {
+  from {
+    margin-left: -1%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+@-webkit-keyframes move_logo {
+  from {
+    margin-left: -1%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+@keyframes move_logo {
+  from {
+    margin-left: -1%;
+  }
+  to {
+    margin-left: 10%;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -185,7 +231,41 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
-.cta .cta-text button {
+.cta .cta-text:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.cta .cta-img {
+  -webkit-animation: fade-in 3s linear infinite alternate;
+  -moz-animation: fade-in 3s linear infinite alternate;
+  animation: fade-in 3s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cta .cta-text .cta-btn1 {
   border: 1px double black;
   font-size: 16px;
   background: white;
@@ -194,9 +274,27 @@ header .logo {
   margin-top: 10px;
   cursor: pointer;
 }
-.cta .cta-text button:hover {
+.cta .cta-text .cta-btn1:hover {
   background: black;
   color: white;
+  -webkit-transform: rotate(16deg);
+  -moz-transform: rotate(16deg);
+  -ms-transform: rotate(16deg);
+  -o-transform: rotate(16deg);
+}
+.cta .cta-text .cta-btn2 {
+  width: 170px;
+  height: 32px;
+  background: green;
+  border-radius: 25%;
+}
+.cta .cta-text .cta-btn2:hover {
+  background: black;
+  color: white;
+  -webkit-transform: translate(48px, 17px);
+  -moz-transform: translate(48px, 17px);
+  -ms-transform: translate(48px, 17px);
+  -o-transform: translate(48px, 17px);
 }
 /* Main Content Styles */
 .main-content {
@@ -210,10 +308,41 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-animation: rotation 8s infinite linear;
+  -moz-animation: rotation 8s infinite linear;
+  animation: rotation 8s infinite linear;
+}
+@-moz-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 .main-content .bottom-content {
   display: flex;
@@ -222,7 +351,123 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.text-content .text-content-button-1 {
+  color: orange;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 1px solid black;
+  background-color: grey;
+  border-radius: 50px;
+}
+.text-content .text-content-button-1:hover {
+  background-color: black;
+}
+.text-content .text-content-button-1:active {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.text-content .text-content-button-2 {
+  color: black;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 1px solid red;
+  background-color: darkred;
+  border-radius: 0px;
+}
+.text-content .text-content-button-2:hover {
+  background-color: orangered;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.text-content .text-content-button-2:active {
+  background-color: yellow;
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+}
+.text-content .text-content-button-3 {
+  color: lightsalmon;
+  width: 170px;
+  padding: 20px;
+  text-align: left;
+  display: block;
+  border: 3px dashed purple;
+  background-color: darkcyan;
+  border-radius: 10px;
+}
+.text-content .text-content-button-3:hover {
+  background-color: orangered;
+  -webkit-transform: skew(12deg, 16deg);
+  -moz-transform: skew(12deg, 16deg);
+  -ms-transform: skew(12deg, 16deg);
+  -o-transform: skew(12deg, 16deg);
+}
+.text-content .text-content-button-3:active {
+  background-color: greenyellow;
+  -webkit-transform: translate(42px, 20px);
+  -moz-transform: translate(42px, 20px);
+  -ms-transform: translate(42px, 20px);
+  -o-transform: translate(42px, 20px);
+}
+.text-content .text-content-button-4 {
+  color: gold;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 1px solid red;
+  background-color: darkred;
+  border-radius: 0px;
+}
+.text-content .text-content-button-4:hover {
+  background-color: orangered;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.text-content .text-content-button-4:active {
+  background-color: yellow;
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+}
+.text-content .text-content-button-5 {
+  color: burlywood;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 1px solid black;
+  background-color: grey;
+  border-radius: 50px;
+}
+.text-content .text-content-button-5:hover {
+  background-color: black;
+}
+.text-content .text-content-button-5:active {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
 /* Contact Styles */
+.contact {
+  -webkit-transform: translate3d(10px, 10px, 30px);
+  -moz-transform: translate3d(10px, 10px, 30px);
+  -ms-transform: translate3d(10px, 10px, 30px);
+  -o-transform: translate3d(10px, 10px, 30px);
+}
 .contact p {
   margin: 40px 0;
 }
@@ -230,4 +475,8 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  -webkit-transform: skew(20deg, 20deg);
+  -moz-transform: skew(20deg, 20deg);
+  -ms-transform: skew(20deg, 20deg);
+  -o-transform: skew(20deg, 20deg);
 }
