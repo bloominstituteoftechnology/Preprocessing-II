@@ -7,12 +7,22 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    @media @laptop {
+        background-color: pink; 
+    }
+    @media @tablet {
+        background-color: green;
+    }
+    @media @phone {
+        background-color: yellow;
+    }
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    .update-color(purple);
 }
 
 .container {
