@@ -1,9 +1,13 @@
 /* Call To Action (CTA) Styles */
+@english-walnut: #3e2723;
+@cement: #8d6e63;
+@swirl: #D7CCC8;
 
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    .scale(0.9);
 
     .cta-text {
         font-size: 72px;
@@ -14,20 +18,25 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .opacity(0.6);
+        .rotate(-5deg);
     }
 
     .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        .button-creator(32px, 170px, @swirl, 16px);
+        border: 1px double @english-walnut;
+        color: black;
         margin-top: 10px;
-        cursor: pointer;
+        .opacity(0.45);
+        .rotate(5deg);
 
         &:hover {
-            background: black;
+            background: @english-walnut;
             color: white;
         }
+    } // .cta-text
+
+    .cta-image {
+        .skew(-5deg, -5deg);
     }
-}// cta
+}// .cta

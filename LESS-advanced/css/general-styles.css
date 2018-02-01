@@ -5,6 +5,25 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  background-color: #D7CCC8;
+}
+@media (max-width: 1100px) {
+  html,
+  body {
+    background: #d3b8ae;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background: #8d6e63;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background: #BE9C91;
+  }
 }
 h1,
 h2,
@@ -14,6 +33,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #48322e;
 }
 .container {
   width: 880px;

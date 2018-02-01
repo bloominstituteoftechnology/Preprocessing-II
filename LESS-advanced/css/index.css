@@ -133,6 +133,25 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  background-color: #D7CCC8;
+}
+@media (max-width: 1100px) {
+  html,
+  body {
+    background: #d3b8ae;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background: #8d6e63;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background: #BE9C91;
+  }
 }
 h1,
 h2,
@@ -142,6 +161,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #48322e;
 }
 .container {
   width: 880px;
@@ -150,6 +170,10 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  -webkit-transform: skew(-5deg, -5deg);
+  -moz-transform: skew(-5deg, -5deg);
+  -ms-transform: skew(-5deg, -5deg);
+  -o-transform: skew(-5deg, -5deg);
 }
 header nav ul {
   margin-top: 140px;
@@ -159,21 +183,29 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: #3e2723;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: #BF360C;
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: translate(-40px, 0);
+  -moz-transform: translate(-40px, 0);
+  -ms-transform: translate(-40px, 0);
+  -o-transform: translate(-40px, 0);
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 .cta .cta-text {
   font-size: 72px;
@@ -184,19 +216,40 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
 }
 .cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
-  width: 170px;
   height: 32px;
-  margin-top: 10px;
+  width: 170px;
+  background: #D7CCC8;
+  font-size: 16px;
   cursor: pointer;
+  border: 1px double #3e2723;
+  color: black;
+  margin-top: 10px;
+  -webkit-opacity: 0.45;
+  -moz-opacity: 0.45;
+  opacity: 0.45;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: #3e2723;
   color: white;
+}
+.cta .cta-image {
+  -webkit-transform: skew(-5deg, -5deg);
+  -moz-transform: skew(-5deg, -5deg);
+  -ms-transform: skew(-5deg, -5deg);
+  -o-transform: skew(-5deg, -5deg);
 }
 /* Main Content Styles */
 .main-content {
@@ -219,8 +272,11 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-.main-content .bottom-content p {
+.main-content .bottom-content:p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content {
+  padding-right: 5px;
 }
 /* Contact Styles */
 .contact p {
