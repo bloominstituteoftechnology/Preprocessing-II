@@ -1,16 +1,5 @@
 // Header Styles
 
-.keyframes(@name; @arguments) {
-    @-moz-keyframes @name { @arguments(); }
-    @-webkit-keyframes @name { @arguments(); }
-    @keyframes @name { @arguments(); }
-}
-
-.animation (@arguments) {
-    -webkit-animation: @arguments;
-    -moz-animation: @arguments;
-    animation: @arguments;
-}
 
 header {
     width: 100%;
@@ -46,5 +35,9 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+       
+     &:hover {
+        .transform(5deg, 2.0, 1deg, 0px);
+        }
     }
 }// header

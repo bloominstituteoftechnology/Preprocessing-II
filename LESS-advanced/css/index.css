@@ -189,13 +189,17 @@ header nav ul li a:hover {
   -webkit-animation: fade-in 0.4s linear infinite alternate;
   -moz-animation: fade-in 0.4s linear infinite alternate;
   animation: fade-in 0.4s linear infinite alternate;
-  -webkit-animation: fade-in 0.4s linear infinite alternate 300ms 0 ease;
-  -moz-animation: fade-in 0.4s linear infinite alternate 300ms 0 ease;
-  -ms-animation: fade-in 0.4s linear infinite alternate 300ms 0 ease;
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+header .logo:hover {
+  -webkit-transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
+  -moz-transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
+  -ms-transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
+  -o-transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
+  transform: rotate(5deg) scale(2) skew(1deg) translate(0px);
 }
 /* Call To Action (CTA) Styles */
 .cta {
