@@ -1,69 +1,91 @@
 // Variables on top
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+
+
 
 // Mixins below variables
 
-.opacity (@opacity: 0.5) {
-	-webkit-opacity: 	@opacity;
-	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
-}
 
-.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
-	-webkit-animation: @name @duration @delay @ease;
-	-moz-animation:    @name @duration @delay @ease;
-	-ms-animation:     @name @duration @delay @ease;
-}
+#bundle {
+	.opacity (@opacity: 0.5) {
+		-webkit-opacity: 	@opacity;
+		-moz-opacity: 		@opacity;
+		opacity: 		@opacity;
+	}
 
-.transition (@transition) {
-	-webkit-transition: @transition;  
-	-moz-transition:    @transition;
-	-ms-transition:     @transition; 
-	-o-transition:      @transition;  
-}
-.transform(@string){
-	-webkit-transform: @string;
-	-moz-transform: 	 @string;
-	-ms-transform: 		 @string;
-	-o-transform: 		 @string;
-}
+	.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+		-webkit-animation: @name @duration @delay @ease;
+		-moz-animation:    @name @duration @delay @ease;
+		-ms-animation:     @name @duration @delay @ease;
+	}
 
-.scale (@factor) {
-	-webkit-transform: scale(@factor);
-	-moz-transform: 	 scale(@factor);
-	-ms-transform: 		 scale(@factor);
-	-o-transform: 		 scale(@factor);
-}
+	.transition (@transition) {
+		-webkit-transition: @transition;  
+		-moz-transition:    @transition;
+		-ms-transition:     @transition; 
+		-o-transition:      @transition;  
+	}
+	.transform(@string){
+		-webkit-transform: @string;
+		-moz-transform: 	 @string;
+		-ms-transform: 		 @string;
+		-o-transform: 		 @string;
+	}
 
-.rotate (@deg) {
-	-webkit-transform: rotate(@deg);
-	-moz-transform: 	 rotate(@deg);
-	-ms-transform: 		 rotate(@deg);
-	-o-transform: 		 rotate(@deg);
-}
+	.scale (@factor) {
+		-webkit-transform: scale(@factor);
+		-moz-transform: 	 scale(@factor);
+		-ms-transform: 		 scale(@factor);
+		-o-transform: 		 scale(@factor);
+	}
 
-.skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
-	-moz-transform: 	 skew(@deg, @deg2);
-	-ms-transform: 		 skew(@deg, @deg2);
-	-o-transform: 		 skew(@deg, @deg2);
-}
+	.rotate (@deg) {
+		-webkit-transform: rotate(@deg);
+		-moz-transform: 	 rotate(@deg);
+		-ms-transform: 		 rotate(@deg);
+		-o-transform: 		 rotate(@deg);
+	}
 
-.translate (@x, @y:0) {
-	-webkit-transform:       translate(@x, @y);
-	-moz-transform: 	 translate(@x, @y);
-	-ms-transform: 		 translate(@x, @y);
-	-o-transform: 		 translate(@x, @y);
-}
+	.skew (@deg, @deg2) {
+		-webkit-transform:       skew(@deg, @deg2);
+		-moz-transform: 	 skew(@deg, @deg2);
+		-ms-transform: 		 skew(@deg, @deg2);
+		-o-transform: 		 skew(@deg, @deg2);
+	}
 
-.translate3d (@x, @y: 0, @z: 0) {
-	-webkit-transform:       translate3d(@x, @y, @z);
-	-moz-transform: 	 translate3d(@x, @y, @z);
-	-ms-transform: 		 translate3d(@x, @y, @z);
-	-o-transform: 		 translate3d(@x, @y, @z);
-}
-.perspective (@value: 1000) {
-	-webkit-perspective: 	@value;
-	-moz-perspective: 	@value;
-	-ms-perspective: 	@value;
-	perspective: 		@value;
+	.translate (@x, @y:0) {
+		-webkit-transform:       translate(@x, @y);
+		-moz-transform: 	 translate(@x, @y);
+		-ms-transform: 		 translate(@x, @y);
+		-o-transform: 		 translate(@x, @y);
+	}
+
+	.translate3d (@x, @y: 0, @z: 0) {
+		-webkit-transform:       translate3d(@x, @y, @z);
+		-moz-transform: 	 translate3d(@x, @y, @z);
+		-ms-transform: 		 translate3d(@x, @y, @z);
+		-o-transform: 		 translate3d(@x, @y, @z);
+	}
+	.perspective (@value: 1000) {
+		-webkit-perspective: 	@value;
+		-moz-perspective: 	@value;
+		-ms-perspective: 	@value;
+		perspective: 		@value;
+	}
+	.cta-button () {
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		background-color: blueviolet;
+	}
+	.header-fadeout () {
+		h1: fadeout(black, 50%);
+		h2: fadeout(black, 50%);
+		h3: fadeout(black, 50%);
+		h4: fadeout(black, 50%);
+		h5: fadeout(black, 50%);
+	}
+
 }
