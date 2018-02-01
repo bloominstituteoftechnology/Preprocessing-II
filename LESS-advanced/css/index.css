@@ -134,6 +134,21 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: #009688;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #2196F3;
+  }
+}
+@media only screen and (max-width: 479px) {
+  body {
+    background-color: #F44336;
+  }
+}
 h1,
 h2,
 h3,
@@ -241,9 +256,9 @@ header .logo:hover {
 .cta .cta-text button:hover {
   background: black;
   color: white;
-  -webkit-box-shadow: 3px 15px;
-  -moz-box-shadow: 3px 15px;
-  box-shadow: 3px 15px;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
 }
 /* Main Content Styles */
 .main-content {
