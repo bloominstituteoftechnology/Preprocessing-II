@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -126,6 +126,103 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  background-color: white;
+}
+@media (max-width: 1100px) {
+  body {
+    background-color: white;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: gray;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background-color: black;
+  }
+}
+@keyframes jiggle {
+  15% {
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+  }
+  20% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+  60% {
+    -webkit-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -o-transform: scale(0.97);
+  }
+  75% {
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@keyframes summon {
+  0% {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+  50% {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  100% {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    -o-transform: skew(0deg, 0deg);
+  }
+  50% {
+    -webkit-transform: skew(5deg, 3deg);
+    -moz-transform: skew(5deg, 3deg);
+    -ms-transform: skew(5deg, 3deg);
+    -o-transform: skew(5deg, 3deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    -o-transform: skew(0deg, 0deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -142,6 +239,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #f36a08;
 }
 .container {
   width: 880px;
@@ -152,7 +250,7 @@ header {
   display: flex;
 }
 header nav ul {
-  margin-top: 140px;
+  margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
@@ -168,6 +266,12 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  cursor: pointer;
+}
+header .logo:not(:active) {
+  -webkit-animation: wiggle 500ms 4 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -moz-animation: wiggle 500ms 4 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -ms-animation: wiggle 500ms 4 cubic-bezier(0.46, 0.37, 0.46, 0.84);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -176,7 +280,7 @@ header .logo {
   justify-content: flex-end;
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 83px;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -184,19 +288,47 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
-}
-.cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
-  margin-top: 10px;
   cursor: pointer;
 }
+.cta .cta-text h1 {
+  color: #fb7819;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15), 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.cta .cta-text h1:not(:active) {
+  -webkit-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -moz-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -ms-animation: jiggle 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+}
+.cta .cta-text button {
+  width: 170px;
+  height: 32px;
+  background-color: white;
+  border: 1px double black;
+  box-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 0px 4px 20px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
 .cta .cta-text button:hover {
-  background: black;
+  background-color: black;
   color: white;
+}
+.cta .cta-text button:active {
+  background-color: #161616;
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+}
+.cta .img {
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
+}
+.cta .img:not(:active) {
+  -webkit-animation: summon 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -moz-animation: summon 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
+  -ms-animation: summon 1000ms 1 cubic-bezier(0.46, 0.37, 0.46, 0.84);
 }
 /* Main Content Styles */
 .main-content {
@@ -211,6 +343,28 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content button {
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  border: 1px double black;
+  box-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 0px 4px 20px rgba(0, 0, 0, 0.2);
+  font-size: 9px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+}
+.main-content .top-content button:hover {
+  background-color: black;
+  color: white;
+}
+.main-content .top-content button:active {
+  background-color: #161616;
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -218,6 +372,28 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content button {
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  border: 1px double black;
+  box-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 0px 4px 20px rgba(0, 0, 0, 0.2);
+  font-size: 9px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+}
+.main-content .bottom-content button:hover {
+  background-color: black;
+  color: white;
+}
+.main-content .bottom-content button:active {
+  background-color: #161616;
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
 }
 .main-content .bottom-content p {
   padding-right: 20px;

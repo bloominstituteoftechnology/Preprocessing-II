@@ -6,7 +6,7 @@
     justify-content: flex-end;
 
     .cta-text {
-        font-size: 72px;
+        font-size: 83px;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -14,20 +14,38 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        cursor: pointer;
+
+        h1 {
+            color: tint(@comp-color, 10%);
+            text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15),0px 5px 15px rgba(0,0,0,.2);
+
+            &:not(:active) {
+                .animation(jiggle, 1000ms, 1, @easing-bezier);
+            }
+        }
     }
 
     .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        .button-creator(170px, 32px, white, black, 16px);
         margin-top: 10px;
-        cursor: pointer;
 
         &:hover {
-            background: black;
+            background-color: black;
             color: white;
+        }
+        &:active {
+            background-color: rgb(22, 22, 22);
+            .scale(0.99);
+        }
+    }
+
+    .img {
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0px 6px 25px rgba(0,0,0,.2);
+        &:not(:active) {
+            .animation(summon, 1000ms, 1, @easing-bezier);
         }
     }
 }// cta
