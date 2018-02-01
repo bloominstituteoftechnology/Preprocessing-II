@@ -133,6 +133,25 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  background-color: #f1f1f2;
+}
+@media (max-width: 1100px) {
+  html,
+  body {
+    background-color: #e0e0e1;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background-color: #cfcfd0;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background-color: #bebebf;
+  }
 }
 h1,
 h2,
@@ -175,6 +194,14 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+.cta img {
+  -webkit-transform: skew(5deg, 7deg);
+  -moz-transform: skew(5deg, 7deg);
+  -ms-transform: skew(5deg, 7deg);
+  -o-transform: skew(5deg, 7deg);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -184,6 +211,13 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -193,10 +227,19 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  color: #ffffff;
+  width: 15;
+  height: 3;
+  background-color: slategray;
+  box-shadow: 10px 5px 5px #3d4d5d;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
 }
 /* Main Content Styles */
 .main-content {
@@ -211,6 +254,50 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content #features {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #ffffff;
+  width: 100px;
+  height: 20px;
+  background-color: #47574B;
+  box-shadow: 10px 5px 5px #142418;
+}
+.main-content .top-content #features:hover {
+  background: black;
+  color: white;
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
+}
+.main-content .top-content #about {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #ffffff;
+  width: 100px;
+  height: 20px;
+  background-color: #B0C0BC;
+  box-shadow: 10px 5px 5px #7d8d89;
+}
+.main-content .top-content #about:hover {
+  background: black;
+  color: white;
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -218,6 +305,72 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content #services {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #ffffff;
+  width: 100px;
+  height: 20px;
+  background-color: #A7A7A9;
+  box-shadow: 10px 5px 5px #747476;
+}
+.main-content .bottom-content #services:hover {
+  background: black;
+  color: white;
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
+}
+.main-content .bottom-content #product {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #ffffff;
+  width: 100px;
+  height: 20px;
+  background-color: #797270;
+  box-shadow: 10px 5px 5px #463f3d;
+}
+.main-content .bottom-content #product:hover {
+  background: black;
+  color: white;
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
+}
+.main-content .bottom-content #vision {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #ffffff;
+  width: 100px;
+  height: 20px;
+  background-color: #453F3C;
+  box-shadow: 10px 5px 5px #120c09;
+}
+.main-content .bottom-content #vision:hover {
+  background: black;
+  color: white;
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
 }
 .main-content .bottom-content p {
   padding-right: 20px;

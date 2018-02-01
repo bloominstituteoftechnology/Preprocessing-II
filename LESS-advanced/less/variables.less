@@ -1,4 +1,22 @@
 // Variables on top
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+@default-bg-color: #f1f1f2;
+
+@color__padua: #C1EDCC;
+@color__nandor: #47574B;
+@color__tower-gray: #B0C0BC;
+@color__spun-pearl: #A7A7A9;
+@color__tapa: #797270;
+@color__masala: #453F3C;
+
+
+@features-btn-color: @color__nandor;
+@about-btn-color: @color__tower-gray;
+@services-btn-color: @color__spun-pearl;
+@product-btn-color: @color__tapa;
+@vision-btn-color: @color__masala;
 
 // Mixins below variables
 
@@ -66,4 +84,17 @@
 	-moz-perspective: 	@value;
 	-ms-perspective: 	@value;
 	perspective: 		@value;
+}
+
+.button-changer (@value: 100px, @color, @x, @y, @blur) {
+	color: tint(@color, 200%);
+	width: @value;
+	height: @value / 5;
+	background-color: @color;
+	box-shadow: @x @y @blur @color - #333;
+}
+
+.change-img-opacity (@opacity, @amount) {
+	opacity: @opacity;
+	filter: alpha(opacity=@amount);
 }
