@@ -14,9 +14,21 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+          
+        h1 {  
+          &:hover {
+            font-size: 97px;
+          }
+        }
     }
-
+    
+    img {
+      opacity: @fadeout;
+    }
+    
     .cta-text button {
+       
+      
         border: 1px double black;
         font-size: 16px;
         background: white;
@@ -24,10 +36,18 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        
+        .transform(@string);
+        
+        
 
         &:hover {
+            width: 200px;
+            height: 35px;
             background: black;
             color: white;
+            
+            .myButton (100px, 50px, skyblue);
         }
     }
 }// cta
