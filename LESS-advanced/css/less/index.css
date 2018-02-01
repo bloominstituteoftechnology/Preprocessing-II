@@ -465,13 +465,15 @@ header .logo:hover {
   border: 1px double black;
   font-size: 16px;
   background: RED;
+  width: 170px;
+  height: 32px;
   margin-top: 10px;
   cursor: pointer;
+}
+.cta .cta-text button:hover {
   width: 170px;
   height: 32px;
   background-color: purple;
-}
-.cta .cta-text button:hover {
   -webkit-transition: 2s;
   -moz-transition: 2s;
   -ms-transition: 2s;

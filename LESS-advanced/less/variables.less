@@ -8,7 +8,7 @@
 	opacity: 		@opacity;
 }
 
-.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+.animation (@name, @duration: 2s, @delay: 0, @ease: ease) {
 	-webkit-animation: @name @duration @delay @ease;
 	-moz-animation:    @name @duration @delay @ease;
 	-ms-animation:     @name @duration @delay @ease;
@@ -41,6 +41,11 @@
 	-o-transform: 		 rotate(@deg);
 }
 
+.my-button (@width: 170px, @height: 32px, @background-color: purple){
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+}
 .skew (@deg, @deg2) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
