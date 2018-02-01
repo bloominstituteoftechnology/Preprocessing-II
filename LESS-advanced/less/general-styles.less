@@ -16,6 +16,18 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+body {
+    @media @laptop {
+        background-color: @background-color--green;
+    }
+    @media @tablet {
+        background-color: @background-color--blue;
+    } 
+    @media @smartphone {
+        background-color: @background-color--red;
+    }
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
