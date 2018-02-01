@@ -13,8 +13,10 @@ header nav ul li a {
   color: #b0b0b0;
 }
 header nav ul li a:hover {
-  text-decoration: underline;
   color: black;
+  -webkit-animation: fade-in 0.4s linear infinite alternate;
+  -moz-animation: fade-in 0.4s linear infinite alternate;
+  animation: fade-in 0.4s linear infinite alternate;
 }
 header .logo {
   align-self: flex-end;
