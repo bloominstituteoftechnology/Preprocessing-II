@@ -134,17 +134,17 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
-@media pc {
+@media only screen and (max-width: 1100px) {
   body {
     background-color: #009688;
   }
 }
-@media tab {
+@media only screen and (max-width: 768px) {
   body {
     background-color: #2196F3;
   }
 }
-@media mobile {
+@media only screen and (max-width: 479px) {
   body {
     background-color: #F44336;
   }
