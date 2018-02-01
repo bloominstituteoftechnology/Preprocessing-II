@@ -1,5 +1,17 @@
 // Header Styles
 
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+
+.animation (@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    animation: @arguments;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -20,6 +32,7 @@ header {
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        .animation(fade-in 0.4s linear infinite alternate);
                     }
                 }
             }
