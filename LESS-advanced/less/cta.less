@@ -1,5 +1,12 @@
 /* Call To Action (CTA) Styles */
 
+.main-button {
+    width: 200px;
+    height: 50px;
+    background: blue;
+    color: white;
+}
+
 .cta {
     display: flex;
     margin-top: 72px;
@@ -14,6 +21,9 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        &:hover {
+            .rotate(20deg);
+        }
     }
 
     .cta-text button {
@@ -24,6 +34,7 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .main-button;
 
         &:hover {
             background: black;
