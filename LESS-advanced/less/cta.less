@@ -4,7 +4,7 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,20 +14,40 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .skew(23deg, 38deg);
     }
-
     .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+        .button-creator(170px,32px,white,"sans-serif",16px);
+    
+
+    //.cta-text button {
+    //    border: 1px double black;
+    //    font-size: 16px;
+    //    background: white;
+    //    width: 170px;
+    //    height: 32px;
+    //    margin-top: 10px;
+    //    cursor: pointer;
 
         &:hover {
             background: black;
-            color: white;
+            color: mix(rgb(221, 15, 15),yellow, 50%);
+            .opacity(.5);
+        }
+    }
+    .cta__image {
+                
+        &:hover {
+            .opacity(0.5);
+        }
+        @media @phone {
+            .scale(0.25);
+        }
+        @media @tablet {
+            .scale(0.5);
+        }
+        @media @laptop {
+            .scale(0.75);
         }
     }
 }// cta

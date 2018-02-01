@@ -147,6 +147,33 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 1100px) {
+  .container {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    background-color: orangered;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    -webkit-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    background-color: blue;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -169,6 +196,19 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+header .logo:hover {
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
@@ -184,19 +224,53 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: skew(23deg, 38deg);
+  -moz-transform: skew(23deg, 38deg);
+  -ms-transform: skew(23deg, 38deg);
+  -o-transform: skew(23deg, 38deg);
 }
 .cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
   width: 170px;
   height: 32px;
-  margin-top: 10px;
-  cursor: pointer;
+  background-color: white;
+  font-family: "sans-serif";
+  font-size: 16px;
 }
 .cta .cta-text button:hover {
   background: black;
-  color: white;
+  color: #ee8708;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.cta .cta__image:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+@media (max-width: 400px) {
+  .cta .cta__image {
+    -webkit-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    -o-transform: scale(0.25);
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta__image {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+}
+@media (max-width: 1100px) {
+  .cta .cta__image {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+  }
 }
 /* Main Content Styles */
 .main-content {
