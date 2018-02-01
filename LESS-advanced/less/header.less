@@ -27,11 +27,15 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: #b0b0b0;
+                    color: #000000;
+                    .keyframes(fade-in; {
+                        0% { opacity: 0; }
+                        100% { opacity: 1; }
+                    });
 
                     &:hover {
                         //text-decoration: underline;
-                        color: black;
+                        //color: black;
                         .animation(fade-in 0.4s linear infinite alternate);
                     }
                 }
