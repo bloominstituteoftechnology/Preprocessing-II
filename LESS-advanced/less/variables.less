@@ -15,10 +15,10 @@
 }
 
 .transition (@transition) {
-	-webkit-transition: @transition;  
+	-webkit-transition: @transition;
 	-moz-transition:    @transition;
-	-ms-transition:     @transition; 
-	-o-transition:      @transition;  
+	-ms-transition:     @transition;
+	-o-transition:      @transition;
 }
 .transform(@string){
 	-webkit-transform: @string;
@@ -67,3 +67,12 @@
 	-ms-perspective: 	@value;
 	perspective: 		@value;
 }
+.custom-CTA (@width, @height, @color) {
+	width: @width;
+	height: @height;
+	background-color: @color;
+}
+
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";

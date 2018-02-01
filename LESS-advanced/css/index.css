@@ -134,6 +134,27 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    font-size: 1.2rem;
+    background: black;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 1.2rem;
+    background: purple;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    font-size: 1.2rem;
+    background: green;
+  }
+}
 h1,
 h2,
 h3,
@@ -150,6 +171,10 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  -webkit-transform: rotateX(150deg);
+  -moz-transform: rotateX(150deg);
+  -ms-transform: rotateX(150deg);
+  -o-transform: rotateX(150deg);
 }
 header nav ul {
   margin-top: 140px;
@@ -168,12 +193,19 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  width: 150px;
+  height: 150px;
+  background-color: red;
 }
 .cta .cta-text {
   font-size: 72px;
@@ -184,6 +216,10 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-perspective: 10px;
+  -moz-perspective: 10px;
+  -ms-perspective: 10px;
+  perspective: 10px;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -197,6 +233,10 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: translate(50px, 50px);
+  -moz-transform: translate(50px, 50px);
+  -ms-transform: translate(50px, 50px);
+  -o-transform: translate(50px, 50px);
 }
 /* Main Content Styles */
 .main-content {
@@ -214,6 +254,11 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  background-color: red;
+  -webkit-perspective: 100px;
+  -moz-perspective: 100px;
+  -ms-perspective: 100px;
+  perspective: 100px;
 }
 .main-content .bottom-content {
   display: flex;
@@ -225,9 +270,21 @@ header .logo {
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
+  -webkit-transform: rotate(35);
+  -moz-transform: rotate(35);
+  -ms-transform: rotate(35);
+  -o-transform: rotate(35);
+  -webkit-perspective: 10px;
+  -moz-perspective: 10px;
+  -ms-perspective: 10px;
+  perspective: 10px;
 }
 /* Footer Styles */
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  -webkit-transform: scale(20);
+  -moz-transform: scale(20);
+  -ms-transform: scale(20);
+  -o-transform: scale(20);
 }
