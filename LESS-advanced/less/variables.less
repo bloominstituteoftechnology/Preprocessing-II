@@ -2,6 +2,12 @@
 
 // Mixins below variables
 
+//.button-creator(200px, 200px)
+
+.button-creator(@width, @height, @font-size) {
+	
+}
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
@@ -21,7 +27,7 @@
 	-o-transition:      @transition;  
 }
 .transform(@string){
-	-webkit-transform: @string;
+	-webkit-transform: @string;	
 	-moz-transform: 	 @string;
 	-ms-transform: 		 @string;
 	-o-transform: 		 @string;
