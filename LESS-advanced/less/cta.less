@@ -17,17 +17,22 @@
     }
 
     .cta-text button {
+        .button--maker(32px, 170px, white);
         border: 1px double black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
         margin-top: 10px;
         cursor: pointer;
 
         &:hover {
-            background: black;
+            background: lighten(black, 30%);
             color: white;
+        }
+    }
+
+    .cta__img {
+        &:hover {
+            .opacity(.5);
+            .rotate(180deg);
         }
     }
 }// cta

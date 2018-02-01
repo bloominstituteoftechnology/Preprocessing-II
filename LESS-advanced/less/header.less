@@ -4,7 +4,20 @@ header {
     width: 100%;
     display: flex;
 
+
     nav {
+        .scale(1.3);
+        @media @laptop {
+            .scale(1);
+        }
+     
+        @media @tablet {
+            .scale(.8);
+        }
+     
+        @media @phone {
+            .scale(.7);
+        }
         ul {
             margin-top: 140px; 
             width: 610px;
@@ -29,5 +42,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .transition(1.5s);
+        .skew(10deg, 20deg);
+        &:hover {
+            .rotate(0deg);
+            .opacity(.5);
+
+        }
     }
 }// header
