@@ -1,29 +1,120 @@
 /* Main Content Styles */
 
+@product-transform: ~"rotate(0.25turn) translate(-20px, 0)";
+
+.button {
+    width: 75px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#button {
+    .features {
+        color: darken(blue, 20%);
+
+        &:hover {
+            color: darken(red, 20%);
+        }
+    }
+
+    .about {
+        color: darken(purple, 20%);
+
+        &:hover {
+            .skew(-20deg, 0deg);
+        }
+    }
+
+    .services {
+        color: darken(green, 20%);
+
+        &:hover{
+            .translate(0px, -20px);
+        }
+    }
+
+    .product {
+        color: darken(yellow, 20%);
+
+        &:hover {
+            .transform(@product-transform);
+        }
+    }
+
+    .vision {
+        color: darken(orange, 20%);
+
+        &:hover {
+            background: blue;
+        }
+    }
+
+    .contact {
+        color: darken(magenta, 20%);
+
+        &:hover {
+            .scale(2);
+        }
+    }
+}
+
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+
+    .top-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .middle-img {
+        display: block;
+        margin: 30px auto;
+        .scale(0.75);
+    }
+
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+        
+        p {
+            padding-right: 20px;
+        }// p
+    }// .bottom-content
+}// .main-content
+
+#features {
+    .button;
+    #button > .features;
 }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+#about {
+    .button;
+    #button > .about;
 }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+#services {
+    .button;
+    #button > .services;
 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+#product {
+    .button;
+    #button > .product;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+#vision {
+    .button;
+    #button > .vision;
+}
+
+#contact {
+    .button;
+    #button > .contact;
 }

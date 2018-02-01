@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background: blue;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background: yellow;
+  }
+}
 h1,
 h2,
 h3,
@@ -150,6 +168,12 @@ h5 {
 header {
   width: 100%;
   display: flex;
+}
+header nav {
+  -webkit-transform: translate(-200px, 0px);
+  -moz-transform: translate(-200px, 0px);
+  -ms-transform: translate(-200px, 0px);
+  -o-transform: translate(-200px, 0px);
 }
 header nav ul {
   margin-top: 140px;
@@ -185,20 +209,91 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+.cta .cta-text h1 {
+  -webkit-transform: skew(-15deg, 0deg);
+  -moz-transform: skew(-15deg, 0deg);
+  -ms-transform: skew(-15deg, 0deg);
+  -o-transform: skew(-15deg, 0deg);
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
   width: 170px;
   height: 32px;
+  background: white;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: rotate(0.5turn);
+  -moz-transform: rotate(0.5turn);
+  -ms-transform: rotate(0.5turn);
+  -o-transform: rotate(0.5turn);
+}
+.cta img {
+  -webkit-transform: rotate(0.5turn) skew(30deg);
+  -moz-transform: rotate(0.5turn) skew(30deg);
+  -ms-transform: rotate(0.5turn) skew(30deg);
+  -o-transform: rotate(0.5turn) skew(30deg);
 }
 /* Main Content Styles */
+.button {
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+}
+#button .features {
+  color: #000099;
+}
+#button .features:hover {
+  color: #990000;
+}
+#button .about {
+  color: #1a001a;
+}
+#button .about:hover {
+  -webkit-transform: skew(-20deg, 0deg);
+  -moz-transform: skew(-20deg, 0deg);
+  -ms-transform: skew(-20deg, 0deg);
+  -o-transform: skew(-20deg, 0deg);
+}
+#button .services {
+  color: #001a00;
+}
+#button .services:hover {
+  -webkit-transform: translate(0px, -20px);
+  -moz-transform: translate(0px, -20px);
+  -ms-transform: translate(0px, -20px);
+  -o-transform: translate(0px, -20px);
+}
+#button .product {
+  color: #999900;
+}
+#button .product:hover {
+  -webkit-transform: rotate(0.25turn) translate(-20px, 0);
+  -moz-transform: rotate(0.25turn) translate(-20px, 0);
+  -ms-transform: rotate(0.25turn) translate(-20px, 0);
+  -o-transform: rotate(0.25turn) translate(-20px, 0);
+}
+#button .vision {
+  color: #996300;
+}
+#button .vision:hover {
+  background: blue;
+}
+#button .contact {
+  color: #990099;
+}
+#button .contact:hover {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -214,6 +309,10 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -o-transform: scale(0.75);
 }
 .main-content .bottom-content {
   display: flex;
@@ -221,6 +320,84 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+#features {
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+  color: #000099;
+}
+#features:hover {
+  color: #990000;
+}
+#about {
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+  color: #1a001a;
+}
+#about:hover {
+  -webkit-transform: skew(-20deg, 0deg);
+  -moz-transform: skew(-20deg, 0deg);
+  -ms-transform: skew(-20deg, 0deg);
+  -o-transform: skew(-20deg, 0deg);
+}
+#services {
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+  color: #001a00;
+}
+#services:hover {
+  -webkit-transform: translate(0px, -20px);
+  -moz-transform: translate(0px, -20px);
+  -ms-transform: translate(0px, -20px);
+  -o-transform: translate(0px, -20px);
+}
+#product {
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+  color: #999900;
+}
+#product:hover {
+  -webkit-transform: rotate(0.25turn) translate(-20px, 0);
+  -moz-transform: rotate(0.25turn) translate(-20px, 0);
+  -ms-transform: rotate(0.25turn) translate(-20px, 0);
+  -o-transform: rotate(0.25turn) translate(-20px, 0);
+}
+#vision {
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+  color: #996300;
+}
+#vision:hover {
+  background: blue;
+}
+#contact {
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+  color: #990099;
+}
+#contact:hover {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
 }
 /* Contact Styles */
 .contact p {
