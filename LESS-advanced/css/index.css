@@ -151,6 +151,12 @@ header {
   width: 100%;
   display: flex;
 }
+header nav {
+  -webkit-transform: translate(-200px, 0);
+  -moz-transform: translate(-200px, 0);
+  -ms-transform: translate(-200px, 0);
+  -o-transform: translate(-200px, 0);
+}
 header nav ul {
   margin-top: 140px;
   width: 610px;
@@ -230,4 +236,94 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+@media (max-width:480px) {
+  body {
+    background-color: grey;
+  }
+}
+@media (min-width:481px) {
+  body {
+    background-color: whitesmoke;
+  }
+}
+@media (min-width:768px) {
+  body {
+    background-color: white;
+  }
+}
+@keyframes rotate-img {
+  0% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+  }
+  75% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+  }
+}
+.logo {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+}
+.cta img {
+  -webkit-animation: rotate-img 15s infinite ease-in-out;
+  -moz-animation: rotate-img 15s infinite ease-in-out;
+  -ms-animation: rotate-img 15s infinite ease-in-out;
+  animation: rotate-img 15s infinite ease-in-out;
+}
+.cta button {
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+.cta h1 {
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+.cta h1:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.text-content button {
+  padding: 20px 30px 20px 30px;
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+}
+.text-content button:hover {
+  background-color: #3333cc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2626d9;
 }

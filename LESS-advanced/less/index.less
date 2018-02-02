@@ -1,3 +1,4 @@
+@import "variables";
 @import "reset";
 @import "general-styles";
 @import "header";
@@ -6,7 +7,79 @@
 @import "contact";
 @import "footer";
 
+@mobile: ~'(max-width:480px)';
+@laptop: ~'(min-width:481px)';
+@desktop: ~'(min-width:768px)';
+@primary-color: blue;
 
+.button() {
+    padding: 20px 30px 20px 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    background-color: @primary-color;
+    text-align: center;
+    color: white;
+    &:hover {
+        background-color: desaturate(@primary-color, 40%);
+    }
+}
+
+body {
+    @media @mobile {
+        background-color: grey;
+    }
+    @media @laptop {
+        background-color: whitesmoke;
+    }
+    @media @desktop {
+        background-color: white;
+    }
+}
+
+@keyframes rotate-img {
+    0% {
+        .rotate(20deg)
+    }
+    25% {
+        .rotate(20deg)
+    }
+    75% {
+        .rotate(20deg)
+    }
+    100% {
+        .rotate(20deg)
+    }
+}
+
+.logo {
+    .rotate(-10deg);
+}
+
+.cta {
+    img {
+        .animation(rotate-img, 15s, infinite, ease-in-out);
+    }
+    button {
+        .transition(.30s all ease-in-out);
+    }
+    h1 {
+        .transition(.30s all ease-in-out);
+        &:hover {
+            .scale(1.20);
+    }
+        }
+    }
+
+.text-content {
+    button {
+        .button();
+    }
+}
+
+h1, h2, h3, h4, h5, h6,
+{
+    color: desaturate(@primary-color, 30%);
+}
 
 
 
