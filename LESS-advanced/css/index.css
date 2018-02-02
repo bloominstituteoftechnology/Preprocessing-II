@@ -126,6 +126,32 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@keyframes appear_left {
+  from {
+    position: absolute;
+    left: -100px;
+    top: 55px;
+    opacity: 0;
+  }
+  to {
+    position: absolute;
+    left: 60px;
+    top: 55px;
+    opacity: 1;
+  }
+}
+@keyframes appear_right {
+  from {
+    position: absolute;
+    right: -100px;
+    opacity: 0;
+  }
+  to {
+    position: absolute;
+    right: 60px;
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -133,6 +159,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -144,16 +171,44 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
+  border: 1px solid gray;
+}
+.laptop,
+.tablet,
+.phone {
+  font-size: 2rem;
+  display: none;
+}
+@media (max-width: 900px) {
+  .laptop {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .tablet {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .phone {
+    display: block;
+  }
 }
 header {
   width: 100%;
   display: flex;
 }
+header nav {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 5px;
+}
 header nav ul {
   margin-top: 140px;
-  width: 610px;
+  width: 90%;
   justify-content: space-between;
   display: flex;
 }
@@ -167,16 +222,19 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 0px;
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  height: 380px;
+  position: relative;
+  border: 1px solid red;
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -184,19 +242,45 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  position: absolute;
+  left: 60px;
+  top: 55px;
+  -webkit-animation: appear_left 1.1s;
+  -moz-animation: appear_left 1.1s;
+  -ms-animation: appear_left 1.1s;
+  border: 1px solid green;
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
   width: 170px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  border: 1px solid blue;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  width: 190px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+.cta img {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  -webkit-animation: appear_right 1.1s;
+  -moz-animation: appear_right 1.1s;
+  -ms-animation: appear_right 1.1s;
+  border: 1px solid purple;
+  width: 40%;
 }
 /* Main Content Styles */
 .main-content {
@@ -204,23 +288,35 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
+  border: 1px solid red;
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  border: 1px solid red;
+}
+.main-content .top-content h4 {
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  border: 1px solid red;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  border: 1px solid red;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  border: 1px solid red;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+  border: 1px solid red;
 }
 /* Contact Styles */
 .contact p {

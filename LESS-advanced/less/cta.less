@@ -4,9 +4,11 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    height: 380px;
+    position: relative;
+    .border();
     .cta-text {
-        font-size: 72px;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -14,20 +16,42 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        position: absolute;
+        left: 60px;
+        top: 55px;
+        .custom-animation(appear_left);
+        .border(green);
+        @media @tablet {
+           
+        }
     }
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.6rem;
         background: white;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-
+        .transition(500ms);
+        .border(blue);
         &:hover {
             background: black;
             color: white;
+            width: 190px;
+            height: 52px;
+            border-radius: 10px;
+            .border();
         }
+    }
+
+    img {
+        position: absolute;
+        right: 60px;
+        top:30px;
+        .custom-animation(appear_right);
+        .border(purple);
+        width: 40%;
     }
 }// cta
