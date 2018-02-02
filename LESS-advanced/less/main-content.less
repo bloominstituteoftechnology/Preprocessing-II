@@ -27,3 +27,16 @@
 .main-content .bottom-content p {
     padding-right: 20px;
 }
+
+.button-creator(@width, @height, @font-weight) {
+    width: @width;
+    height: @height;
+    font-weight: @font-weight;
+  }
+  
+  button {
+    color: crimson;
+    text-decoration: underline;
+    border-radius: 10px;
+    .button-creator(150px, 150px, 400);
+  }

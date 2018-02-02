@@ -132,16 +132,47 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #990000;
+}
+@media (max-width: 1100px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+p {
+  color: #1919ff;
 }
 .container {
   width: 880px;
@@ -222,6 +253,14 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+button {
+  color: crimson;
+  text-decoration: underline;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  font-weight: 400;
+}
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
@@ -230,58 +269,4 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #990000;
-}
-@media (max-width: 1100px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 768px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 400px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 1.5rem;
-  }
-}
-p {
-  color: #1919ff;
-}
-.copyright {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-  -webkit-transform: skew(15deg, 15deg);
-  -moz-transform: skew(15deg, 15deg);
-  -ms-transform: skew(15deg, 15deg);
-  -o-transform: skew(15deg, 15deg);
-}
-button {
-  color: crimson;
-  text-decoration: underline;
-  border-radius: 10px;
-  width: 150px;
-  height: 150px;
-  font-weight: 400;
 }
