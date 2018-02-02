@@ -3,17 +3,14 @@
 header {
     width: 100%;
     position: fixed;
-    display: flex;
-    // border: 1px solid red;
     background-color: white;
     top: 0px;
 
     nav {
         width: 99%;
-        border: 2px solid red;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap-reverse;
-        display: flex;
         font-size: 1.6rem;
         top: 15px;
         justify-content: space-between;
@@ -28,15 +25,13 @@ header {
         } 
 
         ul {
-            // margin-top: 40px;
-            border: 1px dotted blue;
+            margin-top: 20px;
             width: 60%;
+            min-width: 400px;
             justify-content: space-around;
             display: flex;
-            
 
             li {
-                // border: 1px solid gray;
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -50,14 +45,11 @@ header {
         } // navbar
         
         .logo {
-            min-width: 100px;
+            min-width: 150px;
             max-width: 150px;
             display: flex;
             flex-direction: row;
-            border: 1px solid gray;
-            // justify-content: flex-end;
             margin: 10px 0 0 0;
-            
         } // logo
     } // nav
 }// header
