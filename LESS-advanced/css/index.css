@@ -238,6 +238,33 @@ h4,
 h5 {
   color: #990000;
 }
+@media (max-width: 1100px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 1.5rem;
+  }
+}
 p {
   color: #1919ff;
 }
@@ -252,7 +279,9 @@ p {
 }
 button {
   color: crimson;
-  border-radius: 15px;
   text-decoration: underline;
-  font-weight: 700;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  font-weight: 400;
 }

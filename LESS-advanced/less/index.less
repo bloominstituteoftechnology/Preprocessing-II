@@ -17,12 +17,27 @@
 @tinted-color: tint(blue, 10%);
 @shaded-color: shade(red, 40%);
 
+.button-creator(@width, @height, @font-weight) {
+  width: @width;
+  height: @height;
+  font-weight: @font-weight;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
   color: @shaded-color;
+  @media @laptop {
+    font-size: 3rem;
+  }
+  @media @tablet {
+    font-size: 2rem;
+  }
+  @media @phone {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -36,7 +51,7 @@ p {
 
 button {
   color: crimson;
-  border-radius: 15px;
   text-decoration: underline;
-  font-weight: 700;
-};
+  border-radius: 10px;
+  .button-creator(150px, 150px, 400);
+}
