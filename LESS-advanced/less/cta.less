@@ -4,6 +4,7 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+}
 
     .cta-text {
         font-size: 72px;
@@ -11,9 +12,10 @@
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
-        flex-flow: column;
+        flex-flow: row;
         align-items: center;
         margin: 0 82px 0 0;
+        
     }
 
     .cta-text button {
@@ -24,10 +26,10 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-
         &:hover {
             background: black;
             color: white;
         }
+        .animation(slide-in, 300ms, 1ms, ease);
     }
-}// cta
+// cta

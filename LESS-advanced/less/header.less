@@ -3,7 +3,6 @@
 header {
     width: 100%;
     display: flex;
-
     nav {
         ul {
             margin-top: 140px; 
@@ -26,8 +25,16 @@ header {
         }
     }
 
+
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .rotate(25deg);
     }
+    
 }// header
+
+.button {
+    .animation(slide-in, 800ms, 0, ease);
+    background: rgb(56, 56, 56);
+}

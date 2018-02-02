@@ -1,3 +1,18 @@
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,7 +146,7 @@ table {
 }
 html,
 body {
-  height: 100%;
+  height: 10%;
   font-family: 'Titillium Web', sans-serif;
 }
 h1,
@@ -143,9 +158,24 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+@media (max-width: 400px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 4px;
+  }
+}
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }
 header {
   width: 100%;
@@ -168,6 +198,16 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+}
+.button {
+  -webkit-animation: slide-in 800ms 0 ease;
+  -moz-animation: slide-in 800ms 0 ease;
+  -ms-animation: slide-in 800ms 0 ease;
+  background: #383838;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -175,17 +215,17 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
-.cta .cta-text {
+.cta-text {
   font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
-  flex-flow: column;
+  flex-flow: row;
   align-items: center;
   margin: 0 82px 0 0;
 }
-.cta .cta-text button {
+.cta-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
@@ -193,8 +233,11 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-animation: slide-in 300ms 1ms ease;
+  -moz-animation: slide-in 300ms 1ms ease;
+  -ms-animation: slide-in 300ms 1ms ease;
 }
-.cta .cta-text button:hover {
+.cta-text button:hover {
   background: black;
   color: white;
 }
@@ -204,7 +247,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 100px;
   line-height: 18px;
 }
 .main-content .top-content {
@@ -215,6 +258,11 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 60%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
@@ -224,7 +272,7 @@ header .logo {
 }
 /* Contact Styles */
 .contact p {
-  margin: 40px 0;
+  margin: 4px 0;
 }
 /* Footer Styles */
 footer {
