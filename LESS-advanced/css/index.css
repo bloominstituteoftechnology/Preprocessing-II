@@ -231,3 +231,28 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #990000;
+}
+p {
+  color: #1919ff;
+}
+.copyright {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
+}
+button {
+  color: crimson;
+  border-radius: 15px;
+  text-decoration: underline;
+  font-weight: 700;
+}
