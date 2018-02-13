@@ -2,9 +2,14 @@
 
 At this point, you have been introduced to LESS variables, nesting, mixins, escaping, importing and more.  This project incorporates a small amount of everything. You will need to be able to navigate the file structure and make the following updates:
 
-##Project 2 - Organize imports, use mixins, functions, escaping, namespacing by building and updating a single web page.
+## Project 2 - Organize imports, use mixins, functions, escaping, namespacing by building and updating a single web page.
+This project will be broken into two main tasks: 
+1. Using imports to build a LESS structure. 
+2. Demonstrate that you can use mixins, escaping, functions and stretching to see if you can use namespaces.
 
-## Task 1 - Import 
+Start by forking and cloning this repo then get started on the tasks.  Good luck!
+
+## Task 1 - Importing
 Notice that the LESS folder in this project has several .less files now.  Task 1 is to correctly import the .less files into index.less in the following order:
 
 1. reset.less
@@ -36,5 +41,5 @@ Create your own namespace for the following elements:
 * Buttons
 * p tags
 
-Once you have created your own unique namespace, apply it throughout the site using the > accessor to overrite the current styles in place.
+Once you have created your own unique namespace styles, apply them throughout the site using the > accessor to overrite the current styles in place as you see fit.  This is open ended so try and find practical ways this could help you or just go wild and change everything ;)
 
