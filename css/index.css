@@ -360,12 +360,17 @@ header .logo:hover {
   width: 54px;
   background: lightblue;
   border-radius: 50%;
-  -webkit-box-shadow: 1px 1px 1px 1px darkgrey;
-  -moz-box-shadow: 1px 1px 1px 1px darkgrey;
-  box-shadow: 1px 1px 1px 1px darkgrey;
+  -webkit-box-shadow: 2px 2px 2px 1px darkgrey;
+  -moz-box-shadow: 2px 2px 2px 1px darkgrey;
+  box-shadow: 2px 2px 2px 1px darkgrey;
 }
 .main-content .top-content button:hover {
   background: #5fb3ce;
+}
+.main-content .top-content button:active {
+  -webkit-box-shadow: inset 2px 2px 2px grey;
+  -moz-box-shadow: inset 2px 2px 2px grey;
+  box-shadow: inset 2px 2px 2px grey;
 }
 .main-content .middle-img {
   display: block;
@@ -398,14 +403,19 @@ header .logo:hover {
   justify-content: center;
   height: 54px;
   width: 54px;
-  background: lightgrey;
+  background: skyblue;
   border-radius: 50%;
-  -webkit-box-shadow: 1px 1px 1px 1px darkgrey;
-  -moz-box-shadow: 1px 1px 1px 1px darkgrey;
-  box-shadow: 1px 1px 1px 1px darkgrey;
+  -webkit-box-shadow: 2px 2px 2px 1px darkgrey;
+  -moz-box-shadow: 2px 2px 2px 1px darkgrey;
+  box-shadow: 2px 2px 2px 1px darkgrey;
 }
 .main-content .bottom-content button:hover {
-  background: #a0a0a0;
+  background: #30aadc;
+}
+.main-content .bottom-content button:active {
+  -webkit-box-shadow: inset 2px 2px 2px grey;
+  -moz-box-shadow: inset 2px 2px 2px grey;
+  box-shadow: inset 2px 2px 2px grey;
 }
 @media (max-width: 768px) {
   .contact {
