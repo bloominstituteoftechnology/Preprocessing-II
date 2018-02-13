@@ -297,7 +297,18 @@ header .logo {
 @media (max-width: 400px) {
   .main-content .text-content {
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+}
+.main-content .text-content button {
+  width: 120px;
+  height: 50px;
+  background-color: yellow;
+}
+.main-content .text-content button:hover {
+  background-color: #999900;
 }
 .main-content .top-content {
   display: flex;

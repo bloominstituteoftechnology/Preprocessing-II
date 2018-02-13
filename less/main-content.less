@@ -37,8 +37,21 @@
     line-height: 18px;
  
     .text-content {
+        
+
         @media @phone {
             margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            .button-mix(120px, 50px);
+            &:hover {
+                background-color: darken(yellow, 20%);
+            }
+
+        
         }
     }
  
