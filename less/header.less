@@ -3,31 +3,71 @@
 header {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
 
     nav {
+        flex-grow: 1;
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
+            justify-content: space-around;
             display: flex;
 
             li {
 
                 a {
                     text-decoration: none;
-                    color: #b0b0b0;
+                    color: @primary-color;
+                    font-size: 1.8rem;
 
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        @media @phone-max400{
+                            //phone styles for a:hover
+                            text-decoration: none;
+                            background: @primary-color;
+                        }// phone a:hover 
+                    }
+                    @media @phone-max400{
+                        // phone styles for a tag
+                        display: block;
+                        padding: 1rem 0;
+                    }// phone a tag
+                }// a
+                @media @phone-max400{
+                    // phone styles fo li tag
+                    border-bottom: 1px solid @primary-color;
+                    width: 100%;
+                    text-align: center;
+
+                    &:first-child{
+                        border-top: 1px solid @primary-color;
                     }
                 }
+            }// li
+            @media @phone-max400{
+                flex-direction: column;
+                align-items: center;
             }
+        }// ul
+        @media @tablet-max760{
+            // tablet styles for nav
+            width:100%;
         }
-    }
+    }// nav
 
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+        @media @tablet-max760 {
+            // tablet logo styles 
+            order: -1;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+    }
+    @media @tablet-max760 {
+        // tablet header styles 
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }// header

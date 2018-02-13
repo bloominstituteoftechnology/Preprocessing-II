@@ -1,29 +1,39 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: .2rem solid black; 
+    border-bottom: .2rem solid black;
+    margin: 7.5rem 0 1.5rem 0;
+    padding: 3.5rem 0;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
 
-   .top-content {
+    button {
+        //.button-stylor();
+    }
+            
+    @media @tablet-max760{
+        border-bottom: none;
+    }
+    .top-content, .bottom-content  {
         display: flex;
         justify-content: space-around;
-    }
+
+        @media @phone-max400{
+            flex-direction: column;
+            padding: 1rem;
+
+            h4 {
+                text-align: center;
+                margin: 2rem 0;
+            }
+        }
+    }// top-content, bottom-content
 
     .middle-img {
         display: block;
-        margin: 30px auto;
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
+        margin: 3rem auto;
+        padding: 1rem;
+        width: 100%;
     }
 }// main-content
