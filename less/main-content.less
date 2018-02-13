@@ -1,29 +1,92 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+    @media(max-width:@large-tablet){
+     border-top: 2px solid black; 
+     border-bottom: 2px solid black;
+     margin: 40px 0 35px 0;
+     padding: 35px 0;
+     font-size: 1rem;
+     line-height: 18px;
     }
-
-    .middle-img {
-        display: block;
-        margin: 30px auto;
+    @media(@tablet){
+     border-top: 2px solid black; 
+     border-bottom: 2px solid black;
+     margin: 7% 0 35px 0;
+     padding: 3.5% 0;
+     font-size: 1rem;
+     line-height: 18px;
+     h4{
+         font-size:3;
+      }
     }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
+    @media(@phone){
+     padding: 3.5% 0;
+     margin-top:4%;
+     display:flex;
+     flex-flow:column;
+     font-size: 1rem;
+     line-height: 18px;
+     h4{
+         margin:2% 0 0 1%;
+         text-align: center;
+     }
     }
-}// main-content
+    .text-content{
+       .button-create(10,10);
+    }
+    .top-content {
+         display: flex;
+         justify-content: space-around;
+         @media(max-width:@tablet){
+             display: flex;
+             justify-content: space-around;
+         }
+         @media(max-width:@phone){
+             flex-direction:column;
+         }
+ 
+     }
+ 
+     .middle-img {
+         display: block;
+         margin: 30px auto;
+         @media(max-width:@large-tablet){
+             display: block;
+             width:100%;
+         }
+         @media(@tablet){
+             display: block;
+             width:90vw;
+         }
+         @media(@phone){
+             margin:4% 0px 4% 0px;
+             width:100%;
+         }
+     }
+ 
+     .bottom-content {
+         display: flex;
+         justify-content: space-around;
+         p {
+             padding-right: 20px;
+             @media(@phone){
+                 font-size:1rem;
+             }
+         } 
+         @media(@tablet){
+             display: flex;
+             justify-content: space-around;
+             
+         }
+         @media(@phone){
+             flex-direction:column;
+         }
+     } 
+ }//end MAIN CONTENT

@@ -1,5 +1,4 @@
 // General Styles
-
 * {
     box-sizing: border-box;
 }
@@ -16,6 +15,18 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+    color:black;
     width: 880px;
     margin: auto;
-}
+    @media(max-width:@large-tablet){
+        width:90vw;
+        margin:auto;
+    }
+    @media(@tablet){
+        width:90vw;
+        margin:auto;
+    }
+    @media(@phone){
+        width:100vw;
+    }
+}//end CONTAINER
