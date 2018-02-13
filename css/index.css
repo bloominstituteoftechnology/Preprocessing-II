@@ -299,15 +299,13 @@ header .logo {
   margin: 10px 0 10px 0;
   width: 150px;
   height: 35px;
-  background: black;
-  -webkit-box-shadow: 5px 5px 20px black;
-  -moz-box-shadow: 5px 5px 20px black;
-  box-shadow: 5px 5px 20px black;
+  background: grey;
+  -webkit-box-shadow: 5px 5px 20px grey;
+  -moz-box-shadow: 5px 5px 20px grey;
+  box-shadow: 5px 5px 20px grey;
 }
 .main-content .top-content button:hover {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+  background: #404040;
 }
 .main-content .middle-img {
   display: block;
@@ -335,15 +333,13 @@ header .logo {
   margin: 10px 0 10px 0;
   width: 150px;
   height: 35px;
-  background: black;
-  -webkit-box-shadow: 5px 5px 20px black;
-  -moz-box-shadow: 5px 5px 20px black;
-  box-shadow: 5px 5px 20px black;
+  background: grey;
+  -webkit-box-shadow: 5px 5px 20px grey;
+  -moz-box-shadow: 5px 5px 20px grey;
+  box-shadow: 5px 5px 20px grey;
 }
 .main-content .bottom-content button:hover {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+  background: #404040;
 }
 .contact p {
   margin: 40px 0;
