@@ -4,7 +4,7 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -18,16 +18,24 @@
 
     .cta-text button {
         border: 1px double black;
+        .box-shadow(5px 5px blue);
         font-size: 16px;
-        background: white;
+        background: rgb(255, 255, 255);
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        
+        .border-radius();
 
         &:hover {
             background: black;
             color: white;
+            .opacity(.2);
+            
+            
+
+            
         }
     }
 }// cta
