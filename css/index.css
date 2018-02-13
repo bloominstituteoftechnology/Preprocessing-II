@@ -150,12 +150,57 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+@media (max-width: 786px) {
+  header {
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    margin-top: 25px;
+  }
+}
+header nav {
+  width: 100%;
+}
+@media (max-width: 400px) {
+  header nav {
+    margin: 0;
+    align-self: center;
+  }
 }
 header nav ul {
   margin-top: 40px;
-  width: 610px;
+  width: 85%;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 786px) {
+  header nav ul {
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    display: block;
+    margin: 3%;
+    text-align: center;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -167,7 +212,16 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 0;
+  width: 15%;
+}
+@media (max-width: 786px) {
+  header .logo {
+    width: 50%;
+    order: -1;
+    align-self: center;
+    margin: 2%;
+  }
 }
 .cta {
   display: flex;
@@ -226,4 +280,10 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+.container {
+  max-width: 880px;
+  width: 96%;
+  margin: auto;
+  justify-content: center;
 }
