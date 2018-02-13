@@ -22,6 +22,34 @@ h1, h2, h3, h4, h5 {
     color: @alt-header-color;
 }
 
+
+//Namespaces for Stretch Goal
+
+#buttons() {
+    .highlight-green {
+        width: 50%;
+        height: 40px;
+        background: lightgreen;
+        border: 1px solid @alt-divider-color;
+        .border-radius(4px);
+    }
+
+}
+
+#paragraphs {
+    .highlight {
+        color: @alt-highlight-color;
+    }
+}
+
+#headings {
+    .highlight {
+        color: @alt-highlight-color;
+        text-decoration: underline dotted @alt-highlight-color;
+    }
+}
+
+
 .container {
     max-width: 880px;
     width: 100%;

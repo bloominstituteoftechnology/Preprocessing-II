@@ -11,17 +11,38 @@
     line-height: 1.3;
     @media @tablet {margin: 50px 2% 35px;}
 
-    button {
-        .button-creator(50%,40px,@alt-header-color, 4px);
-        align-self: center;
-        margin: 10px 0;
-    }
+
+
+
+
 
     .text-content {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
         align-content: space-between;
+
+        .highlight_button {
+            #buttons > .highlight-green;
+        }
+
+        .highlight_p {
+            #paragraphs > .highlight;
+        }
+
+        .highlight_h4 {
+            #headings > .highlight;
+        }
+
+
+
+        button {
+            .button-creator(50%,40px,@alt-header-color, 4px);
+            align-self: center;
+            margin: 10px 0;
+        }
+
+  
 
     }
  
