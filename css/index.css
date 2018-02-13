@@ -133,6 +133,10 @@ table {
 #bundle .headers h5 {
   font-family: "Pacifico";
 }
+#bundle .buttons {
+  font-family: "Pacifico";
+  font-size: 16px;
+}
 * {
   box-sizing: border-box;
 }
@@ -318,6 +322,8 @@ header .logo {
   border-radius: 10px;
   background: #4a4ac0;
   margin: 3% 0;
+  font-family: "Pacifico";
+  font-size: 16px;
 }
 .main-content button:hover {
   background: #2a2a7a;
