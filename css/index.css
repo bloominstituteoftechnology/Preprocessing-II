@@ -372,6 +372,15 @@ header .logo:hover {
   -moz-box-shadow: inset 2px 2px 2px grey;
   box-shadow: inset 2px 2px 2px grey;
 }
+.main-content .top-content button:active {
+  background: red;
+}
+.main-content .top-content .text-content {
+  padding: 2% 2%;
+}
+.main-content .top-content h4 {
+  font-size: 2rem;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -416,6 +425,15 @@ header .logo:hover {
   -webkit-box-shadow: inset 2px 2px 2px grey;
   -moz-box-shadow: inset 2px 2px 2px grey;
   box-shadow: inset 2px 2px 2px grey;
+}
+.main-content .bottom-content button:active {
+  background: red;
+}
+.main-content .bottom-content .text-content {
+  padding: 2% 2%;
+}
+.main-content .bottom-content h4 {
+  font-size: 2rem;
 }
 @media (max-width: 768px) {
   .contact {
