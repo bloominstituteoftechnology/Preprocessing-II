@@ -3,7 +3,7 @@
 header {
     width: 100%;
     display: flex;
-
+    .rotate(180deg);
     nav {
         ul {
             margin-top: 40px; 
@@ -29,5 +29,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        
+    }
+    @media @tablet{
+        flex-flow: column-reverse wrap;
+        justify-content: center;
     }
 }// header
