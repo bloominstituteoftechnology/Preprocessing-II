@@ -1,5 +1,4 @@
 # Preprocessing II - Advanced LESS
-
 At this point, you have been introduced to LESS variables, nesting, mixins, escaping, importing and more.  This project incorporates a small amount of everything. You will need to be able to navigate the file structure and make the following updates:
 
 ## Project 2 - Organize imports, use mixins, functions, escaping, namespacing by building and updating a single web page.
