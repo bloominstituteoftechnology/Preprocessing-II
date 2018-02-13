@@ -227,6 +227,103 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+  }
+}
+header ul {
+  -webkit-transform: skew(25deg, 20deg);
+  -moz-transform: skew(25deg, 20deg);
+  -ms-transform: skew(25deg, 20deg);
+  -o-transform: skew(25deg, 20deg);
+}
+@media (max-width: 768px) {
+  header ul {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  header ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header ul li {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  header ul li li:first-child {
+    border-top: 1px solid gray;
+  }
+}
+@media (max-width: 400px) {
+  header ul li a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
+}
+@media (max-width: 400px) {
+  header ul li a a:hover {
+    background: gray;
+  }
+}
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .cta {
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
 .cta .cta-text button {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -234,12 +331,115 @@ footer {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: 5px;
-  -moz-box-shadow: 5px;
-  box-shadow: 5px;
+  -webkit-box-shadow: 0 0 10px 10px black;
+  -moz-box-shadow: 0 0 10px 10px black;
+  box-shadow: 0 0 10px 10px black;
+}
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin: 50px 2% 35px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 300px;
+  }
+}
+.main-content .top-content .text-content padding {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  color: sandybrown;
+}
+.main-content .top-content .text-content h4 {
+  font-size: 2rem;
+  color: blue;
+}
+.main-content .top-content .text-content .button1 {
+  width: 100px;
+  height: 20px;
+  background: green;
+}
+.main-content .top-content .text-content .button1:hover {
+  background-color: #00142a;
+  color: white;
+}
+.main-content .top-content .text-content .button2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+.main-content .top-content .text-content .button2:hover {
+  background-color: yellow;
+}
+.main-content .top-content .text-content .button2:hover {
+  background-color: #00142a;
+  color: white;
 }
 .main-content .middle-img {
   -webkit-opacity: 0.6;
   -moz-opacity: 0.6;
   opacity: 0.6;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
+.main-content .bottom-content .text-content .button3 {
+  width: 130px;
+  height: 150px;
+  background: yellow;
+}
+.main-content .bottom-content .text-content .button3:hover {
+  background-color: #00142a;
+  color: white;
+}
+.main-content .bottom-content .text-content .button4 {
+  width: 300px;
+  height: 50px;
+  background: gray;
+}
+.main-content .bottom-content .text-content .button4:hover {
+  background-color: #00142a;
+  color: white;
+}
+.main-content .bottom-content .text-content .button5 {
+  width: 150px;
+  height: 200px;
+  background: orange;
+}
+.main-content .bottom-content .text-content .button5:hover {
+  background-color: #00142a;
+  color: white;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px 2%;
+  }
+}
+@media (max-width: 400px) {
+  .contact {
+    margin: 20px;
+  }
 }
