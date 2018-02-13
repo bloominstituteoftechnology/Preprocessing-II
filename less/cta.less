@@ -14,7 +14,12 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+
+        &:hover{
+            color: hotpink;
+            .opacity;
+        }//.cta-text &:hover
+    }// cta-text
 
     .cta-text button {
         border: 1px double black;
@@ -26,8 +31,23 @@
         cursor: pointer;
 
         &:hover {
-            background: black;
-            color: white;
-        }
+            background: limegreen;
+            color: hotpink;
+            margin: 50px 0;
+            position: relative;
+            display: block;
+            width: 0px;
+            height: 0px;
+            border-right:  100px solid transparent;
+            border-bottom: 70px  solid skyblue;
+            border-left:   100px solid transparent;
+            -moz-transform:    rotate(35deg);
+            -webkit-transform: rotate(35deg);
+            -ms-transform:     rotate(35deg);
+            -o-transform:      rotate(35deg);
+        }//a &:hover
+    }// cta-text button
+    img {
+        .opacity;
     }
 }// cta

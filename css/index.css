@@ -157,17 +157,27 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+header nav ul li {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: hotpink;
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: skew(5deg, 50deg);
+  -moz-transform: skew(5deg, 50deg);
+  -ms-transform: skew(5deg, 50deg);
+  -o-transform: skew(5deg, 50deg);
 }
 .cta {
   display: flex;
@@ -184,6 +194,12 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+.cta .cta-text:hover {
+  color: hotpink;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -194,8 +210,25 @@ header .logo {
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: black;
-  color: white;
+  background: limegreen;
+  color: hotpink;
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px  solid skyblue;
+  border-left: 100px solid transparent;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+}
+.cta img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .main-content {
   border-top: 2px solid black;
