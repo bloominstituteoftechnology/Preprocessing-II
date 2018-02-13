@@ -1,4 +1,4 @@
-@import "reset";
+@import "reset.less";
 @import "variables";
 @import "mixins";
 @import "general-styles";
@@ -8,4 +8,42 @@
 @import "contact";
 @import "footer";
 
+.main-header {
+    border: 1px dashed black;
+    padding: 10px;
+    .border-radius(10px);
 
+    .logo {
+        margin: 28px 0 0 60px;
+        .skew(0deg, 10deg);
+    }
+}
+
+.cta {
+    img {
+        //display: hidden;
+        .opacity(.3);
+    }
+
+    .cta-text {
+        .skew(0deg, 10deg);
+        .opacity(.3);
+    }
+}
+
+.main-content {
+    .top-content {
+        .text-content {
+            .rotate(5deg);
+            .box-shadow(5px 10px lightgrey);
+        }
+    }
+
+    .bottom-content {
+        .text-content {
+            .rotate(5deg);
+            .box-shadow(5px 10px lightgrey);
+        }
+
+    }
+}
