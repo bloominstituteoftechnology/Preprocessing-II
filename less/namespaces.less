@@ -1,0 +1,22 @@
+#namespace-items {
+    .header-style {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-end;
+    }
+
+    .button-style {
+        .button-mix(120px, 50px);
+            &:hover {
+                background-color: darken(yellow, 20%);
+            }
+    }
+
+    .p-style {
+        margin: 15px 0;
+             @media @phone {
+                 padding-right: 0;
+             }
+    }
+}

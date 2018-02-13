@@ -126,6 +126,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#namespace-items .header-style {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+#namespace-items .button-style {
+  width: 120px;
+  height: 50px;
+  background-color: yellow;
+}
+#namespace-items .button-style:hover {
+  background-color: #999900;
+}
+#namespace-items .p-style {
+  margin: 15px 0;
+}
+@media (max-width: 400px) {
+  #namespace-items .p-style {
+    padding-right: 0;
+  }
+}
 * {
   box-sizing: border-box;
 }
