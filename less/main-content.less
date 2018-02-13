@@ -8,22 +8,62 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+        margin: 75px 20px 35px;
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            justify-content: space-around;
+            flex-direction: column;
+            height: 300px;    
+        }
+        .button1 {
+            .button-creator(75px, 75px, purple);
+            } 
+
+        .button2 {
+            .button-creator(75px, 75px, purple);
+            } 
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        @media @tablet {
+            width: 100%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }
+
         p {
-            padding-right: 20px;
+            padding-right: 40px;
+            // margin-bottom: 200px;
+        }
+
+        .button3 {
+            .button-creator(75px, 75px, purple);
+        }
+        
+        .button4 {
+            .button-creator(75px, 75px, purple);
+        }
+
+        .button5 {
+            .button-creator(75px, 75px, purple);      
         }
     }
 }// main-content

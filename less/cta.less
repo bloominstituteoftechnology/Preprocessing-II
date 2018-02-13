@@ -5,6 +5,30 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        justify-content: center;
+    }
+
+    @media @phone {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    img {
+        &:hover {
+            .opacity ;
+        }
+
+        @media @tablet {
+            width: 80%;
+        }
+
+        @media @phone {
+            display:none;
+        }
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +38,15 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tablet {
+            font-size: 52px;
+            margin: 0 40px 0 0;
+        }
+
+        @media @phone {
+            margin: 0 0 50px 0;
+        }
     }
 
     .cta-text button {
@@ -24,10 +57,14 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .box-shadow(10px 10px 10px black);
+        
 
         &:hover {
             background: black;
             color: white;
+            .border-radius;
+            .skew(-200deg,200deg);
         }
-    }
+    } 
 }// cta
