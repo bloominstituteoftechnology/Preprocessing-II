@@ -35,3 +35,20 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-create (@height: 100px, @width: 50px, @bgcolor: cadetblue){
+	button{
+		width:@width;
+		height:@height;
+		background-color:@bgcolor;
+	
+		&:hover{
+			background-color: darken(@bgcolor,15%);
+			.box-shadow(3px 5px);
+			.rotate(10deg);
+			
+			
+		}
+	}
+
+}

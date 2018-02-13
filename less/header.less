@@ -1,33 +1,96 @@
 // Header Styles
 
+
 header {
     width: 100%;
     display: flex;
-
-    nav {
+    @media(max-width:@large-tablet){
+        width: 90%;
+        display: flex;
+    }
+    @media(@tablet){
+        width: 90%;
+        height:100px;
+        display: flex;
+        justify-content:center;
+        flex-direction: column-reverse;
+        margin-bottom: 5%;
+    }
+    @media(@phone){
+        width:100%;
+        height:150px;
+        display: flex;
+        align-content: center;
+        flex-direction: column-reverse;
+        margin:0px 0px 5% 0px;
+    }
+    @media(max-width:215px){
+        margin-bottom:1%;
+    }
+    nav{
+        @media(@tablet){
+            margin:0px;
+        }
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
-
-            li {
-
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
-
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
+            @media(max-width:@large-tablet){
+                margin-top: 40px; 
+                width: 60vw;
+                justify-content: space-between;
+                display: flex;
+            }
+            @media(@tablet){
+                margin-top:20px;
+                width: 100%;
+                justify-content: space-around;
+                font-size:1em;
+            }
+            @media(@phone){
+                flex-direction:column;
+                margin-top:5%;
+                width: 100%;
+                font-size:1em;
+                text-align:center;
+            }
+            li{
+                @media(@phone){
+                    border:lightgrey solid 1px;
+                    width:100%;
+                    background-color:black;
                 }
             }
-        }
-    }
-
+            li a {
+                text-decoration: none;
+                color: #b0b0b0;
+                &hover {
+                    text-decoration: underline;
+                    color: black;
+                }
+            }//end li
+        }//end nav ul
+    }//end nav
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-    }
-}// header
+        &:hover{
+            .opacity();
+        }
+        @media(max-width:@large-tablet){
+            align-self: flex-end;
+            margin: 28px 0 0 9%;
+        }
+        @media(@tablet){
+            align-self:center;
+        }
+        @media(@phone){
+            margin-top:15px;
+            padding-right:7%;
+            height:auto;
+            width:50%;
+        }
+    }//end .logo
+
+}//end HEADER
