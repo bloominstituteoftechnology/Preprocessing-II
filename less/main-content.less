@@ -1,3 +1,16 @@
+
+.button-creator(@width, @height, @background){
+	width: @width;
+	height: @height;
+    background: @background;
+    border: 1px solid black;
+    margin-top: 20px;
+    font-size: 10px;
+     &:hover{
+        color:white;
+    }
+}
+
 // Main Content Styles
 
 .main-content {
@@ -12,16 +25,25 @@
         display: flex;
         justify-content: space-around;
     }
-
+      button {
+        .button-creator(100px, 20px,gray)
+       }
+    
     .middle-img {
         display: block;
         margin: 30px auto;
-        .box-shadow(10px 10px 10px black);        
+        .box-shadow(10px 10px 10px black);
+        @media  @tablet {
+            width: 97%;       
+        }        
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        button {
+            .button-creator(100px, 20px,gray)
+           }
 
         p {
             padding-right: 20px;
