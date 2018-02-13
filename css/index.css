@@ -164,6 +164,12 @@ header nav ul {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+@media max-width: 768px {
+  header nav ul li {
+    background: black;
+    color: white;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
