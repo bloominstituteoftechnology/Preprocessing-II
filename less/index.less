@@ -1,7 +1,212 @@
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+@import "namespaces.less";
+@import "general-styles.less";
+@import "header.less";
+@import "cta.less";
+@import "main-content.less";
+@import "contact.less";
+@import "footer.less";
 
+//escaping
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
+//variables
+@blood-red: #c30909;
+@midnight-blue: #030396;
+@phone-font: "Courier New", Courier, monospace;
 
+//button mixin
+.button-creator(@width, @height, @background) {
+    width: @width;
+    height: @height;
+    background: @background;
+    border: 1px solid black;
+    .opacity(@opacity: 0.5);
+    .skew(10deg, 10deg);
+    .box-shadow(10px 1px 10px 10px rgba(255, 145, 0, 0.589));
+    
+    &:hover {
+      background: darken(@blood-red, 50%);
+      .rotate(180deg);
+      .border-radius(@radius: 5px);
+    }
+  }
 
+//responsive design
+.container {
+    @media @tablet {
+          width: 100%;
+      }
+    @media @phone {
+        width: 100%;
+    }
+  }
+// Responsive Header Styles 
+  header {
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media @phone {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  
+    .logo {
+      @media @tablet {
+          order: -1;
+          max-width: 100%;
+          margin: 20px 0;
+      }
+    }
+  
+    nav {
+      @media @tablet {
+          width: 90%;
+      }
+      @media @phone {
+          width: 100%;
+      }
+  
+      ul {
+          @media @phone {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+              align-items: center;
+          }
+        li {
+          @media @phone {
+              width: 100%;
+              margin: 0;
+          }
+        
+          a {
+          @media @phone {
+              display: block;
+              text-align: center;
+              padding: 20px 0;
+              font-size: 2rem;
+              border-bottom: 1px solid gray;
+              color: @blood-red; 
+              font-family: @phone-font;
+              &:hover {
+                text-decoration: underline;
+                color: black;
+                @media @phone {
+                    background: gray;
+                }
+              } //header nav ul li a:hover
+           }
+          } //header nav ul li a
+  
+          
+       } // header nav ul li
+       li:first child {
+         @media @phone {
+             background: gray;
+         } 
+      } //first child
+    } //header nav ul
+   } // header nav
+  } //header
+  
+  // Responsive Call To Action (CTA) Styles
+  .cta {
+    @media @tablet {
+      margin-top: 50px;
+      flex-flow: column;
+      align-items: center;
+    }
+  
+    img {
+      @media @tablet {
+          display: none;
+      }
+    }
+  
+    .cta-text {
+      font-size: 72px;
+      text-align: center;
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      align-items: center;
+      margin: 0 82px 0 0;
+      @media @tablet {
+          margin: 0;
+          color: @blood-red;
+      }
+      @media @phone {
+          color: @midnight-blue;
+      }
+  
+       button {
+        &:hover {
+          @media @tablet {
+              background: @midnight-blue;
+          }
+          @media @phone {
+              background: @blood-red;
+          }
+        } //button: hover
+      } //.cta-text button  
+    } //.cta-text
+  } //cta
+  
+  // Responsive Main Content Styles
+  .main-content {
+    @media @tablet {
+      margin: 50px 2% 35px;
+    }
+  
+    .middle-img {
+        @media @tablet {
+          width: 100%;
+        }
+    }
+  
+    .top-content {
+      @media @phone {
+          justify-content: space-around;
+          flex-direction: column;
+          height: 300px;
+      }
+      .text-content {
+        button {
+            .button-creator(150px, 20px, white);
+        }
+      }
+    } // top-content
+   
+    .bottom-content {
+      @media @phone {
+          flex-wrap: wrap;
+          align-content: space-between;
+          height: 440px;
+      }
+      .text-content {
+        button {
+            .button-creator(150px, 20px, white)
+        }
+      }
+    } // bottom-content
+  } // main-content
+  
+  // Responsive Contact Styles
+  .contact {
+      @media @tablet {
+          margin: 20px 2%;
+      }
+      @media @phone {
+          margin: 20px;
+      }
+  }
 
 
 
