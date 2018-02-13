@@ -8,12 +8,29 @@
 @import "contact.less";
 @import "footer.less";
 
+/*@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";*/
+
 .container {
     header {
+        
+        
         nav {
-
-        }//nav end
-    }
+            
+            ul {
+                li {
+                    a {
+                        
+                        &:hover {
+                            .skew(1deg, 20deg);
+                            color: red;
+                        }
+                        
+                    } //a end
+                } // li end
+            } //ul end
+        } //nav end
+        
     .cta {
         .cta-text {
             h1 {
@@ -23,31 +40,24 @@
             }
         }
     }
+    @media (max-width: 700px) {
+        .header {
+            background: blue;
+        }
+    }
 }
-
+}
 button {
     .border-radius(5px);
     &:hover {
         .opacity();
-        .skew(0deg,30deg);
+        /* new: */
+        .skew(0deg, 30deg);
         /*.rotate(90deg);*/
     }
+    
     /*.box-shadow(10);*/
     
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

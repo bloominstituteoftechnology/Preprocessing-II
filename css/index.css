@@ -227,11 +227,25 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
-.container .cta .cta-text h1:hover {
+/*@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";*/
+.container header nav ul li a:hover {
+  -webkit-transform: skew(1deg, 20deg);
+  -moz-transform: skew(1deg, 20deg);
+  -ms-transform: skew(1deg, 20deg);
+  -o-transform: skew(1deg, 20deg);
+  color: red;
+}
+.container header .cta .cta-text h1:hover {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+@media (max-width: 700px) {
+  .container header .header {
+    background: blue;
+  }
 }
 button {
   -webkit-border-radius: 5px;
@@ -246,6 +260,7 @@ button:hover {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+  /* new: */
   -webkit-transform: skew(0deg, 30deg);
   -moz-transform: skew(0deg, 30deg);
   -ms-transform: skew(0deg, 30deg);
