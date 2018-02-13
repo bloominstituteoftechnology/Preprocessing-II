@@ -3,31 +3,95 @@
 header {
     width: 100%;
     display: flex;
+		background-color: @main-color;
 
-    nav {
-        ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
-            display: flex;
+		@media @tablet {
+		        flex-wrap: wrap;
+		        justify-content: center;
+		    }
 
-            li {
+		@media @phone {
+		        flex-wrap: wrap;
+		        justify-content: center;
+		    }
 
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
+		nav {
+			@media @tablet {
+			        width: 90%;
+			    }
 
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
-                }
-            }
-        }
-    }
+			@media @phone {
+			        width: 100%;
+			    }
 
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
-}// header
+			 ul {
+			    margin-top: 20px * 2; //multiplication wow!
+			    width: 610px;
+			    justify-content: space-between;
+			    display: flex;
+
+					@media @tablet {
+					        width: 100%;
+					        margin: 20px 0;
+					    }
+
+					@media @phone {
+					        width: 100%;
+					        display: flex;
+					        flex-direction: column;
+					        margin: 0;
+					        align-items: center;
+					    }
+
+					li {
+						@media @phone {
+						        width: 100%;
+						        margin: 0;
+						    }
+
+						a {
+						    text-decoration: none;
+						    color: black;
+
+								@media @phone {
+								        display: block;
+								        text-align: center;
+								        padding: 20px 0;
+								        font-size: 2rem;
+								        border-bottom: 1px solid gray;
+								    }
+
+								 &:firstchild{
+									 @media @phone {
+								         border-top: 1px solid gray;
+								     }
+								 }
+
+								&:hover {
+								    text-decoration: underline;
+								    color: darkblue;
+
+										@media @phone {
+										        background: gray;
+										    }
+								}
+						}
+					} //li
+			} // ul
+		} //nav
+
+		.logo {
+		    align-self: flex-end;
+		    margin: 28px 0 0 91px;
+
+				&:hover {
+						.skew(15deg,15deg);
+				}
+
+				@media @tablet {
+				        order: -1;
+				        max-width: 100%;
+				        margin: 20px 0;
+				    }
+		}
+}

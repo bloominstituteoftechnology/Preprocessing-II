@@ -35,3 +35,40 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.content-button (@height, @width, @background) {
+	font-size: 0.6rem;
+	border: none;
+	margin: 5% 40%;
+	display: flex;
+	justify-content: center;
+	height: @height;
+	width: @width;
+	background: @background;
+	border-radius: 50%;
+	.box-shadow(2px 2px 2px 1px darkgrey);
+
+	&:hover {
+		background: darken(@background, 20%);
+	}
+
+	&:active {
+		.box-shadow(inset 2px 2px 2px grey);
+	}
+}
+
+#bundle() {
+	.headings {
+		font-size: 2rem;
+	}
+
+	.button {
+		&:active {
+			background: red;
+		}
+	}
+
+	.paragraph {
+		padding: 2% 2%;
+	}
+}
