@@ -299,6 +299,12 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content button {
+  width: 30%;
+  height: 40px;
+  border-radius: 20%;
+  background: #4a4ac0;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
