@@ -1,3 +1,43 @@
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+@import "general-styles.less";
+@import "header.less";
+@import "cta.less";
+@import "main-content.less";
+@import "contact.less";
+@import "footer.less";
+
+.container {
+    header {
+        nav {
+
+        }//nav end
+    }
+    .cta {
+        .cta-text {
+            h1 {
+                &:hover {
+            .rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+button {
+    .border-radius(5px);
+    &:hover {
+        .opacity();
+        .skew(0deg,30deg);
+        /*.rotate(90deg);*/
+    }
+    /*.box-shadow(10);*/
+    
+    
+}
+
+
 
 
 
