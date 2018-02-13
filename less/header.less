@@ -1,15 +1,26 @@
 // Header Styles
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width:400px)";
 
 header {
     width: 100%;
     display: flex;
-
+    @media @tablet {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }    
     nav {
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+
+            @media @phone {
+                flex-flow: column nowrap;
+                align-items: center;
+            }
 
             li {
 
@@ -19,8 +30,15 @@ header {
 
                     &:hover {
                         text-decoration: underline;
-                        color: black;
+                        color: black; 
                     }
+
+                    @media @phone {
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                        padding: 15px 0;
+                    }  
                 }
             }
         }
@@ -29,5 +47,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+            align-self: center;
+        }
+        .rotate(15deg);
     }
 }// header
