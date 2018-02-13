@@ -254,9 +254,10 @@ header .logo {
   border-radius: 40px;
   font-family: cursive;
   font-size: 15px;
+  color: white;
 }
 .main-content .top-content .text-content button:hover {
-  background: yellow;
+  background: #c50bc5;
 }
 .main-content .middle-img {
   display: block;
@@ -281,9 +282,10 @@ header .logo {
   border-radius: 40px;
   font-family: cursive;
   font-size: 15px;
+  color: white;
 }
 .main-content .bottom-content .text-content button:hover {
-  background: yellow;
+  background: #c50bc5;
 }
 .contact p {
   margin: 40px 0;
