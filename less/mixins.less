@@ -35,3 +35,13 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.create-button (@width, @height, @border, @hover) {
+	width: @width;
+	height: @height;
+	border: @border;
+	&:hover {
+		background: @hover;
+		.rotate (15)
+	}
+}
