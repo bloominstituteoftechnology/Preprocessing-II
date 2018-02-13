@@ -5,6 +5,13 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @laptop {
+        justify-content: center;
+    }
+    @media @phone {
+        flex-wrap: wrap;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,20 +21,33 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+        @media @laptop {
+            margin: 0 40px 20px 0;
+            font-size: 56px;
+        }
+        @media @phone {
+            margin: 30px 0;
+        }
 
-        &:hover {
-            background: black;
-            color: white;
+         button {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+            .button-creator(170px, 32px, red, blue);
+            
+            @media @laptop {
+                width: 140px;
+                height: 28px;
+            }
+
+            cursor: pointer;
+            
+            &:hover {
+                background: black;
+                color: white;
+            }
         }
     }
+
 }// cta

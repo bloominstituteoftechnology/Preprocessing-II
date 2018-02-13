@@ -1,6 +1,25 @@
 // Variables on top
+@laptop: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
 // Mixins below variables
+
+.button-creator(@width, @height, @background, @hover-color) {
+  width: @width;
+  height: @height;
+  background: @background;
+  border: 2px solid black;
+  .reflect(25%, 0.3);
+  
+  &:hover {
+	background: @hover-color;
+	.transition(0.5s, ease-out);
+	.transform(@rotate: 360deg, @scale: 1, @skew: 1deg, @translate: 10px);
+  }
+}
+.reflect (@length: 50%, @opacity: 0.2){
+-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(@length, transparent), to(rgba(255,255,255,@opacity)));
+}
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
@@ -14,19 +33,19 @@
 	-ms-animation:     @name @duration @delay @ease;
 }
 
-.transition (@transition) {
-	-webkit-transition: @transition;  
-	-moz-transition:    @transition;
-	-ms-transition:     @transition; 
-	-o-transition:      @transition;  
+.transition(@duration:0.2s, @ease:ease-out) {
+	-webkit-transition: all @duration @ease;
+	-moz-transition:    all @duration @ease;
+	-ms-transition:     all @duration @ease;
+	transition:         all @duration @ease;
 }
-.transform(@string){
-	-webkit-transform: @string;
-	-moz-transform: 	 @string;
-	-ms-transform: 		 @string;
-	-o-transform: 		 @string;
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 }
-
 .scale (@factor) {
 	-webkit-transform: scale(@factor);
 	-moz-transform: 	 scale(@factor);
