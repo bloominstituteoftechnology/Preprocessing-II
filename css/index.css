@@ -292,6 +292,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .main-content .top-content {
+    flex-direction: column;
     margin: 10px 1%;
   }
 }
@@ -305,7 +306,7 @@ header .logo {
   height: 25px;
   background: cadetblue;
   border: 2px solid black;
-  margin: 3% 0 1%;
+  margin: 3% 0 3%;
   color: white;
   align-self: center;
 }
@@ -333,6 +334,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
+    flex-direction: column;
     margin: 10px 1%;
   }
 }
@@ -346,7 +348,7 @@ header .logo {
   height: 25px;
   background: goldenrod;
   border: 2px solid black;
-  margin: 3% 0 1%;
+  margin: 3% 0 3%;
   color: white;
   align-self: center;
 }
