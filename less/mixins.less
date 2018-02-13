@@ -35,3 +35,15 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+// Task 2 - #3 & #4: Custom button mixin w/darken function
+.button-creator(@width, @height, @background) {
+	width: @width;
+	height: @height;
+	background: @background;
+	border: 1px solid black;
+	
+	&:hover {
+	  background: darken(@background,20%);
+	}
+  }
