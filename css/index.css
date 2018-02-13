@@ -238,6 +238,18 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content button {
+  width: 170px;
+  height: 70px;
+  background: hotpink;
+}
+.main-content button:hover {
+  border-radius: 50%;
+  background-color: #ff0381;
+}
+.main-content button:hover:after {
+  content: "... dat me -.-";
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
