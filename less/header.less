@@ -1,8 +1,11 @@
 // Header Styles
-
+@bgColor: white;
 header {
     width: 100%;
     display: flex;
+   //rotate the header 20degree
+    .rotate(2deg);
+   
 
     nav {
         ul {
@@ -20,6 +23,9 @@ header {
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        //Darken function to darken 30%
+                        background-color: darken(@bgColor,30%);
+                        
                     }
                 }
             }
@@ -29,5 +35,6 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .skew(25deg,10deg);
     }
 }// header

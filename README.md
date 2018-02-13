@@ -11,7 +11,7 @@ Start by forking and cloning this repo then get started on the tasks.  Good luck
 
 ## Task 1 - Importing
 Notice that the LESS folder in this project has several .less files now.  Task 1 is to correctly import the .less files into index.less in the following order:
-
+start
 1. reset.less
 2. variables.less
 3. mixins.less
@@ -21,6 +21,7 @@ Notice that the LESS folder in this project has several .less files now.  Task 1
 7. main-content.less
 8. contact.less
 9. footer.less
+end
 
 Once you have imported your less files, be sure to run less-watch-compiler 
 

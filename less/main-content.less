@@ -7,23 +7,48 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+  // .box-shadow(5px 5px 20px red);
+
 
    .top-content {
         display: flex;
         justify-content: space-around;
+        .text-content{
+            .buttonF{
+                .button-add(150px, 40px, gray);
+            }
+            .buttonA{
+                .button-add(150px, 40px, gray);
+        }
     }
-
+}
     .middle-img {
         display: block;
         margin: 30px auto;
+        //Middle pic will have shadow of gray
+        .box-shadow(10px 10px 5px gray);
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        .text-content{
+            .buttonS{
+                .button-add(150px, 40px, gray);
+            }
+
+            .buttonP{
+                .button-add(150px, 40px, gray);
+            }
+            .buttonV{
+                .button-add(150px, 40px, gray);
+            }
+
+
+        }
 
         p {
             padding-right: 20px;
-        }
+            }
     }
 }// main-content
