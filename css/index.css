@@ -160,6 +160,9 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+  -webkit-box-shadow: 2px 5px 1px #000;
+  -moz-box-shadow: 2px 5px 1px #000;
+  box-shadow: 2px 5px 1px #000;
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -168,6 +171,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
 }
 .cta {
   display: flex;
@@ -183,6 +190,10 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: skew(-5deg, -15deg);
+  -moz-transform: skew(-5deg, -15deg);
+  -ms-transform: skew(-5deg, -15deg);
+  -o-transform: skew(-5deg, -15deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -192,10 +203,21 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta img {
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 .main-content {
   border-top: 2px solid black;
