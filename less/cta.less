@@ -2,32 +2,52 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    justify-content:center;
+    align-items:center;
+    padding:5%;
+    justify-content:space-around;
+    @media (max-width:768px) {
+        flex-wrap:wrap-reverse;
+    }
+
+    img {
+        width:60%;
+        height:auto;
+        max-width:379px;
+    }
 
     .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
-    }
-
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        font-size: 5rem;
+        text-align:center;
+        @media (max-width:414px) {
+            font-size:16vw;
         }
-    }
-}// cta
+
+        h1 br {
+            @media(max-width:768px) {
+                display:none;
+            }
+        }
+
+        button {
+            border: 1px double black;
+            font-size: 1rem;
+            background: white;
+            height:100%;
+            width:40%;
+            cursor: pointer;
+            text-align:center;
+            max-width:150px;
+            min-width:71px;
+            line-height:1.2;
+        
+            &:hover {
+                background: black;
+                color: white;
+            }
+        }
+    }        
+}
