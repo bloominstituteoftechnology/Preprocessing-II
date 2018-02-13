@@ -5,6 +5,15 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        justify-content: center;
+    }
+    @media @phone {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,7 +23,19 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @phone {
+            margin: 0 0 50px 0;
+        }
+
         
+        
+    }
+
+    img {
+        @media @tablet {
+            display: none;
+        }
     }
 
     .cta-text button {

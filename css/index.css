@@ -147,9 +147,32 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav ul {
   margin-top: 40px;
@@ -157,9 +180,27 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 768px) {
+  header nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 2% 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -175,10 +216,29 @@ header .logo:hover {
   -ms-transform: skew(45deg, 15deg);
   -o-transform: skew(45deg, 15deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    max-width: 100%;
+    margin: 2% 0;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -189,6 +249,16 @@ header .logo:hover {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0 0 50px 0;
+  }
+}
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -224,6 +294,18 @@ header .logo:hover {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .middle-content {
+    width: 100%;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -233,12 +315,33 @@ header .logo:hover {
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 80%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.magicButton {
+  background: goldenrod;
+  color: black;
+  font-size: 32px;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+}
+.magicButton:hover {
+  width: 225px;
+  height: 125px;
+  color: white;
+}
+.magicButton:hover {
+  background: #1a001a;
 }
 .contact {
   -webkit-box-shadow: 5px 10px 18px goldenrod;

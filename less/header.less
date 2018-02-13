@@ -3,19 +3,41 @@
 header {
     width: 100%;
     display: flex;
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content:center; 
+    }
 
     nav {
+        @media @tablet {
+            width: 100%;
+        } 
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+            @media @tablet {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                align-items: center;
+            }
 
             li {
 
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+
+                    @media @tablet {
+                        display: block;
+                        text-align: center;
+                        padding: 2% 0;
+                        font-size: 2rem;
+                        border-bottom: 1px solid gray;
+                    }
 
                     &:hover {
                         text-decoration: underline;
@@ -32,6 +54,11 @@ header {
         &:hover {
             .skew(45deg, 15deg);
         }
+        @media @tablet {
+            order: -1;
+            max-width: 100%;
+            margin: 2% 0;
+        } 
         
     }
 }// header

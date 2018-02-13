@@ -16,6 +16,18 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            justify-content: space-around;
+            flex-direction: column;
+            height: 300px;
+        }
+    }
+
+    .middle-content {
+        @media @tablet {
+            width: 100%;
+        }
     }
 
     .middle-img {
@@ -23,6 +35,9 @@
         margin: 30px auto;
         &:hover {
             .opacity;
+        }
+        @media @tablet {
+            width:80%;
         }
         
     }
@@ -36,3 +51,14 @@
         }
     }
 }// main-content
+
+.magicButton {
+    background: goldenrod;
+    color: black;
+    font-size: 32px;
+    border: 1px solid black;
+    .magicButtonMixin(200px,100px, 225px, 125px, white);
+
+    &:hover {
+        background: darken(purple, 20%); }
+}
