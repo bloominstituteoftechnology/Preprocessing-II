@@ -5,42 +5,59 @@
     margin-top: 72px;
     justify-content: flex-end;
 
-    .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
+		@media @tablet {
+		        margin-top: 50px;
+		        flex-flow: column;
+		        align-items: center;
+		    }
 
-        h1 {
-        .box-shadow(12px 12px 2px 2px limegreen);
-        }
-    }
+		.cta-text {
+		    font-size: 72px;
+		    text-align: center;
+		    letter-spacing: 10px - 5; //woah sweet subraction
+		    display: flex;
+		    justify-content: center;
+		    flex-flow: column;
+		    align-items: center;
+		    margin: 0 82px 0 0;
+				color: @text-header;
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-        .border-radius(10px);
+				@media @tablet {
+				        margin: 0;
+				    }
 
-        &:hover {
-            background: black;
-            color: white;
-        }
-    }
+				button {
+				    border: 1px double black;
+				    font-size: 16px;
+				    background: white;
+				    width: 170px;
+				    height: 32px;
+				    margin-top: 10px;
+				    cursor: pointer;
+            .border-radius(10px);
 
-    img {
+						&:hover {
+						    background: black;
+						    color: white;
+                .box-shadow(10px 10px 1px 1px darkgrey);
+						}
+				}
+		} //cta-text
+		img {
 
       &:hover {
           .opacity();
           .rotate(120deg);
       }
-    }
-}// cta
+
+		@media @tablet {
+		        /* In case you want the image, but it's ugly ;)
+
+		        max-width: 70%;
+		        margin: 0;
+
+		        */
+		        display: none;
+		    }
+		} //img
+} //cta
