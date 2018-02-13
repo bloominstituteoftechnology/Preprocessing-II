@@ -240,7 +240,19 @@ header .logo {
   align-items: center;
   margin: 0;
 }
+.cta .cta-text:hover {
+  -webkit-transform: skew(10deg, 10deg);
+  -moz-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  -o-transform: skew(10deg, 10deg);
+}
 .cta .cta-text button {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px double black;
   font-size: 16px;
   background: white;
@@ -257,6 +269,11 @@ header .logo {
   .cta .cta-text {
     margin: 0;
   }
+}
+.cta img:hover {
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 @media (max-width: 786px) {
   .cta img {
@@ -296,6 +313,11 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+.main-content .middle-img:hover {
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
+}
 @media (max-width: 786px) {
   .main-content .middle-img {
     width: 100%;
@@ -333,4 +355,10 @@ footer {
   width: 96%;
   margin: auto;
   justify-content: center;
+}
+.container:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }

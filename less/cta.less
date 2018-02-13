@@ -49,8 +49,12 @@
         flex-flow: column;
         align-items: center;
         margin: 0;
+        &:hover {
+            .skew(10deg, 10deg);
+        }
 
         button {
+            .border-radius(25px);
             border: 1px double black;
             font-size: 16px;
             background: white;
@@ -63,6 +67,8 @@
                 background: black;
                 color: white;
             } // button:hover
+        
+            
 
         } // button
         @media @tablet {
@@ -70,6 +76,9 @@
         }
     } // .cta-text
     img {
+        &:hover {
+            .opacity(.7);
+        }
         @media @tablet {
             display: none;
             
