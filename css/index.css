@@ -208,10 +208,20 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .main-content .bottom-content {
   display: flex;
@@ -226,4 +236,7 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
