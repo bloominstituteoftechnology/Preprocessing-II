@@ -183,6 +183,9 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -197,6 +200,15 @@ header .logo {
   background: black;
   color: white;
 }
+.cta img {
+  background: red;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -209,6 +221,16 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content button {
+  color: white;
+  margin-top: 10px;
+  width: 150px;
+  height: 35px;
+  background: black;
+  -webkit-box-shadow: 5px 5px 20px black;
+  -moz-box-shadow: 5px 5px 20px black;
+  box-shadow: 5px 5px 20px black;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -219,6 +241,16 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content button {
+  color: white;
+  margin-top: 10px;
+  width: 150px;
+  height: 35px;
+  background: black;
+  -webkit-box-shadow: 5px 5px 20px black;
+  -moz-box-shadow: 5px 5px 20px black;
+  box-shadow: 5px 5px 20px black;
 }
 .contact p {
   margin: 40px 0;
