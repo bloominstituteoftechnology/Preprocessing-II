@@ -241,6 +241,11 @@ header .logo {
   -moz-box-shadow: 5px 5px 20px black;
   box-shadow: 5px 5px 20px black;
 }
+.main-content .top-content button:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -261,6 +266,11 @@ header .logo {
   -webkit-box-shadow: 5px 5px 20px black;
   -moz-box-shadow: 5px 5px 20px black;
   box-shadow: 5px 5px 20px black;
+}
+.main-content .bottom-content button:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .contact p {
   margin: 40px 0;
