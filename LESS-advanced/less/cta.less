@@ -1,6 +1,6 @@
 /* Call To Action (CTA) Styles */
 
-@tint-color: tint(black, 35x);
+@tint-color: tint(black, 70x);
 
 // #4: Recreate the CTA button using your own custom mixin that takes values for width, height, and background color.
 .cta__button(@width, @height, @background-color) {
@@ -55,15 +55,13 @@
         flex-flow: column;
         align-items: center;
         margin: 0 120px 0 0;
-        
         // opacity: 0.5; // Lightens the whole "INNOVATION ON DEMAND Get Started" block area
+
         h1 {
             font-size: 40px;
             color: @tint-color; // Add's tint to ALL h1 element text -- aka "INNOVATION ON DEMAND"
-            .opacity(0.6);
+            // .opacity(0.6);
             .skew(0deg, -5deg); // Skews INNOVATION ON DEMAND
-            
-        
         }
     }
     .top-img {
@@ -72,19 +70,18 @@
         animation: rotation 8s infinite linear;
     }
 
-    .cta-text button {
-        border: 1px double black;
+    .cta-text button { // Can't figure out why when I make changes here, nothing happens in the page?
+        border: 1px solid black;
+        border-width: 10px;
         font-size: 16px;
         // background: white;
         // width: 170px;
         // height: 32px;
         margin-top: 10px;
         box-shadow: 10x 5x 5x red;
-        cursor: pointer;
-        .cta__button(170px, 32px, white);
+        cursor: pointer; // Cursor turns to pointer hand when hovering
+        .cta__button(170px, 45px, white); // replaced the above background, width, height with a custum mixin
         .opacity(0.7);
-        
-
         &:hover {
             background: black;
             color: white;

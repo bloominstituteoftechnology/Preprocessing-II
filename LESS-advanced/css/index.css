@@ -261,10 +261,7 @@ header .logo {
 }
 .cta .cta-text h1 {
   font-size: 40px;
-  color: #595959;
-  -webkit-opacity: 0.6;
-  -moz-opacity: 0.6;
-  opacity: 0.6;
+  color: #b3b3b3;
   -webkit-transform: skew(0deg, -5deg);
   -moz-transform: skew(0deg, -5deg);
   -ms-transform: skew(0deg, -5deg);
@@ -276,13 +273,14 @@ header .logo {
   animation: rotation 8s infinite linear;
 }
 .cta .cta-text button {
-  border: 1px double black;
+  border: 1px solid black;
+  border-width: 10px;
   font-size: 16px;
   margin-top: 10px;
   box-shadow: 10x 5x 5x red;
   cursor: pointer;
   width: 170px;
-  height: 32px;
+  height: 45px;
   background-color: white;
   -webkit-opacity: 0.7;
   -moz-opacity: 0.7;
@@ -319,6 +317,7 @@ header .logo {
   background: white;
   border: 3px solid gray;
   padding: 5px;
+  cursor: pointer;
   width: 125px;
   height: 35px;
 }
@@ -331,6 +330,7 @@ header .logo {
   background: white;
   border: 3px solid gray;
   padding: 5px;
+  cursor: pointer;
   width: 120px;
   height: 35px;
 }
@@ -364,6 +364,7 @@ header .logo {
   border: 3px solid gray;
   padding: 5px;
   justify-content: right;
+  cursor: pointer;
   width: 125px;
   height: 35px;
 }
@@ -376,9 +377,9 @@ header .logo {
   background: white;
   border: 3px solid gray;
   padding: 5px;
+  cursor: pointer;
   width: 125px;
   height: 35px;
-  color: #595959;
 }
 .main-content .bottom-buttons .main__button2b:hover {
   background: #003300;
@@ -389,6 +390,7 @@ header .logo {
   background: white;
   border: 3px solid gray;
   padding: 5px;
+  cursor: pointer;
   width: 125px;
   height: 35px;
   box-shadow: 10px 5px 5px beige;
@@ -398,9 +400,6 @@ header .logo {
   color: white;
 }
 /* Contact Styles */
-.contact p {
-  margin: 40px 0;
-}
 /* Footer Styles */
 footer {
   text-align: center;

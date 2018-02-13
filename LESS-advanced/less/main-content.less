@@ -15,8 +15,7 @@
             }  
 
 // tint MIXIN used on button 2b
-
-@tinted-color: tint(black, 50%);
+// @tinted-color: tint(black, 50%);
 
 
 
@@ -55,6 +54,7 @@
             background: @white;
             border: 3px solid gray;
             padding: 5px;
+            cursor: pointer;
             .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
             // .basics(50%); // circle option -- can also use percent
             &:hover {
@@ -67,6 +67,7 @@
             background: @white;
             border: 3px solid gray;
             padding: 5px;
+            cursor: pointer;
             .dimensions(120px,35px); // LESS recog the () here and knows THIS IS A MIXIN
             // .basics(50%); // circle -- can also use percent
             &:hover {
@@ -106,6 +107,7 @@
             border: 3px solid gray;
             padding: 5px;
             justify-content: right;
+            cursor: pointer;
             .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
             // .basics(50%); // can also use percent
             &:hover {
@@ -118,9 +120,10 @@
             background: @white;
             border: 3px solid gray;
             padding: 5px;
+            cursor: pointer;
             .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
             // .basics(50%); // can also use percent
-            color: @tint-color;
+            // color: @tint-color; -- This tint looks bad
             &:hover {
                 background: rgb(0, 51, 0);
                 color: white;
@@ -131,6 +134,7 @@
             background: @white;
             border: 3px solid gray;
             padding: 5px;
+            cursor: pointer;
             .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
             // .basics(50%); // can also use percent
             box-shadow: 10px 5px 5px beige;
