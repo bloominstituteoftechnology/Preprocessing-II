@@ -8,18 +8,256 @@
 @import "contact";
 @import "footer";
 
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
+#myNamespace() {
+    .heading {
+        font-size: 2rem;
+        color: blue
+    }
+
+    .buttons {
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        &:hover {
+            background-color: yellow;
+        }
+    }
+
+    .paragraphs {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1rem;
+        color: sandybrown;
+    }
+}
+
+.container {
+    @media @tablet {
+        width: 100%;
+    }
+
+    @media @phone {
+        width: 100%;
+    }
+}
+
+header {
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media @phone {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav {
+        @media @tablet {
+            width: 90%;
+        }
+
+        @media @phone {
+            width: 100%;
+        }
+    }
+
+    ul {
+        .skew(25deg, 20deg);
+
+        @media @tablet {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        @media @phone {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+        }
+
+        li {
+            @media @phone {
+                width: 100%;
+                margin: 0;
+            }
+
+            li:first-child {
+                @media @phone {
+                    border-top: 1px solid gray;
+                }
+            }
+
+            a {
+                @media @phone {
+                    display: block;
+                    text-align: center;
+                    padding: 20px 0;
+                    font-size: 2rem;
+                    border-bottom: 1px solid gray;
+                }
+
+                a:hover {
+                    @media @phone {
+                        background: gray;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        @media @tablet {
+            order: -1;
+            max-width: 100%;
+            margin: 20px 0;
+        }
+    }
+}
+
 .cta {
+
+    @media @tablet {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
     .cta-text {
+
+        @media @tablet {
+            margin: 0;
+        }
         button {
             .border-radius(10px);
-            .box-shadow(5px);
+            .box-shadow(0 0 10px 10px black);
+        }
+    }
+
+    img {
+        @media @tablet {
+            display: none;
         }
     }
 }
 
 .main-content {
+
+    @media @tablet {
+        margin: 50px 2% 35px;
+    }
+
+    .top-content {
+
+        @media @phone {
+            justify-content: space-around;
+            flex-direction: column;
+            height: 300px;
+        }
+
+        .text-content {
+
+            padding {
+                #myNamespace > .paragraphs;
+            }
+
+            h4 {
+                #myNamespace > .heading;
+            }
+
+            .button1 {
+                .button-creator (100px, 20px, green);
+
+                &:hover {
+                    background-color: darken(#004590, 20%);
+                    color: white;
+                }
+            }
+
+
+            .button2 {
+                .button-creator (100px, 100px, red);
+
+                #myNamespace > .buttons;
+                
+
+                &:hover {
+                    background-color: darken(#004590, 20%);
+                    color: white;
+                }
+            }
+        }
+    }
+
     .middle-img {
         .opacity(0.6);
+        .rotate(20deg);
+
+        @media @tablet {
+            width: 100%;
+        }
+    }
+
+    .bottom-content {
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }
+
+        .text-content {
+            .button3 {
+                .button-creator(130px, 150px, yellow);
+
+                &:hover {
+                    background-color: darken(#004590, 20%);
+                    color: white;
+                }
+            }
+
+            .button4 {
+                .button-creator(300px, 50px, gray);
+
+                &:hover {
+                    background-color: darken(#004590, 20%);
+                    color: white;
+                }
+            }
+
+            .button5 {
+                .button-creator(150px, 200px, orange);
+
+                &:hover {
+                    background-color: darken(#004590, 20%);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    @media @tablet {
+        margin: 20px 2%;
+    }
+
+    @media @phone {
+        margin: 20px;
+    }
+}
+
+header {
+    nav {
+        ul {
+            
+            li {
+                
+            }
+        }
     }
 }
 
