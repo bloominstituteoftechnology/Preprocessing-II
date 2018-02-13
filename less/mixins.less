@@ -35,3 +35,21 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-creator(@width, @height, @background) {
+	width: @width;
+	height: @height;
+	background: @background;
+	border: 1px solid black;
+	box-shadow: 4px 4px @background/2 inset;
+	font-size: 16px;
+	.border-radius();
+	.box-shadow(4px 4px inset);
+
+	&:hover {
+		width: 75px;
+		height: 75px;
+		background: darken(@background, 30%);
+		border-radius: 50px;
+	  }
+}

@@ -339,6 +339,30 @@ header .logo {
     height: 300px;
   }
 }
+.main-content .top-content .text-content button {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background: #6a58ce;
+  border: 1px solid black;
+  box-shadow: 4px 4px #352c67 inset;
+  font-size: 16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 4px 4px inset;
+  -moz-box-shadow: 4px 4px inset;
+  box-shadow: 4px 4px inset;
+}
+.main-content .top-content .text-content button:hover {
+  width: 75px;
+  height: 75px;
+  background: #2c206d;
+  border-radius: 50px;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -371,6 +395,30 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content button {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background: #6a58ce;
+  border: 1px solid black;
+  box-shadow: 4px 4px #352c67 inset;
+  font-size: 16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 4px 4px inset;
+  -moz-box-shadow: 4px 4px inset;
+  box-shadow: 4px 4px inset;
+}
+.main-content .bottom-content .text-content button:hover {
+  width: 75px;
+  height: 75px;
+  background: #2c206d;
+  border-radius: 50px;
 }
 @media (max-width: 768px) {
   .contact {
