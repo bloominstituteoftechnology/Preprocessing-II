@@ -168,6 +168,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
 }
 .cta {
   display: flex;
@@ -192,10 +196,26 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  -webkit-transform: skew(11deg, 9deg);
+  -moz-transform: skew(11deg, 9deg);
+  -ms-transform: skew(11deg, 9deg);
+  -o-transform: skew(11deg, 9deg);
+  -webkit-box-shadow: 10px 5px 5px forestgreen;
+  -moz-box-shadow: 10px 5px 5px forestgreen;
+  box-shadow: 10px 5px 5px forestgreen;
 }
 .main-content {
   border-top: 2px solid black;
