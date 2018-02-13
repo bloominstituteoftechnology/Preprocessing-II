@@ -247,6 +247,17 @@ header .logo {
     border: 4px solid purple;
   }
 }
+.main-content .top-content .text-content button {
+  -webkit-width: 2px;
+  -moz-height: 2px;
+  background: #f442f4;
+  border-radius: 40px;
+  font-family: cursive;
+  font-size: 15px;
+}
+.main-content .top-content .text-content button:hover {
+  background: yellow;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -260,8 +271,19 @@ header .logo {
     border: 4px solid purple;
   }
 }
-.main-content .bottom-content p {
+.main-content .bottom-content .text-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content button {
+  -webkit-width: 2px;
+  -moz-height: 2px;
+  background: #f442f4;
+  border-radius: 40px;
+  font-family: cursive;
+  font-size: 15px;
+}
+.main-content .bottom-content .text-content button:hover {
+  background: yellow;
 }
 .contact p {
   margin: 40px 0;
