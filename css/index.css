@@ -137,6 +137,10 @@ table {
   font-family: "Pacifico";
   font-size: 16px;
 }
+#bundle .paragraphs {
+  text-align: justify;
+  padding-right: 3%;
+}
 * {
   box-sizing: border-box;
 }
@@ -328,6 +332,10 @@ header .logo {
 .main-content button:hover {
   background: #2a2a7a;
   color: white;
+}
+.main-content p {
+  text-align: justify;
+  padding-right: 3%;
 }
 .main-content .top-content {
   display: flex;
