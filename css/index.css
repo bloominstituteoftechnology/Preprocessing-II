@@ -227,6 +227,12 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+.container .cta .cta-text h1:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -234,14 +240,15 @@ button {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  /*.box-shadow(10);*/
 }
 button:hover {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
-  /*.box-shadow(10);*/
-  -webkit-transform: rotate(30);
-  -moz-transform: rotate(30);
-  -ms-transform: rotate(30);
-  -o-transform: rotate(30);
+  -webkit-transform: skew(0deg, 30deg);
+  -moz-transform: skew(0deg, 30deg);
+  -ms-transform: skew(0deg, 30deg);
+  -o-transform: skew(0deg, 30deg);
+  /*.rotate(90deg);*/
 }
