@@ -4,11 +4,15 @@ header {
     width: 100%;
     display: flex;
 
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
+
     nav {
         ul {
             margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: space-around;
             display: flex;
 
             li {
@@ -37,5 +41,11 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .rotate(25deg); //Rotate mixin
+
+        @media @tablet {
+            margin: 3% 0;
+            align-self: center;
+            .rotate(10deg);
+        }
     }
 }// header

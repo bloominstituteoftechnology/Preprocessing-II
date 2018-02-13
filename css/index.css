@@ -152,10 +152,15 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
 header nav ul {
   margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
   display: flex;
 }
 header nav ul li a {
@@ -183,6 +188,16 @@ header .logo {
   -moz-transform: rotate(25deg);
   -ms-transform: rotate(25deg);
   -o-transform: rotate(25deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    margin: 3% 0;
+    align-self: center;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
 }
 .cta {
   display: flex;
