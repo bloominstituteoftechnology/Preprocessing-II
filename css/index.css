@@ -168,6 +168,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(25);
+  -moz-transform: rotate(25);
+  -ms-transform: rotate(25);
+  -o-transform: rotate(25);
 }
 .cta {
   display: flex;
