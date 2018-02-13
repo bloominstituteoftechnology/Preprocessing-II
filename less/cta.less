@@ -25,7 +25,13 @@
     
         &:hover{
             .skew(20deg, 0); //Skew mixin
+
+            @media @phone {
+                .skew(0,0);
+            }
         }
+
+        
     }
 
     .cta-text button {
@@ -50,6 +56,10 @@
         @media @tablet {
             align-self: center;
             padding: 2%;
+        }
+
+        @media @phone{
+            display: none;
         }
     }
 }// cta

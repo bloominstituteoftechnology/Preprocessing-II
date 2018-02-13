@@ -15,6 +15,10 @@ header {
             justify-content: space-around;
             display: flex;
 
+            @media @phone{
+                flex-direction: column;
+            }
+
             li {
 
                 a {
@@ -26,6 +30,11 @@ header {
                     border: 1px solid black;
                     //box-shadow: 10px 10px black;
                     .box-shadow(10px 10px 10px black);  //Added box shadow mixin         
+
+                    @media @phone{
+                        width: 100%;
+                        text-align: center;
+                    }
 
                     &:hover {
                         text-decoration: underline;
@@ -43,7 +52,7 @@ header {
         .rotate(25deg); //Rotate mixin
 
         @media @tablet {
-            margin: 3% 0;
+            margin: 5% 0;
             align-self: center;
             .rotate(10deg);
         }

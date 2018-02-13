@@ -168,6 +168,11 @@ header nav ul {
   justify-content: space-around;
   display: flex;
 }
+@media (max-width:400px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
 header nav ul li a {
   display: block;
   padding: 10px;
@@ -178,6 +183,12 @@ header nav ul li a {
   -webkit-box-shadow: 10px 10px 10px black;
   -moz-box-shadow: 10px 10px 10px black;
   box-shadow: 10px 10px 10px black;
+}
+@media (max-width:400px) {
+  header nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -196,7 +207,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   header .logo {
-    margin: 3% 0;
+    margin: 5% 0;
     align-self: center;
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
@@ -235,6 +246,14 @@ header .logo {
   -ms-transform: skew(20deg, 0);
   -o-transform: skew(20deg, 0);
 }
+@media (max-width:400px) {
+  .cta .cta-text:hover {
+    -webkit-transform: skew(0, 0);
+    -moz-transform: skew(0, 0);
+    -ms-transform: skew(0, 0);
+    -o-transform: skew(0, 0);
+  }
+}
 .cta .cta-text button {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -264,6 +283,11 @@ header .logo {
   .cta img {
     align-self: center;
     padding: 2%;
+  }
+}
+@media (max-width:400px) {
+  .cta img {
+    display: none;
   }
 }
 .main-content {
