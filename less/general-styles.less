@@ -1,4 +1,6 @@
 // General Styles
+@phone:~'(max-width:400px)';
+@tablet:~'(max-width:768px)';
 
 * {
     box-sizing: border-box;
@@ -18,4 +20,11 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    @media @phone{
+        background: beige;
+    }
+
+    @media @tablet{
+        background: red;
+    }
 }
