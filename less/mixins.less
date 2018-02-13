@@ -37,11 +37,12 @@
 }
 
 // Task 2 - #3 & #4: Custom button mixin w/darken function
-.button-creator(@width, @height, @background) {
+.button-creator(@width, @height, @background, @radius) {
 	width: @width;
 	height: @height;
 	background: @background;
 	border: 1px solid black;
+	.border-radius(@radius);
 	
 	&:hover {
 	  background: darken(@background,20%);

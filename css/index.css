@@ -311,6 +311,21 @@ header .logo {
     margin: 50px 2% 35px;
   }
 }
+.main-content button {
+  width: 50%;
+  height: 40px;
+  background: white;
+  border: 1px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content button:hover {
+  background: #cccccc;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
