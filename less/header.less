@@ -4,6 +4,10 @@ header {
     width: 100%;
     display: flex;
 
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
+
     nav {
         ul {
             margin-top: 40px; 
@@ -12,10 +16,23 @@ header {
             display: flex;
 
             li {
+                @media @phone {
+                    justify-items: center;
+                    &:first-child {
+                        border-top: 1px solid black;
+                    }
+                }
 
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    @media @phone {
+                        height:40px;
+                        padding: 15px 0;
+                        border-bottom: 1px solid black;
+                        display: block;
+                        
+                     }
 
                     &:hover {
                         text-decoration: underline;
@@ -23,11 +40,26 @@ header {
                     }
                 }
             }
+        
+            @media (max-width: 400px){
+                flex-direction: column;
+        
+            }
         }
+    
+        
     }
+
+   
 
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .box-shadow(10px 10px 25px grey);
+
+        @media @tablet {
+            display:block;
+            align-self: center;
+        }
     }
 }// header
