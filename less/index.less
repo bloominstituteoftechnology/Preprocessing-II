@@ -1,13 +1,56 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "general-styles";
+@import "header";
+@import "cta";
+@import "main-content";
+@import "contact";
+@import "footer";
 
+button{
+    display: block;
+}
 
+.getStarted{
+    .button-creator(170px,32px,white,black,1px,black);
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    .box-shadow(@content-shadow);
+}
 
+.features{
+    .button-creator(@tc-width,@tc-height,@tc-bg-color,@tc-hover-color,@tc-border,@tc-border-color);
+    margin:auto;
+    .border-radius();
+    .box-shadow(@content-shadow);
+}
 
+.about{
+    .button-creator(@tc-width,@tc-height,@tc-bg-color,@tc-hover-color,@tc-border,@tc-border-color);
+    margin:auto;
+    .border-radius();
+    .box-shadow(@content-shadow);
+}
 
+.services{
+    .button-creator(@bc-width,@bc-height,@bc-bg-color,@bc-hover-color,@bc-border,@bc-border-color);
+    margin: auto;
+    .border-radius();
+    .box-shadow(@content-shadow);
+}
 
+.product{
+    .button-creator(@bc-width,@bc-height,@bc-bg-color,@bc-hover-color,@bc-border,@bc-border-color);
+    margin:auto;
+    .border-radius();
+    .box-shadow(@content-shadow);
+}
 
-
-
-
-
-
-
+.vision{
+    .button-creator(@bc-width,@bc-height,@bc-bg-color,@bc-hover-color,@bc-border,@bc-border-color);
+    margin:auto;
+    .border-radius();
+    .box-shadow(@content-shadow);
+}

@@ -11,11 +11,15 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @phone{
+            flex-direction: column;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .opacity();
     }
 
     .bottom-content {

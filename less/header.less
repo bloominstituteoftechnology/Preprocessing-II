@@ -3,13 +3,24 @@
 header {
     width: 100%;
     display: flex;
+    @media @tablet{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
 
     nav {
+        @media @tablet{
+        width:90%;
+        }
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+            @media @tablet{
+                width:100%;
+                margin:20px 0;
+            }
 
             li {
 
@@ -29,5 +40,6 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .skew(-5deg,10deg);
     }
 }// header

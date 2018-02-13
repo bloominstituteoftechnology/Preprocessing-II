@@ -4,6 +4,7 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    .box-shadow(@shadow1);
 
     .cta-text {
         font-size: 72px;
@@ -15,19 +16,9 @@
         align-items: center;
         margin: 0 82px 0 0;
     }
-
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
+    img{
+        &:hover{
+            .rotate(180deg);
         }
     }
 }// cta
