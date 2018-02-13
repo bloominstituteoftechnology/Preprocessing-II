@@ -3,13 +3,27 @@
 header {
     width: 100%;
     display: flex;
-
-    nav {
+    
+    nav { 
+        @media  @tablet {
+            width: 80%;       
+        }
+        @media  @phone {
+            width: 70%;
+        }        
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+            @media  @tablet {
+                width: 100%;
+                font-size: 0.85rem;
+                margin-right: 4%;       
+            }  
+            @media  @phone{
+                font-size: 0.7rem;
+            } 
 
             li {
 
@@ -29,5 +43,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .rotate(10deg);
+        @media  @tablet {
+            height: 15%;
+            width: 25%;
+            margin-left: 4%;
+            align-self: flex-start;       
+        }   
     }
 }// header
