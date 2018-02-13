@@ -157,13 +157,26 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+header nav ul li {
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: white;
+  background: blue;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 header .logo {
   align-self: flex-end;
@@ -183,6 +196,13 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -192,6 +212,9 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-box-shadow: 10px 5px 5px blue;
+  -moz-box-shadow: 10px 5px 5px blue;
+  box-shadow: 10px 5px 5px blue;
 }
 .cta .cta-text button:hover {
   background: black;
