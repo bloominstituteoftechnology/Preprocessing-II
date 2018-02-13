@@ -16,13 +16,20 @@ header {
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    @media @tablet {
+                        color: blue;
+                    }
                     
 
                     &:hover {
                         text-decoration: underline;
                         color: white;
                         background:blue;
-                        .border-radius (@radius: 5px)
+                        .border-radius(@radius: 5px);
+                        @media @tablet {
+                            background: gray;
+                        }
+                        
                     }
                 }
             }
