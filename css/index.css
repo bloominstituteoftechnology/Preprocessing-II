@@ -280,7 +280,6 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px double black;
-  font-size: 16px;
   color: white;
   width: 50%;
   height: 40px;
@@ -289,6 +288,8 @@ header .logo {
   margin: 3% 0;
   margin-top: 10px;
   cursor: pointer;
+  font-family: "Pacifico";
+  font-size: 16px;
 }
 .cta .cta-text button:hover {
   background: #2a2a7a;
