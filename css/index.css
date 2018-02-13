@@ -234,6 +234,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 2% 0 10%;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
 }
 @media only screen and (max-width: 768px) {
   header .logo {
@@ -284,6 +288,13 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-transform: skew(-20deg, 0deg);
+  -moz-transform: skew(-20deg, 0deg);
+  -ms-transform: skew(-20deg, 0deg);
+  -o-transform: skew(-20deg, 0deg);
+  -webkit-box-shadow: 3px 3px 3px lightgray;
+  -moz-box-shadow: 3px 3px 3px lightgray;
+  box-shadow: 3px 3px 3px lightgray;
 }
 .cta .cta-text button:hover {
   background: lightslategray;
@@ -292,6 +303,13 @@ header .logo {
 .cta img {
   max-width: 100%;
   margin-right: 1%;
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 @media only screen and (max-width: 768px) {
   .cta img {
@@ -299,6 +317,8 @@ header .logo {
   }
 }
 .main-content {
+  display: flex;
+  flex-direction: column;
   border-top: 2px solid mintcream;
   border-bottom: 2px solid mintcream;
   margin: 75px 0 35px 0;
@@ -322,29 +342,40 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  align-self: center;
+  margin: 10px 0;
 }
 .main-content button:hover {
   background: #cccccc;
 }
+.main-content .text-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-content: space-between;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  align-content: center;
 }
 @media only screen and (max-width: 400px) {
   .main-content .top-content {
     justify-content: space-around;
     flex-direction: column;
-    height: 300px;
   }
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-}
-@media only screen and (max-width: 768px) {
-  .main-content .middle-img {
-    width: 100%;
-  }
+  width: 100%;
+  -webkit-transform: skew(4deg, 4deg);
+  -moz-transform: skew(4deg, 4deg);
+  -ms-transform: skew(4deg, 4deg);
+  -o-transform: skew(4deg, 4deg);
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
 }
 .main-content .bottom-content {
   display: flex;
@@ -357,7 +388,6 @@ header .logo {
   .main-content .bottom-content {
     flex-wrap: wrap;
     align-content: space-between;
-    height: 440px;
   }
 }
 .contact {
@@ -379,4 +409,7 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
 }

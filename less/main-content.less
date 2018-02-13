@@ -1,6 +1,8 @@
 // Main Content Styles
 
 .main-content {
+    display: flex;
+    flex-direction: column;
     border-top: 2px solid @alt-divider-color; 
     border-bottom: 2px solid @alt-divider-color;
     margin: 75px 0 35px 0;
@@ -11,23 +13,36 @@
 
     button {
         .button-creator(50%,40px,@alt-header-color, 4px);
+        align-self: center;
+        margin: 10px 0;
+    }
+
+    .text-content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-content: space-between;
+
     }
  
     .top-content {
          display: flex;
          justify-content: space-around;
+         align-content: center;
  
          @media @mobile {
              justify-content: space-around;
              flex-direction: column;
-             height: 300px;
+           
          }
      }
  
      .middle-img {
          display: block;
          margin: 30px auto;
-         @media @tablet {width: 100%;}
+         width: 100%;
+         .skew(4deg,4deg);
+         .opacity(.8);
      }
  
      .bottom-content {
@@ -40,7 +55,9 @@
          @media @mobile {
              flex-wrap: wrap;
              align-content: space-between;
-             height: 440px;
+         
          }
      }
+
+
  }// main-content
