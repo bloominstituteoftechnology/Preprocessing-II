@@ -4,30 +4,54 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 100%;
+    @media @tablet {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 9% 0 0;
+
+        @media @tablet {
+            margin: 0;
+        }
+        @media @mobile {
+            margin: 0;
+            font-size: 6rem;
+        }
+
+        button {
+            border: 1px double @alt-body-color;
+            font-size: 1.6rem;
+            background: @alt-header-color;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+            .skew(-20deg,0deg);
+            .box-shadow(3px 3px 3px @alt-body-color);
+    
+            &:hover {
+                background: @alt-background-color;
+                color: @alt-body-color;
+            }
+        }
     }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
-        }
+    img {
+        max-width: 100%;
+        margin-right: 1%;
+        @media @tablet {display: none;}
+        .opacity(.5);
+        .spin;
     }
 }// cta

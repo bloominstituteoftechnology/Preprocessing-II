@@ -7,15 +7,62 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+
+    //Implementing base font-size utilizing variable from operation and function
+    font-size: 62.5%;
+    background-color: @alt-background-color;
+    color: @alt-body-color;
+ 
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    color: @alt-header-color;
 }
 
+
+//Namespaces for Stretch Goal
+
+#buttons() {
+    .highlight-green {
+        width: 50%;
+        height: 40px;
+        background: lightgreen;
+        border: 1px solid @alt-divider-color;
+        .border-radius(4px);
+    }
+
+}
+
+#paragraphs {
+    .highlight {
+        color: @alt-highlight-color;
+    }
+}
+
+#headings {
+    .highlight {
+        color: @alt-highlight-color;
+        text-decoration: underline dotted @alt-highlight-color;
+    }
+}
+
+
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
+    font-size: 1.6rem;
+
+    @media @tablet {
+        max-width: 768px;
+        width: 100%;
+    }
+    @media @mobile {
+        max-width: 400px;
+        width: 100%;
+    }
+
 }
