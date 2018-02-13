@@ -168,10 +168,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
-  -webkit-transform: rotate(25);
-  -moz-transform: rotate(25);
-  -ms-transform: rotate(25);
-  -o-transform: rotate(25);
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
 }
 .cta {
   display: flex;
@@ -200,6 +200,10 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: skew(15deg, 10deg);
+  -moz-transform: skew(15deg, 10deg);
+  -ms-transform: skew(15deg, 10deg);
+  -o-transform: skew(15deg, 10deg);
 }
 .main-content {
   border-top: 2px solid black;
@@ -226,4 +230,8 @@ header .logo {
 }
 .contact p {
   margin: 40px 0;
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
 }
