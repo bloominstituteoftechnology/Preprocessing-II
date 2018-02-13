@@ -168,6 +168,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
 }
 .cta {
   display: flex;
@@ -208,6 +212,12 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.cta img:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .main-content {
   border-top: 2px solid black;
