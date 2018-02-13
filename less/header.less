@@ -1,5 +1,8 @@
 // Header Styles
 
+@tablet: ~"(max-width: 768px)";
+@tablet: ~"(max-width: 400px)";
+
 header {
     width: 100%;
     display: flex;
@@ -10,16 +13,25 @@ header {
             width: 610px;
             justify-content: space-between;
             display: flex;
-
+            
             li {
+                padding: 2%;
+                
+
+                &:hover{
+                    .skew(-0.06deg, 18deg);
+                    .box-shadow(0px 0px 4px black);
+                    .border-radius;
+                }
 
                 a {
                     text-decoration: none;
-                    color: #b0b0b0;
+                    color: #b0b0b0;                 
 
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        
                     }
                 }
             }
