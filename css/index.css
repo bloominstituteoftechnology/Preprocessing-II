@@ -169,6 +169,12 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+header .logo:hover {
+  -webkit-transform: skew(45deg, 15deg);
+  -moz-transform: skew(45deg, 15deg);
+  -ms-transform: skew(45deg, 15deg);
+  -o-transform: skew(45deg, 15deg);
+}
 .cta {
   display: flex;
   margin-top: 72px;
@@ -196,6 +202,12 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .main-content {
   border-top: 2px solid black;
@@ -204,6 +216,9 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+  -webkit-box-shadow: 5px 10px 18px goldenrod;
+  -moz-box-shadow: 5px 10px 18px goldenrod;
+  box-shadow: 5px 10px 18px goldenrod;
 }
 .main-content .top-content {
   display: flex;
@@ -213,6 +228,11 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+.main-content .middle-img:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
@@ -220,8 +240,19 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.contact {
+  -webkit-box-shadow: 5px 10px 18px goldenrod;
+  -moz-box-shadow: 5px 10px 18px goldenrod;
+  box-shadow: 5px 10px 18px goldenrod;
+}
 .contact p {
   margin: 40px 0;
+}
+.contact p:hover {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
 }
 footer {
   text-align: center;
