@@ -12,6 +12,9 @@
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 200;
+  -moz-opacity: 200;
+  opacity: 200;
 }
 .cta .cta-text button {
   border: double black;
@@ -28,7 +31,7 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.cta .cta-text button:hover {
+.cta .cta-text:hover {
   background: black;
   color: white;
 }

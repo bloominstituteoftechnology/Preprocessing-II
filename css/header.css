@@ -19,7 +19,7 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
-  -webkit-box-shadow: 50px 50px 50px black;
-  -moz-box-shadow: 50px 50px 50px black;
-  box-shadow: 50px 50px 50px black;
+  -webkit-box-shadow: 6px 8px #2B2B2B;
+  -moz-box-shadow: 6px 8px #2B2B2B;
+  box-shadow: 6px 8px #2B2B2B;
 }

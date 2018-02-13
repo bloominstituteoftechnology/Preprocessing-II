@@ -168,9 +168,9 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
-  -webkit-box-shadow: 50px 50px 50px black;
-  -moz-box-shadow: 50px 50px 50px black;
-  box-shadow: 50px 50px 50px black;
+  -webkit-box-shadow: 6px 8px #2B2B2B;
+  -moz-box-shadow: 6px 8px #2B2B2B;
+  box-shadow: 6px 8px #2B2B2B;
 }
 .cta {
   display: flex;
@@ -186,6 +186,9 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
 }
 .cta .cta-text button {
   border: double black;
@@ -202,9 +205,14 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.cta .cta-text button:hover {
+.cta .cta-text:hover {
   background: black;
   color: white;
+}
+.cta .cta-text .largeCircle {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
 }
 .main-content {
   border-top: 2px solid black;
