@@ -5,3 +5,27 @@
 @primary-color:#D3C4A8;
 @secondary-color:#563536;
 @tertiary-color:#AD9D7E;
+
+// Media queries
+@tablet: ~"(max-width:768px)";
+@phone: ~"(max-width:414px)";
+
+// Designs
+.text-content-buttons (@height:3rem, @width:13rem, @background-color:@primary-color) {
+	height:@height;
+	width:@width;
+	background:none;
+    margin:1.5rem 0;
+    align-self:center;
+    .border-radius(5rem);
+    border:3px solid lightgray;
+    color:lightgray;
+    font-size:1.6rem;
+    &:hover {
+        background:lightgray;
+        color:darkslategray;
+    }
+    @media @phone {
+        margin-top:1rem;
+    }
+}

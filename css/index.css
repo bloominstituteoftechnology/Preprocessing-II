@@ -152,13 +152,16 @@ body {
   max-width: 880px;
   margin: 0 auto;
   background: #D3C4A8;
+  -webkit-box-shadow: 10px 5px 5px black;
+  -moz-box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px black;
 }
 h4,
 p {
   font-size: 1.6rem;
   line-height: 1.2;
 }
-@media (max-width: 414px) {
+@media (max-width:414px) {
   h4,
   p {
     margin-bottom: 1.4rem;
@@ -173,9 +176,10 @@ header {
   padding: 2% 5%;
   border-bottom: 2px solid black;
 }
-@media (max-width: 768px) {
+@media (max-width:768px) {
   header {
     flex-wrap: wrap-reverse;
+    padding: 2% 0;
   }
 }
 header nav {
@@ -185,7 +189,7 @@ header nav ul {
   display: flex;
   justify-content: flex-start;
 }
-@media (max-width: 768px) {
+@media (max-width:768px) {
   header nav ul {
     justify-content: center;
     margin-left: 0;
@@ -195,7 +199,7 @@ header nav ul {
 header nav ul li {
   flex-grow: 0.15;
 }
-@media (max-width: 768px) {
+@media (max-width:768px) {
   header nav ul li {
     text-align: center;
   }
@@ -205,16 +209,25 @@ header nav ul li a {
   color: #b0b0b0;
   font-size: 1.3rem;
 }
+@media (max-width:768px) {
+  header nav ul li a {
+    font-size: calc(0.6rem + 1.5vw);
+  }
+}
 header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
 header .logo {
   margin: 0 auto;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
 }
-@media (max-width: 768px) {
+@media (max-width:768px) {
   header .logo {
-    margin-bottom: 1rem;
+    margin: 1rem auto;
   }
 }
 .cta {
@@ -224,7 +237,7 @@ header .logo {
   padding: 5%;
   justify-content: space-around;
 }
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .cta {
     flex-wrap: wrap-reverse;
   }
@@ -233,6 +246,18 @@ header .logo {
   width: 60%;
   height: auto;
   max-width: 379px;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  -webkit-transform: skew(5deg, 5deg);
+  -moz-transform: skew(5deg, 5deg);
+  -ms-transform: skew(5deg, 5deg);
+  -o-transform: skew(5deg, 5deg);
+}
+@media (max-width:768px) {
+  .cta img {
+    margin-bottom: 1rem;
+  }
 }
 .cta .cta-text {
   display: flex;
@@ -241,12 +266,12 @@ header .logo {
   font-size: 5rem;
   text-align: center;
 }
-@media (max-width: 414px) {
+@media (max-width:414px) {
   .cta .cta-text {
-    font-size: 16vw;
+    font-size: 15vw;
   }
 }
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .cta .cta-text h1 br {
     display: none;
   }
@@ -262,9 +287,15 @@ header .logo {
   max-width: 150px;
   min-width: 71px;
   line-height: 1.2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: #404040;
   color: white;
 }
 .main-content {
@@ -274,38 +305,72 @@ header .logo {
   color: #dcdcdc;
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
+  padding: 3rem 0 1.5rem 0;
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
   padding: 0 1rem;
 }
-@media (max-width: 414px) {
+@media (max-width:414px) {
   .main-content .top-content {
     flex-wrap: wrap;
   }
 }
 .main-content .top-content .text-content {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .top-content .text-content:first-child {
   margin-right: 1rem;
 }
 .main-content .middle-img {
   width: 100%;
   height: auto;
-  margin: 30px auto;
+  margin: 1rem auto 2.5rem auto;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
   padding: 0 1rem;
 }
-@media (max-width: 414px) {
+@media (max-width:414px) {
   .main-content .bottom-content {
     flex-wrap: wrap;
   }
 }
 .main-content .bottom-content .text-content {
   margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+.main-content button {
+  height: 3rem;
+  width: 13rem;
+  background: none;
+  margin: 1.5rem 0;
+  align-self: center;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  border-radius: 5rem;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 3px solid lightgray;
+  color: lightgray;
+  font-size: 1.6rem;
+}
+.main-content button:hover {
+  background: lightgray;
+  color: darkslategray;
+}
+@media (max-width:414px) {
+  .main-content button {
+    margin-top: 1rem;
+  }
 }
 .contact {
   margin: 1rem 0 0 1rem;

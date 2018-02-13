@@ -8,8 +8,9 @@ header {
     justify-content:space-between;
     padding:2% 5%;
     border-bottom: 2px solid black;
-    @media (max-width:768px) {
+    @media @tablet {
         flex-wrap:wrap-reverse;
+        padding:2% 0;
     }
 
     nav {
@@ -18,7 +19,7 @@ header {
         ul {
             display:flex;
             justify-content:flex-start;
-            @media (max-width:768px) {
+            @media @tablet {
                 justify-content:center;
                 margin-left:0;
                 margin-top:1%;
@@ -26,7 +27,7 @@ header {
 
             li {
                 flex-grow:0.15;
-                @media (max-width:768px) {
+                @media @tablet {
                     text-align:center;
                 }
             
@@ -34,6 +35,9 @@ header {
                     text-decoration: none;
                     color: #b0b0b0;
                     font-size:1.3rem;
+                    @media @tablet {
+                        font-size: calc(0.6rem + 1.5vw);
+                    }
 
                     &:hover {
                         text-decoration: underline;
@@ -45,8 +49,9 @@ header {
     } // end nav
     .logo {
     margin: 0 auto;
-    @media (max-width:768px) {
-        margin-bottom:1rem;
+    .rotate(-5deg);
+    @media @tablet {
+        margin:1rem auto;
     }
     } // end .logo
 } // end header
