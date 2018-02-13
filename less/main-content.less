@@ -1,4 +1,6 @@
 // Main Content Styles
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
 
 .button-creater(@width, @height, @background) {
   width: @width;
@@ -17,9 +19,12 @@
   .top-content {
     display: flex;
     justify-content: space-around;
+    @media @phone {
+      flex-direction: column;
+    }
     button {
       color: white;
-      margin-top: 10px;
+      margin: 10px 0 10px 0;
       .button-creater(150px, 35px, black);
       .box-shadow(5px 5px 20px black);
       &:hover {
@@ -31,17 +36,23 @@
   .middle-img {
     display: block;
     margin: 30px auto;
+    @media @tablet {
+      width: 100%;
+    }
   }
 
   .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @phone {
+      flex-direction: column;
+    }
     p {
       padding-right: 20px;
     }
     button {
       color: white;
-      margin-top: 10px;
+      margin: 10px 0 10px 0;
       .button-creater(150px, 35px, black);
       .box-shadow(5px 5px 20px black);
       &:hover {

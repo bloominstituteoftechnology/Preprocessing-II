@@ -147,15 +147,46 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 400px) {
+  header nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    padding: 5px 0 5px 0;
+    border: 1px solid grey;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -173,10 +204,21 @@ header .logo {
   -ms-transform: skew(15deg, 15deg);
   -o-transform: skew(15deg, 15deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+    margin: 28px 0 0 0;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -190,6 +232,11 @@ header .logo {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0 0 30px 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -219,6 +266,17 @@ header .logo {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  .cta img {
+    width: 50%;
+    align-self: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
+  }
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -231,9 +289,14 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+}
 .main-content .top-content button {
   color: white;
-  margin-top: 10px;
+  margin: 10px 0 10px 0;
   width: 150px;
   height: 35px;
   background: black;
@@ -250,16 +313,26 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
 }
 .main-content .bottom-content button {
   color: white;
-  margin-top: 10px;
+  margin: 10px 0 10px 0;
   width: 150px;
   height: 35px;
   background: black;

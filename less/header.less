@@ -1,20 +1,39 @@
 // Header Styles
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
 
 header {
   width: 100%;
   display: flex;
-
+  @media @tablet {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
   nav {
+    @media @phone {
+      width: 100%;
+    }
+
     ul {
       margin-top: 40px;
       width: 610px;
       justify-content: space-between;
       display: flex;
+      @media @phone {
+        width: 100%;
+        flex-direction: column;
+      }
       li {
+        @media @phone {
+          padding: 5px 0 5px 0;
+          border: 1px solid grey;
+          justify-content: center;
+          align-items: center;
+        }
         a {
           text-decoration: none;
           color: #b0b0b0;
-
           &:hover {
             text-decoration: underline;
             color: black;
@@ -28,5 +47,9 @@ header {
     align-self: flex-end;
     margin: 28px 0 0 91px;
     .skew(15deg, 15deg);
+    @media @tablet {
+      align-self: center;
+      margin: 28px 0 0 0;
+    }
   }
 } // header
