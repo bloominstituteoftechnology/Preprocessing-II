@@ -9,7 +9,7 @@
     }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 4.5rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -18,8 +18,8 @@
         align-items: center;
         margin: 0 82px 0 0;
         @media @tablet {
+            font-size: 100%;
             margin: 0 5.2% 0 0;
-            font-size: 3.7rem;
             border: 1px solid orange;
         }
     }
@@ -41,5 +41,10 @@
             .box-shadow(@string) //mixin used here
         }
     }
-    
+    img {
+        @media @tablet {
+            width: 40%;
+            height: 40%;
+        }
+    }
 }// cta

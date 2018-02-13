@@ -168,6 +168,12 @@ nav ul {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  nav ul {
+    width: 48%;
+    justify-content: space-between;
+  }
+}
 nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
@@ -183,7 +189,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   .logo {
     margin: 3% 0 0 7.8%;
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 .cta {
@@ -229,6 +235,12 @@ nav ul li a:hover {
   -moz-box-shadow: 10px 10px lawngreen;
   box-shadow: 10px 10px lawngreen;
 }
+@media (max-width: 768px) {
+  .cta img {
+    width: 40%;
+    height: 40%;
+  }
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -236,6 +248,12 @@ nav ul li a:hover {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin: 6.51% 1.5% 2.6%;
+    border: 2px solid palegreen;
+  }
 }
 .main-content .top-content {
   display: flex;
@@ -254,6 +272,11 @@ nav ul li a:hover {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
   .main-content .middle-img {
