@@ -21,6 +21,20 @@
             flex-direction: column;
             height: 300px;    
         }
+
+        h4 {
+            @media @phone{
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        p {
+            @media @phone {
+                display:none;
+            }
+        }
+
         .button1 {
             .button-creator(75px, 75px, purple);
             } 
@@ -41,29 +55,43 @@
 
     .bottom-content {
         display: flex;
-        justify-content: space-around;
-
+    
         @media @phone {
+            flex-direction: column;
             flex-wrap: wrap;
             align-content: space-between;
             height: 440px;
         }
 
+        h4 {
+            @media @phone{
+                display: flex;
+                justify-content: center;
+            }
+        }
+
         p {
-            padding-right: 40px;
-            // margin-bottom: 200px;
+            padding-right: 30px;
+
+            @media @phone {
+                display: none;
+            }
         }
 
         .button3 {
             .button-creator(75px, 75px, purple);
+            margin-right: 10px;
         }
         
         .button4 {
             .button-creator(75px, 75px, purple);
+            margin-right: 10px;
+
         }
 
         .button5 {
-            .button-creator(75px, 75px, purple);      
+            .button-creator(75px, 75px, purple);  
+            margin-right: 10px;
         }
     }
 }// main-content
