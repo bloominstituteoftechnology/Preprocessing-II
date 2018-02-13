@@ -185,6 +185,12 @@ header .logo {
   margin: 0 82px 0 0;
 }
 .cta .cta-text button {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px double black;
   font-size: 16px;
   background: white;
