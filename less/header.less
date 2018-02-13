@@ -4,7 +4,7 @@ header {
     width: 100%;
     display: flex;
 
-    nav {        
+    nav {
         ul {
             margin-top: 40px; 
             width: 610px;
@@ -14,12 +14,19 @@ header {
             li {
 
                 a {
+                    display: block;
+                    padding: 10px;
                     text-decoration: none;
+                    background: white;
                     color: #16207a;
+                    border: 1px solid black;
+                    //box-shadow: 10px 10px black;
+                    .box-shadow(10px 10px 10px black);  //Added box shadow mixin         
 
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        .opacity(0.5); // Opacity Mixin
                     }
                 }
             }
