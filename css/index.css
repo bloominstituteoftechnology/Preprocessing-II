@@ -126,6 +126,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#bundle .headers h1,
+#bundle .headers h2,
+#bundle .headers h3,
+#bundle .headers h4,
+#bundle .headers h5 {
+  font-family: "Pacifico";
+}
 * {
   box-sizing: border-box;
 }
@@ -320,6 +327,13 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content h1,
+.main-content .top-content h2,
+.main-content .top-content h3,
+.main-content .top-content h4,
+.main-content .top-content h5 {
+  font-family: "Pacifico";
+}
 @media (max-width: 768px) {
   .main-content .top-content {
     margin-left: 4%;
@@ -344,6 +358,13 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content h1,
+.main-content .bottom-content h2,
+.main-content .bottom-content h3,
+.main-content .bottom-content h4,
+.main-content .bottom-content h5 {
+  font-family: "Pacifico";
 }
 @media (max-width: 768px) {
   .main-content .bottom-content {
