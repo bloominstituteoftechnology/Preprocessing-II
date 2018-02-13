@@ -4,14 +4,38 @@ header {
     width: 100%;
     display: flex;
 
+    @media @tablet {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
     nav {
+
+        width: 100%;
+
         ul {
             margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: space-around;
             display: flex;
 
+            @media @tablet {
+                justify-content: space-around;
+                
+            }
+
+            @media @cell {
+                flex-direction: column;
+                width: 100%;
+            }
+
+
             li {
+
+                @media @cell {
+                    padding: 14px 0;
+                    align-self: center;
+                }
 
                 a {
                     text-decoration: none;
@@ -20,7 +44,17 @@ header {
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        .box-shadow(5px 10px);
+
+                        @media @cell {
+                            text-decoration: none;
+                        }
                     }
+
+                    @media @cell {
+                        font-size: 3rem;
+                    }
+
                 }
             }
         }
@@ -29,5 +63,19 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        &:hover {
+            .rotate(-180deg);
+        }
+
+        @media @tablet {
+            align-self: center;
+        }
+
+        @media @cell {
+            width: 70%;
+            margin: 29px -7% 0 0;
+        }
+        
     }
 }// header
