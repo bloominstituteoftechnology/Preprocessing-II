@@ -153,13 +153,14 @@ header {
 }
 header nav ul {
   margin-top: 40px;
-  width: 610px;
+  width: 69%;
   justify-content: space-between;
   display: flex;
 }
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 1.2rem;
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -227,6 +228,17 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+body {
+  width: 100%;
+  max-width: 880px;
+  font-size: 62.5%;
+}
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0 25px;
+  }
+}
 .main-header {
   border: 1px dashed black;
   padding: 10px;
@@ -237,12 +249,36 @@ footer {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+@media (max-width: 768px) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .main-header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .main-header nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .main-header .logo {
   margin: 28px 0 0 60px;
   -webkit-transform: skew(0deg, 10deg);
   -moz-transform: skew(0deg, 10deg);
   -ms-transform: skew(0deg, 10deg);
   -o-transform: skew(0deg, 10deg);
+}
+@media (max-width: 768px) {
+  .main-header .logo {
+    order: -1;
+  }
 }
 .cta img {
   -webkit-opacity: 0.3;
@@ -267,6 +303,16 @@ footer {
   -moz-box-shadow: 5px 10px lightgrey;
   box-shadow: 5px 10px lightgrey;
 }
+.main-content .top-content button {
+  width: 75px;
+  height: 50px;
+  background: pink;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.main-content .top-content button:hover {
+  background: #cc0000;
+}
 .main-content .bottom-content .text-content {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
@@ -275,4 +321,14 @@ footer {
   -webkit-box-shadow: 5px 10px lightgrey;
   -moz-box-shadow: 5px 10px lightgrey;
   box-shadow: 5px 10px lightgrey;
+}
+.main-content .bottom-content button {
+  width: 75px;
+  height: 50px;
+  background: pink;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.main-content .bottom-content button:hover {
+  background: #cc0000;
 }
