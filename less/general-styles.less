@@ -34,19 +34,28 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-.button-creator(@width, @height, @background, @radius) {
-    width: @width;
-    height: @height;
-    background: @background;
-    .border-radius(@radius);
-    margin: 15px 0;
-    
-    &:hover {
-      background: darken(@background, 20%);
-    }
+#btn-bundle {
+    .button-creator(@width, @height, @background, @radius) {
+        width: @width;
+        height: @height;
+        background: @background;
+        .border-radius(@radius);
+        margin: 15px 0;
+        
+        &:hover {
+        background: darken(@background, 20%);
+        }
 
-    &:active {
-        background: lighten(@background, 20%);
-        .box-shadow(5px 5px @main-color);
+        &:active {
+            background: lighten(@background, 20%);
+            .box-shadow(5px 5px @main-color);
+        }
+    } //.button-creator
+}//#btn-bundle
+
+#flex-bundle {
+    .flex-WC() {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-  }
+}
