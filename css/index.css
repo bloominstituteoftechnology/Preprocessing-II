@@ -151,11 +151,24 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width:400px) {
+  header nav ul {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -165,6 +178,14 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width:400px) {
+  header nav ul li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
@@ -172,6 +193,11 @@ header .logo {
   -moz-transform: rotate(15deg);
   -ms-transform: rotate(15deg);
   -o-transform: rotate(15deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+  }
 }
 .cta {
   display: flex;
@@ -225,15 +251,22 @@ header .logo {
   opacity: 0.5;
 }
 .main-content .top-content .text-content button {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
   -moz-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
   box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
+  margin-top: 20px;
+  width: 130px;
+  height: 40px;
+  background: #44c767;
+}
+.main-content .top-content .text-content button:hover {
+  background-color: #ff8da1;
 }
 .main-content .middle-img {
   display: block;
@@ -250,15 +283,22 @@ header .logo {
   opacity: 0.5;
 }
 .main-content .bottom-content .text-content button {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
   -moz-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
   box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
+  margin-top: 20px;
+  width: 130px;
+  height: 40px;
+  background: #44c767;
+}
+.main-content .bottom-content .text-content button:hover {
+  background-color: #ff8da1;
 }
 .contact p {
   margin: 40px 0;
