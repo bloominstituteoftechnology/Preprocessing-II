@@ -1,29 +1,94 @@
 // Main Content Styles
 
+// .main-content {
+//    border-top: 2px solid black; 
+//    border-bottom: 2px solid black;
+//    margin: 75px 0 35px 0;
+//    padding: 35px 0;
+//    font-size: 16px;
+//    line-height: 18px;
+
+//    .top-content {
+//         display: flex;
+//         justify-content: space-around;
+//     }
+
+//     .middle-img {
+//         display: block;
+//         margin: 30px auto;
+//     }
+
+//     .bottom-content {
+//         display: flex;
+//         justify-content: space-around;
+
+//         p {
+//             padding-right: 20px;
+//         }
+//     }
+// }// main-content
+
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 8px * 2;  // Using equation just because....
+    line-height: 18px;
+ 
+    .text-content {
+        
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
+        @media @phone {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            
+            #namespace-items > .button-style;
+        
         }
     }
-}// main-content
+ 
+    .top-content {
+         display: flex;
+         justify-content: space-around;
+         @media @phone {
+             flex-direction: column;
+             text-align: justify;
+         }
+    } // .top-content
+ 
+    .middle-img {
+         display: block;
+         margin: 30px auto;
+
+         &:hover {
+             .box-shadow(10px 5px 5px red);
+         }
+         
+         @media @tablet {
+             width: 100%;
+         }
+    } // .middle-img
+ 
+    .bottom-content {
+         display: flex;
+         justify-content: space-around;
+ 
+         @media @phone {
+             flex-direction: column;
+             text-align: justify;
+             width: 100%;
+             margin: 0;
+         }
+ 
+         p {
+             #namespace-items > .p-style;
+         } // .bottom-content p
+ 
+    } // .bottom-content
+ 
+ }

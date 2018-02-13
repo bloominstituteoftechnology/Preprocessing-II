@@ -1,11 +1,46 @@
 // Call To Action (CTA) Styles
 
+// .cta {
+//     display: flex;
+//     margin-top: 72px;
+//     justify-content: flex-end;
+
+//     .cta-text {
+//         font-size: 72px;
+//         text-align: center;
+//         letter-spacing: 5px;
+//         display: flex;
+//         justify-content: center;
+//         flex-flow: column;
+//         align-items: center;
+//         margin: 0 82px 0 0;
+//     }
+
+//     .cta-text button {
+//         border: 1px double black;
+//         font-size: 16px;
+//         background: white;
+//         width: 170px;
+//         height: 32px;
+//         margin-top: 10px;
+//         cursor: pointer;
+
+//         &:hover {
+//             background: black;
+//             color: white;
+//         }
+//     }
+// }// cta
+
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin: 72px auto 0;
+   
+    justify-content: space-around;
+    width: 85%;
 
     .cta-text {
+        color: @cta-text-color;
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -13,21 +48,44 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
-    }
-
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
+        margin: 0;
         &:hover {
-            background: black;
-            color: white;
+            .skew(10deg, 10deg);
+        }
+
+        button {
+            .border-radius(25px);
+            border: 1px double black;
+            font-size: 16px;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background: black;
+                color: white;
+            } // button:hover
+        
+            
+
+        } // button
+        @media @tablet {
+            margin: 0;
+        }
+    } // .cta-text
+    img {
+        &:hover {
+            .opacity(.7);
+        }
+        @media @tablet {
+            display: none;
+            
         }
     }
-}// cta
+    @media @tablet {
+        margin: 72px auto 0 auto;
+        justify-content: center;
+    }
+}

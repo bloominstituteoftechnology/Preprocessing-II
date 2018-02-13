@@ -1,13 +1,22 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "namespaces";
+@import "general-styles";
+@import "header";
+@import "cta";
+@import "main-content";
+@import "contact";
+@import "footer";
 
 
-
-
-
-
-
-
-
-
-
-
+.container {
+    max-width: 880px;
+    width: 96%;
+    margin: auto;
+    justify-content: center;
+    &:hover {
+        .rotate(180deg);
+    }
+}
 
