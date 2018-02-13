@@ -3,19 +3,56 @@
 header {
     width: 100%;
     display: flex;
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     nav {
+        width: 100%;
+        @media @tablet {width: 90%;}
+
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+            @media @tablet {
+                width: 100%;
+                margin: 20px 0;
+            }
+            @media @mobile {
+                flex-direction: column;
+                margin: 0;
+                align-items: center;
+            }
 
             li {
+                @media @mobile {
+                    width: 100%;
+                    margin: 0;
+                    
+                    &:first-child {
+                        border-top: 1px solid @alt-divider-color
+                    }
+                }                
 
                 a {
                     text-decoration: none;
-                    color: #b0b0b0;
+                    color: @alt-header-color;
+                    @media @mobile {
+                        display: block;
+                        text-align: center;
+                        padding: 20px 0;
+                        font-size: 2rem;
+                        border-bottom: 1px solid @alt-divider-color;
+
+                        &:hover {
+                            background: @alt-highlight-color;
+                            text-decoration: none;
+                            
+                        }
+                    }
 
                     &:hover {
                         text-decoration: underline;
@@ -29,5 +66,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @tablet {
+            order: -1;
+            max-width: 100%;
+            margin: 20px 0;
+        }
     }
 }// header
