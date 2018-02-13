@@ -199,6 +199,12 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+.cta .cta-text:hover {
+  -webkit-transform: skew(20deg, 0);
+  -moz-transform: skew(20deg, 0);
+  -ms-transform: skew(20deg, 0);
+  -o-transform: skew(20deg, 0);
+}
 .cta .cta-text button {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
