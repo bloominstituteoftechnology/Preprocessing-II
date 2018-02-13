@@ -197,6 +197,12 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+.cta img {
+  transform: transform 0.2s ease-in-out;
+}
+.cta img:hover {
+  transform: translate3d(-50px, -50px, 0px);
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -213,6 +219,10 @@ header .logo {
   -moz-transform: skew(15deg, 15deg);
   -ms-transform: skew(15deg, 15deg);
   -o-transform: skew(15deg, 15deg);
+  transform: transform 0.2s ease-in-out;
+}
+.cta .cta-text:hover {
+  transform: translate3d(-50px, -50px, 0px);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -255,6 +265,9 @@ header .logo {
   font-family: cursive;
   font-size: 15px;
   color: white;
+  -webkit-box-shadow: 10px 5px 5px #d9ff00;
+  -moz-box-shadow: 10px 5px 5px #d9ff00;
+  box-shadow: 10px 5px 5px #d9ff00;
 }
 .main-content .top-content .text-content button:hover {
   background: #c50bc5;
@@ -283,6 +296,9 @@ header .logo {
   font-family: cursive;
   font-size: 15px;
   color: white;
+  -webkit-box-shadow: 10px 5px 5px #d9ff00;
+  -moz-box-shadow: 10px 5px 5px #d9ff00;
+  box-shadow: 10px 5px 5px #d9ff00;
 }
 .main-content .bottom-content .text-content button:hover {
   background: #c50bc5;
