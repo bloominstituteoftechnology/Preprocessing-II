@@ -227,3 +227,40 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+.logo {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.cta-text {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+}
+.cta-text button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 4px 4px inset;
+  -moz-box-shadow: 4px 4px inset;
+  box-shadow: 4px 4px inset;
+}
+.middle-img {
+  -webkit-transform: skew(20deg, 0deg);
+  -moz-transform: skew(20deg, 0deg);
+  -ms-transform: skew(20deg, 0deg);
+  -o-transform: skew(20deg, 0deg);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
