@@ -5,6 +5,10 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet{
+        flex-direction: column-reverse;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +18,10 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tablet{
+            margin:0;
+        }
     
         &:hover{
             .skew(20deg, 0); //Skew mixin
@@ -36,6 +44,12 @@
         }
     }
     img {
+        width: image-width("img/header-img.png");
         .opacity(0.5); //Applied opacity mixin
+
+        @media @tablet {
+            align-self: center;
+            padding: 2%;
+        }
     }
 }// cta

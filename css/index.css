@@ -148,6 +148,11 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -204,6 +209,11 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    flex-direction: column-reverse;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -213,6 +223,11 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+  }
 }
 .cta .cta-text:hover {
   -webkit-transform: skew(20deg, 0);
@@ -240,9 +255,16 @@ header .logo {
   color: white;
 }
 .cta img {
+  width: 379px;
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .cta img {
+    align-self: center;
+    padding: 2%;
+  }
 }
 .main-content {
   border-top: 2px solid black;
