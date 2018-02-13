@@ -309,6 +309,11 @@ header .logo {
   color: white;
   align-self: center;
 }
+@media (max-width: 400px) {
+  .main-content .top-content .text-content button {
+    align-self: flex-start;
+  }
+}
 .main-content .top-content .text-content button:hover {
   background-color: #395f60;
 }
@@ -344,6 +349,11 @@ header .logo {
   margin: 3% 0 1%;
   color: white;
   align-self: center;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content button {
+    align-self: flex-start;
+  }
 }
 .main-content .bottom-content button:hover {
   background-color: #816213;
