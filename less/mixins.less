@@ -37,8 +37,15 @@
 }
 
 .button-maker(){
-	width: 30%;
+	color: white;
+	width: 50%;
 	height: 40px;
-	border-radius: 20%;
+	border-radius: 10px;
 	background: @button-color;
+	margin: 3% 0;
+
+	&:hover {
+		background: darken(@button-color, 20);
+		color: white;
+	}
 }

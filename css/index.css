@@ -162,6 +162,9 @@ header {
     flex-direction: column-reverse;
   }
 }
+header nav {
+  width: 100%;
+}
 header nav ul {
   margin-top: 40px;
   width: 100%;
@@ -263,15 +266,17 @@ header .logo {
   background-clip: padding-box;
   border: 1px double black;
   font-size: 16px;
-  width: 30%;
+  color: white;
+  width: 50%;
   height: 40px;
-  border-radius: 20%;
+  border-radius: 10px;
   background: #4a4ac0;
+  margin: 3% 0;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: #2a2a7a;
   color: white;
 }
 .cta img {
@@ -300,10 +305,16 @@ header .logo {
   line-height: 18px;
 }
 .main-content button {
-  width: 30%;
+  color: white;
+  width: 50%;
   height: 40px;
-  border-radius: 20%;
+  border-radius: 10px;
   background: #4a4ac0;
+  margin: 3% 0;
+}
+.main-content button:hover {
+  background: #2a2a7a;
+  color: white;
 }
 .main-content .top-content {
   display: flex;
