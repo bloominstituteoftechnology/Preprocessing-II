@@ -1,14 +1,13 @@
+// Variables on top
+
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
-
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
-}
+.button-creator(@width: 20px, @height: 20px, @font-size: 14, @border: 20px ) { // STRETCH assignment for Tuesday CHallenge
+	width: @width;
+	height: @height;
+	font-size: @font-size;
+	border: @border
+  }
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
@@ -16,10 +15,49 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+// .animation ===============================================
+
+// .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+// 	-webkit-animation: @name @duration @delay @ease;
+// 	-moz-animation:    @name @duration @delay @ease;
+// 	-ms-animation:     @name @duration @delay @ease;
+// }
+
+// Replaced the Above with the .animation code that WORKS below:
+
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    animation: @arguments;
+}
+
+// ===========================================================
+
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+
+.transform(@string){
+	-webkit-transform: @string;
+	-moz-transform: 	 @string;
+	-ms-transform: 		 @string;
+	-o-transform: 		 @string;
+}
+
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
 }
 
 .rotate (@deg) {
@@ -34,4 +72,24 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.translate (@x, @y:0) {
+	-webkit-transform:       translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+
+.translate3d (@x, @y: 0, @z: 0) {
+	-webkit-transform:       translate3d(@x, @y, @z);
+	-moz-transform: 	 translate3d(@x, @y, @z);
+	-ms-transform: 		 translate3d(@x, @y, @z);
+	-o-transform: 		 translate3d(@x, @y, @z);
+}
+.perspective (@value: 1000) {
+	-webkit-perspective: 	@value;
+	-moz-perspective: 	@value;
+	-ms-perspective: 	@value;
+	perspective: 		@value;
 }
