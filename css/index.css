@@ -193,7 +193,8 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: #303030;
+  font-weight: bold;
   font-size: 1.4rem;
 }
 header nav ul li a:hover {
@@ -204,81 +205,30 @@ header nav ul li a:hover {
 header .logo {
   margin: 0 0.6%;
 }
-.main-content {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  font-size: 1.6rem;
-  line-height: 18px;
-  margin: 30px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 500px;
-}
-@media (max-width: 720px) {
-  .main-content {
-    height: 530px;
-  }
-}
-@media (max-width: 400px) {
-  .main-content {
-    margin: 15px 0px;
-    height: 100%;
-  }
-}
-.main-content .top-content {
-  display: flex;
-  justify-content: center;
-}
-@media (max-width: 400px) {
-  .main-content .top-content {
-    margin: 10px 0px;
-  }
-}
-.main-content .top-content .text-content {
-  margin: 0 0.6%;
-}
-.main-content .middle-img {
-  max-width: 100%;
-  margin: 0 0.6%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.main-content .bottom-content {
-  display: flex;
-  justify-content: space-around;
-}
-@media (max-width: 400px) {
-  .main-content .bottom-content {
-    margin: 10px 0px;
-  }
-}
-.main-content .bottom-content .text-content {
-  margin-left: 0.6%;
-}
-.main-content .bottom-content p {
-  padding-right: 20px;
-}
 .cta {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
 }
+@media (max-width: 768px) {
+  .cta {
+    margin-top: 0px;
+  }
+}
 @media (max-width: 400px) {
   .cta {
-    margin-top: 15px;
+    margin-top: 0px;
   }
 }
 .cta .cta-text {
+  font-size: 7.2rem;
+  /* 72px */
+  text-align: center;
+  letter-spacing: 0.5rem;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  margin-top: 30px;
 }
 .cta button {
   border: 1px double black;
@@ -312,6 +262,94 @@ header .logo {
   .cta img {
     display: none;
   }
+}
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 1.6rem;
+  line-height: 18px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding: 1% 0;
+}
+@media (max-width: 720px) {
+  .main-content {
+    height: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    margin: 15px 0px;
+    height: 100%;
+  }
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    margin: 10px 1%;
+  }
+}
+.main-content .top-content .text-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.6%;
+}
+.main-content .top-content .text-content button {
+  width: 100px;
+  height: 25px;
+  background: cadetblue;
+  border: 2px solid black;
+  margin: 3% 0 1%;
+  color: white;
+  align-self: center;
+}
+.main-content .top-content .text-content button:hover {
+  background-color: #395f60;
+}
+.main-content .middle-img {
+  max-width: 100%;
+  margin: 1% 0.6%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    margin: 10px 1%;
+  }
+}
+.main-content .bottom-content .text-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.6%;
+}
+.main-content .bottom-content button {
+  width: 100px;
+  height: 25px;
+  background: goldenrod;
+  border: 2px solid black;
+  margin: 3% 0 1%;
+  color: white;
+  align-self: center;
+}
+.main-content .bottom-content button:hover {
+  background-color: #816213;
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
 }
 .contact {
   margin-left: 0.6%;
