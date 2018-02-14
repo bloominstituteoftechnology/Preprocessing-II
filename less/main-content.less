@@ -12,16 +12,29 @@
    line-height: 18px;
 
    .top-content {
+     @media @phone {
+       justify-content: space-around;
+       flex-direction: column;
+       height: 300px;
+ }
         display: flex;
         justify-content: space-around;
     }
 
     .middle-img {
+      @media @tablet {
+        width: 100%;
+      }
         display: block;
         margin: 30px auto;
     }
 
     .bottom-content {
+      @media @phone {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+      }
         display: flex;
         justify-content: space-around;
 
