@@ -445,10 +445,6 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
 }
 .main-content .bottom-content {
   display: flex;
@@ -634,6 +630,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 .cta {
   display: flex;
