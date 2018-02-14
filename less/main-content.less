@@ -8,15 +8,29 @@
    font-size: 16px;
    line-height: 18px;
 
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-wrap: wrap; 
+            margin: 0 500px 0 20px;   
+            button {
+                margin-bottom: 25px; 
+            }    
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
-    }
+        .box-shadow(5px 5px purple ); 
+
+        @media @phone {
+            display: none; 
+        }
+     }
 
     .bottom-content {
         display: flex;
@@ -25,5 +39,31 @@
         p {
             padding-right: 20px;
         }
+
+        @media @phone {
+            flex-wrap: wrap; 
+            margin: 0 500px 0 20px;   
+            button {
+                margin-bottom: 25px; 
+            } 
+        }
     }
+
+    button {
+        .button-creator(100px, 30px, purple, #f9f1f1); 
+        .border-radius(10px); 
+        border: 2px solid teal; 
+        font-size: 15px;
+        font-family: monospace; 
+        margin-top: 20px; 
+        
+        &:hover {
+            background: darken(@some-color, 20%);
+            color: white;
+            cursor: pointer;
+            
+        }
+    }
+
+
 }// main-content
