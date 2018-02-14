@@ -155,20 +155,19 @@ h5 {
 header {
   width: 100%;
   display: flex;
-  background: chartreuse;
 }
 @media (max-width: 768px) {
   header {
     width: 100%;
     height: 20px;
-    background: #00aaff;
-    justify-content: space-around;
+    display: flex;
   }
 }
 @media (max-width: 768px) {
   header nav {
     width: 59.5%;
-    margin-left: 2%;
+    margin-left: 1.2%;
+    justify-content: space-between;
   }
 }
 header nav ul {
@@ -180,7 +179,6 @@ header nav ul {
 @media (max-width: 768px) {
   header nav ul {
     width: 48%;
-    justify-content: space-between;
   }
 }
 header nav ul li a {
@@ -197,8 +195,8 @@ header .logo {
 }
 @media (max-width: 768px) {
   header .logo {
-    margin: 3% 0 0 7.8%;
-    max-width: 70%;
+    max-width: 80%;
+    margin: -7.2% 0;
   }
 }
 .cta {
@@ -223,7 +221,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta .cta-text {
-    font-size: 100%;
+    font-size: 200%;
     margin: 0 5.2% 0 0;
     border: 1px solid orange;
   }

@@ -3,19 +3,20 @@
 header {
     width: 100%;
     display: flex;
-    background: chartreuse;
-
+    
     @media (max-width: 768px) {
-    width: 100%;
-    height: 20px;
-    background: #00aaff;
-    justify-content: space-around;
+        width: 100%;
+        height: 20px;
+        display: flex;
+    
         }
 
     nav { 
         @media @tablet {
             width: 59.5%;
-            margin-left: 2%;
+            margin-left: 1.2%;
+            justify-content: space-between;
+            
     }
         ul {
             margin-top: 40px; 
@@ -24,7 +25,7 @@ header {
             display: flex;
             @media @tablet {
                 width:48%;
-                justify-content: space-between; 
+                              
             }
 
             li {
@@ -48,8 +49,9 @@ header {
         margin: 28px 0 0 91px;
 
         @media @tablet {
-            margin: 3% 0 0 7.8%;
-            max-width: 70%;
+            // order: -1;
+            max-width: 80%;
+            margin: -7.2% 0; 
         }
     
 }
