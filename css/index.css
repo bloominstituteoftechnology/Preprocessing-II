@@ -358,9 +358,32 @@ header .logo {
     height: 300px;
   }
 }
+.main-content .top-content .text-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.main-content .top-content .text-content button {
+  color: white;
+  color: mediumslateblue;
+  width: 120px;
+  height: 60px;
+  background: #2f538e;
+}
+.main-content .top-content .text-content button:hover {
+  background: red;
+  height: 80px;
+  margin-left: 70px;
+}
+.main-content .top-content .text-content button:hover {
+  color: #4d8a0f;
+}
 .main-content .middle-img {
   display: block;
-  margin: 30px auto;
+  margin: 80px auto;
 }
 @media (max-width: 768px) {
   .main-content .middle-img {
@@ -380,10 +403,34 @@ header .logo {
   .main-content .bottom-content {
     flex-wrap: wrap;
     align-content: space-between;
-    height: 440px;
+    min-height: 440px;
   }
 }
+.main-content .bottom-content .text-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.main-content .bottom-content .text-content button {
+  color: mediumslateblue;
+  width: 120px;
+  height: 60px;
+  background: #ffaa00;
+}
+.main-content .bottom-content .text-content button:hover {
+  background: red;
+  height: 80px;
+  margin-left: 70px;
+}
+.main-content .bottom-content .text-content button:hover {
+  color: #4d8a0f;
+}
 .main-content .bottom-content p {
+  text-align: center;
+  color: darkslategrey;
   padding-right: 20px;
 }
 @media (max-width: 768px) {
@@ -393,11 +440,21 @@ header .logo {
 }
 @media (max-width: 400px) {
   .contact {
-    margin: 20px;
+    margin: 50px 20px;
   }
+}
+.contact h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .contact p {
   margin: 40px 0;
+  text-align: center;
+  color: darkslategrey;
 }
 footer {
   text-align: center;

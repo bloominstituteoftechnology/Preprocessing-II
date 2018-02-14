@@ -24,6 +24,10 @@
         }
 
         .text-content {
+            h4 {
+                #new-settings > .h4-style;
+            }
+
             button {
                 color: white;
                 #new-settings > .button-style;
@@ -38,7 +42,7 @@
 
     .middle-img {
         display: block;
-        margin: 30px auto;
+        margin: 80px auto;
 
         @media @tablet {
             width: 100%;
@@ -56,10 +60,14 @@
         @media @phone {
             flex-wrap: wrap;
             align-content: space-between;
-            height: 440px;
+            min-height: 440px;
         }
 
         .text-content {
+            h4 {
+                #new-settings > .h4-style;
+            }
+
             button {
                 #new-settings > .button-style;
                 .button-creator(120px, 60px, #ffaa00);
@@ -71,6 +79,7 @@
         }
 
         p {
+            #new-settings > .para-styles;
             padding-right: 20px;
         }
     }
