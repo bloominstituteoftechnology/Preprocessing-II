@@ -202,7 +202,7 @@ header .logo {
   width: 170px;
   height: 32px;
   margin-top: 10px;
-  cursor: pointer;
+  cursor: pointer;  
 }
 .cta .cta-text button:hover {
   background: black;
@@ -217,7 +217,6 @@ header .logo {
   line-height: 18px;
   background: red;
   .opacity(0.5);
-  .box-shadow("blue");
 }
 .main-content .top-content {
   display: flex;
@@ -457,6 +456,8 @@ header {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+  border: 5px solid green;
+  .box-shadow(@button-shadow);
 
   .top-content {
     display: flex;

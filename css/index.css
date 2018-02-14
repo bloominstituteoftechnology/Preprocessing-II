@@ -672,6 +672,10 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+  border: 5px solid green;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 .main-content .top-content {
   display: flex;
