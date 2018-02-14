@@ -347,6 +347,11 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+@media (max-width: 400px) {
+  .contact {
+    margin: 10px;
+  }
+}
 .contact p {
   margin: 40px 0;
 }
