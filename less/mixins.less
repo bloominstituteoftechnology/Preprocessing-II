@@ -11,6 +11,7 @@
 	background-clip:         padding-box;
 }
 
+// Done!
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
@@ -24,6 +25,7 @@
 	box-shadow:         @string;
 }
 
+// Done!
 .rotate (@deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
@@ -31,9 +33,39 @@
 	-o-transform: 		 rotate(@deg);
 }
 
+// Done!
 .skew (@deg, @deg2) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+
+// CUSTOM-BUTTON CREATOOOOORS!
+.item-button-creator(@width, @height, @image) {
+  width: @width;
+  height: @height;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: @image;
+
+  &:hover {
+    width: 84px;
+    border: 0px;
+    background-image: url(../img/item-button-hover.png);
+  }
+}
+
+.fruit-button-creator(@width, @height, @image, @hover) {
+  width: @width;
+  height: @height;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: @image;
+
+  &:hover {
+    border: 0px;
+    background-image: @hover;
+  }
 }

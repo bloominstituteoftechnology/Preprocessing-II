@@ -168,9 +168,16 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
   -webkit-box-shadow: 6px 8px #2B2B2B;
   -moz-box-shadow: 6px 8px #2B2B2B;
   box-shadow: 6px 8px #2B2B2B;
+  -webkit-opacity: 0.78;
+  -moz-opacity: 0.78;
+  opacity: 0.78;
 }
 .cta {
   display: flex;
@@ -186,9 +193,9 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
-  -webkit-opacity: 0.6;
-  -moz-opacity: 0.6;
-  opacity: 0.6;
+  -webkit-opacity: 0.85;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
 }
 .cta .cta-text button {
   border: double black;
@@ -205,14 +212,10 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.cta .cta-text:hover {
-  background: black;
-  color: white;
-}
-.cta .cta-text .largeCircle {
-  -webkit-opacity: 0.4;
-  -moz-opacity: 0.4;
-  opacity: 0.4;
+.cta .largeCircle {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
 }
 .main-content {
   border-top: 2px solid black;
@@ -222,17 +225,96 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 798px) {
+  .main-content {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    font-size: 10px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content .button-content {
+  width: 25%;
+  margin: auto;
+}
+.main-content .top-content .text-content .button-bell {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-bell.png);
+}
+.main-content .top-content .text-content .button-bell:hover {
+  width: 84px;
+  border: 0px;
+  background-image: url(../img/item-button-hover.png);
+}
+.main-content .top-content .text-content .button-key {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-key.png);
+}
+.main-content .top-content .text-content .button-key:hover {
+  width: 84px;
+  border: 0px;
+  background-image: url(../img/item-button-hover.png);
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-transform: skew(1deg, -2deg);
+  -moz-transform: skew(1deg, -2deg);
+  -ms-transform: skew(1deg, -2deg);
+  -o-transform: skew(1deg, -2deg);
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .text-content .button-content {
+  width: 50%;
+  margin: auto;
+}
+.main-content .bottom-content .text-content .button-straw {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-straw.png);
+}
+.main-content .bottom-content .text-content .button-straw:hover {
+  border: 0px;
+  background-image: url(../img/fruit-button-hover-pink.png);
+}
+.main-content .bottom-content .text-content .button-orange {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-orange.png);
+}
+.main-content .bottom-content .text-content .button-orange:hover {
+  border: 0px;
+  background-image: url(../img/fruit-button-hover-orange.png);
+}
+.main-content .bottom-content .text-content .button-melon {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-melon.png);
+}
+.main-content .bottom-content .text-content .button-melon:hover {
+  border: 0px;
+  background-image: url(../img/fruit-button-hover-teal.png);
 }
 .main-content .bottom-content p {
   padding-right: 20px;
@@ -243,4 +325,10 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+.footer-img {
+  display: block;
+  width: 25%;
+  margin: auto;
+  padding: 5px;
 }
