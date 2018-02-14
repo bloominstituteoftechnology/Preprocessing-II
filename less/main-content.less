@@ -11,15 +11,18 @@
         margin: 6.51% 1.5% 2.6%;
         border: 2px solid palegreen;
 }
-    .great-features {
-        .great_button(@button-width, @button-height, @button-color,@button-darken)
-    }
+    
    .top-content {
         display: flex;
         justify-content: space-around;
         .rotate(180deg)
     }
-
+    .great-features {
+        .great_button(@button-width, 32px, @button-color,@button-darken);
+    }
+    .about-greatness {
+        .great_button(@button-width, 32px, @button-color,@button-darken);
+    }
     .middle-img {
         display: block;
         margin: 30px auto;
@@ -38,6 +41,16 @@
         
         p {
             padding-right: 20px;
+        }
+
+        .great-services {
+            .great_button(@button-width, 32px, @button-color,@button-darken);
+        }
+        .greatest_prod {
+            .great_button(@button-width, 32px, @button-color,@button-darken);
+        }
+        .great-visions {
+            .great_button(@button-width, 32px, @button-color,@button-darken);
         }
     }
 }// main-content

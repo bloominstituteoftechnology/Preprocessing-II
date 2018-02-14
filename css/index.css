@@ -261,6 +261,14 @@ header .logo {
     border: 2px solid palegreen;
   }
 }
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 .main-content .great-features {
   width: 170px;
   height: 32px;
@@ -270,13 +278,14 @@ header .logo {
 .main-content .great-features:hover {
   background: #cccccc;
 }
-.main-content .top-content {
-  display: flex;
-  justify-content: space-around;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+.main-content .about-greatness {
+  width: 170px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid black;
+}
+.main-content .about-greatness:hover {
+  background: #cccccc;
 }
 .main-content .middle-img {
   display: block;
@@ -304,6 +313,33 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .great-services {
+  width: 170px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid black;
+}
+.main-content .bottom-content .great-services:hover {
+  background: #cccccc;
+}
+.main-content .bottom-content .greatest_prod {
+  width: 170px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid black;
+}
+.main-content .bottom-content .greatest_prod:hover {
+  background: #cccccc;
+}
+.main-content .bottom-content .great-visions {
+  width: 170px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid black;
+}
+.main-content .bottom-content .great-visions:hover {
+  background: #cccccc;
 }
 .contact {
   padding-top: 80px;
