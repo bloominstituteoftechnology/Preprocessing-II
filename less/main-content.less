@@ -1,4 +1,22 @@
 // Main Content Styles
+@Tab: ~'(max-width: 768px)';
+@iPh: ~'(max-width: 400px)';
+
+    .box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+    }
+    .button-creater(@width, @height, @background,@hover, @after) {
+    width: @width;
+    height: @height;
+    background: @background;
+    }
+    .box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
 
 .main-content {
    border-top: 2px solid black; 
@@ -11,19 +29,78 @@
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
+        @media @Tab {
+            flex-direction: row;
+            padding: 0 2% 0 2%;
+            color: skyblue;
+        }
+        @media @iPh {
+            flex-flow: column;
+            padding: 0 2% 0 2%;
+            color:gold/4;
 
+        }
+    }
+    .button {
+        border: 1px double black;
+        font-size: 16px/2+5;
+        width: 170px;
+        height: 32px;
+        margin-top: 10px-3;
+        cursor: pointer;
+        background: wheat;
+        color:red;
+        padding: .6rem 1.3rem;
+        text-decoration: none;
+        .box-shadow("5px 8px 10px 4px");
+        .button-creater(100px, 110, purple/2);
+            &:hover {
+                
+                 @media @Tab {
+                background: lightgreen;
+                flex-direction: row;
+                padding: 0 2% 0 2%;
+                color: skyblue;
+                }
+            }
+        
+                @media @iPh {
+                background: plum;
+                flex-flow: column;
+                padding: 0 2% 0 2%;
+                color:gold/4;
+            }
+    
+        }
+    }
     .middle-img {
         display: block;
         margin: 30px auto;
+        @media @Tab {
+            width: 95%;
+        }
+        @media @iPh {
+            width: 100%;
+        }
+
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+       @media @Tab {
+            flex-direction: row;
+            padding: 0 2% 0 2%;
+            color: skyblue;
+        }
+        @media @iPh {
+            flex-flow: column;
+            padding: 0 2% 0 2%;
+            color: gold/4;
+        }
+
 
         p {
             padding-right: 20px;
         }
-    }
 }// main-content

@@ -1,9 +1,27 @@
 // Call To Action (CTA) Styles
+@Tab: ~'(max-width: 768px)';
+@iPh: '(max-width: 400px)';
+    .border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+    border-radius:         @radius;
+    }
+    .opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+    }
 
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+        @media @Tab {
+        .border-radius(30%);
+        }
+        @media @iPh {
+        .border-radius(50%);
+        }
 
     .cta-text {
         font-size: 72px;
@@ -14,6 +32,21 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @Tab {
+            justify-content: center;
+            font-size: 72px;
+            color:blue/2;
+            text-align: center
+        
+            }
+        @media @iPh {
+            justify-content: center;
+            font-size: 72px;
+            color:gold/2;
+            text-align: center
+        
+            }
+         }
     }
 
     .cta-text button {
@@ -24,10 +57,29 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-
+        @media @Tab {
+        .border-radius(30%);
+        }
+        @media @iPh {
+        .border-radius(50%);
+        }
+        
         &:hover {
             background: black;
             color: white;
+             
+         @media @Tab {
+        .border-radius(30%);
+        background-color: aqua;
+        text-color: black;
         }
+        @media @iPh {
+        .border-radius(50%);
+        background-color: antiquewhite;
+        text-color: brown;
+        
+        }
+     
     }
+    
 }// cta
