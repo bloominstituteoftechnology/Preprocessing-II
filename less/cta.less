@@ -1,10 +1,14 @@
 // Call To Action (CTA) Styles
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
 
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    @media @tablet {
+      margin: 80px 10px;
+    }
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,8 +18,18 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-        .skew (5deg, 5deg);
+        @media @tablet {
+          font-size: 68px;
+        }
+        @media @phone {
+        
+        }
+    }
 
+    .cta-img{
+      @media @phone {
+        visibility: hidden;
+      }
     }
 
     .cta-text button {
