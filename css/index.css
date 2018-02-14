@@ -142,7 +142,6 @@ h4,
 h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 h4 {
   font-size: 1.6rem;
@@ -153,7 +152,6 @@ p {
 .container {
   max-width: 88rem;
   width: 100%;
-  margin: auto;
 }
 @media (max-width: 768px) {
   .container {
@@ -163,14 +161,22 @@ p {
 header {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header nav {
   font-size: 1.8rem;
+  justify-content: space-around;
 }
 header nav ul {
-  margin-top: 4rem;
   width: 61rem;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
 }
 @media tablet {
@@ -189,7 +195,6 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
 }
 @media tablet {
   header .logo {
@@ -198,8 +203,7 @@ header .logo {
 }
 .cta {
   display: flex;
-  margin-top: 7.2rem;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 @media (max-width: 768px) {
   .cta {
@@ -214,9 +218,8 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 0 0 0;
 }
-@media tablet {
+@media (max-width: 768px) {
   .cta .cta-text {
     margin: 0 4.8rem 0 0;
   }
@@ -227,7 +230,6 @@ header .logo {
   background: white;
   width: 17rem;
   height: 3.2rem;
-  margin-top: 1rem;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
@@ -237,30 +239,26 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 75px 0 35px;
-  padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin: 7.5rem 2.6rem 3rem;
+  }
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .middle-img {
+  width: 100%;
   display: block;
-  margin: 30px auto;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
-.main-content .bottom-content p {
-  padding-right: 20px;
-}
-.contact p {
-  margin: 40px 0;
-}
 footer {
   text-align: center;
-  margin: 40px 0 20px;
 }
