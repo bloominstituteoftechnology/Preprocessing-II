@@ -8,14 +8,33 @@ header {
     display: flex;
 
     nav {
+        @media (max-width:400px){
+        flex-flow: wrap;
+    }
+        
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
-
+            @media (max-width: 768px){
+                width: 100%;
+            }
+            @media (max-width:400px){
+                display: block;
+                flex-direction: column;
+                flex-flow: wrap;
+                text-align: center;
+                font-size: 30px;
+                
+            }
+            
+            
             li {
-
+                .rotate(45deg);
+                @media(max-width: 400px){
+                    margin-right: 55%;
+                }
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -23,9 +42,11 @@ header {
                     &:hover {
                         text-decoration: underline;
                         color: @paris-hilton;
+                }
+                    
                     }
                 }
-                .rotate(45deg)
+                
             }
         }
     }
@@ -33,6 +54,14 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-        .skew(5deg,50deg)
-    }
+        .skew(5deg,50deg);
+        @media (max-width: 768px){
+            .skew(5deg, 20deg);
+            margin-left: 30%;
+        }
+        @media(max-width:400px){
+            width: 100%;
+            order: -1;
+        }
+        
 }// header

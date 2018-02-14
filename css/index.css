@@ -147,9 +147,19 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 400px) {
+  header nav {
+    flex-flow: wrap;
+  }
 }
 header nav ul {
   margin-top: 40px;
@@ -157,11 +167,30 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav ul {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    display: block;
+    flex-direction: column;
+    flex-flow: wrap;
+    text-align: center;
+    font-size: 30px;
+  }
+}
 header nav ul li {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    margin-right: 55%;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -171,7 +200,7 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: hotpink;
 }
-header .logo {
+.logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
   -webkit-transform: skew(5deg, 50deg);
@@ -179,10 +208,30 @@ header .logo {
   -ms-transform: skew(5deg, 50deg);
   -o-transform: skew(5deg, 50deg);
 }
+@media (max-width: 768px) {
+  .logo {
+    -webkit-transform: skew(5deg, 20deg);
+    -moz-transform: skew(5deg, 20deg);
+    -ms-transform: skew(5deg, 20deg);
+    -o-transform: skew(5deg, 20deg);
+    margin-left: 30%;
+  }
+}
+@media (max-width: 400px) {
+  .logo {
+    width: 100%;
+    order: -1;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    flex-flow: column;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -193,6 +242,11 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin-right: 0px;
+  }
 }
 .cta .cta-text:hover {
   color: hotpink;
@@ -250,17 +304,37 @@ header .logo {
 .main-content button:hover:after {
   content: "... dat me -.-";
 }
+@media (max-width: 400px) {
+  .main-content button {
+    margin-left: 25%;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-flow: column;
+  }
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-flow: column;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;

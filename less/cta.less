@@ -4,6 +4,9 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    @media(max-width: 768px){
+        flex-flow: column;
+    }
 
     .cta-text {
         font-size: 72px;
@@ -14,6 +17,9 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media(max-width:768px){
+            margin-right: 0px;
+        }
 
         &:hover{
             color: hotpink;
@@ -49,5 +55,5 @@
     }// cta-text button
     img {
         .opacity;
-    }
-}
+    }//img
+}//.cta
