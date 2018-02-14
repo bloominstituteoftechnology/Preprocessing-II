@@ -3,9 +3,30 @@
 header {
     width: 100%;
     display: flex;
+    background: lightgreen;
+    border:10px solid black;
+    .border-radius(40px);
+    .opacity;
+    
+     
+    
+    
 
     nav {
         ul {
+            @media @tablet {
+                header nav ul {
+                    
+                    width: 58.6%;
+                }}
+            @media @phone {
+                header nav ul {
+                    flex-direction:column;
+                    width:18.8%;
+                }}
+
+
+
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
@@ -26,8 +47,13 @@ header {
         }
     }
 
+   
+           
+        
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
-}// header
+    align-self: flex-end;
+    margin: 28px 0 0 91px;
+    .rotate(90deg);
+        }
+ }
+// header
