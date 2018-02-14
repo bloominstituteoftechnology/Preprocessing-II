@@ -1,4 +1,19 @@
 // Main Content Styles
+@phone: ~'(max-width: 400px;)';
+@tablet: ~'(max-width: 768px;)';
+@paris-hilton: hotpink;
+.button-creator(@width, @height, @background)   {
+    width: @width;
+    height: @height;
+    background: @background;
+    &:hover {
+        border-radius: 50%;
+        background-color: darken(@paris-hilton, 20%);
+        &:after{
+          content: "... dat me -.-";
+        }
+}
+}
 
 .main-content {
    border-top: 2px solid black; 
@@ -7,13 +22,25 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+    button {
+        .button-creator(170px, 70px, @paris-hilton);
+        @media(max-width: 400px){
+            margin-left: 25%;
+        }
+        }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+        @media(max-width: 400px){
+            flex-flow: column;
+        }
     }
 
     .middle-img {
+        @media (max-width:768px){
+            width: 100%;
+        }
         display: block;
         margin: 30px auto;
     }
@@ -21,9 +48,13 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        @media(max-width: 400px){
+            flex-flow: column;
+        }
 
         p {
             padding-right: 20px;
         }
     }
+    
 }// main-content
