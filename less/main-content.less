@@ -1,29 +1,88 @@
 // Main Content Styles
 
+.button-creator (@width, @height @background-color) {
+    width: @width;
+    height: @height;
+    background-color: @background-color;
+}
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+ 
+    .top-content {
+         display: flex;
+         justify-content: space-around;
+         @media @phone {
+             background: black;
+             color: white;
+         }
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
+         h4 {
+             #Header-style > .san-jose;
+         }
+     }
 
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
+     .button1 {
+         .button-creator(90px, 46px, aqua);
 
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
+         &:hover {
+            background: darken(aqua, 20% )
+          }
+     }
 
-        p {
-            padding-right: 20px;
-        }
-    }
-}// main-content
+     .button2 {
+         .button-creator(99px, 100px, teal);
+
+         &:hover {
+            background: darken(teal, 20% );
+          }
+     }
+ 
+     .middle-img {
+         display: block;
+         margin: 30px auto;
+     }
+ 
+     .bottom-content {
+         display: flex;
+         justify-content: space-around;
+ 
+         p {
+             #Header-style > .carolina;
+             padding-right: 20px;
+         }
+
+         h4 {
+             #Header-style > .carolina;
+         }
+     }
+
+     .button3 {
+         .button-creator(80px, 40px, black);
+         color: white;
+
+         &:hover {
+            background: darken(black, 20% );
+          }
+     }
+
+     .button4 {
+         .button-creator(75px, 30px, lime);
+
+         &:hover {
+            background: darken(lime, 20% );
+          }
+     }
+
+     .button5 {
+         .button-creator(83px, 52px, gold);
+
+         &:hover {
+            background: darken(gold, 20% );
+          }
+     }
+ }// main-content
