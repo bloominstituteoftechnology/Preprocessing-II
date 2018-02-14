@@ -1,5 +1,6 @@
 // Mixins below variables
 
+// implemented in .cta button
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
@@ -9,29 +10,42 @@
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;
 }
-
+// implemented in .cta button
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
 }
-
+// implemented in .cta button
 .box-shadow (@string) {
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
 }
-
+// implemented on header logo
 .rotate (@deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
 	-o-transform: 		 rotate(@deg);
 }
-
+// implemented on cta img
 .skew (@deg, @deg2) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.fancy-button (@width, @height, @background, @hover-color) {
+  width: @width;
+  height: @height;
+  background: @background;
+	margin: 10px;
+	.border-radius;
+	.box-shadow(0 8px 6px -6px black);
+
+	&:hover {
+  background-color: darken(@hover-color, 20%);
+}
 }

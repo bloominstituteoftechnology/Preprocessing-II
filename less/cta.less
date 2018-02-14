@@ -1,11 +1,29 @@
 // Call To Action (CTA) Styles
 
 .cta {
+  @media @tablet {
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
 
+    img {
+      @media @tablet {
+        padding-top: 30px;
+      }
+      @media @phone {
+        display: none;
+      }
+      .skew(5deg, 5deg);
+    }
+
     .cta-text {
+      @media @tablet {
+        margin: 0;
+      }
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -24,6 +42,9 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .opacity;
+        .border-radius;
+        .box-shadow(0 8px 6px -6px black);
 
         &:hover {
             background: black;

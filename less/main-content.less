@@ -1,7 +1,10 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
+  @media @tablet {
+  margin: 50px 2% 35px;
+  }
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -9,21 +12,45 @@
    line-height: 18px;
 
    .top-content {
+     @media @phone {
+       justify-content: space-around;
+       flex-direction: column;
+       height: 300px;
+     }
         display: flex;
         justify-content: space-around;
-    }
+
+        button {
+          .fancy-button(100px,32px,white,white)
+        }
+
+      } // top-content
 
     .middle-img {
+      @media @tablet {
+        width: 100%;
+      }
         display: block;
         margin: 30px auto;
     }
 
     .bottom-content {
+      @media @phone {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+      }
         display: flex;
         justify-content: space-around;
 
         p {
             padding-right: 20px;
         }
-    }
+
+        button {
+          .fancy-button(100px,32px,white,white)
+        } // button
+    }// bottom-content
+
+
 }// main-content
