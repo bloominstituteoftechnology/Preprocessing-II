@@ -126,6 +126,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* Adds box-shadow mixin to cta-img */
 * {
   box-sizing: border-box;
 }
@@ -136,22 +137,22 @@ body {
 }
 @media (min-width: 1100px) {
   body {
-    background: royalblue;
+    background: #41e1ac;
   }
 }
 @media (max-width: 1100px) {
   body {
-    background: rgba(0, 129, 250, 0.836);
+    background: #e141c7;
   }
 }
 @media (max-width: 768px) {
   body {
-    background: turquoise;
+    background: #7741e1;
   }
 }
 @media (max-width: 400px) {
   body {
-    background: #f17cde;
+    background: #4191e1;
   }
 }
 h1,
@@ -250,6 +251,7 @@ header .logo {
   justify-content: flex-end;
 }
 .cta .cta-text {
+  background: #147e5a;
   font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
@@ -258,6 +260,24 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 120px 0 0;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1100px) {
+  .cta .cta-text {
+    background: #7e146c;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    background: #37147e;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    background: #14497e;
+  }
 }
 .cta .cta-text h1 {
   font-size: 40px;
@@ -273,11 +293,10 @@ header .logo {
   animation: rotation 8s infinite linear;
 }
 .cta .cta-text button {
-  border: 1px solid black;
-  border-width: 10px;
+  border: 5px dashed black;
   font-size: 16px;
   margin-top: 10px;
-  box-shadow: 10x 5x 5x red;
+  box-shadow: 20x 5x 5x red;
   cursor: pointer;
   width: 170px;
   height: 45px;
@@ -299,6 +318,30 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (min-width: 1100px) {
+  .main-content p {
+    background: #1aa878;
+    border: 5px solid rgba(65, 225, 172, 0.4);
+  }
+}
+@media (max-width: 1100px) {
+  .main-content p {
+    background: #a81a90;
+    border: 5px solid rgba(225, 65, 199, 0.4);
+  }
+}
+@media (max-width: 768px) {
+  .main-content p {
+    background: #491aa8;
+    border: 5px solid rgba(119, 65, 225, 0.4);
+  }
+}
+@media (max-width: 400px) {
+  .main-content p {
+    background: #1a61a8;
+    border: 5px solid rgba(65, 145, 225, 0.4);
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
@@ -312,7 +355,7 @@ header .logo {
   margin: 0 82px 0 0;
   padding: 5px 0px 0px 0px;
 }
-.main-content .top-buttons .main__button1a {
+.main-content .top-buttons .main__button1 {
   font-size: 12pt;
   background: white;
   border: 3px solid gray;
@@ -321,11 +364,11 @@ header .logo {
   width: 125px;
   height: 35px;
 }
-.main-content .top-buttons .main__button1a:hover {
+.main-content .top-buttons .main__button1:hover {
   background: #4e0144;
   color: white;
 }
-.main-content .top-buttons .main__button1b {
+.main-content .top-buttons .main__button2 {
   font-size: 12pt;
   background: white;
   border: 3px solid gray;
@@ -334,9 +377,11 @@ header .logo {
   width: 120px;
   height: 35px;
 }
-.main-content .top-buttons .main__button1b:hover {
-  background: #005858;
-  color: white;
+.main-content .top-buttons .main__button2:hover {
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  color: black;
 }
 .main-content .middle-img {
   display: block;
@@ -358,7 +403,7 @@ header .logo {
   margin: 0 82px 0 0;
   padding: 5px 0px 0px 0px;
 }
-.main-content .bottom-buttons .main__button2a {
+.main-content .bottom-buttons .main__button3 {
   font-size: 12pt;
   background: white;
   border: 3px solid gray;
@@ -368,11 +413,11 @@ header .logo {
   width: 125px;
   height: 35px;
 }
-.main-content .bottom-buttons .main__button2a:hover {
-  background: #4b4b00;
+.main-content .bottom-buttons .main__button3:hover {
+  background: #666666;
   color: white;
 }
-.main-content .bottom-buttons .main__button2b {
+.main-content .bottom-buttons .main__button4 {
   font-size: 12pt;
   background: white;
   border: 3px solid gray;
@@ -381,11 +426,11 @@ header .logo {
   width: 125px;
   height: 35px;
 }
-.main-content .bottom-buttons .main__button2b:hover {
-  background: #003300;
-  color: white;
+.main-content .bottom-buttons .main__button4:hover {
+  background: #f7f16d;
+  color: #ff9a01;
 }
-.main-content .bottom-buttons .main__button2c {
+.main-content .bottom-buttons .main__button5 {
   font-size: 12pt;
   background: white;
   border: 3px solid gray;
@@ -395,9 +440,9 @@ header .logo {
   height: 35px;
   box-shadow: 10px 5px 5px beige;
 }
-.main-content .bottom-buttons .main__button2c:hover {
+.main-content .bottom-buttons .main__button5:hover {
   background: #4e0101;
-  color: white;
+  color: #f4d6a2;
 }
 .contact p {
   margin: 40px 0;

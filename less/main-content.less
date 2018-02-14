@@ -1,8 +1,12 @@
 /* Main Content Styles */
 
-// button-creator MIXIN
-
+// Color Variables
 @white: white;
+@bigBirdFeather: #f7f16d;
+@birdFootColor: #ff9a01;
+
+
+// button-creator MIXIN
 .dimensions(@width, @height) { // from .button-creator() mixin
   width: @width;
   height: @height;
@@ -14,8 +18,8 @@
           border-radius: @radius;
             }  
 
-// tint MIXIN used on button 2b
-// @tinted-color: tint(black, 50%);
+// tint MIXIN can be used on button 2b
+    // @tinted-color: tint(black, 50%);
 
 
 
@@ -30,7 +34,33 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   p {
+        @media @desktop {
+            background: hsl(@hue - 200, @saturation, @brightness / 1.5);
+            border: 5px solid rgba(65, 225, 172, 0.4);
+        }   
+
+        @media @laptop {
+            background: hsl(@hue - 50, @saturation, @brightness / 1.5);
+            border: 5px solid rgba(225, 65, 199, 0.4); // Very cool - creates a semi-translucent border around items, got color from compiled index.css
+        
+        
+        }
+        @media @tablet {
+            background: hsl(@hue - 100, @saturation, @brightness / 1.5);
+            border: 5px solid rgba(119, 65, 225, 0.4);
+            
+        
+        }
+        @media @phone {
+            background: hsl(@hue - 150, @saturation, @brightness / 1.5);
+            border: 5px solid rgba(65, 145, 225, 0.4);
+            
+        
+        }
+   }
 }
+
 
 .main-content .top-content {
     display: flex;
@@ -49,7 +79,7 @@
         padding: 5px 0px 0px 0px;
         
 
-        .main__button1a {
+        .main__button1 {
             font-size: 12pt;
             background: @white;
             border: 3px solid gray;
@@ -62,7 +92,7 @@
                 color: white;
         }
     }
-        .main__button1b {
+        .main__button2 {
             font-size: 12pt;
             background: @white;
             border: 3px solid gray;
@@ -71,8 +101,8 @@
             .dimensions(120px,35px); // LESS recog the () here and knows THIS IS A MIXIN
             // .basics(50%); // circle -- can also use percent
             &:hover {
-                background: rgb(0, 88, 88);
-                color: white;
+                .opacity(0.6);
+                color: black;
             }
         }
     }
@@ -101,7 +131,7 @@
         align-items: right;
         margin: 0 82px 0 0;
         padding: 5px 0px 0px 0px;
-        .main__button2a {
+        .main__button3 {
             font-size: 12pt;
             background: @white;
             border: 3px solid gray;
@@ -111,11 +141,11 @@
             .dimensions(125px,35px); // LESS recog the () here and knows THIS IS A MIXIN
             // .basics(50%); // can also use percent
             &:hover {
-                background: rgb(75, 75, 0);
+                background: darken(@white, 60%);
                 color: white;
             }
         }
-        .main__button2b {
+        .main__button4 {
             font-size: 12pt;
             background: @white;
             border: 3px solid gray;
@@ -125,11 +155,11 @@
             // .basics(50%); // can also use percent
             // color: @tint-color; -- This tint looks bad
             &:hover {
-                background: rgb(0, 51, 0);
-                color: white;
+                background: @bigBirdFeather;
+                color: @birdFootColor;
             }
         }
-        .main__button2c {
+        .main__button5 {
             font-size: 12pt;
             background: @white;
             border: 3px solid gray;
@@ -140,7 +170,7 @@
             box-shadow: 10px 5px 5px beige;
             &:hover {
                 background: rgb(78, 1, 1);
-                color: white;
+                color: #f4d6a2;
             }
         }
     }

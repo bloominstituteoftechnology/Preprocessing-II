@@ -45,8 +45,10 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    
 
     .cta-text {
+        background: hsl(@hue - 200, @saturation, @brightness / 2);
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -56,6 +58,22 @@
         align-items: center;
         margin: 0 120px 0 0;
         // opacity: 0.5; // Lightens the whole "INNOVATION ON DEMAND Get Started" block area
+        .box-shadow(5px, 5px, 6px, 0.3);
+        @media @laptop {
+            background: hsl(@hue - 50, @saturation, @brightness / 2);
+            
+            
+        }
+        @media @tablet {
+            background: hsl(@hue - 100, @saturation, @brightness / 2);
+            
+           
+        }
+        @media @phone {
+            background: hsl(@hue - 150, @saturation, @brightness / 2);
+            
+           
+        }
 
         h1 {
             font-size: 40px;
@@ -68,17 +86,17 @@
         -webkit-animation: rotation 8s infinite linear; // Rotates the image - got from other student - but very distracting
         -moz-animation: rotation 8s infinite linear;
         animation: rotation 8s infinite linear;
+        
     }
 
     .cta-text button { // Can't figure out why when I make changes here, nothing happens in the page?
-        border: 1px solid black;
-        border-width: 10px;
+        border: 5px dashed black;
         font-size: 16px;
         // background: white;
         // width: 170px;
         // height: 32px;
         margin-top: 10px;
-        box-shadow: 10x 5x 5x red;
+        box-shadow: 20x 5x 5x red;
         cursor: pointer; // Cursor turns to pointer hand when hovering
         .cta__button(170px, 45px, white); // replaced the above background, width, height with a custum mixin
         .opacity(0.7);
