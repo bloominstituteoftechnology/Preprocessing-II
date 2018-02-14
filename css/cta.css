@@ -1,0 +1,58 @@
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .cta .circularimg {
+    display: none;
+  }
+}
+.cta .cta-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    display: flex;
+    width: 80%;
+  }
+}
+.cta .cta-text h1 {
+  width: 100%;
+}
+.cta .cta-text button {
+  -webkit-box-shadow: 2px 3px 2px 2px #0a0909;
+  -moz-box-shadow: 2px 3px 2px 2px #0a0909;
+  box-shadow: 2px 3px 2px 2px #0a0909;
+  -webkit-border-radius: 15px 15px;
+  -moz-border-radius: 15px 15px;
+  border-radius: 15px 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px double black;
+  font-size: 16px;
+  background: #a1a2a3;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.cta .cta-text button:hover {
+  background: #f7f7f7;
+}

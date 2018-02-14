@@ -5,11 +5,13 @@
 }
 
 html, body {
+    background-color: @primary-color; // Color Variable use //
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
+    color: @secondary-color;
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -18,4 +20,8 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+
+    @media @tablet {
+        width: 80%;
+}
 }

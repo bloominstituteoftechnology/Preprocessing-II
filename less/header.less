@@ -1,9 +1,48 @@
-// Header Styles
+// Header //
+@import 'mixins';
+@import 'variables';
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
 header {
     width: 100%;
     display: flex;
 
+    @media @tablet {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-content: center;
+        margin: 0px;
+    }
+
+    .logo {
+
+        @media @tablet {
+            width: 40%;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            margin-top: 26px;
+            margin-left: 160px;
+        }
+
+        @media @phone {
+            display: flex;
+            justify-content: center;
+            margin-left: 95px;
+            margin-top: 20px;
+        }
+
+
+        .skew(20deg, 10deg); // skew mixin //
+
+        }
+
+        align-self: flex-end;
+        margin: 28px 0 0 91px;
+    }
+    
     nav {
         ul {
             margin-top: 40px; 
@@ -11,23 +50,51 @@ header {
             justify-content: space-between;
             display: flex;
 
-            li {
+    @media @tablet {
+        width: 100%;
+        display: flex;
 
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
+        @media @phone {
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-content: center;
+            margin: 0px;
+        }
+    
+    }
 
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
+    li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        @media @tablet {
+            line-height: 12px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            margin-top: 20px;
+
+        }
+            a {
+                color: @tertiary-color;
+    
+                @media @tablet {
+                    width: 100%;
+                    text-align: center;
+                    padding-left: 40px;
+                    padding-top: 10px;
+                    margin: 5px 0 15px 0;
                 }
-            }
+
+    &:hover {
+        text-decoration: underline;
+        color: black;
+    }
         }
     }
-
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+        }
     }
-}// header

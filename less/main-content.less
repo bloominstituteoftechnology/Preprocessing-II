@@ -1,29 +1,55 @@
-// Main Content Styles
+// Main Content styles //
+
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px @secondary-color; 
+    border-bottom: 2px @secondary-color;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 8px * 2px; // operator example 1 //
+    line-height: 18px;
+ 
+    .top-content {
+     display: flex;
+     justify-content: space-around;
+ 
+     p {
+         color: @tertiary-color;
+         padding-right: 10px + 10px; // operator example 2 //
+     }
+     .text-content{
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
+         .button1 {
+            .button-creator (120px, 40px)
+         }
+     }
+ 
+ }
+ .middle-img {
+     display: block;
+     margin: 30px auto;
 
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
+     @media @tablet {
+         display: flex;
+         height: 140px;
+         width: 570px;
+         margin-right: 40px;
 
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
-    }
-}// main-content
+         @media @phone {
+             display: none;
+         }
+     }
+ }
+ 
+ .bottom-content {
+     display: flex;
+     justify-content: space-around;
+ 
+     p {
+         color: @tertiary-color;
+         padding-right: 10px + 10px; // operator example 2 //
+     }
+ 
+ }
+ 
+ }
