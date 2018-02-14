@@ -1,3 +1,14 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "general-styles";
+@import "header";
+@import "cta";
+@import "main-content";
+@import "contact";
+@import "footer";
+
+
 // Main Content Styles
 
 .main-content {
@@ -11,11 +22,22 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        
+        .topbutton{
+            .button-mix(150px, 30px, rgb(7, 20, 56), rgb(62, 141, 216), .9, rgb(204, 207, 236));
+        
+            &:hover{
+                .bg-darken-function(rgb(7, 20, 56));
+            }
+        }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+    
     }
 
     .bottom-content {
@@ -25,5 +47,20 @@
         p {
             padding-right: 20px;
         }
+
+        .botbutton{
+            .button-mix(150px, 50px, rgb(17, 1, 17), rgb(203, 203, 248), .8, black,);
+            margin-top: 4%;
+            text-align: center;
+            
+            &:hover{
+            .skew(-1deg, -4deg);
+
+           .bg-light-function(rgb(17, 1, 17));
+            
+        }
+        }
+
+        
     }
-}// main-content
+// main-content

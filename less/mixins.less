@@ -22,6 +22,12 @@
 	box-shadow:         @string;
 }
 
+.font-weight (@weight){
+	-webkit-font-weight: @weight;
+	-moz-font-weight: @weight;
+	font-weight: @weight;
+}
+
 .rotate (@deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
@@ -34,4 +40,27 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.button-mix(@width, @height, @background, @color, @hover-opacity, @hover-txtcolor){
+	width: @width;
+	height: @height;
+	background: @background;
+	color: @color;
+	font-weight: 600;
+
+	&:hover{
+	opacity: @hover-opacity;
+	color: @hover-txtcolor;
+	}
+
+}
+
+.bg-darken-function(@bgdark){
+	background-color: darken(@bgdark, 100%);
+}
+
+.bg-light-function(@bglight){
+	background-color: lighten(@bglight, 50%);
+
 }

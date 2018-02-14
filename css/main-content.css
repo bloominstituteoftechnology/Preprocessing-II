@@ -221,6 +221,19 @@ header .logo {
   -ms-transform: skew(30deg, 10deg);
   -o-transform: skew(30deg, 10deg);
 }
+.contact p {
+  margin: 40px 0;
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+footer:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -277,17 +290,4 @@ header .logo {
   -ms-transform: skew(-1deg, -4deg);
   -o-transform: skew(-1deg, -4deg);
   background-color: #f21ff2;
-}
-.contact p {
-  margin: 40px 0;
-}
-footer {
-  text-align: center;
-  margin: 40px 0 20px;
-}
-footer:hover {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
 }
