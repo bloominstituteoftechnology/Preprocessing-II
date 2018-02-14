@@ -1,6 +1,39 @@
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
+//created by me -------------------------
+
+
+//button mixin
+.custom-button (@width, @height, @background) {
+	-webkit-width: @width;
+	-moz-height:   @height;
+	background:    @background;
+}
+
+// Namespace
+#bundle {
+	.Headings {
+		font-family: Lucida Sans;
+		font-size: 14px;
+		color: brown;
+		font-style: oblique;
+		font-weight: bold;
+	}
+	.Buttons {
+		width: 200px;
+		height: 100px;
+		background: gray;
+		.border-radius(@radius: 30px);
+		color: white;
+		font-size: 14px;
+	}
+	.bordered {
+		border: 10px dotted gray;
+	}
+	}
+
+//-----------------------------------------------
+.border-radius (@radius: 5px) {   //used
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
@@ -10,28 +43,29 @@
 	background-clip:         padding-box;
 }
 
-.opacity (@opacity: 0.5) {
+.opacity (@opacity: 0.5) {   //used
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
+.box-shadow (@string) {  //used
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
 }
 
-.rotate (@deg) {
+.rotate (@deg) {   //used
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
 	-o-transform: 		 rotate(@deg);
 }
 
-.skew (@deg, @deg2) {
+.skew (@deg, @deg2) { //used
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+

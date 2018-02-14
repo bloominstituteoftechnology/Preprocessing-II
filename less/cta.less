@@ -4,7 +4,14 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    
+    img {
+        transform: transform .2s ease-in-out;
 
+        &:hover {
+            transform: translate3d(-50px, -50px, 0px);
+        }
+    }
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,9 +21,15 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+        .opacity(@opacity: 0.5); 
+        .skew(15deg, 15deg);
+        transform: transform .2s ease-in-out;
 
-    .cta-text button {
+        &:hover {
+            transform: translate3d(-50px, -50px, 0px);
+        }
+
+        button {
         border: 1px double black;
         font-size: 16px;
         background: white;
@@ -24,10 +37,13 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .box-shadow(10px 5px 5px blue);
+        
 
         &:hover {
             background: black;
             color: white;
         }
     }
+}
 }// cta
