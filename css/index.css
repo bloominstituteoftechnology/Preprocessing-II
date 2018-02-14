@@ -151,6 +151,12 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    color: teal;
+  }
+}
 header nav ul {
   margin-top: 40px;
   width: 610px;
@@ -163,12 +169,6 @@ header nav ul {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-}
-@media max-width: 768px {
-  header nav ul li {
-    background: black;
-    color: white;
-  }
 }
 header nav ul li a {
   text-decoration: none;

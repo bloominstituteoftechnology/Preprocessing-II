@@ -4,7 +4,14 @@ header {
     width: 100%;
     display: flex;
 
+    @media @tablet {
+        width: 100%;
+        color: teal;
+    }
+
     nav {
+        
+
         ul {
             margin-top: 40px; 
             width: 610px;
@@ -14,11 +21,6 @@ header {
             .border-radius(@radius: 5px);
 
             li {
-
-                @media @tablet {
-                    background: black;
-                    color: white;
-                }
 
                 a {
                     text-decoration: none;
