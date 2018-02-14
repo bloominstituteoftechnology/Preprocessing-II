@@ -1,3 +1,72 @@
+// Namespacing
+
+#header-button-styles() {
+
+    .bluejeans {
+      color: skyblue;
+      font-family: Georgia;
+      font-style: oblique;
+      text-align: center;
+      padding: 5px;
+      display: block;
+      border: 3px dashed gold;
+      background-color: navy;
+      &:hover {
+        background-color: white
+      }
+    }// button
+
+    .rainforest {
+        text-align: center;
+        color: rgb(136, 150, 16);
+        padding: 5px;
+        display: block;
+        border: 5px solid rgb(56, 165, 42);
+        background-color: rgb(21, 85, 21);
+        &:hover {
+          background-color: white
+        }
+      }// button
+
+      .sand {
+        font-family: Papyrus;
+        font-weight: bold;
+        color: rgb(136, 65, 65);
+        font-size: 18px;
+        text-align: center;
+        padding: 6px;
+        display: block;
+        border: 5px dashed gold;
+        background-color: burlywood;
+        border-radius: 50%;
+        &:hover {
+          background-color: white
+        }
+      }// button
+  }
+
+#main-content-title-styles() {
+	.wire {
+		border: 1px solid silver;
+		position: relative;
+		margin: 0.5em;
+		border: solid 5px transparent;
+		background: fade(white,25%);
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			border: dashed 5px white;
+			margin: -10px;
+			z-index: -1;
+			transition: transform 0.6s linear;
+			transform: scale(0.97, 0.93);
+		}
+		&:hover::after { transform: scale(1,1); }
+	}
+}
+
 // Escaping: To make Media Queries more readable
 
 @phone: ~"(max-width: 400px)";

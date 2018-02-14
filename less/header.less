@@ -1,54 +1,6 @@
-// Namespacing
 
-#style() {
-
-    .bluejeans {
-      color: skyblue;
-      font-family: Georgia;
-      font-style: oblique;
-      text-align: center;
-      padding: 5px;
-      display: block;
-      border: 3px dashed gold;
-      background-color: navy;
-      &:hover {
-        background-color: white
-      }
-    }// button
-
-    .rainforest {
-        text-align: center;
-        color: rgb(136, 150, 16);
-        padding: 5px;
-        display: block;
-        border: 5px solid rgb(56, 165, 42);
-        background-color: rgb(21, 85, 21);
-        &:hover {
-          background-color: white
-        }
-      }// button
-
-      .sand {
-        font-family: Papyrus;
-        font-weight: bold;
-        color: rgb(136, 65, 65);
-        font-size: 18px;
-        text-align: center;
-        padding: 6px;
-        display: block;
-        border: 5px dashed gold;
-        background-color: burlywood;
-        border-radius: 50%;
-        &:hover {
-          background-color: white
-        }
-      }// button
-  }
 
 // Header Styles
-
-
-
 
 header {
     width: 100%;
@@ -64,7 +16,7 @@ header {
             li {
 
                 a {
-                    #style > .sand; // arguments: .rainforest, .sand, or .bluejean
+                    #header-button-styles > .rainforest; // arguments: .rainforest, .sand, or .bluejean
                     text-decoration: none;
 
                     &:hover {

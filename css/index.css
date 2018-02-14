@@ -179,16 +179,12 @@ header nav ul {
   display: flex;
 }
 header nav ul li a {
-  font-family: Papyrus;
-  font-weight: bold;
-  color: #884141;
-  font-size: 18px;
   text-align: center;
-  padding: 6px;
+  color: #889610;
+  padding: 5px;
   display: block;
-  border: 5px dashed gold;
-  background-color: burlywood;
-  border-radius: 50%;
+  border: 5px solid #38a52a;
+  background-color: #155515;
   text-decoration: none;
 }
 header nav ul li a:hover {
@@ -329,6 +325,32 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+}
+.main-content h4 {
+  border: 1px solid silver;
+  position: relative;
+  margin: 0.5em;
+  border: solid 5px transparent;
+  background: rgba(255, 255, 255, 0.25);
+  width: 80px;
+  text-align: center;
+}
+.main-content h4:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: dashed 5px white;
+  margin: -10px;
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+}
+.main-content h4:hover::after {
+  transform: scale(1, 1);
 }
 @media (min-width: 1100px) {
   .main-content p {
