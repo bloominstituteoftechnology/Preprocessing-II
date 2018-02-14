@@ -1,8 +1,11 @@
 // Header Styles
-
 header {
     width: 100%;
     display: flex;
+    @media @tablet {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 
     nav {
         ul {
@@ -29,5 +32,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .opacity;
+        @media @tablet {
+            margin: 28px 0 0 91px;
+            order: -1;
+        }
     }
 }// header

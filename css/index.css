@@ -146,35 +146,41 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
 header {
   width: 100%;
   display: flex;
 }
-header nav ul {
-  margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
-  display: flex;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #b0b0b0;
-}
-header nav ul li a:hover {
-  text-decoration: underline;
-  color: black;
+@media nav {
+  header ul {
+    margin-top: 40px;
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+  header ul li a:hover {
+    text-decoration: underline;
+    color: black;
+  }
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .cta {
   display: flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .cta .cta-text {
   font-size: 72px;
@@ -185,6 +191,10 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: skew(10deg, 5deg);
+  -moz-transform: skew(10deg, 5deg);
+  -ms-transform: skew(10deg, 5deg);
+  -o-transform: skew(10deg, 5deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -205,6 +215,10 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .main-content {
   border-top: 2px solid black;
