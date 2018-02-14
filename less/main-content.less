@@ -14,24 +14,28 @@
     .top-content, .bottom-content  {
         display: flex;
         justify-content: space-around;
+        .text-content{
+            #card.box;
+            margin: 1rem;
+            padding-top: 1.3rem;
+            button {
+                .button-stylor(@height: 3rem);
+                box-sizing: content-box;
+                padding: .1rem;
+                margin: 1rem auto;
+                font-size: 1.2rem;
+                text-align: center;
+                text-transform: uppercase;
+                color: #333;
+                .border-radius;
+                .opacity(.8);
+                .box-shadow(.2rem .2rem .2rem .1rem rgba(0, 0, 255, .4));
 
-        button {
-            .button-stylor(@height: 3rem);
-            box-sizing: content-box;
-            padding: .1rem;
-            margin: 1rem auto;
-            font-size: 1.2rem;
-            text-align: center;
-            text-transform: uppercase;
-            color: #333;
-            .border-radius;
-            .opacity(.8);
-            .box-shadow(.2rem .2rem .2rem .1rem rgba(0, 0, 255, .4));
-
-            &:hover{
-                background-color: darken(@primary-color, 20%);
-                color: white;
-                .rotate(45deg);
+                &:hover{
+                    background-color: darken(@primary-color, 20%);
+                    color: white;
+                    .rotate(45deg);
+                }
             }
         }
         

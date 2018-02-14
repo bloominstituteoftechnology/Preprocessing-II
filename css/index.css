@@ -286,8 +286,17 @@ header nav ul li a:hover {
   display: flex;
   justify-content: space-around;
 }
-.main-content .top-content button,
-.main-content .bottom-content button {
+.main-content .top-content .text-content,
+.main-content .bottom-content .text-content {
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+  -moz-box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+  text-align: center;
+  margin: 1rem;
+  padding-top: 1.3rem;
+}
+.main-content .top-content .text-content button,
+.main-content .bottom-content .text-content button {
   width: 10rem;
   height: 3rem;
   background: #eee;
@@ -311,8 +320,8 @@ header nav ul li a:hover {
   -moz-box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
   box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
 }
-.main-content .top-content button:hover,
-.main-content .bottom-content button:hover {
+.main-content .top-content .text-content button:hover,
+.main-content .bottom-content .text-content button:hover {
   background-color: #7d7d7d;
   color: white;
   -webkit-transform: rotate(45deg);
