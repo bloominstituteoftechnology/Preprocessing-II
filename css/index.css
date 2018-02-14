@@ -179,8 +179,20 @@ header nav ul {
   display: flex;
 }
 header nav ul li a {
+  font-family: Papyrus;
+  font-weight: bold;
+  color: #884141;
+  font-size: 18px;
+  text-align: center;
+  padding: 6px;
+  display: block;
+  border: 5px dashed gold;
+  background-color: burlywood;
+  border-radius: 50%;
   text-decoration: none;
-  color: black;
+}
+header nav ul li a:hover {
+  background-color: white;
 }
 header nav ul li a:hover {
   text-decoration: underline;
