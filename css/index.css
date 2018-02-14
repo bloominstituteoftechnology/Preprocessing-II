@@ -151,11 +151,27 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 90%;
+  }
+}
 header nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -173,10 +189,32 @@ header .logo {
   -ms-transform: rotate(10deg);
   -o-transform: rotate(10deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    max-width: 100%;
+    margin: 20px 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+.cta img {
+  -webkit-transform: skew(2deg, 10deg);
+  -moz-transform: skew(2deg, 10deg);
+  -ms-transform: skew(2deg, 10deg);
+  -o-transform: skew(2deg, 10deg);
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -224,6 +262,13 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .top-content button:nth-child(1) {
+  font-size: 16px;
+  width: 100;
+  height: 25;
+  background: AliceBlue;
+  border: 5px solid black;
 }
 .main-content .middle-img {
   display: block;
