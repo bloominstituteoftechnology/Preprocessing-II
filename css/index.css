@@ -250,6 +250,11 @@ header .logo {
   -ms-transform: skew(5deg, 5deg);
   -o-transform: skew(5deg, 5deg);
 }
+@media (max-width: 768px) {
+  .cta img {
+    padding-top: 30px;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -297,6 +302,11 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin: 50px 2% 35px;
+  }
 }
 .main-content .top-content {
   display: flex;
