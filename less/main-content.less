@@ -11,6 +11,17 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            height: 250px;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 15px;
+
+            h4 {
+            text-align: center;
+            }
+        }
     }
 
     .middle-img {
@@ -21,6 +32,17 @@
         &:hover {
             .opacity(.20);
         }
+
+        @media @tablet {
+            width: 100%;
+        }
+
+
+        @media @phone {
+            display: none;
+        }
+
+
     }
 
     .bottom-content {
@@ -29,6 +51,21 @@
 
         p {
             padding-right: 20px;
+
+            @media @phone {
+                padding-right: 0;
+            }
+        }
+
+        @media @phone {
+            height: 400px;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 15px;
+
+            h4 {
+            text-align: center;
+            }
         }
     }
 }// main-content
