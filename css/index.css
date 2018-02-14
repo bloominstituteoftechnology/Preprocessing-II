@@ -294,7 +294,7 @@ header .logo {
     flex-direction: column;
   }
 }
-.main-content .top-content button {
+.main-content .top-content .text-content button {
   color: white;
   margin: 10px 0 10px 0;
   width: 150px;
@@ -304,7 +304,7 @@ header .logo {
   -moz-box-shadow: 5px 5px 20px grey;
   box-shadow: 5px 5px 20px grey;
 }
-.main-content .top-content button:hover {
+.main-content .top-content .text-content button:hover {
   background: #404040;
 }
 .main-content .middle-img {
