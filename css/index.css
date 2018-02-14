@@ -359,6 +359,15 @@ header .logo {
 .contact p {
   margin: 15px 0;
 }
+.contact .contact {
+  width: 170px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid black;
+}
+.contact .contact:hover {
+  background: #cccccc;
+}
 footer {
   text-align: center;
   margin: 40px 0 20px;
