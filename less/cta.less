@@ -1,11 +1,37 @@
-// Call To Action (CTA) Styles
+// Call to action (CTA) styles // 
+@import "mixins";
+@import "variables";
+@myShadow: ~'2px 3px 2px 2px #0a0909';
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
 .cta {
+
+    @media @tablet {            // media queries //
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
 
+    .circularimg {
+
+        @media @tablet {
+            display: none;
+        }
+    }
+
     .cta-text {
+
+        @media @tablet {        // media queries //
+            display: flex;
+            width: 80%;
+        }
+
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -14,20 +40,32 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+        h1 {
+            width: 100%;
+        }
 
-        &:hover {
-            background: black;
-            color: white;
+        button {
+
+            .box-shadow(@myShadow); // box shadow mixin //
+
+            .border-radius(15px 15px); // border-radius mixin //
+
+            border: 1px double black;
+            font-size: 16px;
+            background: @quaternary-color;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background: @tertiary-color;
+
+                .rotate (45deg); // rotate mixin //
+                .opacity (@opacity: 0.5); // opacity mixin //
+            }
         }
     }
-}// cta
+
+}
