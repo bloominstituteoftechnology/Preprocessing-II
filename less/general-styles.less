@@ -9,13 +9,22 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+h1 {
+    #headings-style.heading-secondary(60px);
+}
+
+h2, h3, h4, h5 {
+    #headings-style.heading-secondary();
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
+    @media @tablet {
+        width: 100%;
+    }
+    @media @phone {
+        width: 100%;
+    }
 }

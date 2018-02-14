@@ -35,3 +35,65 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+// Button Namespace Bundle
+#button-style() {
+	.button-main(@width, @height, @background) {
+		width: @width;
+		height: @height;
+		background: @background;
+		border: 1px solid black;
+		box-shadow: 4px 4px @background/2 inset;
+		font-size: 16px;
+		.border-radius();
+		.box-shadow(4px 4px inset);
+
+		&:hover {
+			width: 75px;
+			height: 75px;
+			background: darken(@background, 30%);
+			border-radius: 50px;
+		}
+	}
+	.button-secondary(@width: 170px, @height: 32px, @background: white) {
+		border: 1px double black;
+        font-size: 16px;
+        background: @background;
+        width: @width;
+        height: @height;
+        margin-top: 10px;
+        cursor: pointer;
+        .border-radius();
+        .box-shadow(4px 4px inset);
+
+        &:hover {
+            background: black;
+            color: white;
+        }
+	}
+}
+
+// P Tags Namespace Bundle
+#p-style () {
+	.p-center(@color, @font-size: 16px) {
+		color: @color;
+		text-align: center;
+		font-size: @font-size;
+	}
+}
+
+// Headings Namespace Bundle
+#headings-style () {
+	.heading-main() {
+		font-family: 'Bangers', cursive;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+	}
+	.heading-secondary(@font-size: 16px) {
+		font-family: 'Courier New', Courier, monospace;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+		font-size: @font-size;
+	}
+}
+		
