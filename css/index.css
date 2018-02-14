@@ -160,7 +160,6 @@ header {
   header {
     width: 100%;
     height: 20px;
-    display: flex;
   }
 }
 @media (max-width: 768px) {
@@ -261,6 +260,15 @@ header .logo {
     margin: 6.51% 1.5% 2.6%;
     border: 2px solid palegreen;
   }
+}
+.main-content .great-features {
+  width: 170px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid black;
+}
+.main-content .great-features:hover {
+  background: #cccccc;
 }
 .main-content .top-content {
   display: flex;

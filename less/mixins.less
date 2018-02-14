@@ -35,3 +35,13 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+.great_button(@width, @height, @background, @hover-color) {
+	width: @width;
+	height: @height;
+	background: @background; 
+	border: 1px solid black;
+	
+	&:hover {
+		background: @hover-color;
+	}
+}
