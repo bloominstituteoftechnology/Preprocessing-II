@@ -1,5 +1,9 @@
 // General Styles
-
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
 * {
     box-sizing: border-box;
 }
@@ -13,9 +17,27 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
-}
-
+   
+    @media @Tab {
+            
+            font-size: 80%;
+            
+        @media @iPh {
+            font-size: 40%;
+        }
+    }
+    
 .container {
     width: 880px;
     margin: auto;
+    @media @Tab {
+        width: 95%;
+        
+    }
+        @media @iPh {
+            width: 80%;
+          
+        }
+
+}
 }
