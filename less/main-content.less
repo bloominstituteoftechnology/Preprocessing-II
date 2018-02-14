@@ -7,10 +7,24 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @phone {
+       max-width: 400px;
+   }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+        button {
+            background: green;
+            .button-creator(70px, 25px, red);
+        }
+        .button2 {
+            .button-creator(125px, 35px, grey);
+            &:hover {
+                background-color: darken(grey, 20%);
+            }
+        }
+        
     }
 
     .middle-img {
@@ -21,6 +35,19 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        button {
+            background: pink;
+        }
+        .button4 {
+            .button-creator(160px, 50px, yellow);
+            &:hover {
+                background-color: darken(yellow, 20%);
+            }
+        }
+        .button5 {
+            .button-creator(125px, 70px, blue);
+            border-radius: 25%;
+        }
 
         p {
             padding-right: 20px;
