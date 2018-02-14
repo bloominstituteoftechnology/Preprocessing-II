@@ -1,5 +1,10 @@
 // Main Content Styles
 
+.button-creator (@width, @height @background-color) {
+    width: @width;
+    height: @height;
+    background-color: @background-color;
+}
 .main-content {
     border-top: 2px solid black; 
     border-bottom: 2px solid black;
@@ -11,6 +16,26 @@
     .top-content {
          display: flex;
          justify-content: space-around;
+         @media @phone {
+             background: black;
+             color: white;
+         }
+     }
+
+     .button1 {
+         .button-creator(90px, 46px, aqua);
+
+         &:hover {
+            background: darken(aqua, 20% )
+          }
+     }
+
+     .button2 {
+         .button-creator(99px, 100px, teal);
+
+         &:hover {
+            background: darken(teal, 20% );
+          }
      }
  
      .middle-img {
@@ -25,5 +50,30 @@
          p {
              padding-right: 20px;
          }
+     }
+
+     .button3 {
+         .button-creator(80px, 40px, black);
+         color: white;
+
+         &:hover {
+            background: darken(black, 20% );
+          }
+     }
+
+     .button4 {
+         .button-creator(75px, 30px, lime);
+
+         &:hover {
+            background: darken(lime, 20% );
+          }
+     }
+
+     .button5 {
+         .button-creator(83px, 52px, gold);
+
+         &:hover {
+            background: darken(gold, 20% );
+          }
      }
  }// main-content

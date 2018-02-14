@@ -154,7 +154,7 @@ header {
 @media (max-width: 768px) {
   header {
     width: 100%;
-    color: teal;
+    background: teal;
   }
 }
 header nav ul {
@@ -236,6 +236,28 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    background: black;
+    color: white;
+  }
+}
+.main-content .button1 {
+  width: 90px;
+  height: 46px;
+  background-color: aqua;
+}
+.main-content .button1:hover {
+  background: #009999;
+}
+.main-content .button2 {
+  width: 99px;
+  height: 100px;
+  background-color: teal;
+}
+.main-content .button2:hover {
+  background: #001a1a;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -246,6 +268,31 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .button3 {
+  width: 80px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+.main-content .button3:hover {
+  background: #000000;
+}
+.main-content .button4 {
+  width: 75px;
+  height: 30px;
+  background-color: lime;
+}
+.main-content .button4:hover {
+  background: #009900;
+}
+.main-content .button5 {
+  width: 83px;
+  height: 52px;
+  background-color: gold;
+}
+.main-content .button5:hover {
+  background: #998100;
 }
 .contact p {
   margin: 40px 0;
