@@ -134,6 +134,12 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 400px) {
+  html,
+  body {
+    color: red;
+  }
+}
 h1,
 h2,
 h3,
@@ -161,15 +167,24 @@ header nav ul {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
-header nav ul li a {
+@media (max-width: 768px) {
+  header nav ul {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    color: blue;
+  }
+}
+header nav li a {
   text-decoration: none;
   color: #b0b0b0;
 }
-header nav ul li a:hover {
+header nav li a:hover {
   text-decoration: underline;
   color: black;
 }
-header .logo {
+.logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
@@ -191,6 +206,20 @@ header .logo {
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   -o-transform: rotate(270deg);
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    color: gold;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    color: green;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -230,6 +259,14 @@ header .logo {
   -ms-transform: skew(2deg, 2deg);
   -o-transform: skew(2deg, 2deg);
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    -o-transform: skew(0deg, 0deg);
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -247,6 +284,14 @@ header .logo {
   -moz-transform: skew(2deg, 2deg);
   -ms-transform: skew(2deg, 2deg);
   -o-transform: skew(2deg, 2deg);
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content p {
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    -o-transform: skew(0deg, 0deg);
+  }
 }
 .contact p {
   margin: 40px 0;

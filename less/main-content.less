@@ -13,6 +13,9 @@
         display: flex;
         justify-content: space-around;
         .skew(2deg , 2deg);
+    @media @phone {
+        .skew(0deg, 0deg);
+    }
     }
 
     .middle-img {
@@ -29,6 +32,9 @@
         p {
             padding-right: 20px;
             .skew(2deg , 2deg);
+        @media @phone {
+            .skew(0deg, 0deg);
+        }
         }
     }
 }// main-content

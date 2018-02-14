@@ -15,7 +15,13 @@
         align-items: center;
         margin: 0 82px 0 0;
         .rotate(270deg);
-        
+    @media @tablet {
+            color: @some-color4;
+            .rotate(0deg);
+        }
+    @media @phone {
+            color: @some-color3;
+    }   
     }
 
     .cta-text button {
@@ -27,6 +33,7 @@
         margin-top: 10px;
         cursor: pointer;
         .border-radius;
+        
         
 
         &:hover {

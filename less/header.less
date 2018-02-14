@@ -11,7 +11,13 @@ header {
             justify-content: space-between;
             display: flex;
             .rotate(180deg);
-            
+        @media @tablet {
+                .rotate(0deg);
+                color: @some-color; 
+        
+            }
+        
+        }     
             
 
             li {
@@ -40,6 +46,5 @@ header {
         
         
         
-        
     }
-}// header
+// header
