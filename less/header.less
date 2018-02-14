@@ -4,13 +4,21 @@ header {
     width: 100%;
     display: flex;
     @media @tablet{
+        width:100%;
         flex-wrap: wrap;
         justify-content:center;
+    }
+    @media @phone{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav {
         @media @tablet{
-        width:90%;
+        width:100%;
+        }
+        @media @phone{
+        width:100%;
         }
         ul {
             margin-top: 40px; 
@@ -21,16 +29,40 @@ header {
                 width:100%;
                 margin:20px 0;
             }
+            @media @phone{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                margin:0;
+                align-items: center;
+            }
 
             li {
+                @media @phone{
+                    width:100%;
+                    margin:0;
+                    &:first-child{
+                        #my-styles > .li-styles;
+                    }
+                }
 
                 a {
+                    @media @phone{
+                        display: block;
+                        text-align: center;
+                        padding: 20px 0;
+                        font-size:2rem;
+                        border-bottom:1px solid gray;
+                        &:hover{
+                            background: gray;
+                        }
+                    }
                     text-decoration: none;
                     color: #b0b0b0;
 
                     &:hover {
                         text-decoration: underline;
-                        color: black;
+                        color: blue;
                     }
                 }
             }
@@ -41,5 +73,10 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .skew(-5deg,10deg);
+        @media @tablet{
+            order:-1;
+            max-width: 100%;
+            margin: 20px 0;
+        }
     }
 }// header

@@ -133,6 +133,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -144,8 +145,20 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
 }
 header {
   width: 100%;
@@ -153,13 +166,25 @@ header {
 }
 @media (max-width: 768px) {
   header {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 @media (max-width: 768px) {
   header nav {
-    width: 90%;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
   }
 }
 header nav ul {
@@ -174,13 +199,43 @@ header nav ul {
     margin: 20px 0;
   }
 }
+@media (max-width: 400px) {
+  header nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    width: 100%;
+    margin: 0;
+  }
+  header nav ul li:first-child {
+    border-top: 1px solid black;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
 }
+@media (max-width: 400px) {
+  header nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
+  header nav ul li a:hover {
+    background: gray;
+  }
+}
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: blue;
 }
 header .logo {
   align-self: flex-end;
@@ -190,6 +245,13 @@ header .logo {
   -ms-transform: skew(-5deg, 10deg);
   -o-transform: skew(-5deg, 10deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
@@ -198,8 +260,15 @@ header .logo {
   -moz-box-shadow: 3px 3px lightgray, -1em 0 0.4em olive;
   box-shadow: 3px 3px lightgray, -1em 0 0.4em olive;
 }
+@media (max-width: 768px) {
+  .cta {
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -208,11 +277,26 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    font-size: 6.5rem;
+  }
+}
 .cta img:hover {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
 }
 .main-content {
   border-top: 2px solid black;
@@ -222,31 +306,63 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin: 50px 2% 35px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
 @media (max-width: 400px) {
   .main-content .top-content {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 .main-content .middle-img {
+  width: 100%;
   display: block;
   margin: 30px auto;
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+  .main-content .bottom-content:last-child {
+    margin-bottom: 70px;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px 2%;
+  }
+}
+@media (max-width: 400px) {
+  .contact {
+    margin: 20px;
+  }
+}
 .contact p {
   margin: 40px 0;
+  padding-right: 20px;
 }
 footer {
   text-align: center;

@@ -5,9 +5,14 @@
     margin-top: 72px;
     justify-content: flex-end;
     .box-shadow(@shadow1);
+    @media @tablet{
+        margin-top:50px;
+        flex-flow:column;
+        align-items: center;
+    }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -15,10 +20,19 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @tablet{
+            margin:0;
+        }
+        @media @phone{
+            font-size: 6.5rem;
+        }
     }
     img{
         &:hover{
             .rotate(180deg);
+        }
+        @media @tablet{
+            display:none;
         }
     }
 }// cta

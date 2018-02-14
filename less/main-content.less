@@ -7,25 +7,39 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @tablet{
+        margin: 50px 2% 35px;
+    }
 
    .top-content {
         display: flex;
         justify-content: space-around;
         @media @phone{
-            flex-direction: column;
+            flex-wrap: wrap;
         }
     }
 
     .middle-img {
+        width:100%;
         display: block;
         margin: 30px auto;
         .opacity();
+        @media @tablet{
+            width:100%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
+        @media @phone{
+            flex-wrap: wrap;
+            align-content: space-between;
+            height:440px;
+            &:last-child{
+                margin-bottom: 70px;
+            }
+        }
         p {
             padding-right: 20px;
         }
