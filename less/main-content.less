@@ -1,29 +1,31 @@
 // Main Content Styles
-
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  // margin: 7.5rem 0 3.5rem;
+  // padding: 3.5rem 0;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  @media @tablet {
+    margin: 7.5rem 2.6rem 3rem;
+  }
+  .top-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  .middle-img {
+    width: 100%;
+    display: block;
+    // margin: 30px auto;
+  }
+  .bottom-content {
+    display: flex;
+    justify-content: space-around;
+    p {
+      // padding-right: 20px;
     }
-
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
-    }
-}// main-content
+  }
+}
+// main-content

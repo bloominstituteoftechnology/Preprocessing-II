@@ -1,33 +1,45 @@
 // Header Styles
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
 
 header {
-    width: 100%;
-    display: flex;
-
-    nav {
-        ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
-            display: flex;
-
-            li {
-
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
-
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
-                }
-            }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @media @tablet {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    font-size: 1.8rem;
+    justify-content: space-around;
+    ul {
+      // margin-top: 4rem;
+      width: 61rem;
+      justify-content: space-around;
+      display: flex;
+      @media tablet {
+        width: 47.2rem;
+        margin-left: 2rem;
+      }
+      li {
+        a {
+          text-decoration: none;
+          color: #b0b0b0;
+          &:hover {
+            text-decoration: underline;
+            color: black;
+          }
         }
+      }
     }
-
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+  }
+  .logo {
+    align-self: flex-end;
+    @media tablet {
+      margin: 2.8rem 0 0 7.5rem;
     }
-}// header
+  }
+}
+// header

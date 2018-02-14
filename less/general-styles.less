@@ -1,21 +1,36 @@
 // General Styles
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+body,
+html {
+  font-size: 62.5%;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  // margin-bottom: 10px;
 }
-
+h4 {
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.4rem;
+}
 .container {
-    width: 880px;
-    margin: auto;
+  max-width: 88rem;
+  width: 100%;
+  // margin: 0 2rem 0;
+  @media @tablet {
+    width: 100%;
+  }
 }
