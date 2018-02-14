@@ -41,5 +41,8 @@
 	-ms-transform: 		 btn(@width, @height, @background);
 	-o-transform: 		 btn(@width, @height, @background);
 	
-
-}
+	&:hover {
+        background: darken(@hover-color, 10%);
+        box-shadow: inset 0 0 0 5px purple;
+        border-radius: 50%;
+}}

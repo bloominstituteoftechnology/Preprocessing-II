@@ -294,11 +294,21 @@ header .logo {
   -ms-transform: btn(30px, 30px, grey);
   -o-transform: btn(30px, 30px, grey);
 }
+.main-content .top-content .text-content1 .fb:hover {
+  background: #000000;
+  box-shadow: inset 0 0 0 5px purple;
+  border-radius: 50%;
+}
 .main-content .top-content .text-content2 .ab {
   -webkit-transform: btn(30px, 30px, grey);
   -moz-transform: btn(30px, 30px, grey);
   -ms-transform: btn(30px, 30px, grey);
   -o-transform: btn(30px, 30px, grey);
+}
+.main-content .top-content .text-content2 .ab:hover {
+  background: #000000;
+  box-shadow: inset 0 0 0 5px purple;
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   .main-content .top-content {
@@ -347,17 +357,32 @@ header .logo {
   -ms-transform: btn(30px, 30px, grey);
   -o-transform: btn(30px, 30px, grey);
 }
+.main-content .bottom-content .text-content1 .sb:hover {
+  background: #000000;
+  box-shadow: inset 0 0 0 5px purple;
+  border-radius: 50%;
+}
 .main-content .bottom-content .text-content2 .pb {
   -webkit-transform: btn(30px, 30px, grey);
   -moz-transform: btn(30px, 30px, grey);
   -ms-transform: btn(30px, 30px, grey);
   -o-transform: btn(30px, 30px, grey);
 }
+.main-content .bottom-content .text-content2 .pb:hover {
+  background: #000000;
+  box-shadow: inset 0 0 0 5px purple;
+  border-radius: 50%;
+}
 .main-content .bottom-content .text-content3 .vb {
   -webkit-transform: btn(30px, 30px, grey);
   -moz-transform: btn(30px, 30px, grey);
   -ms-transform: btn(30px, 30px, grey);
   -o-transform: btn(30px, 30px, grey);
+}
+.main-content .bottom-content .text-content3 .vb:hover {
+  background: #000000;
+  box-shadow: inset 0 0 0 5px purple;
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   .main-content .bottom-content {
