@@ -238,6 +238,20 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content button {
+  margin: 12px 0 0 0;
+  font-size: 12px;
+  width: 85px;
+  height: 35px;
+  background-color: #1adeeb;
+  -webkit-transform: skew(-2deg, -2deg);
+  -moz-transform: skew(-2deg, -2deg);
+  -ms-transform: skew(-2deg, -2deg);
+  -o-transform: skew(-2deg, -2deg);
+}
+.main-content .top-content .text-content button:hover {
+  background-color: #ff738c;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -246,7 +260,21 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-.main-content .bottom-content p {
+.main-content .bottom-content .text-content button {
+  margin: 12px 0 0 0;
+  font-size: 12px;
+  width: 95px;
+  height: 45px;
+  background-color: #1adeeb;
+  -webkit-transform: skew(-2deg, -2deg);
+  -moz-transform: skew(-2deg, -2deg);
+  -ms-transform: skew(-2deg, -2deg);
+  -o-transform: skew(-2deg, -2deg);
+}
+.main-content .bottom-content .text-content button:hover {
+  background-color: #ff738c;
+}
+.main-content .bottom-content .text-content p {
   padding-right: 20px;
 }
 .contact p {

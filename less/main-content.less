@@ -7,23 +7,43 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-
    .top-content {
-        display: flex;
-        justify-content: space-around;
+      display: flex;
+      justify-content: space-around;
+      .text-content {
+        button {
+          margin: 12px 0 0 0;
+          font-size: 12px;
+          .button-flare (85px, 35px, rgb(26, 222, 235));
+          .skew(-2deg, -2deg);
+          &:hover {
+            background-color: darken(pink, 15%);
+          }
+        }
+      }
     }
 
     .middle-img {
-        display: block;
-        margin: 30px auto;
+      display: block;
+      margin: 30px auto;
     }
 
     .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
+      display: flex;
+      justify-content: space-around;
+      .text-content {
+        button {
+          margin: 12px 0 0 0;
+          font-size: 12px;
+          .button-flare (95px, 45px, rgb(26, 222, 235));
+          .skew(-2deg, -2deg);
+          &:hover {
+            background-color: darken(pink, 15%);
+          }
+        }
         p {
             padding-right: 20px;
         }
-    }
-}// main-content
+      }
+    }// main-content
+}
