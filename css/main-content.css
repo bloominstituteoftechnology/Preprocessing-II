@@ -1,0 +1,102 @@
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+@media (max-width: 798px) {
+  .main-content {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    font-size: 10px;
+  }
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .top-content .text-content .button-content {
+  width: 25%;
+  margin: auto;
+}
+.main-content .top-content .text-content .button-bell {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-bell.png);
+}
+.main-content .top-content .text-content .button-bell:hover {
+  width: 84px;
+  border: 0px;
+  background-image: url(../img/item-button-hover.png);
+}
+.main-content .top-content .text-content .button-key {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-key.png);
+}
+.main-content .top-content .text-content .button-key:hover {
+  width: 84px;
+  border: 0px;
+  background-image: url(../img/item-button-hover.png);
+}
+.main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+  -webkit-transform: skew(1deg, -2deg);
+  -moz-transform: skew(1deg, -2deg);
+  -ms-transform: skew(1deg, -2deg);
+  -o-transform: skew(1deg, -2deg);
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .bottom-content .text-content .button-content {
+  width: 50%;
+  margin: auto;
+}
+.main-content .bottom-content .text-content .button-straw {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-straw.png);
+}
+.main-content .bottom-content .text-content .button-straw:hover {
+  border: 0px;
+  background-image: url(../img/fruit-button-hover.png);
+}
+.main-content .bottom-content .text-content .button-orange {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-orange.png);
+}
+.main-content .bottom-content .text-content .button-orange:hover {
+  border: 0px;
+  background-image: url(../img/fruit-button-hover.png);
+}
+.main-content .bottom-content .text-content .button-melon {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  background-image: url(../img/button-melon.png);
+}
+.main-content .bottom-content .text-content .button-melon:hover {
+  border: 0px;
+  background-image: url(../img/fruit-button-hover.png);
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
+}

@@ -1,5 +1,7 @@
 // Call To Action (CTA) Styles
 
+@import "mixins";
+
 .cta {
     display: flex;
     margin-top: 72px;
@@ -14,20 +16,25 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+        .opacity(.85);
 
-    .cta-text button {
-        border: 1px double black;
+      button {
+        border: double black;
         font-size: 16px;
         background: white;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius(20px);
+      }
 
-        &:hover {
-            background: black;
-            color: white;
-        }
+      &:hover {
+      }
+    }
+
+    .largeCircle
+    {
+      .opacity(0.8);
     }
 }// cta

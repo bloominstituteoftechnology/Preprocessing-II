@@ -1,4 +1,6 @@
 // Main Content Styles
+@import "variables";
+@import "mixins";
 
 .main-content {
    border-top: 2px solid black; 
@@ -7,23 +9,61 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @tablet
+   {
+     font-size: 18px;
+   }
+   @media @phone{
+     font-size: 10px;
+   }
 
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
+
+        .text-content {
+          .button-content {
+            width: 25%;
+            margin: auto;
+          }
+          .button-bell {
+            .item-button-creator (75px, 75px, url(../img/button-bell.png));
+          }
+          .button-key {
+            .item-button-creator (75px, 75px, url(../img/button-key.png));
+          }
+        }
+   }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .skew(1deg, -2deg);
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        .text-content {
+          .button-content {
+            width: 50%;
+            margin: auto;
+          }
+          .button-straw {
+            .fruit-button-creator (75px, 75px, url(../img/button-straw.png), url(../img/fruit-button-hover-pink.png));
+          }
+          .button-orange {
+            .fruit-button-creator (75px, 75px, url(../img/button-orange.png), url(../img/fruit-button-hover-orange.png));
+          }
+          .button-melon {
+            .fruit-button-creator (75px, 75px, url(../img/button-melon.png), url(../img/fruit-button-hover-teal.png));
+          }
+        }
+
         p {
             padding-right: 20px;
         }
     }
+
 }// main-content

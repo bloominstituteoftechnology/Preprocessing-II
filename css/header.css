@@ -1,0 +1,32 @@
+header {
+  width: 100%;
+  display: flex;
+}
+header nav ul {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+  -webkit-box-shadow: 6px 8px #2B2B2B;
+  -moz-box-shadow: 6px 8px #2B2B2B;
+  box-shadow: 6px 8px #2B2B2B;
+  -webkit-opacity: 0.78;
+  -moz-opacity: 0.78;
+  opacity: 0.78;
+}
