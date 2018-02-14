@@ -303,6 +303,13 @@ nav ul li a:hover {
 }
 .cta .cta-text button:hover {
   background: #f7f7f7;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .main-content {
   border-top: 2px #161616;
@@ -321,15 +328,34 @@ nav ul li a:hover {
   padding-right: 20px;
 }
 .main-content .top-content .text-content .button1 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-box-shadow: 2px 3px 2px 2px #0a0909;
+  -moz-box-shadow: 2px 3px 2px 2px #0a0909;
+  box-shadow: 2px 3px 2px 2px #0a0909;
   width: 120px;
   height: 40px;
 }
-.main-content .middle-img {
+.main-content .top-content .text-content .button1:hover {
+  background: #616263;
+}
+.main-content .top-content .text-content .button2 {
+  margin-top: 12px;
+  -webkit-box-shadow: 2px 3px 2px 2px #0a0909;
+  -moz-box-shadow: 2px 3px 2px 2px #0a0909;
+  box-shadow: 2px 3px 2px 2px #0a0909;
+  width: 120px;
+  height: 40px;
+}
+.main-content .top-content .text-content .button2:hover {
+  background: #616263;
+}
+.main-content .top-content .middle-img {
   display: block;
   margin: 30px auto;
 }
 @media (max-width: 768px) {
-  .main-content .middle-img {
+  .main-content .top-content .middle-img {
     display: flex;
     height: 140px;
     width: 570px;
@@ -337,7 +363,7 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 768px) and (max-width: 400px) {
-  .main-content .middle-img {
+  .main-content .top-content .middle-img {
     display: none;
   }
 }
@@ -348,6 +374,39 @@ nav ul li a:hover {
 .main-content .bottom-content p {
   color: #f7f7f7;
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content .button3 {
+  margin-top: 12px;
+  -webkit-box-shadow: 2px 3px 2px 2px #0a0909;
+  -moz-box-shadow: 2px 3px 2px 2px #0a0909;
+  box-shadow: 2px 3px 2px 2px #0a0909;
+  width: 120px;
+  height: 40px;
+}
+.main-content .bottom-content .text-content .button3:hover {
+  background: #616263;
+}
+.main-content .bottom-content .text-content .button4 {
+  margin-top: 12px;
+  -webkit-box-shadow: 2px 3px 2px 2px #0a0909;
+  -moz-box-shadow: 2px 3px 2px 2px #0a0909;
+  box-shadow: 2px 3px 2px 2px #0a0909;
+  width: 120px;
+  height: 40px;
+}
+.main-content .bottom-content .text-content .button4:hover {
+  background: #616263;
+}
+.main-content .bottom-content .text-content .button5 {
+  margin-top: 12px;
+  -webkit-box-shadow: 2px 3px 2px 2px #0a0909;
+  -moz-box-shadow: 2px 3px 2px 2px #0a0909;
+  box-shadow: 2px 3px 2px 2px #0a0909;
+  width: 120px;
+  height: 40px;
+}
+.main-content .bottom-content .text-content .button5:hover {
+  background: #616263;
 }
 .contact p {
   color: #f7f7f7;

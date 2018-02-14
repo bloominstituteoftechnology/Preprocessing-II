@@ -1,4 +1,5 @@
 // Main Content styles //
+@myShadow: ~'2px 3px 2px 2px #0a0909';
 
 
 .main-content {
@@ -17,11 +18,31 @@
          color: @tertiary-color;
          padding-right: 10px + 10px; // operator example 2 //
      }
-     .text-content{
+     .text-content {
 
          .button1 {
-            .button-creator (120px, 40px)
+
+            margin-top: 12px;
+            margin-bottom: 12px;
+            .box-shadow(@myShadow);
+
+            &:hover {
+                background: darken(@quaternary-color, 25%);
+            }
+
+            .button-creator (120px, 40px) 
          }
+
+         .button2 {
+
+            margin-top: 12px;
+            .box-shadow(@myShadow);
+            
+            &:hover {
+                background: darken(@quaternary-color, 25%);
+            }
+
+            .button-creator (120px, 40px)
      }
  
  }
@@ -41,15 +62,57 @@
      }
  }
  
+ }
+
  .bottom-content {
-     display: flex;
-     justify-content: space-around;
- 
-     p {
-         color: @tertiary-color;
-         padding-right: 10px + 10px; // operator example 2 //
-     }
+    display: flex;
+    justify-content: space-around;
+
+    p {
+        color: @tertiary-color;
+        padding-right: 10px + 10px; // operator example 2 //
+    }
+
+    .text-content {
+
+        .button3 {
+
+            margin-top: 12px;
+            .box-shadow(@myShadow);
+            
+            &:hover {
+                background: darken(@quaternary-color, 25%);
+            }
+
+            .button-creator (120px, 40px)
+    }
+
+    .button4 {
+
+        margin-top: 12px;
+        .box-shadow(@myShadow);
+        
+        &:hover {
+            background: darken(@quaternary-color, 25%);
+        }
+
+        .button-creator (120px, 40px)
+}
+
+.button5 {
+
+    margin-top: 12px;
+    .box-shadow(@myShadow);
+    
+    &:hover {
+        background: darken(@quaternary-color, 25%);
+    }
+
+    .button-creator (120px, 40px)
+}
+
+
  
  }
- 
- }
+}
+}
