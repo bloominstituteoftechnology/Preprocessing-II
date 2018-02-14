@@ -13,9 +13,49 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    color: @main-color;
 }
 
+@laptop: ~"(max-width: 1000px)";
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
+
+    @media @tablet {
+        width: 100%;
+    }
+
+    @media @phone {
+        width: 100%;
+    }
+}
+
+#btn-bundle {
+    .button-creator(@width, @height, @background, @radius) {
+        width: @width;
+        height: @height;
+        background: @background;
+        .border-radius(@radius);
+        margin: 15px 0;
+        
+        &:hover {
+        background: darken(@background, 20%);
+        }
+
+        &:active {
+            background: lighten(@background, 20%);
+            .box-shadow(5px 5px @main-color);
+        }
+    } //.button-creator
+}//#btn-bundle
+
+#flex-bundle {
+    .flex-WC() {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

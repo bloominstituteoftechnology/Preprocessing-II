@@ -8,15 +8,35 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+        margin: 50px 2% 35px;
+    }
+
+    @media @phone {
+        height: 1050px;
+        margin-bottom: 20px;
+    }
+
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
+
+        @media @phone {
+            justify-content: space-around;
+            flex-direction: column;
+            height: 300px;
+        }
+    } // .top-content
 
     .middle-img {
         display: block;
         margin: 30px auto;
-    }
+        .opacity(0.2);
+
+        @media @tablet {
+            width: 100%;
+        }
+    } // .middle-img
 
     .bottom-content {
         display: flex;
@@ -25,5 +45,19 @@
         p {
             padding-right: 20px;
         }
-    }
+
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }
+    } // .bottom-content
+
+    .text-content {
+
+        button {
+
+            #btn-bundle > .button-creator(150px, 30px, white, 10px);
+        }
+    } // .text-content
 }// main-content
