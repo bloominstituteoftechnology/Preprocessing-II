@@ -16,10 +16,15 @@
        justify-content: space-around;
        flex-direction: column;
        height: 300px;
- }
+     }
         display: flex;
         justify-content: space-around;
-    }
+
+        button {
+          .fancy-button(100px,32px,white,black)
+        } 
+
+      } // top-content
 
     .middle-img {
       @media @tablet {
@@ -41,5 +46,11 @@
         p {
             padding-right: 20px;
         }
-    }
+
+        button {
+          .fancy-button(100px,32px,white,black)
+        } // button
+    }// bottom-content
+
+
 }// main-content

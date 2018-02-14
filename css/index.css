@@ -324,6 +324,15 @@ header .logo {
     height: 300px;
   }
 }
+.main-content .top-content button {
+  width: 100px;
+  height: 32px;
+  background: white;
+  margin: 10px;
+}
+.main-content .top-content button:hover {
+  background: black;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -346,6 +355,15 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content button {
+  width: 100px;
+  height: 32px;
+  background: white;
+  margin: 10px;
+}
+.main-content .bottom-content button:hover {
+  background: black;
 }
 @media (max-width: 400px) {
   .contact {
