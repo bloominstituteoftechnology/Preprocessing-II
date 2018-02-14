@@ -175,7 +175,7 @@ header nav ul li a {
     color: gold;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   header nav ul li a {
     color: maroon;
   }
@@ -207,6 +207,12 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+.cta .cta-text h1 {
+  -webkit-transform: skew(5deg, 4deg);
+  -moz-transform: skew(5deg, 4deg);
+  -ms-transform: skew(5deg, 4deg);
+  -o-transform: skew(5deg, 4deg);
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -233,6 +239,34 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content .button3 {
+  width: 200px;
+  height: 40px;
+  background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 2px 20px gray;
+  -moz-box-shadow: 5px 2px 20px gray;
+  box-shadow: 5px 2px 20px gray;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .top-content .text-content .button3:hover {
+  background: #ff5a77;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-box-shadow: 5px 2px 20px gold;
+  -moz-box-shadow: 5px 2px 20px gold;
+  box-shadow: 5px 2px 20px gold;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -243,6 +277,34 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content .button3 {
+  width: 200px;
+  height: 40px;
+  background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 2px 20px gray;
+  -moz-box-shadow: 5px 2px 20px gray;
+  box-shadow: 5px 2px 20px gray;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .bottom-content .text-content .button3:hover {
+  background: #ff5a77;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-box-shadow: 5px 2px 20px gold;
+  -moz-box-shadow: 5px 2px 20px gold;
+  box-shadow: 5px 2px 20px gold;
 }
 .contact p {
   margin: 40px 0;

@@ -1,7 +1,7 @@
 // Header Styles
 @tablet: ~"(max-width: 768px)";
 @phone: ~"(max-width: 400px)";
-@deg: 20deg;
+//@deg: 20deg
 
 header {
     width: 100%;
@@ -20,11 +20,11 @@ header {
         .opacity(0.75);
         li {
           a {
-            @media (max-width: 768px) {
+            @media @tablet {
                 color: @secondary-color;
             } 
            text-decoration: none;
-           @media (max-width: 500px) {
+           @media @phone {
              color: @primary-color;
            }
            &:hover {
@@ -38,6 +38,6 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-        .rotate(@deg);
+        .rotate(20deg);
     } 
 }

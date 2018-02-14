@@ -4,8 +4,22 @@
     width: @width;
     height: @height;
     background: @background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    &:hover {
+        background: darken(pink, 20%);
+        .opacity(@opacity: 0.5);
+        .box-shadow(5px 2px 20px gold;);
+    }
+    .box-shadow(5px 2px 20px gray;);
+    .border-radius(@radius: 500px);
 }
+
 .main-content {
+
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
@@ -16,6 +30,11 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        .text-content {
+            .button3 {
+                .button-creator(200px, 40px, pink);
+            }
+        }
     }
 
     .middle-img {
@@ -30,5 +49,10 @@
         p {
             padding-right: 20px;
         }
+        .text-content {
+            .button3 {
+                    .button-creator(200px, 40px, pink);
+                }
+            }
     }
 }// main-content
