@@ -3,9 +3,14 @@
 header {
     width: 100%;
     display: flex;
-    @media @tablet {
+    background: chartreuse;
+
+    @media (max-width: 768px) {
     width: 100%;
-    }
+    height: 20px;
+    background: #00aaff;
+    justify-content: space-around;
+        }
 
     nav { 
         @media @tablet {
@@ -47,4 +52,5 @@ header {
             max-width: 70%;
         }
     
-}// header
+}
+} //header

@@ -155,39 +155,48 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  background: chartreuse;
 }
 @media (max-width: 768px) {
-  nav {
+  header {
+    width: 100%;
+    height: 20px;
+    background: #00aaff;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
     width: 59.5%;
     margin-left: 2%;
   }
 }
-nav ul {
+header nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
 }
 @media (max-width: 768px) {
-  nav ul {
+  header nav ul {
     width: 48%;
     justify-content: space-between;
   }
 }
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
 }
-nav ul li a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
-.logo {
+header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
 @media (max-width: 768px) {
-  .logo {
+  header .logo {
     margin: 3% 0 0 7.8%;
     max-width: 70%;
   }
@@ -199,11 +208,11 @@ nav ul li a:hover {
 }
 @media (max-width: 768px) {
   .cta {
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 4.5rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -214,8 +223,8 @@ nav ul li a:hover {
 }
 @media (max-width: 768px) {
   .cta .cta-text {
+    font-size: 100%;
     margin: 0 5.2% 0 0;
-    font-size: 3.7rem;
     border: 1px solid orange;
   }
 }
@@ -246,7 +255,7 @@ nav ul li a:hover {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 18px;
 }
 @media (max-width: 768px) {
