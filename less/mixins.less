@@ -36,12 +36,13 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.create-button (@width, @height, @border, @hover) {
+.create-button (@width, @height, @bgcolor) {
 	width: @width;
 	height: @height;
-	border: @border;
+	background: @bgcolor;
+	color: white;
 	&:hover {
-		background: @hover;
-		.rotate (15)
+		.rotate (15deg);
+		background: darken(@some-color,20);
 	}
 }

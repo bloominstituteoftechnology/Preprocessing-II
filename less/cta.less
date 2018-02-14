@@ -14,6 +14,9 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @tablet {
+            margin: 0 0 0 0;
+        }
         .skew (10deg, 5deg);
     }
 
@@ -32,6 +35,12 @@
             border: 5px solid grey;
             .border-radius (15%);
             .rotate (180deg);
+        }
+    }
+
+    img {
+        @media @tablet {
+            display: none;
         }
     }
 }// cta

@@ -6,19 +6,43 @@ header {
         flex-flow: row wrap;
         justify-content: center;
     }
-
     nav {
+        width:100%;
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
-
+            @media @tablet {
+                width:100%;
+            }
+            @media @phone {
+                flex-flow: column;
+                align-items: center;
+            }
+        }
             li {
-
+                width:100%;
+                @media @phone {
+                    background: rgb(180, 180, 180);
+                    height:40px;
+                    border: 2px solid gray;
+                    display:flex;
+                    align-items: center;
+                    &:hover {
+                        background:pink;
+                    }
+                }
                 a {
                     text-decoration: none;
+                    text-align: center;
                     color: #b0b0b0;
+                    @media @phone {
+                        color: black;
+                        display: block;
+                        width:100%;
+                        font-size: 1.4em;
+                    }
 
                     &:hover {
                         text-decoration: underline;
@@ -27,15 +51,15 @@ header {
                 }
             }
         }
-    }
 
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .opacity;
         @media @tablet {
-            margin: 28px 0 0 91px;
+            margin: 20px 0 0 0;
+            align-self: center;
             order: -1;
         }
     }
-}// header
+}//header
