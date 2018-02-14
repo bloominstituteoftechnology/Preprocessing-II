@@ -10,14 +10,24 @@ header {
 
     nav {
         ul {
-            margin-top: 40px; 
-            width: 610px;
+            #great-idea-style > .ul-style; 
             justify-content: space-between;
             display: flex;
+
+            @media @tablet {
+                width: 92%;
+                margin: 50px 4% 10px 4%;
+            }
+
+            @media @phone {
+                width:100%;
+                margin: 50px 0 10px 0;
+            }
 
             li {
                 @media @phone {
                     justify-items: center;
+                    
                     &:first-child {
                         border-top: 1px solid black;
                     }
@@ -37,12 +47,18 @@ header {
                     &:hover {
                         text-decoration: underline;
                         color: black;
+
+                        @media @phone {
+                            color:white;
+                            background: black;
+                        }
                     }
                 }
             }
         
             @media (max-width: 400px){
                 flex-direction: column;
+                text-align: center;
         
             }
         }
@@ -60,6 +76,8 @@ header {
         @media @tablet {
             display:block;
             align-self: center;
+            margin-left: 0;
+            
         }
     }
 }// header

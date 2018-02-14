@@ -5,6 +5,10 @@
     margin-top: 72px;
     justify-content: flex-end;
     
+    @media @tablet {
+        justify-content: center;
+        width: 100%;
+    }
 
     .cta-text {
         font-size: 72px;
@@ -20,14 +24,7 @@
     }
 
     .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-        .border-radius(20px);
+        #great-idea-style > .button-style;
 
         &:hover {
             background: black;
@@ -38,7 +35,7 @@
 
     img {
         .rotate(-.09turn);
-        @media @phone {
+        @media @tablet {
             display: none;
         }
     }
