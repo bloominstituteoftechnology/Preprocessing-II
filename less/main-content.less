@@ -1,4 +1,13 @@
 // Main Content Styles
+@tablet: ~'(max-width: 768px)'
+@phone: ~'(max-width: 400px)'
+
+.buttom-creater(@width,@heigh,@background){
+	width: @width;
+	height:@height;
+	background:@background;
+
+}
 
 .main-content {
    border-top: 2px solid black; 
@@ -11,16 +20,29 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+		@media @phone {
+			flex-direction:column:
+		}
+	.text-content{
+		button{
+		
+		}
+	}
+
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+		@media @tablet{
+			width : 100%;
+
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+		}
 
         p {
             padding-right: 20px;
