@@ -5,3 +5,24 @@
 @tablet: ~"(max-width: 768px)";
 
 @phone: ~"(max-width: 400px)";
+
+#bundle {
+.Headings {
+    font-family: Lucida Sans;
+    font-size: 14px;
+    color: brown;
+    font-style: oblique;
+    font-weight: bold;
+}
+.Buttons {
+    width: 200px;
+    height: 100px;
+    background: gray;
+    .border-radius(@radius: 30px);
+    color: white;
+    font-size: 14px;
+}
+.bordered {
+    border: 10px dotted gray;
+}
+}

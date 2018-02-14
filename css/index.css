@@ -126,6 +126,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#bundle .Headings {
+  font-family: Lucida Sans;
+  font-size: 14px;
+  color: brown;
+  font-style: oblique;
+  font-weight: bold;
+}
+#bundle .Buttons {
+  width: 200px;
+  height: 100px;
+  background: gray;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  font-size: 14px;
+}
+#bundle .bordered {
+  border: 10px dotted gray;
+}
 * {
   box-sizing: border-box;
 }
@@ -257,6 +280,13 @@ header .logo {
     border: 4px solid purple;
   }
 }
+.main-content .top-content .text-content h4 {
+  font-family: Lucida Sans;
+  font-size: 14px;
+  color: brown;
+  font-style: oblique;
+  font-weight: bold;
+}
 .main-content .top-content .text-content button {
   -webkit-width: 2px;
   -moz-height: 2px;
@@ -275,6 +305,7 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  border: 10px dotted gray;
 }
 .main-content .bottom-content {
   display: flex;
@@ -284,6 +315,13 @@ header .logo {
   .main-content .bottom-content {
     border: 4px solid purple;
   }
+}
+.main-content .bottom-content .text-content h4 {
+  font-family: Lucida Sans;
+  font-size: 14px;
+  color: brown;
+  font-style: oblique;
+  font-weight: bold;
 }
 .main-content .bottom-content .text-content p {
   padding-right: 20px;
@@ -309,4 +347,20 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+footer button {
+  width: 200px;
+  height: 100px;
+  background: gray;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  font-size: 14px;
+}
+footer button a {
+  text-decoration: none;
 }
