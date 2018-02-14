@@ -213,9 +213,9 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
-  -webkit-box-shadow: 2px 5px 1px #000;
-  -moz-box-shadow: 2px 5px 1px #000;
-  box-shadow: 2px 5px 1px #000;
+  -webkit-box-shadow: 2px 5px 1px #2f538e;
+  -moz-box-shadow: 2px 5px 1px #2f538e;
+  box-shadow: 2px 5px 1px #2f538e;
 }
 @media (max-width: 400px) {
   header nav ul li a {
