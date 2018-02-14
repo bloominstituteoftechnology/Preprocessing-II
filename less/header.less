@@ -2,9 +2,24 @@
 @tablet: ~'(max-width: 768px)';
 @phone: ~'(max-width: 400px)';
 
+.button-creator(@width, @height, @background){
+    width: @width;
+    height: @height;
+    background: @background;
+    border: 5px dotted cornflowerblue;
+}
+
 header {
     width: 100%;
     display: flex;
+    @media @tablet {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    @media @phone {
+        flex-direction: column-reverse;
+    }
 
     nav {
         ul {
@@ -12,6 +27,12 @@ header {
             width: 610px;
             justify-content: space-between;
             display: flex;
+            @media @phone {
+                width: 100%;
+                display: block;
+                margin-left: 150px;
+                font-size: 24px;
+            }
 
             li {
 
@@ -21,7 +42,7 @@ header {
                    
                     &:hover {
                         text-decoration: underline;
-                        color: black;
+                        color: red;
                     }
                 }
             }
@@ -31,6 +52,6 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-        .box-shadow( 5px 10px black);
+        .box-shadow( 5px 10px red);
     }
 }// header
