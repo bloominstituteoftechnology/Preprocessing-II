@@ -242,6 +242,11 @@ header .logo {
     color: white;
   }
 }
+.main-content .top-content h4 {
+  background: teal;
+  color: white;
+  margin-bottom: 12px;
+}
 .main-content .button1 {
   width: 90px;
   height: 46px;
@@ -267,7 +272,15 @@ header .logo {
   justify-content: space-around;
 }
 .main-content .bottom-content p {
+  background: #0cabf5;
+  color: white;
+  margin-bottom: 12px;
   padding-right: 20px;
+}
+.main-content .bottom-content h4 {
+  background: #0cabf5;
+  color: white;
+  margin-bottom: 12px;
 }
 .main-content .button3 {
   width: 80px;
@@ -295,9 +308,17 @@ header .logo {
   background: #998100;
 }
 .contact p {
+  background: #0cabf5;
+  color: white;
+  margin-bottom: 12px;
   margin: 40px 0;
 }
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+p {
+  background: teal;
+  color: white;
+  margin-bottom: 12px;
 }
