@@ -10,6 +10,13 @@
 
 @tablet: ~"(max-width:768px)";
 @phone: ~"(max-width:400px)";
+.buttonMixin(@width;@height;@background-color){
+	width:@width;
+	height:@height;
+	background-color:@background-color;
+}
+
+
 
 body{
 	max-width:920px;
@@ -73,8 +80,17 @@ body{
 		}
 
 		.main-content{
+			button{
+				.buttonMixin(100%,50px,#E0E0FF);
+			}
 			img{
 				width:85%;
+			}
+		}
+		.bottom-content{
+			button{
+				.buttonMixin(100%,50px,#E0E0FF);
+
 			}
 		}
 
