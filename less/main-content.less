@@ -1,29 +1,53 @@
 // Main Content Styles
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
+
+.button-creater(@width, @height, @background) {
+  width: @width;
+  height: @height;
+  background: @background;
+}
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+  .top-content {
+    display: flex;
+    justify-content: space-around;
+    @media @phone {
+      flex-direction: column;
     }
-
-    .middle-img {
-        display: block;
-        margin: 30px auto;
+    .text-content {
+      button {
+        #namespace-stuffs > .button1-styles;
+      }
     }
+  }
 
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
+  .middle-img {
+    display: block;
+    margin: 30px auto;
+    @media @tablet {
+      width: 100%;
     }
-}// main-content
+  }
+
+  .bottom-content {
+    display: flex;
+    justify-content: space-around;
+    @media @phone {
+      flex-direction: column;
+    }
+    p {
+      #namespace-stuffs > .p1-styles;
+    }
+    button {
+      #namespace-stuffs > .button1-styles;
+    }
+  }
+} // main-content
