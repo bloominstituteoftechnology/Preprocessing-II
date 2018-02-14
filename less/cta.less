@@ -1,5 +1,7 @@
 // Call To Action (CTA) Styles
 
+
+
 .cta {
     display: flex;
     margin-top: 72px;
@@ -14,6 +16,16 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        &:hover{
+            .skew(-10deg, -10deg);
+        }
+    }
+
+    img{
+        &:hover{
+            .opacity(.6);
+        }
     }
 
     .cta-text button {
@@ -28,6 +40,7 @@
         &:hover {
             background: black;
             color: white;
+            .skew(30deg, 10deg);
         }
     }
 }// cta

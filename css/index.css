@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container {
+  width: 880px;
+  margin: auto;
+}
+header {
+  width: 100%;
+  display: flex;
+}
+header nav ul {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #504d4d;
+  -webkit-box-shadow: 0px 5px 5px 3px #1b9da7;
+  -moz-box-shadow: 0px 5px 5px 3px #1b9da7;
+  box-shadow: 0px 5px 5px 3px #1b9da7;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+  -webkit-font-weight: 700;
+  -moz-font-weight: 700;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0 0 0 white;
+  -moz-box-shadow: 0 0 0 0 white;
+  box-shadow: 0 0 0 0 white;
+}
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+}
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+.cta .cta-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+.cta .cta-text:hover {
+  -webkit-transform: skew(-10deg, -10deg);
+  -moz-transform: skew(-10deg, -10deg);
+  -ms-transform: skew(-10deg, -10deg);
+  -o-transform: skew(-10deg, -10deg);
+}
+.cta img:hover {
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+  -webkit-transform: skew(30deg, 10deg);
+  -moz-transform: skew(30deg, 10deg);
+  -ms-transform: skew(30deg, 10deg);
+  -o-transform: skew(30deg, 10deg);
+}
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .top-content .topbutton {
+  width: 150px;
+  height: 30px;
+  background: #071438;
+  color: #3e8dd8;
+  font-weight: 600;
+}
+.main-content .top-content .topbutton:hover {
+  opacity: 0.9;
+  color: #cccfec;
+}
+.main-content .top-content .topbutton:hover {
+  background-color: #000000;
+}
+.middle-img {
+  display: block;
+  margin: 30px auto;
+}
+.bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-content p {
+  padding-right: 20px;
+}
+.bottom-content .botbutton {
+  width: 150px;
+  height: 50px;
+  background: #110111;
+  color: #cbcbf8;
+  font-weight: 600;
+  margin-top: 4%;
+  text-align: center;
+}
+.bottom-content .botbutton:hover {
+  opacity: 0.8;
+  color: black;
+}
+.bottom-content .botbutton:hover {
+  -webkit-transform: skew(-1deg, -4deg);
+  -moz-transform: skew(-1deg, -4deg);
+  -ms-transform: skew(-1deg, -4deg);
+  -o-transform: skew(-1deg, -4deg);
+  background-color: #f21ff2;
+}
+.contact p {
+  margin: 40px 0;
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+footer:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
