@@ -9,6 +9,25 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+// #3 Use escaping to create 3 unique media queries using (max-width) with values of 400px, 768px, and 1100px.  
+    // Use those media queries to change the background color of the web page at those pixel widths.
+
+body {
+    
+    @media @desktop {
+        background: hsl(@hue - 200, @saturation, @brightness);
+    }
+    @media @laptop {
+        background: hsl(@hue - 50, @saturation, @brightness);  
+    }
+    @media @tablet {
+        background: hsl(@hue - 100, @saturation, @brightness); 
+    }
+    @media @phone {
+        background: hsl(@hue - 150, @saturation, @brightness); 
+    }
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;

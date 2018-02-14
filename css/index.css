@@ -1,0 +1,487 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Adds box-shadow mixin to cta-img */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+@media (min-width: 1100px) {
+  body {
+    background: #41e1ac;
+  }
+}
+@media (max-width: 1100px) {
+  body {
+    background: #e141c7;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background: #7741e1;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background: #4191e1;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container {
+  width: 880px;
+  margin: auto;
+}
+header {
+  width: 100%;
+  display: flex;
+}
+header nav ul {
+  margin-top: 30px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+header nav ul li a {
+  text-align: center;
+  color: #889610;
+  padding: 5px;
+  display: block;
+  border: 5px solid #38a52a;
+  background-color: #155515;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background-color: white;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-animation: fade-in 4s linear infinite alternate;
+  -moz-animation: fade-in 4s linear infinite alternate;
+  animation: fade-in 4s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Call To Action (CTA) Styles */
+@-moz-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+.cta .cta-text {
+  background: #147e5a;
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 120px 0 0;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1100px) {
+  .cta .cta-text {
+    background: #7e146c;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    background: #37147e;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    background: #14497e;
+  }
+}
+.cta .cta-text h1 {
+  font-size: 40px;
+  color: #b3b3b3;
+  -webkit-transform: skew(0deg, -5deg);
+  -moz-transform: skew(0deg, -5deg);
+  -ms-transform: skew(0deg, -5deg);
+  -o-transform: skew(0deg, -5deg);
+}
+.cta .top-img {
+  -webkit-animation: rotation 8s infinite linear;
+  -moz-animation: rotation 8s infinite linear;
+  animation: rotation 8s infinite linear;
+}
+.cta .cta-text button {
+  border: 5px dashed black;
+  font-size: 16px;
+  margin-top: 10px;
+  box-shadow: 20x 5x 5x red;
+  cursor: pointer;
+  width: 170px;
+  height: 45px;
+  background-color: white;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+/* Main Content Styles */
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+.main-content h4 {
+  border: 1px solid silver;
+  position: relative;
+  margin: 0.5em;
+  border: solid 5px transparent;
+  background: rgba(255, 255, 255, 0.25);
+  width: 80px;
+  text-align: center;
+}
+.main-content h4:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: dashed 5px white;
+  margin: -10px;
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+}
+.main-content h4:hover::after {
+  transform: scale(1, 1);
+}
+@media (min-width: 1100px) {
+  .main-content p {
+    background: #1aa878;
+    border: 5px solid rgba(65, 225, 172, 0.4);
+  }
+}
+@media (max-width: 1100px) {
+  .main-content p {
+    background: #a81a90;
+    border: 5px solid rgba(225, 65, 199, 0.4);
+  }
+}
+@media (max-width: 768px) {
+  .main-content p {
+    background: #491aa8;
+    border: 5px solid rgba(119, 65, 225, 0.4);
+  }
+}
+@media (max-width: 400px) {
+  .main-content p {
+    background: #1a61a8;
+    border: 5px solid rgba(65, 145, 225, 0.4);
+  }
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .top-buttons {
+  text-align: center;
+  letter-spacing: 2px;
+  display: flex;
+  flex-flow: column;
+  align-items: right;
+  margin: 0 82px 0 0;
+  padding: 5px 0px 0px 0px;
+}
+.main-content .top-buttons .main__button1 {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  cursor: pointer;
+  width: 125px;
+  height: 35px;
+}
+.main-content .top-buttons .main__button1:hover {
+  background: #4e0144;
+  color: white;
+}
+.main-content .top-buttons .main__button2 {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+}
+.main-content .top-buttons .main__button2:hover {
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  color: black;
+}
+.main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
+}
+.main-content .bottom-buttons {
+  text-align: center;
+  letter-spacing: 2px;
+  display: flex;
+  flex-flow: column;
+  align-items: right;
+  margin: 0 82px 0 0;
+  padding: 5px 0px 0px 0px;
+}
+.main-content .bottom-buttons .main__button3 {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  justify-content: right;
+  cursor: pointer;
+  width: 125px;
+  height: 35px;
+}
+.main-content .bottom-buttons .main__button3:hover {
+  background: #666666;
+  color: white;
+}
+.main-content .bottom-buttons .main__button4 {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  cursor: pointer;
+  width: 125px;
+  height: 35px;
+}
+.main-content .bottom-buttons .main__button4:hover {
+  background: #f7f16d;
+  color: #ff9a01;
+}
+.main-content .bottom-buttons .main__button5 {
+  font-size: 12pt;
+  background: white;
+  border: 3px solid gray;
+  padding: 5px;
+  cursor: pointer;
+  width: 125px;
+  height: 35px;
+  box-shadow: 10px 5px 5px beige;
+}
+.main-content .bottom-buttons .main__button5:hover {
+  background: #4e0101;
+  color: #f4d6a2;
+}
+.contact p {
+  margin: 40px 0;
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}

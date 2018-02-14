@@ -1,3 +1,5 @@
+
+
 // Header Styles
 
 header {
@@ -6,7 +8,7 @@ header {
 
     nav {
         ul {
-            margin-top: 40px; 
+            margin-top: 30px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
@@ -14,8 +16,8 @@ header {
             li {
 
                 a {
+                    #header-button-styles > .rainforest; // arguments: .rainforest, .sand, or .bluejean
                     text-decoration: none;
-                    color: #b0b0b0;
 
                     &:hover {
                         text-decoration: underline;
@@ -29,5 +31,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .opacity();
+        // .keyframes AND .animation added for animation to work on "GREAT IDEA" text
+        .keyframes(fade-in;{
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+            });
+        .animation(fade-in 4s linear infinite alternate)
     }
 }// header

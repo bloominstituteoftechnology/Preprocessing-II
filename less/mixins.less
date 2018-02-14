@@ -1,14 +1,94 @@
+// Namespacing
+
+#header-button-styles() {
+
+    .bluejeans {
+      color: skyblue;
+      font-family: Georgia;
+      font-style: oblique;
+      text-align: center;
+      padding: 5px;
+      display: block;
+      border: 3px dashed gold;
+      background-color: navy;
+      &:hover {
+        background-color: white
+      }
+    }// button
+
+    .rainforest {
+        text-align: center;
+        color: rgb(136, 150, 16);
+        padding: 5px;
+        display: block;
+        border: 5px solid rgb(56, 165, 42);
+        background-color: rgb(21, 85, 21);
+        &:hover {
+          background-color: white
+        }
+      }// button
+
+      .sand {
+        font-family: Papyrus;
+        font-weight: bold;
+        color: rgb(136, 65, 65);
+        font-size: 18px;
+        text-align: center;
+        padding: 6px;
+        display: block;
+        border: 5px dashed gold;
+        background-color: burlywood;
+        border-radius: 50%;
+        &:hover {
+          background-color: white
+        }
+      }// button
+  }
+
+#main-content-title-styles() {
+	.wire {
+		border: 1px solid silver;
+		position: relative;
+		margin: 0.5em;
+		border: solid 5px transparent;
+		background: fade(white,25%);
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			border: dashed 5px white;
+			margin: -10px;
+			z-index: -1;
+			transition: transform 0.6s linear;
+			transform: scale(0.97, 0.93);
+		}
+		&:hover::after { transform: scale(1,1); }
+	}
+}
+
+// Escaping: To make Media Queries more readable
+
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+@desktop: ~"(min-width: 1100px)";
+
+
+// Base Color Variable
+@hue: 360;
+@saturation: 73%;
+@brightness: 57%;
+@main-background-color: hsl(@hue, @saturation, @brightness);
+
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
-
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
-}
+.button-creator(@width: 20px, @height: 20px, @font-size: 14, @border: 20px ) { // STRETCH assignment for Tuesday CHallenge
+	width: @width;
+	height: @height;
+	font-size: @font-size;
+	border: @border
+  }
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
@@ -16,10 +96,58 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+// .animation ===============================================
+
+// .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+// 	-webkit-animation: @name @duration @delay @ease;
+// 	-moz-animation:    @name @duration @delay @ease;
+// 	-ms-animation:     @name @duration @delay @ease;
+// }
+
+// Replaced the Above with the .animation code that WORKS below:
+
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    animation: @arguments;
+}
+
+
+/* Adds box-shadow mixin to cta-img */
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	}
+
+// ===========================================================
+
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+
+.transform(@string){
+	-webkit-transform: @string;
+	-moz-transform: 	 @string;
+	-ms-transform: 		 @string;
+	-o-transform: 		 @string;
+}
+
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
 }
 
 .rotate (@deg) {
@@ -34,4 +162,24 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.translate (@x, @y:0) {
+	-webkit-transform:       translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+
+.translate3d (@x, @y: 0, @z: 0) {
+	-webkit-transform:       translate3d(@x, @y, @z);
+	-moz-transform: 	 translate3d(@x, @y, @z);
+	-ms-transform: 		 translate3d(@x, @y, @z);
+	-o-transform: 		 translate3d(@x, @y, @z);
+}
+.perspective (@value: 1000) {
+	-webkit-perspective: 	@value;
+	-moz-perspective: 	@value;
+	-ms-perspective: 	@value;
+	perspective: 		@value;
 }

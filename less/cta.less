@@ -1,11 +1,54 @@
-// Call To Action (CTA) Styles
+/* Call To Action (CTA) Styles */
+
+@tint-color: tint(black, 70x);
+
+// #4: Recreate the CTA button using your own custom mixin that takes values for width, height, and background color.
+.cta__button(@width, @height, @background-color) {
+    width: @width;
+    height: @height;
+    background-color: @background-color;
+}
+
+// rotate MIXIN used on main img
+@-moz-keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  @-webkit-keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+
+
+
+// LESS PROPERTIES
 
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    
 
     .cta-text {
+        background: hsl(@hue - 200, @saturation, @brightness / 2);
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -13,18 +56,50 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 120px 0 0;
+        // opacity: 0.5; // Lightens the whole "INNOVATION ON DEMAND Get Started" block area
+        .box-shadow(5px, 5px, 6px, 0.3);
+        @media @laptop {
+            background: hsl(@hue - 50, @saturation, @brightness / 2);
+            
+            
+        }
+        @media @tablet {
+            background: hsl(@hue - 100, @saturation, @brightness / 2);
+            
+           
+        }
+        @media @phone {
+            background: hsl(@hue - 150, @saturation, @brightness / 2);
+            
+           
+        }
+
+        h1 {
+            font-size: 40px;
+            color: @tint-color; // Add's tint to ALL h1 element text -- aka "INNOVATION ON DEMAND"
+            // .opacity(0.6);
+            .skew(0deg, -5deg); // Skews INNOVATION ON DEMAND
+        }
+    }
+    .top-img {
+        -webkit-animation: rotation 8s infinite linear; // Rotates the image - got from other student - but very distracting
+        -moz-animation: rotation 8s infinite linear;
+        animation: rotation 8s infinite linear;
+        
     }
 
-    .cta-text button {
-        border: 1px double black;
+    .cta-text button { // Can't figure out why when I make changes here, nothing happens in the page?
+        border: 5px dashed black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        // background: white;
+        // width: 170px;
+        // height: 32px;
         margin-top: 10px;
-        cursor: pointer;
-
+        box-shadow: 20x 5x 5x red;
+        cursor: pointer; // Cursor turns to pointer hand when hovering
+        .cta__button(170px, 45px, white); // replaced the above background, width, height with a custum mixin
+        .opacity(0.7);
         &:hover {
             background: black;
             color: white;
