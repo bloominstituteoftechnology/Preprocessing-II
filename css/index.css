@@ -433,6 +433,10 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+  background: red;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .main-content .top-content {
   display: flex;
@@ -650,6 +654,12 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
