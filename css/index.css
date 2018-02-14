@@ -329,6 +329,15 @@ header .logo {
   height: 32px;
   background: white;
   margin: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 .main-content .top-content button:hover {
   background: black;
@@ -361,9 +370,18 @@ header .logo {
   height: 32px;
   background: white;
   margin: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 .main-content .bottom-content button:hover {
-  background: black;
+  background: lightgrey;
 }
 @media (max-width: 400px) {
   .contact {
