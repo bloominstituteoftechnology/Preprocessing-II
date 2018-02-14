@@ -340,7 +340,7 @@ header .logo {
   box-shadow: 0 8px 6px -6px black;
 }
 .main-content .top-content button:hover {
-  background: black;
+  background-color: #cccccc;
 }
 .main-content .middle-img {
   display: block;
@@ -381,7 +381,7 @@ header .logo {
   box-shadow: 0 8px 6px -6px black;
 }
 .main-content .bottom-content button:hover {
-  background: lightgrey;
+  background-color: #cccccc;
 }
 @media (max-width: 400px) {
   .contact {

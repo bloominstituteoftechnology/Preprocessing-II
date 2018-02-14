@@ -32,7 +32,7 @@ Start by forking and cloning this repo then get started on the tasks.  Good luck
 
 - [x] 3. Create your own custom button mixin that passes values for width, height, and background color.  Once you have created this mixin, introduce a button to the bottom of each ```.text-content``` div.  Create unique text for each button to match the header.  Example: The heading "Features" could have a button that reads "See Features." Be creative!
 
-- [ ] 4. Use a function to darken the background by 20% on hover for all those new buttons you just made.
+- [x] 4. Use a function to darken the background by 20% on hover for all those new buttons you just made.
 
 **Stretch**
 
