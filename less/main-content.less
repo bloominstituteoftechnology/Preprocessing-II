@@ -7,11 +7,7 @@
     padding: 3.5rem 0;
     font-size: 1.6rem;
     line-height: 1.8rem;
-
-    button {
-        //.button-stylor();
-    }
-            
+         
     @media @tablet-max760{
         border-bottom: none;
     }
@@ -19,6 +15,26 @@
         display: flex;
         justify-content: space-around;
 
+        button {
+            .button-stylor(@height: 3rem);
+            box-sizing: content-box;
+            padding: .1rem;
+            margin: 1rem auto;
+            font-size: 1.2rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #333;
+            .border-radius;
+            .opacity(.8);
+            .box-shadow(.2rem .2rem .2rem .1rem rgba(0, 0, 255, .4));
+
+            &:hover{
+                background-color: darken(@primary-color, 20%);
+                color: white;
+                .rotate(45deg);
+            }
+        }
+        
         @media @phone-max400{
             flex-direction: column;
             padding: 1rem;

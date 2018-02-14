@@ -23,6 +23,7 @@ header {
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        
                         @media @phone-max400{
                             //phone styles for a:hover
                             text-decoration: none;
@@ -63,6 +64,8 @@ header {
             order: -1;
             align-items: center;
             margin-bottom: 2rem;
+            
+            .skew(20deg,10deg);
         }
     }
     @media @tablet-max760 {

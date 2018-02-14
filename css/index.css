@@ -210,6 +210,10 @@ header nav ul li a:hover {
     order: -1;
     align-items: center;
     margin-bottom: 2rem;
+    -webkit-transform: skew(20deg, 10deg);
+    -moz-transform: skew(20deg, 10deg);
+    -ms-transform: skew(20deg, 10deg);
+    -o-transform: skew(20deg, 10deg);
   }
 }
 @media (max-width: 760px) {
@@ -282,6 +286,40 @@ header nav ul li a:hover {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content button,
+.main-content .bottom-content button {
+  width: 10rem;
+  height: 3rem;
+  background: #eee;
+  box-sizing: content-box;
+  padding: .1rem;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+  -moz-box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+}
+.main-content .top-content button:hover,
+.main-content .bottom-content button:hover {
+  background-color: #7d7d7d;
+  color: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
 @media (max-width: 400px) {
   .main-content .top-content,
   .main-content .bottom-content {
@@ -299,6 +337,12 @@ header nav ul li a:hover {
   margin: 3rem auto;
   padding: 1rem;
   width: 100%;
+}
+.contact {
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+  -moz-box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 255, 0.4);
+  text-align: center;
 }
 .contact h4 {
   font-size: 1.6rem;
