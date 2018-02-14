@@ -147,15 +147,68 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    width: 100%;
+    margin: 0;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -164,9 +217,23 @@ header nav ul li a {
   -moz-box-shadow: 2px 5px 1px #000;
   box-shadow: 2px 5px 1px #000;
 }
+@media (max-width: 400px) {
+  header nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
+}
 header nav ul li a:hover {
   text-decoration: underline;
   color: black;
+}
+@media (max-width: 400px) {
+  header nav ul li a:hover {
+    background: gray;
+  }
 }
 header .logo {
   align-self: flex-end;
