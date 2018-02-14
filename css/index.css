@@ -235,6 +235,11 @@ header nav ul li a:hover {
     background: gray;
   }
 }
+@media (max-width: 400px) {
+  header nav ul li:first-child {
+    border-top: 1px solid gray;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
@@ -242,6 +247,28 @@ header .logo {
   -moz-transform: rotate(10deg);
   -ms-transform: rotate(10deg);
   -o-transform: rotate(10deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    max-width: 100%;
+    margin: 20px 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    order: -1;
+    max-width: 100%;
+    margin: 20px 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
 }
 .cta {
   display: flex;
