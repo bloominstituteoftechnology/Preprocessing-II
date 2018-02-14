@@ -1,6 +1,11 @@
 // Call To Action (CTA) Styles
 
 .cta {
+  @media @tablet {
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
@@ -10,6 +15,9 @@
     }
 
     .cta-text {
+      @media @tablet {
+        margin: 0;
+      }
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
