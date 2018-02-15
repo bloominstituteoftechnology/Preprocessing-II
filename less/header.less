@@ -4,22 +4,43 @@ header {
     width: 100%;
     display: flex;
 
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
+
     nav {
+        width:100%;
         ul {
             margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: space-around;
             display: flex;
+
+            @media @phone{
+                flex-direction: column;
+            }
 
             li {
 
                 a {
+                    display: block;
+                    padding: 10px;
                     text-decoration: none;
-                    color: #b0b0b0;
+                    background: white;
+                    color: #16207a;
+                    border: 1px solid black;
+                    //box-shadow: 10px 10px black;
+                    .box-shadow(10px 10px 10px black);  //Added box shadow mixin         
+
+                    @media @phone{
+                        width: 100%;
+                        text-align: center;
+                    }
 
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        .opacity(0.5); // Opacity Mixin
                     }
                 }
             }
@@ -29,5 +50,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .rotate(25deg); //Rotate mixin
+
+        @media @tablet {
+            margin: 5% 0;
+            align-self: center;
+            .rotate(10deg);
+        }
     }
 }// header

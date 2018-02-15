@@ -1,5 +1,21 @@
 // Mixins below variables
 
+#bundle{
+	.headers {
+		h1,h2,h3,h4,h5{
+		font-family: "Pacifico";
+		}
+	}
+	.buttons{
+		font-family: "Pacifico", cursive;
+		font-size:16px;
+	}
+	.paragraphs{
+		text-align: justify;
+		padding-right: 3%;
+	}
+}
+
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
@@ -34,4 +50,18 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.button-maker(@height: 40px, @width: 50%){
+	color: white;
+	width: @width;
+	height: @height;
+	border-radius: 10px;
+	background: @button-color;
+	margin: 3% 0;
+
+	&:hover {
+		background: darken(@button-color, 20);
+		color: white;
+	}
 }
