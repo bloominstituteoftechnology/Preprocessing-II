@@ -1,4 +1,7 @@
 // Header Styles
+@laptop: ~"(max-wdith: 1000px)";
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
 header {
     width: 100%;
@@ -20,6 +23,7 @@ header {
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                       
                     }
                 }
             }
@@ -29,5 +33,6 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .skew(15deg, 15deg);
     }
 }// header
