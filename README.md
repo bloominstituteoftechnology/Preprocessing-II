@@ -9,7 +9,7 @@ This project will be broken into two main tasks:
 
 Start by forking and cloning this repo then get started on the tasks.  Good luck!
 
-## Task 1 - Importing
+## Task 1 - Importing :heavy_check_mark:
 Notice that the LESS folder in this project has several .less files now.  Task 1 is to correctly import the .less files into index.less in the following order:
 
 1. reset.less
@@ -22,7 +22,7 @@ Notice that the LESS folder in this project has several .less files now.  Task 1
 8. contact.less
 9. footer.less
 
-Once you have imported your less files, be sure to run less-watch-compiler 
+Once you have imported your less files, be sure to run less-watch-compiler
 
 ## Task 2 - Demonstrate your skills using Mixins, escaping and functions by doing the following:
 
