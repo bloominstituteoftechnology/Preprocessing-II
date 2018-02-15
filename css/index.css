@@ -134,7 +134,7 @@ table {
   font-family: "Pacifico";
 }
 #bundle .buttons {
-  font-family: "Pacifico";
+  font-family: "Pacifico", cursive;
   font-size: 16px;
 }
 #bundle .paragraphs {
@@ -281,14 +281,14 @@ header .logo {
   background-clip: padding-box;
   border: 1px double black;
   color: white;
-  width: 50%;
-  height: 40px;
+  width: 200px;
+  height: 60px;
   border-radius: 10px;
   background: #4a4ac0;
   margin: 3% 0;
   margin-top: 10px;
   cursor: pointer;
-  font-family: "Pacifico";
+  font-family: "Pacifico", cursive;
   font-size: 16px;
 }
 .cta .cta-text button:hover {
@@ -327,7 +327,7 @@ header .logo {
   border-radius: 10px;
   background: #4a4ac0;
   margin: 3% 0;
-  font-family: "Pacifico";
+  font-family: "Pacifico", cursive;
   font-size: 16px;
 }
 .main-content button:hover {

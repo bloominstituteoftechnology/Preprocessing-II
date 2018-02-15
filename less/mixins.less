@@ -7,7 +7,7 @@
 		}
 	}
 	.buttons{
-		font-family: "Pacifico";
+		font-family: "Pacifico", cursive;
 		font-size:16px;
 	}
 	.paragraphs{
@@ -52,10 +52,10 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.button-maker(){
+.button-maker(@height: 40px, @width: 50%){
 	color: white;
-	width: 50%;
-	height: 40px;
+	width: @width;
+	height: @height;
 	border-radius: 10px;
 	background: @button-color;
 	margin: 3% 0;
