@@ -1,9 +1,19 @@
 // Contact Styles
 
 .contact {
-
+    padding-top: 80px;
+    @media @tablet {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
     p {
-        margin: 40px 0;
+        margin: 15px 0;
     }
-   
+    .contact {
+        .great_button(@button-width, 32px, @button-color,@button-darken);
+    }
+    .skew(3deg, 12deg)
+        
 }

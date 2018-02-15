@@ -5,25 +5,52 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1rem;
    line-height: 18px;
-
+   @media @tablet {
+        margin: 6.51% 1.5% 2.6%;
+        border: 2px solid palegreen;
+}
+    
    .top-content {
         display: flex;
         justify-content: space-around;
+        .rotate(180deg)
     }
-
+    .great-features {
+        .great_button(@button-width, 32px, @button-color,@button-darken);
+    }
+    .about-greatness {
+        .great_button(@button-width, 32px, @button-color,@button-darken);
+    }
     .middle-img {
         display: block;
         margin: 30px auto;
+        @media @tablet {
+            width: 100%;
+        }
+        @media @phone {
+            display: none;
+        }
+        .border-radius
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
+        
         p {
             padding-right: 20px;
+        }
+
+        .great-services {
+            .great_button(@button-width, 32px, @button-color,@button-darken);
+        }
+        .greatest_prod {
+            .great_button(@button-width, 32px, @button-color,@button-darken);
+        }
+        .great-visions {
+            .great_button(@button-width, 32px, @button-color,@button-darken);
         }
     }
 }// main-content

@@ -1,6 +1,6 @@
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
+.border-radius (@radius: 10px) { //used in middle-img
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
@@ -10,28 +10,38 @@
 	background-clip:         padding-box;
 }
 
-.opacity (@opacity: 0.5) {
+.opacity (@opacity: 0.5) { //used in footer
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
+.box-shadow (@string) { //used in .cta .. &:hover
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
 }
 
-.rotate (@deg) {
+.rotate (@deg) { //used in top-content
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
 	-o-transform: 		 rotate(@deg);
 }
 
-.skew (@deg, @deg2) {
+.skew (@deg, @deg2) { //used in contact
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+.great_button(@width, @height, @background, @hover-color) {
+	width: @width;
+	height: @height;
+	background: @background; 
+	border: 1px solid black;
+	
+	&:hover {
+		background: @hover-color;
+	}
 }
