@@ -1,29 +1,59 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
+    border-top: .2rem solid black; 
+    border-bottom: .2rem solid black;
+    margin: 7.5rem 0 1.5rem 0;
+    padding: 3.5rem 0;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+         
+    @media @tablet-max760{
+        border-bottom: none;
+    }
+    .top-content, .bottom-content  {
         display: flex;
         justify-content: space-around;
-    }
+        .text-content{
+            #card.box;
+            margin: 1rem;
+            padding-top: 1.3rem;
+            button {
+                .button-stylor(@height: 3rem);
+                box-sizing: content-box;
+                padding: .1rem;
+                margin: 1rem auto;
+                font-size: 1.2rem;
+                text-align: center;
+                text-transform: uppercase;
+                color: #333;
+                .border-radius;
+                .opacity(.8);
+                .box-shadow(.2rem .2rem .2rem .1rem rgba(0, 0, 255, .4));
+
+                &:hover{
+                    background-color: darken(@primary-color, 20%);
+                    color: white;
+                    .rotate(45deg);
+                }
+            }
+        }
+        
+        @media @phone-max400{
+            flex-direction: column;
+            padding: 1rem;
+
+            h4 {
+                text-align: center;
+                margin: 2rem 0;
+            }
+        }
+    }// top-content, bottom-content
 
     .middle-img {
         display: block;
-        margin: 30px auto;
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
+        margin: 3rem auto;
+        padding: 1rem;
+        width: 100%;
     }
 }// main-content
