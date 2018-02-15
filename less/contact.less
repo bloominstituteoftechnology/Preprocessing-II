@@ -1,9 +1,19 @@
 // Contact Styles
 
 .contact {
+    margin-left: 0.6%; /* 5px/880px = .6% */
+
+    @media @phone {
+        text-align: center;
+        margin: 0px;
+    } // .contact @media 400px
 
     p {
-        margin: 40px 0;
+        margin-left: 0.6%; /* 5px/880px = .6% */
+        
+        @media @phone {
+            margin: 5px 0;
+        } // .contact p @media 400px
     }
    
 }
