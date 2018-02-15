@@ -1,27 +1,86 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid @border-color; 
+    border-bottom: 2px solid @border-color;
+    font-size: 1.6rem;
+    line-height: 18px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 1% 0;
+
+   @media @tablet-small {
+    height: 100%;
+} // .main-content @media 720px
+
+   @media @phone {
+    margin: 15px 0px;
+    height: 100%;
+} // .main-content @media 400px
 
    .top-content {
         display: flex;
-        justify-content: space-around;
-    }
+        justify-content: center;
+    
+        @media @phone {
+            flex-direction: column;
+            margin: 10px 1%;
+        } // .topcontent @media 400px
 
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0.6%; // 5px/880px = 0.6%
+
+            button {
+                .btn-creator(100px, 25px, @btn-main-top-color);
+                align-self: center;
+
+                @media @phone {
+                    align-self: flex-start;
+                }
+                &:hover {
+                    background-color: darken(@btn-main-top-color, 20%)
+                }
+            }
+        } // .text-content
+   }
     .middle-img {
-        display: block;
-        margin: 30px auto;
+        max-width: 100%;
+        margin: 1% 0.6%;
+        .border-radius; // mixin usage #01
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-direction: column;
+            margin: 10px 1%;
+        } // .bottom-content @media 400px
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0.6%; // 5px/880px = 0.6%
+        } // .text-content
+
+            button {
+                .btn-creator(100px, 25px, @btn-main-bt-color);
+                align-self: center;
+
+                @media @phone {
+                    align-self: flex-start;
+                }
+
+                &:hover {
+                    background-color: darken(@btn-main-bt-color, 20%)
+                }
+        }
         p {
             padding-right: 20px;
         }

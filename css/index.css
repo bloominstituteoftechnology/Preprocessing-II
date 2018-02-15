@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: auto;
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    max-width: 720px;
+  }
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+}
+@media (max-width: 720px) {
+  header {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+}
+header nav {
+  flex-grow: 1;
+}
+@media (max-width: 720px) {
+  header nav {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+header nav ul {
+  display: flex;
+  margin: 0 7.2%;
+}
+header nav ul li {
+  flex-grow: 1;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #303030;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+header .logo {
+  margin: 0 0.6%;
+}
+.cta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .cta {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 0px;
+  }
+}
+.cta .cta-text {
+  font-size: 7.2rem;
+  /* 72px */
+  text-align: center;
+  letter-spacing: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta button {
+  border: 1px double black;
+  font-size: 1.6rem;
+  background: white;
+  width: 17rem;
+  height: 32px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
+}
+.cta button:hover {
+  background: black;
+  color: white;
+  -webkit-transform: skew(8deg, -8deg);
+  -moz-transform: skew(8deg, -8deg);
+  -ms-transform: skew(8deg, -8deg);
+  -o-transform: skew(8deg, -8deg);
+}
+.cta img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+@media (max-width: 720px) {
+  .cta img {
+    display: none;
+  }
+}
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 1.6rem;
+  line-height: 18px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding: 1% 0;
+}
+@media (max-width: 720px) {
+  .main-content {
+    height: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    margin: 15px 0px;
+    height: 100%;
+  }
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+    margin: 10px 1%;
+  }
+}
+.main-content .top-content .text-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.6%;
+}
+.main-content .top-content .text-content button {
+  width: 100px;
+  height: 25px;
+  background: cadetblue;
+  border: 2px solid black;
+  margin: 3% 0 3%;
+  color: white;
+  align-self: center;
+}
+@media (max-width: 400px) {
+  .main-content .top-content .text-content button {
+    align-self: flex-start;
+  }
+}
+.main-content .top-content .text-content button:hover {
+  background-color: #395f60;
+}
+.main-content .middle-img {
+  max-width: 100%;
+  margin: 1% 0.6%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+    margin: 10px 1%;
+  }
+}
+.main-content .bottom-content .text-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.6%;
+}
+.main-content .bottom-content button {
+  width: 100px;
+  height: 25px;
+  background: goldenrod;
+  border: 2px solid black;
+  margin: 3% 0 3%;
+  color: white;
+  align-self: center;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content button {
+    align-self: flex-start;
+  }
+}
+.main-content .bottom-content button:hover {
+  background-color: #816213;
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
+}
+.contact {
+  margin-left: 0.6%;
+  /* 5px/880px = .6% */
+}
+@media (max-width: 400px) {
+  .contact {
+    text-align: center;
+    margin: 0px;
+  }
+}
+.contact p {
+  margin-left: 0.6%;
+  /* 5px/880px = .6% */
+}
+@media (max-width: 400px) {
+  .contact p {
+    margin: 5px 0;
+  }
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+@media (max-width: 400px) {
+  footer {
+    text-align: center;
+    margin: 10px 0px 5px;
+  }
+}
