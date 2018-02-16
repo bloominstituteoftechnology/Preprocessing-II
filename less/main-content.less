@@ -7,15 +7,22 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   
 
    .top-content {
         display: flex;
         justify-content: space-around;
+        .skew(2deg , 2deg);
+    @media @phone {
+        .skew(0deg, 0deg);
+    }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .box-shadow(5px 10px black);
+        
     }
 
     .bottom-content {
@@ -24,6 +31,10 @@
 
         p {
             padding-right: 20px;
+            .skew(2deg , 2deg);
+        @media @phone {
+            .skew(0deg, 0deg);
+        }
         }
     }
 }// main-content
