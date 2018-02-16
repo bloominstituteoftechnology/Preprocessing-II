@@ -1,5 +1,6 @@
 // Main Content Styles
-
+@tablet:~'(max-width:768px)';
+@phone:~'(max-width:400px)';
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -11,16 +12,33 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @phone{
+            flex-direction: column;
+            margin: 30px 0 15px 0;
+            button{
+                .button1();
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        @media @tablet{
+           width: 100%; 
+           @media @phone {
+              width: 100%; 
+           }
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        button{
+            .button1();
+            
+        }
 
         p {
             padding-right: 20px;

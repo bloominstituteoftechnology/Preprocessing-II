@@ -1,5 +1,6 @@
 // Header Styles
-
+@tablet:~'(max-width:768px)';
+@phone:~'(max-width:400px)';
 header {
     width: 100%;
     display: flex;
@@ -10,6 +11,12 @@ header {
             width: 610px;
             justify-content: space-between;
             display: flex;
+            @media @tablet {
+               width:550px; 
+               @media @phone{
+                   width: 250px;
+               }
+            }
 
             li {
 
@@ -29,5 +36,8 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        
+            .skew;
+        
     }
 }// header
