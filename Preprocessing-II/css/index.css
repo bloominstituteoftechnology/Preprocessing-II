@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*.button-cicrle(@width, @background) {
+	width: @width;
+	height: @width;
+	border-radius: 50%;
+	background: @background;
+	border-style: outset;
+	border: 10px hsl(73, 62%, 62%);
+	padding: 2px 6px 3px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	&:hover {
+		background: darken(@background, 20%);
+		height: @A-height;
+		width: @B-width;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+} */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+@media (max-width: 768px) {
+  html html,
+  body html,
+  html body,
+  body body {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  html html,
+  body html,
+  html body,
+  body body {
+    width: 100%;
+  }
+}
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3,
+html h4,
+body h4,
+html h5,
+body h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+html .container,
+body .container {
+  width: 880px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  html .container .container,
+  body .container .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  html .container .container,
+  body .container .container {
+    width: 100%;
+  }
+}
+header {
+  width: 100%;
+  display: flex;
+}
+header nav ul {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+  -webkit-transform: skew(3deg, -1deg);
+  -moz-transform: skew(3deg, -1deg);
+  -ms-transform: skew(3deg, -1deg);
+  -o-transform: skew(3deg, -1deg);
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+}
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+.cta .cta-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 4px #888888;
+  -moz-box-shadow: 6px 6px 4px #888888;
+  box-shadow: 6px 6px 4px #888888;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .top-content .button-1 {
+  width: 100px;
+  height: 60px;
+  border-radius: 20%;
+  background: #77c977;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-content .top-content .button-1:hover {
+  background: #3e9c3e;
+  height: 60px;
+  width: 150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-content .top-content .button-2 {
+  width: 100px;
+  height: 60px;
+  border-radius: 20%;
+  background: #ce6d55;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-content .top-content .button-2:hover {
+  background: #933f2a;
+  height: 60px;
+  width: 150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
+}
+.main-content .bottom-content .button-3 {
+  width: 100px;
+  height: 40px;
+  border-radius: 20%;
+  background: #7036b3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-content .bottom-content .button-3:hover {
+  background: #3f1e65;
+  height: 60px;
+  width: 150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-content .bottom-content .button-4 {
+  width: 100px;
+  height: 60px;
+  border-radius: 20%;
+  background: #9acec9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-content .bottom-content .button-4:hover {
+  background: #55ada4;
+  height: 60px;
+  width: 150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-content .bottom-content .button-5 {
+  width: 100px;
+  height: 50px;
+  border-radius: 20%;
+  background: rgba(255, 174, 0, 0.979);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-content .bottom-content .button-5:hover {
+  background: rgba(153, 104, 0, 0.979);
+  height: 60px;
+  width: 150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact p {
+  margin: 40px 0;
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}
