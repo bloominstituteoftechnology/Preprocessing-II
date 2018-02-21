@@ -1,0 +1,42 @@
+// General Styles
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: @primary-font;
+
+    @media (max-width: 768px) {
+        html, body {
+            width: 100%;
+        }
+    }
+    @media (max-width: 400px) {
+        html, body {
+                width: 100%;
+            }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: @second-font;
+    letter-spacing: 1px;
+    margin-bottom: @dimes;
+}
+
+.container {
+    width: 880px;
+    margin: auto;    
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+        }
+    }
+    @media (max-width: 400px) {
+            .container {
+                width: 100%;
+            }
+    }
+}
+}
