@@ -1,6 +1,9 @@
 // Main Content Styles
+@import 'mixins'; // mixins.less
 
 .main-content {
+    .rotate(-30deg);
+    .box-shadow(20px 10px aqua);
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
@@ -14,6 +17,7 @@
     }
 
     .middle-img {
+        .box-shadow(10px 10px 5px 5px purple); //boxshadow mixin
         display: block;
         margin: 30px auto;
     }

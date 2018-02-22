@@ -1,11 +1,15 @@
 // Call To Action (CTA) Styles
+@import 'mixins';
 
 .cta {
+    .skew(-5deg, 5deg);
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
 
     .cta-text {
+        .box-shadow(10px 10px 5px 5px yellow);
+        .skew(10deg, 20deg);
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -17,6 +21,7 @@
     }
 
     .cta-text button {
+        .border-radius(50px);
         border: 1px double black;
         font-size: 16px;
         background: white;

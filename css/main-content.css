@@ -1,0 +1,33 @@
+.main-content {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -webkit-box-shadow: 20px 10px aqua;
+  -moz-box-shadow: 20px 10px aqua;
+  box-shadow: 20px 10px aqua;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .middle-img {
+  -webkit-box-shadow: 10px 10px 5px 5px purple;
+  -moz-box-shadow: 10px 10px 5px 5px purple;
+  box-shadow: 10px 10px 5px 5px purple;
+  display: block;
+  margin: 30px auto;
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
+}
