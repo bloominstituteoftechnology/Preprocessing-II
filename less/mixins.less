@@ -1,4 +1,5 @@
 // Mixins below variables
+@imgWidth: 7;
 
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
@@ -34,4 +35,52 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.button (@width: 75px, @height: 30px, @bg-color: red) {
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	.box-shadow(5px 5px);
+	.opacity(.5);
+}
+
+.main-header {
+	nav ul {
+		li {
+			border: solid 2px red;
+			.border-radius;
+		}
+	}
+	img {
+		.opacity(.25);
+	}
+}
+
+.cta {
+	.cta-text {
+		h1 {
+			.box-shadow(5px 10px)
+		}
+		button {
+			.box-shadow(3px 6px red)
+		}
+	}
+	img {
+		width: percentage(@imgWidth);
+	}
+}
+
+.main-content {
+	.text-content {
+		h4{
+			.rotate(5deg);
+		}
+		button {
+			.button;
+		}
+	}
+	img {
+		.skew(15deg, 3deg);
+	}
 }
