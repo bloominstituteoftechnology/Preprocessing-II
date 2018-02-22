@@ -309,7 +309,7 @@ header .logo {
 }
 .main-content .text-content button {
   align-self: flex-start;
-  background: black;
+  background: tan;
   width: 90px;
   height: 35px;
   color: white;
@@ -320,6 +320,9 @@ header .logo {
     align-self: center;
     margin-top: 10px;
   }
+}
+.main-content .text-content button:hover {
+  background: #b28446;
 }
 .main-content .top-content {
   display: flex;

@@ -17,11 +17,15 @@
 
         button {
             align-self: flex-start;
-            .button-mixin(90px; 35px; black);
+            .button-mixin(90px; 35px; @some-color);
 
             @media @phone {
                 align-self: center;
                 margin-top: 10px;
+            }
+
+            &:hover {
+                background: darken(@some-color, 20%);
             }
         }
     }
