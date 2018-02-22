@@ -1,8 +1,21 @@
 // Header Styles
+@import 'mixins';
+@import 'variables';
 
 header {
+    .box-shadow(10px 10px 5px 5px aqua);
+    .rotate(20deg);
     width: 100%;
     display: flex;
+
+    @media @tablet {
+        flex-wrap: wrap;
+        max-width: 768px;
+    }
+
+    @media @phone {
+        width: 40%;
+    }
 
     nav {
         ul {
@@ -11,15 +24,41 @@ header {
             justify-content: space-between;
             display: flex;
 
+            @media @tablet {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            @media @phone {
+                display: block;
+                align-content: center;
+            }
+
             li {
+
+                @media @tablet {
+                    display: flex;
+                    flex-flow: wrap;
+                }
+
+                @media @phone {
+                    margin-top: 2px;
+                    justify-content: center;
+                    border-bottom: 2px solid gray;
+                }
 
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
 
+
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                    }
+
+                    @media @tablet {
+                        flex-wrap: wrap;
                     }
                 }
             }
@@ -27,7 +66,13 @@ header {
     }
 
     .logo {
+        .opacity(0.33);
+        .box-shadow(5px 5px purple);
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+            width: 100%
+        }
     }
 }// header

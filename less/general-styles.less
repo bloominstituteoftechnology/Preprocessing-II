@@ -1,4 +1,5 @@
 // General Styles
+@import 'variables';
 
 * {
     box-sizing: border-box;
@@ -18,4 +19,14 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+
+    @media @tablet {
+        width: 70%;
+        max-width: 200px;
+    }
+
+    @media @phone {
+        width: 40%;
+        max-width: 50px;
+    }
 }
