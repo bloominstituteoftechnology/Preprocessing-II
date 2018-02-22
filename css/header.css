@@ -1,0 +1,54 @@
+header {
+  width: 100%;
+  display: flex;
+}
+header nav ul {
+  -webkit-box-shadow: 10px 10px 10px 10px #808080;
+  -moz-box-shadow: 10px 10px 10px 10px #808080;
+  box-shadow: 10px 10px 10px 10px #808080;
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+header .logo {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  width: 25%;
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+}
+@media (max-width: 1000px) {
+  header .logo {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+}
+@media (max-width: 768px) {
+  header .logo {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+}

@@ -1,4 +1,5 @@
 // Main Content Styles
+@import "mixins";
 
 .main-content {
    border-top: 2px solid black; 
@@ -9,11 +10,14 @@
    line-height: 18px;
 
    .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
+       display: flex;
+       justify-content: space-around;
 
+       .button-mixin;
+    }
+    
     .middle-img {
+        .opacity(.35);
         display: block;
         margin: 30px auto;
     }
@@ -22,6 +26,8 @@
         display: flex;
         justify-content: space-around;
 
+        .button-mixin(25px, 100%, purple);
+        
         p {
             padding-right: 20px;
         }
