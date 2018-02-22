@@ -287,12 +287,20 @@ header nav img {
   background: teal;
   text-align: center;
 }
+.main-content .top-content #btn1:hover {
+  background: #001a1a;
+  color: white;
+}
 .main-content .top-content #btn2 {
   width: 200px;
   height: 20px;
   background: black;
   text-align: center;
   color: white;
+}
+.main-content .top-content #btn2:hover {
+  background: #000000;
+  color: red;
 }
 .main-content .middle-img {
   display: block;
@@ -320,11 +328,18 @@ header nav img {
   background: aqua;
   text-align: center;
 }
+.main-content .bottom-content #btn3:hover {
+  background: #009999;
+}
 .main-content .bottom-content #btn4 {
   width: 40%;
   height: 30%;
   background: red;
   text-align: center;
+}
+.main-content .bottom-content #btn4:hover {
+  background: #990000;
+  color: white;
 }
 .main-content .bottom-content #btn5 {
   width: 50%;
@@ -332,6 +347,9 @@ header nav img {
   background: white;
   text-align: center;
   color: white;
+}
+.main-content .bottom-content #btn5:hover {
+  background: #cccccc;
 }
 .contact p {
   margin: 40px 0;

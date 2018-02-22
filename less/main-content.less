@@ -21,10 +21,18 @@
         }
         #btn1 {
             .button-mixin(100px, 50px, teal);
+            &:hover {
+                background: darken(teal, 20%);
+                color: white;
+            }
         }
         #btn2 {
             .button-mixin(200px, 20px, black);
             color: white;
+            &:hover {
+                background: darken(black, 20%);
+                color: red;
+            }
         }
     }
  
@@ -45,13 +53,23 @@
         }
         #btn3 {
             .button-mixin(30%, 40%, aqua);
+            &:hover {
+                background: darken(aqua, 20%);
+            }
         }
         #btn4 {
             .button-mixin(40%, 30%, red);
+            &:hover {
+                background: darken(red, 20%);
+                color: white;
+            }
         }
         #btn5 {
             .button-mixin(50%, 20%, white);
             color: white;
+            &:hover {
+                background: darken(white, 20%);
+            }
         }
     }
 }// main-content
