@@ -126,6 +126,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* My escapes with media querie variables*/
 @media (max-width: 768px) {
   .container header {
     flex-direction: column-reverse;
@@ -191,6 +192,8 @@ table {
     flex-direction: column;
   }
 }
+/*my custom button mixin*/
+/* All 5 mixins below*/
 .main-header nav ul li {
   border: solid 2px red;
   -webkit-border-radius: 5px;
@@ -216,7 +219,10 @@ table {
   box-shadow: 3px 6px red;
 }
 .cta img {
-  width: 700%;
+  width: 50%;
+}
+.main-content .text-content {
+  /* my mixin button*/
 }
 .main-content .text-content h4 {
   -webkit-transform: rotate(5deg);
@@ -234,6 +240,9 @@ table {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+}
+.main-content .text-content button:hover {
+  background-color: #8a240f;
 }
 .main-content img {
   -webkit-transform: skew(15deg, 3deg);
