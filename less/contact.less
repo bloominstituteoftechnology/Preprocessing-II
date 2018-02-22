@@ -2,8 +2,19 @@
 
 .contact {
 
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     p {
         margin: 40px 0;
+
+        @media @phone {
+            margin: 20px 0;
+        }
     }
    
 }

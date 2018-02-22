@@ -4,12 +4,28 @@ header {
     width: 100%;
     display: flex;
 
+    @media @tablet {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
     nav {
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+
+            @media @tablet {
+                width: 100%;
+                align-self: center;
+            }
+
+            @media @phone {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
 
             li {
 
@@ -22,6 +38,14 @@ header {
                         color: black;
                     }
                 }
+                
+                @media @phone {
+                    width: 100%;
+                    border-top: 1px solid black;
+                    text-align: center;
+                    padding-top: 15px;
+                    margin: 5px 0 10px 0;
+                }
             }
         }
     }
@@ -30,5 +54,10 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .rotate(7deg);
+
+        @media @tablet {
+            align-self: center;
+            margin: 28px 0 0 0;
+        }
     }
 }// header
