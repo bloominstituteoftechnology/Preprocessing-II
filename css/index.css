@@ -194,7 +194,7 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
-header nav ul img {
+header nav img {
   -webkit-box-shadow: 12px 12px 2px 1px rgba(15, 157, 161, 0.945);
   -moz-box-shadow: 12px 12px 2px 1px rgba(15, 157, 161, 0.945);
   box-shadow: 12px 12px 2px 1px rgba(15, 157, 161, 0.945);
@@ -277,9 +277,22 @@ header nav ul img {
   justify-content: space-around;
 }
 @media (max-width: 768px) {
-  .main-content p {
+  .main-content .top-content {
     padding-right: 10%;
   }
+}
+.main-content .top-content #btn1 {
+  width: 100px;
+  height: 50px;
+  background: teal;
+  text-align: center;
+}
+.main-content .top-content #btn2 {
+  width: 200px;
+  height: 20px;
+  background: black;
+  text-align: center;
+  color: white;
 }
 .main-content .middle-img {
   display: block;
@@ -297,9 +310,28 @@ header nav ul img {
   padding-right: 20px;
 }
 @media (max-width: 768px) {
-  .main-content .bottom-content p .bottom-content p {
+  .main-content .bottom-content p {
     padding-right: 10%;
   }
+}
+.main-content .bottom-content #btn3 {
+  width: 30%;
+  height: 40%;
+  background: aqua;
+  text-align: center;
+}
+.main-content .bottom-content #btn4 {
+  width: 40%;
+  height: 30%;
+  background: red;
+  text-align: center;
+}
+.main-content .bottom-content #btn5 {
+  width: 50%;
+  height: 20%;
+  background: white;
+  text-align: center;
+  color: white;
 }
 .contact p {
   margin: 40px 0;
