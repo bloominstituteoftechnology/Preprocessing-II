@@ -1,15 +1,18 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
+   border-top: 2px solid @blue; 
+   border-bottom: 2px solid @blue;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
 
    h4 {
-    text-align: center;
+    .rotate(5deg);
+    }
+    .text-content button {
+        margin-top: 5%;
     }
 
    .top-content {
@@ -19,18 +22,17 @@
             padding-right: 10%;
         }
         #btn1 {
-            .button-mixin(100px, 50px, teal);
+            .button-mixin(200px, 50px, @blue);
+            color: @sea-foam;
             &:hover {
-                background: darken(teal, 20%);
-                color: white;
+                background: darken(@blue, 20%);
             }
         }
         #btn2 {
-            .button-mixin(200px, 20px, black);
+            .button-mixin(200px, 50px, @teal);
             color: white;
             &:hover {
-                background: darken(black, 20%);
-                color: red;
+                background: darken(@teal, 20%);
             }
         }
     }
@@ -38,7 +40,8 @@
     .middle-img {
         display: block;
         margin: 30px auto;
-        .rotate(3deg);
+        width: 100%;
+        max-width: 880px;
     }
 
     .bottom-content {
@@ -51,16 +54,17 @@
             }
         }
         #btn3 {
-            .button-mixin(30%, 40%, aqua);
+            .button-mixin(50%, 20%, @aqua);
+            color: @aqua;
             &:hover {
-                background: darken(aqua, 20%);
+                background: darken(@aqua, 20%);
             }
         }
         #btn4 {
-            .button-mixin(40%, 30%, red);
+            .button-mixin(50%, 20%, @sea-foam);
+            color: @sea-foam;
             &:hover {
-                background: darken(red, 20%);
-                color: white;
+                background: darken(@sea-foam, 20%);
             }
         }
         #btn5 {

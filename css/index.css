@@ -169,9 +169,9 @@ header {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 9%;
-  -webkit-box-shadow: 12px 12px 2px 1px rgba(15, 157, 161, 0.945);
-  -moz-box-shadow: 12px 12px 2px 1px rgba(15, 157, 161, 0.945);
-  box-shadow: 12px 12px 2px 1px rgba(15, 157, 161, 0.945);
+  -webkit-box-shadow: 12px 12px 2px 1px rgba(52, 116, 132, 0.945);
+  -moz-box-shadow: 12px 12px 2px 1px rgba(52, 116, 132, 0.945);
+  box-shadow: 12px 12px 2px 1px rgba(52, 116, 132, 0.945);
 }
 @media (max-width: 768px) {
   header .logo {
@@ -200,7 +200,7 @@ header nav ul {
     width: 100%;
     margin: 0 auto;
     padding: 3%;
-    border-bottom: 0.15rem solid blue;
+    border-bottom: 0.15rem solid #7eaba4;
     text-align: center;
   }
 }
@@ -210,7 +210,7 @@ header nav ul li a {
 }
 header nav ul a:hover {
   text-decoration: underline;
-  color: blue;
+  color: #2e4874;
 }
 .cta {
   display: flex;
@@ -224,7 +224,7 @@ header nav ul a:hover {
   }
 }
 .cta .cta-text {
-  color: blue;
+  color: #343635;
   font-size: 7rem;
   text-align: center;
   letter-spacing: 5px;
@@ -242,7 +242,7 @@ header nav ul a:hover {
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 1.6rem;
+  font-size: 1rem;
   background: white;
   width: 170px;
   height: 32px;
@@ -256,8 +256,8 @@ header nav ul a:hover {
   background-clip: padding-box;
 }
 .cta .cta-text button:hover {
-  background: blue;
-  color: blue;
+  background: #347484;
+  color: #7eaba4;
 }
 .cta img {
   -webkit-opacity: 0.5;
@@ -270,15 +270,21 @@ header nav ul a:hover {
   }
 }
 .main-content {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid #2e4874;
+  border-bottom: 2px solid #2e4874;
   margin: 75px 0 35px 0;
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
 }
 .main-content h4 {
-  text-align: center;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+.main-content .text-content button {
+  margin-top: 5%;
 }
 .main-content .top-content {
   display: flex;
@@ -290,33 +296,40 @@ header nav ul a:hover {
   }
 }
 .main-content .top-content #btn1 {
-  width: 100px;
+  width: 200px;
   height: 50px;
-  background: teal;
-  text-align: center;
+  background: #2e4874;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #7eaba4;
 }
 .main-content .top-content #btn1:hover {
-  background: #001a1a;
-  color: white;
+  background: #111b2b;
 }
 .main-content .top-content #btn2 {
   width: 200px;
-  height: 20px;
-  background: black;
-  text-align: center;
+  height: 50px;
+  background: #347484;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   color: white;
 }
 .main-content .top-content #btn2:hover {
-  background: #000000;
-  color: red;
+  background: #17343b;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
+  width: 100%;
+  max-width: 880px;
 }
 .main-content .bottom-content {
   display: flex;
@@ -331,29 +344,45 @@ header nav ul a:hover {
   }
 }
 .main-content .bottom-content #btn3 {
-  width: 30%;
-  height: 40%;
-  background: aqua;
-  text-align: center;
+  width: 50%;
+  height: 20%;
+  background: #347c83;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #347c83;
 }
 .main-content .bottom-content #btn3:hover {
-  background: #009999;
+  background: #17373a;
 }
 .main-content .bottom-content #btn4 {
-  width: 40%;
-  height: 30%;
-  background: red;
-  text-align: center;
+  width: 50%;
+  height: 20%;
+  background: #7eaba4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #7eaba4;
 }
 .main-content .bottom-content #btn4:hover {
-  background: #990000;
-  color: white;
+  background: #4d7670;
 }
 .main-content .bottom-content #btn5 {
   width: 50%;
   height: 20%;
   background: white;
-  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   color: white;
 }
 .main-content .bottom-content #btn5:hover {
