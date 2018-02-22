@@ -11,8 +11,23 @@ header {
             justify-content: space-between;
             display: flex;
 
-            li {
+            @media @phone {
+                width: 100%;
+                display: block;
+                li {
+                    font-size: 1.5rem;
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 3%;
+                    border-bottom: .15rem solid @some-color;
+                    text-align: center;
+                }
+            }
 
+            li {
+                @media @tablet {
+                    flex-direction: column;
+                }
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -23,11 +38,18 @@ header {
                     }
                 }
             }
+            img {
+                .box-shadow(12px 12px 2px 1px rgba(15, 157, 161, 0.945));
+            }
+
         }
     }
-
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+        @media @tablet {
+            order: -1;
+            width: 40%;
+            display: block;
+            margin: 5% auto;
+        }
     }
 }// header

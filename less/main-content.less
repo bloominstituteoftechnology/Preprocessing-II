@@ -8,14 +8,23 @@
    font-size: 16px;
    line-height: 18px;
 
+   h4 {
+    .skew(-10deg, 10deg);
+    text-align: center;
+    }
    .top-content {
         display: flex;
         justify-content: space-around;
     }
-
+    p {
+        @media @tablet {
+            padding-right: 10%;
+        }
+    }
     .middle-img {
         display: block;
         margin: 30px auto;
+        .rotate(3deg);
     }
 
     .bottom-content {
@@ -24,6 +33,12 @@
 
         p {
             padding-right: 20px;
+
+            @media @tablet {
+                .bottom-content p {
+                    padding-right: 10%;
+                }
+            }
         }
     }
 }// main-content
