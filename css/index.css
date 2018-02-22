@@ -148,6 +148,9 @@ h5 {
   margin: auto;
 }
 header {
+  -webkit-box-shadow: 0 3px 5px orange;
+  -moz-box-shadow: 0 3px 5px orange;
+  box-shadow: 0 3px 5px orange;
   width: 100%;
   display: flex;
 }
@@ -232,6 +235,9 @@ header .logo {
   padding-right: 20px;
 }
 .contact p {
+  -webkit-box-shadow: 0 3px 5px orange;
+  -moz-box-shadow: 0 3px 5px orange;
+  box-shadow: 0 3px 5px orange;
   margin: 40px 0;
 }
 footer {

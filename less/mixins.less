@@ -16,10 +16,10 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+.box-shadow (@x: 0, @y: 3px, @blur: 5px, @color: orange) { //contact
+	-webkit-box-shadow: @x @y @blur @color;
+	-moz-box-shadow: @x @y @blur @color;
+	box-shadow: @x @y @blur @color;
 }
 
 .rotate (@deg: 9deg) {//main content
