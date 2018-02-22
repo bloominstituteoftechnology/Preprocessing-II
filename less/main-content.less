@@ -13,7 +13,18 @@
        display: flex;
        justify-content: space-around;
 
-       .button-mixin;
+       .features {
+           .button-mixin(30px, 60px)
+       };
+
+       .about {
+            .button-mixin(5px, 5px, green);
+            &:hover {
+                height: 20px;
+                width: 40px;
+            }
+       };
+
     }
     
     .middle-img {
@@ -26,10 +37,27 @@
         display: flex;
         justify-content: space-around;
 
-        .button-mixin(25px, 100%, purple);
+        .services {
+            .button-mixin(10px, 10px, white);
+            &:hover{
+                height: 100px;
+                width: 100%;
+            }
+        };
+ 
+        .product {
+             .button-mixin(65px, yellow)
+        };
+
+        .vision {
+             .button-mixin(100px, 100px, pink);
+             &:hover{
+                 visibility: hidden;
+             }
+        };
         
         p {
             padding-right: 20px;
-        }
+        };
     }
 }// main-content

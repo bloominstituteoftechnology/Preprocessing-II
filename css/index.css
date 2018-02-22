@@ -304,9 +304,20 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
-  height: 50px;
-  width: 100px;
+}
+.main-content .top-content .features {
+  height: 30px;
+  width: 60px;
   background-color: red;
+}
+.main-content .top-content .about {
+  height: 5px;
+  width: 5px;
+  background-color: green;
+}
+.main-content .top-content .about:hover {
+  height: 20px;
+  width: 40px;
 }
 .main-content .middle-img {
   -webkit-opacity: 0.35;
@@ -318,9 +329,28 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
-  height: 25px;
+}
+.main-content .bottom-content .services {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+}
+.main-content .bottom-content .services:hover {
+  height: 100px;
   width: 100%;
-  background-color: purple;
+}
+.main-content .bottom-content .product {
+  height: 65px;
+  width: yellow;
+  background-color: red;
+}
+.main-content .bottom-content .vision {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+}
+.main-content .bottom-content .vision:hover {
+  visibility: hidden;
 }
 .main-content .bottom-content p {
   padding-right: 20px;

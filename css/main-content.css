@@ -10,6 +10,16 @@
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .features {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+}
+.main-content .top-content .about {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+}
 .main-content .middle-img {
   -webkit-opacity: 0.35;
   -moz-opacity: 0.35;
@@ -20,6 +30,21 @@
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .services {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+}
+.main-content .bottom-content .product {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+}
+.main-content .bottom-content .vision {
+  height: 50px;
+  width: 100px;
+  background-color: red;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
