@@ -1,5 +1,6 @@
 // Main Content Styles
 @import 'mixins'; // mixins.less
+@import 'variables';
 
 .main-content {
     .rotate(-30deg);
@@ -11,15 +12,41 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+       width: 70%;
+       max-width: 1px;
+       .rotate(0deg);
+   }
+
+   @media @phone {
+       width: 40%
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet {
+            width: 80%;
+        }
+
+        @media @phone {
+            max-width: 50px;
+        }
     }
 
     .middle-img {
         .box-shadow(10px 10px 5px 5px purple); //boxshadow mixin
         display: block;
         margin: 30px auto;
+
+        @media @tablet {
+            width: 100%;
+        }
+
+        @media @phone {
+            width: 60%;
+        }
     }
 
     .bottom-content {
@@ -28,6 +55,24 @@
 
         p {
             padding-right: 20px;
+
+            @media @tablet {
+                max-width: 50px;
+                padding-right: 0;
+            }
+
+            @media @phone {
+                max-width: 50px;
+            }
+        }
+        @media @tablet {
+            width: 85%;
+            max-width: 2px;
+        }
+
+        @media @phone {
+            width: 60%;
+            max-width: 1px;
         }
     }
 }// main-content
