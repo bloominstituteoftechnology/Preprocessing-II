@@ -9,8 +9,20 @@
    line-height: 18px;
 
    .text-content {
+       display: flex;
+       flex-direction: column;
         @media @phone {
             padding-top: 30px;
+        }
+
+        button {
+            align-self: flex-start;
+            .button-mixin(90px; 35px; black);
+
+            @media @phone {
+                align-self: center;
+                margin-top: 10px;
+            }
         }
     }
 

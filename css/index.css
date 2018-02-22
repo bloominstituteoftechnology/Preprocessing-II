@@ -298,9 +298,27 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content .text-content {
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 400px) {
   .main-content .text-content {
     padding-top: 30px;
+  }
+}
+.main-content .text-content button {
+  align-self: flex-start;
+  background: black;
+  width: 90px;
+  height: 35px;
+  color: white;
+  margin-top: 20px;
+}
+@media (max-width: 400px) {
+  .main-content .text-content button {
+    align-self: center;
+    margin-top: 10px;
   }
 }
 .main-content .top-content {
