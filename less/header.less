@@ -3,8 +3,26 @@
 header {
     width: 100%;
     display: flex;
+    @media @tablet {
+        max-width: 768px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    @media @phone {
+        max-width: 400px;
+        background-color: lightpink;
+    }
 
     nav {
+        @media @tablet {
+            background-color: lightgray;
+            display: flex;
+        }
+        @media @phone {
+            max-width: 400px;
+            background-color: lightpink;
+        }
         ul {
             margin-top: 40px; 
             width: 610px;
@@ -27,7 +45,11 @@ header {
     }
 
     .logo {
+        .opacity;
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @tablet {
+            justify-self: center;
+        }
     }
 }// header
