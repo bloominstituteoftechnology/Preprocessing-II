@@ -336,6 +336,7 @@ header .logo {
   background-color: white;
 }
 .main-content .bottom-content .services:hover {
+  background-color: #0d0d0d;
   height: 100px;
   width: 100%;
 }
