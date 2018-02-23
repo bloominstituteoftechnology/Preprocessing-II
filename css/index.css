@@ -220,6 +220,26 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .main-content .top-content {
+    border-top: 15px dashed orange;
+    border-bottom: 55px dashed red;
+    margin: 19px 0 19px 0;
+    padding: 18px 0;
+    font-size: 66px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    border-top: 12px dotted blue;
+    border-bottom: 1px dotted red;
+    margin: 5px 0 5px 0;
+    padding: 5px 0;
+    font-size: 6px;
+    line-height: 7px;
+  }
+}
 .main-content .middle-img {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
@@ -230,6 +250,26 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    border-top: 15px dashed orange;
+    border-bottom: 55px dashed red;
+    margin: 19px 0 19px 0;
+    padding: 18px 0;
+    font-size: 66px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    border-top: 12px dotted blue;
+    border-bottom: 1px dotted red;
+    margin: 5px 0 5px 0;
+    padding: 5px 0;
+    font-size: 6px;
+    line-height: 7px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;

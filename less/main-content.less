@@ -14,27 +14,53 @@
    .top-content {
        display: flex;
        justify-content: space-around;
-               @media @tablet { 
-                   border-top: 15px solid orangek; 
-                   border-bottom: 55px solid red;
-                   margin: 19px 0 19px 0;
-                   padding: 18px 0;
-                   font-size: 66px;
-                   line-height: 44px;
-               }
+       @media @tablet { 
+           border-top: 15px dashed orange; 
+           border-bottom: 55px dashed red;
+           margin: 19px 0 19px 0;
+           padding: 18px 0;
+           font-size: 66px;
+           line-height: 44px;
+        }
+        
+        @media @phone { 
+            border-top: 12px dotted blue; 
+            border-bottom: 1px dotted red;
+            margin: 5px 0 5px 0;
+            padding: 5px 0;
+            font-size: 6px;
+            line-height: 7px;
+        }
         
     }
-
+    
     .middle-img {    
         .opacity;
         display: block;
         margin: 30px auto;
     }
-
+    
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
+        
+        @media @tablet { 
+            border-top: 15px dashed orange; 
+            border-bottom: 55px dashed red;
+            margin: 19px 0 19px 0;
+            padding: 18px 0;
+            font-size: 66px;
+            line-height: 44px;
+        }
+    
+        @media @phone { 
+         border-top: 12px dotted blue; 
+         border-bottom: 1px dotted red;
+         margin: 5px 0 5px 0;
+         padding: 5px 0;
+         font-size: 6px;
+         line-height: 7px;
+     }
         p {
             padding-right: 20px;
         }
