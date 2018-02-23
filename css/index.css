@@ -178,9 +178,12 @@ header {
     justify-content: center;
   }
 }
+header nav {
+  width: 100%;
+}
 header nav ul {
   margin-top: 40px;
-  width: 610px;
+  width: 100%;
   justify-content: space-between;
   display: flex;
 }
@@ -216,7 +219,7 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 10.3%;
   -webkit-transform: rotate(7deg);
   -moz-transform: rotate(7deg);
   -ms-transform: rotate(7deg);
@@ -314,6 +317,12 @@ header .logo {
   height: 35px;
   color: white;
   margin-top: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 @media (max-width: 400px) {
   .main-content .text-content button {
@@ -334,7 +343,9 @@ header .logo {
   }
 }
 .main-content .middle-img {
-  display: block;
+  width: 100%;
+  max-width: 880px;
+  display: flex;
   margin: 30px auto;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
