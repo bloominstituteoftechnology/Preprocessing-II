@@ -3,17 +3,52 @@
 header {
     width: 100%;
     display: flex;
+    background-color: navy;
+    .border-radius(50px);
+
+    @media @phone {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     nav {
+        margin-left: 25px;
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
 
-            li {
+            @media @tablet {
+              width: 100%;
+              li:first-child {
+                margin-left: 5px;
+              }
+            }
 
+            @media @phone {
+              width: 100%;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 0px;
+            }
+
+            li {
+                @media @phone {
+                  border-bottom: 1px solid black;
+                  padding: 5px;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                }
                 a {
+                    @media @tablet {
+                      font-size: 90%;
+                    }
+                    @media @phone {
+                      font-size: 100%;
+                      padding: 5px;
+                    }
                     text-decoration: none;
                     color: #b0b0b0;
 
@@ -24,10 +59,33 @@ header {
                 }
             }
         }
+        @media @tablet {
+          width: 70%;
+        }
+        
+        @media @phone {
+          margin-left: 0px;
+          display: flex;
+          width: 100%;
+          li:first-child {
+            margin-left: 0px;
+          }
+        }
     }
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 0px 0 0 25px;
+        @media @tablet {
+          width: 20%;
+          margin-left:35px;
+        }
+        @media @phone {
+          order: -1;
+          width: 50%;
+          align-self: center;
+          margin-left: 0px;
+          margin: 10px;
+        }
     }
 }// header
