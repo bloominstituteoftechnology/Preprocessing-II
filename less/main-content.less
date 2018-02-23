@@ -1,17 +1,28 @@
 // Main Content Styles
+@tablet: ~"(max-width: 768px)";
 
 .main-content {
    .rotate;
+   
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-
+   
    .top-content {
-        display: flex;
-        justify-content: space-around;
+       display: flex;
+       justify-content: space-around;
+               @media @tablet { 
+                   border-top: 15px solid orangek; 
+                   border-bottom: 55px solid red;
+                   margin: 19px 0 19px 0;
+                   padding: 18px 0;
+                   font-size: 66px;
+                   line-height: 44px;
+               }
+        
     }
 
     .middle-img {    
