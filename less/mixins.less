@@ -41,21 +41,29 @@
 	height: @height;
 	background: @background-color;
 	.border-radius;
+
+	&:hover {
+		background: darken(@background-color, 20%);
+	}
 }
 
 #my-namespace {
 	.headings() {
 		color: @blue;
+		text-decoration: underline;
 	}
 	// buttons 
-	.buttons {
+	.buttons() {
 		margin: 0 auto;
 		margin-top: 5%;
 		display: block;
+		border: none;
+		color: white;
 	}
 	// p tag
-	.p {
+	.p() {
 		align-content: justify;
 		font-family: 'Roboto', sans-serif;
+		font-size: 0.7rem;
 	}
 }

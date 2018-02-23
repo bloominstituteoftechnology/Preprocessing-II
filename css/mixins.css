@@ -1,0 +1,9 @@
+#my-namespace .buttons {
+  margin: 0 auto;
+  margin-top: 5%;
+  display: block;
+}
+#my-namespace .p {
+  align-content: justify;
+  font-family: 'Roboto', sans-serif;
+}

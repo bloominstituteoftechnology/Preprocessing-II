@@ -4,6 +4,7 @@
     margin-top: 72px;
     justify-content: flex-end;
     width: 100%;
+    max-width: 880px;
 
     @media @tablet {
         justify-content: center;
@@ -11,7 +12,7 @@
 
     .cta-text {
         color: @dark-grey;
-        font-size: 5rem + 2rem;
+        font-size: 3rem + 2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -20,11 +21,11 @@
         align-items: center;
         margin: 0 10% 0 0;
 
-        @media (max-width: 930px) {
-            font-size: 6rem;
+        @media (max-width: 900px) {
+            font-size: 4rem;
             margin: 0 auto;
         }
-
+   
         button {
             border: 1px double black;
             font-size: 1rem;
@@ -38,6 +39,7 @@
             &:hover {
                 background: @blue;
                 color: @sea-foam;
+                border: 2px double @sea-foam;
             }
         }
     }

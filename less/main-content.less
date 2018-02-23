@@ -8,33 +8,28 @@
    font-size: 16px;
    line-height: 18px;
 
-   h4 {
-    #my-namespace > .headings;   
-    .rotate(5deg);
-    text-align: center;
-    font-size: 2rem;
-    }
-    .text-content button {
-        #my-namespace > .buttons;
-    }
+    h4 {
+        #my-namespace > .headings;   
+        .rotate(5deg);
+        text-align: center;
+        font-size: 2rem;
+        }
+
+        .text-content button {
+            #my-namespace > .buttons;
+        }
 
    .top-content {
         display: flex;
         justify-content: space-between;
-      
         #btn1 {
-            .button-mixin(200px, 50px, @blue);
-            color: @sea-foam;
-            &:hover {
-                background: darken(@blue, 20%);
-            }
+            .button-mixin(50%, 50px, @blue);
         }
         #btn2 {
-            .button-mixin(200px, 50px, @teal);
-            color: white;
-            &:hover {
-                background: darken(@teal, 20%);
-            }
+            .button-mixin(50%, 50px, @teal);
+        }
+        p {
+            padding-right: 10%;
         }
     }
  
@@ -43,6 +38,7 @@
         margin: 30px auto;
         width: 100%;
         max-width: 880px;
+        .box-shadow(12px 12px 2px 1px rgba(52, 54, 53, 3));
     }
 
     .bottom-content {
@@ -57,24 +53,14 @@
         }
         #btn3 {
             .button-mixin(50%, 20%, @aqua);
-            color: @aqua;
-            &:hover {
-                background: darken(@aqua, 20%);
-            }
+            color: white;
         }
         #btn4 {
             .button-mixin(50%, 20%, @sea-foam);
-            color: @sea-foam;
-            &:hover {
-                background: darken(@sea-foam, 20%);
-            }
         }
         #btn5 {
             .button-mixin(50%, 20%, white);
             color: white;
-            &:hover {
-                background: darken(white, 20%);
-            }
         }
     }
 }// main-content
