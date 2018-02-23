@@ -126,6 +126,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#my-namespace .buttons {
+  margin: 0 auto;
+  margin-top: 5%;
+  display: block;
+}
+#my-namespace .p {
+  align-content: justify;
+  font-family: 'Roboto', sans-serif;
+}
 * {
   box-sizing: border-box;
 }
@@ -144,12 +153,15 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
+  padding: 3%;
 }
 @media (max-width: 768px) {
   .container {
     width: 78%;
+    padding: 0.5%;
   }
 }
 @media (max-width: 400px) {
@@ -256,7 +268,7 @@ header nav ul a:hover {
   background-clip: padding-box;
 }
 .cta .cta-text button:hover {
-  background: #347484;
+  background: #2e4874;
   color: #7eaba4;
 }
 .cta img {
@@ -278,22 +290,22 @@ header nav ul a:hover {
   line-height: 18px;
 }
 .main-content h4 {
+  color: #2e4874;
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   -o-transform: rotate(5deg);
+  text-align: center;
+  font-size: 2rem;
 }
 .main-content .text-content button {
+  margin: 0 auto;
   margin-top: 5%;
+  display: block;
 }
 .main-content .top-content {
   display: flex;
-  justify-content: space-around;
-}
-@media (max-width: 768px) {
-  .main-content .top-content {
-    padding-right: 10%;
-  }
+  justify-content: space-between;
 }
 .main-content .top-content #btn1 {
   width: 200px;
@@ -336,6 +348,8 @@ header nav ul a:hover {
   justify-content: space-around;
 }
 .main-content .bottom-content p {
+  align-content: justify;
+  font-family: 'Roboto', sans-serif;
   padding-right: 20px;
 }
 @media (max-width: 768px) {
@@ -389,7 +403,7 @@ header nav ul a:hover {
   background: #cccccc;
 }
 .contact p {
-  margin: 40px 0;
+  margin: 15px 0;
 }
 footer {
   text-align: center;
@@ -398,4 +412,10 @@ footer {
   -moz-transform: skew(-10deg, 10deg);
   -ms-transform: skew(-10deg, 10deg);
   -o-transform: skew(-10deg, 10deg);
+}
+footer:hover {
+  -webkit-transform: skew(10deg, -10deg);
+  -moz-transform: skew(10deg, -10deg);
+  -ms-transform: skew(10deg, -10deg);
+  -o-transform: skew(10deg, -10deg);
 }

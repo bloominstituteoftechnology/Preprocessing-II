@@ -9,18 +9,19 @@
    line-height: 18px;
 
    h4 {
+    #my-namespace > .headings;   
     .rotate(5deg);
+    text-align: center;
+    font-size: 2rem;
     }
     .text-content button {
-        margin-top: 5%;
+        #my-namespace > .buttons;
     }
 
    .top-content {
         display: flex;
-        justify-content: space-around;
-        @media @tablet {
-            padding-right: 10%;
-        }
+        justify-content: space-between;
+      
         #btn1 {
             .button-mixin(200px, 50px, @blue);
             color: @sea-foam;
@@ -48,6 +49,7 @@
         display: flex;
         justify-content: space-around;
         p {
+            #my-namespace > .p;
             padding-right: 20px;
             @media @tablet {
                 padding-right: 10%;
