@@ -126,6 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.button-hover {
+  background: #283d66;
+  color: white;
+}
 * {
   box-sizing: border-box;
 }
@@ -168,6 +172,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: skew(-5deg, 5deg);
+  -moz-transform: skew(-5deg, 5deg);
+  -ms-transform: skew(-5deg, 5deg);
+  -o-transform: skew(-5deg, 5deg);
 }
 .cta {
   display: flex;
@@ -183,6 +191,21 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.15);
+  -moz-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.15);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.15);
+}
+.cta img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .cta img {
+    width: 300px;
+    height: 100%;
+    align-self: center;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -192,10 +215,21 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: #283d66;
   color: white;
+}
+@media (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+  }
 }
 .main-content {
   border-top: 2px solid black;
@@ -220,10 +254,25 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.my-button {
+  width: 125px;
+  height: 25px;
+  background-color: #4468b0;
+  color: white;
+  margin-top: 10px;
+}
+.my-button:hover {
+  background: #283d66;
+  color: white;
+}
 .contact p {
   margin: 40px 0;
 }
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
