@@ -1,7 +1,9 @@
 // Main Content Styles
 @import "mixins.less";
+@import "variables.less";
+
 .main-content {
-    
+    .box-shadow("5px 5px 5px blue");
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
@@ -12,16 +14,39 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        #feature-btn {
+            .button(60px,60px,red);
+           
+        }
+        #about-btn {
+            .button(60px,60px,orange);
+    
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .skew(2deg,2deg);
+        @media @phone {
+            width:100%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        #vision-btn {
+            .button(60px,60px,blue);
+              
+        }
+        #service-btn {
+            .button(60px, 60px,purple);
+           
+        }
+        #product-btn {
+            .button(60px, 60px, green);
+        }
 
         p {
             padding-right: 20px;

@@ -1,8 +1,11 @@
 // Header Styles
+@import "mixins.less";
+@import "variables.less";
 
 header {
     width: 100%;
     display: flex;
+  
 
     nav {
         ul {
@@ -23,11 +26,25 @@ header {
                     }
                 }
             }
+            @media @phone {
+                width:100%;
+                align-items:center;
+                flex-direction: column;
+            }
         }
     }
 
     .logo {
+        .rotate(180deg);
+        .opacity(.8);
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @phone {
+            order:-1;
+        }
+    }
+    @media @phone {
+        width: 100%;
+        flex-direction: column;
     }
 }// header

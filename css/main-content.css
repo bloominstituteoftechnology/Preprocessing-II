@@ -1,0 +1,86 @@
+.main-content {
+  -webkit-box-shadow: "5px 5px 5px blue";
+  -moz-box-shadow: "5px 5px 5px blue";
+  box-shadow: "5px 5px 5px blue";
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .top-content #feature-btn {
+  width: 60px;
+  height: 60px;
+  color: red;
+}
+.main-content .top-content #feature-btn:hover {
+  background-color: #000000;
+}
+.main-content .top-content #feature-btn:hover {
+  background-color: #000000;
+}
+.main-content .top-content #about-btn {
+  width: 60px;
+  height: 60px;
+  color: orange;
+}
+.main-content .top-content #about-btn:hover {
+  background-color: #000000;
+}
+.main-content .top-content #about-btn:hover {
+  background-color: #000000;
+}
+.main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+}
+@media (max-width:400px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .bottom-content #vision-btn {
+  width: 60px;
+  height: 60px;
+  color: blue;
+}
+.main-content .bottom-content #vision-btn:hover {
+  background-color: #000000;
+}
+.main-content .bottom-content #vision-btn:hover {
+  background-color: #000000;
+}
+.main-content .bottom-content #service-btn {
+  width: 60px;
+  height: 60px;
+  color: purple;
+}
+.main-content .bottom-content #service-btn:hover {
+  background-color: #000000;
+}
+.main-content .bottom-content #service-btn:hover {
+  background-color: #000000;
+}
+.main-content .bottom-content #product-btn {
+  width: 60px;
+  height: 60px;
+  color: green;
+}
+.main-content .bottom-content #product-btn:hover {
+  background-color: #000000;
+}
+.main-content .bottom-content #product-btn:hover {
+  background-color: #000000;
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
+}
