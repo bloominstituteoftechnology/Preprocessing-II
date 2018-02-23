@@ -362,6 +362,32 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content #feature-btn {
+  width: 75px;
+  height: 50px;
+  background-color: orange;
+  font-family: Impact;
+  cursor: pointer;
+  border: 1px double black;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.main-content .top-content #feature-btn:hover {
+  background-color: #996300;
+}
+.main-content .top-content #about-btn {
+  width: 150px;
+  height: 20px;
+  background-color: purple;
+  font-family: Comic Sans;
+  cursor: pointer;
+  border: 1px double black;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.main-content .top-content #about-btn:hover {
+  background-color: #1a001a;
+}
 @media (max-width: 768px) {
   .main-content .top-content {
     width: 80%;
@@ -392,6 +418,47 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content #services-btn {
+  width: 200px;
+  height: 150px;
+  background-color: aqua;
+  font-family: cursive;
+  cursor: pointer;
+  border: 1px double black;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.main-content .bottom-content #services-btn:hover {
+  background-color: #009999;
+}
+.main-content .bottom-content #product-btn {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  font-family: Georgia;
+  cursor: pointer;
+  border: 1px double black;
+  margin-top: 10px;
+  font-size: 16px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.main-content .bottom-content #product-btn:hover {
+  background-color: #999900;
+}
+.main-content .bottom-content #vision-btn {
+  width: 75px;
+  height: 70px;
+  background-color: pink;
+  font-family: Courier New;
+  cursor: pointer;
+  border: 1px double black;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.main-content .bottom-content #vision-btn:hover {
+  background-color: #ff5a77;
 }
 .main-content .bottom-content p {
   padding-right: 20px;

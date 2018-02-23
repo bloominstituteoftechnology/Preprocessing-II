@@ -4,7 +4,7 @@
 
 .main-content {
     .rotate(-30deg);
-    .box-shadow(20px 10px aqua);
+    .box-shadow(20px 10px @button-BG1);
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
@@ -26,6 +26,14 @@
         display: flex;
         justify-content: space-around;
 
+        #feature-btn {
+            .button-creator(75px, 50px, @button-BG5, Impact);
+        }
+
+        #about-btn {
+            .button-creator(150px, 20px, @button-BG3, Comic Sans);
+        }
+
         @media @tablet {
             width: 80%;
         }
@@ -33,10 +41,11 @@
         @media @phone {
             max-width: 50px;
         }
+
     }
 
     .middle-img {
-        .box-shadow(10px 10px 5px 5px purple); //boxshadow mixin
+        .box-shadow(10px 10px 5px 5px @button-BG3); //boxshadow mixin
         display: block;
         margin: 30px auto;
 
@@ -52,6 +61,24 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        #services-btn {
+            .button-creator(200px, 150px, @button-BG1, cursive);
+
+        }
+
+        #product-btn {
+            .button-creator(50px, 50px, @button-BG2, Georgia);
+            font-size: 10px;
+            font-weight: bold;
+
+        }
+
+        #vision-btn {
+            .button-creator(75px, 70px, @button-BG4, Courier New);
+
+        }
+
 
         p {
             padding-right: 20px;
