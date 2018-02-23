@@ -35,3 +35,34 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-mixin (@width, @height, @background-color) {
+	width: @width;
+	height: @height;
+	background: @background-color;
+	.border-radius;
+
+	&:hover {
+		background: darken(@background-color, 20%);
+	}
+}
+
+#my-namespace {
+	.headings() {
+		color: @blue;
+		text-decoration: underline;
+	}
+	// buttons 
+	.buttons() {
+		margin: 0 auto;
+		margin-top: 5%;
+		display: block;
+		border: none;
+		color: white;
+	}
+	// p tag
+	.p() {
+		font-family: 'Roboto', sans-serif;
+		font-size: 0.7rem;
+	}
+}

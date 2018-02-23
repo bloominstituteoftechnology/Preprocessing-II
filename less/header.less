@@ -4,30 +4,55 @@ header {
     width: 100%;
     display: flex;
 
-    nav {
-        ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
-            display: flex;
+    @media @tablet {
+        flex-direction: column;
+    }
+    
+    .logo {
+        align-self: flex-end;
+        margin: 28px 0 0 9%;
+        .box-shadow(12px 12px 2px 1px rgba(52, 116, 132, 0.945));
 
-            li {
-
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
-
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
-                }
-            }
+        @media @tablet {
+            order: -1;
+            width: 40%;
+            display: block;
+            margin: 5% auto;
         }
     }
 
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+    nav {
+        width: 100%;
     }
-}// header
+
+    nav ul {
+        margin-top: 40px; 
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+
+        @media @phone {
+            width: 100%;
+            display: block;
+            li {
+                font-size: 1.5rem;
+                width: 100%;
+                margin: 0 auto;
+                padding: 3%;
+                border-bottom: .15rem solid @sea-foam;
+                text-align: center;
+            }
+        }
+
+        li a {
+            text-decoration: none;
+            color: #b0b0b0;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+            color: @blue;
+        }
+
+    }
+} //header

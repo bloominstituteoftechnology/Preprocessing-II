@@ -1,29 +1,66 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
+   border-top: 2px solid @blue; 
+   border-bottom: 2px solid @blue;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
 
+    h4 {
+        #my-namespace > .headings;   
+        .rotate(5deg);
+        text-align: center;
+        font-size: 2rem;
+        }
+
+        .text-content button {
+            #my-namespace > .buttons;
+        }
+
    .top-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        #btn1 {
+            .button-mixin(50%, 50px, @blue);
+        }
+        #btn2 {
+            .button-mixin(50%, 50px, @teal);
+        }
+        .text-content:first-child {
+            padding-right: 5%;
+        }
     }
-
+ 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 100%;
+        max-width: 880px;
+        .box-shadow(12px 12px 2px 1px rgba(52, 54, 53, 3));
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
         p {
+            #my-namespace > .p;
             padding-right: 20px;
+            @media @tablet {
+                padding-right: 10%;
+            }
+        }
+        #btn3 {
+            .button-mixin(50%, 20%, @aqua);
+            color: white;
+        }
+        #btn4 {
+            .button-mixin(50%, 20%, @sea-foam);
+        }
+        #btn5 {
+            .button-mixin(50%, 20%, white);
+            color: white;
         }
     }
 }// main-content
