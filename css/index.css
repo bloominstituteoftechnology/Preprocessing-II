@@ -331,8 +331,8 @@ header nav ul a:hover {
 .main-content .top-content #btn2:hover {
   background: #17343b;
 }
-.main-content .top-content p {
-  padding-right: 10%;
+.main-content .top-content .text-content:first-child {
+  padding-right: 5%;
 }
 .main-content .middle-img {
   display: block;
@@ -348,7 +348,6 @@ header nav ul a:hover {
   justify-content: space-around;
 }
 .main-content .bottom-content p {
-  align-content: justify;
   font-family: 'Roboto', sans-serif;
   font-size: 0.7rem;
   padding-right: 20px;
