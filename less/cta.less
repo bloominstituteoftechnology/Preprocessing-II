@@ -6,64 +6,65 @@
     justify-content: flex-end;
 
     @media @tablet {
-        margin-top: 50px;
+      margin-top: 50px;
     }
+
     @media @phone {
-        margin-top: 25px;
-        flex-direction: column;
-        justify-content: center;
+      margin-top: 25px;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
-    }
+      font-size: 72px;
+      text-align: center;
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      align-items: center;
+      margin: 0 82px 0 0;
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-        .opacity;
-
-        &:hover {
-            background: black;
-            color: white;
-        }
-        
-        @media @tablet {
-            font-size: 56px;
-            margin-right: 62px;
-        }
-        
-        @media @phone {
-            margin-right: 5px;
-            font-size: 40px;
-        }
-    }
-
-    img {
-      .skew(10deg, 5deg);
       @media @tablet {
-        width: 330px;
-        height: 330px;
-        margin-right: 20px;
+        font-size: 56px;
+        margin-right: 62px;
       }
+        
       @media @phone {
-        height: 190px;
-        width: 190px;
-        margin-right: 0px;
-        align-self: center;
-        margin-top: 25px;
+        margin-right: 5px;
+        font-size: 40px;
       }
+    }    
+    
+    button {
+      border: 1px double black;
+      font-size: 16px;
+      background: white;
+      width: 170px;
+      height: 32px;
+      margin-top: 10px;
+      cursor: pointer;
+      .opacity;
+
+      &:hover {
+      background: black;
+      color: white;
     }
+  }
+
+  img {
+    .skew(10deg, 5deg);
+    @media @tablet {
+      width: 330px;
+      height: 330px;
+      margin-right: 20px;
+    }
+    @media @phone {
+      height: 190px;
+      width: 190px;
+      margin-right: 0px;
+      align-self: center;
+      margin-top: 25px;
+    }
+  }
 }// cta
