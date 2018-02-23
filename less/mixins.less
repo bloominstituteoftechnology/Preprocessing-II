@@ -1,6 +1,6 @@
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
+.border-radius (@radius: 25px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
@@ -9,6 +9,13 @@
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;
 }
+
+.custom-button(@width: 100px, @height: 25px, @background-color: green) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+}
+
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;

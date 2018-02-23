@@ -1,5 +1,5 @@
 // Main Content Styles
-
+@import "mixins";
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -7,6 +7,7 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   .border-radius();
 
    .top-content {
         display: flex;
@@ -27,3 +28,35 @@
         }
     }
 }// main-content
+.text-content{
+    .vision {
+        .custom-button;
+        &:hover {
+            background-color: darken(green, 50%);
+        }
+    }
+    .services{
+        .custom-button;
+        &:hover {
+            background-color: darken(green, 50%);
+        }
+    }
+    .about {
+        .custom-button;
+        &:hover {
+            background-color: darken(green, 50%);
+        }
+    }
+    .product {
+        .custom-button;
+        &:hover {
+            background-color: darken(green, 50%);
+        }
+    }
+    .features {
+        .custom-button;
+        &:hover {
+            background-color: darken(green, 50%);
+        }
+    }
+}
