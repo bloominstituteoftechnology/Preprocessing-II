@@ -9,6 +9,15 @@
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;
 }
+.button(@width,@height,@color) {
+	width:@width;
+	height:@height;
+	color:@color;
+	&:hover {
+		background-color:darken(black,20%);
+	}
+	
+}
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
