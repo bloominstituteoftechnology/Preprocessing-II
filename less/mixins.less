@@ -1,15 +1,4 @@
 // Mixins below variables
-
-.border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
-
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
-}
-
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
@@ -36,18 +25,29 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.buttonmix (@width: 170px) {
-	.border-radius;
-	border: 1px double black;
-	font-size: 16px;
-	background: white;
-	width: @width;
-	height: 32px;
-	margin-top: 10px;
-	cursor: pointer;
-
-	&:hover {
-		background: black;
-		color: white;
+#button {
+	.border-radius (@radius: 5px) {
+		-webkit-border-radius: @radius;
+		-moz-border-radius:    @radius;
+		border-radius:         @radius;
+	
+		-moz-background-clip:    padding;
+		-webkit-background-clip: padding-box;
+		background-clip:         padding-box;
+	}
+	.buttonmix (@width: 170px) {
+		#button.border-radius;
+		border: 1px double black;
+		font-size: 16px;
+		background: white;
+		width: @width;
+		height: 32px;
+		margin-top: 10px;
+		cursor: pointer;
+	
+		&:hover {
+			background: darken(lightpink, 20%);
+			color: white;
+		}
 	}
 }
