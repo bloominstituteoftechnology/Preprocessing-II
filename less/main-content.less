@@ -1,4 +1,5 @@
 // Main Content Styles
+@import "mixins";
 
 .main-content {
    border-top: 2px solid black; 
@@ -9,11 +10,25 @@
    line-height: 18px;
 
    .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
+       display: flex;
+       justify-content: space-around;
 
+       .features {
+           .button-mixin(30px, 60px)
+       };
+
+       .about {
+            .button-mixin(5px, 5px, green);
+            &:hover {
+                height: 20px;
+                width: 40px;
+            }
+       };
+
+    }
+    
     .middle-img {
+        .opacity(.35);
         display: block;
         margin: 30px auto;
     }
@@ -22,8 +37,28 @@
         display: flex;
         justify-content: space-around;
 
+        .services {
+            .button-mixin(10px, 10px, white);
+            &:hover{
+                background-color: darken(white, 95%);
+                height: 100px;
+                width: 100%;
+            }
+        };
+ 
+        .product {
+             .button-mixin(65px, yellow)
+        };
+
+        .vision {
+             .button-mixin(100px, 100px, pink);
+             &:hover{
+                 visibility: hidden;
+             }
+        };
+        
         p {
             padding-right: 20px;
-        }
+        };
     }
 }// main-content

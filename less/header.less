@@ -1,18 +1,21 @@
 // Header Styles
+@import "mixins";
+@import "media";
 
 header {
     width: 100%;
     display: flex;
-
+    
     nav {
         ul {
+            .box-shadow(10px 10px 10px 10px color(gray));
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
-
+            
             li {
-
+                
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -27,7 +30,19 @@ header {
     }
 
     .logo {
+        .rotate(45deg);
+        width: 25%;
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @desktop {
+            .rotate(90deg);
+        };
+        @media @tablet {
+            .rotate(135deg);
+        };
+        @media @phone {
+            .rotate(180deg);
+        };
     }
 }// header
