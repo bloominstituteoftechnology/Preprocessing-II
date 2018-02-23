@@ -35,3 +35,17 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+// custom button mixin
+
+.my-button-mixin (@width: 125px, @height: 25px, @bg-color: @button-color) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: white;
+}
+
+.button-hover {
+    background: darken(@button-color, 20%);
+    color: white;
+}
