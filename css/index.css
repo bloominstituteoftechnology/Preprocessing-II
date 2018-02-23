@@ -272,13 +272,70 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 250px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.main-content .top-content .text-content button:hover {
+  background: black;
+  color: white;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+.main-content .middle-img .text-content button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 250px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.main-content .middle-img .text-content button:hover {
+  background: black;
+  color: white;
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .text-content button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 250px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.main-content .bottom-content .text-content button:hover {
+  background: black;
+  color: white;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
