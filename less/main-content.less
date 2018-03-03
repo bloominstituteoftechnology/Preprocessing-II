@@ -1,27 +1,66 @@
 // Main Content Styles
+@tablet: ~"(max-width: 768px)";
 
 .main-content {
+   .rotate;
+   
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-
+   
    .top-content {
-        display: flex;
-        justify-content: space-around;
+       display: flex;
+       justify-content: space-around;
+       @media @tablet { 
+           border-top: 15px dashed orange; 
+           border-bottom: 55px dashed red;
+           margin: 19px 0 19px 0;
+           padding: 18px 0;
+           font-size: 66px;
+           line-height: 44px;
+        }
+        
+        @media @phone { 
+            border-top: 12px dotted blue; 
+            border-bottom: 1px dotted red;
+            margin: 5px 0 5px 0;
+            padding: 5px 0;
+            font-size: 6px;
+            line-height: 7px;
+        }
+        
     }
-
-    .middle-img {
+    
+    .middle-img {    
+        .opacity;
         display: block;
         margin: 30px auto;
     }
-
+    
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
+        
+        @media @tablet { 
+            border-top: 15px dashed orange; 
+            border-bottom: 55px dashed red;
+            margin: 19px 0 19px 0;
+            padding: 18px 0;
+            font-size: 66px;
+            line-height: 44px;
+        }
+    
+        @media @phone { 
+         border-top: 12px dotted blue; 
+         border-bottom: 1px dotted red;
+         margin: 5px 0 5px 0;
+         padding: 5px 0;
+         font-size: 6px;
+         line-height: 7px;
+     }
         p {
             padding-right: 20px;
         }

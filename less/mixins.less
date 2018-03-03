@@ -10,26 +10,26 @@
 	background-clip:         padding-box;
 }
 
-.opacity (@opacity: 0.5) {
+.opacity (@opacity: 0.5) {//main content
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+.box-shadow (@x: 5px, @y: 9px, @blur: 5px, @color: orange) { //contact
+	-webkit-box-shadow: @x @y @blur @color;
+	-moz-box-shadow: @x @y @blur @color;
+	box-shadow: @x @y @blur @color;
 }
 
-.rotate (@deg) {
+.rotate (@deg: 9deg) {//main content
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
 	-o-transform: 		 rotate(@deg);
 }
 
-.skew (@deg, @deg2) {
+.skew (@deg: 15deg, @deg2: 23deg) {//cta
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
