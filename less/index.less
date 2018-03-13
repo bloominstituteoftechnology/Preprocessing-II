@@ -30,7 +30,7 @@
     text-align: center;
     margin: 30px 20px 30px 40px;
 
-    &:hover { // Use of darken function to make red 20% darker when hovered over
+    &:hover { // Use of darken function to darken red by 20% when hovered
         background-color: darken(red, 20%);
     }
 }
@@ -121,15 +121,15 @@ header {
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;   
+        margin: 0 70px 0 0;   
         .rotate; // Use of rotate mixin
         
     @media @tablet {
         margin: 0 auto;
+        .rotate(0deg); // Negate the rotate mixin
     }
     
     @media @phone {
-        .rotate(0deg); // Negate the rotate mixin
         margin: 10px auto;
     }
 
@@ -205,7 +205,7 @@ header {
 // Contact Styles
 
 .contact p {
-    margin: 15px 0;
+    margin: 15px auto;
     font-size: 1rem * 2;
 }
 

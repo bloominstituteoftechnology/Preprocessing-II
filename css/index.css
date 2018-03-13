@@ -309,23 +309,23 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
-  -webkit-transform: rotate(310deg);
-  -moz-transform: rotate(310deg);
-  -ms-transform: rotate(310deg);
-  -o-transform: rotate(310deg);
+  margin: 0 70px 0 0;
+  -webkit-transform: rotate(290deg);
+  -moz-transform: rotate(290deg);
+  -ms-transform: rotate(290deg);
+  -o-transform: rotate(290deg);
 }
 @media (max-width: 768px) {
   .cta .cta-text {
     margin: 0 auto;
-  }
-}
-@media (max-width: 400px) {
-  .cta .cta-text {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
     margin: 10px auto;
   }
 }
@@ -350,9 +350,9 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: 10px 10px 10px 10px blue;
-  -moz-box-shadow: 10px 10px 10px 10px blue;
-  box-shadow: 10px 10px 10px 10px blue;
+  -webkit-box-shadow: 5px 10px 5px 5px blue;
+  -moz-box-shadow: 5px 10px 5px 5px blue;
+  box-shadow: 5px 10px 5px 5px blue;
 }
 @media (max-width: 768px) {
   .main-content {
@@ -372,9 +372,9 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
-  -webkit-box-shadow: 10px 10px 10px 10px blue;
-  -moz-box-shadow: 10px 10px 10px 10px blue;
-  box-shadow: 10px 10px 10px 10px blue;
+  -webkit-box-shadow: 5px 10px 5px 5px blue;
+  -moz-box-shadow: 5px 10px 5px 5px blue;
+  box-shadow: 5px 10px 5px 5px blue;
 }
 .main-content .top-content button {
   border: 1px double black;
@@ -395,9 +395,9 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
-  -webkit-box-shadow: 10px 10px 10px 10px blue;
-  -moz-box-shadow: 10px 10px 10px 10px blue;
-  box-shadow: 10px 10px 10px 10px blue;
+  -webkit-box-shadow: 5px 10px 5px 5px blue;
+  -moz-box-shadow: 5px 10px 5px 5px blue;
+  box-shadow: 5px 10px 5px 5px blue;
   align-items: center;
 }
 .main-content .bottom-content p {
@@ -423,7 +423,7 @@ header .logo {
   opacity: 0.5;
 }
 .contact p {
-  margin: 15px 0;
+  margin: 15px auto;
   font-size: 2rem;
 }
 footer {
