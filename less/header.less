@@ -19,11 +19,59 @@ header {
             color: black;
   
         }
+        @media @phone {
+          text-decoration: none;
+          display: flex;
+          color: #b0b0b0;
+          font-size: 1.3rem;
+          padding: 20.5px 0%;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid grey;
+        }        
+      }
+      @media @tablet {
+        width: 63%;
+        display: flex; 
+      }
+
+      @media @phone {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: auto;
+        border-top: 1px solid grey;
       }
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @phone {
+          width: 50%;
+          margin: 2.5% auto;
+          order: -1;
+        }
+    }
+    @media @tablet {
+      width: 100%;
+      display: inline-flex;
+      justify-content: flex-start;
+      margin-top: 20px;
+      align-items: center;
+    }
+    @media @phone {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 45px;
+      margin-top: 10px;
     }
   }// header 

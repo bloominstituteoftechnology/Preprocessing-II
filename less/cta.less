@@ -1,9 +1,17 @@
 // Call To Action (CTA) Styles
 
+
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    img {          // added img tag
+        .skew;     // added skew to img tag 
+        @media @phone {
+            width: 100%;
+        }
+    }
+    
 
     .cta-text {
         font-size: 72px;
@@ -14,6 +22,27 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .opacity; // added opacity
+        .rotate; // added rotate to cta text
+        @media @tablet {
+            font-size: 3.5rem;
+            text-align: center;
+            letter-spacing: .313rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0% auto;
+        }
+        @media @phone {
+            font-size: 4.5rem;
+            text-align: center;
+            letter-spacing: .313rem;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+            margin: 0% auto;
+        }
     }
 
     .cta-text button {
@@ -29,5 +58,44 @@
             background: black;
             color: white;
         }
+       
+        .border-radius; // added radius to button
+        .rotate; // added rotation to button
+        .box-shadow;
+        @media @tablet {
+            border: 1px double black;
+            font-size: 1rem;
+            background: white;
+            width: 56% ;
+            height: 32px ;
+            margin-top: 8px;
+            margin-bottom: 35px;
+            cursor: pointer;
+        }
+        @media @phone {
+            border: 1px double black;
+            font-size: 1rem;
+            background: white;        
+            margin-top: 20px;
+            margin-bottom: 8.8%;
+            cursor: pointer;
+        }
+        
+
+    }
+    @media @tablet {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-around;
+        padding-right: 6.5%;
+    }
+    @media @phone {
+        display: flex;
+        width: 100%;
+        margin-top: 3%;
+        padding-left: 9.5%;
+        margin-bottom: 0%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }// cta
