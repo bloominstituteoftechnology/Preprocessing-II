@@ -142,54 +142,14 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-}
-img {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
 }
 .container {
-  max-width: 960px;
+  width: 880px;
   margin: auto;
-  padding: 20px 40px;
-  border: 1px solid black;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-box-shadow: 10px 5px 5px teal;
-  -moz-box-shadow: 10px 5px 5px teal;
-  box-shadow: 10px 5px 5px teal;
-}
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    -webkit-box-shadow: 0 0 0;
-    -moz-box-shadow: 0 0 0;
-    box-shadow: 0 0 0;
-  }
 }
 header {
   width: 100%;
   display: flex;
-}
-@media (max-width: 768px) {
-  header {
-    flex-direction: column-reverse;
-  }
 }
 header nav {
   margin-top: 40px;
@@ -197,31 +157,9 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
-@media (max-width: 768px) {
-  header nav {
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  header nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
-}
-@media (max-width: 400px) {
-  header nav a {
-    width: 100%;
-    padding: 20px 0px;
-    border-top: 1px solid black;
-    text-align: center;
-  }
-  header nav a:last-child {
-    border-bottom: 1px solid black;
-  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -230,21 +168,11 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
-  -webkit-transform: skew(10deg, 10deg);
-  -moz-transform: skew(10deg, 10deg);
-  -ms-transform: skew(10deg, 10deg);
-  -o-transform: skew(10deg, 10deg);
-}
-@media (max-width: 768px) {
-  header .logo {
-    align-self: center;
-    margin: 28px 0 0 0;
-  }
 }
 .cta {
   display: flex;
   margin-top: 72px;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .cta .cta-text {
   font-size: 72px;
@@ -256,35 +184,18 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
-@media (max-width: 768px) {
-  .cta .cta-text {
-    font-size: 60px;
-    margin: 0 0 0 0;
-  }
-}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  margin-top: 10px;
-  cursor: pointer;
+  background: white;
   width: 170px;
   height: 32px;
-  background-color: orange;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .cta .cta-text button:hover {
+  background: black;
   color: white;
-  background-color: #990000;
-}
-.cta img {
-  -webkit-transform: rotate(37deg);
-  -moz-transform: rotate(37deg);
-  -ms-transform: rotate(37deg);
-  -o-transform: rotate(37deg);
-}
-@media (max-width: 768px) {
-  .cta img {
-    display: none;
-  }
 }
 .main-content {
   border-top: 2px solid black;
@@ -298,53 +209,16 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 400px) {
-  .main-content .top-content {
-    flex-direction: column;
-  }
-}
 .main-content .middle-img {
   display: block;
-  width: 100%;
   margin: 30px auto;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 400px) {
-  .main-content .bottom-content {
-    flex-direction: column;
-  }
-}
 .main-content .bottom-content p {
   padding-right: 20px;
-}
-@media (max-width: 400px) {
-  .main-content .bottom-content p {
-    padding-right: 0px;
-  }
-}
-@media (max-width: 400px) {
-  .main-content .text-content {
-    margin-bottom: 35px;
-  }
-  .main-content .text-content:last-child {
-    margin-bottom: 0px;
-  }
-}
-.main-content .text-content button {
-  border: 1px double black;
-  font-size: 16px;
-  margin-top: 10px;
-  cursor: pointer;
-  width: 80%;
-  height: auto;
-  background-color: orange;
-}
-.main-content .text-content button:hover {
-  color: white;
-  background-color: #990000;
 }
 .contact p {
   margin: 20px 0;
@@ -352,4 +226,104 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+.container {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid black;
+  padding: 10px;
+  -webkit-box-shadow: 10px 5px 5px teal;
+  -moz-box-shadow: 10px 5px 5px teal;
+  box-shadow: 10px 5px 5px teal;
+  width: 100%;
+  max-width: 1028px;
+}
+img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.cta {
+  flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 180px;
+  height: 60px;
+  background-color: orange;
+}
+.cta .cta-text button:hover {
+  color: white;
+  background-color: #990000;
+}
+.cta img {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  height: auto;
+}
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
+h4 {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+  }
+}
+header .logo {
+  -webkit-transform: skew(10deg, 10deg);
+  -moz-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  -o-transform: skew(10deg, 10deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+    margin: 20px 0 0 0;
+  }
+}
+.middle-img {
+  width: 100%;
+}
+.text-content button {
+  border: 1px double black;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 180px;
+  height: 20px;
+  background-color: orange;
+}
+.text-content button:hover {
+  color: white;
+  background-color: #990000;
 }
