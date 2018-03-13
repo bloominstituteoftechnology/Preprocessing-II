@@ -190,6 +190,7 @@ header nav a {
   text-decoration: none;
   color: #b0b0b0;
   font-size: 1.6rem;
+  padding: 6px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -198,11 +199,12 @@ header nav a {
   background-clip: padding-box;
 }
 header nav a:hover {
+  background-color: gray;
   text-decoration: none;
-  color: black;
-  -webkit-box-shadow: 10px 10px 10px 5px gray;
-  -moz-box-shadow: 10px 10px 10px 5px gray;
-  box-shadow: 10px 10px 10px 5px gray;
+  color: white;
+  -webkit-box-shadow: 10px 10px 10px #b1b1b1;
+  -moz-box-shadow: 10px 10px 10px #b1b1b1;
+  box-shadow: 10px 10px 10px #b1b1b1;
 }
 @media (max-width: 400px) {
   header nav a {
