@@ -41,5 +41,5 @@ Create your own namespace for the following elements:
 * Buttons
 * p tags
 
-Once you have created your own unique namespace styles, apply them throughout the site using the > accessor to overrite the current styles in place as you see fit.  This is open ended so try and find practical ways this could help you or just go wild and change everything ;)
+Once you have created your own unique namespace styles, apply them throughout the site using the > accessor to overwrite the current styles in place as you see fit.  This is open ended so try and find practical ways this could help you or just go wild and change everything ;)
 

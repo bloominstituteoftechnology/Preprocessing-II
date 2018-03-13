@@ -8,22 +8,65 @@
    font-size: 16px;
    line-height: 18px;
 
+   
+   @media @tablet {
+       margin: 75px 20px 35px;
+    }
+
+    @media @phone {
+
+    }   
+
+   button {
+       .button;
+   }
+   
+   
+
    .top-content {
         display: flex;
         justify-content: space-around;
+    
+        @media @tablet {
+        }
+     
+        @media @phone {
+        }
     }
-
+    
     .middle-img {
         display: block;
         margin: 30px auto;
+        .opacity(0.6);
+        .box-shadow(10px 5px 5px blue);
+        .border-radius(15px);
+
+        @media @tablet {
+            .opacity(0.2);
+        }
+
+        @media @phone {
+            .opacity(0.1);
+        }
     }
+    
+    
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @tablet {
+        }
+
+        @media @phone {
+        }
+
+        button {
+            .button;
+        }
         p {
             padding-right: 20px;
         }
     }
-}// main-content
+}   
