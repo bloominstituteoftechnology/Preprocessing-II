@@ -5,6 +5,17 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    @media @phone {
+        flex-flow: column;
+        align-items: center;
+        margin: 20px auto 0;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,8 +25,19 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+        .opacity; // mixin opacity
 
+        @media @tablet {
+            margin: 0 4% 0 0;
+            font-size: 50px;
+        }
+
+        @media @phone {
+            margin: 0 0 50px 0;
+            max-width: 80%;
+        }
+    }
+    
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
@@ -25,9 +47,23 @@
         margin-top: 10px;
         cursor: pointer;
 
+        #ourstyle > .buttons;
+
         &:hover {
             background: black;
             color: white;
+        }
+    }
+    img {
+        .rotate(180deg); // mixin rotate 180 degress
+        
+        @media @tablet {
+            max-width: 53%;
+            height: auto;
+        }
+
+        @media @phone {
+            max-width: 100%;
         }
     }
 }// cta
