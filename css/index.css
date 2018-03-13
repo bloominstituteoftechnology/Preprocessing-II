@@ -411,6 +411,8 @@ header .logo {
 }
 .contact p {
   margin: 15px 0;
+  color: blue;
+  font-style: italic;
 }
 @media (max-width: 400px) {
   .contact p {
@@ -421,6 +423,8 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
   font-size: 1.5rem;
+  color: blue;
+  font-style: italic;
 }
 @media (max-width: 400px) {
   footer {
