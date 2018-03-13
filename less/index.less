@@ -1,3 +1,5 @@
+// Imports to index.less
+
 @import "reset.less";
 @import "variables.less";
 @import "mixins.less";
@@ -8,7 +10,39 @@
 @import "contact.less";
 @import "footer.less";
 
+// Mixins
 
+header {
+    .skew;
+}
+
+.cta{
+
+    .cta-text {    
+        .rotate;
+    
+        button {
+            .border-radius;
+        }
+    } 
+}
+
+.main-content {
+    .border-radius;
+    .box-shadow;
+
+    .top-content {
+        .box-shadow;
+    }
+
+    .bottom-content {
+        .box-shadow;
+    }
+
+    .middle-img {
+        .opacity;
+    }
+}
 
 
 

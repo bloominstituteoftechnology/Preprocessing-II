@@ -1,6 +1,6 @@
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
+.border-radius (@radius: 15px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
@@ -16,20 +16,20 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
+.box-shadow (@string: 10px 10px 10px 10px blue) {
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
 }
 
-.rotate (@deg) {
+.rotate (@deg: 310deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
 	-o-transform: 		 rotate(@deg);
 }
 
-.skew (@deg, @deg2) {
+.skew (@deg: 8deg, @deg2: 2deg) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
