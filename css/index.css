@@ -230,16 +230,7 @@ nav ul li a:hover {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-  -webkit-transform: skew(15, 40);
-  -moz-transform: skew(15, 40);
-  -ms-transform: skew(15, 40);
-  -o-transform: skew(15, 40);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+
 }
 .main-content .bottom-content {
   display: flex;
