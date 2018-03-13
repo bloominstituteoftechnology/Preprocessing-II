@@ -268,9 +268,15 @@ header .logo {
   -webkit-opacity: 0.6;
   -moz-opacity: 0.6;
   opacity: 0.6;
-  -webkit-box-shadow: 10px 5px 5px red;
-  -moz-box-shadow: 10px 5px 5px red;
-  box-shadow: 10px 5px 5px red;
+  -webkit-box-shadow: 10px 5px 5px blue;
+  -moz-box-shadow: 10px 5px 5px blue;
+  box-shadow: 10px 5px 5px blue;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 @media (max-width: 768px) {
   .main-content .middle-img {
