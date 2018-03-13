@@ -5,6 +5,16 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        justify-content: center;
+    }//.cta 
+    
+    @media @phone {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }//.cta  
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,7 +24,16 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-        .skew (30deg,0);
+        // .skew (30deg,0);
+
+        @media @tablet {
+            margin: 0 40px 0 0;
+        }//.cta .cta-text 
+     
+        @media @phone {
+            margin: 0 0 50px 0;
+        }//.cta .cta-text 
+     
     }
 
     .cta-text button {
@@ -36,6 +55,10 @@
     }
 
     img {
+        @media @phone {
+            max-width: 80%;
+        }//.cta img 
+        
         .rotate(180deg);
         &:hover {
             .opacity(.5);

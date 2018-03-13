@@ -8,19 +8,40 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet{
+      margin: 75px 20px 35px;
+    }//.main-content 
+ 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            justify-content: space-around;
+            flex-direction: column;
+            height: 300px;
+        }//.main-content .top-content 
+
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        @media @tablet{
+            width: 100%;
+        }//.main-content .middle-img 
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }//.main-content .bottom-content 
 
         p {
             padding-right: 20px;
