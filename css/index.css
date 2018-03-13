@@ -183,10 +183,6 @@ header nav {
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-top: 1px solid gray;
-  }
-  header nav:hover {
-    background: gray;
   }
 }
 header nav a {
@@ -213,9 +209,14 @@ header nav a:hover {
     padding: 5% 0;
     font-size: 2rem;
     text-align: center;
+    border-top: 1px solid gray;
   }
   header nav a:hover {
+    background: gray;
     color: white;
+    -webkit-box-shadow: 10px 10px 15px 5px #a1a0a0;
+    -moz-box-shadow: 10px 10px 15px 5px #a1a0a0;
+    box-shadow: 10px 10px 15px 5px #a1a0a0;
   }
 }
 @media (max-width: 400px) {
@@ -232,6 +233,12 @@ header .logo:hover {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    margin: 0;
+  }
 }
 .cta {
   display: flex;

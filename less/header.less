@@ -22,11 +22,6 @@ header {
           align-items: center;
           justify-content: center;
           width: 100%;
-          border-top: 1px solid gray;
-                    
-          &:hover {
-              background: gray;
-          }
       }
   
       a {
@@ -41,15 +36,18 @@ header {
   
         }
 
-        @media (max-width: 400px) {
+        @media @phone {
             width: 100%;
             height: auto;
             padding: 5% 0;
             font-size: 2rem;
             text-align: center;
+            border-top: 1px solid gray;
                         
             &:hover {
+                background: gray;
                 color: white;
+                .box-shadow(10px 10px 15px 5px rgb(161, 160, 160));
             }
         }
       }
@@ -66,6 +64,11 @@ header {
         
         &:hover {
           .rotate (180deg);
+        }
+
+        @media @tablet {
+          order: -1;
+          margin: 0;
         }
     }
 }// header 
