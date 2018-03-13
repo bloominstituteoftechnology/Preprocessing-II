@@ -169,6 +169,54 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  header nav {
+    width: 50%;
+    margin-left: 3%;
+  }
+  header .logo {
+    margin: 28px 0 0 8%;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  header nav a {
+    width: 100%;
+    margin: 0;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.0rem;
+    border-bottom: 1px solid gray;
+  }
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+  header nav a:hover {
+    background: gray;
+  }
+  header .logo {
+    order: -1;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
@@ -200,6 +248,30 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 768px) {
+  .cta {
+    justify-content: flex-end;
+  }
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .cta .cta-text {
+    margin: 0;
+  }
+  .cta img {
+    max-width: 80%;
+    display: block;
+    margin-top: 55px;
+  }
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -218,9 +290,24 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .button {
+  border: 1px double black;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 16px;
+}
+.main-content .button .features {
+  width: 170px;
+  height: 30px;
+  color: red;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-transform: rotate(180);
+  -moz-transform: rotate(180);
+  -ms-transform: rotate(180);
+  -o-transform: rotate(180);
 }
 .main-content .bottom-content {
   display: flex;
@@ -229,8 +316,34 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+  .main-content {
+    margin: 75px 2% 35px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+  }
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
 .contact p {
   margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px 2%;
+    font-size: 1.4rem;
+  }
 }
 footer {
   text-align: center;

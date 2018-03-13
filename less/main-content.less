@@ -7,16 +7,28 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-   .border-radius(@radius 5px);
+   .border-radius(5px);
 
    .top-content {
         display: flex;
         justify-content: space-around;
     }
 
+    .button {
+        border: 1px double black;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 16px;
+
+        .features {
+            .button(170px, 30px, red)
+        }
+    }
+
     .middle-img {
         display: block;
         margin: 30px auto;
+        .rotate(180);
     }
 
     .bottom-content {
@@ -28,3 +40,29 @@
         }
     }
 }// main-content
+
+@media @tablet {
+
+.main-content .middle-img {
+    width: 100%;
+     margin: 25px auto;
+ }
+
+ .main-content {
+    margin: 75px 2% 35px;
+ }
+} //768px
+
+@media @mobile {
+
+.main-content .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+}
+} //400px
