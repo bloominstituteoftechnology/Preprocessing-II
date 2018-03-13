@@ -17,13 +17,61 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
+
+            @media @phone {
+              color: white;
+              background: black;
+            }
   
         }
+
+        @media @phone {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 2rem;
+          border-bottom: 1px solid gray;
+        }
+      }
+
+      &:first-child {
+        @media @phone {
+          border-top: 1px solid gray;
+        }
+      }
+
+      @media @tablet {
+        width: 59%;
+        margin-left: 3%;
+      }
+
+      @media @phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
       }
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          margin: 28px 0 0 8%;
+        }
+
+        @media @phone {
+          order: -1;
+          align-self: center;
+        }
     }
+
+    @media @phone {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
   }// header 
