@@ -1,20 +1,5 @@
 // Call To Action (CTA) Styles
 
-.button-mixin(@color) {
-    border: 1px double black;
-    font-size: 16px;
-    background: @color;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-
-    &:hover {
-        background: black;
-        color: @color;
-    }
-}
-
 .cta {
     display: flex;
     margin-top: 72px;
@@ -46,7 +31,18 @@
     }
 
     .cta-text button {
-        .button-mixin(white);
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin-top: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
     }
 
     img {
