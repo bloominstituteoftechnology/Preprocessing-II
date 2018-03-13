@@ -144,7 +144,7 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
   margin: auto;
 }
 header {
@@ -240,7 +240,11 @@ footer {
   -moz-box-shadow: 10px 5px 5px teal;
   box-shadow: 10px 5px 5px teal;
   width: 100%;
-  max-width: 1028px;
+}
+@media (max-width: 768px) {
+  .container {
+    border: 0;
+  }
 }
 img {
   -webkit-opacity: 0.5;
@@ -249,11 +253,13 @@ img {
 }
 .cta {
   flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .cta {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 .cta .cta-text button {
@@ -269,11 +275,28 @@ img {
   color: white;
   background-color: #990000;
 }
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    padding-left: 100px;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    font-size: 50px;
+    padding-left: 80px;
+  }
+}
 .cta img {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   height: auto;
 }
 @media (max-width: 768px) {
@@ -299,6 +322,25 @@ h4 {
     width: 100%;
   }
 }
+@media (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav a {
+    padding: 10px;
+    border-bottom: solid black 1px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav a:first-child {
+    border-top: solid black 1px;
+  }
+}
 header .logo {
   -webkit-transform: skew(10deg, 10deg);
   -moz-transform: skew(10deg, 10deg);
@@ -311,8 +353,25 @@ header .logo {
     margin: 20px 0 0 0;
   }
 }
+@media (max-width: 400px) {
+  .top-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .middle-img {
   width: 100%;
+}
+@media (max-width: 400px) {
+  .bottom-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  .text-content {
+    padding: 10px;
+  }
 }
 .text-content button {
   border: 1px double black;
