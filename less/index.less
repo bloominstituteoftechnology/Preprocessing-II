@@ -1,3 +1,411 @@
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+@import "general-styles.less";
+@import "header.less";
+@import "cta.less";
+@import "main-content.less";
+@import "contact.less";
+@import "footer.less";
+
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container {
+  width: 880px;
+  margin: auto;
+  @tablet: ~"(max-width: 768px)";
+    width: 100%;
+    
+    @phone: ~"(max-width: 400px)";
+        width: 100%;
+        overflow: hidden;
+    }
+
+header {
+  width: 100%;
+  display: flex;
+  @media @tablet {
+    width: 100%;
+  }
+  @media @phone {
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    margin-top:37px;
+    flex-direction: column;
+    
+}
+
+    nav{
+     margin-top: 40px;
+     width: 610px;
+     margin-left: 30px;
+     justify-content: space-between;
+     display: flex;
+     position: relative;
+     left: 30px;
+     @media @tablet {
+         width: 540px;
+  }
+  
+     @media @phone {
+         display:flex;
+         align-items: center;
+         flex-direction: column;
+         font-size: 21px;
+         margin: -2px 0 0 1.8%;
+         width: 100%;
+         order: 1;
+}
+
+}
+        a {
+            text-decoration: none;
+            color: #b0b0b0;
+            @media @tablet {
+                padding: 0 13px;
+                margin-left: 1.2%;
+                margin-right: 0%;
+  } 
+
+            @media @phone {
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 21px;
+                border-top: solid grey 0.2px;
+                font-size: 21px;
+                margin: -2px 0 0 1.8%;
+                width: 400px;
+}
+}
+            a:hover {
+                text-decoration: underline;
+                color: black;
+}
+                .logo {
+                    align-self: flex-end;
+                    margin: 28px 0 0 91px;
+                        @media @tablet {
+                            width: 100%;
+                            position: relative;
+                            right: .9%;
+  }
+                        @media @phone {
+                            flex-direction: column;
+                            justify-content: center;
+                            margin: -57px 20.5% -20px 0;
+                            padding-top: 30px;
+                            width: 48%;
+                            padding-bottom: 30px;
+}
+}
+}
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+  @media @tablet {
+    padding: 20px;
+    margin-bottom: 7px;
+  }
+  @media @phone {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 0 1px 1.8%;
+    border-top: solid grey 0.2px;
+    img{
+      width: 100%;
+    }
+}
+
+    .cta-text {
+        font-size: 4.14rem;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 82px 0 0;
+        .opacity(@opacity: 0.5);
+            @media @tablet {
+                width:44%;
+                letter-spacing: 6px;
+                margin-right: 1%;
+                margin-bottom: 20px;
+  }
+            @media @phone {
+                margin: 0 0.5% 30px 0;
+                padding: 2.6%;
+                width:50%;
+}
+}
+        button {
+            border: 1px double black;
+            font-size: 16px;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+            .border-radius(@radius: 5px);
+            .box-shadow(10px 4px 8px pink);
+}
+            button:hover {
+                background: black;
+                color: white;
+}
+}
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+  @media @tablet {
+    width: 97%;
+    margin: 55px 2.6% -50px 2.6%;
+  }
+  @media @phone {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 7% 0 6%;
+        width: 100%;
+}
+
+    .top-content {
+         display: flex;
+         justify-content: space-around;
+         @media @tablet {
+         margin: 0 0.9% 0 0;
+  }
+         @media @phone {
+         display: flex;
+         flex-direction: column;
+         margin: 16px 6% -14px -0.8%;
+
+} 
+}
+        .middle-img {
+            display: block;
+            margin: 30px auto;
+                @media @tablet {
+                    margin: 30px 0 67px 0;
+                    width: 98%;
+  }
+                @media @phone{
+                    padding: 2.5%;
+                    max-height: 95px;
+                    margin: 18px 0 68px -4.7%;
+                    width: 100%;
+}
+}
+            .bottom-content {
+                display: flex;
+                justify-content: space-around;
+                    @media @tablet {
+                        margin: -37px 1% 0 0px;
+  }
+                    @media @phone {
+                        display: flex;
+                        flex-direction: column;
+                        margin: -48px 3% -25px -0.5%;
+}
+}
+                p {
+                    padding-right: 20px;
+}
+.contact{
+    margin: 0 0 0 0;
+    @media @tablet{
+        margin: 70px 0 0 3.1%;
+    }
+    @media @phone{
+        margin: 30px 0 0 5.1%;
+    }   
+    p {
+        margin: 40px 0;
+        .skew(1deg, 15deg);
+            @media @tablet {
+                padding: 2;
+                margin: 64px 0 0 0;
+  }
+            @media @phone {
+                padding: 4.5%;
+                margin: 12px 0 0 0;
+}
+}
+}
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  .rotate(90deg);
+    @media @tablet {
+        width: 100%;
+  }
+    @media @phone {
+        margin: 7px 5% 0 8.5%;
+}
+}
+
+
+
+
+
+
+
 
 
 
