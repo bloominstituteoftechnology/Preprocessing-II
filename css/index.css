@@ -150,31 +150,25 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
 }
-@media (max-width: 400px) {
-  header {
-    -webkit-transform: rotate(10);
-    -moz-transform: rotate(10);
-    -ms-transform: rotate(10);
-    -o-transform: rotate(10);
-    background: #71f442;
-  }
-}
-header nav ul {
+nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
 }
-header nav ul li a {
+nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
 }
-header nav ul li a:hover {
+nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
-header .logo {
+.logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
@@ -213,6 +207,9 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+  -webkit-box-shadow: 10px 5px 5px 10px #f49542;
+  -moz-box-shadow: 10px 5px 5px 10px #f49542;
+  box-shadow: 10px 5px 5px 10px #f49542;
 }
 .main-content .top-content {
   display: flex;
@@ -225,18 +222,24 @@ header .logo {
 }
 .main-content .top-content button:hover {
   background-color: #c50b33;
+  -webkit-transform: rotate(20);
+  -moz-transform: rotate(20);
+  -ms-transform: rotate(20);
+  -o-transform: rotate(20);
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-}
-.main-content .middle-img button {
-  background-color: #eef442;
-  height: 50px;
-  width: 75px;
-}
-.main-content .middle-img button:hover {
-  background-color: #4a4c04;
+  -webkit-transform: skew(15, 40);
+  -moz-transform: skew(15, 40);
+  -ms-transform: skew(15, 40);
+  -o-transform: skew(15, 40);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .main-content .bottom-content {
   display: flex;
