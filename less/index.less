@@ -23,16 +23,17 @@ img {
     .opacity(0.5);
 }
 .cta {
+    flex-wrap: nowrap;
     @media @tablet{
         flex-direction: column;
+        justify-content: space-between;
     }
 }
 .cta img {
    .rotate(90deg);
    height:auto;
-    @media @phone{
-        height:100%;
-        width: auto;
+    @media @tablet{
+        display: none;
     }
 
 }

@@ -247,9 +247,13 @@ img {
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
+.cta {
+  flex-wrap: nowrap;
+}
 @media (max-width: 768px) {
   .cta {
     flex-direction: column;
+    justify-content: space-between;
   }
 }
 .cta img {
@@ -259,10 +263,9 @@ img {
   -o-transform: rotate(90deg);
   height: auto;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .cta img {
-    height: 100%;
-    width: auto;
+    display: none;
   }
 }
 h4 {
