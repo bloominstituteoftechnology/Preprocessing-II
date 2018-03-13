@@ -384,6 +384,9 @@ header .logo {
   text-align: center;
   margin: 30px 20px 30px 40px;
 }
+.main-content .top-content button:hover {
+  background-color: #990000;
+}
 @media (max-width: 400px) {
   .main-content .top-content {
     justify-content: column;
@@ -407,6 +410,9 @@ header .logo {
   background-color: red;
   text-align: center;
   margin: 30px 20px 30px 40px;
+}
+.main-content .bottom-content button:hover {
+  background-color: #990000;
 }
 .middle-img {
   display: block;
