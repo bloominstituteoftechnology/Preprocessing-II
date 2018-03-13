@@ -1,5 +1,19 @@
+/* import @ rules:
+@import "foo";      // foo.less is imported
+@import "foo.less"; // foo.less is imported
+@import "foo.php";  // foo.php imported as a Less file
+@import "foo.css";  // statement left in place, as-is
+*/
 
-
+@import 'reset'; //import reset.less
+@import 'variables'; //import variables.less
+@import 'mixins'; //imports mixins.less
+@import 'general-styles'; //imports general-styles.less
+@import 'header'; //imports header.less
+@import 'cta'; //imports cta.less
+@import 'main-content'; //imports main-content.less
+@import 'contact'; //imports contact.less
+@import 'footer'; //imports footer.less
 
 
 
