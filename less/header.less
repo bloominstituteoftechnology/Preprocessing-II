@@ -1,29 +1,75 @@
 // Header Styles
 
 header {
+  width: 100%;
+  display: flex;
+
+  @media @tablet {
+    width: 90%;
+    margin: 0 2.6%;
+  }
+
+  @media @phone {
+    flex-direction: column;
     width: 100%;
+    margin: 0;
+  }
+
+  nav {
+    margin-top: 40px;
+    width: 610px;
+    justify-content: space-between;
     display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
-      display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
+    font-size: 1.6rem;
+
+    @media @phone {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      font-size: 2.4rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #b0b0b0;
+
+      @media @phone {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding: 4.75%;
+        padding-left: 11%;
+        padding-bottom: 5.8%;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: black;
+      }
+
+      &:first-child {
+        @media @phone {
+          border-top: 1px solid black;
         }
       }
     }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+  }
+
+  .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 91px;
+    .opacity;
+    .rotate(5deg);
+
+    @media @tablet {
+      margin: 0 2.6%;
     }
-  }// header 
+
+    @media @phone {
+      margin: 5.5% auto;
+      order: -1;
+      margin-right: 22%;
+    }
+  }
+} // header
