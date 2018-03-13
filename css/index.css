@@ -261,7 +261,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta .cta-text {
-    font-size: 4.5rem;
+    font-size: 62px;
     align-items: center;
     margin: 10px 3% 0 4%;
   }
