@@ -24,10 +24,16 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius (@radius: 5px);
 
         &:hover {
             background: black;
             color: white;
         }
+    }
+
+    img {
+        .opacity (@opacity: 0.5);
+        .rotate (180deg);
     }
 }// cta
