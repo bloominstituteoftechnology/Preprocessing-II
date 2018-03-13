@@ -189,6 +189,10 @@ nav ul li a:hover {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -225,10 +229,6 @@ nav ul li a:hover {
 }
 .main-content .top-content button:hover {
   background-color: #c50b33;
-  -webkit-transform: rotate(20);
-  -moz-transform: rotate(20);
-  -ms-transform: rotate(20);
-  -o-transform: rotate(20);
 }
 .main-content .middle-img {
   display: block;
