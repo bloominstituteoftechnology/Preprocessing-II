@@ -3,28 +3,66 @@
 header {
     width: 100%;
     display: flex;
+    background-color: @orangish;
+    @media @phone {
+      flex-direction: column;
+      margin-top: 0;
+    }
   
     nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
+      margin-top: 4px * 10px; 
+      width: 80%;
+      justify-content: space-around;
       display: flex;
+      font-size: 1.6rem;
+      @media @tablet {
+          align-items: center;
+          margin-top: 0;
+      }    
+      @media @phone {
+          width: 100%;
+          flex-direction: column;
+      }
   
       a {
         text-decoration: none;
-        color: #b0b0b0;
+        color: @blackish;       
+        @media @phone {
+            flex-direction: column;
+            margin-top: 0;
+            height: 45px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border-bottom: 1px solid @brightbluish;
+        }
+
   
         &:hover {
             text-decoration: underline;
-            color: black;
+            color: @brightbluish;
   
         }
       }
     }
   
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
         .rotate(-3deg);
+        width: 20%;
+        align-self: flex-end;
+        margin: 28px 0 0 10%;
+        @media @tablet {
+            align-self: center;
+            margin: 0 3.25% 0 9.1%;
+        }
+        @media @phone{
+            .rotate(0deg);
+            align-self: center;
+            width: 100%;
+            margin: 0;
+            padding: 5% 25%;
+            border-bottom: 1px solid @brightbluish;
+        }
     }
-  }// header 
+}// header 

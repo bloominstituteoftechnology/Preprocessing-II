@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -16,6 +20,23 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
+    width: 100%;
+    background-color: @bluish;
+
+    @media @tablet {
+        .container {
+          padding: 1.3%;
+        }
+    }
+    @media @phone {
+        .container {
+          padding: 0;
+        }
+    }
+}
+
+button {
+    .custom-buttom
 }

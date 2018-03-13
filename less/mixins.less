@@ -35,3 +35,17 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.custom-buttom (@width: 50%, @height: 30%, @background-color: @pinkish) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+	cursor: pointer;
+	.border-radius;
+	margin-top: 10px;
+
+	&:hover {
+		background: darken(@pinkish, 20%);
+		color: @brightbluish;
+	}
+}
