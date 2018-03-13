@@ -35,3 +35,40 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+//Custom button mixin
+
+.button-mix (@width: 100px, @height: auto, @background-color: yellow) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+	font-family: 'Titillium Web';
+	margin: 10px auto;
+	
+	&:hover {
+		background-color: darken(@background-color, 20%);
+	} //hover
+}//.button-mix
+
+//namespaces
+
+#ourstyle () {
+	.headings {
+		color: gold;
+		font-family: cursive;
+	}
+
+	.buttons {
+		background-color: darkblue;
+		cursor: crosshair;
+		border: double blue 1px;
+	}
+
+	.ps {
+		background-color: black;
+		color: white;
+	}
+}
+
+
+
