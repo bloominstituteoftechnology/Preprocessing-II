@@ -276,6 +276,11 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content button {
+  width: 100px;
+  height: 30px;
+  background-color: lightblue;
+}
 @media (max-width: 400px) {
   .main-content .top-content .text-content {
     width: 100%;
@@ -285,17 +290,22 @@ header .logo {
     flex-direction: column;
   }
 }
-.main-content .middle-img {
+.main-content .top-content .middle-img {
   display: block;
-  margin: 30px auto;
-  -webkit-transform: skew(15deg, 15deg);
-  -moz-transform: skew(15deg, 15deg);
-  -ms-transform: skew(15deg, 15deg);
-  -o-transform: skew(15deg, 15deg);
+  margin: 100px auto;
+  -webkit-transform: skew(5deg, 5deg);
+  -moz-transform: skew(5deg, 5deg);
+  -ms-transform: skew(5deg, 5deg);
+  -o-transform: skew(5deg, 5deg);
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .text-content button {
+  width: 100px;
+  height: 30px;
+  background-color: lightblue;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
