@@ -4,7 +4,11 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    @media @tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -13,21 +17,37 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 9% 0 0;
+        width: 50%;
+        @media @tablet{
+          margin: 0 0 40px 0;
+        }
+        h1{
+          font-size: 60px;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
         background: white;
-        width: 170px;
-        height: 32px;
+        .button-creator(19%, 32px);
         margin-top: 10px;
         cursor: pointer;
+        @media @phone {
+          font-size: 14px;
+        }
 
         &:hover {
             background: black;
             color: white;
         }
+    }
+    img{
+      max-width: 100%;
+      @media @tablet {
+        width: 90%;
+
+      }
     }
 }// cta
