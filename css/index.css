@@ -1,9 +1,3 @@
-/* import @ rules:
-@import "foo";      // foo.less is imported
-@import "foo.less"; // foo.less is imported
-@import "foo.php";  // foo.php imported as a Less file
-@import "foo.css";  // statement left in place, as-is
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -346,6 +340,19 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content button {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 100px;
+  height: auto;
+  background-color: yellow;
+  font-family: 'Titillium Web';
+  margin: 10px auto;
+}
+.main-content button:hover {
+  background-color: #999900;
 }
 .contact p {
   margin: 20px 0;
