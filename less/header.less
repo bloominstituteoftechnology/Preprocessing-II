@@ -1,29 +1,73 @@
 // Header Styles
 
 header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  @media @tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media @phone {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav {
+    margin-top: 40px;
+    width: 69%;
+    justify-content: space-between;
     display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
+    @media @tablet {
+      width: 59%;
+      margin-left: 3%;
+    }
+    @media @phone {
+      width: 100%;
       display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+    }
+
+    &:first-child {
+      @media @phone {
+        border-top: 1px solid gray;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #b0b0b0;
+      @media @phone {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: black;
+
+        @media @phone {
+          background: gray;
         }
       }
     }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+  }
+
+  .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 10%;
+    .skew(10deg, 10deg);
+    &:hover {
+      .opacity;
     }
-  }// header 
+    @media @tablet {
+      order: -1;
+      display: block;
+      margin: 30px wuto 0;
+    }
+  }
+} // header
