@@ -8,22 +8,69 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+    font-size: 14px;
+    margin: 75px 2% 35px;
+   }// added tablet 768px-Tylar
+
    .top-content {
         display: flex;
         justify-content: space-around;
+        button {
+            .button(102px, 45px, @sidecar);
+            &:hover {
+              background-color: darken(@sidecar, 20%);
+            }
+        }
+
+        .text-content {
+            #paragraphs > .content;
+        }
+
+        p {
+          #paragraphs > .paragraph;
+        }
+
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+        }// added phone 400px-Tylar
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .border-radius; //added the border-radius mixin -Tylar
+
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+        }// added tablet 768px-Tylar
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        button {
+            .button(102px, 45px, @sidecar);
+
+            &:hover {
+              background-color: darken(@sidecar, 20%);
+            }
+        }
+
+        .text-content {
+            #paragraphs > .content;
+        }
+
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }// added phone 400px-Tylar
 
         p {
-            padding-right: 20px;
+            #paragraphs > .paragraph;
         }
     }
 }// main-content
