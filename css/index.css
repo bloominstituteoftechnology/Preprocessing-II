@@ -130,6 +130,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.button {
+  width: 200px;
+  height: 20px;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+.button:hover {
+  background-color: #000000;
+}
 * {
   box-sizing: border-box;
 }
