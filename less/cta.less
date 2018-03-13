@@ -4,6 +4,9 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    background: @some-color;
+    .opacity (@opacity: 0.5);
+    .box-shadow (100px 100px 100px red);
 
     @media @tablet {
         width:100%;
@@ -30,7 +33,6 @@
         @media @tablet {
             margin-right: 20px;
         }
-
     }
 
         .cta-text button {
@@ -47,10 +49,10 @@
 
     .cta img{
         width:auto;
-
         @media @phone {
             max-width: 80%;
             margin: 13px 0 0 38px;
+
         }
 
     }

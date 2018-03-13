@@ -6,7 +6,9 @@
 header {
     width: 100%;
     display: flex;
-
+    background: @some-color;
+    .box-shadow (100px 50px 80px yellow );
+    .border-radius (@radius: 5px);
     @media @tablet{
       justify-content: space-around;
       width: 100%;
@@ -34,6 +36,7 @@ header {
       a {
         text-decoration: none;
         color: #b0b0b0;
+        .rotate (50deg);
         @media @phone{
           display: block;
           text-align: center;
@@ -44,6 +47,12 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
+            .rotate (@deg) {
+            	-webkit-transform: rotate(@deg);
+            	-moz-transform: 	 rotate(@deg);
+            	-ms-transform: 		 rotate(@deg);
+            	-o-transform: 		 rotate(@deg);
+            }
             @media @phone {
                 display: block;
                 text-align: center;

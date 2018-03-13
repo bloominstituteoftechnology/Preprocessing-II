@@ -155,6 +155,16 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  background: blue;
+  -webkit-box-shadow: 100px 50px 80px yellow;
+  -moz-box-shadow: 100px 50px 80px yellow;
+  box-shadow: 100px 50px 80px yellow;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 @media (max-width: 768px) {
   header {
@@ -187,6 +197,10 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
 }
 @media (max-width: 400px) {
   header nav a {
@@ -231,6 +245,13 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  background: blue;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-box-shadow: 100px 100px 100px red;
+  -moz-box-shadow: 100px 100px 100px red;
+  box-shadow: 100px 100px 100px red;
 }
 @media (max-width: 768px) {
   .cta {
