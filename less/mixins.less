@@ -39,7 +39,7 @@
 
 //custom button mixin 
 
-.button-mixin (@width, @height, @background, @hover) {
+.button-mixin (@width, @height, @background) {
     width: @width;
     height: @height;
     background: @background;
@@ -48,11 +48,7 @@
     margin-top: 10px;
 
     &:hover {
-    	background: @hover;
+    	background: darken(@background, 50%);
     	color: white;
     }
 }
-
-
-// darken function
-
