@@ -9,9 +9,30 @@
 @import "footer.less";
 
 
+@laptop: ~"(max-width: 1100px)";
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 600px)";
 
+// button {
+//   color: white;
+//   width: 200px;
+//   height: 100px;
+//   background: green;
+  
 
+  
 
+button {
+    color: white;
+    font-size: 16px;
+    border: 1px solid black;
+    .button-creator(200px, 45px, teal, center);
+   
+
+.some-div {
+    //.button-mixin;
+    .button-creator(200px, 45px, teal, center);
+  }
 
 
 

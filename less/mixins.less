@@ -16,20 +16,20 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
+.box-shadow (@string: 10px 5px 100px red;) {
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
 }
 
-.rotate (@deg) {
+.rotate (@deg: 180deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
 	-o-transform: 		 rotate(@deg);
 }
 
-.skew (@deg, @deg2) {
+.skew (@deg: 15deg, @deg2: 15deg) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);

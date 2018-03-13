@@ -147,10 +147,32 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 1100px) {
+  .container {
+    background: black;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    background: purple;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    background: green;
+  }
+}
 header {
   width: 100%;
   display: flex;
   border: 2px solid black;
+  -webkit-box-shadow: 10px 5px 100px red;
+  -moz-box-shadow: 10px 5px 100px red;
+  box-shadow: 10px 5px 100px red;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -218,10 +240,18 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
 }
 .main-content .bottom-content {
   display: flex;
