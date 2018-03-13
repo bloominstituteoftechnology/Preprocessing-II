@@ -295,16 +295,16 @@ header .logo:hover {
   -moz-opacity: 0.75;
   opacity: 0.75;
 }
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
+  }
+}
 .cta img:hover {
   -webkit-transform: skew(10deg, 30deg);
   -moz-transform: skew(10deg, 30deg);
   -ms-transform: skew(10deg, 30deg);
   -o-transform: skew(10deg, 30deg);
-}
-@media (max-width: 400px) {
-  .cta img {
-    display: none;
-  }
 }
 .main-content {
   border-top: 2px solid black;
