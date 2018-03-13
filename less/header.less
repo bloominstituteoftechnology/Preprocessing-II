@@ -4,12 +4,27 @@ header {
   width: 100%;
   display: flex;
 
+  @media @mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   nav {
     margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
-
+    @media @tablet {
+      width: 50%;
+      margin-left: 3%;
+    }
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+    }
     a {
       text-decoration: none;
       color: #b0b0b0;
@@ -17,6 +32,21 @@ header {
       &:hover {
         text-decoration: underline;
         color: black;
+        background: gray;
+      }
+      &:first-child {
+        @media @mobile {
+          border-top: 1px solid gray;
+        }
+      }
+      @media @mobile {
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
       }
     }
   }
@@ -25,5 +55,13 @@ header {
     align-self: flex-end;
     margin: 28px 0 0 91px;
     .box-shadow(60px -16px gray);
+    @media @tablet {
+      margin: 28px 0 0 8%;
+    }
+    @media @mobile {
+      order: -1;
+      max-width: 100%;
+      margin: 20px 0;
+    }
   }
 } // header
