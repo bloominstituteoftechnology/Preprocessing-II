@@ -164,10 +164,17 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
   color: black;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 .cta {
   display: flex;
@@ -192,6 +199,12 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
@@ -222,8 +235,15 @@ header .logo {
 }
 .contact p {
   margin: 20px 0;
+  -webkit-transform: skew(10deg, 20deg);
+  -moz-transform: skew(10deg, 20deg);
+  -ms-transform: skew(10deg, 20deg);
+  -o-transform: skew(10deg, 20deg);
 }
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
