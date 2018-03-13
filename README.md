@@ -27,12 +27,16 @@ Once you have imported your less files, be sure to run less-watch-compiler
 ## Task 2 - Demonstrate your skills using Mixins, escaping and functions by doing the following:
 
 1. Use all 5 mixins from the mixins.less file in anyway you want throughout the site (Hint, google the CSS properties if you don't know what they do!).
+// done.
 
 2. Use escaping to create 2 unique media query variables named "tablet" at a max-width of 768px and "phone" at 400px max-width. Now use your variables in combination with @media to introduce responsive styling to your page.  (You can use code from your last project for the responsivness)
+//done.
 
 3. Create your own custom button mixin that passes values for width, height, and background color.  Once you have created this mixin, introduce a button to the bottom of each ```.text-content``` div.  Create unique text for each button to match the header.  Example: The heading "Features" could have a button that reads "See Features." Be creative!
+// done.
 
 4. Use a function to darken the background by 20% on hover for all those new buttons you just made.
+// done.
 
 **Stretch**
 

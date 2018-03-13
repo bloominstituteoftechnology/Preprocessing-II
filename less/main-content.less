@@ -1,3 +1,6 @@
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
 // Main Content Styles
 
 .main-content {
@@ -8,19 +11,87 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+    font-size: 14px;
+    }
+
+    @media @phone {
+        margin: 0 5%;
+        padding: 10px 0;
+    }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        
+
+        @media @tablet {
+            margin: 0;
+        }
+
+        @media @phone {
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .text-content {
+            
+            .feature {
+                .text-cont-button();
+            }
+
+            .about {
+                .text-cont-button();
+            }
+
+            @media @phone {
+                margin: 5% 0;
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        .border-radius ();
+
+        @media @tablet {
+            width: 100%;
+        }
+
+        @media @phone {
+            width: 100%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        .service {
+            .text-cont-button2();
+        }
+
+        .product {
+            .text-cont-button2();
+        }
+
+        .vision {
+            .text-cont-button2();
+        }
+
+        @media @tablet {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+
+        @media @phone {
+            height: 100%;
+            flex-direction: column;
+            }
+        }
 
         p {
             padding-right: 20px;
