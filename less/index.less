@@ -1,13 +1,68 @@
+//imports
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "general-styles";
+@import "header";
+@import "cta";
+@import "main-content";
+@import "contact";
+@import "footer";
 
+//variables
+@tablet: ~"max-width: 768px";
+@phone: ~"max-width: 400px";
+//functions
+:root{
+  font-size: 62.5%;
+  width: 100%;
+}
+body{
+  width:100%;
+}
+//innit
+.container{
+  width: 100%;
+  max-width: 800px;
+  header{
+    width: 100%;
+    @media (@tablet){
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      nav{
+        width: 100%;
+        justify-content: space-around;
+      }
+      img{
+        align-self: center;
+      }
+    }
+    nav{
+      a{
+        font-size: 1.4rem;
+      }
+    }
+    img{
+      .skew(10deg, 10deg);
+      max-width: 100%;
+    }
+  }
+  .cta{
+    .cta-text{
+      .border-radius(10px);
+      button{
+        .box-shadow(~"10px 10px");
+      }
+    }
+    img{
+      .rotate(20deg);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+  }
+  .main-content{
+    .middle-img{
+      .opacity(0.8);
+    }
+  }
+}
