@@ -11,16 +11,35 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        button {
+            .button-mixin(#f44268, 50px, 75px);
+            &:hover {
+                background-color: darken(#f44268, 20%);
+            }
+            
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        button {
+            .button-mixin(#eef442, 50px, 75px);
+            &:hover {
+                background-color: darken(#eef442, 45%);
+            }
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        button {
+            .button-mixin(#425cf4, 50px, 90px);
+            &:hover {
+                background-color: darken(#eef442, 20%);
+            }
+        }
 
         p {
             padding-right: 20px;
