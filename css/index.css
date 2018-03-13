@@ -340,6 +340,11 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content button {
+  width: 92px;
+  height: 35px;
+  background-color: blue;
+}
 @media (max-width: 400px) {
   .main-content .top-content {
     flex-wrap: wrap;
@@ -365,6 +370,11 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content button {
+  width: 92px;
+  height: 35px;
+  background-color: blue;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
