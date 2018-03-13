@@ -5,6 +5,14 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        flex-wrap: wrap;
+    }
+
+    @media @phone {
+        flex-direction: column;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,31 +22,54 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-        .skew (30deg,0);
+        .skew (-10deg, -10deg);  //used skew mixin
+
+        @media @phone {
+            padding: 0 0 40px;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
+        background: @jewel;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-        .border-radius(15px);
-        .box-shadow(10px -10px blue);
+        .border-radius(15px);  //used border-radius mixin
+        .box-shadow(10px 10px @dark-jewel);  //used box-shadow mixin
+
+        @media @tablet {
+            background-color: @fiery-orange;
+        }
+    
+        @media @phone {
+            background-color: @cerise-red;
+        }
 
         &:hover {
-            background: black;
-            color: white;
-            .opacity(.0);
+            background: @mountain-meadow;
+
+            @media @tablet {
+                background-color: @porsche;
+            }
+        
+            @media @phone {
+                background-color: @mauvelous;
+            }
         }
     }
 
     img {
-        .rotate(180deg);
+        .rotate(180deg);  //used rotate mixin
+
+        @media @phone {
+            width: 100%;
+        }
+
         &:hover {
-            .opacity(.5);
+            .opacity(.5);  //used opacity mixin
         }
     }
 }// cta

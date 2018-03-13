@@ -11,12 +11,30 @@
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
+
+        p {
+            padding-right: 20px;
+        }
+    
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .text-content {
+            @media @phone {
+                padding: 20px 0;
+            }
+        }
+    }//top content
 
     .middle-img {
         display: block;
         margin: 30px auto;
-    }
+
+        @media @tablet {
+            width: 100%;
+        }
+    }//mid img
 
     .bottom-content {
         display: flex;
@@ -25,5 +43,15 @@
         p {
             padding-right: 20px;
         }
-    }
+
+        @media @phone {
+            flex-direction: column;
+        }
+        
+        .text-content {
+            @media @phone {
+                padding: 20px 0;
+            }
+        }
+    }//bottom content
 }// main-content
