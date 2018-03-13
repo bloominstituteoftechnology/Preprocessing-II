@@ -4,6 +4,7 @@
 
     p {
         margin: 20px 0;
+        .mixin-p-namespace > .p (@deepblue);
 
         @media @phone {
         	margin-bottom: 5%;
@@ -11,6 +12,8 @@
     }
 
     h4 {
+    	.mixin-heading-namespace > .small-head (#025DD4);
+
     	@media @phone {
     		margin-bottom: 5%;
     	}

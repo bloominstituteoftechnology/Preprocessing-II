@@ -1,14 +1,67 @@
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
+.mixin-button-namespace {
 
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
+	.border-radius (@radius: 5px) {
+		-webkit-border-radius: @radius;
+		-moz-border-radius:    @radius;
+		border-radius:         @radius;
+
+		-moz-background-clip:    padding;
+		-webkit-background-clip: padding-box;
+		background-clip:         padding-box;
+	}
+
+	.box-shadow (@string) {
+		-webkit-box-shadow: @string;
+		-moz-box-shadow:    @string;
+		box-shadow:         @string;
+	}
+
+	.rotate (@deg) {
+		-webkit-transform: rotate(@deg);
+		-moz-transform: 	 rotate(@deg);
+		-ms-transform: 		 rotate(@deg);
+		-o-transform: 		 rotate(@deg);
+	}
+
+
+	//custom button mixin 
+
+	.button-mixin (@width, @height, @background) {
+	    width: @width;
+	    height: @height;
+	    background: @background;
+	    margin: auto;
+	    border: 1px solid black;
+	    margin-top: 10px;
+
+	    &:hover {
+	    	background: darken(@background, 50%);
+	    	color: white;
+	    }
+	}
 }
+
+
+.mixin-heading-namespace {
+	.head (@color1, @color2) {
+		text-shadow: 0.5px 0.5px 1px @color1, 0 0 0.2em @color2;
+	}
+
+	.small-head (@color3) {
+		text-shadow: 0.5px 0.5px 1px @color3;
+	}
+}
+
+
+.mixin-p-namespace {
+	.p (@color) {
+		font-variant: small-caps;
+		color: @color;
+	}
+}
+
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
@@ -16,39 +69,10 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
-}
-
-.rotate (@deg) {
-	-webkit-transform: rotate(@deg);
-	-moz-transform: 	 rotate(@deg);
-	-ms-transform: 		 rotate(@deg);
-	-o-transform: 		 rotate(@deg);
-}
 
 .skew (@deg, @deg2) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
-}
-
-
-//custom button mixin 
-
-.button-mixin (@width, @height, @background) {
-    width: @width;
-    height: @height;
-    background: @background;
-    margin: auto;
-    border: 1px solid black;
-    margin-top: 10px;
-
-    &:hover {
-    	background: darken(@background, 50%);
-    	color: white;
-    }
 }

@@ -13,14 +13,18 @@
         justify-content: space-around;
 
         h4 {
+          .mixin-heading-namespace > .small-head (#025DD4);
           @media @tablet {
             margin-top: 0;
           }
         }
 
-        .text-content .button {
-          .button-mixin (35%, 25px, white);
-          .border-radius (5px);
+        .text-content { 
+          .mixin-p-namespace > .p (@deepblue);
+          .button {
+            .mixin-button-namespace > .button-mixin (35%, 25px, white);
+            .mixin-button-namespace > .border-radius (5px);
+          }
         }
 
         @media @phone {
@@ -33,7 +37,7 @@
         display: block;
         margin: 30px auto;
 
-        .box-shadow (0 0 5px 5px @shadow);
+        .mixin-button-namespace > .box-shadow (0 0 5px 5px @shadow);
 
         @media @tablet {
           width: 100%;
@@ -53,9 +57,16 @@
             }
         }
 
-        .text-content .button {
-          .button-mixin (35%, 25px, white);
-          .border-radius (5px);
+        h4 {
+          .mixin-heading-namespace > .small-head (#025DD4);
+        }
+
+        .text-content {
+          .mixin-p-namespace > .p (@deepblue);
+          .button {
+            .mixin-button-namespace > .button-mixin (35%, 25px, white);
+            .mixin-button-namespace > .border-radius (5px);
+          }
         }
 
         @media @phone {
