@@ -133,6 +133,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -251,7 +252,7 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -267,11 +268,13 @@ header .logo {
 @media (max-width: 768px) {
   .cta .cta-text {
     margin: 0 5% 0 0;
+    font-size: 6rem;
   }
 }
 @media (max-width: 400px) {
   .cta .cta-text {
     margin: 0;
+    font-size: 6.2rem;
   }
 }
 .cta .cta-text button {
@@ -282,7 +285,7 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
   width: 170px;
   height: 32px;
@@ -312,7 +315,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 @media (max-width: 768px) {
@@ -353,6 +356,11 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px 2%;
+  }
 }
 .contact p {
   margin: 20px 0;
