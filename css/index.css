@@ -160,14 +160,29 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 header nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
+  -webkit-box-shadow: 10px 10px 10px 5px gray;
+  -moz-box-shadow: 10px 10px 10px 5px gray;
+  box-shadow: 10px 10px 10px 5px gray;
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+header .logo:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .cta {
   display: flex;
@@ -192,10 +207,19 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
 }
 .main-content {
   border-top: 2px solid black;
