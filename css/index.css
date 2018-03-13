@@ -306,7 +306,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .cta .cta-text button {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     width: 58%;
     margin-top: 12px 2%;
   }
