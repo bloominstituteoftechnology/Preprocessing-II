@@ -6,9 +6,15 @@ header {
   
     nav {
       margin-top: 40px; 
-      width: 610px;
+      width: 100%;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        width: 59.50%;
+        margin-left: 2.5%;
+      
+      }//media tablet end
   
       a {
         text-decoration: none;
@@ -25,5 +31,9 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+            margin: 28px 0 0 8%;
+        }// media tablet end
     }
   }// header 
