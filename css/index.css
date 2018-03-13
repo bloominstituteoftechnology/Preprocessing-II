@@ -221,6 +221,12 @@ header .logo:hover {
   -moz-opacity: 0.75;
   opacity: 0.75;
 }
+.cta img:hover {
+  -webkit-transform: skew(10deg, 30deg);
+  -moz-transform: skew(10deg, 30deg);
+  -ms-transform: skew(10deg, 30deg);
+  -o-transform: skew(10deg, 30deg);
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
