@@ -223,6 +223,7 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+<<<<<<< HEAD
 .main-content button {
   margin-top: 20px;
   display: inline-block;
@@ -236,6 +237,27 @@ header .logo {
 }
 .main-content button:hover {
   background-color: #1a70a1;
+=======
+@media (max-width: 768px) {
+  .main-content {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+>>>>>>> fc5a9743c48814f3c27973ef620f2098ab9f8a7f
 }
 .main-content .top-content {
   display: flex;
