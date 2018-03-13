@@ -35,3 +35,31 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-creator(@width, @height, @bg-color) {
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	
+	&:hover {
+	    background-color: darken(@bg-color, 25%);
+        }
+}
+
+#bundle-of-joy {
+	.button {
+		color: red;
+		text-decoration: underline;
+	}
+
+	.p {
+		color: blue;
+		font-size: bold;
+	}
+
+	.headings {
+		background-color: yellow;
+	}
+
+}
+

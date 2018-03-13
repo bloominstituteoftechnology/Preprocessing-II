@@ -1,13 +1,75 @@
 
+// Importing Files to Index.less
+
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "general-styles";
+@import "header";
+@import "cta";
+@import "main-content";
+@import "contact";
+@import "footer";
+
+@back-color: purple;
 
 
 
+.contact p {
+    border: 1px solid black;
+    .border-radius(10px);
+}
+
+.main-content {
+    .opacity;
+}
+
+.cta .cta-text .lessButton {
+    .box-shadow(5px 5px red);
+
+}
+
+.header .logo {
+    .skew (45deg, 45deg)
+}
 
 
+.container {
+    //.rotate(90deg); commented out for ease of review
+    @media @tablet {
+        width: 100%;
+        background-color: green; 
+    } 
+
+    @media @phone {
+        width: 100%;
+        background-color: pink;
+    }
+}
+
+footer .bottomButton {
+    .button-creator (5, 5, blue);
+
+}
+
+.main-content .top-content .text-content button {
+    .button-creator (3, 3, red);
+       
+}
+
+.main-content .bottom-content .text-content button {
+    .button-creator (3, 3, green);
+}
 
 
+.container header {
+    #bundle-of-joy > .headings;
+}
 
+.main-content .text-content {
+    #bundle-of-joy > .p;
+}
 
-
-
-
+button {
+    #bundle-of-joy > .button;
+}
