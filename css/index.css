@@ -230,6 +230,21 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    margin-top: 8%;
+    margin-right: 3%;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin: 10% 8%;
+    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -244,6 +259,23 @@ header .logo {
   -ms-transform: skew(10deg, 2deg);
   -o-transform: skew(10deg, 2deg);
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    font-size: 4.5rem;
+    align-items: center;
+    margin: 10px 3% 0 4%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    letter-spacing: 8px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 40px auto;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -257,10 +289,30 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 768px) {
+  .cta .cta-text button {
+    font-size: 1.2rem;
+    width: 58%;
+    margin-top: 12px 2%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    font-size: 1.2rem;
+    width: 58%;
+    margin-top: 12px 2%;
+  }
+}
 .cta img {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+}
+@media (max-width: 400px) {
+  .cta img {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 .main-content {
   border-top: 2px solid black;
@@ -323,6 +375,11 @@ header .logo {
 }
 .contact p {
   margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin-left: 1%;
+  }
 }
 footer {
   text-align: center;

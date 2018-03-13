@@ -5,6 +5,19 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        margin-top: 8%;
+        margin-right: 3%;
+        justify-content: center;
+    }
+
+    @media @phone {
+        margin: 10% 8%;
+        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -15,6 +28,21 @@
         align-items: center;
         margin: 0 82px 0 0;
         .skew(10deg, 2deg); // added skew - Luke
+        
+        @media @tablet {
+            font-size: 4.5rem;
+            align-items: center;
+            margin: 10px 3% 0 4%;
+        }
+
+        @media @phone {
+            letter-spacing: 8px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+            margin: 40px auto;
+        }
     }
 
     .cta-text button {
@@ -30,8 +58,24 @@
             background: black;
             color: white;
         }
+
+        @media @tablet {
+            font-size: 1.2rem;
+            width: 58%;
+            margin-top: 12px 2%
+        }
+
+        @media @phone {
+            font-size: 1.2rem;
+            width: 58%;
+            margin-top: 12px 2%
+        }
     }
     img {
         .opacity;// added opacity mixin -Tylar
+        @media @phone {
+            width: 100%;
+            margin: 20px 0;
+        }
     }
 }// cta
