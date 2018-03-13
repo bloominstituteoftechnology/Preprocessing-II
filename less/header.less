@@ -15,6 +15,19 @@ header {
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @phone {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          border-top: 1px solid gray;
+                    
+          &:hover {
+              background: gray;
+          }
+      }
   
       a {
         text-decoration: none;
@@ -27,6 +40,23 @@ header {
             .box-shadow(10px 10px 10px 5px gray);
   
         }
+
+        @media (max-width: 400px) {
+            width: 100%;
+            height: auto;
+            padding: 5% 0;
+            font-size: 2rem;
+            text-align: center;
+                        
+            &:hover {
+                color: white;
+            }
+        }
+      }
+      a:nth-of-type(6) {
+        @media @phone {
+          border-bottom: 1px solid gray;
+        }
       }
     }
   
@@ -35,7 +65,7 @@ header {
         margin: 28px 0 0 91px;
         
         &:hover {
-          .rotate (180deg)
+          .rotate (180deg);
         }
     }
-  }// header 
+}// header 

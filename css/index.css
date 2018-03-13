@@ -176,6 +176,19 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 400px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid gray;
+  }
+  header nav:hover {
+    background: gray;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
@@ -192,6 +205,23 @@ header nav a:hover {
   -webkit-box-shadow: 10px 10px 10px 5px gray;
   -moz-box-shadow: 10px 10px 10px 5px gray;
   box-shadow: 10px 10px 10px 5px gray;
+}
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+  header nav a:hover {
+    color: white;
+  }
+}
+@media (max-width: 400px) {
+  header nav a:nth-of-type(6) {
+    border-bottom: 1px solid gray;
+  }
 }
 header .logo {
   align-self: flex-end;
