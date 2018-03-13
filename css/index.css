@@ -126,6 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#paragraphs .p {
+  color: purple;
+  border: 1px dotted black;
+}
 * {
   box-sizing: border-box;
 }
@@ -345,6 +349,10 @@ header .logo {
   height: 45px;
   background-color: #F7E7CE;
 }
+.main-content .top-content .text-content {
+  color: purple;
+  border: 1px dotted black;
+}
 @media (max-width: 400px) {
   .main-content .top-content {
     flex-wrap: wrap;
@@ -378,6 +386,10 @@ header .logo {
 }
 .main-content .bottom-content button:hover {
   background-color: #e2a74a;
+}
+.main-content .bottom-content .text-content {
+  color: purple;
+  border: 1px dotted black;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
