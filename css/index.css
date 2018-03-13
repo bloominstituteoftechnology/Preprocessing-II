@@ -318,16 +318,49 @@ header .logo:hover {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+}
+.main-content .top-content .text-content {
+  padding: 1%;
+}
+@media (max-width: 400px) {
+  .main-content .top-content .text-content {
+    margin-bottom: 6%;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    margin: 0;
+  }
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
-.main-content .bottom-content p {
-  padding-right: 20px;
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+}
+.main-content .bottom-content .text-content {
+  padding: 0 1%;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content .text-content {
+    margin-bottom: 6%;
+  }
+}
+.main-content .bottom-content .text-content:nth-of-type(1) {
+  margin-top: 6%;
 }
 .contact p {
   margin: 20px 0;

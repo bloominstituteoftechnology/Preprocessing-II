@@ -11,19 +11,48 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .text-content {
+            padding: 1%;
+
+            @media @phone {
+                margin-bottom: 6%;
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 100%;
+        height: auto;
+
+        @media @phone {
+            margin: 0;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        @media (max-width: 400px) {
+            flex-direction: column;
+        }
 
-        p {
-            padding-right: 20px;
+        .text-content {
+            padding: 0 1%;
+
+            @media (max-width: 400px) {
+                margin-bottom: 6%;
+            }
+        }
+
+        .text-content:nth-of-type(1) {
+            margin-top: 6%;
         }
     }
 }// main-content
