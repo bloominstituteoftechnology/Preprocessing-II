@@ -424,7 +424,6 @@ header nav {
   justify-content: space-between;
   display: flex;
   position: relative;
-  left: 30px;
 }
 @media (max-width: 768px) {
   header nav {
@@ -640,20 +639,20 @@ header .logo {
 .main-content p {
   padding-right: 20px;
 }
-.main-content .contact {
+.contact {
   margin: 0 0 0 0;
 }
 @media (max-width: 768px) {
-  .main-content .contact {
+  .contact {
     margin: 70px 0 0 3.1%;
   }
 }
 @media (max-width: 400px) {
-  .main-content .contact {
+   .contact {
     margin: 30px 0 0 5.1%;
   }
 }
-.main-content .contact p {
+ .contact p {
   margin: 40px 0;
   -webkit-transform: skew(1deg, 15deg);
   -moz-transform: skew(1deg, 15deg);
@@ -661,13 +660,13 @@ header .logo {
   -o-transform: skew(1deg, 15deg);
 }
 @media (max-width: 768px) {
-  .main-content .contact p {
+   .contact p {
     padding: 2;
     margin: 64px 0 0 0;
   }
 }
 @media (max-width: 400px) {
-  .main-content .contact p {
+   .contact p {
     padding: 4.5%;
     margin: 12px 0 0 0;
   }
