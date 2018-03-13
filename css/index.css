@@ -238,23 +238,23 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  header {
+  .container header {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 @media (max-width: 400px) {
-  header {
+  .container header {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
-header img {
+.container header img {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
-header nav {
+.container header nav {
   border: 1px solid black;
   padding: 10px;
   -webkit-border-radius: 5px;
@@ -265,13 +265,13 @@ header nav {
   background-clip: padding-box;
 }
 @media (max-width: 768px) {
-  header nav {
+  .container header nav {
     width: 59%;
     margin-left: 3%;
   }
 }
 @media (max-width: 400px) {
-  header nav {
+  .container header nav {
     border: none;
     width: 100%;
     display: flex;
@@ -281,12 +281,12 @@ header nav {
   }
 }
 @media (max-width: 400px) {
-  header nav:first-child {
+  .container header nav:first-child {
     border-top: 1px solid gray;
   }
 }
 @media (max-width: 400px) {
-  header nav a {
+  .container header nav a {
     width: 100%;
     display: block;
     text-align: center;
@@ -295,27 +295,27 @@ header nav {
   }
 }
 @media (max-width: 400px) {
-  header nav a:hover {
+  .container header nav a:hover {
     background: gray;
   }
 }
 @media (max-width: 768px) {
-  header .logo {
+  .container header .logo {
     margin: 28px 0 0 8%;
   }
 }
 @media (max-width: 400px) {
-  header .logo {
+  .container header .logo {
     margin: 20px 0;
   }
 }
 @media (max-width: 768px) {
-  .cta {
+  .container .cta {
     justify-content: center;
   }
 }
 @media (max-width: 400px) {
-  .cta {
+  .container .cta {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -323,26 +323,26 @@ header nav {
   }
 }
 @media (max-width: 768px) {
-  .cta-text {
+  .container .cta .cta-text {
     margin: 0 5% 0 0;
   }
 }
 @media (max-width: 400px) {
-  .cta-text {
+  .container .cta .cta-text {
     margin: 0;
   }
 }
 @media (max-width: 768px) {
-  .cta-text h1 {
+  .container .cta .cta-text h1 {
     letter-spacing: 0;
   }
 }
-.cta-text button {
+.container .cta .cta-text button {
   -webkit-box-shadow: 2px 2px 2px black;
   -moz-box-shadow: 2px 2px 2px black;
   box-shadow: 2px 2px 2px black;
 }
-.cta img {
+.container .cta .cta img {
   -webkit-transform: rotate(-25deg);
   -moz-transform: rotate(-25deg);
   -ms-transform: rotate(-25deg);
@@ -353,44 +353,44 @@ header nav {
   -o-transform: skew(15deg, 15deg);
 }
 @media (max-width: 768px) {
-  .cta img {
+  .container .cta .cta img {
     max-width: 100%;
     margin-right: 2%;
   }
 }
 @media (max-width: 400px) {
-  .cta img {
+  .container .cta .cta img {
     display: block;
     max-width: 80%;
     margin: 55px 0 0 0;
   }
 }
 @media (max-width: 768px) {
-  .main-content {
+  .container .main-content {
     margin: 75px 2% 35px;
   }
 }
 @media (max-width: 400px) {
-  .main-content .top-content {
+  .container .main-content .top-content {
     flex-wrap: wrap;
     height: 300px;
   }
 }
 @media (max-width: 768px) {
-  .main-content .middle-img {
+  .container .main-content .middle-img {
     width: 100%;
     margin: 25px auto;
   }
 }
 @media (max-width: 400px) {
-  .main-content .bottom-content {
+  .container .main-content .bottom-content {
     flex-wrap: wrap;
     align-content: space-between;
     height: 440px;
   }
 }
 @media (max-width: 768px) {
-  .contact {
+  .container .contact {
     margin: 20px 2%;
   }
 }
