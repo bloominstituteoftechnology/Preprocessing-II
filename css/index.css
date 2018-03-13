@@ -280,12 +280,6 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
   background: teal;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 .main-content:hover {
   background-color: #004d4d;

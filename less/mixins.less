@@ -35,7 +35,9 @@
   -ms-transform: skew(@deg, @deg2);
   -o-transform: skew(@deg, @deg2);
 }
-.button-creator(@width, @height) {
+.button-creator(@width, @height, @background-color, @font-color) {
   min-width: @width;
   height: @height;
+  background: @background-color;
+  color: @font-color;
 }
