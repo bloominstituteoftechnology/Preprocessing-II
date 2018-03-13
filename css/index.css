@@ -242,6 +242,7 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+  background: red;
 }
 @media (max-width: 768px) {
   .main-content {
