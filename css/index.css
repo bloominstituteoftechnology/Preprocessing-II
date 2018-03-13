@@ -142,6 +142,8 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: gold;
+  font-family: cursive;
 }
 .container {
   width: 880px;
@@ -271,6 +273,9 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  background-color: darkblue;
+  cursor: crosshair;
+  border: double blue 1px;
 }
 .cta .cta-text button:hover {
   background: black;
@@ -300,6 +305,10 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+}
+.main-content p {
+  background-color: black;
+  color: white;
 }
 .main-content .top-content {
   display: flex;
