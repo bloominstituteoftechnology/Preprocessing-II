@@ -20,7 +20,18 @@
 @yellow: yellow;
 @green: green;
 
-// Use of mixins, media-query, change font-size
+// Mixins
+
+.button-creator() {
+    border: 1px double black;
+    width: 50%;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    margin: 30px 20px 30px 40px;
+}
+
+// Code Below
 
 html {
     font-size: 62.5%;
@@ -154,6 +165,10 @@ header {
         justify-content: space-around;
         .box-shadow; // Use of box-shadow mixin
 
+        button {
+            .button-creator();
+        }
+
         @media @phone {
             justify-content: column;
         }
@@ -163,11 +178,17 @@ header {
         display: flex;
         justify-content: space-around;
         .box-shadow;
+        align-items: center;
 
         p {
             padding-right: 20px;
         }   
-    }
+
+            button {
+                .button-creator();
+                }
+            }
+        }
 
     .middle-img {
         display: block;
@@ -176,7 +197,6 @@ header {
         .opacity; // Use of opacity mixin
         
     }
-}
 
 // Contact Styles
 

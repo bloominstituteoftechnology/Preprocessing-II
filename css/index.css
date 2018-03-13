@@ -376,6 +376,14 @@ header .logo {
   -moz-box-shadow: 10px 10px 10px 10px blue;
   box-shadow: 10px 10px 10px 10px blue;
 }
+.main-content .top-content button {
+  border: 1px double black;
+  width: 50%;
+  height: 40px;
+  background-color: red;
+  text-align: center;
+  margin: 30px 20px 30px 40px;
+}
 @media (max-width: 400px) {
   .main-content .top-content {
     justify-content: column;
@@ -387,11 +395,20 @@ header .logo {
   -webkit-box-shadow: 10px 10px 10px 10px blue;
   -moz-box-shadow: 10px 10px 10px 10px blue;
   box-shadow: 10px 10px 10px 10px blue;
+  align-items: center;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
 }
-.main-content .middle-img {
+.main-content .bottom-content button {
+  border: 1px double black;
+  width: 50%;
+  height: 40px;
+  background-color: red;
+  text-align: center;
+  margin: 30px 20px 30px 40px;
+}
+.middle-img {
   display: block;
   margin: 30px auto;
   width: 80%;
