@@ -254,12 +254,13 @@ header .logo {
     align-self: center;
     padding: 10px 0;
     order: -1;
+    margin: 28px 0 0;
   }
 }
 .cta {
   display: flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 @media (max-width: 768px) {
   .cta {
@@ -272,14 +273,12 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 60px;
   text-align: center;
-  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
   -webkit-transform: skew(-10deg, -10deg);
   -moz-transform: skew(-10deg, -10deg);
   -ms-transform: skew(-10deg, -10deg);
@@ -287,6 +286,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .cta .cta-text {
+    max-width: 87.25%;
     padding: 0 0 40px;
   }
 }
@@ -336,6 +336,7 @@ header .logo {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+  margin-top: 30px;
 }
 @media (max-width: 400px) {
   .cta img {
@@ -367,6 +368,16 @@ header .logo {
     flex-direction: column;
   }
 }
+.main-content .top-content .text-content {
+  flex-direction: column;
+}
+.main-content .top-content .text-content button {
+  border-radius: 5px;
+  margin: 20px 0 0;
+  width: 150px;
+  height: 20px;
+  background-color: orange;
+}
 @media (max-width: 400px) {
   .main-content .top-content .text-content {
     padding: 20px 0;
@@ -392,6 +403,13 @@ header .logo {
   .main-content .bottom-content {
     flex-direction: column;
   }
+}
+.main-content .bottom-content .text-content button {
+  margin: 20px 0 0;
+  border-radius: 5px;
+  width: 150px 20px #17722F;
+  height: 20px;
+  background-color: orange;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content .text-content {

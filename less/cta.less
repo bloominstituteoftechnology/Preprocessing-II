@@ -3,7 +3,7 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: space-around;
 
     @media @tablet {
         flex-wrap: wrap;
@@ -14,17 +14,16 @@
     }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 60px;
         text-align: center;
-        letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
         .skew (-10deg, -10deg);  //used skew mixin
 
         @media @phone {
+            max-width: 87.25%;
             padding: 0 0 40px;
         }
     }
@@ -63,6 +62,7 @@
 
     img {
         .rotate(180deg);  //used rotate mixin
+        margin-top: 30px;
 
         @media @phone {
             width: 100%;
