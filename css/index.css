@@ -279,9 +279,18 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
-  background: red;
+  background: teal;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
-@media (max-width: 400px) {
+.main-content:hover {
+  background-color: #004d4d;
+}
+@media (max-width: 768px) {
   .main-content {
     margin: 75px 2% 35px;
   }
