@@ -17,7 +17,7 @@
         display: flex;
         justify-content: space-around;
         button {
-            .button(92px, 35px, blue);
+            .button(102px, 45px, #F7E7CE);
         }
 
         @media @phone {
@@ -41,7 +41,11 @@
         display: flex;
         justify-content: space-around;
         button {
-            .button(92px, 35px, blue);
+            .button(102px, 45px, #F7E7CE);
+
+            &:hover {
+              background-color: darken(#F7E7CE, 30%);
+            }
         }
 
         @media @phone {
