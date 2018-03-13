@@ -3,27 +3,57 @@
 header {
     width: 100%;
     display: flex;
-  
+    @media @tablet {
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
     nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
+      margin-top: 40px;
+      width: 69%;
+      justify-content: space-around;
       display: flex;
-  
+      @media @tablet{
+        width: 100%;
+      }
+      @media @phone {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+        @media @phone {
+          &:first-child{
+            border-top: 1px solid gray;
+          }
+          border-bottom: 1px solid gray;
+          width: 100%;
+          text-align: center;
+          padding: 1rem 0;
+        }
+
+
         &:hover {
             text-decoration: underline;
             color: black;
-  
+
         }
       }
     }
-  
+
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 10%;
+        max-width: 100%;
+        .skew(10deg, 10deg);
+        &:hover{
+          .opacity;
+        }
+        @media @tablet {
+          order: -1;
+          align-self: center;
+        }
     }
-  }// header 
+  }// header
