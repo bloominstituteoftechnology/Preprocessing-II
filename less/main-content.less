@@ -8,22 +8,58 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+    margin: 75px 2% 35px;
+  }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+          }
+        
+        button {
+            .button-mixins;
+
+            &:hover {
+                background: darken(white, 20%);
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+          }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+          }
+
         p {
             padding-right: 20px;
+        }
+
+        button {
+            .button-mixins;
+
+            &:hover {
+                background: darken(white, 20%);
+            }
         }
     }
 }// main-content
