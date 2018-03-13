@@ -4,7 +4,7 @@
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
-
+	
 	-moz-background-clip:    padding;
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;
@@ -34,4 +34,18 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.button (@height: 10px, @width: 20px, @bg-color: orange, @bg-dark-color: red) {
+	border: 1px double black;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	&:hover {
+		color: white;
+		background-color: darken(@bg-dark-color, 20%);
+	}
 }
