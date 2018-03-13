@@ -36,8 +36,39 @@
   -o-transform: skew(@deg, @deg2);
 }
 
-.cust-button (@w, @h, @bgc) {
-  width: @w;
-  height: @h;
-  background-color: @bgc;
+#headings {
+  .general {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+}
+
+#buttons {
+  .cust-button (@w, @h, @bgc) {
+    width: @w;
+    height: @h;
+    background-color: @bgc;
+  }
+
+  .cta-button {
+    border: 1px double black;
+    .border-radius;
+    font-size: 1.6rem;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: black;
+      color: white;
+      .opacity;
+      .rotate(180deg);
+    }
+  }
+}
+
+#p {
 }

@@ -126,6 +126,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#headings .general {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+#buttons .cta-button {
+  border: 1px double black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 1.6rem;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#buttons .cta-button:hover {
+  background: black;
+  color: white;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 * {
   box-sizing: border-box;
 }
