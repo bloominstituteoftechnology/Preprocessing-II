@@ -287,6 +287,12 @@ header .logo:hover {
   font-size: 16px;
   line-height: 18px;
   background: teal;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .main-content:hover {
   background-color: #004d4d;
@@ -329,6 +335,12 @@ header .logo:hover {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content button {
+  min-width: 130px;
+  height: 30px;
+  background: brown;
+  color: white;
 }
 @media (max-width: 768px) {
   .contact {
