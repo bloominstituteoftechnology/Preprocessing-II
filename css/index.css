@@ -126,6 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#paragraphs .p {
+  color: purple;
+  border: 1px dotted black;
+}
 * {
   box-sizing: border-box;
 }
@@ -345,6 +349,10 @@ header .logo {
   height: 35px;
   background-color: blue;
 }
+.main-content .top-content .text-content {
+  color: purple;
+  border: 1px dotted black;
+}
 @media (max-width: 400px) {
   .main-content .top-content {
     flex-wrap: wrap;
@@ -375,6 +383,10 @@ header .logo {
   width: 92px;
   height: 35px;
   background-color: blue;
+}
+.main-content .bottom-content .text-content {
+  color: purple;
+  border: 1px dotted black;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
