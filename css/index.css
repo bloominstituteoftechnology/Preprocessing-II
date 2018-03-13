@@ -346,6 +346,11 @@ header .logo {
     margin-top: 4%;
   }
 }
+@media (max-width: 400px) {
+  .contact {
+    margin: 0 5%;
+  }
+}
 .contact p {
   margin: 20px 0;
 }
