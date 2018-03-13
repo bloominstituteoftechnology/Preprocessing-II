@@ -150,9 +150,16 @@ h5 {
 header {
   width: 100%;
   display: flex;
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  header {
+    background: #42f4d9;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    background: #98f442;
+  }
 }
 nav ul {
   margin-top: 40px;
@@ -167,10 +174,6 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
   color: black;
-}
-.logo {
-  align-self: flex-end;
-  margin: 28px 0 0 91px;
 }
 .cta {
   display: flex;
@@ -230,7 +233,23 @@ nav ul li a:hover {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: skew(10, 20);
+  -moz-transform: skew(10, 20);
+  -ms-transform: skew(10, 20);
+  -o-transform: skew(10, 20);
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+  }
 }
 .main-content .bottom-content {
   display: flex;
