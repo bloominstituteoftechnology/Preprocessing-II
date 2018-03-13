@@ -45,3 +45,16 @@
     }
   }
 } // main-content
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button {
+    .cust-button( 15vw, auto, @some-color);
+    &:hover {
+      background-color: darken(@some-color, 20%);
+    }
+  }
+}

@@ -357,6 +357,20 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-content button {
+  width: 15vw;
+  height: auto;
+  background-color: gray;
+}
+.text-content button:hover {
+  background-color: #4d4d4d;
+}
 @media (max-width: 768px) {
   .contact {
     margin: 20px 2%;
