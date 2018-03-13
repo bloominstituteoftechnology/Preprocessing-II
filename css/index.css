@@ -153,9 +153,25 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-flow: wrap;
+    justify-content: center;
+  }
 }
 header nav {
   margin-top: 40px;
@@ -163,9 +179,28 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    margin: 0;
+    border-top: 1px #b0b0b0 solid;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px #b0b0b0 solid;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -179,10 +214,35 @@ header .logo {
   -ms-transform: skew(25deg, 10deg);
   -o-transform: skew(25deg, 10deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    width: 30%;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    max-width: 100%;
+    margin: 20px 0;
+    order: -1;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    flex-flow: column;
+    align-items: center;
+    margin: 20px auto 0;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
