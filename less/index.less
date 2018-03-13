@@ -28,36 +28,53 @@ img {
         flex-direction: column;
         justify-content: space-between;
     }
+    .cta-text {
+        button {
+            .button(60px, 180px);
+        }
+    }
 }
 .cta img {
-   .rotate(90deg);
-   height:auto;
+    .rotate(90deg);
+    height:auto;
     @media @tablet{
         display: none;
     }
-
+    
 }
 h4 {
     .rotate(3deg);
 }
+
 header {
     @media @tablet{
-        flex-direction: column; 
-        align-content: center; 
+        flex-direction: column-reverse; 
+        justify-content: center; 
         width: 100%; 
     }
-    @media @phone{
-        flex-direction: column; 
-        align-content: center; 
-        width: 100%; 
+    nav {
+        @media @tablet {
+            width: 100%;
+        }
+    }
+    .logo {
+        .skew(10deg, 10deg);
+        @media @tablet {
+            align-self: center;
+            margin: 20px 0 0 0;
+        }
     }
 }
-header img {
-    .skew(10deg, 10deg)
-}
+
 .middle-img {
     width: 100%; 
-     
+    
+}
+
+.text-content {
+    button {
+        .button(20px, 180px);
+    }
 }
 
 

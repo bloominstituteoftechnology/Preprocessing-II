@@ -256,6 +256,19 @@ img {
     justify-content: space-between;
   }
 }
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 180px;
+  height: 60px;
+  background-color: orange;
+}
+.cta .cta-text button:hover {
+  color: white;
+  background-color: #990000;
+}
 .cta img {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -276,24 +289,41 @@ h4 {
 }
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-content: center;
+    flex-direction: column-reverse;
+    justify-content: center;
     width: 100%;
   }
 }
-@media (max-width: 400px) {
-  header {
-    flex-direction: column;
-    align-content: center;
+@media (max-width: 768px) {
+  header nav {
     width: 100%;
   }
 }
-header img {
+header .logo {
   -webkit-transform: skew(10deg, 10deg);
   -moz-transform: skew(10deg, 10deg);
   -ms-transform: skew(10deg, 10deg);
   -o-transform: skew(10deg, 10deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+    margin: 20px 0 0 0;
+  }
+}
 .middle-img {
   width: 100%;
+}
+.text-content button {
+  border: 1px double black;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 180px;
+  height: 20px;
+  background-color: orange;
+}
+.text-content button:hover {
+  color: white;
+  background-color: #990000;
 }
