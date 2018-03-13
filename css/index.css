@@ -346,6 +346,12 @@ header .logo {
     margin-top: 4%;
   }
 }
+.main-content .text-content .custom-button {
+  width: 70px;
+  height: 45px;
+  background-color: grey;
+  text-align: center;
+}
 @media (max-width: 400px) {
   .contact {
     margin: 0 5%;
