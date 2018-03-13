@@ -147,6 +147,11 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -182,6 +187,14 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 400px) {
+  header nav a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -246,11 +259,6 @@ header .logo {
 @media (max-width: 768px) {
   .cta .cta-text {
     margin-right: 20px;
-  }
-}
-@media (max-width: 400px) {
-  .cta .cta-text {
-    margin: -54px -74px 36px 16px;
   }
 }
 .cta .cta-text button {
