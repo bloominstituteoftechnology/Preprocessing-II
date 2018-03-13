@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#devon-and-amanda-style .headings {
+  color: blue;
+}
 * {
   box-sizing: border-box;
 }
@@ -181,6 +184,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  color: blue;
 }
 @media (max-width: 400px) {
   header nav a {
