@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.buttonMaker {
+  width: 50%;
+  height: 50px;
+  background: #6195ED;
+}
 * {
   box-sizing: border-box;
 }
@@ -227,6 +232,11 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+.container {
+  width: 100%;
+  width: 880px;
+  margin: auto;
+}
 @media (max-width: 768px) {
   .container {
     width: 100%;
@@ -307,6 +317,7 @@ header nav {
 @media (max-width: 400px) {
   header .logo {
     margin: 20px 0;
+    order: -1;
   }
 }
 @media (max-width: 768px) {
@@ -323,21 +334,23 @@ header nav {
   }
 }
 @media (max-width: 768px) {
-  .cta-text {
+  .cta .cta-text {
     margin: 0 5% 0 0;
+    font-size: 3.6rem;
   }
 }
 @media (max-width: 400px) {
-  .cta-text {
+  .cta .cta-text {
     margin: 0;
+    font-size: 3.6rem;
   }
 }
 @media (max-width: 768px) {
-  .cta-text h1 {
+  .cta .cta-text h1 {
     letter-spacing: 0;
   }
 }
-.cta-text button {
+.cta .cta-text button {
   -webkit-box-shadow: 2px 2px 2px black;
   -moz-box-shadow: 2px 2px 2px black;
   box-shadow: 2px 2px 2px black;
@@ -388,6 +401,14 @@ header nav {
     align-content: space-between;
     height: 440px;
   }
+}
+.main-content button {
+  width: 50%;
+  height: 50px;
+  background: #6195ED;
+}
+.main-content button:hover {
+  background: #1552b9;
 }
 @media (max-width: 768px) {
   .contact {
