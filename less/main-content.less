@@ -17,7 +17,10 @@
         display: flex;
         justify-content: space-around;
         button {
-            .button(102px, 45px, #F7E7CE);
+            .button(102px, 45px, @sidecar);
+            &:hover {
+              background-color: darken(@sidecar, 20%);
+            }
         }
 
         .text-content {
@@ -45,10 +48,10 @@
         display: flex;
         justify-content: space-around;
         button {
-            .button(102px, 45px, #F7E7CE);
+            .button(102px, 45px, @sidecar);
 
             &:hover {
-              background-color: darken(#F7E7CE, 30%);
+              background-color: darken(@sidecar, 20%);
             }
         }
 

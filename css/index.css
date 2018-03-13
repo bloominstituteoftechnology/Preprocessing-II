@@ -349,6 +349,9 @@ header .logo {
   height: 45px;
   background-color: #F7E7CE;
 }
+.main-content .top-content button:hover {
+  background-color: #e9bc76;
+}
 .main-content .top-content .text-content {
   color: purple;
   border: 1px dotted black;
@@ -385,7 +388,7 @@ header .logo {
   background-color: #F7E7CE;
 }
 .main-content .bottom-content button:hover {
-  background-color: #e2a74a;
+  background-color: #e9bc76;
 }
 .main-content .bottom-content .text-content {
   color: purple;
