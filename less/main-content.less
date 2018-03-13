@@ -7,23 +7,37 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            display: block;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        max-width: 100%;
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
-        p {
-            padding-right: 20px;
+        @media @phone {
+            display: block;
         }
     }
-}// main-content
+
+    .text-content button{
+        #buttonBundle > .newButton(rgb(80, 222, 247));
+    }
+
+        p {
+            .box-shadow(2px 3px black);
+    }
+ }
