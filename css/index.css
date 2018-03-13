@@ -205,6 +205,11 @@ header .logo {
   -ms-transform: skew(10deg, 10deg);
   -o-transform: skew(10deg, 10deg);
 }
+header .logo:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 @media (max-width: 768px) {
   header .logo {
     order: -1;
@@ -248,6 +253,8 @@ header .logo {
   background: white;
   min-width: 19%;
   height: 32px;
+  background: transparent;
+  color: black;
   margin-top: 10px;
   cursor: pointer;
 }
