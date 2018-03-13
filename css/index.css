@@ -348,10 +348,10 @@ header .logo:hover {
 }
 .main-content .top-content .text-content .learn-more:hover {
   color: white;
-  background-color: gray;
   -webkit-box-shadow: 5px 5px 10px 3px #b1b1b1;
   -moz-box-shadow: 5px 5px 10px 3px #b1b1b1;
   box-shadow: 5px 5px 10px 3px #b1b1b1;
+  background-color: #4d4d4d;
 }
 .main-content .middle-img {
   display: block;
@@ -397,10 +397,10 @@ header .logo:hover {
 }
 .main-content .bottom-content .text-content .learn-more:hover {
   color: white;
-  background-color: gray;
   -webkit-box-shadow: 5px 5px 10px 3px #b1b1b1;
   -moz-box-shadow: 5px 5px 10px 3px #b1b1b1;
   box-shadow: 5px 5px 10px 3px #b1b1b1;
+  background-color: #4d4d4d;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content .text-content:nth-of-type(1) {
