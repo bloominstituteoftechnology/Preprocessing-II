@@ -10,38 +10,187 @@
 @import "contact.less";
 @import "footer.less";
 
-// Mixins
+// Variables
 
-header {
-    .skew;
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+@tan: tan;
+@black: black;
+@blue: blue;
+@yellow: yellow;
+@green: green;
+
+// Use of mixins, media-query, change font-size
+
+html {
+    font-size: 62.5%;
 }
 
+h4 {
+    @media @phone {
+    font-size: 2rem;
+    }
+}
+
+// Container Style
+
+.container {
+    max-width: 880px;
+    width: 100%;
+    margin: auto;
+    background-color: @tan;
+
+    @media @tablet {
+        background-color: @green;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media @phone {
+        background-color: @yellow;
+        flex-wrap: wrap;
+    }
+}
+
+// Header Styles
+
+header {
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+    .skew; // use of skew mixin
+
+    nav {
+        margin-top: 40px; 
+        width: 610px;
+        justify-content: space-between;
+        display: flex; 
+
+        @media @phone {
+            flex-flow: column wrap;
+            font-size: 1rem;
+            .skew(0,0); // negate skew mixin for media query 400px
+        }
+        a {
+            text-decoration: none;
+            color: @blue;
+    
+            &:hover {
+                text-decoration: underline;
+                color: @black;
+            }
+        }
+    }
+        .logo {
+            align-self: flex-end;
+            margin: 28px 0 0 91px;
+        }
+}
+
+// Call-To-Action Styles
+
 .cta{
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+
+    @media @phone {
+        flex-direction: column;
+        }
 
     .cta-text {    
-        .rotate;
+        font-size: 72px;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 82px 0 0;   
+        .rotate; // Use of rotate mixin
+        
+    @media @tablet {
+        margin: 0 auto;
+    }
     
+    @media @phone {
+        .rotate(0deg); // Negate the rotate mixin
+        margin: 10px auto;
+    }
+
         button {
-            .border-radius;
+            .border-radius; // Use of border-radius mixin
         }
     } 
 }
 
+// Main Content Styles
+
 .main-content {
-    .border-radius;
-    .box-shadow;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+    .border-radius; // Use of border-radius mixin
+    .box-shadow; // Use of box-shadow mixin
+
+    @media @tablet {
+        color: @blue;
+    }
+    
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+        font-size: 1.5rem;
+    }
 
     .top-content {
-        .box-shadow;
+        display: flex;
+        justify-content: space-around;
+        .box-shadow; // Use of box-shadow mixin
+
+        @media @phone {
+            justify-content: column;
+        }
     }
 
     .bottom-content {
+        display: flex;
+        justify-content: space-around;
         .box-shadow;
+
+        p {
+            padding-right: 20px;
+        }   
     }
 
     .middle-img {
-        .opacity;
+        display: block;
+        margin: 30px auto;
+        width: 80%;
+        .opacity; // Use of opacity mixin
+        
     }
+}
+
+// Contact Styles
+
+.contact p {
+    margin: 15px 0;
+    font-size: 1rem * 2;
+}
+
+// Footer Styles 
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem * 2;
 }
 
 
