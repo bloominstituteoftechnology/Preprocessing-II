@@ -129,6 +129,10 @@ table {
 #devon-and-amanda-style .headings {
   color: blue;
 }
+#devon-and-amanda-style .buttons {
+  background-color: purple;
+  color: white;
+}
 * {
   box-sizing: border-box;
 }
@@ -355,6 +359,8 @@ header .logo {
   height: 45px;
   background-color: grey;
   text-align: center;
+  background-color: purple;
+  color: white;
 }
 .main-content .text-content .custom-button:hover {
   background-color: #4d4d4d;
