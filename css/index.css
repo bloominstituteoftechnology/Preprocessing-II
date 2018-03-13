@@ -199,6 +199,7 @@ header nav a {
   background-clip: padding-box;
 }
 header nav a:hover {
+  cursor: pointer;
   background-color: gray;
   text-decoration: none;
   color: white;
@@ -349,6 +350,7 @@ header .logo:hover {
   background-clip: padding-box;
 }
 .main-content .top-content .text-content .learn-more:hover {
+  cursor: pointer;
   color: white;
   -webkit-box-shadow: 5px 5px 10px 3px #b1b1b1;
   -moz-box-shadow: 5px 5px 10px 3px #b1b1b1;
@@ -398,6 +400,7 @@ header .logo:hover {
   background-clip: padding-box;
 }
 .main-content .bottom-content .text-content .learn-more:hover {
+  cursor: pointer;
   color: white;
   -webkit-box-shadow: 5px 5px 10px 3px #b1b1b1;
   -moz-box-shadow: 5px 5px 10px 3px #b1b1b1;
