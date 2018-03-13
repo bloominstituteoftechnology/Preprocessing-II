@@ -183,6 +183,10 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: skew(30deg, 0);
+  -moz-transform: skew(30deg, 0);
+  -ms-transform: skew(30deg, 0);
+  -o-transform: skew(30deg, 0);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -198,6 +202,9 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: 10px -10px blue;
+  -moz-box-shadow: 10px -10px blue;
+  box-shadow: 10px -10px blue;
 }
 .cta .cta-text button:hover {
   background: black;
@@ -205,6 +212,12 @@ header .logo {
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
+}
+.cta img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .cta img:hover {
   -webkit-opacity: 0.5;
