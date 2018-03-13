@@ -1,4 +1,3 @@
-
 @import "reset.less"; 
 @import "variables"; 
 @import "mixins"; 
@@ -9,36 +8,49 @@
 @import "contact"; 
 @import "footer"; 
 
-
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
 .container {
     .border-radius(20px);
-    border: 1px solid black;  
+    border: 1px solid black;
     padding: 10px; 
-    .box-shadow(10px 5px 5px teal); 
+    .box-shadow(10px 5px 5px teal);
+    width: 100%;
+    max-width: 1028px;
 }
 img {
     .opacity(0.5);
 }
+.cta {
+    @media @tablet{
+        flex-direction: column;
+    }
+}
 .cta img {
-   .rotate(90deg);  
+   .rotate(90deg);
+   height:auto;
+    @media @phone{
+        height:100%;
+        width: auto;
+    }
+
 }
 h4 {
     .rotate(3deg);
 }
 header {
-    @media@tablet{
+    @media @tablet{
         flex-direction: column; 
         align-content: center; 
         width: 100%; 
     }
-    @media@phone {
+    @media @phone{
         flex-direction: column; 
         align-content: center; 
         width: 100%; 
     }
 }
-
 header img {
     .skew(10deg, 10deg)
 }

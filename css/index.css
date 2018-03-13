@@ -239,17 +239,31 @@ footer {
   -webkit-box-shadow: 10px 5px 5px teal;
   -moz-box-shadow: 10px 5px 5px teal;
   box-shadow: 10px 5px 5px teal;
+  width: 100%;
+  max-width: 1028px;
 }
 img {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
+@media (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+  }
+}
 .cta img {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+  height: auto;
+}
+@media (max-width: 400px) {
+  .cta img {
+    height: 100%;
+    width: auto;
+  }
 }
 h4 {
   -webkit-transform: rotate(3deg);
