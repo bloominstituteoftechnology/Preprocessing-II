@@ -34,6 +34,22 @@
                 margin-bottom: 34px;
             }
         }
+        .text-content button {
+            @media @tablet {
+            .buttonMix(50%, 2rem, rgb(255, 145, 0));
+            margin-left: 25%;
+            }
+            @media @phone {
+                .buttonMix(100%, 2rem, rgb(255, 145, 0));
+                margin-left: auto;
+            }
+
+            &:hover {
+                // background: blue;
+                background: darken(rgb(255, 145, 0), 20%);
+                
+            }
+        }
     }
 
     .middle-img {
@@ -95,5 +111,22 @@
         font-size: 1rem;
         line-height: 1.125rem;
         line-height: 18px;
+    }
+    .text-content button {
+        @media @tablet {
+            .buttonMix(60%, 2rem, rgb(0, 238, 255));
+            margin-left: 20%;
+        }
+        @media @phone {
+            .buttonMix(100%, 2rem, rgb(0, 238, 255));
+            margin-left: auto;
+        }
+        
+        &:hover {
+            // background: red;
+
+            background : darken(rgb(0, 238, 255), 20%);
+        }
+        
     }
 }// main-content

@@ -5,10 +5,15 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-    img {          // added img tag
-        .skew;     // added skew to img tag 
+    img {          // added img tag mixin
+        .skew;     // added skew to img tag  mixin
         @media @phone {
             width: 100%;
+            margin-bottom: 0px;
+        }
+        @media @tablet {
+            width: 100%;
+            margin-bottom: 40px;
         }
     }
     
@@ -22,8 +27,8 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-        .opacity; // added opacity
-        .rotate; // added rotate to cta text
+        .opacity; // added opacity mixin
+        .rotate; // added rotate to cta text mixin
         @media @tablet {
             font-size: 3.5rem;
             text-align: center;
@@ -34,7 +39,7 @@
             margin: 0% auto;
         }
         @media @phone {
-            font-size: 4.5rem;
+            font-size: 3.4rem;
             text-align: center;
             letter-spacing: .313rem;
             display: flex;
@@ -42,6 +47,7 @@
             flex-flow: column;
             align-items: center;
             margin: 0% auto;
+            
         }
     }
 
@@ -59,9 +65,9 @@
             color: white;
         }
        
-        .border-radius; // added radius to button
-        .rotate; // added rotation to button
-        .box-shadow;
+        .border-radius; // added radius to button mixin
+        .rotate; // added rotation to button mixin
+        .box-shadow; // added shadow mixin
         @media @tablet {
             border: 1px double black;
             font-size: 1rem;
@@ -79,6 +85,7 @@
             margin-top: 20px;
             margin-bottom: 8.8%;
             cursor: pointer;
+            .buttonMix(80%, 3rem, blue);
         }
         
 
