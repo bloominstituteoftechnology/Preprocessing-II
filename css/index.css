@@ -131,14 +131,18 @@ table {
   border-spacing: 0;
 }
 .button {
+  margin-top: 20px;
+  display: inline-block;
+  color: white;
+  font-size: 15px;
   width: 200px;
   height: 20px;
-  background-color: black;
+  background-color: #41a6e0;
   text-align: center;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 .button:hover {
-  background-color: #000000;
+  background-color: #1a70a1;
 }
 * {
   box-sizing: border-box;
@@ -219,6 +223,20 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content button {
+  margin-top: 20px;
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  width: 200px;
+  height: 20px;
+  background-color: #41a6e0;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+.main-content button:hover {
+  background-color: #1a70a1;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
@@ -230,6 +248,20 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content button {
+  margin-top: 20px;
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  width: 200px;
+  height: 20px;
+  background-color: #41a6e0;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+.main-content .bottom-content button:hover {
+  background-color: #1a70a1;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
