@@ -219,6 +219,20 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    width: 100%;
+    padding-right: 10px;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    padding-right: 0px;
+    flex-direction: column;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -229,6 +243,16 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: -54px -74px 36px 16px;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -238,9 +262,23 @@ header .logo {
   margin-top: 10px;
   cursor: pointer;
 }
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    margin: 8px 0 10px 30px;
+  }
+}
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta .cta img {
+  width: auto;
+}
+@media (max-width: 400px) {
+  .cta .cta img {
+    max-width: 80%;
+    margin: 13px 0 0 38px;
+  }
 }
 .main-content {
   border-top: 2px solid black;
@@ -250,23 +288,68 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    padding: 34px 0 35px 0px;
+    margin: 79px 26px 33px 13px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+    height: 300px;
+  }
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 30px auto;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
 }
 .contact p {
   margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .contact p {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .contact p {
+    margin: 36px 0px 16px 11px;
+  }
 }
 footer {
   text-align: center;
