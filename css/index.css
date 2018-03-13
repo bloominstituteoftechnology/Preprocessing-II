@@ -147,9 +147,28 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    margin-top: 3%;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 }
 header nav {
   margin-top: 40px;
