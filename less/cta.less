@@ -5,6 +5,11 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +19,15 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tablet {
+            margin: 0;
+            margin-bottom: 5%;
+        }
+
+        @media @phone {
+            font-size: 5.5rem;
+        }
     }
 
     .cta-text button {
@@ -34,7 +48,11 @@
     }
     img {
         &:hover {
-            .skew (10deg, 30deg);  
+            .skew(10deg, 30deg);  
+        }
+
+        @media @phone {
+            display: none;
         }
     }
 }// cta
