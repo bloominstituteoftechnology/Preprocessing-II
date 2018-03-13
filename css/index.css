@@ -362,8 +362,19 @@ header .logo:hover {
 .main-content .bottom-content .text-content:nth-of-type(1) {
   margin-top: 6%;
 }
+.contact {
+  font-size: 1.6rem;
+  margin-left: 1%;
+}
+@media (max-width: 400px) {
+  .contact {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
 .contact p {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 footer {
   text-align: center;
