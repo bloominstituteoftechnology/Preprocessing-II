@@ -67,5 +67,15 @@
     @media @phone {
       margin-bottom: 14.5%;
     }
+
+    button {
+      margin-top: 10px;
+      border: none;
+      .button-creator(200px, 45px, @button-color);
+
+      &:hover {
+        background-color: darken(@button-color, 20%);
+      }
+    }
   }
 } // main-content
