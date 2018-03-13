@@ -39,20 +39,24 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
-        @media (max-width: 400px) {
+        @media @phone {
             flex-direction: column;
         }
 
         .text-content {
             padding: 0 1%;
 
-            @media (max-width: 400px) {
+            @media @phone {
                 margin-bottom: 6%;
+
             }
         }
 
         .text-content:nth-of-type(1) {
-            margin-top: 6%;
+            @media @phone {
+                margin-top: 6%;
+            }
+            
         }
     }
 }// main-content
