@@ -1,54 +1,49 @@
 // Call To Action (CTA) Styles
 
 .cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+
+  @media @tablet {
+    justify-content: center;
+  }
+  @media @phone {
+    margin-top: 50px;
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
     @media @tablet {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 9% 0 0;
-        width: 50%;
-        @media @tablet{
-          margin: 0 0 40px 0;
-        }
-        h1{
-          font-size: 60px;
-        }
+      margin: 0 5% 0 0;
     }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        .button-creator(19%, 32px, transparent, black);
-        margin-top: 10px;
-        cursor: pointer;
-        @media @phone {
-          font-size: 14px;
-        }
-
-        &:hover {
-            background: black;
-            color: white;
-        }
+    @media @phone {
+      margin: 0;
     }
-    img{
-      max-width: 100%;
-      .rotate(20deg);
-      @media @tablet {
-        width: 90%;
+  }
 
-      }
+  .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: black;
+      color: white;
     }
-}// cta
+  }
+} // cta

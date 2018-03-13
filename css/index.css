@@ -154,27 +154,40 @@ header {
 }
 @media (max-width: 768px) {
   header {
-    flex-flow: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 header nav {
   margin-top: 40px;
   width: 69%;
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
 }
 @media (max-width: 768px) {
   header nav {
-    width: 100%;
+    width: 59%;
+    margin-left: 3%;
   }
 }
 @media (max-width: 400px) {
   header nav {
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    margin: 0;
     align-items: center;
-    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav:first-child {
+    border-top: 1px solid gray;
   }
 }
 header nav a {
@@ -183,23 +196,25 @@ header nav a {
 }
 @media (max-width: 400px) {
   header nav a {
-    border-bottom: 1px solid gray;
     width: 100%;
+    display: block;
     text-align: center;
-    padding: 1rem 0;
-  }
-  header nav a:first-child {
-    border-top: 1px solid gray;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
   }
 }
 header nav a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav a:hover {
+    background: gray;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 10%;
-  max-width: 100%;
   -webkit-transform: skew(10deg, 10deg);
   -moz-transform: skew(10deg, 10deg);
   -ms-transform: skew(10deg, 10deg);
@@ -213,7 +228,8 @@ header .logo:hover {
 @media (max-width: 768px) {
   header .logo {
     order: -1;
-    align-self: center;
+    display: block;
+    margin: 30px wuto 0;
   }
 }
 .cta {
@@ -223,8 +239,14 @@ header .logo:hover {
 }
 @media (max-width: 768px) {
   .cta {
-    flex-direction: column;
     justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -236,48 +258,30 @@ header .logo:hover {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 9% 0 0;
-  width: 50%;
+  margin: 0 82px 0 0;
 }
 @media (max-width: 768px) {
   .cta .cta-text {
-    margin: 0 0 40px 0;
+    margin: 0 5% 0 0;
   }
 }
-.cta .cta-text h1 {
-  font-size: 60px;
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
-  min-width: 19%;
+  width: 170px;
   height: 32px;
-  background: transparent;
-  color: black;
   margin-top: 10px;
   cursor: pointer;
-}
-@media (max-width: 400px) {
-  .cta .cta-text button {
-    font-size: 14px;
-  }
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
-}
-.cta img {
-  max-width: 100%;
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-}
-@media (max-width: 768px) {
-  .cta img {
-    width: 90%;
-  }
 }
 .main-content {
   border-top: 2px solid black;
