@@ -151,30 +151,21 @@ header {
   width: 100%;
   display: flex;
 }
-@media (max-width: 400px) {
-  header {
-    -webkit-transform: rotate(10);
-    -moz-transform: rotate(10);
-    -ms-transform: rotate(10);
-    -o-transform: rotate(10);
-    background: #71f442;
-  }
-}
-header nav ul {
+nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
 }
-header nav ul li a {
+nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
 }
-header nav ul li a:hover {
+nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
-header .logo {
+.logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
@@ -229,14 +220,6 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-}
-.main-content .middle-img button {
-  background-color: #eef442;
-  height: 50px;
-  width: 75px;
-}
-.main-content .middle-img button:hover {
-  background-color: #4a4c04;
 }
 .main-content .bottom-content {
   display: flex;
