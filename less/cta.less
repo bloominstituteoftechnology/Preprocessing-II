@@ -14,6 +14,21 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        h1 {
+            .mixin-heading-namespace > .head (#7B00D4, #007AD4);
+            @media @tablet {
+                letter-spacing: 0;
+            }
+        }
+
+        @media @tablet {
+            margin: 0 5% 0 0;
+        }
+
+        @media @phone {
+            margin: 0;
+        }
     }
 
     .cta-text button {
@@ -24,10 +39,38 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .mixin-button-namespace > .border-radius (5px);
 
         &:hover {
             background: black;
             color: white;
         }
     }
+
+    img {
+
+    .skew (25deg, -25deg);
+
+        @media @tablet {
+            max-width: 100%;
+            margin-right: 2%;
+        }
+
+        @media @phone {
+            display: block;
+            max-width: 80%;
+            margin: 55px 0 0 0;
+        }
+    }
+
+    @media @tablet {
+        justify-content: flex-end;
+    }
+
+    @media @phone {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
 }// cta
