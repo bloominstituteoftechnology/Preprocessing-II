@@ -38,7 +38,10 @@
 
 
 .button-creator(@width, @height, @bg-color) {
-	width: @width;
-	height: @height;
-	background-color: @bg-color;
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  &:hover {
+    background-color: darken(@bg-color, 20%);
   }
+}

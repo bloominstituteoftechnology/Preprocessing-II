@@ -281,6 +281,9 @@ header .logo {
   height: 30px;
   background-color: lightblue;
 }
+.main-content .top-content .text-content button:hover {
+  background-color: #5fb3ce;
+}
 @media (max-width: 400px) {
   .main-content .top-content .text-content {
     width: 100%;
@@ -306,6 +309,9 @@ header .logo {
   width: 100px;
   height: 30px;
   background-color: lightblue;
+}
+.main-content .bottom-content .text-content button:hover {
+  background-color: #5fb3ce;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
