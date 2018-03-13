@@ -352,6 +352,9 @@ header .logo {
   background-color: grey;
   text-align: center;
 }
+.main-content .text-content .custom-button:hover {
+  background-color: #4d4d4d;
+}
 @media (max-width: 400px) {
   .contact {
     margin: 0 5%;

@@ -60,7 +60,11 @@
         }
 
         .custom-button {
-            .button-creator (70px, 45px, grey, center);
+            .button-creator(70px, 45px, grey, center);
+
+            &:hover {
+              background-color: darken(@btn-bg-color, 20%);
+            }
         }
     }
 }// main-content
