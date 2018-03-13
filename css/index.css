@@ -332,6 +332,27 @@ header .logo:hover {
     margin-bottom: 6%;
   }
 }
+.main-content .top-content .text-content .learn-more {
+  height: 30px;
+  width: 150px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  color: black;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .top-content .text-content .learn-more:hover {
+  color: white;
+  background-color: gray;
+  -webkit-box-shadow: 5px 5px 10px 3px #b1b1b1;
+  -moz-box-shadow: 5px 5px 10px 3px #b1b1b1;
+  box-shadow: 5px 5px 10px 3px #b1b1b1;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;

@@ -39,5 +39,15 @@
 .learn-more-btn (@height, @width) {
 	height: @height;
 	width: @width;
-	background-color: gray;
+	border: 1px solid gray;
+	margin-top: 10px;
+	font-size: 1.6rem;
+	color: black;
+	.border-radius(30px);
+	
+	&:hover {
+		color: white;
+		background-color: gray;
+		.box-shadow(5px 5px 10px 3px rgb(177, 177, 177));
+	}
 }
