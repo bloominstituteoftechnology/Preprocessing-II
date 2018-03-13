@@ -5,8 +5,20 @@
 }
 
 html, body {
+    background-color: @cloud-burst;
+    color: @jewel;
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+
+    @media @tablet {
+        background-color: @wine-berry;
+        color: @fiery-orange;
+    }
+
+    @media @phone {
+        background-color: @electric-violet;
+        color: @cerise-red;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,4 +30,13 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+
+    @media @tablet {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    @media @phone {
+        max-width: 400px;
+    }
 }
