@@ -192,6 +192,22 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    -webkit-transform: skew(12deg, 12deg);
+    -moz-transform: skew(12deg, 12deg);
+    -ms-transform: skew(12deg, 12deg);
+    -o-transform: skew(12deg, 12deg);
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -223,6 +239,11 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin: 75px 20px 35px;
+  }
+}
 .main-content button {
   margin-top: 20px;
   display: inline-block;
@@ -244,6 +265,23 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    opacity: 0.2;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    -webkit-opacity: 0.1;
+    -moz-opacity: 0.1;
+    opacity: 0.1;
+  }
 }
 .main-content .bottom-content {
   display: flex;
