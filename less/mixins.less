@@ -1,37 +1,74 @@
 // Mixins below variables
 
 .border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
 
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 
 .opacity (@opacity: 0.5) {
-	-webkit-opacity: 	@opacity;
-	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
+  -webkit-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
 }
 
 .box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+  -webkit-box-shadow: @string;
+  -moz-box-shadow: @string;
+  box-shadow: @string;
 }
 
 .rotate (@deg) {
-	-webkit-transform: rotate(@deg);
-	-moz-transform: 	 rotate(@deg);
-	-ms-transform: 		 rotate(@deg);
-	-o-transform: 		 rotate(@deg);
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
-	-moz-transform: 	 skew(@deg, @deg2);
-	-ms-transform: 		 skew(@deg, @deg2);
-	-o-transform: 		 skew(@deg, @deg2);
+  -webkit-transform: skew(@deg, @deg2);
+  -moz-transform: skew(@deg, @deg2);
+  -ms-transform: skew(@deg, @deg2);
+  -o-transform: skew(@deg, @deg2);
+}
+
+#headings {
+  .general {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+}
+
+#buttons {
+  .cust-button (@w, @h, @bgc) {
+    width: @w;
+    height: @h;
+    background-color: @bgc;
+  }
+
+  .cta-button {
+    border: 1px double black;
+    .border-radius;
+    font-size: 1.6rem;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: black;
+      color: white;
+      .opacity;
+      .rotate(180deg);
+    }
+  }
+}
+
+#p {
 }
