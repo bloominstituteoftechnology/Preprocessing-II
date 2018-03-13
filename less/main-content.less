@@ -29,7 +29,12 @@
                 // .button-mix(150px 20px);
                 width: 150px;
                 height: 20px;                
-                .button(150px, 20px, orange);   
+                .button(150px, 20px, orange);    
+                cursor: pointer;   
+
+                &:hover {
+                    background-color: darken(orange,20%);
+                }
             }
             
 
@@ -65,7 +70,12 @@
             button {
                 margin: 20px 0 0;
                 border-radius: 5px;
-                .button();              
+                .button(150px, 20px, orange);    
+                cursor: pointer;  
+                
+                &:hover {
+                    background-color: darken(orange,20%);
+                }
             }
             @media @phone {
                 padding: 20px 0;
