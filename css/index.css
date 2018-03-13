@@ -147,6 +147,14 @@ h5 {
   width: 880px;
   margin: auto;
 }
+.custom-btn {
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+}
+.custom-btn:hover {
+  background-color: #000099;
+}
 header {
   width: 100%;
   display: flex;
