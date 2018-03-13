@@ -147,6 +147,16 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -227,6 +237,19 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -240,6 +263,16 @@ header .logo {
   -moz-transform: skew(10deg, 10deg);
   -ms-transform: skew(10deg, 10deg);
   -o-transform: skew(10deg, 10deg);
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -266,6 +299,13 @@ header .logo {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+@media (max-width: 400px) {
+  .cta img {
+    max-width: 80%;
+    display: block;
+    margin-top: 55px;
+  }
 }
 .main-content {
   border-top: 2px solid black;
