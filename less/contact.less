@@ -8,15 +8,24 @@
             .border-radius(5px);
             .skew(10deg, 15deg);
             font-size: .8rem;
-    }
+
+            @media @phone {
+                display: none;
+            }//media phone end
+    }//end button
 
     @media @tablet {
         margin: 20px 2.5% 35px;
     }
 
+    @media @tablet {
+        padding-top: 10px;
+        font-size: 1.1rem;
+    }//end media phone
+
     p {
         margin: 20px 0;
         
-    }
+    }//end p
    
-}
+}//end contact
