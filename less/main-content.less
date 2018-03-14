@@ -3,9 +3,9 @@
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   margin: 4% 1%;
+   padding: 3% 0;
+   font-size: 1.6rem;
    line-height: 18px;
 
    @media @tablet{
@@ -16,6 +16,10 @@
         display: flex;
         justify-content: space-around;
 
+        button {
+            .custom-button();
+        }
+
         @media @phone {
             justify-content: space-around;
             flex-direction: column;
@@ -25,11 +29,16 @@
     }
 
     .middle-img {
-        display: block;
-        margin: 30px auto;
+        height: auto;
+        width: auto;
+        padding: 0 1% 0 0;
+        // width: 100%;
+        // display: block;
+        // margin: auto;
 
         @media @tablet{
             width: 100%;
+            padding: 0 1% 1% 0;
         }//.main-content .middle-img 
     }
 
@@ -42,6 +51,10 @@
             align-content: space-between;
             height: 440px;
         }//.main-content .bottom-content 
+
+        button {
+           .custom-button();
+        }
 
         p {
             padding-right: 20px;

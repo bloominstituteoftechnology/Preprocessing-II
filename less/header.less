@@ -3,9 +3,12 @@
 header {
   width: 100%;
   display: flex;
+  margin: 4% 1%;
 
   @media @tablet{
     width: 100%;
+    display: flex;
+    justify-content: space-around;
   }  
 
   @media @phone {
@@ -14,13 +17,13 @@ header {
   }//header 
 
   nav {
-    margin-top: 40px; 
-    width: 610px;
+    // margin: 0 1%; 
+    width: 100%;
     justify-content: space-between;
     display: flex;
 
     @media @tablet {
-      width: 457px;
+      width: 100%;
       margin-left: 20px;
     }// header nav
 
@@ -36,7 +39,8 @@ header {
   
     a {
       text-decoration: none;
-      color: #b0b0b0;
+      color: dark grey;
+      font-size: 2rem;
 
       @media @phone {
         width: 100%;
@@ -44,13 +48,12 @@ header {
         display: block;
         text-align: center;
         padding: 20px 0;
-        font-size: 20px;
         border-bottom: 1px solid gray;
       }//header nav a 
 
       @media @phone {
         border-top: 1px solid gray;
-      }//header nav a:first-child 
+      }
  
       &:hover {
         text-decoration: underline;
@@ -58,17 +61,20 @@ header {
 
         @media @phone {
           background: gray;
-        }//header nav a:hover   
+        } 
       }//nav a:hover
     }//nav a
   }//nav
 
   .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+    max-width: 70%;
+    margin: 0 2%;
+
+    // &:hover {
+    //   color: yellow;
+    // }
 
     @media @tablet {
-      margin: 28px 0 0 59px;
     }//header .logo
 
     @media @phone {

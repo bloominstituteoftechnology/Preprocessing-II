@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 62.5%; //1rem = 10px
+    font-size: 62.5%; //1rem = 10px to make it responsive
 }
 html, body {
     height: 100%;
@@ -19,10 +19,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    @media @desktop{
-        width: 100%;
-        margin: auto;
-    }
+    max-width: 880px;
+    width: 100%;
+    margin: auto;
 
     @media @tablet {
         width: 100%;
