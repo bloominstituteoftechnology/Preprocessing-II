@@ -220,6 +220,13 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 768px) {
+  .cta img {
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+  }
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -234,6 +241,7 @@ header .logo {
   }
 }
 .main-content .text-content button {
+  margin-top: 20px;
   width: 100px;
   height: 50px;
   background-color: lightgreen;
@@ -243,6 +251,10 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-transform: rotate(17deg);
+  -moz-transform: rotate(17deg);
+  -ms-transform: rotate(17deg);
+  -o-transform: rotate(17deg);
 }
 .main-content .text-content button:hover {
   background-color: #38e038;
@@ -275,6 +287,26 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.contact button {
+  margin-top: 20px;
+  width: 80px;
+  height: 60px;
+  background-color: skyblue;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: skew(10deg, 15deg);
+  -moz-transform: skew(10deg, 15deg);
+  -ms-transform: skew(10deg, 15deg);
+  -o-transform: skew(10deg, 15deg);
+  font-size: .8rem;
+}
+.contact button:hover {
+  background-color: #30aadc;
 }
 @media (max-width: 768px) {
   .contact {
