@@ -208,6 +208,16 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    background-color: blue;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;

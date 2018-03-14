@@ -1,5 +1,9 @@
 // Main Content Styles
 
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
+
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -7,6 +11,14 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+
+   @media @tablet {
+       background-color: green;
+   }
+
+   @media @phone {
+       background-color: blue;
+   }
 
    .top-content {
         display: flex;
