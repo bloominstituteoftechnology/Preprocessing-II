@@ -7,20 +7,46 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   //border: 1px solid red;
+
+    //Tablet
+    @media @tablet {
+        margin: 75px 2% 35px;
+    }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        button {
+            .button-mixin;
+            &:hover {
+                background: darken(lightblue, 20%);
+              } //hover darkening
+        } //Created button mixin on mixins.less
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        //Tablet
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        button {
+            .button-mixin;
+            &:hover {
+                background: darken(lightblue, 20%);
+              } //hover darkening
+        } //Created button mixin on mixins.less
 
         p {
             padding-right: 20px;

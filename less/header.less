@@ -3,12 +3,26 @@
 header {
     width: 100%;
     display: flex;
+    //border: 1px solid red;
+    .border-radius;
+
+    //Tablet
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      //Tablet
+      @media @tablet {
+        width: 100%;
+        padding: 0 3%;
+      }
   
       a {
         text-decoration: none;
@@ -25,5 +39,14 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        //implented opacity mix-in
+        .opacity;
+
+        //Tablet
+        @media @tablet {
+          order: -1;
+          display: block;
+          margin: 28px 0 0;
+        }
     }
   }// header 
