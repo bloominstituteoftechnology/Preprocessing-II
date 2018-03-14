@@ -35,3 +35,16 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-creator() {
+    border: 1px double black;
+    width: 50%;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    margin: 30px 20px 30px 40px;
+
+    &:hover { // Use of darken function to darken red by 20% when hovered
+        background-color: darken(red, 20%);
+    }
+}

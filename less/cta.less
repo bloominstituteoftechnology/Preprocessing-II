@@ -5,7 +5,11 @@
     margin-top: 72px;
     justify-content: flex-end;
 
-    .cta-text {
+    @media @phone {
+        flex-direction: column;
+        } 
+
+    .cta-text {    
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -13,7 +17,21 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 70px 0 0;   
+        .rotate; // Use of rotate mixin
+
+        @media @tablet {
+            margin: 0 auto;
+            .rotate(0deg); // Negate the rotate mixin
+        }
+        
+        @media @phone {
+            margin: 10px auto;
+        }
+
+        button {
+            .border-radius; // Use of border-radius mixin
+        }
     }
 
     .cta-text button {
