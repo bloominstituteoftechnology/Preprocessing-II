@@ -3,7 +3,19 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: flex-end;    
+
+    @media @tablet {
+        .skew(12deg, 12deg);
+        justify-content: center;
+    }
+
+    @media @phone {
+        .rotate(180deg);
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
 
     .cta-text {
         font-size: 72px;
@@ -14,6 +26,15 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tablet {
+            margin: 0 40px 0 0;
+        }
+
+        @media @phone {
+            margin: 0 0 50px 0;
+        }
+
     }
 
     .cta-text button {
@@ -30,4 +51,15 @@
             color: white;
         }
     }
+
+    img {
+
+        #mystyle.h1;
+
+        @media @phone {
+            max-width: 80%;
+        }
+
+    }
+
 }// cta

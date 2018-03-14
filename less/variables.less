@@ -1,3 +1,44 @@
 // Variables
+@tablet: ~"(max-width: 786px)";
+@phone: ~"(max-width: 400px)";
+@some-color: rgb(24, 252, 164);
+@just-a-color: rgb(6, 118, 247);
 
-@some-color: blue;
+#mystyle(){
+    .b1{
+        margin-top : 20px;
+	    display: inline-block;
+	    color: white;
+	    font-size: 15px;
+	    width: 200px;
+	    height: 20px;
+	    background-color: rgb(86, 235, 17);
+	    text-align: center;
+        padding: 0 20px 20px 20px;
+        
+	    &:hover {
+            background-color: darken(rgb(86, 235, 17), 20%);
+            .skew(11deg, 11deg);
+	    }
+    }
+
+    .h1{
+        background-color: lighten(@just-a-color, 20%);
+        .border-radius(55px);
+        &:hover {
+            background-color: darken(@just-a-color, 10%);
+            .rotate(180deg);
+            .border-radius(20px);
+        }
+    }
+
+    .p1{
+        color: @just-a-color;
+        .box-shadow(7px 7px 7px @just-a-color);
+        &:hover {
+            .rotate(180deg);            
+        }
+    }
+
+
+}
