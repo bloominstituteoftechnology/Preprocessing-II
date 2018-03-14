@@ -2,8 +2,17 @@
 
 .contact {
 
-    p {
+	@media @tablet {
+    	margin: 20px 2%;
+  	}
+
+	p {
         margin: 20px 0;
     }
+
+    color: @millennium-falcon;
+    &:hover {
+            color: @wookie-brown;
+        }
    
 }
