@@ -9,6 +9,12 @@
         justify-content: center;
     }//media tablet end
 
+    @media @phone {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }//phone media end
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -22,7 +28,11 @@
         @media @tablet {
             margin: 0 -1% 0 0;
         }//media tablet end
-    }
+
+        @media @phone {
+            margin: 0 0 50px 0;
+        }//media phone end
+    }//cta-text end
 
     button {
         border: 1px double black;
@@ -42,6 +52,10 @@
     img {
         @media @tablet {
             .opacity(.5);
+        }
+
+        @media @phone {
+            display: none;
         }
     }
 }// cta
