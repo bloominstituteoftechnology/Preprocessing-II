@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.button-mixin {
+  width: 15px;
+  height: 10px;
+  background-color: orange;
+}
 * {
   box-sizing: border-box;
 }
@@ -195,10 +200,17 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-box-shadow: 3px 5px 2px;
+  -moz-box-shadow: 3px 5px 2px;
+  box-shadow: 3px 5px 2px;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: skew(5deg, 5deg);
+  -moz-transform: skew(5deg, 5deg);
+  -ms-transform: skew(5deg, 5deg);
+  -o-transform: skew(5deg, 5deg);
 }
 .main-content {
   border-top: 2px solid black;
@@ -221,9 +233,11 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
-  -webkit-box-shadow: 25px;
-  -moz-box-shadow: 25px;
-  box-shadow: 25px;
+}
+.main-content .text-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 .main-content .middle-img {
   display: block;
@@ -234,14 +248,10 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-transform: rotate(35);
-  -moz-transform: rotate(35);
-  -ms-transform: rotate(35);
-  -o-transform: rotate(35);
-  -webkit-transform: skew(22, 15);
-  -moz-transform: skew(22, 15);
-  -ms-transform: skew(22, 15);
-  -o-transform: skew(22, 15);
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
 }
 .main-content .bottom-content {
   display: flex;
