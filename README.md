@@ -4,7 +4,7 @@ At this point, you have been introduced to LESS variables, nesting, mixins, esca
 
 ## Project 2 - Organize imports, use mixins, functions, escaping, namespacing by building and updating a single web page.
 This project will be broken into two main tasks: 
-1. Using imports to build a LESS structure. 
+1. Use several imports to build a single index.less file. 
 2. Demonstrate that you can use mixins, escaping, functions and stretching to see if you can use namespaces.
 
 Start by forking and cloning this repo then get started on the tasks.  Good luck!
