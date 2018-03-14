@@ -35,3 +35,20 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.text-button (@width, @height, @bgColor) {
+	display: block;
+	width: @width;
+	height: @height;
+	background: @bgColor;
+	color: black;
+	margin: 20px 0 0 0;
+	border: 1px double black;
+	font-size: 14px;
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 3px;
+	cursor: pointer;
+	&:hover {
+		background: darken(@bgColor, 20%);
+	}
+}
