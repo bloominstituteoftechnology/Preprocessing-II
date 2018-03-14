@@ -264,6 +264,9 @@ header .logo {
   width: 170px;
   height: 32px;
   margin-top: 10px;
+  -webkit-box-shadow: 5px;
+  -moz-box-shadow: 5px;
+  box-shadow: 5px;
   cursor: pointer;
 }
 .cta button:hover {
