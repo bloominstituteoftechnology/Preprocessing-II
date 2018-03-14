@@ -36,8 +36,8 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.button-mixin {
-	width: 15px;
-	height: 10px;
-	background-color: orange;
+.create-button( @width, @height, @background ){
+	width: @width;
+	height: @height;
+	background: @background;
 }

@@ -126,11 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.button-mixin {
-  width: 15px;
-  height: 10px;
-  background-color: orange;
-}
 * {
   box-sizing: border-box;
 }
@@ -234,17 +229,34 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-.main-content .text-content {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+.main-content .text-content button {
+  width: 100px;
+  height: 45px;
+  background: fuchsia;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 20px 0 0;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .main-content .text-content button {
+    display: none;
+  }
+}
+.main-content .text-content button:hover {
+  background: #990099;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;

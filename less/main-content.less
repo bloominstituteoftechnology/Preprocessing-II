@@ -26,16 +26,28 @@
     }
 
     .text-content {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        //.button-mixin;
+        
+        button {
+            .create-button(100px, 45px, fuchsia);
+            .border-radius(10px);
+            margin: 20px 0 0;
+            color: white;
+            cursor: pointer;
+
+            @media @phone {
+                display: none;
+            }
+
+            &:hover {
+                background: darken(fuchsia, 20%);
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
-        .border-radius: 10px; // mixin 1
+        .border-radius(10px); // mixin 1
         .rotate(35deg); //mixin 4
     }
 
