@@ -3,27 +3,108 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media @smaller {
+      header {
+      flex-wrap: wrap;
+      }
+    }
+
+    @media @phone {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+
+      &:hover {
+            .skew (20deg, 0deg);
+            .rotate (180deg)
+          }
+
+
+      @media @tablet {
+        width: 59%;
+        margin-left: 3%;
+      }
+
+      @media @smaller {
+        width: 100%;
+      }
+
+      @media @phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+      }
+
+      &:first-child {
+      
+        @media @phone {
+          border-top: 1px solid gray;
+        }
+      }
+        
+
       a {
         text-decoration: none;
-        color: #b0b0b0;
+        color: @c3po;
+
+        @media @phone {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          border-bottom: 1px solid gray;
+        }
   
         &:hover {
             text-decoration: underline;
-            color: black;
-  
+            color: @lightsaber-red;
+              
+              @media @phone {
+                background: gray;
+              }          
+          }
         }
       }
-    }
+    
+  
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        background-color: @lightsaber-red;
+        .border-radius (@radius: 10px);
+
+        @media @tablet {
+          margin: 28px 0 0 8%;
+        }
+
+        @media @smaller {
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+        }
+
+        @media @phone {
+          margin: 20px 0;
+        }      
+        
+        &:hover {
+            .skew (20deg, 0deg);
+            background-color: @lightsaber-green;
+        }
     }
   }// header 
