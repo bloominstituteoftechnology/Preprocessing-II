@@ -29,19 +29,23 @@
         p {
             @media @tablet {
             margin-bottom: 6px; 
+            #bundledNspaces > .p ;
             }
             @media @phone {
                 margin-bottom: 34px;
+                #bundledNspaces > .h4;
             }
         }
         .text-content button {
             @media @tablet {
             .buttonMix(50%, 2rem, rgb(255, 145, 0));
             margin-left: 25%;
+            #bundledNspaces > .button;
             }
             @media @phone {
                 .buttonMix(100%, 2rem, rgb(255, 145, 0));
                 margin-left: auto;
+                #bundledNspaces > .button;
             }
 
             &:hover {
@@ -49,6 +53,12 @@
                 background: darken(rgb(255, 145, 0), 20%);
                 
             }
+        }
+        @media @tablet {
+            #bundledNspaces > .h4;
+        }
+        @media @phone {
+            #bundledNspaces > .p;
         }
     }
 
@@ -60,11 +70,13 @@
             width: 100%;
             margin: 1.875rem auto;
             margin-bottom: 20px;
+            #bundledNspaces > .button;
         }
         @media @phone {
             width: 100%;
             margin-top: 0px;
             margin-bottom: 35px;
+            #bundledNspaces > .button;
         }
     }
 
@@ -116,10 +128,12 @@
         @media @tablet {
             .buttonMix(60%, 2rem, rgb(0, 238, 255));
             margin-left: 20%;
+            #bundledNspaces > .button;
         }
         @media @phone {
             .buttonMix(100%, 2rem, rgb(0, 238, 255));
             margin-left: auto;
+            #bundledNspaces > .button;
         }
         
         &:hover {

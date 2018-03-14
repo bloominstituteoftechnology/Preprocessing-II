@@ -409,11 +409,13 @@ header .logo {
 @media (max-width: 768px) {
   .main-content .top-content p {
     margin-bottom: 6px;
+    color: yellow;
   }
 }
 @media (max-width: 400px) {
   .main-content .top-content p {
     margin-bottom: 34px;
+    color: blue;
   }
 }
 @media (max-width: 768px) {
@@ -422,6 +424,12 @@ header .logo {
     height: 2rem;
     background: #ff9100;
     margin-left: 25%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
   }
 }
 @media (max-width: 400px) {
@@ -430,10 +438,26 @@ header .logo {
     height: 2rem;
     background: #ff9100;
     margin-left: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
   }
 }
 .main-content .top-content .text-content button:hover {
   background: #995700;
+}
+@media (max-width: 768px) {
+  .main-content .top-content {
+    color: blue;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    color: yellow;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -445,6 +469,12 @@ header .logo {
     width: 100%;
     margin: 1.875rem auto;
     margin-bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
   }
 }
 @media (max-width: 400px) {
@@ -452,6 +482,12 @@ header .logo {
     width: 100%;
     margin-top: 0px;
     margin-bottom: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
   }
 }
 .main-content .bottom-content {
@@ -515,6 +551,12 @@ header .logo {
     height: 2rem;
     background: #00eeff;
     margin-left: 20%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
   }
 }
 @media (max-width: 400px) {
@@ -523,6 +565,12 @@ header .logo {
     height: 2rem;
     background: #00eeff;
     margin-left: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
   }
 }
 .main-content .text-content button:hover {
