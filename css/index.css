@@ -174,6 +174,7 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+<<<<<<< HEAD
 
   .button-mixin {
     width: 200px;
@@ -185,6 +186,8 @@ header .logo {
     
   }
 
+=======
+>>>>>>> 002fc3c315452037541c0343ae636f1791947d39
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -223,6 +226,15 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+<<<<<<< HEAD
+=======
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+>>>>>>> 002fc3c315452037541c0343ae636f1791947d39
 }
 .main-content .bottom-content {
   display: flex;
@@ -231,6 +243,14 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+<<<<<<< HEAD
+=======
+.contact {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+>>>>>>> 002fc3c315452037541c0343ae636f1791947d39
 .contact p {
   margin: 20px 0;
 }
