@@ -9,8 +9,13 @@ header {
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
-      a {
+      
+      @media @tablet{
+        width: 60%;
+        margin-left:2.5%
+      }        
+        
+        a {
         text-decoration: none;
         color: #b0b0b0;
   
@@ -18,12 +23,15 @@ header {
             text-decoration: underline;
             color: black;
   
-        }
-      }
-    }
+        }//hover
+      }//a
+    }//nav
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+      @media @tablet{
+        margin: 28px 0 0 8%;
+      }
     }
   }// header 
