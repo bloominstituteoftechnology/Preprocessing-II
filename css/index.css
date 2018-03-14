@@ -156,6 +156,9 @@ header nav {
   width: 610px;
   justify-content: space-between;
   display: flex;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 header nav a {
   text-decoration: none;
@@ -208,10 +211,27 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  -webkit-box-shadow: 25px;
+  -moz-box-shadow: 25px;
+  box-shadow: 25px;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: rotate(35);
+  -moz-transform: rotate(35);
+  -ms-transform: rotate(35);
+  -o-transform: rotate(35);
+  -webkit-transform: skew(22, 15);
+  -moz-transform: skew(22, 15);
+  -ms-transform: skew(22, 15);
+  -o-transform: skew(22, 15);
 }
 .main-content .bottom-content {
   display: flex;
