@@ -36,18 +36,21 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.custom-button (@width: auto; @height: auto; @background-color: white) {
-	width: @width;
-	height: @height;
-	background-color: @background-color;
-	.border-radius(2.5px);
-	border: solid 2px blue;
-	margin: 3% 0;
-	padding: auto;
-	&:hover{
-		background-color: darken(lightgrey, 20%);
-		color: white;
-		cursor: pointer;
+#custom {
+	.button (@width: auto; @height: auto; @background-color: white) {
+		width: @width;
+		height: @height;
+		background-color: @background-color;
+		.border-radius(2.5px);
+		border: solid 2px blue;
+		margin: 3% 0;
+		padding: auto;
+		&:hover{
+			background-color: darken(lightgrey, 20%);
+			color: white;
+			cursor: pointer;
+		}
 	}
 
+	
 }

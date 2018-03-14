@@ -201,7 +201,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: dark grey;
+  color: dark green;
   font-size: 2rem;
 }
 @media (max-width: 400px) {
@@ -229,8 +229,11 @@ header nav a:hover {
   }
 }
 header .logo {
-  max-width: 70%;
+  max-width: 100%;
   margin: 0 2%;
+}
+header .logo:hover {
+  src: url("img/lit-logo.png") no-repeat;
 }
 @media (max-width: 400px) {
   header .logo {
@@ -240,7 +243,7 @@ header .logo {
   }
 }
 .cta {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   margin: 3% 0%;
@@ -250,7 +253,6 @@ header .logo {
     margin: 0;
     padding: 0;
     width: 100%;
-    border: solid 3px green;
   }
 }
 @media (max-width: 400px) {
@@ -318,10 +320,8 @@ header .logo {
   opacity: 0;
 }
 .cta img {
-  max-width: 300px;
-  height: 100%;
-  max-height: 300px;
-  margin: 0 2%;
+  max-width: 100%;
+  height: auto;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -356,9 +356,6 @@ header .logo {
   line-height: 18px;
 }
 @media (max-width: 768px) {
-  .main-content {
-    margin: 75px 20px 35px;
-  }
 }
 .main-content .top-content {
   display: flex;
@@ -392,7 +389,7 @@ header .logo {
 }
 .main-content .middle-img {
   height: auto;
-  width: auto;
+  width: 100%;
   padding: 0 1% 0 0;
 }
 @media (max-width: 768px) {
@@ -446,7 +443,10 @@ header .logo {
 }
 @media (max-width: 400px) {
   .contact p {
-    margin: 20px;
+    -webkit-transform: skew(-30deg, 0);
+    -moz-transform: skew(-30deg, 0);
+    -ms-transform: skew(-30deg, 0);
+    -o-transform: skew(-30deg, 0);
   }
 }
 footer {
