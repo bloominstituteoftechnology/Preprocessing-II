@@ -181,10 +181,6 @@ header nav {
   display: flex;
 }
 header nav:hover {
-  -webkit-transform: skew(20deg, 0deg);
-  -moz-transform: skew(20deg, 0deg);
-  -ms-transform: skew(20deg, 0deg);
-  -o-transform: skew(20deg, 0deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -330,10 +326,6 @@ header .logo:hover {
   }
 }
 .cta .cta-text:hover {
-  -webkit-transform: skew(20deg, 0deg);
-  -moz-transform: skew(20deg, 0deg);
-  -ms-transform: skew(20deg, 0deg);
-  -o-transform: skew(20deg, 0deg);
   color: #5AEB3A;
 }
 @media (max-width: 768px) {
@@ -411,10 +403,6 @@ header .logo:hover {
   color: #5AEB3A;
 }
 .main-content .top-content:hover {
-  -webkit-transform: skew(20deg, 0deg);
-  -moz-transform: skew(20deg, 0deg);
-  -ms-transform: skew(20deg, 0deg);
-  -o-transform: skew(20deg, 0deg);
   color: #F01A15;
 }
 .main-content .top-content .btn {
@@ -522,10 +510,6 @@ header .logo:hover {
   padding-right: 20px;
 }
 .main-content .bottom-content:hover {
-  -webkit-transform: skew(20deg, 0deg);
-  -moz-transform: skew(20deg, 0deg);
-  -ms-transform: skew(20deg, 0deg);
-  -o-transform: skew(20deg, 0deg);
   color: #F01A15;
 }
 .contact {
@@ -540,10 +524,6 @@ header .logo:hover {
   margin: 20px 0;
 }
 .contact:hover {
-  -webkit-transform: skew(20deg, 0deg);
-  -moz-transform: skew(20deg, 0deg);
-  -ms-transform: skew(20deg, 0deg);
-  -o-transform: skew(20deg, 0deg);
   color: #79582D;
 }
 footer {
