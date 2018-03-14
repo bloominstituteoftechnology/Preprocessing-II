@@ -1,48 +1,39 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-   @media @tablet {
-    background: blue;
-   }
-    @media @phone {
-    background: green;
-  }
-
-   .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
-    .top-content h4 {
-        .button-creator(200px, 45px, teal,);
-        &:hover {
-            background-color: darken(@btn-bg-color, 20%);
-        }
-    }
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-        .box-shadow (5px 10px gray);
-        .skew (15deg, 15deg);
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-        .text-content h4 {
-            .button-creator(200px, 45px, orchid,);
-            &:hover {
-                background-color: darken(@btn-bg-color, 20%);
-            }
-        }
-
-        p {
-            padding-right: 20px;
-        }
-    }
-}// main-content
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+ 
+    .top-content {
+         display: flex;
+         justify-content: space-around;
+ 
+         button {
+             .text-button(140px, 30px, #eee);
+         }
+     }
+ 
+     .middle-img {
+         display: block;
+         margin: 30px auto;
+ 
+         .box-shadow (5px 5px #555);
+     }
+ 
+     .bottom-content {
+         display: flex;
+         justify-content: space-around;
+ 
+         p {
+             padding-right: 20px;
+         }
+ 
+         button {
+             .text-button(140px, 30px, #ddd);
+         }
+     }
+ }// main-content

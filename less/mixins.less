@@ -36,20 +36,19 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-// Create your own custom button mixin that passes values for width, height, and background color. 
-// Once you have created this mixin, introduce a button to the bottom of each .text-content div. 
-// Create unique text for each button to match the header. Example: The heading "Features" could have a 
-// button that reads "See Features." Be creative!
-
-.button-creator(@width, @height, @bg-color,) {
+.text-button (@width, @height, @bgColor) {
+	display: block;
 	width: @width;
 	height: @height;
-	background-color: @bg-color;
-  }
-
-@btn-color: green;
-@width: 1;
-@btn-bg-color: white;
-&:hover {
-    background-color: darken(@btn-bg-color, 20%);
-  }
+	background: @bgColor;
+	color: black;
+	margin: 20px 0 0 0;
+	border: 1px double black;
+	font-size: 14px;
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 3px;
+	cursor: pointer;
+	&:hover {
+		background: darken(@bgColor, 20%);
+	}
+}
