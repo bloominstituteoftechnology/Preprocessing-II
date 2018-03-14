@@ -5,6 +5,11 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    //Tablet
+    @media @tablet {
+        justify-content: center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +19,14 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        //border: 1px solid red;
+        //implemented rotate mixin
+        .rotate(-15deg);
+
+        //Tablet
+        @media @tablet {
+            margin: 0;
+        }
     }
 
     .cta-text button {
@@ -24,10 +37,23 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        //implemented .box-shadow mixin
+        .box-shadow(0 15px 10px 0 lightblue);
+        //border: 1px solid red;
 
         &:hover {
-            background: black;
+            background: teal;
             color: white;
         }
     }
+
+    img {
+        .skew(-15deg, 15deg); //implemented skew mixin
+        
+        //Tablet
+        @media @tablet {
+            display: none;
+        }
+    } 
+
 }// cta
