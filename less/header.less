@@ -3,6 +3,11 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @phone {
+      flex-wrap: wrap;
+      justify-content: center;
+    }//phone media end
   
     nav {
       margin-top: 40px; 
@@ -15,6 +20,14 @@ header {
         margin-left: 2.5%;
       
       }//media tablet end
+
+      @media @phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+      }//phone media end
   
       a {
         text-decoration: none;
@@ -23,8 +36,22 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
+
+            @media @phone {
+              background: gray;
+            }// phone end
   
         }
+
+        @media @phone {
+          width: 100%;
+          margin: 0;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 20px;
+          border-bottom: 1px solid gray;
+        }//phone end
       }
     }
   
@@ -35,5 +62,11 @@ header {
         @media @tablet {
             margin: 28px 0 0 8%;
         }// media tablet end
+
+        @media @phone {
+          order: -1;
+        max-width: 100%;
+        margin: 20px 0;
+        }
     }
   }// header 
