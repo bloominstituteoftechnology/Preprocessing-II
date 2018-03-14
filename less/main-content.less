@@ -7,15 +7,22 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-
+    padding-bottom: 160px;
+    background-color: @dinasaurgreen;
    .top-content {
         display: flex;
+       position: absolute;
+       left: 140px;
         justify-content: space-around;
+       width: 900px;
+       
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .skew(30deg,0deg);
+        margin-top: 120px;
     }
 
     .bottom-content {
@@ -25,5 +32,9 @@
         p {
             padding-right: 20px;
         }
+        position: absolute;
+        left: 250px;
+        width: 900px;
     }
 }// main-content
+
