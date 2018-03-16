@@ -1,5 +1,6 @@
 // Main Content Styles
 
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -7,21 +8,70 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+ 
 
-   .top-content {
+
+   .top-content  {
         display: flex;
         justify-content: space-around;
+
+        .text-content:nth-of-type(1){
+            button {
+            .button-creator(150px, 30px, green, center);
+            &:hover {
+                background-color: lighten(green, 20%);
+            }
+        }
+    }
+        .text-content:nth-of-type(2){
+           button {
+            .button-creator(150px, 30px, blue, center);
+            &:hover {
+                background-color: lighten(blue, 20%);
+            }
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .rotate;
+        .box-shadow;
+
+         
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        
+        .text-content:nth-of-type(1){
+            button {
+            .button-creator(150px, 30px, yellow, center);
+            &:hover {
+                background-color: lighten(yellow, 20%);
+            }
+            }
+        }
 
+        .text-content:nth-of-type(2){
+           button {
+            .button-creator(150px, 30px, purple, center);
+            &:hover {
+                background-color: lighten(purple, 20%);
+            }
+            }
+        }
+
+        .text-content:nth-of-type(3){
+            button {
+             .button-creator(150px, 30px, red, center);
+             &:hover {
+                background-color: lighten(red, 20%);
+            }
+             }
+         }
         p {
             padding-right: 20px;
         }
