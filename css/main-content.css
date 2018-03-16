@@ -1,0 +1,69 @@
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
+}
+.text-content .vision {
+  width: 100px;
+  height: 25px;
+  background-color: green;
+}
+.text-content .vision:hover {
+  background-color: #000000;
+}
+.text-content .services {
+  width: 100px;
+  height: 25px;
+  background-color: green;
+}
+.text-content .services:hover {
+  background-color: #000000;
+}
+.text-content .about {
+  width: 100px;
+  height: 25px;
+  background-color: green;
+}
+.text-content .about:hover {
+  background-color: #000000;
+}
+.text-content .product {
+  width: 100px;
+  height: 25px;
+  background-color: green;
+}
+.text-content .product:hover {
+  background-color: #000000;
+}
+.text-content .features {
+  width: 100px;
+  height: 25px;
+  background-color: green;
+}
+.text-content .features:hover {
+  background-color: #000000;
+}
