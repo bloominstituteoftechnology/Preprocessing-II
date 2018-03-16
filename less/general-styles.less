@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -15,7 +19,26 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+h4 {
+    @media @phone {
+    font-size: 2rem;
+    }
+}
+
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
+    background-color: @tan;
+
+    @media @tablet {
+        background-color: @green;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media @phone {
+        background-color: @yellow;
+        flex-wrap: wrap;
+    }
 }
