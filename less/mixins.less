@@ -35,3 +35,18 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+#buttonsNS() { 
+
+.button-creator (@width: 200px, @height: 100px, @bg-color: aquamarine) {
+	width: @width;
+	height: @height;
+	font-size: 20px;
+	background-color: @bg-color;
+}
+ .border-radius(@radius) {
+	 -webkit-border-radius: @radius;
+	 -moz-border-radius: @radius;
+	 border-radius: @radius;
+ }
+}
