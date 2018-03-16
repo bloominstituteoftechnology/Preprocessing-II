@@ -1,3 +1,99 @@
 // Variables
 
 @some-color: blue;
+/* My escapes with media querie variables*/
+@tablet: ~'(max-width: 768px)';
+@phone: ~'(max-width: 400px)';
+
+.container {
+    
+    @media @tablet {
+        header {
+            flex-direction: column-reverse;
+            align-items: center;
+    
+            img {
+                margin: 20px 0 0;
+                align-self: center;
+            }
+        }
+    
+        .cta {
+            .cta-text {
+                width: 50%;
+                margin-right: 5%;
+                h1 {
+                    width: 100%;
+                    font-size: 55px;
+                }
+            }
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .main-content {
+            img {
+                width: 95%;
+            }
+        }
+    }
+    
+    @media @phone {
+        header {
+            nav {
+                ul {
+                    width: 395px;
+                    font-size: 1rem;
+                    flex-direction: column;
+                    display: block;
+                    text-align: center;
+                    margin-top: 20px;
+                    
+                    li {
+                        margin: 30px;
+                        border-top: solid 1px;
+                        padding-top: 15px 0;
+                    }
+                }
+            }
+        }
+
+        .cta {
+            flex-direction: column;
+            align-items: center;
+
+            .cta-text {
+                h1 {
+                    font-size: 35px;
+                }
+
+                button {
+                    width: 125px;
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        .main-content {
+            margin: 50px 0 35px 0;
+            
+            .top-content {
+                flex-direction: column;
+            }
+
+            img {
+                width: 100%;
+                margin: 30px 0;
+            }
+
+            .bottom-content {
+                flex-direction: column;
+            }
+        }
+    }
+}
