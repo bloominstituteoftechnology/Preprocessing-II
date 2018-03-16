@@ -1,3 +1,82 @@
+@import 'reset.less';
+@import 'variables.less';
+@import 'mixins.less';
+@import 'general-styles.less';
+@import 'header.less';
+@import 'cta.less';
+@import 'main-content.less';
+@import 'contact.less';
+@import 'footer.less';
+
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
+ 
+.cta {
+    .cta-text{
+        button {
+            .border-radius(20px);
+            &:hover {
+                .opacity(0.5);
+            }
+        }
+    }
+}
+
+.main-header {
+    nav {
+        ul {
+            .box-shadow(10px 10px 10px 10px color(red));
+            @media @tablet {
+                .box-shadow(10px 10px 10px 10px color(purple));
+            }
+            @media @phone {
+                .box-shadow(10px 10px 10px 10px color(green));
+            }
+        }
+    }
+}
+
+.main-content {
+    .top-content {
+        .rotate(-45deg);
+        .box-shadow(10px 10px 10px 10px color(pink));
+        @media @tablet {
+            .box-shadow(10px 10px 10px 10px color(teal));
+        }
+
+        @media @phone {
+            .box-shadow(10px 10px 10px 10px color(yellow));
+        }
+            .text-content {
+                .Features {
+                    .button-mixin(100px, 20px, darken(gray, 20%));
+                }
+                .About {
+                    .button-mixin(100px, 20px,darken(gray, 20%));
+                }
+            }
+    }
+    .bottom-content {
+        .rotate(45deg);
+        .box-shadow(10px 10px 10px 10px color(orange));
+    }
+        .Services {
+            .button-mixin(100px, 20px, darken(gray, 20%));
+        }
+        .Product {
+            .button-mixin(100px, 20px, darken(gray, 20%));
+        }
+        .Vision {
+            .button-mixin(100px, 20px, darken(gray, 20%));
+        }
+}
+
+.contact {
+    .skew(45deg, 20deg);
+}
+
+
 
 
 
