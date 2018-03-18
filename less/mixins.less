@@ -1,5 +1,37 @@
 // Mixins below variables
 
+#lambda-style() {
+	.button {
+		width: 200px;
+		text-align: center;
+		padding: 20px;
+		display: block;
+		border: 2px solid black;
+		background-color: lightblue;
+		&:hover {
+			background-color: white;
+		}
+	}// button
+
+	.button2 {
+		width: 500px;
+		text-align: center;
+		padding: 20px;
+		display: block;
+		border: 2px solid black;
+		background-color: lightblue;
+		&:hover {
+			background-color: white;
+		}
+	}// button
+}
+
+.create-button(@width, @height, @background ) {
+	width: @width;
+	height: @height;
+	background: @background;
+}
+
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;

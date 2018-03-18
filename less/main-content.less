@@ -8,22 +8,61 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+       margin: 75px 2% 35px;
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        .border-radius(20px);
+
+        .rotate(180deg);
+
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }
+
         p {
             padding-right: 20px;
+        }
+    }
+
+    .text-content {
+
+        button {
+            #lambda-style > .button;
+
+            @media @phone {
+                display: none;
+            }
+
+            &:hover {
+                background: darken(lightblue, 25%);
+            }
         }
     }
 }// main-content
