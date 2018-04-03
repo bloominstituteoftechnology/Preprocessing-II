@@ -5,6 +5,19 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+      flex-flow: wrap;
+      justify-content: center;
+      margin: 8% 5% 8%;
+    }
+    
+    @media @phone {
+      flex-flow: column;
+      margin: 8% auto;
+      justify-content: center;
+      align-items: center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +27,15 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tablet {
+          margin: 8% 0;
+        }
+
+        @media @phone {
+          font-size: 4rem;
+          margin-bottom: 12%;
+        }
     }
 
     .cta-text button {
@@ -28,6 +50,14 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    img {
+        .rotate(45deg);
+
+        @media @phone {
+          width: 75%;
         }
     }
 }// cta
