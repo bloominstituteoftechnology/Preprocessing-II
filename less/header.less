@@ -1,5 +1,5 @@
 // Header Styles
-
+//added mixin rotate to nav links--they go upside down on hover
 header {
     width: 100%;
     display: flex;
@@ -38,6 +38,7 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
+            .rotate(180deg);// updside down
   
         }
       }
@@ -62,3 +63,5 @@ header {
         justify-content: center;
     }
   }// header 
+
+  
