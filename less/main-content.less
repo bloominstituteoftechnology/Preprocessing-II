@@ -13,20 +13,66 @@
         display: flex;
         justify-content: space-around;
         .box-shadow(~"5px 10px #888888");
+        @media @phone {
+            width: 98%;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .text-content {
+            margin: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            button {
+                #button-styles > .button2;
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
         .opacity(0.8);
+        
+        @media @tablet {
+            width: 98%;
+            margin: 30px 0px;
+            padding: 0px;
+        }
+        
+        @media(max-width: 400px) {
+            width: 100%;
+            margin: auto;
+            padding: 0px;
+        } 
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
         .box-shadow(~"5px 10px #888888");
+        
+        @media @phone {
+            width: 98%;
+            padding: 20px;
+            flex-direction: column;
+        }
+        
+        .text-content {
+            margin: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+            button {
+                #button-styles > .button2;
+            }
+        }
+        
         p {
             padding-right: 20px;
         }
     }
-}// main-content
+}// main-content 

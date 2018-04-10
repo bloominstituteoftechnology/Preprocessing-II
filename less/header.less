@@ -4,28 +4,71 @@ header {
     width: 100%;
     display: flex;
     &:hover {
-      .rotate (180deg);
+      .rotate(180deg);
     }
+
+  @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  @media @phone {
+      flex-direction: column;
+      align-items: center;
+      }
     nav {
       margin-top: 40px;
       width: 610px;
       justify-content: space-between;
       display: flex;
 
+      @media @tablet {
+        max-width: 768px;
+        justify-content: space-around;
+        margin-top: 10px; 
+      }
+      
+      @media @phone {
+        max-width: 400px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        }
+
       a {
         text-decoration: none;
         color: #b0b0b0;
 
-        &:hover {
+        @media @phone {
+          border-top: 1px solid gray;
+          width: 100%; 
+          text-align: center;
+          padding: 20px;
+          } 
+
+        &:hover { 
             text-decoration: underline;
             color: black;
-
+        }
+        &:last-child {
+          @media @phone {
+            border-bottom: 1px solid gray;
+          }        
         }
       }
     }
 
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+      align-self: flex-end;
+      margin: 28px 0 0 91px;
+      
+      @media @tablet {
+        order: -1;
+        margin: 28px 0;
+      }
+      @media @phone {
+          margin: 0px;
+          align-self: center;
+          margin: 0px;
+      }
     }
   }// header
