@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.mixin-tablet {
+  display: none;
+}
 * {
   box-sizing: border-box;
 }
@@ -163,16 +166,29 @@ header nav a {
 }
 header nav a:hover {
   text-decoration: underline;
-  color: black;
+  color: green;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: skew(5deg, 10deg);
+  -moz-transform: skew(5deg, 10deg);
+  -ms-transform: skew(5deg, 10deg);
+  -o-transform: skew(5deg, 10deg);
 }
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .cta img {
+    display: none;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -197,9 +213,9 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: 5px 10px;
-  -moz-box-shadow: 5px 10px;
-  box-shadow: 5px 10px;
+  -webkit-box-shadow: 10px 5px;
+  -moz-box-shadow: 10px 5px;
+  box-shadow: 10px 5px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {

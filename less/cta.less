@@ -5,6 +5,12 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    img {
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }    
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -24,7 +30,7 @@
         height: 32px;
         margin-top: 10px;
         .border-radius;  //border mixin
-        .box-shadow; //box-shadow mixin
+        .box-shadow (10px 5px);
 
         cursor: pointer;
 
