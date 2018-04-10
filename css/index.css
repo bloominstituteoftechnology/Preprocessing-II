@@ -196,15 +196,28 @@ header .logo:hover {
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
+  background: #ffffff;
   width: 170px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  box-shadow: 2px 2px 2px #33ccff;
 }
 .cta .cta-text button:hover {
   background: #4d4d4d;
-  color: white;
+  color: #ffffff;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transition-timing-function: ease-in-out;
+  transition: 1s;
 }
 .main-content {
   border-top: 2px solid black;
@@ -221,6 +234,13 @@ header .logo:hover {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  box-shadow: 5px 5px 5px #33ccff;
 }
 .main-content .bottom-content {
   display: flex;

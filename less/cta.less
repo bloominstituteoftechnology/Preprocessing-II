@@ -24,10 +24,15 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius;
+        box-shadow: 2px 2px 2px @shadow-color;
 
         &:hover {
             background: darken(@button-color, 70%);
             color: @button-color;
+            .rotate(360deg);
+            transition-timing-function: ease-in-out;
+            transition: 1s;
         }
     }
 }// cta
