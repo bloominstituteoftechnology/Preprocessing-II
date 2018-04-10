@@ -1,14 +1,20 @@
 @tablet: ~"(max-width: 768px)";
 @mobile: ~"(max-width: 400px)";
 
+// button 
+@base: #f04615;
+@width: 0.5;
+
 // Main Content Styles
+@base: #f04615;
+@width: 0.5;
 
 .btn {
     border-radius: 50%;
     width: 15em;
     height: 5em;
     color: black;
-    background: linear-gradient(red, yellow, green);
+    background: fade(linear-gradient(red, yellow, green), 80%);
 }
 
 .main-content {
@@ -18,6 +24,7 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   background-color: spin(lighten(@base, 50%), 8); // still not working
 
    .top-content {
         display: flex;
