@@ -3,16 +3,48 @@
 header {
     width: 100%;
     display: flex;
+    .box-shadow(10px 5px 5px red);
+    border: solid 1px red;
+    
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+  
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      
+      @media @tablet {
+        width: 100%;
+        margin-left: 3%;
+        order: 2;
+
+      }
+  
+  
+      @media @phone {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+      }
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+
+        @media @phone {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          border-bottom: 1px solid gray;
+        }
   
         &:hover {
             text-decoration: underline;
@@ -25,5 +57,9 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          margin: 0;
+        }
     }
   }// header 
