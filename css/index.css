@@ -160,6 +160,57 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width:768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 3%;
+  }
+  .container header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: space-around;
+    width: 100%;
+  }
+  .container nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .logo {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .container .cta img {
+    display: none;
+  }
+  .container .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .cta .cta-text {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .container .main-content .middle-img {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
 header {
   width: 100%;
   display: flex;

@@ -20,6 +20,14 @@ header {
             color: black;
   
         }
+        @media @mobile {
+          text-align: center;
+          padding: 14px 0;
+          border: 0.5px solid black;
+        }
+      }
+      @media only screen and ( max-width: 400px) {
+        flex-direction: column;
       }
     }
   
@@ -27,5 +35,11 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .rotate(45deg); //rotate mixin
+        @media @media {
+          order: -1;
+      }
     }
+    @media @mobile {
+      .fix-to-mobile-width;
+  }
   }// header 

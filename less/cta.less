@@ -16,6 +16,10 @@
         margin: 0 82px 0 0;
         .opacity(@opacity: 0.5); //opacity mixin
         .box-shadow(@shadowyboxvalue); //box-shadow mixin
+        @media only screen and ( max-width: 400px) {
+            margin-right: 0;
+            font-size: 48px;
+        }
     }
 
     .cta-text button {
@@ -31,5 +35,13 @@
             background: black;
             color: white;
         }
+    }
+    img {
+        @media only screen and ( max-width: 400px) {
+            display: none;
+        }    
+    }
+    @media only screen and ( max-width: 400px) {
+        justify-content: space-around;
     }
 }// cta

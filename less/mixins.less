@@ -44,3 +44,19 @@
 	background-color: aquamarine;
 	.border-radius(8px);
 }
+
+.fix-to-mobile-width {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.text-content-mobile {
+    @media only screen and ( max-width: 400px) {
+        padding: 13px;
+        font-size: 100% - 12%;
+        .no-shadow;
+        &:hover {
+            .shadow;
+        }
+    }
+}
