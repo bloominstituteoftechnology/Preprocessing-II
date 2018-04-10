@@ -152,6 +152,18 @@ table {
     font-size: 88%;
   }
 }
+#namespaces .heading-1 {
+  color: blueviolet;
+}
+#namespaces .heading-4 {
+  font-family: fantasy;
+}
+#namespaces .button {
+  -webkit-transform: skew(5deg, -5deg);
+  -moz-transform: skew(5deg, -5deg);
+  -ms-transform: skew(5deg, -5deg);
+  -o-transform: skew(5deg, -5deg);
+}
 * {
   box-sizing: border-box;
 }
@@ -304,6 +316,9 @@ header .logo {
     font-size: 48px;
   }
 }
+.cta .cta-text h1 {
+  color: blueviolet;
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -339,6 +354,15 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content h4 {
+  font-family: fantasy;
+}
+.main-content .top-content button {
+  -webkit-transform: skew(5deg, -5deg);
+  -moz-transform: skew(5deg, -5deg);
+  -ms-transform: skew(5deg, -5deg);
+  -o-transform: skew(5deg, -5deg);
+}
 @media (max-width: 400px) {
   .main-content .top-content {
     padding: 13px;
@@ -355,6 +379,15 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content h4 {
+  font-family: fantasy;
+}
+.main-content .bottom-content button {
+  -webkit-transform: skew(5deg, -5deg);
+  -moz-transform: skew(5deg, -5deg);
+  -ms-transform: skew(5deg, -5deg);
+  -o-transform: skew(5deg, -5deg);
 }
 .main-content .bottom-content p {
   padding-right: 20px;
