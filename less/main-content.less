@@ -12,6 +12,11 @@
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+          }
+
         .main-buttons {
             .buttons(15%, 60px, red);
             .border-radius(10px);
@@ -26,11 +31,23 @@
         .rotate(180deg);
         display: block;
         margin: 30px auto;
-    }
+
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+          }
+        }
+    
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+          }
 
         .main-buttons {
             .buttons(30%, 60px, red);
