@@ -11,6 +11,15 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        .main-buttons {
+            .buttons(15%, 60px, red);
+            .border-radius(10px);
+            
+        &:hover {
+            .darken(@weird-green, 15%);
+        }
+        }
     }
 
     .middle-img {
@@ -22,6 +31,15 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        .main-buttons {
+            .buttons(30%, 60px, red);
+            .border-radius(10px);
+            
+        &:hover {
+            .darken(@weird-green, 15%);
+        }
+        }
 
         p {
             padding-right: 20px;

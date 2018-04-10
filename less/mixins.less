@@ -35,3 +35,13 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.buttons(@width, @height, @background-color) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+}
+
+.darken(@color, @percentage) {
+	background-color: darken(@color, @percentage);
+}

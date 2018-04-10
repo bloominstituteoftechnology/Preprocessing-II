@@ -191,6 +191,10 @@ header .logo {
   -webkit-box-shadow: 10px 10px blue;
   -moz-box-shadow: 10px 10px blue;
   box-shadow: 10px 10px blue;
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
   border: 1px double black;
   font-size: 16px;
   background: white;
@@ -215,6 +219,20 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .main-buttons {
+  width: 15%;
+  height: 60px;
+  background-color: red;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .top-content .main-buttons:hover {
+  background-color: #19ff66;
+}
 .main-content .middle-img {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -226,6 +244,20 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .main-buttons {
+  width: 30%;
+  height: 60px;
+  background-color: red;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .bottom-content .main-buttons:hover {
+  background-color: #19ff66;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
