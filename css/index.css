@@ -172,19 +172,42 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+/*Escaping*/
 .container {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 1100px) {
+  .container {
+    background: bisque;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    background: aqua;
+  }
+}
 header {
   width: 100%;
   display: flex;
+  /*Escaping*/
 }
 header nav {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+  /*Escaping*/
+}
+@media (max-width: 1100px) {
+  header nav {
+    margin-right: 10px;
+  }
+}
+@media phone {
+  header nav {
+    flex-direction: column-reverse;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -198,10 +221,19 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 1100px) {
+  header .logo {
+    order: -1;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 20px;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  /*Escaping*/
 }
 .cta .cta-text {
   font-size: 72px;
@@ -225,6 +257,11 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media (max-width: 1100px) {
+  .cta img {
+    display: none;
+  }
 }
 .main-content {
   border-top: 2px solid black;
