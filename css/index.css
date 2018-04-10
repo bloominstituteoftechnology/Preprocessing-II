@@ -126,6 +126,39 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.class {
+  border: afasdasdf;
+  color: red;
+  -webkit-transform: skew(asdf, asdf);
+  -moz-transform: skew(asdf, asdf);
+  -ms-transform: skew(asdf, asdf);
+  -o-transform: skew(asdf, asdf);
+}
+.cta-text button {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.cta-text h1 {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+header nav a {
+  padding: 0 4px;
+  -webkit-box-shadow: 5px 5px 5px #888888;
+  -moz-box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 5px 5px #888888;
+}
+header nav a:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 5px 5px 5px green;
+  -moz-box-shadow: 5px 5px 5px green;
+  box-shadow: 5px 5px 5px green;
+}
 * {
   box-sizing: border-box;
 }
