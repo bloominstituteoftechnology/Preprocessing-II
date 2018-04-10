@@ -142,6 +142,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: royalblue;
 }
 .container {
   width: 880px;
@@ -204,7 +205,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: black;
 }
 @media (max-width: 400px) {
   header nav a {
@@ -221,7 +222,7 @@ header nav a:hover {
 }
 @media (max-width: 400px) {
   header nav a:hover {
-    background: gray;
+    background: royalblue;
   }
 }
 header .logo {
@@ -325,18 +326,27 @@ header .logo {
   }
 }
 .main-content .top-content .main-buttons {
-  width: 15%;
+  width: 30%;
   height: 60px;
-  background-color: red;
+  background-color: royalblue;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  color: white;
 }
 .main-content .top-content .main-buttons:hover {
-  background-color: #19ff66;
+  background-color: #132c76;
+}
+.main-content .top-content p {
+  padding-right: 20px;
+  font-family: 'Lucida Sans', cursive;
+  color: black;
+}
+.main-content .top-content p:hover {
+  color: royalblue;
 }
 .main-content .middle-img {
   -webkit-transform: rotate(180deg);
@@ -366,19 +376,25 @@ header .logo {
 .main-content .bottom-content .main-buttons {
   width: 30%;
   height: 60px;
-  background-color: red;
+  background-color: royalblue;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  color: white;
 }
 .main-content .bottom-content .main-buttons:hover {
-  background-color: #19ff66;
+  background-color: #132c76;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+  font-family: 'Lucida Sans', cursive;
+  color: black;
+}
+.main-content .bottom-content p:hover {
+  color: royalblue;
 }
 @media (max-width: 400px) {
   .contact {
