@@ -311,6 +311,21 @@ header .logo:hover {
     padding-bottom: 0px;
   }
 }
+.main-content .text-content button {
+  width: 170px;
+  height: 32px;
+  background-color: #B7ED61;
+  margin: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .text-content button:hover {
+  background: #89d018;
+}
 @media (max-width: 768px) {
   .main-content .text-content {
     padding: 0 1.3%;
