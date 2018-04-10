@@ -193,6 +193,7 @@ header nav {
   }
 }
 header nav a {
+  font-size: 18px;
   text-decoration: none;
   color: #b0b0b0;
   -webkit-border-radius: 5px;
@@ -202,15 +203,15 @@ header nav a {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+header nav a:hover {
+  background: grey;
+  color: red;
+}
 @media (max-width: 400px) {
   header nav a {
     padding: 4.25%;
     border-bottom: 1px solid gray;
   }
-}
-header nav a:hover {
-  text-decoration: underline;
-  color: black;
 }
 @media (max-width: 400px) {
   header nav a:first-child {
