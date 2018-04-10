@@ -1,23 +1,75 @@
+
+
+
+
+
+
+
 // Header Styles
 
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {              // use of escape strings
+      background: @colorChange1; // use of color change variable
+      flex-wrap: wrap;
+      justify-content: center;
+      }
+
+     @media @phone { // use of escape strings
+      flex-wrap: wrap;
+      justify-content: center;
+      background: @colorChange3;
+      }
+
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        width: 59%;
+        margin-left: 3%;    
+     }
+
+      @media @phone {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    &:first-child {
+      
+      @media @phone {
+        border-top: 1px solid gray;
+      }
+  }
+    
   
-      a {
+   a {
         text-decoration: none;
         color: #b0b0b0;
+
+        @media @phone {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          border-bottom: 1px solid gray;
+        }
   
         &:hover {
             text-decoration: underline;
             color: black;
-  
+
+            @media @phone {
+              background: gray;
+            }
         }
       }
     }
@@ -25,5 +77,13 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          margin: 28px 0 0 8%;
+        }
+  
+        @media @phone {
+          margin: 20px 0;
+        }
     }
   }// header 
