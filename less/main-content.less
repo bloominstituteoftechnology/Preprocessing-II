@@ -1,21 +1,29 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   border-top: 2px solid @base-color; 
+   border-bottom: 2px solid @base-color; 
+   margin: percentage(75px / @container-width) 0 percentage(35px / @container-width) 0;
+   padding: percentage(35px / @container-width) 0;
    font-size: 16px;
    line-height: 18px;
 
    .top-content {
         display: flex;
         justify-content: space-around;
+        button {
+            .button(green);
+        }
+
+        @media @mobile {
+            .text-content-400();
+        }
     }
 
     .middle-img {
         display: block;
-        margin: 30px auto;
+        margin: percentage(30px / @container-width) auto;
+        width: 100%;
     }
 
     .bottom-content {
@@ -24,6 +32,14 @@
 
         p {
             padding-right: 20px;
+        }
+
+        button {
+            .button(purple);
+        }
+
+        @media @mobile {
+            .text-content-400();
         }
     }
 }// main-content

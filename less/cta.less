@@ -2,32 +2,65 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: percentage(72px / @container-width);
+    justify-content: space-between;
+
+    @media @tablet {
+        justify-content: center;
+    }
 
     .cta-text {
-        font-size: 72px;
+        font-size: @reg-text-size*2.5;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        width: @cta-text-width;
+
+        @media @tablet {
+            margin-right: 0;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
+        background:red;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius;
+        .box-shadow(1px 1px 0 0);
 
         &:hover {
-            background: black;
+            background: @base-color;
             color: white;
         }
     }
+    img {
+        .opacity;
+        -webkit-animation: skewAnimation 5s infinite; /* Safari 4.0 - 8.0 */
+        -moz-animation: skewAnimation 5s infinite;
+        -ms-animation: skewAnimation 5s infinite;
+        -o-animation: skewAnimation 5s infinite;
+
+        @media @tablet {
+            display: none;
+        }
+    }
 }// cta
+
+@keyframes skewAnimation {
+    0% {
+        .skew(15deg, 0deg);
+    }
+    50% {
+        .skew(-15deg, 0deg);
+    }
+    100% {
+        .skew(15deg, 0deg);
+    }
+}

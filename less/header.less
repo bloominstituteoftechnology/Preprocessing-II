@@ -3,20 +3,46 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   
     nav {
-      margin-top: 40px; 
-      width: 610px;
+      margin-top: percentage(40px / @container-width) ;
+      width: percentage(610px / @container-width);
       justify-content: space-between;
       display: flex;
+      text-align: center;
+
+      @media @tablet {
+        width: 100%;
+      }
+      
+      @media @mobile {
+          margin-top: percentage(20px / @container-width);
+          flex-direction: column;
+      }
   
       a {
         text-decoration: none;
-        color: #b0b0b0;
-  
+        color: @base-color-light;
+        .rotate(20deg);
+
+        @media @mobile {
+          width: 100%;
+          padding: percentage(30px / @container-width) 0;
+          border-top: 1px solid @base-color;
+          .rotate(0deg);
+          
+          &:last-child {
+              border-bottom: 1px solid @base-color;
+          }
+        }
         &:hover {
-            text-decoration: underline;
-            color: black;
+          text-decoration: underline;
+          color: @base-color;
   
         }
       }
@@ -24,6 +50,11 @@ header {
   
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: percentage(28px / @container-width) 0 0 percentage(91px / @container-width);
+
+        @media @tablet {
+          margin-left: 0;
+          align-self: auto;
+      }
     }
   }// header 

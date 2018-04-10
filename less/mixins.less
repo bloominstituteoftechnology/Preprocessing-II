@@ -35,3 +35,24 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button(@color) {
+	background: @color;
+	color: white;
+	padding: 5px 20px;
+	.border-radius;
+	border-color: @color;
+	margin-top: 10px;
+	&:hover{
+		background: darken(@color,20%);
+		cursor: pointer;
+	}
+}
+
+.text-content-400 {
+    flex-direction: column;
+    padding: 0 percentage(20px / 400px);
+    .text-content {
+        margin-bottom: 10px;
+    }
+}
