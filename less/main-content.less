@@ -11,19 +11,45 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+          }
+
+        .main-buttons {
+            #lambda-is-cool > .buttons;
+        }
+
+        #lambda-is-cool > .paragraph;
     }
 
     .middle-img {
+        .rotate(180deg);
         display: block;
         margin: 30px auto;
-    }
+
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+          }
+        }
+    
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
-        p {
-            padding-right: 20px;
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+          }
+
+        .main-buttons {
+            #lambda-is-cool > .buttons;
         }
+
+        #lambda-is-cool > .paragraph;
     }
 }// main-content

@@ -35,3 +35,42 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+
+#lambda-is-cool() {
+	.buttons {
+		width: 30%;
+		height: 60px;
+		background-color: royalblue;
+		.border-radius(10px);
+        color: white;    
+        &:hover {
+            .darken(royalblue, 30%);
+        }
+
+	}
+
+	.headings {
+		font-family: 'Bangers', cursive;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+		color: royalblue;
+	}
+
+	.paragraph {
+		p {
+			padding-right: 20px;
+			font-family: 'Lucida Sans', cursive;
+			color: black;
+			&:hover {
+			color: royalblue;
+			}
+		}
+	}
+}
+
+.darken(@color, @percentage) {
+	background-color: darken(@color, @percentage);
+}
+
+
