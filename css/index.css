@@ -155,6 +155,8 @@ h5 {
 }
 @media (max-width: 400px) {
   .container {
+    width: 390px;
+    margin: auto;
     background: aqua;
   }
 }
@@ -271,6 +273,9 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content {
+  /*Mixin*/
+}
 .main-content .top-content .text-content button {
   background: blue;
   width: 60px;
@@ -283,6 +288,10 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.main-content .top-content .text-content button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -293,6 +302,9 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content {
+  /*function*/
 }
 .main-content .bottom-content .text-content button {
   background: blue;
@@ -305,6 +317,10 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.main-content .bottom-content .text-content button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .contact p {
   margin: 20px 0;

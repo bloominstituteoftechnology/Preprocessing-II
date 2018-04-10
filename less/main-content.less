@@ -13,10 +13,16 @@
         justify-content: space-around;
 
         .text-content{
+            /*Mixin*/
             button{
-                background: blue;
+                background: @background;
                 .button-creator;
                 .border-radius;
+
+                &:hover{
+                    background-color: lighten(@button-bg-color, 50%);
+                    color: darken(gray, 50%);
+                }
             }
         }
         
@@ -36,10 +42,17 @@
         }
         .text-content{
             button{
-                background: blue;
+                background: @background;
                 .button-creator;
                 .border-radius;
+
+                &:hover{
+                    background-color: lighten(@button-bg-color, 50%);
+                    color: darken(gray, 50%);
+                }
             }
+            /*function*/
+            
         }
     }
 }// main-content
