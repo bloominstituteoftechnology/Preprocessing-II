@@ -185,7 +185,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: aquamarine;
   font-size: 1.6rem;
 }
 @media (max-width: 400px) {
@@ -200,7 +200,7 @@ header nav a {
 }
 header nav a:hover {
   text-decoration: underline;
-  color: black;
+  color: #00e598;
   -webkit-transform: skew(5deg, 10deg);
   -moz-transform: skew(5deg, 10deg);
   -ms-transform: skew(5deg, 10deg);
@@ -247,7 +247,7 @@ header .logo {
   }
 }
 .cta .cta-text {
-  color: red;
+  color: steelblue;
   font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
@@ -273,8 +273,8 @@ header .logo {
   }
 }
 .cta .cta-text button {
-  color: blue;
-  border: 1px double blue;
+  color: aquamarine;
+  border: 1px double aquamarine;
   font-size: 1.6rem;
   background: white;
   width: 170px;
@@ -292,7 +292,7 @@ header .logo {
   box-shadow: 5px 10px;
 }
 .cta .cta-text button:hover {
-  background: blue;
+  background: aquamarine;
   color: white;
 }
 @media (max-width: 768px) {
@@ -325,14 +325,35 @@ header .logo {
   -moz-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   -o-transform: rotate(5deg);
+  color: steelblue;
+  text-decoration: underline;
+}
+@media (max-width: 400px) {
+  .main-content h4 {
+    margin-top: 20px;
+  }
+}
+.main-content p {
+  border: dotted medium #7fffd4;
+  padding-right: 0.05;
+  color: #ff5a77;
 }
 .main-content button {
   width: 100px;
   height: 50px;
-  background-color: aqua;
+  background-color: pink;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: solid #ff274d;
+  color: #f3002a;
+  margin-top: 15px;
 }
 .main-content button:hover {
-  background-color: #009999;
+  background-color: #ff5a77;
 }
 .main-content .top-content {
   display: flex;
@@ -341,7 +362,6 @@ header .logo {
 @media (max-width: 400px) {
   .main-content .top-content {
     flex-wrap: wrap;
-    height: 300px;
   }
 }
 .main-content .middle-img {
@@ -370,15 +390,23 @@ header .logo {
   .main-content .bottom-content {
     flex-wrap: wrap;
     align-content: space-between;
-    height: 440px;
   }
-}
-.main-content .bottom-content p {
-  padding-right: 0.05;
 }
 /* Contact Styles */
 .contact {
   font-size: 1.6rem;
+}
+.contact h4 {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  color: steelblue;
+  text-decoration: underline;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
 }
 @media (max-width: 768px) {
   .contact {
@@ -386,10 +414,19 @@ header .logo {
   }
 }
 .contact p {
+  border: dotted medium #7fffd4;
+  padding-right: 0.05;
+  color: #ff5a77;
   margin: 15px 0;
 }
 footer {
   text-align: center;
   margin: 40px 0 20px;
   font-size: 1.6rem;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  color: steelblue;
+  text-decoration: underline;
 }

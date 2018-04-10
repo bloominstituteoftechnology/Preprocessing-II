@@ -36,7 +36,7 @@ header {
   
       a {
         text-decoration: none;
-        color: #b0b0b0;
+        color: @link-color;
         font-size: 1.6rem;
 
         //Small screen styling
@@ -51,7 +51,7 @@ header {
   
         &:hover {
             text-decoration: underline;
-            color: black;
+            color: darken(@link-color, 30%);
             .skew(5deg, 10deg);
 
             //Small screen styling

@@ -14,13 +14,22 @@
     }
  
     h4 {
-        .rotate(5deg);
+        #great-design-namespace > .heading;
+
+        @media @mobile {
+            margin-top: 20px;
+        }
+    }
+
+    p {
+        #great-design-namespace > .p-tag;
     }
 
     button {
-        .button;
+        #great-design-namespace > .button;
+        margin-top: 15px;
         &:hover {
-            background-color: darken(aqua, 20%);
+            background-color: darken(@button-color, 20%);
         }
     }
 
@@ -28,12 +37,11 @@
      display: flex;
      justify-content: space-around;
      
-     //Small screen styling
-     @media @mobile {
-         flex-wrap: wrap;
-         height: 300px;
-     }
-     } //.top-content
+        //Small screen styling
+        @media @mobile {
+            flex-wrap: wrap;
+        }
+    } //.top-content
  
      .middle-img {
          display: block;
@@ -60,11 +68,6 @@
          @media @mobile{
              flex-wrap: wrap;
              align-content: space-between;
-             height: 440px;
          }
- 
-         p {
-             padding-right: 20/400;           // ~~~~~~~~~~~ Operation ~~~~~~~~~~~~
-         } //p
      } //.bottom-content
  } //.main-content
