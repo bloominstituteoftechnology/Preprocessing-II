@@ -189,6 +189,19 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -211,9 +224,6 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
-}
-button {
-  margin-top: 10px;
 }
 .contact p {
   margin: 20px 0;
@@ -346,7 +356,7 @@ header nav {
   box-shadow: 2px 2px 2px black;
   width: 50%;
   height: 50px;
-  background: #6195ED;
+  background: @some-color;
 }
 .cta .cta-text button:hover {
   background: #0000b3;
@@ -401,7 +411,7 @@ header nav {
 .main-content button {
   width: 50%;
   height: 50px;
-  background: #6195ED;
+  background: @some-color;
 }
 .main-content button:hover {
   background: #0000b3;
