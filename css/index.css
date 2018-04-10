@@ -144,7 +144,8 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
 @media (max-width: 400px) {
@@ -169,50 +170,50 @@ header {
     margin: 0;
     flex-direction: column-reverse;
   }
-  header nav {
-    margin-top: 40px;
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-  }
-  header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-  }
-  header nav a:hover {
-    text-decoration: underline;
-    color: black;
-  }
-  header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-  }
 }
-@media (max-width: 400px) and (max-width: 768px) {
+header nav {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 768px) {
   header nav {
     width: 100%;
     margin: 3.2rem;
   }
 }
-@media (max-width: 400px) and (max-width: 400px) {
+@media (max-width: 400px) {
   header nav {
     flex-flow: column wrap;
     text-align: center;
     margin: 0;
   }
 }
-@media (max-width: 400px) and (max-width: 400px) {
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+@media (max-width: 400px) {
   header nav a {
     padding: 4.25%;
     border-bottom: 1px solid gray;
   }
 }
-@media (max-width: 400px) and (max-width: 400px) {
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+@media (max-width: 400px) {
   header nav a:first-child {
     border-top: 1px solid gray;
   }
 }
-@media (max-width: 400px) and (max-width: 400px) {
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+}
+@media (max-width: 400px) {
   header .logo {
     margin: 7.5% 0;
     align-self: center;
@@ -262,6 +263,7 @@ header {
     margin: 20px 0;
     max-width: 88%;
     height: auto;
+    display: none;
   }
 }
 .main-content {
@@ -283,8 +285,9 @@ header {
   justify-content: space-around;
 }
 @media (max-width: 400px) {
-  .main-content {
+  .main-content .top-content {
     width: 100%;
+    flex-flow: column wrap;
   }
 }
 .main-content .middle-img {
@@ -295,8 +298,18 @@ header {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-flow: column wrap;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content .text-content {
+    width: 100%;
+  }
 }
 .contact p {
   margin: 20px 0;

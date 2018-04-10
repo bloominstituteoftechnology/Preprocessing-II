@@ -1,36 +1,40 @@
 // Main Content Styles
-
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-    @media (max-width: 400px) {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+    @media @phone {
         display: flex;
         flex-flow: column wrap;
     }
-
-   .top-content {
+    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @phone {
+            width: 100%;
+            flex-flow: column wrap;
+        }
     }
-    @media (max-width: 400px) {
-        width: 100%;
-    }
-
     .middle-img {
         display: block;
         margin: 30px auto;
     }
-
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
+        @media @phone {
+            flex-flow: column wrap;
+        }
         p {
             padding-right: 20px;
         }
+        .text-content {
+            @media @phone {
+                width: 100%;
+            }
+        }
     }
-}// main-content
+} // main-content
