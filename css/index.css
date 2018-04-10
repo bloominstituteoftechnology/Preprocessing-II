@@ -181,6 +181,7 @@ header nav {
   header nav {
     width: 100%;
     margin: 3.2rem;
+    order: 2;
   }
 }
 @media (max-width: 400px) {
@@ -188,6 +189,7 @@ header nav {
     flex-flow: column wrap;
     text-align: center;
     margin: 0;
+    order: -1;
   }
 }
 header nav a {
@@ -218,6 +220,12 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 768px) {
+  header .logo {
+    order: 1;
+    align-self: center;
+  }
 }
 @media (max-width: 400px) {
   header .logo {
@@ -289,6 +297,13 @@ header .logo {
   -moz-opacity: 0.6;
   opacity: 0.6;
 }
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+    width: 40%;
+    height: auto;
+  }
+}
 @media (max-width: 400px) {
   .cta img {
     margin: 20px 0;
@@ -324,6 +339,7 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;

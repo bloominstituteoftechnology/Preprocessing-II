@@ -19,11 +19,13 @@ header {
         @media @tablet {
             width: 100%;
             margin: 3.2rem;
+            order: 2;
         }
         @media @phone {
             flex-flow: column wrap;
             text-align: center;
             margin: 0;
+            order:-1;
         }
         a {
             text-decoration: none;
@@ -47,6 +49,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @tablet{
+            order: 1;
+            align-self: center;
+        }
         @media @phone {
             margin: 7.5% 0;
             align-self: center;
