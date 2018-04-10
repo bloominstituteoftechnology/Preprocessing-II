@@ -185,7 +185,7 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .cta img {
     display: none;
   }
