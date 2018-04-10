@@ -8,22 +8,72 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @phone {
+        margin: 55px auto;
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .text-content {
+            width: 47%;
+
+            @media @phone {
+                margin-top: 30px;
+                width: 100%;
+            }
+
+            .see-buttons {
+                #shake-a-leg > .btn-style(120px, 20px)
+            }
+
+            h4 {
+                #shake-a-leg > .headings(red)
+            }
+
+            p {
+                #shake-a-leg > .p-tags;
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 100%;
+        height: auto;
+        .rotate(180deg); //using a mixing to rotate image
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .see-buttons {
+            #shake-a-leg > .btn-style(120px, 20px)
+        }
+
+        h4 {
+            #shake-a-leg > .headings();
+        }
+        
+
         p {
             padding-right: 20px;
+            #shake-a-leg > .p-tags;
+            
+            @media @phone {
+                margin: 30px auto;
+            }
         }
     }
 }// main-content

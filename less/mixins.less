@@ -35,3 +35,52 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+
+// Namespace
+
+
+#shake-a-leg(){
+	.btn-style (@w: 170px, @h: 32px) { //This is my mixin button
+		border: 1px dotted black;
+		background: @some-color;
+		width: @w;
+		height: @h;
+		margin-top: 10px;
+		color: white;
+		.border-radius;
+		cursor: progress;
+
+		@media @phone {
+			background: @phone-some-color;
+		}
+
+		&:hover {
+			background: darken(@some-color, 20%);
+			.rotate(180deg);
+
+			@media @phone {
+				background: darken(@phone-some-color, 20%);
+				.box-shadow(70px 50px 90px @phone-some-color);
+			}//hover
+		}//phone
+
+	}//btn
+
+	.headings(@c: @some-color) {
+		border: 2px solid @c;
+		.border-radius(15px);
+		color: @c;
+		padding-left: 10%;
+		background-color: @phone-some-color;
+	}
+
+	.p-tags(@f: oblique){
+		font-style: @f;
+		color: @some-color
+	}
+
+
+
+
+}
