@@ -169,6 +169,10 @@ header nav {
   width: 610px;
   justify-content: space-between;
   display: flex;
+  -webkit-transform: skew(-15deg, -30deg);
+  -moz-transform: skew(-15deg, -30deg);
+  -ms-transform: skew(-15deg, -30deg);
+  -o-transform: skew(-15deg, -30deg);
 }
 header nav a {
   text-decoration: none;
@@ -181,6 +185,10 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 .cta {
   display: flex;
@@ -196,6 +204,12 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-box-shadow: 15px 10px 5px red;
+  -moz-box-shadow: 15px 10px 5px red;
+  box-shadow: 15px 10px 5px red;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -225,6 +239,9 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .main-content .bottom-content {
   display: flex;
