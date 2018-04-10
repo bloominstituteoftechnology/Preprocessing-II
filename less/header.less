@@ -3,15 +3,9 @@
 header {
     width: 100%;
     display: flex;
-  
+
     @media @tablet {
       flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    @media @phone {
-      flex-wrap: wrap;
       justify-content: center;
     }
 
@@ -20,46 +14,37 @@ header {
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+
       @media @tablet {
-        width: 90%;
-        margin-left: 3%;
+        width: 100%;
       }
 
       @media @phone {
-        width: 100%;
-        display: flex;
         flex-direction: column;
-        margin: 0;
+        width: 100%;
+        margin-top: 0;
         align-items: center;
-      }
 
-      &:first-child {
-      
-        @media @phone {
+        &:first-child {
           border-top: 1px solid gray;
-        }
       }
-
+      }
+  
       a {
         text-decoration: none;
-        color: black;
-  
-        @media @phone {
-          width: 100%;
-          display: block;
-          text-align: center;
-          padding: 20px 0;
-          border-bottom: 1px solid gray;
-        }
+        color: #b0b0b0;
 
+        @media @phone {
+          border-bottom: 1px solid gray;
+          width: 100%;
+          text-align: center;
+          padding: 5.5% 0;
+        }
+  
         &:hover {
             text-decoration: underline;
             color: black;
-
-            @media @phone {
-              background: royalblue;
-            }
+  
         }
       }
     }
@@ -67,15 +52,16 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .opacity(0.6);
 
         @media @tablet {
+          align-self: center;
           order: -1;
-          display: block;
-          margin: 30px auto 0;
+          margin-left: 0;
         }
-  
+
         @media @phone {
-          margin-bottom: 20px;
+          margin: 5.5% 0;
         }
     }
-  }// header 
+  }

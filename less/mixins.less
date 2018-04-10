@@ -36,41 +36,49 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-
-#lambda-is-cool() {
-	.buttons {
-		width: 30%;
-		height: 60px;
-		background-color: royalblue;
-		.border-radius(10px);
-        color: white;    
-        &:hover {
-            .darken(royalblue, 30%);
-        }
-
-	}
-
-	.headings {
-		font-family: 'Bangers', cursive;
-		letter-spacing: 1px;
-		margin-bottom: 10px;
-		color: royalblue;
-	}
-
-	.paragraph {
-		p {
-			padding-right: 20px;
-			font-family: 'Lucida Sans', cursive;
-			color: black;
-			&:hover {
-			color: royalblue;
-			}
-		}
-	}
+.buttons(@width, @height, @background-color) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
 }
 
 .darken(@color, @percentage) {
 	background-color: darken(@color, @percentage);
 }
 
+.top-bottom-content {
+	display: flex;
+    justify-content: space-around;
 
+	@media @phone {
+		flex-direction: column;
+		margin: 0 4%;
+	}
+}
+
+.text {
+	.text-content{
+		p {
+			margin-bottom: 3%;
+		}
+	}
+}
+
+.main-buttons {
+	.main-buttons {
+        margin-bottom: 3%;
+        .buttons(20%, 60px, #ccccff);
+        .border-radius(10px);
+            
+        &:hover {
+			.darken(@navy, 20%);
+			color: white;
+        	}
+        }
+}
+
+#erinc() {
+	.h4 {
+		.skew(10deg, 5deg);
+	}
+}
