@@ -5,6 +5,21 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet{
+        flex-wrap:nowrap;
+        justify-content:center;
+        width:100px;
+        height:85%;
+        margin: 10.5% 15% 10.5% 0;
+    }
+    @media @phone {
+        flex-direction:column;
+        align-items:center;
+        height:100%;
+        margin: 15% 0;
+
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -16,6 +31,21 @@
         margin: 0 82px 0 0;
     }
 
+
+    .skew(5deg,5deg);
+
+    @media @tablet{
+        color:@radica-red;
+        align-items:center;
+        font-size:50px;
+        width:100%;
+        margin:0; 
+    }
+    @media @phone {
+        color:@cerulean-Blue;
+        margin:0 0 10% 0;
+    }
+           
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
