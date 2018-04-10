@@ -367,12 +367,6 @@ header .logo:hover {
 @media (max-width: 768px) {
   .main-content .middle-img {
     max-width: 100%;
-    padding: 5px 0;
-  }
-}
-@media (max-width: 400px) {
-  .main-content .middle-img {
-    padding-top: 17px;
   }
 }
 .main-content .bottom-content {
