@@ -406,9 +406,6 @@ header .logo {
   color: white;
   background: white;
 }
-.main-content .bottom-content p {
-  padding-right: 20px;
-}
 @media (max-width: 400px) {
   .contact {
     margin-left: 5%;
@@ -418,6 +415,7 @@ header .logo {
   margin: 20px 0;
 }
 footer {
+  font-size: 0.75rem;
   text-align: center;
   margin: 40px 0 20px;
 }
