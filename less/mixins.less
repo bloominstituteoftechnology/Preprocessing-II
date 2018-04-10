@@ -35,20 +35,11 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
-
-/*CTA button Mixin*/
-.cta .cta-text button{
-	.border-radius(@radius: 10px);
-	.box-shadow(10px 10px 5px #888888);
-	.skew(10deg, 10deg)
+.button-creator(@width: 60px, @height: 40px) {
+	width: @width;
+	height: @height;
+	font-size: .8rem;
 }
 
-/*CTA IMG Mixin*/
-.cta img{
-	.opacity(@opacity: 0.5);
-}
 
-/*Headerlogo Img Mixin*/
-header .logo{
-	.rotate(180deg);
-}
+
