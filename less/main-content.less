@@ -11,6 +11,18 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet{
+            padding: 0 20px;
+         }
+
+         @media @phone{
+
+            flex-direction: column;
+            justify-content: space-around;
+            height: 300px;
+
+        }
     }
 
     .middle-img {
@@ -21,6 +33,18 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet{
+            padding: 0 20px;
+         }
+
+         @media @phone{
+
+            flex-direction: column;
+            justify-content: space-around;
+            height: 440px;
+
+          }
 
         p {
             padding-right: 20px;
