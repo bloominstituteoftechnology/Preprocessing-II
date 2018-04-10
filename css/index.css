@@ -137,6 +137,9 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+html {
+  font-size: 62.5%;
+}
 h1,
 h2,
 h3,
@@ -147,30 +150,29 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }
 header {
   width: 100%;
   display: flex;
 }
-header nav {
-  margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
-  display: flex;
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
 }
-header nav a {
-  text-decoration: none;
-  color: #b0b0b0;
-}
-header nav a:hover {
-  text-decoration: underline;
-  color: green;
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
 }
 header .logo {
   align-self: flex-end;
@@ -180,14 +182,100 @@ header .logo {
   -ms-transform: skew(5deg, 10deg);
   -o-transform: skew(5deg, 10deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    display: block;
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 500px) {
+  header .logo {
+    order: -1;
+    margin: 20px 0;
+  }
+}
+header nav {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    margin: 38px 3%;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  header nav:first-child {
+    border-top: 1px solid gray;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: green;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+@media (max-width: 500px) {
+  header nav a:hover {
+    background: gray;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
 }
 @media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
   .cta img {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .cta img {
+    display: block;
+    max-width: 80%;
+    margin: 55px 0 0 0;
   }
 }
 .cta .cta-text {
@@ -199,6 +287,21 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text h1 {
+    letter-spacing: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -213,9 +316,9 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: 10px 5px 5px red;
-  -moz-box-shadow: 10px 5px 5px red;
-  box-shadow: 10px 5px 5px red;
+  -webkit-box-shadow: 10px 5px;
+  -moz-box-shadow: 10px 5px;
+  box-shadow: 10px 5px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
@@ -230,20 +333,50 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    font-size: 1.4rem;
+    margin: 75px 2% 35px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+  }
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px 2%;
+  }
 }
 .contact p {
   margin: 20px 0;
