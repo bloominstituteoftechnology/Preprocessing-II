@@ -35,3 +35,12 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-mixin (@width, @height, @background-color) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+	.border-radius(5px);
+	.box-shadow(3px 6px);
+	font-size: 1.6rem;
+}
