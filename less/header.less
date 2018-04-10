@@ -1,29 +1,34 @@
 // Header Styles
 
 header {
-    width: 100%;
-    display: flex;
-  
-    nav {
+    
+    
+  width: 100%;
+  display: flex;
+  @media (max-width: 768px){
+      color: @black;
+  }//media 768 end
+
+  .logo {
+      align-self: flex-end;
+      margin: 28px 0 0 40+42px;
+  }// .logo end
+
+
+  nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+
       a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
-      }
-    }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
-  }// header 
+          text-decoration: none;
+          color: @whiteGrey;
+
+          &:hover {
+              text-decoration: underline;
+              color: @black;
+          }// hover
+      }// a end 
+  } // nav end    
+} // header end
