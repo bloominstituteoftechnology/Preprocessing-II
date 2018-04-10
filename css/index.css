@@ -165,6 +165,11 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+}
 header nav {
   margin-top: 40px;
   width: 610px;

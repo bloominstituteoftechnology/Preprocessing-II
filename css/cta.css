@@ -1,0 +1,48 @@
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+.cta .cta-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+.cta .cta-text:hover {
+  -webkit-transform: skew(20deg, 15deg);
+  -moz-transform: skew(20deg, 15deg);
+  -ms-transform: skew(20deg, 15deg);
+  -o-transform: skew(20deg, 15deg);
+}
+.cta img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 10px 5px 5px #5c5151;
+  -moz-box-shadow: 10px 5px 5px #5c5151;
+  box-shadow: 10px 5px 5px #5c5151;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
