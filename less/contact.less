@@ -3,7 +3,11 @@
 .contact {
 
     p {
-        margin: 20px 0;
+        margin: percentage(15px / @container-width) 0;
+    }
+
+    @media @mobile {
+        padding: 0 percentage(20px / 400px);
     }
    
 }
