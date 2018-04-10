@@ -4,26 +4,68 @@ header {
     width: 100%;
     display: flex;
   
+    @media @tablet {
+    align-items: center;
+    flex-direction: column-reverse;
+    }
+  }
+
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+    
+        @media @tablet {
+        justify-content: space-around;
+        margin: 5.2% 0 0 0; /* (40/768)*100 = 5.2 */
+        width: 100%;
+    }
+
+        @media @phone{
+        margin: 5% 0 0 0; /* (20/400)*100 = 5 */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+
         &:hover {
-            text-decoration: underline;
-            color: black;
-            .rotate(45deg);
+          text-decoration: underline;
+          color: black;
+          .rotate(45deg);
+      }
+
+        @media @phone{
+          border-bottom: 1px solid #000;
+          font-size: 2rem;
+          padding: 5% 0; /* (20/400)*100 =  */
+          text-align: center;
+          width: 100%;
+
+            &:first-child {
+            border-top: 1px solid #000;
         }
+  
+       
       }
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet{
+          align-self: center;
+          margin: 3.9% 0 0 0;
+      }
+
+      @media @phone{
+          margin: 5% 0 0 0;
+      }
     }
   }// header 

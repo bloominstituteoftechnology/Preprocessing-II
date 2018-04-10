@@ -5,6 +5,15 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet{
+        justify-content: center;
+        margin: 9.4% 0 0 0; /* (72/768)*100 = 9.4 */
+    }
+
+    @media @phone{
+        margin: 12.5% 0 0 0;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +23,25 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tablet {
+            margin: 0;
+
+            h1 {
+                margin: 0 0 5.1% 0;
+            }
+        }
+
+        @media @phone {
+            margin: 0;
+        }
+    }
+    
+
+    img {
+        @media @tablet {
+            display: none;
+        }
     }
 
     .cta-text button {
