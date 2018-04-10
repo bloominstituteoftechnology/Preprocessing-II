@@ -35,3 +35,33 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.bordered {
+    border-top: 2px double @borderCOLOR;
+}
+
+
+.scale(@Val1,@Val2) {
+	-webkit-transform: scale(@Val1, @Val2);
+	-moz-transform:		 scale(@Val1, @Val2);
+	-ms-transform:		 scale(@Val1, @Val2);
+	-o-transform:		 	 scale(@Val1, @Val2);
+}
+
+#button-style {
+
+	.button(@width, @height, @background-color) {
+		text-align: center;
+		padding: 20px;
+		margin: 12px auto 0;
+		display: block;
+		border: 1px solid black;
+		background-color: @background-color;
+		width: @width;
+		height: @height;
+		&:hover {
+			background-color: darken(gray, 20%);
+			color: contrast(@background-color);
+		}
+	}
+}
