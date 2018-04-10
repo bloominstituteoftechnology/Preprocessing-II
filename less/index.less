@@ -7,3 +7,25 @@
 @import "main-content.less";
 @import "contact.less";
 @import "footer.less";
+
+@tablet: ~"(max-width: 768px)";
+
+@phone: ~"(max-width: 400px)";
+
+.my-custom-button () {
+    .border-radius;
+    margin: 10px 30% 0;
+    width: 40%;
+   
+    &:hover {
+        background: red;
+    }
+
+}
+
+.container {
+    @media @tablet {
+        width: 90%;
+        margin: 0 5%;
+    }
+}

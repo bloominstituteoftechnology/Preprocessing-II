@@ -11,11 +11,25 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            display: block;
+        }
+
+        .text-content {
+            display:flex;
+            flex-direction: column;
+        }
+
+        button {
+            .my-custom-button;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 100%;
         .opacity();
     }
 
@@ -23,8 +37,23 @@
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            display: block;
+        }
+
+        .text-content {
+            display:flex;
+            flex-direction: column;
+        }
+
         p {
             padding-right: 20px;
         }
+        
+        button {
+            .my-custom-button;
+        }
+        
     }
+
 }// main-content
