@@ -3,21 +3,58 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+      display: flex;
+      display: wrap;
+    }
+
+    @media @phone {
+      flex-direction: column;
+      justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
       width: 610px;
-      justify-content: space-between;
+      justify-content: space-around;
       display: flex;
+      display: wrap;
+
+      @media @tablet {
+        width: 100%;
+        justify-content: space-around;
+
+      }
+
+      @media @phone {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+      }
   
       a {
+        flex-direction: row;
+        justify-content: center;
         text-decoration: none;
         color: #b0b0b0;
+
+        .rotate(180deg);
+
+        @media @phone {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 5% 0;
+          font-size: 1.25rem;
+          border-bottom: 1px solid grey;
+          .rotate(360deg);
+        } 
   
         &:hover {
             text-decoration: underline;
-            color: black;
-  
+            color: black;     
         }
       }
     }
@@ -25,5 +62,19 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          display: flex;
+          flex-wrap: wrap;
+          order: -1;
+          justify-content: center;
+        }
+
+        @media @phone {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          order: -1;
+        }
     }
   }// header 
