@@ -19,15 +19,15 @@
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
+        background: @button-color;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
 
         &:hover {
-            background: black;
-            color: white;
+            background: darken(@button-color, 70%);
+            color: @button-color;
         }
     }
 }// cta
