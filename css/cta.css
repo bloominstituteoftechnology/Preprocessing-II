@@ -15,7 +15,8 @@
   background: white;
 }
 #button-styles .top-buttons:hover {
-  background-color: #000099;
+  background-color: #474773;
+  color: white;
 }
 #button-styles .bottom-buttons {
   width: 76px;
@@ -34,6 +35,7 @@
 }
 #button-styles .bottom-buttons:hover {
   background: wheat;
+  color: black;
 }
 .cta {
   display: flex;
