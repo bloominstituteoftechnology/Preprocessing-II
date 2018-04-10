@@ -126,14 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.class {
-  border: afasdasdf;
-  color: red;
-  -webkit-transform: skew(asdf, asdf);
-  -moz-transform: skew(asdf, asdf);
-  -ms-transform: skew(asdf, asdf);
-  -o-transform: skew(asdf, asdf);
-}
 .cta-text button {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -155,9 +147,21 @@ header nav a {
 }
 header nav a:hover {
   text-decoration: none;
-  -webkit-box-shadow: 5px 5px 5px green;
-  -moz-box-shadow: 5px 5px 5px green;
-  box-shadow: 5px 5px 5px green;
+  -webkit-box-shadow: 5px 5px 5px #66ff99;
+  -moz-box-shadow: 5px 5px 5px #66ff99;
+  box-shadow: 5px 5px 5px #66ff99;
+}
+.logo {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+h4 {
+  -webkit-transform: skew(3deg, 3deg);
+  -moz-transform: skew(3deg, 3deg);
+  -ms-transform: skew(3deg, 3deg);
+  -o-transform: skew(3deg, 3deg);
 }
 * {
   box-sizing: border-box;
