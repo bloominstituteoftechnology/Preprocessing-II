@@ -14,6 +14,15 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .opacity(@opacity: 0.5); //opacity mixin
+        .box-shadow(@shadowyboxvalue); //box-shadow mixin
+        @media @mobile {
+            margin-right: 0;
+            font-size: 48px;
+        }
+        h1 {
+            #namespaces > .heading-1;
+        }
     }
 
     .cta-text button {
@@ -29,5 +38,13 @@
             background: black;
             color: white;
         }
+    }
+    img {
+        @media @mobile {
+            display: none;
+        }    
+    }
+    @media @mobile {
+        justify-content: space-around;
     }
 }// cta

@@ -35,3 +35,41 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button {
+	width: auto;
+	height:	30px;
+	padding: 0 10px;
+	margin-top: 10px;
+	background-color: aquamarine;
+	.border-radius(8px);
+	&:hover {
+		background-color: @button-hover;
+	}
+}
+
+.fix-to-mobile-width {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.text-content-mobile {
+    @media @mobile {
+        padding: 13px;
+        font-size: 100% - 12%;
+    }
+}
+
+// Namespaces and Accessors
+#namespaces {
+	.heading-1 {
+		color: blueviolet; 
+	}
+	.heading-4 {
+		font-family: fantasy;
+	}
+
+	.button {
+		.skew(5deg, -5deg);
+	}
+}

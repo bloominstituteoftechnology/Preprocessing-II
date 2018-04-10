@@ -18,4 +18,53 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    @media @tablet {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 3%;
+    
+        header {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: space-around;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .cta img {
+            display: none;
+        }
+        .cta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cta-text {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+        }
+        .main-content .middle-img {
+            width: 100%;
+            margin: 20px auto;
+        }
+    } //Tablet Bubbling}
+
+    @media @mobile {
+        max-width: 400px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
 }

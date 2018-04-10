@@ -9,6 +9,7 @@ header {
       width: 610px;
       justify-content: space-between;
       display: flex;
+      .skew(-15deg, -30deg); //skew mixin
   
       a {
         text-decoration: none;
@@ -19,11 +20,26 @@ header {
             color: black;
   
         }
+        @media @mobile {
+          text-align: center;
+          padding: 14px 0;
+          border: 0.5px solid black;
+        }
+      }
+      @media @mobile {
+        flex-direction: column;
       }
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .rotate(45deg); //rotate mixin
+        @media @mobile {
+          order: -1;
+      }
     }
+    @media @mobile {
+      .fix-to-mobile-width;
+  }
   }// header 

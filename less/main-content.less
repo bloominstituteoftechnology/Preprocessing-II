@@ -11,19 +11,41 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        h4 {
+            #namespaces > .heading-4;
+        }
+        button {
+            #namespaces > .button;
+        }
+
+        @media @mobile {
+            padding: 13px;
+            font-size: 100% - 12%;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .opacity(@opacity: 0.5); //opacity mixin
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        h4 {
+            #namespaces > .heading-4;
+        }
+        button {
+            #namespaces > .button;
+        }
         p {
             padding-right: 20px;
         }
+    }
+    @media @mobile {
+        .fix-to-mobile-width;
+
     }
 }// main-content
