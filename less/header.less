@@ -3,22 +3,61 @@
 header {
     width: 100%;
     display: flex;
+
+    //Medium screen styling
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
+    //Small screen styling
+    @media @mobile {
+        justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      //Medium screen styling
+      @media @tablet {
+      width: 100%;
+      margin: 38px 3%;
+    }
+
+      //Small screen styling
+      @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+    }
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+        font-size: 1.6rem;
+
+        //Small screen styling
+        @media @mobile {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 2rem;
+          border-bottom: 1px solid gray;
+        }
   
         &:hover {
             text-decoration: underline;
             color: black;
             .skew(5deg, 10deg);
-  
+
+            //Small screen styling
+            @media @mobile {
+            background: gray;
+            }
         }
       }
     }
@@ -26,5 +65,17 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+      //Medium screen styling
+      @media @tablet {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+      }
+
+      //Small screen styling
+      @media @mobile {
+          margin: 20px 0;
+      }
     }
   }// header 
