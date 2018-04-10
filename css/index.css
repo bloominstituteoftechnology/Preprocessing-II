@@ -246,6 +246,11 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .btn {
+  width: 200px;
+  height: 100px;
+  background-color: #66ff66;
+}
 @media (max-width: 768px) {
   .main-content .top-content {
     width: 100%;
@@ -273,6 +278,12 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .btn {
+  width: 200px;
+  height: 100px;
+  background-color: #66ff66;
+  border-radius: 20px;
 }
 .contact p {
   margin: 20px 0;
