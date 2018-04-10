@@ -356,7 +356,7 @@ header nav {
   box-shadow: 2px 2px 2px black;
   width: 50%;
   height: 50px;
-  background: #6195ED;
+  background: @some-color;
 }
 .cta .cta-text button:hover {
   background: #0000b3;
@@ -411,7 +411,7 @@ header nav {
 .main-content button {
   width: 50%;
   height: 50px;
-  background: #6195ED;
+  background: @some-color;
 }
 .main-content button:hover {
   background: #0000b3;
