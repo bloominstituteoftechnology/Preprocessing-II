@@ -13,10 +13,15 @@ header {
       a {
         text-decoration: none;
         color: #b0b0b0;
+        padding: 10px;
+        border: 1px solid black;
+        .border-radius(30px); //used border radius//
   
         &:hover {
             text-decoration: underline;
-            color: black;
+            color: darken(#b0b0b0, 40%); //used darken//
+            .skew (5deg, 10deg);
+            
   
         }
       }
@@ -25,5 +30,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        &:hover {
+          .rotate (10deg) //used rotate//
+          
+        }
     }
   }// header 
