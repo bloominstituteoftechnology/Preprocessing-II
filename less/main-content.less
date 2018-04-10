@@ -11,8 +11,15 @@
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
 
+        button {
+            .buttons(@button-width, @button-height, @button-bgc, @button-radius);
+            &:hover {
+                background: darken(@button-bgc, 20%);
+            }
+        }
+
+   }
     .middle-img {
         display: block;
         margin: 30px auto;
@@ -22,8 +29,17 @@
         display: flex;
         justify-content: space-around;
 
+        button {
+            .buttons(@button-width, @button-height, @button-bgc, @button-radius);
+            &:hover {
+               background: darken(@button-bgc, 20%);
+            }
+        }
+
         p {
             padding-right: 20px;
         }
     }
-}// main-content
+}
+
+// main-content
