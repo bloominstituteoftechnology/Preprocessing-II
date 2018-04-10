@@ -9,7 +9,16 @@ header {
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+
+      /*Escaping*/
+        @media @laptop {
+        margin-right: 10px;
+      }
+        @media phone {
+        flex-direction: column-reverse;
+      }
+
+
       a {
         text-decoration: none;
         color: #b0b0b0;
@@ -21,9 +30,18 @@ header {
         }
       }
     }
-  
+   
     .logo {
+        /*Headerlogo Img Mixin*/
+        .rotate(180deg);
         align-self: flex-end;
         margin: 28px 0 0 91px;
+         /*Escaping*/
+        @media @laptop{
+          order: -1;
+          align-items: center;
+          margin-right: 20px;
+          padding-left: 20px;
+        }
     }
   }// header 

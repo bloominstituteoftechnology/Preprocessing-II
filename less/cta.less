@@ -4,6 +4,7 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    
 
     .cta-text {
         font-size: 72px;
@@ -24,10 +25,25 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        /*CTA button Mixin*/
+	    .border-radius(@radius: 10px);
+	    .box-shadow(10px 10px 5px #888888);
+	    .skew(10deg, 10deg);
+
+        
 
         &:hover {
             background: black;
             color: white;
+        }
+    }
+    img{
+        /*CTA IMG Mixin*/
+        .opacity(@opacity: 0.5);
+        
+        /*Escaping*/
+        @media @laptop {
+            display: none;
         }
     }
 }// cta

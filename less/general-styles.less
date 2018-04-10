@@ -14,8 +14,17 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-
+/*Escaping*/
 .container {
     width: 880px;
     margin: auto;
+    @media @laptop {
+        background: bisque;
+    }
+    @media @phone {
+        width: 390px;
+        margin: auto;
+        background: aqua;
+    }
+    
 }
