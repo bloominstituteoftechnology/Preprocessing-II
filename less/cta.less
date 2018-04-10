@@ -1,4 +1,5 @@
 // Call To Action (CTA) Styles
+@import "mixins";
 
 .cta {
     display: flex;
@@ -14,8 +15,14 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+        &:hover {
+            .skew(20deg, 15deg); 
+        }
 
+    }
+    img {
+        .opacity;
+    }
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
@@ -24,6 +31,8 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius(10px);
+        .box-shadow(10px 5px 5px rgb(92, 81, 81));
 
         &:hover {
             background: black;

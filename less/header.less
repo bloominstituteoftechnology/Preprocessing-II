@@ -1,4 +1,5 @@
 // Header Styles
+@import "mixins";
 
 header {
     width: 100%;
@@ -24,6 +25,10 @@ header {
   
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 91px;  
+
+        &:hover {
+          .rotate(25deg);     
+        }
     }
   }// header 
