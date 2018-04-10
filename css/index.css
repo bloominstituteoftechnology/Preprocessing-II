@@ -144,12 +144,24 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width:768px) {
+  header {
+    background-color: lightgray;
+  }
+}
+@media (max-width:400px) {
+  header {
+    background-color: #d6d4d4;
+    color: white;
+  }
 }
 header nav {
   margin-top: 40px;
@@ -160,6 +172,11 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width:400px) {
+  header nav a {
+    color: blue;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -197,6 +214,11 @@ header .logo {
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
+@media (max-width:768px) {
+  .cta img {
+    display: none;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -232,6 +254,7 @@ header .logo {
   justify-content: space-around;
 }
 .main-content .middle-img {
+  width: 100%;
   display: block;
   margin: 30px auto;
 }
@@ -241,6 +264,9 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.contact {
+  color: blue;
 }
 .contact p {
   margin: 20px 0;
