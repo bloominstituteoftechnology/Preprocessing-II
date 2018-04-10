@@ -275,6 +275,13 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content h4 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.main-content p {
+  color: darkblue;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
@@ -297,9 +304,10 @@ header .logo {
   background-clip: padding-box;
   margin: 10px 30% 0;
   width: 40%;
+  background: red;
 }
 .main-content .top-content button:hover {
-  background: red;
+  background: #990000;
 }
 .main-content .middle-img {
   display: block;
@@ -334,9 +342,10 @@ header .logo {
   background-clip: padding-box;
   margin: 10px 30% 0;
   width: 40%;
+  background: red;
 }
 .main-content .bottom-content button:hover {
-  background: red;
+  background: #990000;
 }
 .contact p {
   margin: 20px 0;
