@@ -1,9 +1,19 @@
 // Contact Styles
 
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
 .contact {
 
     p {
         margin: 20px 0;
     }
+	
+	@media @tablet {
+		margin: 0 3.9%;
+    }
+	@media @phone {
+		margin: 20px;
+	}
    
 }
