@@ -1,29 +1,95 @@
 // Header Styles
 
-header {
+
+#media-layout {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+  header {
     width: 100%;
-    display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
-      display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
-      }
+    display: flex; 
+
+    @media @tablet {
+      #media-layout;
     }
-  
+
+    @media @phone {
+      #media-layout;
+    }
+
+    nav {
+        margin-top: 40px; 
+        width: 610px;
+        justify-content: space-between;
+        display: flex; 
+
+        @media @tablet {
+            width: 90%;
+        }
+
+        @media @phone {
+            width: 100%;
+            flex-flow: column;
+            align-items: center;
+            margin: 0;
+            border-top: 1px #b0b0b0 solid;
+        }
+
+        &:first-child {
+            @media @phone {
+                border-top: 1px solid gray;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #b0b0b0;
+
+            @media @tablet {
+                flex: 1 1 auto;
+                color: #0D182B;
+            }
+
+            @media @phone {
+                font-size: 1.4;
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 2rem;
+                border-bottom: 1px solid gray;
+                text-decoration: none;
+            }
+
+            &:hover {
+                text-decoration: underline;
+                color: black;
+
+                @media @phone {
+                    background: gray;
+                }
+            } //a:hover
+        } //a
+    } //nav
+
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-    }
-  }// header 
+
+        &:hover {
+          .rotate(@deg);
+        }
+
+        @media @tablet {
+            margin: 28px 0 ;
+            order: -1;
+            max-width: 100%;
+        }
+
+        @media @phone {
+            order: -1;
+            margin: 20px 0;
+        }
+    } //logo
+} //header
