@@ -354,6 +354,12 @@ header nav {
   -webkit-box-shadow: 2px 2px 2px black;
   -moz-box-shadow: 2px 2px 2px black;
   box-shadow: 2px 2px 2px black;
+  width: 50%;
+  height: 50px;
+  background: #6195ED;
+}
+.cta .cta-text button:hover {
+  background: #0000b3;
 }
 .cta img {
   -webkit-transform: rotate(-25deg);
@@ -408,7 +414,7 @@ header nav {
   background: #6195ED;
 }
 .main-content button:hover {
-  background: #1552b9;
+  background: #0000b3;
 }
 @media (max-width: 768px) {
   .contact {
