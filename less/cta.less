@@ -5,6 +5,17 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        width: 100%;
+        justify-content: space-around;
+        padding-right: 5%;
+    }
+
+    @media @phone {
+        margin-top: 50px;
+        justify-content: center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,20 +25,38 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        background-image: url(../img/mid-page-accent.jpg);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; 
+
+        @media @tablet {
+            margin: 0;
+        }
+
+        @media @phone {
+            align-self: center;
+            margin: 0;
+        }
     }
 
     .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+        .custom-button(@button-color);
+        .border-radius;
+        box-shadow: 2px 2px 2px @shadow-color;
 
         &:hover {
-            background: black;
-            color: white;
+            background: darken(@button-color, 70%);
+            color: @button-color;
+            .rotate(360deg);
+            transition-timing-function: ease-in-out;
+            transition: 1s;
+        }
+    }
+
+    img {
+        @media @tablet {
+            display: none;
         }
     }
 }// cta
