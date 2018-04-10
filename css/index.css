@@ -147,9 +147,25 @@ h5 {
   width: 880px;
   margin: auto;
 }
+#media-layout {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 header nav {
   margin-top: 40px;
@@ -157,22 +173,93 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    margin: 0;
+    border-top: 1px #b0b0b0 solid;
+  }
+}
+@media (max-width: 400px) {
+  header nav:first-child {
+    border-top: 1px solid gray;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 768px) {
+  header nav a {
+    flex: 1 1 auto;
+    color: #0D182B;
+  }
+}
+@media (max-width: 400px) {
+  header nav a {
+    font-size: 1.4;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav a:hover {
+    background: gray;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+header .logo:hover {
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    margin: 28px 0 ;
+    order: -1;
+    max-width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    order: -1;
+    margin: 20px 0;
+  }
 }
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+    margin-top: 72%;
+    margin-right: 3%;
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -184,6 +271,17 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    font-size: 72px;
+    margin: 10px 3% 0 4%;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text h1 {
+    letter-spacing: 0;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -193,9 +291,44 @@ header .logo {
   margin-top: 10px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .cta .cta-text button {
+    font-size: 1.2rem;
+    width: 58%;
+    margin-top: 12px 2%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    border: 1px double #46A11B;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
 .cta .cta-text button:hover {
-  background: black;
-  color: white;
+  background: #6C7B93;
+  color: black;
+}
+@media (max-width: 768px) {
+  .cta .cta-text button:hover {
+    background: #fff;
+    color: #7d581f;
+  }
+}
+@media (max-width: 400px) {
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #966306;
+  }
 }
 .main-content {
   border-top: 2px solid black;
@@ -205,9 +338,32 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    padding: 4% 0;
+    line-height: 1.rem;
+    margin: 14.5% 1% 9.5% 1%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 4% 0;
+    font-size: 1.6rem;
+    line-height: 18px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -216,6 +372,12 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+    margin: 20px 0;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;

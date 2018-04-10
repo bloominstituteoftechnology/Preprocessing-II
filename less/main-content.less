@@ -1,5 +1,11 @@
 // Main Content Styles
 
+@media @phone {
+    p, a, h1, h2, h3, h4, h5,{
+      color: #966306;
+    }
+  }
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -8,9 +14,39 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+        padding: 4% 0;
+        line-height: 1.rem;
+        margin: 14.5% 1% 9.5% 1%;
+   }
+
+   @media @phone {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 75px 0 35px 0;
+        padding: 4% 0;
+        font-size: 1.6rem;
+        line-height: 18px;
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        .text-content button {
+            margin-top: 30px;
+            .text-button;
+        }
+        
+        .text-content button:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+        }
     }
 
     .middle-img {
@@ -22,8 +58,24 @@
         display: flex;
         justify-content: space-around;
 
+        .text-content button {
+            margin-top: 30px;
+            .text-button;
+        }
+
+        .text-content button:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        @media @phone {
+            flex-direction: column;
+            margin: 20px 0;
+        }
+
         p {
             padding-right: 20px;
         }
     }
 }// main-content
+

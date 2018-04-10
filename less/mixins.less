@@ -1,6 +1,6 @@
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
+.border-radius (@radius: 15px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
@@ -10,7 +10,7 @@
 	background-clip:         padding-box;
 }
 
-.opacity (@opacity: 0.5) {
+.opacity (@opacity: 0.3) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
@@ -34,4 +34,12 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.text-button (@width, @height, @bgc) {
+	@width: 100px;
+	@height: 50px;
+	@bgc: @main-content-hover;
+	border: 1px solid black;
+	.box-shadow(@string);
 }

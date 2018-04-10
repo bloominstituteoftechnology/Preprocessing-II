@@ -3,7 +3,16 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: flex-end; 
+
+    @media @tablet {
+        justify-content: center;
+        margin-top: 72%;
+        margin-right: 3%;
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
 
     .cta-text {
         font-size: 72px;
@@ -14,20 +23,52 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
+        @media @tablet {
+            font-size: 72px;
+            margin: 10px 3% 0 4%;
         }
-    }
-}// cta
+
+        h1 {
+            @media @tablet {
+                letter-spacing: 0;
+            }
+        }
+
+        button {
+            border: 1px double black;
+            font-size: 16px;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+
+            @media @tablet {
+                font-size: 1.2rem;
+                width: 58%;
+                margin-top: 12px 2%;
+            }
+
+            @media @phone {
+                border: 1px double #46A11B;
+                font-size: 16px;
+                background: white;
+                width: 170px;
+                height: 32px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+
+            &:hover {
+                background: @cta-hover;
+                color: black;
+
+                @media @tablet {
+                    background: #fff;
+                    color: #7d581f;
+                }
+            } //button:hover
+        } //button
+    } //.cta-text
+} //.cta
