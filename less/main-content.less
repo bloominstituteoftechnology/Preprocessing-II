@@ -11,6 +11,15 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            button {
+                margin-top: 20px;
+                align-self: center;
+                .text-button(70px, 50px, yellowgreen);
+            }
+        }
     }
 
     .middle-img {
@@ -21,9 +30,17 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
         p {
             padding-right: 20px;
+        }
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            button {
+                margin-top: 20px;
+                align-self: center;
+                .text-button(70px, 50, pink, 50%);
+            }
         }
     }
 }// main-content
