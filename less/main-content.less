@@ -21,10 +21,33 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+      
+        .text-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+      
+        button {
+            .button-template;
+            
+            &:hover {
+                background-color: darken(blue, 30%);
+            }
+        }
 
         @media @tablet {
             justify-content: space-between;
             margin: 0 1.3%;
+
+                .text-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                
+            }
+           
         }
 
             @media @phone {
@@ -52,12 +75,29 @@
         display: flex;
         justify-content: space-around;
 
+        .text-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        button {
+            .button-template;
+
+            &:hover {
+                background-color: darken(blue, 30%);
+            }
+        }
+
         @media @tablet{
             justify-content: space-between;
             margin: 0 1.3%;
 
             .text-content {
-                width: 31%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 31%; 
             }
         }
 
@@ -67,6 +107,7 @@
             margin: 8% 0 0 0;
 
             .text-content {
+                display: flex;
                 margin: 8.4% 0 0 0; /* (27/400)*100 = 6.75 */
                 width: 100%;
 
