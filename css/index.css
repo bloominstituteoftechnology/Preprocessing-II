@@ -139,6 +139,19 @@ table {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.button:hover {
+  background-color: #19ffb2;
+}
+.fix-to-mobile-width {
+  width: 100%;
+  flex-wrap: wrap;
+}
+@media (max-width: 400px) {
+  .text-content-mobile {
+    padding: 13px;
+    font-size: 88%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -233,6 +246,18 @@ header nav a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav a {
+    text-align: center;
+    padding: 14px 0;
+    border: 0.5px solid black;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
@@ -240,6 +265,17 @@ header .logo {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+@media (max-width: 400px) {
+  header .logo {
+    order: -1;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 .cta {
   display: flex;
@@ -262,6 +298,12 @@ header .logo {
   -moz-box-shadow: 15px 10px 5px red;
   box-shadow: 15px 10px 5px red;
 }
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin-right: 0;
+    font-size: 48px;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -275,6 +317,16 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    justify-content: space-around;
+  }
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -286,6 +338,12 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    padding: 13px;
+    font-size: 88%;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -301,8 +359,19 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+@media (max-width: 400px) {
+  .main-content {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
 .contact p {
   margin: 20px 0;
+}
+@media only screen and (max-width: 400px) {
+  .contact p {
+    padding: 0 13px;
+  }
 }
 footer {
   text-align: center;

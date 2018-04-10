@@ -43,6 +43,9 @@
 	margin-top: 10px;
 	background-color: aquamarine;
 	.border-radius(8px);
+	&:hover {
+		background-color: @button-hover;
+	}
 }
 
 .fix-to-mobile-width {
@@ -51,12 +54,8 @@
 }
 
 .text-content-mobile {
-    @media only screen and ( max-width: 400px) {
+    @media @mobile {
         padding: 13px;
         font-size: 100% - 12%;
-        .no-shadow;
-        &:hover {
-            .shadow;
-        }
     }
 }
