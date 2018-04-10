@@ -1,5 +1,11 @@
 // Main Content Styles
 
+.new-button(@width, @height, @background) {
+    width: @width;
+    height: @height;
+    background: @background;
+}
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -13,6 +19,14 @@
         display: flex;
         justify-content: space-around;
     }
+   
+    button {
+        .new-button(75px, 45px, purple);
+        
+        &:hover {
+            background-color: darken(black, 15%);
+            .border-radius(10px);
+}
 
     .middle-img {
         display: block;
