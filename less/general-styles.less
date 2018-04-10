@@ -15,7 +15,18 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 .container {
-    width: 880px;
-    margin: auto;
+    width: 100%;
+	max-width: 880px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+
+    @media @tablet {
+        padding: 0 2.5%;
+        max-width: 768px;
+    }
 }
