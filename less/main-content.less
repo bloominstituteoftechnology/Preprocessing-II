@@ -1,29 +1,73 @@
-// Main Content Styles
+/* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 1.6rem;
+    line-height: 18px;
+ 
+    //Medium screen styling
+    @media @tablet{
+        margin: 75px 2% 35px;
     }
+ 
+    h4 {
+        #great-design-namespace > .heading;
 
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
+        @media @mobile {
+            margin-top: 20px;
         }
     }
-}// main-content
+
+    p {
+        #great-design-namespace > .p-tag;
+    }
+
+    button {
+        #great-design-namespace > .button;
+        margin-top: 15px;
+        &:hover {
+            background-color: darken(@button-color, 20%);
+        }
+    }
+
+    .top-content {
+     display: flex;
+     justify-content: space-around;
+     
+        //Small screen styling
+        @media @mobile {
+            flex-wrap: wrap;
+        }
+    } //.top-content
+ 
+     .middle-img {
+         display: block;
+         margin: 30px auto;
+         .opacity;
+ 
+         //Medium screen styling
+         @media @tablet{
+             width: 100%;
+             margin: 25px auto;
+         }
+ 
+         //Small screen styling
+         @media @mobile{
+             margin-bottom: 60px;
+         }
+     } //.middle-img
+ 
+     .bottom-content {
+         display: flex;
+         justify-content: space-around;
+         
+         //Small screen styling
+         @media @mobile{
+             flex-wrap: wrap;
+             align-content: space-between;
+         }
+     } //.bottom-content
+ } //.main-content

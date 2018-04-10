@@ -35,3 +35,28 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+
+
+#great-design-namespace() {
+	.heading {
+		.rotate(5deg);
+		color: @title-color;
+		text-decoration: underline;
+	}
+
+	.button (@width: 100px, @height: 50px, @background-color: @button-color) {
+		width: @width;
+		height: @height;
+		background-color: @background-color;
+		.border-radius(20px);
+		border: solid (darken(@button-color, 30%));
+		color: darken(@button-color, 40%);
+	}
+
+	.p-tag {
+		border: dotted medium (lighten(@link-color, 0%));
+		padding-right: 20/400;
+		color: darken(@button-color, 20%);
+	}
+}
