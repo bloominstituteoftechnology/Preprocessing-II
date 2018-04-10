@@ -180,8 +180,28 @@ header .logo {
   margin: 28px 0 0 91px;
 }
 @media (max-width: 768px) {
-  header {
-    background-color: red;
+  header header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  header header nav {
+    margin-top: 40px;
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+  }
+  header header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+  header header nav a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  header .logo {
+    align-self: center;
+    margin-top: 28px;
   }
 }
 @media (max-width: 400px) {
@@ -193,6 +213,9 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .cta .cta-text {
   font-size: 72px;
@@ -225,6 +248,25 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content h4 {
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+.main-content button {
+  width: 100px;
+  height: 30px;
+  background: lightgray;
+}
+.main-content button:hover {
+  background-color: #000099;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
@@ -240,10 +282,20 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.contact {
+  -webkit-transform: skew(20deg, 10deg);
+  -moz-transform: skew(20deg, 10deg);
+  -ms-transform: skew(20deg, 10deg);
+  -o-transform: skew(20deg, 10deg);
+}
 .contact p {
   margin: 20px 0;
 }
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }

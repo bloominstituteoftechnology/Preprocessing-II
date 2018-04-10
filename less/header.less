@@ -23,41 +23,41 @@ header {
       }
     }
 
-  //   header {
-  //     width: 100%;
-  //     display: flex;
-  
-  //     .logo {
-  //         align-self: flex-end;
-  //         margin: 28px 0 0 91px;
-  //     }
-  // }
-  
-  // header nav {
-  //     margin-top: 40px; 
-  //     width: 610px;
-  //     justify-content: space-between;
-  //     display: flex;
-  
-  //     a {
-  //         text-decoration: none;
-  //         color: #b0b0b0;
-  //     }
-  
-  //     a:hover {
-  //         text-decoration: underline;
-  //         color: black;
-  //     }
-  
-  // }
-  
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
+      align-self: flex-end;
+      margin: 28px 0 0 91px;
+  }
 
     @media @tablet {
-      background-color: red;
+
+      header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      header nav {
+        margin-top: 40px; 
+        width: 610px;
+        justify-content: space-between;
+        display: flex;
+    
+        a {
+            text-decoration: none;
+            color: #b0b0b0;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    
+    }
+    
+      .logo {
+          align-self: center;
+          margin-top: 28px;
+      }
     }
     
     @media @phone {
