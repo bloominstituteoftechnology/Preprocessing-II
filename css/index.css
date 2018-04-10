@@ -142,10 +142,9 @@ table {
 .newStyle .pTwo:hover {
   background-color: #e8dff2;
 }
-.newStyle .btn {
-  width: 100px;
-  background-color: brown;
-  color: white;
+.newHeadings .Heading1 {
+  text-align: center;
+  color: pink;
 }
 * {
   box-sizing: border-box;
@@ -284,9 +283,6 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 100px;
-  background-color: brown;
-  color: white;
 }
 .main-content .top-content .text-content button:hover {
   background-color: #153e27;
@@ -299,6 +295,10 @@ header .logo {
 }
 .main-content .top-content p:hover {
   background-color: #d6f7e1;
+}
+.main-content .top-content h4 {
+  text-align: center;
+  color: pink;
 }
 .main-content .middle-img {
   width: 100%;
