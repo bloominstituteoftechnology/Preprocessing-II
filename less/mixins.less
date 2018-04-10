@@ -16,13 +16,14 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+// adjusted box-shadow with 2 parameter not 1
+.box-shadow (@x, @y) {
+	-webkit-box-shadow: @x @y;
+	-moz-box-shadow:    @x @y;
+	box-shadow:         @x @y;
 }
 
-.rotate (@deg) {
+.rotate (@deg: 25deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
@@ -35,3 +36,18 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+#bundle() {
+	.button-maker(@top-bot-pad, @left-right-pad) {
+		padding: @top-bot-pad @left-right-pad;
+		border: 1px solid black;
+		background-color: violet;
+	}
+
+	.text-shadow(@x, @y, @color: black) {
+		text-shadow: @x @y @color;
+	}
+}
+
+
+
