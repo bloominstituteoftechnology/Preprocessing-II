@@ -16,14 +16,11 @@
    
    .text-content {
         button {
-            .custom-button(170px, 32px, @custom-button-color);  
-            margin: 5px;
+            .custom-button(@custom-button-color);
             .border-radius();   
             &:hover{
                 background: darken(@custom-button-color, 20%);
-            }      
-           
-        
+            }
         }
 
         @media @tablet {

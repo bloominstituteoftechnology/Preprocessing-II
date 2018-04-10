@@ -25,6 +25,10 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        background-image: url(../img/mid-page-accent.jpg);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; 
 
         @media @tablet {
             margin: 0;
@@ -37,13 +41,7 @@
     }
 
     .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: @button-color;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+        .custom-button(@button-color);
         .border-radius;
         box-shadow: 2px 2px 2px @shadow-color;
 
