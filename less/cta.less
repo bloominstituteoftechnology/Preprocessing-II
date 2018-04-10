@@ -19,7 +19,7 @@
     }
 
     .cta-text {
-        color: @title-color;
+        color: black;
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
@@ -45,26 +45,28 @@
             
         }
         button {
-            color: @link-color;
-            border: 1px double @link-color;
+            color: black;
+            border: 1px double black;
             font-size: 1.6rem;
             background: white;
             width: 170px;
             height: 32px;
             margin-top: 10px;
             cursor: pointer;
-
             .border-radius();
             .box-shadow(5px 10px);
 
             &:hover {
-                background: @link-color;
+                background: pink;
+                border: 1px double pink;
                 color: white;
             } //&:hover
         } //button
     } //.cta-text
     
     img {
+        .opacity;
+
         //Medium screen styling
         @media @tablet {
             display: none;

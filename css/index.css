@@ -129,11 +129,13 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
-  font-size: 62.5%;
 }
 h1,
 h2,
@@ -165,7 +167,7 @@ header {
 }
 header nav {
   margin-top: 40px;
-  width: 610px;
+  width: 69.3%;
   justify-content: space-between;
   display: flex;
 }
@@ -209,6 +211,10 @@ header nav a:hover {
 @media (max-width: 400px) {
   header nav a:hover {
     background: gray;
+    -webkit-transform: skew(2deg, 3deg);
+    -moz-transform: skew(2deg, 3deg);
+    -ms-transform: skew(2deg, 3deg);
+    -o-transform: skew(2deg, 3deg);
   }
 }
 header .logo {
@@ -247,7 +253,7 @@ header .logo {
   }
 }
 .cta .cta-text {
-  color: red;
+  color: black;
   font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
@@ -273,8 +279,8 @@ header .logo {
   }
 }
 .cta .cta-text button {
-  color: blue;
-  border: 1px double blue;
+  color: black;
+  border: 1px double black;
   font-size: 1.6rem;
   background: white;
   width: 170px;
@@ -292,8 +298,14 @@ header .logo {
   box-shadow: 5px 10px;
 }
 .cta .cta-text button:hover {
-  background: blue;
+  background: pink;
+  border: 1px double pink;
   color: white;
+}
+.cta img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 @media (max-width: 768px) {
   .cta img {
@@ -327,12 +339,41 @@ header .logo {
   -o-transform: rotate(5deg);
 }
 .main-content button {
-  width: 100px;
-  height: 50px;
-  background-color: aqua;
+  width: 8rem;
+  height: 4rem;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 3px 6px;
+  -moz-box-shadow: 3px 6px;
+  box-shadow: 3px 6px;
+  font-size: 1.6rem;
+}
+@media (max-width: 400px) {
+  .main-content button {
+    width: 12rem;
+    height: 2.3rem;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 3px 6px;
+    -moz-box-shadow: 3px 6px;
+    box-shadow: 3px 6px;
+    font-size: 1.6rem;
+    margin: .5rem 0;
+  }
 }
 .main-content button:hover {
-  background-color: #009999;
+  background-color: #ff5a77;
+  color: white;
 }
 .main-content .top-content {
   display: flex;
@@ -384,6 +425,12 @@ header .logo {
   .contact {
     margin: 20px 2%;
   }
+}
+.contact h4 {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
 }
 .contact p {
   margin: 15px 0;
