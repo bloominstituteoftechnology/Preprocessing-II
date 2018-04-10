@@ -35,3 +35,79 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+.buttonZ(@height: 50px, @width: 150px, @button-bg) {
+	height: @height;
+	width: @width;
+	background: @button-bg;
+}
+
+#button-styles() {
+	.button-cta {
+		border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin-top: 10px;
+        cursor: pointer;
+        .border-radius;
+        &:hover {
+            background: black;
+            color: white;
+        }
+        .skew(0deg, 45deg);
+	  }
+
+	.button2 {
+		font-weight: bold;
+		margin-top: 20px;
+		.buttonZ(50px, 135px,#6195ED);
+		.border-radius;
+
+		&:hover {
+			background-color: darken(@button-bg, 20%);
+		}
+		&:active {
+			color: white;
+			background: white;
+		}
+	}// button
+}
+
+#header-Styles(){
+	.special{
+		font-size: 72px;
+		text-align: center;
+		letter-spacing: 5px;
+		display: flex;
+		justify-content: center;
+		flex-flow: column;
+		align-items: center;
+		margin: 0 82px 0 0;
+		@media @tablet {
+				margin: 0px;
+		}
+		@media @phone {
+				margin: 0px;
+				font-size: 60px;
+		}
+	}
+	.general{
+		font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+	}
+}
+
+#para-Styles(){
+	.footer{
+		font-size: 0.75rem;
+		text-align: center;
+    margin: 40px 0 20px;
+	}
+
+	.contact{
+		  margin: 20px 0;
+	}
+
+}
