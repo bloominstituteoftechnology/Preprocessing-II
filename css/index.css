@@ -1,4 +1,4 @@
-@import "reset";
+@import "reset.less";
 @import "variables";
 @import "mixins";
 @import "general-styles";
