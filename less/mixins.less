@@ -35,3 +35,50 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.buttons(@width, @height, @background-color) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+}
+
+.darken(@color, @percentage) {
+	background-color: darken(@color, @percentage);
+}
+
+.top-bottom-content {
+	display: flex;
+    justify-content: space-around;
+
+	@media @phone {
+		flex-direction: column;
+		margin: 0 4%;
+	}
+}
+
+.text {
+	.text-content{
+		p {
+			margin-bottom: 3%;
+		}
+	}
+}
+
+.main-buttons {
+	.main-buttons {
+        margin-bottom: 3%;
+        .buttons(20%, 60px, #ccccff);
+        .border-radius(10px);
+            
+        &:hover {
+			.darken(@navy, 20%);
+			color: white;
+        	}
+        }
+}
+
+#erinc() {
+	.h4 {
+		.skew(10deg, 5deg);
+	}
+}
