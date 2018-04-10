@@ -15,7 +15,7 @@
   background: white;
 }
 #button-styles .top-buttons:hover {
-  background-color: #000099;
+  background-color: #12122d;
 }
 #button-styles .bottom-buttons {
   width: 76px;
@@ -34,36 +34,4 @@
 }
 #button-styles .bottom-buttons:hover {
   background: wheat;
-}
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-  font-family: 'Titillium Web', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-.container {
-  width: 100%;
-  margin: auto;
-  max-width: 880px;
-}
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .container {
-    width: 100%;
-  }
 }

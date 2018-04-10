@@ -1,5 +1,7 @@
 // Mixins below variables
 
+@import "variables";
+
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
@@ -33,7 +35,40 @@
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
-	-o-transform: 		 skew(@deg, @deg2);
-}
+	-o-transform: 		 skew(@deg, @deg2);}
+
 
 @tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
+#button-styles{
+	  
+.top-buttons {border: 1px solid black;
+		width: 76px;
+		height: 28px;
+		padding: 6px;
+		text-align: center;
+		.border-radius;   
+		color: rgb(15, 58, 55);
+		margin-top: 10px; 
+		background: white;
+		&:hover {
+			background-color: darken(@some-color, 20%);
+		}
+  }
+.bottom-buttons {
+	width: 76px;
+		height: 28px;
+		padding: 6px;
+		text-align: center;
+		.border-radius;   
+		color: white;
+		margin-top: 10px; 
+		background: rgb(118, 137, 177);
+		&:hover {
+			background: wheat;
+		}
+   }
+}
+
+
