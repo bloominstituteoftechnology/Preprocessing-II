@@ -9,6 +9,7 @@
     }
     .cta-text {
         font-size: 72px;
+        .opacity(.7);
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -27,14 +28,18 @@
         width: 170px;
         height: 32px;
         margin-top: 10px;
+        .border-radius;
         cursor: pointer;
         &:hover {
             background: black;
             color: white;
             .rotate(180deg);
+            .skew(27deg, 111deg)
         }
+        .box-shadow(10px 5px 5px red);
     }
     img {
+        .opacity(.6);
         @media @phone {
             margin: 20px 0;
             max-width: 88%;

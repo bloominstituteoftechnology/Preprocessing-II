@@ -6,6 +6,8 @@
     padding: 35px 0;
     font-size: 16px;
     line-height: 18px;
+
+
     @media @phone {
         display: flex;
         flex-flow: column wrap;
@@ -21,6 +23,7 @@
     .middle-img {
         display: block;
         margin: 30px auto;
+        .border-radius;
     }
     .bottom-content {
         display: flex;
@@ -31,10 +34,21 @@
         p {
             padding-right: 20px;
         }
-        .text-content {
+        .text-content {          
             @media @phone {
                 width: 100%;
             }
+        
+        }
+    }
+    button{
+        color: white;
+        .newButton(30px, 100px, darkorchid);
+        .border-radius;
+        margin: 20px 0 0 0;
+        &:hover{
+            background: darken(darkorchid, 20%);
+            cursor: pointer;
         }
     }
 } // main-content

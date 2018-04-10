@@ -193,6 +193,12 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 @media (max-width: 400px) {
   header nav a {
@@ -232,6 +238,9 @@ header .logo {
 }
 .cta .cta-text {
   font-size: 72px;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -252,7 +261,16 @@ header .logo {
   width: 170px;
   height: 32px;
   margin-top: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   cursor: pointer;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 .cta .cta-text button:hover {
   background: black;
@@ -261,6 +279,15 @@ header .logo {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+  -webkit-transform: skew(27deg, 111deg);
+  -moz-transform: skew(27deg, 111deg);
+  -ms-transform: skew(27deg, 111deg);
+  -o-transform: skew(27deg, 111deg);
+}
+.cta img {
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
 }
 @media (max-width: 400px) {
   .cta img {
@@ -297,6 +324,12 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .main-content .bottom-content {
   display: flex;
@@ -314,6 +347,23 @@ header .logo {
   .main-content .bottom-content .text-content {
     width: 100%;
   }
+}
+.main-content button {
+  color: white;
+  width: 100px;
+  height: 30px;
+  background: darkorchid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 20px 0 0 0;
+}
+.main-content button:hover {
+  background: #5c1e7a;
+  cursor: pointer;
 }
 .contact p {
   margin: 20px 0;
