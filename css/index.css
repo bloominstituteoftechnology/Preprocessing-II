@@ -257,6 +257,10 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 @media (max-width: 400px) {
   .cta img {
