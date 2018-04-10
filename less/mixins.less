@@ -10,7 +10,7 @@
 	background-clip:         padding-box;
 }
 
-.opacity (@opacity: 0.5) {
+.opacity (@opacity) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
@@ -35,3 +35,37 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.awesome-button {
+	border: 1px double black;
+    font-size: 10px;
+    background: white;
+    width: 85px;
+    height: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+
+    .box-shadow(5px 0 5px 0);
+
+    &:hover {
+        background: darken(gray, 20%);
+        color: white;
+        .border-radius;
+    }
+
+}
+
+
+// Thuy's sweet skew animation
+
+// @keyframes skewMove {
+// 	0% {
+// 		.skew(15deg, 0);
+// 	}
+// 	50% {
+// 		.skew(-15deg,0);
+// 	}
+// 	100%{
+// 		.skew(15deg,0);
+// 	}
+// }
