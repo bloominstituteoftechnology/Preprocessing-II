@@ -8,9 +8,30 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @phone {
+        margin: 75px 5% 35px 5%;
+        padding-bottom: 0px;
+   }
+  
+   
+   .text-content {
+        @media @tablet {
+            padding: 0 1.3%;
+        }
+
+        @media @phone {
+            padding: 14px 0;
+        }
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-direction: column;
+            padding-bottom: 0;
+        }
     }
 
     .middle-img {
@@ -18,11 +39,27 @@
         margin: 30px auto;
         .border-radius;
         box-shadow: 5px 5px 5px @shadow-color;
+
+        @media @tablet {
+
+            // box shadow acts weird when the window is resized
+            max-width: 100%;
+            padding: 5px 0;
+        }
+
+        @media @phone {
+            padding-top: 17px;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-direction: column;
+            padding-top: 17px;
+        }
 
         p {
             padding-right: 20px;
