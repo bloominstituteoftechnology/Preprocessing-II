@@ -3,6 +3,14 @@
 
 // Main Content Styles
 
+.btn {
+    border-radius: 50%;
+    width: 15em;
+    height: 5em;
+    color: black;
+    background: linear-gradient(red, yellow, green);
+}
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -15,10 +23,9 @@
         display: flex;
         justify-content: space-around;
 
-        .btn {
-            width: 200px;
-            height: 100px;
-            background-color: #66ff66;
+        .button {
+            border-color: red;
+            .btn;
         }
         @media @tablet {
             width: 100%;
@@ -45,11 +52,10 @@
         p {
             padding-right: 20px;
         }
-        .btn {
-            width: 200px;
-            height: 100px;
-            background-color: #66ff66;
-            border-radius: 20px;
+
+        button {
+            border-color: red;
+            .btn;
         }
     }
 }// main-content

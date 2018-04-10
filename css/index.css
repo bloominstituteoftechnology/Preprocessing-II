@@ -234,6 +234,13 @@ header .logo {
   background: black;
   color: white;
 }
+.btn {
+  border-radius: 50%;
+  width: 15em;
+  height: 5em;
+  color: black;
+  background: linear-gradient(red, yellow, green);
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -246,10 +253,13 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-.main-content .top-content .btn {
-  width: 200px;
-  height: 100px;
-  background-color: #66ff66;
+.main-content .top-content .button {
+  border-color: red;
+  border-radius: 50%;
+  width: 15em;
+  height: 5em;
+  color: black;
+  background: linear-gradient(red, yellow, green);
 }
 @media (max-width: 768px) {
   .main-content .top-content {
@@ -279,11 +289,13 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
-.main-content .bottom-content .btn {
-  width: 200px;
-  height: 100px;
-  background-color: #66ff66;
-  border-radius: 20px;
+.main-content .bottom-content button {
+  border-color: red;
+  border-radius: 50%;
+  width: 15em;
+  height: 5em;
+  color: black;
+  background: linear-gradient(red, yellow, green);
 }
 .contact p {
   margin: 20px 0;
