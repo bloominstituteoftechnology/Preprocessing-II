@@ -17,5 +17,8 @@ h5 {
 }
 .container {
   width: 880px;
-  margin: auto;
+  max-width:880;
+  margin:auto;
+  
+
 }

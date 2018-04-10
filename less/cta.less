@@ -44,6 +44,7 @@
     @media @phone {
         color:@cerulean-Blue;
         margin:0 0 10% 0;
+        align-items: center;
     }
            
     .cta-text button {
@@ -55,9 +56,28 @@
         margin-top: 10px;
         cursor: pointer;
 
+@media@tablet {
+    margin-left: 0;
+}
+@media@phone{
+    align-self:center;
+
+}
         &:hover {
             background: black;
             color: white;
+            
+        }
+    }
+    img{
+        @media @tablet{
+            width:45%;
+            height:95%;
+        }
+        @media @phone{
+            width:95%;
+            height:95%;
+
         }
     }
 }// cta

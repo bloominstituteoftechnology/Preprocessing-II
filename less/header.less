@@ -5,7 +5,17 @@ header {
     display: flex;
     font-size: 1.6rem;
 
-    
+    @media @tablet {
+      flex-wrap:nowrap;
+      height:100%;
+      width:100%;
+    }
+    @media @phone {
+      flex-direction:column-reverse;
+      flex-wrap:wrap;
+      height:100%;
+      width:100%;
+    }
   
     nav {
       margin-top: 40px; 
@@ -15,7 +25,9 @@ header {
       
             
     
-      &:first-child {
+      @media @tablet {
+        margin-top: 40px;
+      }
 
        
   
@@ -37,13 +49,18 @@ header {
             color: black;
            
             color:lightblue;
-
+        }
+        @media @tablet {
+          font-size:16px;
+        }
 
             @media @phone {
-              background:gray;
+              widthg:100%;
+              text-align:center;
+              border-top: 1px solid lightpink;
+              border-bottom: 1px solid lightcoral;
             }
-          } 
-        }
+         } 
       }
     
   
@@ -51,7 +68,8 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
 
-        @media @phone {
+
+        @media @tablet {
           order: -1;
           display:block;
           margin: 28px 0;
