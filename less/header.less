@@ -1,14 +1,44 @@
 // Header Styles
 
+
 header {
     width: 100%;
     display: flex;
-  
+
+    @media @tablet {
+      header {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 30px;
+      }
+    }
+    @media @phone {
+      header {
+        justify-content: center;
+      }
+    }
+
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        header nav {
+          justify-content: space-between;
+          width: 92%;
+        }
+      }
+
+      @media @phone {
+        header nav {
+          width: 100%;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+      }
   
       a {
         text-decoration: none;
@@ -17,6 +47,25 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
+
+            @media @phone {
+              header nav a {
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 20px;
+                border-bottom: 1px solid gray;
+
+                header nav a:first-child {
+                  border-top: 1px solid gray;
+
+                  header nav a:hover {
+                    background: gray;
+                  }
+                }
+              }
+            } 
   
         }
       }
@@ -25,5 +74,22 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          header .logo{
+            order: -1;
+            justify-content: center;
+            margin: 0 auto;
+          }
+        }
+          @media @phone {
+            header .logo {
+              margin: 20px 0;
+            }
+          }
+        
     }
-  }// header 
+
+  
+  }
+// header 
