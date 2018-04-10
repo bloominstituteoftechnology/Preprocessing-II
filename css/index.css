@@ -126,6 +126,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.newStyle .pOne {
+  text-align: center;
+  color: #0f270f;
+  padding-bottom: 20px;
+}
+.newStyle .pOne:hover {
+  background-color: #d6f7e1;
+}
+.newStyle .pTwo {
+  text-align: center;
+  color: #22044b;
+  padding-bottom: 20px;
+}
+.newStyle .pTwo:hover {
+  background-color: #e8dff2;
+}
+.newStyle .btn {
+  width: 100px;
+  background-color: brown;
+  color: white;
+}
 * {
   box-sizing: border-box;
 }
@@ -263,6 +284,21 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  width: 100px;
+  background-color: brown;
+  color: white;
+}
+.main-content .top-content .text-content button:hover {
+  background-color: #153e27;
+  color: white;
+}
+.main-content .top-content p {
+  text-align: center;
+  color: #0f270f;
+  padding-bottom: 20px;
+}
+.main-content .top-content p:hover {
+  background-color: #d6f7e1;
 }
 .main-content .middle-img {
   width: 100%;
@@ -284,8 +320,18 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.main-content .bottom-content .text-content button:hover {
+  background-color: #6767e0;
+  color: white;
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+  text-align: center;
+  color: #22044b;
+  padding-bottom: 20px;
+}
+.main-content .bottom-content p:hover {
+  background-color: #e8dff2;
 }
 .contact {
   color: blue;

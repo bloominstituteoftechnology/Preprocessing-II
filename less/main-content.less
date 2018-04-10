@@ -15,7 +15,16 @@
         .text-content button{
             .mixin-button(65px, 50px, seagreen);
             .border-radius(10px);
+            &:hover {
+                background-color: darken(seagreen, 20%);
+                color: white;
+            }
+            .newStyle >.btn;
         }
+       p{
+          .newStyle.pOne; 
+       }
+       
         
     }
 
@@ -32,10 +41,16 @@
         .text-content button{
             .mixin-button(65px, 50px, lavender);
             .border-radius(10px);
+            &:hover {
+                background-color: darken(lavender, 30%);
+                color: white;
+            }
         }
 
         p {
             padding-right: 20px;
+            .newStyle.pTwo;
         }
+        
     }
 }// main-content
