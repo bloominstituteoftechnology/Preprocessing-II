@@ -150,11 +150,15 @@ h5 {
 @media (max-width: 768px) {
   .container {
     color: pink;
+    width: 768px;
+    margin: auto;
   }
 }
 @media (max-width: 400px) {
   .container {
     color: blue;
+    width: 400px;
+    margin: auto;
   }
 }
 header {
@@ -180,6 +184,9 @@ header .logo {
   margin: 28px 0 0 91px;
 }
 @media (max-width: 768px) {
+  header {
+    background-color: orange;
+  }
   header header {
     display: flex;
     flex-direction: column-reverse;
@@ -213,9 +220,9 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
 }
 .cta .cta-text {
   font-size: 72px;
@@ -249,9 +256,9 @@ header .logo {
   line-height: 18px;
 }
 .main-content h4 {
-  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 229, 255, 0.4);
+  -moz-box-shadow: 2px 2px 8px rgba(0, 229, 255, 0.4);
+  box-shadow: 2px 2px 8px rgba(0, 229, 255, 0.4);
 }
 .main-content button {
   width: 100px;
@@ -259,7 +266,7 @@ header .logo {
   background: lightgray;
 }
 .main-content button:hover {
-  background-color: #000099;
+  background-color: #4d4d4d;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -294,8 +301,8 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }

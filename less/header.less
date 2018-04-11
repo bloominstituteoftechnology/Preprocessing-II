@@ -1,7 +1,6 @@
 // Header Styles
 
 header {
-
     width: 100%;
     display: flex;
   
@@ -18,7 +17,6 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
-  
         }
       }
     }
@@ -29,7 +27,8 @@ header {
   }
 
     @media @tablet {
-
+      background-color: @tablet-color-two;
+      
       header {
         display: flex;
         flex-direction: column-reverse;
@@ -61,6 +60,6 @@ header {
     }
     
     @media @phone {
-      background-color: green;
+      background-color: @mobile-color-two;
     }
   }// header 
