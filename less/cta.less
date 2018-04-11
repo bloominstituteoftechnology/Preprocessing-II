@@ -51,7 +51,7 @@
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
+        background: @primary-button-color;
         width: 170px;
         height: 32px;
         margin-top: 10px;
@@ -60,8 +60,8 @@
         .box-shadow(3px 3px 6px #000);
         
         &:hover {
-            background: black;
-            color: white;
+            background: @primary-button-hover-color;
+            color: @primary-button-color;
             .opacity(0.8);
         }
     } // cta-text button

@@ -30,12 +30,21 @@ header {
       
     a {
       text-decoration: none;
-      color: #b0b0b0;
+      color: @primary-link-color;
 
       &:hover {
-        text-decoration: underline;
-        color: black;
-        .rotate(45deg);
+        &:nth-of-type(odd){
+          .skew(1deg, 5deg);
+        }
+
+        &:nth-of-type(even){
+          .skew(1deg, -5deg);
+        }
+
+        @media @phone {
+          background-color: @primary-button-hover-color;
+          color: @primary-link-color;
+        }
       }
 
       &:first-child {
