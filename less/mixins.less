@@ -35,14 +35,21 @@
   -ms-transform: skew(@deg, @deg2);
   -o-transform: skew(@deg, @deg2);
 }
+.bold-font {
+  font-weight: bold;
+}
 
 .button-creator(@width:100px,@height:30px) {
   width: 100px;
   height: 30px;
+  background: gray;
   text-align: center;
   margin-top: 20px;
+  .bold-font;
   .border-radius(@radius:15px);
+  .box-shadow (2px 5px 5px 5px black);
   &:hover {
-    background: goldenrod;
+    background: darken(goldenrod, 15%);
+    .skew (18deg, 0deg);
   }
 }

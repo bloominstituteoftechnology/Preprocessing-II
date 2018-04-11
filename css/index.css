@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.bold-font {
+  font-weight: bold;
+}
 * {
   box-sizing: border-box;
 }
@@ -144,8 +147,9 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
   margin: auto;
+  background: #69020c;
 }
 header {
   width: 100%;
@@ -187,7 +191,7 @@ header .logo {
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
+  background: #bb7c82;
   width: 170px;
   height: 32px;
   margin-top: 10px;
@@ -203,6 +207,7 @@ header .logo {
   background: yellow;
   color: lawngreen;
   font-size: 20px;
+  font-weight: bold;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -223,36 +228,57 @@ header .logo {
 .main-content .top-content .text-content .feat-button {
   width: 100px;
   height: 30px;
+  background: gray;
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
 }
 .main-content .top-content .text-content .feat-button:hover {
-  background: goldenrod;
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
 }
 .main-content .top-content .text-content .bout-button {
   width: 100px;
   height: 30px;
+  background: gray;
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
 }
 .main-content .top-content .text-content .bout-button:hover {
-  background: goldenrod;
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-box-shadow: 0 10px 8px 11px black;
+  -moz-box-shadow: 0 10px 8px 11px black;
+  box-shadow: 0 10px 8px 11px black;
 }
 .main-content .bottom-content {
   display: flex;
@@ -261,50 +287,80 @@ header .logo {
 .main-content .bottom-content .text-content .vice-button {
   width: 100px;
   height: 30px;
+  background: gray;
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
 }
 .main-content .bottom-content .text-content .vice-button:hover {
-  background: goldenrod;
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
 }
 .main-content .bottom-content .text-content .pro-button {
   width: 100px;
   height: 30px;
+  background: gray;
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
 }
 .main-content .bottom-content .text-content .pro-button:hover {
-  background: goldenrod;
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
 }
 .main-content .bottom-content .text-content .vision-button {
   width: 100px;
   height: 30px;
+  background: gray;
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
 }
 .main-content .bottom-content .text-content .vision-button:hover {
-  background: goldenrod;
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.contact {
+  font-family: cursive;
 }
 .contact p {
   margin: 20px 0;
@@ -312,4 +368,5 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-family: fantasy;
 }
