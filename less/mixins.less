@@ -35,3 +35,44 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+// Stretch Task: Create namespace for headings, buttons and p tags
+#great-idea() {
+	.heading {
+		text-align: center;
+
+		&:after {
+			content: "";
+			background-color: #000;
+			height: 2px;
+			width: 25px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	.button(@width, @height) {
+		cursor: pointer;
+		display: block;
+		height: @height;
+		width: @width;
+		background: @secondary-button-color;
+		color: white;
+		margin: 5px auto;
+		.border-radius;
+
+		&:hover {
+			background-color: darken(@secondary-button-color, 30%);
+		}
+
+		@media @tablet {
+			height: @height * 1.5;
+			width: @width * .75;
+		}
+	}
+
+	.paragraph {
+		line-height: 22px;
+		margin: 0 0 10px 0;
+	}
+}

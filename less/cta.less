@@ -5,6 +5,15 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet{
+        justify-content: center;
+        margin: 9.4% 0 0 0;
+    }
+
+    @media @phone{
+        margin: 12.5% 0 0 0;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,20 +23,46 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+
+        @media @tablet {
+            margin: 0;
+        }
+
+        @media @phone {
+            margin: 0;
+        }
+
+        h1 {
+            @media @tablet {
+                margin: 0 0 5.1% 0;
+            }
+        }
+    } // cta-text
+    
+
+    img {
+        .rotate(25deg);
+
+        @media @tablet {
+            display: none;
+        }
+    } // img
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
+        background: @primary-button-color;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-
+        .border-radius;
+        .box-shadow(3px 3px 6px #000);
+        
         &:hover {
-            background: black;
-            color: white;
+            background: @primary-button-hover-color;
+            color: @primary-button-color;
+            .opacity(0.8);
         }
-    }
+    } // cta-text button
 }// cta

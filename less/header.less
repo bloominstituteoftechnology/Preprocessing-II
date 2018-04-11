@@ -1,29 +1,79 @@
 // Header Styles
 
 header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+
+  @media @tablet {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
     display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
-      display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
+
+    @media @tablet {
+      justify-content: space-around;
+      margin: 5.2% 0 0 0;
+      width: 100%;
+    }
+
+    @media @phone{
+      margin: 5% 0 0 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+      
+    a {
+      text-decoration: none;
+      color: @primary-link-color;
+
+      &:hover {
+        &:nth-of-type(odd){
+          .skew(1deg, 5deg);
+        }
+
+        &:nth-of-type(even){
+          .skew(1deg, -5deg);
+        }
+
+        @media @phone {
+          background-color: @primary-button-hover-color;
+          color: @primary-link-color;
         }
       }
+
+      &:first-child {
+        @media @phone {
+          border-top: 1px solid #000;
+        }
+      }
+
+      @media @phone{
+        border-bottom: 1px solid #000;
+        font-size: 2rem;
+        padding: 5% 0;
+        text-align: center;
+        width: 100%;
+      }
     }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+  } // nav
+
+  .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 91px;
+
+    @media @tablet{
+      align-self: center;
+      margin: 3.9% 0 0 0;
     }
-  }// header 
+
+    @media @phone{
+      margin: 5% 0 0 0;
+    }
+  } // logo
+} // header 
