@@ -23,19 +23,19 @@
 }
 
 .rotate (@deg) {
-	-webkit-transform: rotate(@deg);
-	-moz-transform: 	 rotate(@deg);
-	-ms-transform: 		 rotate(@deg);
-	-o-transform: 		 rotate(@deg);
-	transform:         rotate(@deg);
+	-webkit-transform+_: rotate(@deg);
+	-moz-transform+_: 	 rotate(@deg);
+	-ms-transform+_: 		 rotate(@deg);
+	-o-transform+_: 		 rotate(@deg);
+	transform+_:         rotate(@deg);
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform: skew(@deg, @deg2);
-	-moz-transform: 	 skew(@deg, @deg2);
-	-ms-transform: 		 skew(@deg, @deg2);
-	-o-transform: 		 skew(@deg, @deg2);
-	transform:         skew(@deg, @deg2);
+	-webkit-transform+_: skew(@deg, @deg2);
+	-moz-transform+_: 	 skew(@deg, @deg2);
+	-ms-transform+_: 		 skew(@deg, @deg2);
+	-o-transform+_: 		 skew(@deg, @deg2);
+	transform+_:         skew(@deg, @deg2);
 }
 
 // CUSTOM MIXINS
