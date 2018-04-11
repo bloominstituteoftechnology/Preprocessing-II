@@ -1,0 +1,37 @@
+#button-styles .top-buttons {
+  border: 1px solid black;
+  width: 76px;
+  height: 28px;
+  padding: 6px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #0f3a37;
+  margin-top: 10px;
+  background: white;
+}
+#button-styles .top-buttons:hover {
+  background-color: #12122d;
+}
+#button-styles .bottom-buttons {
+  width: 76px;
+  height: 28px;
+  padding: 6px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  margin-top: 10px;
+  background: #7689b1;
+}
+#button-styles .bottom-buttons:hover {
+  background: wheat;
+}

@@ -1,0 +1,108 @@
+#button-styles .top-buttons {
+  border: 1px solid black;
+  width: 76px;
+  height: 28px;
+  padding: 6px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #0f3a37;
+  margin-top: 10px;
+  background: white;
+}
+#button-styles .top-buttons:hover {
+  background-color: #474773;
+  color: white;
+}
+#button-styles .bottom-buttons {
+  width: 76px;
+  height: 28px;
+  padding: 6px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  margin-top: 10px;
+  background: #7689b1;
+}
+#button-styles .bottom-buttons:hover {
+  background: wheat;
+  color: black;
+}
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    justify-content: center;
+  }
+}
+.cta .cta-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    font-size: 50px;
+    padding-left: 40px;
+  }
+}
+.cta .cta-text:hover {
+  -webkit-transform: skew(20deg, 15deg);
+  -moz-transform: skew(20deg, 15deg);
+  -ms-transform: skew(20deg, 15deg);
+  -o-transform: skew(20deg, 15deg);
+}
+.cta img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 10px 5px 5px #5c5151;
+  -moz-box-shadow: 10px 5px 5px #5c5151;
+  box-shadow: 10px 5px 5px #5c5151;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}

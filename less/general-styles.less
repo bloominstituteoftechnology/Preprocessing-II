@@ -1,5 +1,7 @@
 // General Styles
 
+@import "mixins";
+
 * {
     box-sizing: border-box;
 }
@@ -16,6 +18,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
     margin: auto;
+    max-width:880px;
+
+    @media @tablet{
+        width: 100%;
+        
+    }
+
+    @media @phone{
+        width:100%;
+     }
+
 }

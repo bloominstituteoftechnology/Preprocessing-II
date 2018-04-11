@@ -1,0 +1,110 @@
+#button-styles .top-buttons {
+  border: 1px solid black;
+  width: 76px;
+  height: 28px;
+  padding: 6px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #0f3a37;
+  margin-top: 10px;
+  background: white;
+}
+#button-styles .top-buttons:hover {
+  background-color: #474773;
+  color: white;
+}
+#button-styles .bottom-buttons {
+  width: 76px;
+  height: 28px;
+  padding: 6px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  margin-top: 10px;
+  background: #7689b1;
+}
+#button-styles .bottom-buttons:hover {
+  background: wheat;
+  color: black;
+}
+header {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    justify-content: center;
+  }
+}
+header nav {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header nav {
+    align-self: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    margin-top: 10px;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+}
+@media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+    margin: 28px auto;
+  }
+}
+header .logo:hover {
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+}

@@ -1,0 +1,71 @@
+#button-styles .top-buttons {
+  border: 1px solid black;
+  width: 76px;
+  height: 28px;
+  padding: 6px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #0f3a37;
+  margin-top: 10px;
+  background: white;
+}
+#button-styles .top-buttons:hover {
+  background-color: #474773;
+  color: white;
+}
+#button-styles .bottom-buttons {
+  width: 76px;
+  height: 28px;
+  padding: 6px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  margin-top: 10px;
+  background: #7689b1;
+}
+#button-styles .bottom-buttons:hover {
+  background: wheat;
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 880px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
