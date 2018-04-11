@@ -1,7 +1,7 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -11,19 +11,41 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @mobile {
+          flex-direction: column;
+        }
+        .text-content {
+
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        // opacity: mixins
+        .opacity(.2);
+
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
+        @media @mobile {
+          flex-direction: column;
+        }
         p {
             padding-right: 20px;
         }
+    }
+    .button {
+      #bundle > .button-maker(30px, 60px); // button maker mixins
+      .border-radius(10px);      // border radius mixins
+      &:hover {
+        background-color: darken(violet, 20%);
+      }
+    }
+    .bottom-button {
+      #bundle > .button-maker(20px, 40px); // button maker mixins
+      .border-radius(15px);  // border radius mixins
     }
 }// main-content
