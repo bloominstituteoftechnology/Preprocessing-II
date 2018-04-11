@@ -3,12 +3,31 @@
 header {
   width: 100%;
   display: flex;
+  @media @tabletConversion {
+    flex-wrap: wrap;
+  }
+
+  @media @mobileConversion {
+    justify-content: center;
+  }
 
   nav {
     margin-top: 40px;
-    width: 610px;
+    width: 100%;
     justify-content: space-between;
     display: flex;
+
+    @media @tabletConversion {
+      width: 100%;
+      padding: 0 30px;
+    }
+
+    @media @mobileConversion {
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
 
     a {
       text-decoration: none;
@@ -18,11 +37,33 @@ header {
         text-decoration: underline;
         color: black;
       }
+      @media @mobileConversion {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid @borderColor;
+        &:first-child {
+          border-top: 1px solid @borderColor;
+        }
+        &:hover {
+          background: @borderColor;
+        }
+      }
     }
   }
-
   .logo {
-    align-self: flex-end;
     margin: 28px 0 0 91px;
+
+    @media @tabletConversion {
+      order: -1;
+      display: block;
+      margin: 30px auto 0;
+    }
+
+    @media @mobileConversion {
+      margin: 20px 0;
+    }
   }
 } // header

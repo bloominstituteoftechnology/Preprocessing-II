@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  background: @page-color;
 }
 
 h1,
@@ -21,7 +22,15 @@ h5 {
 }
 
 .container {
-  width: 100%;
+  max-width: 880px;
   margin: auto;
   background: @page-color;
+
+  @media @tabletConversion {
+    max-width: 768px;
+  }
+
+  @media @mobileConversion {
+    max-width: 400px;
+  }
 }
