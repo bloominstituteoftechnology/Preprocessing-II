@@ -295,6 +295,10 @@ header nav a:hover {
     margin: 0;
   }
 }
+.cta .cta-text h1 {
+  color: purple;
+  background: orange;
+}
 @media (max-width: 768px) {
   .cta .cta-text h1 {
     letter-spacing: 0;
@@ -371,14 +375,11 @@ header nav a:hover {
   padding-right: 20px;
 }
 .main-content .button {
+  padding: 5px;
   width: 150px;
-  height: 50px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+  border: 1px solid black;
+  background-color: teal;
+  margin-top: 10px;
 }
 .main-content .button:hover {
   background: #990000;

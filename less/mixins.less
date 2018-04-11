@@ -37,14 +37,17 @@
 }
 
 #bundle() {
-    .button-maker() {
+    .button-maker {
         padding: 5px;
         width: 150px;
         border: 1px solid black;
-        background-color: teal;
-    }
+		background-color: teal;
+		margin-top: 10px;
+	}
+	
+	.text-changer {
+		color: purple;
+		background: orange;
+	}
 
-    .text-shadow(@x, @y, @color: black) {
-        text-shadow: @x @y @color;
-    }
 }
