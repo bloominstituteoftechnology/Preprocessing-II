@@ -1,5 +1,11 @@
 // Main Content Styles
 
+.new-button(@width, @height, @background) {
+    width: @width;
+    height: @height;
+    background: @background;
+  }
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -8,7 +14,20 @@
    font-size: 16px;
    line-height: 18px;
 
-   .top-content {
+    h4 {
+        .box-shadow(2px 2px 8px rgba(0, 229, 255, 0.4));
+    }
+
+    button {
+        .new-button(100px, 30px, lightgray);
+        
+        &:hover {
+            background-color: darken(gray, 20%);
+            .border-radius(20px);
+        }
+    }
+
+    .top-content {
         display: flex;
         justify-content: space-around;
     }
