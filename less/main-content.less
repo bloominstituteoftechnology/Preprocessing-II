@@ -8,22 +8,60 @@
    font-size: 16px;
    line-height: 18px;
 
-   .top-content {
+    @media @tablet {
+        margin: 75px 2% 35px;
+    }
+
+    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+        }
+
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .border-radius(10px);
+        .box-shadow(5px 5px 6px black, 0px 0px 8px black;);
+
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
-        p {
-            padding-right: 20px;
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-around;
+            height: 440px;
         }
+    
+    p {
+        padding-right: 20px;
+    }
+  }
+
+    .text-content {
+
+        button {
+            .button-template;
+            
+            @media @phone {
+                display: none;
+            }
+
+            &:hover {
+                background-color: darken(blue, 30%);
+               }
+            }
     }
 }// main-content
