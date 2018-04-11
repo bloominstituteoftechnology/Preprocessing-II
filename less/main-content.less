@@ -1,21 +1,48 @@
 // Main Content Styles
 
+@tablet: ~"(max-width:768px)";
+@phone: ~"(max-width:400px)";
+
+.button-mixins {
+    border: 1px double black;  
+    font-size: 12px;
+    color: black; 
+    background: lightgreen; 
+    width: 100px; 
+    height: 32px; 
+    margin-top: 10px; 
+    
+    &:hover {
+        background: darkcyan;
+        color: white; 
+    }
+}
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
-   line-height: 18px;
+   line-height: 18px;  
 
    .top-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-around;       
+    
+        .text-content .button1 {
+            .button-mixins;             
+        }          
+
+        .text-content .button2 {
+            .button-mixins; 
+        }          
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .rotate(180deg);         
     }
 
     .bottom-content {
@@ -25,5 +52,18 @@
         p {
             padding-right: 20px;
         }
+
+        .text-content .button3 {
+            .button-mixins; 
+        }          
+
+        .text-content .button4 {
+            .button-mixins; 
+        }          
+
+        .text-content .button5 {
+            .button-mixins; 
+        }          
+
     }
 }// main-content
