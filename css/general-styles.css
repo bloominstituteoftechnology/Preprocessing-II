@@ -1,8 +1,8 @@
 #button-styles .top-buttons {
   border: 1px solid black;
-  width: 76px;
+  width: 100px;
   height: 28px;
-  padding: 6px;
+  padding: 0px;
   text-align: center;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -19,9 +19,9 @@
   color: white;
 }
 #button-styles .bottom-buttons {
-  width: 76px;
+  width: 93px;
   height: 28px;
-  padding: 6px;
+  padding: 0px;
   text-align: center;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

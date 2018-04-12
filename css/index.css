@@ -128,9 +128,9 @@ table {
 }
 #button-styles .top-buttons {
   border: 1px solid black;
-  width: 76px;
+  width: 100px;
   height: 28px;
-  padding: 6px;
+  padding: 0px;
   text-align: center;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -147,9 +147,9 @@ table {
   color: white;
 }
 #button-styles .bottom-buttons {
-  width: 76px;
+  width: 93px;
   height: 28px;
-  padding: 6px;
+  padding: 0px;
   text-align: center;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -363,9 +363,9 @@ header .logo:hover {
 }
 .main-content .top-content button {
   border: 1px solid black;
-  width: 76px;
+  width: 100px;
   height: 28px;
-  padding: 6px;
+  padding: 0px;
   text-align: center;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -405,9 +405,9 @@ header .logo:hover {
   padding-right: 20px;
 }
 .main-content .bottom-content button {
-  width: 76px;
+  width: 93px;
   height: 28px;
-  padding: 6px;
+  padding: 0px;
   text-align: center;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
