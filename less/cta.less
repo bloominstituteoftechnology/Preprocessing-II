@@ -5,6 +5,18 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet-min-max {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    @media @mobile {
+        max-width: 100%;
+        justify-content: center;
+        padding-left: 17%;
+        margin-top: 11%;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -17,17 +29,6 @@
     }
 
     .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
-        }
+       .button
     }
 }// cta

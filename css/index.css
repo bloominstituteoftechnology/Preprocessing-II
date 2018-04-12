@@ -126,6 +126,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px darkgrey;
+  -moz-box-shadow: 10px 10px darkgrey;
+  box-shadow: 10px 10px darkgrey;
+}
+.button:hover {
+  background: black;
+  color: white;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  background: #4d4d4d;
+}
+.button2 {
+  border: 1px double orange;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px darkgrey;
+  -moz-box-shadow: 10px 10px darkgrey;
+  box-shadow: 10px 10px darkgrey;
+}
+.button2:hover {
+  background: #e04609;
+  color: #9c9c9c;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 * {
   box-sizing: border-box;
 }
@@ -164,6 +205,10 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
   color: black;
+  -webkit-transform: skew(10deg, 10deg);
+  -moz-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  -o-transform: skew(10deg, 10deg);
 }
 header .logo {
   align-self: flex-end;
@@ -173,6 +218,20 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (min-width: 401px) and (max-width: 768px) {
+  .cta {
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    max-width: 100%;
+    justify-content: center;
+    padding-left: 17%;
+    margin-top: 11%;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -192,10 +251,18 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-box-shadow: 10px 10px darkgrey;
+  -moz-box-shadow: 10px 10px darkgrey;
+  box-shadow: 10px 10px darkgrey;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  background: #4d4d4d;
 }
 .main-content {
   border-top: 2px solid black;
@@ -209,13 +276,68 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content button {
+  border: 1px double orange;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px darkgrey;
+  -moz-box-shadow: 10px 10px darkgrey;
+  box-shadow: 10px 10px darkgrey;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .top-content button:hover {
+  background: #e04609;
+  color: #9c9c9c;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content button {
+  border: 1px double orange;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px darkgrey;
+  -moz-box-shadow: 10px 10px darkgrey;
+  box-shadow: 10px 10px darkgrey;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content .bottom-content button:hover {
+  background: #e04609;
+  color: #9c9c9c;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .main-content .bottom-content p {
   padding-right: 20px;
@@ -226,4 +348,11 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  border: 5px solid orange;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
