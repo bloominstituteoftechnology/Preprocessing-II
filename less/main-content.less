@@ -11,11 +11,16 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        button {
+            .my-button;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .skew;
     }
 
     .bottom-content {
@@ -24,6 +29,9 @@
 
         p {
             padding-right: 20px;
+        }
+        button {
+            .my-button(80px, 40px, yellow, 40%);
         }
     }
 }// main-content
