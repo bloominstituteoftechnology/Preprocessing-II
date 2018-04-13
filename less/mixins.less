@@ -1,6 +1,6 @@
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
+.border-radius (@radius) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
@@ -10,7 +10,7 @@
 	background-clip:         padding-box;
 }
 
-.opacity (@opacity: 0.5) {
+.opacity (@opacity) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
@@ -34,4 +34,41 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.button {
+	border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+	cursor: pointer;
+	.box-shadow(10px 10px darkgrey);
+
+   &:hover {
+  background: black;
+	color: white;
+	.rotate(180deg);
+	background: darken(grey, 20%);
+						
+	}
+}
+.button2 {
+	border: 1px double orange;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+	cursor: pointer;
+	.box-shadow(10px 10px darkgrey);
+
+   &:hover {
+  background: rgb(224, 70, 9);
+	color: rgb(156, 156, 156);
+	.rotate(180deg);
+	
+						
+	}
 }
