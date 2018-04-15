@@ -34,7 +34,7 @@ Once you have imported your less files, be sure to run less-watch-compiler
 
 4. Use a function to darken the background by 20% on hover for all those new buttons you just made.
 
-**Stretch**
+## Stretch Tasks
 
 Create your own namespace for the following elements:
 * Headings
