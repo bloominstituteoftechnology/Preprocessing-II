@@ -251,6 +251,12 @@ header .logo {
     justify-content: center;
   }
 }
+.cta img {
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
+}
 @media (max-width:768px) {
   .cta img {
     display: none;
@@ -285,6 +291,9 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-box-shadow: 5px 5px #e66278;
+  -moz-box-shadow: 5px 5px #e66278;
+  box-shadow: 5px 5px #e66278;
 }
 @media (max-width:768px) {
   .cta .cta-text button {
@@ -336,6 +345,39 @@ header .logo {
     padding: 10% 0 0;
   }
 }
+.main-content .top-content .text-content h4 {
+  font-size: 1.5rem;
+  color: #e66278;
+}
+.main-content .top-content .text-content h4:hover {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.main-content .top-content .text-content p {
+  color: darkgrey;
+}
+.main-content .top-content .text-content button {
+  width: 150px;
+  height: 30px;
+  background-color: #e66278;
+  border: 1px solid grey;
+  margin: 3%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+}
+.main-content .top-content .text-content button:hover {
+  color: #c31f3a;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -361,13 +403,38 @@ header .logo {
     padding: 4% 0 5%;
   }
 }
-.main-content .bottom-content p {
-  padding-right: 20px;
+.main-content .bottom-content .text-content h4 {
+  font-size: 1.5rem;
+  color: #e66278;
 }
-@media (max-width: 400px) {
-  .main-content .bottom-content p {
-    padding: 0;
-  }
+.main-content .bottom-content .text-content h4:hover {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.main-content .bottom-content .text-content p {
+  color: darkgrey;
+}
+.main-content .bottom-content .text-content button {
+  width: 150px;
+  height: 30px;
+  background-color: #e66278;
+  border: 1px solid grey;
+  margin: 3%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+}
+.main-content .bottom-content .text-content button:hover {
+  color: #c31f3a;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
 }
 @media (max-width: 400px) {
   .contact {
@@ -377,9 +444,75 @@ header .logo {
 .contact p {
   margin: 20px 0;
 }
+.contact h4 {
+  font-size: 1.5rem;
+  color: #e66278;
+}
+.contact h4:hover {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.contact p {
+  color: darkgrey;
+}
+.contact button {
+  width: 150px;
+  height: 30px;
+  background-color: #e66278;
+  border: 1px solid grey;
+  margin: 3%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+}
+.contact button:hover {
+  color: #c31f3a;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+footer h4 {
+  font-size: 1.5rem;
+  color: #e66278;
+}
+footer h4:hover {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+footer p {
+  color: darkgrey;
+}
+footer button {
+  width: 150px;
+  height: 30px;
+  background-color: #e66278;
+  border: 1px solid grey;
+  margin: 3%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+}
+footer button:hover {
+  color: #c31f3a;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
 }
 @media (max-width:768px) {
   footer {
