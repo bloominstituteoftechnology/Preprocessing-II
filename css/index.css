@@ -209,6 +209,21 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content button {
+  width: 120px;
+  height: 45px;
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 15px;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -216,6 +231,21 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .text-content button {
+  width: 120px;
+  height: 45px;
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 15px;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
