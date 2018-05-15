@@ -13,9 +13,21 @@
       margin: 75px 2% 35px;
     } 
 
+   .text-content {
+     button {
+       color: black;
+       .button(80px, 40px, @on-hover-bg);
+     }
+   }
+
    .top-content {
      display: flex;
      justify-content: space-around;
+
+     @media @phone {
+       flex-wrap: wrap;
+       height: 300px;
+     }
      
      h1 {
        .skew(15deg, 15deg);
@@ -43,6 +55,12 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+          flex-wrap: wrap;
+          align-content: space-between;
+          height: 440px;
+        }
 
         p {
             padding-right: 20px;

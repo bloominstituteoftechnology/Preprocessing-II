@@ -7,6 +7,10 @@ header {
     @media @tablet {
       flex-wrap: wrap;
     }
+
+    @media @phone {
+      justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
@@ -19,9 +23,21 @@ header {
         margin: 38px 3%;
       }
 
+      @media @phone {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+
+        &:first-child {
+          border-top: 1px solid gray;
+        }
+      }
+
       a {
         text-decoration: none;
         color: #b0b0b0;
+
+       
   
         &:hover {
             color: black;
@@ -31,8 +47,20 @@ header {
             border: 3px solid black;
             .border-radius(7px);
         }
-      }
-    }
+
+        @media @phone {
+          width: 100%;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 2rem;
+          border-bottom: 1px solid gray;
+
+          &:hover {
+            .rotate(15deg);
+          }
+        }
+      } // a
+    } // nav
   
     .logo {
         align-self: flex-end;
@@ -42,6 +70,10 @@ header {
           order: -1;
           display: block;
           margin: 30px auto 0;
+        }
+
+        @media @phone {
+          margin: 20px 0;
         }
     }
   }// header 
