@@ -1,29 +1,67 @@
 // Header Styles
 
 header {
-    width: 100%;
-    display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
+  width: 100%;
+  display: flex;
+
+  @media @tablet {
+      flex-direction: column;
+  }
+
+  .logo {
+      align-self: flex-end;
+      margin: 28px 0 0 91px;
+
+      @media @tablet {
+          align-self: center;
+          order: -1;
+          margin: 2.8rem 0 0 0;
+      }
+  } // header .logo
+
+  nav {
+      margin-top: 4rem; 
+      width: 61rem;
       justify-content: space-between;
       display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
+      padding: 0 1rem;
+
+      @media @tablet {
+          width: 100%;
+          margin-top: 3rem;
       }
-    }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
-  }// header 
+      @media @phone{
+          flex-direction: column;
+          padding: 0;
+      }
+
+      a {
+          text-decoration: none;
+          color: #b0b0b0;
+          font-size: 2rem;
+          text-align: center;
+          transition: all .3s;
+
+          @media @tablet {
+              font-size: 1.7rem;
+          }
+
+          @media @phone{
+              border-bottom: @border--sm;
+              border-top: @border--sm;
+              padding: 1.4rem 0;
+          }
+      } // header nav a
+
+      a:hover {
+          color: @color--primary;
+          text-shadow: 0 0.5rem 1rem rgba(116, 116, 116, 0.255);
+          transform: scale(1.03);
+          
+          @media @phone{
+              transform: scale(1.1);
+          }
+      } // header nav a
+
+  } // header nav
+}
