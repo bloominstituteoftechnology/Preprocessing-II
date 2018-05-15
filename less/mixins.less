@@ -35,3 +35,25 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.justify-mixin {
+	display: flex;
+	justify-content: space-around;
+}
+
+.new-hover(@bcolor: black, @clr: white) {
+	background: @bcolor;
+	color: @clr;
+}
+
+#button-bundle {
+  .button-char {
+		padding: 5px 30px;
+		background: @new-color;
+		.border-radius(5px);
+		margin-top: 15px;
+		font-weight: bold;
+		border: 1px solid blue;
+		height: 35px;
+}
+}
