@@ -126,6 +126,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.button {
+  width: 125px;
+  height: 32px;
+  background: white;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 20px;
+  -webkit-box-shadow: 10px 10px;
+  -moz-box-shadow: 10px 10px;
+  box-shadow: 10px 10px;
+}
 * {
   box-sizing: border-box;
 }
@@ -147,13 +163,35 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width:768px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width:400px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+}
 header {
   width: 100%;
   display: flex;
 }
+@media (max-width:768px) {
+  header {
+    width: 100%;
+  }
+}
+@media (max-width:768px) {
+  header {
+    width: 100%;
+  }
+}
 header nav {
   margin-top: 40px;
-  width: 610px;
+  width: 69.3181%;
   justify-content: space-between;
   display: flex;
 }
@@ -167,7 +205,8 @@ header nav a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 10.3409%;
+  width: 20.7954%;
 }
 header .logo:hover {
   -webkit-transform: skew(20deg, 20deg);
@@ -224,6 +263,16 @@ header .logo:hover {
   -ms-transform: rotate(10deg);
   -o-transform: rotate(10deg);
 }
+@media (max-width:768px) {
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width:400px) {
+  .cta img {
+    display: none;
+  }
+}
 .cta img:hover {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -242,6 +291,25 @@ header .logo:hover {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content button {
+  width: 125px;
+  height: 32px;
+  background: white;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 20px;
+  -webkit-box-shadow: 10px 10px;
+  -moz-box-shadow: 10px 10px;
+  box-shadow: 10px 10px;
+}
+.main-content .top-content .text-content button:hover {
+  background-color: #cccccc;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -249,6 +317,25 @@ header .logo:hover {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content button {
+  width: 125px;
+  height: 32px;
+  background: white;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 20px;
+  -webkit-box-shadow: 10px 10px;
+  -moz-box-shadow: 10px 10px;
+  box-shadow: 10px 10px;
+}
+.main-content .bottom-content button:hover {
+  background-color: #cccccc;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
