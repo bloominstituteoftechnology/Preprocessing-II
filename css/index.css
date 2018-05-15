@@ -235,13 +235,21 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+  .cta img {
+    display: none;
+  }
+}
 .cta .cta-heading {
   -webkit-box-shadow: 10px 10px 8px 12px #888888;
   -moz-box-shadow: 10px 10px 8px 12px #888888;
   box-shadow: 10px 10px 8px 12px #888888;
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
