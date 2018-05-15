@@ -1,13 +1,264 @@
+//Imports
+
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+@import "general-styles.less";
+@import "header.less";
+@import "cta.less";
+@import "main-content.less";
+@import "contact.less";
+@import "footer.less";
+
+//Mixin implementations
+
+.cta {
+    #buttons > .cta();
+}
+
+#headings > .mixin-implementation();
+
+.cta-img {
+    &:hover {
+        .rotate(180deg);
+    }
+}
+
+.middle-img {
+    .border-radius();
+}
+
+.text-content {
+    #buttons > .text-content();
+}
 
 
+//Media queries
 
+body {
+    @media @tablet {
+        overflow-x: hidden !important;
+    }
+    @media @phone {
+        overflow-x: hidden !important;
+    }
+}
 
+.container {
+    @media @tablet {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    @media @phone {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
 
+header {
+    nav {
+        a {
+            &:hover {
+                @media @phone {
+                    background: gray;
+                }
+            }
+            &:first-child {
+                @media @phone {
+                    border-top: 1px solid gray;
+                }
+            }
+            @media @phone {
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding: 5% 0;
+                font-size: 1.250em;
+                border-bottom: 1px solid gray;
+            }
+        }
+        @media @tablet {
+            width: 100%;
+            padding: 0 3.90%;
+        }
+        @media @phone {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .logo {
+        @media @tablet {
+            order: -1;
+            display: block;
+            margin: 3.90% auto 0;
+        }
+        @media @phone {
+            margin: 5% 0;
+        }
+    }
+    @media @tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media @phone {
+        display: flex;
+        justify-content: center;
+    }
+}
 
+.cta {
+    .cta-text {
+        @media @tablet {
+            margin: 0;        
+        }
+    }
+    img {
+        @media @tablet {
+            display: none;
+        }
+        @media @phone {
+            max-width: 80%;
+        }
+    }
+    @media @tablet {
+        display: flex;
+        justify-content: center;
+    }
+    @media @phone {
+        margin-top: 12.5%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
 
+.main-content {
+    .middle-img {
+        @media @tablet {
+           width: 100%;
+        }
+    }
+    .bottom-content {
+        @media @phone {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }
+    }
+    .text-content {
+        @media @tablet {
+            margin: 0 1.30%;
+        }
+        @media @phone {
+            margin: 0;
+        }
+    }
+    @media @tablet {
+        margin: 9.76% 2.60% 4.55%;
+    }
+}
 
+.contact {
+    @media @tablet {
+        margin: 0 3.90%;
+    }
+    @media @phone {
+        margin: 5%;
+    }
+}
 
+//Namespaces
 
+#headings() {
+    .general-styles {
+        h1, h2, h3, h4, h5 {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+    }
+    .mixin-implementation {
+        h1 {
+            &:hover {
+                .skew(10deg, 10deg);
+            }
+        }
+        h4 {
+            &:hover {
+                .opacity();
+            }
+        }
+    }
+    .reset {
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+    }
+}
 
+#buttons() {
+    .cta-text {
+        button {
+            border: 1px double black;
+            font-size: 16px;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+            &:hover {
+                background: black;
+                color: white;
+            }
+        }
+    }
+    .cta {
+        button {
+            .border-radius();
+            &:hover {
+                .box-shadow(
+                    0 0 0 5px hsl(0, 0%, 60%),
+                    0 0 0 10px hsl(0, 0%, 70%),
+                    0 0 0 15px hsl(0, 0%, 80%), 
+                    0 0 0 20px hsl(0, 0%, 90%););
+            }
+        }
+    }
+    .text-content {
+        button {
+            .custom-button(auto, auto, #FCAD26);
+        }
+    }
+}
 
-
+#p-tags () {
+    .contact {
+        p {
+            margin: 20px 0;
+        }
+    }
+    .main-content {
+        p {
+            padding-right: 20px;
+        }
+    }
+    .reset {
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+    }
+}
