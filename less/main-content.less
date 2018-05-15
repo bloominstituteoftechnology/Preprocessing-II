@@ -51,33 +51,10 @@
         }
     }
 
-    .custom-button(@btn-width: 140px, @btn-height: 35px, @btn-hover) {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-        .border-radius;
-        .box-shadow(@shadow-style);
-      
-        
-        @media @laptop {
-          background: black;
-        }
-        
-        @media @tablet {
-          background: purple;
-        }
-        
-        @media @phone {
-          background: green;
-        }
-        
-        &:hover {
-          background: darken(@btn-hover, 3%);
-        }
-      }
+    button  {
+      border: 1px solid gray;
+      border-radius: 10px;
+      .custom-button;
+    }
 
 }// main-content
