@@ -253,6 +253,8 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  color: red;
+  background: black;
 }
 @media (max-width: 768px) {
   .cta .cta-text {
@@ -276,6 +278,7 @@ header .logo {
   -webkit-box-shadow: 5px 5px;
   -moz-box-shadow: 5px 5px;
   box-shadow: 5px 5px;
+  font-weight: bolder;
 }
 .cta .cta-text button:hover {
   background: black;
@@ -312,12 +315,17 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  color: red;
+  background: black;
 }
 @media (max-width: 400px) {
   .main-content .top-content {
     flex-direction: column;
     height: 300px;
   }
+}
+.main-content .top-content h4 {
+  color: lightskyblue;
 }
 .main-content .middle-img {
   display: block;
@@ -341,6 +349,8 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  color: black;
+  background: red;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
@@ -374,6 +384,7 @@ header .logo {
 }
 .main-content .text-content button:hover {
   background: #25a6f6;
+  font-weight: bolder;
 }
 @media (max-width: 768px) {
   .contact {
