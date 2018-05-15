@@ -265,3 +265,151 @@ h4:hover {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+}
+@media (max-width: 400px) {
+  header nav a:hover {
+    background: gray;
+  }
+}
+@media (max-width: 400px) {
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+}
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 1.250em;
+    border-bottom: 1px solid gray;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    padding: 0 3.90%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    display: block;
+    margin: 3.90% auto 0;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    margin: 5% 0;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 12.5%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .text-content {
+    margin: 0 1.30%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .text-content {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin: 9.76% 2.60% 4.55%;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 0 3.90%;
+  }
+}
+@media (max-width: 400px) {
+  .contact {
+    margin: 5%;
+  }
+}

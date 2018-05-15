@@ -1,4 +1,5 @@
-@import "reset.less";
+//Imports
+
 @import "reset.less";
 @import "variables.less";
 @import "mixins.less";
@@ -42,10 +43,143 @@ h4 {
     .border-radius();
 }
 
+//Media queries
 
+body {
+    @media @tablet {
+        overflow-x: hidden !important;
+    }
+    @media @phone {
+        overflow-x: hidden !important;
+    }
+}
 
+.container {
+    @media @tablet {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    @media @phone {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
 
+header {
+    nav {
+        a {
+            &:hover {
+                @media @phone {
+                    background: gray;
+                }
+            }
+            &:first-child {
+                @media @phone {
+                    border-top: 1px solid gray;
+                }
+            }
+            @media @phone {
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding: 5% 0;
+                font-size: 1.250em;
+                border-bottom: 1px solid gray;
+            }
+        }
+        @media @tablet {
+            width: 100%;
+            padding: 0 3.90%;
+        }
+        @media @phone {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .logo {
+        @media @tablet {
+            order: -1;
+            display: block;
+            margin: 3.90% auto 0;
+        }
+        @media @phone {
+            margin: 5% 0;
+        }
+    }
+    @media @tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media @phone {
+        display: flex;
+        justify-content: center;
+    }
+}
 
+.cta {
+    .cta-text {
+        @media @tablet {
+            margin: 0;        
+        }
+    }
+    img {
+        @media @tablet {
+            display: none;
+        }
+        @media @phone {
+            max-width: 80%;
+        }
+    }
+    @media @tablet {
+        display: flex;
+        justify-content: center;
+    }
+    @media @phone {
+        margin-top: 12.5%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+.main-content {
+    .middle-img {
+        @media @tablet {
+           width: 100%;
+        }
+    }
+    .bottom-content {
+        @media @phone {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }
+    }
+    .text-content {
+        @media @tablet {
+            margin: 0 1.30%;
+        }
+        @media @phone {
+            margin: 0;
+        }
+    }
+    @media @tablet {
+        margin: 9.76% 2.60% 4.55%;
+    }
+}
+
+.contact {
+    @media @tablet {
+        margin: 0 3.90%;
+    }
+    @media @phone {
+        margin: 5%;
+    }
+}
 
 
 
