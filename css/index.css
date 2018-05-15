@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -185,6 +185,7 @@ header .logo {
   margin: 0 82px 0 0;
 }
 .cta .cta-text button {
+  border: 1px double black;
   font-size: 16px;
   background: white;
   width: 170px;
@@ -203,25 +204,10 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
-}
-.main-content .text-content {
-  background: blue;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 .main-content .middle-img {
   display: block;
