@@ -427,6 +427,9 @@ header .logo {
   -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
+.main-content button:hover {
+  background-color: #137698;
+}
 @media (max-width: 768px) {
   .contact {
     padding: 0 1.37%;
