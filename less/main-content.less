@@ -11,11 +11,20 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        .text-content{
+            button {
+                margin-top: 10px;
+                .custom-button(white, 30px, 150px, rgb(48, 141, 141), 10%);
+                .box-shadow(5px 5px 10px black);
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .opacity(0.8);
     }
 
     .bottom-content {
@@ -24,6 +33,14 @@
 
         p {
             padding-right: 20px;
+        }
+
+        .text-content{
+            button {
+                margin-top: 10px;
+                .custom-button(white, 30px, 150px, rgb(48, 141, 141), 10%);
+                .box-shadow(5px 5px 10px black);
+            }
         }
     }
 }// main-content

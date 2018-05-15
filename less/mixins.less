@@ -35,3 +35,15 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.custom-button(@color: black, @btn-height: 30px, @btn-length: 100px, @background: lightgray, @darken) {
+	border: 1px solid black;
+	height: @btn-height;
+	width: @btn-length;
+	background: @background;
+	color: @color;
+
+	&:hover{
+		background: darken(@background, @darken);
+	}
+}
