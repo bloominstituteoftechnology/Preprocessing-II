@@ -252,6 +252,24 @@ header .logo {
 .main-content .top-content .text-content button:hover {
   background: #236767;
 }
+.main-content .top-content .text-content button #header .nav {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+.main-content .top-content .text-content button #header .nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+.main-content .top-content .text-content button #header .nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.main-content .top-content .text-content button #header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -279,6 +297,24 @@ header .logo {
 }
 .main-content .bottom-content .text-content button:hover {
   background: #236767;
+}
+.main-content .bottom-content .text-content button #header .nav {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+.main-content .bottom-content .text-content button #header .nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+.main-content .bottom-content .text-content button #header .nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.main-content .bottom-content .text-content button #header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
 }
 .contact p {
   margin: 20px 0;
