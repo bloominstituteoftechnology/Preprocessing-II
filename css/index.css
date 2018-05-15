@@ -322,7 +322,7 @@ nav a:hover {
 }
 .main-content .text-content h5:hover {
   cursor: pointer;
-  background: #ff8da1;
+  background: #ff5a77;
 }
 .main-content .middle-img {
   display: block;
@@ -366,7 +366,7 @@ nav a:hover {
 }
 .main-content .coolbutton:hover {
   cursor: pointer;
-  background: #ff8da1;
+  background: #ff5a77;
 }
 .contact {
   border: 1px black solid;
