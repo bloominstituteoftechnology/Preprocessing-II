@@ -5,6 +5,17 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        justify-content: center;
+    }
+
+    @media @phone {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+        width: 98%;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +25,10 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tablet {
+            margin: 0; 
+        }
     }
 
     .cta-text button {
@@ -25,7 +40,7 @@
         margin-top: 10px;
         cursor: pointer;
         .border-radius; // used Mixin border-radius
-        .box-shadow(5px 5px);
+        .box-shadow(5px 5px);  // used Mixin box-shadow
 
         &:hover {
             background: black;
@@ -35,6 +50,10 @@
     }
 
     img {
-        .opacity // used Mixin opacity
+        .opacity; // used Mixin opacity
+
+        @media @tablet {
+            display: none;
+        }
     }
 }// cta
