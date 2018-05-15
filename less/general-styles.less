@@ -5,8 +5,14 @@
 }
 
 html, body {
-    height: 100%;
+    height: auto;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+    background-color: @scheme1-2;
+    
+    @media @tablet {
+      background-color: @scheme2-2;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,4 +24,11 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+}
+
+h1, h2, h3, h4, h5, p, img {
+  &:hover{
+    .opacity;
+    .rotate;
+  }
 }

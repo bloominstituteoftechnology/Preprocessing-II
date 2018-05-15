@@ -3,27 +3,58 @@
 header {
     width: 100%;
     display: flex;
-  
+
+    @media @tablet {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+    }
+
     nav {
-      margin-top: 40px; 
+      margin-top: 40px;
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+
+      @media @tablet {
+        margin-top: 2.78%;	/* 21px*/
+        display: flex;
+        padding: 2.64%; /* 20px*/
+        width: 100%;
+        align-content: space-between;
+      }
+
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+        border: 1px solid black;
+        padding: 2%;
+        .border-radius(100%);
+        .box-shadow(3px 2px);
+
+        @media @tablet {
+          border: 2px solid @scheme2-4;
+        }
+
         &:hover {
             text-decoration: underline;
             color: black;
-  
+
         }
       }
     }
-  
+
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .box-shadow;
+        .skew;
+
+        @media @tablet {
+          order: -1;
+          width: 24.1%;
+          margin-left: 0%;
+          align-self: center;
+        }
     }
-  }// header 
+  }// header
