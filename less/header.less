@@ -3,12 +3,43 @@
 header {
     width: 100%;
     display: flex;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    @media (max-width: 750px) {
+      flex-wrap: wrap;
+    }
+  
+    @media (max-width: 400px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media (max-width: 768px) {
+        width: 59%;
+        margin-left: 3%;
+      }
+  
+      @media (max-width: 750px) {
+        width: 100%;
+      }
+  
+      @media (max-width: 400px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+      }
   
       a {
         text-decoration: none;
@@ -25,5 +56,19 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media (max-width: 768px) {
+          margin: 28px 0 0 8%;
+        }
+  
+        @media (max-width: 750px) {
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+        }
+  
+        @media (max-width: 400px) {
+          margin: 20px 0;
+        }
     }
   }// header 
