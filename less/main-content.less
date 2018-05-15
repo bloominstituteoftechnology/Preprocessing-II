@@ -1,29 +1,74 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+    background: @middle-color;
+ 
+ 
+         .top-content {
+             .display-flex-around;
+ 
+             @media @tablet {
+                 justify-content: space-between;
+                 margin: 0 1.3%;
+             }
+                 .text-content {
+                     width: 49%;
+               
+                 }    
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
+                 button {
+                     .new-button;
+                     margin-left: 20px;
+                 }
+ 
+             
+         }
+         
+         .rectangle-img {
+             display: block;
+             margin: 30px auto;
+             width: @width;
+          //.middle-img
+         }
+         
+             .bottom-content {
+             .display-flex-around;
+             flex-wrap: wrap;
+              
+ 
+             h4 {
+                 // color: @text-color;
+                 margin-left: 10px;
+             }
+ 
+             p {
+                 padding-right: 0px;
+                 width: 100%;
+                 margin-left: 10px;  
+                 
+             }//p
 
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
+             button {
+                .new-button;
+                .opacity(.5);
+                .box-shadow(red);
+                margin-bottom: 30px;
+                margin-left: 20px;
 
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
+                &:hover {
+                    background-color: darken(lightgray, 20%);
+                }
 
-        p {
-            padding-right: 20px;
-        }
-    }
-}// main-content
+
+             }
+             
+                 
+             }//.bottom-content
+ 
+ }//main-content
