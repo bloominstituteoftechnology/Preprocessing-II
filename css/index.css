@@ -150,12 +150,6 @@ h5 {
 header {
   width: 100%;
   display: flex;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 header nav {
   margin-top: 40px;
@@ -174,6 +168,11 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+header .logo:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .cta {
   display: flex;
