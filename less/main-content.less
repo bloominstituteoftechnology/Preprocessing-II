@@ -8,22 +8,94 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+       margin: 7% 1% 4.5572916% 1%;
+       padding-bottom: 6.5%;
+   }
+
+   @media @phone {
+       margin-right: 2.5%;
+       margin-left: 2.5%;
+   }
+
    .top-content {
-        display: flex;
-        justify-content: space-around;
+        #flex > .space-around;
+
+        h4 {
+            @media @tablet {
+                padding: 1% 2%;
+            }
+
+            @media @phone {
+                flex-direction: column;
+                margin-left: 0.525%;
+            }
+        }
+        
+        .text-content {
+            @media @phone {
+                margin: 2.645432% 0;
+            }
+
+            button {
+                .button-mixin(30%, 25%);
+
+                @media @phone {
+                    width: 40%;
+                }
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .opacity();
+
+        @media @tablet {
+            max-width: 98%;
+        }
     }
 
     .bottom-content {
-        display: flex;
-        justify-content: space-around;
+        #flex > .space-around;
+
+        @media @phone {
+            flex-direction: column;
+        }
+
+        h4 {
+            @media @tablet {
+                letter-spacing: .1rem;
+                margin-left: 8.24168%;
+                margin-bottom: 4.120992%;
+            }
+        }
 
         p {
             padding-right: 20px;
+
+            @media @tablet {
+                padding: 0 8.24198%;
+            }
+        }
+
+        .text-content {
+            @media @phone {
+                margin: 2.6315789% 0;
+            }
+
+            button {
+                .button-mixin(30%, 25%);
+
+                @media @tablet {
+                    margin-left: 10%;
+                }
+
+                @media @phone {
+                    width: 40%;
+                }
+            }
         }
     }
 }// main-content
