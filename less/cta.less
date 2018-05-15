@@ -5,6 +5,18 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+
+    .img {
+          @media @tablet {
+            display: none;
+          }
+          
+          @media @phone {
+            max-width: 80%;
+    }
+      }
+  }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,9 +26,13 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
     }
 
-    .cta-text button {
+
+    
+
+    .cta-text .custom-button {
         border: 1px double black;
         font-size: 16px;
         background: white;
