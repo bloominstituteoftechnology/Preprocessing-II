@@ -133,7 +133,7 @@ table {
 .new-button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
+  background: orchid;
   width: 170px;
   height: 32px;
   margin-top: 10px;
@@ -256,6 +256,12 @@ header nav a .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta button button:hover {
   background: black;
@@ -306,6 +312,24 @@ header nav a .logo {
   width: 100%;
   margin-left: 10px;
   margin-bottom: 15px;
+}
+.main-content .bottom-content button {
+  border: 1px double black;
+  font-size: 16px;
+  background: orchid;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-box-shadow: red;
+  -moz-box-shadow: red;
+  box-shadow: red;
+}
+.main-content .bottom-content button:hover {
+  background-color: #b52fb0;
 }
 .contact h4 {
   color: turquoise;
