@@ -253,8 +253,8 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
-  color: red;
-  background: black;
+  color: green;
+  background: purple;
 }
 @media (max-width: 768px) {
   .cta .cta-text {
@@ -315,8 +315,8 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
-  color: red;
-  background: black;
+  color: green;
+  background: purple;
 }
 @media (max-width: 400px) {
   .main-content .top-content {
@@ -349,8 +349,8 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
-  color: black;
-  background: red;
+  color: purple;
+  background: green;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
