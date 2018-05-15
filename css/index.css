@@ -264,6 +264,7 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  width: 100%;
   /* tablet */
   /* mobile */
 }
@@ -275,6 +276,8 @@ header .logo {
 @media (max-width: 400px) {
   .cta {
     margin-top: 50px;
+    margin-left: 17%;
+    width: 80%;
     flex-flow: column;
     align-items: center;
   }
@@ -349,9 +352,6 @@ header .logo {
   margin-top: 5px;
   margin-left: calc((100% - 45%) / 2);
   cursor: pointer;
-  -webkit-box-shadow: 5px 10px 18px red;
-  -moz-box-shadow: 5px 10px 18px red;
-  box-shadow: 5px 10px 18px red;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -361,6 +361,9 @@ header .logo {
 }
 .main-content button:hover {
   background: #990000;
+  -webkit-box-shadow: 5px 10px 18px red;
+  -moz-box-shadow: 5px 10px 18px red;
+  box-shadow: 5px 10px 18px red;
   color: #00ffff;
 }
 @media (max-width: 768px) {

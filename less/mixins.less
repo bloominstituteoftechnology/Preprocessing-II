@@ -48,11 +48,11 @@
 	margin-left: calc((100% - @width) / 2);
 	cursor: pointer;
 
-	.box-shadow(~"5px 10px 18px", @base-color);
 	.border-radius(10px);
-
+	
 	&:hover {
-			background: darken(@base-color, 20%);
-			color:  @inverted-base-color;
+		background: darken(@base-color, 20%);
+		.box-shadow(~"5px 10px 18px", @base-color);
+		color:  @inverted-base-color;
 	}
 }
