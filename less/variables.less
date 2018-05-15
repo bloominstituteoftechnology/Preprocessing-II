@@ -1,3 +1,46 @@
 // Variables
 
 @some-color: blue;
+@philly-philly: #004C54;
+
+// Media
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+
+// Namespaces
+#lambda-style() {
+    .a {
+        font-family: "Shadows Into Light", cursive;
+        font-size: 2rem;
+    }
+
+    .p {
+        font-family: "Skranji", cursive;
+    }
+
+    .button {
+        width: 200px;
+        text-align: center;
+        display: block;
+        border: 1px solid black;
+        background-color: grey;
+        color: white;
+        &:hover {
+          background-color: white;
+          color: green;
+        }
+    }// button
+
+    .button2 {
+        width: 200px;
+        text-align: center;
+        display: block;
+        border: 1px solid black;
+        background-color: green;
+        color: white;
+        &:hover {
+          background-color: white;
+          color: green;
+        }
+      }// button
+}

@@ -35,3 +35,27 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.flex-align {
+	flex-flow: column;
+	align-items: center;
+}
+
+.flex-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.custom-btn (@btn-width: 100px, @btn-height: 22px, @btn-bg: white) {
+	.border-radius(15px 50px 30px 5px);
+
+	width: @btn-width;
+	height: @btn-height;
+	background: @btn-bg;
+
+	&:hover {
+		color: white;
+		cursor: pointer;
+		background: darken(@btn-bg, 20%);
+	}
+}
