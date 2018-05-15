@@ -126,6 +126,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#flex .space-around {
+  display: flex;
+  justify-content: space-around;
+}
+#flex .space-between {
+  display: flex;
+  justify-content: space-between;
+}
+#flex .space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+#flex .center {
+  display: flex;
+  justify-content: center;
+}
+#flex .flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
 * {
   box-sizing: border-box;
 }
@@ -167,8 +187,8 @@ header {
 header nav {
   margin-top: 40px;
   width: 610px;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 768px) {
   header nav {
@@ -221,8 +241,8 @@ header .logo {
 }
 .cta {
   display: flex;
-  margin-top: 72px;
   justify-content: flex-end;
+  margin-top: 72px;
 }
 @media (max-width: 768px) {
   .cta {
