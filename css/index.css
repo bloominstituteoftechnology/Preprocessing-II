@@ -168,6 +168,10 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: skew(0deg, 8deg);
+  -moz-transform: skew(0deg, 8deg);
+  -ms-transform: skew(0deg, 8deg);
+  -o-transform: skew(0deg, 8deg);
 }
 .cta {
   display: flex;
