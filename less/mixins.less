@@ -2,36 +2,76 @@
 
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
-
-	-moz-background-clip:    padding;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
+	background-clip: padding-box;
 }
 
 .opacity (@opacity: 0.5) {
-	-webkit-opacity: 	@opacity;
-	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
+	-webkit-opacity: @opacity;
+	-moz-opacity: @opacity;
+	opacity: @opacity;
 }
 
 .box-shadow (@string) {
 	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+	-moz-box-shadow: @string;
+	box-shadow: @string;
 }
 
 .rotate (@deg) {
 	-webkit-transform: rotate(@deg);
-	-moz-transform: 	 rotate(@deg);
-	-ms-transform: 		 rotate(@deg);
-	-o-transform: 		 rotate(@deg);
+	-moz-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
-	-moz-transform: 	 skew(@deg, @deg2);
-	-ms-transform: 		 skew(@deg, @deg2);
-	-o-transform: 		 skew(@deg, @deg2);
+	-webkit-transform: skew(@deg, @deg2);
+	-moz-transform: skew(@deg, @deg2);
+	-ms-transform: skew(@deg, @deg2);
+	-o-transform: skew(@deg, @deg2);
+}
+
+.medium-font {
+	font-size: 50px;
+}
+// Create your own custom button mixin that passes values
+//  for width, height, and background color. Once you have created
+//  this mixin, introduce a button to the bottom of each .text-content div.
+//  Create unique text for each button to match the header. Example: The heading
+//   "Features" could have a button that reads "See Features." Be creative!
+
+#card() {
+	h4 {
+		font-size: 1.5rem;
+		color: @secondary-color;
+		&:hover {
+			.opacity(.80);
+		}
+
+	}
+	p {
+		color: darkgrey;
+
+
+	}
+	button {
+		width: 150px;
+		height: 30px;
+		background-color: @secondary-color;
+		border: 1px solid grey;
+		margin: 3%;
+		.border-radius(8px);
+		color: white;
+
+		&:hover {
+       color: @color-darken;
+			.rotate(-30deg);
+
+		}
+	}
+
 }
