@@ -1,25 +1,24 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black;
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-   .pad-and-center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+  .pad-and-center;
 
-   .top-content {
-        .flex-content-space-around;
-        .text-content h4 {
-          .skew(25deg, -2deg);
+  .top-content {
+    .flex-content-space-around;
 
-          @media @phone {
+    .text-content h4 {
+      .skew(25deg, -2deg);
+      @media @phone {
         .fit-text;
       }
-        }
-
-        @media @phone {
+    }
+    @media @phone {
       flex-direction: column;
     }
 
@@ -40,62 +39,56 @@
         }
       }
     }
+  }
 
-    }
+  .middle-img {
+    display: block;
+    margin: 30px auto;
+    width: 98%;
+  }
 
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-        width: 98%;
-    }
+  .bottom-content {
+    .flex-content-space-around;
 
-    .bottom-content {
-        .flex-content-space-around;
+    .text-content {
+      .btn.btn-services {
+        .custom-button(129px, 15px, yellow);
 
-        .text-content {
-          .btn.btn-services {
-            .custom-button(129px, 15px, yellow);
-
-            &:hover {
-              background: darken(yellow, 10%);
-            }
-          }
-
-          .btn.btn-product {
-            .custom-button(110px, 15px, green);
-
-            &:hover {
-              background: darken(green, 10%);
-            }
-          }
-
-          .btn.btn-vision {
-            .custom-button(170px, 15px, purple);
-
-            &:hover {
-              background: darken(purple, 10%);
-            }
-          }
+        &:hover {
+          background: darken(yellow, 10%);
         }
+      }
 
-        @media @phone {
+      .btn.btn-product {
+        .custom-button(110px, 15px, green);
+
+        &:hover {
+          background: darken(green, 10%);
+        }
+      }
+
+      .btn.btn-vision {
+        .custom-button(170px, 15px, purple);
+
+        &:hover {
+          background: darken(purple, 10%);
+        }
+      }
+    }
+    @media @phone {
       flex-direction: column;
     }
 
-        p {
-            padding-right: 20px;
-        }
-
-        .text-content h4 {
-          .skew(5deg, 5deg);
-
-          @media @phone {
-        .fit-text;
-      }
-
-
-        }
+    p {
+      padding-right: 20px;
     }
 
-
-}// main-content
+    .text-content h4 {
+      .skew(5deg, 5deg);
+      @media @phone {
+        .fit-text;
+      }
+    }
+  }
+}
+// main-content
