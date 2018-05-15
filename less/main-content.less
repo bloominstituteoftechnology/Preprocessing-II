@@ -1,29 +1,51 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+    .major-structure(@main-content-bg-color);
+    background-color: @main-content-bg-color;
+    color: @main-content-text-color;
+//    padding: 100px 35px 0;
+   font-size: 1.6rem;
    line-height: 18px;
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @mobile {
+            .stacked-text;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        @media @tablet {
+            width: 100%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @mobile {
+            .stacked-text;
+        }
+
         p {
             padding-right: 20px;
+        }
+    }
+
+    .text-content {
+        @media @mobile {
+            border-bottom: 1px solid @main-content-text-borders;
+
+            &:last-child {
+                border-bottom: 0px;
+            }
+
         }
     }
 }// main-content

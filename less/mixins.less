@@ -17,9 +17,9 @@
 }
 
 .box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+	-webkit-box-shadow: @button-shadow @string;
+	-moz-box-shadow:    @button-shadow @string; 
+	box-shadow:         @button-shadow @string;
 }
 
 .rotate (@deg) {
@@ -34,4 +34,52 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.button (@color: @button-color, @button-text: @button-text-color, @width: 60px, @height: 20px) {
+	.border-radius;
+	width: @width;
+	height: @height;
+	background-color: @color;
+	color: @button-text;
+	border: 1px solid darken(@button-color, 20%);
+	.box-shadow(darken(@button-color, 20%));
+	display: flex;
+	justify-content: center;
+}
+
+.button-hover(@color: @button-text-color) {
+	.rotate(10deg);
+	color: lighten(@color, 20);
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.major-structure ( @color ) {
+	border: 2px solid darken(@color, 20%);
+
+	&:first-child {
+		border-bottom: 0px;
+	}
+
+	&:last-child {
+		border-top: 0px;
+	}
+}
+
+.moving-image {
+	&:hover {
+		.skew(4deg, 4deg);
+		.opacity(.2);
+
+	  }
+}
+
+.stacked-text {
+	flex-direction: column;
+	justify-content: space-between;
 }

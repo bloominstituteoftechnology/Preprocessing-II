@@ -9,13 +9,50 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     margin-bottom: 10px;
 }
 
 .container {
     width: 880px;
     margin: auto;
+    background-color: @background-color;
+
+    @media @tablet {
+        width: 100%;
+        margin: 0px;
+        min-width: 365px;
+    }
+
 }
+
+.text-content {
+    padding: 10px 2% 10px;
+
+    button {
+        margin-top: 25px;
+    }
+
+}
+
+a, button {
+    .button;
+    text-decoration: none;
+    margin: 5px .5%;
+
+    &:hover {
+      text-decoration: underline;
+      .button-hover;
+    }
+}
+

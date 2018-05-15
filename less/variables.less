@@ -1,3 +1,32 @@
 // Variables
 
-@some-color: blue;
+@tablet: ~"(max-width: 768px)";
+@mobile: ~"(max-width: 400px)";
+
+
+@contessa: #CD7878;
+@laser: #CDC778;
+@waikawa-gray: #5B5F8E;
+
+@background-color: lighten(@waikawa-gray, 40%);
+
+@button-color: @contessa;
+@button-text-color: @laser;
+
+@button-shadow: ~"0px 0px 20px 2px";
+
+@header-bg-color: @waikawa-gray;
+
+@cta-border-color: @waikawa-gray;
+
+@cta-text-bg-color: @laser;
+@cta-text-color: @waikawa-gray;
+
+@cta-img-bg-color: @contessa;
+
+@main-content-bg-color: @waikawa-gray;
+@main-content-text-color: lighten(@laser, 10%);
+@main-content-text-borders: darken(@main-content-bg-color, 20%);
+
+@contact-color: lighten(@waikawa-gray, 30%);
+@contact-text: darken(@waikawa-gray, 35%);
