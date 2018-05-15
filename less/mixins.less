@@ -35,3 +35,23 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button (@width, @height, @color) {
+	width: @width;
+	height: @height;
+	background: @color;
+	font-size: 14px;
+	color: black;
+	border: @btn-border;
+	.border-radius;
+	margin: 20px 0;
+	&:hover {
+		background: darken(@color, 20%);
+	}
+	
+}
+
+.flex-SA {
+	display: flex;
+	justify-content: space-around;
+}
