@@ -4,7 +4,13 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 100%;
 
+    @media @tablet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -13,7 +19,12 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 8.018% 0 0;
+        width: 41.32%;
+        
+        @media @tablet {
+            margin-bottom: 36px;
+        }
     }
 
     .cta-text h1 {
@@ -40,10 +51,18 @@
     }
     .circle-image {
         .opacity(0.6);
+        margin: 0 2.6% 0 0;
+        width: 41.32%;
+        height:41.32%;
 
         &:hover {
             .opacity(1.0);
             .rotate(180deg);
+        }
+
+        @media @phone {
+            width: 80%;
+            height: 80%;
         }
     }
 }// cta

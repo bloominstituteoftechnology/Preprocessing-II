@@ -235,6 +235,14 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -244,7 +252,13 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 8.018% 0 0;
+  width: 41.32%;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin-bottom: 36px;
+  }
 }
 .cta .cta-text h1:hover {
   -webkit-transform: skew(15deg, -15deg);
@@ -278,6 +292,9 @@ header .logo {
   -webkit-opacity: 0.6;
   -moz-opacity: 0.6;
   opacity: 0.6;
+  margin: 0 2.6% 0 0;
+  width: 41.32%;
+  height: 41.32%;
 }
 .cta .circle-image:hover {
   -webkit-opacity: 1;
@@ -287,6 +304,12 @@ header .logo {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+@media (max-width: 400px) {
+  .cta .circle-image {
+    width: 80%;
+    height: 80%;
+  }
 }
 .main-content {
   border: 2px solid black;
@@ -300,6 +323,11 @@ header .logo {
   padding: 15px 0;
   font-size: 16px;
   line-height: 18px;
+}
+@media (max-width: 768px) {
+  .main-content {
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
   .main-content {
