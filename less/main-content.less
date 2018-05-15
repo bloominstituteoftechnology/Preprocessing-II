@@ -6,20 +6,15 @@
     padding: 35px 0;
     font-size: 16px;
     line-height: 18px;
+    button{
+        .custom-button(150px, 30px, lighten(blue, 20%));
+        margin-bottom: 15px;
+    }
     @media @tablet {
         margin: 75px 2% 35px;
     }
-
-    .text-content {
-    h4 .button {
-        .custom-button(20px, 10px, blue);
-    }
-}
     .top-content {
         .display-flex-space-around;
-        .button {
-            .custom-button(20px, 10px, blue);
-        }
         @media @phone {
             flex-wrap: wrap;
             height: 300px;
@@ -44,4 +39,6 @@
             padding-right: 20px;
         }
     }
+
+   
 } // main-content
