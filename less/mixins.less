@@ -35,3 +35,35 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-mixin(@btn-width: 30%, @btn-height: 30px, @btn-background: gold){
+	font-size: 15px;
+	color: black;
+	background: @btn-background;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+	.border-radius;
+	width: @btn-width;
+	height: @btn-height;
+	margin: 10px 5%;
+}
+
+.darkenedgold{
+	background:darken(gold,5%);
+}
+
+#header-namespace{
+	.goldtext{
+		color: gold;
+		text-decoration-style: wavy;
+		font-size: 3rem;
+	}
+
+	.logoinverthover{
+		.rotate(45deg);
+	}
+}
+
+
