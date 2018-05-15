@@ -153,8 +153,13 @@ header {
 }
 @media only screen and (max-width: 768px) {
   header {
-    display: flex;
-    order: -1;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header header {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 header nav {
@@ -167,11 +172,35 @@ header nav a {
   text-decoration: none;
   color: #b0b0b0;
 }
-header nav a:hover {
+@media only screen and (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+header nav:hover {
   text-decoration: underline;
   color: black;
 }
-header .logo {
+@media only screen and (max-width: 768px) {
+  header nav {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
+}
+.logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
   -webkit-transform: skew(25deg, 15deg);
@@ -179,10 +208,34 @@ header .logo {
   -ms-transform: skew(25deg, 15deg);
   -o-transform: skew(25deg, 15deg);
 }
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: flex;
+    max-width: 768px;
+    order: -1;
+    margin-left: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media only screen and (max-width: 768px) {
+  .cta {
+    display: flex;
+    width: 100%;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -194,11 +247,21 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media only screen and (max-width: 768px) {
+  .cta .cta-text {
+    margin-right: 300px;
+  }
+}
 .cta .header-img {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+@media only screen and (max-width: 768px) {
+  .cta .header-img {
+    display: none;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -229,6 +292,15 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+}
+@media only screen and (max-width: 768px) {
+  .main-content {
+    width: 100%;
+    display: flex;
+    margin: 30px 5px;
+    flex-wrap: wrap;
+    max-width: 738px;
+  }
 }
 .main-content .top-content {
   display: flex;
@@ -270,8 +342,21 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .main-content .bottom-content {
+    width: 100%;
+    display: flex;
+    margin: 30px 5px;
+  }
+}
 .contact p {
   margin: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  .contact {
+    width: 100%;
+    margin: 30px 5px;
+  }
 }
 footer {
   text-align: center;

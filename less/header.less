@@ -5,9 +5,17 @@ header {
     display: flex;
 
     @media @tablet {
-      display: flex;
-      order: -1;
+      flex-wrap: wrap;
     }
+
+    @media @phone {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  }
+
 
 
     nav {
@@ -20,10 +28,31 @@ header {
         text-decoration: none;
         color: #b0b0b0;
 
+      @media @phone {
+         width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+      }
+
+    }
         &:hover {
             text-decoration: underline;
             color: black;
+        }
 
+        @media @tablet {
+          width: 100%;
+        }
+
+        @media @phone {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
         }
       }
     }
@@ -32,5 +61,20 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .skew (25deg, 15deg);
+
+      @media @tablet {
+        display: flex;
+        max-width: 768px;
+        order: -1;
+        margin-left: 300px;
     }
+    @media @phone {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+
   }// header
