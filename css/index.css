@@ -361,6 +361,9 @@ header .logo {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    -webkit-box-shadow: 10px 5px 5px lightgreen;
+    -moz-box-shadow: 10px 5px 5px lightgreen;
+    box-shadow: 10px 5px 5px lightgreen;
   }
 }
 .main-content .bottom-content {
