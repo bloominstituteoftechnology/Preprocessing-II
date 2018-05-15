@@ -6,21 +6,67 @@
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
-   line-height: 18px;
+   line-height: 18px; 
+
+
+   button {
+    .custom-button(100px, 30px, white, gray);
+    margin-top: 5%;
+    color: black;
+
+    @media @tablet {
+            .custom-button(100px, 30px, lightgreen, pink);
+            margin-top: 5%;
+            color: black;
+    }
+}
+   
+
+   @media @tablet {
+    border-top: 0.125em solid black;
+    border-bottom: 0.125em solid black;
+    margin: 4.6em 3.12em 2.18em 3.125em;
+    padding: 2.18em 0;
+    font-size: 1em;
+    line-height: 112%;
+   }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+            padding-right: 3%;
+            margin-right: 2%;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        // Mixin Opacity
+        .opacity(0.5);
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .box-shadow(10px 5px 5px lightgreen);
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
 
         p {
             padding-right: 20px;

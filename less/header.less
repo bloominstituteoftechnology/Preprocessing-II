@@ -3,20 +3,42 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+      width: 100%;
+      display: flex;
+      flex-flow: column-reverse;
+      justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        display: flex;
+        margin-top: 2.5em;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+
+        @media @tablet {
+          color: lightgreen;
+        }
   
         &:hover {
             text-decoration: underline;
             color: black;
+
+            // Mixin (Rotate)
+            .rotate(90deg);
   
         }
       }
@@ -25,5 +47,14 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          margin: 2.5em 0 0 0;
+          align-self: center;
+          justify-content: center;
+          // margin-right: 82px;
+        }
+
+
     }
   }// header 
