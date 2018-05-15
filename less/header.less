@@ -3,27 +3,67 @@
 header {
     width: 100%;
     display: flex;
-  
+    
+    @media @tablet {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 768px;
+    }
+
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        order: 1;
+        max-width: 768px;
+        width: 100%;
+      }
+
+      @media @phone {
+        flex-direction: column;
+        text-align: center;
+      }
   
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+        
+        @media @phone {
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 15px 0;
+        border-bottom: 1px solid black;
+        }
+         
+        &:first-child {
+          @media @phone {
+            border-top: 1px solid black;
+          
+          }
+        }  
+
         &:hover {
             text-decoration: underline;
             color: black;
-  
         }
+       
       }
     }
   
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 45px 0 0 80px;
+        .rotate(30deg);
+
+        @media @tablet {
+          order: 0;
+          padding: 0px;
+          margin: 20px 0 0 0;
+          align-self: center;
+        }
     }
   }// header 

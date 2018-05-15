@@ -3,24 +3,77 @@
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
+   .border-radius(10px);
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
 
+   @media @phone {
+    align-self: center;
+    padding: 0px;
+    max-width: 380px;
+    margin: 30px 10px;
+    width: 100%;
+   }
+  
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-direction: column;
+            width: 100%;
+            max-width: 380px;
+        }
+    }
+
+    .text-content {
+        @media @phone {
+            width: 100%;
+            padding-top: 40px;
+        }
+
+        .btn {   
+            @height: 50px;
+            @width: 100px; 
+            @bg: hsl(132, 84%, 64%);
+            .custom-btn(@height, @width, @bg);
+
+            &:hover {
+                background: darken(@bg, 20%)
+            }
+        }
+        
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        @media @tablet {
+            max-width: 100%;
+            height: auto;
+        }
+        @media @phone {
+            max-width: 100%;
+            height: auto;
+        }
+        &:hover{
+            .opacity(.2);            
+            }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
 
         p {
             padding-right: 20px;
