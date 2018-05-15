@@ -139,11 +139,12 @@ html {
   background-color: #eeffff;
 }
 h4 {
-  font-family: 'Kavivanar', cursive;
+  font-family: 'Tangerine';
   font-weight: bold;
   letter-spacing: .1rem;
   margin-bottom: 10px;
   color: red;
+  font-size: 30px;
 }
 h1,
 h2,
