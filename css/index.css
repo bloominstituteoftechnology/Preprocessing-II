@@ -150,6 +150,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: darkblue;
 }
 .container {
   width: 880px;
@@ -335,7 +336,7 @@ header .logo {
   }
 }
 .main-content {
-  border-top: 2px solid black;
+  border-top: 2px solid darkblue;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
@@ -358,7 +359,7 @@ header .logo {
   background: #61CBED;
   font-size: 14px;
   color: black;
-  border: 2px solid darkblue;
+  border: 1px solid darkblue;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -387,23 +388,46 @@ header .logo {
     line-height: 1.9rem;
   }
 }
-.main-content .middle-img {
-  display: block;
-  margin: 30px auto;
+.main-content .hidden {
+  position: relative;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 3.6rem;
+  margin: 20px 0 60px;
+  height: 150px;
 }
-.main-content .middle-img:hover {
+.main-content .hidden .middle-img {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-content .hidden .middle-img:hover {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
 @media (max-width: 768px) {
-  .main-content .middle-img {
+  .main-content .hidden .middle-img {
     width: 100%;
   }
 }
 @media (max-width: 400px) {
-  .main-content .middle-img {
+  .main-content .hidden .middle-img {
     margin: 27px 0 0 .13%;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .hidden {
+    height: 100px;
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .hidden {
+    font-size: 2.4rem;
+    margin: 0;
   }
 }
 .main-content .bottom-content {
@@ -419,7 +443,7 @@ header .logo {
   background: #98ED61;
   font-size: 14px;
   color: black;
-  border: 2px solid darkblue;
+  border: 1px solid darkblue;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -434,7 +458,6 @@ header .logo {
 @media (max-width: 400px) {
   .main-content .bottom-content {
     display: block;
-    height: 460px;
     margin-top: 3%;
   }
 }
@@ -471,6 +494,7 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1.6rem;
 }
 @media (max-width: 768px) {
   footer {

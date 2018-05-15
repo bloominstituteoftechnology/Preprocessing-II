@@ -1,7 +1,7 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: @border; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -14,8 +14,7 @@
 	   }
 
    .top-content {
-        display: flex;
-        justify-content: space-around;
+        .flex-SA;
         
         button {
          .button (160px, 50px, @turquoise);
@@ -36,28 +35,50 @@
 				}
          }
     }
-   
-   .middle-img {
-       display: block;
-       margin: 30px auto;
+    
+    .hidden {
+      position: relative;
+      padding-top: 60px;
+      text-align: center;
+      font-size: 3.6rem;
+      margin: 20px 0 60px;
+      height: 150px;
+    
+      .middle-img {
+          display: block;
+          margin: 0 auto;
+          position: absolute;
+          top: 0;
+          left: 0;
        
-       &:hover {
-         .opacity ();
-       }
+          &:hover {
+            .opacity ();
+          }
          
-        @media @tablet {
-         	width: 100%;
-      	}
+           @media @tablet {
+            	width: 100%;
+         	}
 			
-			@media @phone {
-				margin: 27px 0 0 .13%;
-			}
+      		@media @phone {
+      			margin: 27px 0 0 .13%;
+      		}
        
+       }
+       
+       @media @tablet {
+         height: 100px;
+         font-size: 2.8rem;
+       }
+       
+       @media @phone {
+         font-size: 2.4rem;
+         margin: 0;
+       }
     }
-
+       
     .bottom-content {
-        display: flex;
-        justify-content: space-around;
+        .flex-SA;
+        
 
         p {
             padding-right: 20px;
@@ -69,7 +90,6 @@
         
         @media @phone {
 					display: block;
-					height: 460px;
 					margin-top: 3%;
 			}
          
