@@ -49,7 +49,10 @@
   height: @btn-height;
 	color: white;
 
+	@media @tablet {
+	.box-shadow(10px 5px 5px pink);
+}
 	&:hover {
-    background: darken(@btn-hover, 3%);
+    background: darken(@btn-hover, 20%);
   }
 }
