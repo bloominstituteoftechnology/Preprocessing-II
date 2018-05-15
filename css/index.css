@@ -126,6 +126,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@max 768 ~'(max-width: 768px)';
+@max 400 ~'(max-width: 400px)';
 * {
   box-sizing: border-box;
 }
