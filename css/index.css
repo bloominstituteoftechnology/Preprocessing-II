@@ -339,6 +339,30 @@ header .logo {
   line-height: 1.8rem;
   /* tablet */
 }
+.main-content button {
+  width: 45%;
+  height: 20px;
+  background-color: #eeffff;
+  border: 1px double red;
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-left: calc((100% - 45%) / 2);
+  cursor: pointer;
+  -webkit-box-shadow: 5px 10px 18px red;
+  -moz-box-shadow: 5px 10px 18px red;
+  box-shadow: 5px 10px 18px red;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main-content button:hover {
+  background: red;
+  color: #00ffff;
+}
 @media (max-width: 768px) {
   .main-content {
     margin: 75px 2.6042% 35px;

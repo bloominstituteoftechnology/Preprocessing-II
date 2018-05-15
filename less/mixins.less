@@ -30,8 +30,29 @@
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
+	-webkit-transform: skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.cool-button (@width, @height, @bg-color) {
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+
+	border: 1px double @base-color;
+	color: @base-color;
+	font-size: 1.2rem;
+	margin-top: 5px;
+	margin-left: calc((100% - @width) / 2);
+	cursor: pointer;
+
+	.box-shadow(~"5px 10px 18px", @base-color);
+	.border-radius(10px);
+
+	&:hover {
+			background: @base-color;
+			color:  @inverted-base-color;
+	}
 }
