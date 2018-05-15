@@ -1,4 +1,41 @@
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+@import "general-styles.less";
+@import "header.less";
+@import "cta.less";
+@import "main-content.less";
+@import "contact.less";
+@import "footer.less";
+
+.custom-button(@btn-width: 140px, @btn-height: 35px, @btn-background, @btn-hover) {
+  font-size: 15px;
+  color: black;
+  background: @btn-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: @btn-width;
+  height: @btn-height;
+  color: white;
+  
+  @media @tablet {
+    background: purple;
+  }
+  
+  @media @phone {
+    background: green;
+  }
+  
+  &:hover {
+    background: darken(@btn-hover, 3%);
+  }
+}
 
 
 
