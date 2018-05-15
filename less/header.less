@@ -1,29 +1,58 @@
 // Header Styles
-
 header {
     width: 100%;
     display: flex;
-  
+    @media @tablet {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    @media @phone {
+        justify-content: center;
+    }
     nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
-      display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
+        margin-top: 40px;
+        width: 610px;
+        justify-content: space-between;
+        display: flex;
+        @media @tablet {
+            width: 100%;
         }
-      }
+        @media @phone {
+            flex-flow: column;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: #b0b0b0;
+            @media @phone {
+                padding: 20px 0;
+                width: 100%;
+                text-align: center;
+                border-top: 1px solid rgb(53, 53, 53);
+                font-size: 2.4rem;
+                &:last-child {
+                    border-bottom: 1px solid rgb(53, 53, 53);
+                }
+            }
+            &:hover {
+                text-decoration: underline;
+                color: black;
+            }
+        }
     }
-  
     .logo {
+        .opacity(.7);
+        .rotate(-3deg);
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 ((91% / @container-width) * 100);
+        @media @tablet {
+            align-self: center;
+            margin: 28px 0 0 0;
+        }
+        @media @phone {
+            margin: 20px 0;
+        }
     }
-  }// header 
+} // header

@@ -1,29 +1,51 @@
 // Main Content Styles
-
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+    @media @tablet {
+        width: 100%;
+    }
+    @media @phone {
+        padding: 0 2.5%;
+    }
+    .text-content {
+        display: flex;
+        flex-flow: column;
+        @media @phone {
+            margin: 24px 0;
+        }
+        .btn-learn-more {
+            display: flex;
+            align-self: center;
+            margin-top: 20px;
+            .custom-btn(auto);
+        }
+    }
+    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @phone {
+            flex-flow: column wrap;
+        }
+       
     }
-
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 100%;
     }
-
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
+        @media @phone {
+            flex-flow: column wrap;
+        }
         p {
             padding-right: 20px;
         }
     }
-}// main-content
+} // main-content

@@ -9,6 +9,13 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -16,6 +23,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: @container-width;
+    width: 100%;
     margin: auto;
 }

@@ -35,3 +35,14 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.custom-btn (@width, @height: 50px) {
+	width: @width;
+	height: @height;
+	background: rgb(245, 208, 0);
+	font-weight: bold;
+	padding: 10px;
+	&:hover {
+		background: darken(rgb(245, 208, 0), 20%);
+	}
+}
