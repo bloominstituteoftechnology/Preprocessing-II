@@ -36,8 +36,8 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.custom-button(@btn-width, @btn-height, @btn-backgroundColor){
-	border: 1px solid black;
+.custom-button (@btn-width, @btn-height, @btn-backgroundColor){
+	border: 1px solid gray;
         color: white;
 	margin-top: 2%;
 	font-size: 12px;
@@ -48,6 +48,7 @@
 
 	&:hover{
 	content: 'hello';	
+	background-color: darken(@btn-backgroundColor, 40%);
 	}
 }
 
