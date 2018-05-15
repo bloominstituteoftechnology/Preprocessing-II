@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
+
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -18,4 +23,14 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+
+	@media @tablet{
+        width: 100%;
+        }
+
+        @media @phone{
+        width: 100%;
+        }
+
+
 }
