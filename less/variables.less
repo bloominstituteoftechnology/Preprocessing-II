@@ -1,3 +1,44 @@
 // Variables
 
 @some-color: blue;
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
+// variable colors
+@base-color: red;
+@header-color: @base-color + #b0b0b0;
+@inverted-base-color: #fff - @base-color;
+@font-color: @base-color + #777;
+@bg-color: @inverted-base-color + #eee;
+
+#headings1() {
+  h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+    color: @base-color;
+  }
+}
+
+#headings2() {
+  h1, h2, h3, h4, h5 {
+    font-family: 'Libre Barcode 39';
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+    color: @base-color;
+  }
+}
+
+#p1() {
+  .p {
+    color: green;
+    font-size: 30px;
+  }
+}
+
+#p2() {
+  .p {
+    color: purple;
+    font-size: 30px;
+  }
+}

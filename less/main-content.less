@@ -1,29 +1,66 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
+   border-top: 2px solid @inverted-base-color;
+   border-bottom: 2px solid @inverted-base-color;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
+
+   button {
+       // width, height, color
+       .cool-button(45%, 20px, @bg-color);
+   }
+
+    /* tablet */
+    @media @tablet {
+        margin: 75px 2.6042% 35px;
+    }
+
+    .text-content {
+        /* tablet */
+        @media @tablet {
+            margin: 0 1.3021%;
+        }
+    }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        /* mobile */
+        @media @phone {
+            justify-content: space-around;
+            flex-direction: column;
+            height: 300px;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .opacity(.9);
+
+       /* tablet */
+       @media @tablet {
+           width: 100%;
+       }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        /* mobile */
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }
+
         p {
             padding-right: 20px;
         }
-    }
+    } // bottom-content
 }// main-content
