@@ -300,17 +300,164 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin: 75px 20px 35px;
+  }
+  .main-content .text-content {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 768px) and (max-width: 400px) {
+  .main-content {
+    padding-bottom: 50px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  padding: 0 29px;
+}
+.main-content .top-content .text-content .feat-button {
+  width: 100px;
+  height: 30px;
+  background: gray;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
+}
+.main-content .top-content .text-content .feat-button:hover {
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
+}
+.main-content .top-content .text-content .bout-button {
+  width: 100px;
+  height: 30px;
+  background: gray;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
+}
+.main-content .top-content .text-content .bout-button:hover {
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 300px;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .main-content .top-content .text-content {
+    padding-bottom: 30px;
+  }
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-box-shadow: 0 10px 8px 11px black;
+  -moz-box-shadow: 0 10px 8px 11px black;
+  box-shadow: 0 10px 8px 11px black;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    margin-bottom: 90px;
+  }
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  padding: 0 24px;
+}
+.main-content .bottom-content .text-content .vice-button {
+  width: 100px;
+  height: 30px;
+  background: gray;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
+}
+.main-content .bottom-content .text-content .vice-button:hover {
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
+}
+.main-content .bottom-content .text-content .vision-button {
+  width: 100px;
+  height: 30px;
+  background: gray;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 2px 5px 5px 5px black;
+  -moz-box-shadow: 2px 5px 5px 5px black;
+  box-shadow: 2px 5px 5px 5px black;
+}
+.main-content .bottom-content .text-content .vision-button:hover {
+  background: #977316;
+  -webkit-transform: skew(18deg, 0deg);
+  -moz-transform: skew(18deg, 0deg);
+  -ms-transform: skew(18deg, 0deg);
+  -o-transform: skew(18deg, 0deg);
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+    height: 440px;
+    padding: 0;
+    padding-bottom: 35px;
+  }
+  .main-content .bottom-content .text-content {
+    margin-bottom: 15px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
