@@ -275,10 +275,18 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-shadow: 5px 5px 5px #888;
+  -moz-box-shadow: 5px 5px 5px #888;
+  box-shadow: 5px 5px 5px #888;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 @media (max-width: 400px) {
   .cta img {
@@ -316,12 +324,10 @@ header .logo {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
-}
-@media (max-width: 768px) {
-  .main-content .middle-img {
-    width: 100%;
-    margin: 25px auto;
-  }
+  -webkit-transform: rotate(90);
+  -moz-transform: rotate(90);
+  -ms-transform: rotate(90);
+  -o-transform: rotate(90);
 }
 .main-content .bottom-content {
   display: flex;
