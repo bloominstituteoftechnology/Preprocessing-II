@@ -1,33 +1,66 @@
 // Call To Action (CTA) Styles
 
 .cta {
+  .flex_it(flex-end);
+  margin-top: 72px;
+
+  @media @tablet {
+    img {
+      display: none;
+    }
+
     display: flex;
-    margin-top: 72px;
+    flex-flow: column;
+    margin-top: 6.99%; /* 53px */
+    padding-right: 5.28%; /* 40px */
     justify-content: flex-end;
 
-    .cta-text {
-        font-size: 72px;
+  }
+  .cta-text {
+      .flex_it (center);
+      font-size: 72px;
+      text-align: center;
+      letter-spacing: 5px;
+      flex-flow: column;
+      align-items: center;
+      margin: 0 82px 0 0;
+
+      @media @tablet {
+        font-size: 7.2rem; /* 72px */
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: .5rem; /* 5px */
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
-    }
+        margin: 0;
+      }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+      button {
+          border: 1px double black;
+          font-size: @standard_font;
+          background: white;
+          width: 170px;
+          height: 32px;
+          margin-top: 10px;
+          cursor: pointer;
+          background-color: @scheme1-1;
+          .skew;
 
-        &:hover {
-            background: black;
-            color: white;
-        }
-    }
-}// cta
+          @media @tablet {
+            border: .01rem double black;
+            font-size: 1.6rem;
+            background-color: @scheme2-1;
+            width: 23.68%; /* 170px / 717.984 = 23.68% */
+            height: 3.2rem;
+            margin-top: 2.11%;	/* 16px / 274 */
+            cursor: pointer;
+          }
+
+          &:hover {
+              background: black;
+              color: white;
+          }
+      }
+  }
+}
