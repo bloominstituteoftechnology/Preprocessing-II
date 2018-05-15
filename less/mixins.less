@@ -35,3 +35,20 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.custom-button(@btn-width, @btn-height, @btn-background){
+ 	border: 1px double black;
+      font-size: 16px;
+        background: @btn-background;
+        width: @btn-width;
+        height: @btn-height;
+        margin-top: 10px;
+        cursor: pointer;
+        .border-radius(40px);
+        .box-shadow (5px 10px);
+
+        &:hover {
+            background: black;
+            color: white;
+        } // hover
+    } //custom button

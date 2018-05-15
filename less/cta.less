@@ -5,6 +5,11 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        display: flex;
+        width: 100%;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +19,18 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+         @media @tablet {
+            margin-right: 300px;
+        }
+    }
+
+    .header-img {
+        .rotate (45deg);
+
+         @media @tablet {
+          display: none;
+        }
     }
 
     .cta-text button {
@@ -24,10 +41,13 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius(40px);
+        .box-shadow (5px 10px);
 
         &:hover {
-            background: black;
+            // background: black;
+            background-color: darken(@btn-bg-color, 20%);
             color: white;
-        }
-    }
+        } // hover
+    } //cta button
 }// cta
