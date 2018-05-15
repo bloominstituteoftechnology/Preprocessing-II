@@ -3,6 +3,17 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    @media @phone {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    }
   
     nav {
       margin-top: 40px; 
@@ -17,7 +28,7 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
-  
+
         }
       }
     }
@@ -25,5 +36,8 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        //mixin opacity
+        .opacity (@opacity: 0.5);
     }
   }// header 
