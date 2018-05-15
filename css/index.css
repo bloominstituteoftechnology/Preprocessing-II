@@ -126,6 +126,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
 * {
   box-sizing: border-box;
 }
