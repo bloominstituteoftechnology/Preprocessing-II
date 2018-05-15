@@ -168,11 +168,21 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
 }
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+.cta img {
+  -webkit-transform: skew(20deg, 10deg);
+  -moz-transform: skew(20deg, 10deg);
+  -ms-transform: skew(20deg, 10deg);
+  -o-transform: skew(20deg, 10deg);
 }
 .cta .cta-text {
   font-size: 72px;
@@ -183,6 +193,9 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -204,6 +217,9 @@ header .logo {
   color: white;
 }
 .main-content {
+  -webkit-box-shadow: 10px 5px 5px black;
+  -moz-box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px black;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
