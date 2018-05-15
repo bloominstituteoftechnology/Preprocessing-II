@@ -130,6 +130,20 @@ table {
   display: flex;
   justify-content: space-around;
 }
+.button-char {
+  padding: 5px 30px;
+  background: teal;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 15px;
+  font-weight: bold;
+  border: 1px solid blue;
+  height: 35px;
+}
 * {
   box-sizing: border-box;
 }
@@ -304,6 +318,25 @@ header .logo {
     margin-left: 10px;
     margin-right: 15px;
   }
+}
+.main-content button {
+  padding: 5px 30px;
+  background: teal;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 15px;
+  font-weight: bold;
+  border: 1px solid blue;
+  height: 35px;
+}
+.main-content button:hover {
+  background: green;
+  color: black;
+  cursor: pointer;
 }
 .main-content .top-content {
   display: flex;

@@ -40,3 +40,18 @@
 	display: flex;
 	justify-content: space-around;
 }
+
+.new-hover(@bcolor: black, @clr: white) {
+	background: @bcolor;
+	color: @clr;
+}
+
+.button-char {
+		padding: 5px 30px;
+		background: @new-color;
+		.border-radius(5px);
+		margin-top: 15px;
+		font-weight: bold;
+		border: 1px solid blue;
+		height: 35px;
+}
