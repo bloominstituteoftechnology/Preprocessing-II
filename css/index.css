@@ -357,10 +357,14 @@ header .logo:hover {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.contact {
+  font-size: 1.6rem;
+}
 .contact p {
   margin: 20px 0;
 }
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1.6rem;
 }
