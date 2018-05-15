@@ -328,7 +328,6 @@ header .logo {
   -moz-transform: skew(25deg, -2deg);
   -ms-transform: skew(25deg, -2deg);
   -o-transform: skew(25deg, -2deg);
-  color: pink;
 }
 @media (max-width:400px) {
   .main-content .top-content .text-content h4 {
@@ -340,6 +339,9 @@ header .logo {
   .main-content .top-content {
     flex-direction: column;
   }
+}
+.main-content .top-content h4:hover {
+  color: pink;
 }
 .main-content .top-content .text-content .btn.btn-features {
   display: flex;
@@ -375,9 +377,6 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
-}
-.main-content .bottom-content .text-content {
-  background: magenta;
 }
 .main-content .bottom-content .text-content .btn.btn-services {
   display: flex;
@@ -417,6 +416,9 @@ header .logo {
 }
 .main-content .bottom-content .text-content .btn.btn-vision:hover {
   background: #4d004d;
+}
+.main-content .bottom-content .text-content p:hover {
+  background: magenta;
 }
 @media (max-width:400px) {
   .main-content .bottom-content {

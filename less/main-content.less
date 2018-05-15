@@ -14,13 +14,18 @@
 
     .text-content h4 {
       .skew(25deg, -2deg);
-      .page-chaos > .change-header-color;
       @media @phone {
         .fit-text;
       }
     }
     @media @phone {
       flex-direction: column;
+    }
+
+    h4 {
+      &:hover {
+        .page-chaos > .change-header-color;
+      }
     }
 
     .text-content {
@@ -75,7 +80,12 @@
           background: darken(purple, 10%);
         }
       }
-      .page-chaos > .change-background-color;
+
+      p {
+        &:hover {
+          .page-chaos > .change-background-color;
+        }
+      }
     }
     @media @phone {
       flex-direction: column;
