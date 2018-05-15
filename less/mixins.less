@@ -36,19 +36,6 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.custom-btn (@btn-width, @btn-height, @btn-background) {
-	width: @btn-width;
-	height: @btn-height;
-	background: @btn-background;
-	color: @cbtn-color;
-	text-align: center;
-	padding: 5px;
-
-	&:hover {
-		background: darken(@btn-background, 20%);
-	}
-}
-
 .flex() {
 	display: flex;
 }
@@ -63,13 +50,31 @@
 }
 
 #heading-styles() {
-
+	.style1 {
+		font-size: 25px;
+		letter-spacing: 3px;
+		color: #300000;
+	}
 }
 
 #button-styles() {
-
+	.custom-btn (@btn-width, @btn-height, @btn-background) {
+		width: @btn-width;
+		height: @btn-height;
+		background: @btn-background;
+		color: @cbtn-color;
+		text-align: center;
+		padding: 5px;
+	
+		&:hover {
+			background: darken(@btn-background, 20%);
+		}
+	}
 }
 
 #p-styles() {
-	
+	.style1 {
+		font-size: 22px;
+		color: #900000;
+	}
 }
