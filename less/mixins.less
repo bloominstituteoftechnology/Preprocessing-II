@@ -39,15 +39,14 @@
 .custom-button (@btn-width, @btn-height, @btn-backgroundColor){
 	border: 1px solid gray;
         color: white;
-	margin-top: 2%;
+	margin-top: 4%;
 	font-size: 12px;
 	width: @btn-width;
 	height: @btn-height;
 	background-color: @btn-backgroundColor;
 	.border-radius (4px);
 
-	&:hover{
-	content: 'hello';	
+	&:hover{	
 	background-color: darken(@btn-backgroundColor, 40%);
 	}
 }
