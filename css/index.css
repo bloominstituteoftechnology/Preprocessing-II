@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.bold-font {
+  font-weight: bold;
+}
 * {
   box-sizing: border-box;
 }
@@ -226,6 +229,29 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
+  .cta img {
+    max-width: 80%;
+  }
+}
+.cta img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -236,6 +262,11 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -244,10 +275,22 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .main-content {
   border-top: 2px solid black;
