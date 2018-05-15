@@ -35,3 +35,14 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.my-button-builder (@my-width, @my-height, @my-bg-color) {
+	width: @my-width ;
+	height: @my-height ;
+	background-color: @my-bg-color ;
+	&:hover {
+		background-color: darken(@my-bg-color, 20%) ;
+		color: dodgerblue ;
+	} 
+
+}
