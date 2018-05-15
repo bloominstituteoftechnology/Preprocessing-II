@@ -2,32 +2,72 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    .section--padding;
+
+    img{
+        .opacity(0.2);
+        .rotate(180deg);
+        max-height: 370px;
+    }
+    // &:last-child::after{
+    //     content: 'diverted';
+    //     font-size: 1.4rem;
+    //     position: relative;
+    //     color: black;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 100;
+    //     display: block;
+    // }
+
+    
+
+     @media @tablet {
+        width: 100%;
+        .section--padding--tablet;
+        img{
+            display: none;
+            
+        }
+    }
+ 
 
     .cta-text {
-        font-size: 72px;
+        font-size: 7.2rem;
+        color: @color--primary;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
-    }
+        margin: 0 8.2rem 0 0;
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
+        h1{
+            transition: all .4s;
         }
-    }
-}// cta
+        //****************************** needs to git push origin
+        h1:hover{
+            transform: scale(1.025);
+            .skew(3deg, 0deg);
+            margin-bottom: 1.3rem;
+            text-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.247);
+        }
+
+         @media @tablet{
+            font-size: 6.5rem;
+            margin: 0;
+        }
+        @media @phone{
+            font-size: 5rem;
+        }
+
+        button {
+            .button(@bgcolor: #aba2a0);
+        }// .cta .cta-text button
+
+    }// .cta .cta-text
+}
