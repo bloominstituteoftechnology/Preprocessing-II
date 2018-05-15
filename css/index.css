@@ -207,6 +207,12 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   margin: 75px 0 35px 0;
   padding: 35px 0;
   font-size: 16px;
@@ -220,6 +226,11 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+.main-content .middle-img:hover {
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
@@ -231,6 +242,10 @@ header .logo {
   margin: 20px 0;
 }
 footer {
+  -webkit-transform: skew(15deg, 15deg);
+  -moz-transform: skew(15deg, 15deg);
+  -ms-transform: skew(15deg, 15deg);
+  -o-transform: skew(15deg, 15deg);
   text-align: center;
   margin: 40px 0 20px;
 }
