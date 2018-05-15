@@ -2,16 +2,12 @@
 
 @tablet: ~"(max-width: 768px)";
 @phone: ~"(max-width: 400px)";
-.my-button(@btn-width: 100px, @btn-height: 40px, @btn-background, @btn-hover){
-    width: @btn-width;
-    height: @btn-height;
-    background: @btn-background;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(230, 10, 10);
-    .border-radius(@radius 8px);
+
+.my-button(@btn-width: 80px, @btn-height: 20px, @btn-background, @btn-hover){
+        width: @btn-width;
+        height: @btn-height;
+        background: @btn-background;
+        font-size: 16px;
 
     @media @tablet {
         background: rgb(241, 241, 172);
@@ -21,7 +17,7 @@
     }
 
     &:hover {
-        background: darken(@btn-hover, 5%);
+        background: darken(@btn-hover, 20%);
 }
 }
 
@@ -34,24 +30,27 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-   .box-shadow(12px 12px rgb(142, 205, 224));
-   .my-button(100px, 30px, rgb(188, 125, 224), rgb(170, 92, 92));
 
    @media @tablet {
-    margin: 75px 2% 35px;
+      margin: 75px 2% 35px;
   }
+}
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
-        .my-button(100px, 30px, rgb(188, 125, 224), rgb(170, 92, 92));
+.top-content {
+    display: flex;
+    justify-content: space-around;
 
-        @media @phone {
-            flex-wrap: wrap;
-            height: 300px;
-          }
-    
-     .middle-img {
+    @media @phone {
+        flex-wrap: wrap;
+        height: 300px;
+}
+}
+
+.top-content .text-content button {
+    .my-button(100px, 40px, rgb(188, 125, 224), rgb(170, 92, 92));
+}
+
+.middle-img {
         display: block;
         margin: 30px auto;
         .opacity(.6);
@@ -62,21 +61,23 @@
           }
     }
 
-    .bottom-content {
+.bottom-content {
         display: flex;
         justify-content: space-around;
-        .my-button(100px, 30px, rgb(133, 228, 133), rgb(103, 72, 214));
 
         @media @phone {
             flex-wrap: wrap;
             align-content: space-between;
             height: 440px;
           }
-
-      p {
-        padding-right: 20px;
         }
-    }
-    }
+
+.bottom-content .text-content button {
+    .my-button(100px, 30px, rgb(133, 228, 133), rgb(103, 72, 214));
 }
-// main-content
+
+p {
+    padding-right: 20px;
+}
+
+//main-content
