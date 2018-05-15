@@ -1,18 +1,5 @@
 // Mixins below variables
 
-.custom-btn (@btn-width, @btn-height, @btn-background) {
-	width: @btn-width;
-	height: @btn-height;
-	background: @btn-background;
-	color: white;
-	text-align: center;
-	padding: 5px;
-
-	&:hover {
-		background: darken(@btn-background, 20%);
-	}
-}
-
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
@@ -47,4 +34,30 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.custom-btn (@btn-width, @btn-height, @btn-background) {
+	width: @btn-width;
+	height: @btn-height;
+	background: @btn-background;
+	color: @cbtn-color;
+	text-align: center;
+	padding: 5px;
+
+	&:hover {
+		background: darken(@btn-background, 20%);
+	}
+}
+
+.flex() {
+	display: flex;
+}
+
+.j-center() {
+	justify-content: center;
+}
+
+.jcenter-flex() {
+	.flex;
+	.j-center;
 }

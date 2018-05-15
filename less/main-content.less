@@ -8,9 +8,28 @@
 	font-size: 16px;
 	line-height: 18px;
 
+	@media @tablet {
+		margin-right: 2.604%;
+		margin-left: 2.604%;
+	}
+
 	.top-content {
-		display: flex;
+		.flex;
 		justify-content: space-around;
+
+		@media @tablet {
+			margin-left: 1.375%;
+		}
+
+		@media @phone {
+			flex-flow: wrap;
+		}
+
+		.text-content {
+			@media @phone {
+				margin: 10px -2.87%;
+			}
+		}
 
 		.text-content button {
 			.custom-btn(120px, 45px, blue);
@@ -22,11 +41,29 @@
 	.middle-img {
 		display: block;
 		margin: 30px auto;
+
+		@media @tablet {
+			width: 100%;
+		}
 	}
 
 	.bottom-content {
-		display: flex;
+		.flex;
 		justify-content: space-around;
+
+		@media @tablet {
+			margin-left: 1.375%;
+		}
+
+		@media @phone {
+			flex-flow: wrap;
+		}
+
+		.text-content {
+			@media @phone {
+				margin: 10px -2.87%;
+			}
+		}
 
 		.text-content button {
 			.custom-btn(120px, 45px, blue);
