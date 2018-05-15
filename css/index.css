@@ -360,7 +360,7 @@ header .logo {
   background-clip: padding-box;
 }
 .main-content button:hover {
-  background: red;
+  background: #990000;
   color: #00ffff;
 }
 @media (max-width: 768px) {
