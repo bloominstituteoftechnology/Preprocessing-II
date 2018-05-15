@@ -35,3 +35,47 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button {
+	width: 75px;
+	height: 25px;
+	background-color: @some-color;
+	&:hover{
+		background-color: darken(@some-color, 20%);
+		.skew(5deg, 5deg);
+	}
+}
+
+#headings {
+	.font-stuff {
+		font-size: 20px;
+		color: red;
+		font-style: italic;
+		font-weight: bold;
+	}
+	.font-border {
+		height: 30px;
+		width: 100px;
+		border: 2px dashed green;
+	}
+}
+
+#buttons {
+	.button-stuff {
+		background-color: @random-color;
+		&:hover{
+			background-color: lighten(@random-color, 5%)
+		}
+	}	
+}
+
+#p-tags {
+	.opacity (@opacity: 0.8) {
+		-webkit-opacity: 	@opacity;
+		-moz-opacity: 		@opacity;
+		opacity: 		@opacity;
+	}
+	.font-thing{
+		color: darkblue;
+	}
+}

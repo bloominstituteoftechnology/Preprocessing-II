@@ -4,6 +4,25 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    @media @tablet {
+        width: 676px;
+        font-size: 72px * .768;
+        margin-right: 0;
+        img{
+            align-self: center;
+            max-width: 76.8%;
+            margin-top: 20px;
+            .opacity;
+            @media @phone {
+                display: none;
+            }
+        }
+    }
+    @media @phone {
+        width: 352px;
+        justify-content: center;
+    }
+    background-color: lightblue;
 
     .cta-text {
         font-size: 72px;
@@ -14,6 +33,10 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @tablet {
+            font-size: 72px * .768;
+            margin-right: 0;
+        }
     }
 
     .cta-text button {
@@ -24,6 +47,8 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .box-shadow(5px 5px);
+        .rotate(5deg);
 
         &:hover {
             background: black;
