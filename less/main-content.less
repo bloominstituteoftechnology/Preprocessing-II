@@ -11,12 +11,46 @@
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
+
+        p {
+            padding-right: 20px;
+        }
+    
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .text-content {
+            flex-direction: column;
+            
+            button {
+                border-radius: 5px;
+                margin: 20px 0 0;
+                width: 150px;
+                height: 20px;                
+                .button(150px, 20px, orange);    
+                cursor: pointer;   
+
+                &:hover {
+                    background-color: darken(orange,20%);
+                }
+            }
+            
+
+            @media @phone {
+                padding: 20px 0;
+            }
+        }
+    }//top content
 
     .middle-img {
         display: block;
         margin: 30px auto;
-    }
+
+        @media @tablet {
+            width: 100%;
+        }
+    }//mid img
 
     .bottom-content {
         display: flex;
@@ -25,5 +59,26 @@
         p {
             padding-right: 20px;
         }
-    }
+
+        @media @phone {
+            flex-direction: column;
+        }
+        
+        .text-content {
+
+            button {
+                margin: 20px 0 0;
+                border-radius: 5px;
+                .button(150px, 20px, orange);    
+                cursor: pointer;  
+                
+                &:hover {
+                    background-color: darken(orange,20%);
+                }
+            }
+            @media @phone {
+                padding: 20px 0;
+            }
+        }
+    }//bottom content
 }// main-content

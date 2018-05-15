@@ -5,6 +5,14 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        flex-wrap: wrap;
+    }
+
+    @media @phone {
+        flex-direction: column;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,20 +22,54 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .skew (-10deg, -10deg);
+
+        @media @phone {
+            max-width: 87.25%;
+            padding: 0 0 40px;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
+        background: @aqua;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius(15px);
+        .box-shadow(10px 10px @dark-aqua);
+
+        @media @tablet {
+            background-color: @slateblue;
+        }
+
+        @media @phone {
+            background-color: @aqua;
+        }
 
         &:hover {
-            background: black;
-            color: white;
+            background: @rose;
+
+            @media @tablet {
+                background-color: @maroon;
+            }
+
+            @media @phone {
+                background-color: @steelblue;
+            }
+        }
+    }
+    img {
+        .rotate(180deg);
+        margin-top: 30px;
+
+        @media @phone {
+            width: 100%;
+        }
+        &:hover {
+            .opacity(.5)
         }
     }
 }// cta
