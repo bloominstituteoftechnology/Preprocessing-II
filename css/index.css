@@ -126,7 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@shadow-properties ~"5px 5px 5px gray";
 * {
   box-sizing: border-box;
 }
@@ -184,6 +183,9 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -207,6 +209,12 @@ header .logo {
   background: black;
   color: white;
 }
+.cta img {
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -219,6 +227,12 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content h4 {
+  -webkit-transform: skew(25deg, -2deg);
+  -moz-transform: skew(25deg, -2deg);
+  -ms-transform: skew(25deg, -2deg);
+  -o-transform: skew(25deg, -2deg);
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -229,6 +243,12 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content h4 {
+  -webkit-transform: skew(5deg, 5deg);
+  -moz-transform: skew(5deg, 5deg);
+  -ms-transform: skew(5deg, 5deg);
+  -o-transform: skew(5deg, 5deg);
 }
 .contact p {
   margin: 20px 0;

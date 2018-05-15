@@ -1,7 +1,7 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -11,6 +11,10 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        .text-content h4 {
+          .skew(25deg, -2deg);
+        }
     }
 
     .middle-img {
@@ -25,5 +29,11 @@
         p {
             padding-right: 20px;
         }
+
+        .text-content h4 {
+          .skew(5deg, 5deg);
+        }
     }
+
+
 }// main-content
