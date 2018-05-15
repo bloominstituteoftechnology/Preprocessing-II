@@ -139,6 +139,12 @@ table {
   width: 95%;
   margin-top: 20px;
 }
+.page-chaos .change-background-color {
+  background: magenta;
+}
+.page-chaos .change-header-color {
+  color: pink;
+}
 * {
   box-sizing: border-box;
 }
@@ -322,6 +328,7 @@ header .logo {
   -moz-transform: skew(25deg, -2deg);
   -ms-transform: skew(25deg, -2deg);
   -o-transform: skew(25deg, -2deg);
+  color: pink;
 }
 @media (max-width:400px) {
   .main-content .top-content .text-content h4 {
@@ -368,6 +375,9 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .text-content {
+  background: magenta;
 }
 .main-content .bottom-content .text-content .btn.btn-services {
   display: flex;
