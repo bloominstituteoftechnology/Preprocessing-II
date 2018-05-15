@@ -151,6 +151,12 @@ header {
   width: 100%;
   display: flex;
 }
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    order: -1;
+  }
+}
 header nav {
   margin-top: 40px;
   width: 610px;
@@ -213,7 +219,7 @@ header .logo {
   box-shadow: 5px 10px;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background-color: #cccccc;
   color: white;
 }
 .main-content {
@@ -231,7 +237,7 @@ header .logo {
 .main-content .content-button {
   border: 1px double black;
   font-size: 16px;
-  background: gray;
+  background: pink;
   width: 200px;
   height: 45px;
   margin-top: 10px;
