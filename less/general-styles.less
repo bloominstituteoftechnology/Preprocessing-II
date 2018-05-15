@@ -37,8 +37,20 @@ section img{
 }
 
 .text-content {
+    display: flex;
+    flex-direction: column;
+
     @media @phn-tab-brkpnt{
         padding-bottom: 20px;
         margin-top: 14px;    
+    }
+
+    .mc-btn {
+        .main-cont-btns(white,100px);
+
+        &:hover {
+            background-color: darken(white,20%)
+        }
+        
     }
 }

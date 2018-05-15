@@ -166,11 +166,25 @@ body {
     display: none;
   }
 }
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width:400px) {
   .text-content {
     padding-bottom: 20px;
     margin-top: 14px;
   }
+}
+.text-content .mc-btn {
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 10px;
+  width: 100px;
+  align-self: center;
+}
+.text-content .mc-btn:hover {
+  background-color: #cccccc;
 }
 header {
   width: 100%;
