@@ -158,6 +158,34 @@ h5 {
     max-width: 400px;
   }
 }
+#tyson .header {
+  position: relative;
+  color: #037EB9;
+}
+#tyson .header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120%;
+  width: 120%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+}
+#tyson .button {
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+#tyson .p {
+  opacity: .8;
+}
 header {
   width: 100%;
   display: flex;
@@ -250,9 +278,28 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  position: relative;
+  color: #037EB9;
   -webkit-opacity: 0.9;
   -moz-opacity: 0.9;
   opacity: 0.9;
+}
+.cta .cta-text:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120%;
+  width: 120%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
 }
 @media (max-width: 768px) {
   .cta .cta-text {
@@ -281,6 +328,8 @@ header .logo {
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
 }
 @media (max-width: 768px) {
   .cta .cta-text button {
@@ -346,6 +395,9 @@ header .logo {
     width: 100%;
   }
 }
+.main-content .top-content p {
+  opacity: .8;
+}
 @media (max-width: 400px) {
   .main-content .top-content p {
     padding: 0 0 25px 0;
@@ -398,6 +450,7 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+  opacity: .8;
 }
 @media (max-width: 768px) {
   .main-content .bottom-content p {
@@ -426,6 +479,8 @@ header .logo {
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
 }
 .main-content button:hover {
   background-color: #137698;
@@ -442,6 +497,7 @@ header .logo {
 }
 .contact p {
   margin: 20px 0;
+  opacity: .8;
 }
 footer {
   text-align: center;
