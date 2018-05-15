@@ -35,3 +35,17 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-mixin (@width, @height, @background: @button-color) {
+	width: @width;
+	height: @height;
+	background: @background;
+	margin-top: 15px;
+	border: 1px solid black;
+	border-radius: 10px;
+	color: white;
+
+	&:hover {
+		background: darken(@background, 20%);
+	}
+}
