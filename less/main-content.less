@@ -37,6 +37,14 @@
             @media @phone {
                 margin: 2.645432% 0;
             }
+
+            button {
+                .button-mixin(30%, 25%);
+
+                @media @phone {
+                    width: 40%;
+                }
+            }
         }
     }
 
@@ -77,6 +85,18 @@
         .text-content {
             @media @phone {
                 margin: 2.6315789% 0;
+            }
+
+            button {
+                .button-mixin(30%, 25%);
+
+                @media @tablet {
+                    margin-left: 10%;
+                }
+
+                @media @phone {
+                    width: 40%;
+                }
             }
         }
     }
