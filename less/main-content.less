@@ -7,23 +7,72 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @tablet{
+    max-width: 100%;
+    
+    margin-left: 2.6%;
+    margin-right: 2.6%;
+   }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @phone{
+            max-width: 100%;
+            flex-direction: column;
+            padding-bottom: .25%;
+        }
     }
+  .text-content h5{
+      .coolbutton;
+  }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .rotate(180deg);
+        @media @tablet{
+            max-width: 100%;
+        }
+        @media @phone{
+            width: 100%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        @media @phone{
+            flex-direction: column;
+
+        }
 
         p {
             padding-right: 20px;
         }
+    }
+
+    .rotate (@deg) {
+        -webkit-transform: rotate(@deg);
+        -moz-transform: 	 rotate(@deg);
+        -ms-transform: 		 rotate(@deg);
+        -o-transform: 		 rotate(@deg);
+    }
+
+    .coolbutton  {
+        font-size: 15px;
+        color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 140px;
+    height: 35px;
+    background-color: pink;
+    &:hover{
+        cursor: pointer;
+        background: darken(pink, 20%)
+        
+
+    }
     }
 }// main-content

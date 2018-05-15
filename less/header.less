@@ -1,23 +1,61 @@
 // Header Styles
-
+.container{
+  @media @tablet{
+    width: 100%;
+    max-width: 768px;
+  }
+  @media @phone{
+    width: 100%;
+    max-width: 400px;
+  }
+}
 header {
+  
     width: 100%;
     display: flex;
+    @media @tablet{
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-right: 13%;
+    }
+    @media @phone{
+      width: 100%;
+      padding-right: 0px;
+    }
+  }
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+      @media @phone{
+        width: 100%;
+        flex-direction: column;
+    text-align: center;
+    
+      }
+      
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+        @media @tablet{
+          justify-content: center;
+        }
+        @media @phone{
+          font-size: 21px;
+          border-bottom: 1px solid black;
+          
+          padding-bottom: 6%;
+          padding-top: 3.7%;
+          padding-left: 6%;
+        }
   
         &:hover {
             text-decoration: underline;
             color: black;
-  
+            .skew(20deg, 10deg);
         }
       }
     }
@@ -25,5 +63,15 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @tablet{
+          order: -1;
+        }
+        
     }
-  }// header 
+    .skew (@deg, @deg2) {
+      -webkit-transform:       skew(20deg, 20deg);
+      -moz-transform: 	 skew(20deg, 20deg);
+      -ms-transform: 		 skew(20deg, 20deg);
+      -o-transform: 		 skew(20deg, 20deg);
+    }
+  // header 

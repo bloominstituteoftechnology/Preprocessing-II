@@ -4,6 +4,14 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    
+@media @tablet{
+    justify-content: center;
+    width: 100%;
+    
+}
+    
+    }
 
     .cta-text {
         font-size: 72px;
@@ -14,6 +22,26 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        
+        
+        .opacity;
+        @media @tablet{
+            margin: 0px;
+        }
+       @media @phone{
+
+        align-items: center;
+        margin: 0px;
+        
+       }
+       
+
+    }  
+    
+    img{
+        @media @tablet{
+            display: none;
+        }
     }
 
     .cta-text button {
@@ -24,10 +52,29 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .box-shadow(5px 5px);
+
+        
 
         &:hover {
             background: black;
             color: white;
         }
+        
     }
-}// cta
+
+
+    .opacity (@opacity: 0.5) {
+        -webkit-opacity: 	@opacity;
+        -moz-opacity: 		@opacity;
+        opacity: 		@opacity;
+    }
+
+    .box-shadow (@string) {
+        -webkit-box-shadow: @string;
+        -moz-box-shadow:    @string;
+        box-shadow:         @string;
+    }
+
+    
+// cta
