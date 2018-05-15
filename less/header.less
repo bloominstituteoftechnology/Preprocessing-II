@@ -4,11 +4,32 @@ header {
     width: 100%;
     display: flex;
   
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media @phone {
+      justify-content: center;
+    }
+
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        width: 87%;
+        padding: 0 auto;
+      }
+
+      @media @phone {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+      }
   
       a {
         text-decoration: none;
@@ -17,7 +38,26 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
-  
+        }
+
+        @media @phone {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 2rem;
+          border-bottom: 1px solid gray;
+          color: @col-lavender-rose;
+
+          &:first-child {
+            border-top: 1px solid gray;
+          }
+
+          &:hover {
+            background: @col-seagull;
+            text-decoration: none;
+            color: @col-picasso;
+          }
         }
       }
     }
@@ -25,5 +65,20 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+        }
+
+        @media @phone {
+          margin-bottom: 24px;
+
+          &:hover {
+            .opacity;
+          }
+        }
     }
-  }// header 
+     
+} // header (overall)
