@@ -7,24 +7,38 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   .pad-and-center;
 
    .top-content {
-        display: flex;
-        justify-content: space-around;
+        .flex-content-space-around;
 
         .text-content h4 {
           .skew(25deg, -2deg);
+
+          @media @phone {
+        .fit-text;
+      }
         }
+
+        @media @phone {
+      flex-direction: column;
+    }
+
+
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 98%;
     }
 
     .bottom-content {
-        display: flex;
-        justify-content: space-around;
+        .flex-content-space-around;
+
+        @media @phone {
+      flex-direction: column;
+    }
 
         p {
             padding-right: 20px;
@@ -32,6 +46,10 @@
 
         .text-content h4 {
           .skew(5deg, 5deg);
+
+          @media @phone {
+        .fit-text;
+      }
         }
     }
 

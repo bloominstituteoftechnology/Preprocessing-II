@@ -4,10 +4,17 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    .pad-and-center;
+
+    @media @tablet {
+    flex-direction: column;
+    align-items: center;
+  }
 
     .cta-text {
         font-size: 72px;
         text-align: center;
+        width: 46.753%;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
@@ -15,6 +22,11 @@
         align-items: center;
         margin: 0 82px 0 0;
         .opacity(0.6);
+
+        @media @tablet {
+      margin-top: 30px;
+      margin-right: 0;
+    }
     }
 
     .cta-text button {
@@ -36,5 +48,10 @@
 
     img {
       .rotate(-25deg);
+      width: 45%;
+
+      @media @tablet {
+      order: -1;
+    }
     }
 }// cta
