@@ -5,6 +5,10 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+      justify-content: center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,23 +18,41 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
 
-    .cta-text button {
-        border: 1px solid black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-        .box-shadow(10px 5px 5px black);
-        .border-radius(7px);
+        @media @tablet {
+          margin: 0 5% 0 0;
+        }
 
-        &:hover {
+        h1 {
+          @media @tablet {
+            letter-spacing: 0;
+          }
+        }
+
+        button {
+          border: 1px solid black;
+          font-size: 16px;
+          background: white;
+          width: 170px;
+          height: 32px;
+          margin-top: 10px;
+          cursor: pointer;
+          .box-shadow(10px 5px 5px black);
+          .border-radius(7px);
+
+          &:hover {
             background: @on-hover-bg;
             color: black;
             border: 2px solid black;
-        }
-    }
+          }
+        } // button
+
+        
+    } // .cta-text
+    
+    img {
+      @media @tablet {
+        display:none
+      }
+    } 
 }// cta

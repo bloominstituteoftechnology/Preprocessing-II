@@ -7,7 +7,11 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-
+  
+    @media @tablet {
+      font-size: 1.4rem;
+      margin: 75px 2% 35px;
+    } 
 
    .top-content {
      display: flex;
@@ -19,10 +23,16 @@
     
    }
 
-    .middle-img {
+   .middle-img {
       display: block;
       margin: 30px auto;
       .opacity(0.8);
+
+      @media @tablet {
+        width: 100%;
+        margin: 25px auto;
+      }
+
       &:hover {
         .skew(-15deg, 0deg);
         border: 2px solid @on-hover-bg;
