@@ -3,6 +3,15 @@
 header {
     width: 100%;
     display: flex;
+    
+    @media @tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    @media @phone {
+      justify-content: flex-end;
+    }
   
     nav {
       margin-top: 40px; 
@@ -52,22 +61,19 @@ header {
         margin: 28px 0 0 91px;
 
         @media @tablet {
+          .rotate(-5deg);
           padding-left: 5%;
           margin: 30px auto 0;
         }
 
         @media @phone {
+          .rotate(-10deg);
           align-self: center;
           margin: 20px 0;
         }
     }
 
-    @media @tablet {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
+    
 
-    @media @phone {
-      justify-content: flex-end;
-    }
+    
   }// header 

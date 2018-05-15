@@ -12,8 +12,6 @@
        margin: 75px 2.6% 35px;
    }
 
-   .skew(2deg, 4deg);
-
    .top-content {
         .flex-around;
 
@@ -22,7 +20,7 @@
             flex-direction: column;
             justify-content: space-around;
         }
-    }
+    }// top-content
 
     .middle-img {
         display: block;
@@ -37,7 +35,7 @@
         @media @tablet {
             width: 100%;
         }
-    }
+    }// middle-img
 
     .bottom-content {
         .flex-around;
@@ -47,25 +45,24 @@
         }
 
         @media @phone {
-            height: 440px;
+            height: 460px;
             flex-wrap: wrap;
             align-content: space-between;
         }
-    }
+    }// bottom-content
 
-    .text-content button {
-        margin-top: 10px;
-        .box-shadow(10px 10px 10px grey);
-        &:hover {
-            cursor: pointer;
-        }
-
+    .text-content {
         @media @tablet {
             margin: 0 1.3%;
         }
 
         @media @phone {
-            margin: 0;
+            margin: 5px 0;
         }
-    }
+    }// text-content
+
+    .text-content button {
+        margin-top: 10px;
+        .custom-btn(150px, 22px, @philly-philly);
+    }// text-content button
 }// main-content
