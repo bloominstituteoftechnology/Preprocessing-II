@@ -1,5 +1,14 @@
 // Header Styles
-
+.container{
+  @media @tablet{
+    width: 100%;
+    max-width: 768px;
+  }
+  @media @phone{
+    width: 100%;
+    max-width: 400px;
+  }
+}
 header {
   
     width: 100%;
@@ -9,6 +18,10 @@ header {
       justify-content: center;
       padding-right: 13%;
     }
+    @media @phone{
+      width: 100%;
+      padding-right: 0px;
+    }
   }
   
     nav {
@@ -16,6 +29,12 @@ header {
       width: 610px;
       justify-content: space-between;
       display: flex;
+      @media @phone{
+        width: 100%;
+        flex-direction: column;
+    text-align: center;
+    
+      }
       
   
       a {
@@ -23,6 +42,14 @@ header {
         color: #b0b0b0;
         @media @tablet{
           justify-content: center;
+        }
+        @media @phone{
+          font-size: 21px;
+          border-bottom: 1px solid black;
+          
+          padding-bottom: 6%;
+          padding-top: 3.7%;
+          padding-left: 6%;
         }
   
         &:hover {
