@@ -6,24 +6,76 @@ header {
   
     nav {
       margin-top: 40px; 
-      width: 610px;
+      width: percentage(610px/@max-width);
       justify-content: space-between;
       display: flex;
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+        font-size: 1.6rem;
   
         &:hover {
             text-decoration: underline;
             color: black;
-  
+            .rotate(-5deg);
         }
+
+        @media @phn-tab-brkpnt{
+          text-align: center;
+          padding: 19px 5.69% 19px;
+          font-size: 2.2rem;
+          text-decoration: bold;
+          border-top: 1px solid black;        
+        }
+
+        &:last-child {
+          @media @phn-tab-brkpnt{
+              border-bottom: 1px solid black;
+          } 
+        }
+  
+        &:hover {
+          text-decoration: underline;
+          color: black;
+          .theme(@mode);
+        }
+
       }
+
+      @media @tab-desk-brkpnt{
+        justify-content: space-around;
+        width: 100%;
+      } 
+
+      @media @phn-tab-brkpnt{
+        margin-top: 20px;
+        flex-direction: column;
+      }
+
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
     }
-  }// header 
+
+    img {
+      @media @tab-desk-brkpnt{
+          order: -1;
+          padding-right: 60px;
+      }
+
+      @media @phn-tab-brkpnt{
+          margin-top: 10px;
+      }
+  }
+
+    @media @tab-desk-brkpnt{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+
+
+}// header 

@@ -14,6 +14,13 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tab-desk-brkpnt{
+            width:100%;
+            margin-right: 0;
+            // font-size: 54px;
+            font-size: 5.4rem;
+        }
     }
 
     .cta-text button {
@@ -24,10 +31,24 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius;
+        .box-shadow(~'3px 3px 5px #aaaaaa');
+        
 
         &:hover {
-            background: black;
-            color: white;
+            // background: black;
+            // color: white;
+            .rotate(-5deg);
+            .skew(5deg,5deg);
+            .theme(@mode);
         }
+    }
+
+    img {
+        .opacity(.3);
+    }
+
+    @media @phn-tab-brkpnt{
+        margin-top: 48px;
     }
 }// cta
