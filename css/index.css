@@ -147,9 +147,32 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 768px;
+  }
 }
 header nav {
   margin-top: 40px;
@@ -157,9 +180,36 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav {
+    order: 1;
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+  }
+}
+@media (max-width: 400px) {
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -173,10 +223,24 @@ header .logo {
   -ms-transform: rotate(30deg);
   -o-transform: rotate(30deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    order: 0;
+    padding: 0px;
+    margin: 20px 0 0 0;
+    align-self: center;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+    width: 100%;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -187,6 +251,24 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    max-width: 400px;
+    width: 100%;
+    font-size: 48px;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -218,13 +300,47 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 400px) {
+  .main-content {
+    align-self: center;
+    padding: 0px;
+    max-width: 380px;
+    margin: 30px 10px;
+    width: 100%;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .text-content {
+    width: 100%;
+    padding-top: 40px;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 .main-content .middle-img:hover {
   -webkit-opacity: 0.2;
@@ -234,6 +350,14 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
