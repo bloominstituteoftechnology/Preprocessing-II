@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.darkenedgold {
+  background: #e6c200;
+}
 * {
   box-sizing: border-box;
 }
@@ -134,6 +137,7 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
   font-size: 62.5%;
+  color: gold;
 }
 h1,
 h2,
@@ -370,6 +374,9 @@ header .logo:hover {
   height: 30px;
   margin: 10px 5%;
 }
+.main-content .top-content .text-content button:hover {
+  background: #e6c200;
+}
 @media (max-width: 768px) {
   .main-content .top-content .text-content p {
     margin-top: 10px;
@@ -452,6 +459,9 @@ header .logo:hover {
   width: 60%;
   height: 30px;
   margin: 10px 5%;
+}
+.main-content .bottom-content .text-content button:hover {
+  background: #e6c200;
 }
 .main-content .bottom-content p {
   padding-right: 5.6%;
