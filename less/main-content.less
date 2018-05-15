@@ -8,6 +8,8 @@
    font-size: 16px;
    line-height: 18px;
 
+   .skew(2deg, 4deg);
+
    .top-content {
         display: flex;
         justify-content: space-around;
@@ -16,6 +18,12 @@
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        .border-radius(25% 5px);
+        &:hover {
+            cursor: pointer;
+            .rotate(180deg);
+        }
     }
 
     .bottom-content {
@@ -24,6 +32,14 @@
 
         p {
             padding-right: 20px;
+        }
+    }
+
+    .text-content button {
+        margin-top: 10px;
+        .box-shadow(10px 10px 10px grey);
+        &:hover {
+            cursor: pointer;
         }
     }
 }// main-content
