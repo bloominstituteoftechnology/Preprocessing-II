@@ -334,6 +334,26 @@ header .logo {
     flex-direction: column;
   }
 }
+.main-content .top-content .text-content .btn.btn-features {
+  display: flex;
+  justify-content: center;
+  background: red;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 100px;
+  box-shadow: 3px 3px;
+  margin-top: 10px;
+}
+.main-content .top-content .text-content .btn.btn-about {
+  display: flex;
+  justify-content: center;
+  background: orange;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 120px;
+  box-shadow: 3px 3px;
+  margin-top: 10px;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -342,6 +362,36 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .text-content .btn.btn-services {
+  display: flex;
+  justify-content: center;
+  background: yellow;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 129px;
+  box-shadow: 3px 3px;
+  margin-top: 10px;
+}
+.main-content .bottom-content .text-content .btn.btn-product {
+  display: flex;
+  justify-content: center;
+  background: green;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 100px;
+  box-shadow: 3px 3px;
+  margin-top: 10px;
+}
+.main-content .bottom-content .text-content .btn.btn-vision {
+  display: flex;
+  justify-content: center;
+  background: purple;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 170px;
+  box-shadow: 3px 3px;
+  margin-top: 10px;
 }
 @media (max-width:400px) {
   .main-content .bottom-content {

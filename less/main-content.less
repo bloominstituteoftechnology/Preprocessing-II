@@ -11,7 +11,6 @@
 
    .top-content {
         .flex-content-space-around;
-
         .text-content h4 {
           .skew(25deg, -2deg);
 
@@ -24,6 +23,15 @@
       flex-direction: column;
     }
 
+    .text-content {
+      .btn.btn-features {
+        .custom-button;
+      }
+
+      .btn.btn-about {
+        .custom-button(120px, 15px, orange);
+      }
+    }
 
     }
 
@@ -35,6 +43,20 @@
 
     .bottom-content {
         .flex-content-space-around;
+
+        .text-content {
+          .btn.btn-services {
+            .custom-button(129px, 15px, yellow);
+          }
+
+          .btn.btn-product {
+            .custom-button(100px, 15px, green);
+          }
+
+          .btn.btn-vision {
+            .custom-button(170px, 15px, purple);
+          }
+        }
 
         @media @phone {
       flex-direction: column;
@@ -50,6 +72,8 @@
           @media @phone {
         .fit-text;
       }
+
+
         }
     }
 
