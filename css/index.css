@@ -286,7 +286,8 @@ h4:hover {
   text-align: center;
 }
 .text-content button:hover {
-  box-shadow: 0 4px #EFA424;
+  box-shadow: 0 4px #a16a0c;
+  background: #b97603;
   top: 2px;
 }
 .text-content button:active {
