@@ -15,7 +15,30 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body{
+    .theme(@mode);
+}
+
 .container {
-    width: 880px;
+    max-width: @max-width;
+    width: 100%;
     margin: auto;
+    .theme(@mode);
+}
+
+section img{
+    @media @tab-desk-brkpnt{
+        display: none;
+    }
+}
+
+.text-content {
+    @media @phn-tab-brkpnt{
+        padding-bottom: 20px;
+        margin-top: 14px;    
+    }
 }
