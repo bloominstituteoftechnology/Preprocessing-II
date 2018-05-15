@@ -10,6 +10,7 @@
 	background-clip:         padding-box;
 }
 
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
@@ -35,3 +36,27 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+
+// Create your own custom button mixin that passes values for width, height,
+//  and background color. Once you have created this mixin, introduce a button
+//   to the bottom of each .text-content div. Create unique text for each 
+//   button to match the header. Example: The heading "Features" could have 
+//   a button that reads "See Features." Be creative!
+
+.new-button {
+
+		border: 1px double black;
+		font-size: 16px;
+		background: white;
+		width: 170px;
+		height: 32px;
+		margin-top: 10px;
+		cursor: pointer;
+
+			// button:hover {
+			// 	background: black;
+			// 	color: @text-color;
+			// }// button hover
+	} //button
+	
