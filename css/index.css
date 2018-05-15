@@ -147,6 +147,7 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -233,7 +234,7 @@ header .logo:hover {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9.3181% 0 0;
 }
 @media (max-width:768px) {
   .cta .cta-text {
@@ -247,7 +248,7 @@ header .logo:hover {
   border: 1px double black;
   font-size: 16px;
   background: white;
-  width: 170px;
+  width: 43.4938%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -260,6 +261,7 @@ header .logo:hover {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  padding: 1px 1.7%;
 }
 .cta .cta-text button:hover {
   background: white;
@@ -273,6 +275,7 @@ header .logo:hover {
   -moz-transform: rotate(10deg);
   -ms-transform: rotate(10deg);
   -o-transform: rotate(10deg);
+  width: 43.1%;
 }
 @media (max-width:768px) {
   .cta img {
@@ -295,12 +298,15 @@ header .logo:hover {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .top-content .text-content {
+  font-size: 1.6rem;
 }
 .main-content .top-content .text-content button {
   width: 125px;
