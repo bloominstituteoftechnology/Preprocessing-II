@@ -1,29 +1,84 @@
 // Header Styles
 
 header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  font-size: 1.6rem;
+
+  @media @tablet {
+    flex-wrap: wrap;
+  }
+
+  @media @phone {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav {
+    margin-top: 40px;
+    width: 69%;
+    justify-content: space-between;
     display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
+
+    @media @tablet {
+      width: 100%;
+      margin: 38px 3%;
+    }
+
+    @media @phone {
+      width: 100%;
       display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+
+      &:first-child {
+          border-top: 1px solid gray;
       }
     }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+
+    a {
+      text-decoration: none;
+      color: #b0b0b0;
+
+      @media @tablet {
+        font-size: 1.6rem;
+      }
+
+      @media @phone {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: black;
+
+        @media @phone {
+          background: gray;
+        }
+
+      }
     }
-  }// header 
+  }
+
+  .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 10%;
+
+    @media @tablet {
+      order: -1;
+      display: block;
+      margin: 30px auto 0;
+    }
+
+    @media @phone {
+      order: -1;
+      margin: 20px 0;
+    }
+  }
+}// header
