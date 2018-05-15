@@ -30,8 +30,18 @@
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
+	-webkit-transform: skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.custom-button(@color: black, @b-width: 1px , @height: 30px, @width: 100px, @margin-top: 15px) {
+    border: @b-width solid @color;
+		height: @height;
+		width: @width;
+		margin-top: @margin-top;
+		.box-shadow(5px 10px @some-color);
+
+
 }
