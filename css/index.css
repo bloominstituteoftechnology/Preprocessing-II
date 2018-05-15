@@ -274,7 +274,7 @@ header .logo {
 }
 @media (max-width:768px) {
   .cta .cta-text {
-    margin-left: 4%;
+    margin-left: 16%;
     color: #994185;
   }
 }
