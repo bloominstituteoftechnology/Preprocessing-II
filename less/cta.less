@@ -25,9 +25,24 @@
         margin-top: 10px;
         cursor: pointer;
 
+        //mix-in border-radius
+        .border-radius (70px);
+
+        //mix-in box-shadow 
+        .box-shadow (15px 7px 7px blue);
+
+
+
         &:hover {
             background: black;
             color: white;
+
+            //mixin: rotate
+            .rotate(90deg);
+
+            //mixin: skew
+            .skew(30deg, 70deg);
+
         }
     }
 }// cta
