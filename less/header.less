@@ -3,6 +3,16 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @max768 {
+      font-size: 14px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
   
     nav {
       margin-top: 40px; 
@@ -10,6 +20,20 @@ header {
       justify-content: space-between;
       display: flex;
 
+      @media @max768 {
+        width: 100%;
+        font-size: 1.6rem; 
+        justify-content: space-around;
+        margin-top: 42px;
+        margin-right: 1.7%;
+      }
+
+      @media @max400 {
+        font-size: 2rem;
+        flex-direction: column;
+        margin-top: 13px;
+      }
+      
   
       a {
         text-decoration: none;
@@ -18,7 +42,14 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
-  
+
+            @media @max400 {
+              border-bottom: 1px solid;
+              margin: 0;
+              align: center;
+              padding: 4% 0;
+              text-align: center;
+          }
         }
       }
     }
@@ -27,5 +58,13 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .rotate (@deg: 30deg);
+
+        @media@max768 {
+          order: -1;
+          align-self: center;
+          margin-top: 26px;
+          margin-left: auto;
+          margin-right: auto;
+      }
     }
   }// header 
