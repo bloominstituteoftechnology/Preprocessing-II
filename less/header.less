@@ -1,31 +1,29 @@
 // Header Styles
-
 header {
-    width: 100%;
-    display: flex;
-    background-color: @header-background-color;
-    .flex-container;
-  
-    nav {
-      width: 610px;
-      .flex-container;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-        .button;
+  width: 100%;
+  display: flex;
+  background-color: @header-bg-color;
+  .flex-container;
+  .major-structure(@header-bg-color);
 
-        &:hover {
-            text-decoration: underline;
-            color: black;
-            .button-hover;
-  
-        }
+  nav {
+    width: 610px;
+    .flex-container;
+
+    a {
+      .button;
+      text-decoration: none;
+      color: #b0b0b0;
+
+      &:hover {
+        text-decoration: underline;
+        color: black;
+        .button-hover;
       }
     }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 20px auto;
-    }
-  }// header 
+  }
+  .logo {
+    align-self: flex-end;
+    margin: 20px auto;
+  }
+} // header

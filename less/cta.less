@@ -2,21 +2,35 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
     justify-content: flex-end;
+    .major-structure(@cta-border-color);
+
+    .cta-element() {
+        padding: 10px 5% 10px 5%;
+        width: 50%;
+    }
+
+    img {
+        .cta-element;
+        background-color: @cta-img-bg-color;
+    }
 
     .cta-text {
-        font-size: 72px;
+        .cta-element;
+        background-color: @cta-text-bg-color;
+        color: @cta-text-color;
+        font-size: 6rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
     }
 
     .cta-text button {
+        .button();
+
         border: 1px double black;
         font-size: 16px;
         background: white;

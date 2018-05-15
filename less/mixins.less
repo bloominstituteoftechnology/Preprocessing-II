@@ -18,8 +18,8 @@
 
 .box-shadow (@string) {
 	-webkit-box-shadow: @button-shadow @string;
-	-moz-box-shadow:    @button-shadow @string;
-	box-shadow:         @button-shadow @string;
+	-moz-box-shadow:    2xxxxxpx 2px @string; 
+	box-shadow:         2px 2px @string;
 }
 
 .rotate (@deg) {
@@ -56,4 +56,12 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.major-structure ( @color ) {
+	border: 2px solid darken(@color, 20%);
+
+	&:first-child {
+		border-bottom: 0px;
+	}
 }
