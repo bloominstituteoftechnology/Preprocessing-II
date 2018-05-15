@@ -7,19 +7,52 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   
+   @media @phone {
+		margin: 75px 5% 25px 5%;
+		display: block;
+	   }
 
    .top-content {
         display: flex;
         justify-content: space-around;
         
         button {
-         .button (160px, 50px, yellow);
+         .button (160px, 50px, @turquoise);
         }
+        
+        @media @phone {
+				display: block;
+			}
+			.text-content {
+				@media @tablet {
+					padding: 0 1.5%;
+					line-height: 120%;
+				}
+				
+				@media @phone {
+					padding: 13px 0;
+					line-height: 1.9rem;
+				}
+         }
     }
-
-    .middle-img {
-        display: block;
-        margin: 30px auto;
+   
+   .middle-img {
+       display: block;
+       margin: 30px auto;
+       
+       &:hover {
+         .opacity ();
+       }
+         
+        @media @tablet {
+         	width: 100%;
+      	}
+			
+			@media @phone {
+				margin: 27px 0 0 .13%;
+			}
+       
     }
 
     .bottom-content {
@@ -31,7 +64,24 @@
         }
         
         button {
-         .button (120px, 40px, white);
+         .button (120px, 40px, @sulu);
         }
+        
+        @media @phone {
+					display: block;
+					height: 460px;
+					margin-top: 3%;
+			}
+         
+         .text-content {
+            @media @tablet {
+					padding: 0 1.05%;
+				}
+				
+				@media @phone {		
+					padding: 17px 0;
+					line-height: 1.9rem;
+				}
+         }
     }
 }// main-content
