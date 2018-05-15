@@ -409,6 +409,24 @@ header .logo {
     padding: 0 2.77% 35px 0;
   }
 }
+.main-content button {
+  margin: 12px 0 0 0;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background-color: #2db5e4;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
 @media (max-width: 768px) {
   .contact {
     padding: 0 1.37%;
