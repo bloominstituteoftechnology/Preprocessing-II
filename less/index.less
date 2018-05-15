@@ -1,6 +1,44 @@
+//Imports of Less Files
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "general-styles";
+@import "header";
+@import "cta";
+@import "main-content";
+@import "contact";
+@import "footer";
+
+// Media Query Variables
+@tablet: ~ "(max-width:768px)";//Tablet
+@phone: ~ "(max-width:400px)";//Phone
 
 
+// Applied Mix-Ins
+.cta-text button {
+    .opacity(.25);
+    .box-shadow(10px 10px blue);
 
+    @media @tablet {
+        .opacity(.15);
+    }
+}
+
+.text-content {
+    .border-radius(5px);
+}
+
+.logo {
+    .rotate(20deg);
+
+    @media @phone {
+        .rotate(10deg);
+    }
+}
+
+.cta img {
+    .skew(20deg,35deg);
+}
 
 
 
