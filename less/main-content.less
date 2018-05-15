@@ -3,23 +3,75 @@
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   margin: 75px 5% 35px 5%;
+   padding: 35px 3%;
+   font-size: 1.6rem;
    line-height: 18px;
    border-right: 2px solid black;
    border-left: 2px solid black;
    .border-radius;
+
+   @media @tablet{
+        align-self: center;
+        margin-top: 60px;
+        width: 97%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-left: 5%;
+   }
+
+   @media @phone{
+       width:90%;
+       padding-top: 15px;
+   }
    
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet{
+            flex-direction: row;
+        }
+
+        @media @phone{
+            flex-direction: column;
+        }
+        .text-content{
+            @media @tablet{
+                margin-right:2.8%;
+            }
+
+            @media @phone{
+                margin-top: 35px;
+            }
+
+            button{
+                .button-mixin;
+            }
+
+            p{
+                @media @tablet{
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 
     .middle-img {
         display: block;
+        width: 100%;
         margin: 30px auto;
 
+        @media @tablet{
+            margin-top: 20px;
+            padding-top: 15px;
+        }
+
+        @media @phone{
+            height: 92px;
+            margin-top: 30px;
+            padding-top: 15px;
+        }
         &:hover{
             .skew(5deg, 5deg);
         }
@@ -30,8 +82,42 @@
         display: flex;
         justify-content: space-around;
 
+        @media @tablet{
+            flex-direction: row;
+        }
+
+        @media @phone{
+            flex-direction: column;
+        }
+        .text-content{
+            @media @tablet{
+                margin-bottom: 60px;
+            }
+
+            @media @phone{
+                margin-bottom: 42px;
+            }
+            
+            h4{
+                @media @tablet{
+                    padding-bottom: 9px;
+                    margin: 0px;
+                    margin-bottom: 1px;
+                }
+            }
+
+            p{
+                @media @tablet{
+                    padding-top: 1px;
+                }
+            }
+
+            button{
+                .button-mixin(60%);
+            }
+        }
         p {
-            padding-right: 20px;
+            padding-right: 5.6%;
         }
     }
 }// main-content
