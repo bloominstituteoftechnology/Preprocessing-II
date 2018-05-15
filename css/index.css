@@ -425,9 +425,11 @@ header .logo {
   -moz-transform: skew(-15deg, -15deg);
   -ms-transform: skew(-15deg, -15deg);
   -o-transform: skew(-15deg, -15deg);
+  margin: 20px 0;
 }
 .contact p {
-  margin: 20px 0;
+  color: purple;
+  font-size: 30px;
 }
 footer {
   text-align: center;
