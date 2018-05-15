@@ -333,6 +333,9 @@ header .logo {
   font-weight: bold;
   padding: 10px;
 }
+.main-content .text-content .btn-learn-more:hover {
+  background: #8f7900;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
