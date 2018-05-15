@@ -35,3 +35,17 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.unique-button (@width, @height, @bgcolor) {
+	color: @bg;
+	.border-radius (10px);
+	width: @width;
+	height: @height;
+	background: @bgcolor;
+	font-size: 16px;
+	padding: 5px;
+	margin-top: 20px;
+	&:hover {
+		background: darken(@bgcolor, 20%);
+	}
+}
