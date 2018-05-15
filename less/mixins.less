@@ -35,3 +35,12 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.my-btn (@btn-height, @btn-width, @btn-color){
+	height: @btn-height;
+	width: @btn-width;
+	background:@btn-color;
+	&:hover{
+			background: darken(@btn-color, 20%);
+		}
+}
