@@ -8,14 +8,26 @@
    font-size: 16px;
    line-height: 18px;
 
+
    .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
+     display: flex;
+     justify-content: space-around;
+     
+     h1 {
+       .skew(15deg, 15deg);
+     }
+    
+   }
 
     .middle-img {
-        display: block;
-        margin: 30px auto;
+      display: block;
+      margin: 30px auto;
+      .opacity(0.8);
+      &:hover {
+        .skew(-15deg, 0deg);
+        border: 2px solid @on-hover-bg;
+        .opacity(1);
+      }
     }
 
     .bottom-content {

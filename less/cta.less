@@ -17,7 +17,7 @@
     }
 
     .cta-text button {
-        border: 1px double black;
+        border: 1px solid black;
         font-size: 16px;
         background: white;
         width: 170px;
@@ -25,10 +25,12 @@
         margin-top: 10px;
         cursor: pointer;
         .box-shadow(10px 5px 5px black);
+        .border-radius(7px);
 
         &:hover {
-            background: black;
-            color: white;
+            background: @on-hover-bg;
+            color: black;
+            border: 2px solid black;
         }
     }
 }// cta
