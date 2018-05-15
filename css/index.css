@@ -195,6 +195,7 @@ header nav {
   width: 69.3181%;
   justify-content: space-between;
   display: flex;
+  font-size: 1.6rem;
 }
 header nav a {
   text-decoration: none;
