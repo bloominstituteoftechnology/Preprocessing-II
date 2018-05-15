@@ -35,3 +35,40 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.custom-button(@color: black, @btn-height: 30px, @btn-length: 100px, @background: lightgray, @darken) {
+	border: 1px solid black;
+	height: @btn-height;
+	width: @btn-length;
+	background: @background;
+	color: @color;
+
+	&:hover{
+		background: darken(@background, @darken);
+	}
+
+#header {
+	.nav {
+		margin-top: 40px; 
+		width: 610px;
+		justify-content: space-between;
+		display: flex;
+	
+		a {
+		text-decoration: none;
+		color: #b0b0b0;
+	
+		&:hover {
+			text-decoration: underline;
+			color: black;
+	
+		}
+		}
+	}
+	
+	.logo {
+		align-self: flex-end;
+		margin: 28px 0 0 91px;
+	}
+}
+}
