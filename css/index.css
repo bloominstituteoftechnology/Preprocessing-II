@@ -133,6 +133,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -146,10 +147,22 @@ h5 {
 .container {
   width: 880px;
   margin: auto;
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 header nav {
   margin-top: 40px;
@@ -157,9 +170,31 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    padding: 0 2.6%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 400px) {
+  header nav a {
+    text-decoration: none;
+    text-align: center;
+    border-top: .1rem solid #b0b0b0;
+    padding: 5% 0;
+    font-size: 2rem;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -173,10 +208,36 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    margin: 3.64583% 0 0 0;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    margin-top: 5%;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+    margin-top: 10.25%;
+    margin-right: 4.25%;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 0;
+    margin-right: 0;
+    padding-top: 12.5%;
+    border-top: .1rem solid #b0b0b0;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -187,6 +248,12 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+    padding-bottom: 3%;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -203,6 +270,17 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+@media (max-width: 768px) {
+  .cta .cta-text button {
+    margin-top: 4.75%;
+    margin-right: 2.25%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    margin-top: 5.1352276%;
+  }
+}
 .cta .cta-text button:hover {
   background: black;
   color: white;
@@ -216,6 +294,11 @@ header .logo {
   -ms-transform: rotate(325deg);
   -o-transform: rotate(325deg);
 }
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -224,9 +307,37 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin: 7% 1% 4.5572916% 1%;
+    padding-bottom: 6.5%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .top-content h4 {
+    padding: 1% 2%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content h4 {
+    flex-direction: column;
+    margin-left: 0.525%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content .text-content {
+    margin: 2.645432% 0;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -235,12 +346,45 @@ header .logo {
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    max-width: 98%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content h4 {
+    letter-spacing: .1rem;
+    margin-left: 8.24168%;
+    margin-bottom: 4.120992%;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content p {
+    padding: 0 8.24198%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content .text-content {
+    margin: 2.6315789% 0;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 5%;
+    margin-left: 2.5%;
+  }
 }
 .contact p {
   margin: 20px 0;
@@ -248,4 +392,9 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+@media (max-width: 768px) {
+  footer {
+    margin-top: 5.75%;
+  }
 }
