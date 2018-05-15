@@ -18,8 +18,8 @@
 
 .box-shadow (@string) {
 	-webkit-box-shadow: @button-shadow @string;
-	-moz-box-shadow:    2xxxxxpx 2px @string; 
-	box-shadow:         2px 2px @string;
+	-moz-box-shadow:    @button-shadow @string; 
+	box-shadow:         @button-shadow @string;
 }
 
 .rotate (@deg) {
@@ -36,20 +36,21 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.button (@width: 60px, @height: 20px) {
+.button (@color: @button-color, @button-text: @button-text-color, @width: 60px, @height: 20px) {
 	.border-radius;
 	width: @width;
 	height: @height;
-	background-color: @button-color;
-	color: @button-text-color;
-	.box-shadow(darken(@button-color, 10));
+	background-color: @color;
+	color: @button-text;
+	border: 1px solid darken(@button-color, 20%);
+	.box-shadow(darken(@button-color, 20%));
 	display: flex;
 	justify-content: center;
 }
 
-.button-hover {
+.button-hover(@color: @button-text-color) {
 	.rotate(10deg);
-	color: lighten(@button-text-color, 20);
+	color: lighten(@color, 20);
 }
 
 .flex-container {

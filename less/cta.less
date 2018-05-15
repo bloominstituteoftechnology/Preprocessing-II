@@ -29,19 +29,18 @@
     }
 
     .cta-text button {
-        .button();
+        .button(@button-text: darken(@contessa, 30%));
 
-        border: 1px double black;
         font-size: 16px;
-        background: white;
+        background-color: (lighten(@laser, 40%));
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
 
         &:hover {
-            background: black;
-            color: white;
+            .button-hover(@contessa);
+            background-color: @waikawa-gray;
         }
     }
 }// cta
