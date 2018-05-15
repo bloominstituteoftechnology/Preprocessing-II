@@ -205,6 +205,12 @@ header .logo:hover {
   -moz-box-shadow: 5px 5px gray;
   box-shadow: 5px 5px gray;
 }
+.cta img:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -228,6 +234,12 @@ header .logo:hover {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+}
+.main-content .middle-img:hover {
+  -webkit-transform: skew(5deg, 5deg);
+  -moz-transform: skew(5deg, 5deg);
+  -ms-transform: skew(5deg, 5deg);
+  -o-transform: skew(5deg, 5deg);
 }
 .main-content .bottom-content {
   display: flex;
