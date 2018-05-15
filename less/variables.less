@@ -1,3 +1,23 @@
 // Variables
 
 @some-color: blue;
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
+.my-button(@btn-width: 80px, @btn-height: 20px, @btn-background, @btn-hover){
+    width: @btn-width;
+    height: @btn-height;
+    background: @btn-background;
+    font-size: 16px;
+
+    @media @tablet {
+        background: rgb(241, 241, 172);
+    }
+    @media @phone {
+        background: rgb(245, 182, 182);
+    }
+
+    &:hover {
+        background: darken(@btn-hover, 20%);
+      }
+}

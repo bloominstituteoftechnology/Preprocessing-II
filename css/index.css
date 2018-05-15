@@ -1,0 +1,421 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container {
+  width: 880px;
+  margin: auto;
+}
+header {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+header nav {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 59%;
+    margin-left: 3%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+@media (max-width: 400px) {
+  header nav a:hover {
+    background: #af82d3;
+  }
+}
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    display: block;
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    margin: 0px 20px;
+  }
+}
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cta .cta-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cta img {
+    max-width: 100%;
+    margin-right: 2%;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
+  }
+}
+.cta img button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.cta img button:hover {
+  background: black;
+  color: white;
+}
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin: 75px 2% 35px;
+  }
+}
+.top-content {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+  }
+}
+.top-content .text-content button {
+  width: 100px;
+  height: 40px;
+  background: #bc7de0;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .top-content .text-content button {
+    background: #f1f1ac;
+  }
+}
+@media (max-width: 400px) {
+  .top-content .text-content button {
+    background: #f5b6b6;
+  }
+}
+.top-content .text-content button:hover {
+  background: #693737;
+}
+@media (max-width: 768px) {
+  .top-content .text-content button {
+    background: #f1f1ac;
+  }
+}
+@media (max-width: 400px) {
+  .top-content .text-content button {
+    background: #f5b6b6;
+  }
+}
+.top-content .text-content button:hover {
+  background: #693737;
+}
+.middle-img {
+  display: block;
+  margin: 30px auto;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+}
+.bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
+.bottom-content .text-content button {
+  width: 100px;
+  height: 30px;
+  background: #85e485;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .bottom-content .text-content button {
+    background: #f1f1ac;
+  }
+}
+@media (max-width: 400px) {
+  .bottom-content .text-content button {
+    background: #f5b6b6;
+  }
+}
+.bottom-content .text-content button:hover {
+  background: #3b2296;
+}
+@media (max-width: 768px) {
+  .bottom-content .text-content button {
+    background: #f1f1ac;
+  }
+}
+@media (max-width: 400px) {
+  .bottom-content .text-content button {
+    background: #f5b6b6;
+  }
+}
+.bottom-content .text-content button:hover {
+  background: #3b2296;
+}
+p {
+  padding-right: 20px;
+}
+.contact p {
+  margin: 20px 0;
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  -webkit-transform: skew(10deg, 10deg);
+  -moz-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  -o-transform: skew(10deg, 10deg);
+}

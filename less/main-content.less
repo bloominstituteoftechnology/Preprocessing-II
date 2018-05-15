@@ -1,3 +1,26 @@
+//Variables
+
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
+
+.my-button(@btn-width: 80px, @btn-height: 20px, @btn-background, @btn-hover){
+        width: @btn-width;
+        height: @btn-height;
+        background: @btn-background;
+        font-size: 16px;
+
+    @media @tablet {
+        background: rgb(241, 241, 172);
+    }
+    @media @phone {
+        background: rgb(245, 182, 182);
+    }
+
+    &:hover {
+        background: darken(@btn-hover, 20%);
+}
+}
+
 // Main Content Styles
 
 .main-content {
@@ -8,22 +31,53 @@
    font-size: 16px;
    line-height: 18px;
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
+   @media @tablet {
+      margin: 75px 2% 35px;
+  }
+}
 
-    .middle-img {
+.top-content {
+    display: flex;
+    justify-content: space-around;
+
+    @media @phone {
+        flex-wrap: wrap;
+        height: 300px;
+}
+}
+
+.top-content .text-content button {
+    .my-button(100px, 40px, rgb(188, 125, 224), rgb(170, 92, 92));
+}
+
+.middle-img {
         display: block;
         margin: 30px auto;
+        .opacity(.6);
+
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+          }
     }
 
-    .bottom-content {
+.bottom-content {
         display: flex;
         justify-content: space-around;
 
-        p {
-            padding-right: 20px;
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+          }
         }
-    }
-}// main-content
+
+.bottom-content .text-content button {
+    .my-button(100px, 30px, rgb(133, 228, 133), rgb(103, 72, 214));
+}
+
+p {
+    padding-right: 20px;
+}
+
+//main-content
