@@ -14,6 +14,7 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+		.rotate(-30deg);
     }
 
     .cta-text button {
@@ -24,10 +25,19 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+		position:absolute;
+		top:200px;
+		left:340px;	
+		.rotate(180deg);
 
         &:hover {
             background: black;
             color: white;
         }
     }
+	img {
+		.box-shadow (@values);
+	
+		//go to mixins.less to adjust this
+	}
 }// cta

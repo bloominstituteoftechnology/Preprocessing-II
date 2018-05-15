@@ -7,6 +7,13 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+	background-image: linear-gradient(90deg, blue, green);
+		@media (@tablet){
+	background-image: linear-gradient(90deg, @color_list);
+	}	 
+		@media (@phone){
+	background-image: linear-gradient(90deg, @tablet_colors);
+	}
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,4 +25,5 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+	background:fade(white, 60%);
 }

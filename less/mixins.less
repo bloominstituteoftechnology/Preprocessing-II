@@ -1,5 +1,24 @@
 // Mixins below variables
 
+@values:15px 15px 5px 0 black;
+@color_list: #FF3399, red, #FF6600, yellow;
+@tablet_colors: yellow, #CCFF00, #66CC00, green;
+@rb: red, orange, yellow, green, blue, indigo, violet;
+@rb_hover: darken(red, 20%), darken(orange, 20%), darken(yellow, 20%), darken(green, 20%), darken(blue, 20%), darken(indigo, 20%), darken(violet, 20%);
+@tablet: ~'max-width: 768px';
+@phone: ~'max-width: 400px';
+
+
+.custom-button (@wid:100px; @hig:100px; @bgi:@rb; @bgi_hover:@rb_hover){
+	.rotate(100deg);
+	width:@wid;
+	height:@hig;
+	background-image:radial-gradient(circle, @bgi);
+	&:hover{
+	background-image:radial-gradient(circle, @bgi_hover);
+	}
+}
+
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
