@@ -35,3 +35,31 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+
+  .custom-button(@btn-width: 140px, @btn-height: 35px, @btn-background, @btn-hover) {
+	width: @btn-width;
+	height: @btn-height;
+	background: @btn-background;	
+	color: black;
+
+	.border-radius(10px);
+
+	&:hover {
+	  background: darken(@btn-hover, 20%);
+	}
+
+	@media @tablet {
+		background:lightblue;
+		&:hover {
+			background: darken(lightblue, 20%);
+		  }
+	}
+
+	@media @phone {
+		&:hover {
+			background: darken(lightgreen, 20%);
+		  }
+		background:lightgreen;
+	}
+  }

@@ -8,22 +8,54 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+    font-size: 1.4rem;
+    margin: 75px 2% 35px;
+  }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+        }
+
+            button {
+                .custom-button(150px, 50px, pink, pink);
+            }
+
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+          }
+
+        .opacity(0.5)
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;;
+            }
+
         p {
             padding-right: 20px;
+        }
+
+        button {
+            .custom-button(150px, 50px, pink, pink)
         }
     }
 }// main-content
