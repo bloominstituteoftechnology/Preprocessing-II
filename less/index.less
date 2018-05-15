@@ -1,13 +1,191 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "general-styles";
+@import "header";
+@import "cta";
+@import "main-content";
+@import "contact";
+@import "footer";
 
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
+.cta img { 
+    .opacity;
+    .rotate(20deg);
+}
 
+.middle-img {
+    .border-radius(10px);
+}
 
+.cta-text button {
+    .box-shadow(10px 5px 5px rgb(49, 49, 145));
+    .skew(10deg, 5deg);
+}
 
+.text-content button {
+    border: 1px double black;
+    font-size: 16px;
+    background: rgb(49, 49, 145);
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+    .box-shadow(10px 5px 5px rgb(49, 49, 145));
+}
 
+.text-content button:hover {
+    background: darken(rgb(49, 49, 145), 20%);
+    color: white;
+  }
 
+.container {
+    @media @tablet {
+        width: 100%;
+    }
 
+    /* Header Styles */
 
+    header {
+        @media @tablet {
+            flex-wrap: wrap;
+        }
 
+        @media @phone {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
+        nav {
+            @media @tablet {
+                width: 100%;
+                margin: 38px 3%;
+            }
 
+            @media @phone {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                align-items: center;
+            }
 
+            a {
+                @media @phone {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    padding: 20px 0;
+                    font-size: 2rem;
+                    border-bottom: 1px solid gray;
+                }
+            }
+
+            a:hover {
+                @media @phone {
+                    background: gray;
+                }
+            }
+        }
+
+        @media @phone {
+            nav:first-child {
+                border-top: 1px solid gray;
+            }
+        }
+
+        .logo {
+            @media @tablet {
+                order: -1;
+                display: block;
+                margin: 30px auto 0;
+            }
+
+            @media @phone {
+                order: -1;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    /* Call To Action (CTA) Styles */
+
+    .cta {
+        @media @tablet {
+            justify-content: center;
+        }
+
+        @media @phone {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cta-text {
+            @media @tablet {
+                margin: 0 5% 0 0;
+            }
+
+            @media @phone {
+                margin: 0;
+            }
+        }
+
+        @media @tablet {
+            img {
+                display: none;
+            }
+        }
+
+        @media @phone {
+            img {
+                display: block;
+                max-width: 80%;
+                margin: 55px 0 0 0;
+            }
+        }
+    }
+    /* Main Content Styles */
+
+    .main-content {
+        @media @tablet {
+            font-size: 1.025rem;
+            margin: 75px 2% 35px;
+        }
+
+        .top-content {
+            @media @phone {
+                flex-wrap: wrap;
+                height: 300px;
+            }
+        }
+
+        .middle-img {
+            @media @tablet {
+                width: 100%;
+                margin: 25px auto;
+            }
+        }
+
+        .bottom-content {
+            .top-content;
+
+            @media @phone {
+                flex-wrap: wrap;
+                align-content: space-between;
+                height: 440px;
+            }
+        }
+    }
+    
+    /* Contact Styles */
+
+    @media @tablet {
+        .contact {
+            margin: 20px 2%;
+        }
+    }
+}
