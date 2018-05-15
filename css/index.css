@@ -132,7 +132,7 @@ table {
 }
 .button-char {
   padding: 5px 30px;
-  background: teal;
+  background: #00FFFF;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -321,7 +321,7 @@ header .logo {
 }
 .main-content button {
   padding: 5px 30px;
-  background: teal;
+  background: #00FFFF;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -334,8 +334,7 @@ header .logo {
   height: 35px;
 }
 .main-content button:hover {
-  background: green;
-  color: black;
+  background: #009999;
   cursor: pointer;
 }
 .main-content .top-content {
