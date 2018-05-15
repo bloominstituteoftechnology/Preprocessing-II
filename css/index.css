@@ -329,10 +329,13 @@ header .logo {
 .main-content .text-content .btn {
   height: 50px;
   width: 100px;
-  background: #aaa;
+  background: #56f075;
   border-radius: 10px;
   border: 3px solid black;
   margin: 10px 5px;
+}
+.main-content .text-content .btn:hover {
+  background: #12ce38;
 }
 .main-content .middle-img {
   display: block;

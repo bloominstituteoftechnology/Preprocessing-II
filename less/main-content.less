@@ -35,7 +35,14 @@
         }
 
         .btn {   
-            .custom-btn(@height: 50px, @width: 100px, @bg: #aaa)
+            @height: 50px;
+            @width: 100px; 
+            @bg: hsl(132, 84%, 64%);
+            .custom-btn(@height, @width, @bg);
+
+            &:hover {
+                background: darken(@bg, 20%)
+            }
         }
         
     }
