@@ -10,7 +10,9 @@
 @import "contact.less";
 @import "footer.less";
 
-button {
+//Mixin implementations
+
+.cta button {
     .border-radius();
     &:hover {
         .box-shadow(
@@ -41,6 +43,10 @@ h4 {
 
 .middle-img {
     .border-radius();
+}
+
+.text-content button {
+    .custom-button(auto, auto, #FCAD26);
 }
 
 //Media queries

@@ -227,7 +227,7 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
-button {
+.cta button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -235,7 +235,7 @@ button {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-button:hover {
+.cta button:hover {
   -webkit-box-shadow: 0 0 0 5px #999999, 0 0 0 10px #b3b3b3, 0 0 0 15px #cccccc, 0 0 0 20px #e6e6e6;
   -moz-box-shadow: 0 0 0 5px #999999, 0 0 0 10px #b3b3b3, 0 0 0 15px #cccccc, 0 0 0 20px #e6e6e6;
   box-shadow: 0 0 0 5px #999999, 0 0 0 10px #b3b3b3, 0 0 0 15px #cccccc, 0 0 0 20px #e6e6e6;
@@ -264,6 +264,34 @@ h4:hover {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.text-content button {
+  width: auto;
+  height: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background-color: #FCAD26;
+  font-size: 16px;
+  font-weight: 300px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 25px 80px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 6px #EFA424;
+  text-align: center;
+}
+.text-content button:hover {
+  box-shadow: 0 4px #EFA424;
+  top: 2px;
+}
+.text-content button:active {
+  box-shadow: none;
+  top: 6px;
 }
 @media (max-width: 768px) {
   body {
