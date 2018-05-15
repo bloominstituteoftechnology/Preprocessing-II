@@ -151,6 +151,18 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 header nav {
   margin-top: 40px;
   width: 610px;
@@ -161,23 +173,82 @@ header nav {
   -ms-transform: skew(20deg, 10deg);
   -o-transform: skew(20deg, 10deg);
 }
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    margin-left: 38px 3%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav:first-child {
+    border-top: 1px solid gray;
+  }
+}
 header nav a {
   font-size: 30px;
   text-decoration: none;
   color: #c90c0c;
 }
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
+}
 header nav a:hover {
   text-decoration: underline;
   color: black;
+}
+@media (max-width: 400px) {
+  header nav a:hover {
+    background: gray;
+  }
 }
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    display: block;
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    margin: 20px 0;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -192,6 +263,16 @@ header .logo {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -209,6 +290,18 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: block;
+    max-width: 80%;
+    margin: 55px 0 0 0;
+  }
+}
 .main-content {
   border-top: 10px solid black;
   border-bottom: 10px solid black;
@@ -223,9 +316,20 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin: 75px 2% 35px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -234,12 +338,30 @@ header .logo {
   -moz-opacity: 0.2;
   opacity: 0.2;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px 2%;
+  }
 }
 .contact p {
   margin: 20px 0;

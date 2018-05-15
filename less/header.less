@@ -3,6 +3,16 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+     }
+   
+   @media @phone {
+     flex-wrap: wrap;
+     justify-content: center;
+   }
   
     nav {
       margin-top: 40px; 
@@ -10,15 +20,47 @@ header {
       justify-content: space-between;
       display: flex;
       .skew(20deg, 10deg);
+
+      @media @tablet {
+        width: 100%;
+        margin-left: 38px 3%;
+      } //tablet//
+  
+      @media @phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+      } //phone
+  
+      &:first-child {
+        
+        @media @phone {
+          border-top: 1px solid gray;
+        }
+      } //first-child
   
       a {
         font-size: 30px;
         text-decoration: none;
         color: #c90c0c;
+
+        @media @phone {
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          border-bottom: 1px solid gray;
+        } //phone
   
         &:hover {
             text-decoration: underline;
             color: black;
+
+            @media @phone {
+              background: gray;
+            } //phone
   
         }
       }
@@ -27,5 +69,15 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+        } //tablet
+  
+        @media @phone {
+          margin: 20px 0;
+        } //phone
     }
   }// header 
