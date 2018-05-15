@@ -9,6 +9,40 @@
 @import "contact.less";
 @import "footer.less";
 
+button {
+    .border-radius();
+    &:hover {
+        .box-shadow(
+            0 0 0 5px hsl(0, 0%, 60%),
+            0 0 0 10px hsl(0, 0%, 70%),
+            0 0 0 15px hsl(0, 0%, 80%), 
+            0 0 0 20px hsl(0, 0%, 90%););
+    }
+}
+
+h1 {
+    &:hover {
+        .skew(10deg, 10deg);
+    }
+}
+
+h4 {
+    &:hover {
+        .opacity();
+    }
+}
+
+.cta-img {
+    &:hover {
+        .rotate(180deg);
+    }
+}
+
+.middle-img {
+    .border-radius();
+}
+
+
 
 
 

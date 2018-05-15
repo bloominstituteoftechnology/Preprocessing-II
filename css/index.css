@@ -227,3 +227,41 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+button:hover {
+  -webkit-box-shadow: 0 0 0 5px #999999, 0 0 0 10px #b3b3b3, 0 0 0 15px #cccccc, 0 0 0 20px #e6e6e6;
+  -moz-box-shadow: 0 0 0 5px #999999, 0 0 0 10px #b3b3b3, 0 0 0 15px #cccccc, 0 0 0 20px #e6e6e6;
+  box-shadow: 0 0 0 5px #999999, 0 0 0 10px #b3b3b3, 0 0 0 15px #cccccc, 0 0 0 20px #e6e6e6;
+}
+h1:hover {
+  -webkit-transform: skew(10deg, 10deg);
+  -moz-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  -o-transform: skew(10deg, 10deg);
+}
+h4:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.cta-img:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.middle-img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
