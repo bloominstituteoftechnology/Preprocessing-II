@@ -3,27 +3,65 @@
 header {
     width: 100%;
     display: flex;
-  
+
+    @media @tablet {
+      flex-direction: column;
+    }
+
     nav {
-      margin-top: 40px; 
+      margin-top: 40px;
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+
+      @media @tablet {
+        width: 100%;
+        .justify-mixin;
+      }
+
+      @media @phone {
+        flex-direction: column;
+        margin-top: 30px;
+      }
+
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+
+        @media @phone {
+          display: block;
+          text-align: center;
+          border-top: 1px solid grey;
+          padding: 18px 0;
+        }
+
+        &:last-child {
+
+          @media @phone {
+            border-bottom: 1px solid grey;
+          }
+        }
+
         &:hover {
             text-decoration: underline;
             color: black;
-  
+
         }
       }
     }
-  
+
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          margin: 28px 0 0 0px;
+					align-self: center;
+					order: -1;
+        }
+
+        @media @phone {
+          margin: 28px 0 0 10px;
+        }
     }
-  }// header 
+  }// header
