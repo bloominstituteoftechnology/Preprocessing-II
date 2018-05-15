@@ -150,6 +150,12 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 header nav {
   margin-top: 40px;
@@ -204,6 +210,14 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .main-content .top-content {
   display: flex;
