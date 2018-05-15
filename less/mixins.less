@@ -35,3 +35,46 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.flex() {
+	display: flex;
+}
+
+.j-center() {
+	justify-content: center;
+}
+
+.jcenter-flex() {
+	.flex;
+	.j-center;
+}
+
+#heading-styles() {
+	.style1 {
+		font-size: 25px;
+		letter-spacing: 3px;
+		color: #300000;
+	}
+}
+
+#button-styles() {
+	.custom-btn (@btn-width, @btn-height, @btn-background) {
+		width: @btn-width;
+		height: @btn-height;
+		background: @btn-background;
+		color: @cbtn-color;
+		text-align: center;
+		padding: 5px;
+	
+		&:hover {
+			background: darken(@btn-background, 20%);
+		}
+	}
+}
+
+#p-styles() {
+	.style1 {
+		font-size: 22px;
+		color: #900000;
+	}
+}

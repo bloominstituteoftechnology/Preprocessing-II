@@ -1,29 +1,70 @@
 // Header Styles
 
 header {
-    width: 100%;
-    display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
-      display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
-      }
-    }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
-  }// header 
+	width: 100%;
+	.flex;
+
+	@media @tablet {
+		flex-wrap: wrap;
+		.j-center;
+	}
+
+	nav {
+		margin-top: 40px;
+		width: 610px;
+		justify-content: space-between;
+		.flex;
+
+		@media @tablet {
+			.flex;
+			justify-content: space-between;
+			width: 95%;
+		}
+
+		@media @phone {
+			margin-top: 20px;
+			flex-direction: column;
+			align-items: center;
+			.j-center;
+		}
+
+		a {
+			text-decoration: none;
+			color: #b0b0b0;
+
+			@media @phone {
+				.jcenter-flex;
+				font-size: 2rem;
+				padding: 20px 2.87%;
+				width: 105%;
+				border-top: 1px solid black;
+			}
+
+			&:hover {
+				text-decoration: underline;
+				color: black;
+			}
+
+			&:last-child {
+				@media @phone {
+					border-bottom: 1px solid black;
+				}
+			}
+		}
+	}
+
+	.logo {
+		align-self: flex-end;
+		margin: 28px 0 0 91px;
+
+		@media @tablet {
+			.jcenter-flex;
+			order: -1;
+			margin-right: 10.34%;
+		}
+
+		@media @phone {
+			margin-top: 20px;
+		}
+	}
+}// header 
