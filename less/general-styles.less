@@ -8,10 +8,10 @@ html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 	background-image: linear-gradient(90deg, blue, green);
-		@media (max-width: 768px){
+		@media (@tablet){
 	background-image: linear-gradient(90deg, @color_list);
 	}	 
-		@media (max-width: 400px){
+		@media (@phone){
 	background-image: linear-gradient(90deg, @tablet_colors);
 	}
 }
