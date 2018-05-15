@@ -7,20 +7,55 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   
+
+   @media @tablet {
+    border-top: 0.125em solid black;
+    border-bottom: 0.125em solid black;
+    margin: 4.6em 3.12em 2.18em 3.125em;
+    padding: 2.18em 0;
+    font-size: 1em;
+    line-height: 112%;
+   }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        button {
+            .custom-button(100px, 30px, lightgreen, pink);
+            margin-top: 5%;
+        }
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        // Mixin Opacity
+        .opacity(0.5);
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
 
         p {
             padding-right: 20px;
