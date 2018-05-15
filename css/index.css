@@ -173,6 +173,16 @@ header .logo {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  header {
+    background: red;
+  }
+}
+@media (max-width: 401px) {
+  header {
+    background: blue;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
@@ -252,6 +262,9 @@ header .logo {
   -webkit-box-shadow: 5px 10px blue;
   -moz-box-shadow: 5px 10px blue;
   box-shadow: 5px 10px blue;
+}
+.main-content button:hover {
+  background: #6666ff;
 }
 .contact p {
   margin: 20px 0;
