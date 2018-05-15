@@ -9,8 +9,21 @@ header {
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        width: 100%;
+        padding: 0 3.91%;
+      }
+
+      @media @phone {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+      }
   
       a {
+        font-size: 1.6rem;
         text-decoration: none;
         color: #b0b0b0;
   
@@ -19,11 +32,42 @@ header {
             color: black;
   
         }
+
+        @media @phone {
+          width: 100%;
+          display: block;
+          font-size: 2rem;
+          text-align: center;
+          padding: 20px 0;
+          border-bottom: 1px solid grey;
+          &:first-child {
+            border-top: 1px solid grey;
+          }
+        }
       }
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          padding-left: 5%;
+          margin: 30px auto 0;
+        }
+
+        @media @phone {
+          align-self: center;
+          margin: 20px 0;
+        }
+    }
+
+    @media @tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    @media @phone {
+      justify-content: flex-end;
     }
   }// header 

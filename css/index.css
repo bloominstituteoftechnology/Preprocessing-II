@@ -126,6 +126,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.flex-align {
+  flex-flow: column;
+  align-items: center;
+}
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
 * {
   box-sizing: border-box;
 }
@@ -147,6 +155,9 @@ h5 {
   width: 880px;
   margin: auto;
 }
+html {
+  font-size: 62.5%;
+}
 header {
   width: 100%;
   display: flex;
@@ -157,7 +168,22 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    padding: 0 3.91%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
 header nav a {
+  font-size: 1.6rem;
   text-decoration: none;
   color: #b0b0b0;
 }
@@ -165,17 +191,65 @@ header nav a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+  }
+  header nav a:first-child {
+    border-top: 1px solid grey;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 768px) {
+  header .logo {
+    padding-left: 5%;
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    align-self: center;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    justify-content: flex-end;
+  }
 }
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -184,9 +258,19 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    font-size: 5.6rem;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
   width: 170px;
   height: 32px;
@@ -224,21 +308,43 @@ header .logo {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    max-width: 80%;
+  }
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
   -webkit-transform: skew(2deg, 4deg);
   -moz-transform: skew(2deg, 4deg);
   -ms-transform: skew(2deg, 4deg);
   -o-transform: skew(2deg, 4deg);
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin: 75px 2.6% 35px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -257,12 +363,24 @@ header .logo {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    height: 440px;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
 }
 .main-content .text-content button {
   margin-top: 10px;
@@ -273,10 +391,34 @@ header .logo {
 .main-content .text-content button:hover {
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .main-content .text-content button {
+    margin: 0 1.3%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .text-content button {
+    margin: 0;
+  }
+}
+.contact {
+  font-size: 1.6rem;
+}
 .contact p {
   margin: 20px 0;
 }
+@media (max-width: 768px) {
+  .contact {
+    margin: 0 3.91%;
+  }
+}
+@media (max-width: 400px) {
+  .contact {
+    margin: 20px;
+  }
+}
 footer {
+  font-size: 1.6rem;
   text-align: center;
   margin: 40px 0 20px;
 }

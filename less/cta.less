@@ -5,20 +5,36 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        justify-content: center;
+    }
+
+    @media @phone {
+        margin-top: 50px;
+        .flex-align;
+    }
+
     .cta-text {
-        font-size: 72px;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
-        flex-flow: column;
-        align-items: center;
+        .flex-align;
         margin: 0 82px 0 0;
+
+        @media @tablet {
+            margin: 0;
+        }
+
+        @media @phone {
+            font-size: 5.6rem;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.6rem;
         background: white;
         width: 170px;
         height: 32px;
@@ -26,7 +42,6 @@
         cursor: pointer;
 
         .border-radius(15px 50px 30px 5px);
-
         .box-shadow(10px 10px 10px grey);
 
         &:hover {
@@ -36,11 +51,20 @@
     }
 
     img {
+        // create circle shadow
         .border-radius(50%);
         .box-shadow(20px 20px 10px grey);
         &:hover {
             cursor: pointer;
             .rotate(180deg);
+        }
+
+        @media @tablet {
+            display: none;
+        }
+
+        @media @phone {
+            max-width: 80%;
         }
     }
 }// cta
