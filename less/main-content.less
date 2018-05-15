@@ -12,6 +12,12 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        
+        .text-content {   
+            button {
+                .custom-button(@width:100px,@height:40px, @bg:aqua);
+            }
+        }
     }
 
     .middle-img {
@@ -25,6 +31,12 @@
 
         p {
             padding-right: 20px;
+        }
+
+        .text-content {
+            button {
+                .custom-button(@width:100px,@height:40px, @bg:aqua);
+            }
         }
     }
 }// main-content

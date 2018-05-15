@@ -282,6 +282,11 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content button {
+  width: 100px;
+  height: 40px;
+  background: aqua;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -292,6 +297,11 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content button {
+  width: 100px;
+  height: 40px;
+  background: aqua;
 }
 .contact p {
   margin: 20px 0;
