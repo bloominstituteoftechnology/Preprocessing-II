@@ -26,10 +26,18 @@
     .text-content {
       .btn.btn-features {
         .custom-button;
+
+        &:hover {
+          background: darken(@bkg-color, 10%);
+        }
       }
 
       .btn.btn-about {
         .custom-button(120px, 15px, orange);
+
+        &:hover {
+          background: darken(orange, 10%);
+        }
       }
     }
 
@@ -47,14 +55,26 @@
         .text-content {
           .btn.btn-services {
             .custom-button(129px, 15px, yellow);
+
+            &:hover {
+              background: darken(yellow, 10%);
+            }
           }
 
           .btn.btn-product {
-            .custom-button(100px, 15px, green);
+            .custom-button(110px, 15px, green);
+
+            &:hover {
+              background: darken(green, 10%);
+            }
           }
 
           .btn.btn-vision {
             .custom-button(170px, 15px, purple);
+
+            &:hover {
+              background: darken(purple, 10%);
+            }
           }
         }
 

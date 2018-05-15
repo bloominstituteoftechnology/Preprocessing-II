@@ -344,6 +344,9 @@ header .logo {
   box-shadow: 3px 3px;
   margin-top: 10px;
 }
+.main-content .top-content .text-content .btn.btn-features:hover {
+  background: #cc0000;
+}
 .main-content .top-content .text-content .btn.btn-about {
   display: flex;
   justify-content: center;
@@ -353,6 +356,9 @@ header .logo {
   width: 120px;
   box-shadow: 3px 3px;
   margin-top: 10px;
+}
+.main-content .top-content .text-content .btn.btn-about:hover {
+  background: #cc8400;
 }
 .main-content .middle-img {
   display: block;
@@ -373,15 +379,21 @@ header .logo {
   box-shadow: 3px 3px;
   margin-top: 10px;
 }
+.main-content .bottom-content .text-content .btn.btn-services:hover {
+  background: #cccc00;
+}
 .main-content .bottom-content .text-content .btn.btn-product {
   display: flex;
   justify-content: center;
   background: green;
   border: 2px solid gray;
   border-radius: 10px;
-  width: 100px;
+  width: 110px;
   box-shadow: 3px 3px;
   margin-top: 10px;
+}
+.main-content .bottom-content .text-content .btn.btn-product:hover {
+  background: #004d00;
 }
 .main-content .bottom-content .text-content .btn.btn-vision {
   display: flex;
@@ -392,6 +404,9 @@ header .logo {
   width: 170px;
   box-shadow: 3px 3px;
   margin-top: 10px;
+}
+.main-content .bottom-content .text-content .btn.btn-vision:hover {
+  background: #4d004d;
 }
 @media (max-width:400px) {
   .main-content .bottom-content {
