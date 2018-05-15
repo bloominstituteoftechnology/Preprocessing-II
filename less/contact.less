@@ -1,9 +1,26 @@
 // Contact Styles
 
 .contact {
-
+    border: 1px black solid;
+    .border-radius(@radius: 10px);
+    @media @tablet{
+        
+    }
     p {
         margin: 20px 0;
+       
     }
    
+
+
+}.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
 }
+
+

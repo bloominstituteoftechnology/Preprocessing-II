@@ -1,23 +1,34 @@
 // Header Styles
 
 header {
+  
     width: 100%;
     display: flex;
+    @media @tablet{
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-right: 13%;
+    }
+  }
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+      
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+        @media @tablet{
+          justify-content: center;
+        }
   
         &:hover {
             text-decoration: underline;
             color: black;
-  
+            .skew(20deg, 10deg);
         }
       }
     }
@@ -25,5 +36,15 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @tablet{
+          order: -1;
+        }
+        
     }
-  }// header 
+    .skew (@deg, @deg2) {
+      -webkit-transform:       skew(20deg, 20deg);
+      -moz-transform: 	 skew(20deg, 20deg);
+      -ms-transform: 		 skew(20deg, 20deg);
+      -o-transform: 		 skew(20deg, 20deg);
+    }
+  // header 

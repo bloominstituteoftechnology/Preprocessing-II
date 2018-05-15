@@ -16,6 +16,7 @@
     .middle-img {
         display: block;
         margin: 30px auto;
+        .rotate(180deg);
     }
 
     .bottom-content {
@@ -25,5 +26,12 @@
         p {
             padding-right: 20px;
         }
+    }
+
+    .rotate (@deg) {
+        -webkit-transform: rotate(@deg);
+        -moz-transform: 	 rotate(@deg);
+        -ms-transform: 		 rotate(@deg);
+        -o-transform: 		 rotate(@deg);
     }
 }// main-content
