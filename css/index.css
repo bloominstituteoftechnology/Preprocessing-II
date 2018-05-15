@@ -231,6 +231,19 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -241,7 +254,35 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
-.cta .cta-text button {
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text h1 {
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta img {
+    max-width: 100%;
+    margin-right: 2%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta img {
+    display: block;
+    max-width: 80%;
+    margin: 55px 0 0 0;
+  }
+}
+.cta .cta img .cta-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
@@ -256,7 +297,7 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.cta .cta-text button:hover {
+.cta .cta img .cta-text button:hover {
   background: black;
   color: white;
 }
@@ -286,7 +327,7 @@ header .logo {
     height: 300px;
   }
 }
-.main-content .middle-img {
+.main-content .top-content .middle-img {
   display: block;
   margin: 30px auto;
   -webkit-opacity: 0.6;
@@ -294,23 +335,23 @@ header .logo {
   opacity: 0.6;
 }
 @media (max-width: 768px) {
-  .main-content .middle-img {
+  .main-content .top-content .middle-img {
     width: 100%;
     margin: 25px auto;
   }
 }
-.main-content .bottom-content {
+.main-content .top-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 @media (max-width: 400px) {
-  .main-content .bottom-content {
+  .main-content .top-content .bottom-content {
     flex-wrap: wrap;
     align-content: space-between;
     height: 440px;
   }
 }
-.main-content .bottom-content p {
+.main-content .top-content .bottom-content p {
   padding-right: 20px;
 }
 .contact p {

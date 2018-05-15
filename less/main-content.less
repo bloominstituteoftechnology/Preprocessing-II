@@ -1,6 +1,31 @@
-// Main Content Styles
+//Variables
+
 @tablet: ~"(max-width: 768px)";
 @phone: ~"(max-width: 400px)";
+.my-button(@btn-width: 100px, @btn-height: 40px, @btn-background, @btn-hover){
+    width: @btn-width;
+    height: @btn-height;
+    background: @btn-background;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(230, 10, 10);
+    .border-radius(@radius 8px);
+
+    @media @tablet {
+        background: rgb(241, 241, 172);
+    }
+    @media @phone {
+        background: rgb(245, 182, 182);
+    }
+
+    &:hover {
+        background: darken(@btn-hover, 5%);
+}
+}
+
+// Main Content Styles
 
 .main-content {
    border-top: 2px solid black; 
@@ -10,6 +35,7 @@
    font-size: 16px;
    line-height: 18px;
    .box-shadow(12px 12px rgb(142, 205, 224));
+   .my-button(100px, 30px, rgb(188, 125, 224), rgb(170, 92, 92));
 
    @media @tablet {
     margin: 75px 2% 35px;
@@ -18,14 +44,14 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        .my-button(100px, 30px, rgb(188, 125, 224), rgb(170, 92, 92));
 
         @media @phone {
             flex-wrap: wrap;
             height: 300px;
           }
-    }
-
-    .middle-img {
+    
+     .middle-img {
         display: block;
         margin: 30px auto;
         .opacity(.6);
@@ -39,6 +65,7 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        .my-button(100px, 30px, rgb(133, 228, 133), rgb(103, 72, 214));
 
         @media @phone {
             flex-wrap: wrap;
@@ -46,8 +73,10 @@
             height: 440px;
           }
 
-        p {
-            padding-right: 20px;
+      p {
+        padding-right: 20px;
         }
     }
-}// main-content
+    }
+}
+// main-content

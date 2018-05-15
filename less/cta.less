@@ -1,6 +1,31 @@
-// Call To Action (CTA) Styles
+//Variables
+
 @tablet: ~"(max-width: 768px)";
 @phone: ~"(max-width: 400px)";
+.my-button(@btn-width: 100px, @btn-height: 40px, @btn-background, @btn-hover){
+    width: @btn-width;
+    height: @btn-height;
+    background: @btn-background;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(230, 10, 10);
+    .border-radius(@radius 8px);
+
+    @media @tablet {
+        background: rgb(241, 241, 172);
+    }
+    @media @phone {
+        background: rgb(245, 182, 182);
+    }
+
+    &:hover {
+        background: darken(@btn-hover, 5%);
+      }
+}
+
+// Call To Action (CTA) Styles
 
 .cta {
     display: flex;
@@ -34,27 +59,19 @@
       
         @media @phone {
             margin: 0;
-          }
-        h1 {
-            @media @tablet {
-                letter-spacing: 0;
-              }
-        }
-      
+          }     
     }
-    .cta img {
+       img {
         @media @tablet {
             max-width: 100%;
             margin-right: 2%;
     }
     
-          @media @phone {
-            display: block;
-            max-width: 80%;
-            margin: 55px 0 0 0;
+        @media @phone {
+            display: none;
     }
 
-    .cta-text button {
+    button {
         border: 1px double black;
         font-size: 16px;
         background: white;
@@ -70,4 +87,5 @@
         }
     }
 }
-// cta
+}
+// cta 
