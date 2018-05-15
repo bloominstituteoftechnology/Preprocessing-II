@@ -1,4 +1,6 @@
 // Main Content Styles
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
 .main-content {
    border-top: 2px solid black; 
@@ -7,6 +9,20 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+
+	@media @tablet{
+                margin-left: 3%;
+                margin-right: 3%;
+                }
+
+
+        @media @phone{
+                margin-left: 5%;
+                margin-top: 18%;
+                margin-right: 5%;
+                padding-bottom: 4%;
+                }
+
 
    .top-content {
         display: flex;
@@ -18,6 +34,11 @@
 		button{
 		   .custom-button(25%, 25%, gray);
 		}
+	
+	/*button:nth-child(1):hover button:nth-child(1):after{
+        content: 'Features';
+        }*/
+
 
 	}
     }
