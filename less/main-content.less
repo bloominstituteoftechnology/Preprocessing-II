@@ -5,24 +5,44 @@
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
+
+  @media @tablet {
+    font-size: 1.4rem;
+    margin: 75px 2% 35px;
+  }
 
   .top-content {
     display: flex;
     justify-content: space-around;
+
+    @media @phone {
+      flex-wrap: wrap;
+      height: 300px;
+    }
   }
 
     .middle-img {
       display: block;
       margin: 30px auto;
-      .rotate(182deg);
-      .skew(15deg, 10deg);
+      .rotate(180deg);
+
+      @media @tablet {
+        width: 100%;
+        margin: 25px auto;
+      }
     }
 
     .bottom-content {
       display: flex;
       justify-content: space-around;
+
+      @media @phone {
+        flex-wrap: wrap;
+				align-content: space-between;
+				height: 440px;
+      }
 
         p {
           padding-right: 20px;

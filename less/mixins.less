@@ -30,8 +30,27 @@
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
+	-webkit-transform: skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.crazy-text {
+	color: @very-light-cyan;
+	text-shadow: 2px 2px #FF0000;
+}
+
+.custom-btn(@width, @height, @background-color) {
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px @very-light-cyan;
+	color: white;
+
+	&:hover {
+		background-color: darken(@background-color, 20%);
+	}
 }
