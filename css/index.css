@@ -201,6 +201,9 @@ header .logo:hover {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-box-shadow: 5px 5px gray;
+  -moz-box-shadow: 5px 5px gray;
+  box-shadow: 5px 5px gray;
 }
 .main-content {
   border-top: 2px solid black;
