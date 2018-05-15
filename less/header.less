@@ -3,20 +3,65 @@
 header {
     width: 100%;
     display: flex;
-  
+    
+    @media @tablet {
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    @media @phone {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 1px solid black;
+    }
+    
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+      
+      @media @tablet {
+        padding: 10px 0;
+        width: 100%;
+      }
+      
+      @media @phone {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+        margin: 10px 0 0;
+      }
+
       a {
         text-decoration: none;
-        color: #b0b0b0;
+        color: @lime;
+
+        @media @tablet {
+          color: @slateblue
+        }
+
+        @media @phone {
+          color: @aqua;
+          width: 100%;
+          text-align: center;
+          padding: 12px 0;
+          border-top: 1px solid black;
+        }
   
         &:hover {
             text-decoration: underline;
-            color: black;
+            color: @rose;
+
+            @media @tablet {
+              color: @maroon;
+            }
+
+            @media @phone {
+              color: @steelblue;
+            }
   
         }
       }
@@ -25,5 +70,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          align-self: center;
+          padding: 10px 0;
+          order: -1;
+          margin: 28px 0 0;
+        }
     }
   }// header 
