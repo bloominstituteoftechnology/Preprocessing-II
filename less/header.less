@@ -35,10 +35,19 @@ header {
         font-size: 1.6rem;
         text-decoration: none;
         color: #b0b0b0;
+
+        @media @phone {
+          .skew(0deg, 175deg);
+        }
   
         &:hover {
             text-decoration: underline;
             color: black;
+
+            @media @phone {
+              background: @philly-philly;
+              color: white;
+            }
   
         }
 
@@ -53,8 +62,8 @@ header {
             border-top: 1px solid grey;
           }
         }
-      }
-    }
+      }// a
+    }// nav
   
     .logo {
         align-self: flex-end;
@@ -67,13 +76,8 @@ header {
         }
 
         @media @phone {
-          .rotate(-10deg);
           align-self: center;
           margin: 20px 0;
         }
-    }
-
-    
-
-    
+    }// logo
   }// header 
