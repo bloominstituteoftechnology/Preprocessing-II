@@ -131,9 +131,10 @@ table {
   justify-content: space-around;
 }
 .new-button {
+  color: black;
   border: 1px double black;
   font-size: 16px;
-  background: orchid;
+  background: lightgray;
   width: 170px;
   height: 32px;
   margin-top: 10px;
@@ -294,6 +295,16 @@ header nav a .logo {
 .main-content .top-content .text-content {
   width: 49%;
 }
+.main-content .top-content button {
+  color: black;
+  border: 1px double black;
+  font-size: 16px;
+  background: lightgray;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 .main-content .rectangle-img {
   display: block;
   margin: 30px auto;
@@ -311,12 +322,12 @@ header nav a .logo {
   padding-right: 0px;
   width: 100%;
   margin-left: 10px;
-  margin-bottom: 15px;
 }
 .main-content .bottom-content button {
+  color: black;
   border: 1px double black;
   font-size: 16px;
-  background: orchid;
+  background: lightgray;
   width: 170px;
   height: 32px;
   margin-top: 10px;
@@ -327,9 +338,10 @@ header nav a .logo {
   -webkit-box-shadow: red;
   -moz-box-shadow: red;
   box-shadow: red;
+  margin-bottom: 30px;
 }
 .main-content .bottom-content button:hover {
-  background-color: #b52fb0;
+  background-color: #a0a0a0;
 }
 .contact h4 {
   color: turquoise;
