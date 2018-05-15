@@ -207,6 +207,8 @@ header nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #b0b0b0;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2rem;
 }
 @media (max-width: 400px) {
   header nav a {
@@ -430,6 +432,7 @@ header .logo {
 @media (max-width: 400px) {
   .main-content .text-content {
     margin: 5px 0;
+    font-family: "Skranji", cursive;
   }
 }
 .main-content .text-content button {
