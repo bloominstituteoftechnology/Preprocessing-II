@@ -308,8 +308,9 @@ header .logo:hover {
 }
 .main-content .top-content .text-content {
   font-size: 1.6rem;
+  width: 50%;
 }
-.main-content .top-content .text-content button {
+.main-content .top-content button {
   width: 125px;
   height: 32px;
   background: white;
@@ -325,18 +326,23 @@ header .logo:hover {
   -moz-box-shadow: 10px 10px;
   box-shadow: 10px 10px;
 }
-.main-content .top-content .text-content button:hover {
+.main-content .top-content button:hover {
   background-color: #cccccc;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
-.main-content .bottom-content button {
+.main-content .bottom-content .text-content {
+  width: 33.33%;
+}
+.main-content .bottom-content .text-content button {
   width: 125px;
   height: 32px;
   background: white;
@@ -352,11 +358,11 @@ header .logo:hover {
   -moz-box-shadow: 10px 10px;
   box-shadow: 10px 10px;
 }
-.main-content .bottom-content button:hover {
+.main-content .bottom-content .text-content button:hover {
   background-color: #cccccc;
 }
-.main-content .bottom-content p {
-  padding-right: 20px;
+.main-content .bottom-content .text-content p {
+  padding-right: 6.82%;
 }
 .contact {
   font-size: 1.6rem;

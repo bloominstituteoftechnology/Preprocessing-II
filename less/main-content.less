@@ -16,6 +16,9 @@
 
         .text-content {
             font-size:1.6rem;
+            width:50%;
+            
+            }
 
 
             button {
@@ -26,27 +29,36 @@
                 }
             }
         }
-    }
+    
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width:100%;
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        width:100%;
 
-        button {
-            .button;
+        .text-content {
+            width:33.33%;//22.8409
+        
 
-            &:hover {
+             button {
+                .button;
+
+                &:hover {
                 background-color: darken(white,20%);
+                }
+            }
+
+             p {
+                 padding-right: 6.82%;//20px
+            
             }
         }
-
-        p {
-            padding-right: 20px;
-        }
     }
-}// main-content
+}
+// main-content
