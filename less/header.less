@@ -5,23 +5,38 @@ header {
   background-color: @header-bg-color;
   .flex-container;
   .major-structure(@header-bg-color);
+  @media @mobile {
+    flex-direction: column;
+  }
 
   nav {
     width: 610px;
     .flex-container;
+    @media @mobile {
+      width: 100%;
+      flex-direction: column;
+    }
 
-    a {
-      .button;
-      text-decoration: none;
+      a {
 
-      &:hover {
-        text-decoration: underline;
-        .button-hover;
+        @media @mobile {
+          width: 50%;
+          min-width: 30px;
+          margin-bottom: 20px;
+        }
+
       }
     }
-  }
+
   .logo {
+    .moving-image;
     align-self: flex-end;
     margin: 20px auto;
+
+    @media @mobile {
+      order: -1;
+    }
+
+
   }
 } // header

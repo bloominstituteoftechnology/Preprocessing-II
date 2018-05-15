@@ -12,7 +12,12 @@
 
     img {
         .cta-element;
+        .moving-image;
         background-color: @cta-img-bg-color;
+
+        @media @tablet {
+            display: none;
+        }
     }
 
     .cta-text {
@@ -26,6 +31,10 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
+
+        @media @tablet {
+            width: 100%;
+        }
     }
 
     .cta-text button {
