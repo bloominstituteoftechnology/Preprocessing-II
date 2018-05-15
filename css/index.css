@@ -130,7 +130,7 @@ table {
   display: flex;
   justify-content: space-around;
 }
-.button-char {
+#button-bundle .button-char {
   padding: 5px 30px;
   background: #00FFFF;
   -webkit-border-radius: 5px;
