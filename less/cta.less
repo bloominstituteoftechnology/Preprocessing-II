@@ -5,6 +5,16 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    img {
+        @media @tablet {
+            display: none;
+        }
+    }
+
+    @media(max-width: 880px) {
+        justify-content: center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +24,14 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        color: @highlight-text-color;
+
+        @media @tablet {
+            margin: 0;
+        }
+        @media @phone {
+            font-size: 50px;
+        }
     }
 
     .cta-text button {
@@ -24,9 +42,10 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        color: @highlight-text-color;
 
         &:hover {
-            background: black;
+            background: @highlight-text-color;
             color: white;
         }
     }

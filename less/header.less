@@ -3,6 +3,14 @@
 header {
     width: 100%;
     display: flex;
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media @phone {
+        border-bottom: 1px solid @highlight-text-color;
+    }
   
     nav {
       margin-top: 40px; 
@@ -13,12 +21,27 @@ header {
       a {
         text-decoration: none;
         color: #b0b0b0;
+        @media @phone {
+            width: 100%;
+            border-top: 1px solid @highlight-text-color;
+            text-align: center;
+            padding: 20px 0;
+        }
   
         &:hover {
             text-decoration: underline;
             color: black;
   
         }
+      }
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @phone {
+        flex-direction: column;
+        align-items: center;
       }
     }
   
@@ -27,5 +50,9 @@ header {
         margin: 28px 0 0 91px;
         .opacity (0.5);
         .skew (5deg, -5deg);
+        @media @tablet {
+            order: -1;
+            margin: 28px 0 0 0;
+        }
     }
   }// header 

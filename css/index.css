@@ -126,6 +126,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.flex-space {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .flex-space {
+    flex-direction: column;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -149,9 +158,25 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    border-bottom: 1px solid #1056a1;
+  }
 }
 header nav {
   margin-top: 40px;
@@ -163,9 +188,28 @@ header nav a {
   text-decoration: none;
   color: #b0b0b0;
 }
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    border-top: 1px solid #1056a1;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
 header nav a:hover {
   text-decoration: underline;
   color: black;
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header .logo {
   align-self: flex-end;
@@ -178,10 +222,26 @@ header .logo {
   -ms-transform: skew(5deg, -5deg);
   -o-transform: skew(5deg, -5deg);
 }
+@media (max-width: 768px) {
+  header .logo {
+    order: -1;
+    margin: 28px 0 0 0;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width: 880px) {
+  .cta {
+    justify-content: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -192,6 +252,17 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  color: #1056a1;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    font-size: 50px;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -201,9 +272,10 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  color: #1056a1;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: #1056a1;
   color: white;
 }
 .cta img:hover {
@@ -226,6 +298,19 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+}
+.main-content h4 {
+  color: #1056a1;
+}
+@media (max-width: 768px) {
+  .main-content h4 {
+    padding-top: 20px;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -239,9 +324,19 @@ header .logo {
   -moz-box-shadow: 0px 10px 20px;
   box-shadow: 0px 10px 20px;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
@@ -256,13 +351,19 @@ header .logo {
   background-clip: padding-box;
   width: 150px;
   height: 50px;
-  background: #4D4DFF;
+  background: #1056a1;
   padding: 5px;
   margin-top: 20px;
   font-size: 16px;
 }
 .text-content button:hover {
-  background: #0000e6;
+  background: #072444;
+}
+@media (max-width: 400px) {
+  .text-content button {
+    margin: auto;
+    width: 100%;
+  }
 }
 .contact p {
   margin: 20px 0;

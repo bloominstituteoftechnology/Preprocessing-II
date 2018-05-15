@@ -48,4 +48,17 @@
 	&:hover {
 		background: darken(@bgcolor, 20%);
 	}
+
+	@media @phone {
+		margin: auto;
+		width: 100%;
+	}
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-around;
+    @media @tablet {
+     flex-direction: column;
+    }
 }
