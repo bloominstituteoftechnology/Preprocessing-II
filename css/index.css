@@ -129,6 +129,17 @@ table {
 .darkenedgold {
   background: #e6c200;
 }
+#header-namespace .goldtext {
+  color: gold;
+  text-decoration-style: wavy;
+  font-size: 3rem;
+}
+#header-namespace .logoinverthover {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
 * {
   box-sizing: border-box;
 }
@@ -195,6 +206,9 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  color: gold;
+  text-decoration-style: wavy;
+  font-size: 3rem;
 }
 @media (max-width: 400px) {
   header nav a {
@@ -228,6 +242,10 @@ header .logo:hover {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 .cta {
   display: flex;
