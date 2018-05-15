@@ -304,6 +304,7 @@ header nav a .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  margin-left: 20px;
 }
 .main-content .rectangle-img {
   display: block;
@@ -339,6 +340,7 @@ header nav a .logo {
   -moz-box-shadow: red;
   box-shadow: red;
   margin-bottom: 30px;
+  margin-left: 20px;
 }
 .main-content .bottom-content button:hover {
   background-color: #a0a0a0;
