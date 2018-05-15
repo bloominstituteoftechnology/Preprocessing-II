@@ -13,9 +13,16 @@
         padding: 0 2.5%;
     }
     .text-content {
-     
+        display: flex;
+        flex-flow: column;
         @media @phone {
             margin: 24px 0;
+        }
+        .btn-learn-more {
+            display: flex;
+            align-self: center;
+            margin-top: 20px;
+            .custom-btn(auto);
         }
     }
     .top-content {
@@ -24,6 +31,7 @@
         @media @phone {
             flex-flow: column wrap;
         }
+       
     }
     .middle-img {
         display: block;

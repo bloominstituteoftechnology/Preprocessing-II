@@ -314,10 +314,24 @@ header .logo {
     padding: 0 2.5%;
   }
 }
+.main-content .text-content {
+  display: flex;
+  flex-flow: column;
+}
 @media (max-width: 400px) {
   .main-content .text-content {
     margin: 24px 0;
   }
+}
+.main-content .text-content .btn-learn-more {
+  display: flex;
+  align-self: center;
+  margin-top: 20px;
+  width: auto;
+  height: 50px;
+  background: #f5d000;
+  font-weight: bold;
+  padding: 10px;
 }
 .main-content .top-content {
   display: flex;
