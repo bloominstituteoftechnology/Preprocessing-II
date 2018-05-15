@@ -253,11 +253,13 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 8.018% 0 0;
-  width: 41.32%;
 }
 @media (max-width: 768px) {
   .cta .cta-text {
     margin-bottom: 36px;
+    font-size: 64px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .cta .cta-text h1:hover {
@@ -295,6 +297,8 @@ header .logo {
   margin: 0 2.6% 0 0;
   width: 41.32%;
   height: 41.32%;
+  min-width: 300px;
+  min-height: 300px;
 }
 .cta .circle-image:hover {
   -webkit-opacity: 1;
@@ -304,6 +308,12 @@ header .logo {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  .cta .circle-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (max-width: 400px) {
   .cta .circle-image {

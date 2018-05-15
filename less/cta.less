@@ -20,10 +20,12 @@
         flex-flow: column;
         align-items: center;
         margin: 0 8.018% 0 0;
-        width: 41.32%;
         
         @media @tablet {
             margin-bottom: 36px;
+            font-size: 64px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -53,11 +55,18 @@
         .opacity(0.6);
         margin: 0 2.6% 0 0;
         width: 41.32%;
-        height:41.32%;
+        height: 41.32%;
+        min-width: 300px;
+        min-height: 300px;
 
         &:hover {
             .opacity(1.0);
             .rotate(180deg);
+        }
+
+        @media @tablet {
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @media @phone {
