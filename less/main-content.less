@@ -1,29 +1,86 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+  @media @tabletConversion {
+    margin: 75px 20px 35px;
+    .text-content {
+      margin: 0 10px;
+    }
+    @media @mobileConversion {
+      padding-bottom: 50px;
+    }
+  }
+
+  .top-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 29px; //added some padding
+    .text-content .feat-button {
+      .button-creator;
     }
 
-    .middle-img {
-        display: block;
-        margin: 30px auto;
+    .text-content .bout-button {
+      .button-creator;
     }
 
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
+    @media @mobileConversion {
+      justify-content: space-around;
+      flex-direction: column;
+      height: 300px;
+      padding: 0;
+      padding-bottom: 20px;
+      .text-content {
+        padding-bottom: 30px;
+      }
     }
-}// main-content
+  }
+
+  .middle-img {
+    display: block;
+    margin: 30px auto;
+    .box-shadow(0 10px 8px 11px black);
+
+    @media @tabletConversion {
+      width: 100%;
+    }
+
+    @media @mobileConversion {
+      margin-bottom: 90px;
+    }
+  }
+
+  .bottom-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 24px; //more padding
+
+    .text-content .vice-button {
+      .button-creator;
+    }
+
+    .text-content .vision-button {
+      .button-creator;
+    }
+
+    @media @mobileConversion {
+      flex-direction: column;
+      height: 440px;
+      padding: 0;
+      padding-bottom: 35px;
+      .text-content {
+        margin-bottom: 15px;
+      }
+    }
+
+    p {
+      padding-right: 20px;
+    }
+  }
+} // main-content
