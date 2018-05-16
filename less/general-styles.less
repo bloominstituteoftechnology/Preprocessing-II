@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+html {
+    /* works on a base of 10px if the font-size is 16px, scales to the users settings */
+    font-size: 62.5%;  
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
+
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
@@ -19,6 +25,7 @@ h1, h2, h3, h4, h5 {
     max-width: 880px;
     width:100%;
     margin: auto;
+    font-size: 1.6rem;
 
     @media @tablet {
         width:100%;

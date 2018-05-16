@@ -9,13 +9,12 @@ header {
     }
 
     @media @phone {
-      flex-wrap: wrap;
       justify-content: center;
     }
   
     nav {
-      margin-top: 40px; 
-      width: 610px;
+      margin: 38px 1% 0; 
+      width: 100%;
       justify-content: space-between;
       display: flex;
 
@@ -30,6 +29,10 @@ header {
         flex-direction: column;
         margin: 0;
         align-items: center;
+        
+        &:first-child {
+          border-top: 1px solid gray;
+        }
       }
   
       a {
@@ -53,7 +56,6 @@ header {
 
             @media @phone {
               background: gray;
-              
             }
   
         }
@@ -62,9 +64,7 @@ header {
   
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
-
-        
+        margin: 28px 0 0 9%;
 
         @media @tablet {
           order: -1;

@@ -129,6 +129,10 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  /* works on a base of 10px if the font-size is 16px, scales to the users settings */
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -147,6 +151,7 @@ h5 {
   max-width: 880px;
   width: 100%;
   margin: auto;
+  font-size: 1.6rem;
 }
 @media (max-width:768px) {
   .container {
@@ -164,13 +169,12 @@ header {
 }
 @media (max-width:400px) {
   header {
-    flex-wrap: wrap;
     justify-content: center;
   }
 }
 header nav {
-  margin-top: 40px;
-  width: 610px;
+  margin: 38px 1% 0;
+  width: 100%;
   justify-content: space-between;
   display: flex;
 }
@@ -187,6 +191,9 @@ header nav {
     flex-direction: column;
     margin: 0;
     align-items: center;
+  }
+  header nav:first-child {
+    border-top: 1px solid gray;
   }
 }
 header nav a {
@@ -217,7 +224,7 @@ header nav a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 9%;
   -webkit-transform: skew(40deg, 15deg);
   -moz-transform: skew(40deg, 15deg);
   -ms-transform: skew(40deg, 15deg);
@@ -255,14 +262,14 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9% 0 0;
 }
 @media (max-width:768px) {
   .cta .cta-text {
@@ -273,6 +280,19 @@ header .logo {
   .cta .cta-text {
     margin: 0;
   }
+}
+.cta h1 {
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+@media (max-width:768px) {
+  .cta h1 {
+    letter-spacing: 0;
+  }
+}
+.cta img {
+  max-width: 100%;
+  margin-right: 1%;
 }
 @media (max-width:768px) {
   .cta img {
@@ -288,9 +308,9 @@ header .logo {
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 52%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -314,13 +334,18 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.3;
 }
 @media (max-width:768px) {
   .main-content {
     font-size: 1.4rem;
-    margin: 75px 2% 35px;
+    margin: 35px 2% 35px;
+  }
+}
+@media (max-width:768px) and (max-width:400px) {
+  .main-content {
+    padding: 25px 0 50px;
   }
 }
 .main-content .top-content {
@@ -365,6 +390,7 @@ header .logo {
   }
 }
 .main-content .middle-img {
+  max-width: 100%;
   display: block;
   margin: 30px auto;
   -webkit-opacity: 0.5;
@@ -381,6 +407,9 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .bottom-content .text-content {
+  margin-top: 10px;
+}
 @media (max-width:400px) {
   .main-content .bottom-content {
     flex-wrap: wrap;
@@ -389,7 +418,7 @@ header .logo {
   }
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 .main-content .bottom-content button {
   width: 150px;
@@ -422,8 +451,19 @@ header .logo {
     background: #38e038;
   }
 }
+.main-content .text-content {
+  margin: 0 1%;
+}
+.contact {
+  margin: 20px 1%;
+}
 .contact p {
-  margin: 20px 0;
+  margin: 15px 0;
+}
+@media (max-width:768px) {
+  .contact {
+    margin: 20px 2%;
+  }
 }
 footer {
   text-align: center;
