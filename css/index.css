@@ -152,15 +152,8 @@ h5 {
 }
 button {
   width: 50%;
-  height: 35px;
-  background-color: red;
-  margin-top: 10px;
-  border-radius: 5px;
-  box-shadow: 5px 5px #80ffff;
-  color: white;
-}
-button:hover {
-  background-color: #990000;
+  height: 30px;
+  background-color: yellow;
 }
 .container {
   width: 880px;
@@ -298,6 +291,11 @@ header .logo {
     margin: 0;
   }
 }
+.cta .cta-text h1 {
+  font-size: 2rem;
+  color: yellow;
+  text-shadow: 2px;
+}
 @media (max-width: 768px) {
   .cta .cta-text h1 {
     letter-spacing: 0;
@@ -390,6 +388,7 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+  background-color: pink;
 }
 .contact {
   font-size: 1.6rem;
