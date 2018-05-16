@@ -275,9 +275,9 @@ header .logo {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: 5px 5px;
-  -moz-box-shadow: 5px 5px;
-  box-shadow: 5px 5px;
+  -webkit-box-shadow: 5px 5px 5px black;
+  -moz-box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px black;
   font-weight: bolder;
 }
 .cta .cta-text button:hover {
