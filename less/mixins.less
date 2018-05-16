@@ -1,5 +1,31 @@
 // Mixins below variables
 
+// .my-custom-button(@btn-width: 50px, @btn-height: 40px, @btn-background, @btn-hover) {
+//     font-size: 15px;
+//     color: rgb(46, 14, 187);
+//     background: @btn-background;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid rgb(0, 0, 0);
+//     border-radius: 10px;
+//     width: @btn-width;
+//     height: @btn-height;
+//     color: rgb(107, 199, 199);
+    
+//     &:hover {
+//       background: darken(@btn-hover, 20%);
+//     }
+//   }
+
+
+// .create-button(200px, 100px, green);
+.my-custom-button( @width, @height, @background ){
+	width: @width;
+	height: @height;
+	background: @background;
+}
+
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;

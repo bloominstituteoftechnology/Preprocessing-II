@@ -8,10 +8,6 @@
    font-size: 16px;
    line-height: 18px;
    .border-radius(@radius: 5px 15px);
-   
-   .text-content {
-   .my-custom-button;
-   }
 
    @media @tablet {
     margin: 75px 2% 35px;
@@ -50,6 +46,26 @@
 
         p {
             padding-right: 20px;
+        }
+    }
+
+    .text-content {
+
+        button {
+    .my-custom-button(90px, 70px, #DB7093);
+    .border-radius(10px);
+    margin: 20px 0 0;
+    color: #B0E0E6;
+    cursor: pointer;
+
+
+    @media @phone {
+        display: none;
+      }
+
+      &:hover {
+        background: darken(#DB7093, 20%);
+      }
         }
     }
 }// main-content
