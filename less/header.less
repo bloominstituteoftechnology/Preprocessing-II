@@ -3,16 +3,28 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+      width:100%;
+    
+    }
+
+    @media @tablet {
+      width:100%;
+    }
   
     nav {
       margin-top: 40px; 
-      width: 610px;
+      width: 69.3181%;//610px
       justify-content: space-between;
       display: flex;
+      font-size:1.6rem;
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+        width:6.3522%;
+       
   
         &:hover {
             text-decoration: underline;
@@ -24,6 +36,11 @@ header {
   
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 10.3409%;//91px
+        width:20.7954%;
+        
+        &:hover {
+          .skew(20deg,20deg);
+        }
     }
   }// header 
