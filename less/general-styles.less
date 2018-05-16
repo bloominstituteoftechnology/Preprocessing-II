@@ -3,6 +3,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 
 html, body {
     height: 100%;
@@ -18,4 +21,16 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    max-width: 880px;
+    width: 100%;
+    font-size: 1.6rem;
+
+    @media @tablet {
+        width:100%;
+        max-width: 768px;
+    }
+    @media @phone{
+        max-width: 100%;
+        width:400px;
+    }
 }

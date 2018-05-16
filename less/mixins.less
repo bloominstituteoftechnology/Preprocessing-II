@@ -1,5 +1,21 @@
 // Mixins below variables
 
+#deskTop-button{
+	button{
+	width:20px;
+	height: 20px;
+	background: blueviolet;
+	text-align:center;
+	margin-top:20px;
+	}
+
+}
+.design-button(@width, @heigth,@background,){
+	width:@width;
+	height: @height;
+	background:@background;
+
+}
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
