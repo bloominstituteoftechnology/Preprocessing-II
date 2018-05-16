@@ -16,7 +16,7 @@ header {
     nav {
       margin-top: 40px; 
       width: 610px;
-      justify-content: space-between;
+      justify-content: space-evenly;
       display: flex;
 
       @media @tablet {
@@ -32,12 +32,20 @@ header {
       }
   
       a {
+        display: flex;
         text-decoration: none;
-        color: #b0b0b0;
+        color: lighten(@col-lavender-rose, 20%);
+        background: darken(@col-lavender-rose, 3%);
+        height: 40px;
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+        .border-radius(30px);
+
   
         &:hover {
-            text-decoration: underline;
-            color: black;
+            text-decoration: double;
+            background: darken(@col-lavender-rose,20%);
         }
 
         @media @phone {

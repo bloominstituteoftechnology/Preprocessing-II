@@ -35,3 +35,24 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.btn-action {
+	border: 3px solid darken(@col-azure-radiance, 20%);
+	background: @col-turquoise;
+	color: white;
+	align-content: center;
+	width: 120px;
+	height: 90px;
+	font-size: 24px;
+	margin-left: 2%;
+	margin-top: 12px;
+	font-family: 'Bangers';
+	.border-radius(20px);
+	.box-shadow(5px 5px 5px darken(@col-malachite, 20%)); 
+		&:hover {
+		background: darken(@col-turquoise, 20%);
+		}
+	@media @phone {
+		margin-bottom: 24px;
+	}
+}
