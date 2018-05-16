@@ -46,3 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+// Added this to make it fully responsive
+.container {
+	width: 100%;
+	max-width: 880px;
+	margin: auto;
+	@media @tablet {
+		max-width: 768px;
+	}
+	@media @movile {
+		max-width: 400px;
+	}
+}

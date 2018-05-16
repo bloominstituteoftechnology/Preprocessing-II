@@ -16,6 +16,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 100%;
+	max-width: 880px;
+	margin: auto;
+	@media @tablet {
+		max-width: 768px;
+	}
+	@media @mobile {
+		max-width: 400px;
+	}
 }
