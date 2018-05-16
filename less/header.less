@@ -3,21 +3,59 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
+    @media @phone {
+      justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        width: 100%;
+        padding: 0 3.9063%;
+      }
+
+      @media @phone {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0
+      }
   
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+
+        @media @phone {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2.0rem;
+        border-bottom: 1px solid gray;
+        }
+        
+        &:first-child {
+          @media @phone {
+            border-top: 1px solid gray;
+          }
+        }
+
         &:hover {
             text-decoration: underline;
             color: black;
-  
+          
+            @media @phone {
+              background: gray;
+            }
         }
       }
     }
@@ -26,5 +64,16 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .rotate(15deg);
+
+        @media @tablet {
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+        }
+
+        @media @phone {
+          margin: 20px 0;
+        }
     }
+
   }// header 

@@ -8,9 +8,19 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+       margin: 75px 2.2727% 35px;
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            justify-content: space-around;
+            flex-direction: column;
+            height: 300px;
+        }
     }
 
     .middle-img {
@@ -18,14 +28,50 @@
         margin: 30px auto;
         .border-radius;
         .box-shadow;
+
+        @media @tablet {
+            width: 100%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;    
+        }
+
         p {
             padding-right: 20px;
+        }
+    }
+
+    .text-content {
+
+        button {
+            .new-button(150px, 50px, turquoise);
+            display: flex;
+            justify-content: center;
+            color: white;
+
+            @media @phone {
+                display: none;
+            }
+
+            &:hover {
+                background: darken(turquoise, 20%);
+            }
+        }
+
+        @media @tablet {
+            margin: 0 1.3021%;
+        }
+
+        @media @phone {
+            margin: 0;
         }
     }
 }// main-content
