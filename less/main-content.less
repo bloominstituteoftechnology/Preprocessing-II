@@ -14,8 +14,14 @@
         justify-content: space-around;
         
         .text-content {   
+            
             button {
-                .custom-button(@width:100px,@height:40px, @bg:aqua);
+                &:hover {
+                    background: darken(@color,40%);
+                }
+                .custom-button(@width:100px, @height:40px, @bg:@color)
+
+
             }
         }
     }
@@ -35,8 +41,15 @@
 
         .text-content {
             button {
-                .custom-button(@width:100px,@height:40px, @bg:aqua);
-            }
+                &:hover {
+                    background: darken(@color,40%);
+                }
+                .custom-button(@width:100px, @height:40px, @bg:@color)
+                
+            
         }
+        
     }
-}// main-content
+     }  
+ }
+// main-content

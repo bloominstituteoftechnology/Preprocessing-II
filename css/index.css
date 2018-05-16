@@ -287,6 +287,9 @@ header .logo {
   height: 40px;
   background: aqua;
 }
+.main-content .top-content .text-content button:hover {
+  background: #003333;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -302,6 +305,9 @@ header .logo {
   width: 100px;
   height: 40px;
   background: aqua;
+}
+.main-content .bottom-content .text-content button:hover {
+  background: #003333;
 }
 .contact p {
   margin: 20px 0;
