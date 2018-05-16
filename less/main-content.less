@@ -8,22 +8,80 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+    width: 100%;
+    margin: 9.8% auto 4.56%;
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
+
+        @media @tablet {
+            width: 100%;
+            margin: 9.8% auto 4.56%;
+           }
+
+        @media @phone {
+            flex-direction: column;
+            height: 300px;   
+            }
+        #lambda-style > .p-tag1;
+
+        h4 {
+            #lambda-style > .heading2; //used namespace to change header color
+            }
+        }
+
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .rotate(180deg); // used rotate mixin to rotate image
+
+        @media @tablet {
+            width: 100%;
+            // margin: 25px auto;
+        }
+        @media @phone {
+            max-width: 90%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
-        p {
-            padding-right: 20px;
+        @media @tablet {
+            width: 100%;
+            margin: 9.8% auto 4.56%;
+           }
+
+        @media @phone {
+            flex-direction: column;
+            height: 300px;   
+            }
+        #lambda-style > .p-tag2;
+    }
+    .text-content {        
+
+        @media @tablet {
+            flex-wrap: wrap;
+        margin: 0 1.3%;
         }
+        @media @phone {
+        margin: 0;
+        }
+
+        button {
+            .new-btn;
+            
+
+            &:hover {
+             background: darken(@some-color, 20%);
+             #lambda-style > .button2; //used namespace to bolden text on hover
+            }
+        }
+
     }
 }// main-content
