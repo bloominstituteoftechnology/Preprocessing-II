@@ -40,12 +40,32 @@
     .skew(20deg,35deg);
 }
 
+//Custom Button Mix-In
+.custom-button(@wide,@high,@color) {
+    width: @wide;
+    height: @high;
+    background-color: @color;
+    a:hover {
+        darken(80);
+    }
+}
 
+.button1 {
+    .custom-button(58px,45px,orange);
+}
 
+.button2 {
+    .custom-button(58px,45px,yellow);
+}
 
+.button3 {
+    .custom-button(58px,45px,blue);
+}
 
+.button4 {
+    .custom-button(58px,45px,grey);
+}
 
-
-
-
-
+.button5 {
+    .custom-button(58px,45px,tan);
+}
