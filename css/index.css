@@ -126,6 +126,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-witdth: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -133,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  width: 100%;
 }
 h1,
 h2,
@@ -144,12 +160,35 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-witdth: 400px) {
+  .container {
+    max-width: 400px;
+  }
 }
 header {
   width: 100%;
   display: flex;
+}
+@media (min-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-witdth: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 header nav {
   margin-top: 40px;
@@ -157,22 +196,96 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (min-width: 768px) {
+  header nav {
+    width: 100%;
+    margin-left: 3%;
+  }
+}
+@media (min-witdth: 400px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+@media (min-witdth: 400px) {
+  header nav:first-child {
+    border-top: 1px solid gray;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (min-witdth: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
+  header nav a:hover {
+    background: black;
+  }
+}
+@media (min-witdth: 400px) and (min-witdth: 400px) {
+  header nav a:hover {
+    background: gray;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (min-width: 768px) {
+  header nav {
+    width: 100%;
+    padding: 0 3.81%;
+  }
+}
+@media (min-witdth: 400px) {
+  header nav {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (min-width: 768px) {
+  header .logo {
+    margin: 28px 0 0 91px;
+  }
+}
+@media (min-witdth: 400px) {
+  header .logo {
+    margin: 20px 0;
+  }
 }
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (min-witdth: 400px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -187,6 +300,21 @@ header .logo {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+@media (min-width: 768px) {
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (min-witdth: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .cta .cta-text h1 {
+    letter-spacing: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -216,6 +344,19 @@ header .logo {
   -ms-transform: skew(20deg, 20deg);
   -o-transform: skew(20deg, 20deg);
 }
+@media (min-width: 768px) {
+  .cta .cta-image {
+    max-width: 100%;
+    margin-right: 2%;
+  }
+}
+@media (min-witdth: 400px) {
+  .cta .cta-image {
+    display: block;
+    max-width: 88%;
+    margin: 55px 0 0 0;
+  }
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -224,9 +365,20 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (min-width: 768px) {
+  .main-content {
+    margin: 75px 2% 35px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (min-witdth: 400px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -235,12 +387,30 @@ header .logo {
   -moz-box-shadow: 10px 10px;
   box-shadow: 10px 10px;
 }
+@media (min-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (min-witdth: 400px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .contact {
+    margin: 20px 2%;
+  }
 }
 .contact p {
   margin: 20px 0;

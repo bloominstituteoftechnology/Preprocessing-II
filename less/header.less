@@ -27,24 +27,21 @@ header {
         margin: 0;
         align-items: center;
       }
+      &:first-child {
+        @media @mobile {
+          border-top: 1px solid gray;
+        }
+      }
       a {
         text-decoration: none;
         color: #b0b0b0;
-        @media @tablet {
-          font-size: 1.7rem;
-        }
         @media @mobile {
-          width: @max-width;
+          width: 100%;
+          display: block;
           text-align: center;
           padding: 20px 0;
-          font-size: 2rem;
-          border-bottom: 1px solid black;
-          &:first-child {
-            border-top: 1px solid black;
-            @media @mobile {
-              border-top: 1px solid gray;
-            }
-          }
+          border-bottom: 1px solid gray;
+          
           &:hover {
             background: black;
             @media @mobile {
@@ -64,7 +61,7 @@ header {
         padding: 0 3.81%;
       }
       @media @mobile {
-        width: @max-width;
+        width: 100%;
             flex-direction: column;
             margin: 0;
             padding: 0;
