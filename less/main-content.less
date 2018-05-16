@@ -1,29 +1,46 @@
 // Main Content Styles
-
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+    button {
+        .custom-button(150px, 30px, lighten(blue, 20%));
+        &:hover {
+            color: red;
+            background-color: darken(blue, 20%);
+        }
+        margin-bottom: 15px;
     }
-
+    @media @tablet {
+        margin: 75px 2% 35px;
+    }
+    .top-content {
+        .display-flex-space-around;
+        @media @phone {
+            flex-wrap: wrap;
+            height: 300px;
+        }
+    }
     .middle-img {
         display: block;
         margin: 30px auto;
+        @media @tablet {
+            width: 100%;
+            margin: 25px auto;
+        }
     }
-
     .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
+        .display-flex-space-around;
+        @media @phone {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 440px;
+        }
         p {
             padding-right: 20px;
         }
     }
-}// main-content
+} // main-content

@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.display-flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
+header {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+header nav {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 59%;
+    margin-left: 3%;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav:first-child {
+    border-top: 1px solid gray;
+  }
+}
+header nav a {
+  text-decoration: none;
+}
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+@media (max-width: 400px) {
+  header nav a:hover {
+    background: gray;
+  }
+}
+header .logo {
+  align-self: flex-end;
+  margin: 28px 0 0 91px;
+}
+header .logo:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    margin: 28px 0 0 8%;
+    order: -1;
+    display: block;
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    margin: 20px 0;
+  }
+}
+.cta {
+  display: flex;
+  margin-top: 72px;
+  justify-content: flex-end;
+  border-top: 2px solid red;
+  border-bottom: 2px solid blue;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cta .cta-text {
+  font-size: 62px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-text h1 {
+    letter-spacing: 0;
+  }
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 340px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.cta .cta-text button:hover {
+  -webkit-transform: skew(6deg, 5deg);
+  -moz-transform: skew(6deg, 5deg);
+  -ms-transform: skew(6deg, 5deg);
+  -o-transform: skew(6deg, 5deg);
+  background: black;
+  color: white;
+}
+@media (max-width: 768px) {
+  .cta img {
+    max-width: 100%;
+    margin-right: 2%;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: block;
+    max-width: 80%;
+    margin: 55px 0 0 0;
+  }
+}
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+.main-content button {
+  width: 150px;
+  height: 30px;
+  background-color: #6666ff;
+  margin-bottom: 15px;
+}
+.main-content button:hover {
+  color: red;
+  background-color: #000099;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin: 75px 2% 35px;
+  }
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+  }
+}
+.main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
+.main-content .bottom-content p {
+  padding-right: 20px;
+}
+.contact p {
+  margin: 20px 0;
+}
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}
