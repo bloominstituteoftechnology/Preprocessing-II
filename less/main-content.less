@@ -8,6 +8,35 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet{
+    font-size: 1.2rem;
+         color: black;
+       margin: 75px 2% 35px;
+       border-top: 2px solid white;
+   border-bottom: 2px solid white;
+
+   }
+
+   .text-content{
+      p,{
+
+      @media @tablet{
+      padding: 0 3% 0;
+   }
+  }
+
+    h4 {
+      @media @tablet{
+
+      padding: 8px 3% 0;
+    }
+   }
+
+
+   }
+
+
+
    .top-content {
         display: flex;
         justify-content: space-around;
@@ -22,10 +51,10 @@
         display: block;
         margin: 30px auto;
 
-        @media @phone{
-        flex-wrap: wrap;
-        align-content: space-between;
-        height: 440px;
+
+        @media @tablet{
+        width:100%;
+        margin: 25px auto;
         }
     }
 
@@ -36,5 +65,12 @@
         p {
             padding-right: 20px;
         }
+
+        @media @phone{
+          flex-wrap: wrap;
+
+        align-content: space-between;
+        height: 440px;
+      }
     }
 }// main-content

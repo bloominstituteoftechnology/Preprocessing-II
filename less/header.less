@@ -1,9 +1,5 @@
 // Header Styles
-.container{
-  @media @phone{
-    width: 400px ;
-  }
-}
+
 
 header {
     width: 100%;
@@ -14,11 +10,21 @@ header {
       justify-content: center;
     }
 
+    @media @tablet {
+      flex-wrap: wrap ;
+    }
+
+
     nav {
       margin-top: 40px;
       width: 610px;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        width: 100%;
+        margin: 38px 3%;
+      }
 
       @media @phone{
         width:100%;
@@ -68,6 +74,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          order: -1;
+        display: block;
+        margin: 30px auto 0;
+        }
 
 
         @media @phone{

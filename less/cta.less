@@ -5,11 +5,29 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        justify-content: center ;
+    }
+
     @media @phone{
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    img{
+
+            @media @tablet{
+                display:none;
+            }
+
+            @media @phone{
+            display: block;
+            max-width: 80%;
+            margin: 55px 0 0 0;
+        }
+
     }
 
     .cta-text {
@@ -23,17 +41,19 @@
         margin: 0 82px 0 0;
 
 
+        @media @tablet{
+            margin: 0 5% 0 0;
+        }
+
         @media @phone{
             margin: 0;
         }
 
-        &:img{
-            display: block;
-            max-width: 80%;
-            margin: 55px 0 0 0;
-        }
 
-    }
+
+
+}
+
 
     .cta-text button {
         border: 1px double black;
@@ -47,6 +67,10 @@
         &:hover {
             background: black;
             color: white;
+
+        @media @phone{
+            background: gray;
+        }
         }
     }
 }// cta
