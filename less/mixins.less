@@ -35,3 +35,37 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.custom-button (@btn-width, @btn-height, @btn-backgroundColor){
+	border: @border-styling;
+        color: @btn-textcolor;
+	margin-top: 4%;
+	font-size: @btn-text-font-size;
+	width: @btn-width;
+	height: @btn-height;
+	background-color: @btn-backgroundColor;
+	.border-radius (4px);
+
+	&:hover{	
+	background-color: darken(@btn-backgroundColor, 40%);
+	}
+}
+
+#header-style() {
+  .style1{
+        color: orange;
+}
+
+.style2{
+	color: yellow;
+
+}
+}
+
+
+
+.a-style{
+	#header-style.style1;
+}
+
+ 

@@ -1,4 +1,6 @@
 // Main Content Styles
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
 .main-content {
    border-top: 2px solid black; 
@@ -8,19 +10,131 @@
    font-size: 16px;
    line-height: 18px;
 
+	@media @tablet{
+                margin-left: 3%;
+                margin-right: 3%;
+                }
+
+
+        @media @phone{
+                margin-left: 5%;
+                margin-top: 18%;
+                margin-right: 5%;
+                padding-bottom: 4%;
+                }
+
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+	
+	@media @tablet{
+               margin-top: 2%;
+                      }
+
+        @media @phone{
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               margin-top: 1%;     /*10*/
+                        }
+
+
+
+
+	.text-content{
+		
+	    p{
+              @media @phone{
+                   margin-bottom: 6%;
+               }
+             }
+
+
+		button{
+		   .custom-button(100px, 35px, gray);
+		   @media @phone{
+		       margin-bottom: 6%;
+		       margin-top: 0%;
+
+		}
+
+		@media tablet{
+                       margin-top: 5%;
+
+                }
+
+		}
+	
+	/*button:nth-child(1):hover button:nth-child(1):after{
+        content: 'Features';
+        }*/
+
+
+	}
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+	.rotate (180deg);
+
+	@media @tablet{
+                        width:100%;
+                 }
+
+        @media @phone{
+                        margin-top: 3%;
+                        }
+	
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+	@media @tablet{
+                        margin-top: 7%;
+                        margin-bottom: 4%;
+                        margin-right: -3%;
+                        }
+
+        @media @phone{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 1%;   /*15*/
+                        margin-bottom: 0%;
+                        }
+
+
+
+
+	.text-content{
+                
+                button{
+                   .custom-button(100px, 35px, gray);
+		   @media @phone{
+			margin-bottom: 6%;
+    			margin-top: 0%;
+
+              }
+		 @media tablet{
+                       margin-top: 5%;
+
+                }
+
+     
+                }
+	}
+
+	   p{
+             @media @phone{
+                margin-bottom: 6%;
+                        }
+                }
+
 
         p {
             padding-right: 20px;
