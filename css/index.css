@@ -249,12 +249,12 @@ header .logo {
   justify-content: flex-end;
 }
 @media (max-width: 768px) {
-  .cta .img {
+  .cta img {
     display: none;
   }
 }
 @media (max-width: 400px) {
-  .cta .img {
+  .cta img {
     max-width: 80%;
   }
 }
