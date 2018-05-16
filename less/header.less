@@ -3,7 +3,14 @@
 header {
     width: 100%;
     display: flex;
-  
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media @mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     nav {
       margin-top: 40px; 
       width: 610px;
@@ -13,12 +20,38 @@ header {
       a {
         text-decoration: none;
         color: #b0b0b0;
+        @media @tablet {
+          font-size: 1.7rem;
+        }
+        @media @mobile {
+          width: @max-width;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 2rem;
+          border-bottom: 1px solid black;
+          &:first-child {
+            border-top: 1px solid black;
+          }
+          &:hover {
+            background: black;
+          }
+        }
   
         &:hover {
             text-decoration: underline;
             color: black;
   
         }
+      }
+      @media @tablet {
+        width: 100%;
+        padding: 0 3.81%;
+      }
+      @media @mobile {
+        width: @max-width;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
       }
     }
   
