@@ -17,6 +17,18 @@
         display: flex;
         justify-content: space-around;
 
+        .text-content {
+          button {
+            .custom-button(100px, 50px, red);
+
+            &:hover {
+              background-color: darken(red, 20%);
+            }
+          }
+
+
+        }
+
         @media @phone {
           flex-wrap: wrap;
           height: 300px;
@@ -37,14 +49,25 @@
         display: flex;
         justify-content: space-around;
 
+        .text-content {
+          button {
+            .custom-button(100px, 50px, red);
+
+            &:hover {
+              background-color: darken(red, 20%);
+            }
+          }
+
+          p {
+              padding-right: 20px;
+          }
+        }
+
         @media @phone {
           flex-wrap: wrap;
           align-content: space-between;
           height: 440px;
         }
 
-        p {
-            padding-right: 20px;
-        }
     }
 }// main-content
