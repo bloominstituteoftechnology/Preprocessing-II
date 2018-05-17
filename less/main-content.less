@@ -24,25 +24,21 @@
 
     h4 {
       &:hover {
-        .page-chaos > .change-header-color;
+        .dynamic-behavior > .change-header-color;
       }
     }
 
     .text-content {
       .btn.btn-features {
-        .custom-button;
+        .dynamic-behavior > .custom-button;
 
-        &:hover {
-          background: darken(@bkg-color, 10%);
-        }
+        .dynamic-behavior > .darken-on-hover(@bkg-color); //Of course, a more descriptive variable name would've been better, but I wanted to test the limit of variable declarations in LESS.
       }
 
       .btn.btn-about {
-        .custom-button(120px, 15px, orange);
+        .dynamic-behavior > .custom-button(120px, 15px, orange);
 
-        &:hover {
-          background: darken(orange, 10%);
-        }
+        .dynamic-behavior > .darken-on-hover(orange);
       }
     }
   }
@@ -57,34 +53,28 @@
     .flex-content-space-around;
 
     .text-content {
-      .btn.btn-services {
-        .custom-button(129px, 15px, yellow);
-
+      p {
         &:hover {
-          background: darken(yellow, 10%);
+          .dynamic-behavior > .change-background-color;
         }
+      }
+
+      .btn.btn-services {
+        .dynamic-behavior > .custom-button(129px, 15px, yellow);
+
+        .dynamic-behavior > .darken-on-hover(yellow);
       }
 
       .btn.btn-product {
-        .custom-button(110px, 15px, green);
+        .dynamic-behavior > .custom-button(110px, 15px, green);
 
-        &:hover {
-          background: darken(green, 10%);
-        }
+        .dynamic-behavior > .darken-on-hover(green);
       }
 
       .btn.btn-vision {
-        .custom-button(170px, 15px, purple);
+        .dynamic-behavior > .custom-button(170px, 15px, purple);
 
-        &:hover {
-          background: darken(purple, 10%);
-        }
-      }
-
-      p {
-        &:hover {
-          .page-chaos > .change-background-color;
-        }
+        .dynamic-behavior > .darken-on-hover(purple);
       }
     }
     @media @phone {
