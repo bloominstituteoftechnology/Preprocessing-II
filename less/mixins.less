@@ -1,9 +1,13 @@
 
-@string: 5px;
-
 // Mixins below variables
 
-.border-radius (@radius: 5px) {
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.border-radius (@radius: 15px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
@@ -13,28 +17,39 @@
 	background-clip:         padding-box;
 }
 
-.opacity (@opacity: 0.2) {
+.opacity (@opacity: 0.3) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string) {
+.box-shadow (@string: 20px 20px 30px #999) {
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
 }
 
-.rotate (@deg) {
+.rotate (@deg: 180deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
 	-o-transform: 		 rotate(@deg);
 }
 
-.skew (@deg, @deg2) {
+.skew (@deg: 30deg, @deg2: 5deg) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-style (@width, @height, @bg-color) {
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	border: 1 px solid blue;
+	.border-radius;
+	.center;
+
+}
+

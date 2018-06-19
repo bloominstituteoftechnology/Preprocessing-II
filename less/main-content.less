@@ -11,16 +11,37 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        .btn {
+        margin-top: 20px;
+        .button-style(100px, 50px, blue);
+        color: white;
+
+          &:hover {
+          background-color: darken(blue, 50%);
+          }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .skew;
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        .btn {
+        margin-top: 20px;
+        .button-style(100px, 50px, blue);
+        color: white;
+
+        &:hover {
+          background-color: darken(blue, 50%);
+          }
+        }
 
         p {
             padding-right: 20px;
