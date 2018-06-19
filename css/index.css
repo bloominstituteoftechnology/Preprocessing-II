@@ -175,6 +175,10 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: skew(5deg, 5deg);
+  -moz-transform: skew(5deg, 5deg);
+  -ms-transform: skew(5deg, 5deg);
+  -o-transform: skew(5deg, 5deg);
 }
 .cta {
   display: flex;
@@ -207,6 +211,11 @@ header .logo {
   -moz-box-shadow: 10px 5px 5px teal;
   box-shadow: 10px 5px 5px teal;
 }
+.cta:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -222,6 +231,12 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+}
+.main-content .middle-img:hover {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
 }
 .main-content .bottom-content {
   display: flex;
