@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.button-hover {
+  background-color: #10003d;
+}
 * {
   box-sizing: border-box;
 }
@@ -297,7 +300,7 @@ header .logo {
     justify-content: space-between;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .main-content .top-content {
     display: flex;
     flex-direction: column;
@@ -342,6 +345,22 @@ header .logo {
 }
 .main-content .bottom-content .text-content p {
   padding-right: 10%;
+}
+button {
+  width: 100px;
+  height: 25px;
+  background-color: #2B00A3;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #10003d;
+}
+@media (max-width: 400px) {
+  button {
+    margin-top: 15px;
+  }
 }
 .contact p {
   margin: 20px 0;

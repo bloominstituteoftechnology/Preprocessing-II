@@ -21,7 +21,7 @@
 		    justify-content: space-between;
         }
    
-        @media @tablet {
+        @media @phone {
             display: flex;
 		    flex-direction: column;
         }
@@ -67,7 +67,23 @@
                 p {
                     padding-right: 10%;
                 } // p
+
+
         } //text-content
     } //bottom-content
 
 }// main-content
+
+button {
+    .button-maker(100px, 25px, @button-color);
+
+    &:hover {
+        .button-hover;
+    } //$:hover
+
+        @media @phone {
+            margin-top: 15px;
+        }
+
+
+ } // button
