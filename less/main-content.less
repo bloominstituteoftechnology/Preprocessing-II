@@ -15,6 +15,7 @@
 
     .text-content {
       .btn {
+        margin-top: 20px;
         .center;
 
         .button-constructor;
@@ -41,15 +42,12 @@
     display: flex;
     justify-content: space-around;
 
-    @media @phone {
-      .center();
-      flex-direction: column;
-    }
     h4 {
       margin-top: 15px;
     }
     .text-content {
       .btn {
+        margin-top: 20px;
         .center;
         .button-constructor;
 
@@ -60,6 +58,20 @@
 
       p {
         padding-right: 20px;
+      }
+    }
+    @media @phone {
+      .center();
+      flex-direction: column;
+      h4 {
+        .center();
+      }
+
+      .text-content {
+        text-align: center;
+        .btn {
+          .center();
+        }
       }
     }
   }

@@ -276,6 +276,7 @@ header .logo {
   justify-content: space-around;
 }
 .main-content .top-content .text-content .btn {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,18 +304,11 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 450px) {
-  .main-content .bottom-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
 .main-content .bottom-content h4 {
   margin-top: 15px;
 }
 .main-content .bottom-content .text-content .btn {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,6 +321,27 @@ header .logo {
 }
 .main-content .bottom-content .text-content p {
   padding-right: 20px;
+}
+@media (max-width: 450px) {
+  .main-content .bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-content .bottom-content h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content .bottom-content .text-content {
+    text-align: center;
+  }
+  .main-content .bottom-content .text-content .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .contact {
   width: 100%;
