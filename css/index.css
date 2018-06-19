@@ -183,17 +183,18 @@ h5 {
 header {
   width: 100%;
   display: flex;
-  flex-direction: none;
+  flex-direction: row;
   flex-wrap: none;
   justify-content: space-between;
-  align-items: none;
-  align-content: none;
+  align-items: center;
+  align-content: center;
   align-self: none;
   flex-flow: none;
   margin-top: 15px;
 }
 header nav {
   width: 75%;
+  text-align: center;
   display: flex;
   flex-direction: none;
   flex-wrap: none;
@@ -203,6 +204,7 @@ header nav {
   align-self: none;
   flex-flow: none;
   margin-bottom: 30px;
+  padding-top: 45px;
 }
 header nav a {
   text-decoration: none;
@@ -261,8 +263,46 @@ header nav a:hover {
     padding-left: 30.00% ;
   }
 }
+.special-button {
+  width: 100%;
+  height: 20px;
+  background-color: gray;
+  color: white;
+  margin-top: 10px;
+}
+.special-button:hover {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-box-shadow: 10px 10px 10px 10px blue;
+  -moz-box-shadow: 10px 10px 10px 10px blue;
+  box-shadow: 10px 10px 10px 10px blue;
+  -webkit-transform: skew(2deg, 5deg);
+  -moz-transform: skew(2deg, 5deg);
+  -ms-transform: skew(2deg, 5deg);
+  -o-transform: skew(2deg, 5deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  background-color: #4d4d4d;
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .special-button {
+    display: none;
+  }
+}
 .top-content {
   width: 50%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 7.2rem;
   display: flex;
@@ -285,7 +325,7 @@ header nav a:hover {
   align-self: none;
   flex-flow: none;
 }
-.top-content button {
+.top-content .get-started {
   display: flex;
   flex-direction: none;
   flex-wrap: none;
@@ -298,21 +338,50 @@ header nav a:hover {
   border-radius: 3px;
   border: 1px solid black;
   text-align: center;
+  margin-top: 10px;
+  color: red;
+}
+.top-content .get-started:hover {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-box-shadow: 10px 10px 10px 10px blue;
+  -moz-box-shadow: 10px 10px 10px 10px blue;
+  box-shadow: 10px 10px 10px 10px blue;
+  -webkit-transform: skew(2deg, 5deg);
+  -moz-transform: skew(2deg, 5deg);
+  -ms-transform: skew(2deg, 5deg);
+  -o-transform: skew(2deg, 5deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  background-color: #4d4d4d;
+  cursor: pointer;
 }
 .syntax-logo {
   width: 50%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  height: auto;
+  padding-bottom: 10px;
 }
 .features {
-  width: 50%;
-  border-top: 1px solid black;
+  width: 46.845%;
   margin-bottom: 30px;
   margin-top: 30px;
   padding-top: 15px;
   padding-right: 1%;
 }
 .about {
-  width: 50%;
-  border-top: 1px solid black;
+  width: 46.845%;
   margin-bottom: 30px;
   margin-top: 30px;
   padding-top: 15px;
@@ -324,13 +393,13 @@ header nav a:hover {
   max-width: 800px;
 }
 .services {
-  width: 33.33%;
+  width: 31.33%;
 }
 .product {
-  width: 33.33%;
+  width: 31.33%;
 }
 .vision {
-  width: 33.33%;
+  width: 31.33%;
 }
 @media (max-width: 768px) {
   .top-content {
