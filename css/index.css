@@ -261,6 +261,16 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.text-content button {
+  width: 50px;
+  height: 20px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+.text-content button:hover {
+  background-color: #cccccc;
+}
 .contact p {
   margin: 20px 0;
 }
