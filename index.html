@@ -13,11 +13,18 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
+  <script>
+    function clicked() {
+      document.getElementById("spinner").style.animation = "spin 4s linear";
+      setTimeout(function(){document.getElementById("spinner").style.animation = ""}, 4000);
+    }
+  </script>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container" id="spinner">
 
         <header>
             <nav>
@@ -35,7 +42,7 @@
         <section class="cta">
             <div class="cta-text">
                 <h1>Preprocessing<br> Is<br> Awesome</h1>
-                <button>Less is More</button>
+                <button onclick="clicked()">Less is More</button>
             </div>
             <img src="img/header-img.png" alt="Image of a code snippet.">
         </section>
