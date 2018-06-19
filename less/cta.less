@@ -1,12 +1,50 @@
 // Call To Action (CTA) Styles
 
+// .cta {
+//     display: flex;
+//     margin-top: 72px;
+//     justify-content: flex-end;
+
+//     .cta-text {
+//         font-size: 72px;
+//         text-align: center;
+//         letter-spacing: 5px;
+//         display: flex;
+//         justify-content: center;
+//         flex-flow: column;
+//         align-items: center;
+//         margin: 0 82px 0 0;
+//     }
+
+//     .cta-text button {
+//         border: 1px double black;
+//         font-size: 16px;
+//         background: white;
+//         width: 170px;
+//         height: 32px;
+//         margin-top: 10px;
+//         cursor: pointer;
+
+//         &:hover {
+//             background: black;
+//             color: white;
+//         }
+//     }
+// }// cta
+
+
 .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    @media(max-width: 400px) {
+        
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+  
     .cta-text {
-        font-size: 72px;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -14,20 +52,49 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+       
+        @media(max-width: 768px) {
+            .center-everything;
+        }
+        h1 {
+            @media(max-width: 400px) {
+                font-size: 6rem;
+                display: flex;
+                
+            }
+            @media(max-width: 350px) {
+                font-size: 5rem;
+                display: flex;
+                
+            }
+            @media(max-width: 300px) {
+                font-size: 4rem;
+                display: flex;
+                
+            }
+        }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
 
-        &:hover {
-            background: black;
+        button {
+            border: 1px double black;
+            .defult-size;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: @btn-color;
             color: white;
+        } // Button
+    } //CTA Text
+    img {
+        width: 50%;
+        height: 100%;
+
+        @media(max-width: 768px) {
+            display: none;
         }
     }
-}// cta
+} //CTA

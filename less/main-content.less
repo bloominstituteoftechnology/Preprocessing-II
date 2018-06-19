@@ -1,29 +1,85 @@
 // Main Content Styles
 
+// .main-content {
+//    border-top: 2px solid black; 
+//    border-bottom: 2px solid black;
+//    margin: 75px 0 35px 0;
+//    padding: 35px 0;
+//    font-size: 16px;
+//    line-height: 18px;
+
+//    .top-content {
+//         display: flex;
+//         justify-content: space-around;
+//     }
+
+//     .middle-img {
+//         display: block;
+//         margin: 30px auto;
+//     }
+
+//     .bottom-content {
+//         display: flex;
+//         justify-content: space-around;
+
+//         p {
+//             padding-right: 20px;
+//         }
+//     }
+// }// main-content
+
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    @media(max-width: 400px) {
+        margin: 40px 10px;
     }
-
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
-    }
-}// main-content
+    .defult-size;
+    line-height: 18px;
+    .top-content {
+         display: flex;
+         justify-content: space-around;
+         @media(max-width: 768px) {
+             justify-content: space-between;
+         }
+             @media(max-width: 400px) {
+                 flex-wrap: wrap;
+                 
+                 p {
+                     padding-bottom: 20px;
+                 }
+                 
+             }
+            p {
+                 padding-right: 20px;
+            }
+         
+     } // Top Content
+     .middle-img {
+         display: block;
+         margin: 30px auto;
+         width: 100%;
+         @media (max-width: 400px) {
+             margin-top: 10px;
+         }
+     }
+ 
+     .bottom-content {
+         display: flex;
+         justify-content: space-around;
+         p {
+             padding-right: 20px;
+         }
+         @media(max-width: 400px) {
+             flex-wrap: wrap;
+             margin-bottom: -20px;
+             p {
+                 padding-bottom: 20px;
+             }
+             
+         }
+     } // Bottom Content
+ } // Main-Content
+ 
