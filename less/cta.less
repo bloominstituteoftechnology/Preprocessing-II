@@ -4,6 +4,7 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 100%;
 
     .cta-text {
         font-size: 72px;
@@ -14,10 +15,15 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        width: 100%;
+
         h1{
             .skew(10deg, 175deg);
         }
         
+        @media @tablet{
+            margin: 0;
+        }
     }
 
     .cta-text button {
@@ -33,6 +39,11 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+    img{
+        @media @tablet {
+            display: none;
         }
     }
     img:hover{

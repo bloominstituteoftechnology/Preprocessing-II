@@ -13,11 +13,21 @@
         justify-content: space-around;
         .box-shadow(inset 5em 1em gold);
         
+        @media @phone{
+            flex-direction: column;
+            .box-shadow(0 0 0 0);
+        }
+        .text-content{
+            @media @phone{
+                .box-shadow(inset 5em 1em gold);
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 100%;
     }
 
     .bottom-content {
@@ -25,8 +35,18 @@
         justify-content: space-around;
         .box-shadow(inset 5em 1em gold);
 
+        @media @phone{
+            flex-direction: column;
+            .box-shadow(0 0 0 0);
+        }
+
         p {
             padding-right: 20px;
+        }
+        .text-content{
+            @media @phone{
+                .box-shadow(inset 5em 1em gold);
+            }
         }
     }
 }// main-content
