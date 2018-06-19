@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -269,13 +274,29 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
-  -webkit-box-shadow: 2px 2px 2px;
-  -moz-box-shadow: 2px 2px 2px;
-  box-shadow: 2px 2px 2px;
+  -webkit-box-shadow: 2px 2px 2px 2px;
+  -moz-box-shadow: 2px 2px 2px 2px;
+  box-shadow: 2px 2px 2px 2px;
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .top-content .button {
+  margin: 15px 33%;
+  width: width;
+  height: height;
+  background-color: #43bde6;
+  color: white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-content .middle-img {
   display: block;
@@ -290,6 +311,22 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .button {
+  margin: 15px 33%;
+  width: width;
+  height: height;
+  background-color: #e68c43;
+  color: white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact {
   -webkit-box-shadow: 2px 2px 2px 2px;
