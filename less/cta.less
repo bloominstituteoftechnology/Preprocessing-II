@@ -5,31 +5,40 @@
 		flex-wrap: wrap;
     margin-top: 72px;
     justify-content: space-around;
-		@media(max-width: @tablet){
+		@media @tablet{
 			margin-top: 10px;
 		}//media
 		.cta-text {
+      width: 100%;
 				display: flex;
 				flex-direction: column;
-		    font-size: 5.2rem + .1px;
+		    font-size: 5.2rem;
 		    text-align: center;
-		    letter-spacing: 3px + 2;
-		    display: flex;
+		    // letter-spacing: 5px;
 		    .flex-tablet;
 		    // margin: 0 82px 0 0;
 				// border: 1px solid green;
-				@media(max-width: @tablet){
+				@media @tablet {
 					margin: 10px 0 0 0 ;
 				}//media
+        @media @phone {
+          color: @yellowish;
+        }
 				button {
 					.btn-white;
 					margin-bottom: 10px;
 					background: lightgrey;
 				}//button
 		}//.cta-text
-		@media(max-width: @tablet){
+
+		@media @tablet {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 		}//media
 }//.cta
+
+.circle-img {
+  width: 100%;
+  height: auto;
+}

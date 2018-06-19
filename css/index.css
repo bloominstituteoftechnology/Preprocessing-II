@@ -142,7 +142,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   margin: auto 0;
 }
-@media (max-width: 880px) {
+@media (max-width: 600px) {
   html .cta .cta-text button,
   body .cta .cta-text button {
     border: 1px double black;
@@ -168,14 +168,18 @@ body {
     border-right: 1px solid black;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   html .container,
   body .container {
     background: #e69500;
   }
+  html .cta,
+  body .cta {
+    width: 100%;
+  }
   html h1,
   body h1 {
-    color: #750404;
+    color: #ffc800;
   }
   html header nav a,
   body header nav a {
@@ -227,6 +231,7 @@ header {
 @media (max-width: 600px) {
   header {
     flex-direction: column-reverse;
+    justify-content: center;
     margin: 0;
   }
 }
@@ -258,20 +263,15 @@ header nav a:hover {
 @media (max-width: 600px) {
   header nav a {
     border-top: 1px solid #e69500;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  header nav a {
+    border-top: 1px solid #ffc800;
   }
 }
 header .logo {
-  align-self: flex-end;
   padding: 10px;
-}
-@media (max-width: 600px) {
-  header .logo {
-    align-self: center;
-  }
 }
 .cta {
   display: flex;
@@ -285,9 +285,9 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 5.3rem;
+  width: 100%;
+  font-size: 5.2rem;
   text-align: center;
-  letter-spacing: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -296,6 +296,11 @@ header .logo {
 @media (max-width: 600px) {
   .cta .cta-text {
     margin: 10px 0 0 0 ;
+  }
+}
+@media (max-width: 450px) {
+  .cta .cta-text {
+    color: #ffc800;
   }
 }
 .cta .cta-text button {
@@ -319,6 +324,10 @@ header .logo {
     align-items: center;
     justify-content: center;
   }
+}
+.circle-img {
+  width: 100%;
+  height: auto;
 }
 .main-content {
   border-top: 2px solid black;

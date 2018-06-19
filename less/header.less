@@ -4,15 +4,16 @@ header {
     width: 100%;
 		padding: 10px;
 		@flexing();
-		@media(max-width: @tablet){
+		@media @tablet{
 			flex-direction:column-reverse;
+      justify-content: center;
 			margin: 0;
 		}
 		nav {
 				width: 100%;
 		  	display: flex;
 		    justify-content: space-between;
-				@media(max-width: @tablet){
+        @media  @tablet{
 					.flex-tablet;
 				}
 				a {
@@ -27,18 +28,15 @@ header {
 						    text-decoration: underline;
 						    color: black;
 						}//a:hover
-					@media(max-width: @tablet){
+					@media @tablet {
 							border-top: 1px solid @orange;
-							.flex-tablet;
 					}//media
+          @media @phone {
+            border-top: 1px solid @yellowish;
+          }
 				}//a
 		}//nav
 		.logo {
-			align-self: flex-end;
 			padding: 10px;
-			// margin: 28px 0 0 91px;
-			@media(max-width: @tablet){
-			align-self: center;
-			}//media
 		}//logo
 }//header
