@@ -160,6 +160,9 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 header nav a:hover {
   text-decoration: underline;
@@ -185,7 +188,12 @@ header .logo {
   margin: 0 82px 0 0;
 }
 .cta .cta-text button {
-  border: 1px double black;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   font-size: 16px;
   background: white;
   width: 170px;
