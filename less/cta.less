@@ -4,30 +4,52 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 100%;
+
+    @media @tablet {
+        display: flex;
+        width: 100%;
+        .center;
+    }
 
     .cta-text {
-        font-size: 72px;
+        .center;
+        width: 100%;
         text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
+        letter-spacing: 0.5rem;
+        //display: flex;
+        //justify-content: center;
         flex-flow: column;
-        align-items: center;
+        //align-items: center;
         margin: 0 82px 0 0;
-    }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+        h1 {
+            font-size: 7rem;
+        }
 
-        &:hover {
-            background: black;
-            color: white;
+        button {
+            .box-shadow;
+            border: 1px solid @btn-border-color;
+            font-size: 1.6rem;
+            background: @btn-background-color;
+            color: @btn-text-color;
+            cursor: pointer;
+            width: 17rem;
+            height: 3.2rem;
+            margin-top: 10px;
+        
+            &:hover {
+                background: @btn-hover-color;
+                color: @btn-hover-text-color;
+            }
         }
     }
+    
+    img {
+        @media @tablet {
+            display: none;
+            width: 1px;
+        }
+    }
+
 }// cta

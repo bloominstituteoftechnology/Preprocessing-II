@@ -3,27 +3,40 @@
 header {
     width: 100%;
     display: flex;
-  
+    
+    @media @tablet {
+      flex-direction: column;
+    }
+
     nav {
+      font-size: 1.6rem;
       margin-top: 40px; 
-      width: 610px;
+      width: 100%;
       justify-content: space-between;
       display: flex;
-  
+
+      @media @tablet {
+          display: flex;
+          justify-content: space-around;
+      }
+
       a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
+          text-decoration: none;
+          color: @nav-text-color;
+          &:hover {
+              text-decoration: underline;
+              color: black;
+          }
       }
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          order: -1;
+          margin: 0 auto;
+        }
     }
-  }// header 
+}// header 
