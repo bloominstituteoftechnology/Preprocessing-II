@@ -2,20 +2,27 @@
 
 header {
     width: 100%;
+    border: 1px dotted black;
+    padding: 30px;
     display: flex;
+    align-items: center;
+    .border-radius(@radius: 7px);
+    
   
     nav {
-      margin-top: 40px; 
+      
       width: 610px;
       justify-content: space-between;
       display: flex;
   
       a {
+        
         text-decoration: none;
         color: #b0b0b0;
+        
   
-        &:hover {
-            text-decoration: underline;
+        &:hover {  
+          text-decoration: underline;
             color: black;
   
         }
@@ -23,7 +30,7 @@ header {
     }
   
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+        align-items: center;
+        margin: 0 0 0 91px;
     }
   }// header 
