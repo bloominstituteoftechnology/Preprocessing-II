@@ -378,7 +378,13 @@ button:hover {
 }
 @media (max-width: 400px) {
   button {
-    margin-top: 15px;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 400px) {
+  .centered-button {
+    display: flex;
+    justify-content: center;
   }
 }
 .contact p {
