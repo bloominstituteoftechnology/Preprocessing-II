@@ -150,6 +150,10 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  background-color: #977BB6;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+  -moz-box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px 18px #888888;
 }
 header nav {
   margin-top: 40px;
@@ -159,11 +163,11 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: black;
 }
 header nav a:hover {
   text-decoration: underline;
-  color: black;
+  color: white;
 }
 header .logo {
   align-self: flex-end;
@@ -184,6 +188,12 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+.cta .cta-text h1 {
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -192,10 +202,25 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.cta img {
+  -webkit-transform: skew(20deg, 20deg);
+  -moz-transform: skew(20deg, 20deg);
+  -ms-transform: skew(20deg, 20deg);
+  -o-transform: skew(20deg, 20deg);
 }
 .main-content {
   border-top: 2px solid black;
