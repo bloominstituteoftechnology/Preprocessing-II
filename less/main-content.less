@@ -5,23 +5,55 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
+
+   @media @tablet{
+     font-size: 1.4rem;
+     margin: 75px 2% 35px;
+   }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet{
+          margin: 20px 2% 20px 2%;  
+        }
+
+        .learn{
+          .custom-button(150px,40px);
+          &:hover{
+            background-color: lighten(@accent-color, 10%);
+            color: #A8D6B8;
+          }
+        }
     }
 
     .middle-img {
         .opacity;
+        max-width: 100%;
         display: block;
         margin: 30px auto;
+
+        @media @tablet{
+          width: 100%;
+          margin: 25px auto;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        .learn{
+          .custom-button(150px,40px);
+
+          &:hover{
+            background-color: lighten(@accent-color, 10%);
+            color: #A8D6B8;
+          }
+        }
 
         p {
             padding-right: 20px;

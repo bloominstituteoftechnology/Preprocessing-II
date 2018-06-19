@@ -2,8 +2,7 @@
 
 header {
     @media @tablet{
-      display: flex;
-      flex-direction: column-reverse;
+      flex-wrap: wrap;
     }
 
     width: 100%;
@@ -11,15 +10,17 @@ header {
 
     nav {
       @media @tablet{
-        justify-content: center space-between;
+        width: 100%;
+        margin: 40px 3%;
       }
       margin-top: 40px;
-      width: 610px;
+      width: 100%;
       justify-content: space-between;
       display: flex;
 
       a {
         .border;
+        font-size: 1.2rem;
         padding: 2px;
         text-decoration: none;
         color: white;
@@ -37,10 +38,12 @@ header {
 
     .logo {
         @media @tablet{
-          align-self: flex-start;
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
         }
 
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 9%;
     }
   }// header
