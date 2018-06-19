@@ -3,13 +3,14 @@
 header {
     width: 100%;
     display: flex;
-  
+    flex-grow: 1;
   }
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+      flex-grow: 1;
   
       a {
         text-decoration: none;
@@ -25,11 +26,10 @@ header {
   
     .logo {
         margin: 28px 0 0 91px;
-  
+
         @media (max-width: 768px){
           order: -1;
-
-
+          margin-left: 0;
         }
 
 @media (max-width: 768px){
