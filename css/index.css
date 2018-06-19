@@ -163,7 +163,7 @@ header nav a {
 }
 header nav a:hover {
   text-decoration: underline;
-  color: black;
+  color: red;
 }
 header .logo {
   align-self: flex-end;
