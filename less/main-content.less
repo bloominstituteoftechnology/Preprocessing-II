@@ -8,10 +8,25 @@
     font-size: 16px;
     line-height: 18px;
 
+    @media @tablet {
+        padding: 10px 1.5%;
+    }
+
     .top-content {
         display: flex;
         justify-content: space-around;
         .box-shadow(5px 0px dodgerblue);
+
+        @media @phone {
+            flex-flow: row wrap;
+        }
+
+        .text-content {
+            @media @phone {
+                width: 100vw;
+                padding-top: 10px;
+            }
+        }
     }
 
     .middle-img {
@@ -20,6 +35,14 @@
         .opacity(.75);
         .skew(-0.05rad, -0.05rad);
         .box-shadow(5px 0px dodgerblue);
+
+        @media @middle-img-width {
+            width: 95vw;
+        }
+        @media @tablet {
+            width: 95vw;
+            padding: 0;
+        }
     }
 
     .bottom-content {
@@ -27,8 +50,20 @@
         justify-content: space-around;
         .box-shadow(5px 5px dodgerblue);
 
+        @media @phone {
+            flex-flow: row wrap;
+        }
+
         p {
             padding-right: 20px;
+        }
+
+        .text-content {
+            @media(max-width: 400px) {
+                width: 100vw;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
         }
     }
 }// main-content

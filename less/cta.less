@@ -18,6 +18,14 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @middle-img-width {
+            margin: 0 auto;
+        }
+
+        @media @tablet {
+            margin: 0 auto;
+        }
     }
 
     .cta-text button {
@@ -33,6 +41,12 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    img {
+        @media(max-width: 768px) {
+            display: none;
         }
     }
 }// cta
