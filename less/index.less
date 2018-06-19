@@ -4,7 +4,6 @@ header{
     }
     @media @phone{
         .flex-column;
-        .center;
         width:100%;
     }
     nav{
@@ -15,11 +14,12 @@ header{
         }//nav-phone
         a{
             @media @phone{
-                font-size: 26px;
-                padding:20px;
-                border-bottom: 1px solid black;
-                width: 80%;
+                .flex-column;
                 .center;
+                width:100%;
+                font-size: 26px;
+                padding: 20px;
+                border-bottom: 1px solid black;
             }//a-phone
         }//a
     }//nav
@@ -33,7 +33,6 @@ header{
             width: 80%;
             height: 10%;
             order:0;
-            .center;
             margin: 20px 0 0 0;
         }
     }//logo
@@ -41,7 +40,6 @@ header{
 
 .cta{
     @media @phone{
-        .center;
     }
     .cta-text{
         border: 5px dotted slateblue;
@@ -50,7 +48,6 @@ header{
         @media @tablet{
             width: 100%;
             margin: 0 auto;
-            .center;
             .border-radius(10%);
         }//cta-text-tablet
         h1{ 
@@ -78,23 +75,34 @@ header{
 
 .main-content{
     .top-content{
-        .flex-column;
-        .mobile-text-content;
+        #mobile-content > .mobile-text-content;
+        @media @phone{
+            display: flex;
+            flex-direction: column;    
+        }
+        .text-content{
+            #p-shift > .change-font;
+        }
     }//top-content
     .middle-img{
         width:100%;
         .skew(2deg, -3deg);
     }//middle-img
     .bottom-content{
+        #mobile-content > .mobile-text-content;
+        @media @phone{
         .flex-column;
-        .mobile-text-content;
+        }
+        .text-content{
+            #p-shift > .change-font;
+        }
     }//bottom-content
 }//main-content
 
 .contact{
     @media @phone{
-    .flex-column;
-    .center;
+        .flex-column;
+        .center;
     }
 }//contact
 
