@@ -1,6 +1,7 @@
 // Main Content Styles
-
+@import (reference) "index.less";
 .main-content {
+    
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
@@ -9,11 +10,17 @@
    line-height: 18px;
 
    .top-content {
+    .opacity(0.5);
         display: flex;
         justify-content: space-around;
+        button {
+            .button
+        }
     }
 
     .middle-img {
+        .skew(30deg, 50deg);
+        max-width: 100%;
         display: block;
         margin: 30px auto;
     }
@@ -24,6 +31,9 @@
 
         p {
             padding-right: 20px;
+        }
+        button {
+            .button
         }
     }
 }// main-content
