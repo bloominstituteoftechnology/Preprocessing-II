@@ -151,11 +151,43 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 header nav {
   margin-top: 40px;
-  width: 610px;
+  width: 100%;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 768px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -166,17 +198,26 @@ header nav a:hover {
   color: black;
   -webkit-transition: all 600ms;
   transition: all 600ms;
-  -webkit-box-shadow: 0 4px 5px;
-  -moz-box-shadow: 0 4px 5px;
-  box-shadow: 0 4px 5px;
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
-  -webkit-transform: skew(-15deg, -10deg);
-  -moz-transform: skew(-15deg, -10deg);
-  -ms-transform: skew(-15deg, -10deg);
-  -o-transform: skew(-15deg, -10deg);
+  margin: 3%;
+  -webkit-transform: skew(0deg, -10deg);
+  -moz-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -10deg);
+  -o-transform: skew(0deg, -10deg);
+}
+@media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+    margin: 3%;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    align-self: center;
+    margin: 3%;
+  }
 }
 .cta {
   display: flex;
@@ -232,6 +273,18 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .top-content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .main-content .middle-img {
   display: block;
