@@ -147,6 +147,11 @@ h5 {
   width: 880px;
   margin: auto;
 }
+img:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 header {
   width: 100%;
   display: flex;
@@ -184,6 +189,12 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+.cta .cta-text h1 {
+  -webkit-transform: skew(10deg, 175deg);
+  -moz-transform: skew(10deg, 175deg);
+  -ms-transform: skew(10deg, 175deg);
+  -o-transform: skew(10deg, 175deg);
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -192,10 +203,22 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta img:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 .main-content {
   border-top: 2px solid black;
@@ -208,6 +231,9 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  -webkit-box-shadow: inset 5em 1em gold;
+  -moz-box-shadow: inset 5em 1em gold;
+  box-shadow: inset 5em 1em gold;
 }
 .main-content .middle-img {
   display: block;
@@ -216,6 +242,9 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  -webkit-box-shadow: inset 5em 1em gold;
+  -moz-box-shadow: inset 5em 1em gold;
+  box-shadow: inset 5em 1em gold;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
