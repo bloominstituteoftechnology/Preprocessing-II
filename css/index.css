@@ -126,6 +126,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#stretch .heading {
+  letter-spacing: 2px;
+  font-size: 110%;
+}
+#stretch .p {
+  line-height: 1.25;
+}
 * {
   box-sizing: border-box;
 }
@@ -298,6 +305,13 @@ header .logo:hover {
     width: 95%;
     margin: 40px auto 35px;
   }
+}
+.main-content h4 {
+  letter-spacing: 2px;
+  font-size: 110%;
+}
+.main-content p {
+  line-height: 1.25;
 }
 .main-content button {
   -webkit-border-radius: 5px;

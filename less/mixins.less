@@ -36,22 +36,6 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-
-// bg-color works best with mid-range colors; don't use black
-.btn (@width: 125px, @height: 25px, @bg-color: darkgray) {
-	.border-radius;
-	width: @width;
-	height: @height;
-	background: @bg-color;
-	color: black;
-	margin-top: 10px;
-
-	&:hover {
-		background: darken(@bg-color, 20%);
-		color: lighten(@bg-color, 20%);
-	}
-}
-
 .border-box() {
 	border: 1px solid black;
 	margin: 5px;
@@ -72,4 +56,30 @@
 			margin-bottom: 10px;
         }
     }
+}
+
+#stretch {
+	.heading {
+		letter-spacing: 2px;
+		font-size: 110%;
+	}
+
+	// bg-color works best with mid-range colors; don't use black
+	.btn (@width: 125px, @height: 25px, @bg-color: darkgray) {
+		.border-radius;
+		width: @width;
+		height: @height;
+		background: @bg-color;
+		color: black;
+		margin-top: 10px;
+
+		&:hover {
+			background: darken(@bg-color, 20%);
+			color: lighten(@bg-color, 20%);
+		}
+	}
+
+	.p {
+		line-height: 1.25;
+	}
 }
