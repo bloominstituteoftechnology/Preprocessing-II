@@ -213,7 +213,7 @@ header nav a:hover {
   color: black;
 }
 header .logo {
-  align-self: flex-end;
+  align-self: center;
   margin: 28px 0 0 91px;
 }
 @media (max-width: 768px) {
