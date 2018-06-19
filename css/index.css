@@ -144,6 +144,7 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
+  height: 100%;
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
@@ -156,7 +157,7 @@ header {
   header {
     flex-wrap: wrap;
     justify-content: center;
-    background: #2c8dad;
+    background: lightblue;
     height: 150px;
     align-content: space-around;
   }
@@ -170,6 +171,7 @@ header nav {
 @media ( max-width: 768px ) {
   header nav {
     flex-wrap: wrap;
+    padding-bottom: 20px;
   }
 }
 header nav a {
@@ -179,13 +181,24 @@ header nav a {
 }
 @media ( max-width: 768px ) {
   header nav a {
-    border: 1px solid black;
-    font-size: 1.2rem;
+    border: 1px groove goldenrod;
+    font-size: 1rem;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 5px;
+    color: magenta;
   }
 }
 header nav a:hover {
-  text-decoration: underline;
-  color: black;
+  text-decoration: none;
+  color: goldenrod;
+  -webkit-box-shadow: 10px 10px 10px black;
+  -moz-box-shadow: 10px 10px 10px black;
+  box-shadow: 10px 10px 10px black;
 }
 header .logo {
   align-self: flex-end;
@@ -195,6 +208,17 @@ header .logo {
   header .logo {
     order: -1;
     margin: 28px 0 0 0;
+    border: 2px groove goldenrod;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 1px;
+    -webkit-box-shadow: 10px 10px 10px black;
+    -moz-box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black;
   }
 }
 .cta {
