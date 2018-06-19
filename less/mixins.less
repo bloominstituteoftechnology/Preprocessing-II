@@ -36,17 +36,20 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.button(@width, @height, @bg-color) {
+.btn(@width: 125px, @height: 25px, @bg-color: darkgray) {
 	width: @width;
 	height: @height;
 	background: darken(@bg-color, 20%);
+	border-radius: 5px;
+	color: white;
+	margin-top: 10px;
 }
 
 .border-box() {
 	border: 1px solid black;
 	margin: 5px;
 	padding: 10px;
-	.box-shadow("10px 10px 2px 1px rgba(0, 0, 255, .2)");
+	.box-shadow(5px 5px 2px 1px rgba(0, 0, 255, .2));
 }
 
 .flex-space-around() {
