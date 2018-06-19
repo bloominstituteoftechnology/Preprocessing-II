@@ -4,6 +4,7 @@ header {
     width: 100%;
     display: flex;
   
+  }
     nav {
       margin-top: 40px; 
       width: 610px;
@@ -23,7 +24,18 @@ header {
     }
   
     .logo {
-        align-self: flex-end;
         margin: 28px 0 0 91px;
-    }
+  
+        @media (max-width: 768px){
+          order: -1;
+
+
+        }
+
+@media (max-width: 768px){
+  flex-direction: column;
+  align-items: center;
+}
+
+
   }// header 
