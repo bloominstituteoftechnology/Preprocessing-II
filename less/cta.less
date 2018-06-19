@@ -22,16 +22,15 @@
         @media @tablet {
             margin: 0;
         }
+
+        @media @phone {
+            font-size: 70px;
+        }
     }
 
     .cta-text button {
-        .button-maker(170px, 32px, white);
+        .button-maker(170px, 32px, white, 16px);
         margin-top: 10px;
-
-        &:hover {
-            background: @accent-color;
-            color: white;
-        }
     }
 
     .round-img {
