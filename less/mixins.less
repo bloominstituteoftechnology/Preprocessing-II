@@ -16,7 +16,7 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@color; @number; @number; @number;) {
+.box-shadow (@color, @number, @number, @number) {
 	-webkit-box-shadow: @color;
 	-moz-box-shadow:    @color;
 	box-shadow:         @color @number @number @number;
@@ -34,4 +34,10 @@
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.button-maker(@width, @height, @bg-color){
+	width: @width;
+	height: @height;
+	background: @bg-color;
 }
