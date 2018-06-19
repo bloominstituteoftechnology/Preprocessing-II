@@ -21,6 +21,23 @@
             flex-wrap: wrap;
             height: 300px;
         }
+
+        p {
+            
+        }
+
+        .btn{
+            margin-top: 20px;
+            .button-maker(90px, 40px, teal);
+            color: white;
+            .border-radius;
+            .btn-flex(flex, center, center);
+
+            &:hover{
+                background-color: darken(teal, 20%);
+                cursor: pointer;
+            }
+        }
     }
 
     .middle-img {
@@ -42,6 +59,19 @@
 
         p {
             padding-right: 20px;
+        }
+
+        .btn{
+            margin-top: 20px;
+            .button-maker(90px, 40px, teal);
+            color: white;
+            .border-radius;
+            .btn-flex(flex, center, center);
+
+            &:hover{
+                background-color: darken(teal, 20%);
+                cursor: pointer;
+            }
         }
 
         @media @mobile{
