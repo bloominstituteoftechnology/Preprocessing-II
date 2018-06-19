@@ -188,6 +188,11 @@ header .logo {
   -ms-transform: rotate(20deg);
   -o-transform: rotate(20deg);
 }
+@media (max-width: 400px) {
+  .cta .cta-text {
+    color: red;
+  }
+}
 .cta img {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
@@ -226,21 +231,48 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+}
+@media (max-width: 400px) {
+  .main-content {
+    border-top: 2px solid red;
+  }
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .btn {
+  height: 23px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 20%;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 75%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .bottom-content .btn {
+  height: 23px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 20%;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  margin-top: 15px;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
