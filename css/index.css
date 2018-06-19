@@ -129,6 +129,15 @@ h5 {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.main-content button {
+  width: 100px;
+  height: 50px;
+  background-color: gray;
+  color: white;
+}
+.main-content button:hover {
+  background-color: #676767;
+}
 header {
   width: 100%;
   display: flex;
