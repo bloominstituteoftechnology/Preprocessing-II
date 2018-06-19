@@ -1,29 +1,74 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 75px 0 25px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: @base-font-size;
    line-height: 18px;
 
    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @tablet {
+            .flex (flex, center, center, column);
+          }
+
+        .text-content {
+          padding-bottom: 20px;
+
+          p {
+            padding-right: 2rem;
+          }
+
+          .btn  {
+            .button-maker (144px, 48px, @picton-blue, 1px solid @picton-blue);
+            .border-radius(30px);
+
+            &:hover {
+              background-color: darken(@picton-blue, 10%);
+            }
+          }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        align-items: center;
+        .border-radius(10px);
+        max-width: 100%;
+        &:hover {
+          .rotate (1deg);
+        }
+        @media @tablet {
+        margin: 0 auto;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        @media @tablet {
+            .flex (flex, center, center, column);
+          }
+
+          .text-content {
+            padding-top: 20px;
+          }
 
         p {
-            padding-right: 20px;
+            padding-right: 2rem;
+        }
+
+        .btn  {
+          .button-maker (144px, 48px, @picton-blue, 1px solid @picton-blue);
+          .border-radius(30px);
+
+          &:hover {
+            background-color: darken(@picton-blue, 10%);
+          }
         }
     }
 }// main-content

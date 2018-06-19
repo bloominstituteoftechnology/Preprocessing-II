@@ -3,27 +3,62 @@
 header {
     width: 100%;
     display: flex;
-  
+    @media @tablet {
+      flex-direction: column-reverse;
+    }
+
+    img {
+      &:hover {
+        .opacity(.5);
+      }
+    }
+
     nav {
-      margin-top: 40px; 
+      margin-top: 40px;
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+      @media @tablet {
+        width: 100%;
+        justify-content: space-around;
+      }
+      @media @phone {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+
+
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+        font-size: @base-font-size;
+        text-align: center;
+        margin: 10px;
+
         &:hover {
             text-decoration: underline;
             color: black;
-  
+
+        }
+        @media @phone {
+          margin: 20px;
         }
       }
     }
-  
+
     .logo {
-        align-self: flex-end;
+        align-self: center;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          align-self: center;
+          margin: 28px auto 0 auto;
+        }
+        @media @phone {
+          align-self: center;
+          margin: 28px auto 0 auto;
+        }
     }
-  }// header 
+  }// header
