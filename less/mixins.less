@@ -36,17 +36,30 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
+.button(@width, @height, @bg-color) {
+	width: @width;
+	height: @height;
+	background: darken(@bg-color, 20%);
+}
+
+.border-box() {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 10px;
+	.box-shadow("10px 10px 2px 1px rgba(0, 0, 255, .2)");
+}
+
 .flex-space-around() {
     display: flex;
     justify-content: space-around;
 }
 
 .mobile-content() {
-    @media @max400 {
+    @media @phone {
         flex-wrap: wrap;
         .text-content {
             margin-top: 10px;
-            margin-bottom: 10px;
+			margin-bottom: 10px;
         }
     }
 }

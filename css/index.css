@@ -260,7 +260,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .cta .cta-text {
-    font-size: 5.5rem;
+    font-size: 16vw;
   }
 }
 .cta .cta-text button {
@@ -305,6 +305,14 @@ header .logo {
     margin-bottom: 10px;
   }
 }
+.main-content .top-content .text-content {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+  -webkit-box-shadow: "10px 10px 2px 1px rgba(0, 0, 255, .2)";
+  -moz-box-shadow: "10px 10px 2px 1px rgba(0, 0, 255, .2)";
+  box-shadow: "10px 10px 2px 1px rgba(0, 0, 255, .2)";
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -327,6 +335,14 @@ header .logo {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+.main-content .bottom-content .text-content {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+  -webkit-box-shadow: "10px 10px 2px 1px rgba(0, 0, 255, .2)";
+  -moz-box-shadow: "10px 10px 2px 1px rgba(0, 0, 255, .2)";
+  box-shadow: "10px 10px 2px 1px rgba(0, 0, 255, .2)";
 }
 .main-content .bottom-content p {
   padding-right: 20px;
