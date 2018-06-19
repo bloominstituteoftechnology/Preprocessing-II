@@ -12,27 +12,56 @@
         display: flex;
         justify-content: space-around;
 
-            @media(max-width: 768px) {
+            @media @tablet {
             .flex-justify(space-around);
             }
   
-            @media(max-width: 400px) {
+            @media @mobile {
+             display: flex;
+             flex-direction: column;
+            }
+
+            .btntask{ 
+                .custom-button(50px, 100px, blue) 
+              }
+    }
+
+    .middle-img {
+        display: flex;
+        margin: 30px auto;
+        max-width: 100%;
+
+            @media @tablet {
+            .flex-justify(flex-start);
+            }
+  
+            @media @mobile {
              display: flex;
              flex-direction: column;
             }
     }
 
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
-
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
-        p {
+       
+           @media @tablet {
+            .flex-justify(space-around);
+           }
+         
+           @media @mobile {
+            display: flex;
+            flex-direction: column;
+           }
+          
+          p {
             padding-right: 20px;
-        }
+            }
+          
+          .btntask{ 
+            .custom-button(50px, 100px, blue) 
+          }
+           
+        
     }
 }// main-content
