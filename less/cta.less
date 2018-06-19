@@ -1,33 +1,46 @@
 // Call To Action (CTA) Styles
 
 .cta {
+  display: flex;
+  margin-top: 72px;
+
+  .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-
-    .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    flex-grow: 1;
+    h1 {
+      animation: skewIt 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
-        }
+    button {
+      font-size: 1.6rem;
+      margin-top: 10px;
+      #buttons > .btn-outline(10px, 30px, black);
+      animation: spin 2.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
-}// cta
+
+    @media @mobile-breakpoint {
+      font-size: 15vw;
+    }
+  }
+  .img-wrapper {
+    animation: fadeIn 0.5s ease-in;
+    img {
+      width: 100%;
+      display: block;
+      max-width: 379px;
+      height: auto;
+      .border-radius(50%);
+      .box-shadow(4px 7px 15px rgba(0, 0, 0, 0.4));
+    }
+
+    @media @tablet-breakpoint {
+      display: none;
+    }
+  }
+} // cta

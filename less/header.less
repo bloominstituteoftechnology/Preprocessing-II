@@ -1,29 +1,57 @@
 // Header Styles
 
 header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px 1%;
+  opacity: 0;
+  animation: fadeIn 0.5s 0.5s ease-in forwards;
+
+  nav {
+    justify-content: space-between;
     display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
-      display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
+    flex-grow: 1;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+        color: black;
+      }
+
+      @media @mobile-breakpoint {
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        border-top: 1px solid #888;
       }
     }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+    @media @tablet-breakpoint {
+      width: 100%;
+      padding: 20px 0;
     }
-  }// header 
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+      border-bottom: 1px solid #888;
+      padding-bottom: 0;
+    }
+  }
+
+  .logo {
+    margin-left: percentage(91px/880px);
+    @media (max-width: 768px) {
+      order: -1;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+} // header

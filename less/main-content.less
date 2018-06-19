@@ -1,29 +1,44 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+  .top-content {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+
+    p {
+      padding-right: 20px;
+      margin-bottom: 10px;
     }
 
-    .middle-img {
-        display: block;
-        margin: 30px auto;
+    button {
+      #buttons > .btn-solid(5px, 15px, #888, white);
+      font-size: 1.4rem;
     }
 
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
+    @media @mobile-breakpoint {
+      flex-direction: column;
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
     }
-}// main-content
+  }
+
+  .middle-img {
+    display: block;
+    width: 100%;
+    max-width: 880px;
+    margin: 30px auto;
+  }
+
+  .bottom-content {
+    .top-content;
+  }
+} // main-content
