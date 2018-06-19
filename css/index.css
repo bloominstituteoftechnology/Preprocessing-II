@@ -145,22 +145,36 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
   margin: auto;
 }
 header {
   width: 100%;
   display: flex;
   background-color: blue;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+@media (max-width: 650px) {
+  header {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
 }
 header nav {
-  margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-around;
 }
 header nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  margin: 5px;
+  width: 100%;
+  border: 1px solid red;
   color: white;
 }
 header nav a:hover {
@@ -168,13 +182,14 @@ header nav a:hover {
   color: black;
 }
 header .logo {
-  align-self: flex-end;
-  margin: 28px 0 0 91px;
+  border: 1px solid red;
 }
 .cta {
-  display: flex;
-  margin-top: 72px;
   justify-content: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .cta .cta-text {
   font-size: 72px;
@@ -184,7 +199,7 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 32px 0;
   background-color: gray;
   -webkit-box-shadow: 10px 5px 5px red;
   -moz-box-shadow: 10px 5px 5px red;
@@ -195,7 +210,7 @@ header .logo {
     background-color: green;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 424px) {
   .cta .cta-text {
     background-color: purple;
   }
@@ -225,7 +240,7 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 75px 0 35px 0;
+  margin: 34px 0 35px 0;
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;

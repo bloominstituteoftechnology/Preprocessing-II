@@ -4,15 +4,29 @@ header {
     width: 100%;
     display: flex;
     .background(@some-color);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    @media @tablet {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
 
     nav {
-      margin-top: 40px;
-      width: 610px;
-      justify-content: space-between;
+      // margin-top: 40px;
+      // width: 610px;
       display: flex;
+      justify-content: space-around;
+
+
 
       a {
+        .center;
         text-decoration: none;
+        margin: 5px;
+        width: 100%;
+        border: 1px solid red;
         color: white;
         &:hover {
             text-decoration: underline;
@@ -22,7 +36,8 @@ header {
     }
 
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+        border: 1px solid red;
+
+        // margin: 28px 0 0 91px;
     }
   }// header
