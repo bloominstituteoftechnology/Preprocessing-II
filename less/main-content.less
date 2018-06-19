@@ -76,9 +76,12 @@
 
 button {
     .button-maker(100px, 25px, @button-color);
+    .box-shadow(5px 5px 5px @fuel-yellow);
 
     &:hover {
         .button-hover;
+        .skew(-5deg, -5deg);
+    
     } //$:hover
 
         @media @phone {

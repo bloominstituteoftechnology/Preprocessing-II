@@ -36,7 +36,7 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.content-paragraph-display (){
+.content-paragraph-display() {
     display: flex;
     justify-content: space-around;
 }
@@ -45,11 +45,11 @@
 	width: @width;
 	height: @height;
 	background-color: @bg-color;
-	border-radius: 5px;
+	.border-radius(5px);
 	color: white;
 	margin-top: 10px;
   }
 
-  .button-hover {
+  .button-hover() {
 		background-color: darken(@button-color, 20%);
   }

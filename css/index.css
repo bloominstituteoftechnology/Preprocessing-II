@@ -126,9 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.button-hover {
-  background-color: #10003d;
-}
 * {
   box-sizing: border-box;
 }
@@ -266,10 +263,19 @@ header .logo {
   margin-top: 20px;
   cursor: pointer;
   color: white;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta img:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 @media (max-width: 768px) {
   .cta img {
@@ -350,12 +356,24 @@ button {
   width: 100px;
   height: 25px;
   background-color: #2B00A3;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   color: white;
   margin-top: 10px;
+  -webkit-box-shadow: 5px 5px 5px #E7B927;
+  -moz-box-shadow: 5px 5px 5px #E7B927;
+  box-shadow: 5px 5px 5px #E7B927;
 }
 button:hover {
   background-color: #10003d;
+  -webkit-transform: skew(-5deg, -5deg);
+  -moz-transform: skew(-5deg, -5deg);
+  -ms-transform: skew(-5deg, -5deg);
+  -o-transform: skew(-5deg, -5deg);
 }
 @media (max-width: 400px) {
   button {
