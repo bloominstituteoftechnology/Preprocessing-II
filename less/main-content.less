@@ -11,7 +11,18 @@
    .top-content {
         display: flex;
         justify-content: space-around;
-        
+
+        .text-content {
+            .btn {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                .btn-creator(70px,40px,#ff7f50);
+                color: white;
+                &:hover {
+                    background-color: darken(#ff7f50,20%);
+                }
+            } 
+        } 
     }
 
     .middle-img {
@@ -22,9 +33,21 @@
     .bottom-content {
         display: flex;
         justify-content: space-around;
-    
+        
         p {
             padding-right: 20px;
         }
+        .text-content {
+            
+            .btn {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                .btn-creator(70px,40px,#ff7f50);
+                color: white;
+                &:hover {
+                    background-color: darken(#ff7f50,20%);
+                }
+            } 
+        } 
     }
 }// main-content

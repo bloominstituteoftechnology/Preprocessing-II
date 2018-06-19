@@ -231,6 +231,27 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content .btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 70px;
+  height: 40px;
+  background-color: #ff7f50;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.main-content .top-content .text-content .btn:hover {
+  background-color: #e93f00;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -241,6 +262,27 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content .btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 70px;
+  height: 40px;
+  background-color: #ff7f50;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.main-content .bottom-content .text-content .btn:hover {
+  background-color: #e93f00;
 }
 .contact p {
   margin: 20px 0;
