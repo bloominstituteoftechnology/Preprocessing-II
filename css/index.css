@@ -178,6 +178,24 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 768px) {
+  header {
+    background: green;
+  }
+  header .logo {
+    align-self: flex-start;
+    margin: 28px 0 0 91px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+}
+@media (max-width: 400px) {
+  header {
+    background: orange;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
@@ -193,11 +211,22 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    font-size: 25px;
+    margin: 0 0 2px 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    font-size: 15px;
+  }
+}
 .cta .cta-text button {
   margin-top: 20px;
   width: 100px;
   height: 50px;
-  background-color: RoyalBlue;
+  background-color: #577ae4;
   border: 1px solid black;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -208,7 +237,11 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-box-shadow: 0 5px 5px -3px black;
+  -moz-box-shadow: 0 5px 5px -3px black;
+  box-shadow: 0 5px 5px -3px black;
   color: white;
+  cursor: pointer;
   /*  border: 1px double black;
         font-size: 16px;
         background: white;
@@ -221,6 +254,13 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media (max-width: 768px) {
+  font-size: 25px;
+  margin: 0 0 2px 0 0;
+}
+@media (max-width: 400px) {
+  font-size: 15px;
 }
 .main-content {
   border-top: 2px solid black;
@@ -238,7 +278,7 @@ header .logo {
   margin-top: 20px;
   width: 100px;
   height: 50px;
-  background-color: RoyalBlue;
+  background-color: #577ae4;
   border: 1px solid black;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -249,7 +289,11 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-box-shadow: 0 5px 5px -3px black;
+  -moz-box-shadow: 0 5px 5px -3px black;
+  box-shadow: 0 5px 5px -3px black;
   color: white;
+  cursor: pointer;
   flex-direction: column;
 }
 .main-content .middle-img {
@@ -264,7 +308,7 @@ header .logo {
   margin-top: 20px;
   width: 100px;
   height: 50px;
-  background-color: RoyalBlue;
+  background-color: #577ae4;
   border: 1px solid black;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -275,8 +319,11 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-box-shadow: 0 5px 5px -3px black;
+  -moz-box-shadow: 0 5px 5px -3px black;
+  box-shadow: 0 5px 5px -3px black;
   color: white;
-  flex-direction: column;
+  cursor: pointer;
 }
 .main-content .bottom-content .btn-features p {
   padding-right: 20px;

@@ -18,12 +18,21 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+
+            @media @tablet {
+                font-size: 25px;
+                margin: 0 0 2px 0 0;
+                }
+            @media @phone {font-size: 15px;
+                }
+
+        }
 
     .cta-text button {
        margin-top: 20px;
       .button-maker(100px, 50px, RoyalBlue);
        color: white;
+       cursor: pointer;
       /*  border: 1px double black;
         font-size: 16px;
         background: white;
@@ -37,5 +46,15 @@
             background: black;
             color: white;
         }
+    
     }
+            
+        
 }// cta
+
+                @media @tablet {
+                font-size: 25px;
+                margin: 0 0 2px 0 0;
+                }
+                @media @phone {font-size: 15px;
+                }
