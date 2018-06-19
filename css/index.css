@@ -294,6 +294,15 @@ header nav a:hover {
   background-color: #4d4d4d;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .special-button {
+    background-color: blue;
+    color: red;
+  }
+  .special-button:hover {
+    cursor: crosshair;
+  }
+}
 @media (max-width: 400px) {
   .special-button {
     display: none;
@@ -401,7 +410,26 @@ header nav a:hover {
 .vision {
   width: 31.33%;
 }
+.two h1 {
+  font-size: 6rem;
+}
+.two p {
+  line-height: 1;
+  font-family: Arial;
+  font-size: 2rem;
+}
+.three p {
+  line-height: 1;
+  font-family: Arial;
+  font-size: 2rem;
+}
+.three h1 {
+  font-size: 4rem;
+}
 @media (max-width: 768px) {
+  .get-started:hover {
+    cursor: crosshair;
+  }
   .top-content {
     width: 100%;
   }
@@ -432,6 +460,14 @@ header nav a:hover {
   .container .vision {
     width: 100%;
     padding-top: 30px;
+  }
+  .two h1 {
+    size: 10rem;
+    color: gray;
+  }
+  .three h1 {
+    size: 10rem;
+    color: gray;
   }
 }
 .contact {

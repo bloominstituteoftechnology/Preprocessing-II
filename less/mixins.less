@@ -71,3 +71,31 @@
 	height: @height;
 	background-color: @background-color;
 }
+#button-mix  {
+	.background-color-change(@background-color: blue, @color:red){
+		background-color: @background-color;
+		color: @color;
+	}
+	.cursor-change (@cursor:crosshair){
+		cursor:@cursor;
+
+	}
+}
+#header-mix {
+	.header-color-change(@color:gray){
+		color: @color;
+	}
+	.header-size-change(@size: 10rem){
+		size: @size;
+	}
+}
+
+#paragraph-mix {
+	.font-size-bigger (@font-size: 2rem){
+		font-size: @font-size;
+	}
+	.line-height-wider (@line-height: 1; @font-family:Arial){
+		line-height: @line-height;
+		font-family : @font-family;
+	}
+}
