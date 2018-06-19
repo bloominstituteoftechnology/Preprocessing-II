@@ -126,6 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.display-flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
 /* Mixins */
 .display-flex-space-around {
   display: flex;
@@ -152,6 +156,12 @@ h5 {
 .container {
   width: 880px;
   margin: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 header {
   width: 100%;
@@ -225,6 +235,10 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
 }
 @media (max-width: 768px) {
   header .logo {
@@ -321,23 +335,52 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin: 75px 2% 35px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+    height: 300px;
+  }
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px 2%;
+  }
+}
 .contact p {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 footer {
   text-align: center;
