@@ -12,10 +12,30 @@
         display: flex;
         justify-content: space-around;
 
+        @media @mobile {
+ 				 .column;
+ 			 }
+
         .text-content {
           .box-shadow(2px 3px lightblue);
 
           margin-right: 10px;
+
+          @media @tablet {
+            padding-left: 10px;
+          }
+
+          @media @mobile {
+            padding-top: 10px;
+          }
+
+          button {
+            .buttonMix;
+
+            &:hover {
+              background: darken(gray, 20%);
+            }
+          }
         }
 
     }
@@ -31,10 +51,30 @@
         display: flex;
         justify-content: space-around;
 
+        @media @mobile {
+ 				 .column;
+ 			 }
+
         .text-content {
           .box-shadow(2px 3px lightblue);
 
           margin-right: 10px;
+
+          @media @tablet {
+            padding-left: 10px;
+          }
+
+          @media @mobile {
+            padding-top: 10px;
+          }
+
+          button {
+            .buttonMix;
+
+            &:hover {
+              background: darken(gray, 20%);
+            }
+          }
         }
 
         p {
