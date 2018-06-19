@@ -132,19 +132,20 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
 }
 header {
@@ -174,7 +175,7 @@ header .logo {
   margin-top: 72px;
   justify-content: center;
 }
-@media (max-width: 768) {
+@media (max-width: 768px) {
   .cta {
     display: flex;
     justify-content: center;
