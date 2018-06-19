@@ -197,6 +197,10 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
 }
 @media (max-width: 768px) {
   header .logo {
@@ -215,6 +219,11 @@ header .logo {
   .cta {
     justify-content: center;
   }
+}
+.cta .cta-image {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
 }
 @media (max-width:768px) {
   .cta .cta-image {
@@ -313,6 +322,13 @@ header .logo {
   display: block;
   margin: 30px auto;
   width: 100%;
+  -webkit-box-shadow: 5px 10px;
+  -moz-box-shadow: 5px 10px;
+  box-shadow: 5px 10px;
+  -webkit-transform: skew(2deg, 2deg);
+  -moz-transform: skew(2deg, 2deg);
+  -ms-transform: skew(2deg, 2deg);
+  -o-transform: skew(2deg, 2deg);
 }
 .main-content .bottom-content {
   display: flex;
