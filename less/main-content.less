@@ -1,29 +1,100 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
+   border-top: 2px solid @accent-color; 
+   border-bottom: 2px solid @accent-color;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   
+   @media @tablet {
+       padding-left: 2%;
+       padding-right: 2%;
+   }
+
+   @media @phone {
+       padding: 35px 0;
+   }
 
    .top-content {
         display: flex;
         justify-content: space-around;
+        padding-bottom: 30px;
+        @media @phone {
+            flex-direction: column; 
+        }
+
+        p {
+            padding-left: 1%;
+        }
+
+        @media @phone {
+            padding-bottom: 0;
+        }
+        
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        
+        @media @phone {
+            width: 100%;
+            padding-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .skew(0, 0);
+        }
+
+        p {
+            .skew(-5deg, 0);
+        }
+
+        h4 {
+            .skew(-5deg, 0);
+
+            @media @phone {
+                font-size: 20px;
+            }
+        }
+
+        button {
+            margin-top: 10px;
+            .button-maker(100px, 20px, white, 12px);
+            #btn-ns > .btn;
+            align-self: center;
+            .skew(0, 0);
+        }
     }
 
     .middle-img {
         display: block;
-        margin: 30px auto;
+        margin: 10px auto 30px;
+        .box-shadow(3px 2px 1px 0 gray);
+
+        @media @tablet {
+            width: 100%;
+        }
+
+        @media @phone {
+            margin: 0 auto 20px;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
-        p {
-            padding-right: 20px;
+        @media @phone {
+            flex-direction: column;
+            justify-content: space-between;
         }
-    }
+
+        p {
+            padding-right: 2.27%;
+            padding-left: 1%;
+        }
+    } 
 }// main-content

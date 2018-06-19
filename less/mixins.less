@@ -35,3 +35,46 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-maker(@width, @height, @bg-color, @font-size) {
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	border: 1px solid @accent-color;
+	.border-radius(5px);
+	.box-shadow(3px 2px 1px 0 gray);
+	cursor: pointer;
+	font-size: @font-size;
+
+	&:hover {
+		background-color: lighten(@accent-color, 20%);
+		border-color: lighten(@accent-color, 20%);
+		color: white;
+	}
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#nav-ns {
+	.btn {
+		&:hover {
+			text-shadow: 3px 2px lightgray;
+			text-decoration: underline;
+			color: @accent-color;
+			.skew(20deg, 0);
+			font-size: 20px;
+		}
+	}
+}
+
+#btn-ns {
+	.btn {
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}
