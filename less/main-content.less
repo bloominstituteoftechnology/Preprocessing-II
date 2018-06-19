@@ -1,5 +1,12 @@
 // Main Content Styles
 
+.container {
+    .cta-text {
+        #bundle > .headings;
+        }
+}
+
+
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -8,22 +15,53 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @phone {
+    .container .cta-text {
+        color: red;
+       }
+    border-top: 2px solid red;
+
+        
+}
+
    .top-content {
         display: flex;
         justify-content: space-around;
+        
+        .btn {
+            .new-btn;
+            #bundle > .buttons;
+        }
+
+        p {
+            #bundle > .paragraph;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        @media @tablet {
+            width: 75%;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        .btn {
+            .new-btn;
+            #bundle > .buttons;
+        }
+
         p {
             padding-right: 20px;
+            #bundle > .paragraph;
         }
+
+        
     }
+   
+    
 }// main-content
