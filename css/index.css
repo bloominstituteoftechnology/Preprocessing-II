@@ -205,6 +205,7 @@ header .logo {
     display: flex;
     justify-content: center;
     align-self: center;
+    margin: 28px 0 0 0;
   }
 }
 .cta {
@@ -232,6 +233,12 @@ header .logo {
 @media (max-width: 768px) {
   .cta .cta-text {
     margin: auto;
+    font-size: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    font-size: 50px;
   }
 }
 .cta .cta-text button {
@@ -267,6 +274,11 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -275,6 +287,11 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
