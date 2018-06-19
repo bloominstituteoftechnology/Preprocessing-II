@@ -275,6 +275,11 @@ header .logo {
     letter-spacing: 0;
   }
 }
+@media (max-width: 400px) {
+  .cta .cta-text h1 {
+    font-size: 60px;
+  }
+}
 @media (max-width: 768px) {
   .cta .cta-text {
     margin: 0 5% 0 0;
