@@ -16,6 +16,14 @@
     p {
       padding-right: 20px;
     }
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+
+      .text-content:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .middle-img {

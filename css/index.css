@@ -173,10 +173,26 @@ header nav a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #888;
+  }
+}
 @media (max-width: 768px) {
   header nav {
     width: 100%;
     padding: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+    border-bottom: 1px solid #888;
+    padding-bottom: 0;
   }
 }
 header .logo {
@@ -221,6 +237,11 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 400px) {
+  .cta .cta-text {
+    font-size: 15vw;
+  }
+}
 .cta .img-wrapper img {
   width: 100%;
   display: block;
@@ -248,6 +269,14 @@ header .logo {
 .main-content .top-content p {
   padding-right: 20px;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+  .main-content .top-content .text-content:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
 .main-content .middle-img {
   display: block;
   width: 100%;
@@ -261,6 +290,14 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+  .main-content .bottom-content .text-content:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 .contact {
   padding-left: 10px;
