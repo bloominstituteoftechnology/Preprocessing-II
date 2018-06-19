@@ -6,6 +6,18 @@
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    max-width: '768px';
+    width: '100%';
+    justify-content: center;
+    align-items: center;
+    background: salmon;
+  }
+  .cta img {
+    display: none;
+  }
+}
 .cta img {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -70,13 +82,12 @@ h5 {
   width: 880px;
   margin: auto;
 }
-@media ('max-width: 768px') {
+@media (max-width: 768px) {
   .container {
-    max-width: '768px';
-    width: '100%';
+    background: pink;
   }
 }
-@media ('max-width: 405px') {
+@media ((max-width: 405px)) {
   .container {
     max-width: '405px';
     width: '100%';
@@ -139,6 +150,34 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 768px) {
+  header {
+    max-width: '768px';
+    width: '100%';
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: bisque;
+  }
+}
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.flex-column {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.center {
+  justify-content: center;
+  align-items: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

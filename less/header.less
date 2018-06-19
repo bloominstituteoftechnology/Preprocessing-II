@@ -3,6 +3,7 @@
 header {
     width: 100%;
     display: flex;
+       
   
     nav {
       margin-top: 40px; 
@@ -25,5 +26,17 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+    }
+
+     @media @tablet{
+          .responsive-width(@tablet-max-width, @full-width);
+          .center;
+          nav {
+            // .flex-row;
+            width:100%;
+            align-items: center;
+            justify-content: space-around;
+            background-color: bisque;
+          }
     }
   }// header 

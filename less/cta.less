@@ -5,6 +5,16 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+      @media @tablet{
+            .responsive-width(@tablet-max-width, @full-width);
+            .center;
+            background: salmon;
+
+            img {
+                display: none;
+            }
+    }
+
     img {
         .rotate(-15deg);
     }
@@ -39,4 +49,6 @@
             color: white;
         }
     }
+
+
 }// cta
