@@ -175,6 +175,10 @@ header .logo {
   justify-content: flex-end;
 }
 .cta .cta-text {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
   font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
@@ -186,16 +190,32 @@ header .logo {
 }
 .cta .cta-text button {
   border: 1px double black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
   font-size: 16px;
   background: white;
   width: 170px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px black;
+  -moz-box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px black;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  -webkit-box-shadow: 5px 5px 5px lightgrey;
+  -moz-box-shadow: 5px 5px 5px lightgrey;
+  box-shadow: 5px 5px 5px lightgrey;
 }
 .main-content {
   border-top: 2px solid black;
@@ -212,6 +232,13 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  -webkit-transform: skew(5deg, 5deg);
+  -moz-transform: skew(5deg, 5deg);
+  -ms-transform: skew(5deg, 5deg);
+  -o-transform: skew(5deg, 5deg);
 }
 .main-content .bottom-content {
   display: flex;
