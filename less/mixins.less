@@ -35,3 +35,20 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button-maker(@width, @height, @bg-color) {
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	border: 1px solid @accent-color;
+	.border-radius(5px);
+	.box-shadow(3px 2px 1px 0 gray);
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
