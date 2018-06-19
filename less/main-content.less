@@ -11,7 +11,23 @@
    .top-content {
         display: flex;
         justify-content: space-around;
-
+        @media @mobile {
+            .columnflex;
+            width: 95%;
+        }
+        p {
+            @media @mobile {
+                margin-bottom: 5%;
+            }
+        }
+        .btn {
+            .buttonmaker(120px, 30px, slateblue);
+            .box-shadow;
+            &:hover {
+                background: darken(slateblue, 20%);
+                color: hotpink;
+            }
+        }
     }
 
     .middle-img {
@@ -19,14 +35,32 @@
         margin: 30px auto;
         .opacity;
         .skew(15deg, 15deg);
+        width: 99%;
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        .btn {
+            .buttonmaker(120px, 30px, slateblue);
+            .box-shadow;
+            &:hover {
+                background: darken(slateblue, 20%);
+                color: hotpink;
+            }
+            
+        }
+        @media @mobile {
+            .columnflex;
+            width: 95%;
+        }
 
         p {
             padding-right: 20px;
+            @media @mobile {
+                margin-bottom: 5%;
+                paddng-right: 0;
+            }
         }
     }
 }// main-content

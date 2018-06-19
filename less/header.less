@@ -3,16 +3,33 @@
 header {
     width: 100%;
     display: flex;
+    @media @tablet, @mobile {
+      .columnflexreverse; 
+    }
+  
   
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+      @media @mobile {
+       .columnflexreverse; 
+        width: 100%;
+        
+      }
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+        @media @mobile {
+          display: flex;
+          justify-content: center;
+          padding: 3% 0;
+          font-size: 110%;
+          width: 100%;
+          .sweetborders;
+          }
   
         &:hover {
             text-decoration: underline;
@@ -24,6 +41,12 @@ header {
   
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 6%;
+        @media @tablet, @mobile {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-self: center;  
+        }
     }
   }// header 

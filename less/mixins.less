@@ -38,3 +38,34 @@
 .background(@color) {
 	background: @color;
 }
+
+.sweetborders(){
+    border-top: 5px dotted lavender;
+    border-bottom: 2px solid rgb(188, 105, 255);
+}
+
+.columnflex(){
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+}
+
+.columnflexreverse(){
+	display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    align-self: center;  
+}
+
+.buttonmaker(@width, @height, @color){
+ width: @width;
+ height: @height;
+ background: @color;
+ border: 1px solid rgb(54, 54, 54);
+ .border-radius(20px);
+ .columnflex;
+}
