@@ -4,7 +4,15 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    img {
+        .border-radius(50%);
+        .box-shadow(10px 10px 8px #888888);
+        &:hover {
+            .opacity(.9);
+            .rotate(180deg);
+        }
+  
+    }
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -24,10 +32,12 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .box-shadow(10px 10px 8px #888888);
 
         &:hover {
             background: black;
             color: white;
+            .rotate(180deg);
         }
     }
 }// cta
