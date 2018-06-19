@@ -5,8 +5,20 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @max768 {
+        justify-content: center;
+
+        img {
+            display: none;
+        }
+    }
+
+    @media @max400 {
+        margin-top: 20px;
+    }
+
     .cta-text {
-        font-size: 72px;
+        font-size: 7rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -14,20 +26,36 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+    
+        @media @max950 {
+            font-size: 6.5rem;
+            margin-right: 10px;
+        }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+        @media @max768 {
+            margin-right: 0;
+        }
 
-        &:hover {
-            background: black;
-            color: white;
+        @media @max400 {
+            font-size: 5.5rem;
+        }
+
+        button {
+            border: 1px double black;
+            font-size: 1.6rem;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+
+            &:hover {
+                background: black;
+                color: white;
+            }
+
         }
     }
 }// cta

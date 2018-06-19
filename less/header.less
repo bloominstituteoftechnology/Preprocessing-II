@@ -3,21 +3,51 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @max768 {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
   
     nav {
       margin-top: 40px; 
-      width: 610px;
+      width: 100%;
       justify-content: space-between;
       display: flex;
+
+      @media @max400 {
+        margin-top: 0;
+        flex-direction: column;
+      }
+
+      &:first-child {
+        @media @max400 {
+            border-top: 1px solid black;
+        }
+      }
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+        font-size: 1.5rem;
   
         &:hover {
             text-decoration: underline;
             color: black;
   
+        }
+
+        @media @max400 {
+          border-bottom: 1px solid black;
+          font-size: 2rem;
+          text-align: center;
+          width: 100%;
+          padding-top: 5px;
+          padding-bottom: 5px;
+
+          &:hover {
+              text-decoration: none;
+          }
         }
       }
     }
@@ -25,5 +55,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @max768 {
+          align-self: center;
+          margin: 10px 0 5px;
+        }
     }
   }// header 
