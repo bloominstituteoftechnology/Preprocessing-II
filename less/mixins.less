@@ -30,8 +30,18 @@
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
+	-webkit-transform: skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+
+
+.button-uniq(@width: 150px, @height: 100px, @btn-color: blue){
+	width: @width;
+	height: @height;
+	background: @btn-color;
+	border: 1px solid black;
+
 }

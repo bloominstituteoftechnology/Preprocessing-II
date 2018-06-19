@@ -14,6 +14,17 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .border-radius();
+        .rotate(90deg);
+
+        @media @tablet {
+          display: flex;
+          width: 100%;
+        }
+        @media @phone {
+          font-size: 50px;
+          .rotate(180deg);
+        }
     }
 
     .cta-text button {
@@ -23,12 +34,17 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-        .border-radius(50%: 5px);
+        .border-radius();
 
         &:hover {
             background: black;
             color: white;
         }
-
-        }
-    }// cta
+    }
+    img {
+      .opacity();
+      @media @tablet {
+        display: none;
+      }
+    }
+}// cta
