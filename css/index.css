@@ -133,6 +133,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -148,6 +149,25 @@ h5 {
   max-width: 880px;
   margin: auto;
 }
+h1 {
+  font-size: 72px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #323D4F;
+}
+h4 {
+  font-size: 24px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+  color: #323D4F;
+}
+p {
+  font-size: 1.6rem;
+}
+button {
+  font-size: 1.5rem;
+}
+a {
+  font-size: 1.7rem;
+}
 header {
   width: 100%;
   display: flex;
@@ -156,7 +176,7 @@ header {
   padding: 20px 0 20px;
 }
 header nav {
-  width: 60%;
+  width: 65%;
   justify-content: space-between;
   display: flex;
 }
@@ -181,7 +201,6 @@ header nav a:hover {
   justify-content: flex-end;
 }
 .cta .cta-text {
-  font-size: 72px;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -201,15 +220,20 @@ header nav a:hover {
   border-right: solid 2px #F7786B;
   border-bottom: dashed 2px #91A8D0;
   border-bottom-style: solid;
-  font-size: 16px;
   background: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   width: 170px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: #fcfcfc;
+  background: #f7f7f7;
   border-top: solid 2px #323D4F;
   border-left: solid 2px #91A8D0;
   border-right: solid 2px #F7CAC9;
@@ -246,7 +270,6 @@ header nav a:hover {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
   line-height: 18px;
 }
 .main-content .top-content {
@@ -399,10 +422,16 @@ header nav a:hover {
   border-bottom: dashed 2px #F6D155;
   border-bottom-style: solid;
   margin-top: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   cursor: pointer;
 }
 .main-content .content-btn:hover {
-  background: #fcfcfc;
+  background: #f7f7f7;
   border-top: solid 2px #323D4F;
   border-left: solid 2px #F6D155;
   border-right: solid 2px #D2691E;
