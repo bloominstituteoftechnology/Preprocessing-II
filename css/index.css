@@ -126,6 +126,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -196,6 +210,9 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta img:hover {
+  animation: spin 4s linear infinite;
 }
 .main-content {
   border-top: 2px solid black;
