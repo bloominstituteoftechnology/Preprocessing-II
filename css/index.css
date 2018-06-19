@@ -244,6 +244,22 @@ header .logo {
     font-size: 50px;
   }
 }
+@media (max-width: 768px) {
+  .cta .cta-text h1 {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text h1 {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
