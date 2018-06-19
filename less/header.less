@@ -1,29 +1,50 @@
 // Header Styles
 
 header {
+    @media @tablet{
+      flex-wrap: wrap;
+    }
+
     width: 100%;
     display: flex;
-  
+
     nav {
-      margin-top: 40px; 
-      width: 610px;
+      @media @tablet{
+        width: 100%;
+        margin: 40px 3%;
+      }
+      margin-top: 40px;
+      width: 100%;
       justify-content: space-between;
       display: flex;
-  
+
       a {
+        .border;
+        font-size: 1.2rem;
+        padding: 2px;
         text-decoration: none;
-        color: #b0b0b0;
-  
+        color: white;
+        background-color: @accent-color;
+        .border-radius; // using .border-radius mixin
+
         &:hover {
             text-decoration: underline;
-            color: black;
-  
+            background-color: lighten(@accent-color, 10%);
+            color: #A8D6B8; //used https://imagecolorpicker.com/ to match colors
+
         }
       }
     }
-  
+
     .logo {
+        @media @tablet{
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+        }
+
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 9%;
+        .skew(0deg, -20deg);
     }
-  }// header 
+  }// header
