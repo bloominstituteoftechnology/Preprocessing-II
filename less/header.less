@@ -1,29 +1,29 @@
 // Header Styles
 
 header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px 1%;
+
+  nav {
+    justify-content: space-between;
     display: flex;
-  
-    nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
-      display: flex;
-  
-      a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
+    flex-grow: 1;
+
+    a {
+      text-decoration: none;
+      color: #b0b0b0;
+
+      &:hover {
+        text-decoration: underline;
+        color: black;
       }
     }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
-  }// header 
+  }
+
+  .logo {
+    align-self: flex-end;
+    margin-left: percentage(91px/880px);
+  }
+} // header
