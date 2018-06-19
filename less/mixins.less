@@ -48,3 +48,23 @@
 	height: @height;
 	background-color: @background-color;
 }
+
+// Namespace helps to prevent mixin pollution 
+#my-namespace {
+	// h1 ... h5
+	.headings (@font-size){
+			font-size: @font-size;
+			text-decoration: underline;
+			font-weight: bolder;
+	}
+	// button
+	.btn {
+		border: 3px dotted lightyellow;
+		color: lighten(blue, 20%);
+		text-transform: uppercase;
+	}
+
+	.text (@font-size) {
+		font-size: @font-size;
+	}
+}

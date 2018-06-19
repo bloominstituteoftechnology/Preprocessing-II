@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#my-namespace .btn {
+  border: 3px dotted lightyellow;
+  color: #6666ff;
+  text-transform: uppercase;
+}
 * {
   box-sizing: border-box;
 }
@@ -325,7 +330,19 @@ header .logo {
   flex-direction: column;
   align-items: center;
 }
-.main-content .top-content .text-content button {
+.main-content .top-content .text-content h4 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.main-content .top-content .text-content p {
+  font-size: 1.1rem;
+}
+.main-content .top-content .text-content .text-button {
+  border-radius: 20px;
+  border: 5px solid lightblue;
+  font-weight: 800;
+  margin: 2rem 0;
   width: 10rem;
   height: 2rem;
   background-color: transparent;
@@ -333,12 +350,8 @@ header .logo {
   -moz-transform: skew(-3deg, -3deg);
   -ms-transform: skew(-3deg, -3deg);
   -o-transform: skew(-3deg, -3deg);
-  border-radius: 20px;
-  border: 5px solid lightblue;
-  font-weight: 800;
-  margin: 2rem 0;
 }
-.main-content .top-content .text-content button:hover {
+.main-content .top-content .text-content .text-button:hover {
   background: #cccccc;
 }
 @media (max-width: 400px) {
@@ -365,7 +378,11 @@ header .logo {
   flex-direction: column;
   align-items: center;
 }
-.main-content .bottom-content .text-content button {
+.main-content .bottom-content .text-content .text-button {
+  border-radius: 20px;
+  border: 5px solid blue;
+  font-weight: 800;
+  margin: 2rem 0;
   width: 10rem;
   height: 2rem;
   background-color: transparent;
@@ -373,12 +390,11 @@ header .logo {
   -moz-transform: skew(-3deg, -3deg);
   -ms-transform: skew(-3deg, -3deg);
   -o-transform: skew(-3deg, -3deg);
-  border-radius: 20px;
-  border: 5px solid blue;
-  font-weight: 800;
-  margin: 2rem 0;
+  border: 3px dotted lightyellow;
+  color: #6666ff;
+  text-transform: uppercase;
 }
-.main-content .bottom-content .text-content button:hover {
+.main-content .bottom-content .text-content .text-button:hover {
   background: #cccccc;
 }
 @media (max-width: 400px) {

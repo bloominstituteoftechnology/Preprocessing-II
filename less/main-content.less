@@ -25,13 +25,21 @@
             flex-direction: column;
             align-items: center;
 
-            button {
-                .btn (10rem, 2rem, transparent); 
-                .skew(-3deg, -3deg);
+            h4 {
+                #my-namespace > .headings(2.5rem) ;
+            }
+
+            p {
+                #my-namespace > .text(1.1rem) ;
+            }
+
+            .text-button {
                 border-radius: 20px;
                 border: 5px solid lightblue;
                 font-weight: 800;
                 margin: 2rem 0;
+                .btn (10rem, 2rem, transparent); 
+                .skew(-3deg, -3deg);
 
                 &:hover {
                     background: darken(white, 20%);
@@ -64,13 +72,14 @@
             flex-direction: column;
             align-items: center;
 
-            button {
-                .btn (10rem, 2rem, transparent); 
-                .skew(-3deg, -3deg);
+            .text-button {
                 border-radius: 20px;
                 border: 5px solid blue;
                 font-weight: 800;
                 margin: 2rem 0;
+                .btn (10rem, 2rem, transparent); 
+                .skew(-3deg, -3deg);
+                #my-namespace > .btn ;
 
                 &:hover {
                     background: darken(white, 20%);
