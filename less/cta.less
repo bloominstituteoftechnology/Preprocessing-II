@@ -4,30 +4,50 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 100%;
 
-    .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
+    @media(max-width: 400px){
         justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
     }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+    .cta-image {
+        
+        @media(max-width: 768px){
+            display:none;
+        }
+    }
 
-        &:hover {
+    .cta-text {
+        .center-text();
+        font-size: 6.2rem + 1;
+        letter-spacing: 5px;
+        flex-flow: column;
+        margin: 0 82px 0 0;
+        color: @heading-color;
+
+        @media(max-width:768px){
+            margin: 0;
+            width: 100%;
+        }
+
+        @media(wax-width:400px){
+            width: 100%;
+            font-size: 4rem;
+        }
+
+        button {
+            border: 1px double black;
+            font-size: 1.6rem;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
             background: black;
             color: white;
         }
     }
-}// cta
+}
