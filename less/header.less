@@ -3,27 +3,71 @@
 header {
     width: 100%;
     display: flex;
+    @media @tablet {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
+
   
     nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
+      background-color: @nav-color;
       display: flex;
-  
+      line-height: 36px;
+      width: 100%;
+      justify-content: space-around;
+
+      @media @tablet {
+        justify-content: center;
+        position: bottom;
+      }
+
+      @media @phone {
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-top: 1px solid black;
+        align-items: center;
+        justify-content: center;
+      }
+
       a {
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        color: @link-color;
+        margin: 0 1.5%;
         text-decoration: none;
-        color: #b0b0b0;
-  
+        justify-content: center;
+        text-shadow: 0.75px 0.75px;
+        .round;
+
         &:hover {
-            text-decoration: underline;
-            color: black;
-  
+                    // text-decoration: underline;
+                    background-color: @hover-color;
+          
+                }
+
+          @media @phone {
+          width: 100%;
+          border-bottom: 1px solid black;
+          text-align: center;
         }
+        
       }
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .opacity;
+        .rotate;
+        .box-shadow;
+        .skew;
+        @media @tablet {
+          align-self: center;
+          position: top;
+        }
     }
   }// header 
