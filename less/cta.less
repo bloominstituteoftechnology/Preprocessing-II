@@ -1,12 +1,18 @@
 // Call To Action (CTA) Styles
 
 .cta {
+    width: 100%;
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    @media @tablet {
+        .center;
+    }
 
     .cta-text {
-        font-size: 72px;
+        .rotate (5deg);
+        width: 50%;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -14,20 +20,50 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @tablet {
+            .center;
+            margin: 0 1%;
+            width: 90%;
+            letter-spacing: normal;
+        }
+        @media @phone {
+          .rotate(0);
+          font-size: 4rem;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
+        .border-radius(5px);
+        .rotate(-15deg);
         font-size: 16px;
         background: white;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .box-shadow(5px 5px 5px black);
 
         &:hover {
             background: black;
             color: white;
+            .box-shadow(5px 5px 5px lightgrey);
+
         }
+    }
+
+    .img {
+      width: 50%;
+      height: auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &:hover {
+        .opacity(0);
+      }
+      @media @tablet {
+          display: none;
+      }
     }
 }// cta

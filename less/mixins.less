@@ -35,3 +35,39 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+#headings {
+	.header(@width, @display) {
+		width: @width;
+		display: @display;
+	}
+}
+#buttons {
+	.create-button (@width, @height, @color) {
+		width: @width;
+		height: @height;
+		background-color: @color;
+		border: 1px solid black;
+		border-radius: 5px;
+		.center;
+		.box-shadow(5px 2px 3px grey);
+		&:hover {
+			cursor: pointer;
+			background-color: darken(@color, 20%);
+			.box-shadow(5px 2px 3px black);
+		}
+	}
+}
+#p-tags {
+	.set-size(@size) {
+		font-size: @size;
+	}
+}
