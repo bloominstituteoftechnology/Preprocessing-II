@@ -2,8 +2,18 @@
 
 .cta {
     display: flex;
+    align-items: center;
     margin-top: 72px;
     justify-content: flex-end;
+
+    @media @tablet-view {
+        margin: 10px 0 45px;
+    }
+    @media @phone-view {
+        display: flex;
+        align-items: center;
+        margin: 0 0 45px;
+    }
 
     .cta-text {
         font-size: 72px;
@@ -14,6 +24,7 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        width: 50%;
     }
 
     .cta-text button {
@@ -23,11 +34,20 @@
         width: 170px;
         height: 32px;
         margin-top: 10px;
-        cursor: pointer;
-
+        .border-radius;
+        
         &:hover {
             background: black;
             color: white;
         }
     }
+
+    .cta-image {
+        width: 50%;
+        .rotate(65deg);
+
+        @media @tablet-view {
+            display: none;
+        }
+    }   
 }// cta
