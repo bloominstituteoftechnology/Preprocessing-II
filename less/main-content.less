@@ -18,7 +18,7 @@
         .text-content {
           .btn {
             margin: 20px 0;
-            .create-button(150px, 50px, white);
+            #buttons > .create-button(150px, 50px, white);
             @media @phone {
               margin: 20px auto;
               width: 80%;
@@ -61,7 +61,7 @@
         .text-content {
           .btn {
             margin: 20px 0;
-            .create-button(150px, 50px, white);
+            #buttons > .create-button(150px, 50px, white);
             @media @phone {
               margin: 20px auto;
               width: 80%;
@@ -74,7 +74,8 @@
         }
 
         p {
-            padding-right: 20px;
+          #p-tags > .set-size(1.4rem);
+          padding-right: 20px;
         }
     }
 }// main-content
