@@ -126,6 +126,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.new-btn {
+  height: 23px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 20%;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+}
+.new-btn:hover {
+  background-color: #999900;
+}
+#bundle .headings {
+  color: blue;
+}
+#bundle .buttons {
+  box-shadow: 2px 5px 1px gray;
+}
+#bundle .paragraph {
+  line-height: 20px;
+}
 * {
   box-sizing: border-box;
 }
@@ -224,6 +246,9 @@ header .logo {
   background: black;
   color: white;
 }
+.container .cta-text {
+  color: blue;
+}
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -235,6 +260,9 @@ header .logo {
 @media (max-width: 400px) {
   .main-content {
     border-top: 2px solid red;
+  }
+  .main-content .container .cta-text {
+    color: red;
   }
 }
 .main-content .top-content {
@@ -250,9 +278,13 @@ header .logo {
   color: black;
   text-align: center;
   margin-top: 15px;
+  box-shadow: 2px 5px 1px gray;
 }
 .main-content .top-content .btn:hover {
   background-color: #999900;
+}
+.main-content .top-content p {
+  line-height: 20px;
 }
 .main-content .middle-img {
   display: block;
@@ -276,12 +308,14 @@ header .logo {
   color: black;
   text-align: center;
   margin-top: 15px;
+  box-shadow: 2px 5px 1px gray;
 }
 .main-content .bottom-content .btn:hover {
   background-color: #999900;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+  line-height: 20px;
 }
 .contact p {
   margin: 20px 0;
