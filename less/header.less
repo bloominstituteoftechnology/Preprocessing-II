@@ -3,20 +3,51 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
   
     nav {
       margin-top: 40px; 
-      width: 610px;
+      width: 69%;
       justify-content: space-between;
       display: flex;
+
+      @media @tablet {
+        width: 100%;
+        .space-around;
+      }
+
+      @media @mobile {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid black;
+        margin-top: 20px;
+    }
   
       a {
         text-decoration: none;
         color: #b0b0b0;
+
+        @media @mobile {
+          border-bottom: 1px solid black;
+          width: 100%;
+          text-align: center;
+          font-size: 2.0rem;
+          padding: 20px 0;
+      }
   
         &:hover {
             text-decoration: underline;
             color: black;
+
+            @media @mobile {
+              background-color: darken(white, 20%);
+            }
   
         }
       }
@@ -25,5 +56,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @tablet {
+          .center;
+          align-self: auto;
+          margin: 28px 0 0 0;
+          
+        }
     }
   }// header 

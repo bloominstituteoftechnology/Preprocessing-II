@@ -5,6 +5,11 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        // border: 1px solid red;
+        .center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -13,7 +18,29 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 9% 0 0;
+        // .rotate(90);
+
+        @media @tablet {
+            margin: auto;
+            font-size: 60px;
+            .opacity(.70);
+            
+            // color: burlywood;
+        }
+
+        @media @mobile {
+            font-size: 50px;
+        }
+    }
+
+    .cta-text h1 {
+        @media @tablet {
+            .rotate(-10deg);
+        }
+        @media @mobile {
+            .rotate(0deg);
+        }
     }
 
     .cta-text button {
@@ -25,9 +52,22 @@
         margin-top: 10px;
         cursor: pointer;
 
+        @media @tablet {
+            .border-radius(22px);
+        }
+
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    img {
+        width: 100%;
+        .skew(10deg, 5deg);
+
+        @media @tablet {
+            display: none;
         }
     }
 }// cta

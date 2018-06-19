@@ -11,19 +11,47 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @mobile {
+            flex-direction: column;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        width: 100%;
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @mobile {
+            flex-direction: column;
+        }
+
         p {
             padding-right: 20px;
+        }
+    }
+
+    h4 {
+        @media @mobile {
+            .box-shadow(10px 5px 5px lawngreen);
+        }
+        
+    }
+
+    .text-content .btn {
+        .btn-maker(44%, 29%, lightgrey);
+        min-width: 99px;
+        max-width: 180px;
+        min-height: 20px;
+        max-height: 40px;
+
+        &:hover {
+            background-color: darken(lightgrey, 20%);
         }
     }
 }// main-content
