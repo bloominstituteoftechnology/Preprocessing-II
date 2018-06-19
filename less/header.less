@@ -22,9 +22,6 @@ header {
         flex-wrap: wrap;
         padding-bottom: 20px;
       }
-      @media @phone {
-
-      }
 
       a {
         text-decoration: none;
@@ -37,7 +34,11 @@ header {
           padding: 5px;
           color: @text-color;
         }
-        
+        @media @phone {
+          color:blue;
+          border: 5px inset crimson;
+          font-size: @font-size-primary - 1rem;
+        }
         
         &:hover {
             text-decoration: none;
@@ -57,7 +58,9 @@ header {
           border: 2px groove goldenrod;
           .border-radius(50px);
           padding: 1px;
-          
+        }
+        @media @phone {
+          border: 5px inset crimson;
         }
 
         &:hover {

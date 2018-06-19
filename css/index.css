@@ -193,6 +193,13 @@ header nav a {
     color: magenta;
   }
 }
+@media ( max-width: 400px ) {
+  header nav a {
+    color: blue;
+    border: 5px inset crimson;
+    font-size: 0.6rem;
+  }
+}
 header nav a:hover {
   text-decoration: none;
   -webkit-box-shadow: 10px 10px 10px black;
@@ -218,6 +225,11 @@ header .logo {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     padding: 1px;
+  }
+}
+@media ( max-width: 400px ) {
+  header .logo {
+    border: 5px inset crimson;
   }
 }
 header .logo:hover {
@@ -255,6 +267,14 @@ header .logo:hover {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media ( max-width: 768px ) {
+  .cta img {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
 }
 .main-content {
   border-top: 2px solid black;
