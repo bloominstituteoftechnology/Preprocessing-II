@@ -35,12 +35,15 @@ header {
         color: #b0b0b0;
         font-size: @base-font-size;
         text-align: center;
-        margin: 20px;
+        margin: 10px;
 
         &:hover {
             text-decoration: underline;
             color: black;
 
+        }
+        @media @phone {
+          margin: 20px;
         }
       }
     }
@@ -50,6 +53,10 @@ header {
         margin: 28px 0 0 91px;
 
         @media @tablet {
+          align-self: center;
+          margin: 28px auto 0 auto;
+        }
+        @media @phone {
           align-self: center;
           margin: 28px auto 0 auto;
         }

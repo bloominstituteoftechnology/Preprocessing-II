@@ -206,17 +206,28 @@ header nav a {
   color: #b0b0b0;
   font-size: 1.6rem;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 header nav a:hover {
   text-decoration: underline;
   color: black;
+}
+@media (max-width: 400px) {
+  header nav a {
+    margin: 20px;
+  }
 }
 header .logo {
   align-self: center;
   margin: 28px 0 0 91px;
 }
 @media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+    margin: 28px auto 0 auto;
+  }
+}
+@media (max-width: 400px) {
   header .logo {
     align-self: center;
     margin: 28px auto 0 auto;
