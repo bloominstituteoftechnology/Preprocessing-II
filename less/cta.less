@@ -5,6 +5,17 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet{
+        justify-content: center;
+    }
+
+    @media @mobile{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +25,45 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @mobile{
+            margin: 0;
+        }
+
+        h1{
+            &:hover{
+                .rotate(-20deg);
+            }
+
+            @media @tablet{
+                letter-spacing: 0;
+            }
+
+            @media @mobile{
+                font-size: 60px;
+            }
+        }
+
+        @media @tablet{
+            margin: 0 5% 0 0;
+        }
+    }
+
+    img{
+        
+        &:hover{
+            .skew(-15deg, -15deg);
+        }
+
+        @media @tablet{
+            display: none;
+        }
+
+        @media @mobile{
+            display: block;
+            max-width: 80%;
+            margin: 55px 0 0 0;
+        }
     }
 
     .cta-text button {
@@ -28,6 +78,8 @@
         &:hover {
             background: black;
             color: white;
+            .border-radius(10px);
+            .rotate(-20deg);
         }
     }
 }// cta
