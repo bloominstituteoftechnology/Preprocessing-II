@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -298,6 +303,26 @@ header .logo:hover {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .button {
+  width: 75px;
+  height: 75px;
+  background: pink;
+  font-size: 0.6rem;
+  text-align: center;
+  border: 2px groove slateblue;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .button:hover {
+  background: #ff5a77;
 }
 .contact p {
   margin: 20px 0;

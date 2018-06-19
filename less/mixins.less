@@ -41,8 +41,25 @@
     justify-content: @position;
 }
 
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .custom-font(@text-color, @font-size-primary) {
     color: @text-color;
     font-size: @font-size-primary;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.custom-button(@width: 75px, @height: 75px, @background: pink) {
+	width: @width;
+	height: @height;
+	background: @background;
+	font-size: @font-size-primary - 1rem;
+	text-align: center;
+	border: 2px groove slateblue;
+	.border-radius(15px);
+	.center;
 }
