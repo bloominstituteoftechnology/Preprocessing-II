@@ -14,17 +14,20 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .background(gray);
+        .box-shadow(@red-shadow);
     }
 
     .cta-text button {
-        border: 1px double black;
+        border: 1px double red;
+        .border-radius(5px);
         font-size: 16px;
         background: white;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-
+        .box-shadow(10px 5px 5px red);
         &:hover {
             background: black;
             color: white;

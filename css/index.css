@@ -183,15 +183,28 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  background-color: gray;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 .cta .cta-text button {
-  border: 1px double black;
+  border: 1px double red;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   font-size: 16px;
   background: white;
   width: 170px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 .cta .cta-text button:hover {
   background: black;
@@ -212,6 +225,9 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .main-content .bottom-content {
   display: flex;
