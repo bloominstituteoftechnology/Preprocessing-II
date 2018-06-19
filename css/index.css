@@ -279,6 +279,10 @@ header .logo:hover {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+    -webkit-transform: skew(20deg, 20deg);
+    -moz-transform: skew(20deg, 20deg);
+    -ms-transform: skew(20deg, 20deg);
+    -o-transform: skew(20deg, 20deg);
   }
 }
 .main-content {
