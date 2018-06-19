@@ -15,12 +15,17 @@
 
     p {
       padding-right: 20px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      #buttons > .btn-solid(5px, 15px, #888, white);
+      font-size: 1.4rem;
     }
 
     @media @mobile-breakpoint {
       flex-direction: column;
-
-      .text-content:not(:last-of-type) {
+      &:not(:last-of-type) {
         margin-bottom: 20px;
       }
     }
