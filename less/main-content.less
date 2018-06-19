@@ -21,7 +21,16 @@
 
             button{
                 .button(90px, 45px, white, @cobalt);
+
+                @media @phone {
+                    margin-bottom: 25px;
+                }
+
+                &:hover {
+                    background-color: darken(@cobalt, 20%)
+                }
             }
+
         }
     }
 
@@ -40,10 +49,18 @@
 
 
             button {
-                .button(80px, 40px, white, @cobalt);
+                .button(90px, 45px, white, @cobalt);
+
+                @media @phone {
+                    margin-bottom: 25px;
+                }
+
+                &:hover{
+                    background-color: darken(@cobalt, 20%);
+                }
             }
         }
-        
+
         p {
             padding-right: 1%;
         }
