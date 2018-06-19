@@ -1,29 +1,93 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
 
-   .top-content {
+    @media @tablet {
+        padding: 10px 1.5%;
+    }
+
+    .top-content {
         display: flex;
         justify-content: space-around;
+        .box-shadow(5px 0px dodgerblue);
+
+        @media @phone {
+            flex-flow: row wrap;
+        }
+
+        .text-content {
+            @media @phone {
+                width: 100vw;
+                padding-top: 10px;
+            }
+
+            button {
+                #btn-bundle > .button-maker(50%, 20px, dodgerblue, white);
+
+                &:hover {
+                    background-color: darken(dodgerblue, 10%);
+                }
+                
+                @media @middle-img-width {
+                    #btn-bundle > .button-maker(60%, 40px, dodgerblue, white);
+                }
+            }
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        .opacity(.75);
+        .skew(-0.05rad, -0.05rad);
+        .box-shadow(5px 0px dodgerblue);
+
+        @media @middle-img-width {
+            width: 95vw;
+        }
+        @media @tablet {
+            width: 95vw;
+            padding: 0;
+        }
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        .box-shadow(5px 5px dodgerblue);
+
+        @media @phone {
+            flex-flow: row wrap;
+        }
 
         p {
             padding-right: 20px;
+        }
+
+        .text-content {
+            @media @phone {
+                width: 100vw;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            button {
+                #btn-bundle > .button-maker(50%, 20px, dodgerblue, white);
+
+                &:hover {
+                    background-color: darken(dodgerblue, 10%);
+                }
+
+                @media @middle-img-width {
+                    #btn-bundle > .button-maker(90%, 40px, dodgerblue, white);
+                }
+            }
         }
     }
 }// main-content
