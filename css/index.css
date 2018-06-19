@@ -131,6 +131,7 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -146,6 +147,13 @@ h5 {
 .container {
   max-width: 880px;
   margin: auto;
+}
+h4 {
+  font-size: 2rem;
+}
+p,
+a {
+  font-size: 1.6rem;
 }
 header {
   width: 100%;

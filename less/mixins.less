@@ -36,12 +36,26 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.button-maker (@btn-width, @btn-height, @bg-color, @txtcolor) {
-	width: @btn-width;
-	height: @btn-height;
-	background-color: @bg-color;
-	color: @txtcolor;
-	border: 1px solid black;
-	.border-radius;
-	margin: 10px 1.5%;
+#btn-bundle() {
+	.button-maker (@btn-width, @btn-height, @bg-color, @txtcolor) {
+		width: @btn-width;
+		height: @btn-height;
+		background-color: @bg-color;
+		color: @txtcolor;
+		border: 1px solid black;
+		.border-radius;
+		margin: 10px 1.5%;
+	}
+}
+
+#header-bundle() {
+	.header-style() {
+		font-size: 2rem;
+	}
+}
+
+#paragraph-bundle() {
+	.paragraph-style() {
+		font-size: 1.6rem;
+	}
 }
