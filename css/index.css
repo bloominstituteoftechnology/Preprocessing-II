@@ -152,11 +152,21 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap-reverse;
+  }
+}
 header nav {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -169,6 +179,12 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+    margin: 0 0 0 0;
+  }
 }
 .cta {
   display: flex;
@@ -201,6 +217,11 @@ header .logo {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+}
+@media (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
