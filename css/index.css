@@ -156,6 +156,13 @@ header nav {
   width: 610px;
   justify-content: space-between;
   display: flex;
+  border-bottom: 2px solid black;
+  -webkit-border-radius: 35%;
+  -moz-border-radius: 35%;
+  border-radius: 35%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 header nav a {
   text-decoration: none;
@@ -194,8 +201,11 @@ header .logo {
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: teal;
   color: white;
+  -webkit-box-shadow: 10px 5px 5px teal;
+  -moz-box-shadow: 10px 5px 5px teal;
+  box-shadow: 10px 5px 5px teal;
 }
 .main-content {
   border-top: 2px solid black;
