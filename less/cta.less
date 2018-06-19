@@ -13,20 +13,32 @@
     flex-flow: column;
     align-items: center;
     flex-grow: 1;
+
+    button {
+      border: 1px double black;
+      font-size: 16px;
+      background: white;
+      width: 170px;
+      height: 32px;
+      margin-top: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: black;
+        color: white;
+      }
+    }
   }
+  .img-wrapper {
+    img {
+      width: 100%;
+      display: block;
+      max-width: 379px;
+      height: auto;
+    }
 
-  .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-
-    &:hover {
-      background: black;
-      color: white;
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 } // cta
