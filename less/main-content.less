@@ -1,29 +1,108 @@
-// Main Content Styles
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
-        display: flex;
-        justify-content: space-around;
+.top-content {
+    width: 50%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    // display:flex;
+    text-align: center;
+    font-size: 7.2rem;
+    // justify-content: center;
+    // flex-flow: column;
+    // align-items: center;
+    .flex-box(@justify-content: center, @flex-flow:column, @align-items:center);
+    font-family: impact;
+    p {
+        // display: flex;
+        // justify-content: center;
+        .flex-box(@justify-content: center);
     }
-
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
+    .get-started {
+        // display: flex;
+        // justify-content: center;
+        .flex-box(@justify-content:center);
+        padding-top: 10px;
+        border-radius: 3px;
+        border: 1px solid black;
+        text-align: center;
+        margin-top: 10px;
+        color: red;
+        &:hover {
+        .border-radius(1px);
+        .opacity(.5);
+        .box-shadow(10px 10px 10px 10px blue);
+        .skew(2deg, 5deg);
+        .rotate(2deg);
+        background-color: darken(@some-color,20 );
+        cursor: pointer;
         }
     }
-}// main-content
+}
+.syntax-logo {
+    width: 50%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    height: auto;
+    padding-bottom:10px;
+}
+.features {
+    width: 46.845%;
+    // border-top: 1px solid black;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-right: 1%;
+}
+.about {
+    .features;
+}
+.middle-img img{
+    width: 100%;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+.services {
+    width: 31.33%;
+}
+.product {
+    .services;
+}
+.vision {
+    .services;
+}
+
+@media @tablet {
+     .top-content {
+        width: 100%;
+    }
+    .syntax-logo {
+        display: none;
+    }
+    .middle {
+        max-width: 100%;
+    }
+
+}
+
+@media @phone {
+    .container {
+        .features {
+        width: 100%;
+        }
+        .about {
+            .features;
+        }
+        .middle {
+            .features;
+        }
+        .product {
+            width: 100%;
+            padding-top: 30px;
+        }
+        .services {
+            width: 100%;
+        }
+        .vision {
+            .product;
+        }
+}
+}

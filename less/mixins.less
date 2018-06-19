@@ -35,3 +35,39 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.flex-box(@display: flex; @flex-direction: none; @flex-wrap: none; 
+        @justify-content: none; @align-items:none; @align-content: none; @perfect-center: false;
+        @align-self: none; @flex-flow: none; ){
+          & when (@perfect-center = true){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: @flex-direction;
+            flex-wrap: @flex-wrap;
+            align-content: @align-content;
+
+          }
+          & when not (@perfect-center = true){
+            display:@display;
+            flex-direction: @flex-direction;
+            flex-wrap: @flex-wrap;
+            justify-content: @justify-content;
+            align-items:@align-items;
+            align-content:@align-content;
+            align-self: @align-self;
+            flex-flow: @flex-flow;
+          }       
+}
+
+.a-tag(@text-decoration: none; @color: black; @background-color: none; ){
+    text-decoration: @text-decoration;
+    color: @color;
+    background-color: @background-color;
+}
+
+.button-builder (@width:20px, @height: 20px, @background-color: black){
+	width: @width;
+	height: @height;
+	background-color: @background-color;
+}
