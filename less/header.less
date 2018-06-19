@@ -3,6 +3,15 @@
 header {
     width: 100%;
     display: flex;
+    .box-shadow;
+
+    @media @tablet {
+      .rotate;
+    }
+
+    @media @phone {
+      .skew;
+    }
   
     nav {
       margin-top: 40px; 
@@ -17,7 +26,6 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
-  
         }
       }
     }
@@ -25,5 +33,6 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        .rotate;
     }
   }// header 
