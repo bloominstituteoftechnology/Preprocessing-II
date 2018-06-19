@@ -202,6 +202,10 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 9%;
+  -webkit-transform: skew(0deg, -20deg);
+  -moz-transform: skew(0deg, -20deg);
+  -ms-transform: skew(0deg, -20deg);
+  -o-transform: skew(0deg, -20deg);
 }
 @media (max-width: 768px) {
   header .logo {
@@ -255,9 +259,9 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
-  -webkit-box-shadow: 10px 5px 5px #082E4A;
-  -moz-box-shadow: 10px 5px 5px #082E4A;
-  box-shadow: 10px 5px 5px #082E4A;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 .cta button:hover {
   background: #A8D6B8;
@@ -298,6 +302,9 @@ header .logo {
 .main-content .top-content .learn:hover {
   background-color: #0d4b78;
   color: #A8D6B8;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 .main-content .middle-img {
   -webkit-opacity: 0.5;
@@ -329,6 +336,9 @@ header .logo {
 .main-content .bottom-content .learn:hover {
   background-color: #0d4b78;
   color: #A8D6B8;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
@@ -337,7 +347,7 @@ header .logo {
   margin: 20px 3%;
 }
 .contact p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: normal;
 }
 footer {
