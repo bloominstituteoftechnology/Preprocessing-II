@@ -36,13 +36,20 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.btn(@width: 125px, @height: 25px, @bg-color: darkgray) {
+
+// bg-color works best with mid-range colors; don't use black
+.btn (@width: 125px, @height: 25px, @bg-color: darkgray) {
+	.border-radius;
 	width: @width;
 	height: @height;
-	background: darken(@bg-color, 20%);
-	border-radius: 5px;
-	color: white;
+	background: @bg-color;
+	color: black;
 	margin-top: 10px;
+
+	&:hover {
+		background: darken(@bg-color, 20%);
+		color: lighten(@bg-color, 20%);
+	}
 }
 
 .border-box() {
