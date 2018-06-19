@@ -1,29 +1,46 @@
 // Header Styles
 
 header {
+    @media @tablet{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     width: 100%;
     display: flex;
-  
+
     nav {
-      margin-top: 40px; 
+      @media @tablet{
+        justify-content: center space-between;
+      }
+      margin-top: 40px;
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+
       a {
+        .border;
+        padding: 2px;
         text-decoration: none;
-        color: #b0b0b0;
-  
+        color: white;
+        background-color: @accent-color;
+        .border-radius; // using .border-radius mixin
+
         &:hover {
             text-decoration: underline;
-            color: black;
-  
+            background-color: lighten(@accent-color, 10%);
+            color: #A8D6B8; //used https://imagecolorpicker.com/ to match colors
+
         }
       }
     }
-  
+
     .logo {
+        @media @tablet{
+          align-self: flex-start;
+        }
+
         align-self: flex-end;
         margin: 28px 0 0 91px;
     }
-  }// header 
+  }// header
