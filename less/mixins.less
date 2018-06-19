@@ -1,5 +1,20 @@
 // Mixins below variables
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .button-maker(@width, @height, @bg-color) {
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  border: 1px solid black;
+  .border-radius(10px);
+  .center;
+}
+
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;

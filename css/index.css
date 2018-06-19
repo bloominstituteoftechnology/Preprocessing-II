@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -189,13 +194,29 @@ header .logo {
   margin: 0 82px 0 0;
 }
 .cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
-  margin-top: 10px;
-  cursor: pointer;
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: RoyalBlue;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /*  border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 150px;
+        height: 32px;
+        margin-top: 10px;
+        cursor: pointer;
+        .border-radius (30%);*/
 }
 .cta .cta-text button:hover {
   background: black;
@@ -213,6 +234,24 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .btn-features {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: RoyalBlue;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -221,7 +260,25 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
-.main-content .bottom-content p {
+.main-content .bottom-content .btn-features {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: RoyalBlue;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.main-content .bottom-content .btn-features p {
   padding-right: 20px;
 }
 .contact p {
