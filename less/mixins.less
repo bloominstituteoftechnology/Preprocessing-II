@@ -50,6 +50,16 @@
 
 //rotation mixins
 .mixi-rot() {
-	from {.rotate(0deg);}
-	to {.rotate(360deg);}
+	0% {
+		.rotate(0deg);
+		.opacity(0);
+	}
+	50% {
+		.rotate(180deg);
+		.opacity(1);
+	}
+	100% {
+		.rotate(360deg);
+		.opacity(0);
+	}
 }
