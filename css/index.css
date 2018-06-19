@@ -169,6 +169,11 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+header .logo:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 .cta {
   display: flex;
   margin-top: 72px;
@@ -200,7 +205,7 @@ header .logo {
   background-clip: padding-box;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: #02af0b;
   color: white;
 }
 .main-content {
