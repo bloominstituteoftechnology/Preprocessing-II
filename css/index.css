@@ -305,6 +305,36 @@ header .logo {
     padding-top: 10px;
   }
 }
+.main-content .top-content .text-content button {
+  width: 50%;
+  height: 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: 1px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 10px 1.5%;
+}
+@media (max-width: 876px) {
+  .main-content .top-content .text-content button {
+    width: 60%;
+    height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin: 10px 1.5%;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -350,6 +380,36 @@ header .logo {
     width: 100vw;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+.main-content .bottom-content .text-content button {
+  width: 50%;
+  height: 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: 1px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 10px 1.5%;
+}
+@media (max-width: 876px) {
+  .main-content .bottom-content .text-content button {
+    width: 90%;
+    height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin: 10px 1.5%;
   }
 }
 @media (max-width: 768px) {

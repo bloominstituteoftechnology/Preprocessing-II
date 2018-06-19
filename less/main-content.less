@@ -26,6 +26,14 @@
                 width: 100vw;
                 padding-top: 10px;
             }
+
+            button {
+                .button-maker(50%, 20px, dodgerblue, white);
+                
+                @media @middle-img-width {
+                    .button-maker(60%, 40px, dodgerblue, white);
+                }
+            }
         }
     }
 
@@ -59,10 +67,18 @@
         }
 
         .text-content {
-            @media(max-width: 400px) {
+            @media @phone {
                 width: 100vw;
                 padding-top: 10px;
                 padding-bottom: 10px;
+            }
+
+            button {
+                .button-maker(50%, 20px, dodgerblue, white);
+
+                @media @middle-img-width {
+                    .button-maker(90%, 40px, dodgerblue, white);
+                }
             }
         }
     }
