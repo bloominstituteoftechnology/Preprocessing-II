@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -320,6 +325,27 @@ header .logo {
     -moz-box-shadow: inset 5em 1em gold;
     box-shadow: inset 5em 1em gold;
   }
+}
+.main-content .btn {
+  margin-top: 20px;
+  width: 100px;
+  height: 32px;
+  background-color: gold;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.main-content .btn:hover {
+  background-color: #998100;
+  color: white;
 }
 .contact p {
   margin: 20px 0;
