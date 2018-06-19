@@ -126,6 +126,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.button {
+  -webkit-box-shadow: 2px 5px;
+  -moz-box-shadow: 2px 5px;
+  box-shadow: 2px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px double #800080;
+  color: #800080;
+  font-size: 16px;
+  background: #ffd800;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.button:hover {
+  background: #ccad00;
+}
 * {
   box-sizing: border-box;
 }
@@ -144,7 +166,7 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
   margin: auto;
 }
 header {
@@ -227,7 +249,34 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content button {
+  -webkit-box-shadow: 2px 5px;
+  -moz-box-shadow: 2px 5px;
+  box-shadow: 2px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px double #800080;
+  color: #800080;
+  font-size: 16px;
+  background: #ffd800;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.main-content .top-content button:hover {
+  background: #ccad00;
+}
 .main-content .middle-img {
+  -webkit-transform: skew(30deg, 50deg);
+  -moz-transform: skew(30deg, 50deg);
+  -ms-transform: skew(30deg, 50deg);
+  -o-transform: skew(30deg, 50deg);
+  max-width: 100%;
   display: block;
   margin: 30px auto;
 }
@@ -238,10 +287,42 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+.main-content .bottom-content button {
+  -webkit-box-shadow: 2px 5px;
+  -moz-box-shadow: 2px 5px;
+  box-shadow: 2px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px double #800080;
+  color: #800080;
+  font-size: 16px;
+  background: #ffd800;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.main-content .bottom-content button:hover {
+  background: #ccad00;
+}
 .contact p {
   margin: 20px 0;
 }
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  .cta img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header {
+    flex-direction: column;
+  }
 }

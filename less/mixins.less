@@ -35,3 +35,22 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.button{
+
+	.box-shadow(2px 5px);
+	.border-radius;
+	border: 1px double @purple;
+	color: @purple;
+	font-size: 16px;
+	background: @gold;
+	width: 170px;
+	height: 32px;
+	margin-top: 10px;
+	cursor: pointer;
+
+	&:hover {
+		background: darken(@gold, 10%);
+		
+	}
+}
