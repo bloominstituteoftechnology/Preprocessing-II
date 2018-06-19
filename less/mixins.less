@@ -30,8 +30,15 @@
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
+	-webkit-transform: skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.body-borders(@color1, @color2, @color3) {
+	border-top: solid 2px @primary-site-color;
+	border-left: solid 2px @color1;
+	border-right: solid 2px @color2;
+	border-bottom: dashed 2px @color3;
 }
