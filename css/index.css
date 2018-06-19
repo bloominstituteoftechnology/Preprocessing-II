@@ -213,10 +213,12 @@ header nav a {
   }
 }
 header nav a:hover {
-  text-decoration: underline;
   color: black;
   -webkit-transition: all 600ms;
   transition: all 600ms;
+  -webkit-box-shadow: 2px 5px 1px #000;
+  -moz-box-shadow: 2px 5px 1px #000;
+  box-shadow: 2px 5px 1px #000;
 }
 header .logo {
   align-self: flex-end;
@@ -345,6 +347,8 @@ header .logo {
   width: 100px;
   height: 50px;
   background-color: blue;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
   border: 1px solid black;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -398,6 +402,8 @@ header .logo {
   width: 100px;
   height: 50px;
   background-color: blue;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
   border: 1px solid black;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;

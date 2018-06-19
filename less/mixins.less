@@ -17,10 +17,10 @@
 	opacity: 		@opacity;
 }
 
-.box-shadow (@string, @string2, @string3) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string2;
-	box-shadow:         @string3;
+.box-shadow (@param1: 0, @param2: 0, @param3: 1px, @param4: #000) {
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow:    @arguments;
+	box-shadow:         @arguments;
 }
 
 .rotate (@deg) {
@@ -58,6 +58,9 @@
 	width: @width;
 	height: @height;
 	background-color: @color;
+	-webkit-transition: all 600ms;
+	transition:         all 600ms;
 	border: 1px solid black;
 	.border-radius(20px);
+	 
 	}
