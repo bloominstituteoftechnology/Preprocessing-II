@@ -45,6 +45,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .custom-font(@text-color, @font-size-primary) {
@@ -58,7 +59,8 @@
 	height: @height;
 	background: @background;
 	font-size: @font-size-primary - 1rem;
-	text-align: center;
+	margin: 10px 0;
+	cursor: pointer;
 	border: 2px groove slateblue;
 	.border-radius(15px);
 	.center;

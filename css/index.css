@@ -130,6 +130,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 * {
   box-sizing: border-box;
@@ -313,7 +314,8 @@ header .logo:hover {
   height: 75px;
   background: pink;
   font-size: 0.6rem;
-  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
   border: 2px groove slateblue;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -324,6 +326,7 @@ header .logo:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .main-content .button:hover {
   background: #ff5a77;
