@@ -297,7 +297,7 @@ header .logo {
     justify-content: space-between;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .main-content .top-content {
     display: flex;
     flex-direction: column;
