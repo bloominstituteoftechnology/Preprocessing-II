@@ -144,7 +144,8 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
 }
 header {
@@ -154,15 +155,56 @@ header {
   -moz-box-shadow: 2px 2px 2px 2px;
   box-shadow: 2px 2px 2px 2px;
 }
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media max-width: 400px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 header nav {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav {
+    width: 59%;
+    margin-left: 3%;
+  }
+}
+@media (max-width: 750px) {
+  header nav {
+    width: 100%;
+  }
+}
+@media max-width: 400px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media max-width: 400px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -179,6 +221,17 @@ header .logo {
   -webkit-box-shadow: 2px 2px 2px 2px;
   -moz-box-shadow: 2px 2px 2px 2px;
   box-shadow: 2px 2px 2px 2px;
+}
+@media (max-width: 768px) {
+  .cta img {
+    max-width: 100%;
+    margin_right: 2%;
+  }
+}
+@media (max-width: 750px) {
+  .cta img {
+    display: none;
+  }
 }
 .cta .cta-text {
   font-size: 72px;

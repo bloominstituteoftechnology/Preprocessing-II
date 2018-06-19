@@ -6,6 +6,17 @@
     justify-content: flex-end;
     .box-shadow(2px 2px 2px 2px);
 
+    img {
+        @media @tablet {
+            max-width: 100%;
+            margin_right: 2%;
+        }
+
+        @media @tablet-750 {
+            display: none;
+        }
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
