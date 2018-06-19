@@ -196,6 +196,11 @@ header nav a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav a:hover {
+    background-color: #cccccc;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
