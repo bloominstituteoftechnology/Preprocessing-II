@@ -209,10 +209,6 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
-  -webkit-transform: skew(-40deg, 0deg);
-  -moz-transform: skew(-40deg, 0deg);
-  -ms-transform: skew(-40deg, 0deg);
-  -o-transform: skew(-40deg, 0deg);
 }
 @media (max-width: 768px) {
   header .logo {
