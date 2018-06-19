@@ -126,7 +126,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@flip : 4*Math.PI/180;
+@deg : (180*(Math.PI/180));
 * {
   box-sizing: border-box;
 }
@@ -151,6 +151,7 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  background-color: blue;
 }
 header nav {
   margin-top: 40px;
@@ -160,7 +161,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: white;
 }
 header nav a:hover {
   text-decoration: underline;
@@ -188,6 +189,16 @@ header .logo {
   -webkit-box-shadow: 10px 5px 5px red;
   -moz-box-shadow: 10px 5px 5px red;
   box-shadow: 10px 5px 5px red;
+}
+@media (max-width: 650px) {
+  .cta .cta-text {
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    background-color: purple;
+  }
 }
 .cta .cta-text button {
   border: 1px double red;

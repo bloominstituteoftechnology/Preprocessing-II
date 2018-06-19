@@ -4,6 +4,7 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    
 
     .cta-text {
         font-size: 72px;
@@ -15,6 +16,13 @@
         align-items: center;
         margin: 0 82px 0 0;
         .background(gray);
+        @media @tablet {
+          background-color: green;
+        }
+
+        @media @phone {
+          background-color: purple;
+        }
         .box-shadow(@red-shadow);
 
     }
@@ -28,6 +36,7 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+
         .box-shadow(10px 5px 5px red);
         &:hover {
             background: black;
