@@ -11,19 +11,35 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @phone {
+            flex-direction: column;
+          }
     }
 
     .middle-img {
-        display: block;
-        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        margin: 10px;
+        .round;
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+            flex-direction: column;
+          }
+
         p {
-            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+      
+            @media @phone{
+              padding: 10px;
+              .bordered;
+            }
         }
     }
 }// main-content
