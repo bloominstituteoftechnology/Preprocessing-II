@@ -183,6 +183,9 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-box-shadow: 10px 5px 5px red;
+  -moz-box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px red;
 }
 .cta img {
   -webkit-transform: rotate(90deg);
