@@ -33,6 +33,23 @@
     border-bottom: 2px solid black;
     margin: 75px 0 35px 0;
     padding: 35px 0;
+    .text-content {
+        .btn {
+            .custom-butt(120px, 30px, @btn-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            &:hover {
+                cursor: pointer;
+                background: @btn-dark;
+            }
+            @media @phone {
+                margin: 0px 0px 40px 0;
+            }
+        }
+    }
     @media @phone {
         margin: 40px 10px;
     }
@@ -57,6 +74,8 @@
             }
          
      } // Top Content
+     
+
      .middle-img {
          display: block;
          margin: 30px auto;

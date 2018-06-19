@@ -339,6 +339,25 @@ header .logo:hover {
   font-size: 1.6rem;
   line-height: 18px;
 }
+.main-content .text-content .btn {
+  width: 120px;
+  height: 30px;
+  background-color: #497183;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.main-content .text-content .btn:hover {
+  cursor: pointer;
+  background: #253841;
+}
+@media (max-width: 400px) {
+  .main-content .text-content .btn {
+    margin: 0px 0px 40px 0;
+  }
+}
 @media (max-width: 400px) {
   .main-content {
     margin: 40px 10px;
