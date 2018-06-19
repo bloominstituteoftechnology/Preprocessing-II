@@ -35,3 +35,13 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+//.button-mixer(100px, 50px, teal) || .button-mixer(100px, 50px, teal, @b-color: red, @b-radius: 50%)
+.button-mixer(@width, @height, @bg-color, @b-width: 1px, @b-line: solid, @b-color: black, @b-radius: 10px) {
+	margin-top: 20px;
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	border: @b-width @b-line @b-color;
+	.border-radius(@b-radius);
+}
