@@ -11,6 +11,28 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        .text-content {
+
+          .btn {
+            .btn-mixer(100px, 50px, teal, @b-radius: 5px);
+            color: white;
+          }
+
+          .btn-feature {
+
+            &:hover{
+              .box-shadow(~"5px 5px red");
+            }
+          }
+
+          .btn-about {
+
+            &:hover{
+              .box-shadow(~"5px 5px blue");
+            }
+          }
+        }
     }
 
     .middle-img {
@@ -24,6 +46,35 @@
 
         p {
             padding-right: 20px;
+        }
+
+        .text-content {
+
+          .btn {
+            .btn-mixer(100px, 50px, green, @b-radius: 5px);
+            color: white;
+          }
+
+          .btn-content {
+
+            &:hover{
+              .box-shadow(~"5px 5px blue");
+            }
+          }
+
+          .btn-product {
+
+            &:hover{
+              .box-shadow(~"5px 5px red");
+            }
+          }
+
+          .btn-vision {
+
+            &:hover{
+              .box-shadow(~"5px 5px blue");
+            }
+          }
         }
     }//bottom-Content
 }// main-content

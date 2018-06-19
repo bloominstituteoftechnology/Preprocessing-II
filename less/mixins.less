@@ -37,7 +37,9 @@
 }
 
 //.button-mixer(100px, 50px, teal) || .button-mixer(100px, 50px, teal, @b-color: red, @b-radius: 50%)
-.button-mixer(@width, @height, @bg-color, @b-width: 1px, @b-line: solid, @b-color: black, @b-radius: 10px) {
+//first three are mandatory and in that order, rest can be any order after initial 3, but if out of order must
+//include the @variable: value syntax
+.btn-mixer(@width, @height, @bg-color, @b-width: 1px, @b-line: solid, @b-color: black, @b-radius: 10px) {
 	margin-top: 20px;
 	width: @width;
 	height: @height;

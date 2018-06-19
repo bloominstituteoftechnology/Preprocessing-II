@@ -209,6 +209,30 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content .btn {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: teal;
+  border: 1px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+}
+.main-content .top-content .text-content .btn-feature:hover {
+  -webkit-box-shadow: 5px 5px red;
+  -moz-box-shadow: 5px 5px red;
+  box-shadow: 5px 5px red;
+}
+.main-content .top-content .text-content .btn-about:hover {
+  -webkit-box-shadow: 5px 5px blue;
+  -moz-box-shadow: 5px 5px blue;
+  box-shadow: 5px 5px blue;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -219,6 +243,35 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content .btn {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  border: 1px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+}
+.main-content .bottom-content .text-content .btn-content:hover {
+  -webkit-box-shadow: 5px 5px blue;
+  -moz-box-shadow: 5px 5px blue;
+  box-shadow: 5px 5px blue;
+}
+.main-content .bottom-content .text-content .btn-product:hover {
+  -webkit-box-shadow: 5px 5px red;
+  -moz-box-shadow: 5px 5px red;
+  box-shadow: 5px 5px red;
+}
+.main-content .bottom-content .text-content .btn-vision:hover {
+  -webkit-box-shadow: 5px 5px blue;
+  -moz-box-shadow: 5px 5px blue;
+  box-shadow: 5px 5px blue;
 }
 .contact p {
   margin: 20px 0;
