@@ -228,10 +228,10 @@ header .logo {
 }
 header .logo:hover {
   transition-duration: 1s;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
 }
 .cta {
   display: flex;
@@ -403,6 +403,9 @@ header .logo:hover {
 }
 .contact {
   font-size: 1.5rem;
+}
+.contact h4 {
+  font-size: 1.6rem;
 }
 .contact p {
   margin: 15px 0;
