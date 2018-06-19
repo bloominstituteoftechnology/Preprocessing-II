@@ -6,13 +6,13 @@
     justify-content: flex-end;
     width: 100%;
 
-    @media(max-width: 400px){
+    @media @phone{
         justify-content: center;
     }
 
     .cta-image {
         
-        @media(max-width: 768px){
+        @media @tablet{
             display:none;
         }
     }
@@ -25,14 +25,14 @@
         margin: 0 82px 0 0;
         color: @heading-color;
 
-        @media(max-width:768px){
+        @media @tablet{
             margin: 0;
             width: 100%;
         }
 
-        @media(wax-width:400px){
+        @media @phone{
             width: 100%;
-            font-size: 4rem;
+            font-size: 15vw;
         }
 
         button {

@@ -4,7 +4,7 @@ header {
   width: 100%;
   display: flex;
 
-  @media(max-width: 768px){
+  @media @tablet{
       flex-direction: column-reverse;
       align-items: center;
   }
@@ -16,11 +16,11 @@ header {
       display: flex;
       font-size: 1.6rem;
 
-      @media(max-width: 768px){
+      @media @tablet{
           width: 100%;
       }
 
-      @media(max-width:400px){
+      @media @phone{
           flex-direction: column;
       }
 
@@ -28,7 +28,7 @@ header {
           text-decoration: none;
           color: @site-navigation-color;
 
-          @media(max-width:400px){
+          @media @phone{
               width: 100%;
               padding: 4%;
               border-top: 1px solid @site-navigation-color;
