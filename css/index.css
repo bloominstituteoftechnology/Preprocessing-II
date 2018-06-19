@@ -251,6 +251,9 @@ header .logo {
   text-align: center;
   margin-top: 15px;
 }
+.main-content .top-content .btn:hover {
+  background-color: #999900;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -273,6 +276,9 @@ header .logo {
   color: black;
   text-align: center;
   margin-top: 15px;
+}
+.main-content .bottom-content .btn:hover {
+  background-color: #999900;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
