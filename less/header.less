@@ -3,28 +3,67 @@
 header {
     width: 100%;
     display: flex;
-  
+    @media @tablet { /*tablet*/
+      flex-wrap: wrap;
+    }
+    @media @phone { /*phone*/
+      flex-wrap: wrap;
+      justify-content: center;
+  }
     nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
-  
+      @media @tablet { /*tablet*/
+        width: 100%;
+        margin: 38px 3%;
+      }
+      @media @phone { /*phone*/
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+        @media @phone { /*phone*/
+          width: 100%;
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 2rem;
+          border-bottom: 1px solid gray;
+      }
         &:hover {
             text-decoration: underline;
             color: black;
-  
+            @media @phone { /*phone*/
+              background: gray;
+          }
         }
       }
+      nav:first-child {
+        @media @phone { /*phone*/
+            border-top: 1px solid gray;
+        }
+    }
     }
   
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
         .skew (0deg, 10deg);
+        @media @tablet { /*tablet*/
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+        }
+        @media @phone { /*phone*/
+          order: -1;
+          margin: 20px 0;
+      }
     }
   }// header 
