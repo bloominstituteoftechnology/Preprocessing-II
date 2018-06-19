@@ -166,6 +166,23 @@ table {
     -o-transform: rotate(1080deg);
   }
 }
+@keyframes colorful {
+  0% {
+    background-color: #ff9999;
+  }
+  25% {
+    background-color: #ccff99;
+  }
+  50% {
+    background-color: #99ffff;
+  }
+  75% {
+    background-color: #9999ff;
+  }
+  100% {
+    background-color: #ff9999;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -174,6 +191,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  animation: colorful 20s infinite linear;
 }
 html,
 body {
@@ -209,7 +227,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: inherit;
 }
 header nav a:hover {
   text-decoration: underline;
