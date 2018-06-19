@@ -234,6 +234,9 @@ header .logo {
   .cta .cta-text {
     margin: auto;
     font-size: 60px;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
   }
 }
 @media (max-width: 400px) {
@@ -305,6 +308,13 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 400px) {
+  .main-content h4 {
+    -webkit-box-shadow: 10px 5px 5px lawngreen;
+    -moz-box-shadow: 10px 5px 5px lawngreen;
+    box-shadow: 10px 5px 5px lawngreen;
+  }
 }
 .contact p {
   margin: 20px 0;
