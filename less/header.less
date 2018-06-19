@@ -3,16 +3,20 @@
 header {
     max-width: 100%;
     display: flex;
+
+    @media @tablet {
+      .tablet-nav;
+    }
+    @media @phone {
+      // .mobile-nav;
+      
+    }
     nav { 
       margin-top: 40px;
       width: 610px;
       justify-content: space-between;
       display: flex;
-      // Implemented bordered to use 
-      // border-radius mixin #1.
-      border-bottom: 4px solid @Cabaret;
-      .border-radius(@radius: 35%);
-  
+
       a {
         text-decoration: none;
         // Changed to black and add bold

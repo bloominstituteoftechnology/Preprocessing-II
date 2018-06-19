@@ -126,6 +126,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.tablet-nav {
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
 .center {
   display: flex;
   flex-direction: column;
@@ -167,18 +177,25 @@ header {
   max-width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media (max-width: 400px) {
+}
 header nav {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
-  border-bottom: 4px solid #da4167;
-  -webkit-border-radius: 35%;
-  -moz-border-radius: 35%;
-  border-radius: 35%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
 }
 header nav a {
   text-decoration: none;
@@ -237,6 +254,7 @@ header .logo {
   align-items: center;
   min-width: 150px;
   min-height: 50px;
+  max-width: 300px;
 }
 .cta .cta-text button:hover {
   background: #971e3c;
