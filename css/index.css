@@ -167,6 +167,9 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
   color: black;
+  -webkit-box-shadow: 5px 5px 6px 0 red;
+  -moz-box-shadow: 5px 5px 6px 0 red;
+  box-shadow: 5px 5px 6px 0 red;
 }
 header .logo {
   align-self: flex-end;
