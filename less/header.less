@@ -41,8 +41,8 @@ header {
         
         &:hover {
             text-decoration: none;
-            color: goldenrod;
             .box-shadow(10px 10px 10px black);
+            .opacity();
   
         }
       }
@@ -57,7 +57,13 @@ header {
           border: 2px groove goldenrod;
           .border-radius(50px);
           padding: 1px;
-          .box-shadow(10px 10px 10px black);
+          
         }
+
+        &:hover {
+          .box-shadow(10px 10px 10px black);
+          .opacity();
+        }
+
     }
   }// header 

@@ -157,7 +157,7 @@ header {
   header {
     flex-wrap: wrap;
     justify-content: center;
-    background: lightblue;
+    background: silver;
     height: 150px;
     align-content: space-around;
   }
@@ -195,10 +195,12 @@ header nav a {
 }
 header nav a:hover {
   text-decoration: none;
-  color: goldenrod;
   -webkit-box-shadow: 10px 10px 10px black;
   -moz-box-shadow: 10px 10px 10px black;
   box-shadow: 10px 10px 10px black;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 header .logo {
   align-self: flex-end;
@@ -216,10 +218,15 @@ header .logo {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     padding: 1px;
-    -webkit-box-shadow: 10px 10px 10px black;
-    -moz-box-shadow: 10px 10px 10px black;
-    box-shadow: 10px 10px 10px black;
   }
+}
+header .logo:hover {
+  -webkit-box-shadow: 10px 10px 10px black;
+  -moz-box-shadow: 10px 10px 10px black;
+  box-shadow: 10px 10px 10px black;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .cta {
   display: flex;
