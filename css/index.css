@@ -374,6 +374,25 @@ header .logo {
     height: 300px;
   }
 }
+.main-content .top-content h4 {
+  -webkit-transform: skew(0deg, 5deg);
+  -moz-transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 5deg);
+  -o-transform: skew(0deg, 5deg);
+}
+.main-content .top-content button {
+  width: 150px;
+  height: 40px;
+  background-color: #007FFF;
+  margin: 20px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 8px blue;
+  -moz-box-shadow: 10px 10px 8px blue;
+  box-shadow: 10px 10px 8px blue;
+}
+.main-content .top-content button:hover {
+  background-color: #004c99;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -409,8 +428,27 @@ header .logo {
     height: 440px;
   }
 }
+.main-content .bottom-content h4 {
+  -webkit-transform: skew(0deg, 5deg);
+  -moz-transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 5deg);
+  -o-transform: skew(0deg, 5deg);
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content button {
+  width: 150px;
+  height: 40px;
+  background-color: #007FFF;
+  margin: 20px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 8px blue;
+  -moz-box-shadow: 10px 10px 8px blue;
+  box-shadow: 10px 10px 8px blue;
+}
+.main-content .bottom-content button:hover {
+  background-color: #004c99;
 }
 @media (max-width: 768px) {
   .contact {
