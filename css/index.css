@@ -198,6 +198,12 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+header .logo:hover {
+  cursor: pointer;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
 @media (max-width: 768px) {
   header .logo {
     order: -1;
@@ -229,7 +235,7 @@ header .logo {
   margin: 0 82px 0 0;
 }
 .cta .cta-text h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 .cta .cta-text button {
   -webkit-border-radius: 5px;
@@ -296,6 +302,7 @@ header .logo {
 @media (max-width: 768px) {
   .main-content .top-content .text-content {
     margin-bottom: 20px;
+    padding: 0 10px;
   }
 }
 .main-content .middle-img {
@@ -339,6 +346,7 @@ header .logo {
 @media (max-width: 768px) {
   .main-content .bottom-content .text-content {
     margin-bottom: 20px;
+    padding: 0 10px;
   }
 }
 .main-content .bottom-content p {
@@ -349,6 +357,11 @@ header .logo {
 }
 .contact p {
   margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 0 10px;
+  }
 }
 footer {
   font-size: 1.6rem;
