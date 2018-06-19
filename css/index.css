@@ -173,12 +173,24 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
 }
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 header nav {
   margin-top: 40px;
@@ -186,9 +198,37 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 600px) {
+  header nav {
+    width: 100%;
+    margin: 38px 3%;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -198,10 +238,35 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 600px) {
+  header .logo {
+    order: -1;
+    display: block;
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 500px) {
+  header .logo {
+    margin: 20px 0;
+  }
+}
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 600px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .cta {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -212,6 +277,21 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 600px) {
+  .cta .cta-text {
+    margin: 0 5% 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .cta .cta-text {
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .cta .cta-text h1 {
+    letter-spacing: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -230,6 +310,18 @@ header .logo {
   -ms-transform: skew(5deg, 5deg);
   -o-transform: skew(5deg, 5deg);
 }
+@media (max-width: 600px) {
+  .cta img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .cta img {
+    display: block;
+    max-width: 80%;
+    margin: 55px 0 0;
+  }
+}
 .cta img:hover {
   animation: spin 4s linear infinite;
 }
@@ -241,9 +333,25 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 600px) {
+  .main-content {
+    font-size: 1.4rem;
+    margin: 75px 2% 35px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .top-content .text-content {
+    margin-bottom: 20px;
+  }
 }
 .main-content .top-content .text-content .btn {
   margin-top: 20px;
@@ -276,12 +384,29 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 600px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 500px) {
+  .main-content .bottom-content .text-content {
+    margin-bottom: 20px;
+  }
 }
 .main-content .bottom-content .text-content .btn {
   margin-top: 20px;
@@ -317,6 +442,11 @@ header .logo {
 }
 .contact p {
   margin: 20px 0;
+}
+@media (max-width: 600px) {
+  .contact {
+    margin: 20px 2%;
+  }
 }
 footer {
   text-align: center;

@@ -8,15 +8,32 @@
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+     font-size: 1.4rem;
+     margin: 75px 2% 35px;
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+          flex-wrap: wrap;
+        }
+
         .text-content {
+
+          @media @phone {
+            margin-bottom: 20px;
+          }
 
           .btn {
             .btn-mixer(100px, 50px, @cornflower-blue, @b-radius: 5px);
             color: white;
+
+            // @media @phone {
+            //   margin-bottom: 20px;
+            // }
 
             &:hover{
               background: darken(@cornflower-blue, 20%);
@@ -37,22 +54,38 @@
             }
           }
         }
-    }
+      }
+
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        @media @tablet {
+          width: 100%;
+          margin: 25px auto;
+        }
     }
+
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+          flex-wrap: wrap;
+          align-content: space-between;
+        }
 
         p {
             padding-right: 20px;
         }
 
         .text-content {
+
+          @media @phone {
+            margin-bottom: 20px;
+          }
 
           .btn {
             .btn-mixer(100px, 50px, @malachite, @b-radius: 5px);
@@ -84,5 +117,5 @@
             }
           }
         }
-    }//bottom-Content
+    }
 }// main-content
