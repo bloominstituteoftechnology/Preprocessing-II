@@ -9,10 +9,24 @@
    line-height: 18px;
    .box-shadow(0 0 5px 5px #a0a0a0);
 
+   @media @phone {
+      
+
+       .text-content{
+           width: 100%;
+           padding-top: 10px;
+       }
+   }
+
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @phone{
+            flex-direction: column;
+
+        }
     }
 
     .middle-img {
@@ -27,6 +41,11 @@
 
         p {
             padding-right: 20px;
+        }
+
+        @media @phone{
+            flex-direction: column;
+
         }
     }
 }// main-content
