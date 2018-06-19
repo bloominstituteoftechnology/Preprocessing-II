@@ -263,19 +263,19 @@ header .logo {
   margin-top: 20px;
   cursor: pointer;
   color: white;
-  -webkit-opacity: 0.7;
-  -moz-opacity: 0.7;
-  opacity: 0.7;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
 }
 .cta img:hover {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 @media (max-width: 768px) {
   .cta img {
