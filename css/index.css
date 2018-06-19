@@ -204,7 +204,7 @@ header .logo {
   header .logo {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     margin: 28px 0 0 0;
   }
 }
@@ -217,7 +217,7 @@ header .logo {
   .cta {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
   }
 }
 .cta .cta-text {
@@ -335,6 +335,26 @@ header .logo {
     -moz-box-shadow: 10px 5px 5px lawngreen;
     box-shadow: 10px 5px 5px lawngreen;
   }
+}
+.main-content .text-content .btn {
+  width: 44%;
+  height: 29%;
+  background-color: lightgrey;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  min-width: 88px;
+  max-width: 180px;
+  min-height: 20px;
+  max-height: 40px;
 }
 .contact p {
   margin: 20px 0;
