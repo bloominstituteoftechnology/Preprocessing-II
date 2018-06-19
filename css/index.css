@@ -319,6 +319,9 @@ header .logo {
   background-clip: padding-box;
   margin: 10px 1.5%;
 }
+.main-content .top-content .text-content button:hover {
+  background-color: #0077ea;
+}
 @media (max-width: 876px) {
   .main-content .top-content .text-content button {
     width: 60%;
@@ -395,6 +398,9 @@ header .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   margin: 10px 1.5%;
+}
+.main-content .bottom-content .text-content button:hover {
+  background-color: #0077ea;
 }
 @media (max-width: 876px) {
   .main-content .bottom-content .text-content button {
