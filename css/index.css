@@ -374,6 +374,7 @@ button:hover {
   -moz-transform: skew(-5deg, -5deg);
   -ms-transform: skew(-5deg, -5deg);
   -o-transform: skew(-5deg, -5deg);
+  cursor: pointer;
 }
 @media (max-width: 400px) {
   button {
