@@ -298,6 +298,9 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
+.main-content .top-content .button:hover {
+  background-color: #1787ac;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -327,6 +330,9 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-content .bottom-content .button:hover {
+  background-color: #ac5a17;
 }
 .contact {
   -webkit-box-shadow: 2px 2px 2px 2px;
