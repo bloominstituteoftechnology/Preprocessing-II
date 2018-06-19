@@ -11,6 +11,15 @@ header {
       justify-content: space-between;
       display: flex;
       flex-grow: 1;
+
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        // border-bottom: 1px solid red;
+      
+      }
   
       a {
         text-decoration: none;
@@ -23,6 +32,7 @@ header {
         }
       }
     }
+
   
     .logo {
         margin: 28px 0 0 91px;

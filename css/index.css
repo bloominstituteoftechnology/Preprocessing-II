@@ -144,7 +144,8 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
 }
 header {
@@ -158,6 +159,14 @@ nav {
   justify-content: space-between;
   display: flex;
   flex-grow: 1;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 nav a {
   text-decoration: none;
@@ -225,6 +234,12 @@ nav a:hover {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .main-content .bottom-content {
   display: flex;
@@ -239,4 +254,11 @@ nav a:hover {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
