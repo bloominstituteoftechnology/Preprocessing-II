@@ -160,6 +160,11 @@ header nav {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 400px) {
+  header nav {
+    border: 1px solid lightblue;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
@@ -218,6 +223,16 @@ header .logo {
   -moz-transform: skew(5deg, 10deg);
   -ms-transform: skew(5deg, 10deg);
   -o-transform: skew(5deg, 10deg);
+}
+@media (max-width: 768px) {
+  .cta .cta-text button {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    background: lightblue;
+  }
 }
 .cta .cta-text button:hover {
   background: black;
