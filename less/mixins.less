@@ -35,3 +35,33 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+// === Custom Mixin === //
+// Responsive background mixin
+// Center Align
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+// Background Font Color
+// .bg-fnt-color (@Blue, red)
+.bg-fnt-color (@background, @font) {
+	max-width: 880px;
+	width: 100%;
+	height: auto;
+	background: @background;
+	color: @font;
+} 
+
+//Custom Buttons
+// .button-maker (100%, 200px, red)
+.button-maker(@width, @height, @bg-color) {
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	border: 1px solid black;
+	.border-radius(10px);
+	.center;
+	}

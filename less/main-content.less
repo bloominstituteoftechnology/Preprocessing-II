@@ -11,6 +11,15 @@
     .top-content {
         display: flex;
         justify-content: space-around;
+        
+        // Adding more nesting so I can center all content
+        .text-content {
+            .center;
+        }
+        // Adding custom button
+        .cstm-btn {
+                    .button-maker(100px, 50px, teal);
+        }
     }
 
     .middle-img {
