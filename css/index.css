@@ -305,6 +305,11 @@ header .logo {
   width: 100%;
   height: auto;
 }
+.cta .img:hover {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
 @media (max-width: 768px) {
   .cta .img {
     display: none;
@@ -330,6 +335,33 @@ header .logo {
     align-items: center;
   }
 }
+.main-content .top-content .text-content .btn {
+  margin: 20px 0;
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 5px 2px 3px grey;
+  -moz-box-shadow: 5px 2px 3px grey;
+  box-shadow: 5px 2px 3px grey;
+}
+.main-content .top-content .text-content .btn:hover {
+  cursor: pointer;
+  background-color: #cccccc;
+  -webkit-box-shadow: 5px 2px 3px black;
+  -moz-box-shadow: 5px 2px 3px black;
+  box-shadow: 5px 2px 3px black;
+}
+@media (max-width: 400px) {
+  .main-content .top-content .text-content .btn {
+    margin: 20px auto;
+    width: 80%;
+  }
+}
 @media (max-width: 400px) {
   .main-content .top-content .text-content {
     margin: 5px 0;
@@ -340,13 +372,15 @@ header .logo {
   width: 100%;
   height: auto;
   margin: 30px auto;
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
   -webkit-transform: skew(5deg, 5deg);
   -moz-transform: skew(5deg, 5deg);
   -ms-transform: skew(5deg, 5deg);
   -o-transform: skew(5deg, 5deg);
+}
+.main-content .middle-img:hover {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
 }
 .main-content .middle-img img {
   width: 100%;
@@ -368,6 +402,33 @@ header .logo {
   .main-content .bottom-content {
     flex-direction: column;
     align-items: center;
+  }
+}
+.main-content .bottom-content .text-content .btn {
+  margin: 20px 0;
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 5px 2px 3px grey;
+  -moz-box-shadow: 5px 2px 3px grey;
+  box-shadow: 5px 2px 3px grey;
+}
+.main-content .bottom-content .text-content .btn:hover {
+  cursor: pointer;
+  background-color: #cccccc;
+  -webkit-box-shadow: 5px 2px 3px black;
+  -moz-box-shadow: 5px 2px 3px black;
+  box-shadow: 5px 2px 3px black;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content .text-content .btn {
+    margin: 20px auto;
+    width: 80%;
   }
 }
 @media (max-width: 400px) {

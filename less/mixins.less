@@ -41,3 +41,18 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.create-button (@width, @height, @color) {
+	width: @width;
+	height: @height;
+	background-color: @color;
+	border: 1px solid black;
+	border-radius: 5px;
+	.center;
+	.box-shadow(5px 2px 3px grey);
+	&:hover {
+		cursor: pointer;
+		background-color: darken(@color, 20%);
+		.box-shadow(5px 2px 3px black);
+	}
+}
