@@ -196,7 +196,11 @@ header nav a:hover {
   }
 }
 .cta .cta-text button {
-  border: 1px double black;
+  border-top: solid 2px #323D4F;
+  border-left: solid 2px #F7CAC9;
+  border-right: solid 2px #F7786B;
+  border-bottom: dashed 2px #91A8D0;
+  border-bottom-style: solid;
   font-size: 16px;
   background: white;
   width: 170px;
@@ -205,8 +209,11 @@ header nav a:hover {
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: black;
-  color: white;
+  background: #fcfcfc;
+  border-top: solid 2px #323D4F;
+  border-left: solid 2px #91A8D0;
+  border-right: solid 2px #F7CAC9;
+  border-bottom: dashed 2px #F7786B;
 }
 .cta img {
   -webkit-opacity: 0.8;
@@ -381,6 +388,25 @@ header nav a:hover {
   .main-content .bottom-content {
     flex-direction: column;
   }
+}
+.main-content .content-btn {
+  width: 170px;
+  height: 32px;
+  background: white;
+  border-top: solid 2px #323D4F;
+  border-left: solid 2px #D2691E;
+  border-right: solid 2px #578CA9;
+  border-bottom: dashed 2px #F6D155;
+  border-bottom-style: solid;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.main-content .content-btn:hover {
+  background: #fcfcfc;
+  border-top: solid 2px #323D4F;
+  border-left: solid 2px #F6D155;
+  border-right: solid 2px #D2691E;
+  border-bottom: dashed 2px #578CA9;
 }
 @media (max-width: 768px) {
   .main-content {

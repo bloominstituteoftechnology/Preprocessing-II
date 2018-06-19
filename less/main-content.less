@@ -96,6 +96,19 @@
         }
     }
 
+    .content-btn {
+        .buttonStyle(170px, 32px, white);
+        .body-borders(#D2691E, #578CA9, #F6D155);
+        border-bottom-style: solid; 
+        margin-top: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background: darken(white, 1%);
+            .body-borders(#F6D155, #D2691E, #578CA9);
+        }
+    }
+
     @media @tablet {
         .container-padding;
     }
