@@ -18,6 +18,11 @@
             padding: 10px;
             margin-right: 15px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+
+            @media @phone {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
         }
 
         .about {
@@ -25,6 +30,10 @@
             .border-radius;
             padding: 10px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+        }
+
+        @media @phone {
+            flex-direction: column;
         }
     }
 
@@ -34,6 +43,7 @@
         border: solid 3px orange;
         .border-radius(20px);
         .opacity(.8);
+        width: 100%;
 
         &:hover {
             animation: danceDance 1s 1s linear infinite alternate;
@@ -54,6 +64,11 @@
             padding: 10px;
             margin-right: 15px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+
+            @media @phone {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
         }
 
         .product {
@@ -62,6 +77,11 @@
             padding: 10px;
             margin-right: 15px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+
+            @media @phone {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
         }
 
         .vision {
@@ -70,5 +90,13 @@
             padding: 10px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
         }
+
+        @media @phone {
+            flex-direction: column;
+        }
+    }
+
+    @media @tablet {
+        .container-padding;
     }
 }// main-content
