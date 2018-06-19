@@ -5,8 +5,19 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet{
+        justify-content: center;
+      }
+
+    @media @phone{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
     .cta-text {
-        font-size: 72px;
+        font-size: 4rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -16,6 +27,11 @@
         margin: 0 82px 0 0;
         .rotate(-15deg);
        
+        @media @phone{
+            
+            margin: auto;
+            .rotate(0)
+            }
 
     }
 
@@ -36,7 +52,12 @@
         }
     }
     img {
-        .skew(-5deg, -5deg)
+        .skew(-5deg, -5deg);
+        @media @phone{
+            display:none
+            }
+
+
     }
 
 }// cta

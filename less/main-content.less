@@ -7,26 +7,46 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @phone{
+    margin: 10px;
+    flex-flow: column}
 
    .top-content {
         display: flex;
         justify-content: space-around;
-        
+        @media @phone{
+            margin: 10px;
+            flex-flow: column}
+
+            .text-content{
+                @media @phone{
+                    margin-bottom: 20px;}
+            }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
         .box-shadow(10px 4px 10px 0);
+        @media @phone{
+            width:400px
+            }
         
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
+        @media @phone{
+            margin: 10px;
+            flex-flow: column}
         p {
             padding-right: 20px;
+            
+        }
+        .text-content{
+            @media @phone{
+                margin-bottom: 20px;}
         }
     }
 }// main-content
