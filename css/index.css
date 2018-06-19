@@ -231,7 +231,7 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2vmin;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
