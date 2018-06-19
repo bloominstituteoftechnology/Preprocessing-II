@@ -13,6 +13,12 @@
     display: flex;
     justify-content: space-around;
 
+    .text-content {
+      .btn {
+        .button-constructor;
+      }
+    }
+
     @media @phone {
       .center();
       flex-direction: column;
@@ -28,16 +34,26 @@
   .bottom-content {
     display: flex;
     justify-content: space-around;
+
     @media @phone {
       .center();
       flex-direction: column;
-      h4 {
-        margin-top: 15px;
+    }
+    h4 {
+      margin-top: 15px;
+    }
+    .text-content {
+      .btn {
+        .button-constructor;
+
+        &:hover {
+          background: darken(@button-color, 20%);
+        }
+      }
+
+      p {
+        padding-right: 20px;
       }
     }
-
-    p {
-      padding-right: 20px;
-    }
   }
-} // main-content a change
+} // main-content

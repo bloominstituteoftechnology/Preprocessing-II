@@ -25,7 +25,10 @@
   }
 
   img {
-    .rotate(90deg);
+    &:hover {
+      animation: spin 5s infinite;
+    }
+
     @media @tablet {
       display: none;
     }

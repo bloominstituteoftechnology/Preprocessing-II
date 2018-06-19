@@ -41,3 +41,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.button-constructor (@width: 40px; @height: 15px; @bg: lightgray;) {
+  width: @width;
+  height: @height;
+  background: @bg;
+}
+
+.mixi-rot() {
+  from {
+    .rotate(0deg);
+  }
+  to {
+    .rotate(360deg);
+  }
+}
