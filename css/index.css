@@ -276,9 +276,15 @@ header .logo {
   justify-content: space-around;
 }
 .main-content .top-content .text-content .btn {
-  width: 40px;
-  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
   background: lightgray;
+}
+.main-content .top-content .text-content .btn:hover {
+  background: #a0a0a0;
 }
 @media (max-width: 450px) {
   .main-content .top-content {
@@ -309,8 +315,11 @@ header .logo {
   margin-top: 15px;
 }
 .main-content .bottom-content .text-content .btn {
-  width: 40px;
-  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
   background: lightgray;
 }
 .main-content .bottom-content .text-content .btn:hover {
