@@ -1,29 +1,107 @@
 // Main Content Styles
 
+// .main-content {
+//    border-top: 2px solid black; 
+//    border-bottom: 2px solid black;
+//    margin: 75px 0 35px 0;
+//    padding: 35px 0;
+//    font-size: 16px;
+//    line-height: 18px;
+
+//    .top-content {
+//         display: flex;
+//         justify-content: space-around;
+//     }
+
+//     .middle-img {
+//         display: block;
+//         margin: 30px auto;
+//     }
+
+//     .bottom-content {
+//         display: flex;
+//         justify-content: space-around;
+
+//         p {
+//             padding-right: 20px;
+//         }
+//     }
+// }// main-content
+
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .middle-img {
-        display: block;
-        margin: 30px auto;
-    }
-
-    .bottom-content {
-        display: flex;
-        justify-content: space-around;
-
-        p {
-            padding-right: 20px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    .text-content {
+        .btn {
+            .custom-butt(120px, 30px, @btn-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            &:hover {
+                cursor: pointer;
+                background: @btn-dark;
+            }
+            @media @phone {
+                margin: 0px 0px 40px 0;
+            }
         }
     }
-}// main-content
+    @media @phone {
+        margin: 40px 10px;
+    }
+    .defult-size;
+    line-height: 18px;
+    .top-content {
+         display: flex;
+         justify-content: space-around;
+         @media @tablet {
+             justify-content: space-between;
+         }
+         @media @phone {
+                 flex-wrap: wrap;
+                 
+                 p {
+                     padding-bottom: 20px;
+                 }
+                 
+             }
+            p {
+                 padding-right: 20px;
+            }
+         
+     } // Top Content
+     
+
+     .middle-img {
+         display: block;
+         margin: 30px auto;
+         width: 100%;
+         &:hover {
+            .skew (15deg, 15deg)
+         }
+         @media @phone {
+             margin-top: 10px;
+         }
+     }
+ 
+     .bottom-content {
+         display: flex;
+         justify-content: space-around;
+         p {
+             padding-right: 20px;
+         }
+         @media @phone {
+             flex-wrap: wrap;
+             margin-bottom: -20px;
+             p {
+                 padding-bottom: 20px;
+             }
+             
+         }
+     } // Bottom Content
+ } // Main-Content
+ 

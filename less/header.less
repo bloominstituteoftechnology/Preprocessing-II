@@ -1,29 +1,79 @@
-// Header Styles
-
 header {
-    width: 100%;
-    display: flex;
-  
-    nav {
+  width: 100%;
+  display: flex;
+  @media(max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      .center-everything;
+  }
+
+
+
+  nav {
       margin-top: 40px; 
       width: 610px;
       justify-content: space-between;
       display: flex;
+      .defult-size;
+     
+      @media @tablet {
+          .center-everything;
+          justify-content: space-between;
+          margin-top: 50px;
+      }
+      @media @phone {
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 15px;
+          font-size: 2.0rem;
+          height: 250px;
+          border-bottom: 1px solid black;
+          }
+         
   
       a {
-        text-decoration: none;
-        color: #b0b0b0;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
+          text-decoration: none;
+          color: #b0b0b0;
+          @media @phone {
+              box-sizing: border-box;
+              align-self: center;
+              border-top: 1px solid black;
+              width: 100%;
+              padding: 10px;   
+          }
+          &:hover { 
+              color: @btn-color; 
+              .box-shadow (0px 6px 0 0 @btn-color);
+ 
+              @media @phone {
+              background: @btn-color + 000;
+              color: white;
+              .box-shadow (none);
+          }
       }
-    }
+      }
+  } // Nav
   
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
-  }// header 
+  .logo {
+      align-self: flex-end;
+      margin: 28px 0 0 91px;
+      background: transparent url("img/logo.svg") no-repeat 0 0;
+      @media @tablet {
+          .center-everything;
+          margin-top: 40px;
+      }
+      @media @phone {
+          margin-top: 15px;
+          }
+      }
+      .logo:hover {
+         background-position: -50;       
+      } 
+      .logo:hover {
+          background-position: -50;
+      }   
+        
+   // Logo
+
+
+} // Header

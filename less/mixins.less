@@ -35,3 +35,22 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.defult-size () {
+    font-size: 16rem / 10;
+}
+.center-everything () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-butt (@width: 50px, @height: 20px, @background: btn-color) {
+	width: @width;
+	height: @height;
+	background-color: @background;
+	
+}
+
