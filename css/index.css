@@ -214,9 +214,9 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
-  -webkit-box-shadow: yellow;
-  -moz-box-shadow: yellow;
-  box-shadow: yellow 10px 10px 10px;
+  -webkit-box-shadow: yellow 10px 5px 5px;
+  -moz-box-shadow: yellow 10px 5px 5px;
+  box-shadow: yellow 10px 5px 5px;
 }
 @media (max-width: 768px) {
   header .logo {
@@ -382,9 +382,9 @@ header .logo {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
-  -webkit-box-shadow: red;
-  -moz-box-shadow: red;
-  box-shadow: red 10px 10px 10px;
+  -webkit-box-shadow: red 10px 5px 5px;
+  -moz-box-shadow: red 10px 5px 5px;
+  box-shadow: red 10px 5px 5px;
 }
 @media (max-width: 768px) {
   .main-content .middle-img {
