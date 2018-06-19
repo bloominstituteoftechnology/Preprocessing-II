@@ -10,6 +10,22 @@
 	background-clip:         padding-box;
 }
 
+.btn-maker (@width, @height){
+	.border-radius;
+	background: white;
+	width: @width;
+	height: @height;
+	margin-top: 10px;
+	cursor: pointer;
+	.box-shadow (5px 5px 5px grey);
+
+	&:hover {
+			background: white;
+			color: black;
+			.opacity;
+	}
+}
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
