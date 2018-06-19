@@ -126,6 +126,46 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@keyframes skewIt {
+  0% {
+    -webkit-transform: skew(45deg, 0);
+    -moz-transform: skew(45deg, 0);
+    -ms-transform: skew(45deg, 0);
+    -o-transform: skew(45deg, 0);
+  }
+  100% {
+    -webkit-transform: skew(0, 0);
+    -moz-transform: skew(0, 0);
+    -ms-transform: skew(0, 0);
+    -o-transform: skew(0, 0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+  100% {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(1080deg);
+    -moz-transform: rotate(1080deg);
+    -ms-transform: rotate(1080deg);
+    -o-transform: rotate(1080deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -159,6 +199,8 @@ header {
   display: flex;
   align-items: center;
   padding: 30px 1%;
+  opacity: 0;
+  animation: fadeIn 0.5s 0.5s ease-in forwards;
 }
 header nav {
   justify-content: space-between;
@@ -224,17 +266,27 @@ header .logo {
   align-items: center;
   flex-grow: 1;
 }
+.cta .cta-text h1 {
+  animation: skewIt 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 .cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
+  font-size: 1.6rem;
   margin-top: 10px;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   cursor: pointer;
+  animation: spin 2.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .cta .cta-text button:hover {
-  background: black;
+  background-color: black;
   color: white;
 }
 @media (max-width: 400px) {
@@ -242,11 +294,23 @@ header .logo {
     font-size: 15vw;
   }
 }
+.cta .img-wrapper {
+  animation: fadeIn 0.5s ease-in;
+}
 .cta .img-wrapper img {
   width: 100%;
   display: block;
   max-width: 379px;
   height: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 4px 7px 15px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 7px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 7px 15px rgba(0, 0, 0, 0.4);
 }
 @media (max-width: 768px) {
   .cta .img-wrapper {

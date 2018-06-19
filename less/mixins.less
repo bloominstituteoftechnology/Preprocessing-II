@@ -42,3 +42,31 @@
   align-items: center;
   flex-direction: row;
 }
+
+#buttons() {
+  .btn-solid(@paddingY, @paddingX, @bgcolor, @color) {
+    padding: @paddingY @paddingX;
+    background-color: @bgcolor;
+    color: @color;
+    .border-radius(8px);
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(@bgcolor, 15%);
+    }
+  }
+
+  .btn-outline(@paddingY, @paddingX, @bgcolor) {
+    padding: @paddingY @paddingX;
+    background-color: transparent;
+    color: @bgcolor;
+    border: 1px solid @bgcolor;
+    .border-radius(8px);
+    cursor: pointer;
+
+    &:hover {
+      background-color: @bgcolor;
+      color: white;
+    }
+  }
+}
