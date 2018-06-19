@@ -265,9 +265,16 @@ header .logo {
   color: white;
 }
 .cta img {
+  border: 20px solid pink;
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 @media (max-width: 762px) {
   .cta img {
@@ -344,8 +351,7 @@ footer {
   margin: 40px 0 20px;
 }
 footer .btt-btn {
-  width: 100px 100px red;
-  height: 100px;
-  background: blue;
-  border: 1px solid black;
+  border: 1px solid red;
+  justify-content: center;
+  padding: 30px 0;
 }
