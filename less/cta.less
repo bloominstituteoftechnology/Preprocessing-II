@@ -5,6 +5,9 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    // Adding custom mixin below
+    .bg-fnt-color(@Cabaret, white);
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -17,17 +20,28 @@
     }
 
     .cta-text button {
-        border: 1px double black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        // adding bold
+        font-weight: bold;
         margin-top: 10px;
-        cursor: pointer;
+        // border: 1px double black;
+        // background: white;
+        // width: 170px;
+        // height: 32px;
+        // cursor: pointer;
+
+        // adding own button class
+        .button-maker(25vw, 3vh, white);
+        min-width: 150px;
+        min-height: 50px;
+        max-width: 300px;
 
         &:hover {
-            background: black;
+            background: @Cabaret;
             color: white;
+            // Implementing box-shadow mixin #3
+            .box-shadow(10px 5px 5px teal);
         }
     }
+    
 }// cta

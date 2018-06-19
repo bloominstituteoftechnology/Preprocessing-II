@@ -1,21 +1,38 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
 
-   .top-content {
+    .top-content {
         display: flex;
         justify-content: space-around;
+        
+        // Adding more nesting so I can center all content
+        .text-content {
+            .center;
+        }
+        // Adding custom button
+        .cstm-btn {
+            .button-maker(100px, 50px, @Cabaret);
+            margin-top: 25px;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        max-width: 100%; 
+
+        // added hover effect to cta
+        &:hover {
+            // Implemented opacity mixin #2
+            .opacity(@opacity: 0.5);
+        }
     }
 
     .bottom-content {
@@ -24,6 +41,15 @@
 
         p {
             padding-right: 20px;
+        }
+        // Adding more nesting so I can center all content
+        .text-content {
+            .center;
+        }
+        // Adding custom button
+        .cstm-btn {
+            .button-maker(100px, 50px, @Cabaret);
+            margin-top: 25px;
         }
     }
 }// main-content

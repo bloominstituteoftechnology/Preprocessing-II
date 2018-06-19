@@ -18,4 +18,12 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    // Adding Media Queries and making use of my
+    // media querie vars
+    @media @tablet {
+        background: spin(saturate(@bg-color, 10%), 40);
+    }
+    @media @phone {
+        background: spin(saturate(@bg-color, 10%), 80);
+    }
 }
