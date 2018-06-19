@@ -164,7 +164,7 @@ h5 {
   }
 }
 header {
-  width: 100%;
+  max-width: 100%;
   display: flex;
 }
 header nav {
@@ -172,7 +172,7 @@ header nav {
   width: 610px;
   justify-content: space-between;
   display: flex;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid #da4167;
   -webkit-border-radius: 35%;
   -moz-border-radius: 35%;
   border-radius: 35%;
@@ -182,11 +182,12 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: black;
+  font-weight: bold;
 }
 header nav a:hover {
   text-decoration: underline;
-  color: black;
+  color: #da4167;
 }
 header .logo {
   align-self: flex-end;
@@ -200,8 +201,7 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
-  max-width: 880px;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   background: #da4167;
   color: white;
@@ -217,25 +217,41 @@ header .logo {
   margin: 0 82px 0 0;
 }
 .cta .cta-text button {
-  border: 1px double black;
   font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
+  font-weight: bold;
   margin-top: 10px;
+  width: 25vw;
+  height: 3vh;
+  background-color: white;
+  border: 1px solid black;
   cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 50px;
 }
 .cta .cta-text button:hover {
-  background: teal;
+  background: #971e3c;
+  color: white;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+}
+.cta .cta-text button:hover {
+  background: #da4167;
   color: white;
   -webkit-box-shadow: 10px 5px 5px teal;
   -moz-box-shadow: 10px 5px 5px teal;
   box-shadow: 10px 5px 5px teal;
-}
-.cta:hover {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
 }
 .main-content {
   border-top: 2px solid black;
@@ -258,8 +274,9 @@ header .logo {
 .main-content .top-content .cstm-btn {
   width: 100px;
   height: 50px;
-  background-color: teal;
+  background-color: #da4167;
   border: 1px solid black;
+  cursor: pointer;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -270,16 +287,25 @@ header .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
+}
+.main-content .top-content .cstm-btn:hover {
+  background: #971e3c;
+  color: white;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  max-width: 100%;
 }
 .main-content .middle-img:hover {
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .main-content .bottom-content {
   display: flex;
@@ -287,6 +313,38 @@ header .logo {
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+.main-content .bottom-content .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .bottom-content .cstm-btn {
+  width: 100px;
+  height: 50px;
+  background-color: #da4167;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.main-content .bottom-content .cstm-btn:hover {
+  background: #971e3c;
+  color: white;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
 }
 .contact p {
   margin: 20px 0;

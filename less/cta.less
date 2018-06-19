@@ -20,23 +20,27 @@
     }
 
     .cta-text button {
-        border: 1px double black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        // adding bold
+        font-weight: bold;
         margin-top: 10px;
-        cursor: pointer;
+        // border: 1px double black;
+        // background: white;
+        // width: 170px;
+        // height: 32px;
+        // cursor: pointer;
+
+        // adding own button class
+        .button-maker(25vw, 3vh, white);
+        min-width: 150px;
+        min-height: 50px;
+
         &:hover {
-            background: teal;
+            background: @Cabaret;
             color: white;
             // Implementing box-shadow mixin #3
             .box-shadow(10px 5px 5px teal);
         }
     }
-    // added hover effect to cta
-    &:hover {
-        // Implemented opacity mixin #2
-        .opacity(@opacity: 0.5);
-    }
+    
 }// cta

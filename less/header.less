@@ -1,7 +1,7 @@
 // Header Styles
 
 header {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     nav { 
       margin-top: 40px;
@@ -10,16 +10,19 @@ header {
       display: flex;
       // Implemented bordered to use 
       // border-radius mixin #1.
-      border-bottom: 2px solid black;
+      border-bottom: 4px solid @Cabaret;
       .border-radius(@radius: 35%);
   
       a {
         text-decoration: none;
-        color: #b0b0b0;
+        // Changed to black and add bold
+        color: black;
+        font-weight: bold;
   
         &:hover {
             text-decoration: underline;
-            color: black;
+            // Changed to Cabaret
+            color: @Cabaret;
         }
       }
     }
