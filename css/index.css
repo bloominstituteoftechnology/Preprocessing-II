@@ -269,6 +269,10 @@ header .logo {
 }
 .cta img {
   width: 100%;
+  -webkit-transform: skew(10deg, 5deg);
+  -moz-transform: skew(10deg, 5deg);
+  -ms-transform: skew(10deg, 5deg);
+  -o-transform: skew(10deg, 5deg);
 }
 @media (max-width: 768px) {
   .cta img {
