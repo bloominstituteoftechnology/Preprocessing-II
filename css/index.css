@@ -220,9 +220,18 @@ header nav a:hover {
   header nav a {
     width: 100%;
     border-top: 1px solid #23c1fc;
-    border-bottom: 1px solid #23c1fc;
     text-align: center;
     line-height: 60px;
+    font-size: 20px;
+  }
+  header nav a:last-child {
+    border-bottom: 1px solid #23c1fc;
+  }
+  header nav a:hover {
+    -webkit-transform: skew(0, 0);
+    -moz-transform: skew(0, 0);
+    -ms-transform: skew(0, 0);
+    -o-transform: skew(0, 0);
   }
 }
 header .logo {
@@ -339,6 +348,11 @@ header .logo {
 }
 .main-content .top-content p {
   padding-left: 1%;
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    padding-bottom: 0;
+  }
 }
 .main-content .text-content {
   display: flex;
