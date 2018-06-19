@@ -232,6 +232,12 @@ header .logo {
   font-size: 7rem;
 }
 .cta .cta-text button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px solid #ced0d4;
   font-size: 1.6rem;
   background: #4267b2;
@@ -270,6 +276,23 @@ header .logo {
     width: 100%;
   }
 }
+.main-content .top-content .text-content button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background: #4267b2;
+  margin-top: 20px;
+}
+.main-content .top-content .text-content button:hover {
+  background: #263c68;
+}
 @media (max-width: 768px) {
   .main-content .top-content .text-content {
     margin-bottom: 20px;
@@ -295,6 +318,23 @@ header .logo {
     flex-direction: column;
     width: 100%;
   }
+}
+.main-content .bottom-content .text-content button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background: #4267b2;
+  margin-top: 20px;
+}
+.main-content .bottom-content .text-content button:hover {
+  background: #263c68;
 }
 @media (max-width: 768px) {
   .main-content .bottom-content .text-content {
