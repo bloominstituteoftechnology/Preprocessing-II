@@ -33,7 +33,7 @@
     border-bottom: 2px solid black;
     margin: 75px 0 35px 0;
     padding: 35px 0;
-    @media(max-width: 400px) {
+    @media @phone {
         margin: 40px 10px;
     }
     .defult-size;
@@ -41,10 +41,10 @@
     .top-content {
          display: flex;
          justify-content: space-around;
-         @media(max-width: 768px) {
+         @media @tablet {
              justify-content: space-between;
          }
-             @media(max-width: 400px) {
+         @media @phone {
                  flex-wrap: wrap;
                  
                  p {
@@ -61,7 +61,10 @@
          display: block;
          margin: 30px auto;
          width: 100%;
-         @media (max-width: 400px) {
+         &:hover {
+            .skew (15deg, 15deg)
+         }
+         @media @phone {
              margin-top: 10px;
          }
      }
@@ -72,7 +75,7 @@
          p {
              padding-right: 20px;
          }
-         @media(max-width: 400px) {
+         @media @phone {
              flex-wrap: wrap;
              margin-bottom: -20px;
              p {
