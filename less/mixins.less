@@ -35,3 +35,35 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.center{
+	display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-text-content{
+    .text-content{
+		@media @tablet{
+			padding: 20px 10px;
+		}//text-content-tablet
+        @media @phone{
+            .flex-column;
+            .center;
+            padding: 20px 10px;
+        }//text-content-phone
+    }//text-content
+}
+
+.custom-button{
+	width:200px;
+	height:100px;
+	background-color: lavender;
+}
