@@ -16,6 +16,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    .flex-box(@flex-wrap: wrap, @justify-content: space-between);
+    padding-left: 3%;
+    padding-right: 3%;
 }
