@@ -172,7 +172,15 @@ header .logo {
 .cta {
   display: flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  justify-content: center;
+}
+@media (max-width: 768) {
+  .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
