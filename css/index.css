@@ -349,9 +349,18 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  display: flex;
+  justify-content: space-around;
 }
 footer .btt-btn {
-  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  background: pink;
+  border: 1px solid black;
+  display: flex;
   justify-content: center;
-  padding: 30px 0;
+  align-items: center;
+}
+footer .btt-btn:hover {
+  background-color: #00999a;
 }
