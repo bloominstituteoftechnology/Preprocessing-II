@@ -157,27 +157,35 @@ header {
     flex-wrap: wrap-reverse;
   }
 }
+@media (max-width: 450px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
 header nav {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   header nav {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
 }
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   header nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding-bottom: 40px;
   }
 }
 header nav a:hover {
@@ -217,9 +225,7 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
-  -webkit-box-shadow: 10px 5px 5px red;
-  -moz-box-shadow: 10px 5px 5px red;
-  box-shadow: 10px 5px 5px red;
+  width: 100%;
 }
 .cta img {
   -webkit-transform: rotate(90deg);
@@ -240,19 +246,6 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-  -webkit-transform: skew(10deg, 20deg);
-  -moz-transform: skew(10deg, 20deg);
-  -ms-transform: skew(10deg, 20deg);
-  -o-transform: skew(10deg, 20deg);
 }
 .cta .cta-text button:hover {
   background: black;
@@ -271,6 +264,14 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 450px) {
+  .main-content .top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .main-content .middle-img {
   width: 100%;
   display: block;
@@ -279,6 +280,17 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 450px) {
+  .main-content .bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-content .bottom-content h4 {
+    margin-top: 15px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;

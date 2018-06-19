@@ -12,6 +12,11 @@
   .top-content {
     display: flex;
     justify-content: space-around;
+
+    @media @phone {
+      .center();
+      flex-direction: column;
+    }
   }
 
   .middle-img {
@@ -23,6 +28,13 @@
   .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @phone {
+      .center();
+      flex-direction: column;
+      h4 {
+        margin-top: 15px;
+      }
+    }
 
     p {
       padding-right: 20px;
