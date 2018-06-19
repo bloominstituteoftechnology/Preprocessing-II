@@ -31,7 +31,9 @@
         }
 
         h1{
-            .rotate(-20deg);
+            &:hover{
+                .rotate(-20deg);
+            }
 
             @media @tablet{
                 letter-spacing: 0;
@@ -48,7 +50,10 @@
     }
 
     img{
-        .skew(-15deg, -15deg);
+        
+        &:hover{
+            .skew(-15deg, -15deg);
+        }
 
         @media @tablet{
             display: none;
@@ -69,12 +74,12 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-        .border-radius(10px);
-        .rotate(-20deg);
 
         &:hover {
             background: black;
             color: white;
+            .border-radius(10px);
+            .rotate(-20deg);
         }
     }
 }// cta
