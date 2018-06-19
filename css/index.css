@@ -193,6 +193,10 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-transform: skew(15deg, 20deg);
+  -moz-transform: skew(15deg, 20deg);
+  -ms-transform: skew(15deg, 20deg);
+  -o-transform: skew(15deg, 20deg);
 }
 .cta .cta-text button {
   -webkit-border-radius: 1px;
