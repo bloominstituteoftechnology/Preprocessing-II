@@ -3,17 +3,39 @@
 header {
     width: 100%;
     display: flex;
-  
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+      background: rgb(44, 141, 173);
+      height: 150px;
+      align-content: space-around;      
+    }
+    @media @phone {
+
+    }
+
     nav {
       margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
-      display: flex;
-  
+      width: 100%;
+      .flexbox-justify(space-between);
+      @media @tablet {
+        flex-wrap: wrap;
+      }
+      @media @phone {
+
+      }
+
       a {
         text-decoration: none;
         color: #b0b0b0;
-  
+        font-size: @font-size-primary;
+        @media @tablet {
+          border: 1px solid black;
+          font-size: @font-size-primary - .4rem;
+
+        }
+        
+        
         &:hover {
             text-decoration: underline;
             color: black;
@@ -25,5 +47,9 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @tablet {
+          order: -1;
+          margin: 28px 0 0 0;
+        }
     }
   }// header 

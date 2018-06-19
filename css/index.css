@@ -144,22 +144,44 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
-  margin: auto;
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
 }
 header {
   width: 100%;
   display: flex;
 }
+@media ( max-width: 768px ) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #2c8dad;
+    height: 150px;
+    align-content: space-around;
+  }
+}
 header nav {
   margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+}
+@media ( max-width: 768px ) {
+  header nav {
+    flex-wrap: wrap;
+  }
 }
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 1.6rem;
+}
+@media ( max-width: 768px ) {
+  header nav a {
+    border: 1px solid black;
+    font-size: 1.2rem;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -168,6 +190,12 @@ header nav a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media ( max-width: 768px ) {
+  header .logo {
+    order: -1;
+    margin: 28px 0 0 0;
+  }
 }
 .cta {
   display: flex;
