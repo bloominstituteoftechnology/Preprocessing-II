@@ -8,22 +8,70 @@
    font-size: 16px;
    line-height: 18px;
 
+   .custom-button {
+    width: 100px;
+    height: 50px;
+    background: grey;
+}
+
+   
+
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        @media @tablet-view {
+            padding: 0 10px;
+        }
+
+        @media @phone-view {
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
 
     .middle-img {
+        width:100%;
         display: block;
         margin: 30px auto;
+        .box-shadow;
     }
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
+        
+
+        @media @tablet-view {
+            padding: 0 10px;
+        }
+
+        @media @phone-view {
+            flex-wrap: wrap;
+            width: 100%;
+        }
 
         p {
             padding-right: 20px;
         }
+
+
     }
+
+    .text-content {
+       @media @phone-view {
+           padding-top: 20px;
+       }
+    }
+
+   .custom-button {
+       .tcb(100px, 100px, white);
+       background-color: @custom-button-bg-color;
+        &:hover {
+            background-color: darken(@custom-button-bg-color, 20%);
+        }
+    } 
+
+   
+    
 }// main-content
