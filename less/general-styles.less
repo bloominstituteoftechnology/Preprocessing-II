@@ -7,6 +7,14 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+		margin: auto 0;
+    @media @tablet {
+      .yellow-scheme;
+    }
+    @media @phone {
+      .red-scheme;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -15,7 +23,34 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+p {
+  // margin-bottom: 20px;
+  padding-right: 15px;
+}
+
 .container {
-    width: 880px;
+		max-width: 900px;
     margin: auto;
+		margin: 0, 10px;
+    margin-bottom: 0;
+}
+
+#norm {
+  @media @tablet{
+    display: none;
+  }
+  @media @phone{
+    display: flex;
+    color: black;
+  }
+}
+
+#down-up{
+  display: none;
+  @media @tablet{
+    display:flex;
+  }
+  @media @phone{
+    display: none;
+  }
 }

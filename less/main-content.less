@@ -1,29 +1,30 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   margin: 34px 0 25px 0;
+   padding-top: 35px;
    font-size: 16px;
    line-height: 18px;
-
+   padding: 10px;
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
-
+        @media @tablet {
+          .flex-tablet;
+        }//media
+    }//.top-content
     .middle-img {
+        width: 100%;
         display: block;
-        margin: 30px auto;
-    }
-
+        .opacity(@opacity: 0.9);
+    }//middle
     .bottom-content {
         display: flex;
         justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
-    }
+        @media @tablet {
+          .flex-tablet;
+        }//media
+    }//bottom
 }// main-content
