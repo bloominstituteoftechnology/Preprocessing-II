@@ -419,4 +419,19 @@ footer {
 }
 footer {
   font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer div {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  display: block;
+  border: 1px solid black;
+  background-color: white;
+}
+footer div:hover {
+  background-color: #e6e6e6;
 }
