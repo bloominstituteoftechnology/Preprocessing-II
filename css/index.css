@@ -152,6 +152,9 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 10px;
   color: #F812B7;
+  -webkit-box-shadow: 3px 4px aquamarine;
+  -moz-box-shadow: 3px 4px aquamarine;
+  box-shadow: 3px 4px aquamarine;
 }
 .container {
   width: 880px;
@@ -162,6 +165,12 @@ h5 {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.container .middle-img {
+  -webkit-transform: skew(4deg, 2deg);
+  -moz-transform: skew(4deg, 2deg);
+  -ms-transform: skew(4deg, 2deg);
+  -o-transform: skew(4deg, 2deg);
 }
 header {
   width: 100%;
@@ -184,6 +193,9 @@ header nav {
   width: 610px;
   justify-content: space-between;
   display: flex;
+  -webkit-box-shadow: 2px 3px yellow;
+  -moz-box-shadow: 2px 3px yellow;
+  box-shadow: 2px 3px yellow;
 }
 @media (max-width: 768px) {
   header nav {
@@ -309,6 +321,11 @@ header .logo {
   margin-top: 10px;
   cursor: pointer;
 }
+.cta img {
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+}
 @media (max-width: 768px) {
   .cta img {
     max-width: 100%;
@@ -381,6 +398,19 @@ header .logo {
 }
 .contact p {
   margin: 15px 0;
+}
+.contact .button {
+  border: 2px solid red;
+  width: 200px;
+  height: 20px;
+  background-color: #F812B7;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 footer {
   text-align: center;
