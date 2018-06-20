@@ -233,7 +233,11 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
   color: black;
-  background: lightgray;
+}
+@media (max-width: 500px) {
+  header nav a:hover {
+    background: lightgray;
+  }
 }
 header .logo {
   align-self: flex-end;
@@ -358,7 +362,7 @@ header .logo {
   margin-top: 20px;
   width: 100px;
   height: 50px;
-  background-color: #719EEA;
+  background: #719EEA;
   border: 1px solid black;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -413,7 +417,7 @@ header .logo {
   margin-top: 20px;
   width: 100px;
   height: 50px;
-  background-color: #2EE51F;
+  background: #2EE51F;
   border: 1px solid black;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

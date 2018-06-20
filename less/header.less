@@ -52,7 +52,10 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
-            background: lightgray;
+
+            @media @phone {              
+              background: lightgray;
+            }
 
         }
       }

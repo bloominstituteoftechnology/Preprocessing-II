@@ -44,9 +44,17 @@
 		margin-top: 20px;
 		width: @width;
 		height: @height;
-		background-color: @bg-color;
+		background: @bg-color;
 		border: @b-width @b-line @b-color;
 		.border-radius(@b-radius);
+	}
+}
+
+#teacher-stuff{
+	.btn-mixer(@width, @height, @bg){
+		width: @width;
+		height: @height;
+		background: @bg;
 	}
 }
 
