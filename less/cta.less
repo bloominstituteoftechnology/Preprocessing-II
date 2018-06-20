@@ -17,7 +17,7 @@
         }
 
     .cta-text {
-        font-size: 4rem;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -26,18 +26,24 @@
         align-items: center;
         margin: 0 82px 0 0;
         .rotate(-15deg);
-       
+        @media @tablet {
+            margin: 0 5% 0 0;  
+            .rotate(0deg);
+        }
         @media @phone{
-            
-            margin: auto;
+             margin: 0;
             .rotate(0)
             }
-
+        h1{
+            @media @tablet{
+                letter-spacing: 0;
+            }
+        }
     }
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.6rem;
         background: white;
         width: 170px;
         height: 32px;
@@ -53,9 +59,15 @@
     }
     img {
         .skew(-5deg, -5deg);
-        @media @phone{
+        @media @tablet{
             display:none
             }
+        @media @phone
+        {display: 
+            block;
+            max-width: 80%;
+            margin: 25px 0;
+            .skew(0,0)}
 
 
     }

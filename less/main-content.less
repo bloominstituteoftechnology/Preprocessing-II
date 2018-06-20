@@ -5,8 +5,17 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
+   @media @phone{
+    padding: 0px;
+    }
+
+   @media @tablet{
+       font-size: 1.4rem;
+       margin: 75px 2% 35px;
+   }
+   
    @media @phone{
     margin: 10px;
     flex-flow: column}
@@ -14,21 +23,25 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        align-content: space-around;
         @media @phone{
-            margin: 10px;
-            flex-flow: column}
-
-            .text-content{
-                @media @phone{
-                    margin-bottom: 20px;}
-            }
+            flex-wrap: wrap;
+            height: 300px}
+        .text-content {
+            margin:0 1%;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
         .box-shadow(10px 4px 10px 0);
+        @media @tablet{
+            width: 100%;
+            margin: 25px auto;  
+        }
         @media @phone{
+            margin-top: 0;
             width:400px
             }
         
@@ -38,15 +51,16 @@
         display: flex;
         justify-content: space-around;
         @media @phone{
-            margin: 10px;
-            flex-flow: column}
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 440px;}
         p {
-            padding-right: 20px;
+            @media @phone{
+                margin-bottom: 20px;}
             
         }
         .text-content{
-            @media @phone{
-                margin-bottom: 20px;}
+            margin:0 1%;
         }
     }
 }// main-content

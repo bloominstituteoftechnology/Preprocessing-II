@@ -7,11 +7,15 @@ header {
     display: flex;
     align-items: center;
     .border-radius(@radius: 7px);
+    @media @tablet{
+      padding: 0px;
+      flex-wrap: wrap;   
+    }
     @media @phone{
+      border: none;
       padding:10px 0 30px 0;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
       justify-content: center;
-    
     }
     
   
@@ -20,6 +24,10 @@ header {
       width: 610px;
       justify-content: space-between;
       display: flex;
+      @media @tablet{
+        width: 100%;
+        margin: 38px 3%;
+      }
       @media @phone{
         width: 100%;
         display: flex;
@@ -27,35 +35,44 @@ header {
         margin: 0; 
         align-items: center;
     }
-  
       a {
         
         text-decoration: none;
         color: #b0b0b0;
+        
         @media @phone{
           width: 100%;
           display: block;
           text-align: center;
           padding: 10px 0;
-          border-bottom: 1px solid teal;
+          font-size: 2rem;
+          border-bottom: 1px dashed teal;
+            
         }
-        
-  
-        &:hover {  
+           &:hover {  
           text-decoration: underline;
             color: black;
   
         }
       }
     }
+    nav:first-child{
+      @media @phone{
+        border-top: 1px dashed teal;
+      }
+    }
   
     .logo {
         align-items: center;
         margin: 0 0 0 91px;
+        @media @tablet{
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+        }
         @media @phone{
-          margin:20px 0 0 0;
-          justify-content: center;
-          align-items: center;
+          order: -1;
+          margin:20px 0;
         }
     }
   }// header 
