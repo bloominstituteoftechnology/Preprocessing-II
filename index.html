@@ -20,6 +20,18 @@
       setTimeout(function(){document.getElementById("spinner").style.animation = ""}, 4000);
     }
   </script>
+
+  <script>
+    function clickedToo() {
+      let arr = document.getElementsByClassName("spinny");
+      for(let i =0; i< arr.length; i++){
+        arr[i].style.animation = 'spin 4s linear';
+      }
+      setTimeout(function(){
+        for(let i=0; i<arr.length; i++){arr[i].style.animation = ''}
+      }, 4000);
+    }
+  </script>
 </head>
 
 <body>
@@ -28,34 +40,34 @@
 
         <header>
             <nav>
-                <a href="#">Services</a>
-                <a href="#">Product</a>
-                <a href="#">Vision</a>
-                <a href="#">Features</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#" class="spinny">Services</a>
+                <a href="#" class="spinny">Product</a>
+                <a href="#" class="spinny">Vision</a>
+                <a href="#" class="spinny">Features</a>
+                <a href="#" class="spinny">About</a>
+                <a href="#" class="spinny">Contact</a>
             </nav>
 
-            <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
+            <img class="logo spinny" src="img/logo.png" alt="Great Idea! Company logo.">
         </header>
 
         <section class="cta">
-            <div class="cta-text">
+            <div class="cta-text spinny">
                 <h1>Preprocessing<br> Is<br> Awesome</h1>
                 <button onclick="clicked()">Less is More</button>
             </div>
-            <img src="img/header-img.png" alt="Image of a code snippet.">
+            <img class="spinny" src="img/header-img.png" alt="Image of a code snippet.">
         </section>
 
         <section class="main-content">
 
             <div class="top-content">
-                <div class="text-content">
+                <div class="text-content spinny">
                     <h4>Features</h4>
                     <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-                    <button class="btn btn-feature">See Features</button>
+                    <button onclick="clickedToo()" class="btn btn-feature">See Features</button>
                 </div>
-                <div class="text-content">
+                <div class="text-content spinny">
                     <h4>About</h4>
                     <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
                     <button class="btn btn-about">About Us</button>
@@ -65,17 +77,17 @@
             <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
 
             <div class="bottom-content">
-                <div class="text-content">
+                <div class="text-content spinny">
                     <h4>Services</h4>
                     <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
                     <button class="btn btn-content">Our Services</button>
                 </div>
-                <div class="text-content">
+                <div class="text-content spinny">
                     <h4>Products</h4>
                     <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
                     <button class="btn btn-product">Our Products</button>
                 </div>
-                <div class="text-content">
+                <div class="text-content spinny">
                     <h4>Vision</h4>
                     <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
                     <button class="btn btn-vision">Our Vision</button>
@@ -84,7 +96,7 @@
 
         </section>
 
-        <section class="contact">
+        <section class="contact spinny">
 
             <h4>Contact</h4>
 
@@ -97,7 +109,7 @@
 
         </section>
 
-        <footer>
+        <footer class="spinner">
             <p>Copyright Great Idea! 2018</p>
         </footer>
 
