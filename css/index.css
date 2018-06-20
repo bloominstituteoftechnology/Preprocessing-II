@@ -129,7 +129,10 @@ table {
 .dance-shout 0% {
   transform: rotate(90deg);
 }
-.dance-shout 50% {
+.dance-shout 30% {
+  transform: rotate(0deg);
+}
+.dance-shout 60% {
   transform: rotate(0deg);
 }
 .dance-shout 100% {
@@ -194,7 +197,10 @@ table {
   0% {
     transform: rotate(90deg);
   }
-  50% {
+  30% {
+    transform: rotate(0deg);
+  }
+  60% {
     transform: rotate(0deg);
   }
   100% {

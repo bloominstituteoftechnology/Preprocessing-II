@@ -27,3 +27,10 @@ function rightieShout(obj){
   setTimeout(function(){obj.style.animation = "rightShout 1s linear";}, 5250);
   setTimeout(function(){obj.style.animation = ""}, 1000);
 }
+
+function buttonOff(obj) {
+  obj.disabled = true;
+  setTimeout(function() {
+    obj.disabled = false;
+  }, 8000);
+}
