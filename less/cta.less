@@ -7,14 +7,20 @@
 
     .cta-text {
         font-size: 72px;
-        text-align: center;
+        text-align: right;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
-        align-items: center;
+        align-items: flex-end;
         margin: 0 82px 0 0;
-    }
+        @media @max768{
+            font-size: 5.5rem;
+        }
+
+  }
+}
+        
 
     .cta-text button {
         border: 1px double black;
@@ -25,7 +31,8 @@
         margin-top: 10px;
         cursor: pointer;
         .border-radius(@radius: 2px);
-
+        
+        
 
         &:hover {
             background: black;
@@ -33,7 +40,7 @@
         }
     }
     img {
-        
+        .box-shadow(black);
         .skew(5deg, 9deg);
     }
-}// cta
+// cta

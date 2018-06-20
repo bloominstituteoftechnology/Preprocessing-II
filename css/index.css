@@ -205,15 +205,20 @@ nav .logo {
 }
 .cta .cta-text {
   font-size: 72px;
-  text-align: center;
+  text-align: right;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 82px 0 0;
 }
-.cta .cta-text button {
+@media (max-width: 768px) {
+  .cta .cta-text {
+    font-size: 5.5rem;
+  }
+}
+.cta-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
@@ -228,11 +233,14 @@ nav .logo {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.cta .cta-text button:hover {
+.cta-text button:hover {
   background: black;
   color: white;
 }
-.cta img {
+img {
+  -webkit-box-shadow: black;
+  -moz-box-shadow: black;
+  box-shadow: black;
   -webkit-transform: skew(5deg, 9deg);
   -moz-transform: skew(5deg, 9deg);
   -ms-transform: skew(5deg, 9deg);
@@ -286,4 +294,9 @@ nav .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+@media (max-width: 400px) {
+  footer {
+    font-size: 20rem;
+  }
 }
