@@ -1,4 +1,121 @@
+header{
+    @media @tablet{
+        width:100%;
+    }
+    @media @phone{
+        .flex-column;
+        width:100%;
+    }
+    nav{
+        @media @phone{
+            order:1;
+            .flex-column;
+            .center;
+        }//nav-phone
+        a{
+            @media @phone{
+                .flex-column;
+                .center;
+                width:100%;
+                font-size: 26px;
+                padding: 20px;
+                border-bottom: 1px solid black;
+            }//a-phone
+        }//a
+    }//nav
+    .logo{
+        .rotate(15deg);
+        @media @tablet{
+            align-self: center;
+        }
+        @media @phone{
+            .rotate(0deg);
+            width: 80%;
+            height: 10%;
+            order:0;
+            margin: 20px 0 0 0;
+        }
+    }//logo
+}//header
 
+.cta{
+    @media @phone{
+    }
+    .cta-text{
+        border: 5px dotted slateblue;
+        padding: 20px 0;
+        .border-radius(50%);
+        @media @tablet{
+            width: 100%;
+            margin: 0 auto;
+            .border-radius(10%);
+        }//cta-text-tablet
+        h1{ 
+            @media @phone{
+            padding: 5px;
+            }
+        }//cta-text-h1
+        button{
+            .box-shadow(10px 5px 2px blue);
+        }//button
+    }//cta-text
+    img{
+        .opacity(0.50);
+        &:hover{
+            .opacity(1.0);
+        }
+        @media @tablet{
+            display: none;
+        }//cta-img-tablet
+        @media @phone{
+            display: none;
+        }
+    }//img
+}//cta
+
+.main-content{
+    .top-content{
+        #mobile-content > .mobile-text-content;
+        @media @phone{
+            display: flex;
+            flex-direction: column;    
+        }
+        .text-content{
+            #p-shift > .change-font;
+        }
+    }//top-content
+    .middle-img{
+        width:100%;
+        .skew(2deg, -3deg);
+    }//middle-img
+    .bottom-content{
+        #mobile-content > .mobile-text-content;
+        @media @phone{
+        .flex-column;
+        }
+        .text-content{
+            #p-shift > .change-font;
+        }
+    }//bottom-content
+}//main-content
+
+.contact{
+    @media @phone{
+        .flex-column;
+        .center;
+    }
+}//contact
+
+
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+@import "general-styles.less";
+@import "header.less";
+@import "cta.less";
+@import "main-content.less";
+@import "contact.less";
+@import "footer.less";
 
 
 
