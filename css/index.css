@@ -144,27 +144,27 @@ table {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    opacity: 0;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
   }
   50% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    opacity: 1;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
   }
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    opacity: 0;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes leftRot {
@@ -247,7 +247,7 @@ h5 {
   position: fixed;
   z-index: 5;
   height: 150px;
-  width: 150px;
+  width: 230px;
   background: lightgray;
   top: 20%;
   right: 0;
