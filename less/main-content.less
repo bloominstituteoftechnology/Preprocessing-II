@@ -5,17 +5,48 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
    line-height: 18px;
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        .features {
+            #borders.body-borders(#DC4C46, #672E3B, #F3D6E4);
+            #borders.border-radius;
+            padding: 10px;
+            margin-right: 15px;
+            .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+
+            @media @phone {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+        .about {
+            #borders.body-borders(#C48F65, #223A5E, #898E8C);
+            #borders.border-radius;
+            padding: 10px;
+            .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+        }
+
+        @media @phone {
+            flex-direction: column;
+        }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
+        border: solid 3px orange;
+        #borders.border-radius(20px);
+        .opacity(.8);
+        width: 100%;
+
+        &:hover {
+            animation: danceDance 1s 1s linear infinite alternate;
+        }
     }
 
     .bottom-content {
@@ -25,5 +56,60 @@
         p {
             padding-right: 20px;
         }
+
+        .services {
+            #borders.body-borders(#005960, #9C9A40, #4F84C4);
+            #borders.border-radius;
+            padding: 10px;
+            margin-right: 15px;
+            .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+
+            @media @phone {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+        .product {
+            #borders.body-borders(#D2691E, #578CA9, #F6D155);
+            #borders.border-radius;
+            padding: 10px;
+            margin-right: 15px;
+            .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+
+            @media @phone {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+        .vision {
+            #borders.body-borders(#004B8D, #F2552C, #95DEE3);
+            #borders.border-radius;
+            padding: 10px;
+            .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
+        }
+
+        @media @phone {
+            flex-direction: column;
+        }
+    }
+
+    .content-btn {
+        .buttonStyle(170px, 32px, white);
+        #borders.body-borders(#D2691E, #578CA9, #F6D155);
+        border-bottom-style: solid; 
+        margin-top: 20px;
+        #borders.border-radius;
+        cursor: pointer;
+
+        &:hover {
+            background: darken(white, 3%);
+            #borders.body-borders(#F6D155, #D2691E, #578CA9);
+        }
+    }
+
+    @media @tablet {
+        .container-padding;
     }
 }// main-content
