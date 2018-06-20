@@ -20,10 +20,10 @@
     }
 
     .cta-text button {
-        .body-borders(#F7CAC9, #F7786B, #91A8D0);
+        #borders.body-borders(#F7CAC9, #F7786B, #91A8D0);
         border-bottom-style: solid;
         background: white;
-        .border-radius;
+        #borders.border-radius;
         width: 170px;
         height: 32px;
         margin-top: 10px;
@@ -31,14 +31,14 @@
 
         &:hover {
             background: darken(white, 3%);
-            .body-borders(#91A8D0, #F7CAC9, #F7786B);
+            #borders.body-borders(#91A8D0, #F7CAC9, #F7786B);
         }
     }
 
     img {
         .opacity(.8);
         border: solid 3px orange;
-        .border-radius(50%);
+        #borders.border-radius(50%);
         width: 100%;
 
         &:hover {

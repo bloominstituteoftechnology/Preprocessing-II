@@ -1,15 +1,4 @@
 // Mixins below variables
-
-.border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
-
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
-}
-
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
@@ -36,13 +25,6 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.body-borders(@color1, @color2, @color3) {
-	border-top: solid 2px @primary-site-color;
-	border-left: solid 2px @color1;
-	border-right: solid 2px @color2;
-	border-bottom: dashed 2px @color3;
-}
-
 .container-padding() {
 	padding-left: 2%;
 	padding-right: 2%;
@@ -52,4 +34,25 @@
 	width: @width;
 	height: @height;
 	background: @color;
+}
+
+
+#borders() {
+
+	.body-borders(@color1, @color2, @color3) {
+		border-top: solid 2px @primary-site-color;
+		border-left: solid 2px @color1;
+		border-right: solid 2px @color2;
+		border-bottom: dashed 2px @color3;
+	}
+
+	.border-radius (@radius: 5px) {
+		-webkit-border-radius: @radius;
+		-moz-border-radius:    @radius;
+		border-radius:         @radius;
+	
+		-moz-background-clip:    padding;
+		-webkit-background-clip: padding-box;
+		background-clip:         padding-box;
+	}
 }

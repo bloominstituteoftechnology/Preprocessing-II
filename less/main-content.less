@@ -12,8 +12,8 @@
         justify-content: space-around;
 
         .features {
-            .body-borders(#DC4C46, #672E3B, #F3D6E4);
-            .border-radius;
+            #borders.body-borders(#DC4C46, #672E3B, #F3D6E4);
+            #borders.border-radius;
             padding: 10px;
             margin-right: 15px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
@@ -25,8 +25,8 @@
         }
 
         .about {
-            .body-borders(#C48F65, #223A5E, #898E8C);
-            .border-radius;
+            #borders.body-borders(#C48F65, #223A5E, #898E8C);
+            #borders.border-radius;
             padding: 10px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
         }
@@ -40,7 +40,7 @@
         display: block;
         margin: 30px auto;
         border: solid 3px orange;
-        .border-radius(20px);
+        #borders.border-radius(20px);
         .opacity(.8);
         width: 100%;
 
@@ -58,8 +58,8 @@
         }
 
         .services {
-            .body-borders(#005960, #9C9A40, #4F84C4);
-            .border-radius;
+            #borders.body-borders(#005960, #9C9A40, #4F84C4);
+            #borders.border-radius;
             padding: 10px;
             margin-right: 15px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
@@ -71,8 +71,8 @@
         }
 
         .product {
-            .body-borders(#D2691E, #578CA9, #F6D155);
-            .border-radius;
+            #borders.body-borders(#D2691E, #578CA9, #F6D155);
+            #borders.border-radius;
             padding: 10px;
             margin-right: 15px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
@@ -84,8 +84,8 @@
         }
 
         .vision {
-            .body-borders(#004B8D, #F2552C, #95DEE3);
-            .border-radius;
+            #borders.body-borders(#004B8D, #F2552C, #95DEE3);
+            #borders.border-radius;
             padding: 10px;
             .box-shadow(1px .5px 3px 1px rgba(0,0,0,.5));
         }
@@ -97,15 +97,15 @@
 
     .content-btn {
         .buttonStyle(170px, 32px, white);
-        .body-borders(#D2691E, #578CA9, #F6D155);
+        #borders.body-borders(#D2691E, #578CA9, #F6D155);
         border-bottom-style: solid; 
         margin-top: 20px;
-        .border-radius;
+        #borders.border-radius;
         cursor: pointer;
 
         &:hover {
             background: darken(white, 3%);
-            .body-borders(#F6D155, #D2691E, #578CA9);
+            #borders.body-borders(#F6D155, #D2691E, #578CA9);
         }
     }
 
