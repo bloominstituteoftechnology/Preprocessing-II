@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -414,6 +419,101 @@ header .logo {
 }
 .main-content .bottom-content .text-content {
   margin: 0 1%;
+}
+.feat-btn {
+  width: 75px;
+  height: 25px;
+  margin-top: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feat-btn:hover {
+  background-color: #5fb3ce;
+}
+.abt-btn {
+  width: 75px;
+  height: 25px;
+  margin-top: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abt-btn:hover {
+  background-color: #5fb3ce;
+}
+.service-btn {
+  width: 75px;
+  height: 25px;
+  margin-top: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-btn:hover {
+  background-color: #5fb3ce;
+}
+.product-btn {
+  width: 75px;
+  height: 25px;
+  margin-top: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-btn:hover {
+  background-color: #5fb3ce;
+}
+.vision-btn {
+  width: 75px;
+  height: 25px;
+  margin-top: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vision-btn:hover {
+  background-color: #5fb3ce;
 }
 .contact p {
   margin: 20px 0;
