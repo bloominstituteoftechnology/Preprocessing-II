@@ -127,20 +127,8 @@ table {
   border-spacing: 0;
 }
 @deg : (180*(Math.PI/180));
-.after-text {
-  border: 1px double black;
-  background: white;
-  width: 170px;
-  height: 32px;
-  margin-top: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  align-self: flex-end;
-  margin: 10px;
-  border: 1px solid green;
-}
 .text-content {
-  border: 1px solid red;
+  padding: 3px;
   margin: 3px;
   align-content: flex-end;
 }
@@ -149,6 +137,25 @@ table {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.after-text-btn {
+  border: 1px double black;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  margin: 15px;
+}
+.after-text-btn:hover {
+  background-color: #cccccc;
+}
+.text-content {
+  margin: 3px;
+  align-content: flex-end;
+  padding: 10px 10px 0;
 }
 * {
   box-sizing: border-box;
@@ -170,6 +177,10 @@ body {
     margin-top: 10px;
     font-size: 16px;
     cursor: pointer;
+  }
+  html .cta .cta-text button:hover,
+  body .cta .cta-text button:hover {
+    background-color: #cccccc;
   }
   html .container,
   body .container {
@@ -203,7 +214,7 @@ body {
     border: 1px double black;
     font-size: 16px;
     color: #e69500;
-    background-color: #750404;
+    background-color: #805300;
     width: 170px;
     height: 32px;
     margin-top: 10px;
@@ -211,8 +222,8 @@ body {
   }
   html .cta .cta-text button:hover,
   body .cta .cta-text button:hover {
-    background: white;
-    color: #750404;
+    background: #b37400;
+    color: black;
   }
 }
 h1,
@@ -241,6 +252,7 @@ p {
 @media (max-width: 420px) {
   #norm {
     display: flex;
+    color: black;
   }
 }
 #down-up {
@@ -341,13 +353,6 @@ header .logo {
   text-align: center;
   align-items: center;
 }
-@media (max-width: 650px) {
-}
-@media (max-width: 420px) {
-  .cta .cta-text {
-    color: #ffc800;
-  }
-}
 .cta .cta-text button {
   display: flex;
   justify-content: center;
@@ -360,7 +365,19 @@ header .logo {
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 10px;
-  background: lightgrey;
+}
+.cta .cta-text button:hover {
+  background-color: #cccccc;
+}
+@media (max-width: 650px) {
+  .cta .cta-text button {
+    background: #e69500;
+  }
+}
+@media (max-width: 420px) {
+  .cta .cta-text button {
+    color: black;
+  }
 }
 @media (max-width: 650px) {
   .cta {
@@ -378,7 +395,7 @@ header .logo {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 34px 0 25px 0;
-  padding-top: 35px ;
+  padding-top: 35px;
   font-size: 16px;
   line-height: 18px;
   padding: 10px;

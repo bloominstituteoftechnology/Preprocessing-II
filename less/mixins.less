@@ -1,13 +1,9 @@
 // Mixins below variables
-.after-text{
-	.btn-white;
-	align-self: flex-end;
-	margin: 10px;
-	border: 1px solid green;
-}
+
 
 .text-content{
-	border: 1px solid red;
+	// border: 1px solid red;
+	padding: 3px;
 	margin: 3px;
 	align-content: flex-end;
 }
@@ -35,14 +31,14 @@
 	border: 1px double black;
 	.mixin-font;
 	color: @orange;
-	background-color: @brown;
+	background-color: darken(@orange, 20%);
 	width: 170px;
 	height: 32px;
 	margin-top: 10px;
 	cursor: pointer;
 		&:hover {
-				background: white;
-				color: @brown;
+				background: darken(@orange, 10%);
+				color: black;
 		}//hover
 }//btn-red
 
@@ -55,9 +51,7 @@
 	.mixin-font;
 	cursor: pointer;
 		&:hover {
-
-			// background: black;
-			// color: white;
+				background-color: darken(white, 20%);
 		}//hover
 }
 
@@ -132,3 +126,18 @@
 			}//header nav a
 		}//container
 }//yellow-scheme
+
+.after-text-btn{
+	.btn-white;
+	float: right;
+	margin: 15px;
+	// border: 1px solid green;
+
+}
+
+.text-content{
+	// border: 1px solid red;
+	margin: 3px;
+	align-content: flex-end;
+	padding: 10px 10px 0;
+}

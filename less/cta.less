@@ -13,8 +13,7 @@
 		}//media
     @media @phone {
       .rotate(0deg);
-    }
-
+    }//media
 
 		.cta-text {
 				display: flex;
@@ -22,22 +21,17 @@
 		    font-size: 6.2rem;
 		    text-align: center;
         align-items: center;
-
-				@media @tablet {
-					// margin: 10px 0 0 0 ;
-				}//media
-        @media @phone {
-          color: @yellowish;
-        }
 				button {
           .center;
 					.btn-white;
 					margin-bottom: 10px;
-					background: lightgrey;
+          @media @tablet {
+            background: @orange;
+          }//media
+          @media @phone {
+            color: black;
+          }
 				}//button
-        &:hover {
-          // background-color: lighten(inherit;10%)
-        }
 		}//.cta-text
 
 		@media @tablet {
