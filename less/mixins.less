@@ -30,8 +30,56 @@
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
+	-webkit-transform:   skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.border-box() {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 10px;
+	.box-shadow(5px 5px 2px 1px rgba(0, 0, 255, .2));
+}
+
+.flex-space-around() {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-content() {
+    @media @phone {
+        flex-wrap: wrap;
+        .text-content {
+            margin-top: 10px;
+			margin-bottom: 10px;
+        }
+    }
+}
+
+#stretch {
+	.heading {
+		letter-spacing: 2px;
+		font-size: 110%;
+	}
+
+	// bg-color works best with mid-range colors; don't use black
+	.btn (@width: 125px, @height: 25px, @bg-color: darkgray) {
+		.border-radius;
+		width: @width;
+		height: @height;
+		background: @bg-color;
+		color: black;
+		margin-top: 10px;
+
+		&:hover {
+			background: darken(@bg-color, 20%);
+			color: lighten(@bg-color, 20%);
+		}
+	}
+
+	.p {
+		line-height: 1.25;
+	}
 }
