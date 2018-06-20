@@ -14,20 +14,23 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+       
     }
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        background: rgb(250, 11, 11);
+        width: 75px;
+        height: 75px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius (@radius: 50%);
+        
 
         &:hover {
-            background: black;
+            background: rgb(2, 175, 11);
             color: white;
         }
     }
-}// cta
+}
