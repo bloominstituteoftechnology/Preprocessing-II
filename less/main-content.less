@@ -35,5 +35,21 @@
         &:hover {
             background-color: darken(gray, 10%)
         }
+        
+    }
+    @media @tablet {
+        .flex-column;
+        flex-wrap: wrap;
+        .responsive-width(@tablet-max-width, @full-width); 
+        .center;
+        background: pink; 
+        .text-content {
+            max-width: 786px;
+            width: 100%;
+        }
+        img {
+            width:100%;
+        }
+        
     }
 }// main-content

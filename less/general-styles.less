@@ -19,14 +19,19 @@ h1, h2, h3, h4, h5 {
 
 .container {
     width: 880px;
-    margin: auto;
+    margin: 0 auto;
     
     @media @tablet {
-        // .responsive-width(@tablet-max-width, @full-width); 
+        display: flex;
+        .flex-row;
+        flex-wrap: wrap;
+        .center;
         background: pink; 
+        // max-width: 768px;
+        // width: 100%;
+        margin: auto;
+        .responsive-width(@tablet-max-width, @full-width); 
+        
     }
     
-    @media(@phone){
-        .responsive-width(@phone-max-width, @full-width);
-    }
 }
