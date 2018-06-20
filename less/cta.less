@@ -6,14 +6,15 @@
     justify-content: flex-end;
 
     .cta-text {
-        font-size: 72px;
+        font-size: 50px;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 9.3% 0 0;
+        .rotate (90deg)
     }
 
     .cta-text button {
@@ -24,10 +25,20 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .box-shadow (10px 10px 0 0 red);
+
 
         &:hover {
             background: black;
             color: white;
+            .opacity (@opacity: 0.5)
+
         }
+      }
+    .cta-image {
+      @media @tablet {
+        display: none;
+      }
     }
+  
 }// cta
