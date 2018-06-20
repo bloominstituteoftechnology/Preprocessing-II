@@ -2,13 +2,26 @@
 
 header {
     width: 100%;
-    display: flex;
-  
+    
+  }
     nav {
-      margin-top: 40px; 
-      width: 610px;
-      justify-content: space-between;
+      margin-top: 45px; 
+      width: 100%;
+      justify-content: space-evenly;
       display: flex;
+      align-items: center;
+      flex-grow: 1;
+      border: 1px solid black;
+      .border-radius(@radius: 20px);
+
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        // border-bottom: 1px solid red;
+      
+      }
   
       a {
         text-decoration: none;
@@ -20,10 +33,26 @@ header {
   
         }
       }
-    }
   
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+      .logo {
+
+        display: flex;
+        align-items: center;
+        .rotate(20deg);
+        
+        
+  
+  
+          @media (max-width: 768px){
+            margin: 0 auto;
+            
+            display: flex;
+            order: -1;
+            justify-content: center;
+            
+          }
     }
-  }// header 
+
+
+
+  }
