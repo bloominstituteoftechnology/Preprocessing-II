@@ -234,7 +234,7 @@ h5 {
   transform-origin: bottom left;
 }
 .anim-container #leftie {
-  background-image: url(img/robbie.png);
+  background-image: url('https://raw.githubusercontent.com/Jstoss/Preprocessing-Part-II/master/img/robbie.png');
   background-size: contain;
 }
 .anim-container .right {
@@ -249,7 +249,7 @@ h5 {
   transform-origin: bottom right;
 }
 .anim-container #rightie {
-  background-image: url('img/shout.png');
+  background-image: url('https://raw.githubusercontent.com/Jstoss/Preprocessing-Part-II/master/img/shout.png');
   background-size: contain;
 }
 .anim-container .bottom {
