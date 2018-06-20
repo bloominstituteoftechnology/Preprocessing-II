@@ -1,6 +1,13 @@
 function clicked() {
+  toggleVisible();
   document.getElementById("spinner").style.animation = "spin 4s linear";
-  setTimeout(function(){document.getElementById("spinner").style.animation = ""}, 4000);
+  setTimeout(endPageSpin, 4000);
+}
+
+const endPageSpin = () => {
+  console.log("In endPageSpin()");
+  document.getElementById("spinner").style.animation = "";
+  toggleVisible();
 }
 
 function clickedToo() {
@@ -14,7 +21,7 @@ function clickedToo() {
 }
 
 function startDance() {
-  let audio = new Audio('https://s21.aconvert.com/convert/p3r68-cdx67/fzbrt-2nbm7.ogg');
+  let audio = new Audio('audio/6y2h2-xpiz2.ogg');
   let leftie = document.getElementById("leftie");
   let rightie = document.getElementById("rightie");
   leftie.style.animation = "leftRot 6s linear";
@@ -33,4 +40,16 @@ function buttonOff(obj) {
   setTimeout(function() {
     obj.disabled = false;
   }, 8000);
+}
+
+function toggleVisible(){
+  let rightie = document.getElementById("rightie");
+  let leftie = document.getElementById("leftie");
+  if(rightie.style.visibility == "visible"){
+    rightie.style.visibility = 'hidden';
+    leftie.style.visibility = 'hidden';
+  }else{
+    rightie.style.visibility = 'visible';
+    leftie.style.visibility = 'visible';
+  }
 }
