@@ -35,3 +35,25 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button () {
+	.border-radius;
+	.box-shadow(1px 1px 1px 1px #ccc);
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	color: @btn-text-color;
+	background: @btn-background-color;
+	margin-top: 20px;
+	border: 1px solid @btn-border-color;
+
+	&:hover {
+		background: darken(@btn-background-color, 20%);
+	}
+}
