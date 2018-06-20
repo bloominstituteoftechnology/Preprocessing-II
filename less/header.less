@@ -1,31 +1,66 @@
 // Header Styles
 
 header {
-    width: 100%;
-    display: flex;
-  
-    nav {
-      margin-top: 40px; 
+  width: 100%;
+  display: flex;
+  @media @tablet {
+      flex-wrap: wrap;
+  }
+ *{
+  @media @phone {
+      padding-top: 20px;
+  }
+ }
+  nav {
+      margin-top: 40px * 1.25; 
       width: 610px;
-      justify-content: space-between;
       display: flex;
-  
+      justify-content: space-around;
+          
       a {
-        text-decoration: none;
-        color: #b0b0b0;
-        .opacity;
-  
-        &:hover {
-            text-decoration: underline;
-            color: black;
-  
-        }
+          text-decoration: none;
+          color: RGB(176,176,176);
+          height: 50px;
+          width: 100%;
+          @media @phone {
+              border-bottom: 1px solid gray;
+              height: 60px;
+          }
       }
-    }
-  
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-        .rotate(15deg);
-    }
-  }// header 
+      a:hover {
+          text-decoration: underline;
+          color: #333333;
+          .opacity;
+      }
+      a:first-child {
+          @media @phone {
+              border-top: 1px solid gray;
+          }
+      }
+      @media @tablet {
+          width:100%;
+          margin: 38px 3%;
+      }
+      @media @phone{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+      }
+     
+  }
+  .logo {
+      align-self: flex-end;
+      margin: 28px 0 0 91px;
+      .rotate(5deg);
+      @media @tablet {
+          order: -1;
+          display: block;
+          margin: 30px auto 0;
+      }
+      @media @phone {
+          align-self: center;
+          justify-content: center;
+      }
+  }
+}// header 
