@@ -5,6 +5,26 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @tablet {
+        display: flex;
+        flex-flow: nowrap;
+    }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .codeimg{
+        @media @tablet {
+            .flex-justify(flex-flow);
+            margin: 0;
+         }
+     
+         @media @mobile {
+             margin: 0;
+         }
+    }
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,20 +34,45 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @tablet {
+            margin: 0;
+            font-size: 68px;
+         }
+     
+         @media @mobile {
+             margin: 0;
+             font-size: 68px;
+         }
     }
 
     .cta-text button {
-        border: 1px double black;
         font-size: 16px;
         background: white;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius(20px);
+    
 
         &:hover {
             background: black;
             color: white;
+            .opacity(.75);
+            .rotate(360deg);
+            -webkit-transition: all 600ms;
+            transition:         all 600ms;
         }
     }
+
+    .codeimg {
+     
+     
+         @media @mobile {
+             margin-top: 30px;
+         }
+}
 }// cta
+
+
