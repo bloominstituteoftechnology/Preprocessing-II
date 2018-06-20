@@ -1,4 +1,57 @@
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+@import "general-styles.less";
+@import "header.less";
+@import "cta.less";
+@import "main-content.less";
+@import "contact.less";
+@import "footer.less";
 
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  header nav a:hover {
+    background: black;
+}
+.cta {
+    justify-content: center;
+
+   .cta-text h1 {
+    letter-spacing: 0;
+  } 
+}
+    .cta img {
+    display: none;
+  }
+    .main-content .middle-img {
+    width: 100%;
+    margin: 25px auto;
+  }
+ }   
+
+
+
+ .cta .cta-text button {
+  border: 1px  black;
+  font-size: 25px;
+  background: red;
+  width: 200px;
+  height: 50px;
+    -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+
+
+}
 
 
 
