@@ -35,3 +35,33 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.flexbox-justify(@position){
+    display:flex;
+    justify-content: @position;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.custom-font(@text-color, @font-size-primary) {
+    color: @text-color;
+    font-size: @font-size-primary;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.custom-button(@width: 75px, @height: 75px, @background: pink) {
+	width: @width;
+	height: @height;
+	background: @background;
+	font-size: @font-size-primary - 1rem;
+	margin: 10px 0;
+	cursor: pointer;
+	border: 2px groove slateblue;
+	.border-radius(15px);
+	.center;
+}
