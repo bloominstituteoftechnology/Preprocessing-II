@@ -7,10 +7,24 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-
+   
    .top-content {
         display: flex;
         justify-content: space-around;
+        @media @tablet {
+        border: 2px solid red;
+        }
+        @media @phone {
+            border: yellowgreen 2px solid;
+        }
+        .text-content .btn {  
+            .button-maker(100px, 50px,#AA1DF5) ;
+              margin-top: 5px;
+              &:hover {
+                  background: darken(#AA1DF5, 20%);
+                
+             }
+        }
     }
 
     .middle-img {
@@ -25,6 +39,18 @@
 
         p {
             padding-right: 20px;
+            
+            }
+          .text-content .btn {  
+            
+              .button-maker(100px, 50px,#AA1DF5) ;
+                margin-top: 5px;
+                &:hover {
+                    background: darken(#AA1DF5, 20%);
+                }
+
+              
+            
         }
     }
 }// main-content
