@@ -5,25 +5,97 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
+   width: 100%;
+
+   @media @tablet {
+        width: 100%;
+    }   
 
    .top-content {
-        display: flex;
-        justify-content: space-around;
-    }
+        .content-paragraph-display;
+    
+        @media @tablet {
+            display: flex;
+		    justify-content: space-between;
+        }
+   
+        @media @phone {
+            display: flex;
+		    flex-direction: column;
+        }
+
+    .text-content {
+        @media @phone {
+            padding: 20px 0;
+            }
+        }
+    
+    } // top-content
 
     .middle-img {
         display: block;
         margin: 30px auto;
-    }
+        width: 100%;
+
+        @media @tablet {
+            margin-top: 45px;
+		    width: 100%;
+        }
+    } // middle-img
 
     .bottom-content {
-        display: flex;
-        justify-content: space-around;
+        .content-paragraph-display;
 
-        p {
-            padding-right: 20px;
+        @media @tablet {
+            display: flex;
+		    flex-direction: space-between;
         }
-    }
+
+        @media @phone {
+            display: flex;
+		    flex-direction: column;
+        }
+
+        .text-content {
+
+            @media @phone {
+                padding: 20px 0;
+                }
+                
+                p {
+                    padding-right: 10%;
+                } // p
+
+
+        } //text-content
+    } //bottom-content
+
 }// main-content
+
+button {
+    .button-maker(100px, 25px, @button-color);
+    .box-shadow(5px 5px 5px @fuel-yellow);
+
+    &:hover {
+        .button-hover;
+        .skew(-5deg, -5deg);
+        cursor: pointer;
+    
+    } //$:hover
+
+        @media @phone {
+            margin-top: 25px;
+        }
+
+
+ } // button
+
+ .centered-button {
+    
+    @media @phone {
+        display: flex;
+        justify-content: center;  
+    }
+ }
