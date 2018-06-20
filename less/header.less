@@ -5,11 +5,14 @@ header {
     
   }
     nav {
-      margin-top: 40px; 
+      margin-top: 45px; 
       width: 100%;
-      justify-content: space-between;
+      justify-content: space-evenly;
       display: flex;
+      align-items: center;
       flex-grow: 1;
+      border: 1px solid black;
+      .border-radius(@radius: 20px);
 
       @media @phone {
         display: flex;
@@ -30,29 +33,26 @@ header {
   
         }
       }
+  
+      .logo {
+
+        display: flex;
+        align-items: center;
+        .rotate(20deg);
+        
+        
+  
+  
+          @media (max-width: 768px){
+            margin: 0 auto;
+            
+            display: flex;
+            order: -1;
+            justify-content: center;
+            
+          }
     }
 
-  
-    .logo {
-
-      display: flex;
-      align-items: center;
-      
 
 
-        @media (max-width: 768px){
-          margin: 0 auto;
-          .logo-width;
-          display: flex;
-          order: -1;
-          justify-content: center;
-          
-        }
-
-// @media (max-width: 768px){
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-
-  }// header 
+  }

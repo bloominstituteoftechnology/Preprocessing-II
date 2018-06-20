@@ -152,11 +152,19 @@ header {
   width: 100%;
 }
 nav {
-  margin-top: 40px;
+  margin-top: 45px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
+  align-items: center;
   flex-grow: 1;
+  border: 1px solid black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 @media (max-width: 500px) {
   nav {
@@ -174,13 +182,16 @@ nav a:hover {
   text-decoration: underline;
   color: black;
 }
-.logo {
+nav .logo {
   display: flex;
   align-items: center;
-  max-width: 20.79545455%;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
 }
 @media (max-width: 768px) {
-  .logo {
+  nav .logo {
     margin: 0 auto;
     display: flex;
     order: -1;
@@ -210,10 +221,22 @@ nav a:hover {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta img {
+  -webkit-transform: skew(5deg, 9deg);
+  -moz-transform: skew(5deg, 9deg);
+  -ms-transform: skew(5deg, 9deg);
+  -o-transform: skew(5deg, 9deg);
 }
 .main-content {
   border-top: 2px solid black;
@@ -236,25 +259,31 @@ nav a:hover {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
 }
 .contact p {
+  display: flex;
+  flex-wrap: wrap;
   margin: 20px 0;
+  border: 1px solid black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 footer {
   text-align: center;
   margin: 40px 0 20px;
-}
-@media (max-width: 600px) {
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
