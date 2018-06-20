@@ -14,20 +14,39 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        .border-radius();
+        .rotate(90deg);
+
+        @media @tablet {
+          display: flex;
+          width: 100%;
+        }
+        @media @phone {
+          font-size: 50px;
+          .rotate(180deg);
+        }
     }
 
     .cta-text button {
-        border: 1px double black;
         font-size: 16px;
         background: white;
         width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
+        .border-radius();
 
         &:hover {
             background: black;
             color: white;
         }
+    }
+    img {
+      border: 20px solid pink;
+      .opacity();
+      .border-radius(50%);
+      @media @tablet {
+        display: none;
+      }
     }
 }// cta

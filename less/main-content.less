@@ -1,7 +1,7 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -11,6 +11,18 @@
    .top-content {
         display: flex;
         justify-content: space-around;
+        .box-shadow(10px 10px red);
+        @media @phone {
+          flex-direction: column;
+          margin: 20px 20px;
+          padding: 20px 20px;
+        }
+        h4 {
+            @media @phone{
+                padding: 10px 0;
+            }
+          }
+
     }
 
     .middle-img {
@@ -22,6 +34,16 @@
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+          flex-direction: column;
+          margin: 20px 20px;
+          padding: 20px 20px;
+        }
+        h4 {
+          @media @phone{
+            padding: 10px 0;
+          }
+        }
         p {
             padding-right: 20px;
         }
