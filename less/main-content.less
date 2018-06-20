@@ -1,29 +1,86 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-
-   .top-content {
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+    
+    .top-content {
         display: flex;
         justify-content: space-around;
-    }
+        .text-content {
+        @media @tablet {
+         padding-left: 2%;
+         padding-right: 2%;
+             p{
+                 padding-bottom: 10px;
+             }
+        }
+        .btn {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            .btn-creator(70px,40px,#ff7f50);
+            color: white;
+            
+            &:hover {
+                 background-color: darken(#ff7f50,20%);
+                }
+            } 
+        }
 
+        @media @phone {
+            display: flex; 
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start; 
+     }
+ }
     .middle-img {
         display: block;
         margin: 30px auto;
-    }
-
-    .bottom-content {
+        @media @tablet {
+         padding-left: 2%;
+         padding-right: 2%;
+         height: 90%;
+         width:100%;
+        }
+     }
+     .bottom-content {
         display: flex;
         justify-content: space-around;
-
-        p {
-            padding-right: 20px;
-        }
-    }
-}// main-content
+ 
+         
+         .text-content {
+             @media @tablet {
+              padding-left: 2%;
+              padding-right: 2%;
+             }
+              p {
+                padding-right: 20px;
+                padding-bottom: 10px;
+            }
+              .btn {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                .btn-creator(70px,40px,#ff7f50);
+                color: white;
+                
+                &:hover {
+                     background-color: darken(#ff7f50,20%);
+                    }
+                } 
+             
+             }
+         
+         @media @phone {
+         display: flex; 
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         }
+         
+     }
+ }
