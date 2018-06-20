@@ -6,26 +6,25 @@
 		flex-wrap: wrap;
     margin-top: 72px;
     justify-content: space-around;
+    align-items: center;
 		@media @tablet{
 			margin-top: 10px;
       .rotate(180deg);
 		}//media
     @media @phone {
-      .rotate(180deg);
+      .rotate(0deg);
     }
 
 
 		.cta-text {
-      width: 100%;
 				display: flex;
 				flex-direction: column;
-		    font-size: 5.2rem;
+		    font-size: 6.2rem;
 		    text-align: center;
         align-items: center;
 
 				@media @tablet {
-
-					margin: 10px 0 0 0 ;
+					// margin: 10px 0 0 0 ;
 				}//media
         @media @phone {
           color: @yellowish;
