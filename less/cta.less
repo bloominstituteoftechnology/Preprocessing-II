@@ -2,33 +2,43 @@
 
 .cta {
     display: flex;
+    width: 100%;
 		flex-wrap: wrap;
     margin-top: 72px;
     justify-content: space-around;
 		@media @tablet{
 			margin-top: 10px;
+      .rotate(180deg);
 		}//media
+    @media @phone {
+      .rotate(180deg);
+    }
+
+
 		.cta-text {
       width: 100%;
 				display: flex;
 				flex-direction: column;
 		    font-size: 5.2rem;
 		    text-align: center;
-		    // letter-spacing: 5px;
-		    .flex-tablet;
-		    // margin: 0 82px 0 0;
-				// border: 1px solid green;
+        align-items: center;
+
 				@media @tablet {
+
 					margin: 10px 0 0 0 ;
 				}//media
         @media @phone {
           color: @yellowish;
         }
 				button {
+          .center;
 					.btn-white;
 					margin-bottom: 10px;
 					background: lightgrey;
 				}//button
+        &:hover {
+          // background-color: lighten(inherit;10%)
+        }
 		}//.cta-text
 
 		@media @tablet {
@@ -40,5 +50,6 @@
 
 .circle-img {
   width: 100%;
+  max-width: 379px;
   height: auto;
 }

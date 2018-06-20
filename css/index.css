@@ -142,7 +142,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   margin: auto 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   html .cta .cta-text button,
   body .cta .cta-text button {
     border: 1px double black;
@@ -152,11 +152,6 @@ body {
     margin-top: 10px;
     font-size: 16px;
     cursor: pointer;
-  }
-  html .cta .cta-text button:hover,
-  body .cta .cta-text button:hover {
-    background: black;
-    color: white;
   }
   html .container,
   body .container {
@@ -168,14 +163,10 @@ body {
     border-right: 1px solid black;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 420px) {
   html .container,
   body .container {
     background: #e69500;
-  }
-  html .cta,
-  body .cta {
-    width: 100%;
   }
   html h1,
   body h1 {
@@ -228,7 +219,7 @@ header {
   align-items: center;
   justify-content: space-around;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   header {
     flex-direction: column-reverse;
     justify-content: center;
@@ -240,7 +231,7 @@ header nav {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   header nav {
     display: flex;
     flex-direction: column;
@@ -260,12 +251,12 @@ header nav a:hover {
   text-decoration: underline;
   color: black;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   header nav a {
     border-top: 1px solid #e69500;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 420px) {
   header nav a {
     border-top: 1px solid #ffc800;
   }
@@ -275,35 +266,50 @@ header .logo {
 }
 .cta {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   margin-top: 72px;
   justify-content: space-around;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .cta {
     margin-top: 10px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+}
+@media (max-width: 420px) {
+  .cta {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
   }
 }
 .cta .cta-text {
   width: 100%;
-  font-size: 5.2rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-size: 5.2rem;
+  text-align: center;
   align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .cta .cta-text {
     margin: 10px 0 0 0 ;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 420px) {
   .cta .cta-text {
     color: #ffc800;
   }
 }
 .cta .cta-text button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px double black;
   background: white;
   width: 170px;
@@ -314,11 +320,7 @@ header .logo {
   margin-bottom: 10px;
   background: lightgrey;
 }
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
-}
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .cta {
     flex-direction: column;
     align-items: center;
@@ -327,6 +329,7 @@ header .logo {
 }
 .circle-img {
   width: 100%;
+  max-width: 379px;
   height: auto;
 }
 .main-content {

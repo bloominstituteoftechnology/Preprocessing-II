@@ -1,4 +1,7 @@
 // Mixins below variables
+.background (@color){
+	background-color: @color;
+}
 
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
@@ -10,42 +13,12 @@
 	background-clip:         padding-box;
 }
 
-.background (@color){
-	background-color: @color;
-}
-
 .box-shadow (@string) {
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
 }
 
-.center(){
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.opacity (@opacity: 0.5) {
-	-webkit-opacity: 	@opacity;
-	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
-}
-
-.rotate (@deg) {
-	-webkit-transform: rotate(@deg);
-	-moz-transform: 	 rotate(@deg);
-	-ms-transform: 		 rotate(@deg);
-	-o-transform: 		 rotate(@deg);
-}
-
-.skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
-	-moz-transform: 	 skew(@deg, @deg2);
-	-ms-transform: 		 skew(@deg, @deg2);
-	-o-transform: 		 skew(@deg, @deg2);
-}
-
-//mixins
 .btn-red(){
 	border: 1px double black;
 	.mixin-font;
@@ -60,6 +33,7 @@
 				color: @brown;
 		}//hover
 }//btn-red
+
 .btn-white(){
 	border: 1px double black;
 	background: white;
@@ -69,9 +43,16 @@
 	.mixin-font;
 	cursor: pointer;
 		&:hover {
-			background: black;
-			color: white;
+
+			// background: black;
+			// color: white;
 		}//hover
+}
+
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .flex-tablet{
@@ -81,26 +62,21 @@
 	align-items: center;
 }
 
-.yellow-scheme(){
-	.cta .cta-text button{
-		.btn-white
-	}
-	.container{
-			background-color: yellow;
-			header nav a {
-				color: black;
-				border-right: 1px solid black;
-			}//header nav a
-		}//container
-}//yellow-scheme
+.mixin-font(){
+	font-size: 16px;
+}
+
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
 
 .red-scheme(){
 		.container {
 			background: @orange;
 		}//container
-		.cta {
-			width: 100%;
-		}
+
 		h1 {
 			color:@yellowish;
 		}//h1
@@ -118,7 +94,29 @@
 
 }//redscheme
 
-
-.mixin-font(){
-	font-size: 16px;
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
 }
+
+.skew (@deg, @deg2) {
+	-webkit-transform:       skew(@deg, @deg2);
+	-moz-transform: 	 skew(@deg, @deg2);
+	-ms-transform: 		 skew(@deg, @deg2);
+	-o-transform: 		 skew(@deg, @deg2);
+}
+
+.yellow-scheme(){
+	.cta .cta-text button{
+		.btn-white
+	}
+	.container{
+			background-color: yellow;
+			header nav a {
+				color: black;
+				border-right: 1px solid black;
+			}//header nav a
+		}//container
+}//yellow-scheme
