@@ -127,6 +127,23 @@ table {
   border-spacing: 0;
 }
 @deg : (180*(Math.PI/180));
+.after-text {
+  border: 1px double black;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 10px;
+  border: 1px solid green;
+}
+.text-content {
+  border: 1px solid red;
+  margin: 3px;
+  align-content: flex-end;
+}
 .flex-tablet {
   display: flex;
   flex-direction: column;
@@ -208,7 +225,6 @@ h5 {
   margin-bottom: 10px;
 }
 p {
-  margin-bottom: 20px;
   padding-right: 15px;
 }
 .container {
@@ -382,7 +398,6 @@ header .logo {
 .main-content .middle-img {
   width: 100%;
   display: block;
-  margin: 30px auto;
   -webkit-opacity: 0.9;
   -moz-opacity: 0.9;
   opacity: 0.9;
