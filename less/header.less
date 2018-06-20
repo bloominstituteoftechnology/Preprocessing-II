@@ -3,6 +3,9 @@
 header {
     width: 100%;
     display: flex;
+    @media @phone {
+      justify-content: center
+    }
   
     nav {
       margin-top: 40px; 
@@ -17,6 +20,7 @@ header {
         &:hover {
             text-decoration: underline;
             color: black;
+
   
         }
       }
@@ -25,5 +29,11 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-    }
+        @media @tablet {
+          order: -1;
+        .rotate(180deg);   
+        .skew(5deg, 5deg) 
+      }
+    } 
+
   }// header 
