@@ -251,6 +251,11 @@ header .logo:hover {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media ( max-width: 768px ) {
+  .cta {
+    flex-wrap: wrap;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -260,6 +265,12 @@ header .logo:hover {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media ( max-width: 768px ) {
+  .cta .cta-text {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -285,6 +296,7 @@ header .logo:hover {
     -moz-transform: skew(20deg, 20deg);
     -ms-transform: skew(20deg, 20deg);
     -o-transform: skew(20deg, 20deg);
+    margin-top: 20px;
   }
 }
 .main-content {
