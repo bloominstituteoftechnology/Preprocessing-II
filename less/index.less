@@ -14,6 +14,12 @@
 
 @phone: ~"(max-width: 400px)";
 
+.buttonm (@width, @height, @background) {
+    width: @width;
+    height: @height;
+    background: @background;
+}
+
 .container {
     @media @tablet {
         width:100%;    
@@ -100,15 +106,54 @@ header {
     @media @phone {
         width: 100%;
         .skew(0deg, 0deg);
+        padding: 0;
     }
     padding: 0 20%;
     .skew(20deg, 10deg);
+    .top-content{
+        @media @phone {
+            width: 100%;
+            flex-direction: column;
+            padding: 30px 2% 0;
+        }
+        .text-content{
+            @media @phone {
+               padding-bottom: 15px;
+            }
+            button {
+                .center;
+                .buttonm(80px, 50px, rgb(132, 230, 145));
+                margin-top: 5px;
+                &:hover{
+                    background: darken(rgb(132, 230, 145), 20%);
+                }
+            }
+        }
+    }
     .middle-img {
         @media @tablet {
             width:100%;    
         }
         @media @phone {
             width: 100%;
+        }
+    }
+    .bottom-content {
+        @media @phone {
+            width: 100%;
+            flex-direction: column;
+            padding: 0 2% 30px;
+        }
+        .text-content {
+            padding-bottom: 15px;
+            button {
+                .center;
+                .buttonm(80px, 50px, rgb(90, 169, 196));
+               margin-top: 5px;
+               &:hover{
+                background: darken(rgb(90, 169, 196), 20%);
+               }
+            }
         }
     }
 }
