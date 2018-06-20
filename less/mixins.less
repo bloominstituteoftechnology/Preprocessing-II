@@ -35,3 +35,38 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+.text-shadow(@string){
+	text-shadow: @string;
+	-webkit-text-shadow: @string;
+	-moz-text-shadow: @string;
+}
+
+.responsive-width(@max-width, @width){
+	max-width: @max-width;
+	width: @width;
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+}
+
+.flex-column {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.button-maker(@width, @height, @bcolor, @tcolor) {
+	width: @width;
+	height: @height;
+	background-color: @bcolor;
+	color: @tcolor;
+}

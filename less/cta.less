@@ -5,6 +5,10 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    img {
+        .rotate(-15deg);
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +18,11 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+    }
+
+    h1 {
+        .skew(15deg, -4deg);
+        .text-shadow(@text-shadow);
     }
 
     .cta-text button {
@@ -30,4 +39,22 @@
             color: white;
         }
     }
+    @media @tablet {
+        .responsive-width(@tablet-max-width, @full-width);
+        .center;
+        background: salmon;
+
+        img {
+            display: none;
+        }
+
+        .cta-text {
+            .center;
+        }
+
+        .cta-text button {
+
+        }
+    }
+
 }// cta
