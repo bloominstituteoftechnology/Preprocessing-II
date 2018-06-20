@@ -147,7 +147,6 @@ h5 {
   max-width: 880px;
   width: 100%;
   margin: auto;
-  border: 1px solid red;
 }
 header {
   display: flex;
@@ -307,6 +306,11 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content .custom-button {
+  width: 100px;
+  height: 50px;
+  background: grey;
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
@@ -352,6 +356,26 @@ header .logo {
   .main-content .text-content {
     padding-top: 20px;
   }
+}
+.main-content .custom-button {
+  width: 100px;
+  height: 100px;
+  background: white;
+  margin-top: 20px;
+  display: flex;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted black;
+  background-color: white;
+}
+.main-content .custom-button:hover {
+  background-color: #cccccc;
 }
 @media (max-width: 768px) {
   .contact {

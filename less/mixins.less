@@ -36,8 +36,14 @@
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
-.custom-button (@width: 100px, @height: 50px, @background: white){
+.tcb (@width, @height, @background){
 	width: @width;
 	height: @height;
 	background: @background;
-}
+	margin-top: 20px;
+	display: flex;
+	.border-radius(50%);
+	justify-content: center;
+	align-items: center;
+	border: 1px dotted black;
+} 
