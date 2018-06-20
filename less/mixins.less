@@ -58,6 +58,11 @@
 	}
 }
 
+.rotate-corner(@deg; @tb; @lr) {
+	transform: rotate(@deg);
+	transform-origin: @tb @lr;
+}
+
 //animation mixins
 .mixi-rot() {
 	0% {
@@ -71,5 +76,38 @@
 	100% {
 		.rotate(360deg);
 		.opacity(0);
+	}
+}
+
+.dance-rot() {
+	0% {
+		transform: rotate(-90deg);
+	}
+	10% {
+		transform: rotate(0deg);
+		top: 10%;
+	}
+	20%, 40%, 60%, 80% {
+		top: 5%;
+		transform: rotate(0deg);
+	}
+	30%, 50%, 70%, 90% {
+		top: 10%;
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-90deg);
+	}
+}
+
+.dance-shout {
+	0% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(90deg);
 	}
 }

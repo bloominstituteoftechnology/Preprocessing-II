@@ -1,0 +1,46 @@
+.anim-container {
+
+  .left {
+    position: fixed;
+    z-index: 5;
+    height: 150px;
+    width: 200px;
+    top: 10%;
+    left: 0;
+    .rotate-corner(-90deg; bottom; left;)
+  }
+
+  #leftie{
+    background-image: ~"url('http://image.noelshack.com/fichiers/2017/32/3/1502308003-rob7.png')";
+    background-size: contain;
+  }
+
+  .right {
+    position: fixed;
+    z-index: 5;
+    height: 150px;
+    width: 150px;
+    background: lightgray;
+    top: 20%;
+    right: 0;
+    .rotate-corner(90deg; bottom; right;)
+  }
+
+  #rightie {
+    background-image: ~"url('https://vignette.wikia.nocookie.net/lazy-town4817/images/b/bf/Nick_Jr._LazyTown_Robbie_Rotten_3.png/revision/latest?cb=20161218032647')";
+    background-size: contain;
+    // background-repeat: no-repeat;
+  }
+
+  .bottom {
+    position: fixed;
+    z-index: 5;
+    height: 150px;
+    width: 150px;
+    background: lightgray;
+    bottom: 0;
+    right: 50%;
+    transform-origin: bottom center;
+    transform: rotateZ(180deg);
+  }
+}

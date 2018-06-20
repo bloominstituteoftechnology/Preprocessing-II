@@ -14,29 +14,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
-  <script>
-    function clicked() {
-      document.getElementById("spinner").style.animation = "spin 4s linear";
-      setTimeout(function(){document.getElementById("spinner").style.animation = ""}, 4000);
-    }
-  </script>
-
-  <script>
-    function clickedToo() {
-      let arr = document.getElementsByClassName("spinny");
-      for(let i =0; i< arr.length; i++){
-        arr[i].style.animation = 'spin 4s linear';
-      }
-      setTimeout(function(){
-        for(let i=0; i<arr.length; i++){arr[i].style.animation = ''}
-      }, 4000);
-    }
-  </script>
+  <script src="scripts/anim.js"></script>
 </head>
 
 <body>
 
     <div class="container" id="spinner">
+        <section class="anim-container">
+          <div class="left" id="leftie"></div>
+          <div class="right" id="rightie"></div>
+          <div class="bottom" id="bottomie"></div>
+        </section>
 
         <header>
             <nav>
@@ -70,7 +58,7 @@
                 <div class="text-content spinny">
                     <h4>About</h4>
                     <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-                    <button class="btn btn-about">About Us</button>
+                    <button onclick="startDance()" class="btn btn-about">About Us</button>
                 </div>
             </div>
 
