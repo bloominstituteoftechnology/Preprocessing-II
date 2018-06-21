@@ -35,3 +35,91 @@
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
+
+//.button-mixer(100px, 50px, teal) || .button-mixer(100px, 50px, teal, @b-color: red, @b-radius: 50%)
+//first three are mandatory and in that order, rest can be any order after initial 3, but if out of order must
+//include the @variable: value syntax
+#my-stuff{
+	.btn-mixer(@width, @height, @bg-color, @b-width: 1px, @b-line: solid, @b-color: black, @b-radius: 10px) {
+		margin-top: 20px;
+		width: @width;
+		height: @height;
+		background: @bg-color;
+		border: @b-width @b-line @b-color;
+		.border-radius(@b-radius);
+	}
+}
+
+#teacher-stuff{
+	.btn-mixer(@width, @height, @bg){
+		width: @width;
+		height: @height;
+		background: @bg;
+	}
+}
+
+.rotate-corner(@deg; @tb; @lr) {
+	transform: rotate(@deg);
+	transform-origin: @tb @lr;
+}
+
+//animation mixins
+
+//rotates everything 360degrees clockwise
+//opacity reduces to half way half way through animation, then back to full in last half
+.mixi-rot() {
+	0% {
+		.rotate(0deg);
+		.opacity(1);
+	}
+	50% {
+		.rotate(180deg);
+		.opacity(0.5);
+	}
+	100% {
+		.rotate(360deg);
+		.opacity(1);
+	}
+}
+
+//used for left image on the Robbie Dance animation
+//rotate him in and keep him there, then go up and down by 5%
+//then rotate him back
+
+.dance-rot() {
+	0% {
+		transform: rotate(-90deg);
+	}
+	10% {
+		transform: rotate(0deg);
+		top: 10%;
+	}
+	20%, 40%, 60%, 80% {
+		top: 5%;
+		transform: rotate(0deg);
+	}
+	30%, 50%, 70%, 90% {
+		top: 10%;
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-90deg);
+	}
+}
+
+//right robbie image animation
+//pulls them out, holds them in place briefly, then puts them back
+.dance-shout {
+	0% {
+		transform: rotate(90deg);
+	}
+	30% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+}

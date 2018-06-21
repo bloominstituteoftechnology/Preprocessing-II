@@ -1,29 +1,121 @@
 // Main Content Styles
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
 
+   @media @tablet {
+     font-size: 1.4rem;
+     margin: 75px 2% 35px;
+   }
+
    .top-content {
         display: flex;
         justify-content: space-around;
-    }
+
+        @media @phone {
+          flex-wrap: wrap;
+        }
+
+        .text-content {
+
+          @media @phone {
+            margin-bottom: 20px;
+          }
+
+          .btn {
+            #my-stuff.btn-mixer(100px, 50px, @cornflower-blue, @b-radius: 5px);
+            color: white;
+
+            // @media @phone {
+            //   margin-bottom: 20px;
+            // }
+
+            &:hover{
+              background: darken(@cornflower-blue, 20%);
+            }
+          }
+
+          .btn-feature {
+
+            &:hover{
+              .box-shadow(~"5px 5px green");
+            }
+          }
+
+          .btn-about {
+
+            &:hover{
+              .box-shadow(~"5px 5px green");
+            }
+          }
+        }
+      }
+
 
     .middle-img {
         display: block;
         margin: 30px auto;
+
+        @media @tablet {
+          width: 100%;
+          margin: 25px auto;
+        }
     }
+
 
     .bottom-content {
         display: flex;
         justify-content: space-around;
 
+        @media @phone {
+          flex-wrap: wrap;
+          align-content: space-between;
+        }
+
         p {
             padding-right: 20px;
+        }
+
+        .text-content {
+
+          @media @phone {
+            margin-bottom: 20px;
+          }
+
+          .btn {
+            #my-stuff.btn-mixer(100px, 50px, @malachite, @b-radius: 5px);
+            color: white;
+
+            &:hover{
+              background: darken(@malachite, 20%);
+            }
+          }
+
+          .btn-content {
+
+            &:hover{
+              .box-shadow(~"5px 5px blue");
+            }
+          }
+
+          .btn-product {
+
+            &:hover{
+              .box-shadow(~"5px 5px blue");
+            }
+          }
+
+          .btn-vision {
+
+            &:hover{
+              .box-shadow(~"5px 5px blue");
+            }
+          }
         }
     }
 }// main-content

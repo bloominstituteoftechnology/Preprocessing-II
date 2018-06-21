@@ -1,0 +1,48 @@
+//all my styles for the robbie dance animation
+.anim-container {
+
+  .left {
+    position: fixed;//keep it in set position and make everything ignore it.
+    z-index: 5;//always on top
+    height: 150px;
+    width: 200px;
+    top: 10%;//10% of the viewport away from top of view
+    left: 0;//to the left side
+    .rotate-corner(-90deg; bottom; left;)//rotate it off screen and rotate around bottom left corner
+  }
+
+  #leftie{
+    //only place background-image would work. Couldn't get it to place in class tag
+    background-image: ~"url('https://raw.githubusercontent.com/Jstoss/Preprocessing-Part-II/master/img/robbie.png')";
+    background-size: contain;//resize image
+  }
+
+  .right {//mostly same as .left but on the right
+    position: fixed;
+    z-index: 5;
+    height: 150px;
+    width: 230px;
+    background: lightgray;
+    top: 20%;
+    right: 0;
+    .rotate-corner(90deg; bottom; right;)
+  }
+
+  #rightie {
+    background-image: ~"url('https://raw.githubusercontent.com/Jstoss/Preprocessing-Part-II/master/img/shout.png')";
+    background-size: contain;
+    // background-repeat: no-repeat; //image was thinner so it tiled the image, found this desirable to get the clones
+  }
+
+  .bottom {//unused currently, but transformed to rotate towards/away the viewer
+    position: fixed;
+    z-index: 5;
+    height: 150px;
+    width: 150px;
+    background: lightgray;
+    bottom: 0;
+    right: 50%;
+    transform-origin: bottom center;
+    transform: rotateZ(180deg);
+  }
+}
