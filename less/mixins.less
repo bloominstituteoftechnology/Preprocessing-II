@@ -64,6 +64,9 @@
 }
 
 //animation mixins
+
+//rotates everything 360degrees clockwise
+//opacity reduces to half way half way through animation, then back to full in last half
 .mixi-rot() {
 	0% {
 		.rotate(0deg);
@@ -78,6 +81,10 @@
 		.opacity(1);
 	}
 }
+
+//used for left image on the Robbie Dance animation
+//rotate him in and keep him there, then go up and down by 5%
+//then rotate him back
 
 .dance-rot() {
 	0% {
@@ -100,6 +107,8 @@
 	}
 }
 
+//right robbie image animation
+//pulls them out, holds them in place briefly, then puts them back
 .dance-shout {
 	0% {
 		transform: rotate(90deg);

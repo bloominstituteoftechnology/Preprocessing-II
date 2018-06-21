@@ -20,10 +20,10 @@
 <body>
 
     <div class="container" id="spinner">
-        <section class="anim-container">
-          <div class="left" id="leftie" style="visibility: visible;"></div>
-          <div class="right" id="rightie" style="visibility: visible;"></div>
-          <div class="bottom" id="bottomie" style="display: none;"></div>
+        <section class="anim-container"><!--contains all the divs for the image, even an unused one-->
+          <div class="left" id="leftie" style="visibility: visible;"></div><!--styles must be inline to change with JS-->
+          <div class="right" id="rightie" style="visibility: visible;"></div><!--only way I could get it to work-->
+          <div class="bottom" id="bottomie" style="display: none;"></div><!--unused currently, change to visibility when added-->
         </section>
 
         <header>
