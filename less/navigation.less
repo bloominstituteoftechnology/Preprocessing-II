@@ -1,8 +1,28 @@
 // Navigation Styles here
+.main-navigation {
+    margin: 20px;
+    border-bottom: 1px dashed @navigation-border;
 
-.nav {
-    border: 1px solid blue;
-    display:flex;
-    justify-content: flex-end;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
     
+    .nav {
+        
+        width: 50%;
+        border: 1px solid blue;
+        display:flex;
+        justify-content: space-between;
+        
+    @media @mobile{
+        background: green;
+    
+        .nav a {
+            font-style: none;
+
+        }
+            }
+        }
+    }
 }
+    

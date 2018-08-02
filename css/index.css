@@ -1,3 +1,16 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  background-color: teal;
+  color: white;
+  border: 1px solid #C0C0C0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,10 +181,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav {
+.main-navigation {
+  margin: 20px;
+  border-bottom: 1px dashed #C0C0C0;
+}
+.main-navigation .nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-navigation .nav-container .nav {
+  width: 50%;
   border: 1px solid blue;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav {
+    background: green;
+  }
+  .main-navigation .nav-container .nav .nav a {
+    font-style: none;
+  }
 }
 .footer {
   width: 100%;
@@ -184,49 +214,52 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .content-section {
+.home header {
+  border-bottom: 1px dashed #C0C0C0;
+}
+.home header .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  border: 1px solid red;
 }
-.home .content-section .text-content {
+.home header .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.home header .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home header .content-section .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.home header .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.home header .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.home header .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.home header .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.home header .content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.home header .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.home header .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
