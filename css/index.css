@@ -406,6 +406,7 @@ img {
 .home .content-pick .destination .btn:hover {
   background-color: white;
   color: teal;
+  transition-duration: 2s;
 }
 @media ( max-width: 500px ) {
   .home .content-pick .destination .btn {
