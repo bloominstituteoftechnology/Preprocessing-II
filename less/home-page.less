@@ -6,7 +6,7 @@
     border-bottom: 2px dashed @main-header-border;
 
     h2 {
-      margin-top: 15px;
+      margin-top: 20px;
     }
   }
   
@@ -94,12 +94,16 @@
       margin-bottom: 30px;
 
       @media @mobile {
-          width: 90%;
+          width: 100%;
           margin: 0 auto 30px;
+          padding: 0;
       }
 
       .btn {
-        .button-creator(200px, 46px, @button-bg, @white, 15px, 1.7rem);
+        .button-creator(200px, 45px, @button-bg, @white, 15px, 1.8rem);
+        @media @mobile {
+            width: 100%;
+        }
       }
     }
   }
