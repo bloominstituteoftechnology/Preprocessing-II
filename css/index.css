@@ -192,6 +192,7 @@ img {
 }
 .main-navigation .nav-container .nav {
   width: 50%;
+  flex-wrap: nowrap;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav {
@@ -204,13 +205,8 @@ img {
 .main-navigation .nav-container .nav .nav-link {
   text-decoration: none;
   color: #212529;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 0 6%;
-}
-@media (max-width: 500px) {
-  .main-navigation .nav-container .nav .nav-link {
-    font-size: 1.6rem;
-  }
 }
 .footer {
   width: 100%;
