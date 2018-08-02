@@ -17,7 +17,7 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 3: Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank.  In order for you to see the styles for this project you must import them in a certain order.  That order is as follows:
+* [X] Navigate to your `index.less` file. Notice the file is blank.  In order for you to see the styles for this project you must import them in a certain order.  That order is as follows:
 
 1. `variables.less`
 2. `mixins.less`
