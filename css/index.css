@@ -179,8 +179,24 @@ img {
   padding: 2rem 0;
   margin: 0 auto;
 }
+@media ( max-width: 500px ) {
+  .nav-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .nav-container .logo-heading {
   width: 30%;
+}
+@media ( max-width: 500px ) {
+  .nav-container .logo-heading {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .nav-container .nav {
   display: flex;
@@ -188,6 +204,11 @@ img {
   font-size: 1.6rem;
   justify-content: space-between;
   align-content: center;
+}
+@media ( max-width: 500px ) {
+  .nav-container .nav {
+    width: 100%;
+  }
 }
 .nav-container .nav a {
   text-decoration: none;

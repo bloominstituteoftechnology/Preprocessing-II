@@ -13,13 +13,25 @@
   margin: @nav-margin;
 
   @media @phone {
-    
+    .flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
   .logo-heading {
     width: 30%;
+    @media @phone {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   .nav {
+    @media @phone {
+      width: 100%;
+    }
     .flex;
     width: 40%;
     font-size: @nav-size;
