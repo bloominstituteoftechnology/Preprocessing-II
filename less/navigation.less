@@ -2,8 +2,25 @@
 
 header {
     border-bottom: 2px dashed lightgrey;
+    
+    
     .nav-container {
+	@media @mobile {
+	    display: flex;
+	    flex-flow: row wrap;
+	    .logo-heading {
+		/* border: 1px solid purple; */
+		width: 100%;
+		text-align: center;
+		
+	    }
+	    /* .nav { */
+	    /* 	border: 1px solid blue; */
+	    /* 	width: 100%; */
+	    /* } */
+	}
 	/* border: 1px solid red; */
+
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row nowrap;
@@ -11,7 +28,12 @@ header {
 	/* border: 2px dashed lightgrey; */
 	height: 90px;
 	.nav {
-	    /* border: 1px solid red; */
+	    @media @mobile {
+		/* border: 1px solid blue; */
+		width: 100%;
+		justify-content: space-evenly;
+	    }
+	    
 	    width: 42%;
 	    display: flex;
 	    justify-content: space-between;
