@@ -1,3 +1,8 @@
+@media (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,6 +177,11 @@ img {
   display: flex;
   justify-content: space-between;
   margin: 20px;
+  width: 100%;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
 }
 .footer {
   width: 100%;
