@@ -4,13 +4,14 @@
     .center;
     flex-wrap: wrap;
     width: 100%;
+    
     img   {
       height:240px;
       width:100%;
     }
     .text-content {
       padding: 22px 0 10px;
-      border-bottom: 2px dashed gray;
+      border-bottom: 2px dashed @navigation-border;
     }
   }
 
@@ -57,6 +58,7 @@
     img {
       border-radius: 10px;
     }
+
   }
 
   .content-pick {
@@ -68,6 +70,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+    .btn  {
+      .btn-creator(200px, 45px, 15px);
+      font-size: 1.8rem;
+    }
     }
   }
 }// home
