@@ -1,24 +1,70 @@
+@phone: ~"( max-width: 500px )";
+
 .home {
+
+  @media @phone {
+    max-width: 500px;
+    width: 100%;
+    overflow-x: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .top-content {
+    border-bottom: 2px dashed lightgrey;
+
+    h1 {
+      padding-top: 2%;
+    }
+
+    p {
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 100%;
+        padding-left: 0%;
+        display: flex;
+        justify-content: center;
+        padding-right: 6%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @phone {
+          border-radius: 10px;
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }
@@ -30,6 +76,10 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @phone {
+        order: -1;
+      }
     }
 
     .img-content {
@@ -42,6 +92,11 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+      margin: 0 0 30px;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +108,31 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 90%;
+        padding-left: 7%;
+      }
+
+      .btn {        
+        .button-creator(200px, 30px, #008582, white);
+        .center;
+        border-radius: 4%;   
+        font-size: 1.6rem;  
+        
+        @media @phone {
+          .button-creator(100%, 50px, #00A6BB, white);
+
+        }
+      }    
     }
   }
 }// home
