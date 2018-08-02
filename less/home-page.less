@@ -5,7 +5,10 @@
   justify-content: center;
   align-items: center;
   @media (max-width: 500px) {
-    background: lightgray;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   }
 
   img {
@@ -66,10 +69,25 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+    @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media (max-width: 500px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
 
       .btn {
           margin: 20px 0;
