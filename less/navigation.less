@@ -7,6 +7,11 @@
             margin: 0px 38% 15px 38%;
             font-size: 3rem;
         }
+
+        @media @tablet {
+            margin: 10px 43% 20px 43%;
+            font-size: 3rem;
+        }
     }
 
     .nav-container {
@@ -21,6 +26,11 @@
             width: 100%;
             }
 
+        @media @tablet {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
         .nav {
             width: 50%;
             flex-wrap: nowrap;
@@ -30,11 +40,21 @@
                 .center;
                 }
 
+            @media @tablet {
+                width: 100%;
+                .center;
+            }
+
             .nav-link {
                 text-decoration: none;
                 color: @font-color;
                 font-size: 1.6rem;
                 margin: 0 6%;
+
+                &:hover {
+                    color: @button-bg;
+                    transform: scale(1.2);
+                }
             }
         }//.nav
     }//nav-container
