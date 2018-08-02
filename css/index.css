@@ -242,6 +242,14 @@ header .nav-container .nav .nav-link {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .home .content-section .text-content {
+    padding: 3%;
+  }
+  .home .content-section .img-content {
+    padding: 3%;
+  }
+}
 @media (max-width: 500px) {
   .home .content-section {
     margin: 3%;
@@ -269,9 +277,21 @@ header .nav-container .nav .nav-link {
   padding-right: 0;
 }
 .home .inverse-content .img-content {
-  order: 1;
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 1;
+  }
+}
+@media (max-width: 800px) {
+  .home .inverse-content .text-content {
+    padding: 3%;
+  }
+  .home .inverse-content .img-content {
+    padding: 3%;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -303,13 +323,14 @@ header .nav-container .nav .nav-link {
   color: #ffffff;
   border: 1px solid #c0c0c0;
   cursor: pointer;
+  margin-left: 5%;
   font-size: 1.6rem;
 }
 .home .content-pick .destination .btn:hover {
   background-color: #ffffff;
   color: #17a2b8;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
@@ -322,6 +343,34 @@ header .nav-container .nav .nav-link {
     height: 30vh;
     padding: 3% 0;
   }
+  .home .content-pick .destination .btn {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 15%;
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: 1px solid #c0c0c0;
+    cursor: pointer;
+    align-self: center;
+    padding: 3% 0;
+    margin: 3% 0;
+  }
+  .home .content-pick .destination .btn:hover {
+    background-color: #ffffff;
+    color: #17a2b8;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .home .content-pick {
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
   .home .content-pick .destination .btn {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;

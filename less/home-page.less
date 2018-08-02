@@ -33,6 +33,16 @@
       }
     }
 
+    @media @tablet {
+      .text-content {
+        padding: 3%;
+      }
+
+      .img-content {
+        padding: 3%;
+      }
+    }
+
     @media @mobile {
       margin: 3%;
       flex-direction: column;
@@ -63,9 +73,22 @@
     }
 
     .img-content {
-      order: 1;
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 1;
+      }
+    }
+
+    @media @tablet {
+      .text-content {
+        padding: 3%;
+      }
+
+      .img-content {
+        padding: 3%;
+      }
     }
   }
 
@@ -90,14 +113,19 @@
 
       .btn {
         .button-creator(150px, 45px, @button-bg, @main-bg);
+        margin-left: 5%;
         font-size: 1.6rem;
       }
     }
 
-    @media @mobile {
+    @media @tablet {
       flex-direction: column;
       align-items: center;
       width: 100%;
+
+      @media @mobile {
+        margin-bottom: 3%;
+      }
 
       .destination {
         display: flex;
@@ -107,10 +135,17 @@
         padding: 3% 0;
 
         .btn {
-          .button-creator(80%, 25%, @button-bg, @main-bg);
+          .button-creator(40%, 15%, @button-bg, @main-bg);
           align-self: center;
-          padding: 5% 0;
+          padding: 3% 0;
           margin: 3% 0;
+
+          @media @mobile {
+            .button-creator(80%, 25%, @button-bg, @main-bg);
+            align-self: center;
+            padding: 5% 0;
+            margin: 3% 0;
+          }
         }
       }
     }
