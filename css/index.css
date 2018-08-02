@@ -168,6 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media ( max-width: 800px ) {
+  .container {
+    max-width: 650px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    max-width: 550px;
+  }
+}
 @media ( max-width: 500px) {
   .container {
     max-width: 450px;
@@ -316,7 +326,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media ( max-width: 500px) {
+@media (max-width: 650px) {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
@@ -326,7 +336,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-@media ( max-width: 500px) {
+@media (max-width: 650px) {
   .home .content-pick .destination {
     width: 80%;
   }
