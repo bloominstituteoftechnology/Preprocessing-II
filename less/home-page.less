@@ -1,4 +1,13 @@
 .home {
+  .header-section {
+    width: 100%;
+    border-top: 3px dashed lightgrey;
+    border-bottom: 3px dashed lightgrey;
+
+    .header-div-content {
+      margin: 2%;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,8 +15,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -19,6 +26,39 @@
 
       img {
         border-radius: 10px;
+      }
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    @media @tablet {
+      .text-content {
+        padding: 3%;
+      }
+
+      .img-content {
+        padding: 3%;
+      }
+    }
+
+    @media @mobile {
+      margin: 3%;
+      flex-direction: column;
+      align-items: center;
+
+      .text-content {
+        width: 100%;
+        padding: 3%;
+      }
+
+      .img-content {
+        width: 100%;
+        padding: 3%;
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -35,6 +75,20 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 1;
+      }
+    }
+
+    @media @tablet {
+      .text-content {
+        padding: 3%;
+      }
+
+      .img-content {
+        padding: 3%;
+      }
     }
   }
 
@@ -56,6 +110,44 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button-creator(150px, 45px, @button-bg, @main-bg);
+        margin-left: 5%;
+        font-size: 1.6rem;
+      }
+    }
+
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      @media @mobile {
+        margin-bottom: 3%;
+      }
+
+      .destination {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 30vh;
+        padding: 3% 0;
+
+        .btn {
+          .button-creator(40%, 15%, @button-bg, @main-bg);
+          align-self: center;
+          padding: 3% 0;
+          margin: 3% 0;
+
+          @media @mobile {
+            .button-creator(80%, 25%, @button-bg, @main-bg);
+            align-self: center;
+            padding: 5% 0;
+            margin: 3% 0;
+          }
+        }
+      }
     }
   }
-}// home
+} // home
