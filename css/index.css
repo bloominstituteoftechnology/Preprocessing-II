@@ -261,3 +261,23 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  margin: 20px 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 45px;
+  background-color: teal;
+  color: white;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #6CCECB;
+  color: teal;
+}
