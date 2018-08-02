@@ -21,3 +21,41 @@
       justify-content: center;
       align-items: center;
   }
+
+  .form(){
+    input[type=text],input[type=tel], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    input[type=submit] {
+        .button-creator(200px, 40px, white,2rem);
+    }
+
+  }
+
+  .animation(@duration,@from-opacity, @to-opacity){
+    &:hover{
+        opacity: 1;
+        -webkit-animation-name: example; 
+        -webkit-animation-duration: @duration;
+        animation-name: example;
+        animation-duration: @duration;
+
+        @-webkit-keyframes example {
+            from {opacity: @from-opacity;}
+            to {opacity: @to-opacity;}
+        }
+
+        @keyframes example {
+            from {opacity:@from-opacity;}
+            to {opacity:@to-opacity;}
+        }
+    }
+  }

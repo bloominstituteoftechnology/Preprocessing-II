@@ -1,6 +1,13 @@
 // Navigation Styles here
 .main-navigation{
     border-bottom: 1px dashed gray;
+
+    @media @tablet{
+        margin:0 5%;
+    }
+    @media @phone{
+        margin: 0;
+    }
   
     .nav-container{
         display:flex;
@@ -18,10 +25,15 @@
             justify-content: center;
             width: 40%;
             
+            @media @tablet{
+                width: 60%;
+            }
+
             @media @phone{
                 width: 100%;
                 padding-bottom: 2%;
             }
+
             .nav-link{
                 margin:4% 4% 0 4%;
                 text-decoration: none;
