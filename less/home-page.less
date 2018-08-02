@@ -37,6 +37,10 @@
 
       img {
         border-radius: 10px;
+        
+        @media @mobile500 {
+          width: 100%;
+        }
       }
 
       @media @mobile500 {
@@ -60,6 +64,12 @@
       @media @mobile500 {
         order: 1;
       }
+
+      img {
+        @media @mobile500 {
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -69,6 +79,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile500 {
+      width: 100%;
     }
   }
 
@@ -84,7 +98,23 @@
 
       .btn {
         .button-generator(1.8rem, #008080, white);
+        
+        @media @mobile500 {
+          .button-generator(1.8rem, #17A2B8, white);
+          width: 100%;
+          margin-bottom: 20px;
+        }
       }
+
+      @media @mobile500 {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    @media @mobile500 {
+      flex-direction: column;
+      margin: 0 auto;
     }
   }
 }// home
