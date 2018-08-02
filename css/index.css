@@ -164,9 +164,21 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 880px;
   width: 100%;
   margin: 0 auto;
+}
+.main-navigation .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-navigation .nav-container .nav {
+  font-size: 1.6rem;
+  width: 49%;
+}
+.main-navigation .nav-container .nav > * {
+  padding: 0 4%;
 }
 .footer {
   width: 100%;
