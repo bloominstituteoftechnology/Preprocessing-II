@@ -1,21 +1,33 @@
 .home {
 
+
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    .text-welcome{
+
+    }
+
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media(@moblie){
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media(@moblie){
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +38,14 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media(@moblie){
+      .img-content{
+        order: 1;
+      }
+
+
+    }
 
     .text-content {
       padding-left: 1%;
@@ -45,6 +65,8 @@
     img {
       border-radius: 10px;
     }
+
+
   }
 
   .content-pick {
@@ -52,10 +74,33 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media(@moblie){
+      flex-direction: column;
+      align-content: center;
+    }
+
+
+
 
     .destination {
+      // .border;
+      @media(@moblie){
+         width: 79%;
+         align-self: center;
+        }
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+
+        text-align: center;
+        align-items: center;
+        font-size: 1.6rem;
+        margin: 20px 0;
+        .button-creator(84%, 45px, @eastern-blue, @white);
+        @media(@moblie){
+          width: 100%;
+        }
+      }
     }
   }
 }// home
