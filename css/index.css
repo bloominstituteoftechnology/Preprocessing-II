@@ -171,11 +171,16 @@ img {
 .main-navigation {
   padding-top: 24px;
   border-bottom: 2px dashed #C0C0C0;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
   position: fixed;
-  width: 100%;
+  width: 74%;
   background: #FFFFFF;
   top: 0;
+}
+@media ( max-width: 500px ) {
+  .main-navigation {
+    width: 100%;
+  }
 }
 .main-navigation .nav-container {
   display: flex;
@@ -228,6 +233,7 @@ img {
 @media ( max-width: 500px ) {
   .home {
     width: 90%;
+    margin-top: 106px;
   }
 }
 .home .content-welcome {
