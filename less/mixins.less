@@ -1,1 +1,41 @@
 // Mixins in here
+.indie-flower-font() {
+    font-family: 'Indie Flower', cursive;
+}
+
+.roboto-font() {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-wrap-space-between() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-creator() {
+    background: @button-bg;
+    width: 84%;
+    height: 45px;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 16px;
+    color: @white;
+
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.nav-animation() {
+    animation-name: color-cycle;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.btn-animation() {
+    animation-name: btn-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
