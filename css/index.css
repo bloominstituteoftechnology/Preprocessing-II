@@ -180,6 +180,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media ( max-width: 500px ) {
+  .container {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .main-navigation {
   position: fixed;
   top: 0;
