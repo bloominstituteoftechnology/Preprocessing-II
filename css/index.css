@@ -182,14 +182,17 @@ img {
 .main-navigation .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  width: 80%;
+}
+.main-navigation .nav-container .logo-heading {
+  margin-top: 15px;
 }
 .main-navigation .nav-container .nav {
+  display: flex;
+  justify-content: space-around;
   font-size: 1.6rem;
-  width: 49%;
-}
-.main-navigation .nav-container .nav > * {
-  padding: 0 4%;
+  width: 40%;
 }
 .footer {
   width: 100%;
