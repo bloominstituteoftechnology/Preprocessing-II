@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.main-navigation {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+  width: 1000px;
+  margin: 0 auto;
+}
 .main-navigation .nav-container {
   display: flex;
   justify-content: space-between;
