@@ -1,1 +1,18 @@
-// Mixins in here
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-creator(@width, @height, @bradius) {
+  width: @width;
+  height: @height;
+  border-radius: @bradius;
+  background: @button-bg;
+  color: white;
+  .center;
+  &:hover {
+    background: white;
+    color: @button-bg;
+  }
+}
