@@ -1,1 +1,15 @@
-// Mixins in here
+.flexCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-generator(@font-size, @background, @color) {
+  .flexCentered;
+  font-size: @font-size;
+  background: @background;
+  color: @color;
+  border-radius: 15px;
+  width: 80%;
+  height: 45px;
+}
