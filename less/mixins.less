@@ -2,8 +2,13 @@
 @main-color: @teal;
 @teal: teal;
 @silver: silver;
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
 
-.button-creator(@width, @height, @bg-color, @font-color){
+    .button-creator(@width, @height, @bg-color, @font-color){
   .border-radius(20px);
   .center;
   width: @width;

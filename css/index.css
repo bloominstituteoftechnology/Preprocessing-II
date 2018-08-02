@@ -179,7 +179,7 @@ img {
   margin: 20px;
   width: 100%;
 }
-header nav a:hover {
+nav a:hover {
   text-decoration: underline;
   color: black;
 }
@@ -203,6 +203,13 @@ header nav a:hover {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+.home .content-section .main-navigation {
+  display: flex;
+}
+.home .content-section header img {
+  display: flex;
+  width: 100%;
 }
 .home .content-section .img-content {
   width: 48%;
