@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.main-navigation {
+  width: 100%;
+  height: 90px;
+  background: #FFFFFF;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
