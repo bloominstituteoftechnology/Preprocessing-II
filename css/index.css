@@ -1,3 +1,24 @@
+.home .content-pick .destination {
+  /* border: 1px solid red; */
+}
+.home .content-pick .destination .btn {
+  width: 100%;
+  margin: auto;
+  width: 230px;
+  height: 45px;
+  background: teal;
+  color: white;
+  border-radius: 15px;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .content-pick .destination .btn:hover {
+  background: white;
+  color: teal;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +189,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  border-bottom: 2px dashed lightgrey;
+}
+header .nav-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: center;
+  /* border: 2px dashed lightgrey; */
+  height: 90px;
+}
+header .nav-container .nav {
+  /* border: 1px solid red; */
+  width: 42%;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-container .nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +268,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home h1 {
+  margin-top: 15px;
+  margin-bottom: 12px;
+  font-size: 3.5rem;
+}
+.home .top {
+  border-bottom: 2px dashed lightgrey;
 }

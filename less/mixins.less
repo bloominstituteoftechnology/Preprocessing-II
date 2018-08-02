@@ -1,1 +1,33 @@
 // Mixins in here
+
+.button-maker(@width, @height, @bg-color, @color, @border-r) {
+    width: @width;
+    height: @height;
+    background: @bg-color;
+    color: @color;
+    border-radius: @border-r;
+
+    &:hover {
+	background: @color;
+	color: @bg-color;
+    }
+}
+
+
+.home {
+    .content-pick {
+	.destination {
+	    /* border: 1px solid red; */
+	    .btn {
+		width: 100%;
+		margin: auto;
+		.button-maker(230px, 45px, teal, white, 15px);
+		font-size: 2rem;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	    }
+	}
+    }    
+}
