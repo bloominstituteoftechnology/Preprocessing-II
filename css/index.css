@@ -168,7 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media ((max-width: 500px)) {
+@media (max-width: 500px) {
   .container {
     width: 90%;
     margin: 0 5%;
@@ -187,10 +187,28 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .main-navigation .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .logo-heading {
+    font-size: 4rem;
+  }
+}
 .main-navigation .nav-container .nav {
   width: 300px;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .main-navigation .nav-container .nav a {
   font-size: 1.5rem;
