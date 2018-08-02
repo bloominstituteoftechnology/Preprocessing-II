@@ -1,45 +1,49 @@
-# Preprocessing II - Advanced LESS
+# Preprocessing II: Fun Bus Site
 
-At this point, you have been introduced to LESS variables, nesting, mixins, escaping, importing and more.  This project incorporates a small amount of everything. You will need to be able to navigate the file structure and make the following updates:
+Fun Bus is a travel agency looking for some help on their website.  They want a new navigation and header as well as a mobile version of their site.  Use your preprocessing knowledge to accomplish their tasks.
 
-## Project 2 - Organize imports, use mixins, functions, escaping, namespacing by building and updating a single web page.
-This project will be broken into two main tasks: 
-1. Use several imports to build a single index.less file. 
-2. Demonstrate that you can use mixins, escaping, functions and stretching to see if you can use namespaces.
+## Task 1: Set Up The Project With Git
 
-Start by forking and cloning this repo then get started on the tasks.  Good luck!
+* [ ] Fork the project into your GitHub user account
+* [ ] Clone the forked project into a directory on your machine
+* [ ] You are now ready to build this project with your preferred IDE
 
-## Task 1 - Importing
-Notice that the LESS folder in this project has several .less files now.  Task 1 is to correctly import the .less files into index.less in the following order:
+## Task 2: Set up your preprocessor
+* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
-1. reset.less
-2. variables.less
-3. mixins.less
-4. general-styles.less
-5. header.less
-6. cta.less
-7. main-content.less
-8. contact.less
-9. footer.less
+## Task 3: Import LESS Files
 
-Once you have imported your less files, be sure to run less-watch-compiler 
+* [ ] Navigate to your `index.less` file. Notice the file is blank.  In order for you to see the styles for this project you must import them in a certain order.  That order is as follows:
 
-## Task 2 - Demonstrate your skills using Mixins, escaping and functions by doing the following:
+1. `variables.less`
+2. `mixins.less`
+3. `reset.less`
+4. `global.less`
+5. `navigation.less`
+6. `footer.less`
+7. `home-page.less`
 
-1. Use all 5 mixins from the mixins.less file in anyway you want throughout the site (Hint, google the CSS properties if you don't know what they do!).
 
-2. Use escaping to create 2 unique media query variables named "tablet" at a max-width of 768px and "phone" at 400px max-width. Now use your variables in combination with @media to introduce responsive styling to your page.  (You can use code from your last project for the responsivness)
+## Task 4: Desktop Updates Needed
+* [ ] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
+* [ ] Navigation: Use the `navigation.less` file for all your navigation styling
+* [ ] Main Header: Use the `home-page.less` file for the header styling.
+* [ ] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
 
-3. Create your own custom button mixin that passes values for width, height, and background color.  Once you have created this mixin, introduce a button to the bottom of each ```.text-content``` div.  Create unique text for each button to match the header.  Example: The heading "Features" could have a button that reads "See Features." Be creative!
 
-4. Use a function to darken the background by 20% on hover for all those new buttons you just made.
+## Task 5: Mobile Updates Needed
+* [ ] Use escaping to create a variable named `@mobile` that contains this value: `(max-width: 500px)`.  Use the `variables.less` file to house your styling.
+* [ ] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating. 
+* [ ] Match the design file at `500px` as well as you can 
 
-## Stretch Tasks
+## Stretch Goals: 
+* [ ] Create an animation mixin using parametric mixins
+* [ ] Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions. 
+* [ ] Style the site to look good at all sizes, not just desktop and phone
 
-Create your own namespace for the following elements:
-* Headings
-* Buttons
-* p tags
 
-Once you have created your own unique namespace styles, apply them throughout the site using the > accessor to overrite the current styles in place as you see fit.  This is open ended so try and find practical ways this could help you or just go wild and change everything ;)
 
