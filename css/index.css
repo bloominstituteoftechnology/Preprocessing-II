@@ -171,6 +171,7 @@ img {
 .main-navigation {
   width: 100%;
   height: 90px;
+  position: fixed;
   background: #FFFFFF;
   border-bottom: 2px dashed #C0C0C0;
 }
