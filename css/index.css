@@ -1,5 +1,12 @@
-.w-100 {
-  width: 100%;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -231,7 +238,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid rgba(255, 0, 0, 0.3);
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -320,25 +326,31 @@ img {
 .container {
   max-width: 880px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 5%;
+  margin: 0 auto;
+  padding: 0.25%;
 }
 .main-navigation {
-  width: 100%;
+  border-bottom: 1px dashed black;
 }
 .main-navigation .nav-container {
-  width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 .main-navigation .nav-container .logo-heading {
   align-self: flex-start;
+}
+.main-navigation .nav-container .nav {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 20%;
+}
+.main-navigation .nav-container .nav .nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
 }
 .footer {
   width: 100%;
@@ -396,4 +408,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 100px;
+  height: auto;
+  background: #397E7F;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 3%;
+  margin: 0;
 }

@@ -1,11 +1,29 @@
 // Mixins in here
-.flexbox-centered(){
+.flex-center{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
-.w-100{
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.w-100(){
   width: 100%;
+}
+
+.btn-factory(@width: auto, @height: auto, @background: inherit, @color: inherit, @font-size: inherit, @border: none, @border-radius: none, @text-align: left, @padding: 0, @margin: 0){
+  width: @width;
+  height: @height;
+  background: @background;
+  color: @color;
+  font-size: @font-size;
+  border: @border;
+  border-radius: @border-radius;
+  text-align: @text-align;
+  padding: @padding;
+  margin: @margin;
 }
