@@ -192,7 +192,7 @@ img {
 }
 .main-navigation .nav-container .nav .nav-link {
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color: #212529;
   margin-right: 29px;
   font-size: 1.6rem;
   text-decoration: none;
@@ -213,7 +213,7 @@ img {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
