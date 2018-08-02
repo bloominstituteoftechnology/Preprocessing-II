@@ -7,17 +7,31 @@
     border-bottom: 2px dashed lightgray;
     position: fixed;
 
+    
+
     .nav-container {
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // padding: 20px 0;
+        
+        @media @phone {
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 10px;
+        }
 
         .nav {
             width: 43.75%;
             display: flex;
             justify-content: space-evenly;
+
+            @media @phone {
+                width: 100%;
+                padding-top: 10px;
+                justify-content: space-around
+            }
 
             a {
                 font-size: 1.6rem;
