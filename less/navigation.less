@@ -1,1 +1,29 @@
 // Navigation Styles here
+
+.main-navigation {
+    padding: 12px 0;
+    margin-top: 5px;
+    border-bottom: 2px dashed @silver;
+
+    .nav-container {
+
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+
+            display: flex;
+            align-items: center;
+
+            a {
+                margin: 0 2%;
+                text-decoration: none;
+                font-size: 1.6rem;
+
+                &:visited {
+                    color: black;
+                }
+            }
+        }
+    }
+}
