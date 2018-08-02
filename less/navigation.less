@@ -2,20 +2,43 @@
 .main-navigation {
     border-bottom: 2px dashed @navigation-border;
 
+    .logo-heading {
+        @media @phone {
+            margin: 0px 38% 15px 38%;
+            font-size: 3rem;
+        }
+    }
+
     .nav-container {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+         
+        @media @phone {
+            flex-wrap: wrap;
+            width: 100%;
+            }
 
         .nav {
             width: 50%;
+
+            @media @phone {
+                width: 100%;
+                .center;
+                }
+
             .nav-link {
                 text-decoration: none;
                 color: @font-color;
                 font-size: 2rem;
-                margin: 0 3.41%;
+                margin: 0 6%;
+
+                @media @phone {
+                    font-size: 1.6rem;
+                }
+
             }
         }//.nav
     }//nav-container
