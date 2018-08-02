@@ -256,3 +256,20 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  border-radius: 10px;
+  width: 200px;
+  height: 45px;
+  background-color: teal;
+  color: white;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: white;
+  color: teal;
+}
