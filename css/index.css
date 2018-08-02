@@ -169,15 +169,21 @@ img {
   margin: 0 auto;
 }
 .main-navigation {
-  max-width: 880px;
-  margin: 0 auto;
-  border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-navigation .nav-container {
+  position: fixed;
+  top: 0;
+  max-width: 880px;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px auto;
+  padding: 10px 40px;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container {
@@ -207,6 +213,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  margin-top: 60px;
 }
 .home .welcome-section {
   border-bottom: 1px dashed #C0C0C0;

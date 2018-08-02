@@ -2,18 +2,20 @@
 
 .main-navigation {
     
-    max-width: 880px;
-    margin: 0 auto; 
-    border-bottom: 2px dashed @navigation-border;
-    // position: fixed;
-    // width: 100%;
+    .center;
 
     .nav-container {
 
+        position: fixed;
+        top: 0;
+        max-width: 880px;
+        border-bottom: 2px dashed @navigation-border;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 15px auto;
+        padding: 10px 40px;
+        width: 100%;
+        background-color: @main-bg;
         @media @mobile {
             flex-direction: column;
         }
