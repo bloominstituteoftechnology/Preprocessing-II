@@ -1,5 +1,19 @@
 .home {
 
+  .welcome {
+    padding: 20px 0 10px;
+    border-bottom: 2px dashed #C0C0C0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+
+      h2 {
+        margin-top: 20px;
+      }
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -17,8 +31,16 @@
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -42,6 +64,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +79,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .btn {
+        .button-maker(100px, 20px, @eastern-blue, @shark);
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
     }
   }
 }// home
