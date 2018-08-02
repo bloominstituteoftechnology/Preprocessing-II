@@ -257,14 +257,18 @@ img {
 }
 .home .content-pick .destination .btn {
   width: 200px;
-  height: 45px;
-  background: #17A2B8;
+  height: 50px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border: 1px solid #C0C0C0;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
-  font-size: 1.8rem;
-  border: 1px solid silver;
+  font-size: 1.6rem;
   cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #FFFFFF;
+  color: #17A2B8;
 }
