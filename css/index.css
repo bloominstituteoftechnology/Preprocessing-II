@@ -1,4 +1,29 @@
-@mobile (max-width: 500px);
+@media (max-width: 500px) {
+  .lowest-container {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .lowest-container .nav-container {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .lowest-container .nav-container h1 {
+    order: -1;
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+}
+@media (max-width: 500px) {
+  .lowest-container .home img {
+    margin: 0 10px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
