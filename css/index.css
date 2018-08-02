@@ -235,6 +235,11 @@ img {
   max-width: 800px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
+}
 .home .intro-section {
   padding-bottom: 15px;
   border-bottom: 2px dashed #C0C0C0;
