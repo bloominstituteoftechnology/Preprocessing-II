@@ -1,15 +1,5 @@
 // Navigation Styles here
 
-// variables
-
-  //fonts
-  @nav-size: 2rem;
-
-  //padding and margins
-  @nav-padding: 1rem;
-
-
-
 // phone and tablet
 @phone: ~"( max-width: 500px )";
 @tablet: ~"( max-width: 800px )";
@@ -19,7 +9,8 @@
   .flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: @
+  border-bottom: @nav-bottom;
+  padding: @nav-padding;
 
   .logo-heading {
     width: 40%;
