@@ -168,6 +168,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-container .logo-heading {
+  width: 40%;
+}
+.nav-container .nav {
+  width: 60%;
+  font-size: 2rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
