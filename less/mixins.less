@@ -3,3 +3,32 @@
 .border-bottom {
     border-bottom: 2px dashed @navigation-border;
 }
+
+// Mixin Level 1
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }   
+  
+  // Mixin Level 3
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+  
+  // Mixin Level 4
+  .button-creator(@width, @height, @bg-color, @font-color) {
+        .border-radius(20px);
+        .center;
+        width: @width;
+        height: @height;
+        background-color: @button-bg;
+        color: @white;
+        border: 1px solid @black;
+        margin: 2rem;
+        font-size: 1.5rem;
+  }
+  
+  
