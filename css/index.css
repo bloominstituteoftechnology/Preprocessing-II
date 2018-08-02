@@ -226,6 +226,9 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+.home .content-intro img {
+  padding-bottom: 15px;
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
