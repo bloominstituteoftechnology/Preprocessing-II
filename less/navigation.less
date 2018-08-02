@@ -1,1 +1,24 @@
 // Navigation Styles here
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    @media @phone {
+        width: 89%;
+        justify-content: space-between;
+    }
+
+    a {
+        font-size: 1.7rem;
+        margin-top: 1rem;
+        margin-left: 2.8rem;
+
+        @media @phone {
+            width: 100%;
+            .center();
+            margin: 1.5rem auto 0 auto;
+        }
+    }
+}
+
+ 

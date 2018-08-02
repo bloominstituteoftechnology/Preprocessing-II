@@ -39,8 +39,21 @@ img {
   height: auto;
 }
 
+.box {
+    width: 100%;
+
+    &:first-child {
+        padding-top: 2.3rem;
+    }
+
+    @media @phone {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;   
 }
