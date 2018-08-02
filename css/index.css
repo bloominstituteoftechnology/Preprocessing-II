@@ -180,6 +180,11 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+.main-navigation .nav-container .nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
