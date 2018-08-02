@@ -9,9 +9,20 @@
 
 .nav-container{
     .flex-style();
+    @media @mobile{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        
+    }
 
     .logo-heading{
-        margin: 10px 15% 1% 0;
+
+        margin: 10px 16% 1% 0;
+
+        @media @mobile{
+            margin: 10px 15% 1% 14%; 
+        }
     }
     .logo-heading:hover{
         margin: 10px 15% 1% 0;
@@ -22,19 +33,29 @@
     .nav{
         font-size: 1.7rem;
         margin: 20px 28% 1% 0;
+        @media @mobile{
+            margin: 20px 2% 1% 0;
+        }
         
         a{
             text-decoration: none;
             color: black;
-            margin: 0px 20px
-            
+            margin: 0px 20px;
+            @media @mobile{
+                margin: 0px 20px; 
+            }
         }
+            
+            
+        
         a:hover{
             text-decoration: none;
             color: lightblue;
             border-bottom: 3px dotted #e2edff;
-            margin: 0px 20px
+            margin: 0px 20px;
+            @media @mobile{
+                margin: 0px 20px; 
+            }
         }
-
     }
 }
