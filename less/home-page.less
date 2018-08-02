@@ -2,7 +2,7 @@
 
   .welcome {
     padding: 90px 0 0 10px;
-    border-bottom: 2px dashed lightgray;
+    border-bottom: 2px dashed @navigation-border;
 
     img {
       width: 100%;
@@ -70,6 +70,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button-creator(200px, 45px, @button-bg, @button-font-color, 1.6rem);
+      }
     }
   }
 }// home

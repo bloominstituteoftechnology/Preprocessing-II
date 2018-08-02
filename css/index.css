@@ -203,7 +203,7 @@ img {
 }
 .home .welcome {
   padding: 90px 0 0 10px;
-  border-bottom: 2px dashed lightgray;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .welcome img {
   width: 100%;
@@ -257,4 +257,23 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #FFFFFF;
+  color: #17A2B8;
 }
