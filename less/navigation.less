@@ -1,1 +1,24 @@
-// Navigation Styles here
+.main-navigation{
+    div{
+        border-bottom: 1px grey;
+    }
+    .logo-heading{
+margin-top: 15px;
+    }
+    .nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        background-color: solid-black;
+        border-bottom: 1px grey;
+        
+        @media (max-width: 500px) {
+            display: flex;
+            justify-content: space-evenly;
+          }
+    }
+        a{
+            color: solid-black;
+        }
+    
+}
