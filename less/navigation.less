@@ -37,6 +37,17 @@
         font-size: 1.7rem;
         text-decoration: none;
         color: @font-color;
+
+
+        &:hover {
+          border-top:1.5px solid @navigation-border;
+          border-bottom:1.5px solid @navigation-border;
+          color: @navigation-border;
+
+          @media @phone {
+            border: none;
+          }
+        }
       }
     }    
   }  //Nav container

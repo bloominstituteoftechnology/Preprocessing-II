@@ -103,16 +103,21 @@
       }
 
       .btn {
-        .button(83%, 44px, @button-bg, @main-bg, 12px);
+        .button(83%, 46px, @button-bg, @main-bg, @navigation-border, 12px);
         margin-top: 5px;
-      }
+        transition: all 0.5s ease-in-out;
 
-      @media @phone {
-        .btn {
-          .button(100%, 44px, @button-bg, @main-bg, 12px);
-          margin-top: 5px;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 10px 10px 10px @button-bg;
+          .transform(translate(-10px, -10px));
+          background-color: teal;
+        }
+
+        @media @phone {
+          width: 100%;
         }
       }
-    }
-  }
-}// home
+    } //destination end
+  } //content pick end
+} // home

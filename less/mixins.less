@@ -1,4 +1,12 @@
 // Mixins in here
+//Parametric mixin
+
+.transform(@value) {
+  -webkit-transform: @value;
+      -ms-transform: @value; 
+          transform: @value;
+}
+
 
 .center() {
   display: flex;
@@ -6,11 +14,14 @@
   align-items: center;
 }
 
-.button(@width, @height, @bg-color, @color, @border-rad) {
+
+//Button making
+.button(@width, @height, @bg-color, @color, @border-color, @border-rad) {
   width: @width;
   height: @height;
   background-color: @bg-color;
   color: @color;
+  border: 1px solid @border-color;
   border-radius: @border-rad;
   .center;
   font-size: 1.7rem;
