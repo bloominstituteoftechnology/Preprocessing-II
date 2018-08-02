@@ -1,1 +1,48 @@
 // Navigation Styles here
+
+.main-navigation {
+    .center();
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.main-navigation .nav-container{
+    // background-color: red;
+    .center();
+    position: fixed;
+    top:0;
+    border-bottom:2px dashed @navigation-border;
+    max-width: 800px;
+    width:100%;
+
+    flex-direction: row;
+    .clearPaddingMargin();
+    justify-content: space-between;
+    background-color:@white;
+}
+.nav-container .logo-heading {
+    width: 49%;
+    .clearPaddingMargin();
+    .center();
+    justify-content: flex-start;
+    a {
+        color:@font-color;
+        text-decoration: none;
+    }
+}
+.nav-container .nav {
+    width: 49%;
+    .clearPaddingMargin();
+    .center();
+    justify-content: space-around;
+    a {
+        text-decoration: none;
+        color:@font-color;
+        font-weight:bold;
+        &:hover{
+            text-decoration: underline;
+            color:@eastern-blue;
+        }
+    }
+    
+}
