@@ -1,7 +1,16 @@
 // Mixins in here
-.button-creator(@button-bg, @font-color) {
+.button-creator(@width, @height, @button-bg, @font-color) {
+     .border-radius(15px);
+        width: @width;
+        height:@height;
         background-color: @button-bg;
         color: @font-color;
       }
-      
+
+
+    .border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
 
