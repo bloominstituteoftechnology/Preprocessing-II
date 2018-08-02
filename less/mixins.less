@@ -1,1 +1,38 @@
 // Mixins in here
+.center() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .center2() {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        }
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+  .button-creator(@width, @height, @button-bg, @font-color) {
+    .border-radius(20px);
+    .center2;
+    width: @width;
+    height: @height;
+    background-color: @button-bg;
+    color: @font-color;
+    border: 1px solid @white;
+    cursor: pointer;
+  }
+
+  .flex-wrap{
+      
+      display: flex;
+      align-items:baseline;
+      justify-content: space-between;
+      flex-direction: row;
+      width:100%;
+  }
+
+  @phone: ~"(max-width:500px)";
