@@ -5,8 +5,14 @@
   
   margin-top: 80px;
   @media @phone {
-    margin: 100px 20px;
+    margin: 100px 0 20px 20px;
+
+    p {
+      font-size: 1.6rem;
+    }
+  
   }
+
 
   .header {
     .dashes();
@@ -30,7 +36,7 @@
 
     @media @phone {
       .mobile-column();
-      margin: 20px 0;
+      margin: 20px;
     }
 
    
@@ -82,9 +88,18 @@
     width: 75%;
     margin: 0 auto 30px;
 
+      
+    @media @phone {
+      .mobile-column();
+      width: 90%;
+      margin: 20px;
+
+    }
+
     img {
       border-radius: 10px;
     }
+
   }
 
   .content-pick {
@@ -105,8 +120,10 @@
       margin-bottom: 30px;
 
       @media @phone {
+        .mobile-column();
         align-items: center;
         width: 80%;
+        margin-bottom: 20px;
 
       }
   
