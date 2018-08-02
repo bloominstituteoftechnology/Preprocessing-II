@@ -175,6 +175,7 @@ img {
   justify-content: center;
   border-bottom: 2px dashed #C0C0C0;
   background-color: white;
+  opacity: 0.8;
 }
 .main-navigation .nav-container {
   display: flex;
@@ -182,14 +183,37 @@ img {
   align-items: center;
   margin: 24px auto;
 }
+@media (min-width: 500px) {
+  .main-navigation .nav-container {
+    flex-direction: column;
+    margin: 18px auto 8px;
+  }
+}
+@media (min-width: 500px) {
+  .main-navigation .nav-container .logo-heading {
+    font-size: 3rem;
+  }
+}
 .main-navigation .nav-container .nav {
   display: flex;
+}
+@media (min-width: 500px) {
+  .main-navigation .nav-container .nav {
+    margin-top: 16px;
+    width: 103%;
+    justify-content: space-evenly;
+  }
 }
 .main-navigation .nav-container .nav .nav-link {
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
   margin-right: 31px;
+}
+@media (min-width: 500px) {
+  .main-navigation .nav-container .nav .nav-link {
+    margin: 0;
+  }
 }
 .footer {
   width: 100%;
