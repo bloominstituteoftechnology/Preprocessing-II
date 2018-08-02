@@ -1,7 +1,35 @@
 // Mixins in here
 
-.container-width {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
+@import "variables.less";
+
+.dashes {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+.button-creator(@width, @height, @bg-color, @font-color) {
+    .border-radius(20px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @button-background;
+    color: @font-color;
+    border: 1px solid @silver;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: @font-color;
+      color: @bg-color;
+    }
   }

@@ -1,7 +1,5 @@
-.container-width {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+.dashes {
+  border-bottom: 2px dashed #C0C0C0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -176,7 +174,7 @@ img {
 .main-navigation {
   position: fixed;
   top: 0;
-  background: white;
+  background: #FFFFFF;
   width: 100%;
   overflow: hidden;
   border-bottom: 2px dashed #C0C0C0;
@@ -210,6 +208,12 @@ img {
 }
 .home {
   margin-top: 80px;
+}
+.home .header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .header h1 {
+  margin: 30px 0;
 }
 .home .content-section {
   margin: 30px 0;
