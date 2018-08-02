@@ -8,13 +8,33 @@
         
         padding:2.27%;
         
+        @media @phone{
+            flex-wrap:wrap;
+            padding-top:2.27%;
+            padding-bottom:0%;
+            
+        }
     }
+
+    .logo-heading{
+       @media @phone{
+        margin:0 auto;
+        font-size:3rem;
+        
+       }
+    }
+
     .nav{
         width: 44.12%;
         
+        @media @phone{
+            .flex-wrap;
+            padding-bottom:0%;
+        }
         
         
     }
+
     .nav-link {
         text-decoration:none;
         color:@shark;
@@ -22,6 +42,6 @@
         font-size:1.6rem;
         margin:2.27%;
         padding:2.27%
-        
-        }
+       
+    }
 } // header
