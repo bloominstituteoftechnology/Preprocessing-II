@@ -2,14 +2,18 @@
 
 // Sign Me Up Buttons
 
-.SMU-btn() {
+.SMU-btn(@width, @height, @bg-color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  color: white;
-  background-color: teal;
+  color: @main-bg;
+  background-color: @bg-color;
   font-size: 1.8rem;
-  border: solid 1px #bdc1c1;
+  border: solid 1px @silver;
   border-radius: 15px;
-  padding: 10px 50px;
-  text-align: center;
+  height: @height;
+  width: @width;
   font-weight: bold;
+  cursor: pointer;
 }

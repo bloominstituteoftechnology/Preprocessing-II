@@ -5,16 +5,34 @@ header {
   margin-top: 24px;
   padding-bottom: 24px;
   border-bottom: @dashed-border;
+  @media @mobile {
+    margin-top: 18px;
+    padding-bottom: 8px;
+  }
   .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media @mobile {
+      flex-direction: column;
+      .logo-heading {
+        padding-bottom: 12px;
+        font-size: 3rem;
+        @media @mobile {
+          padding-bottom: 16px;
+        }
+      }
+    }
     nav {
       display: flex;
       width: 42%;
       justify-content: center;
       justify-content: space-around;
       padding-right: 15px;
+      @media @mobile {
+        width: 91%;
+        padding-right: 0px;
+      }
       .nav-link {
         font-size: 1.6rem;
         text-decoration: none;
