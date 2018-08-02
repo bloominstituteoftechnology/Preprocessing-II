@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
 }
 h1,
 h2,
@@ -175,10 +176,30 @@ header {
   padding-bottom: 24px;
   border-bottom: dashed 2px lightgrey;
 }
+@media ( max-width: 500px ) {
+  header {
+    margin-top: 18px;
+    padding-bottom: 8px;
+  }
+}
 header .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media ( max-width: 500px ) {
+  header .nav-container {
+    flex-direction: column;
+  }
+  header .nav-container .logo-heading {
+    padding-bottom: 12px;
+    font-size: 3rem;
+  }
+}
+@media ( max-width: 500px ) and ( max-width: 500px ) {
+  header .nav-container .logo-heading {
+    padding-bottom: 16px;
+  }
 }
 header .nav-container nav {
   display: flex;
@@ -186,6 +207,12 @@ header .nav-container nav {
   justify-content: center;
   justify-content: space-around;
   padding-right: 15px;
+}
+@media ( max-width: 500px ) {
+  header .nav-container nav {
+    width: 91%;
+    padding-right: 0px;
+  }
 }
 header .nav-container nav .nav-link {
   font-size: 1.6rem;
@@ -203,6 +230,11 @@ header .nav-container nav .nav-link {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media ( max-width: 500px ) {
+  .home {
+    width: 93%;
+  }
+}
 .home .jumbo-fun-bus {
   padding-bottom: 20px;
 }
@@ -216,16 +248,43 @@ header .nav-container nav .nav-link {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .home .content-section {
+    align-content: stretch;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media ( max-width: 500px ) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media ( max-width: 500px ) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .content-section {
+    flex-direction: column;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -239,35 +298,77 @@ header .nav-container nav .nav-link {
   padding-right: 1%;
   padding-left: 0;
 }
+@media ( max-width: 500px ) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media ( max-width: 500px ) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 30px;
 }
 .home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media ( max-width: 500px ) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
-  margin-top: 15px;
-  margin-bottom: 12px;
+@media ( max-width: 500px ) {
+  .home .content-pick .destination {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+  }
 }
 .home .content-pick .destination .btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   background-color: teal;
   font-size: 1.8rem;
-  border: solid 1px #bdc1c1;
+  border: solid 1px #C0C0C0;
   border-radius: 15px;
-  padding: 10px 50px;
-  text-align: center;
+  height: 45px;
+  width: 200px;
   font-weight: bold;
+  cursor: pointer;
+}
+@media ( max-width: 500px ) {
+  .home .content-pick .destination .btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #17A2B8;
+    font-size: 1.8rem;
+    border: solid 1px #C0C0C0;
+    border-radius: 15px;
+    height: 45px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
