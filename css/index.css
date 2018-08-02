@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  border: 1px solid red;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -168,6 +169,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.main-navigation {
+  max-width: 880px;
+  margin: 0 auto;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.main-navigation .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+}
+.main-navigation .nav-container .nav .nav-link {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.8rem;
+  margin: 0 5px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +196,13 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .welcome-section {
+  border-bottom: 1px dashed #C0C0C0;
+  padding: 0 0 10px;
+}
+.home .welcome-section h1 {
+  margin: 15px 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,4 +249,21 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 35px;
+  background-color: #17A2B8;
+  font-size: 1.8rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #212529;
+  color: #17A2B8;
+  cursor: pointer;
 }
