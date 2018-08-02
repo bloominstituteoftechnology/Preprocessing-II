@@ -1,12 +1,27 @@
 
 // header
 .main-navigation {
-    margin: 0 auto 20px auto;
+    margin: 2rem auto 20px auto;
     width: 100%;
     top: 0;
     justify-content: space-between;
     padding-bottom: 1.6rem;
-    border-bottom: 2px dashed @navigation-border;
+    
+    /* Header Animation */
+    animation-duration: 3s;
+    animation-name: slidein;
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
 
     @media @phone {
         width: 100%;

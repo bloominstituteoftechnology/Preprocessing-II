@@ -165,9 +165,7 @@ img {
 }
 .box {
   width: 100%;
-}
-.box:first-child {
-  padding-top: 2.3rem;
+  border-top: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .box {
@@ -186,14 +184,14 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
-    width: 89%;
+    width: 100%;
     justify-content: space-between;
+    margin-left: 1rem;
   }
 }
 nav a {
   font-size: 1.7rem;
-  margin-top: 1rem;
-  margin-left: 2.8rem;
+  margin: 1rem 2.8rem 0 1rem;
 }
 @media (max-width: 500px) {
   nav a {
@@ -201,7 +199,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.5rem auto 0 auto;
+    margin: 0 auto;
   }
 }
 .footer {
@@ -223,12 +221,24 @@ nav a {
   padding: 20px;
 }
 .main-navigation {
-  margin: 0 auto 20px auto;
+  margin: 2rem auto 20px auto;
   width: 100%;
   top: 0;
   justify-content: space-between;
   padding-bottom: 1.6rem;
-  border-bottom: 2px dashed #C0C0C0;
+  /* Header Animation */
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .main-navigation {
@@ -383,7 +393,4 @@ nav a {
     margin-left: 10%;
     padding-right: 12%;
   }
-}
-.container {
-  width: 100%;
 }
