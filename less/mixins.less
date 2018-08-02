@@ -5,12 +5,14 @@
   align-items: center;
 }
 
-.button-maker(@width, @height, @background, @color, @border) {
+.button-maker(@width, @height, @color, @background, @border) {
   .center;
   width: @width;
   height: @height;
-  background: @background;
   color: @color;
+  background: @background;
   border: @border;
+  border-radius: 15px;
   text-decoration: none;
+  font-size: 1.8rem;
 }
