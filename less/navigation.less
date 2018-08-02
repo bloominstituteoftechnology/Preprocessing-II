@@ -22,7 +22,16 @@
 
     .logo-heading {
       margin-top: 15px;
-      .animation(wave 0.2s ease linear infinite alternate both);
+
+      .keyframes(wave; {
+        0% { color: palevioletred; background: paleturquoise; }
+        25% { color: greenyellow; background: gold; }
+        50% { color: cornflowerblue; background: cornflowerblue; }
+        75% { color: gold; background: greenyellow; }
+        100% { color: paleturquoise; background: palevioletred; }
+      });
+
+      .animation(wave 5s linear infinite alternate both);
 
       @media @mobile500 {
         width: 100%;

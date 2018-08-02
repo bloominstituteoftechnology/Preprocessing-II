@@ -3,23 +3,6 @@
   justify-content: center;
   align-items: center;
 }
-@keyframes wave {
-  0% {
-    color: palevioletred;
-  }
-  25% {
-    color: greenyellow;
-  }
-  50% {
-    color: cornflowerblue;
-  }
-  75% {
-    color: gold;
-  }
-  100% {
-    color: paleturquoise;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -216,7 +199,29 @@ img {
 }
 .main-navigation .nav-container .logo-heading {
   margin-top: 15px;
-  animation: wave 0.2s ease linear infinite alternate both;
+  animation: wave 5s linear infinite alternate both;
+}
+@keyframes wave {
+  0% {
+    color: palevioletred;
+    background: paleturquoise;
+  }
+  25% {
+    color: greenyellow;
+    background: gold;
+  }
+  50% {
+    color: cornflowerblue;
+    background: cornflowerblue;
+  }
+  75% {
+    color: gold;
+    background: greenyellow;
+  }
+  100% {
+    color: paleturquoise;
+    background: palevioletred;
+  }
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .logo-heading {

@@ -14,18 +14,10 @@
   height: 45px;
 }
 
-.partyBus(@name; @arguments) {
-  @keyframes @name { @arguments(); };
+.keyframes(@name; @arguments) {
+  @keyframes @name { @arguments(); }
 }
 
 .animation(@arguments) {
   animation: @arguments;
 }
-
-.partyBus(wave; {
-  0% { color: palevioletred; }
-  25% { color: greenyellow; }
-  50% { color: cornflowerblue; }
-  75% { color: gold; }
-  100% { color: paleturquoise; }
-});
