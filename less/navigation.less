@@ -9,12 +9,24 @@
     justify-content: space-between;
     padding: 20px 40px;
     
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     width: 50%;
+
+    @media @mobile {
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .nav-link {
