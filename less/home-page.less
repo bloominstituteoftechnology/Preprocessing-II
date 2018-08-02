@@ -5,10 +5,14 @@
   .intro-section {
     width: 100%;
     height: 40rem;
-    border-bottom: 2px dashed gray;
+    border-bottom: 2px dashed @silver;
 
     .intro-text {
       padding: 20px 0;
+
+      @media @phone {
+
+      }
     }
   }
 
@@ -18,19 +22,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+   @media @phone {
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+   }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%
+       
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 100%;
+       
+      }
+
       img {
         border-radius: 10px;
+
       }
     }
   }
@@ -38,6 +57,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -65,12 +88,25 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      justify-content: center;
+      align-items: center;
+      width: 75%;
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+
+      @media @phone {
+        margin: 0 auto 30px;
+        width: 100%;
+      }
+
       .btn {
-        .button-creator(250px, 50px, teal, white);
+        .button-creator(80%, 50px, @eastern-blue, white);
       }
     }
   }
