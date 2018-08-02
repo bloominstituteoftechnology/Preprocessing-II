@@ -3,31 +3,9 @@
 @teal: teal;
 @silver: silver;
 
-// Mixin Level 1
-.center() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.font-override() {
-  font-size: 45px;
-  color: red;
-}
-.center() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.font-override() {
-  font-size: 45px;
-  color: red;
-}
-
-// Mixin Level 2
-.center-font-override() {
-  .center;
-  .font-override;
+.main-navigation{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px;
+    
 }
