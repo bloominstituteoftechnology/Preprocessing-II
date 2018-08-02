@@ -1,3 +1,20 @@
+@keyframes color-cycle {
+  0% {
+    color: black;
+  }
+  25% {
+    color: darkgray;
+  }
+  50% {
+    color: lightgray;
+  }
+  75% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -201,6 +218,11 @@ img {
   margin-right: 29px;
   font-size: 1.6rem;
   text-decoration: none;
+}
+.main-navigation .nav-container .nav .nav-link:hover {
+  animation-name: color-cycle;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 @media ( max-width: 500px ) {
   .main-navigation .nav-container .nav .nav-link {
