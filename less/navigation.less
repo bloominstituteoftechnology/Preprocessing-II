@@ -1,1 +1,31 @@
 // Navigation Styles here
+.main-navigation {
+  position: fixed;
+  width: 100%;
+  background-color: @white;
+  border-bottom: 2px dashed @navigation-border;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    .logo-heading {
+      margin: 25px 0;
+    }
+    
+    .nav {
+      width: 45%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .nav-link {
+        text-decoration: none;
+        font-size: 16px;
+        color: @font-color;
+        margin: 0 5%;
+      }
+    }
+  }
+}
