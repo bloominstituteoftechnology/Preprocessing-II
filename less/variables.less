@@ -1,5 +1,5 @@
 
-// Color assignments 
+// Color assignments
 @font-color: @shark;
 @button-bg: @eastern-blue;
 @main-bg:  @white;
@@ -12,3 +12,77 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+// mobile style
+
+@phone: ~"( max-width: 500px )";
+
+@media @phone {
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-navigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+
+      nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: black;
+
+      }
+    } // nav-container
+
+    .content-section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: auto;
+}
+
+
+
+  .content-destination {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+    .destination {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+} // phone query
