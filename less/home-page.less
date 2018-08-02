@@ -23,6 +23,23 @@
     }
   }
 
+  .top-content {
+    padding-bottom: 10px;
+    border-bottom: 2px dashed @navigation-border;
+
+    .text-content {
+      padding-top: 20px;
+    }
+
+    .img-content {
+      width: 100%;
+
+      img {
+        border-radius: 0;
+      }
+    }
+  }
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -56,6 +73,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button-maker(@width, @height, @background, @color, @border)
+      }
     }
   }
 }// home

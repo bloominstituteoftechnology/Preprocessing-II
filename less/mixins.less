@@ -1,1 +1,16 @@
 // Mixins in here
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-maker(@width, @height, @background, @color, @border) {
+  .center;
+  width: @width;
+  height: @height;
+  background: @background;
+  color: @color;
+  border: @border;
+  text-decoration: none;
+}
