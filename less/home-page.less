@@ -3,10 +3,18 @@
   .welcome-section {
     
     border-bottom: 1px dashed @navigation-border;
-    padding: 0 0 10px; 
 
     h1 {
-      margin: 15px 0; 
+      margin: 15px 0;
+      @media @mobile {
+        width: 96%;
+      }  
+    }
+
+    p {
+      @media @mobile {
+        width: 96%;
+      } 
     }
   }
 
@@ -68,7 +76,7 @@
     width: 75%;
     margin: 0 auto 30px;
     @media @mobile {
-      width: 100%;
+      width: 96%;
     }
 
     img {
