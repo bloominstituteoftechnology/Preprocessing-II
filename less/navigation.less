@@ -1,20 +1,39 @@
 // Navigation Styles here
 
+
 @import "variables.less";
 @import "mixins.less";
+
 
 .main-navigation {
     position: fixed;
     top: 0;
     width: 100%;
     background: white;
-    border-bottom: 1px dashed black;
+    border-bottom: 2px dashed @silver;
 
     .nav-container {
         display: flex;
         justify-content: space-between;
+        // align-items: center;
         margin: 20px 40px;
-      
+    
+        .nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        
+            a {
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: black;
+            }
+        
+        }
+
+        
     
     }
     

@@ -173,12 +173,23 @@ img {
   top: 0;
   width: 100%;
   background: white;
-  border-bottom: 1px dashed black;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .main-navigation .nav-container {
   display: flex;
   justify-content: space-between;
   margin: 20px 40px;
+}
+.main-navigation .nav-container .nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-navigation .nav-container .nav a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
 }
 .footer {
   width: 100%;
