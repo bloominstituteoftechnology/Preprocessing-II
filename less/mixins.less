@@ -1,1 +1,31 @@
-// Mixins in here
+.center() {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+.border-radius(@radius) {
+		-webkit-border-radius: @radius;
+			-moz-border-radius: @radius;
+				border-radius: @radius;
+	}
+	
+.regular-font-sizing {
+		line-height: @regular-line-height;
+		font-size: @regular-font-size;
+		padding-bottom: @regular-padding-bottom;
+	}
+	
+.button-creator(@button-width, @button-height, @button-bg, @main-bg, @regular-font-size) {
+      .border-radius(15px);
+	  .regular-font-sizing;
+      .center;
+      width: @button-width;
+      height: @button-height;
+      background-color: @button-bg;
+      color: @main-bg;
+      border: 1px solid @navigation-border;
+	  font-size: @regular-font-size;
+	  padding-bottom: 0;
+	  font-weight: bold;
+    }
