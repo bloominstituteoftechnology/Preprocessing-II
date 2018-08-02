@@ -68,8 +68,13 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
 
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+      }
+    
+    }
     .btn {
       margin: 10px 0;
       padding: 10px;
