@@ -1,1 +1,23 @@
 // Mixins in here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.button-creator(@width, @height, @bgColor, @fontColor, @navBorder) {
+    .center;
+    border-radius: 20px;
+    width: @width;
+    height: @height;
+    background-color: @bgColor;
+    color: @fontColor;
+    border: 1px solid @navBorder;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: @fontColor;
+      color: @bgColor;
+    }
+  }

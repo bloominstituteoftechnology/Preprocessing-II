@@ -183,6 +183,7 @@ img {
   justify-content: space-around;
 }
 .nav-link {
+  font-size: 1.6rem;
   text-decoration: none;
   color: #000000;
 }
@@ -245,4 +246,21 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border: 1px solid #17A2B8;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #FFFFFF;
+  color: #17A2B8;
 }
