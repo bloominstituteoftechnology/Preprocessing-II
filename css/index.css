@@ -173,6 +173,7 @@ img {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px dashed #212529;
+  margin-top: 20px;
 }
 .nav-container .nav a {
   text-decoration: none;
