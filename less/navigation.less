@@ -14,10 +14,17 @@
         justify-content: space-between;
         align-items: center;
         margin: 15px auto;
-        
+        @media @mobile {
+            flex-direction: column;
+        }
 
         .nav {
-            
+            @media @mobile {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+
             .nav-link {
             text-decoration: none;
             color: @font-color;
