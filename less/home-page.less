@@ -1,21 +1,58 @@
 .home {
+  width: 90%;
+ 
+  @media @mobile {
+    width: 90%;
+  } // mobile
+  
+
+
+
+  .title-section {
+    border-bottom: Black dashed 1px;
+    display: flex;
+    flex-direction: column;
+    @media @mobile {
+      h2 {
+        font-size: 2rem;
+      }
+      p { 
+        font-size: 1.25rem;
+      }
+    }
+    img {
+      width: 100%;
+      margin: auto;
+      padding-bottom: 15px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +63,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -39,6 +80,9 @@
   }
 
   .content-destination {
+    @media @mobile {
+      width: 100%;
+    }
     width: 75%;
     margin: 0 auto 30px;
 
@@ -48,14 +92,43 @@
   }
 
   .content-pick {
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+    }
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
     .destination {
-      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 31%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
+      p {
+        font-size: 1.5rem;
+        @media @mobile {
+          font-size: 1.4rem;
+        }
+      }
+      .btn {
+        .sign-me-up-btn();
+        display: flex;
+        margin-left: 10%;
+        @media @mobile {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
     }
   }
+
+
 }// home
