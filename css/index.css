@@ -181,7 +181,6 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 24px auto;
-  max-width: 800px;
 }
 .main-navigation .nav-container .nav {
   display: flex;
@@ -202,6 +201,21 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .header img {
+  height: 240px;
+  width: 100%;
+}
+.home .header .text-content {
+  padding: 22px 0 10px;
+  border-bottom: 2px dashed gray;
 }
 .home .content-section {
   margin: 30px 0;
