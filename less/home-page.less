@@ -85,12 +85,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+        flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+          width: 90%;
+          margin: 0 auto 30px;
+      }
+
       .btn {
-        .button-creator(200px, 46px, @button-bg, @white, 15px, 1.6rem);
+        .button-creator(200px, 46px, @button-bg, @white, 15px, 1.7rem);
       }
     }
   }
