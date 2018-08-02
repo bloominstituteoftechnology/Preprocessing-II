@@ -250,6 +250,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background: #17A2B8;
+  width: 84%;
+  height: 45px;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 16px;
+  color: #FFFFFF;
+}
 body {
   width: 74%;
   margin: 0 auto;
