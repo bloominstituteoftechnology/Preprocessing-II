@@ -169,10 +169,13 @@ img {
   margin: 0 auto;
 }
 .main-navigation {
-  margin-top: 24px;
+  padding-top: 24px;
   border-bottom: 2px dashed #C0C0C0;
-  width: 100%;
   padding-bottom: 24px;
+  position: fixed;
+  width: inherit;
+  background: #FFFFFF;
+  top: 0;
 }
 .main-navigation .nav-container {
   display: flex;
@@ -196,6 +199,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  margin-top: 90px;
 }
 .home .content-welcome {
   border-bottom: 2px dashed #C0C0C0;
