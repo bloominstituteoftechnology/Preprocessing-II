@@ -1,1 +1,31 @@
 // Mixins in here
+
+// Browser compatibility
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+// Flex center
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+// Button parametric 
+
+.button-creator(@color, @bg-color, @width) {
+    .center;
+    .border-radius(20px);
+    color: @color;
+    background: @bg-color;
+    width: @width;
+    border: 1px solid @silver;
+    font-size: 1.6rem;
+}
+
+//websites button should be 240px wide
