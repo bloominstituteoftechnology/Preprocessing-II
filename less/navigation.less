@@ -8,34 +8,39 @@
 .main-navigation {
     position: fixed;
     top: 0;
-    width: 100%;
     background: white;
+    width: 100%;
+    overflow: hidden;
     border-bottom: 2px dashed @silver;
 
     .nav-container {
         display: flex;
         justify-content: space-between;
         // align-items: center;
-        margin: 20px 40px;
-    
+        // margin: 20px 30px;
+        // .container-width();
+      
+        margin: 20px auto;
+
+
         .nav {
             width: 40%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
-        
+
+
             a {
                 font-size: 1.4rem;
                 text-decoration: none;
                 color: black;
-            }
-        
-        }
+            } //a
 
-        
-    
-    }
-    
-}
+        } //.nav
+
+
+
+    } //nav-container
+
+} //main-navigation
 
