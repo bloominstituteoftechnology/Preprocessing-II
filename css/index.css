@@ -185,6 +185,11 @@ img {
   display: flex;
   justify-content: space-evenly;
 }
+.main-navigation .nav-container .nav a {
+  font-size: 1.5rem;
+  color: #212529;
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
