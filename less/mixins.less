@@ -15,7 +15,7 @@
 .button-creator (@width, @height, @radius, @bg-color, @font-color) {
     .border-radius(@radius);
     .center;
-    font-size: 1.8rem;
+    font-size: @btn-font-size;
     width: @width;
     height: @height;
     background-color: @bg-color;
@@ -28,5 +28,3 @@
         border: 2px dashed @navigation-border;
     }
 }
-
-@mobile: ~"(max-width: 500px)";
