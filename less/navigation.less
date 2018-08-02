@@ -5,25 +5,33 @@
 @tablet: ~"( max-width: 800px )";
 
 // Begin styling here
+.main-navigation {
+  margin: 0;
+  border-bottom: @nav-bottom;
+}
 .nav-container {
   .flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: @nav-bottom;
   padding: @nav-padding;
-
+  margin: @nav-margin;
   .logo-heading {
     width: 30%;
   }
 
   .nav {
+    .flex;
     width: 40%;
     font-size: @nav-size;
     justify-content: space-between;
+    align-content: center;
     a {
       .text-plain;
       .center;
-
+      color: @font-color;
+      justify-content: space-between;
+      text-align: right;
+      align-self: center;
     }
   }
 }
