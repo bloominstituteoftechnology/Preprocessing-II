@@ -1,1 +1,33 @@
 // Navigation Styles here
+
+.main-navigation {
+	.nav-container {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  margin-top: 15px;
+	  margin-bottom: 15px;
+	  
+	  @media @mobile {
+			flex-direction: column;
+		}
+	}
+
+	.line-dotted {
+		border-bottom: 2px dashed @navigation-border;
+		max-width: none;
+	  width: 100%;
+	  margin: none;
+	}
+	.nav {
+		a {
+			text-decoration: none;
+			color: black;
+			font-size: 1.8rem;
+			margin-right: 10px;
+			@media @mobile {
+				margin-right: 25px
+			}
+		}
+	}
+}
