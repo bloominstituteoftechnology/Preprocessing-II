@@ -355,8 +355,8 @@ img {
   font-size: 1.8rem;
 }
 .home .content-pick .destination .btn:hover {
-  background: white;
-  color: #17A2B8;
+  background: linear-gradient(to top left, #212529, #17A2B8);
+  color: white;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
