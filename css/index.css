@@ -12,7 +12,23 @@
     color: white;
   }
   100% {
-    color: black;
+    color: #212529;
+  }
+}
+@keyframes btn-animation {
+  0% {
+    background-color: black;
+    width: 94%;
+  }
+  33% {
+    background-color: darkgray;
+  }
+  66% {
+    background-color: lightgray;
+  }
+  100% {
+    background-color: #17A2B8;
+    width: 84%;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -353,6 +369,12 @@ img {
   .home .content-pick .destination .btn {
     width: 100%;
   }
+}
+.home .content-pick .destination .btn:hover {
+  animation-name: btn-animation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  cursor: pointer;
 }
 body {
   width: 74%;
