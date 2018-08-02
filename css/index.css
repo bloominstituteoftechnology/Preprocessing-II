@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.main-navigation {
+  border-bottom: 1px dashed grey;
+}
+.main-navigation .nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px auto;
+  padding-bottom: 4px;
+}
+.main-navigation .nav-container .logo-heading {
+  margin-left: 1.1%;
+}
+.main-navigation .nav-container .nav {
+  display: flex;
+  align-items: center;
+}
+.main-navigation .nav-container .nav .nav-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 3px 21px 0 10px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
