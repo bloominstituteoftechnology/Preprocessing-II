@@ -173,14 +173,20 @@ img {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 2px dashed #C0C0C0;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 .nav-container .logo-heading {
-  width: 40%;
+  width: 30%;
 }
 .nav-container .nav {
-  width: 60%;
-  font-size: 1rem;
+  width: 40%;
+  font-size: 1.6rem;
+  justify-content: space-between;
+}
+.nav-container .nav a {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 .footer {
   width: 100%;
@@ -198,6 +204,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.home .content-section .top-home {
+  padding: 0;
+  margin: 0 auto;
 }
 .home .content-section .text-content {
   width: 48%;
