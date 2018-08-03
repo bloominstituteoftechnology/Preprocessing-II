@@ -96,11 +96,14 @@
       }
       .btn {
         .flex;
-        .button-creator(100%, 5rem, @button-bg, white);
+        .button-creator(100%, 5rem, @button-bg-desktop, @white);
         .center;
         text-align: center;
         align-items: center;
         font-size: 1.8rem;
+        @media @phone {
+          background-color: @eastern-blue;
+        }
       }
     }
   }
