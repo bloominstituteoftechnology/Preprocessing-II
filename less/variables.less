@@ -1,42 +1,6 @@
 // Escaping for Mobile (max-width: 500px)
-@mobile: (max-width: 500px);
-.lowest-container {
 
-    @media @mobile {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    .nav-container {
-        @media @mobile {
-            width: 100%;
-            flex-wrap: wrap;
-            flex-direction: row-reverse;
-            // justify-content: center;
-            // align-items: center;
-    
-    //         h1 {
-    //             @media @mobile {
-    //                 order: -1;
-    //                 display: block;
-    //             }
-    //         }
-    //     } 
-    // }
-    
-    // .home {
-    //     @media @mobile {
-    //         // width: 100%;
-    //     }
-    //     img {
-    //         @media @mobile {
-                
-    //             margin: 0 10px;
-    //         }
-    //     }
-    // }
-}
-
+@mobile: ~"(max-width: 500px)";
 
 // Color assignments 
 @font-color: @shark;

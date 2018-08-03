@@ -18,13 +18,14 @@
 
 // Button parametric 
 
-.button-creator(@width, @height, @color, @bg-color) {
+.button-creator(@width, @height, @font-color, @bg-color, @font-size) {
     .center;
     .border-radius(20px);
     width: @width;
     height: @height;
-    color: @color;
+    color: @font-color;
     background-color: @bg-color;
+    font-size: @font-size;
     border: 1px solid @silver;
     font-size: 1.6rem;
     cursor: pointer;

@@ -1,29 +1,3 @@
-@media (max-width: 500px) {
-  .lowest-container {
-    width: 100%;
-    max-width: 500px;
-  }
-}
-@media (max-width: 500px) {
-  .lowest-container .nav-container {
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-  }
-}
-@media (max-width: 500px) and (max-width: 500px) {
-  .lowest-container .nav-container h1 {
-    order: -1;
-    display: block;
-  }
-}
-@media (max-width: 500px) {
-}
-@media (max-width: 500px) {
-  .lowest-container .home img {
-    margin: 0 10px;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -195,25 +169,45 @@ img {
   margin: 0 auto;
 }
 .main-navigation {
-  padding: 12px 0;
-  margin-top: 5px;
+  width: 100%;
+  height: 90px;
+  background: #FFFFFF;
   border-bottom: 2px dashed #C0C0C0;
+  position: fixed;
 }
 .main-navigation .nav-container {
+  height: 100%;
   display: flex;
   justify-content: space-between;
-}
-.main-navigation .nav-container nav {
-  display: flex;
   align-items: center;
 }
-.main-navigation .nav-container nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 1.6rem;
+@media (max-width: 500px) {
+  .main-navigation .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
 }
-.main-navigation .nav-container nav a:visited {
-  color: black;
+@media (max-width: 500px) and (max-width: 500px) {
+  .main-navigation .nav-container .logo-heading {
+    font-size: 3rem;
+  }
+}
+.main-navigation .nav-container .nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.main-navigation .nav-container .nav a {
+  font-size: 1.6rem;
+  color: #212529;
+  text-decoration: none;
 }
 .footer {
   width: 100%;
@@ -226,12 +220,16 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home img {
-  width: 100%;
-}
 .home .welcome {
-  margin: 30px 0;
+  padding: 90px 0 10px;
   border-bottom: 2px dashed #C0C0C0;
+}
+.home .welcome img {
+  width: 100%;
+  height: auto;
+}
+.home .welcome h2 {
+  margin-top: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -243,53 +241,97 @@ img {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0;
+  }
+}
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+@media (max-width: 500px) {
+  .home .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
+.home .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+@media (max-width: 500px) {
+  .home .img-content img {
+    width: 100%;
+  }
+}
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+@media (max-width: 500px) {
+  .inverse-content .text-content {
+    order: 1;
+  }
+}
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
-  width: 75%;
-  margin: 0 auto 30px;
+@media (max-width: 500px) {
+  .inverse-content .img-content {
+    order: 2;
+  }
 }
-.home .content-destination img {
+.content-destination {
+  width: 75%;
+  margin: 0 0 30px;
+}
+@media (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+  }
+}
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+@media (max-width: 500px) {
+  .content-pick {
+    flex-wrap: wrap;
+  }
+}
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+}
+.content-pick .destination .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  width: 240px;
+  width: 48%;
   height: 40px;
   color: #FFFFFF;
   background-color: #17A2B8;
+  font-size: 1.8rem;
   border: 1px solid #C0C0C0;
   font-size: 1.6rem;
   cursor: pointer;

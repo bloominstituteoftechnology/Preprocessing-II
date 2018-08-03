@@ -1,29 +1,46 @@
 // Navigation Styles here
 
 .main-navigation {
-    padding: 12px 0;
-    margin-top: 5px;
-    border-bottom: 2px dashed @silver;
+    width: 100%;
+    height:90px;
+    background: @main-bg;
+    border-bottom: 2px dashed @navigation-border;
+    position: fixed;
 
     .nav-container {
-
+        height: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
-        nav {
-
-            display: flex;
-            align-items: center;
-
-            a {
-                margin: 0 2%;
-                text-decoration: none;
-                font-size: 1.6rem;
-
-                &:visited {
-                    color: black;
-                }
+        @media @mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .logo-heading {
+            @media @mobile {
+                @media @mobile {
+                    font-size: 3rem;
+                  }
             }
         }
-    }
+    
+        .nav {
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+    
+            @media @mobile {
+                width: 100%;
+                justify-content: space-around;
+            }
+    
+            a {
+                font-size: 1.6rem;
+                color: @font-color;
+                text-decoration: none;
+            }
+        }
+    } 
 }
