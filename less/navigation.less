@@ -1,1 +1,53 @@
 // Navigation Styles here
+.main-navigation {
+  border-bottom: 2px dashed #C0C0C0;
+    /* width: 100%; */
+  padding-left: 20px;
+
+  .nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    @media @mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 10px;
+      padding-bottom: 6px;
+      margin-top: 41px;
+    }
+
+    .logo-heading {
+      @media @mobile {
+        font-size: 3rem;
+        position: absolute;
+        top: 15px;
+      }
+    } 
+
+  .nav {
+    
+      @media @mobile {
+        width:100%;
+        //justify-content: space-around;
+        margin-top: 14px;
+      }
+
+    a {
+      text-decoration: none;
+      color: @font-color;
+      font-size:  1.6rem;
+      margin: 0 15px;
+
+      @media @mobile {
+        width:100%;
+       // justify-content: space-around;
+        margin: 0 28px;
+      }
+    }
+  }
+}
+}
