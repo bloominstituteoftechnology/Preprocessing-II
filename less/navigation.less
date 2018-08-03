@@ -1,21 +1,51 @@
 // Navigation Styles here
+
 header {
 
     .nav-container {
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px dashed black;
+
+        @media @mobile {
+            // display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-around;
+            flex-direction: column;
+        }
 
         .logo-heading {
-            font-size: 30px;
-            margin-top: 20px;
+            margin-left: 20px;
+            margin-top: 15px;
+
+            @media @mobile {
+                justify-content: center;
+                align-items: center;
+                order: -1;
+                margin: 0 auto;
+            }
         }
-        nav {
-            margin-top: 20px;
+        .nav {
+            display: flex;
+             
+            @media @mobile {
+                justify-content: space-between;
+            }
 
             a {
-                text-decoration: none;
-                color: black;
                 padding: 15px;
+                margin-top: 15px;
+                color: black;
+                text-decoration: none;
+                font-size: 15px;
+
+                @media @mobile {
+                    flex-direction: row;
+                    margin-top: 5px;
+                }
+            }
+            a:hover {
+                color: gray;
             }
         }
     }
