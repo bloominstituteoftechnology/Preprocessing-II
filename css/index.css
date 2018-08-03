@@ -168,6 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1%;
+}
+nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+  padding: 0 5%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +235,35 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: teal;
+  width: 80%;
+  height: 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  padding-top: 3%;
+  font-size: 1.6rem;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: white;
+  color: teal;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .nav-container {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+header img {
+  width: 100%;
+  padding: 0 16%;
 }
