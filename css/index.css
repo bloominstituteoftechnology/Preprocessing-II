@@ -174,10 +174,12 @@ img {
   margin: 0 auto;
 }
 .main-navigation {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
+  
   width: 100%;
+  height: 90px;
+  background: #FFFFFF;
+  border-bottom: 2px dashed #C0C0C0;
+  position: fixed;
 }
 nav a:hover {
   text-decoration: underline;
