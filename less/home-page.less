@@ -1,3 +1,5 @@
+@import "mixins.less";
+
 .home {
 
   .content-section {
@@ -56,6 +58,35 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn
+      {
+          .button(80%, 30px, teal, white);
+          font-size: 1.6rem;
+      }
     }
   }
 }// home
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .nav-container
+    {
+        width: 100%;
+        border-bottom: 2px dashed @navigation-border;
+        display: flex;
+        justify-content: space-between;
+
+        padding: 3% 0;
+    }
+
+    img
+    {
+        width: 100%;
+        padding: 0 16%;
+    }
+}
