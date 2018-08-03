@@ -171,15 +171,15 @@ img {
 .main-navigation {
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width: 500px) {
-  .main-navigation .logo-heading {
-    margin: 0px 38% 15px 38%;
-    font-size: 3rem;
-  }
-}
 @media (max-width: 800px) {
   .main-navigation .logo-heading {
     margin: 10px 43% 20px 43%;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-navigation .logo-heading {
+    margin: 0px 36% 15px 36%;
     font-size: 3rem;
   }
 }
@@ -230,7 +230,6 @@ img {
 }
 .main-navigation .nav-container .nav .nav-link:hover {
   color: #17A2B8;
-  transform: scale(1.2);
 }
 .footer {
   width: 100%;
