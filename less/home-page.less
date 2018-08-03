@@ -57,6 +57,11 @@
 
         img {
           border-radius: 10px;
+
+          @media @phone {
+            width: 100%;
+            height: auto;
+          }
         }
       }
   }
@@ -72,12 +77,16 @@
       @media @phone {
         order: 1;
       }
-
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+        order: 2;
+      }
+
     }
   }
 
