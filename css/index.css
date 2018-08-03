@@ -1,8 +1,5 @@
-@media (max-width: 500px) {
-  body {
-    background-color: lightblue;
-  }
-}
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,6 +170,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  body {
+    background-color: lightblue;
+     width: 90%;
+    margin: 0 5%;
+  }
+  
+
 .main-navigation {
   
   width: 100%;
@@ -248,4 +253,5 @@ nav a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
 }
