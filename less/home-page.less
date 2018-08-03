@@ -25,17 +25,23 @@
     @media @mobile {
       justify-content: center;
     }
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%
+      }
     }
 
     .img-content {
       width: 48%;
-      min-width: 500px;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%
+      }
+      
       img {
         border-radius: 10px;
       }
@@ -46,10 +52,9 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
     @media @mobile {
-      .flex-and-wrap;
-      flex-direction: row-reverse;
-    }
+      flex-wrap: wrap-reverse;
 
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
