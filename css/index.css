@@ -1,3 +1,7 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html,
 body,
 div,
@@ -122,41 +126,223 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
-  height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  font-family: 'Indie Flower', cursive;
 }
-body {
-  width: 900px;
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 3%;
+  }
 }
 header .nav-container {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px dashed black;
+}
+@media (max-width: 500px) {
+  header .nav-container {
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 }
 header .nav-container .logo-heading {
-  font-size: 30px;
-  margin-top: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
 }
-header .nav-container nav {
-  margin-top: 20px;
+@media (max-width: 500px) {
+  header .nav-container .logo-heading {
+    justify-content: center;
+    align-items: center;
+    order: -1;
+    margin: 0 auto;
+  }
 }
-header .nav-container nav a {
-  text-decoration: none;
-  color: black;
+header .nav-container .nav {
+  display: flex;
+}
+@media (max-width: 500px) {
+  header .nav-container .nav {
+    justify-content: space-between;
+  }
+}
+header .nav-container .nav a {
   padding: 15px;
+  margin-top: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+@media (max-width: 500px) {
+  header .nav-container .nav a {
+    flex-direction: row;
+    margin-top: 5px;
+  }
+}
+header .nav-container .nav a:hover {
+  color: gray;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home .header {
+  border-bottom: 1px dashed black;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section h2 {
+    width: 250px;
+    padding-top: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section p {
+    width: 450px;
+  }
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+  }
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+.home .content-pick .destination .btn {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 5%;
+    background-color: lightseagreen;
+    font-size: 1.5rem;
+  }
 }
