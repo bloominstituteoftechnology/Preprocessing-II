@@ -1,19 +1,35 @@
 // Mixins in here
 
-// button mixins
+// center and radius
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// button mixin
 
 .button-create(@width, @height, @bg-color, @font-color) {
-  border-radius: 10px;
+  .border-radius(10px);
+  .center;
   width: @width;
   height: @height;
   background-color: @bg-color;
   color: @font-color;
   border: 1px solid @navigation-border;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
+
+  @media @phone {
+    width: 100%;
+  }
 
   &:hover {
     background-color: @font-color;
