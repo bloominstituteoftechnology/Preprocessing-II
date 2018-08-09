@@ -164,6 +164,9 @@ a {
   text-decoration: none;
   color: #212529;
 }
+a:hover {
+  transform: skewX(-45deg);
+}
 img {
   max-width: 100%;
   height: auto;
