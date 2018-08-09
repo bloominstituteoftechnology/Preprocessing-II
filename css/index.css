@@ -168,6 +168,33 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.top-container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 23px;
+  padding-bottom: 25px;
+  border-bottom: 2px dashed lightgray;
+}
+.top-container h1 {
+  margin-left: 10%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 11.7%;
+  padding-top: 1px;
+}
+nav a {
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+  padding: 0 15px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +205,12 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .home .content-section {
   margin: 30px 0;
