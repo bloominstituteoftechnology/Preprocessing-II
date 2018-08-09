@@ -178,8 +178,18 @@ img {
 .main-header nav a {
   text-decoration: none;
   color: #212529;
-  padding: 15px;
+  margin: 15px;
   font-size: 1.6rem;
+}
+@media (max-width:500px) {
+  .main-header {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .main-header h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+  }
 }
 .footer {
   width: 100%;
@@ -263,4 +273,39 @@ img {
   background-color: #FFFFFF;
   color: #17A2B8;
   border: 1px solid #212529;
+}
+@media (max-width:500px) {
+  .home {
+    max-width: 500px;
+    width: 90%;
+  }
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content,
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .home .inverse-content .text-content,
+  .home .inverse-content .img-content {
+    width: 100%;
+  }
+  .home .content-destination {
+    width: 100%;
+  }
+  .home .content-pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+  }
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }

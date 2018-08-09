@@ -66,3 +66,36 @@
     }
   }
 }// home
+
+//mobile
+@media @mobile-max-500px{
+  .home{
+    max-width: 500px;
+    width: 90%;
+  }
+  .home .content-section{
+    flex-direction: column;
+    .text-content, .img-content{
+      width: @width-100percent;
+    }
+  }
+  .home .inverse-content{
+    flex-direction: column-reverse;
+    .text-content, .img-content{
+      width: @width-100percent;
+    }
+  }
+  .home .content-destination{
+    width: @width-100percent;
+  }
+  .home .content-pick {
+    .flex();
+    flex-direction: column;
+    .destination{
+      width: 80%;
+      .btn {
+        width: @width-100percent;
+      }
+    }
+  }
+}

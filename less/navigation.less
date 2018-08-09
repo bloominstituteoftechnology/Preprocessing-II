@@ -6,7 +6,18 @@
     nav a{
         text-decoration: none;
         color:@shark;
-        padding: 15px;
+        margin: 15px;
         font-size: 1.6rem;
+    }
+}
+
+@media @mobile-max-500px{
+    .main-header{
+        flex-direction: column;
+        padding-bottom: 10px;
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+        }
     }
 }
