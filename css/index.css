@@ -1,3 +1,4 @@
+@bgc : background-color:none;
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +169,34 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: dashed 2px #C0C0C0;
+  align-self: center;
+  height: 100px;
+}
+.navbar .nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+.navbar .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.navbar .navigation li {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +207,13 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  display: flex;
+  justify-content: center;
+}
+.home header .header-content {
+  border-top: dashed 2px #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,4 +260,17 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  height: 17%;
+  width: 80%;
+  border: solid 2px black;
+  border-radius: 10px;
+  align-items: center;
+  font-size: 1.7rem;
+  background-color: teal;
+  color: white;
+  align-self: center;
 }

@@ -1,5 +1,17 @@
 .home {
 
+  
+header{
+    display: flex;
+    justify-content: center;
+    
+    
+    .header-content {
+      border-top: @dashed-border;
+      
+    }
+}
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +68,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+    .btn {
+      display: flex;
+      .button-creator(@teal; @br: 10px; @wt: 80%; @ht: 17%; @fc:white;);
+      align-self: center;
+      }
     }
   }
 }// home
