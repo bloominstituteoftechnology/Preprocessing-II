@@ -39,20 +39,17 @@
 .container.home {
   // border: 1px solid red;
   .content-pick {
-
-      .btn {
-          .button-creator();
-          .flex-center();
-      }
+    .btn {
+        .button-creator();
+        .flex-center();
+    }
   }
 } // .container.home
 
 
 .home {
-
   .main-header {
     border-bottom: 2px dashed lightgray;
-
     h2 {
       margin-top: 20px;
     }
@@ -64,19 +61,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @phone {
+      flex-direction: column;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
       img {
         border-radius: 10px;
+      }
+      @media @phone {
+        width: 100%;
       }
     } //.img-content
   }//.content-section
@@ -93,8 +97,12 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+      @media @phone {
+        order: 2;
+      }
+    } //.img-content
+
+  } //.inverse-content
 
   .content-destination {
     width: 75%;
