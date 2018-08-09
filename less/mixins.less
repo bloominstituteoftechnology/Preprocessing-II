@@ -1,1 +1,16 @@
 // Mixins in here
+
+.button-mix(@background-color){
+    background-color: @background-color;
+    color: white;
+    border-radius: 15px;
+    width: 200px;
+    height: 45px;
+    .space-around-centered;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .btn {
+    .button-mix(@button-bg);
+  }
