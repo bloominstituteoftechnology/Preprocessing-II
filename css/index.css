@@ -37,7 +37,11 @@
   border-bottom: 2px dashed #C0C0C0;
 }
 .dashed-border {
+  width: 100%;
   border-bottom: 2px dashed #C0C0C0;
+}
+.dashed-border-top {
+  border-top: 2px dashed silver;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -275,7 +279,7 @@ header nav:last-child {
 }
 .footer {
   width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
+  border-top: 2px dashed silver;
   background: #FFEBCD;
 }
 .footer p {
@@ -301,9 +305,9 @@ header nav:last-child {
   margin: 0 auto;
 }
 .home .content-section .text-welcome {
-  width: 100%;
   margin: 30px 0;
   padding-left: 1%;
+  width: 100%;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section .text-content {
@@ -332,6 +336,7 @@ header nav:last-child {
 }
 .home .inverse-content {
   padding-bottom: 30px;
+  width: 100%;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media only screen and (max-width: 880px) {
@@ -384,8 +389,8 @@ header nav:last-child {
   border-radius: 10px;
 }
 .home .content-pick {
+  width: 100%;
   padding-top: 40px;
-  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: center;
   align-items: center;
