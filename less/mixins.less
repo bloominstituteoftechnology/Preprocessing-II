@@ -1,1 +1,16 @@
-// Mixins in here
+.flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-template(@text-color: @main-bg, @BGcolor: @eastern-blue, @font-size: 1.8rem, @width: 83.33%, @height: 45px, @bR: 15px) {
+    .flex-center;
+    color: @text-color;
+    background-color: @BGcolor;
+    font-size: @font-size;
+    width: @width;
+    height: @height;
+    border-radius: @bR;
+
+  }
