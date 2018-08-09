@@ -182,12 +182,35 @@ header h1 {
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 25%;
   margin-right: 18%;
 }
 header a {
   text-decoration: none;
   color: #212529;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .footer {
   width: 100%;
@@ -210,8 +233,8 @@ header a {
 .home .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -248,6 +271,7 @@ header a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .home .content-pick .destination {
   width: 30%;

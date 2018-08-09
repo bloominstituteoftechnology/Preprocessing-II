@@ -4,14 +4,21 @@
     margin: 10px 0;
 }
 
-.flex-row() {
+.flex-row(@justify) {
     display: flex;
+    justify-content: @justify;
+    align-items: center;
+}
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .btn-creator() {
-    .flex-row();
+    .flex-row(center);
     font-size: 1.6rem;
     width: 85%;
     height: 40px;
