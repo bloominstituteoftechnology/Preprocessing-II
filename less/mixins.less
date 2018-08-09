@@ -1,1 +1,15 @@
 // Mixins in here
+.flex-row-cr() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-maker(@height, @width, @bgColor, @txColor) {
+    .flex-row-cr;
+    height: @height;
+    width: @width;
+    background-color: @bgColor;
+    color: @txColor;
+    border-radius: 15px;
+    font-size: 2rem;
+}

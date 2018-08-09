@@ -262,3 +262,14 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 80%;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 15px;
+  font-size: 2rem;
+}
