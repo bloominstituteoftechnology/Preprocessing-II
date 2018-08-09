@@ -1,3 +1,8 @@
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +173,26 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.main-header {
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 10px;
+}
+.main-header header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header header nav a {
+  padding: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #212529;
+}
+.jumbotron .container img {
+  margin-bottom: 15px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +249,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  font-size: 1.3rem;
+  width: 85%;
+  height: 40px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
