@@ -185,9 +185,16 @@ img {
   font-size: 1.6rem;
   margin-right: 3rem;
 }
+header {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 20px;
+}
 header .bus-img {
+  width: 100%;
   margin-bottom: 18px;
   border-top: 2px dashed #C0C0C0;
+  padding-top: 20px;
 }
 .footer {
   width: 100%;
