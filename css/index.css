@@ -233,6 +233,8 @@ header nav {
 @media only screen and (max-width: 500px) {
   header nav {
     display: flex;
+    justify-content: space-between;
+    width: 50%;
     margin: 25px 0;
     width: 80%;
   }
