@@ -249,6 +249,11 @@ img {
 .home .main-header {
   border-bottom: 2px dashed lightgray;
 }
+@media (max-width: 500px) {
+  .home .main-header {
+    padding: 0 0 0 10px;
+  }
+}
 .home .main-header h2 {
   margin-top: 20px;
 }
@@ -261,6 +266,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
+    padding: 0 0 0 10px;
   }
 }
 .home .content-section .text-content {
@@ -314,7 +320,18 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }

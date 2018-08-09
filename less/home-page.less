@@ -50,6 +50,9 @@
 .home {
   .main-header {
     border-bottom: 2px dashed lightgray;
+    @media @phone {
+      padding: 0 0 0 10px;
+    }
     h2 {
       margin-top: 20px;
     }
@@ -63,6 +66,7 @@
 
     @media @phone {
       flex-direction: column;
+      padding: 0 0 0 10px;
     }
     
     .text-content {
@@ -119,9 +123,17 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        width: 80%;
+      }
     }
   }
 }// home
