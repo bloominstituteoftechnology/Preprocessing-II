@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width:500px) {
+  .container {
+    width: 94%;
+  }
+}
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -185,11 +190,28 @@ nav .navbar a {
   text-decoration: none;
   color: black;
 }
+@media (max-width:500px) {
+  nav .navbar a {
+    font-size: 1.6rem;
+  }
+}
 nav .navLogo {
   padding-top: 10px;
 }
 nav .navLogo h2 {
   font-size: 4rem;
+}
+@media (max-width:500px) {
+  nav .navLogo h2 {
+    font-size: 3.1rem;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width:500px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 0%;
+  }
 }
 .footer {
   width: 100%;

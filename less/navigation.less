@@ -16,7 +16,10 @@ nav{
       font-size: 1.7rem; 
       text-decoration: none; 
       color: black; 
-
+      
+      @media @mobile{
+        font-size: 1.6rem; 
+      }
     }
   }
   .navLogo{ 
@@ -24,6 +27,15 @@ nav{
     
     h2{
         font-size: 4.0rem; 
+
+        @media @mobile{
+          font-size: 3.1rem; 
+          padding-bottom: 15px; 
+        }
     }
+  }
+  @media @mobile{
+    flex-direction: column; 
+    padding: 10px 0%; 
   }
 }
