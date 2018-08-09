@@ -1,1 +1,26 @@
 // Navigation Styles here
+
+.flex-centered-spacebetween() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.top {
+    .flex-centered-spacebetween;
+    padding:15px 0;
+    border-bottom: 1px black dotted;
+
+    h1{
+        font-size:4.5rem;
+        
+    }
+    nav{
+        display:flex;
+        justify-content: space-around;
+        width:50%;
+        a {
+            font-size: 1.6rem;
+        }
+    }
+}
