@@ -2,7 +2,7 @@
 .home {
   div.intro {
     padding: 20px 0px 12px;
-    border-bottom: 2px dashed silver;
+    border-bottom: 2px dashed @navigation-border;
   }
 
   .content-section {
@@ -61,6 +61,17 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .flex();
+        border: 1px solid @navigation-border;
+        border-radius: 10px;
+        background-color: @button-bg;
+        color: @main-bg;
+        height: 45px;
+        width: 200px;
+        font-size: 1.8rem;
+      }
     }
   }
 }// home
