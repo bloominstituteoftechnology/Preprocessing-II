@@ -4,12 +4,12 @@
     width:100%;
     margin: 0px auto;
     padding:10px 0px 15px 0;
-   
+    
     .navs{
         display: flex;
         justify-content: space-between;
         align-items: center;
-               
+           
         nav{
             display:flex;
             justify-content: space-around;
@@ -24,4 +24,23 @@
            }
         }    
     }
+
+     @media @mobile{
+         
+            .navs{
+            width:100%;
+            flex-direction:column;
+            justify-content: center;
+             h1{
+                 padding-bottom: 15px;
+             }
+            nav{
+                width:100%;
+                a{
+                    font-size:2rem;
+                    font-weight: normal;
+                }
+            }
+        }
+    }  
 }

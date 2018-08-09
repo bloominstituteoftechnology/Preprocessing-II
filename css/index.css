@@ -1,5 +1,5 @@
 .btn {
-  width: 190px;
+  width: 85%;
   background-color: teal;
   color: white;
   text-align: center;
@@ -182,6 +182,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width:500px) {
+  .container {
+    width: 88%;
+  }
+}
 .navigation-header {
   border-bottom: 2px dashed #C0C0C0;
   width: 100%;
@@ -204,6 +209,23 @@ img {
   font-size: 1.2rem;
   color: #212529;
   font-weight: bold;
+}
+@media (max-width:500px) {
+  .navigation-header .navs {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navigation-header .navs h1 {
+    padding-bottom: 15px;
+  }
+  .navigation-header .navs nav {
+    width: 100%;
+  }
+  .navigation-header .navs nav a {
+    font-size: 2rem;
+    font-weight: normal;
+  }
 }
 .footer {
   width: 100%;
@@ -233,6 +255,17 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -245,12 +278,22 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -262,10 +305,28 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
 .header {
   padding-bottom: 20px;
   border-bottom: 2px dashed #C0C0C0;
 }
 .header h2 {
   padding-top: 20px;
+}
+.header .snoopy {
+  display: none;
+}
+.header:hover .bus {
+  display: none;
+}
+.header:hover .snoopy {
+  display: block;
+  height: 250px;
 }
