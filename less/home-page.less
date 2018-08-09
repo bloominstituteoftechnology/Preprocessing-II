@@ -3,9 +3,11 @@
     .flex-wrap-spaced-between;
     @media @mobile {
       .flex-column;
+    
     }
+
     .img-fun_bus {
-      position: relative;
+      padding-bottom: 10px;
       width: 95%;
       margin: 0 auto;
     }
@@ -13,7 +15,7 @@
       width: 100%;
       margin: 30px 0;
       padding-left: 1%;
-      .border-overflow;
+      .dashed-border;
     }
 
     .text-content {
@@ -41,15 +43,18 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    .border-overflow;
+    .dashed-border;
     @media @mobile {
-      padding-bottom:0;
+      padding-bottom: 0;
       .flex-column-reverse;
     }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-       @media @mobile {
+     h2{
+       padding-top: 20px;
+     }
+      @media @mobile {
         width: 100%;
         padding: 0 5%;
       }
@@ -67,7 +72,10 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+    h2 {
+      padding-top: 20px;
+    }
     @media @mobile {
       width: 90%;
       margin: 0 auto 20px;
@@ -80,21 +88,20 @@
   }
 
   .content-pick {
-    padding-top: 30px;
-.border-overflow;
+    padding-top: 40px;
+    .dashed-border;
     .flex-justify-centered;
     @media @mobile {
       .flex-column;
     }
     .destination {
-      width: 30%;
+      width: 45%;
       margin-bottom: 30px;
 
       @media @mobile {
         width: 100%;
-       
         padding: 10px;
-    .flex-column-centered;
+        .flex-column-centered;
       }
       .btn {
         .button-creator(@eastern-blue, 200px, 35px, 2rem);

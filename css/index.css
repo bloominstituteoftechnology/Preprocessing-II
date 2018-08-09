@@ -1,3 +1,7 @@
+.flex-centered {
+  display: flex;
+  justify-content: center;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -28,7 +32,11 @@
 }
 .border-overflow {
   width: 100%;
+  border: none;
   overflow: visible;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.dashed-border {
   border-bottom: 2px dashed #C0C0C0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -202,16 +210,14 @@ img {
   margin: 0 auto;
 }
 header {
-  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  overflow: visible;
-  border-bottom: 2px dashed #C0C0C0;
   margin-top: 20px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   header {
     display: flex;
     flex-direction: column;
@@ -221,11 +227,10 @@ header {
 header .logo {
   width: 100%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   header .logo {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 }
 header nav {
@@ -236,12 +241,10 @@ header nav {
   width: 50%;
   color: #212529;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   header nav {
     display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: 25px 0;
+    margin-top: 25px;
     width: 80%;
   }
 }
@@ -252,9 +255,27 @@ header nav a {
 header nav:last-child {
   margin-right: 25px;
 }
+.nav-border {
+  display: flex;
+  justify-content: center;
+}
+.nav-border hr {
+  width: 100%;
+  border: none;
+  overflow: visible;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 0 880px;
+}
+@media only screen and (max-width: 880px) {
+  .nav-border hr {
+    border-bottom: 2px dashed #C0C0C0;
+    width: 100%;
+    padding: 0;
+  }
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -268,14 +289,14 @@ header nav:last-child {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   .home .content-section {
     display: flex;
     flex-direction: column;
   }
 }
 .home .content-section .img-fun_bus {
-  position: relative;
+  padding-bottom: 10px;
   width: 95%;
   margin: 0 auto;
 }
@@ -289,7 +310,7 @@ header nav:last-child {
   width: 48%;
   padding-right: 1%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   .home .content-section .text-content {
     width: 100%;
     padding: 0 5%;
@@ -299,7 +320,7 @@ header nav:last-child {
   width: 48%;
   padding-left: 1%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   .home .content-section .img-content {
     width: 100%;
     padding: 0 10%;
@@ -313,7 +334,7 @@ header nav:last-child {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   .home .inverse-content {
     padding-bottom: 0;
     display: flex;
@@ -324,7 +345,10 @@ header nav:last-child {
   padding-left: 1%;
   padding-right: 0;
 }
-@media only screen and (max-width: 500px) {
+.home .inverse-content .text-content h2 {
+  padding-top: 20px;
+}
+@media only screen and (max-width: 880px) {
   .home .inverse-content .text-content {
     width: 100%;
     padding: 0 5%;
@@ -334,7 +358,7 @@ header nav:last-child {
   padding-right: 1%;
   padding-left: 0;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   .home .inverse-content .img-content {
     width: 100%;
     padding: 0 10%;
@@ -342,9 +366,12 @@ header nav:last-child {
 }
 .home .content-destination {
   width: 75%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
 }
-@media only screen and (max-width: 500px) {
+.home .content-destination h2 {
+  padding-top: 20px;
+}
+@media only screen and (max-width: 880px) {
   .home .content-destination {
     width: 90%;
     margin: 0 auto 20px;
@@ -357,23 +384,23 @@ header nav:last-child {
   border-radius: 10px;
 }
 .home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  padding-top: 40px;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   .home .content-pick {
     display: flex;
     flex-direction: column;
   }
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: 45%;
   margin-bottom: 30px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   .home .content-pick .destination {
     width: 100%;
     padding: 10px;
@@ -398,7 +425,7 @@ header nav:last-child {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
   .home .content-pick .destination .btn {
     font-size: 2rem;
     font-weight: 500;

@@ -2,9 +2,9 @@
 
 header {
   width: 100%;
-  height: 100px;
+  margin-bottom: 20px;
   .flex-justify-centered;
-.border-overflow;
+
   margin-top: 20px;
   @media @mobile {
     .flex-only-space-evenly;
@@ -13,7 +13,8 @@ header {
   .logo {
     width: 100%;
     @media @mobile {
-     .flex-justify-centered;
+        display: flex;
+        justify-content: center;
     }
   }
 
@@ -23,8 +24,8 @@ header {
     .flex-spaced-between-width(50%);
     color: @shark;
     @media @mobile {
-    .flex-spaced-between-width(50%);
-      margin: 25px 0;
+     display:flex;
+      margin-top: 25px;
       width: 80%;
     }
     a {
@@ -36,4 +37,20 @@ header {
       margin-right: 25px;
     }
   }
+}
+
+.nav-border
+{
+    .flex-centered;
+    hr {
+        
+        .border-overflow;
+        padding:0 880px;
+        @media @mobile {
+            .dashed-border;
+            width: 100%;
+            padding: 0;
+        }
+
+    }
 }
