@@ -197,11 +197,18 @@ header {
   display: flex;
 }
 header h2 {
+  font-size: 4rem;
   width: 50%;
   text-align: center;
-  padding: 20px 20px 20px 50px;
+  padding: 20px 15% 20px 0%;
   margin-right: 5px;
-  padding-left: 8%;
+}
+.home .top-content {
+  border-bottom: 2px dashed silver;
+  margin: 20px 0px 20px 0px;
+}
+.home .top-content p {
+  padding-bottom: 2%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -248,4 +255,13 @@ header h2 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px;
+  color: white;
+  background-color: #17A2B8;
 }
