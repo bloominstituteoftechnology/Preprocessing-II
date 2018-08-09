@@ -1,1 +1,24 @@
 // Mixins in here
+
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.link-font(@size) {
+    font-size: @size;
+    color: @font-color;
+    text-decoration: none;
+}
+
+.btn-design(@color, @wd, @ht, @font, @radius) {
+    .flex(row, center, center);
+      background-color: @color;
+      border-radius: @radius;
+      width: @wd;
+      height: @ht;
+      color: white;
+      font-size: @font;
+}

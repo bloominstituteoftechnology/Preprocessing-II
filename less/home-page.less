@@ -1,13 +1,25 @@
 .home {
 
+  header {
+    border-bottom: 2px dashed @navigation-border;
+    margin-bottom: 15px;
+
+    .headerImg {
+      margin-bottom: 15px;
+    }
+
+    .headerPara {
+      margin-bottom: 10px;
+    }
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,6 +68,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+
+    .btn {
+      .btn-design(@button-bg, 85%, 45px, 1.8rem, 13px);
     }
   }
 }// home

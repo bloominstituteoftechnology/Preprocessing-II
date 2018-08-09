@@ -1,1 +1,20 @@
 // Navigation Styles here
+
+.navBarContainer {
+    .flex(row, space-between, center);
+    padding: 20px 0px;
+    border-bottom: 2px dashed @navigation-border;
+
+    .navTitle {
+        font-size: 4rem;
+    }
+
+    nav {
+        .flex(row, space-around, center);
+        width: 45%;
+    }
+
+    a {
+        .link-font(1.6rem);
+    }
+}
