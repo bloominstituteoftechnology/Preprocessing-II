@@ -1,1 +1,25 @@
 // Mixins in here
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.button-creator(@bordercolor: #19bc8b, @width: 100px, @height: 40px, @mt: 10px) {
+    background: none;
+    border: 2px solid @bordercolor;
+    border-radius: 5px;
+    font-family: Helvetica, Arial, system-ui, Sans-Serif;
+    color: @bordercolor;
+    line-height: 1;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    width: @width;
+    height: @height;
+    .flex-centered();
+    box-shadow: 0.3rem 0.3rem 0 0 @bordercolor, inset 0.3rem 0.3rem 0 0 @bordercolor;
+    }
+
+.btn {
+    .button-creator();
+}
