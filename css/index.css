@@ -172,7 +172,7 @@ img {
   display: flex;
   max-width: 100%;
   height: 80px;
-  border-bottom: 3px dotted #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .header .logo {
   display: flex;
@@ -204,6 +204,10 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .welcome-text {
+  padding: 20px 0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
