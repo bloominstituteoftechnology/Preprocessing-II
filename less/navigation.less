@@ -1,18 +1,43 @@
 // Navigation Styles here
-header {
+// header {
+//     width: 100%;
+//     display:flex;
+//     flex-direction: column;
+
+//     nav {
+//         .flex(row, space-between, center);
+//         padding: 25px 0px;
+//         border-bottom: 2px dashed silver;
+//     }
+
+//     div.top {
+//         max-width: 800px;
+
+//         div.logo {
+//             font-family: 'Indie Flower', cursive;
+//             font-size: 4rem;
+//         }
+
+//         a {
+//             font-size: 1.6rem;
+//             text-decoration: none;
+//             color: black;
+//             padding: 0px 15px;
+//         }
+//     }
+// }
+
+header.navbar {
     width: 100%;
-    display:flex;
+    .flex( column );
     flex-direction: column;
+    border-bottom: 2px dashed silver;
 
     nav {
-        .flex(row, space-between, center);
+        max-width: 800px;
+        width: 100%;
+        .flex( row, space-between, center );
         padding: 25px 0px;
-        border-bottom: 2px dashed silver;
-
-        div.logo {
-            font-family: 'Indie Flower', cursive;
-            font-size: 4rem;
-        }
 
         a {
             font-size: 1.6rem;
@@ -21,4 +46,4 @@ header {
             padding: 0px 15px;
         }
     }
-}
+} // End header
