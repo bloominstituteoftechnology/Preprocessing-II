@@ -1,1 +1,25 @@
 // Navigation Styles here
+.navigation() {
+    padding-right: 30px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (@tablet) {
+        width: 60%;
+    }
+
+    @media (@mobile) {
+        width: 100%;
+        padding-right: 0px;
+        margin-top: 17px;
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: @font-color;
+        font-weight: 600;
+    }
+}
