@@ -1,1 +1,21 @@
 // Mixins in here
+// Margin
+.boxmargin() {
+    margin: 10px 0;
+}
+
+.flex-row() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-creator() {
+    .flex-row();
+    font-size: 1.6rem;
+    width: 85%;
+    height: 40px;
+    background-color: @button-color;
+    color: @white;
+    border-radius: 10px;
+}
