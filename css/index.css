@@ -10,6 +10,21 @@
   display: flex;
   justify-content: space-between;
 }
+.flex-wrap-spaced-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flex-only-space-evenly {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.border-overflow {
+  width: 100%;
+  overflow: visible;
+  border-bottom: 2px dashed #C0C0C0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -181,10 +196,14 @@ img {
   margin: 0 auto;
 }
 header {
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  width: 100%;
+  overflow: visible;
+  border-bottom: 2px dashed #C0C0C0;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 500px) {
   header {
@@ -194,22 +213,35 @@ header {
   }
 }
 header .logo {
-  width: 48%;
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  header .logo {
+    display: flex;
+    justify-content: center;
+  }
 }
 header nav {
+  width: 100%;
   font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
   width: 50%;
+  color: #212529;
 }
 @media only screen and (max-width: 500px) {
   header nav {
-    margin-top: 25px;
-    width: 100%;
+    display: flex;
+    margin: 25px 0;
+    width: 80%;
   }
 }
 header nav a {
   text-decoration: none;
+  color: #212529;
+}
+header nav:last-child {
+  margin-right: 25px;
 }
 .footer {
   width: 100%;
@@ -223,7 +255,6 @@ header nav a {
   padding: 20px;
 }
 .home .content-section {
-  margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -235,7 +266,9 @@ header nav a {
   }
 }
 .home .content-section .img-fun_bus {
-  width: 100%;
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
 }
 .home .content-section .text-welcome {
   width: 100%;
@@ -260,7 +293,8 @@ header nav a {
 @media only screen and (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
-    padding: 0 5%;
+    padding: 0 10%;
+    margin-bottom: 25px;
   }
 }
 .home .content-section .img-content img {
@@ -272,6 +306,7 @@ header nav a {
 }
 @media only screen and (max-width: 500px) {
   .home .inverse-content {
+    padding-bottom: 0;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -280,6 +315,12 @@ header nav a {
   padding-left: 1%;
   padding-right: 0;
 }
+@media only screen and (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
@@ -287,7 +328,7 @@ header nav a {
 @media only screen and (max-width: 500px) {
   .home .inverse-content .img-content {
     width: 100%;
-    padding: 0 5%;
+    padding: 0 10%;
   }
 }
 .home .content-destination {
@@ -300,6 +341,7 @@ header nav a {
     margin: 0 auto 20px;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
   }
 }
 .home .content-destination img {
@@ -309,7 +351,8 @@ header nav a {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 500px) {
   .home .content-pick {
@@ -325,40 +368,40 @@ header nav a {
   .home .content-pick .destination {
     width: 100%;
     margin: 0 20px;
-    padding: 30px ;
+    padding: 30px;
     justify-content: center;
     align-items: center;
   }
 }
 .home .content-pick .destination .btn {
-  width: 150px;
-  height: 25px;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 200px;
+  height: 35px;
   border-radius: 10px;
   background-color: #17A2B8;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  padding: 15px 0;
-  margin: 0 25px;
-  font-size: 1.6rem;
 }
 @media only screen and (max-width: 500px) {
   .home .content-pick .destination .btn {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 500;
     width: 350px;
-    height: 50px;
+    height: 40px;
     border-radius: 10px;
     background-color: #17A2B8;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 15px 0;
-    margin: 0 25px;
+    padding: 20px 0;
   }
 }

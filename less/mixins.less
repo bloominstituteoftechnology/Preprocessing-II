@@ -16,7 +16,18 @@
 }
 .flex-only-space-between {
   display: flex;
+  justify-content: space-between;
+
+}
+.flex-wrap-spaced-between{
+     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+.flex-only-space-evenly {
+       display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
 }
 .flex-spaced-between-width (@width){
    display: flex;
@@ -28,14 +39,23 @@
 .button-creator(@bgColor: teal, @width:150px, @height:25px, @font-btn-size:1.6rem) 
 {
     font-size:@font-btn-size;
+      font-weight: 500;
       width:@width;
       height: @height;
       border-radius: 10px;
       background-color: @bgColor;
       text-align: center;
-  color: white;
+  color:@white;
  .flex-justify-centered();
   cursor: pointer;
-  padding: 15px 0;
-  margin:0 25px;
+  padding: 20px 0;
+
+
 }
+
+//Border Overflow
+.border-overflow {
+  width:100%;
+  overflow:visible;
+  border-bottom: 2px dashed @navigation-border;
+  }

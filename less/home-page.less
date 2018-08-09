@@ -1,31 +1,26 @@
 .home {
-  
-
   .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  @media @mobile {
-    .flex-column
-    
-  }
+    .flex-wrap-spaced-between;
+    @media @mobile {
+      .flex-column;
+    }
     .img-fun_bus {
-      width: 100%;
+      position: relative;
+      width: 95%;
+      margin: 0 auto;
     }
     .text-welcome {
-      width:100%;
-      margin:30px 0;
+      width: 100%;
+      margin: 30px 0;
       padding-left: 1%;
       border-bottom: 2px dashed @navigation-border;
-
     }
-    
+
     .text-content {
       width: 48%;
       padding-right: 1%;
       @media @mobile {
-        width:100%;
+        width: 100%;
         padding: 0 5%;
       }
     }
@@ -34,8 +29,9 @@
       width: 48%;
       padding-left: 1%;
       @media @mobile {
-        width:100%;
-        padding: 0 5%;
+        width: 100%;
+        padding: 0 10%;
+        margin-bottom: 25px;
       }
       img {
         border-radius: 10px;
@@ -46,18 +42,23 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-     @media @mobile{
-       .flex-column-reverse
-     }
+    @media @mobile {
+      padding-bottom:0;
+      .flex-column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+       @media @mobile {
+        width: 100%;
+        padding: 0 5%;
+      }
     }
 
     .img-content {
       @media @mobile {
-        width:100%;
-        padding: 0 5%;
+        width: 100%;
+        padding: 0 10%;
       }
       padding-right: 1%;
       padding-left: 0;
@@ -67,13 +68,13 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
- @media @mobile {
-        width: 90%;
-        margin: 0 auto 20px;
-       .flex-column;
-      }
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto 20px;
+      .flex-column;
+      padding-top: 20px;
+    }
     img {
-      
       border-radius: 10px;
     }
   }
@@ -81,28 +82,29 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-  .flex-only-space-between;
-   @media @mobile {
-     .flex-column;
-   }
+    .flex-justify-centered;
+    @media @mobile {
+      .flex-column;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
       @media @mobile {
         width: 100%;
         margin: 0 20px;
-        padding: 30px ;
-        justify-content:center;
+        padding: 30px;
+        justify-content: center;
         align-items: center;
-        
       }
       .btn {
-        .button-creator(@eastern-blue);
-        font-size: 1.6rem;
+        .button-creator(@eastern-blue, 200px, 35px, 2rem);
+
+        .flex-justify-centered;
         @media @mobile {
-          .button-creator(@eastern-blue, 350px, 50px, 1.8rem)
+          .button-creator(@eastern-blue, 350px, 40px, 2rem);
         }
       }
     }
   }
-}// home
+} // home
