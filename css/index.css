@@ -1,3 +1,17 @@
+.btn {
+  width: 190px;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  padding: 10px 0px 10px 0px;
+}
+.btn:hover {
+  background-color: white;
+  border: 1px solid teal;
+  color: teal;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -247,4 +261,11 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.header {
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.header h2 {
+  padding-top: 20px;
 }

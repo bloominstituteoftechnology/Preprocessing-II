@@ -1,1 +1,18 @@
 // Mixins in here
+.button-style(@width, @bgcolor,@color,@bradius,@padding){
+    width: @width;
+    background-color: @bgcolor;
+    color:@color;
+    text-align: center;
+    border-radius: @bradius;
+    font-size:1.6rem;
+    padding:@padding 0px @padding 0px;
+    &:hover{
+        background-color: white;
+        border:1px solid teal;
+        color:teal;
+    }
+}
+.btn{
+    .button-style(190px,teal,white,12px,10px)
+}
