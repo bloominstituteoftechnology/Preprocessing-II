@@ -1,19 +1,51 @@
 // Navigation Styles here
-.navigation-bar{
+
+.space-around-centered{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.space-between-centered{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-bar {
     height: 87px;
     width: 100%;
     background-color: white;
     border-bottom: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
+    .space-around-centered;
 
-    .navigation {
+    #nav-centered {
         height: 87px;
+        width: 80%;
+        flex-wrap: nowrap;
+        .space-between-centered;
 
+        .navigation {
+            height: 35px;
+            width: 36%;
+            text-decoration: none;
+            .space-between-centered;
+
+            .button{
+                width: auto;
+                height: 20px;
+                color: black;
+                text-decoration: none;
+                font-size: 1.7rem;
+                .space-around-centered;
+            }
+        }
     }
 }
 
-.logo-font{}
+    .logo-font {
+        .space-around-centered;
+        height: 35px;
+        width: 20%;
+    }
 
