@@ -13,4 +13,21 @@
 .margin-tb(@margin-top: 30px,@margin-bottom: 30px){
     margin-top: @margin-top;
     margin-bottom: @margin-bottom;
-  }
+}
+
+.button-creator(@bgColor:@eastern-blue,@text-color:@white){
+    background-color:@bgColor;
+    color:@text-color;
+    border-radius: 10px;
+    width: 75%;
+    height: 40px;
+    .flex();
+    font-size: 2rem;
+    border: 1px solid @bgColor;
+
+    &:hover{
+        background-color:@text-color;
+        color: @bgColor;
+        border: 1px solid @shark;
+    }
+}
