@@ -7,14 +7,23 @@ header.navbar {
     nav {
         max-width: 800px;
         width: 100%;
-        .flex( row, space-between, center );
         padding: 25px 0px;
+        .flex( row, space-between, center );
+
+        @media @mobile {
+            padding: 15px 0px;
+            flex-direction: column;
+        }
 
         a {
             font-size: 1.6rem;
             text-decoration: none;
             color: @font-color;
             padding: 0px 15px;
+
+            @media @mobile {
+                padding: 30px;
+            }
         }
     }
 } // End header

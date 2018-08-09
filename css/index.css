@@ -146,6 +146,12 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width:500px) {
+  h1 {
+    font-size: 3.2rem;
+    padding-bottom: 15px;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -179,17 +185,28 @@ header.navbar {
 header.navbar nav {
   max-width: 800px;
   width: 100%;
+  padding: 25px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0px;
+}
+@media (max-width:500px) {
+  header.navbar nav {
+    padding: 15px 0px;
+    flex-direction: column;
+  }
 }
 header.navbar nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #212529;
   padding: 0px 15px;
+}
+@media (max-width:500px) {
+  header.navbar nav a {
+    padding: 30px;
+  }
 }
 .footer {
   width: 100%;
@@ -201,6 +218,12 @@ header.navbar nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width:500px) {
+  .home {
+    width: 90%;
+    height: auto;
+  }
 }
 .home div.intro {
   padding: 20px 0px 12px;
