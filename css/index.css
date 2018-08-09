@@ -168,16 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 10px;
-  border-bottom: 2px dashed silver;
-}
-.header .nav a {
+.nav a {
   padding: 10px;
   text-decoration: none;
   color: black;
@@ -240,4 +231,30 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  border-bottom: 2px dashed silver;
+  padding: 20px;
+}
+.header .title {
+  border-bottom: 2px dashed silver;
+}
+.header .nav {
+  border-bottom: 2px dashed silver;
+}
+.header img {
+  margin: 5px 0;
+}
+.header p {
+  padding: 10px 0;
+}
+.header h2 {
+  margin-top: 20px;
 }
