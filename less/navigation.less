@@ -1,16 +1,31 @@
 // Navigation Styles here
-.header-container-styling {
-    color: @font-color ;
-    width: @width ;
-    max-width: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .nav-flex-styling {
     .nav-flex-mixin;
     width: @width ;
     max-width: 400px;
     font-size: @font-size ;
+    font-family: @roboto-font ;
+    a {
+        text-decoration: none;
+        &:link {
+            color: @font-color ;
+        }
+        &:visited {
+            color: @font-color ;
+        }
+    }
+}
+
+.fun-bus-styling {
+    font-family: @indie-flower ;
+    font-size: (1.6rem + 1.4rem);
+}
+
+.fun-bus-cta {
+    border-bottom: 2px dashed gray;
+    .fun-bus-phrase {
+        font-family: @indie-flower ;
+        font-size: (1.6rem + 1.4rem);
+    }
 }

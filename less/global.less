@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 // * {
 //   border: 1px solid black !important;
 // }
@@ -8,11 +9,16 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Indie Flower', cursive;
 }
 
@@ -45,4 +51,15 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.destination {
+  div {
+    .button-style(rgb(20, 97, 93), white, 1px solid transparent);
+    border-radius: @border_radius ; //@border_radius is a *variable*.
+    padding: 10px 10px 10px 10px;
+    text-align: @center ; // @center is a *variable*.
+    width: @width ; //@width is a *variable*.
+    max-width: 150px;
+  }
 }

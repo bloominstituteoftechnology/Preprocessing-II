@@ -1,6 +1,13 @@
 // Mixins in here
 .nav-flex-mixin() {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
+}
+
+.button-style(@background; @color; @border; ) {
+
+    background: @background ;
+    color: @color ;
+    border: @border ;
 }
