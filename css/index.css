@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
 }
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .flex-column-reverse {
   display: flex;
   flex-direction: column-reverse;
@@ -370,8 +376,9 @@ header nav:last-child {
 @media only screen and (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
-    margin: 0 20px;
-    padding: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
