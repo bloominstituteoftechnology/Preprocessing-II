@@ -39,9 +39,15 @@
 
       .text-content{
         width: 100%;
+        padding: 0px;
       }
 
       .img-content{
+        width: 100%;
+        padding: 0px;
+      }
+
+      img{
         width: 100%;
       }
     }
@@ -73,6 +79,11 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile{
+      width: 100%;
+      border-bottom: 2px dashed @navigation-border;
+    }
   }
 
   .content-pick {
@@ -81,6 +92,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 
     .destination {
       width: 27%;
@@ -93,7 +105,9 @@
     }
 
     @media @mobile{
+      width: 80%;
       flex-direction: column;
+      border: none;
 
       .destination{
         width: 100%;
