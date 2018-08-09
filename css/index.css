@@ -180,11 +180,28 @@ img {
 .navigation h2 {
   margin: 20px 0 0 0;
 }
+@media (max-width: 500px) {
+  .navigation h2 {
+    align-self: center;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+    height: 120px;
+  }
+}
 .navigation nav {
   width: 45%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    width: 100%;
+    padding: 20px 0 20px 0;
+  }
 }
 .navigation nav a {
   text-decoration: none;

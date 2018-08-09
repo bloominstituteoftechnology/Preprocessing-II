@@ -1,5 +1,6 @@
 // Navigation Styles here
 
+
 .navigation {
     // border: 1px solid blue;
     border-bottom: 2px dashed lightgray;
@@ -12,6 +13,15 @@
 
     h2 {
         margin: 20px 0 0 0;
+        @media @phone {
+            align-self: center;
+            // border: 1px solid aqua;
+        }
+    } //h2
+
+    @media @phone {
+        flex-direction: column;
+        height: 120px;
     }
 
     nav {
@@ -20,6 +30,11 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @media @phone {
+            width: 100%;
+            padding: 20px 0 20px 0;
+        }
 
         a {
             text-decoration: none;
