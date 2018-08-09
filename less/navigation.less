@@ -5,16 +5,31 @@
     align-items: center;
     padding: 15px 1.8% 15px 0;
     border-bottom: 1px dashed @shark;
-
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.nav-div {
-    a {
-        text-decoration: none;
-        color: @shark;
-        padding: 15px;
-        &:hover {
-            font-weight: bold;
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 15px;
+
+    .nav-div {
+
+        a {
+            text-decoration: none;
+            color: @shark;
+            padding: 15px;
+            &:hover {
+                font-weight: bold;
+            }
         }
     }
 }
