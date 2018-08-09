@@ -159,6 +159,9 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+a {
+  font-size: 1.6rem;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -167,6 +170,30 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 2px dashed silver;
+}
+header nav {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  color: #212529;
 }
 .footer {
   width: 100%;
