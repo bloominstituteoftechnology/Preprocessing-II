@@ -173,12 +173,14 @@ img {
   justify-content: space-around;
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 .main-header nav a {
   text-decoration: none;
   color: #212529;
-  margin: 15px;
+  margin: 0 15px;
   font-size: 1.6rem;
 }
 @media (max-width:500px) {
@@ -200,7 +202,8 @@ img {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .home .homepage-header-img {
   margin-top: 0;
