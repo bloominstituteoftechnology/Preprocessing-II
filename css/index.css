@@ -254,3 +254,14 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.container.home .content-pick .btn {
+  width: 80%;
+  height: 50px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  color: white;
+  background: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

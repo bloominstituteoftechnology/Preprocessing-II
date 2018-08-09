@@ -1,1 +1,17 @@
 // Mixins in here
+
+
+.flex-center(@di: flex, @jc: center, @ai: center) {
+    display: @di;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.button-creator(@width: 80%, @height: 50px, @button-color: teal) {
+    width: @width;
+    height: @height;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    color: white;
+    background: @button-color;
+}
