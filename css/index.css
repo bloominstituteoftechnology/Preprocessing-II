@@ -168,6 +168,32 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header {
+  display: flex;
+  max-width: 100%;
+  height: 80px;
+  border-bottom: 3px dotted #C0C0C0;
+}
+.header .logo {
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+.header .nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.8rem;
+}
+.header .nav a {
+  text-decoration: none;
+  color: black;
+}
+.header .nav a .nav-not-last {
+  padding-right: 100px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
