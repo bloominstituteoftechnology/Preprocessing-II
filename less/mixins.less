@@ -14,4 +14,21 @@
     border-radius: 10px;
     color: white;
     background: @button-color;
+
+    &:hover {
+        background: white;
+        color: @button-color;
+        border: 1px solid @button-color;
+    }
+}
+
+.nav-a-style (@color: black) {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: @color;
+
+    &:hover {
+        font-size: 2rem;
+        color: teal;
+    }
 }

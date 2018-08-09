@@ -235,6 +235,10 @@ img {
   font-size: 1.4rem;
   color: black;
 }
+.header nav a:hover {
+  font-size: 2rem;
+  color: teal;
+}
 .container.home .content-pick .btn {
   width: 80%;
   height: 50px;
@@ -245,6 +249,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container.home .content-pick .btn:hover {
+  background: white;
+  color: teal;
+  border: 1px solid teal;
 }
 .home .main-header {
   border-bottom: 2px dashed lightgray;
