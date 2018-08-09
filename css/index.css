@@ -211,9 +211,16 @@ img {
 .home header {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: dashed 2px #C0C0C0;
+  padding-bottom: 1%;
 }
 .home header .header-content {
-  border-top: dashed 2px #C0C0C0;
+  padding-top: 3%;
+}
+.home header .header-content h1 {
+  padding-bottom: 1%;
 }
 .home .content-section {
   margin: 30px 0;

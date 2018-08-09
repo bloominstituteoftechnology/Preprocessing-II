@@ -1,80 +1,72 @@
 .home {
-
-  
-header{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-    
-    .header-content {
-      border-top: @dashed-border;
-      
-    }
-}
-
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
-    }
-  }
-
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-      
-    .btn {
-      display: flex;
-      .button-creator(@teal; @br: 10px; @wt: 80%; @ht: 17%; @fc:white;);
-      align-self: center;
-      }
-    }
-  }
-}// home
+	header {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		border-bottom: @dashed-border;
+		padding-bottom: 1%;
+		.header-content {
+			padding-top: 3%;
+			h1 {
+				padding-bottom: 1%;
+			}
+		}
+	}
+	.content-section {
+		margin: 30px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.text-content {
+			width: 48%;
+			padding-right: 1%;
+		}
+		.img-content {
+			width: 48%;
+			padding-left: 1%;
+			img {
+				border-radius: 10px;
+			}
+		}
+	}
+	.inverse-content {
+		padding-bottom: 30px;
+		border-bottom: 2px dashed @navigation-border;
+		.text-content {
+			padding-left: 1%;
+			padding-right: 0;
+		}
+		.img-content {
+			padding-right: 1%;
+			padding-left: 0;
+		}
+	}
+	.content-destination {
+		width: 75%;
+		margin: 0 auto 30px;
+		img {
+			border-radius: 10px;
+		}
+	}
+	.content-pick {
+		padding-top: 30px;
+		border-top: 2px dashed @navigation-border;
+		display: flex;
+		justify-content: space-between;
+		.destination {
+			width: 30%;
+			margin-bottom: 30px;
+			.btn {
+				display: flex;
+				.button-creator(@teal;
+				@br: 10px;
+				@wt: 80%;
+				@ht: 17%;
+				@fc: white;
+				);
+				align-self: center;
+			}
+		}
+	}
+} // home

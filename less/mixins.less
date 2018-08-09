@@ -1,25 +1,23 @@
 // Mixins in here
-
 .nav-link-creator() {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
 }
-
-
-
-.button-creator(@bgc:none; @wt:none; @ht:none;@br:none;@fc:black;){
-    display: flex;
-    justify-content:center;
-    height: @ht;
-    width: @wt;
-    border:@black-solid-border;
-    border-radius:@br;
-    align-items: center;
-    font-size: 1.7rem;
-    background-color: @bgc;
-    color: @fc;
-    
-    
+.button-creator(@bgc: none;
+@wt: none;
+@ht: none;
+@br: none;
+@fc: black;
+) {
+	display: flex;
+	justify-content: center;
+	height: @ht;
+	width: @wt;
+	border: @black-solid-border;
+	border-radius: @br;
+	align-items: center;
+	font-size: 1.7rem;
+	background-color: @bgc;
+	color: @fc;
 }
-
