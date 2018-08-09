@@ -221,7 +221,7 @@ header {
   align-items: center;
   margin-top: 20px;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   header {
     display: flex;
     flex-direction: column;
@@ -231,7 +231,7 @@ header {
 header .logo {
   width: 100%;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   header .logo {
     display: flex;
     justify-content: center;
@@ -245,7 +245,7 @@ header nav {
   width: 50%;
   color: #212529;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   header nav {
     display: flex;
     margin-top: 25px;
@@ -274,7 +274,7 @@ header nav:last-child {
   .nav-border hr {
     border-bottom: 2px dashed #C0C0C0;
     width: 100%;
-    padding: 0;
+    padding: 0 420px;
   }
 }
 .footer {
@@ -293,7 +293,7 @@ header nav:last-child {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .content-section {
     display: flex;
     flex-direction: column;
@@ -314,7 +314,7 @@ header nav:last-child {
   width: 48%;
   padding-right: 1%;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
     padding: 0 5%;
@@ -324,7 +324,7 @@ header nav:last-child {
   width: 48%;
   padding-left: 1%;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
     padding: 0 10%;
@@ -339,7 +339,7 @@ header nav:last-child {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .inverse-content {
     padding-bottom: 0;
     display: flex;
@@ -353,7 +353,7 @@ header nav:last-child {
 .home .inverse-content .text-content h2 {
   padding-top: 20px;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .inverse-content .text-content {
     width: 100%;
     padding: 0 5%;
@@ -363,7 +363,7 @@ header nav:last-child {
   padding-right: 1%;
   padding-left: 0;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .inverse-content .img-content {
     width: 100%;
     padding: 0 10%;
@@ -376,7 +376,7 @@ header nav:last-child {
 .home .content-destination h2 {
   padding-top: 20px;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .content-destination {
     width: 90%;
     margin: 0 auto 20px;
@@ -395,7 +395,7 @@ header nav:last-child {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .content-pick {
     display: flex;
     flex-direction: column;
@@ -405,7 +405,7 @@ header nav:last-child {
   width: 45%;
   margin-bottom: 30px;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
     padding: 10px;
@@ -421,7 +421,7 @@ header nav:last-child {
   width: 200px;
   height: 35px;
   border-radius: 10px;
-  background-color: #17A2B8;
+  background-color: teal;
   text-align: center;
   color: #FFFFFF;
   cursor: pointer;
@@ -430,7 +430,7 @@ header nav:last-child {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 500px) {
   .home .content-pick .destination .btn {
     font-size: 2rem;
     font-weight: 500;
