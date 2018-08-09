@@ -4,11 +4,26 @@ header {
   padding-bottom: 25px;
   border-bottom: 2px dashed @navigation-border;
 
+  @media (@mobile) {
+    padding-top: 17px;
+    padding-bottom: 8px;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (@mobile) {
+      flex-direction: column;
+    }
+
+    h1 {
+      @media (@mobile) {
+        font-size: 3rem;
+      }
+    }
   
     nav {
       .navigation();

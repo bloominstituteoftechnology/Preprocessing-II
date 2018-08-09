@@ -185,20 +185,40 @@ header {
   padding-bottom: 25px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width:520px) {
+  header {
+    padding-top: 17px;
+    padding-bottom: 8px;
+  }
+}
 header .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width:520px) {
+  header .header {
+    flex-direction: column;
+  }
+}
+@media (max-width:520px) {
+  header .header h1 {
+    font-size: 3rem;
+  }
+}
 header .header nav {
   padding-right: 30px;
   width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-header .header nav h1 {
-  font-weight: bold;
+@media (max-width:520px) {
+  header .header nav {
+    width: 90%;
+    padding-right: 0px;
+    margin-top: 17px;
+  }
 }
 header .header nav a {
   font-size: 1.6rem;

@@ -3,10 +3,12 @@
     padding-right: 30px;
     width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
-    h1 {
-        font-weight: bold;
+    @media (@mobile) {
+        width: 90%;
+        padding-right: 0px;
+        margin-top: 17px;
     }
 
     a {
