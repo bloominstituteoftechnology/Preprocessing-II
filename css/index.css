@@ -168,7 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   .container {
     width: 90%;
   }
@@ -336,6 +336,9 @@ header .header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media (max-width:500px) {
   .home .content-pick .destination {
