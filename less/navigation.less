@@ -6,6 +6,8 @@
 	border-bottom: @dashed-border;
 	align-self: center;
 	height: 100px;
+	
+
 	.nav-container {
 		display: flex;
 		flex-direction: row;
@@ -13,6 +15,10 @@
 		justify-content: space-between;
 		width: 100%;
 		max-width: 800px;
+			@media @mobile {
+	     flex-direction: column;
+	     justify-content: space-evenly;
+	}
 	}
 	.navigation {
 		display: flex;
@@ -23,5 +29,10 @@
 		li {
 			.nav-link-creator();
 		}
+		@media @mobile {
+	     
+	     justify-content: space-around;
+	     width: 100%;
+	}
 	}
 }

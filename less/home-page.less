@@ -1,4 +1,7 @@
 .home {
+  @media @mobile {
+    width: 95%;
+  }
 	header {
 		display: flex;
 		justify-content: center;
@@ -12,23 +15,49 @@
 				padding-bottom: 1%;
 			}
 		}
+		
+
+		
 	}
 	.content-section {
 		margin: 30px 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		@media mobile {
+		  flex-wrap: nowrap;
+		  
+		}
+		
+		  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+    
+  };
 		.text-content {
 			width: 48%;
 			padding-right: 1%;
+			@media @mobile{
+			  width: 100%;
+			}
+
 		}
 		.img-content {
 			width: 48%;
 			padding-left: 1%;
+			@media @mobile {
+			  width: 100%;
+			}
+
 			img {
 				border-radius: 10px;
 			}
+			
+			
+			
+
 		}
+
 	}
 	.inverse-content {
 		padding-bottom: 30px;
@@ -41,6 +70,10 @@
 			padding-right: 1%;
 			padding-left: 0;
 		}
+		  @media @mobile {
+    flex-direction: column-reverse;
+    
+  };
 	}
 	.content-destination {
 		width: 75%;
@@ -48,25 +81,53 @@
 		img {
 			border-radius: 10px;
 		}
+		
+		@media @mobile {
+		  width: 100%;
+		}
 	}
 	.content-pick {
 		padding-top: 30px;
 		border-top: 2px dashed @navigation-border;
 		display: flex;
 		justify-content: space-between;
+		@media @mobile {
+		  flex-direction: column;
+		  align-items: center;
+		}
 		.destination {
+		  
+		  flex-direction: column;
 			width: 30%;
-			margin-bottom: 30px;
+			margin-bottom: 8%;
+			align-items: flex-start;
+			
+		@media @mobile {
+		  
+		  width: 80%;
+}			
+
 			.btn {
 				display: flex;
+				@media @mobile {
+				  height: 25%;
+				  width: 100%;
+				  padding: 3%;
+				}				
 				.button-creator(@teal;
 				@br: 10px;
-				@wt: 80%;
-				@ht: 17%;
+				@wt: 95%;
+				@ht: 18%;
 				@fc: white;
 				);
-				align-self: center;
+				
+				
+
+				
+
 			}
+			
+
 		}
 	}
 } // home
