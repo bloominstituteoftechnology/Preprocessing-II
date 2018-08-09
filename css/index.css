@@ -202,6 +202,17 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.container.home .content-pick .btn {
+  width: 80%;
+  height: 50px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  color: white;
+  background: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home .main-header {
   border-bottom: 2px dashed lightgray;
 }
@@ -253,15 +264,4 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-.container.home .content-pick .btn {
-  width: 80%;
-  height: 50px;
-  font-size: 1.6rem;
-  border-radius: 10px;
-  color: white;
-  background: teal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
