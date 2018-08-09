@@ -6,6 +6,14 @@
     align-items: center;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction:column;
+}
+.flex-column-reverse {
+    display: flex;
+     flex-direction: column-reverse;
+}
 .flex-only-space-between {
   display: flex;
     justify-content: space-between;
@@ -17,9 +25,9 @@
 }
 
 //Button Creator
-.button-creator(@bgColor: teal, @width:150px, @height:25px) 
+.button-creator(@bgColor: teal, @width:150px, @height:25px, @font-btn-size:1.6rem) 
 {
-    font-size:@font-size;
+    font-size:@font-btn-size;
       width:@width;
       height: @height;
       border-radius: 10px;
