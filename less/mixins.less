@@ -1,67 +1,63 @@
 // Mixins in here
-//Flex Mixins 
+//Flex Mixins
 .flex-justify-centered () {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-column {
-    display: flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 .flex-column-centered {
-       display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .flex-column-reverse {
-    display: flex;
-     flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .flex-only-space-between {
   display: flex;
   justify-content: space-between;
-
 }
-.flex-wrap-spaced-between{
-     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.flex-wrap-spaced-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .flex-only-space-evenly {
-       display:flex;
-    flex-direction:column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.flex-spaced-between-width (@width){
-   display: flex;
-    justify-content: space-between;
-    width: @width;
+.flex-spaced-between-width (@width) {
+  display: flex;
+  justify-content: space-between;
+  width: @width;
 }
 
 //Button Creator
-.button-creator(@bgColor: teal, @width:150px, @height:25px, @font-btn-size:1.6rem) 
-{
-    font-size:@font-btn-size;
-      font-weight: 500;
-      width:@width;
-      height: @height;
-      border-radius: 10px;
-      background-color: @bgColor;
-      text-align: center;
-  color:@white;
- .flex-justify-centered();
+.button-creator(@bgColor: teal, @width:150px, @height:25px, @font-btn-size:1.6rem) {
+  font-size: @font-btn-size;
+  font-weight: 500;
+  width: @width;
+  height: @height;
+  border-radius: 10px;
+  background-color: @bgColor;
+  text-align: center;
+  color: @white;
+  .flex-justify-centered();
   cursor: pointer;
   padding: 20px 0;
-
-
 }
 
 //Border Overflow
 .border-overflow {
-  width:100%;
-  overflow:visible;
+  width: 100%;
+  overflow: visible;
   border-bottom: 2px dashed @navigation-border;
-  }
+}
