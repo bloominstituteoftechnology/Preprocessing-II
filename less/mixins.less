@@ -1,1 +1,12 @@
 // Mixins in here
+.button(@width, @height, @border-radius, @text-color, @bg-color) {
+	display: flex;
+     flex-direction: column;
+	justify-content: center;
+	align-items: center;
+     width: @width;
+     height: @height;
+     border-radius: @border-radius;
+     color: @text-color;
+     background-color: @bg-color;
+}

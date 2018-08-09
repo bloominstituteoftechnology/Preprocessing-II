@@ -252,3 +252,15 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  font-size: 1.6rem;
+}
