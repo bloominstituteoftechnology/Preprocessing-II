@@ -1,7 +1,7 @@
 .home {
-  @media @mobile {
-    width: 95%;
-  }
+	@media @mobile {
+		width: 95%;
+	}
 	header {
 		display: flex;
 		justify-content: center;
@@ -15,9 +15,6 @@
 				padding-bottom: 1%;
 			}
 		}
-		
-
-		
 	}
 	.content-section {
 		margin: 30px 0;
@@ -25,39 +22,30 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		@media mobile {
-		  flex-wrap: nowrap;
-		  
+			flex-wrap: nowrap;
 		}
-		
-		  @media @mobile {
-    flex-direction: column;
-    align-items: center;
-    
-  };
+		@media @mobile {
+			flex-direction: column;
+			align-items: center;
+		}
+		;
 		.text-content {
 			width: 48%;
 			padding-right: 1%;
-			@media @mobile{
-			  width: 100%;
+			@media @mobile {
+				width: 100%;
 			}
-
 		}
 		.img-content {
 			width: 48%;
 			padding-left: 1%;
 			@media @mobile {
-			  width: 100%;
+				width: 100%;
 			}
-
 			img {
 				border-radius: 10px;
 			}
-			
-			
-			
-
 		}
-
 	}
 	.inverse-content {
 		padding-bottom: 30px;
@@ -70,10 +58,10 @@
 			padding-right: 1%;
 			padding-left: 0;
 		}
-		  @media @mobile {
-    flex-direction: column-reverse;
-    
-  };
+		@media @mobile {
+			flex-direction: column-reverse;
+		}
+		;
 	}
 	.content-destination {
 		width: 75%;
@@ -81,9 +69,8 @@
 		img {
 			border-radius: 10px;
 		}
-		
 		@media @mobile {
-		  width: 100%;
+			width: 100%;
 		}
 	}
 	.content-pick {
@@ -92,42 +79,31 @@
 		display: flex;
 		justify-content: space-between;
 		@media @mobile {
-		  flex-direction: column;
-		  align-items: center;
+			flex-direction: column;
+			align-items: center;
 		}
 		.destination {
-		  
-		  flex-direction: column;
+			flex-direction: column;
 			width: 30%;
 			margin-bottom: 8%;
 			align-items: flex-start;
-			
-		@media @mobile {
-		  
-		  width: 80%;
-}			
-
+			@media @mobile {
+				width: 80%;
+			}
 			.btn {
 				display: flex;
 				@media @mobile {
-				  height: 25%;
-				  width: 100%;
-				  padding: 3%;
-				}				
+					height: 25%;
+					width: 100%;
+					padding: 3%;
+				}
 				.button-creator(@teal;
 				@br: 10px;
 				@wt: 95%;
 				@ht: 18%;
 				@fc: white;
 				);
-				
-				
-
-				
-
 			}
-			
-
 		}
 	}
 } // home
