@@ -6,7 +6,7 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 * [X] Fork the project into your GitHub user account
 * [X] Clone the forked project into a directory on your machine
-* [Xless] You are now ready to build this project with your preferred IDE
+* [X] You are now ready to build this project with your preferred IDE
 
 ## Task 2: Set up your preprocessor
 * [X] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
@@ -17,7 +17,7 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 3: Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank.  In order for you to see the styles for this project you must import them in a certain order.  That order is as follows:
+* [X] Navigate to your `index.less` file. Notice the file is blank.  In order for you to see the styles for this project you must import them in a certain order.  That order is as follows:
 
 1. `variables.less`
 2. `mixins.less`
