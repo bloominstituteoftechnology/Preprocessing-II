@@ -1,1 +1,12 @@
 // Mixins in here
+.create-button(@width, @height, @text-size, @text-color, @bgColor, @borderRad){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: @width;
+    height: @height;
+    font-size: @text-size;
+    color: @text-color;
+    background-color: @bgColor;
+    border-radius: @borderRad;
+}
