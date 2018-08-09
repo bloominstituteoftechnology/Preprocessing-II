@@ -34,6 +34,12 @@ header {
 
 .home {
 
+  @media (@mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .home-section {
     padding-bottom: 10px;
     border-bottom: 2px dashed @navigation-border;
@@ -54,14 +60,26 @@ header {
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media (@mobile) {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media (@mobile) {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media (@mobile) {
+          width: 100%;
+        }
       }
     }
   }
@@ -69,6 +87,11 @@ header {
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media (@mobile) {
+      margin: 0 0 30px 0;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -85,23 +108,47 @@ header {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media (@mobile) {
+      padding-bottom: 30px;
+      border-bottom: 2px dashed @navigation-border;
+    }
+
+    @media (@mobile) {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
+
+    @media (@mobile) {
+      width: 80%;
+      flex-direction: column;
+      padding-top: 0;
+      border-top: none;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media (@mobile) {
+        width: 100%;
+      }
+
       .btn {
-        .button-creator(@button-bg);
+        .button-creator(@button-bg, 83%);
+
+        @media (@mobile) {
+          .button-creator(@button-bg, 100%);
+        }
       }
     }
   }
