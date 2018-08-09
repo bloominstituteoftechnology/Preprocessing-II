@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 27px;
+}
+.nav-bar nav {
+  display: flex;
+  align-items: center;
+}
+.nav-bar nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.6rem;
+  margin-right: 3rem;
+}
+header .bus-img {
+  margin-bottom: 18px;
+  border-top: 2px dashed #C0C0C0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
