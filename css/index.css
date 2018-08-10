@@ -194,7 +194,7 @@ img {
 .nav-container h1 {
   width: 50%;
 }
-@media (max-width:500) (max-width: 500px) {
+@media (max-width:500) {
   .nav-container {
     display: flex;
     flex-direction: column;
