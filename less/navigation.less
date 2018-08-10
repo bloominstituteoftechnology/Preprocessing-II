@@ -1,26 +1,42 @@
 // Navigation Styles here
 
 .flex-centered-spacebetween() {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
 
-.top {
-    .flex-centered-spacebetween;
-    padding:15px 0;
-    border-bottom: 1px black dotted;
+.header-top {
+    
+    
+    width:100%;
+    border-bottom: 2px grey dashed;
 
-    h1{
-        font-size:4.5rem;
-        
-    }
-    nav{
-        display:flex;
-        justify-content: space-around;
-        width:50%;
-        a {
-            font-size: 1.6rem;
+    header{
+        margin: 25px auto;
+        width:100%;
+        max-width: 800px;
+        .flex-centered-spacebetween();
+
+        h1{
+            font-size:4rem;
+            width:50%;
         }
+
+        .navigation{
+            display:flex;
+            justify-content: space-around;
+            width: 50%;
+            font-size:1.6rem;
+        }
+    
+    }
+   
+    
+}
+
+.home {
+    img{
+        width:100%;
     }
 }
