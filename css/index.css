@@ -1,3 +1,13 @@
+.btn {
+  background-color: #42f4e8;
+  color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 89%;
+  text-align: center;
+  font-size: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -193,6 +203,14 @@ nav .fun-bus {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  display: flex;
+  justify-content: space-around;
+}
+.home header .fun-bus {
+  font-size: 50px;
+  margin-right: 50%;
 }
 .home .content-section {
   margin: 30px 0;
