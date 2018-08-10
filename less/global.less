@@ -2,9 +2,7 @@
   box-sizing: border-box;
 }
 
-// * {
-//   border: 1px solid black !important;
-// }
+
 html {
   font-size: 62.5%;
 }
@@ -58,7 +56,7 @@ img {
   .btn {
     .button-style(rgb(20, 97, 93), white, 1px solid transparent);
     border-radius: @border_radius ; //@border_radius is a *variable*.
-    padding: @padding;
+    padding: @padding; //Padding is a variable (10px * 4)
     text-align: @center ; // @center is a *variable*.
     width: @width ; //@width is a *variable*.
     max-width: 150px;

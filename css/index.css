@@ -286,9 +286,6 @@ img {
     margin-bottom: 15px;
   }
 }
-* {
-  border: 1px solid black !important;
-}
 .text-content {
   width: 100%;
   max-width: 48% ;
@@ -304,23 +301,8 @@ img {
     max-width: 500px;
   }
   .img-content {
-    width: 60;
-    max-width: 500px ;
+    width: 100%;
+    max-width: 65% ;
   }
 }
-.text-content {
-  border: 2px solid blue !important ;
-  width: 100% ;
-}
-.h2class {
-  border: 3px solid green !important;
-}
-.pclass {
-  border: 2px solid orange !important;
-}
-.img-content {
-  border: 3px solid olivedrab !important;
-}
-.img-content .img-style {
-  border: 2px solid indianred !important ;
-}
+/* Below lies code from prior attempts */
