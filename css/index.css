@@ -264,6 +264,7 @@ header nav:last-child {
   justify-content: center;
 }
 .nav-border hr {
+  margin-bottom: 0;
   width: 100%;
   border: none;
   overflow: visible;
