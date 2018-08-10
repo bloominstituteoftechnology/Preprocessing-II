@@ -299,3 +299,13 @@ img {
 .home .content-pick .destination .btn:hover {
   color: black;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home .content-pick .destination {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
