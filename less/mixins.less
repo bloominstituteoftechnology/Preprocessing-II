@@ -1,1 +1,17 @@
 // Mixins in here
+
+.flexMix(@jc: center, @ai: center){
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.button1(){
+    background-color: @button-bg;
+    border-radius: 15px;
+    color: @white;
+}
+
+.underline(@borderwidth: 1px){
+    border-bottom: @borderwidth dashed @silver;
+}

@@ -168,6 +168,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.content-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+.content-nav a {
+  padding: 0px 20px;
+  color: #212529;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.dashed-underline {
+  border-bottom: 3px dashed #C0C0C0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
