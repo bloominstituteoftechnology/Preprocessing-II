@@ -1,24 +1,61 @@
 .home {
+  .welcome-sec{
+    margin:25px auto;
+    padding-bottom:10px;
+    border-bottom:2px dashed #C0C0C0;
+    padding:0px 1.25%;
 
+    @media @mobile{
+      width:95%;
+      margin-left:2%;
+      margin-right:2%;
+      }
+
+    .welcome{
+      font-size:4.2rem;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    padding:0px 1.25%;
    
+    @media @mobile{
+      display:flex;
+      flex-direction:column;
+      width:100%;
+      margin-bottom:20px;
+    }
+  
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width:95%;
+        margin:10px 2.5%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width: 100%;
+       
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          width:98%;
+          margin:0px auto;
+        }
       }
     }
   }
@@ -26,6 +63,13 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    padding:0px 1.25%;
+
+    @media @mobile{
+      display:flex;
+      flex-direction:column-reverse;
+      margin-top:10px;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -35,12 +79,25 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile{
+        width:98%;
+        margin:0px auto;
+        padding:0px;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0px auto 30px;
+    
+
+    @media @mobile{
+      width:95%;
+      margin: 0 auto;
+      margin-bottom:30px;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +110,27 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      flex-direction:column;
+      width:95%;
+      margin: 0 auto;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      padding:0px 1.25%;
+
+
+      @media @mobile{
+        width:75%;
+        margin: 10px auto;
+      }
+      .btn{
+        @media @mobile{
+          .button-creator(1.8rem, 100%, 40px, @button-bg);
+        }  
+      }
     }
   }
 }// home
