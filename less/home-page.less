@@ -5,6 +5,7 @@
 
 		@media @mobile{
 			margin-top:12rem;
+			
 		}
 
 	}
@@ -14,6 +15,11 @@
 		
 		.spacer{
 			border-bottom:2px dashed grey;
+		}
+
+		@media @mobile{
+			margin-left:5%;
+			margin-right:5%;
 		}
 	}
 
@@ -38,6 +44,25 @@
         border-radius: 10px;
       }
     }
+
+	@media @mobile{
+		margin-left:5%;
+		flex-direction:row;
+		flex-wrap:wrap;
+			
+
+		.text-content{
+			width:100%;
+			order:1;
+		}
+
+		.img-content{
+			width:90%;
+			margin-left:5%;
+			order:2;
+		}
+	}
+
   }
 
   .inverse-content {
@@ -53,6 +78,9 @@
       padding-right: 1%;
       padding-left: 0;
     }
+	@media @mobile{
+		margin-right:5%;
+	}
   }
 
   .content-destination {
