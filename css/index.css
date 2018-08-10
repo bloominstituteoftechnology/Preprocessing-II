@@ -272,9 +272,16 @@ header nav:last-child {
 }
 @media only screen and (max-width: 880px) {
   .nav-border hr {
+    width: 100%;
+    border-bottom: 2px dashed #C0C0C0;
+    padding: 0 420px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nav-border hr {
     border-bottom: 2px dashed #C0C0C0;
     width: 100%;
-    padding: 0 420px;
+    padding: 0;
   }
 }
 .footer {

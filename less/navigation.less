@@ -47,10 +47,15 @@ header {
         .border-overflow;
         padding:0 880px;
         @media @tablet {
-            .dashed-border;
-            width: 100%;
-            padding: 0 420px;
+          .dashed-border;
+          padding: 0 420px;
         }
 
+        @media @mobile {
+            .dashed-border;
+            width: 100%;
+            padding: 0;
+        }
+      
     }
 }
