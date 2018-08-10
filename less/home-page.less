@@ -27,20 +27,29 @@
   align-items: center;
   .nav-sb-center(25px, black);
 
-    @media @phone {
+    @media @mobile {
       display: block;
       text-align: center;
       
       nav {
         flex: 1;
-        padding: 0;
+        padding: 10px;
         }
       
       li {
-        display: flex;
-        justify-content: center;
+        display: inline;
+        justify-content: space-around;
+        padding: 20px 30px;
+        margin-top: 10px;
       }
       
+    }
+  }
+
+  .jumbo {
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 
@@ -49,7 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media @phone {
+    @media @mobile {
       display: flex;
       width: 90%;
       margin: 0 auto;
@@ -63,7 +72,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media @phone {
+      @media @mobile {
         order:1;
         width: 100%;
         padding-top: 15px;
@@ -73,7 +82,7 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media @phone {
+      @media @mobile {
         width: 100%;
         order:2;
       }
@@ -118,12 +127,12 @@
       width: 30%;
       margin-bottom: 30px;
       
-      @media @phone {
+      @media @mobile {
         width: 80%;
       }
     }
 
-    @media @phone {
+    @media @mobile {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -132,7 +141,7 @@
 
   .btn {
     .btn-generate(200px, 30px, white, green);
-      @media @phone {
+      @media @mobile {
         background-color: #0C87CE;
         width: 80%;
         padding: 5px 30px;

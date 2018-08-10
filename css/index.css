@@ -201,11 +201,19 @@ img {
   }
   .home header nav {
     flex: 1;
-    padding: 0;
+    padding: 10px;
   }
   .home header li {
-    display: flex;
-    justify-content: center;
+    display: inline;
+    justify-content: space-around;
+    padding: 20px 30px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .home .jumbo {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 .home .content-section {
