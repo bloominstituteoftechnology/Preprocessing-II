@@ -1,1 +1,27 @@
 // Mixins in here
+.button-creator(@font-size,@width,@height, @bg-color){
+    font-size:@font-size;
+    width:@width;
+    height:@height;
+    color:@white;
+    background-color:@bg-color;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+
+    &:hover{
+        border:2px solid @button-bg;
+        background-color:@white;
+        color:@button-bg;
+        cursor:pointer;
+    }
+    
+}
+
+.btn{
+    .button-creator(1.8rem, 85%, 45px, @button-bg);
+
+   
+}

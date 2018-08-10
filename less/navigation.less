@@ -1,1 +1,55 @@
-// Navigation Styles here
+header{
+    .header-top{
+    margin:0px auto;
+    padding:30px 0%;
+    width:100%;
+    border-bottom:2px dashed #C0C0C0;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+
+    @media @mobile{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        padding-bottom:10px;
+        }
+    }
+    h1{
+        width:45%;
+        display:flex;
+        justify-content:flex-start;
+        padding:0px 1.25%;
+
+        @media @mobile{
+            width:100%;
+            flex-direction:row;
+            justify-content:center;
+            margin-bottom:20px;
+            
+        }
+    }
+    nav{
+        display:flex;
+        width:45%;
+        justify-content:space-between;
+        padding-right:3%;
+
+        @media @mobile{
+            width:100%;
+            flex-direction:row;
+            justify-content:space-around;
+        }
+        
+        a{
+            text-decoration:none;
+            color:@font-color;
+            font-size:1.6rem;
+            
+            &:hover{
+                color:@button-bg;
+                cursor:pointer;
+            }
+        }
+    }
+}
