@@ -218,6 +218,25 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .fun-bus-h1-text {
+  animation-name: rybgKeyFrames;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+@keyframes rybgKeyFrames {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
 .home .fun-bus-nav {
   display: flex;
   justify-content: space-between;

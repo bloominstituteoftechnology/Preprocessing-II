@@ -10,3 +10,16 @@
     border-radius: 20px;
     text-align: center;
 }
+
+.animateRYBGColorChange() {
+    @keyframes rybgKeyFrames {
+        0%   {color: red;}
+        25%  {color: yellow;}
+        50%  {color: blue;}
+        100% {color: green;}
+    }
+
+    animation-name: rybgKeyFrames;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
