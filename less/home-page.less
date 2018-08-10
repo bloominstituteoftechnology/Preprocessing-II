@@ -1,5 +1,8 @@
 .home {
-
+ @media @mobile{
+   display:flex;
+   flex-wrap: wrap;
+ }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -11,11 +14,20 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width:100%;
+        margin-right: 6%;
+        margin-left: 6%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        margin: 0 auto;
+        width: 92%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +38,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      display:flex;
+      flex-direction: column-reverse;
+      margin-right: 7%;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -35,6 +52,9 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile{
+        padding-left: 15px;
+      }
     }
   }
 
@@ -52,10 +72,46 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      display:flex;
+      flex-direction: column;
+      margin-right: 10%;
+      margin-left: 10%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        max-width: 500px;
+        width:100%;
+      }
     }
   }
 }// home
+.fun-bus-img{
+    max-width: 880px;
+    height: auto;
+    width: 92%;
+    margin-left: 30px;
+    @media @mobile{
+      padding-right: 5%;
+    }
+   
+}
+.welcome{
+  max-width:800px;
+  width:100%;
+  margin:0 auto;
+
+  .welcome-info{
+  margin-top: 14px;
+  border-bottom: 1px dashed grey;
+  padding-bottom: 10px;
+  @media @mobile{
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+
+}
