@@ -1,3 +1,4 @@
+// Animations start here
 @-webkit-keyframes scfadeIn {
     0% {
         opacity: 0;
@@ -34,6 +35,8 @@
     }
 }
 
-.scfadeIn {
-    animation-name: scfadeIn;
+.scfadeIn (@animname: "", @animdur: "", @filler: "") {
+    animation-name: @animname;
+    animation-duration: @animdur;
+    animation-fill-mode: @filler;
 }
