@@ -172,10 +172,16 @@ nav {
   display: flex;
   width: 42%;
 }
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-between;
+    width: 85%;
+  }
+}
 nav a {
   font-family: 'Roboto', sans-serif;
   color: black;
-  line-height: 1.5;
+  line-height: 1;
   font-size: 1.6rem;
   padding-bottom: 10px;
   text-decoration: none;
@@ -243,6 +249,11 @@ nav a {
   height: 85px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .horizontal-border {
+    height: 70px;
+  }
+}
 .top-bar {
   max-width: 800px;
   width: 100%;
@@ -251,6 +262,16 @@ nav a {
   justify-content: space-between;
   align-items: center;
   height: 85px;
+}
+@media (max-width: 500px) {
+  .top-bar {
+    flex-flow: column nowrap;
+    margin-top: 18px;
+    height: 70px;
+  }
+  .top-bar h1 {
+    font-size: 3.2rem;
+  }
 }
 .welcome {
   border-bottom: 2px dashed #C0C0C0;
