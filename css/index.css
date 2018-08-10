@@ -1,3 +1,15 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  padding: 12px 0;
+  margin: 0 15px;
+  border-radius: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,11 +180,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  border-bottom: 2px dashed lightgray;
+}
 .main-nav {
   padding: 25px 0;
   display: flex;
   justify-content: flex-end;
-  border-bottom: 2px dashed lightgray;
 }
 .main-nav li:first-child {
   margin-right: auto;
