@@ -195,7 +195,8 @@ img {
 }
 @media (max-width:500px) {
   .navigation nav {
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
   }
 }
 .navigation nav a {
