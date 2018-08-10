@@ -7,11 +7,15 @@
     height: 100px;
     border-bottom: 2px dashed silver;
     justify-content: space-around;
+    @media @mobile {
+        flex-direction: column;
+    }
 }
 
 .navbar{
     display: flex;
-}            
+}
+         
 
 .navcontent{
     display: flex;

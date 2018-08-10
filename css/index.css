@@ -15,6 +15,18 @@
   border: 1px solid silver;
   border-radius: 10px;
 }
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: darkcyan;
+  font-size: 1.6rem;
+  height: 30px;
+  width: 90%;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -153,6 +165,12 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    padding: 8px;
+  }
+}
 h1,
 h2,
 h3,
@@ -193,6 +211,11 @@ img {
   border-bottom: 2px dashed silver;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .topbar {
+    flex-direction: column;
+  }
+}
 .navbar {
   display: flex;
 }
@@ -223,13 +246,32 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -262,16 +304,4 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: darkcyan;
-  font-size: 1.6rem;
-  height: 30px;
-  width: 90%;
-  border: 1px solid silver;
-  border-radius: 10px;
 }
