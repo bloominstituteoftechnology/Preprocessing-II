@@ -178,6 +178,7 @@ img {
   height: 6rem;
   border-bottom: 2px dashed grey;
   padding: 2rem;
+  /* Mobile media query */
 }
 .nav-bar .nav-bar-title {
   margin-right: 18%;
@@ -187,12 +188,32 @@ img {
   margin-right: 17%;
 }
 .nav-bar .nav-bar-links a {
-  padding: 2.3rem;
+  padding: 2.1rem;
   font-size: 2rem;
   flex-wrap: nowrap;
 }
 .nav-bar .nav-bar-links a:hover {
   color: orange;
+}
+@media (max-width:500px) {
+  .nav-bar {
+    position: absolute;
+    flex-direction: column;
+    border-bottom: none;
+  }
+  .nav-bar .nav-bar-links {
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 2px dashed grey;
+  }
+  .nav-bar .nav-bar-links a {
+    padding: 0.8rem;
+  }
 }
 .footer {
   width: 100%;
@@ -207,6 +228,11 @@ img {
 }
 .home .first-img {
   margin-top: 8rem;
+}
+@media (max-width:500px) {
+  .home .first-img {
+    margin-top: 12rem;
+  }
 }
 .home .welcome-section {
   margin-top: 2rem;
@@ -257,7 +283,7 @@ img {
   justify-content: space-between;
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: 28%;
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
@@ -268,7 +294,7 @@ img {
   color: white;
   text-align: center;
   padding: 1rem;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 .home .content-pick .destination .btn:hover {
   color: black;

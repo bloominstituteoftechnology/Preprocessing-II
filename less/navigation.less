@@ -22,7 +22,7 @@
 		margin-right:17%;
 
 		a{
-			padding:2.3rem;
+			padding:2.1rem;
 			font-size:2rem;
 			flex-wrap:nowrap;
 		}
@@ -33,6 +33,27 @@
 
 	}
 
-	
+	/* Mobile media query */
+	@media @mobile{
+		position:absolute;
+		flex-direction:column;
+		border-bottom:none;
+
+		.nav-bar-links{
+
+			font-size:1.4rem;
+			flex-wrap:nowrap;
+			flex-direction:row;
+			justify-content:space-evenly;
+			text-align:center;
+			margin-left:10%;
+			margin-right:10%;
+			border-bottom:2px dashed grey;
+
+			a{
+				padding:0.8rem;
+			}
+		}
+	}
 }
 
