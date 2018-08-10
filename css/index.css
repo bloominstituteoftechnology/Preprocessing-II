@@ -253,3 +253,13 @@ header {
 .header-img {
   padding-bottom: 20px;
 }
+.btn {
+  background-color: #17A2B8;
+  font-size: 2rem;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 10px;
+  border-radius: 10px;
+}
