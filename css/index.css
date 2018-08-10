@@ -170,18 +170,18 @@ img {
 }
 .navbar {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: space-between;
   margin-top: 15px;
   width: 100%;
-  max-width: 850px;
+  margin: auto;
+  border-bottom: 1px dashed #212529;
 }
 .navbar nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: auto;
   align-items: center;
-  border-bottom: 1px dashed #212529;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   width: 100%;
   max-width: 850px;
 }
@@ -190,14 +190,13 @@ img {
   font-size: 1.5rem;
   text-decoration: none;
   color: #212529;
-  margin-right: 50px;
 }
 .navbar a:first-child {
   display: inline-block;
   font-size: 4rem;
   text-decoration: none;
   font-family: 'Indie Flower', cursive;
-  margin-right: 100px;
+  margin-right: 350px;
 }
 .footer {
   width: 100%;
@@ -274,7 +273,7 @@ img {
 .btn {
   font-size: 1.8rem;
   width: 200px;
-  height: 40px;
+  height: 45px;
   background-color: #17A2B8;
   color: white;
   margin-top: 10p;
