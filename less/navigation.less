@@ -1,11 +1,16 @@
 // Navigation Styles here
-.main-header{
-    .flex(space-around, center);
+.nav-container{
+    .flex();
     .dashed-border-bottom();
+    position: fixed;
+    width: @width-100percent;
+}
+.main-header{
+    .flex(space-between, center);
     .padding-20px();
     background-color: @white;
     width: @width-100percent;
-    position: fixed;
+    max-width: 880px;
     nav a{
         text-decoration: none;
         color:@shark;

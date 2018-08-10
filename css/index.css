@@ -168,16 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.main-header {
+.nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
+  position: fixed;
+  width: 100%;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #FFFFFF;
   width: 100%;
-  position: fixed;
+  max-width: 880px;
 }
 .main-header nav a {
   text-decoration: none;
