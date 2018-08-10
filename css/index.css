@@ -11,6 +11,19 @@
     width: "";
   }
 }
+@media only screen and (max-width: 500px) {
+  .media-mobile__nv {
+    display: flex;
+    flex-wrap: "";
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
+  }
+}
 .border-overflow {
   width: 100%;
   border: none;
@@ -287,13 +300,13 @@ header nav:last-child {
   border: none;
   overflow: visible;
   border-bottom: 2px dashed #C0C0C0;
-  padding: 0 880px;
+  padding: 0 100vw;
 }
 @media only screen and (max-width: 880px) {
   .nav-border hr {
     width: 100%;
     border-bottom: 2px dashed #C0C0C0;
-    padding: 0 420px;
+    padding: 0 429px;
   }
 }
 @media only screen and (max-width: 500px) {

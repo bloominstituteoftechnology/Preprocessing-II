@@ -6,10 +6,7 @@ header {
 
   .flex-boxed(@justify:center, @alignitems:center);
   margin-top: 20px;
-  @media @mobile {
-    .flex-boxed(@justify:space-evenly, @flexdir:column);
-  }
-
+  .media-mobile__nv;
   .logo {
     width: 100%;
     @media @mobile {
@@ -44,11 +41,11 @@ header {
     hr {
       margin-bottom: 0;
         .border-overflow;
-        padding:0 880px;
+        padding:0 100vw;
 
         @media @tablet {
           .dashed-border;
-          padding: 0 420px;
+          padding: 0 429px;
         }
 
         @media @mobile {
