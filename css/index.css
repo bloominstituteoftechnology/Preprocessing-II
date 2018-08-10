@@ -171,7 +171,14 @@ img {
 nav {
   border-bottom: 2px dashed lightgray;
   display: flex;
-  flex-direction: column;
+}
+nav .nav-desktop {
+  display: flex;
+}
+@media (max-width:500px) {
+  nav .nav-desktop {
+    display: inline;
+  }
 }
 nav .container h2 {
   margin-right: auto;
