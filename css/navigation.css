@@ -2,9 +2,20 @@ header {
   border-bottom: 2px dashed #C0C0C0;
   padding: 30px;
 }
+@media (max-width: 500px) {
+  header {
+    padding: 3%;
+  }
+}
 .navigation-section {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .navigation-section {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .navigation-section a {
   text-decoration: none;
@@ -14,6 +25,14 @@ header {
   display: flex;
   justify-content: flex-end;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .navigation-section .nav-content {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    width: 100%;
+  }
 }
 .navigation-section .nav-content .nav {
   align-items: center;

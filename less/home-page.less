@@ -1,7 +1,9 @@
 @import "./variables.less";
 
 .home {
-
+  @media @phones {
+    width: 90%;
+  }
   .img-content {
     margin-bottom: 30px;
   }
@@ -13,6 +15,7 @@
     justify-content: space-between;
     @media @phones {
       flex-direction: column;
+      padding: 0 5%;
     }
 
     .text-content {
@@ -23,12 +26,19 @@
       }
     }
 
+
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @phones {
+        padding-left: 0;
+        width: 100%;
+      }
       img {
         border-radius: 10px;
+        @media @phones {
+          width: 100%;
+        }
       }
     }
   }
@@ -36,7 +46,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @phones {
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -51,7 +63,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @phones {
+      width: 100%;
+    }
     img {
       border-radius: 10px;
     }
@@ -62,10 +76,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @phones {
+      flex-direction: column;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phones {
+        margin: 0 auto 30px;
+        width: 80%;
+        .btn {
+          width: 100%;
+        }
+      }
     }
   }
 }// home
