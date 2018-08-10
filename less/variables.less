@@ -12,3 +12,21 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+@mobile: ~"(max-width:500px)";
+
+header {
+	@media @mobile {
+		flex-direction: column;
+
+		.logo{
+			font-size: 2.8rem;
+			margin-bottom: 12px;
+		}
+
+		nav {
+			justify-content: space-evenly;
+			width: 100%;
+		}
+	}
+}
