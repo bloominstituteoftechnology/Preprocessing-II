@@ -1,1 +1,19 @@
 // Mixins in here
+
+.button-centered() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.button-style(@box-color:@eastern-blue, @width: 200px, @height: 40px, @margin-t: 10px) {
+   font-size: 1.8rem;
+   width: @width;
+   height: @height;
+   background-color: @box-color;
+   color: white;
+   margin-top: @margin-t;
+   border-radius: 10px;
+   .button-centered;
+ }
