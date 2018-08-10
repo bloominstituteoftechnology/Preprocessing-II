@@ -1,20 +1,17 @@
 // Navigation Styles here
 
-.display-flex(@flex-direction, @justify-content){
-    display: flex;
-    flex-direction: @flex-direction;
-    justify-content: @justify-content;
-}
 
 header{
-    height: 40px;
+    height: 50px;
     border-bottom: 1.5px dashed @navigation-border;
-    margin-top: 30px;
+    margin-top: 25px;
 
-    .container{
+    .navigation{
         width: 80%;
         .display-flex(row, space-between);
         align-content: center;
+        margin: 0 auto;
+        align-self: center;
 
     h3{
         font-size: 2.8rem;
