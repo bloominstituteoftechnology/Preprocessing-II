@@ -342,6 +342,19 @@ a img {
   width: 75%;
   font-size: 5.4rem;
 }
+@media (max-width: 500px) {
+  .navBar {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+  }
+  .navBar h1 {
+    text-align: center;
+    align-self: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -410,6 +423,9 @@ a img {
   text-decoration: none;
   color: black;
 }
+body {
+  margin: 0 2%;
+}
 header {
   display: flex;
   width: 100%;
@@ -417,9 +433,10 @@ header {
   border-right: 200px;
   margin-bottom: 5px;
   justify-content: center;
+  flex-shrink: 2;
 }
 header img {
-  width: 100%;
+  object-fit: cover;
 }
 .content-destination h2 {
   font-size: 3rem;
@@ -451,4 +468,19 @@ header img {
 }
 .btn:hover {
   background-color: grey;
+}
+@media (max-width: 500px) {
+  body {
+    margin: 0 3%;
+  }
+  header img {
+    max-width: 500px;
+    max-height: 200px;
+    margin-top: 5px;
+    padding: 0 8%;
+  }
+  .content-section .text-content {
+    display: flex;
+    flex-direction: column;
+  }
 }

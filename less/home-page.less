@@ -74,6 +74,9 @@
   }
 }// home
 
+body {
+  margin: 0 2%;
+}
 header {
   display: flex;
   width: 100%;
@@ -81,9 +84,9 @@ header {
   border-right: 200px;
   margin-bottom: 5px;
   justify-content: center;
+  flex-shrink: 2;
   img {
-
-    width: 100%
+    object-fit: cover;
 
   }
 }
@@ -117,3 +120,28 @@ header {
     background-color: grey;
 }
 
+
+
+@media @mobile {
+  body {
+    margin: 0 3%;
+  }
+  
+  header {
+    img {
+      max-width: 500px;
+      max-height: 200px;
+      margin-top: 5px;
+      padding: 0 8%;
+    }
+  }
+
+  .content-section {
+
+    .text-content{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+}
