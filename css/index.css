@@ -12,7 +12,7 @@
   }
   .navigation-bar #nav-centered {
     height: 87px;
-    width: 90%;
+    width: 450px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,8 +87,8 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .container home {
-    width: 90%;
+  .container .home {
+    width: 0%;
     display: flex;
     flex-direction: column;
   }
@@ -152,6 +152,64 @@
   align-items: center;
   font-size: 1.6rem;
   font-weight: bold;
+}
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.swing:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
