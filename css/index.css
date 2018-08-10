@@ -216,6 +216,12 @@ header nav {
 .home .content-header {
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .content-header {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .home .content-header .text-content {
   padding: 20px 0 10px 0;
 }
