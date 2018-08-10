@@ -1,4 +1,5 @@
 // Navigation Styles here
+@phone: ~"(max-width: 500px)";
 @padding-width: 15px;
 
 .navigation {
@@ -12,5 +13,8 @@
     padding: @padding-width;
     font-size: 1.6rem;
     color: black;
+  }
+  @media @phone {
+    flex-direction: column;
   }
 }

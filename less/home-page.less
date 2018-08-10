@@ -1,3 +1,4 @@
+@phone: ~"(max-width: 500px)";
 .home {
   .main-header {
     img {
@@ -5,6 +6,11 @@
     }
     border-bottom: 2px dashed @navigation-border;
     padding-bottom: 15px;
+
+    @media @phone {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   .content-section {
@@ -13,14 +19,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+      }
     }
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+      }
 
       img {
         border-radius: 10px;
@@ -31,6 +47,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -46,6 +66,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @phone {
+      width: 90%;
+      margin: 0 auto;
+    }
 
     img {
       border-radius: 10px;
@@ -57,10 +81,31 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @phone {
+      flex-direction: column;
+    }
+    @media @phone {
+      width: 90%;
+      margin: 0 auto;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .btn {
+        .button-creator(@button-bg, 90%, 40px, 10px, none);
+        @media @phone {
+          width: 90%;
+          margin: 0 auto 15px auto;
+        }
+
+        color: white;
+      }
     }
   }
 } // home

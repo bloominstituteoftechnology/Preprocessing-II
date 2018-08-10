@@ -4,3 +4,20 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-creator
+  (@bgColor: grey, @width: 150px, @height: 60px, @bRadius: 10px, @bColor: black) {
+  font-size: 1.6rem;
+  width: @width;
+  height: @height;
+  background-color: @bgColor;
+  border-radius: @bRadius;
+  border: 2px solid @bColor;
+  .flex-center;
+}
