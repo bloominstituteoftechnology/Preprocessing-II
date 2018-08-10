@@ -249,8 +249,14 @@ header {
   padding: 0 10px;
 }
 .home .fun-bus img {
-  margin-top: 0;
+  position: relative;
+  top: -30px;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .home .fun-bus img {
+    top: 0px;
+  }
 }
 @media (max-width: 500px) {
   .home .fun-bus {

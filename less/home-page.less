@@ -19,8 +19,15 @@ header {
     
 
     img {
-      margin-top: 0;
+      position: relative;
+      top: -30px;
       margin-bottom: 20px;
+
+
+      @media @mobile {
+        top: 0px;
+      }
+
     }
 
     @media @mobile {
