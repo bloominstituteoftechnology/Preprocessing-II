@@ -2,6 +2,10 @@ header {
   width:100%;
   border-bottom:2px dashed @navigation-border;
   display:flex;
+  @media @mobile {
+    flex-direction:column;
+    align-items: center;
+  }
 
   h2 {
       font-size:4rem;
