@@ -6,10 +6,13 @@
     align-items: @ai;
 }
 
-.button1(){
-    background-color: @button-bg;
+.button1(@button-color: @button-bg, @button-fontcolor: @white){
+    background-color: @button-color;
     border-radius: 15px;
-    color: @white;
+    color: @button-fontcolor;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .underline(@borderwidth: 1px){
