@@ -290,6 +290,8 @@ img {
   .home .content-destination {
     width: 100%;
     border-bottom: 2px dashed #C0C0C0;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
   }
 }
 .home .content-pick {
