@@ -1,10 +1,15 @@
 .home {
 
+  @media @mobile{
+    padding: 0px 5%;
+  }
+
+
   .main-header {
-    .flex(center, center);
+    .flex();
     flex-direction: column;
     width: 100%;
-    border-bottom: 2px dashed lightgray;
+    border-bottom: 3px dashed lightgray;
     padding-bottom: 10px;
 
     h2 {
@@ -13,6 +18,11 @@
       margin-top: 22px;
       margin-right: 25px;
       text-align: left;
+
+      @media @mobile{
+        margin-right: 0px;
+        padding-left: 0px;
+      }
     }
 
   }
@@ -23,19 +33,37 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      flex-direction: column;
+      width: 100%;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 100%;
+        padding-right: 0px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width: 100%;
+        padding-left: 0px;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          width: 100%;
+        }
       }
     }
   }
@@ -44,14 +72,28 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile{
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile{
+        width: 100%;
+        padding-right: 0px;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile{
+        width: 100%;
+      }
     }
   }
 
@@ -59,8 +101,16 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      flex-direction: column;
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
+      @media @mobile{
+        width: 100%;
+      }
     }
   }
 
@@ -70,13 +120,28 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      .flex();
+      flex-direction: column;
+      width: 100%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 100%;
+        padding: 0px 10%;
+      }
     }
 
     .btn {
       .button-creator();
+
+      @media @mobile{
+        width: 100%;
+      }
     }
   }
 }// home
