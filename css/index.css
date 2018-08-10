@@ -172,6 +172,7 @@ img {
 .fun-bus-nav .header-navigation {
   display: flex;
   justify-content: space-around;
+  align-content: center;
   width: 30%;
   font-size: 1.6rem;
   margin: 0 5%;
@@ -179,6 +180,11 @@ img {
 .fun-bus-nav .header-navigation a {
   color: #212529;
   text-decoration: none;
+}
+@media (max-width: 800px) {
+  .fun-bus-nav .header-navigation {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .fun-bus-nav .header-navigation {
@@ -241,6 +247,15 @@ img {
   display: flex;
   justify-content: space-between;
   margin: 3% 0;
+}
+@media (max-width: 800px) {
+  .home .fun-bus-nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 2%;
+    align-items: center;
+  }
 }
 @media (max-width: 500px) {
   .home .fun-bus-nav {

@@ -6,12 +6,17 @@
     .header-navigation {
         display: flex;
         justify-content: space-around;
+        align-content: center;
         width: 30%;
         font-size: 1.6rem;
         margin: 0 5%;
         a {
             color: @shark;
             text-decoration: none;
+        }
+
+        @media @tablet {
+            width: 100%;
         }
 
         @media @mobile {
