@@ -169,18 +169,19 @@ img {
   margin: 0 auto;
 }
 .main-nav {
-  padding-top: 20px;
+  padding: 25px 0;
   display: flex;
   justify-content: flex-end;
+  border-bottom: 2px dashed lightgray;
 }
 .main-nav li:first-child {
   margin-right: auto;
 }
 .main-nav li a {
-  padding: 20px;
+  padding: 25px;
   text-decoration: none;
   color: #212529;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .footer {
   width: 100%;
@@ -192,6 +193,10 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .welcome-fullwide {
+  padding-top: 25px;
+  border-bottom: 2px dashed lightgray;
 }
 .home .content-section {
   margin: 30px 0;
