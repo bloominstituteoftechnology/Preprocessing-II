@@ -97,9 +97,7 @@
       .btn {
         .button-maker(45px, 80%, @button-bg, white);
         &:hover {
-          background-color: white;
-          color: @button-bg;
-          border: 1px dashed @button-bg;
+          .button-hover(white, @button-bg, 1px dashed @button-bg);          
         }
         @media @mobile {
           width: 100%;
