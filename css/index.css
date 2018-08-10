@@ -176,6 +176,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
+  position: fixed;
 }
 .main-header nav a {
   text-decoration: none;
@@ -206,7 +207,7 @@ img {
   padding-bottom: 20px;
 }
 .home .homepage-header-img {
-  margin-top: 0;
+  margin-top: 82px;
   margin-bottom: 30px;
 }
 .home .homepage-intro {
@@ -281,6 +282,9 @@ img {
   .home {
     max-width: 500px;
     width: 90%;
+  }
+  .home .homepage-header-img {
+    margin-top: 95px;
   }
   .home .content-section {
     flex-direction: column;
