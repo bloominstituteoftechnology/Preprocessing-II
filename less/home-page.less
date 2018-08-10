@@ -13,6 +13,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      background-color: black;
+    }
+
   
     
     .text-content {
@@ -65,7 +70,7 @@
       margin-bottom: 30px;
 
       .btn {
-        .button-maker(@height: 45px, @width: 80%, @bgColor: darkcyan, @txColor: white)
+        .button-maker(45px, 80%, @button-bg, white)
       }
     }
   }
