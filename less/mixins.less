@@ -1,1 +1,16 @@
 // Mixins in here
+.flex-centered() {
+  align-items: center;
+  display: flex;
+  justify-content: center;  
+}
+
+.button-creator() {
+  background-color: teal;
+  border-radius: 15px;
+  color: white;
+  .flex-centered;
+  font-size: 1.8rem;
+  height: 45px;
+  width: 83%;
+}

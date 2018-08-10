@@ -29,18 +29,23 @@ h4 {
 }
 
 p {
-  line-height: 1.5;
   font-size: 1.6rem;
+  line-height: 1.5;  
   padding-bottom: 10px;
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;  
 }
 
 .container {
+  margin: 0 auto;
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+
+  @media @mobile {
+    max-width: 500px;
+    width: 93.3%;
+  }
 }
