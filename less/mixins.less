@@ -1,1 +1,17 @@
 // Mixins in here
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-maker{
+    .flex-center;
+    color: white;
+    background-color: darkcyan;
+    font-size: 1.6rem;
+    height: 30px;
+    width: 90%;
+    border:1px solid silver;
+    border-radius: 10px;
+}
