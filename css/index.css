@@ -184,7 +184,7 @@ img {
 }
 .navbar nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
   align-items: center;
   padding: 20px 0;
@@ -195,7 +195,9 @@ img {
   .navbar nav {
     max-width: 450px;
     height: auto;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
   }
 }
 .navbar a {
@@ -206,11 +208,13 @@ img {
 }
 @media (max-width:500px) {
   .navbar a {
-    display: inline-block;
+    display: inline;
+    padding-top: 5px;
+    font-size: 1.7rem;
   }
 }
 .navbar a:first-child {
-  display: inline-block;
+  display: block;
   font-size: 4rem;
   text-decoration: none;
   font-family: 'Indie Flower', cursive;
@@ -219,6 +223,11 @@ img {
 @media (max-width:500px) {
   .navbar a:first-child {
     width: 100%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 5px;
+    padding-top: 0px;
   }
 }
 .footer {

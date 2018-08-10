@@ -11,7 +11,7 @@
 
 	nav {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		margin: auto;
 		align-items: center;
 		padding: 20px 0;
@@ -20,7 +20,9 @@
 		@media @mobile {
 		max-width: 450px;
 		height: auto;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 10px 0;
 		}
 	}
 
@@ -30,20 +32,27 @@
 		text-decoration: none;
 		color: @shark;
 		@media @mobile {
-			display: inline-block;
+			display: inline;
+			padding-top: 5px;
+			font-size: 1.7rem;
 
 
 		}
 	}
 
 	a:first-child {
-		display: inline-block;
+		display: block;
 		font-size: 4rem;
 		text-decoration: none;
 		font-family: @main-family;
 		margin-right: 350px;
 		@media @mobile {
 			width: 100%;
+				max-width: 500px;
+				text-align: center;
+					font-size: 3.5rem;
+				padding-bottom: 5px;
+				padding-top: 0px;
 		}
 	}
 
