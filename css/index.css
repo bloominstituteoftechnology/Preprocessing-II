@@ -200,6 +200,17 @@ a {
 .nav-content .nav-div a:hover {
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .nav-content h1 {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-content {
+    flex-direction: column;
+    flex-wrap: none;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -221,6 +232,12 @@ a {
   padding: 5px 0 30px;
   border-bottom: 1px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .index-header {
+    margin-top: 100px;
+    padding: 0 4%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -231,6 +248,12 @@ a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
@@ -238,13 +261,35 @@ a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    padding: 0 4%;
+    flex-direction: column;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: -1;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -256,6 +301,12 @@ a {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    padding: 0 4%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -283,4 +334,22 @@ a {
 .home .content-pick .destination .btn:active {
   background-color: #117a8b;
   box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15%;
+    padding-top: 30px;
+  }
 }
