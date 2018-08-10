@@ -15,12 +15,20 @@
     color: white;
     background: @button-color;
 
+    a {
+        text-decoration: none;
+        color: white;
+      }
+
     &:hover {
         background: white;
         color: @button-color;
         border: 1px solid @button-color;
-    }
-}
+        a {
+            color: teal;
+        }
+    } // &:hover
+} //.button-creator
 
 .nav-a-style (@color: black) {
     text-decoration: none;

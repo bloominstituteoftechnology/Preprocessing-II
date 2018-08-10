@@ -255,10 +255,17 @@ img {
   justify-content: center;
   align-items: center;
 }
+.container.home .content-pick .btn a {
+  text-decoration: none;
+  color: white;
+}
 .container.home .content-pick .btn:hover {
   background: white;
   color: teal;
   border: 1px solid teal;
+}
+.container.home .content-pick .btn:hover a {
+  color: teal;
 }
 .home .main-header {
   border-bottom: 2px dashed lightgray;
@@ -383,7 +390,7 @@ img {
   margin: 10px auto;
   max-width: 400px;
   padding: 20px 12px 10px 20px;
-  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font: 13px 'Roboto', sans-serif;
 }
 .form-style-1 li {
   padding: 0;
@@ -449,13 +456,20 @@ select {
 .form-style-1 input[type=submit],
 .form-style-1 input[type=button] {
   background: #4B99AD;
+  background: teal;
+  width: 40%;
+  height: 50px;
+  font-size: 1.6rem;
+  border-radius: 10px;
   padding: 8px 15px 8px 15px;
   border: none;
   color: #fff;
 }
 .form-style-1 input[type=submit]:hover,
 .form-style-1 input[type=button]:hover {
-  background: #4691A4;
+  background: white;
+  border: 1px solid teal;
+  color: teal;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
