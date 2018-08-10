@@ -1,1 +1,14 @@
-// Mixins in here
+.buttons (@padding: 10px; @text-align; @font-size; @border-raidus; @background-color; @color;) {
+    padding: @padding;
+    text-align: @text-align;
+    font-size: @font-size;
+    border: 1px solid;
+    border-radius: @border-raidus;
+    background-color: @background-color;
+    color: @color;
+}
+
+.btn {
+    .buttons(10px; center; 2rem; 15px; teal; white;)
+}
+

@@ -1,1 +1,34 @@
-// Navigation Styles here
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px dashed @navigation-border;
+  color: black;
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    margin-left: 300px;
+    @media @phone {
+      margin: 0 auto;
+    }
+  }
+
+  .nav {
+    font-size: 25px;
+    margin-right: 300px;
+
+    @media @phone {
+      display: flex;
+      flex-directon: row;
+      margin: 25px auto;
+    }
+  }
+
+  a {
+    padding-left: 25px;
+  }
+}
