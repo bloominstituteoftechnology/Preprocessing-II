@@ -1,23 +1,28 @@
 // Navigation Styles here
-nav {
+header {
     display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+    justify-content: space-between;
+    margin: 20px;
 
-    @media @mobile {
+    h1 {
+        width: 50%;
+    }
+
+    @media (max-width:500) {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    h1 {
-        padding: 20px 30% 0 0;
+}
 
-    }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
 
     a {
-        padding: 10px 0 0 6.5%;
-        margin: 0 0% 0 0%;
+
         font-size: 1.5rem;
         text-decoration: none;
         color: black;
