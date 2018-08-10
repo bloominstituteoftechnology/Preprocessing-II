@@ -73,6 +73,9 @@
     img {
       border-radius: 10px;
     }
+    @media @mobile{
+      width: @width; 
+    }
   }
 
   .content-pick {
@@ -83,12 +86,27 @@
 
     .btn{
       text-align: center; 
-      .button;
-    }
+      .button; 
 
+      @media @mobile{
+        margin: auto; 
+        width: 100%; 
+      }
+    }
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 30px; 
+
+      @media @mobile{
+        width: @width; 
+        justify-content: center; 
+      }
+    }
+    @media @mobile{
+      flex-direction: column;
+      width: 100%; 
+      justify-content: center; 
+      padding: 8% 8% 0% 8%; 
     }
   }
 }// home

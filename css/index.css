@@ -295,6 +295,11 @@ nav .navLogo h2 {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -304,14 +309,34 @@ nav .navLogo h2 {
 .home .content-pick .btn {
   text-align: center;
   border: 1px solid white;
-  width: 200px;
-  padding: 10px;
+  width: 80%;
+  padding: 13px;
   background-color: teal;
   border-radius: 15px;
   font-size: 2rem;
   color: white;
 }
+@media (max-width:500px) {
+  .home .content-pick .btn {
+    margin: auto;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 8% 8% 0% 8%;
+  }
 }
