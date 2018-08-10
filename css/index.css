@@ -207,7 +207,7 @@ section.navigation {
   padding: 35px 0;
   border-bottom: 1.5px dashed lightgray;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   section.navigation {
     display: flex;
     flex-direction: column;
@@ -255,6 +255,19 @@ section.navigation a {
   align-items: flex-start;
   margin-top: 20px;
 }
+@media (max-width: 500px) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 440px;
+    width: 100%;
+    margin: 0 25px;
+    border-bottom: 2px dashed #C0C0C0;
+  }
+}
 .main-header h2 {
   height: 80px;
   max-width: 800px;
@@ -266,8 +279,20 @@ section.navigation a {
   align-items: flex-start;
   margin-top: 20px;
 }
+@media (max-width: 500px) {
+  .main-header h2 {
+    max-width: 440px;
+    width: 100%;
+  }
+}
 .main-header p {
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .main-header p {
+    max-width: 440px;
+    width: 100%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -279,12 +304,54 @@ section.navigation a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 440px;
+    width: 100%;
+    margin: 0 30px;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 440px;
+    width: 100%;
+    margin: 0 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 450px;
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;

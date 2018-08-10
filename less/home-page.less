@@ -8,27 +8,38 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
-  color: red;
+  
 }
 
 .main-header {
-  background-color: red;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 440px;
+    width: 100%;
+    margin: 0 25px;
+    border-bottom: 2px dashed @silver;
+}
 }
 
 .main-header h2 {
   .flexstarter;
-
+  @media @mobile {
+    max-width: 440px;
+    width: 100%;
+  }
 }
 
 .main-header p {
   padding-top: 10px;
+  @media @mobile {
+    max-width: 440px;
+    width: 100%;
+  }
 }
-
-
-
-
-
-
 
 
 
@@ -40,20 +51,59 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 440px;
+        width: 100%;
+        margin: 0 30px;
+        }
+    }
 
+    .text-content h2 {
+      @media @mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 440px;
+        width: 100%;
+        margin: 0 0;
+        }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 500px;
+        width: 100%;
+        
+        }
+
+
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          max-width: 450px;
+          width: 100%;
+          
+        }
       }
     }
   }
@@ -95,16 +145,3 @@
   }
 }// home
 
-
-div.main-header {
-  
-  @media @mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: red;
-}
-
-}
