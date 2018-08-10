@@ -103,6 +103,9 @@
       }
 
       .btn {
+        &:hover {
+          .button-inset(3px, @navigation-border);
+        }
         .button-template;
         @media @mobile {
           .button-template(@width: 100%);
