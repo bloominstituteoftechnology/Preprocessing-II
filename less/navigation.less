@@ -1,1 +1,29 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px dashed black;
+    width: 100%;
+
+    @media @mobile {
+        justify-content: space-around;
+        margin-top: 30px;
+    
+    }
+
+    a {
+        margin: 0px 10px 10px 10px;
+        position: relative;
+        top: -30px;
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: black;
+
+        &:hover {
+            cursor: pointer;
+            background-color: @eastern-blue;
+        }
+    }
+}
