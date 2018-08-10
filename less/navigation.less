@@ -4,12 +4,23 @@
 .main-header{
   border-bottom:2px dashed @navigation-border;
   padding:10px;
+
   header{
+    @media @phone{
+      display:flex;
+      flex-direction: column;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
     nav{
+      @media @phone{
+        margin-top:15px;
+      }
       a{
+        @media @phone{
+         padding:(@padding-with*1.5)
+        }
         padding:@padding-with;
         text-decoration: none;
         text-transform: capitalize;
@@ -19,12 +30,17 @@
       }
     }
   }
+
 }
 
 .jumbotron{
+   @media @phone{
+     padding:@padding-phone;
+   }
     .container{
         img{
           margin-bottom:15px;
         }
     }
 }
+

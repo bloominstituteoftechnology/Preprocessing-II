@@ -5,13 +5,14 @@
     align-items: center;
 }
 
-.btn (@button-bg, @width: 85%, @height: 40px, @mt: 10px) {
-    font-size: 1.3rem;
+.btn (@button-bg, @width, @height: 40px, @mt: 10px) {
+    font-size: 1.4rem;
     width: @width;
     height: @height;
     background-color: @button-bg;
     color: @white;
     margin-top: @mt;
     border-radius: 10px;
+    text-transform:capitalize;
     .flex-centered;
  }
