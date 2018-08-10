@@ -1,19 +1,29 @@
 // Navigation Styles here
-header {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-nav {
-  display: inline;
-  font-size: 1.6rem;
-  width: 100%;
-
-
-}
 
 a {
+  font-size: 1.5rem;
   text-decoration: none;
-  margin-left: 5%;
+  color: black;
+  padding: 10px 40px;
+  width: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 90px;
+  align-items: center;
+  padding: 50px 0;
+  height: 80px;
+  border-bottom: 2px dashed @navigation-border;
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+  }
+}
+
+.topContent {
+  width: 80%;
 }
