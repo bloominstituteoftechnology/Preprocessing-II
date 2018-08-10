@@ -190,6 +190,35 @@ img {
     padding: 5px 0;
   }
 }
+.header h1 {
+  -webkit-animation: fade-in 0.2s linear infinite alternate;
+  -moz-animation: fade-in 0.2s linear infinite alternate;
+  animation: fade-in 0.2s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header nav {
   font-size: 1.6rem;
 }

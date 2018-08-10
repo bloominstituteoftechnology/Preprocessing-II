@@ -13,6 +13,14 @@
         flex-direction: column;
         padding: 5px 0;
       }
+    h1 {
+        .keyframes(fade-in;{
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+            });
+    
+        .animation(fade-in 0.2s linear infinite alternate)
+    }  
     nav {
         font-size: 1.6rem;
         @media @mobile{
@@ -27,5 +35,6 @@
         padding: 0 15px;
         color: black;
     }
+    
 }
 
