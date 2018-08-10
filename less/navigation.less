@@ -24,13 +24,30 @@ section.navigation {
     font-size: @navfontsize;
     padding: @headerpadding;
     border-bottom: 1.5px dashed lightgray;
-    
+
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 550px;
+        height: 80px;
+        padding: 0 0;
+        
+        nav {
+            margin-top: 10px 0;
+            font-size: 1.6rem;
+        }
+    }
 
 
 .navigation  {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+
 }
 
 a {
@@ -38,9 +55,6 @@ a {
     padding-left: 5px;
     margin-right: @anchormargin;
     color: black;
-}
-
-h2 {
     
 }
-}
+

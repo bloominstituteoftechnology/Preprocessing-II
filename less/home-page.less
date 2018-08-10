@@ -8,8 +8,12 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
+  color: red;
 }
 
+.main-header {
+  background-color: red;
+}
 
 .main-header h2 {
   .flexstarter;
@@ -19,6 +23,12 @@
 .main-header p {
   padding-top: 10px;
 }
+
+
+
+
+
+
 
 
 
@@ -85,3 +95,16 @@
   }
 }// home
 
+
+div.main-header {
+  
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+}

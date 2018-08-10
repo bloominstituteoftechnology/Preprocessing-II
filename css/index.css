@@ -1,5 +1,5 @@
 .bordered {
-  max-width: 200px;
+  width: 200px;
   height: 35px;
   background-color: #008080;
   color: #FFFFFF;
@@ -8,7 +8,7 @@
   padding: 10px 24%;
 }
 .destination .btn {
-  max-width: 200px;
+  width: 200px;
   height: 35px;
   background-color: #008080;
   color: #FFFFFF;
@@ -206,6 +206,22 @@ section.navigation {
   font-size: 1.3rem;
   padding: 35px 0;
   border-bottom: 1.5px dashed lightgray;
+}
+@media (max-width: 550px) {
+  section.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 550px;
+    height: 80px;
+    padding: 0 0;
+  }
+  section.navigation nav {
+    margin-top: 10px 0;
+    font-size: 1.6rem;
+  }
 }
 section.navigation .navigation {
   display: flex;
