@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+.display-flex(@flex-direction, @justify-content){
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+}
+
+header{
+    height: 40px;
+    border-bottom: 1.5px dashed @navigation-border;
+    margin-top: 30px;
+
+    .container{
+        width: 80%;
+        .display-flex(row, space-between);
+        align-content: center;
+
+    h3{
+        font-size: 2.8rem;
+    }
+
+    nav{
+        .display-flex(row, space-between);
+        width: 40%;
+        
+        a{
+            font-size: 1.2rem;
+            color: @font-color;
+            text-decoration: none;
+            }
+        }
+    }
+}
