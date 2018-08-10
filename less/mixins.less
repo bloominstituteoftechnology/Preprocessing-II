@@ -1,12 +1,12 @@
 // Mixins in here
 
-.buttonCreator{
-    height: 45px;
-    width: 83%;
+.buttonCreator(@height: 45px, @width: 83%, @fsize: 2rem){
+    height: @height;
+    width: @width;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: @fsize;
     background: @eastern-blue;
     border-radius: 15px;
     color: @white;
