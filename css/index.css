@@ -278,4 +278,9 @@ a {
   border-radius: 10px;
   box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
   font-size: 1.4rem;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:active {
+  background-color: #117a8b;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.75);
 }
