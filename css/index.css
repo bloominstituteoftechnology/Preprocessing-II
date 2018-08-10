@@ -164,19 +164,37 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
+.main-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  background-color: orange;
+}
+.main-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  background-color: yellow;
+}
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 800px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 header h1 {
-  background-color: peru;
+  background-color: blue;
   width: 150px;
 }
 header nav {
@@ -200,6 +218,10 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  justify-content: center;
+  background-color: green;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -216,6 +238,18 @@ header nav a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+.home .line {
+  border: 2px dashed gray;
+  width: 1000px;
+}
+.home .first {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+.home .first img {
+  max-width: 800px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -245,25 +279,4 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 800px;
-  margin-bottom: 10px;
-}
-header h1 {
-  background-color: peru;
-  width: 150px;
-}
-header nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: #17A2B8;
-  width: 300px;
-}
-header nav a {
-  font-size: 15px;
-  text-decoration: none;
 }

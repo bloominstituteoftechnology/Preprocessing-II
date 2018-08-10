@@ -40,7 +40,23 @@ img {
 }
 
 .container {
-  max-width: 800px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+
+.main-one {
+  .flex(flex,center,center);
+  width: 1200px;
+  background-color: orange;
+}
+
+.main-two {
+  .flex(flex,center,center);
+  flex-direction: column;
+  width: 1000px;
+  background-color: yellow;
 }
