@@ -206,14 +206,32 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section .text-content {
   width: 48%;
-  padding-right: 1%;
+  padding-right: 10%;
+}
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin: 20px;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -222,9 +240,18 @@ img {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width:500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    margin-right: 15px;
+    border-bottom: 2px dashed #C0C0C0;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
-  padding-right: 0;
+  padding-right: 10px;
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -243,14 +270,37 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  margin: 0 auto;
+  width: 90%;
 }
 .home .header {
   width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
 }
-.home .header-image {
+@media (max-width:500px) {
+  .home .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+.home .header .header-image {
   border-top: 3px dotted lightgrey;
   margin-bottom: 20px;
 }
@@ -266,4 +316,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width:500px) {
+  .home .btn {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
 }
