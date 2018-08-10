@@ -9,8 +9,6 @@
 .flex-column-centered {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .flex-column-reverse {
   display: flex;
@@ -396,7 +394,7 @@ header nav:last-child {
   border-radius: 10px;
 }
 .home .content-pick {
-  width: 100%;
+  width: 90%;
   padding-top: 40px;
   display: flex;
   justify-content: center;
@@ -418,8 +416,6 @@ header nav:last-child {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 .home .content-pick .destination .btn {
@@ -432,13 +428,14 @@ header nav:last-child {
   text-align: center;
   color: #FFFFFF;
   cursor: pointer;
-  padding: 20px 0;
+  padding: 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media only screen and (max-width: 500px) {
   .home .content-pick .destination .btn {
+    align-self: center;
     font-size: 2rem;
     font-weight: 500;
     width: 350px;
@@ -451,6 +448,6 @@ header nav:last-child {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 20px 0;
+    padding: 20px 0px;
   }
 }
