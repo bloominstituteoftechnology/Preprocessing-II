@@ -220,12 +220,17 @@ header h2 {
   padding: 20px 15% 20px 0%;
   margin-right: 5px;
 }
+@media (max-width:500px) {
+  header h2 {
+    font-size: 3.6rem;
+  }
+}
 .home .top-content {
   border-bottom: 2px dashed silver;
   margin: 20px 0px 20px 0px;
 }
 .home .top-content p {
-  padding-bottom: 2%;
+  padding-bottom: 4%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -233,13 +238,30 @@ header h2 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -247,6 +269,11 @@ header h2 {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -260,6 +287,11 @@ header h2 {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -269,9 +301,20 @@ header h2 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    padding: 6% 0px 0px 8%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   font-size: 1.8rem;
@@ -281,4 +324,9 @@ header h2 {
   padding: 15px;
   color: white;
   background-color: #17A2B8;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }
