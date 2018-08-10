@@ -168,6 +168,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: row;
+  font-family: 'Indie Flower', cursive;
+  text-decoration: none;
+  border: 1px solid red;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
