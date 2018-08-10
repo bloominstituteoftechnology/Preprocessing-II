@@ -8,10 +8,28 @@
 	justify-content: space-between;
 	align-items:center;
 	padding: 20px 0;
-
+    @media @mobile {
+       display:flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items:center;
+       padding-top:20px;
+       
+       .fun-bus {
+              margin-top:20px;
+              font-size:2.8rem;
+        }
+    }
 
 	.header-nav {
+        @media @mobile {
+           width: 90%;
+           margin: 0 auto;
+           padding:5px 0px 10px 0px;
+           margin-top: 20px;
+           
 
+        }
 	   .a {
 	       text-decoration:none;
 	       padding: 20px;
