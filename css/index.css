@@ -233,6 +233,18 @@ header nav {
 .home .content-destination img {
   border-radius: 10px;
 }
+.home .btn {
+  color: white;
+  font-size: 2em;
+  padding: 15px 0;
+  margin: 10px 0;
+  width: 90%;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #17A2B8;
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
