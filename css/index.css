@@ -249,6 +249,11 @@ header a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    text-align: center;
+  }
+}
 .home .text-content {
   width: 48%;
   padding-right: 1%;
@@ -256,49 +261,66 @@ header a {
 @media (max-width:500px) {
   .home .text-content {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding-right: 0%;
   }
 }
-.home .text-content .img-content {
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
 @media (max-width:500px) {
-  .home .text-content .img-content {
+  .home .img-content {
     width: 100%;
+    padding-left: 0%;
   }
 }
-.home .text-content .img-content img {
+.home .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+@media (max-width:500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+}
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+@media (max-width:500px) {
+  .inverse-content .text-content {
+    width: 100%;
+    padding-left: 0%;
+  }
+}
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+@media (max-width:500px) {
+  .inverse-content .img-content {
+    width: 100%;
+    padding-right: 0%;
+  }
+}
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 @media (max-width:500px) {
-  .home .content-destination {
+  .content-destination {
     width: 100%;
+    padding: 0 2%;
   }
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .btn {
+.btn {
   width: 200px;
   height: 35px;
   border-radius: 10px;
@@ -311,35 +333,30 @@ header a {
   align-items: center;
 }
 @media (max-width:500px) {
-  .home .btn {
+  .btn {
     width: 100%;
   }
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width:500px) {
-  .home .content-pick {
+  .content-pick {
     max-width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
   }
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width:500px) {
-  .home .content-pick .destination {
+  .content-pick .destination {
     width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
 }
