@@ -208,6 +208,12 @@ img {
 .home .first-img {
   margin-top: 8rem;
 }
+.home .welcome-section {
+  margin-top: 2rem;
+}
+.home .welcome-section .spacer {
+  border-bottom: 2px dashed grey;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
