@@ -198,15 +198,15 @@ header a {
     align-items: center;
   }
   header h1 {
-    margin: 0;
+    margin: 10px 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   header nav {
-    margin: 0;
-    width: 100%;
+    margin: 10px 0;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -287,4 +287,35 @@ header a {
   background-color: darkcyan;
   color: #FFFFFF;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 85%;
+    margin: auto;
+  }
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .content-section .text-content,
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    order: 1;
+  }
+  .home .content-destination {
+    width: 100%;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }

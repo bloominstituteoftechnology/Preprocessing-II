@@ -67,4 +67,29 @@
       }
     }
   }
+
+  @media @mobile {
+    width: 85%;
+    margin: auto;
+
+    .content-section {
+      .flex-column;
+      .text-content, .img-content {
+      width: 100%;
+      }
+      .img-content {
+        order: 1;
+      }
+    }
+    .content-destination {
+      width:100%;
+    }
+
+    .content-pick {
+      .flex-column;
+      .destination {
+        width: 80%;
+      }
+    }
+  }
 }// home
