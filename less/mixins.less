@@ -1,13 +1,21 @@
-.flex (@justify: center, @align: center, @direction: row) {
+.flex (@justify: center; @align: center; @direction: row) {
     display: flex;
     justify-content: @justify;
     align-items: @align;
     flex-direction: @direction;
 }
 
-.button(@color, @x-pad, @y-pad, @bg-color, @radius: 10px) {
+.button(@color; @x-pad; @y-pad; @bg-color; @radius: 10px) {
     color: @color;
     padding: @x-pad @y-pad;
     background-color: @bg-color;
     border-radius: @radius;
+}
+
+.button-switch(@bg-color; @text-color; @transition) {
+    transition: @transition;
+    transform: scale(1.1);
+    background-color: @bg-color;
+    color: @text-color;
+    border: 2px solid @text-color;
 }

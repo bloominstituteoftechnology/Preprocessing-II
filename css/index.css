@@ -329,6 +329,13 @@ img {
   text-align: center;
   margin-right: 15%;
 }
+.home .content-pick .destination .btn:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  background-color: white;
+  color: #17A2B8;
+  border: 2px solid #17A2B8;
+}
 @media (max-width: 500px) {
   .home {
     padding-right: 5px;
