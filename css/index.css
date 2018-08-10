@@ -172,29 +172,34 @@ header {
   height: 50px;
   border-bottom: 1.5px dashed #C0C0C0;
   margin-top: 25px;
+  display: flex;
+  justify-content: center;
 }
 header .navigation {
   width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
-  margin: 0 auto;
-  align-self: center;
+  align-items: baseline;
 }
 header .navigation h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 header .navigation nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 40%;
+  width: 35%;
 }
 header .navigation nav a {
   font-size: 1.2rem;
   color: #212529;
   text-decoration: none;
+  cursor: default;
+  opacity: 1;
+}
+header .navigation nav a:hover {
+  opacity: 0.6;
 }
 .footer {
   width: 100%;
@@ -204,7 +209,7 @@ header .navigation nav a {
 .footer p {
   text-align: center;
   color: #212529;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding: 20px;
 }
 .fun-bus-section {
@@ -213,16 +218,28 @@ header .navigation nav a {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  border-bottom: 1.25px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .fun-bus-section h1 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   margin-top: 20px;
   margin-bottom: 10px;
   color: #212529;
 }
 .fun-bus-section p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  color: #212529;
+}
+.home {
+  width: 80%;
+  margin: 0 auto;
+}
+.home h2 {
+  font-size: 2.8rem;
+  color: #212529;
+}
+.home p {
+  font-size: 1.4rem;
   color: #212529;
 }
 .home .content-section {
@@ -272,10 +289,10 @@ header .navigation nav a {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: #17A2B8;
   color: #FFFFFF;
-  height: 35px;
+  height: 32px;
   width: 80%;
   display: flex;
   justify-content: center;
