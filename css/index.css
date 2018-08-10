@@ -271,6 +271,17 @@ header .navigation nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  border-radius: 4px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  height: 35px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
 html {
   font-size: 62.5%;
 }
