@@ -1,17 +1,43 @@
 .home {
 
+  .index-header {
+    margin-top: 70px;
+
+    h2 {
+      margin-top: 15px;
+    }
+
+    p {
+      padding: 5px 0 30px;
+      border-bottom: 1px dashed @silver;
+    }
+
+    @media @mobile {
+      margin-top: 100px;
+      padding: @mobile-padding;
+    }
+  } //index-header
+
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+        @media @mobile {
+          width: 100%;
+          padding-right: 0;
+        }
     }
+
+
 
     .img-content {
       width: 48%;
@@ -20,23 +46,40 @@
       img {
         border-radius: 10px;
       }
+      @media @mobile {
+        width: 100%;
+      }
     }
-  }
+
+    @media @mobile {
+      padding: @mobile-padding;
+      flex-direction: column;
+    }
+  } //content-section
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        order: -1;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
     }
-  }
+  }  //inverse-content
 
   .content-destination {
     width: 75%;
@@ -45,7 +88,12 @@
     img {
       border-radius: 10px;
     }
-  }
+
+    @media @mobile {
+      width: 100%;
+      padding: @mobile-padding;
+    }
+  } //content-destination
 
   .content-pick {
     padding-top: 30px;
@@ -56,6 +104,37 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button-creator(#fff, 80%, 40px, @eastern-blue);
+        .flex-centered();
+        border-radius: 10px;
+        box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+        font-size: 1.4rem;
+        cursor: pointer;
+
+          &:active {
+            background-color: darken(@eastern-blue, 10%);
+            box-shadow: inset 0px 0px 5px rgba(0,0,0,0.75);
+          }
+
+          @media @mobile {
+            width: 90%;
+          }
+      }
+
+      @media @mobile {
+        width: 100%;
+      }
+
     }
-  }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15%;
+      padding-top: 30px;
+    }
+  } //content-pick
+
 }// home
