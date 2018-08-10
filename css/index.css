@@ -1,8 +1,8 @@
 .btn {
   width: 90%;
   background: #17A2B8;
-  color: #212529;
-  padding: 15px 20px;
+  color: #FFFFFF;
+  padding: 12px 25px;
   border-radius: 15px;
   font-size: 2rem;
   text-align: center;
@@ -272,6 +272,7 @@ img {
   .home .content-section .text-content {
     width: 100%;
     padding: 0px;
+    text-align: justify;
   }
 }
 .home .content-section .img-content {
