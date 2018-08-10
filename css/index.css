@@ -126,6 +126,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.flx-r {
+  display: flex;
+  flex-direction: row;
+}
+.flx-c {
+  display: flex;
+  flex-direction: column;
+}
+.just-ctr {
+  justify-content: center;
+}
+.just-end {
+  justify-content: flex-end;
+}
+.just-btwn {
+  justify-content: space-between;
+}
+.aln-ctr {
+  align-items: center;
+}
+.full-width {
+  width: 100%;
+}
 * {
   box-sizing: border-box;
 }
@@ -168,6 +191,41 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  background: #17A2B8;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  font-size: 1.3rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav .links {
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+nav .links a {
+  margin-right: 10%;
+  color: #212529;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +236,20 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  border-bottom: 3px dashed lightgray;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.home header .banner {
+  background-image: url("../img/fun-bus.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
