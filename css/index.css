@@ -173,10 +173,24 @@ img {
   justify-content: space-around;
   width: 100%;
 }
+@media (max-width:500px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin: 20px;
+  }
+  .nav h1 {
+    text-align: center;
+  }
+}
 .nav nav {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  width: 80%;
   align-items: center;
 }
 .nav nav li {
@@ -285,6 +299,7 @@ img {
   margin-bottom: 30px;
   margin: 0 auto;
   width: 90%;
+  border: 1px red solid;
 }
 .home .header {
   width: 100%;
