@@ -267,3 +267,15 @@ hr {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkslategrey;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 5%;
+  box-shadow: 2px 2px gray;
+  height: 50px;
+  width: 85%;
+}

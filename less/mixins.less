@@ -1,1 +1,14 @@
 // Mixins in here
+.btn-designer(@bgColor:darkslategrey, @color:white, @fontsize:1.8rem, @bradius:5%, @height:50px, @width:85%){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @bgColor;
+    color: @color;
+    font-size: @fontsize;
+    border-radius: @bradius;
+    box-shadow: 2px 2px gray;
+    height: @height;
+    width: @width;
+}
+
