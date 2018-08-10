@@ -1,1 +1,30 @@
 // Navigation Styles here
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 25px;
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.6rem;
+        width: 34.5%;
+        
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 0 15.5px;
+        }
+
+        a:last-child {
+            padding-right: 30px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
