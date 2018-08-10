@@ -1,11 +1,5 @@
 .home {
 
-  header .logo {
-    display: flex;
-    font-family: 'Indie Flower', cursive;
-    font-size: 4.0rem;
-  }
-
   header {
     display: flex;
     justify-content: space-between;
@@ -14,8 +8,8 @@
     border-bottom: 2px dashed @navigation-border;
 
     .logo {
-      display: flex;
-      justify-content: flex-start;
+      display: inline-block;
+      // justify-content: flex-start;
       font-family: 'Indie Flower', cursive;
       font-size: 4.0rem;
     }
@@ -27,7 +21,7 @@
       padding-left: 40%;
 
       a {
-        display: inline-block;
+        // display: inline-block;
         font-size: 1.6rem;
         color: black;
         text-decoration: none;
@@ -44,6 +38,32 @@
       a:hover {
         text-decoration: underline;
       }
+
+      @media @phone{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      
+        nav {
+          display: flex;
+          justify-content: center;
+          align-content: space-around;
+
+          a {
+            padding: 2.5% 0px;
+          }
+
+          a:first-child {
+            padding-left: 0%;
+          }
+
+          a:last-child {
+            padding-right: 0%;
+          }
+        }
+      }
     }
   }
 
@@ -51,6 +71,12 @@
     .welcome-content {
       padding: 18px 0 12px 0;
       border-bottom: 2px dashed @navigation-border;
+    }
+
+    @media @phone {
+      .welcome-content{
+        padding: 18px 3% 12px 5%;
+      }
     }
   }
 
@@ -75,6 +101,21 @@
         border-radius: 10px;
       }
     }
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+
+      .text-content {
+        width: 100%;
+        padding: 0 3% 0 5%;
+      }
+
+      .img-content {
+        width: 100%;
+        padding: 0 3% 0 5%;
+      }
+    }
   }
 
   .inverse-content {
@@ -90,6 +131,20 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @phone {
+      flex-direction: column-reverse;
+
+      .text-content {
+        width: 100%;
+        padding: 0 3% 0 5%;
+      }
+
+      .img-content {
+        width: 100%;
+        padding: 0 0 0 5%;
+      }
+    }
   }
 
   .content-destination {
@@ -98,6 +153,15 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @phone {
+      width: 100%;
+      padding: 0 3% 0 5%;
+
+      img {
+        width: 97%;
+      }
     }
   }
 
@@ -110,6 +174,16 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .destination {
+        width: 78%;
+      }
     }
   }
 }// home
