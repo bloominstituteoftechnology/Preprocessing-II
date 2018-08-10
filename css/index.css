@@ -215,6 +215,35 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .flash-ah-ah {
+  -webkit-animation: fade-in 0.8s linear infinite alternate;
+  -moz-animation: fade-in 0.8s linear infinite alternate;
+  animation: fade-in 0.8s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -299,7 +328,6 @@ img {
   margin-bottom: 30px;
   margin: 0 auto;
   width: 90%;
-  border: 1px red solid;
 }
 .home .header {
   width: 100%;
@@ -323,7 +351,7 @@ img {
   border: darkcyan 4px solid;
   font-size: 1.2rem;
   margin: 10px;
-  width: auto;
+  width: 16rem;
   height: 30px;
   background-color: darkcyan;
   color: white;
