@@ -1,4 +1,32 @@
+.header{
+  width: 100%;
+  border-bottom: 2px dashed silver;
+  padding: 2% 0;
+  .headerContent{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .home {
+
+  .welcome{
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 5px;
+    img{
+      width: 100%;
+    }
+    .text-content{
+    margin: 20px 0 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+  }
 
   .content-section {
     margin: 30px 0;
@@ -56,6 +84,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      .btn{
+        .buttonCreator;
+      }
     }
   }
 }// home
