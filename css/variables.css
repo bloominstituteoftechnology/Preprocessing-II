@@ -1,0 +1,16 @@
+@media (max-width:500px) {
+  .content-section {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid green;
+  }
+  .content-section .text-content,
+  .content-section .img-content {
+    width: 100%;
+    min-width: 500px;
+    border: 1px solid red;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
