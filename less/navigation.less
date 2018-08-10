@@ -3,28 +3,26 @@
 header {
   width: 100%;
   margin-bottom: 20px;
-  .flex-justify-centered;
 
+  .flex-boxed(@justify:center, @alignitems:center);
   margin-top: 20px;
   @media @mobile {
-    .flex-only-space-evenly;
+    .flex-boxed(@justify:space-evenly, @flexdir:column);
   }
 
   .logo {
     width: 100%;
     @media @mobile {
-        display: flex;
-        justify-content: center;
+       .flex-boxed(@justify:center);
     }
   }
 
   nav {
     width: 100%;
     font-size: 1.6rem;
-    .flex-spaced-between-width(50%);
+    .flex-boxed(@justify:space-between, @width:50%);
     color: @shark;
     @media @mobile {
-     display:flex;
       margin-top: 25px;
       width: 80%;
     }
@@ -42,7 +40,7 @@ header {
 .nav-border
 {
 
-    .flex-centered;
+  .flex-boxed(@justify:center);
     hr {
       margin-bottom: 0;
         .border-overflow;

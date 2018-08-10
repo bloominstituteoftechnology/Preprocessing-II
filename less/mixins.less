@@ -1,68 +1,13 @@
 // Mixins in here
-//Flex Mixins
-.flex-justify-centered () {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.flex-centered{
-    display: flex;
-    justify-content: center;
+
+// Border Mix-in
+.media-mobile__nav {
+
+  @media @mobile {
+    .flex-boxed(@flexdir:column);
+  }
 }
 
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.flex-column-centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-content: center;
- 
-}
-.flex-column-reverse {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.flex-only-space-between {
-  display: flex;
-  justify-content: space-between;
-}
-.flex-wrap-spaced-between {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.flex-only-space-evenly {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.flex-spaced-between-width (@width) {
-  display: flex;
-  justify-content: space-between;
-  width: @width;
-}
-
-//Button Creator
-.button-creator(@bgColor: teal, @width:200px, @height:35px, @font-btn-size:2rem) {
-  font-size: @font-btn-size;
-  font-weight: 500;
-  width: @width;
-  height: @height;
-  border-radius: 10px;
-  background-color: @bgColor;
-  text-align: center;
-  color: @white;
-  .flex-justify-centered();
-  cursor: pointer;
-  padding: 20px 0px;
-  
-}
-
-//Border Overflow
 .border-overflow {
   width: 100%;
   border: none;
@@ -80,3 +25,50 @@
 {
     border-top: 2px dashed silver;
 }
+
+//Flex Mixins
+.flex-justify-centered () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+ 
+}
+
+
+// Parametric Mix-in Flex and Button Creator
+.button-creator(@bgColor: teal, @width:200px, @height:35px, @font-btn-size:2rem) {
+  font-size: @font-btn-size;
+  font-weight: 500;
+  width: @width;
+  height: @height;
+  border-radius: 10px;
+  background-color: @bgColor;
+  text-align: center;
+  color: @white;
+  .flex-justify-centered();
+  cursor: pointer;
+  padding: 20px 0px;
+
+}
+
+.flex-boxed(@justify:"", @margin:"", @margin-top:"", @max-width:"", @alignitems:"", @flexdir:"", @width:"",@wrap:"")
+{
+  display: flex;
+  flex-wrap:@wrap;
+  flex-direction: @flexdir;
+  justify-content: @justify;
+  align-items: @alignitems;
+  margin: @margin;
+  margin-top: @margin-top;
+  max-width: @max-width;
+  width:@width;
+}
+

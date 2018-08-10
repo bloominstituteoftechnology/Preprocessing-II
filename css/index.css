@@ -1,34 +1,15 @@
-.flex-centered {
-  display: flex;
-  justify-content: center;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.flex-column-centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-content: center;
-}
-.flex-column-reverse {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.flex-only-space-between {
-  display: flex;
-  justify-content: space-between;
-}
-.flex-wrap-spaced-between {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.flex-only-space-evenly {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+@media only screen and (max-width: 500px) {
+  .media-mobile__nav {
+    display: flex;
+    flex-wrap: "";
+    flex-direction: column;
+    justify-content: "";
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
+  }
 }
 .border-overflow {
   width: 100%;
@@ -42,6 +23,12 @@
 }
 .dashed-border-top {
   border-top: 2px dashed silver;
+}
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -217,15 +204,27 @@ header {
   width: 100%;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: "";
+  flex-direction: "";
   justify-content: center;
   align-items: center;
+  margin: "";
+  margin-top: "";
+  max-width: "";
+  width: "";
   margin-top: 20px;
 }
 @media only screen and (max-width: 500px) {
   header {
     display: flex;
+    flex-wrap: "";
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
   }
 }
 header .logo {
@@ -234,20 +233,32 @@ header .logo {
 @media only screen and (max-width: 500px) {
   header .logo {
     display: flex;
+    flex-wrap: "";
+    flex-direction: "";
     justify-content: center;
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
   }
 }
 header nav {
   width: 100%;
   font-size: 1.6rem;
   display: flex;
+  flex-wrap: "";
+  flex-direction: "";
   justify-content: space-between;
+  align-items: "";
+  margin: "";
+  margin-top: "";
+  max-width: "";
   width: 50%;
   color: #212529;
 }
 @media only screen and (max-width: 500px) {
   header nav {
-    display: flex;
     margin-top: 25px;
     width: 80%;
   }
@@ -261,7 +272,14 @@ header nav:last-child {
 }
 .nav-border {
   display: flex;
+  flex-wrap: "";
+  flex-direction: "";
   justify-content: center;
+  align-items: "";
+  margin: "";
+  margin-top: "";
+  max-width: "";
+  width: "";
 }
 .nav-border hr {
   margin-bottom: 0;
@@ -299,12 +317,25 @@ header nav:last-child {
 .home .content-section {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: "";
   justify-content: space-between;
+  align-items: "";
+  margin: "";
+  margin-top: "";
+  max-width: "";
+  width: "";
 }
 @media only screen and (max-width: 500px) {
   .home .content-section {
     display: flex;
+    flex-wrap: "";
     flex-direction: column;
+    justify-content: "";
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
   }
 }
 .home .content-section .img-fun_bus {
@@ -351,7 +382,14 @@ header nav:last-child {
   .home .inverse-content {
     padding-bottom: 0;
     display: flex;
+    flex-wrap: "";
     flex-direction: column-reverse;
+    justify-content: "";
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
   }
 }
 .home .inverse-content .text-content {
@@ -389,7 +427,14 @@ header nav:last-child {
     width: 90%;
     margin: 0 auto 20px;
     display: flex;
+    flex-wrap: "";
     flex-direction: column;
+    justify-content: "";
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
     padding-top: 20px;
   }
 }
@@ -401,13 +446,26 @@ header nav:last-child {
   padding: 45px;
   margin: 0 30px;
   display: flex;
+  flex-wrap: "";
+  flex-direction: "";
   justify-content: center;
   align-items: center;
+  margin: "";
+  margin-top: "";
+  max-width: "";
+  width: "";
 }
 @media only screen and (max-width: 500px) {
   .home .content-pick {
     display: flex;
+    flex-wrap: "";
     flex-direction: column;
+    justify-content: "";
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
     margin: 0;
     padding: 20px;
   }
