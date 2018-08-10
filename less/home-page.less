@@ -2,6 +2,9 @@
   .top-section {
     border-bottom: 2px dashed @navigation-border;
     padding-bottom: 10px;
+    @media @mobile {
+      padding: 5px 5%;
+    }
     .bus-image {
       margin-bottom: 20px;
     }
@@ -15,7 +18,8 @@
 
     @media @mobile {
       flex-direction: column;
-      background-color: black;
+      justify-content: center;
+      padding: 5px 5%;
     }
 
   
@@ -23,14 +27,25 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 0%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 0%;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -38,6 +53,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -64,13 +82,28 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;      
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+        padding: 0% 10%;
+      }
 
       .btn {
-        .button-maker(45px, 80%, @button-bg, white)
+        .button-maker(45px, 80%, @button-bg, white);
+        &:hover {
+          background-color: white;
+          color: @button-bg;
+          border: 1px dashed @button-bg;
+        }
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }

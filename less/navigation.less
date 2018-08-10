@@ -7,6 +7,9 @@
     align-items: center;
     border-bottom: 2px dashed @navigation-border;
     padding: 25px 10%;
+    @media @mobile {
+        padding: 10px 0%;
+    }
     .nav-container {
         width: 100%;
         max-width: 800px;
@@ -21,12 +24,21 @@
         }
         h1 {
             width: 50%;
+            @media @mobile {
+                width: 100%;
+                font-size: 3.2rem;
+                text-align: center;
+                margin-bottom: 15px;
+            }
         }
         nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 50%;
+            @media @mobile {
+                width: 100%;
+            }
         }
         nav a {
             text-decoration: none;
