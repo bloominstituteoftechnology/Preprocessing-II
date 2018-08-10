@@ -9,8 +9,12 @@ header.navbar {
         width: 100%;
         padding: 25px 0px;
         .flex( row, space-between, center );
+        @media @tablet {
+            width: 90%;
+        }
 
         @media @mobile {
+            width: 100%;
             padding: 15px 0px;
             flex-direction: column;
         }
@@ -23,6 +27,7 @@ header.navbar {
 
             @media @mobile {
                 padding: 30px;
+                flex-wrap: nowrap;
             }
         }
     }
