@@ -168,6 +168,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header-section {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.header-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header-home .header-nav .a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.6rem;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -214,6 +229,10 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+.home .content-destination-reverse {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-pick {
   padding-top: 30px;
