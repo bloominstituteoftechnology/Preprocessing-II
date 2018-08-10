@@ -1,1 +1,29 @@
 // Mixins in here
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.button-creator(@btncolor: rgb(21,128,127), @width: 78%, @height: 45px, @mt: 10px) {
+    background: @btncolor;
+    border: 2px solid @btncolor;
+    border-radius: 12px;
+    font-family: Helvetica, Arial, system-ui, Sans-Serif;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 1;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    width: @width;
+    height: @height;
+    .flex-centered();
+    }
+
+.btn {
+    .button-creator();
+
+    @media @phone {
+        .button-creator(@btncolor:rgb(42,162,183),@width: 100%)
+    }
+}
