@@ -1,3 +1,21 @@
+.bordered {
+  max-width: 200px;
+  height: 35px;
+  background-color: #008080;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px 24%;
+}
+.destination .btn {
+  max-width: 200px;
+  height: 35px;
+  background-color: #008080;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px 24%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +186,15 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.flexstarter {
+  max-width: 800px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 section.navigation {
   max-width: 800px;
   width: 100%;
@@ -180,9 +207,10 @@ section.navigation {
   padding: 35px 0;
   border-bottom: 1.5px dashed lightgray;
 }
-section.navigation .navigation a {
+section.navigation .navigation {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 }
 section.navigation a {
   text-decoration: none;
@@ -200,6 +228,30 @@ section.navigation a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.flexstarter {
+  max-width: 800px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.main-header h2 {
+  height: 80px;
+  max-width: 800px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.main-header p {
+  padding-top: 10px;
 }
 .home .content-section {
   margin: 30px 0;
