@@ -1,4 +1,4 @@
-.btn {
+.button {
   width: 100%;
   max-width: 350px;
   border: 1px solid transparent;
@@ -10,7 +10,7 @@
   text-align: center;
   margin-top: 5%;
 }
-.btn:hover {
+.button:hover {
   width: 100%;
   max-width: 350px;
   border: 1px solid transparent;
@@ -436,4 +436,19 @@ header img {
 }
 .destination img {
   margin-top: 5px;
+}
+.btn {
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid transparent;
+  background: darkcyan;
+  color: white;
+  padding: 1%;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 5%;
+}
+.btn:hover {
+  background-color: grey;
 }
