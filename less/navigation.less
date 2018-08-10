@@ -1,47 +1,50 @@
 // Navigation Styles here
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
-
-
 	margin-top: 15px;
-  width: 100%;
-
+	width: 100%;
 	margin: auto;
-border-bottom: 1px dashed @shark;
+	border-bottom: 1px dashed @shark;
+
 
 	nav {
 		display: flex;
-		justify-content:space-between;
-margin: auto;
+		justify-content: space-between;
+		margin: auto;
 		align-items: center;
-
-		padding: 20px 0px;
-		  width: 100%;
-		max-width: 850px;
-
-
+		padding: 20px 0;
+		width: 100%;
+		max-width: 1050px;
+		@media @mobile {
+		max-width: 450px;
+		height: auto;
+		flex-direction: column;
+		}
 	}
 
-  a {
-  display: inline-block;
-  font-size: 1.5rem;
-  text-decoration: none;
-color :  @shark;
+	a {
+		display: inline-block;
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: @shark;
+		@media @mobile {
+			display: inline-block;
 
 
-
-
-
+		}
 	}
-  a:first-child {
-  display: inline-block;
-  font-size: 4rem;
-  text-decoration: none;
-	font-family: @main-family;
-	margin-right: 350px;
 
-
-
+	a:first-child {
+		display: inline-block;
+		font-size: 4rem;
+		text-decoration: none;
+		font-family: @main-family;
+		margin-right: 350px;
+		@media @mobile {
+			width: 100%;
+		}
 	}
+
 }
