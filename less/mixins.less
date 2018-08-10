@@ -1,1 +1,17 @@
 // Mixins in here
+.btnCreator(@bg-color:@button-bg, @txt-color:white)    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    background: @button-bg;
+    color: @txt-color;
+    &:hover {
+        background: @txt-color;
+        color: @bg-color;
+        border: solid 1px @bg-color;
+    }
+}
