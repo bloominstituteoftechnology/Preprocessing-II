@@ -1,3 +1,56 @@
+@media (max-width: 500px) {
+  .content-section {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .content-section .text-content,
+  .content-section .img-content {
+    width: 100%;
+    min-width: 500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.btn {
+  font-size: 1.2rem;
+  width: 100px;
+  height: 40px;
+  background-color: teal;
+  color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-radius: 10px;
+}
+.mobileMediaQuery .nav-inner-container {
+  flex-direction: column;
+}
+.mobileMediaQuery .nav-inner-container h1 {
+  margin-bottom: 10px;
+}
+.mobileMediaQuery .content-section .text-content {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.mobileMediaQuery .content-section .img-content {
+  width: 100%;
+}
+.mobileMediaQuery .inverse-content {
+  flex-direction: column-reverse;
+}
+.mobileMediaQuery .content-destination {
+  width: 100%;
+}
+.mobileMediaQuery .content-pick {
+  flex-direction: column;
+  align-items: center;
+}
+.mobileMediaQuery .content-pick .destination {
+  width: 75%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -203,32 +256,32 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
@@ -240,21 +293,56 @@ img {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
   padding: 20px;
 }
-.header .title {
+.welcome-section {
   border-bottom: 2px dashed silver;
 }
-.header .nav {
-  border-bottom: 2px dashed silver;
-}
-.header img {
+img {
   margin: 5px 0;
 }
-.header p {
+p {
   padding: 10px 0;
 }
-.header h2 {
+h2 {
   margin-top: 20px;
+}
+@media (max-width: 800px) {
+  .content-pick {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .content-pick .destination {
+    width: 60%;
+  }
+}
+@media mobile {
+  .nav-inner-container {
+    flex-direction: column;
+  }
+  .nav-inner-container h1 {
+    margin-bottom: 10px;
+  }
+  .content-section .text-content {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .content-section .img-content {
+    width: 100%;
+  }
+  .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .content-destination {
+    width: 100%;
+  }
+  .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-pick .destination {
+    width: 75%;
+  }
 }

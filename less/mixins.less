@@ -1,1 +1,51 @@
-// Mixins in here
+.button-creator(@bgcolor, @color, @fontsize){
+  font-size: @fontsize;
+  width: 100px;
+  height: 40px;
+  background-color: @bgcolor;
+  color: @color;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.btn{
+  .button-creator(teal, white, 1.2rem);
+  width: 200px;
+  border-radius: 10px;
+}
+
+.mobileMediaQuery {
+    .nav-inner-container {
+        flex-direction: column;
+        h1 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .content-section {
+        .text-content {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .img-content {
+            width: 100%;
+        }
+    }
+
+    .inverse-content {
+        flex-direction: column-reverse;
+    }
+    .content-destination {
+        width: 100%;
+    }
+    .content-pick {
+        flex-direction: column;
+        align-items: center;
+        .destination {
+            width: 75%;
+        }
+    }
+}
