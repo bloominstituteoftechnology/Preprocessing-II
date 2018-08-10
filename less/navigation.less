@@ -10,7 +10,7 @@ header {
   .logo {
     width: 100%;
     @media @mobile {
-       .flex-boxed(@justify:center);
+      .flex-boxed(@justify:center);
     }
   }
 
@@ -34,25 +34,22 @@ header {
   }
 }
 
-.nav-border
-{
-
+.nav-border {
   .flex-boxed(@justify:center);
-    hr {
-      margin-bottom: 0;
-        .border-overflow;
-        padding:0 100vw;
+  hr {
+    margin-bottom: 0;
+    .border-overflow;
+    padding: 0 100vw;
 
-        @media @tablet {
-          .dashed-border;
-          padding: 0 429px;
-        }
-
-        @media @mobile {
-            .dashed-border;
-            width: 100%;
-            padding: 0;
-        }
-      
+    @media @tablet {
+      .dashed-border;
+      padding: 0 429px;
     }
+
+    @media @mobile {
+      .dashed-border;
+      width: 100%;
+      padding: 0;
+    }
+  }
 }
