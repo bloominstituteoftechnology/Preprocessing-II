@@ -1,21 +1,44 @@
 .home {
 
+  .fun-bus-header {
+    margin-top: 15px;
+    border-bottom: @border;
+    padding-bottom: 15px;
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile {
+      .flex(space-between, flex-start, column);
+      width: 100%;
+      flex-wrap: none;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        // margin-right: 5px;
+    
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        img {
+          width: 100%
+        }
+        
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +49,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      .flex(space-between, center, column-reverse);
+    }
 
     .text-content {
       padding-left: 1%;
@@ -52,10 +78,28 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      .flex(space-between, center, column);
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+      }
+      .btn {
+        .flex();
+        .button(white, 10px, 20px, @eastern-blue);
+        font-size: 1.6rem;
+        text-align: center;
+        margin-right: 15%;
+        
+      }
     }
+  }
+  @media @mobile {
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }// home

@@ -1,1 +1,13 @@
-// Mixins in here
+.flex (@justify: center, @align: center, @direction: row) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.button(@color, @x-pad, @y-pad, @bg-color, @radius: 10px) {
+    color: @color;
+    padding: @x-pad @y-pad;
+    background-color: @bg-color;
+    border-radius: @radius;
+}
