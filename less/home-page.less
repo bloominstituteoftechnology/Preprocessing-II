@@ -3,6 +3,16 @@
   // border: 1px solid blue;
   .header-style;
   .flex-header;
+
+  @media @tablet {
+    // border: 3px solid goldenrod;
+    justify-content: space-around;
+  }
+
+  @media @phone {
+      flex-direction: column;
+      height: 120px;
+  }
   
   h2 {
       margin: 20px 0 0 0;
@@ -12,10 +22,7 @@
       }
   } //h2
 
-  @media @phone {
-      flex-direction: column;
-      height: 120px;
-  }
+  
 
   nav {
       // border: 6px solid gold;
@@ -32,11 +39,13 @@
       }
       
   } // nav
-} //.navigation
+} //.header
 
 
 .container.home {
   // border: 1px solid red;
+
+
   .content-pick {
     .btn {
         .button-creator();
@@ -49,6 +58,19 @@
 .home {
   .main-header {
     border-bottom: 2px dashed lightgray;
+
+    @media @tablet {
+      .img-content {
+        padding: 20px;
+      }
+    } 
+
+    .text-content {
+      @media @tablet {
+        padding-left: 2%;
+      }
+    }
+
     @media @phone {
       padding: 0 0 0 10px;
     }
@@ -71,6 +93,10 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @tablet {
+        padding-left: 2%;
+      }
       @media @phone {
         width: 100%;
       }
@@ -81,6 +107,9 @@
       padding-left: 1%;
       img {
         border-radius: 10px;
+        @media @tablet {
+          padding-right: 2%;
+        }
       }
       @media @phone {
         width: 100%;
@@ -100,6 +129,9 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @tablet {
+        padding-left: 2%;
+      }
       @media @phone {
         order: 2;
       }
@@ -130,9 +162,13 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @tablet {
+        padding-left: 2%;
+      }
       @media @phone {
         width: 80%;
       }
     }
   }
 }// home
+
