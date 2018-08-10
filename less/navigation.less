@@ -1,1 +1,30 @@
 // Navigation Styles here
+@import 'variables.less';
+@import 'mixins.less';
+
+.fun-bus-nav {
+    .header-navigation {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        font-size: 1.6rem;
+        margin: 0 5%;
+        a {
+            color: @shark;
+            text-decoration: none;
+        }
+
+        @media @mobile {
+            width: 100%;
+            
+        }
+    }
+}
+
+.btn {
+    .signMeUp_Btn(200px);
+
+    @media @mobile {
+        .signMeUp_Btn(100%);
+    }
+}
