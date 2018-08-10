@@ -179,6 +179,40 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@keyframes colorChange {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@keyframes imgFade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home header {
   display: flex;
   justify-content: space-between;
@@ -215,6 +249,10 @@ img {
     width: 90%;
     margin: 0 auto;
   }
+}
+.home .jumbo img {
+  animation-name: imgFade;
+  animation-duration: 4s;
 }
 .home .content-section {
   margin: 30px 0;
@@ -309,6 +347,8 @@ img {
   align-items: center;
   padding: 15px;
   background-color: green;
+  animation-name: colorChange;
+  animation-duration: 4s;
 }
 .home .btn:hover {
   background-color: black;

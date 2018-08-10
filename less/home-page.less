@@ -11,12 +11,30 @@
     padding: 15px;
     // margin: 40px;
     background-color: @bgcolor;
+    animation-name: colorChange;
+    animation-duration: 4s;
   
     &:hover {
       background-color: black;
       border: 2px solid blue;
       color: white;
     }
+}
+
+@keyframes colorChange {
+  0% {background-color: green;}
+  25% {background-color: yellow;}
+  50% {background-color: blue;}
+  75% {background-color: orange;}
+  100% {background-color: red;}
+}
+
+@keyframes imgFade {
+  0% {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.75;}
+  100% {opacity: 1;}
 }
 
 .home {
@@ -51,6 +69,11 @@
       width: 90%;
       margin: 0 auto;
     }
+  }
+
+  .jumbo img {
+    animation-name: imgFade;
+    animation-duration: 4s;
   }
 
   .content-section {
