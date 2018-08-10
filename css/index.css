@@ -169,9 +169,17 @@ img {
   margin: 0 auto;
 }
 nav {
-  font-size: 2rem;
+  display: flex;
+  flex-direction: "";
+  justify-content: "";
+  align-items: center;
+  margin: "";
+  margin-top: "";
+  max-width: "";
+  font-size: 1.6rem;
 }
 nav a {
+  margin-left: 25px;
   text-decoration: none;
   color: #212529;
 }
