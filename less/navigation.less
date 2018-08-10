@@ -1,22 +1,47 @@
 // Navigation Styles here
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 0;
+    width: 100%;
     border-bottom: 2px dashed @navigation-border;
-   
 
-    nav {
+    .header-content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: 40%;
-        padding-right: 3.7%;
+        padding: 24px 0;
+        margin: 0 auto;
+        max-width: 800px;
 
-        a {
-            color: @font-color;
-            text-decoration: none;
-            font-size: 1.6rem;
+        @media @phone {
+            flex-direction: column;  
+            justify-content: center;
+            align-items: center; 
+            padding: 0px;    
+        }
+
+        h1 {
+            @media @phone {
+                font-size: 3rem;
+                padding: 18px 0 16px 0;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            padding-right: 3.7%;
+
+            @media @phone {
+                width: 86%;
+                padding: 0px;
+                margin-bottom: 8px;
+            }
+
+            a {
+                color: @font-color;
+                text-decoration: none;
+                font-size: 1.6rem;
+            }
         }
     }
 }
