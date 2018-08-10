@@ -169,19 +169,30 @@ img {
   margin: 0 auto;
 }
 .nav-bar {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 6rem;
+  border-bottom: 2px dashed grey;
+  padding: 2rem;
 }
 .nav-bar .nav-bar-title {
-  width: 45%;
+  margin-right: 18%;
+  margin-left: 18%;
+}
+.nav-bar .nav-bar-links {
+  margin-right: 17%;
 }
 .nav-bar .nav-bar-links a {
   padding: 2.3rem;
   font-size: 2rem;
   flex-wrap: nowrap;
+}
+.nav-bar .nav-bar-links a:hover {
+  color: orange;
 }
 .footer {
   width: 100%;
@@ -193,6 +204,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .first-img {
+  margin-top: 8rem;
 }
 .home .content-section {
   margin: 30px 0;
