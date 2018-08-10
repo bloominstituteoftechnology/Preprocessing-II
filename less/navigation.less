@@ -7,9 +7,18 @@ header {
     height: 80px;
     margin: 0 auto;
 
+    @media @mobile {
+        flex-direction: column;
+    }
+
     nav {
-        width: 40%;
+        width: 50%;
         .flex-jc-al(space-between, center);
+
+        @media @mobile {
+            width: 100%;
+            padding: 0 5%;
+        }
     }
 
     a {

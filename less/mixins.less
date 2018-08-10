@@ -3,5 +3,15 @@
 .flex-jc-al(@jc, @al) {
     display: flex;
     justify-content: @jc;
-    align-items:  @al;
+    align-items: @al;
+}
+
+.button-maker(@width, @height, @radius, @bg, @tc, @fs, @fw){
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    background-color: @bg;
+    color: @tc;
+    font-size: @fs;
+    font-weight: @fw;
 }
