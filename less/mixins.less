@@ -1,1 +1,16 @@
 // Mixins in here
+.flex-ctr-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.button-maker(@width, @height, @ft-size, @color, @bg-color) {
+    width: @width;
+    height: @height;
+    font-size: @ft-size;
+    color: @color;
+    background-color: @bg-color;
+    border-radius: 10px;
+    .flex-ctr-ctr;
+}

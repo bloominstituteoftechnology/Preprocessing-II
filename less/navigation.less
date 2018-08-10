@@ -1,12 +1,4 @@
 // Navigation Styles here
-header {
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    width: 100%;
-    align-items: center;
-    border-bottom: 2px dashed silver;
-
     nav {
         max-width: 800px;
         width: 100%;
@@ -24,5 +16,13 @@ header {
                 color: @shark;
             }
         }
+
+        @media @mobile {
+            flex-direction: column;
+
+            .nav-links {
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
     }
-}
