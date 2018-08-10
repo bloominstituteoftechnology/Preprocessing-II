@@ -110,6 +110,9 @@
         }
         @media @mobile {
           .button-template(@BGcolor: @button-bg, @width: 100%);
+          &:hover {
+            .button-inset(3px, @navigation-border, #008080);
+          }
         }
       }
     }
