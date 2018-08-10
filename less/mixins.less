@@ -1,1 +1,46 @@
 // Mixins in here
+.button-creator(@color) {
+    width: 90%;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    background-color: @color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+
+    &:hover {
+        color: @shark;
+        border: 2px dashed @silver;
+        background-color: @white;
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+
+@keyframes slideinRight {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 20.35%;
+      width: 100%;
+    }
+  }
+
+  @keyframes slideinTop {
+    from {
+      margin-top: 150%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
+
+
