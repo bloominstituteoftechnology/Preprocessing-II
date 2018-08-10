@@ -13,9 +13,23 @@ header {
   height: 80px;
   border-bottom: 2px dashed @navigation-border;
 
+  @media @phone {
+    flex-direction: column;
+    padding: 20px 0 50px 0;
+    height: 100px;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
   nav {
     display: flex;
     justify-content: space-around;
     width: 40%;
+    @media @phone {
+      width: 100%;
+      padding-top: 20px;
+    }
   }
 }
