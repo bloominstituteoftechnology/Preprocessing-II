@@ -1,0 +1,24 @@
+.nav-outside-container {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
+.nav-outside-container .nav-inner-container {
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-outside-container .nav-inner-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+}
+.nav-outside-container .nav-inner-container a:hover {
+  text-decoration: underline;
+}
+.nav-outside-container .nav-inner-container .nav-padding-right {
+  padding-right: 30px;
+}
