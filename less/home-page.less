@@ -41,6 +41,10 @@
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 460px;
+          height: auto;
+        }
       }
     }
   }
@@ -74,9 +78,16 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
+      @media @mobile {
+        width: 460px;
+        height: auto;
+      }
     }
   }
 
@@ -85,13 +96,22 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      .flex(column,center,center)
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+      }
 
       .btn {
         .button-styled(@navigation-border, @button-bg, @main-bg);
+        @media @mobile {
+          .button-styled(@navigation-border, @button-bg, @main-bg, 360px);
+        }
       }
     }
   }

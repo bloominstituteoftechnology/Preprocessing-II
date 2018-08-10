@@ -6,13 +6,13 @@
     align-items: @ai;
 }
 
-.button-styled(@bordercolor, @bgcolor, @color){
+.button-styled(@bordercolor, @bgcolor, @color, @width:200px){
     .flex();
     border: 1px solid @bordercolor;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: @bgcolor;
     color: @color;
     height: 45px;
-    width: 200px;
+    width: @width;
     font-size: 1.8rem;
 }
