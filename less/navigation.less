@@ -1,1 +1,41 @@
 // Navigation Styles here
+@import "./variables.less";
+
+header {
+  border-bottom: 2px dashed @navigation-border;
+  padding: 30px;
+  @media @phones {
+    padding: 3%;
+  }
+}
+
+.navigation-section {
+  display: flex;
+  justify-content: space-between;
+  @media @phones {
+    align-items: center;
+    flex-direction: column;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav-content {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    @media @phones {
+      align-items: center;
+      flex-direction: column;
+      padding-top: 2%;
+      width: 100%;
+    }
+    .nav {
+      align-items: center;
+      display: flex;
+      font-size: 1.6rem;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+}

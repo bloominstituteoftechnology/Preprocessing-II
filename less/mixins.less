@@ -1,1 +1,21 @@
 // Mixins in here
+@import "./variables.less";
+
+.btn-sign-up(@border-width, @border-style, @color, @radius, @font-s) {
+  background-color: @button-bg;
+  border: @border-width @border-style @color;
+  border-radius: @radius;
+  color: @main-bg;
+  font-size: @font-s;
+}
+
+.btn {
+  .btn-sign-up(1px, solid, transparent, 12px, 1.6rem);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 80%;
+  @media @phones {
+    width: 100%;
+  }
+}
