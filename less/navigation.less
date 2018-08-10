@@ -4,6 +4,10 @@
     .flex(row, space-between, center);
     padding: 20px 0px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone {
+        .flex(column, space-around, center);
+        height: 120px;
+    }
 
     .navTitle {
         font-size: 4rem;
@@ -12,6 +16,10 @@
     nav {
         .flex(row, space-around, center);
         width: 45%;
+        @media @phone {
+            .flex(row, space-between, center);
+            width: 90%;
+        }
     }
 
     a {
