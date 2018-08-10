@@ -260,3 +260,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  font-size: 2rem;
+  width: 100%;
+  height: 40px;
+  background: darkcyan;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2px;
+}
+.home .content-pick .destination .btn:hover {
+  color: black;
+}
