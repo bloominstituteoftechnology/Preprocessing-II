@@ -321,3 +321,34 @@ nav a {
     padding: 25px;
   }
 }
+@media (max-width: 500px) {
+  .home .btn {
+    -webkit-animation: fade-in 0.8s linear infinite alternate;
+    -moz-animation: fade-in 0.8s linear infinite alternate;
+    animation: fade-in 0.8s linear infinite alternate;
+  }
+  @-moz-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
