@@ -1,1 +1,16 @@
-// Mixins in here
+.flexMix(@dir:row, @jc:center, @ai:center){
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @jc;
+    align-items: @ai;
+
+}
+.buttonCreator(@bgColor:teal, @width: 85%, @height: 50px){
+    font-size: 2rem;
+    background-color:@bgColor;
+    width: @width;
+    height:@height;
+    color:white;
+    border-radius: 12px;
+    .flexMix
+}
