@@ -1,1 +1,37 @@
 // Mixins in here
+
+
+ .button-c(@bgColor) {
+    border: @bgColor 4px solid;
+    font-size: 1.2rem;
+    margin: 10px;
+    width: 16rem;
+    height: 30px;
+    background-color: @bgColor;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone() {
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+    padding: 2px;
+    }
+
+
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    animation: @arguments;
+
+}
