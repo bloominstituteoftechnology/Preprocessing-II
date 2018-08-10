@@ -103,12 +103,13 @@
       }
 
       .btn {
+
+        .button-template(@BGcolor: #008080);
         &:hover {
           .button-inset(3px, @navigation-border);
         }
-        .button-template;
         @media @mobile {
-          .button-template(@width: 100%);
+          .button-template(@BGcolor: @button-bg, @width: 100%);
         }
       }
     }
