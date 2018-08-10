@@ -324,7 +324,7 @@ img {
 }
 @media (max-width:500px) {
   .home .content-pick .destination {
-    width: 100%;
+    width: 90%;
     justify-content: center;
   }
 }
