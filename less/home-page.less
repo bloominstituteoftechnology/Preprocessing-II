@@ -1,24 +1,50 @@
+  
 .home {
+  @media @mobile {
+    width: 90%;
+    height: auto;
+  }
+
+
+  div.intro {
+    padding: 20px 0px 12px;
+    border-bottom: 2px dashed @navigation-border;
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+    @media @mobile {
+      .flex(column, center, center);
+    }
+       
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-right: 0px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 100%;
+        padding-right: 0px;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 460px;
+          height: auto;
+        }
       }
     }
   }
@@ -26,24 +52,42 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @mobile {
+      .flex(column-reverse,center,center);
+    }
+    
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        width: 100%;
+        padding-left: 0px;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile {
+        width: 100%;
+        padding-left: 0px;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
+      @media @mobile {
+        width: 460px;
+        height: auto;
+      }
     }
   }
 
@@ -52,10 +96,23 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      .flex(column,center,center)
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+      }
+
+      .btn {
+        .button-styled(@navigation-border, @button-bg, @main-bg);
+        @media @mobile {
+          .button-styled(@navigation-border, @button-bg, @main-bg, 360px);
+        }
+      }
     }
   }
 }// home

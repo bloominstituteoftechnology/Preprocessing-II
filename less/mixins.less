@@ -1,1 +1,18 @@
 // Mixins in here
+.flex(@dir:row, @jc:center, @ai:center) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.button-styled(@bordercolor, @bgcolor, @color, @width:200px){
+    .flex();
+    border: 1px solid @bordercolor;
+    border-radius: 15px;
+    background-color: @bgcolor;
+    color: @color;
+    height: 45px;
+    width: @width;
+    font-size: 1.8rem;
+}
