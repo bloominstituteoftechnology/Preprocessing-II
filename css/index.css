@@ -1,6 +1,12 @@
 @media (max-width:500px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+@media (max-width:500px) {
   header {
     flex-direction: column;
+    padding-top: 18px;
   }
   header .logo {
     font-size: 2.8rem;
@@ -9,6 +15,49 @@
   header nav {
     justify-content: space-evenly;
     width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .home .dotted-line {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width:500px) {
+  .home .dotted-line2 {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width:500px) {
+  .header-content img {
+    max-width: 450px;
+    margin-left: 4.8%;
+  }
+  .header-content h2 {
+    margin-left: 4.8%;
+  }
+  .header-content p {
+    margin-left: 4.8%;
+  }
+}
+@media (max-width:500px) {
+  .home .content-section {
+    margin-left: 4.8%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    margin-left: 4.8%;
+  }
+  .home .content-section .img-content {
+    Width: 100%;
+    margin-left: 4.8%;
+  }
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 .flex-centered {
@@ -225,6 +274,12 @@ header nav a {
   padding: 20px;
 }
 .home .dotted-line {
+  background-color: #fff;
+  border-top: 2px dashed #8c8b8b;
+  margin-top: 0px;
+  width: 100%;
+}
+.home .dotted-line2 {
   background-color: #fff;
   border-top: 2px dashed #8c8b8b;
   margin-top: 0px;
