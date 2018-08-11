@@ -5,3 +5,23 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.bc(@color) {
+    background-color: @color;
+}
+
+.btn-style(@width:250px, @display:flex, @justify:center, @align:center, @bkcr: aqua, @color:white, @borderr:10px, @size:15px, @padding: 10px) {
+    width: @width;
+    display:@display;
+    justify-content: @justify;
+    align-items: @align;
+    background-color: @bkcr;
+    color: @color;
+    border-radius: @borderr;
+    font-size: @size;
+    padding: @padding;
+    &:hover {
+        background-color: @bkcr;
+        filter: brightness(150%);
+    }
+}

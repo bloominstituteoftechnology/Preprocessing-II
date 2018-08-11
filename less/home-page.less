@@ -1,45 +1,53 @@
 .home {
 
-  justify-content: center;
-  background-color: green;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 800px;
 
-   
+    .content-destination {
+      .bc(orange);
+  }
     
     .text-content {
-      width: 48%;
+      width: 375px;
       padding-right: 1%;
     }
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+    img {
+        border-radius: 10px;
+        width:375px;
+      }
+    
+  }
+    .first {
+      width: 1000px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 2px dashed gray;
+      border-top: 2px dashed gray;
+      padding-bottom: 20px;
 
       img {
-        border-radius: 10px;
+            max-width: 800px;
+            align-self: center;
+            margin-bottom: 20px;
+      }
+
+      div {
+        width:800px;
       }
     }
-  }
 
-    .line {
-      border: 2px dashed gray;
-      width: 1000px;
-    }
-
-    .first {
-      background-color: lightblue;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .first img {
-      max-width: 800px;
-    }
+    
 
   .inverse-content {
     padding-bottom: 30px;
@@ -49,31 +57,33 @@
       padding-left: 1%;
       padding-right: 0;
     }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
   }
 
   .content-destination {
-    width: 75%;
+    width:600px;
     margin: 0 auto 30px;
-
     img {
       border-radius: 10px;
     }
   }
 
   .content-pick {
+    width: 800px;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    
     .destination {
-      width: 30%;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
       margin-bottom: 30px;
+
+      .btn {
+        .btn-style(200px, flex, center, center, rgb(17, 112, 112), white, 20px, 20px, 20px);
+        }
     }
   }
 }// home
