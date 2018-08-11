@@ -1,1 +1,18 @@
 // Mixins in here
+
+
+.bordered {
+    width: 200px;
+    
+    height: 35px;
+    background-color: @button-bg;
+    color: @white;
+    border-radius: 10px;
+    font-size: @btn-text;
+    padding: @padding;
+}
+
+
+.destination .btn {
+  .bordered;
+}
