@@ -321,6 +321,9 @@ header {
   justify-content: center;
   align-items: center;
 }
+.home .content-pick .destination .btn:hover {
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .home .content-pick .destination {
     flex-direction: column;
