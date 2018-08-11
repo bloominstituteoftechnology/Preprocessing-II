@@ -1,10 +1,35 @@
 .home {
+  
+  header{
+    @media @mobile {
+      padding-bottom: 10px;
+      flex-direction: column;
+      padding-top: 18px;
+
+      .logo {
+        font-size: 2.8rem;
+        margin-bottom: 18px;
+      }
+
+      nav {
+        justify-content: space-evenly;
+        width: 100%;
+        a {
+          padding: 25px;
+        }
+      }
+
+    }
+  }
 
   .dotted-line {
       background-color: #fff;
       border-top: 2px dashed #8c8b8b;
       margin-top: 0px;
-      width: 100%;
+      width: 100%; 
+        @media @mobile {
+          margin-bottom: 0px;
+        }
       }
 
   .dotted-line2 {
@@ -12,17 +37,32 @@
       border-top: 2px dashed #8c8b8b;
       margin-top: 0px;
       width: 100%;
+        @media @mobile {
+
+        }
       }
 
   .header-content {
     h2 {
       padding-top: 10px;
+        @media @mobile {
+          margin-left: 4.8%;
+          padding-top: 15px;
+        } 
     }
 
-    
+    img {
+        @media @mobile {
+          max-width: 93.5%;
+          margin-left: 4.8%; 
+        }
+    }
 
     p {
       padding-bottom: 20px;
+        @media @mobile {
+          margin-left: 4.8%;
+        }
     }
   }
 
@@ -31,12 +71,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+      @media @mobile {
+        margin-left: 4.8%; 
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+        @media @mobile {
+          width: 93.5%
+        }
+        p {
+          @media @mobile {
+            padding-bottom: 0;
+          }
+        }
     }
 
     .img-content {
