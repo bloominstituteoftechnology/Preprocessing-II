@@ -1,1 +1,54 @@
 // Navigation Styles here
+
+
+header{
+    height: 50px;
+    border-bottom: 1.5px dashed @navigation-border;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+
+    @media @mobile {
+        height: 75px;
+        }
+
+    .navigation{
+        width: 80%;
+        .display-flex(row, space-between);
+        align-items: baseline;
+
+        @media @mobile {
+            .display-flex(column, space-between);
+            align-items: center;
+        }
+
+    h3{
+        font-size: 3.0rem;
+    }
+
+    nav{
+        .display-flex(row, space-between);
+        width: 35%;
+
+        @media @mobile {
+            width: 90%;
+            padding-bottom: 5px;
+        }
+        
+        a{
+            font-size: 1.2rem;
+            color: @font-color;
+            text-decoration: none;
+            cursor: default;
+            opacity: 1;
+
+            @media @mobile {
+                font-size: 1.4rem;
+            }
+            }
+        a:hover{
+            opacity: 0.6;
+        }
+        }
+    }
+}
