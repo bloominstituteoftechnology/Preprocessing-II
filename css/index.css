@@ -169,6 +169,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 8%;
+  }
+  nav a {
+    color: #212529;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 20px;
+  }
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -180,6 +192,18 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+header {
+    width: 100%;
+    border-bottom: 2px dashed #C0C0C0;
+    display: flex;
+  }
+  header h2 {
+    width: 50%;
+    text-align: center;
+    padding: 20px 20px 20px 50px;
+    margin-right: 5px;
+    padding-left: 8%;
+  }
 .home .content-section {
   margin: 30px 0;
   display: flex;
