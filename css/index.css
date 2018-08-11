@@ -186,7 +186,7 @@ nav {
 nav .nav-links {
   width: 45%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 nav .nav-links a {
   text-decoration: none;
