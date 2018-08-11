@@ -14,11 +14,23 @@
         align-items: center;
         justify-content: space-between;
 
+        @media @mobile {
+            flex-direction: column;
+            h1 {
+                font-size: 3.2rem;
+                margin: 10px;
+            }
+        }
+
         nav {
             display: flex;
             align-items: center;
             justify-content: space-around;
             width: 45%;
+
+            @media @mobile {
+                width: 100%;
+            }
     
             a {
                 text-decoration: none;
