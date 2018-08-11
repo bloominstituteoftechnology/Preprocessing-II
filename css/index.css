@@ -1,3 +1,8 @@
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,9 +173,37 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  width: 100%;
+  height: 90px;
+  border-bottom: 2px dashed #C0C0C0;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container .navbar {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container .navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+}
+.nav-container .navbar nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -178,6 +211,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .header {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .header h2 {
+  margin-top: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,4 +265,23 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination p {
+  padding-right: 10px;
+}
+.home .content-pick .destination .btn {
+  width: 85%;
+  height: 45px;
+  border-radius: 15px;
+  background-color: teal;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .content-pick .destination .btn:hover {
+  border: 2px solid teal;
+  background-color: #FFFFFF;
+  color: teal;
 }
