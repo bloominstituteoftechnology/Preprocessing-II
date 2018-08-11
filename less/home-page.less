@@ -1,29 +1,68 @@
-.home {
+.welcome{
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px dashed @navigation-border;
+}
 
-  .letsGo-sec {
-    margin: 25px auto;
-    padding-bottom: 10px;
-    border-bottom: 2px dashed #C0C0C0;
+  h1{
+    font-size: 2.8rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: @font-color;
   }
-  .letsGo {
-    font-size: 4.2rem;
+
+  p{
+    font-size: 1.4rem;
+    color: @font-color;
+
+    @media @mobile {
+      padding-bottom: 15px;
+    }
   }
+
+.home {
+  width: 80%;
+  margin: 0 auto;
+
+  h2{
+    font-size: 2.8rem;
+    color: @font-color;
+  }
+
+  p{
+    font-size: 1.4rem;
+    color: @font-color;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 1.25%;
-   
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -34,6 +73,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      }
+    }
 
     .text-content {
       padding-left: 1%;
@@ -50,6 +95,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -57,22 +106,54 @@
 
   .content-pick {
     padding-top: 30px;
+    margin-top: 10px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    .flex-center();
-    
+
+    h4 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-    
-    
-  }
-}
 
-.btn {
-  .buttonCreator();
-}
+      @media @mobile {
+        width: 80%;
+      }
+
+      .btn{
+        .buttonCreator();
+
+        @media @mobile {
+          .buttonCreator();
+        }
+      }
+    }
+  }
 
 // home
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: 3px dashed silver;
+
+}
+
+body {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+

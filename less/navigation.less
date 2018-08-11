@@ -1,22 +1,27 @@
 // Navigation Styles here
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  float: right;
+  
+  a {
+    font-size: 1.5rem;
+    color: #212529;
+    text-decoration: none;
+    opacity: 1;
+    margin-bottom: 10px;
     
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    border-bottom: 2px dashed @silver;
-    
-    a {
-      padding: 0px 20px;
+    &:hover {
+      text-decoration: underline;
       color: @silver;
-      text-decoration: none;
-      font-size: 1.5rem;
+    }
 }
 }
-      h1 {
-      position: relative;
-      left: -320px;
-      font-size: 3.6rem;
-      display: flex-start;
+    h1 {
+    position: relative;
+    top: 19px;
+    font-size: 3.6rem;
+    display: flex-start;
 }
