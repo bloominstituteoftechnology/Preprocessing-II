@@ -5,7 +5,13 @@ nav {
   justify-content: space-between;
   width: 35%;
   float: right;
-  
+
+  @media @mobile {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
   a {
     font-size: 1.5rem;
     color: #212529;
@@ -16,6 +22,11 @@ nav {
     &:hover {
       text-decoration: underline;
       color: @silver;
+    }
+    @media @mobile {
+      width: 100%;
+      .flex-center();
+      margin: 0 auto;
     }
 }
 }
