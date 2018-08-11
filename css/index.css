@@ -175,6 +175,13 @@ nav {
   width: 35%;
   float: right;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+}
 nav a {
   font-size: 1.5rem;
   color: #212529;
@@ -186,11 +193,28 @@ nav a:hover {
   text-decoration: underline;
   color: #C0C0C0;
 }
+@media (max-width: 500px) {
+  nav a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
 h1 {
   position: relative;
   top: 19px;
   font-size: 3.6rem;
   display: flex-start;
+}
+@media (max-width: 500px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -15px;
+  }
 }
 .footer {
   width: 100%;
@@ -347,6 +371,12 @@ p {
 }
 @media (max-width: 500px) {
   .content-pick .destination .btn {
+    width: 100%;
+    background: green;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick .destination .btn {
     font-size: 1.8rem;
     text-align: center;
     width: 120px;
@@ -364,6 +394,12 @@ p {
     background-color: #FFFFFF;
     color: teal;
     cursor: pointer;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .content-pick .destination .btn {
+    width: 100%;
+    background: green;
   }
 }
 .logo {

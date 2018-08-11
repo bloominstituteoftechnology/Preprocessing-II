@@ -22,6 +22,7 @@ nav {
     &:hover {
       text-decoration: underline;
       color: @silver;
+      
     }
     @media @mobile {
       width: 100%;
@@ -35,4 +36,9 @@ nav {
     top: 19px;
     font-size: 3.6rem;
     display: flex-start;
+
+    @media @mobile {
+      .flex-center();
+      top: -15px;
+    }
 }
