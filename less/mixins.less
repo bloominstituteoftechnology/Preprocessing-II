@@ -1,1 +1,38 @@
 // Mixins in here
+.flex(@flexDirection,@justifyContent,@alighItem){
+    display: flex;
+    flex-direction: @flexDirection;
+    justify-content: @justifyContent;
+    align-items: @alighItem;
+}
+
+.flex-spaceBetween(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column(){
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-reverse(){
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flex-column-centered(){
+    .flex-column;
+    align-items: center;
+}
+
+.btnMixin(){
+    padding: 20px 5%;
+    margin: 5px 1%;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 5px;
+    color: @white;
+    background: @eastern-blue;
+}
+
