@@ -1,16 +1,19 @@
-.flexMix(@dir:row, @jc:center, @ai:center){
+.flexMix(@dir: row, @jc: center, @ai: center) {
     display: flex;
     flex-direction: @dir;
     justify-content: @jc;
     align-items: @ai;
-
 }
-.buttonCreator(@bgColor:teal, @width: 85%, @height: 50px){
-    font-size: 2rem;
-    background-color:@bgColor;
+
+.buttonCreator(@bgColor: @button-bg, @width: 100%, @height: 35px) {
+    font-size: 1.8rem;
+    background-color: @bgColor;
     width: @width;
-    height:@height;
-    color:white;
+    height: @height;
+    color: white;
     border-radius: 12px;
-    .flexMix
+    .flexMix;
+        &:hover{
+            backgound-color:
+        }
 }

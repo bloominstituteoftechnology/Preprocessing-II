@@ -2,19 +2,30 @@
     max-width: width 100vw;
     border-bottom: 2px dashed @silver;
     .nav-bar {
+
         .flexMix(row, space-between, center);
         height: 80px;
-        max-width:800px;
+        max-width: 800px;
         width: 88%;
-        margin:0 auto;
-        
-            .nav-elements a {
-                font-size: 1.5rem;
-                text-decoration: none;
-                color: @shark;
-                padding: 5px 20px;
-                margin: 10px;
+        margin: 0 auto;
+
+        @media @mobile {
+
+            .flexMix(column, center, center);
+            flex-wrap: nowrap;
+            margin: 0 0;
+        }
+        .nav-elements {
+
+            .flexMix(row, space-between, center);
+        }
+        .nav-elements a {
+
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: @shark; // padding: 5px 20px;
+            margin: 10px;
+            padding:4px 10px;
         }
     }
 }
-
