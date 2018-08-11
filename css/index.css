@@ -169,8 +169,9 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 840px;
   width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .nav-container {
@@ -184,7 +185,8 @@ img {
 }
 .nav-container .navbar {
   width: 100%;
-  max-width: 800px;
+  max-width: 840px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
