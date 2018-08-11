@@ -1,5 +1,8 @@
 // Navigation Styles here
 
+@import 'variables.less';
+
+
 .flex-centered-spacebetween() {
   display: flex;
   justify-content: space-between;
@@ -17,10 +20,13 @@
         width:100%;
         max-width: 800px;
         .flex-centered-spacebetween();
+        @media @phone{
+            flex-direction: column;
+        }
 
         h1{
             font-size:4rem;
-            width:50%;
+            
         }
 
         .navigation{
@@ -28,6 +34,9 @@
             justify-content: space-around;
             width: 50%;
             font-size:1.6rem;
+            @media @phone{
+                width:100%;    
+            }
         }
     
     }
@@ -35,8 +44,3 @@
     
 }
 
-.home {
-    img{
-        width:100%;
-    }
-}

@@ -1,26 +1,52 @@
 @import 'mixins.less';
+@import 'variables.less';
 
 .home {
+  @media @phone{
+    padding: 0 20px;
+  }
 
+  .top-section{
+    margin-top:25px;
+  }
+
+  h1{
+    font-size:3.2em;
+    padding-bottom: 10px;
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @phone{
+      flex-direction: column;
+      width:100%;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+        width:100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @phone{
+        width:100%;
+      }
+     
+      
       img {
         border-radius: 10px;
+        @media @phone{
+          width:100%;
+        }
       }
     }
   }
@@ -28,22 +54,35 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone{
+      display:flex;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone{
+        order:0;
+      }
+      
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @phone{
+        order:1;
+      }
+     
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @phone{
+      width:100%;
+    }
     img {
       border-radius: 10px;
     }
@@ -54,15 +93,30 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @phone{
+      flex-direction: column;
+      width:100%;
+      align-items: center;
+
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone{
+        width:80%;
+      }
     }
 
     .btn{
       .button-maker();
+      @media @phone {
+        width:100%;
+      }
     }
   }
+
+  
+
   
 }// home
