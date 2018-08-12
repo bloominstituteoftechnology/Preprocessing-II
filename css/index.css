@@ -280,6 +280,11 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -351,7 +356,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 85%;
   height: 45px;
   background-color: #17A2B8;
   color: #FFFFFF;

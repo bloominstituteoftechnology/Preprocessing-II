@@ -53,6 +53,10 @@
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -79,6 +83,7 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
     }
   }
 
@@ -121,7 +126,7 @@
       }
 
       .btn {
-        .button-creator(200px, 45px, @button-bg, @white);
+        .button-creator(85%, 45px, @button-bg, @white);
 
         @media @mobile {
           .button-creator(100%, 45px, @button-bg, @white);
