@@ -103,6 +103,10 @@
       @media @mobile {
         width:75%;
       }
+      .btn {
+         .create-buttons(@button-bg, @main-bg); 
+         @media @mobile { .create-buttons(@button-bg, @main-bg, 42px, 100%);  }
+      }
     }
   }
 }// home

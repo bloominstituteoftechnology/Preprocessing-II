@@ -1,20 +1,22 @@
 // Mixins in here
-.create-buttons(@background, @fcolor) {
-	width:90%;
+
+.display-flex(@jc:center, @ai:center) {
+	display:flex;
+    justify-content:@jc;
+    align-items:@ai;
+}
+
+.create-buttons(@background, @fcolor, @height:42px, @width:90%) {
+	width:@width;
 	background:@background;
 	color:@fcolor;
-	padding:12px 25px;
-	border-radius:15px;
+	height:@height;
+	
+	border-radius:10px;
 	font-size:2.0rem;
-	text-align:center;
+	.display-flex;
 }
 
-.display-flex(@flex-direction, @justify-content){
-    display: flex;
-    flex-direction: @flex-direction;
-    justify-content: @justify-content;
-}
 
-.btn {
-  .create-buttons(@button-bg, @main-bg);	
-}
+
+
