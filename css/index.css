@@ -174,17 +174,32 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.container #nav-content h1 {
+@media (max-width:500px) {
+  .container #nav-content {
+    justify-content: space-evenly;
+    margin-top: 0px;
+    height: 85px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container h1 {
   display: flex;
   font-size: 5rem;
 }
-.container #nav-content nav {
+.container nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 33%;
 }
-.container #nav-content nav a {
+@media (max-width:500px) {
+  .container nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+.container nav a {
   text-decoration: none;
   font-size: 1.6rem;
   color: black;
@@ -207,6 +222,12 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 3%;
+  font-weight: bold;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -217,12 +238,32 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -236,12 +277,22 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -252,4 +303,28 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  padding: 1%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  color: white;
+  border-radius: 15px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
 }
