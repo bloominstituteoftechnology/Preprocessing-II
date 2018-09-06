@@ -7,6 +7,10 @@ header {
     margin-top: 25px;
     h1 {
         font-size: 4rem;
+
+        @media @mobile {
+            font-size: 3rem;
+          }
     }
 
     nav {
@@ -18,6 +22,20 @@ header {
             font-size: 1.6rem;
             padding-right: 30px;
             text-decoration-line: none;
+
+            @media @mobile {
+                padding: 30px;
+              }
         }
+
+        @media @mobile {
+            margin-top: 16px;
+          }
     }
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+      }
+      
 }
