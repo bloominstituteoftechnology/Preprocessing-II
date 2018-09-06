@@ -173,6 +173,28 @@ img {
     max-width: 450px;
   }
 }
+.container section:nth-child(odd) {
+  animation: sectionOdd 800ms cubic-bezier(0, 1.12, 1, 1.09) forwards;
+}
+@keyframes sectionOdd {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.container section:nth-child(even) {
+  animation: sectionEven 800ms cubic-bezier(0, 1.12, 1, 1.09) forwards;
+}
+@keyframes sectionEven {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .header {
   width: 100%;
   display: flex;

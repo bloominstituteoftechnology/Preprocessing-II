@@ -47,4 +47,11 @@ img {
   @media @mobile {
     max-width: 450px;
   }
+
+  section:nth-child(odd) {
+    .loadIn(sectionOdd, -1000px, 800ms);
+  }
+  section:nth-child(even) {
+    .loadIn(sectionEven, 1000px, 800ms);
+  }
 }

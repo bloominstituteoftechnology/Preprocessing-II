@@ -12,3 +12,15 @@
       font-size: 1.8rem;
       border-radius: 14px;
 }
+
+.loadIn(@name, @from, @time) {
+  @keyframes @name {
+    0%{
+      transform: translateX(@from);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  animation: @name @time @cubic forwards;
+}
