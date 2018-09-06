@@ -1,12 +1,12 @@
 .home {
-  
+
   .content-welcome{
     width: 100%;
     .bordered();
     padding-bottom: 10px;
     @media @mobile{
       padding: 0 0 10px 12px;
-      .mobile();
+      .mobile(0);
     }
     
     .top-img{
@@ -19,6 +19,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile{
+      width: 95%;
+      margin: 30px auto;
+      padding-left: 10px;
+    }
    
     
     .text-content {
@@ -27,6 +32,7 @@
       @media @mobile{
         width: 100%;
         padding: 0px;
+        order: -1;
       }
     }
 
@@ -35,11 +41,16 @@
       padding-left: 1%;
       @media @mobile{
         width: 100%;
-        padding: 0px;
+        padding: 0;
+
       }
 
       img {
         border-radius: 10px;
+        @media @mobile{
+          width: 100%;
+        }
+        
       }
     }
   }

@@ -240,6 +240,13 @@ header .navigation nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 95%;
+    margin: 30px auto;
+    padding-left: 10px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -248,6 +255,7 @@ header .navigation nav a {
   .home .content-section .text-content {
     width: 100%;
     padding: 0px;
+    order: -1;
   }
 }
 .home .content-section .img-content {
@@ -257,11 +265,16 @@ header .navigation nav a {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
-    padding: 0px;
+    padding: 0;
   }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
