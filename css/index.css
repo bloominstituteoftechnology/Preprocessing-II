@@ -165,8 +165,13 @@ img {
 }
 .container {
   max-width: 800px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
 }
 .header {
   width: 100%;
@@ -174,17 +179,41 @@ img {
   margin-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .header {
+    padding-bottom: 5px;
+  }
+}
 .header .navigation {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .header .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .header .navigation nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
 .header .navigation nav a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #212529;
   margin-left: 40px;
+}
+@media (max-width: 500px) {
+  .header .navigation nav a {
+    margin: 10px auto 0;
+  }
 }
 .footer {
   width: 100%;

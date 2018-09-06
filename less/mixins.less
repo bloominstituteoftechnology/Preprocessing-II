@@ -1,7 +1,7 @@
 // Mixins in here
 .flexDesktop(@wrap, @justify, @align) {
 	display: flex;
-	flex-wrap: @wrap;
+    flex-wrap: @wrap;
 	justify-content: @justify;
 	align-items: @align;
 }
@@ -15,4 +15,9 @@
     border-radius: 5px;
     background: @bg;
     color: @color;
+}
+
+.flexMobile(@direction) {
+    display: flex;
+    flex-direction: @direction;
 }
