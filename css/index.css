@@ -290,6 +290,7 @@ img {
   }
 }
 .home .btn {
+  position: relative;
   background: #17A2B8;
   max-width: 85%;
   color: #FFFFFF;
@@ -297,6 +298,35 @@ img {
   font-size: 1.8em;
   border-radius: 10px;
   padding: 10px;
+  border: 1px solid transparent;
+}
+.home .btn:hover {
+  cursor: pointer;
+  color: #17A2B8;
+  background: #FFFFFF;
+  border: 1px solid red;
+}
+.home .btn:hover::after {
+  z-index: 1;
+  content: ']';
+  position: absolute;
+  top: -18px;
+  right: -30px;
+  font-size: 4em;
+  width: 20px;
+  height: 30px;
+  color: red;
+}
+.home .btn:hover::before {
+  z-index: 1;
+  content: '[';
+  position: absolute;
+  top: -18px;
+  left: -30px;
+  font-size: 4em;
+  width: 2px;
+  height: 50px;
+  color: red;
 }
 @media (max-width: 500px) {
   .home {

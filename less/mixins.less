@@ -1,9 +1,43 @@
-.click-me-button() {
-	background: @eastern-blue;
+.click-me-button(@background) {
+	position: relative;
+	background: @background;
 	max-width: 85%;
 	color: @white;
 	text-align: center;
 	font-size: 1.8em;
 	border-radius: 10px;
 	padding: 10px;
+	border: 1px solid transparent;
+
+	&:hover {
+		cursor: pointer;
+
+		color: @background;
+		background: @white;
+		border: 1px solid red;
+
+		&::after {
+			z-index: 1;
+			content: ']';
+			position: absolute;
+			top: -18px;
+			right: -30px;
+			font-size: 4em;
+			width: 20px;
+			height: 30px;
+			color: red;
+		}
+		&::before {
+			z-index: 1;
+			content: '[';
+			position: absolute;
+			top: -18px;
+			left: -30px;
+			font-size: 4em;
+			width: 2px;
+			height: 50px;
+			color: red;
+		}
+		
+	}
 }
