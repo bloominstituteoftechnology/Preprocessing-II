@@ -1,10 +1,29 @@
 .home {
+  @media @phone {
+    width: 90%;
+  }
 
   .top-section {
     margin-bottom: 20px;
+    border-bottom: 2px dashed @navigation-border;
 
-    .bus-img {
-      margin-bottom: 20px; 
+    @media @phone {
+      padding-bottom: 10px; 
+    }
+
+    .bus-container {
+      @media @phone {
+        justify-content: center;
+        margin: 10px 0;
+      }
+      .bus-img {
+        margin-bottom: 20px;
+  
+        @media @phone {
+          margin-top: -10px;
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 
@@ -14,19 +33,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
@@ -34,6 +69,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -43,12 +82,20 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+        padding: 0;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @phone {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -61,12 +108,29 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @phone {
+        width: 80%;
+        align-items: center;
+      }
+
       .btn {
        .button(white, teal);
+      
+       @media @phone {
+         width: 100%;
+         border-radius: 15px;
+       }
       }
     }
   }
