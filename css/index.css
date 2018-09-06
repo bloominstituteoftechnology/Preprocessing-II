@@ -192,6 +192,21 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    padding: 0;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header nav {
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -229,6 +244,20 @@ header nav a:hover {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -241,12 +270,33 @@ header nav a:hover {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column;
+  }
+  .home .inverse-content .text-content {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .home .inverse-content .img-content {
+    width: 100%;
+  }
+  .home .inverse-content .img-content img {
+    width: 100%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -264,14 +314,31 @@ header nav a:hover {
 .home .content-pick button:hover {
   cursor: pointer;
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-  animation: slidebg 2s linear infinite;
+  animation: slidebg 2.5s linear infinite;
 }
 @keyframes slidebg {
   to {
-    background-position: 20vw;
+    background-position: 25vw;
   }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 5%;
+  }
+  .home .content-pick .destination button {
+    padding: 3% 30%;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    padding: 0 5%;
+  }
 }

@@ -7,13 +7,12 @@ header {
     border-bottom: 2px dashed @navigation-border;
     font-size: 1.6rem;
     h1 {
-    padding: 0 10%;
+        padding: 0 10%;
     }
     nav {
         justify-content: space-between;
         display: flex;
         padding: 0 10%;
-        
         a {
             padding: 0 6%;
             color: black;
@@ -21,6 +20,19 @@ header {
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+    @media @mobile {
+        flex-direction: column;
+        padding: 0;
+        h1 {
+            font-size: 3rem;
+        }
+        nav {
+            display: flex;
+            align-content: space-between;
+            width: 100%;
+            padding: 10px;
         }
     }
 }
