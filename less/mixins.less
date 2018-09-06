@@ -1,1 +1,22 @@
 // Mixins in here
+
+.custom-button(@bg, @color) {
+  
+    
+    color:@color;
+    text-align: center;
+    height: 5rem;
+    width: 100%;
+    background-color: @bg;
+    border-radius: 10px;
+   font-size:2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+    
+    &:hover {
+      background: white;
+      color: @shark;
+    }
+  }
