@@ -186,6 +186,7 @@ body > header h1 {
   margin-left: 10%;
 }
 body > header nav {
+  width: 35%;
   margin-right: 10%;
   display: flex;
   justify-content: space-evenly;
