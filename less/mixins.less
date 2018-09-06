@@ -1,1 +1,14 @@
 // Mixins in here
+.link {
+    color: @shark;
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    &:hover {
+        font-weight: bold;
+    }
+
+    &:active {
+        color: @silver;
+    }
+}
