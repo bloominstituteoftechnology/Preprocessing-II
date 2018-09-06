@@ -154,10 +154,20 @@ h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  h4 {
+    font-weight: bold;
+  }
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    font-weight: bold;
+  }
 }
 img {
   max-width: 100%;
@@ -171,7 +181,7 @@ img {
 @media (max-width: 500px) {
   .container {
     max-width: 500px;
-    padding: 10px;
+    padding: 4%;
   }
 }
 .home .header-img {
@@ -182,6 +192,10 @@ img {
   .home .header-img {
     margin-bottom: 10px;
   }
+}
+.home .line {
+  border-top: 2px dashed #C0C0C0;
+  margin-top: 9px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -241,6 +255,12 @@ img {
 .home .content-destination img {
   border-radius: 20px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    padding-left: 1%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -251,6 +271,13 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 22px 10% 0 10%;
+    margin-bottom: 2px;
+  }
+}
 .home .content-pick .destination .btn {
   border: 1px solid black;
   max-width: 200px;
@@ -260,12 +287,25 @@ img {
   border-radius: 10px;
   text-decoration: none;
   text-align: center;
-  background: #31a192;
+  background: #3b8fa8;
   color: white;
 }
 .home .content-pick .destination .btn:hover {
   background: white;
-  color: #31a192;
+  color: #3b8fa8;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header {
   display: flex;
@@ -288,12 +328,12 @@ header nav {
 header nav a {
   color: black;
   font-size: 1.6rem;
-  padding-right: 30px;
+  margin-right: 30px;
   text-decoration-line: none;
 }
 @media (max-width: 500px) {
   header nav a {
-    padding: 30px;
+    padding: 10px;
   }
 }
 @media (max-width: 500px) {
