@@ -1,3 +1,10 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 3%;
+  font-weight: bold;
+}
+
 .home {
 
   .content-section {
@@ -6,8 +13,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -22,7 +27,6 @@
       }
     }
   }
-
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -37,7 +41,6 @@
       padding-left: 0;
     }
   }
-
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
@@ -46,7 +49,6 @@
       border-radius: 10px;
     }
   }
-
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
@@ -56,6 +58,15 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .button-maker (100%, 50px, 0px, 1%, 1.5rem);
+        background-color: @eastern-blue;
+        color: white;
+        border-radius: 15px;
+      }
     }
   }
 }// home
+
+
+
