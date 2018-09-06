@@ -30,9 +30,11 @@
     color: @font-color;
 }
 
-.custom-button(@bgcolor, @txtcolor, @btn-width, @100percent-width, @vertical-padding: 20px,  @border-radius: 5px){
+.custom-button(@bgcolor, @txtcolor, @btn-width, 
+@100percent-width, @vertical-padding: 0,  @border-radius: 5px){
     width: @btn-width;
     background-color: @bgcolor;
+    //\padding: @vertical-padding;
     padding: @vertical-padding 0;
     .border-radius(@border-radius);
     .fonts(@btn-font-size, @txtcolor);

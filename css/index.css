@@ -324,6 +324,11 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -336,22 +341,36 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
-  width: 100%;
-  background-color: #028080;
-  padding: 15px 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  font-size: 1.7rem;
-  color: #FFFFFF;
-  text-align: center;
-}
-.home .content-pick .destination .btn:hover {
-  background-color: #17A2B8;
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex ;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-top: 2px dashed #C0C0C0;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+  }
+  .home .content-pick .destination .btn {
+    font-size: 1rem;
+    color: #212529;
+    width: 100%;
+    background-color: #17A2B8;
+    padding: 15px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .home .content-pick .destination .btn:hover {
+    background-color: #212529;
+  }
 }
 @media (max-width: 500px) {
   .home {

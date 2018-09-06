@@ -93,6 +93,9 @@
       border-radius: 10px;
     }
 
+    @media @mobile500{
+      width: @100percent-width;
+    }
   }
 
   .content-pick {
@@ -104,12 +107,29 @@
       width: 30%;
       margin-bottom: 30px;
 
-      .btn{
-        .custom-button(@button-lg, @white, @100percent-width, 40px, 15px);
+      // .btn{
+      //   .custom-button(@button-lg, @white, @100percent-width, 40px, 15px);
 
-        &:hover{
-          background-color: @eastern-blue;
-        }
+      //   &:hover{
+      //     background-color: @eastern-blue;
+      //   }
+      // }
+    }
+
+    @media @mobile500{
+      .flexing-boxes(row, wrap, center, center);
+      .borderTop-styling(@border-size, @border-type, @border-color);
+      .destination{
+        width: 80%;
+
+        .btn{
+          .fonts(1rem, @shark);
+          .custom-button(@button-bg, @white, @100percent-width, 0, 15px);
+
+          &:hover{
+            background-color: @shark;
+          }
+        }  
       }
     }
   }
