@@ -7,16 +7,26 @@ nav {
         border-bottom: @border;
         
         @media @mobile {
+            max-width: @mobileWidth;
             .flex(center, default);
             flex-wrap: wrap;
         }
         .navigation{
-            width: 100%;
+            width: 40%;
             .flex(space-between, center);
+
+            @media @mobile {
+                width: 100%;
+                margin-top: 10px;
+                .flex(space-around, flex-end);
+            }
         }
             a {
                 color: @font-color;
                 text-decoration: none;
                 font-size: 1.7rem;
+                &:hover {
+                    color: @button-bg;
+                }
             }
     }

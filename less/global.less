@@ -42,4 +42,9 @@ img {
   max-width: @max-width;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    max-width: @mobileWidth;
+    padding: 0 3%;
+  }
 }
