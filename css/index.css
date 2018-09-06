@@ -169,15 +169,20 @@ img {
   margin: 0 auto;
 }
 header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+header div {
+  border: 1px solid green;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px dashed #C0C0C0;
-  width: 100%;
+  padding: 20px 0;
 }
-header nav {
+header div nav {
   border: 1px solid blue;
 }
-header nav a {
+header div nav a {
   color: #212529;
   text-decoration: none;
   border: 1px solid black;
