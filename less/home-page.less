@@ -79,6 +79,7 @@
     @media @mobile, @tablet {
       flex-direction: column;
     }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
@@ -97,5 +98,27 @@
         }
       }
     }
+    .select-package {
+        .justifyAlign(space-between, center);
+        flex-direction: column;
+    }
   }
+
+  .form {
+    .input {
+      .formElements(70%);
+      @media @tablet {
+        .formElements(80%);
+      }
+    }
+  }
+  
+
+  // textarea {
+  //   .formElements(80%);
+  // }
+
+  // select {
+  //  .formElements(100%);
+  // }
 }// home

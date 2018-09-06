@@ -340,3 +340,23 @@ img {
     margin: auto;
   }
 }
+.home .content-pick .select-package {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.home .form .input {
+  padding: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  width: 70%;
+}
+@media (max-width: 750px) {
+  .home .form .input {
+    padding: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
