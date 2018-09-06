@@ -249,3 +249,18 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .btn {
+  border: 1px solid #17A2B8;
+  max-width: 200px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #17A2B8;
+  color: white;
+}
+.home .content-pick .btn:hover {
+  background: white;
+  color: #17A2B8;
+}
