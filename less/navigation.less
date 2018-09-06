@@ -1,1 +1,22 @@
 // Navigation Styles here
+nav {
+        max-width: @max-width;
+        width: 100%;
+        padding: 20px 0;
+        .flex(space-between, default);
+        border-bottom: @border;
+        
+        @media @mobile {
+            .flex(center, default);
+            flex-wrap: wrap;
+        }
+        .navigation{
+            width: 100%;
+            .flex(space-between, center);
+        }
+            a {
+                color: @font-color;
+                text-decoration: none;
+                font-size: 1.7rem;
+            }
+    }

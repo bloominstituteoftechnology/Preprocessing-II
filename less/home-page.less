@@ -1,10 +1,21 @@
 .home {
+  header {
+    border-top: @border;
+    max-width: @max-width;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .intro-section {
+    padding-bottom: 20px;
+    border-bottom: @border;
+  }
 
   .content-section {
     margin: 30px 0;
-    display: flex;
+    .flex(space-between, default);
     flex-wrap: wrap;
-    justify-content: space-between;
 
    
     
@@ -25,7 +36,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @border;
 
     .text-content {
       padding-left: 1%;
@@ -49,13 +60,16 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    border-top: @border;
+    .flex(space-between, default);
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .custom-button(@button-bg, @main-bg);
+      }
     }
   }
 }// home
