@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -166,39 +166,66 @@ img {
 .container {
   margin: 0 auto;
   max-width: 800px;
+  min-width: 300px;
   width: 100%;
+}
+@media (max-width: 800px) {
+  .container {
+    margin: 0 auto;
+    max-width: 700px;
+    min-width: 300px;
+  }
 }
 @media (max-width: 500px) {
   .container {
     margin: 0 auto;
     max-width: 450px;
+    min-width: 300px;
   }
 }
 header {
   margin: 0 auto;
   max-width: 1000px;
-  border-bottom: #C0C0C0 2px dashed;
+  min-width: 300px;
+  border-bottom: #c0c0c0 2px dashed;
+}
+@media (max-width: 800px) {
+  header {
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 300px;
+  }
 }
 @media (max-width: 500px) {
   header {
     margin: 0 auto;
     max-width: 500px;
+    min-width: 300px;
   }
 }
 header .navigation {
   margin: 0 auto;
   max-width: 800px;
+  min-width: 300px;
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 800px) {
+  header .navigation {
+    margin: 0 auto;
+    max-width: 700px;
+    min-width: 300px;
+    flex-direction: column;
+    padding: 16px 0 0;
+  }
+}
 @media (max-width: 500px) {
   header .navigation {
     margin: 0 auto;
-    max-width: 800px;
-    flex-direction: column;
-    padding: 16px 0 0;
+    max-width: 450px;
+    min-width: 300px;
   }
 }
 @media (max-width: 500px) {
@@ -212,11 +239,16 @@ header .navigation nav {
   justify-content: space-between;
   width: 40%;
 }
+@media (max-width: 800px) {
+  header .navigation nav {
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px;
+  }
+}
 @media (max-width: 500px) {
   header .navigation nav {
-    width: 100%;
     padding: 19px 25px 7px;
-    justify-content: space-around;
   }
 }
 header .navigation nav a {
@@ -227,14 +259,16 @@ header .navigation nav a {
 .footer {
   margin: 0 auto;
   max-width: 1000px;
+  min-width: 300px;
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 @media (max-width: 500px) {
   .footer {
     margin: 0 auto;
     max-width: 500px;
+    min-width: 300px;
   }
 }
 .footer p {
@@ -245,7 +279,7 @@ header .navigation nav a {
 }
 .home .sub-header .sub-header-text {
   padding: 20px 0 10px;
-  border-bottom: #C0C0C0 2px dashed;
+  border-bottom: #c0c0c0 2px dashed;
 }
 .home .content-section {
   margin: 30px 0;
@@ -287,7 +321,7 @@ header .navigation nav a {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 @media (max-width: 500px) {
   .home .inverse-content {
@@ -316,7 +350,7 @@ header .navigation nav a {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -329,6 +363,9 @@ header .navigation nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -339,13 +376,9 @@ header .navigation nav a {
   display: inline-block;
   text-align: center;
   font-size: 1.8rem;
-  color: #FFFFFF;
-  background: #17A2B8;
-  padding: 13px 52px;
+  color: #ffffff;
+  background: #17a2b8;
+  padding: 13px;
   border-radius: 15px;
-}
-@media (max-width: 500px) {
-  .home .content-pick .destination .btn {
-    width: 100%;
-  }
+  width: 100%;
 }

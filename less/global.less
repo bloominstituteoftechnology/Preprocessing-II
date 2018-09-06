@@ -6,13 +6,17 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
- 
+html,
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
 }
 
 h1 {
@@ -43,7 +47,10 @@ img {
 .container {
   .containerMaker(800px);
   width: 100%;
-  @media @mobile{
+  @media @tablet{
+    .containerMaker(700px);
+  }
+  @media @mobile {
     .containerMaker(450px);
   }
 }
