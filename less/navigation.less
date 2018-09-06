@@ -1,1 +1,31 @@
 // Navigation Styles here
+.container.nav {
+  .border-style();
+  max-width: 100%;
+  padding: 0;
+  .nav-header {
+    display: flex;
+    margin: 20px 6.5%;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 42%;
+    a {
+      font-size: 1.6rem;
+      color: @shark;
+      text-decoration: none;
+
+      &:hover {
+        color: @eastern-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
