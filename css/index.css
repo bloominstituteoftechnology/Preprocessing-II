@@ -176,6 +176,7 @@ img {
 }
 .header .navigation {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -250,4 +251,18 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  border: 2px solid #17A2B8;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 2rem;
+  max-width: 100%;
+  border-radius: 5px;
+  background: #17A2B8;
+  color: white;
+}
+.home .content-pick .destination .btn:hover {
+  background: white;
+  color: #17A2B8;
 }

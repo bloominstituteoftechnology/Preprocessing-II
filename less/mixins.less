@@ -1,1 +1,18 @@
 // Mixins in here
+.flexDesktop(@wrap, @justify, @align) {
+	display: flex;
+	flex-wrap: @wrap;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.button(@bg, @color) {
+    border: 2px solid @bg;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 2rem;
+    max-width: 100%;
+    border-radius: 5px;
+    background: @bg;
+    color: @color;
+}
