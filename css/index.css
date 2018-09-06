@@ -274,6 +274,8 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  margin: auto;
+  display: block;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -366,6 +368,11 @@ img {
   text-align: center;
   border: 1px solid black;
   margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .home .contact-form {
+    width: 90%;
+  }
 }
 .home .contact-form h3 {
   font-size: 3rem;
