@@ -1,5 +1,22 @@
 .home {
 
+  header {
+    
+    border-bottom: @dashedBorder;
+
+    img {
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p{
+      margin-bottom: 15px;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -25,7 +42,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @dashedBorder;
 
     .text-content {
       padding-left: 1%;
@@ -49,7 +66,7 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    border-top: @dashedBorder;
     display: flex;
     justify-content: space-between;
 

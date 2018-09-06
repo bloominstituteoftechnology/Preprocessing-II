@@ -1,29 +1,31 @@
 // Navigation Styles here
 
-header {
-    border-bottom: 1px dashed black;
+.navigation {
+    border-bottom: @dashedBorder;
 
     .nav-logo {
         max-width: 800px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        height: 100px;
         align-items: center;
-        margin: 0 auto;
+       
 
         nav {
-            margin: 10px 5%;
+            margin: 10px 0;
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
+
             
             
             a {
                 text-decoration: none;
                 color: black;
-                margin: 0 5%;
+                margin: 20px 5%;
                 font-size: 1.6rem;
-                min-width: 100px;
+                max-width: 110px;
+                white-space: nowrap;
             }
         }
 
