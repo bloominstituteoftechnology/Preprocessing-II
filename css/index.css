@@ -250,3 +250,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background: #17A2B8;
+  color: #FFFFFF;
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
+}
