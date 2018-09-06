@@ -256,6 +256,11 @@ header .navigation nav a {
   font-size: 1.6rem;
   color: #212529;
 }
+header .navigation nav a:hover {
+  color: #c0c0c0;
+  background: #ffffff;
+  transition: all 0.5s;
+}
 .footer {
   margin: 0 auto;
   max-width: 1000px;
@@ -379,6 +384,13 @@ header .navigation nav a {
   color: #ffffff;
   background: #17a2b8;
   padding: 13px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   border-radius: 15px;
   width: 100%;
+}
+.home .content-pick .destination .btn:hover {
+  color: #212529;
+  background: #ffebcd;
+  transition: all 0.5s;
 }
