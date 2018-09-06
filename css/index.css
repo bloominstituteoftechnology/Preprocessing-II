@@ -170,22 +170,22 @@ img {
 }
 .navHeader {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   flex-direction: row;
-  margin-left: 9%;
-  width: 84%;
+  border-bottom: 2px dashed darkgrey;
+}
+.navHeader h1 {
+  text-align: left;
 }
 .navHeader nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   justify-content: flex-end;
-  width: 100%;
   margin: 5%;
   margin-bottom: 3%;
+  margin-left: 275px;
+  margin-right: 0px;
 }
 @media (max-width: 500px) {
   .navHeader nav {
@@ -193,9 +193,13 @@ img {
   }
 }
 .navHeader nav a {
+  color: black;
+  text-decoration: none;
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  margin: 11px;
+  margin-bottom: 12px;
 }
 .footer {
   width: 100%;
