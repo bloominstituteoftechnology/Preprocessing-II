@@ -262,7 +262,7 @@ header nav a:hover {
 }
 .home .line {
   border-top: 2px dashed #C0C0C0;
-  width: 98.5vw;
+  width: 100%;
   position: absolute;
   left: 0;
 }
