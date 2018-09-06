@@ -1,15 +1,24 @@
 // Mixins in here
 
+// typical flex layout
 .layout(@justi:space-between, @align:center) {
 	display: flex;
 	justify-content: @justi;
 	align-items: @align;
   }
 
+  // typical mobile layout
+  .Mlayout(){
+      flex-direction : column;
+      align-items : center;
+  }
+
+  // put easy border
 .border(@size :1px, @color:red) {
 	border : @size solid @color;
 }
 
+// button used in this project
 .button(@bgcol : @eastern-blue, @width : 80%, @padding:10px){
     background : @bgcol;
     width : @width;
