@@ -1,1 +1,45 @@
 // Navigation Styles here
+
+header {
+    display: flex;
+    border-bottom: 2px dashed @navigation-border;
+    padding: 1%;
+    
+
+    .container-top{
+        display: flex;
+        align-items: center;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+
+    
+        .header-title{
+            width: 28%;
+
+            @media @mobile {
+            width: 100%;
+            border: 1px solid red;
+            }
+        }
+
+        .header-nav-buttons {
+            
+            flex-wrap: nowrap;
+            width: 70%;
+            margin: 2%;
+            
+
+            nav{
+            display: flex;
+            justify-content: flex-end;    
+            
+                a {
+                    color: black;
+                    text-decoration: none;
+                    margin: 2%;
+                }
+            }
+        }
+    }
+}
