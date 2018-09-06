@@ -177,6 +177,8 @@ img {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-bottom: 3%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home header h1 {
   width: 40%;
