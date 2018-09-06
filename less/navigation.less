@@ -3,7 +3,7 @@
   header {
     display: flex;
     @media @mobile {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     h1 {
       margin: 20px;
@@ -21,16 +21,17 @@
       nav {
           @media @mobile {
               width: 100%;
-              diplay: flex;
-              justify-content: space-around;
+              display: flex;
+              flex-direction: row; 
+              justify-content: space-evenly;
           }
         a {
           font-size: 1.6rem;
           font-weight: 600;
           text-decoration: none;
           color: black;
-          margin: 10px;
-          padding: 0 10px;
+        //   margin: 10px;
+        //   padding: 0 10px;
         }
       }
     }
