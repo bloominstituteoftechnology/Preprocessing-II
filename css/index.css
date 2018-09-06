@@ -178,9 +178,22 @@ img {
   align-items: center;
   margin-top: 2.5%;
 }
+@media (max-width: 500px) {
+  .navigation-section {
+    flex-direction: column;
+    border-bottom: 1px dashed #C0C0C0;
+  }
+}
 .navigation-section nav {
   display: flex;
   margin: 20px;
+}
+@media (max-width: 500px) {
+  .navigation-section nav {
+    width: 100%;
+    margin: 10px;
+    justify-content: space-around;
+  }
 }
 .navigation-section a {
   font-size: 1.4rem;
