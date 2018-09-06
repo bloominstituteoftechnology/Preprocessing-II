@@ -1,1 +1,34 @@
 // Navigation Styles here
+.fixed-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px dashed @navigation-border;
+  background-color: @main-bg;
+
+  .navbar-container {
+    .center;
+    max-width: @container-width;
+  }
+}
+
+.navbar-container {
+  .custom-layout(space-between, center);
+  padding: 20px 0;
+}
+
+.main-nav {
+  .custom-layout(space-around, flex-start);
+  width: 50%;
+
+
+  a {
+    // padding: 0 5%;
+    color: @font-color;
+    text-decoration: none;
+
+    &:hover {
+      color: @button-bg;
+    }
+  }
+}

@@ -1,1 +1,13 @@
 // Mixins in here
+
+// Level 1
+.center() {
+  margin: 0 auto;
+}
+
+// Level 2
+.custom-layout(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}

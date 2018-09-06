@@ -136,6 +136,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  font-size: 1.6rem;
+}
 h1,
 h2,
 h3,
@@ -164,9 +167,41 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
-  width: 100%;
+  border: 1px solid red;
   margin: 0 auto;
+  width: 100%;
+  margin-top: 81px;
+  max-width: 800px;
+}
+.fixed-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px dashed #C0C0C0;
+  background-color: #FFFFFF;
+}
+.fixed-navbar .navbar-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
+}
+.main-nav a {
+  color: #212529;
+  text-decoration: none;
+}
+.main-nav a:hover {
+  color: #17A2B8;
 }
 .footer {
   width: 100%;
