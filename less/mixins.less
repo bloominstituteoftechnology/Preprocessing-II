@@ -2,7 +2,7 @@
     width: 100%;
     padding: 20px 0;
 }
-.button-layout(){
+.button-layout(@bgcolor, @txtcolor){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     border: 1px solid darkgray;
     border-radius: 10px;
     font-size: 1.7rem;
-    background-color: teal;
-    color: white;
+    background-color:@bgcolor;
+    color: @txtcolor;
     
 }
