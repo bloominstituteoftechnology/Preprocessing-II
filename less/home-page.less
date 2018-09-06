@@ -1,10 +1,18 @@
 .home {
+  padding: 0px;
+
+  @media @mobile {
+    padding: 0px 20px;
+  }
 
   .funBusHeader{
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      padding: 0px 0px;
+    }
   
     img{
       padding-bottom: 20px;
@@ -22,16 +30,33 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      h2{
+        font-weight: bold;
+      }
+      @media @mobile {
+        width: 100%;
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 0%;
+      }
 
       img {
         border-radius: 10px;
@@ -43,20 +68,44 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
+      h2{
+        font-weight: bold;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 0%;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    h2{
+      font-weight: bold;
+    }
+
+    @media @mobile {
+      width:100%;
+
+    }
 
     img {
       border-radius: 10px;
@@ -69,14 +118,35 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      h4{
+        font-weight: bold;
+      }
+
+      @media @mobile{
+        width:90%;
+        margin:20px;
+        justify-content: center;
+        align-items: center;
+        
+      }
     }
   }
 
   .btn {
       .button(10px);
+
+      @media @mobile{
+       max-width:100%;
+      }
+
   }
 
 }// home
