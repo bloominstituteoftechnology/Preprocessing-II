@@ -1,32 +1,35 @@
 // Navigation Styles here
 nav {
-        max-width: @max-width;
-        width: 100%;
-        padding: 20px 0;
-        .flex(space-between, default);
-        border-bottom: @border;
-        
-        @media @mobile {
-            max-width: @mobileWidth;
-            .flex(center, default);
-            flex-wrap: wrap;
-        }
-        .navigation{
-            width: 40%;
-            .flex(space-between, center);
+    max-width: @max-width;
+    width: 100%;
+    padding: 20px 0;
+    .flex(space-between, default);
+    border-bottom: @border;
 
-            @media @mobile {
-                width: 100%;
-                margin-top: 10px;
-                .flex(space-around, flex-end);
+    @media @mobile {
+        max-width: @mobileWidth;
+        .flex(center, default);
+        flex-wrap: wrap;
+    }
+    .navigation{
+        width: 40%;
+        @media (max-width: 700px) {
+            width: 60%;
+        }
+        .flex(space-between, center);
+
+        @media @mobile {
+            width: 100%;
+            margin-top: 10px;
+            .flex(space-around, flex-end);
+        }
+    }
+        a {
+            color: @font-color;
+            text-decoration: none;
+            font-size: 1.7rem;
+            &:hover {
+                color: @button-bg;
             }
         }
-            a {
-                color: @font-color;
-                text-decoration: none;
-                font-size: 1.7rem;
-                &:hover {
-                    color: @button-bg;
-                }
-            }
     }

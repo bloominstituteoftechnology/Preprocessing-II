@@ -77,7 +77,7 @@
     border-top: @border;
     .flex(space-between, default);
 
-    @media @mobile {
+    @media (max-width: 720px) {
       .flex(center, default);
       flex-wrap: wrap;
     }
@@ -86,15 +86,15 @@
       width: 30%;
       margin-bottom: 30px;
 
-      @media @mobile {
-        width: 80%;
+      @media (max-width: 720px) {
+        width: 90%;
         margin: 15px auto;
       }
 
       .btn {
         .custom-button(@button-bg, @main-bg);
 
-        @media @mobile {
+        @media (max-width: 720px) {
           max-width: 100%;
         }
       }
