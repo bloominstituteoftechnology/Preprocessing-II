@@ -297,6 +297,8 @@ header div nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 30px;
 }
 @media (max-width: 500px) {
   .home .content-pick {
@@ -335,4 +337,33 @@ header div nav a {
     width: 93%;
     margin: 0 auto;
   }
+}
+.home .vacation-form form {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-around;
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.home .vacation-form form h2 {
+  text-align: center;
+}
+.home .vacation-form form input {
+  width: 200px;
+  border: 1px solid black;
+  height: 30px;
+  margin: 10px 0;
+}
+.home .vacation-form form select {
+  width: 200px;
+  border: 1px solid black;
+  height: 30px;
+}
+.home .vacation-form form textarea {
+  resize: none;
+  margin-top: 20px;
 }

@@ -77,6 +77,8 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    .border(dashed, @navigation-border);
+    margin-bottom: 30px;
     @media @mobile {
       flex-direction: column;
     }
@@ -94,6 +96,39 @@
           width: 93%;
           margin: 0 auto;
         }
+      }
+    }
+  }
+
+  .vacation-form {
+    
+    form {
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      justify-content: space-around;
+      width: 100%;
+      padding: 40px;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      h2 {
+        text-align: center;
+      }
+      input {
+        width: 200px;
+        border: 1px solid black;
+        height: 30px;
+        margin: 10px 0;
+      }
+      select {
+        width: 200px;
+        border: 1px solid black;
+        height: 30px;;
+      }
+      textarea {
+        resize: none;
+        margin-top: 20px;
       }
     }
   }
