@@ -176,10 +176,25 @@ img {
   padding: 20px 100px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+  }
+}
 .navBar h1 {
+  display: flex;
   color: #212529;
   font-size: 3.8rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .navBar h1 {
+    padding: 10px 0px;
+    font-size: 3.4rem;
+  }
 }
 .navBar nav {
   display: flex;
@@ -192,6 +207,11 @@ img {
   text-decoration: none;
   margin: 0 auto;
   padding: 0px 15px;
+}
+@media (max-width: 500px) {
+  .navBar nav a {
+    padding: 5px 30px;
+  }
 }
 .footer {
   width: 100%;
