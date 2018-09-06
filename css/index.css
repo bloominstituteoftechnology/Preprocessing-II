@@ -249,3 +249,19 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  width: 83%;
+  height: 45px;
+  background: teal;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  border-radius: 7px;
+}
+.home .content-pick .destination .btn:hover {
+  border: 1px solid teal;
+  background: white;
+  color: teal;
+}
