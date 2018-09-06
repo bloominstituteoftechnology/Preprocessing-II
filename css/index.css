@@ -168,6 +168,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.home .fun-bus header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .fun-bus header a {
+  font-size: 1.5rem;
+  margin: 10px;
+  text-decoration: none;
+}
+.intro-funbus {
+  margin-top: 10px;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +240,17 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 85%;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
