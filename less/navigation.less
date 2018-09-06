@@ -4,6 +4,9 @@
     .center;
     flex-direction:row;
     border-bottom: @navigation-border;
+    @media @phone{ 
+        flex-direction: column;
+    }
    
     h1 {
         text-align: left;
@@ -12,6 +15,10 @@
         .navBar;
         margin-left: 275px;
         margin-right:0px;
+        @media @phone{ 
+            flex-direction: row;
+            margin-left: 0px;
+        }
         a {
             color:@shark;
             text-decoration: none;

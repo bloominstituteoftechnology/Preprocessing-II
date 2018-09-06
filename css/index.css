@@ -176,6 +176,11 @@ img {
   flex-direction: row;
   border-bottom: #C0C0C0;
 }
+@media (max-width: 500px) {
+  .navHeader {
+    flex-direction: column;
+  }
+}
 .navHeader h1 {
   text-align: left;
 }
@@ -189,7 +194,8 @@ img {
 }
 @media (max-width: 500px) {
   .navHeader nav {
-    flex-direction: column;
+    flex-direction: row;
+    margin-left: 0px;
   }
 }
 .navHeader nav a {
@@ -215,6 +221,13 @@ img {
 .topcontent-section {
   margin-top: 0px;
 }
+@media (max-width: 500px) {
+  .topcontent-section {
+    flex-direction: column;
+    width: 95%;
+    margin: 30px 15px;
+  }
+}
 .topcontent-section .topImage {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -231,9 +244,22 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 95%;
+    margin: 30px 15px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 95%;
+    margin: 30px 15px;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -242,12 +268,30 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    margin: 30px 15px;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column;
+    width: 95%;
+    margin: 30px 15px;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 95%;
+    margin: 30px 15px;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -257,6 +301,13 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    flex-direction: column;
+    width: 95%;
+    margin: 30px 15px;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -265,9 +316,22 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 95%;
+    margin: 30px 15px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 95%;
+    margin: 30px 15px;
+  }
 }
 .home .content-pick .btn {
   padding-left: 15px;

@@ -2,7 +2,11 @@
 
 .topcontent-section {
   margin-top: 0px;
-
+  @media @phone{ 
+    flex-direction: column;
+    width:95%;
+    margin: 30px 15px;
+}
   .topImage {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -24,6 +28,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @phone{ 
+      flex-direction: column;
+      width:95%;
+      margin: 30px 15px;
+     
+  }
     
 
    
@@ -31,6 +41,10 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone{ 
+        width:95%;
+        margin: 30px 15px;
+    }
       
     }
 
@@ -40,17 +54,28 @@
 
       img {
         border-radius: 10px;
+        @media @phone{ 
+          margin: 30px 15px;
+      }
       }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-   
+    @media @phone{ 
+      flex-direction: column;
+      width:95%;
+      margin: 30px 15px;
+  }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone{ 
+        width:95%;
+        margin: 30px 15px;
+    }
     }
 
     .img-content {
@@ -62,7 +87,11 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @phone{ 
+      flex-direction: column;
+      width:95%;
+      margin: 30px 15px;
+  }
     img {
       border-radius: 10px;
     }
@@ -72,10 +101,18 @@
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
-
+    @media @phone{ 
+      flex-direction: column;
+      width:95%;
+      margin: 30px 15px;
+  }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone{ 
+        width:95%;
+        margin: 30px 15px;
+    }
     }
     .btn {
       .button;
