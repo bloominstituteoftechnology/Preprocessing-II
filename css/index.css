@@ -169,11 +169,17 @@ img {
   margin: 0 auto;
 }
 .topnav {
-  border: 1px solid red;
   width: 47%;
   display: flex;
   justify-content: space-around;
   margin: 3% 0% 1% 0%;
+}
+@media (max-width: 500px) {
+  .topnav {
+    display: flex;
+    margin: 0% 0% 0% 0%;
+    justify-items: center;
+  }
 }
 .topnav a {
   color: black;
@@ -201,6 +207,11 @@ html {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .tophead {
+    flex-direction: column;
+  }
 }
 .home .tophead .funbus {
   width: 25%;
@@ -266,7 +277,7 @@ html {
 .home .content-pick .destination .btn button {
   width: 75%;
   background-color: teal;
-  border-radius: 15%;
+  border-radius: 22%;
   Height: 25%;
   color: white;
 }

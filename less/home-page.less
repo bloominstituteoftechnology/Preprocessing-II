@@ -8,9 +8,16 @@ html{
     display:flex;
     width:100%;
     justify-content: space-between;
+    @media @phone {
+      flex-direction: column;
+    }
+   
     .funbus{
       width: 25%;
       margin: 2% 0% 0% 0%;
+      @media @phone {
+      
+      }
     }
   }
 .fuimg{
@@ -84,7 +91,7 @@ html{
       .btn{
         height: 69%;
        button{
-        .custom-button(75%,teal,15%,25%,white);
+        .custom-button(75%,teal,22%,25%,white);
        }
       }
       width: 30%;
