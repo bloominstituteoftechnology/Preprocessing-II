@@ -19,7 +19,6 @@
     margin: 30px 0;
     .flexing-boxes(row, wrap, space-between);
     
-
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -31,6 +30,25 @@
 
       img {
         border-radius: 10px;
+      }
+    }
+
+    @media @mobile500{
+      .flexing-boxes(row, wrap, center);
+
+      .text-content {
+        width: @100percent-width;
+        padding-left: 0;
+        margin-bottom: 10px;
+      }
+
+      .img-content {
+        width: @100percent-width;
+        padding-left: 0;
+      }
+
+      img{
+        width: @100percent-width;
       }
     }
   }
@@ -47,6 +65,23 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile500{
+      .flexing-boxes(row, wrap-reverse, center, center);
+     
+      .inverse-content{
+
+      .text-content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+  
+      .img-content {
+        padding-right: 0;
+        padding-left: 0;
+      }
+     }
     }
   }
 

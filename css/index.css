@@ -269,6 +269,26 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex ;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .home .content-section img {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -280,6 +300,22 @@ img {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex ;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-content: center;
+  }
+  .home .inverse-content .inverse-content .text-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home .inverse-content .inverse-content .img-content {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 .home .content-destination {
   width: 75%;
