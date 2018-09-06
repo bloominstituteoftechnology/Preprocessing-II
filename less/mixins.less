@@ -1,1 +1,18 @@
 // Mixins in here
+
+// btn mixin
+.destination-btn(@bg, @color) {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  background: @bg;
+  color: @color;
+  border-radius: 10px;
+
+  &:hover {
+    transition: 300ms;
+    opacity: 1;
+  }
+}
