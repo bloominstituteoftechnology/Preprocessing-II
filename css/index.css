@@ -168,6 +168,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  border-bottom: 2px dashed black;
+  padding: 24px 0;
+}
+.navigation .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .container .navigation-links a,
+.navigation .container .navigation-links a:visited {
+  margin-right: 3rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
