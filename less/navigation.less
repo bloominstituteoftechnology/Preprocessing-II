@@ -1,48 +1,43 @@
 // Navigation Styles here
 
-.navigation {
-    max-width: 1000px;
-    border-bottom: @dashedBorder;
+
+
+.nav-bar {
+    max-width: 880px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
+        
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+    }
 
-    .nav-logo {
-        max-width: 880px;
+    h1 {
+        max-width: 200px;    
+        margin-right: 50%;
+    }
+
+    nav {
+        margin: 10px 200px 10px 0;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        
+        max-width: 800px;
+
         @media @mobile {
-            flex-direction: column;
             justify-content: center;
         }
 
-        h1 {
-            max-width: 200px;    
-        }
-
-        nav {
-            margin: 10px 200px 10px 0;
-            display: flex;
-            justify-content: space-between;
-            max-width: 800px;
-
-            @media @mobile {
-                justify-content: center;
-            }
-
                       
-            a {
-                text-decoration: none;
-                color: black;
-                margin: 20px 5%;
-                font-size: 1.6rem;
-                max-width: 120px;
-                white-space: nowrap;
-            }
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 20px 5%;
+            font-size: 1.6rem;
+            max-width: 120px;
+            white-space: nowrap;
         }
-
-
     }
+
+
 }

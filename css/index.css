@@ -173,40 +173,34 @@ img {
     max-width: 90%;
   }
 }
-.navigation {
-  max-width: 1000px;
-  border-bottom: 2px dashed #C0C0C0;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-.navigation .nav-logo {
+.nav-bar {
   max-width: 880px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media ( max-width:500px) {
-  .navigation .nav-logo {
+  .nav-bar {
     flex-direction: column;
     justify-content: center;
   }
 }
-.navigation .nav-logo h1 {
+.nav-bar h1 {
   max-width: 200px;
+  margin-right: 50%;
 }
-.navigation .nav-logo nav {
+.nav-bar nav {
   margin: 10px 200px 10px 0;
   display: flex;
   justify-content: space-between;
   max-width: 800px;
 }
 @media ( max-width:500px) {
-  .navigation .nav-logo nav {
+  .nav-bar nav {
     justify-content: center;
   }
 }
-.navigation .nav-logo nav a {
+.nav-bar nav a {
   text-decoration: none;
   color: black;
   margin: 20px 5%;
