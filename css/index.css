@@ -234,6 +234,15 @@ img {
 }
 .main-nav a:hover {
   color: #17A2B8;
+  animation: fadein 1s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .footer {
   width: 100%;
@@ -245,6 +254,17 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home img {
+  animation: fadein 6s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .home .cta {
   border-bottom: 2px dashed #C0C0C0;

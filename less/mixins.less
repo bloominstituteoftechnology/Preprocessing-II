@@ -31,3 +31,16 @@
     color: @bg;
   }
 }
+
+.fadein(@sec) {
+  animation: fadein @sec;
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
