@@ -256,7 +256,7 @@ img {
   padding: 20px;
 }
 .home img {
-  animation: fadein 6s;
+  animation: fadein 2s;
 }
 @keyframes fadein {
   from {
