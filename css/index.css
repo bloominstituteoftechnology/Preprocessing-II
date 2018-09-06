@@ -168,6 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.container .navigation {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.container .navigation nav a {
+  text-decoration: none;
+  margin: 15px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +235,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.top-content {
+  border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.top-content .text-content {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
