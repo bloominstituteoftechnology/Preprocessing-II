@@ -2,12 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // padding-bottom: 4rem;
   padding: 2.5rem 0 4rem 0;
   .dashedLine;
 
+  @media @mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .nav__logo {
-    
+    @media @mobile {
+      padding-bottom: 1rem;
+    }
   }
 
   .nav__menu {
