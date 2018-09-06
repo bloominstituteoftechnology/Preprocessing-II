@@ -1,3 +1,29 @@
 .dashedLine() {
   border-bottom: 2px dashed grey;
 }
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.signMeUpBtn (@color) {
+  .border-radius(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: @color;
+  font-size: 1.8rem;
+  max-width: 20rem;
+  height: 4rem;
+  text-decoration: none;
+  box-shadow: 1px 1px 1px grey;
+}
+
+.btn {
+  .signMeUpBtn(#1C8080);
+}
