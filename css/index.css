@@ -204,6 +204,20 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .funBusHeader {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .funBusHeader img {
+  padding-bottom: 20px;
+}
+.home .funBusHeader h1 {
+  color: #212529;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
