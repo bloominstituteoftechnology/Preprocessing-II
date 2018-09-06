@@ -29,9 +29,8 @@
 .custom-button(@bgcolor, @txtcolor, @btn-width, @100percent-width, @vertical-padding: 20px,  @border-radius: 5px){
     width: @btn-width;
     background-color: @bgcolor;
-    color: @txtcolor;
     padding: @vertical-padding 0;
     .border-radius(@border-radius);
-    .fonts(@btn-font-size);
+    .fonts(@btn-font-size, @txtcolor);
     text-align: center;
 }

@@ -1,6 +1,12 @@
 .home {
   .header{
     .borderBtm-styling(@border-size, @border-type, @border-color);
+    h2{
+      margin-top: 30px;
+    }
+    p{
+      margin-bottom: 20px;
+    }
   }
   .content-section {
     margin: 30px 0;
@@ -58,7 +64,7 @@
       margin-bottom: 30px;
 
       .btn{
-        .custom-button(@button-lg,@white, @100percent-width, 40px, 15px);
+        .custom-button(@button-lg, @white, @100percent-width, 40px, 15px);
 
         &:hover{
           background-color: @eastern-blue;
