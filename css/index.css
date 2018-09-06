@@ -225,10 +225,15 @@ img {
   }
 }
 .nav-bar .header-container nav a {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #212529;
   margin: 0% 10%;
+}
+@media (max-width: 500px) {
+  .nav-bar .header-container nav a {
+    margin: 0% 5%;
+  }
 }
 .footer {
   width: 100%;
@@ -241,6 +246,11 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    margin: 0px 10px;
+  }
+}
 .home header img {
   padding-bottom: 20px;
 }
@@ -251,6 +261,14 @@ img {
   justify-content: space-between;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -294,7 +312,7 @@ img {
 }
 .home .content-pick .destination .btn {
   max-width: 85%;
-  padding: 16px 0px;
+  height: 50px;
   font-size: 1.8rem;
   text-align: center;
   text-decoration: none;
@@ -302,6 +320,9 @@ img {
   border: 1px solid #17A2B8;
   color: white;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;

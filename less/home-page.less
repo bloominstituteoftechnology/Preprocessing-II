@@ -1,6 +1,10 @@
 
 .home {
 
+  @media @mobile {
+    margin: 0px 10px;
+  }
+
   header {
 
     img {
@@ -9,6 +13,8 @@
 
   }
 
+
+
   .content-section {
     margin: 20px 0;
     display: flex;
@@ -16,6 +22,7 @@
     justify-content: space-between;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    .mobile-wrap();
 
    
     
@@ -69,8 +76,10 @@
       margin-bottom: 30px;
 
       .btn {
-        .button-maker;
+        .button-maker(85%, 50px, @button-bg);
       }
-    }
+    
   }
-}// home
+  }
+  }
+// home
