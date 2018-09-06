@@ -1,1 +1,26 @@
 // Navigation Styles here
+
+.nav-bar {
+  nav {
+    display: flex;
+    border: 1px solid black;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    h1 {
+      margin-right: auto;
+    }
+    a {
+      font-size: 1.8rem;
+      margin: 10px;
+      text-decoration: none;
+      color: black;
+      opacity: 0.6;
+      transition: 300ms;
+      &:hover {
+        opacity: 1;
+        transition: 300ms;
+      }
+    }
+  }
+}
