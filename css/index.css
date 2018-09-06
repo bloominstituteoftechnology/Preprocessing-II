@@ -249,4 +249,18 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.home .content-pick .destination .btn {
+  background-color: teal;
+  border: solid black 1px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  max-width: 85%;
+  font-size: 2rem;
 }
