@@ -168,6 +168,35 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  margin-left: 9%;
+  width: 84%;
+}
+.navHeader nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 5%;
+  margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .navHeader nav {
+    flex-direction: column;
+  }
+}
+.navHeader nav a {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
