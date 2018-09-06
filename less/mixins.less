@@ -1,1 +1,18 @@
 // Mixins in here
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+  }
+
+ .custom-button() {
+    color: white;
+    background: teal; 
+    padding: 12px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.6rem;
+    .border-radius(15px);
+ }

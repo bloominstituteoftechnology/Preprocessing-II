@@ -251,3 +251,16 @@ header a {
 .top-content .header-img {
   margin-bottom: 20px;
 }
+.btn {
+  color: white;
+  background: teal;
+  padding: 12px;
+  width: 200px;
+  text-align: center;
+  font-size: 1.6rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
