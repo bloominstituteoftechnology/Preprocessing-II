@@ -1,15 +1,3 @@
-@sign-me-up-button () {
-  border: 1px solid black;
-  max-width: 100px;
-  padding: 10px;
-  text-decoration: none;
-  background: #17A2B8;
-  color: #FFEBCD;
-  :hover {
-    background: #17A2B8;
-    color: #FFEBCD;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -272,4 +260,20 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  max-width: 180px;
+  padding: 10px;
+  text-decoration: none;
+  background: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
 }
