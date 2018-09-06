@@ -168,6 +168,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header section.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+header section.header-top nav {
+  max-width: 100%;
+}
+header section.header-top nav a {
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+}
+header div.border {
+  border-bottom: 2px dashed #C0C0C0;
+  margin: 10px 0;
+}
+header section.header-bottom {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
