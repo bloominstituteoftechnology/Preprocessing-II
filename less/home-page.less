@@ -1,5 +1,10 @@
 .home {
 
+  .bus:active {
+    display:none;
+    
+  }
+
   .sub-header {
     padding: 15px 0;
     border-bottom: 2px dashed @navigation-border;
@@ -100,6 +105,11 @@
         @media @phone {
           .button(100%);
         }
+      }
+
+      .btn:hover{
+        .anima(bounce, 2s);
+        
       }
     }
 
