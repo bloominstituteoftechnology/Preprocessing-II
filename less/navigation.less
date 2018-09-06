@@ -7,18 +7,30 @@
     padding-bottom: 3%;
     align-items: center;
     border-bottom: 2px dashed @navigation-border;
-  
+    
     .main-nav{
-
+        
+        width: 50%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-around;
+        align-content: flex-end;
+        
         
         a{
-           display: flex;
-           justify-content: space-between;
+            color: black;
             font-size: 2rem;
             text-decoration: none;
         }
+        @media @phone{
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+    @media @phone{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
     }
 
 }
