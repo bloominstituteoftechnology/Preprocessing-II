@@ -1,36 +1,42 @@
 // Navigation Styles here
-header {
-
-    section.header-top {
+.container.home {
+    header {
         display: flex;
-        align-items: center;
+        flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
         margin: 20px 0;
+        
 
         nav {
             max-width: 100%;
+    
 
             a {
-                padding: 0 20px;
                 text-decoration: none;
-                font-size: 1.6rem;
                 color: black;
-
+                font-size: 1.6rem;
+                padding: 0 20px;
+                
             }
         }
     }
 
-    div.border {
+    section.header-bottom {
         border-bottom: 2px dashed @silver;
-        margin: 10px 0;
-    
-        
     }
 
-    section.header-bottom {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 0;
-        border-bottom: 2px dashed @silver;
-    }
+}
+
+.container-border {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-top: 2px dashed @silver;
+        img {
+            max-width: 800px;
+            margin-bottom: 20px;
+            height: 240px;
+        }
 }
