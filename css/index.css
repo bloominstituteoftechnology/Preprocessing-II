@@ -168,6 +168,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.nav-container nav {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.nav-container nav .menu {
+  display: flex;
+}
+.nav-container nav .menu a {
+  align-self: center;
+  font-size: 1.8rem;
+  color: black;
+  text-decoration: none;
+  margin-right: 2.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +202,13 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header .header-img {
+  margin-bottom: 2rem;
 }
 .home .content-section {
   margin: 30px 0;
