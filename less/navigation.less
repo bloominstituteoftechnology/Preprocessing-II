@@ -2,12 +2,30 @@
 
 
 
-nav.fun-bus-nav {
-  text-decoration: none;
-  .nav-flex()
+.fun-bus-nav {
+  border-bottom: @border-styles;
+  
+  
+  .nav-container {
+    max-width: @desktop-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4rem 0;
 
-  div.nav-destination {
-    .nav-flex()
-    align-items: center;
+    a {
+      text-decoration: none;
+    }
+    
+    div.nav-destination {
+      display: flex;
+      justify-content: space-evenly;
+      width: 44%;
+      align-items: center;
+      font-size: 1.6rem;
+      a {
+        text-decoration: none;
+      }
+    }
   }
 }
