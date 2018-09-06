@@ -174,8 +174,17 @@ header {
   border-bottom: 2px dashed #C0C0C0;
 }
 header h1 {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 20px;
+}
+header .nav {
+  margin: 40px;
+}
+header a {
+  font-size: 1.6rem;
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
 }
 .footer {
   width: 100%;
@@ -233,4 +242,12 @@ header h1 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.top-content {
+  border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+.top-content .header-img {
+  margin-bottom: 20px;
 }
