@@ -1,6 +1,6 @@
 .long-border {
   width: 100%;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -181,7 +181,7 @@ img {
 @media (max-width: 500px) {
   .navigation-section {
     flex-direction: column;
-    border-bottom: 1px dashed #C0C0C0;
+    border-bottom: 2px dashed #C0C0C0;
   }
 }
 .navigation-section nav {
@@ -254,16 +254,10 @@ img {
 }
 .home .main-header {
   width: 100%;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .main-header img {
   margin-bottom: 5px;
-}
-@media (max-width: 500px) {
-  .home .main-header img {
-    display: flex;
-    justify-content: center;
-  }
 }
 .home .main-header .main-header-content {
   margin: 10px 0;
