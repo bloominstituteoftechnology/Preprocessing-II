@@ -170,11 +170,10 @@ img {
   font-size: 1.6rem;
 }
 header nav {
-  display: flex;
   justify-content: space-between;
 }
 header nav a {
-  padding: 0 10px;
+  padding: 0 15px;
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
@@ -196,10 +195,10 @@ header {
   flex-wrap: wrap;
   align-items: center;
   padding: 30px 12%;
-  border-bottom: 1px dashed gray;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .cta {
-  border-bottom: 1px dashed gray;
+  border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 20px;
 }
 .home .cta .top-img {
@@ -250,4 +249,12 @@ header {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: white;
+  padding: 14px 0;
+  border-radius: 14px;
+  text-align: center;
+  width: 83%;
 }

@@ -4,13 +4,13 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding: 30px 12%;
-    border-bottom: 1px dashed gray;
+    border-bottom: 2px dashed @navigation-border;
 }
 
 .home {
 
     .cta {
-        border-bottom: 1px dashed gray;
+        border-bottom: 2px dashed @navigation-border;
         padding-bottom: 20px;
 
         .top-img {
@@ -72,6 +72,10 @@ header {
         .destination {
             width: 30%;
             margin-bottom: 30px;
+
+            .btn {
+                .custom-button(@eastern-blue)
+            }
         }
     }
 }// home
