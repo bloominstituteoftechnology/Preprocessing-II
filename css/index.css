@@ -178,6 +178,11 @@ header div {
   justify-content: space-between;
   padding: 25px 0;
 }
+@media (max-width: 500px) {
+  header div {
+    flex-direction: column;
+  }
+}
 header div nav {
   width: 45%;
   display: flex;
