@@ -2,9 +2,12 @@
 
 .nav-bar {
     border-bottom: 2px dashed silver;
-    padding: 21px 0;
+    padding: 23px 0;
     width: 100%;
 
+    @media @mobile {
+        padding: 18px 0 10px;
+    }
 
     .nav-content {
         margin: 0 auto;
@@ -14,14 +17,37 @@
         justify-content: space-between;
         align-items: center;
 
+        @media @mobile {
+            justify-content: center;
+
+            h1 {
+                font-size: 3rem;
+            }
+          }
+
+        @media @mobile {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
         nav {
             display: flex;
             justify-content: space-evenly;
+
+            @media @mobile {
+                width: 100%;
+                padding-top: 15px;
+              }
+
             a {
                 font-size: 1.6rem;
                 text-decoration: none;
-                padding: 15px;
+                padding-right: 30px;
                 color: @font-color;
+
+                @media @mobile {
+                    padding: 0;
+                }
             }
         }
     }
