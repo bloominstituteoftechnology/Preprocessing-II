@@ -6,15 +6,15 @@
     -o-border-radius: @radius;
     border-radius: @radius;
   }
-.custom-btn(){
+.custom-btn(@bgcolor, @btnFontSize, @width){
     display: flex;
     justify-content: center;
     align-items: center;
     
-    background: @button-bg;
+    background: @bgcolor;
     color: @main-bg;
-    width: 83%;
-    font-size: 2rem;
+    width: @width;
+    font-size: @btnFontSize;
     padding:10px;
     .border-radius(10px);
 

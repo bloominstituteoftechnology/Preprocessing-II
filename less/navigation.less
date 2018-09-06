@@ -16,29 +16,34 @@ header{
         width: 100%;
         justify-content: space-between;
 
+        @media @mobile {
+            flex-direction:column;
+            width: 100%
+            
+            
+        }
+
 	
 	h1{
-		font-size: 4rem;
-	
+        font-size: 4rem;
+        
+        @media @mobile {
+            display:flex; 
+            justify-content: center;
+        }
 		// padding-left:5%;
 
 	}
 	nav{
-		display:flex;
+        display:flex;
+        
+        @media @mobile {
+            display:flex; 
+            justify-content: space-between;
+            padding: 0 5%;
+        }
 
-		@media (max-width: 500px){
-			margin-top: 5%;
-			height: auto;
-			flex-flow:column;
-			display: flex;
-			text-align: center;
-			justify-content: center;
-			border-bottom: 1px solid gray;
-			color: #B0B0B0;
-			width: 100%;
-			
-		}
-
+		
 		
 
 		a{
@@ -52,21 +57,8 @@ header{
 			&:hover {
 				color: #878787;
 			}
-			@media (max-width: 500px){
-				display: flex;
-				height: 100%;
-				width: 100%;
-				text-align: center;
-				border-top: 1px solid gray;
-				justify-content: center;
-				align-items: center;
-				order: 1;
-				color: #B0B0B0;
-				font-size: 1.5rem;
-				margin:0;
-				font-size: 3.2rem;
-				padding: 7%;
-			}
+			
+			
 
 
 		}
