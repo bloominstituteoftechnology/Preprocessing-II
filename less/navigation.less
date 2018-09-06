@@ -3,23 +3,27 @@ header {
     display: flex;
     margin: 0 auto;
     width: 100%;
-    border: 1px solid blue;
 
     .navbar {
         display: flex;
         justify-content: space-between;
-        margin-top: 10%;
-        padding: 5%;
-        border: 1px solid red;
+        width: 100%;
 
-        nav {
-            align-items: flex-end;
+        .container {
+            display: flex;
+            justify-content: space-between;
         
+            h1 {
+                display: inline-block;
+            }
+            nav {
+            display: inline-block;
             a {
                 color: black;
                 text-decoration: none;
                 font-size: 1.5rem;
             }
+        }
         }
     }
 }

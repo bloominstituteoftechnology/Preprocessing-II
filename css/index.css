@@ -181,19 +181,23 @@ header {
   display: flex;
   margin: 0 auto;
   width: 100%;
-  border: 1px solid blue;
 }
 header .navbar {
   display: flex;
   justify-content: space-between;
-  margin-top: 10%;
-  padding: 5%;
-  border: 1px solid red;
+  width: 100%;
 }
-header .navbar nav {
-  align-items: flex-end;
+header .navbar .container {
+  display: flex;
+  justify-content: space-between;
 }
-header .navbar nav a {
+header .navbar .container h1 {
+  display: inline-block;
+}
+header .navbar .container nav {
+  display: inline-block;
+}
+header .navbar .container nav a {
   color: black;
   text-decoration: none;
   font-size: 1.5rem;
