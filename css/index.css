@@ -168,12 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px;
+  }
+}
 .header {
   height: 90px;
   border-bottom: 2px dashed #C0C0C0;
 }
 .header div {
-  max-width: 800px;
+  max-width: 80rem;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -181,10 +186,28 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .header div {
+    max-width: 45rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  .header div h1 {
+    font-size: 3rem;
+  }
+}
 .header div nav {
   display: flex;
   justify-content: space-evenly;
-  width: 350px;
+  width: 35rem;
+}
+@media (max-width: 500px) {
+  .header div nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .header div nav a {
   font-size: 1.6rem;
@@ -219,12 +242,29 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    order: 1;
+    width: 100%;
+    padding-left: unset;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -242,6 +282,11 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: unset;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -251,9 +296,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   color: #FFFFFF;
@@ -271,4 +327,9 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }
