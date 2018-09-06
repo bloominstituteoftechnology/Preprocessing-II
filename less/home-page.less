@@ -1,5 +1,5 @@
 .home {
-  
+  padding: 0 10px;
 
   .top-content-section {
     border-bottom: 2px dashed @navigation-border;
@@ -94,13 +94,14 @@
     }
   }
 
-  @media @phone {
+  // not phone becuse this part needs to adjust sooner
+  @media (max-width: 600px) {
     .content-pick {
       flex-direction: column;
       align-items: center;
 
       .destination {
-        width: 80%;
+        width: 80%
       }
     }
   }

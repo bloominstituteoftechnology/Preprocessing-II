@@ -204,6 +204,9 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  padding: 0 10px;
+}
 .home .top-content-section {
   border-bottom: 2px dashed #C0C0C0;
   margin-top: 0;
@@ -280,7 +283,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
