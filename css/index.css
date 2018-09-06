@@ -264,3 +264,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .btn {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  background-color: #17A2B8;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  color: #FFFFFF;
+  max-width: 200px;
+}

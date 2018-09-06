@@ -1,1 +1,15 @@
 // Mixins in here
+
+.button(@radius) {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    background-color: @button-bg;
+    text-align: center;
+    padding: 10px;
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius:@radius;
+    color: @white;
+    max-width: 200px;
+}
