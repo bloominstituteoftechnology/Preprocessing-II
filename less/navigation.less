@@ -5,27 +5,35 @@
   justify-content:space-between;
   margin: 20px 0px;
   align-items: center;
+  padding-bottom:10px;
+
+  @media @phone {
+    flex-direction:column;
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    color: black;
+  }
+
+  nav {
+    @media @phone {
+      width: 100%;
+    }
+    width: 40%;
+    display:flex;
+    justify-content:space-around;
+    font-size: 1.5rem;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
-nav {
-  width: 40%;
-  display:flex;
-  justify-content:space-around;
-  font-size: 1.5rem;
-  align-items: center;
-}
 
-nav a {
-  
-  text-decoration: none;
-  color:black;
-}
 
-.divider {
-  width: 100%;
-  border: dashed gray;
-  border-width: 1px;
-}
-
+ 
 
 
