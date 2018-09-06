@@ -253,3 +253,14 @@ header .header-nav-buttons a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  font-size: 2rem;
+  background-color: #17A2B8;
+  color: white;
+  border-radius: 5px;
+}
