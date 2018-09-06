@@ -7,6 +7,7 @@
 .aTagStyling(){
     .custom-font-styling;
     padding:5px;
+    font-weight:bold;
     color:black;
     text-decoration:none;
     &:hover{
@@ -21,4 +22,21 @@
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
+}
+.content-border(){
+    padding-bottom:3%;
+    border-bottom:2px dashed @navigation-border;
+}
+.button-styling{
+    .center;
+    height:40px;
+    .border-radius;
+    background-color:teal;
+    color:@white;
+    cursor: pointer;
+    &:hover{
+        background:@white;
+        color:teal;
+        border:2px solid @silver;
+    }
 }
