@@ -218,6 +218,22 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  border: 1px solid black;
+  max-width: 200px;
+  font-size: 18px;
+  margin-top: 31px;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  background: #31a192;
+  color: white;
+}
+.home .content-pick .destination .btn:hover {
+  background: white;
+  color: #31a192;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -232,6 +248,7 @@ header nav {
   align-self: center;
 }
 header nav a {
+  color: black;
   font-size: 1.6rem;
   padding-right: 30px;
   text-decoration-line: none;
