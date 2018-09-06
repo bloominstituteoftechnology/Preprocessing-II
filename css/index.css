@@ -1,3 +1,11 @@
+@keyframes skew {
+  50% {
+    transform: skewY(25deg);
+  }
+  100% {
+    transform: skewY(0);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -203,6 +211,9 @@ header nav a {
 }
 @media (max-width:500px) {
   header nav a {
+    -webkit-animation: skew 0.5s ease-in;
+    -moz-animation: skew 0.5s ease-in;
+    -ms-animation: skew 0.5s ease-in;
     padding: 0;
   }
 }
@@ -312,7 +323,7 @@ header nav a {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  background: #1fae99;
+  background: #17A2B8;
   font-size: 2rem;
   color: white;
   padding: 5.5%;

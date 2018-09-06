@@ -14,3 +14,9 @@
     justify-content: @align; //center
     width:@width; //100%;
 }
+
+.animation (@name, @duration, @ease) {
+	-webkit-animation: @name @duration @ease;
+	-moz-animation: @name @duration @ease;
+	-ms-animation: @name @duration @ease;
+}
