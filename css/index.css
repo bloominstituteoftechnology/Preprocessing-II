@@ -179,7 +179,6 @@ header div {
   padding: 20px 0;
 }
 header div nav {
-  border: 1px solid blue;
   width: 50%;
   display: flex;
   justify-content: space-around;
