@@ -1,1 +1,4 @@
-/* LESS needs to be processed */
+html {
+  font-size: 62.5%;
+  background: red;
+}
