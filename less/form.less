@@ -43,10 +43,12 @@
 
 
   .btn {
-    .button1();
+    .button1(@button-desktp, @main-bg);
     width: 20%;
     @media @phone{
       width: 40%;
+      .button1(@button-bg, @main-bg);
+      margin-top: 10px;
     }
   }
 }

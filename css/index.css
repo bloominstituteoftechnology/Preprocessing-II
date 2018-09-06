@@ -301,7 +301,7 @@ img {
   border-radius: 15px;
   padding: 12px;
   text-decoration: none;
-  background: #17A2B8;
+  background: #27807e;
   color: #FFFFFF;
   font-size: 1.8rem;
   text-align: center;
@@ -315,6 +315,18 @@ img {
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 90%;
+    border-radius: 15px;
+    padding: 12px;
+    text-decoration: none;
+    background: #17A2B8;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .home .content-pick .destination .btn:hover {
+    background: #FFEBCD;
+    color: #17A2B8;
+    cursor: pointer;
   }
 }
 header {
@@ -375,7 +387,7 @@ header p {
   border-radius: 15px;
   padding: 12px;
   text-decoration: none;
-  background: #17A2B8;
+  background: #27807e;
   color: #FFFFFF;
   font-size: 1.8rem;
   text-align: center;
@@ -389,5 +401,18 @@ header p {
 @media (max-width: 500px) {
   .form1 .btn {
     width: 40%;
+    border-radius: 15px;
+    padding: 12px;
+    text-decoration: none;
+    background: #17A2B8;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .form1 .btn:hover {
+    background: #FFEBCD;
+    color: #17A2B8;
+    cursor: pointer;
   }
 }

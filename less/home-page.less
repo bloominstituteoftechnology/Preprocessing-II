@@ -91,10 +91,11 @@
       }
 
       .btn {
-        .button1();
+        .button1(@button-desktp, @main-bg);
         width: 84%;
         @media @phone{
           width: 90%;
+          .button1(@button-bg, @main-bg);
         }
       }
     }
