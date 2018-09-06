@@ -1,30 +1,35 @@
 // Navigation Styles here.
-.header {
+.headerBorder {
   width: 100%;
+  margin: 0 auto;
   border-bottom: @dashedBorder;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  @media @phone {
-      padding-bottom: 5px;
-  }
-  .navigation {
-    .flexDesktop(nowrap, space-between, center);
+  .headerContent {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto 0;
+    padding-bottom: 20px;
     @media @phone {
-      .flexMobile(column);
+      padding-bottom: 5px;
     }
-    nav {
+    .navigation {
+      .flexDesktop(nowrap, space-between, center);
+      @media @phone {
+        .flexMobile(column);
+      }
+      nav {
         @media @phone {
-            .flexMobile(row);
-            justify-content: center;
-            width: 100%;
+          .flexMobile(row);
+          justify-content: center;
+          width: 100%;
         }
-      a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: @shark;
-        margin-left: 40px;
-        @media @phone {
+        a {
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: @shark;
+          margin-left: 40px;
+          @media @phone {
             margin: 10px auto 0;
+          }
         }
       }
     }
