@@ -1,8 +1,18 @@
 .home {
+  img {
+    @media @mobile {
+      padding: 0 5%;
+    }
+  }
+
   .header {
     margin: 10px 0;
     padding: 10px 0;
     border-bottom: 2px dashed #c0c0c0;
+
+    @media @mobile {
+      .mobile-section (25px);
+    }
   }
 
   .content-section {
@@ -11,17 +21,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      .mobile-section(30px);
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        .mobile-content();
+        padding-right: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        .mobile-content ();
+        padding: 0;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          .mobile-content();
+          padding: 0;
+        }
       }
     }
   }
@@ -30,6 +58,10 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      .mobile-section(30px);
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -38,6 +70,16 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        .mobile-content ();
+      }
+
+      img {
+        @media @mobile {
+          .mobile-content ();
+        }
+      }
     }
   }
 
@@ -45,8 +87,16 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      .mobile-section(30px);
+    }
     img {
       border-radius: 10px;
+      @media @mobile {
+        .mobile-content();
+        padding: 0;
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -56,10 +106,18 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      .mobile-section (0);
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        .mobile-section (0);
+        margin-bottom: 30px;
+        width: 80%;
+      }
       .btn {
         background-color: @button-bg;
         color: white;
@@ -68,6 +126,10 @@
         text-align: center;
         padding: 13px 0;
         margin: 0px 15% 0 0;
+        @media @mobile {
+          width: 100%;
+          background-color: #23a0b6;
+        }
       }
     }
   }
