@@ -187,6 +187,7 @@ header {
 header .navContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 110px;
   padding-right: 110px;
 }
@@ -307,6 +308,7 @@ header .navContainer nav a {
 @media (max-width:500px) {
   .home .content-pick {
     display: inline-block;
+    padding: 20px;
   }
 }
 .home .content-pick .destination {
