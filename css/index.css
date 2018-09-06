@@ -333,3 +333,66 @@ img {
     width: 100%;
   }
 }
+.home .content-plan {
+  padding-top: 3rem;
+  border-top: 2px dashed #C0C0C0;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+.home .content-plan .btn {
+  color: #FFFFFF;
+  background: #17A2B8;
+  border: 1px solid #C0C0C0;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 1.6rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1.2rem 5rem;
+  font-weight: bold;
+}
+.home .content-plan .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
+}
+.home .content-plan fieldset {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home .content-plan fieldset {
+    flex-direction: column;
+    flex-wrap: warp;
+  }
+}
+.home .content-plan fieldset input[type="radio"] {
+  visibility: hidden;
+}
+.home .content-plan fieldset label {
+  position: relative;
+  top: 0px;
+  border-radius: 1rem;
+  border: solid 5px transparent;
+  overflow: hidden;
+  transition: top 0.5s ease;
+}
+.home .content-plan fieldset p {
+  padding: 0.5rem;
+}
+.home .content-plan fieldset input[type="radio"]:checked + label {
+  border: solid 5px #17A2B8;
+  top: -1rem;
+}
+.home .content-plan fieldset .package {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.home .content-plan fieldset img {
+  width: 100%;
+  height: auto;
+}
