@@ -1,5 +1,7 @@
 .home {
-
+  @media @phone {
+    width: 90%;
+  }
 
   header.content-header {
     border-bottom: @border-styles;
@@ -19,6 +21,9 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -38,6 +43,9 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone {
+        order: -1;
+      }
     }
 
     .img-content {
@@ -64,17 +72,15 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      .btn {
-        width: 83%;
-        border-radius: 15px;
-        padding: 1.5rem 0;
-        text-align: center;
-        font-size: 1.6rem;
-        background: @button-bg;
-        color: @main-bg;
-        margin-top: 0.25rem;
-        letter-spacing: 0.1rem;
+      @media @phone {
+        width: 100%;
       }
+      .btn {
+        .button(83%, 0.25rem);
+      }
+    }
+    @media @phone {
+      flex-wrap: wrap;
     }
   }
 }// home
