@@ -3,6 +3,9 @@
 header{
     .containerMaker(1000px);
     .defaultBorderBottom;
+    @media @mobile {
+        .containerMaker(500px);
+    }
 
     .navigation{
         .containerMaker(800px);
@@ -10,12 +13,26 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+            @media @mobile{
+                .containerMaker(800px);
+                flex-direction: column;
+                padding: 16px 0 0;
+            }
+        h1{
+            @media @mobile{
+                font-size: 3rem;
+            }
+        }
         nav{
             padding-right: 30px;
             display: flex;
             justify-content: space-between;
             width: 40%;
+            @media @mobile{
+                width: 100%;
+                padding: 19px 25px 7px;
+                justify-content: space-around;
+            }
             a{
                 text-decoration: none;
                 font-size: 1.6rem;
