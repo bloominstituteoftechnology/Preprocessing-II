@@ -168,14 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.container header {
+header {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
 }
-.container header nav {
+header nav {
   border: 1px solid blue;
 }
-.container header nav a {
+header nav a {
   color: #212529;
   text-decoration: none;
   border: 1px solid black;
