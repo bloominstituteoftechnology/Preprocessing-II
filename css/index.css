@@ -168,9 +168,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px;
+  }
+}
 .header {
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: space-between;
   height: 100px;
   padding-top: 20px;
@@ -183,6 +188,25 @@ img {
 .header nav a {
   margin-right: 21px;
   font-size: 1.9rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header h1 {
+    font-size: 3rem;
+  }
+  .header nav {
+    padding-top: 10px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header nav a {
+    padding: 0px 12px;
+  }
 }
 .footer {
   width: 100%;

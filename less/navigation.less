@@ -1,19 +1,38 @@
 // Navigation Styles here
 
 .header {
-    display: flex;
     width: 100%;
+    display: flex;
     justify-content: space-between;
     height: 100px;
     padding-top: 20px;
     margin-bottom: -11px;
     nav {
         height: 100%;
-
         padding-top: 15px;
+        a {
+            margin-right: 21px;
+            font-size: 1.9rem;
+            text-decoration: none;
+        }
     }
-    nav a {
-        margin-right: 21px;
-        font-size: 1.9rem;
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 3.0rem;
+        }
+
+        nav {
+            padding-top: 10px;
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+
+            a{
+                padding: 0px 12px;
+            }
+        }
     }
 }
