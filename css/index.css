@@ -210,12 +210,13 @@ img {
   justify-content: space-between;
   padding: 2.5rem 0 4rem 0;
   border-bottom: 2px dashed grey;
-  margin: 0;
+  max-width: 800px;
 }
 @media (max-width: 500px) {
   .nav {
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 500px) {
@@ -273,17 +274,26 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .welcome {
+    padding: 0 2rem;
+  }
+}
 .home .welcome .welcome__img {
   margin-bottom: 4rem;
 }
 .home .welcome .welcome__paragraph {
   padding-bottom: 2rem;
   border-bottom: 2px dashed grey;
-  margin: 0;
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
