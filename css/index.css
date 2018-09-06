@@ -335,7 +335,7 @@ img {
 }
 @media (max-width:500px) {
   .home .content-pick .destination {
-    width: 95%;
+    width: 75%;
   }
 }
 .home .content-pick .destination .btn {
