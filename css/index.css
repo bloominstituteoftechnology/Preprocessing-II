@@ -354,7 +354,10 @@ header div nav a {
 }
 .home .vacation-form form input {
   width: 200px;
-  border: 1px solid black;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #17A2B8;
   height: 30px;
   margin: 10px 0;
 }
