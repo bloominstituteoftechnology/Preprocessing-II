@@ -177,6 +177,7 @@ img {
 }
 .top h1 {
   width: 55%;
+  padding-top: 30px;
 }
 .top .main-nav {
   display: flex;
@@ -184,6 +185,11 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 45%;
+}
+.top a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
 }
 .footer {
   width: 100%;
