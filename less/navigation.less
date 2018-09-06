@@ -1,8 +1,10 @@
 // Navigation Styles here
 
 .nav-bar {
+  border-bottom: 2px dashed grey;
   nav {
     display: flex;
+    // border-bottom: 2px dashed grey;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
@@ -11,7 +13,6 @@
     }
     .nav-bar-logo {
       display: flex;
-
       margin-right: auto;
       @media @mobile {
         width: 100%;
@@ -23,6 +24,7 @@
       @media @mobile {
         justify-content: space-evenly;
         width: 100%;
+        flex-wrap: wrap;
       }
       a {
         font-size: 1.8rem;
