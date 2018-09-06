@@ -8,9 +8,19 @@ body > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @mobile {
+        padding: 0 3.2%;
+        flex-direction: column;
+    }
     
     h1 {
         margin-left: 10%;
+
+        @media @mobile {
+            margin: 17px 0 0;
+            font-size: 3rem;
+        }
     }
 
     nav {
@@ -18,6 +28,12 @@ body > header {
         margin-right: 10%;
         display: flex;
         justify-content: space-evenly;
+
+        @media @mobile {
+            width: 100%;
+            margin: 8px 0;
+            justify-content: space-around;
+        }
 
         a {
             font-family: "Roboto", sans-serif;

@@ -182,14 +182,33 @@ body > header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  body > header {
+    padding: 0 3.2%;
+    flex-direction: column;
+  }
+}
 body > header h1 {
   margin-left: 10%;
+}
+@media (max-width: 500px) {
+  body > header h1 {
+    margin: 17px 0 0;
+    font-size: 3rem;
+  }
 }
 body > header nav {
   width: 35%;
   margin-right: 10%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  body > header nav {
+    width: 100%;
+    margin: 8px 0;
+    justify-content: space-around;
+  }
 }
 body > header nav a {
   font-family: "Roboto", sans-serif;
@@ -207,6 +226,12 @@ body > header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100vw;
+    margin: 0 3.2% 0 3.2%;
+  }
 }
 .home header {
   padding-bottom: 10px;
