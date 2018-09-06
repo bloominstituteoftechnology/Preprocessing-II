@@ -27,12 +27,12 @@
     padding-bottom:3%;
     border-bottom:2px dashed @navigation-border;
 }
-.button-styling{
+.button-styling(@bg-color){
     .custom-font-styling();
     .center;
     height:40px;
     .border-radius;
-    background-color:teal;
+    background-color:@bg-color;
     color:@white;
     cursor: pointer;
     &:hover{
