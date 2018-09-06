@@ -34,6 +34,14 @@
     box-shadow: 1px 1px 1px grey;
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -218,6 +226,12 @@ img {
     justify-content: center;
     padding-bottom: 1rem;
   }
+}
+.nav .nav__logo {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 @media (max-width: 500px) {
   .nav .nav__logo {

@@ -31,3 +31,20 @@
     .signMeUpBtn(@signMeUpMobile);
   }
 }
+
+.spin(@number) {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: @number;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
