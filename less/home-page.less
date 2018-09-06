@@ -51,6 +51,8 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -66,6 +68,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 90%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -77,9 +83,19 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        height: 200px;
+        width: 90%;
+      }
     }
   }
 }
