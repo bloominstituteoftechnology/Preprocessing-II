@@ -249,7 +249,7 @@ img {
 @media (max-width: 500px) {
   .home {
     width: 90%;
-    margin: 0px 10px;
+    margin: 0 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -291,7 +291,7 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
-    width: 90%;
+    width: 100%;
   }
 }
 .home .content-section .img-content img {
@@ -303,6 +303,8 @@ img {
 }
 @media (max-width: 500px) {
   .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
     margin: 0;
   }
 }
