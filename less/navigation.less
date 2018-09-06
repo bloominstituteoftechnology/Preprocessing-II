@@ -4,19 +4,43 @@ header {
     border-bottom: 2px dashed @silver;
     padding: 20px 0;
 
+    @media @mobile {
+        padding: 0;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media @mobile {
+            max-width: 100%;
+            flex-direction: column;
+        }
     
+        h1 {
+            @media @mobile {
+                font-size: 3rem;
+                padding-top: 15px;
+            }
+        }
         nav {
             display: flex;
             justify-content: space-between;
             font-size: 1.6rem;
 
+            @media @mobile {
+                width: 100%;
+                padding-top: 15px;
+            }
+
             a {
-                .link;
+                .link();
                 margin: 0 18px;
+
+                @media @mobile {
+                    margin: 0 20px 10px;
+                }
             }
         }
     }

@@ -1,30 +1,3 @@
-.link {
-  color: #212529;
-  font-size: 1.6rem;
-  text-decoration: none;
-}
-.link:hover {
-  font-weight: bold;
-}
-.link:active {
-  color: #C0C0C0;
-}
-.btn {
-  background: #007F7F;
-  font-size: 1.8rem;
-  color: #FFFFFF;
-  text-align: center;
-  border-radius: 15px;
-  padding: 13px;
-  max-width: 200px;
-}
-.btn:hover {
-  background: #17A2B8;
-  cursor: pointer;
-}
-.btn:active {
-  background: #212529;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -195,20 +168,48 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 5%;
+  }
+}
 header {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
   padding: 20px 0;
+}
+@media (max-width: 500px) {
+  header {
+    padding: 0;
+  }
 }
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  header .container h1 {
+    font-size: 3rem;
+    padding-top: 15px;
+  }
+}
 header .container nav {
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  header .container nav {
+    width: 100%;
+    padding-top: 15px;
+  }
 }
 header .container nav a {
   color: #212529;
@@ -222,6 +223,11 @@ header .container nav a:hover {
 header .container nav a:active {
   color: #C0C0C0;
 }
+@media (max-width: 500px) {
+  header .container nav a {
+    margin: 0 20px 10px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -232,6 +238,11 @@ header .container nav a:active {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home p {
+    font-size: 1.5rem;
+  }
 }
 .home .welcome {
   border-bottom: 2px dashed #C0C0C0;
@@ -246,13 +257,30 @@ header .container nav a:active {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -260,6 +288,12 @@ header .container nav a:active {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -273,6 +307,12 @@ header .container nav a:active {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -282,7 +322,53 @@ header .container nav a:active {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    padding-top: 25px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0 8%;
+  }
+}
+.home .content-pick .destination .btn {
+  background: #007F7F;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 15px;
+  padding: 13px;
+  max-width: 200px;
+}
+.home .content-pick .destination .btn:hover {
+  background: #17A2B8;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:active {
+  background: #212529;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    background: #17A2B8;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 15px;
+    padding: 13px;
+    max-width: 100%;
+  }
+  .home .content-pick .destination .btn:hover {
+    background: #007F7F;
+    cursor: pointer;
+  }
+  .home .content-pick .destination .btn:active {
+    background: #212529;
+  }
 }
