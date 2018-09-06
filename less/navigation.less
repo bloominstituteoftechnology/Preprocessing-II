@@ -6,19 +6,35 @@
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    h1 {
-      margin-right: auto;
+    @media @mobile {
+      flex-direction: column;
     }
-    a {
-      font-size: 1.8rem;
-      margin: 10px;
-      text-decoration: none;
-      color: black;
-      opacity: 0.6;
-      transition: 300ms;
-      &:hover {
-        opacity: 1;
+    .nav-bar-logo {
+      display: flex;
+
+      margin-right: auto;
+      @media @mobile {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    .nav-bar-links {
+      display: flex;
+      @media @mobile {
+        justify-content: space-evenly;
+        width: 100%;
+      }
+      a {
+        font-size: 1.8rem;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        opacity: 0.6;
         transition: 300ms;
+        &:hover {
+          opacity: 1;
+          transition: 300ms;
+        }
       }
     }
   }

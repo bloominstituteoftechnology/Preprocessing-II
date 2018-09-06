@@ -174,10 +174,31 @@ img {
   align-items: center;
   padding: 20px;
 }
-.nav-bar nav h1 {
+@media (max-width: 500px) {
+  .nav-bar nav {
+    flex-direction: column;
+  }
+}
+.nav-bar nav .nav-bar-logo {
+  display: flex;
   margin-right: auto;
 }
-.nav-bar nav a {
+@media (max-width: 500px) {
+  .nav-bar nav .nav-bar-logo {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.nav-bar nav .nav-bar-links {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .nav-bar nav .nav-bar-links {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+.nav-bar nav .nav-bar-links a {
   font-size: 1.8rem;
   margin: 10px;
   text-decoration: none;
@@ -185,7 +206,7 @@ img {
   opacity: 0.6;
   transition: 300ms;
 }
-.nav-bar nav a:hover {
+.nav-bar nav .nav-bar-links a:hover {
   opacity: 1;
   transition: 300ms;
 }
