@@ -1,10 +1,17 @@
-.container{    
+  
     .navigation{
         display:flex;
         align-items: center;
         margin-top:10px;
         justify-content: space-between;
-        margin-bottom:10px;
+        padding: 10px;
+        border-bottom:2px dashed @navigation-border;
+    
+
+        @media @mobile{
+            display:flex;
+            flex-direction: column;
+        }
         nav{
             a{
             text-decoration: none;
@@ -12,5 +19,5 @@
             margin: 15px;
             }
         }
-    }
-}    
+    } 
+    

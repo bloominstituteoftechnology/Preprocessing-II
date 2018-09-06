@@ -5,12 +5,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile{
+      display:flex;
+      flex-direction: column;
+  }
+   
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
     }
 
     .img-content {
@@ -26,10 +31,16 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      display:flex;
+      flex-direction: reverse-column;
+  }
+    
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+     
     }
 
     .img-content {
@@ -61,7 +72,6 @@
 }// home
 
 .top-content{
-  border-top: 2px dashed @navigation-border;
   border-bottom: 2px dashed @navigation-border;
   .text-content{
     margin-top: 15px;
