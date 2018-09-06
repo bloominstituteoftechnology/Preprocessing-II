@@ -170,13 +170,25 @@ img {
   font-size: 1.6rem;
 }
 header nav {
-  justify-content: space-between;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  header nav {
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
 }
 header nav a {
   padding: 0 15px;
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding: 0;
+  }
 }
 .footer {
   width: 100%;
@@ -197,18 +209,36 @@ header {
   padding: 30px 12%;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-content: space-between;
+    padding: 20px 0 0 0;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    margin-bottom: 20px;
+  }
+}
 .home .cta {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 20px;
 }
 .home .cta .top-img {
-  margin-bottom: 20px;
+  width: 90%;
+  margin: 0 2% 20px 1%;
 }
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    justify-content: column;
+  }
 }
 .home .content-section .text-content {
   width: 48%;

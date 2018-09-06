@@ -5,6 +5,18 @@ header {
     align-items: center;
     padding: 30px 12%;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+        flex-direction: column;
+        align-content: space-between;
+        padding: 20px 0 0 0;
+    }
+
+    h1 {
+        @media @phone {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .home {
@@ -14,7 +26,8 @@ header {
         padding-bottom: 20px;
 
         .top-img {
-            margin-bottom: 20px;
+            width: 90%;
+            margin: 0 2% 20px 1%;
         }
     }
 
@@ -23,6 +36,10 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media @phone {
+            justify-content: column;
+        }
 
         .text-content {
             width: 48%;

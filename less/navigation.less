@@ -2,13 +2,24 @@
 //
 
 header nav {
-    justify-content: space-between;
+    justify-content: space-around;
+
+    @media @phone {
+        margin: 0 auto;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
 
     a {
         padding: 0 15px;
         text-decoration: none;
         color: black;
         font-size: 1.6rem;
+
+        @media @phone {
+            padding: 0;
+        }
     }
+
 
 }
