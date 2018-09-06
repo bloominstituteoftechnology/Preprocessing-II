@@ -169,7 +169,7 @@ img {
   margin: 0 auto;
 }
 header {
-  border: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 header div {
   max-width: 800px;
@@ -202,6 +202,10 @@ header div nav a {
 }
 .home .intro h2 {
   margin-top: 20px;
+}
+.home .intro p {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
