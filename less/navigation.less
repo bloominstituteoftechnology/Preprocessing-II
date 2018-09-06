@@ -1,1 +1,28 @@
 // Navigation Styles here
+.topNav {
+    display: flex;
+    font: inherit;
+    justify-content: space-between;
+    padding: 2%;
+    align-items: baseline;
+    border-bottom:  #C0C0C0 dashed 2px;
+    flex-wrap: wrap;
+    color: @shark;
+
+
+    h1 {
+        width: 40%;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            margin:3% 0%;
+        }
+    }
+
+    a {
+        font-size: 2rem;
+        color: black;
+        text-decoration: none;
+    }
+}
