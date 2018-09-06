@@ -1,1 +1,26 @@
 // Mixins in here
+
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+
+.fonts(@font-size){
+    font-size: @font-size;
+}
+
+.custom-button(@bgcolor, @txtcolor, @btn-width, @100percent-width, @vertical-padding: 20px,  @border-radius: 5px){
+    width: @btn-width;
+    background-color: @bgcolor;
+    color: @txtcolor;
+    padding: @vertical-padding 0;
+    .border-radius(@border-radius);
+    .fonts(@btn-font-size);
+    text-align: center;
+}

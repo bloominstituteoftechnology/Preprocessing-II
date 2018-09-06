@@ -225,3 +225,20 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  width: 100%;
+  background-color: #028080;
+  color: #FFFFFF;
+  padding: 15px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #17A2B8;
+}

@@ -45,6 +45,7 @@
     img {
       border-radius: 10px;
     }
+
   }
 
   .content-pick {
@@ -56,6 +57,14 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .custom-button(@button-lg,@white, @100percent-width, 40px, 15px);
+
+        &:hover{
+          background-color: @eastern-blue;
+        }
+      }
     }
   }
 }// home
