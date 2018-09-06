@@ -183,7 +183,8 @@ img {
   align-item: 0;
 }
 .container-home .top-content {
-  border-bottom: 1px dashed teal;
+  border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .container-home .top-content .text-content {
   margin-top: 2em;
