@@ -1,3 +1,13 @@
+.btn {
+  background: teal;
+  border: 1px solid #C0C0C0;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  margin-right: 35px;
+  font-size: 1.6rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,6 +187,7 @@ img {
 }
 .container .navigation nav a {
   text-decoration: none;
+  color: black;
   margin: 15px;
 }
 .footer {
