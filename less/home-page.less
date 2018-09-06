@@ -2,7 +2,8 @@
 .home {
   header {
     padding: 20px 0;
-    border-bottom: 2px dashed lightgray;
+    border-bottom: 2px dashed @shark;
+    
     
   }
 
@@ -14,9 +15,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: green dotted 5px;
-
-   
     
     .text-content {
       width: 48%;
@@ -35,6 +33,9 @@
 
   .inverse-content {
     padding-bottom: 30px;
+    @media @mobile {
+      background: blue;
+  }
     //border-bottom: 2px dashed @navigation-border;
 
     .text-content {
@@ -61,7 +62,7 @@
 
   }
   button {
-    .button-style(white, 75%,teal, 10px )
+    .button-style(white, 75%, @eastern-blue, 10px )
   }
   .content-pick {
     padding-top: 30px;
