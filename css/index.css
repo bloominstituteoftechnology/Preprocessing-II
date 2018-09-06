@@ -200,6 +200,9 @@ header div nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .intro h2 {
+  margin-top: 20px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
