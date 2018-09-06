@@ -150,9 +150,19 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+@media (max-width:500px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+}
+@media (max-width:500px) {
+  h4 {
+    font-size: 2rem;
+  }
 }
 p {
   line-height: 1.5;
@@ -172,6 +182,7 @@ header {
   border-bottom: 2px dashed #C0C0C0;
   max-width: 1024px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 header .navContainer {
   display: flex;
@@ -179,7 +190,7 @@ header .navContainer {
   padding-left: 110px;
   padding-right: 110px;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   header .navContainer {
     flex-direction: column;
     align-items: center;
@@ -189,7 +200,7 @@ header .navContainer {
     margin-bottom: 10px;
   }
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   header .navContainer nav {
     text-align: center;
   }
@@ -211,7 +222,7 @@ header .navContainer nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   .home {
     padding-left: 15px;
     padding-right: 15px;
@@ -219,11 +230,6 @@ header .navContainer nav a {
 }
 .home .content-header {
   border-bottom: 2px dashed #C0C0C0;
-}
-@media (max-width:800px) {
-  .home .content-header h2 {
-    font-size: 3rem;
-  }
 }
 .home .content-header img {
   margin-bottom: 20px;
@@ -234,7 +240,7 @@ header .navContainer nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   .home .content-section {
     flex-wrap: nowrap;
     justify-content: center;
@@ -246,7 +252,7 @@ header .navContainer nav a {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   .home .content-section .text-content {
     width: 100%;
   }
@@ -255,7 +261,7 @@ header .navContainer nav a {
   width: 48%;
   padding-left: 1%;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   .home .content-section .img-content {
     width: 100%;
   }
@@ -267,7 +273,7 @@ header .navContainer nav a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   .home .inverse-content {
     flex-direction: column-reverse;
   }
@@ -284,7 +290,7 @@ header .navContainer nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   .home .content-destination {
     width: 100%;
   }
@@ -298,7 +304,7 @@ header .navContainer nav a {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   .home .content-pick {
     display: inline-block;
   }
@@ -307,17 +313,15 @@ header .navContainer nav a {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
   .home .content-pick .destination {
     width: 100%;
   }
 }
-@media (max-width:800px) {
-  .home .content-pick .btn {
-    background-color: dodgerblue;
-    text-align: center;
-    color: white;
-    padding: 10px 40px 10px 40px;
-    border-radius: 12px;
-  }
+.home .content-pick .btn {
+  background-color: dodgerblue;
+  text-align: center;
+  color: white;
+  padding: 10px 40px 10px 40px;
+  border-radius: 12px;
 }

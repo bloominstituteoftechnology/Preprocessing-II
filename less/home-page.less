@@ -7,11 +7,6 @@
   .content-header {
     border-bottom: 2px dashed @navigation-border;
 
-    h2{
-      @media @mobile{
-        font-size: 3rem;
-      }      
-    }
     img{
       margin-bottom:20px;
     }
@@ -105,15 +100,11 @@
         width:100%;
       }
     }
-    @media @mobile{
-      .btn{
-        background-color: dodgerblue;
-        text-align: center;
-        color:white;
-        padding:10px 40px 10px 40px;
-        border-radius: 12px;
-      }
+    .btn{
+      .btn(dodgerblue,white);
     }
+
+
 
   }
 }// home
