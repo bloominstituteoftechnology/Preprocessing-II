@@ -2,7 +2,6 @@
 header {
   display: flex;
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   border-bottom: 2px dashed @navigation-border;
@@ -13,12 +12,26 @@ header {
     color:black;
   }
   nav{
+    display: flex;
     font-size:1.5rem;
+    justify-content: space-around;
+    @media @mobile{
+      width:100%;
+      padding-top:2%;
+    }
     a{
       text-decoration: none;
       color:black;
       padding-left:30px;
       justify-content: center;
+      @media @mobile{
+        padding:0;
+      }
     }
+  }
+  @media @mobile{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
   }
 }

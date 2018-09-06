@@ -1,4 +1,3 @@
-@mobile (max-width:500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -127,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
 * {
   box-sizing: border-box;
 }
@@ -172,7 +174,6 @@ img {
 header {
   display: flex;
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   border-bottom: 2px dashed #C0C0C0;
@@ -184,13 +185,33 @@ header .nav-logo {
   color: black;
 }
 header nav {
+  display: flex;
   font-size: 1.5rem;
+  justify-content: space-around;
+}
+@media (max-width:500px) {
+  header nav {
+    width: 100%;
+    padding-top: 2%;
+  }
 }
 header nav a {
   text-decoration: none;
   color: black;
   padding-left: 30px;
   justify-content: center;
+}
+@media (max-width:500px) {
+  header nav a {
+    padding: 0;
+  }
+}
+@media (max-width:500px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .footer {
   width: 100%;
@@ -249,14 +270,42 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width:500px) {
+  .home {
+    padding: 0 3.5%;
+  }
+}
 .home .main-header {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .main-header .text-content {
   padding-top: 1.87%;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+}
 .home .inverse-content {
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .content-pick .destination .btn {
   display: flex;
@@ -264,9 +313,27 @@ header nav a {
   -webkit-border-radius: 20px;
   border-radius: 20px;
   background: #1fae99;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
-  padding: 6.5%;
+  padding: 5.5%;
   justify-content: center;
   width: 100%;
+}
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
