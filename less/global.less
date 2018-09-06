@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  .animation(fadeIn, 1s, ease);
 }
 
 html, body {
@@ -50,5 +51,14 @@ img {
 
   @media @mobile {
     padding: 0 25px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -131,6 +131,13 @@ table {
 }
 html {
   font-size: 62.5%;
+  -webkit-animation: fadeIn 1s ease;
+  -moz-animation: fadeIn 1s ease;
+  /* Fx 5+ */
+  -o-animation: fadeIn 1s ease;
+  /* Opera 12+ */
+  animation: fadeIn 1s ease;
+  /* IE 10+, Fx 29+ */
 }
 html,
 body {
@@ -176,6 +183,14 @@ img {
 @media (max-width: 500px) {
   .container {
     padding: 0 25px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .nav-bar {
@@ -353,11 +368,21 @@ img {
   border-radius: 15px;
   text-align: center;
   padding: 13px;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+}
+.home .content-pick .destination .btn:hover {
+  background: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     color: white;
     background: #17A2B8;
     width: 100%;
+  }
+  .home .content-pick .destination .btn:hover {
+    background: #008080;
   }
 }

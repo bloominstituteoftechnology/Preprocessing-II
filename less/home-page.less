@@ -113,9 +113,18 @@
         border-radius: 15px;
         text-align: center;
         padding: 13px;
+        .transition(background, 1s, ease);
+
+        &:hover {
+          background: @button-bg;
+        }
 
         @media @mobile {
           .custom-button(@button-bg, white, 100%);
+
+          &:hover {
+            background: @button-bg-index;
+          }
         }
       }
     }

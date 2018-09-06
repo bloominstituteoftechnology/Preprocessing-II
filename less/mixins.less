@@ -5,3 +5,17 @@
     background: @bg;
     width: @width;
 }
+
+.transition (@transition, @time, @ease: ease) {
+	-webkit-transition: @transition @time @ease;  
+	-moz-transition:    @transition @time @ease;
+	-ms-transition:     @transition @time @ease; 
+	-o-transition:      @transition @time @ease;  
+}
+
+.animation (@name, @duration, @motion) {
+    -webkit-animation: @name @duration @motion;
+    -moz-animation:    @name @duration @motion; /* Fx 5+ */
+    -o-animation:      @name @duration @motion; /* Opera 12+ */
+    animation:         @name @duration @motion; /* IE 10+, Fx 29+ */
+  }
