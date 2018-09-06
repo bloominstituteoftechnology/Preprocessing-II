@@ -1,11 +1,14 @@
 // Navigation Styles here
 .container {
+  
   .navigation {
     width: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px dashed @navigation-border;
+
     
     h1 {
       color: red;
@@ -14,15 +17,13 @@
     nav {
       width: 40%;
       display: flex;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      margin-right: 0;
+      justify-content: space-between;
+      padding-right: 4%;
 
       a {
         // font-size: 1.5rem;
         text-decoration: none;
         color: red;
-        padding-right: 7.5%;
         font-size: 1.6rem;
 
         &:hover {
@@ -40,19 +41,23 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    padding-bottom: 13px;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed @navigation-border;
+
 
     img {
-      .scooby-doo();
       width: 100%;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 21px;
     }
 
     h2 {
-
+      color: red;
     }
 
     p{
+      color: red;
 
     }
   }
