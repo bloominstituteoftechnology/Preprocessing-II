@@ -201,6 +201,15 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .divider {
+  width: 100%;
+  border: dashed gray;
+  border-width: 1px;
+}
+.home .main {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
