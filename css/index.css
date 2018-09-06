@@ -177,7 +177,7 @@ body > header {
   max-width: 1000px;
   height: 90px;
   margin: 0 auto;
-  border-bottom: 2px dashed #c0c0c0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,6 +207,17 @@ body > header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header .head-banner {
+  width: 100%;
+  height: auto;
+}
+.home header h2 {
+  margin-top: 20px;
 }
 .home .content-section {
   margin: 30px 0;
