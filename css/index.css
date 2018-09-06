@@ -398,7 +398,7 @@ img {
   }
 }
 .home .content-pick .destination .btn:hover {
-  animation: grow 500ms ease-in-out forwards;
+  animation: grow 500ms ease forwards;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
