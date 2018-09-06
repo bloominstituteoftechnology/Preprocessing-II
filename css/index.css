@@ -1,3 +1,60 @@
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 500px) {
+  .header-bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container.home .content-section.inverse-content {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+  }
+  .container.home .content-section.inverse-content .text-content {
+    width: 100%;
+  }
+  .container.home .content-section.inverse-content .img-content {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container.home .content-section {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .container.home .content-section .text-content {
+    width: 100%;
+  }
+  .container.home .content-section .img-content {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .container.home .content-pick {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+  .container.home .content-pick .destination {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,6 +231,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
+  max-width: 100%;
 }
 .container.home header nav {
   max-width: 100%;
@@ -185,14 +243,16 @@ img {
   padding: 0 20px;
 }
 .container.home section.header-bottom {
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
+  max-width: 100%;
+  padding: 20px;
 }
 .container-border {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
 }
 .container-border img {
   max-width: 800px;
@@ -202,7 +262,7 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -215,6 +275,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 20px;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -222,18 +283,17 @@ img {
 }
 .home .content-section .img-content {
   width: 48%;
-  padding-left: 1%;
+  padding: 20px;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
-  padding-left: 1%;
-  padding-right: 0;
+  padding: 20px;
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -248,7 +308,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -257,9 +317,9 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  background: #17A2B8;
+  background: #17a2b8;
   border: 1px solid black;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -272,6 +332,6 @@ img {
   font-size: 1.8rem;
 }
 .home .content-pick .destination .btn:hover {
-  background: #FFFFFF;
-  color: #17A2B8;
+  background: #ffffff;
+  color: #17a2b8;
 }
