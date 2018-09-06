@@ -256,6 +256,15 @@ nav a {
 .content-destination img {
   border-radius: 10px;
 }
+@media only screen and (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+  }
+}
 .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -268,7 +277,6 @@ nav a {
     flex-wrap: wrap;
     padding: 10px;
     justify-content: center;
-    border: 3px solid red;
   }
 }
 .content-pick .destination {
@@ -278,7 +286,10 @@ nav a {
 @media only screen and (max-width: 500px) {
   .content-pick .destination {
     width: 100%;
-    border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
   }
 }
 .funbus-content-section {
