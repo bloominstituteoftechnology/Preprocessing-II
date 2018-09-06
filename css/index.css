@@ -246,3 +246,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 190px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+  background-color: teal;
+  color: white;
+}
