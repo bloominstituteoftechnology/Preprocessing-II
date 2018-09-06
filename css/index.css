@@ -269,6 +269,14 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+.home .content-section .img-content img:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  box-shadow: 0px 10px 30px #17A2B8;
+  -webkit-transform: translateX(-3);
+  transform: translateX(-3);
+}
 @media (max-width: 500px) {
   .home .content-section {
     display: flex ;
@@ -323,6 +331,14 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+.home .content-destination img:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  box-shadow: 0px 10px 30px #17A2B8;
+  -webkit-transform: translateX(-3);
+  transform: translateX(-3);
 }
 @media (max-width: 500px) {
   .home .content-destination {

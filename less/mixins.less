@@ -38,3 +38,16 @@
     .fonts(@btn-font-size, @txtcolor);
     text-align: center;
 }
+
+
+.img-animate(@value, @translate-X, @shadow-color){
+    -webkit-transform: scale(@value);
+        -ms-transform: scale(@value);
+        transform: scale(@value);
+
+        box-shadow:
+                0px 10px 30px @shadow-color;
+        -webkit-transform: translateX(@translate-X);
+        transform: translateX(@translate-X);
+
+}
