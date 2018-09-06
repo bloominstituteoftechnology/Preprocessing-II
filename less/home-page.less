@@ -1,16 +1,27 @@
 .home {
-  margin-left: 10%;
+  
+  width: 100%;
   .main-header {
     
     border-bottom: 2px dashed grey;
-
+    @media @mobile { 
+    padding-left: 1%;
+    padding-right: 2%;
+    }
       img {
         padding-bottom: 20px;
         width: 100%;
+        @media @mobile {       
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 0%;
+          
+        }
       }
 
-      p {
+      .text-content {
         padding-bottom: 20px;
+        padding-left: 5%;
       }
   }
 }
@@ -24,19 +35,37 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      margin-top: 18px;
+      padding-left: 5%;
+      padding-right: 2%;
+      margin-bottom: 35px;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {       
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+        @media @mobile {       
+          width: 100%;
+        }
       }
     }
   }
@@ -45,23 +74,46 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {       
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {       
+        width: 100%;
+      }
     }
+  
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {       
+        width: 100%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {       
+      width: 100%;
+      margin: 0;
+      padding-left: 5%;
+      padding-right: 2%;
+    }
     img {
       border-radius: 10px;
+      @media @mobile {       
+        width: 100%;
+        margin-bottom: 25px;
+      }
     }
   }
 
@@ -71,12 +123,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {       
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {       
+        width: 100%;
+        padding: 0 14%;
+      }
     }
+
+
     .btn {
       .custom-button(@button-bg, @main-bg);
+      @media @mobile {       
+        width: 102%;
+      padding-left: 2%;
+      }
       }
     }
   
