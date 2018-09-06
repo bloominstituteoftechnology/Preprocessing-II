@@ -186,6 +186,13 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.navBar nav a {
+  font-size: 1.6rem;
+  color: #212529;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
