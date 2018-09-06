@@ -178,19 +178,19 @@ header .navigation {
   max-width: 800px;
   margin: 25px auto;
 }
-@media (max-width: 500px) {
+@media `(max-width: 500px) {
   header .navigation {
     flex-direction: column;
     margin: 20px 0 15px 0;
   }
 }
-@media (max-width: 500px) {
+@media `(max-width: 500px) {
   header .navigation h1 {
     font-size: 3rem;
     margin-bottom: 10px;
   }
 }
-@media (max-width: 500px) {
+@media `(max-width: 500px) {
   header .navigation nav {
     display: flex;
     justify-content: space-evenly;
@@ -203,7 +203,7 @@ header .navigation nav a {
   color: #212529;
   font-size: 1.6rem;
 }
-@media (max-width: 500px) {
+@media `(max-width: 500px) {
   header .navigation nav a {
     margin-right: 0px;
   }
