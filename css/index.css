@@ -170,7 +170,6 @@ img {
 }
 .nav-bar nav {
   display: flex;
-  border: 1px solid black;
   justify-content: flex-start;
   align-items: center;
   padding: 20px;
@@ -246,4 +245,13 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .main-header {
+  border-bottom: 2px dashed grey;
+}
+.home .main-header img {
+  border-top: 2px dashed grey;
+}
+.home .main-header h1 {
+  margin-top: 20px;
 }
