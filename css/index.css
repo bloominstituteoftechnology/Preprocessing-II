@@ -168,6 +168,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.container header {
+  display: flex;
+}
 .container header nav a {
   color: #212529;
   text-decoration: none;
