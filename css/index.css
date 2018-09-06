@@ -170,7 +170,7 @@ img {
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media ( max-width: 500px ) {
@@ -180,23 +180,23 @@ header {
     justify-content: center;
   }
 }
-header h1 {
+header .head {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+header .head h1 {
   margin-top: 25px;
   margin-bottom: 20px;
 }
-header .nav {
+header .head .nav {
   margin: 40px;
 }
-header a {
+header .head .nav a {
   font-size: 1.6rem;
-  margin-left: 30px;
+  margin-left: 90px;
   color: black;
   text-decoration: none;
-}
-@media ( max-width: 500px ) {
-  header a {
-    margin-right: 10px;
-  }
 }
 .footer {
   width: 100%;
