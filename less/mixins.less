@@ -12,3 +12,23 @@
         color: @silver;
     }
 }
+
+// Parametric Button Mixin
+.cta-btn(@bg, @hover, @active, @text, @width-max){
+    background: @bg;
+    font-size: 1.8rem;
+    color: @text;
+    text-align: center;
+    border-radius: 15px;
+    padding: 13px;
+    max-width: @width-max;
+    
+    &:hover {
+        background: @hover;
+        cursor: pointer;
+    }
+
+    &:active {
+        background: @active;
+    }
+}

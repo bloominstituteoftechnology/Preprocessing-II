@@ -9,6 +9,22 @@
 .link:active {
   color: #C0C0C0;
 }
+.btn {
+  background: #007F7F;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 15px;
+  padding: 13px;
+  max-width: 200px;
+}
+.btn:hover {
+  background: #17A2B8;
+  cursor: pointer;
+}
+.btn:active {
+  background: #212529;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
