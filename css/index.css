@@ -168,13 +168,27 @@ img {
   width: 100%;
   margin: 90px auto 0;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+}
 .navigation {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
+  opacity: 0.9;
   padding: 24px 0;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  .navigation {
+    position: relative;
+    padding: 18px 0 8px;
+  }
 }
 .navigation .nav-content {
   display: flex;
@@ -183,12 +197,28 @@ img {
   max-width: 800px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .navigation .nav-content {
+    flex-direction: column;
+  }
+  .navigation .nav-content h1 {
+    font-size: 3rem;
+    padding-bottom: 16px;
+  }
+}
 .navigation .nav-content nav {
   display: flex;
   justify-content: space-around;
   width: 42%;
   max-width: 320px;
   margin-right: 2%;
+}
+@media (max-width: 500px) {
+  .navigation .nav-content nav {
+    width: 90%;
+    max-width: 90%;
+    margin-right: 0;
+  }
 }
 .navigation .nav-content nav a {
   font-size: 1.6rem;
@@ -199,7 +229,7 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -208,7 +238,7 @@ img {
   padding: 20px;
 }
 .home .main-header {
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
   padding-bottom: 10px;
 }
 .home .main-header img {
@@ -233,7 +263,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -252,7 +282,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -263,9 +293,10 @@ img {
 .home .content-pick .destination .btn {
   width: 200px;
   padding: 13px 0;
-  background: #17A2B8;
+  background: #17a2b8;
   font-size: 1.8rem;
   color: white;
   text-align: center;
   border-radius: 17px;
+  cursor: pointer;
 }
