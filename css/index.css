@@ -128,6 +128,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 html {
   font-size: 62.5%;
@@ -319,6 +320,8 @@ header nav a:hover {
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -385,5 +388,60 @@ header nav a:hover {
     transition: 0.3s;
     background: #FFFFFF;
     color: #17A2B8;
+  }
+}
+.home #contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.home #contact label {
+  font-size: 1.6rem;
+}
+.home #contact input,
+.home #contact select,
+.home #contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #212529;
+  border-radius: 4px;
+  margin: 6px 0 30px;
+  resize: vertical;
+  font-family: inherit;
+  font-weight: 400;
+}
+.home #contact input[type=submit] {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  padding: 10px 0;
+  width: 200px;
+  height: 43px;
+  background: #17A2B8;
+  border: 1px solid #17A2B8;
+  color: #FFFFFF;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.home #contact input[type=submit]:hover {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transition: 0.3s;
+  background: #FFFFFF;
+  color: #17A2B8;
+}
+@media (max-width: 500px) {
+  .home #contact form {
+    margin-left: 8%;
+  }
+  .home #contact input,
+  .home #contact select,
+  .home #contact textarea {
+    width: 92%;
   }
 }

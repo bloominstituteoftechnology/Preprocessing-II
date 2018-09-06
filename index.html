@@ -24,7 +24,7 @@
         <a href="index.html">Home</a>
         <a href="#">About Us</a>
         <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -85,6 +85,33 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+ 
+    <!-- The below block of HTML will create the Contact section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="What's your full name?">
+
+            <label for="options">Which Trip Interests You?</label>
+            <select>
+                <option value="FITS">Fun In The Sun</option>
+                <option value="ME">Mountain Excursion</option>
+                <option value="IG">Island Getaway</option>
+              </select>
+        
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="What's your email?">
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="What's your phone number?" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+        
+            <label for="subject">Special Instructions</label>
+            <textarea id="subject" name="subject" placeholder="Let us know if you have any additional comments."></textarea>
+        
+            <input type="submit" value="Submit">
+        </form>  
+      </section>
 
   </div><!-- container -->
   <footer class="footer">

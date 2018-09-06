@@ -94,6 +94,8 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
 
@@ -119,5 +121,40 @@
       }
     }
   }//end content-pick
+
+  	// Start of Contact Section
+	#contact {
+    .flex(row, wrap, center, center);
+    margin-bottom: 30px;
+
+		label {
+			font-size: 1.6rem;
+		}
+
+		input, select, textarea {
+			width: 100%;
+			padding: 12px;   
+			border: 1px solid @font-color; 
+			border-radius: 4px; 
+			margin: 6px 0 30px;
+			resize: vertical;
+			font-family: inherit;
+			font-weight: 400; 
+    }
+		
+		input[type=submit] {
+      .button-styling(@button-bg,@white,200px,43px);
+		}
+
+		@media (max-width: 500px) {
+			form {
+				margin-left: 8%;
+			}
+
+			input, select, textarea {
+				width: 92%;
+			}	
+		} // end Contact media query
+	} //end Contact section
 
 }// home
