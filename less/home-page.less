@@ -107,13 +107,13 @@
       width: 30%;
       margin-bottom: 30px;
 
-      // .btn{
-      //   .custom-button(@button-lg, @white, @100percent-width, 40px, 15px);
+      .btn{
+        .custom-button(@button-lg, @white, @100percent-width, 15px, 15px);
 
-      //   &:hover{
-      //     background-color: @eastern-blue;
-      //   }
-      // }
+        &:hover{
+          background-color: @eastern-blue;
+        }
+      }
     }
 
     @media @mobile500{
@@ -123,8 +123,8 @@
         width: 80%;
 
         .btn{
-          .fonts(1rem, @shark);
-          .custom-button(@button-bg, @white, @100percent-width, 0, 15px);
+          .fonts(.5rem, @shark);
+          .custom-button(@button-bg, @white, @100percent-width, 15px, 10px);
 
           &:hover{
             background-color: @shark;
