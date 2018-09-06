@@ -1,1 +1,21 @@
 // Mixins in here
+
+.layout(@justi:space-between, @align:center) {
+	display: flex;
+	justify-content: @justi;
+	align-items: @align;
+  }
+
+.border(@size :1px, @color:red) {
+	border : @size solid @color;
+}
+
+.button(@bgcol : @eastern-blue, @width : 80%, @padding:10px){
+    background : @bgcol;
+    width : @width;
+    padding : @padding 0;
+    border-radius: 10%;
+    color : @white;
+    text-align: center;
+    font-size: 1.8rem;
+}
