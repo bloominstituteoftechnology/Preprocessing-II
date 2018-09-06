@@ -10,8 +10,25 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+//background color animation
+body {
+  .keyframes(bgColor, {
+    0% {background: @white}
+    20% {background: @silver}
+    40% {background: gray}
+    60% {background: @eastern-blue}
+    80% {background: @sandy-beach}
+  });
+
+  .animation(bgColor 10s infinite)
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
+  @media @mobile {
+    margin-top: 15px;
+  }
 }
 
 h1 {

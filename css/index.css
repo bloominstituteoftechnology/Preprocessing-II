@@ -136,12 +136,77 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  -webkit-animation: bgColor 10s infinite;
+  -moz-animation: bgColor 10s infinite;
+  animation: bgColor 10s infinite;
+}
+@-moz-keyframes bgColor {
+  0% {
+    background: #FFFFFF;
+  }
+  20% {
+    background: #C0C0C0;
+  }
+  40% {
+    background: gray;
+  }
+  60% {
+    background: #17A2B8;
+  }
+  80% {
+    background: #FFEBCD;
+  }
+}
+@-webkit-keyframes bgColor {
+  0% {
+    background: #FFFFFF;
+  }
+  20% {
+    background: #C0C0C0;
+  }
+  40% {
+    background: gray;
+  }
+  60% {
+    background: #17A2B8;
+  }
+  80% {
+    background: #FFEBCD;
+  }
+}
+@keyframes bgColor {
+  0% {
+    background: #FFFFFF;
+  }
+  20% {
+    background: #C0C0C0;
+  }
+  40% {
+    background: gray;
+  }
+  60% {
+    background: #17A2B8;
+  }
+  80% {
+    background: #FFEBCD;
+  }
+}
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+}
+@media (max-width: 500px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-top: 15px;
+  }
 }
 h1 {
   font-size: 4rem;
@@ -197,7 +262,7 @@ img {
   .container header .nav nav {
     width: 100%;
     diplay: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 .container header .nav nav a {
