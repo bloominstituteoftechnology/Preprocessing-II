@@ -14,7 +14,16 @@
         justify-content: space-between;
         align-items: center;
 
+        @media @phone{
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
+        nav {
+            @media @phone{
+            padding-top: 20px;
+            }
+        }
         a {
             padding: 0 20px;
             justify-content: space-between;
@@ -25,4 +34,4 @@
     }
 
 
-}
+}//end of nav-h1
