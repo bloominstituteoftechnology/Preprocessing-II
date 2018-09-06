@@ -84,6 +84,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-wrap: wrap;
+    }
+
     @media @mobile {
       flex-wrap: wrap;
       padding: 10px 2%;
@@ -93,14 +97,22 @@
       width: 30%;
       .bottom-space(30px);
 
+      @media @tablet {
+        width: 100%;
+        margin: 20px 30px;
+      }
+
       @media @mobile {
         .center;
-        width: 100%;
         padding: 18px 7%;
       }
 
       .btn {
         .custom-button(@button-bg, @main-bg);
+
+        @media @tablet {
+          width: 28%;
+        }
 
         @media @mobile {
           width: 100%;

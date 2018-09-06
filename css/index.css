@@ -178,6 +178,11 @@ img {
   margin-top: 82px;
   max-width: 800px;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+}
 @media (max-width: 500px) {
   .container {
     width: 93%;
@@ -194,6 +199,11 @@ img {
 .fixed-navbar .navbar-container {
   margin: 0 auto;
   max-width: 800px;
+}
+@media (max-width: 800px) {
+  .fixed-navbar .navbar-container {
+    width: 95%;
+  }
 }
 .navbar-container {
   display: flex;
@@ -317,6 +327,11 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 800px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick {
     flex-wrap: wrap;
@@ -327,10 +342,15 @@ img {
   width: 30%;
   margin: 30px;
 }
+@media (max-width: 800px) {
+  .home .content-pick .destination {
+    width: 100%;
+    margin: 20px 30px;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick .destination {
     margin: 0 auto;
-    width: 100%;
     padding: 18px 7%;
   }
 }
@@ -347,6 +367,11 @@ img {
 .home .content-pick .destination .btn:hover {
   background-color: #FFFFFF;
   color: #17A2B8;
+}
+@media (max-width: 800px) {
+  .home .content-pick .destination .btn {
+    width: 28%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
