@@ -268,9 +268,8 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-destination {
-    width: 90%;
-    padding: 20px 0;
-    margin: 0 5%;
+    width: 100%;
+    padding: 20px 5%;
   }
 }
 .home .content-destination img {
@@ -351,6 +350,7 @@ header p {
 @media (max-width: 500px) {
   .form1 {
     margin: 0 5%;
+    padding: 0 5%;
   }
 }
 .form1 h2 {
@@ -364,7 +364,7 @@ header p {
 }
 @media (max-width: 500px) {
   .form1 form {
-    width: 85%;
+    width: 87%;
     align-items: center;
   }
 }
