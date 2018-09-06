@@ -176,12 +176,12 @@ header div {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 header div nav {
-  width: 50%;
+  width: 45%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 header div nav a {
