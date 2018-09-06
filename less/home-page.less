@@ -35,6 +35,17 @@
     }
   }
 
+  @media @phone {
+    .content-section {
+      display: flex;
+      flex-direction: column;
+
+      .text-content, .img-content {
+        width: 100%;
+      }
+    }
+  }
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -50,12 +61,24 @@
     }
   }
 
+  @media @phone {
+    .inverse-content {
+      flex-direction: column-reverse;
+    }
+  }
+
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
     img {
       border-radius: 10px;
+    }
+  }
+
+  @media @phone {
+    .content-destination {
+      width: 100%;
     }
   }
 
@@ -71,7 +94,24 @@
     }
   }
 
+  @media @phone {
+    .content-pick {
+      flex-direction: column;
+      align-items: center;
+
+      .destination {
+        width: 80%;
+      }
+    }
+  }
+
   .btn {
     .click-me-button()
   }
-}// home
+}
+
+@media @phone {
+  .home {
+    padding: 0 15px;
+  }
+}
