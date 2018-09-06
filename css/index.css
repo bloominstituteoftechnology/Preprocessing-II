@@ -260,3 +260,13 @@ html {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  height: 69%;
+}
+.home .content-pick .destination .btn button {
+  width: 75%;
+  background-color: teal;
+  border-radius: 15%;
+  Height: 25%;
+  color: white;
+}
