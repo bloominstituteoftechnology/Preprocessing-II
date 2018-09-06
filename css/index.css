@@ -172,7 +172,6 @@ header {
   border-bottom: 2px dashed #C0C0C0;
 }
 header div {
-  border: 1px solid green;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -181,11 +180,15 @@ header div {
 }
 header div nav {
   border: 1px solid blue;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 header div nav a {
   color: #212529;
   text-decoration: none;
-  border: 1px solid black;
+  font-size: 1.6rem;
 }
 .footer {
   width: 100%;

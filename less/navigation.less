@@ -3,7 +3,6 @@
 header {
     border-bottom: 2px dashed @navigation-border;
     div {
-        border: 1px solid green;
         max-width: 800px;
         margin: 0 auto;
         display: flex;
@@ -11,10 +10,15 @@ header {
         padding: 20px 0;
         nav {
             border: 1px solid blue;
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             a {
                 color: @font-color;
                 text-decoration: none;
-                border: 1px solid black;
+                // border: 1px solid black;
+                font-size: 1.6rem;
             }//a
         }//nav
         h1 {
