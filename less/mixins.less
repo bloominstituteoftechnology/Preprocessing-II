@@ -14,3 +14,12 @@
     color: @bg;
   }
 }
+
+.animate(@name) {
+  animation: @name 2s infinite;
+
+  @keyframes @name {
+    from { transform: translateX(-20px); }
+    to { transform: translateX(20px); }
+  }
+}

@@ -193,6 +193,9 @@ img {
   color: black;
   margin-right: 30px;
 }
+.navigation nav a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 500px) {
   .navigation {
     flex-direction: column;
@@ -223,6 +226,15 @@ img {
 }
 .home header img {
   width: 100%;
+  animation: vroom 2s infinite;
+}
+@keyframes vroom {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(20px);
+  }
 }
 .home header .text-content {
   margin: 18px 0;
@@ -320,4 +332,29 @@ img {
   .home .content-pick .destination {
     width: 75%;
   }
+}
+.home .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .form form select {
+  height: 40px;
+  width: 300px;
+  font-size: 1.6rem;
+}
+.home .form form input {
+  margin: 15px 0 30px;
+  background: #17A2B8;
+  color: #FFFFFF;
+  padding: 15px 15px;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 3px black;
+}
+.home .form form input:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
 }

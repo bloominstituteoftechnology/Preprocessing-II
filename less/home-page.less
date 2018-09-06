@@ -4,6 +4,7 @@
     
     img {
       width: 100%;
+      .animate(vroom);
     }
 
     .text-content {
@@ -66,8 +67,6 @@
 
     @media @phone {
       flex-direction: column-reverse;
-
-
     }
   }
 
@@ -105,6 +104,25 @@
 
       .destination {
         width: 75%;
+      }
+    }
+  }
+
+  .form {
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      select {
+        height: 40px;
+        width: 300px;
+        font-size: 1.6rem;
+      }
+      input {
+        margin: 15px 0 30px;
+        .customBtn(@eastern-blue, @white);
       }
     }
   }
