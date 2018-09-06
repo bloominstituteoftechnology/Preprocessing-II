@@ -53,9 +53,21 @@
   border-top: 2px dashed @navigation-border;
   display: flex;
   justify-content: space-between;
+  @media @phone {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    border: 3px solid red;
+  }
   .destination {
     width: 30%;
     margin-bottom: 30px;
+    @media @phone{
+      width: 100%;
+      border: 3px solid red;
+
+      }
   }
 }
 
@@ -67,4 +79,7 @@
 
 .btn {
   .btn-maker();
+  @media @phone{
+    width: 100%;
+  }
 }

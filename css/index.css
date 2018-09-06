@@ -262,9 +262,24 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    border: 3px solid red;
+  }
+}
 .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .content-pick .destination {
+    width: 100%;
+    border: 3px solid red;
+  }
 }
 .funbus-content-section {
   border-bottom: 2px dashed;
@@ -285,4 +300,9 @@ nav a {
 .btn:hover {
   background: black;
   cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
 }
