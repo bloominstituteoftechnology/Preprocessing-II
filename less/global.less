@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+
+  @media @mobile {
+    font-size: 3rem;
+  }
 }
 
 h2 {
@@ -34,6 +38,12 @@ p {
   padding-bottom: 10px;
 }
 
+a {
+  color: inherit;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -43,4 +53,8 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    max-width: 450px;
+  }
 }
