@@ -1,8 +1,8 @@
 .home {
 
-  @media @mobile {
+  @media @tablet {
     width: 93.6%;
-    margin: 0 3.2% 0 3.2%;
+    margin: 0 3.2%;
   }
 
   header {
@@ -39,6 +39,11 @@
       width: 48%;
       padding-left: 1%;
 
+      @media @tablet {
+        display: flex;
+        align-items: center;
+      }
+
       @media @mobile {
         width: 100%;
         padding: 0 0.5% 0 0;
@@ -72,6 +77,11 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @tablet {
+        display: flex;
+        align-items: center;
+      }
 
       @media @mobile {
         padding-right: 1.5%;

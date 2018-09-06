@@ -227,10 +227,10 @@ body > header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .home {
     width: 93.6%;
-    margin: 0 3.2% 0 3.2%;
+    margin: 0 3.2%;
   }
 }
 .home header {
@@ -264,6 +264,12 @@ body > header nav a {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 850px) {
+  .home .content-section .img-content {
+    display: flex;
+    align-items: center;
+  }
+}
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
@@ -296,6 +302,12 @@ body > header nav a {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 850px) {
+  .home .inverse-content .img-content {
+    display: flex;
+    align-items: center;
+  }
 }
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
