@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header h1 {
+  color: #212529;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+header nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
