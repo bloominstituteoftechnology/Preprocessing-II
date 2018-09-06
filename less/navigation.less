@@ -38,10 +38,17 @@
         margin-right: 3rem;
         font-size: 1.6rem;
         text-decoration: none;
+        transition: all 200ms;
 
         @media @phone {
           margin-right: 0;
         }
+      }
+
+      a:hover {
+        color: lighten(@font-color, 20%);
+        text-decoration: underline;
+        // border-bottom: 1px solid @font-color;
       }
 
       @media @tablet {

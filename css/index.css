@@ -183,6 +183,17 @@ img {
     width: 90%;
   }
 }
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .navigation {
   border-bottom: 2px dashed #212529;
   padding: 24px 0;
@@ -224,12 +235,17 @@ img {
   margin-right: 3rem;
   font-size: 1.6rem;
   text-decoration: none;
+  transition: all 200ms;
 }
 @media (max-width: 500px) {
   .navigation .container .navigation-links a,
   .navigation .container .navigation-links a:visited {
     margin-right: 0;
   }
+}
+.navigation .container .navigation-links a:hover {
+  color: #4e5862;
+  text-decoration: underline;
 }
 @media (max-width: 800px) {
   .navigation .container .navigation-links {
@@ -366,6 +382,7 @@ img {
   justify-content: center;
   font-size: 1.6rem;
   border-radius: 15px;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -377,7 +394,11 @@ img {
     justify-content: center;
     font-size: 1.6rem;
     border-radius: 15px;
+    cursor: pointer;
   }
+}
+.home .content-pick .destination .btn:hover {
+  animation: grow 500ms ease-in-out forwards;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
