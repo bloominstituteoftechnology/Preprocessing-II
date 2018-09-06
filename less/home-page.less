@@ -124,10 +124,11 @@
       } // mobile destination media query
 
       .btn {
-        .button-styling(@button-bg,@white,200px,43px);
+        .button-styling(@button-bg,@white);
 
         @media @mobile {
-          .button-styling(@button-bg,@white,350px,43px);
+          .button-styling(@button-bg,@white);
+          width: 87.5%;
         }
   
       }
@@ -155,7 +156,7 @@
     }
 		
 		input[type=submit] {
-      .button-styling(@button-bg,@white,200px,43px);
+      .button-styling(@button-bg,@white); //200px,43px
 		}
 
 		@media (max-width: 500px) {

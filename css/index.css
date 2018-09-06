@@ -383,9 +383,8 @@ header nav a:hover {
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.8rem;
-  padding: 10px 0;
-  width: 200px;
-  height: 43px;
+  padding: 12px 0;
+  width: 83.333333%;
   background: #17A2B8;
   border: 1px solid #17A2B8;
   color: #FFFFFF;
@@ -407,14 +406,14 @@ header nav a:hover {
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.8rem;
-    padding: 10px 0;
-    width: 350px;
-    height: 43px;
+    padding: 12px 0;
+    width: 83.333333%;
     background: #17A2B8;
     border: 1px solid #17A2B8;
     color: #FFFFFF;
     border-radius: 15px;
     transition: 0.3s;
+    width: 87.5%;
   }
   .home .content-pick .destination .btn:hover {
     -webkit-transform: scale(0.9);
@@ -453,9 +452,8 @@ header nav a:hover {
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.8rem;
-  padding: 10px 0;
-  width: 200px;
-  height: 43px;
+  padding: 12px 0;
+  width: 83.333333%;
   background: #17A2B8;
   border: 1px solid #17A2B8;
   color: #FFFFFF;
