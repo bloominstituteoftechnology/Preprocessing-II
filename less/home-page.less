@@ -2,7 +2,11 @@
 .home {
 
   @media @mobile {
+    width: 90%;
     margin: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   header {
@@ -10,6 +14,8 @@
     img {
       padding-bottom: 20px;
     }
+
+    border-bottom: 2px dashed @navigation-border;
 
   }
 
@@ -20,8 +26,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     .mobile-wrap();
 
    
@@ -29,11 +33,18 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        padding-top: 10px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 90%;
+      }
 
       img {
         border-radius: 10px;
@@ -44,6 +55,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      margin: 0;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -59,6 +73,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+      margin-top: 20px;
+    }
 
     img {
       border-radius: 10px;
@@ -71,9 +89,19 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 90%;
+      }
 
       .btn {
         .button-maker(85%, 50px, @button-bg);
