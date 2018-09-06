@@ -9,12 +9,30 @@ header{
         align-items: center;
         max-width: 800px;
         margin: 25px auto;
+        @media @mobile{
+            flex-direction: column;
+            margin: 20px 0 15px 0;
+        }
+        h1{
+            @media @mobile{
+                .fsize(3rem);
+                margin-bottom: 10px;
+            }
+        }
         nav{
+            @media @mobile{
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+            }
                 a{
                     text-decoration: none;
                     margin-right: 30px;
                     color: @font-color;
                     font-size: 1.6rem;
+                    @media @mobile{
+                        margin-right: 0px;
+                    }
                 }
         }
 
