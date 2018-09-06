@@ -1,3 +1,6 @@
+.test-box {
+  border: 1px red solid;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -184,7 +187,7 @@ header nav a {
   text-decoration: none;
   color: black;
 }
-header nav a :hover {
+header nav a:hover {
   text-decoration: underline;
   color: blue;
 }
@@ -251,6 +254,25 @@ header nav a :hover {
   justify-content: space-between;
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: 27%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 80%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
 }

@@ -2,8 +2,6 @@
   header{
     width:100%;
     padding-top:15px;
-    .header-content{
-    }
     img{
       width:100%;
       margin-top: 10px;
@@ -33,7 +31,6 @@
       }
     }
   }
-
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -65,8 +62,12 @@
     justify-content: space-between;
 
     .destination {
-      width: 30%;
+      width: 27%;
       margin-bottom: 30px;
+      .btn{
+        .custom-button(@button-bg,@white);
+       
+      }
     }
   }
 }// home
