@@ -187,6 +187,12 @@ header .navbar {
   justify-content: space-between;
   width: 100%;
 }
+@media (max-width: 500px) {
+  header .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -218,6 +224,12 @@ header .navbar .container nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -261,6 +273,12 @@ header .navbar .container nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .content-pick .destination {
   width: 30%;

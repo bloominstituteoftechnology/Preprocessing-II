@@ -4,10 +4,16 @@ header {
     margin: 0 auto;
     width: 100%;
 
+
     .navbar {
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .container {
             display: flex;
