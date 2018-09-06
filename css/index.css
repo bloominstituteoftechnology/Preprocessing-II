@@ -1,3 +1,7 @@
+.long-border {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +171,21 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navigation-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5%;
+}
+.navigation-section nav {
+  display: flex;
+  margin: 20px;
+}
+.navigation-section a {
+  font-size: 1.4rem;
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
 }
 .footer {
   width: 100%;
