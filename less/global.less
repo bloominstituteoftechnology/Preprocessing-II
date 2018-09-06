@@ -20,6 +20,11 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+
+  @media @mobile {
+    font-size: 3rem;
+    .bottom-space(14px);
+  }
 }
 
 h2 {
@@ -44,9 +49,13 @@ img {
 }
 
 .container {
-  // border: 1px solid red;
   .center;
   width: 100%;
   margin-top: 82px;
   max-width: @container-width;
+
+  @media @mobile {
+    width: 93%;
+    margin-top: 92px;
+  }
 }
