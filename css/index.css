@@ -1,1 +1,3 @@
-/* LESS needs to be processed */
+.container-home {
+  border: 1px solid blue;
+}
