@@ -7,3 +7,17 @@
 .border-style(){
   border-bottom: 2px dashed @navigation-border;
 }
+
+.myButtons(@width, @height, @bg, @text-color){
+  width: @width;
+  height: @height;
+  padding: 0 auto;
+  font-size: 1.8rem;
+  color: @text-color;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background:@bg;
+}

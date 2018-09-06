@@ -3,6 +3,7 @@
   .content {
     padding-bottom: 20px;
     .border-style();
+
     img {
       margin-bottom: 20px;
     }
@@ -12,20 +13,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+          @media @phone {
+            display: block;
+            padding: 0;
+            width: 100%;
+          }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+@media @phone {
+  width: 100%;
+}
       img {
         border-radius: 10px;
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
@@ -37,6 +47,9 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone {
+        padding-top: 20px;
+      }
     }
 
     .img-content {
@@ -48,7 +61,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+@media @phone {
+  width: 100%;
+}
     img {
       border-radius: 10px;
     }
@@ -59,24 +74,23 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+@media @phone {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+}
     .destination {
       width: 30%;
       margin-bottom: 30px;
-
+@media @phone {
+  width: 100%;
+ }
       .btn {
-        width: 200px;
-        height: 50px;
-        padding: 0 auto;
-        font-size: 1.8rem;
-        color: white;
-        font-weight: 100;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        border: 1px solid @sandy-beach;
-        background: @eastern-blue;
+        .myButtons(200px, 50px, @eastern-blue, white);
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
