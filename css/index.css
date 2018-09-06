@@ -198,7 +198,7 @@ header .container nav a {
   color: #212529;
   font-size: 1.6rem;
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 18px;
 }
 header .container nav a:hover {
   font-weight: bold;
@@ -216,6 +216,13 @@ header .container nav a:active {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .welcome {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 15px;
+}
+.home .welcome img {
+  margin-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
