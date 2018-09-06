@@ -1,1 +1,39 @@
 // Navigation Styles here
+/* <header>
+     <nav>
+       <h1>Fun Bus</h1>
+       <a>Home</a>
+       <a>About Us</a>
+       <a>Blog</a>
+       <a>Contact</a>
+     </nav>
+   </header> */
+   header{
+       border-bottom: 2px dashed @navigation-border;
+       padding:1.5% 0;
+       width:100%;
+       background-color:@sandy-beach;
+       nav{
+           display:flex;
+           flex-wrap:wrap;
+           max-width:800px;
+           margin:0 auto;
+           justify-content:space-between;
+                @media @mobile {
+                    justify-content: space-evenly;
+                    h1{
+                        text-align:center;
+                        width:100%;
+                        margin:2.5% auto;
+                    }
+                }
+
+            }
+            a{
+                font-size:1.6rem;
+                align-self:center;
+                padding-right:2.5%;
+            }
+       }
+       
+   
