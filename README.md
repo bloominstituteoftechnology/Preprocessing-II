@@ -12,7 +12,7 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
 * [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
 * [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in you `index.less` file.
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 3: Import LESS Files
@@ -37,13 +37,10 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 5: Mobile Updates Needed
 * [ ] Use escaping to create a variable named `@mobile` that contains this value: `(max-width: 500px)`.  Use the `variables.less` file to house your styling.
-* [ ] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating. 
-* [ ] Match the design file at `500px` as well as you can 
+* [ ] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating.
+* [ ] Match the design file at `500px` as well as you can
 
-## Stretch Goals: 
+## Stretch Goals:
 * [ ] Create an animation mixin using parametric mixins
-* [ ] Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions. 
+* [ ] Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions.
 * [ ] Style the site to look good at all sizes, not just desktop and phone
-
-
-
