@@ -1,30 +1,44 @@
 // Navigation Styles here
 
 .navigation {
+    max-width: 1000px;
     border-bottom: @dashedBorder;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 
     .nav-logo {
-        max-width: 800px;
-        margin: 0 auto;
+        max-width: 880px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-       
+        
+        @media @mobile {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            max-width: 200px;    
+        }
 
         nav {
-            margin: 10px 0;
+            margin: 10px 200px 10px 0;
             display: flex;
-            flex-wrap: nowrap;
             justify-content: space-between;
+            max-width: 800px;
 
-            
-            
+            @media @mobile {
+                justify-content: center;
+            }
+
+                      
             a {
                 text-decoration: none;
                 color: black;
                 margin: 20px 5%;
                 font-size: 1.6rem;
-                max-width: 110px;
+                max-width: 120px;
                 white-space: nowrap;
             }
         }
