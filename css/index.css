@@ -279,6 +279,7 @@ img {
   .home .inverse-content {
     display: flex;
     flex-direction: column-reverse;
+    margin: 30px 5%;
   }
 }
 .home .inverse-content .text-content {
@@ -305,15 +306,14 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-destination {
-    max-width: 90%;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 30px 5%;
+    padding: 30px 5%;
   }
 }
 .home .content-destination img {
-  border-radius: 10px;
+  padding: 0;
 }
 .home .content-pick {
   padding-top: 30px;
@@ -323,6 +323,7 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick {
+    margin: 30px 5%;
     flex-direction: column;
     align-items: center;
   }
@@ -333,14 +334,14 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 75%;
+    width: 70%;
   }
 }
 .home .content-pick .destination .btn {
   font-size: 1.6rem;
   text-align: center;
   max-width: 85%;
-  padding: 10px;
+  padding: 15px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -354,7 +355,7 @@ img {
     font-size: 1.6rem;
     text-align: center;
     max-width: 100%;
-    padding: 10px;
+    padding: 15px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
