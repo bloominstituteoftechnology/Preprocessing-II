@@ -198,12 +198,18 @@ header {
   padding: 30px 12%;
   border-bottom: 1px dashed gray;
 }
+.home .cta {
+  border-bottom: 1px dashed gray;
+  padding-bottom: 20px;
+}
+.home .cta .top-img {
+  margin-bottom: 20px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-top: 1px dashed gray;
 }
 .home .content-section .text-content {
   width: 48%;
