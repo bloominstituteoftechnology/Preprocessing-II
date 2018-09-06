@@ -1,1 +1,61 @@
 // Navigation Styles here
+.navigation {
+  border-bottom: 2px dashed @font-color;
+  padding: 24px 0;
+
+  @media @phone {
+    padding: 17px 0 8px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media @tablet {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      color: @font-color;
+
+      @media @tablet {
+        margin-bottom: 25px;
+      }
+
+      @media @phone {
+        font-size: 3rem;
+        margin-bottom: 17px;
+      }
+    }
+
+    .navigation-links {
+      a,
+      a:visited {
+        color: @font-color;
+        margin-right: 3rem;
+        font-size: 1.6rem;
+        text-decoration: none;
+        transition: all 200ms;
+
+        @media @phone {
+          margin-right: 0;
+        }
+      }
+
+      a:hover {
+        color: lighten(@font-color, 20%);
+        text-decoration: underline;
+        // border-bottom: 1px solid @font-color;
+      }
+
+      @media @tablet {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+}
