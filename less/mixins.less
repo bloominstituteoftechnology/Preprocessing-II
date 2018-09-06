@@ -30,3 +30,15 @@
     width: 100%;
   }
 }
+
+.keyframes(@name, @duration, @iterations) {
+  @keyframes color {
+    25% {color: black;}
+    50% {color: orange;}
+    100% {color: darkgoldenrod;}
+  }
+
+  animation-name: color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}

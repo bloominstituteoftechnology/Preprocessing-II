@@ -1,73 +1,117 @@
 // Navigation Styles here
 
 .nav-bar {
-    display: flex;
-    justify-content: center;
     width: 100%;
     border-bottom: 2px dashed @navigation-border;
-    padding: 30px 0px;
-
-    @media @mobile {
-        padding: 0;
-        margin-top: 20px;
-    }
+    display: flex;
+    justify-content: center;
 
     .header-container {
-        min-width: 501px;
+        width: 100%;
+        max-width: 800px;
         display: flex;
         justify-content: space-between;
-        align-content: center;
+        align-items: center;
+        padding: 30px 0px;
 
         @media @mobile {
-            min-width: 350px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            padding: 10px 0px;
         }
+
+        h1 {
+        }
+    }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            max-width: 350px;
+            width: 100%;
+
+            @media @mobile {
+                padding-top: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: @shark;
+            }
+        }
+}
+
+
+
 
 // .nav-bar {
 //     display: flex;
-//     justify-content: space-between;
-//     width: 100%
+//     justify-content: center;
+//     width: 100%;
+//     border-bottom: 2px dashed @navigation-border;
+//     padding: 30px 0px;
 
-    h1{
-       margin: 0;
-       width: 50%;
-       @media @mobile {
-            width: 100%;
-           min-width: 350px;
-           display: flex;
-           justify-content: center;
-           order: 0;
-           text-align: center;
-       }
-    }
+//     @media @mobile {
+//         padding: 0;
+//         margin-top: 20px;
+//     }
 
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        width: 50%;
+//     .header-container {
+//         min-width: 501px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-content: center;
 
-        @media @mobile {
-            display: flex;
-            justify-content: space-evenly;
-            order: 1;
-            width: 100%;
-            padding: 15px 0px;
-        }
+//         @media @mobile {
+//             min-width: 350px;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//         }
+
+// // .nav-bar {
+// //     display: flex;
+// //     justify-content: space-between;
+// //     width: 100%
+
+//     h1{
+//        margin: 0;
+//        width: 50%;
+//        @media @mobile {
+//             width: 100%;
+//            min-width: 350px;
+//            display: flex;
+//            justify-content: center;
+//            order: 0;
+//            text-align: center;
+//        }
+//     }
+
+//     nav {
+//         display: flex;
+//         justify-content: space-around;
+//         align-content: center;
+//         width: 50%;
+
+//         @media @mobile {
+//             display: flex;
+//             justify-content: space-evenly;
+//             order: 1;
+//             width: 100%;
+//             padding: 15px 0px;
+//         }
 
 
-        a {
-            font-size: 1.4rem;
-            text-decoration: none;
-            color: @shark;
-            margin: 0% 10%;
+//         a {
+//             font-size: 1.4rem;
+//             text-decoration: none;
+//             color: @shark;
+//             margin: 0% 10%;
 
-            @media @mobile {
-                margin: 0% 5%;
-            }
-        }
-    }
-}
-}
+//             @media @mobile {
+//                 margin: 0% 5%;
+//             }
+//         }
+//     }
+// }
+// }
