@@ -1,10 +1,18 @@
-// main: index.less 
+// main: index.less
 .home {
   header {
     padding: 20px 0;
     border-bottom: 2px dashed @shark;
     
-    
+  }
+  header .img-box {
+    width: 100%;
+  }
+  header img {
+    @media @mobile {
+      margin: 0 3%;
+      width: 90%;
+    }
   }
 
   header h1 {
@@ -15,15 +23,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+      width: 95%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 95%;
+        }
 
       img {
         border-radius: 10px;
@@ -33,9 +51,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    @media @mobile {
-      background: blue;
-  }
+    
     //border-bottom: 2px dashed @navigation-border;
 
     .text-content {

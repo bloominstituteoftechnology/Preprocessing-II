@@ -171,8 +171,19 @@ img {
 nav {
   display: flex;
   justify-content: space-between;
-  border: yellow dotted 10px;
   padding: 20px 0;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    margin: 20px 0;
+  }
 }
 .link-box {
   display: flex;
@@ -200,6 +211,15 @@ a {
   padding: 20px 0;
   border-bottom: 2px dashed #212529;
 }
+.home header .img-box {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home header img {
+    margin: 0 3%;
+    width: 90%;
+  }
+}
 .home header h1 {
   padding: 20px 0;
 }
@@ -209,24 +229,35 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 95%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 95%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
-}
-@media (max-width: 500px) {
-  .home .inverse-content {
-    background: blue;
-  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;

@@ -1,16 +1,26 @@
 //main: index.less
 // Navigation Styles here
 nav {
-    
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
     display: flex;
     justify-content: space-between;
-    border: yellow dotted 10px;
+    //border: yellow dotted 10px;
     padding: 20px 0;
     
     
    
 }
 
+h1 {
+    @media @mobile {
+        margin: 20px 0;
+    }
+}
 .link-box {
     display: flex;
     justify-content: space-between;
