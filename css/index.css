@@ -254,6 +254,23 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick button {
+  padding: 10px 40px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  border-radius: 15px;
+}
+.home .content-pick button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation: slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
