@@ -1,1 +1,37 @@
 // Navigation Styles here
+
+
+.nav-container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100px;
+    @media @mobile {
+        .make-phone();
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    nav {
+        display: flex;
+        width: 43.75%;
+        justify-content: space-around;
+        align-self: center;
+        @media @mobile {
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: black;
+        }
+    }
+    h1 {
+        width: 56.25%;
+        align-self: center;
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

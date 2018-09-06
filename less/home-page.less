@@ -1,3 +1,11 @@
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
+
 .home {
 
   .content-section {
@@ -5,20 +13,53 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-evenly;
+      // align-content: center;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        height: 300px;
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        
+      }
       img {
         border-radius: 10px;
+        @media @mobile {
+          height: 300px;
+          width: 100%;
+          max-width: 500px;
+          align-self: center;
+          justify-self: center;
+         
+          
+        }
       }
     }
   }
@@ -26,15 +67,30 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content: center;
+      // width: 100%;
+      }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        width: 100%;
+        order:-3;
+        }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile {
+        
+        order:0;
+        }
     }
   }
 
@@ -59,3 +115,17 @@
     }
   }
 }// home
+
+.fun-bus-container {
+  .make-container();
+  flex-direction: column;
+
+  h2 {
+    margin-top: 20px;
+  }
+}
+
+
+.btn {
+  .making-button(#008080, white, 20px);
+}
