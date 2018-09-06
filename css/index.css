@@ -131,7 +131,6 @@ table {
 }
 html {
   font-size: 62.5%;
-  border: 1px solid black;
 }
 html,
 body {
@@ -174,7 +173,7 @@ img {
   justify-content: space-between;
 }
 .navigation-container header {
-  border-bottom: 2px dashed gray;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -196,6 +195,7 @@ img {
   font-weight: bold;
   text-decoration: none;
   padding-right: 5%;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -208,13 +208,15 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  margin-left: 10%;
+}
 .home .main-header {
-  margin-left: 1%;
-  margin-right: -1%;
   border-bottom: 2px dashed grey;
 }
 .home .main-header img {
   padding-bottom: 20px;
+  width: 100%;
 }
 .home .main-header p {
   padding-bottom: 20px;
@@ -264,4 +266,20 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  background: #17A2B8;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3px;
+  padding: 11px 0px 11px 2%;
+  width: 83%;
+  border-radius: 12px;
+  margin-left: 1%;
+  color: #FFFFFF;
+  box-shadow: 1px 1px 1px grey;
+}
+.home .content-pick .btn:hover {
+  color: #17A2B8;
+  background: #FFFFFF;
 }
