@@ -169,6 +169,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 header {
   display: flex;
   justify-content: center;
@@ -259,6 +270,7 @@ header .nav-content nav a:hover {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  background-attachment: fixed;
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
@@ -268,6 +280,7 @@ header .nav-content nav a:hover {
   }
 }
 .home .content-section .img-content img {
+  background-attachment: fixed;
   border-radius: 10px;
 }
 .home .inverse-content {
