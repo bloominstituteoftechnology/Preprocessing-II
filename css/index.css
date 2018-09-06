@@ -195,11 +195,21 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .cta {
+  border-top: solid 2px #C0C0C0;
+  border-style: dashed;
+}
+.home .cta h2 {
+  margin-top: 18px;
+}
 .home .content-section {
-  margin: 30px 0;
+  margin: 11px 0;
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: solid 2px #C0C0C0;
+  border-style: dashed;
 }
 .home .content-section .text-content {
   width: 48%;
