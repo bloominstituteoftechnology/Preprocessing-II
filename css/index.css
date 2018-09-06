@@ -168,21 +168,26 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.main-navigation {
   border-bottom: 2px dashed lightgrey;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 15px;
   padding-bottom: 20px;
 }
-nav .nav {
+.main-navigation .tes {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-navigation .nav {
   width: 560px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav .nav .nav-link {
+.main-navigation .nav .nav-link {
   text-decoration: none;
   color: black;
   margin: 0 10px;
@@ -217,32 +222,39 @@ nav .nav .nav-link {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.home .intro {
+  border-bottom: 2px dashed lightgrey;
+  padding-bottom: 10px;
+}
+.home .intro .fun {
+  margin-top: 15px;
+}
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
