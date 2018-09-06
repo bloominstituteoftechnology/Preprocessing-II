@@ -255,17 +255,6 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home img {
-  animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .home .cta {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -397,5 +386,16 @@ img {
   .home .content-pick .destination .btn {
     width: 100%;
     font-size: 1.8rem;
+  }
+}
+img {
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
