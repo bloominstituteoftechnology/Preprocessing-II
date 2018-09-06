@@ -1,1 +1,75 @@
 // Navigation Styles here
+
+header{
+	display: flex;
+	justify-content:center;
+	margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+    
+    width: 100%;
+    border-bottom: 2px dashed @silver;
+
+    .nav-content{ 
+        display:flex;
+        max-width: 800px;
+        width: 100%;
+        justify-content: space-between;
+
+	
+	h1{
+		font-size: 4rem;
+	
+		// padding-left:5%;
+
+	}
+	nav{
+		display:flex;
+
+		@media (max-width: 500px){
+			margin-top: 5%;
+			height: auto;
+			flex-flow:column;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			border-bottom: 1px solid gray;
+			color: #B0B0B0;
+			width: 100%;
+			
+		}
+
+		
+
+		a{
+			margin:10px;
+			text-decoration: none;
+            color: @shark;
+            font-size: 1.6rem;
+			
+			
+
+			&:hover {
+				color: #878787;
+			}
+			@media (max-width: 500px){
+				display: flex;
+				height: 100%;
+				width: 100%;
+				text-align: center;
+				border-top: 1px solid gray;
+				justify-content: center;
+				align-items: center;
+				order: 1;
+				color: #B0B0B0;
+				font-size: 1.5rem;
+				margin:0;
+				font-size: 3.2rem;
+				padding: 7%;
+			}
+
+
+		}
+    }
+}
+}//end header
