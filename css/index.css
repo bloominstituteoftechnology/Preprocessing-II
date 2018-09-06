@@ -182,8 +182,25 @@ img {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+@media (max-width: 600px) {
+  .nav-container nav {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+  }
+}
+.nav-container nav .logo h1 {
+  font-size: 3rem;
+}
 .nav-container nav .menu {
   display: flex;
+}
+@media (max-width: 600px) {
+  .nav-container nav .menu {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .nav-container nav .menu a {
   align-self: center;
@@ -191,6 +208,13 @@ img {
   color: black;
   text-decoration: none;
   margin-right: 2.5rem;
+}
+@media (max-width: 600px) {
+  .nav-container nav .menu a {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 0;
+  }
 }
 .footer {
   width: 100%;

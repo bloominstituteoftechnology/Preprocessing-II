@@ -36,7 +36,7 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 
 ## Task 5: Mobile Updates Needed
-* [ ] Use escaping to create a variable named `@mobile` that contains this value: `(max-width: 500px)`.  Use the `variables.less` file to house your styling.
+* [X] Use escaping to create a variable named `@mobile` that contains this value: `(max-width: 500px)`.  Use the `variables.less` file to house your styling.
 * [ ] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating. 
 * [ ] Match the design file at `500px` as well as you can 
 
