@@ -197,6 +197,14 @@ img {
   padding-bottom: 3%;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width:500px) {
+  .home header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home header h1 {
   width: 40%;
 }
@@ -205,6 +213,12 @@ img {
   display: flex;
   justify-content: space-between;
   padding-right: 3%;
+}
+@media (max-width:500px) {
+  .home header nav {
+    width: 100%;
+    padding: 5px;
+  }
 }
 .home header nav a {
   display: flex;

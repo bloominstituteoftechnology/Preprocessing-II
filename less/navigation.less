@@ -6,6 +6,10 @@
         width:100%;
         justify-content: space-between;
         .content-border;
+        @media @mobile{
+            flex-direction:column;
+            .center;
+        }
         h1{
             width:40%;
         }
@@ -14,6 +18,10 @@
             display:flex;
             justify-content: space-between;
             padding-right:3%;
+            @media @mobile{
+                width:100%;
+                padding:5px;
+            }
             a{
                 .center;
                 .aTagStyling;
