@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+.navigation {
+  .floating-nav();
+  padding: 24px 0;
+  border-bottom: 2px dashed @navigation-border;
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      width: 42%;
+      max-width: 320px;
+      margin-right: 2%;
+      a {
+        // margin-left: 4%;
+        font-size: 1.6rem;
+        color: @font-color;
+        text-decoration: none;
+        text-align: end;
+        // min-width: 70px;
+      }
+    }
+  }
+}
