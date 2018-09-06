@@ -191,6 +191,7 @@ img {
   justify-content: space-between;
   padding: 2.5rem 0 4rem 0;
   border-bottom: 2px dashed grey;
+  margin: 0;
 }
 .nav .nav__menu .nav__menu--item {
   text-decoration: none;
@@ -232,6 +233,7 @@ img {
 .home .welcome .welcome__paragraph {
   padding-bottom: 2rem;
   border-bottom: 2px dashed grey;
+  margin: 0;
 }
 .home .inverse-content {
   padding-bottom: 30px;
