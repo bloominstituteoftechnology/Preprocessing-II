@@ -175,9 +175,18 @@ img {
   padding: 2%;
   align-items: baseline;
   border-bottom: #C0C0C0 dashed 2px;
+  flex-wrap: wrap;
+  color: #212529;
 }
 .topNav h1 {
   width: 40%;
+}
+@media (max-width:500px) {
+  .topNav h1 {
+    width: 100%;
+    text-align: center;
+    margin: 3% 0%;
+  }
 }
 .topNav a {
   font-size: 2rem;
@@ -194,6 +203,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  color: #212529;
+}
+@media (max-width:500px) {
+  .home {
+    padding: 0% 5%;
+  }
 }
 .home .mainHeader {
   border-bottom: #C0C0C0 dashed 2px;
@@ -214,12 +231,29 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    order: 1;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    order: 2;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -233,9 +267,19 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width:500px) {
+  .home .inverse-content .img-content {
+    order: 2;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -246,19 +290,28 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 1% 5%;
+    margin-top: -2%;
+  }
 }
 .home .content-pick .destination .btn {
-  background-color: teal;
-  border: solid black 1px;
+  background-color: #17A2B8;
   color: white;
   border-radius: 10px;
   text-decoration: none;
-  padding: 5%;
+  padding: 3% 5%;
   display: flex;
   justify-content: center;
   max-width: 85%;
