@@ -168,22 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navigation {
-  border-bottom: 3px dashed #C0C0C0;
+header {
+  border-bottom: 2px dashed #C0C0C0;
 }
-.navigation header {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-.navigation header .navigation-body {
+header .navigation {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 25px 0;
+  max-width: 800px;
+  margin: 25px auto;
 }
-.navigation header .navigation-body nav a {
+header .navigation nav a {
   text-decoration: none;
   margin-right: 30px;
   color: #212529;
