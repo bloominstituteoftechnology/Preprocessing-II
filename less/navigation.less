@@ -13,13 +13,17 @@
     align-items: center;
     width: 100%;
 
-    @media @phone {
+    @media @tablet {
       justify-content: center;
       flex-wrap: wrap;
     }
 
     h1 {
       color: @font-color;
+
+      @media @tablet {
+        margin-bottom: 25px;
+      }
 
       @media @phone {
         font-size: 3rem;
@@ -40,7 +44,7 @@
         }
       }
 
-      @media @phone {
+      @media @tablet {
         width: 100%;
         display: flex;
         justify-content: space-around;

@@ -96,7 +96,13 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      width: 90%;
+      margin: 0 auto;
+    }
+
     @media @phone {
+      width: 100%;
       flex-wrap: wrap;
       justify-content: center;
     }
