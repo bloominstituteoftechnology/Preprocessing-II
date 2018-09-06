@@ -214,7 +214,7 @@ img {
 .main-nav .nav-container nav a {
   text-decoration: none;
   font-weight: 800;
-  color: black;
+  color: #212529;
   line-height: 1.5;
   font-size: 1.6rem;
 }
@@ -358,7 +358,7 @@ img {
   }
 }
 .home .content-pick .destination .btn {
-  background-color: teal;
+  background-color: #17A2B8;
   width: 81%;
   padding: 15px;
   border-radius: 15px;
