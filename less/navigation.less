@@ -10,18 +10,69 @@
             align-items: center;
             padding: 10px;
             border-bottom: 2px dashed @navigation-border;
-            a {
-                font-size: 1.5rem;
-                margin: 10px;
-                text-decoration: none;
-            }
-        }
-    }
 
+            @media @max500px {
+
+               
+                text-align: center;
+                flex-wrap: wrap;
+              
+            }
+
+            }
+
+
+            h1 {
+
+                @media @max500px {
+
+                    width: 100%;
+                    display: block;
+                    margin-top: 5px;
+                  
+                }
+            }
+
+            nav {
+
+                @media @max500px {
+
+                    width: 100%;
+                    justify-content: center;
+                    
+                    
+                }
+
+                a {
+                    font-size: 1.5rem;
+                    margin: 10px;
+                    text-decoration: none;
+                    line-height: 200%;
+                }
+            }
+
+            }
+            
+        }
+    
+
+.bus-img {
+
+    @media @max500px {
+        padding-right: 15px;
+        padding-left: 15px
+    }
 }
 
 .intro-funbus {
 
     margin-top: 10px;
     border-bottom: 2px dashed @navigation-border;
-}
+
+    @media @max500px {
+
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+}   

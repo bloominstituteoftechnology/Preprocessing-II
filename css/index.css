@@ -175,14 +175,46 @@ img {
   padding: 10px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .fun-bus header a {
+@media (max-width: 500px) {
+  .home .fun-bus header {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .home .fun-bus h1 {
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .home .fun-bus nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.home .fun-bus nav a {
   font-size: 1.5rem;
   margin: 10px;
   text-decoration: none;
+  line-height: 200%;
+}
+@media (max-width: 500px) {
+  .bus-img {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 .intro-funbus {
   margin-top: 10px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .intro-funbus {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 .footer {
   width: 100%;
@@ -201,47 +233,47 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
+.content-pick .destination .btn {
   font-size: 1.5rem;
   text-align: center;
   width: 85%;
