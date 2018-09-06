@@ -168,6 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0 4rem 0;
+  border-bottom: 2px dashed grey;
+}
+.nav .nav__menu .nav__menu--item {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  margin: 0 1.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -195,6 +208,13 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+.home .welcome .welcome__img {
+  margin-bottom: 4rem;
+}
+.home .welcome .welcome__paragraph {
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed grey;
 }
 .home .inverse-content {
   padding-bottom: 30px;
