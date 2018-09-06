@@ -7,9 +7,16 @@
     align-items: center;
     padding: 30px 0;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+        justify-content: center;
+    }
 
     h1 {
         color: @shark;
+        @media @mobile {
+            margin-bottom: 30px;
+            font-size: 4.5rem;
+        }
     }
     nav {
         display:flex;
@@ -20,7 +27,9 @@
             font-size: 1.5rem;
             text-decoration: none;
             color: @shark;
-            
+            @media @mobile {
+                font-size: 2rem;
+            }
         }        
     }
 }
