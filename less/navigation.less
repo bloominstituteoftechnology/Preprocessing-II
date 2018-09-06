@@ -1,14 +1,21 @@
 // Navigation Styles here
 .navigation {
-  border-bottom: 2px dashed black;
+  border-bottom: 2px dashed @font-color;
   padding: 24px 0;
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    h1 {
+      color: @font-color;
+    }
+
     .navigation-links {
       a,
       a:visited {
+        color: @font-color;
         margin-right: 3rem;
         font-size: 1.6rem;
         text-decoration: none;
