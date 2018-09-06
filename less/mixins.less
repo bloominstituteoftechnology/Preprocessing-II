@@ -3,6 +3,45 @@
   border-bottom: 2px dashed @navigation-border;
 }
 
-.buttonbase() {
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+
+.custom-button(@maxWidth: 80%, @bg: @button-bg, @color: @main-bg, @buttonHoverDuration: .5s) {
+  font-size: 2rem;
+  max-width: @maxWidth;
+  padding: 10px;
+  .border-radius(15px);
+  text-align: center;
+  text-decoration: none;
+  background: @bg;
+  color: @color;
   
+  &:hover {
+    background: @color;
+    color: @bg;
+    border: 1px solid @bg;
+    padding: 9px;
+    animation-name: button-animation;
+    animation-duration: @buttonHoverDuration;
+  }
+
+  @keyframes button-animation {
+    from {
+      background: @bg;
+      color: @color;
+    }
+    to {
+      background: @color;
+      color: @bg;
+    }
+  }
+}
+
+
+
+
+// Development tools
+.testBox() {
+  border: 3px solid orange;
 }

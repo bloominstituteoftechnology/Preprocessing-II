@@ -18,13 +18,40 @@ nav {
       margin-right: 15px;
 
       li {
-        padding: 15px;
+        padding: 20px;
 
         a {
           text-decoration: none;
           color: @font-color;
         }
       }
+    }
+  }
+
+  @media @mobile {
+
+    margin-top: 20px;
+    padding-bottom: 0px;
+
+    .container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+      text-align: center;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      ul {
+        margin-right: 0;
+        margin-bottom: 0;
+
+        li {
+          flex: 1;
+          padding: 15px;
+        }
+      }      
     }
   }
 }
