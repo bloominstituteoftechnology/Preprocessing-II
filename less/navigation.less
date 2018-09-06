@@ -21,3 +21,25 @@
             font-size: 1.5rem;
         }
     }
+
+    .navigation {
+        @media @mobile {
+            flex-direction: column;
+        }
+        h1{
+            @media @mobile {
+                margin: 1% 0% 0%;
+            }
+    
+        }
+        .links {
+            @media @mobile {
+                margin: -3%;
+            }   
+        }
+        a {
+            @media @mobile {
+                padding: 35px 20px 37px 25px;
+            }
+        }
+    }

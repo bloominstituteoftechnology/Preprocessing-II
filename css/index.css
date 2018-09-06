@@ -5,7 +5,13 @@
 }
 @media (max-width: 500px) {
   .navigation h1 {
-    margin: 0%;
+    margin: 1% 0% 0%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .links {
+    margin: -3%;
+    padding: 0%;
   }
 }
 .button-me {
@@ -208,6 +214,26 @@ h1 {
   margin-left: 10px;
   color: black;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .navigation h1 {
+    margin: 1% 0% 0%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .links {
+    margin: -3%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation a {
+    padding: 35px 20px 37px 25px;
+  }
 }
 .footer {
   width: 100%;
