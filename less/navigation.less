@@ -1,1 +1,25 @@
 // Navigation Styles here
+
+.navigation {
+    .justify(space-between, no-wrap);
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px 20px 0px;
+    border-bottom: .3rem dashed lightgray;
+
+    h1 {
+        width: 60%;
+    }
+
+    nav {
+        width: 40%;
+        .justify(space-around, no-wrap);
+        margin-right: 2%;
+        
+        a {
+            .fontDecorate(none, 1.5rem, black, none);
+        }
+    }
+
+
+}
