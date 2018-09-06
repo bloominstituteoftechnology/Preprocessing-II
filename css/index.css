@@ -324,8 +324,13 @@ body > header nav a {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
@@ -333,7 +338,7 @@ body > header nav a {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 100%;
+    width: 80%;
   }
 }
 .home .content-pick .destination .btn {
@@ -346,4 +351,11 @@ body > header nav a {
   color: #FFFFFF;
   font-size: 1.8rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 99.5%;
+    padding: 13px 0;
+    margin-bottom: 1px;
+  }
 }
