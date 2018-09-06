@@ -172,9 +172,13 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.container header nav {
+  border: 1px solid blue;
+}
 .container header nav a {
   color: #212529;
   text-decoration: none;
+  border: 1px solid black;
 }
 .footer {
   width: 100%;
