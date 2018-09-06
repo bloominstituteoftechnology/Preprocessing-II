@@ -168,6 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  background-color: #D3D3D3;
+  width: 100%;
+}
+nav .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-wrapper .nav-header h2 {
+  display: inline-block;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
