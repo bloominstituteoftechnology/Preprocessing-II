@@ -1,1 +1,44 @@
-// Navigation Styles here
+// Navigation Styles 
+
+header {
+    .flex(row,wrap,space-between,center);
+    padding: 20px 0 25px;
+    width: 100%;
+    background: @main-bg;
+    // border-bottom: 2px dashed @silver;
+
+    .logo {
+        .link-styling;
+        font-size: 4rem;
+        font-family: @header-font;
+        // margin-left: 5%;
+    }
+
+    nav {
+        .flex(row,wrap,space-around,center);
+        margin-right: 2%;
+        width: 40%;
+
+        a { 
+            .link-styling;
+            font-size: 1.6rem;
+        }
+    }
+
+    @media @mobile {
+        .flex(column,nowrap,center,center);
+        position: relative;
+        padding: 18px 0 9px;
+
+        .logo {
+            font-size: 3rem;
+            padding-bottom: 15px;
+        }
+
+        nav {
+            margin-right: 0;
+            width: 95%;		
+        }
+    } // header media query end
+
+}
