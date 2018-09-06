@@ -16,8 +16,11 @@ header {
     
         .header-title{
             width: 28%;
-            // align-items: flex-start;
-            
+
+            @media @mobile {
+            width: 100%;
+            border: 1px solid red;
+            }
         }
 
         .header-nav-buttons {

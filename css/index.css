@@ -186,6 +186,12 @@ header .container-top {
 header .container-top .header-title {
   width: 28%;
 }
+@media (max-width: 500px) {
+  header .container-top .header-title {
+    width: 100%;
+    border: 1px solid red;
+  }
+}
 header .container-top .header-nav-buttons {
   flex-wrap: nowrap;
   width: 70%;
