@@ -4,20 +4,39 @@
         display: flex;
         justify-content: space-between;
         margin: 30px 0;
+
+        @media @mobile-view{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 5%;
+        }  
+
+        h1{
+            @media @mobile-view{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+
         nav{
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 48%;
+
+            @media @mobile-view{
+                width: 100%;
+            }
             a{
                 font-size: 1.6rem;
                 text-decoration: none;
                 color: black;
             }
-        }    
+        }   
     }
 }
 
 .border{
     border-bottom: 2px dashed @navigation-border;
 }
+

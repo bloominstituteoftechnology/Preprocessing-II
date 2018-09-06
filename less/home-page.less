@@ -1,26 +1,51 @@
 .home {
+  .bus-img{
+    @media @mobile-view{
+      margin: 0 5%;
+    }
+  }
+
   .welcome-section {
     margin: 30px 0;
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile-view{
+      margin: 30px 5%;
+    }
   }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
+    @media @mobile-view{
+      margin: 30px 5%;
+      display: flex;
+      flex-direction: column;
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile-view{
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile-view{
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile-view{
+          width: 100%;
+        }
       }
     }
   }
@@ -28,21 +53,38 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile-view{
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile-view{
+        padding: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile-view{
+        padding: 0;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile-view{
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 30px 5%;
+    }
 
     img {
       border-radius: 10px;
@@ -54,10 +96,24 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile-view{
+      flex-direction: column;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile-view{
+        width: 75%;
+      }
+
+      .btn{
+        .custom-button(@button-bg, 85%);
+        @media @mobile-view{
+          .custom-button(@button-bg, 100%);
+        }
+      }
     }
   }
 }// home
