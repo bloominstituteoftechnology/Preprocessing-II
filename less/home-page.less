@@ -5,18 +5,35 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      width: 90%;
+       height: auto;
+      margin-left: 20px;
+      flex-wrap: nowrap;
+      border-bottom: 2px dashed lightgrey;
+      flex-direction: column;
+      max-width: 500px;
+    }
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        width: 100%;
+      }
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -25,11 +42,16 @@
   .intro {
    border-bottom: 2px dashed lightgrey;
    padding-bottom: 10px;
+   @media @mobile {
+       width: 90%;
+       height: auto;
+      margin-left: 20px;
+     }
+   }
    .fun {
      margin-top: 15px;
    }
   }
-}
 
   .inverse-content {
     padding-bottom: 30px;
@@ -49,9 +71,20 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile{
+      width: 90%;
+      height: auto;
+     margin-left: 20px;
+     padding-top: 20px;
+     flex-wrap: nowrap;
+     flex-direction: column;
+     max-width: 500px;
+    }
     img {
       border-radius: 10px;
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 
@@ -60,10 +93,39 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .center();
+      width: 90%;
+      margin-left: 20px;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        .btn {
+          .button-creator(100%, 40px, @eastern-blue, @white);
+      }
+        .center();
+        h4 {
+          font-weight: bold;
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+        }
+        p {
+          // display: flex;
+          font-weight: bold;
+          // .center();
+          // border: 1px solid blue;
+        }
+      }
     }
   }
 // home
