@@ -1,8 +1,12 @@
 .home {
 
+  @media @tablet {
+    width: 90%;
+  } // home container tablet media query
+
   @media @mobile {
     width: 90%;
-  } // home container media query
+  } // home container mobile media query
 
   .line {
     border-top: 2px dashed @silver;
@@ -99,17 +103,25 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      .flex(column, nowrap, center, center);
+    } // tablet content-pick media query
+
     @media @mobile {
       .flex(column, nowrap, center, center);
-    }
+    } // mobile content-pick media query
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @tablet {
+        width: 75%;
+      } // tablet destination media query
+
       @media @mobile {
         width: 80%;
-      }
+      } // mobile destination media query
 
       .btn {
         .button-styling(@button-bg,@white,200px,43px);

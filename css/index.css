@@ -203,6 +203,24 @@ header nav a {
 header nav a:hover {
   color: #17A2B8;
 }
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 18px 0 9px;
+  }
+  header .logo {
+    font-size: 3rem;
+    padding-bottom: 30px;
+  }
+  header nav {
+    margin-right: 0;
+    width: 95%;
+  }
+}
 @media (max-width: 500px) {
   header {
     display: flex;
@@ -231,6 +249,11 @@ header nav a:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 800px) {
+  .home {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .home {
@@ -325,6 +348,14 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 800px) {
+  .home .content-pick {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick {
     display: flex;
@@ -336,6 +367,11 @@ header nav a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {

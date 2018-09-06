@@ -25,6 +25,22 @@ header {
         }
     }
 
+    @media @tablet {
+        .flex(column,nowrap,center,center);
+        position: relative;
+        padding: 18px 0 9px;
+
+        .logo {
+            font-size: 3rem;
+            padding-bottom: 30px;
+        }
+
+        nav {
+            margin-right: 0;
+            width: 95%;		
+        }
+    } // header tablet media query end
+
     @media @mobile {
         .flex(column,nowrap,center,center);
         position: relative;
@@ -39,6 +55,6 @@ header {
             margin-right: 0;
             width: 95%;		
         }
-    } // header media query end
+    } // header mobile media query end
 
 }
