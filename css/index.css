@@ -175,6 +175,7 @@ img {
 .navigation-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 2.5%;
 }
 .navigation-section nav {
@@ -183,7 +184,7 @@ img {
 }
 .navigation-section a {
   font-size: 1.4rem;
-  margin-right: 15px;
+  margin: 0 15px;
   text-decoration: none;
   color: black;
 }
@@ -214,6 +215,16 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+.home .main-header {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
+.home .main-header img {
+  margin-bottom: 5px;
+}
+.home .main-header .main-header-content {
+  margin: 10px 0;
 }
 .home .inverse-content {
   padding-bottom: 30px;
