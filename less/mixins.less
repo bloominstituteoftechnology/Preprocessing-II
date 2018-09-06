@@ -7,10 +7,21 @@
 	justify-content: center;
 	align-items: center;
 	width: 82%;
-	height: 45px;
+	height: 43px;
 	border: 1px solid darkgray;
 	border-radius: 10px;
 	font-size: 1.7rem;
 	background-color: @bgcolor;
 	color: @txtcolor;
+}
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
 }
