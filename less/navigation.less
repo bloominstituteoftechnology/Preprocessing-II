@@ -1,16 +1,33 @@
 // Navigation Styles here
 .nav-bar {
-    .justifyAlign(space-between, center);
     border-bottom: 2px dashed @navigation-border;
-    padding: 15px 18%;
-    nav {
+    .nav-container {
         .justifyAlign(space-between, center);
-        width: 40%;
-        padding-right: 5%;
-        a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.5rem;
+        max-width: 760px;
+        margin: auto;
+        padding: 15px 1%;
+        @media @mobile {
+            flex-direction: column;
+        }
+        @media @tablet {
+            flex-direction: column;
+        }
+        h1 {
+            min-width: 160px;
+        }
+        nav {
+            .justifyAlign(space-between, center);
+            width: 50%;
+            min-width: 400px;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+                padding: 5px;
+                margin: 5px;
+                width: 90px;
+                text-align: center;
+            }
         }
     }
 }
