@@ -217,7 +217,6 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 0 4rem 0;
-  border-bottom: 2px dashed grey;
   max-width: 800px;
 }
 @media (max-width: 500px) {
@@ -254,6 +253,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.dashedLineDiv {
+  border-bottom: 2px dashed grey;
 }
 .home .content-section {
   margin: 30px 0;
