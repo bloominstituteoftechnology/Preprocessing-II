@@ -168,6 +168,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.topnav {
+  border: 1px solid red;
+  width: 47%;
+  display: flex;
+  justify-content: space-around;
+  margin: 3% 0% 1% 0%;
+}
 .topnav a {
   color: black;
   text-decoration: none;
@@ -184,9 +191,28 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+html {
+  font-size: 62.5%;
+}
+.home {
+  font-size: 1.6rem;
+}
 .home .tophead {
   display: flex;
+  width: 100%;
   justify-content: space-between;
+}
+.home .tophead .funbus {
+  width: 25%;
+  margin: 2% 0% 0% 0%;
+}
+.home .fuimg .futxt {
+  margin-top: 3%;
+  border-bottom-style: dashed;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  margin-bottom: 5%;
+  padding-bottom: 2.4%;
 }
 .home .content-section {
   margin: 30px 0;
