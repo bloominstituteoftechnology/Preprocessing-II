@@ -197,7 +197,8 @@ img {
   }
 }
 .main-navigation .tes {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
 }
@@ -261,7 +262,7 @@ img {
     margin-left: 20px;
     flex-wrap: nowrap;
     border-bottom: 2px dashed lightgrey;
-    flex-direction: column;
+    flex-direction: column-reverse;
     max-width: 500px;
   }
 }
