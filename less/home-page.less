@@ -20,6 +20,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-direction: row-reverse;
+    }
+    
     @media @mobile{
       flex-direction: column;
     }
@@ -89,6 +93,11 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-direction: column;
+      padding-top: 25px;
+    }
+
     @media @mobile {
       flex-direction: column;
       padding-top: 25px;
@@ -103,12 +112,90 @@
         padding: 0 8%;
       }
 
+      @media @tablet {
+        width: 80%;
+        padding: 20px 8%;
+        margin: 0 auto;
+
+        &:hover {
+          background: @sandy-beach;
+          transition: .4s;
+        }
+      }
+
       .btn {
         .cta-btn(@eastern-dark, @eastern-blue, @shark, @white, 200px);
+
+        @media @tablet {
+          .cta-btn(@eastern-blue, @eastern-dark, @shark, @white, 200px);
+          margin: 0 auto 20px;
+        }
 
         @media @mobile {
           .cta-btn(@eastern-blue, @eastern-dark, @shark, @white, 100%);
         }
+      }
+    }
+  }
+
+  .cta-form {
+    width: 60%;
+    margin: 50px auto;
+    padding: 40px 14%;
+    background: @eastern-blue;
+    color: @white;
+    font-size: 1.6rem;
+
+    @media @tablet {
+      width: 80%;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    h2 {
+      font-family: 'Indie Flower';
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    form {
+      font-family: 'Roboto';
+
+      select {
+        margin-bottom: 20px;
+        padding: 5px 15px;
+        width: 100%;
+        color: @shark;
+      }
+
+      input {
+        margin-bottom: 20px;
+        padding: 5px 15px;
+        width: 100%;
+      }
+
+      textarea {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px;
+        font-family: 'Roboto';
+        font-size: 1.6rem;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      .btn {
+        .cta-btn(@eastern-dark, @shark, @silver, @white, 100%);
+        border: none;
       }
     }
   }

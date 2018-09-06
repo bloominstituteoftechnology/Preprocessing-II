@@ -13,10 +13,15 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        @media @tablet {
+            flex-direction: row-reverse;
+          }
+          
         @media @mobile {
             max-width: 100%;
             flex-direction: column;
         }
+
     
         h1 {
             @media @mobile {
