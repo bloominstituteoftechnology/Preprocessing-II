@@ -1,12 +1,25 @@
 .home {
 
+  .header-section {
+    margin: 0 0 30px;
+    border-bottom: 2px dashed @navigation-border;
+    
+    .img-header {
+      width: 100%;
+      height: auto;
+    }
+
+    .header-content {
+      width: 100%;
+      margin: 20px 0 10px;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-   
+    justify-content: space-between;   
     
     .text-content {
       width: 48%;
@@ -56,6 +69,14 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .custom-button(@button-bg-index, white, 200px);
+        font-size: 1.8rem;
+        border-radius: 15px;
+        text-align: center;
+        padding: 13px;
+      }
     }
   }
 }// home
