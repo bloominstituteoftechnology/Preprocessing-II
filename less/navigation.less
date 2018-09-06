@@ -10,12 +10,19 @@ header {
         padding: 25px 0;
         @media @mobile {
             flex-direction: column;
+            align-items: center;
+            padding-bottom: 0;
         }
         nav {
             width: 45%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            @media @mobile {
+                width: 90%;
+                justify-content: space-around;
+                padding-top: 15px;
+            }
             a {
                 color: @font-color;
                 text-decoration: none;
