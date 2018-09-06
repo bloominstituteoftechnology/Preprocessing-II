@@ -37,6 +37,7 @@
     border-bottom: 2px dashed @navigation-border;
     @media @mobile{
       flex-direction: column-reverse;
+      .content-border;
     }
 
     .text-content {
@@ -53,7 +54,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile{
+      width:95%;
+    }
     img {
       border-radius: 10px;
     }
@@ -64,10 +67,16 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile{
+      .center;
+      flex-direction:column;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width:95%;
+      }
       .btn{
         .button-styling;
       }
