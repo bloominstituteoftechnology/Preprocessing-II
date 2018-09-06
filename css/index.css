@@ -247,6 +247,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  border: 1px solid #19664c;
+  text-align: center;
+  font-size: 1.6rem;
+  background: #19664c;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem 0rem;
+  max-width: 80%;
+}
 .header {
   border-bottom: 0.15rem dashed grey;
 }
