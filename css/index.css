@@ -170,6 +170,7 @@ img {
 }
 .container header {
   display: flex;
+  justify-content: space-between;
 }
 .container header nav a {
   color: #212529;
