@@ -269,3 +269,17 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #17A2B8;
+  border-radius: 10px;
+  border-color: 1px solid #C0C0C0;
+  text-align: center;
+}
