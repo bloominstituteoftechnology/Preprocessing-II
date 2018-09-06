@@ -255,3 +255,13 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .destination .btn {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  background: #17A2B8;
+  color: #FFFFFF;
+}
