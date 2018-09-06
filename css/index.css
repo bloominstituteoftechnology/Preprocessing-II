@@ -264,8 +264,10 @@ img {
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
-  display: flex;
+  display: flex ;
+  flex-flow: row nowrap;
   justify-content: space-between;
+  align-content: center;
 }
 .home .content-pick .destination {
   width: 30%;

@@ -4,6 +4,7 @@
     h2{
       margin-top: 30px;
     }
+    
     p{
       margin-bottom: 20px;
     }
@@ -55,9 +56,8 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .borderTop-styling(@border-size, @border-type, @border-color);
+    .flexing-boxes(row, nowrap, space-between, center);
 
     .destination {
       width: 30%;
