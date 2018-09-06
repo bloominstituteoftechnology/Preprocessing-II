@@ -292,6 +292,12 @@ header .navigation nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 95%;
+    padding: 0 0 0 10px;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
