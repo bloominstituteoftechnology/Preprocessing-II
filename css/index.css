@@ -174,10 +174,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 3px dashed #C0C0C0;
 }
 .container .navigation h1 {
-  color: red;
+  color: #212529;
 }
 .container .navigation nav {
   width: 40%;
@@ -187,7 +187,7 @@ img {
 }
 .container .navigation nav a {
   text-decoration: none;
-  color: red;
+  color: #212529;
   font-size: 1.6rem;
 }
 .container .navigation nav a:hover {
@@ -200,18 +200,12 @@ img {
   width: 100%;
   padding-bottom: 13px;
   margin-bottom: 10px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 3px dashed #C0C0C0;
 }
 .container .top-content img {
   width: 100%;
   height: auto;
   margin-bottom: 21px;
-}
-.container .top-content h2 {
-  color: red;
-}
-.container .top-content p {
-  color: red;
 }
 .footer {
   width: 100%;
