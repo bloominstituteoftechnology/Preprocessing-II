@@ -1,1 +1,19 @@
+
+
 // Mixins in here
+
+.button(@background: @button-bg; @foreground: @main-bg; @border: @navigation-border) {
+    color: @foreground;
+    background: @background;
+    border: 1px solid @border;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 1.6rem;
+    text-align: center;
+    display: inline-block;
+
+    &:hover {
+        background: @foreground;
+        color: @background;
+    }
+}
