@@ -211,6 +211,7 @@ img {
   margin-right: 21px;
   font-size: 1.9rem;
   text-decoration: none;
+  color: black;
 }
 @media (max-width: 500px) {
   .header {
@@ -227,7 +228,7 @@ img {
     justify-content: space-evenly;
   }
   .header nav a {
-    padding: 0px 12px;
+    padding: 0px 10px;
   }
 }
 .footer {
