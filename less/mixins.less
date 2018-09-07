@@ -1,1 +1,17 @@
 // Mixins in here
+.long-border {
+  width: 100%;
+  border-bottom: 2px dashed @silver; 
+}
+
+.custom-button(@bg, @color) {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  background: @bg;
+  color: @color;
+}
+
