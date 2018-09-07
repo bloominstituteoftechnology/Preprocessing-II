@@ -196,13 +196,17 @@ img {
     transform: translateX(0px);
   }
 }
+.header-container {
+  width: 100%;
+  border-bottom: solid 2px #C0C0C0;
+  border-style: dashed;
+}
 .header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
   padding-top: 20px;
-  margin-bottom: -11px;
 }
 .header nav {
   height: 100%;
@@ -242,10 +246,6 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
-}
-.home .cta {
-  border-top: solid 2px #C0C0C0;
-  border-style: dashed;
 }
 .home .cta h2 {
   margin-top: 18px;
