@@ -1,20 +1,30 @@
-// Navigation Styles here
+/* Navigation Styles here */
 
 .navigation {
     .justify(space-between, no-wrap);
     align-items: center;
     width: 100%;
     padding: 15px 0px 20px 0px;
-    border-bottom: .3rem dashed lightgray;
-
-    h1 {
-        width: 60%;
+    border-bottom: .3rem dashed lightgray;  
+    @media @mobile {
+        flex-wrap: wrap;
+        padding-bottom: 10px;
     }
 
+    h1 {
+        width: 100%;
+        height: auto;
+        @media @mobile {
+            .justify(center, no-wrap);
+            margin-bottom: 15px;
+        }
+    } 
+
     nav {
-        width: 40%;
+        width: 100%;
         .justify(space-around, no-wrap);
-        margin-right: 2%;
+        margin-right: 10px;
+
         
         a {
             .fontDecorate(none, 1.5rem, black, none);
