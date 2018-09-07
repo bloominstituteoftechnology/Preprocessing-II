@@ -13,32 +13,31 @@
             margin: 20px;
             
             @media @mobile {
-                margin-left: 160px;
+                margin-left: 130px;
+                margin-top: 10px;
             }
         }
 
         nav {
-            margin: 30px;
-            font-size: 1.4rem; 
+            width: 350px;
+            display: flex;
+            justify-content: space-evenly;
+            
             @media @mobile {
-                justify-content: center;
+                width: 90%;
+                justify-content: space-around;
             }
         }
 
         a {
-            margin: 20px;
+            font-size: 1.6rem; 
             text-decoration: none;
             color: @shark;
+            padding-bottom: 10px;
 
             &:hover {
                 text-decoration: underline;
             }
-
-            @media @mobile {
-                text-align: center;
-                margin-left: 40px;
-                padding: 25px 0;
-                }
             } 
         }   
     }   
