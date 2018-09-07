@@ -360,3 +360,26 @@ img {
     width: 80%;
   }
 }
+.home .submit {
+  background: white;
+  color: black;
+  font-size: 1.6rem;
+  border-radius: 12px;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+.home .submit:hover {
+  background: teal;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 12px;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid teal;
+}

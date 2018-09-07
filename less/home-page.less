@@ -99,8 +99,8 @@
       }
     }
     .select-package {
-        .justifyAlign(space-between, center);
-        flex-direction: column;
+      .justifyAlign(space-between, center);
+      flex-direction: column;
     }
   }
 
@@ -113,6 +113,15 @@
     }
   }
   
+  .submit {
+    .button(white, black, 150px);
+    border: 1px solid black;
+    margin-bottom: 30px;
+    &:hover {
+      .button(teal, white, 150px);
+      border: 1px solid teal;
+    }
+  }
 
   // textarea {
   //   .formElements(80%);
