@@ -76,6 +76,33 @@ html,body {
 
 .top-section  {
   @media @mobile {
-    width: 100%;
+    max-width: 73%;
+    margin: 0 auto;
+    .header-content {
+       margin-top: 4.5%;  
+      h2 {
+        .fontsize-med();
+      }
+      p {
+        .fontsize-small();
+      margin-bottom: 2%;
+      }
+    }
   }
+}
+
+.home {
+  @media @mobile {
+  }
+  .content-section {
+  margin-left: 13%;
+  max-width: 73%;
+  margin: 0 auto;
+  flex-direction: column;
+  .text-content {
+    h2 {
+      .fontsize-med();
+    }
+  }
+ }
 }
