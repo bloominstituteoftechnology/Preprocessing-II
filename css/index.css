@@ -189,12 +189,13 @@ img {
 }
 @media (max-width: 500px) {
   .home header h1 {
-    margin-left: 130px;
+    text-align: center;
     margin-top: 10px;
   }
 }
 .home header nav {
   width: 350px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -202,6 +203,7 @@ img {
   .home header nav {
     width: 90%;
     justify-content: space-around;
+    margin-top: 15px;
   }
 }
 .home header a {
@@ -209,6 +211,7 @@ img {
   text-decoration: none;
   color: #212529;
   padding-bottom: 10px;
+  padding-left: 20px;
 }
 .home header a:hover {
   text-decoration: underline;
