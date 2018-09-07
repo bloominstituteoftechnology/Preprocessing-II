@@ -303,12 +303,14 @@ body {
     margin-bottom: 2%;
   }
 }
-.home .content-section {
-  margin-left: 13%;
-  max-width: 73%;
-  margin: 0 auto;
-  flex-direction: column;
-}
-.home .content-section .text-content h2 {
-  font-size: 2.55rem;
+@media (max-width: 500px) {
+  .home .content-section {
+    margin-left: 13%;
+    max-width: 73%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .home .content-section .text-content h2 {
+    font-size: 2.55rem;
+  }
 }
