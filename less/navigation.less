@@ -2,16 +2,13 @@
 
 .navigation {
     border-bottom: 2px dashed lightgray;
-    margin: 0% -28%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
     }
     h1 {
-        margin-left: 17.5%;
     }
     .links{
-        margin-right: 20%;
         display: flex;
         a{
             text-decoration: none;
@@ -19,27 +16,30 @@
             margin-left: 10px;
             color: black;
             font-size: 1.5rem;
+            white-space: nowrap;
         }
     }
 
     .navigation {
         @media @mobile {
             flex-direction: column;
+            margin: 0 auto;
         }
         h1{
             @media @mobile {
-                margin: 1% 0% 0%;
             }
     
         }
         .links {
             @media @mobile {
-                margin: -3%;
+                width: 100%;
+                margin: 0 auto;
             }   
         }
         a {
             @media @mobile {
-                padding: 35px 20px 37px 25px;
+                margin: 0 auto;
             }
         }
     }
+
