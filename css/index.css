@@ -233,8 +233,9 @@ img:hover {
   }
 }
 .container.nav .nav-header {
+  width: 800px;
   display: flex;
-  margin: 20px 6.5%;
+  margin: 20px auto;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
@@ -269,7 +270,7 @@ img:hover {
   text-decoration: none;
 }
 .container.nav .nav a:hover {
-  color: #17A2B8;
+  color: teal;
   text-decoration: underline;
 }
 .footer {
@@ -282,6 +283,10 @@ img:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  padding: 30px;
+  margin: 0 auto;
 }
 .home .content {
   padding-bottom: 20px;
@@ -387,7 +392,7 @@ img:hover {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: #17A2B8;
+  background: teal;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
