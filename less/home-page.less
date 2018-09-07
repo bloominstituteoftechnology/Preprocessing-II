@@ -88,10 +88,21 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      flex-wrap: wrap;
+      
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 90%;
+        padding-left: 55px;
+        margin: 0 0 35px 15px;
+        
+
+      }
     }
     .btn {
       .custom-btn(@button-bg, 10px, white);

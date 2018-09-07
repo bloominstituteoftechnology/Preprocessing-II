@@ -307,9 +307,21 @@ header .navigation nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+    padding-left: 55px;
+    margin: 0 0 35px 15px;
+  }
 }
 .home .content-pick .btn {
   background: #17A2B8;
@@ -317,6 +329,6 @@ header .navigation nav a {
   border-radius: 10px;
   color: white;
   text-align: center;
-  padding: 10px;
-  width: 83%;
+  padding: 10px 15%;
+  width: 85%;
 }
