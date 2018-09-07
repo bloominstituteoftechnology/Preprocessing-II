@@ -174,9 +174,10 @@ img {
   justify-content: space-around;
   margin: 3% 7% 1% 0%;
 }
-@media (max-width: 500px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .topnav {
-    align-self: center;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 .topnav a {
@@ -199,6 +200,11 @@ img {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 5%;
+  }
+}
 .tophead {
   display: flex;
   width: 100%;
@@ -219,10 +225,16 @@ html {
 @media (max-width: 500px) {
   .tophead .funbus {
     align-self: center;
+    margin: 2% 9% 0% 10%;
   }
 }
 .home {
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .home .fuimg {
+    margin: 0% 3% 0% 3%;
+  }
 }
 .home .fuimg .futxt {
   margin-top: 3%;
@@ -243,6 +255,8 @@ html {
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
+    margin: 0% 0% 0% 3%;
+    padding-right: 6%;
   }
 }
 .home .text-content {
@@ -286,6 +300,7 @@ html {
 @media (max-width: 500px) {
   .home .content-destination {
     width: 100%;
+    margin: 0% 3% 0% 3%;
   }
 }
 .home .content-destination img {
