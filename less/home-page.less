@@ -11,21 +11,38 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone{
+        width: 100%;
+        padding-top: 20px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
       }
+    }
+    @media @phone {
+      margin: 0 5%;
+      flex-direction: column;
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +59,13 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone{
+      width: 100%;
+    //   width: 90%;
+      padding: 20px 5%;
+    //   margin: 0 5%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +77,44 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      margin: 0 5%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 92%;
+
+      }
+
+      .btn {
+        .button1(@button-desktp, @main-bg);
+        width: 84%;
+        @media @phone{
+          width: 90%;
+          .button1(@button-bg, @main-bg);
+        }
+      }
     }
   }
+
 }// home
+
+header {
+  border-bottom: 2px dashed @navigation-border;
+  h2{
+    padding-top: 20px;
+  }
+
+  p {
+    padding-bottom: 20px;
+  }
+
+  @media @phone {
+    margin: 0 5%;
+  }
+}

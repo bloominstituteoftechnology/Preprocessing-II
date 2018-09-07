@@ -1,0 +1,58 @@
+// forms
+
+.form1 {
+  padding: 20px 0 30px 0;
+  width: 100%;
+  border-top: 2px dashed @navigation-border;
+
+  @media @phone{
+    margin: 0 5%;
+    padding: 0 5%;
+  }
+
+  h2{
+    padding: 20px 0 30px 0;
+  }
+  form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+
+    @media @phone{
+      width:87%;
+      align-items: center;
+    }
+  
+    label {
+      // display: inline-block;
+      display:flex;
+      width: 90px;
+      text-align: right;
+      font-size: 1.6rem;
+      margin: 10px 5px;
+    }
+  
+    input, textarea {
+      font-size: 1.6rem;
+      width: 300px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+  }
+
+
+  .btn {
+    .button1(@button-desktp, @main-bg);
+    width: 20%;
+    margin-top: 20px;
+    @media @phone{
+      width: 40%;
+      .button1(@button-bg, @main-bg);
+      margin: 10px 0 20px 0;
+    }
+  }
+}

@@ -1,1 +1,18 @@
 // Mixins in here
+
+.button1(@bg, @color) {
+    border-radius : 15px;
+    padding: 12px;
+    text-decoration:none;
+    background: @bg;
+    color: @color;
+    font-size: 1.8rem;
+    text-align: center;
+
+    &:hover {
+              background: @sandy-beach;
+              color: @button-bg;
+              cursor: pointer;
+            }
+
+}
