@@ -354,7 +354,7 @@ header nav a {
 .home .content-pick .destination .btn {
   width: 83%;
   height: 45px;
-  background: teal;
+  background: #17A2B8;
   color: white;
   display: flex;
   justify-content: center;
@@ -363,13 +363,48 @@ header nav a {
   border-radius: 7px;
 }
 .home .content-pick .destination .btn:hover {
-  border: 1px solid teal;
+  border: 1px solid #17A2B8;
   background: white;
-  color: teal;
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
     border-radius: 15px;
   }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px dashed #C0C0C0;
+  padding-top: 20px;
+}
+form label {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+form input {
+  height: 30px;
+}
+form .btn-container {
+  display: flex;
+  justify-content: center;
+}
+form .btn-container .btn {
+  width: 83%;
+  height: 45px;
+  background: #17A2B8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  border-radius: 7px;
+  width: 50%;
+  margin: 20px 0;
+}
+form .btn-container .btn:hover {
+  border: 1px solid #17A2B8;
+  background: white;
+  color: #17A2B8;
 }
