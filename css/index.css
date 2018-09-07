@@ -205,6 +205,11 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media only screen and (max-width: 500px) {
+  .home {
+    padding: 5%;
+  }
+}
 .content-section {
   margin: 30px 0;
   display: flex;
@@ -314,6 +319,20 @@ nav a {
 }
 @media only screen and (max-width: 500px) {
   .btn {
+    border: 1px solid #17A2B8;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 400px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #17A2B8;
+    color: whitesmoke;
     width: 100%;
+  }
+  .btn:hover {
+    background: black;
+    cursor: pointer;
   }
 }
