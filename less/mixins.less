@@ -1,1 +1,31 @@
 // Mixins in here
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.custom-button(@bg, @color) {
+  background: @bg;
+  border: 1px solid black;
+  color: @color;
+  padding: 10px;
+  .border-radius(10px);
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  font-size: 1.8rem;
+
+  &:hover {
+    background: @color;
+    color: @bg;
+  }
+}
+
+.mobileflex() {
+  display: flex;
+  flex-flow: column nowrap;
+}

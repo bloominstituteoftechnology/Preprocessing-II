@@ -1,1 +1,41 @@
 // Navigation Styles here
+.container.home {
+  header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    max-width: 100%;
+
+    nav {
+      max-width: 100%;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  section.header-bottom {
+    border-bottom: 2px dashed @silver;
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+.container-border {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-top: 2px dashed @silver;
+  img {
+    max-width: 800px;
+    margin-bottom: 20px;
+    height: 240px;
+  }
+}
