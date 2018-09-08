@@ -1,24 +1,51 @@
 .home {
 
+
+  .top-content {
+    padding: 90px 0 10px;
+    border-bottom: 2px dashed @navigation-border;
+
+    img {                             // bus
+      width: 100%;
+      height: auto;
+      }
+
+    h2 {                              // Welcome to Fun Bus
+      padding-top: 20px;
+    }
+  } // .top-content
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile-view {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile-view {
+        width: 100%;
+        padding: 0;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile-view {
+          width: 100%;
+        }
       }
     }
   }
@@ -30,17 +57,29 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile-view {
+        order: 1;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile-view {
+        order: 2;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile-view {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -53,36 +92,22 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile-view {
+      flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
+
+      @media @mobile-view {
+        width: 80%;
+        margin: 0 auto 30px;
+      }
 
       .btn {
-        width: 84%;
-        height: 45px;
-        border: 1px solid @silver;
-        padding: 10px 0 10px 0;;
-        border-radius: 15px;
-        background: @button-bg;
-        color: @white;
-        text-align: center;
-        font-size: 2rem;
-        padding-left: 2%;
+        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
       }
     }
   }
 }// home
-
-// Color assignments 
-// @font-color: @shark;
-// @button-bg: @eastern-blue;
-// @main-bg:  @white;
-// @navigation-border: @silver;
-// @footer-bg: @sandy-beach;
-
-// // Colors
-@white: #FFFFFF;
-@silver: #C0C0C0;
-@shark: #212529;
-@eastern-blue: #17A2B8;
-@sandy-beach: #FFEBCD;
