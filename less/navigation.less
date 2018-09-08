@@ -1,1 +1,50 @@
-// Navigation Styles here
+nav{
+   
+   
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px dashed @navigation-border;
+    
+ 
+    }
+    .content{
+        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-family: 'Indie Flower', cursive;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 0;
+
+        @media @mobile{
+            flex-direction: column;
+    }
+    .logo{
+        flex:1;
+    }
+    
+    .menu{
+         flex:1;
+         flex-direction: row;
+         font-family: 'Roboto', sans-serif;
+         font-size: 2rem;
+         display: flex;
+         justify-content: space-between;
+         padding: 0 .4rem;
+         a{
+             text-decoration: none;
+             color: @shark;
+        }
+        @media @mobile{
+            
+            justify-content: space-around;
+            font-size: 1.5rem;
+            padding-top:.4rem;
+            width:100%;
+        }
+    }
+    
+}
