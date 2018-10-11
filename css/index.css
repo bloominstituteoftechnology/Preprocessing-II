@@ -176,7 +176,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .navi-bar .navigation {
@@ -190,7 +191,24 @@ img {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 799px) {
+  .navi-bar .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5%;
+  }
+  .navi-bar .navigation p {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 500px) {
+  .navi-bar .navigation .logo {
+    padding: 0 0 2% 0;
+  }
+}
+@media (max-width: 799px) {
   .navi-bar .navigation .logo {
     padding: 0 0 2% 0;
   }
@@ -213,10 +231,18 @@ img {
     width: 100%;
   }
 }
+@media (max-width: 799px) {
+  .navi-bar .navigation .nav-links {
+    width: 100%;
+  }
+}
 .navi-bar .navigation .nav-links a {
   text-decoration: none;
   font-size: 1.6rem;
   color: black;
+}
+.navi-bar .navigation .nav-links a:hover {
+  text-decoration: underline;
 }
 .footer {
   width: 100%;
@@ -229,11 +255,33 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 799px) {
+  .home header {
+    padding: 0 2%;
+  }
+}
+@media (max-width: 500px) {
+  .home header {
+    padding: 0 5%;
+  }
+}
+.home header .header-text-content {
+  margin-top: 2%;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 799px) {
+  .home .content-section {
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section {
@@ -251,6 +299,11 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 799px) {
+  .home .content-section .text-content {
+    width: 90%;
+  }
+}
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
@@ -259,6 +312,11 @@ img {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 799px) {
+  .home .content-section .img-content {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
@@ -288,6 +346,12 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 799px) {
+  .home .content-destination {
+    width: 100%;
+    padding: 0 2%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-destination {
@@ -319,6 +383,12 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 799px) {
+  .home .content-pick .destination {
+    width: 33%;
+    padding: 0 2%;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
@@ -335,6 +405,19 @@ img {
   font-size: 1.6rem;
   cursor: pointer;
 }
+.home .content-pick .destination .btn:hover {
+  animation-name: buttonAnim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonAnim {
+  from {
+    background-color: #17A2B8;
+  }
+  to {
+    background-color: #0c525d;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
@@ -346,13 +429,33 @@ img {
     font-size: 1.6rem;
     cursor: pointer;
   }
-}
-@media (max-width: 500px) {
-  .home header {
-    padding: 0 5%;
+  .home .content-pick .destination .btn:hover {
+    animation-name: buttonAnim;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes buttonAnim {
+    from {
+      background-color: #17A2B8;
+    }
+    to {
+      background-color: #0c525d;
+    }
   }
 }
-.home header .header-text-content {
-  margin-top: 2%;
-  border-bottom: 2px dashed #C0C0C0;
+.home .form-content {
+  margin: 2% 5%;
+  padding: 5% 2%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .form-content .form-packages {
+  border: 1px solid red;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }

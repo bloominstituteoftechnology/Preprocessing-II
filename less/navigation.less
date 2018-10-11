@@ -6,18 +6,29 @@
 
     .navigation {
         .centerContent();
-        padding: 0 20%;
+        // padding: 0 20%;
+        max-width: 800px;
+        margin: 0 auto;
 
         @media @mobile {
             .centerMobile();
             padding: 0 5%;
-        }
+        } //mobile
+
+        @media @tablet {
+            .centerMobile();
+            padding: 0 5%;
+        } // tablet
 
         .logo {
             @media @mobile {
                 padding: 0 0 2% 0;
-            }
-            
+            } // mobile
+
+            @media @tablet {
+                padding: 0 0 2% 0;
+            } // tablet
+
             a {
                 .linkDecor();
                 font-family: @customFont;
@@ -30,11 +41,19 @@
             .centerContent();
 
             @media @mobile {
-                width: 100%;
-            }
+                width: @customWidth_1;
+            } // mobile
+
+            @media @tablet {
+                width: @customWidth_1;
+            } // tablet
 
             a {
                 .linkDecor();
+
+                &:hover {
+                    text-decoration: underline;
+                } // a:hover
             } // a
         } // nav links
     } // navigation

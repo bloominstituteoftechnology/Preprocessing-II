@@ -1,15 +1,36 @@
 .home {
 
+  header  {
+    @media @tablet {
+      padding: 0 2%;
+    } // tablet
+
+    @media @mobile {
+      padding: 0 5%;
+    } // mobile
+    
+    .header-text-content {
+      margin-top: 2%;
+      border-bottom: 2px dashed @navigation-border;
+    }
+  } //header
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+
+    @media @tablet {
+      padding: 0 2%;
+      .centerTablet();
+    } // tablet
+
     @media @mobile {
       padding: 0 5%;
       .centerMobile();
-    }
+    } // mobile
 
    
     
@@ -17,18 +38,27 @@
       width: 48%;
       padding-right: 1%;
 
+      @media @tablet {
+        width: 90%;
+      } // tablet
+
       @media @mobile {
-        width: 100%;
-      }
+        width: @customWidth_1;
+      } // mobile
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @tablet {
+        display: none;
+      } // tablet
+      
       @media @mobile {
-        width: 100%;
-      }
+        width: @customWidth_1;
+      } // mobile
 
       img {
         border-radius: 10px;
@@ -42,7 +72,7 @@
 
     @media @mobile {
       flex-direction: column-reverse;
-    }
+    } // mobile
 
     .text-content {
       padding-left: 1%;
@@ -59,10 +89,15 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @tablet {
+      width: @customWidth_1;
+      padding: 0 2%;
+    } // tablet
+
     @media @mobile {
-      width: 100%;
+      width: @customWidth_1;
       padding: 0 5%;
-    }
+    } // mobile
 
     img {
       border-radius: 10px;
@@ -77,35 +112,53 @@
 
     @media @mobile {
       .centerMobile();
-    }
+    } // mobile
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @tablet {
+        width: 33%;
+        padding: 0 2%;
+      } // tablet
+
       @media @mobile {
-        width: 100%;
+        width: @customWidth_1;
         padding: 0 15%;
-      }
+      } // mobile
 
       .btn {
         .customBtn(80%, @button-bg, white, 1.6rem);
+        // .animBtn(red, blue, 2s);
 
         @media @mobile {
           .customBtn(100%, @button-bg, white, 1.6rem);
-        }
+        } // mobile
       }
     }
   }
 
-  header  {
-    @media @mobile {
-      padding: 0 5%;
+  .form-content {
+    // border-top: 2px dashed @navigation-border;
+    margin: 2% 5%;
+    padding: 5% 2%;
+    background-color: lightgray;
+    .centerContent();
+
+    .form-packages {
+      border: 1px solid red;
+      width: 50%;
+      .centerContent();
+      flex-direction: column;
+
+      label {
+
+      }
+
+      input {
+
+      }
     }
-    
-    .header-text-content {
-      margin-top: 2%;
-      border-bottom: 2px dashed @navigation-border;
-    }
-  } //header
+  } //form-content
 }// home
