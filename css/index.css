@@ -171,10 +171,9 @@ img {
 .navigation {
   width: 100%;
   display: flex;
-  margin-top: 20px;
-  padding-bottom: 40px;
-  padding: 0 10% 30px 10%;
-  border-bottom: 1px dashed gray;
+  margin-top: 21px;
+  padding: 0 10% 28px 10%;
+  border-bottom: 2px dashed gray;
 }
 .navigation div {
   width: 55%;
@@ -200,6 +199,10 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  padding-bottom: 10px;
+  border-bottom: 2px dashed gray;
 }
 .home header .header-image {
   margin-bottom: 18px;
@@ -249,4 +252,15 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #007575;
+  color: white;
+  text-align: center;
+  height: 44px;
+  width: 200px;
+  padding-top: 14px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 18px;
 }
