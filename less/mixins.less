@@ -15,3 +15,11 @@
       background: darken(@background, 20%);
     }
   }
+
+  .rotating-animation(@transition, @transform) {
+      transition: @transition;
+
+      &:hover {
+        transform: @transform;
+      }
+  }

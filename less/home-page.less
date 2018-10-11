@@ -32,6 +32,30 @@
 .intro-section {
   border-bottom: 2px dashed @navigation-border;
   padding-bottom: 10px;
+
+  .tires {
+    height: 90px;
+
+    @media (max-width: 820px){
+      display: none;
+    }
+    .img1 {
+      position: relative;
+      top: -85px;
+      left: -30px;
+      .rotating-animation(all ease-in-out 3s, rotate(2160deg));
+      
+    }
+
+    .img2 {
+      position: relative;
+      top: -85px;
+      right: -420px;
+      .rotating-animation(all ease-in-out 3s, rotate(2160deg));
+    }
+
+
+  }
   h2 {
     margin-top: 10px;
   }
