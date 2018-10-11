@@ -1,1 +1,35 @@
 // Mixins in here
+.flex-column(@justify, @align) {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: @justify;
+	align-items: @align;
+		
+}
+
+.flex-row(@justify, @align) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: @justify;
+	align-items: @align;
+}
+.width-height(@width, @height) {
+	width: @width;
+	height: @height;
+}
+.margins-padding(@margin, @padding){
+	margin: @margin;
+    padding: @padding;
+}
+
+.buttons(){
+    border-radius: 10px;
+    background: @eastern-blue;
+    color: @white;
+    font-size: 1.6rem;
+    text-align: center;
+    .margins-padding(0, 5% 1%);
+    .width-height(80%, auto)
+}

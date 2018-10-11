@@ -1,1 +1,25 @@
 // Navigation Styles here
+.top-bar {
+    .flex-row(space-between, center);
+    border-bottom: 2px @navigation-border dashed;
+    .margins-padding(0%, 2% 9% 2% 7%);
+    .width-height(100%, auto);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+
+    nav {
+
+        .flex-row(space-around, center);
+        .width-height(42%, auto);
+
+        a{
+            color: @shark;
+            text-decoration: none;
+            font-size: 1.6rem;
+        }
+        
+    }
+}
