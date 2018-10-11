@@ -95,9 +95,72 @@
   }
 
   .home .content-section {
-      margin: 30px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    height: auto;
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+
+    .text-content {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .img-content {
+      width: 100%;
+      padding-left: 0;
+
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .home .inverse-content {
+    height: auto;
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+
+    .text-content {
+      margin: 10px 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .img-content {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .home .content-destination {
+    width: auto;
+    height: auto;
+    margin: 0 20px 30px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .home .content-pick {
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .destination {
+      width: 100%;
+      margin: 10px 0;
+      padding: 0 30px;
+    }
+
+    .btn {
+      #sign-me-up > .signing-btn
+    }
   }
 }
