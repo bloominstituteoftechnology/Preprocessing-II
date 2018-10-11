@@ -168,28 +168,56 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.top {
+.supercont {
   margin: 0 auto;
   max-width: 1000px;
+  border-bottom: 1.5px dashed #C0C0C0;
+}
+.supercont .top {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 8.4%;
-  border-bottom: 1.5px dashed #C0C0C0;
+  padding: 24px 0;
 }
-.top nav {
+@media (max-width: 500px) {
+  .supercont .top {
+    flex-direction: column;
+    padding: 0 0;
+    padding-top: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .supercont .top h1 {
+    font-size: 3rem;
+    padding-bottom: 6px;
+  }
+}
+.supercont .top nav {
   width: 43.5%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.top nav a {
+@media (max-width: 500px) {
+  .supercont .top nav {
+    width: 100%;
+  }
+}
+.supercont .top nav a {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
   text-decoration: none;
   color: #212529;
   margin-top: 8px;
+}
+@media (max-width: 500px) {
+  .supercont .top nav a {
+    padding-bottom: 3px;
+    font-size: 1.7rem;
+  }
 }
 .footer {
   width: 100%;
@@ -202,9 +230,22 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
+}
 .home .content-header {
   padding-bottom: 14px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .content-header {
+    padding-bottom: 11px;
+  }
 }
 .home .content-header img {
   margin-bottom: 18px;
@@ -215,35 +256,95 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0%;
+    height: auto;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: -1;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    height: auto;
+    padding-right: 0%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    height: auto;
+    padding-right: 0%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination img {
+    width: 100%;
+    height: auto;
+    padding-right: 0%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -251,9 +352,24 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-right: 0%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    height: auto;
+    padding: 0 10%;
+  }
 }
 .home .content-pick .destination .btn {
   display: flex;
@@ -270,4 +386,11 @@ img {
 }
 .home .content-pick .destination .btn:hover {
   background: #a7e9f4;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    height: auto;
+    padding-right: 0%;
+  }
 }
