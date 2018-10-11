@@ -256,3 +256,12 @@ header .container nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  text-align: center;
+  color: white;
+  padding: 4%;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  width: 85%;
+}
