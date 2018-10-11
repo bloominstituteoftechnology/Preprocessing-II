@@ -1,36 +1,36 @@
 // Mixins in here
 .center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-layout(@justify-value, @align-value) {
+  display: flex;
+  justify-content: @justify-value;
+  align-items: @align-value;
+}
+
+.red-border() {
+  border: 1px solid red;
+}
+
+.custom-btn(@width, @height, @background, @color) {
+  width: @width;
+  height: @height;
+  background: @background;
+  color: @color;
+  font-size: 2rem;
+  border: 1px solid @button-bg;
+  border-radius: 10px;
+
+  cursor: pointer;
+  &:hover {
+    background: @color;
+    color: @background;
   }
-  
-  .custom-layout(@justify-value, @align-value) {
-    display: flex;
-    justify-content: @justify-value;
-    align-items: @align-value;
-  }
-  
-  .red-border() {
-    border: 1px solid red;
-  }
-  
-  .custom-btn(@width, @height, @background, @color) {
-    width: @width;
-    height: @height;
-    background: @background;
-    color: @color;
-    font-size: 2rem;
-    border: 1px solid @button-bg;
-    border-radius: 10px;
-    
-    cursor: pointer;
-    &:hover {
-      background: @color;
-      color: @background;
-    }
-  }
-  
-  .bottom-border() {
-    border-bottom: 2px dashed @navigation-border;
-  }
+}
+
+.bottom-border() {
+  border-bottom: 2px dashed @navigation-border;
+}

@@ -3,40 +3,76 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Fun Bus Travel Agency - Contact</title>
+    <title>Fun Bus Travel Agency - Contact</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--[if lt IE 9]>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-<div class="container contct">
-   <header class="header">
-        <h1>Fun Bus</h1>
-        <nav class="navigation">
-          <a href="index.html">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-        </nav>
-    </header>
+    <div class="container contact">
+        <header class="header">
+            <h1>Fun Bus</h1>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
 
-    <div class="border"></div>
+        <div class="border"></div>
 
-    <div class="content-container">
+        <div class="content-container">
+            <h1>Vacation Package</h1>
+            <form action="contact.html" method="post" class="form">
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
 
-    </div> <!--content-container-->
- </div>
-  
-  <footer class="footer" id="footer">
-    <p>Copyright Fun Bus 2018</p>
-  </footer>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" id="phone" name="user_phone">
+
+                    <label for="instructions">Special Instructions:</label>
+                    <textarea id="instructions" name="user_instructions"></textarea>
+
+                    <label for="vacation">Vacation Packages:</label>
+                    <select id="vacation" name="user_vacation">
+                        <optgroup label="Caribbean Destinations">
+                            <option value="British-Virgin-Islands">British Virgin Islands</option>
+                            <option value="Turks_Caicos">Turks & Caicos</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Curacao">Curacao</option>
+                        </optgroup>
+                        <optgroup label="European Destinations">
+                            <option value="Farmer">France</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Norway">Norway</option>
+                        </optgroup>
+                    </select>
+                    <div class="btn">Submit</div>
+                </fieldset>
+            </form>
+
+        </div>
+        <!--content-container-->
+    </div>
+
+    <footer class="footer" id="footer">
+        <p>Copyright Fun Bus 2018</p>
+    </footer>
 
 </body>
 

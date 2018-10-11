@@ -6,13 +6,18 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
+html,
+body {
+  font-family: "Roboto", sans-serif;
   color: @font-color;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
 }
 
 h1 {
@@ -40,6 +45,22 @@ img {
   height: auto;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea,
+select {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  font-size: 1.6rem;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  color: @shark;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
 .content-container {
   max-width: 800px;
   width: 100%;
@@ -49,4 +70,3 @@ img {
     margin: 0 auto;
   }
 }
-

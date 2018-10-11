@@ -1,3 +1,37 @@
 .contact {
-    
+  .content-container {
+    background: @sandy-beach;
+    border-radius: 2.5%;
+    margin: 25px auto;
+    padding: 50px 5%;
+    margin-bottom: 100px;
+
+    h1 {
+      margin-bottom: 20px;
+      @media @tablet {
+        text-align: center;
+      }
+    }
+    .form {
+      fieldset {
+        .custom-layout(center, center);
+        flex-direction: column;
+
+        input,
+        select,
+        textarea {
+          margin-bottom: 20px;
+        }
+      }
+      .btn {
+        .center();
+        .custom-btn(50%, 40px, @button-bg, @main-bg);
+        margin: 0 auto;
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
