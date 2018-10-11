@@ -1,1 +1,27 @@
 // Mixins in here
+
+.button-mixin(@color,@bg,@border-radius,@width,@height){
+
+  color:@color;
+  background-color:@bg ;
+  border-radius: @border-radius;
+  width:@width;
+  height:@height ;
+
+
+
+
+
+}
+
+
+.btn{
+
+  .button-mixin(white,teal,20px,200px,50px);
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 4%;
+
+
+
+}
