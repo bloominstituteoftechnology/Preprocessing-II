@@ -5,11 +5,21 @@
     justify-content: center;
     width: 100%;
     padding: 2% 0;
-    border-bottom: 2px dashed silver;
+    border-bottom: 2px dashed @navigation-border;
     align-items: center;
+
+    @media @mobile {
+        flex-direction: column;
+
+    }
 
     div {
         width: 40%;
+
+        @media @mobile {
+            align-items: center;
+            padding: 4%;
+        }
     }
 
     nav {
@@ -17,9 +27,14 @@
         justify-content: space-evenly;
         width: 40%;
 
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;
+        }
+
         a {
             text-decoration: none;
-            color: black;
+            color: @font-color;
             font-size: 1.6rem;
         }
     }
