@@ -1,12 +1,13 @@
 // Mixins in here
 .custom-btn(@navigation-border,@button-bg) {
   border: 1px solid @navigation-border;
-  background: @button-bg;
+  background: lighten(@button-bg, 1%);
   border-radius: 10px;
   text-align: center;
   width: 82%;
   font-size: 2rem;
   padding: 10px 0;
+  color:@white;
 }
 
 .mobile () {
