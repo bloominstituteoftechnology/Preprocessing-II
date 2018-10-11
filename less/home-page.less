@@ -39,6 +39,10 @@
       width: 48%;
       padding-right: 1%;
 
+      @media @tablet {
+        width: 62%;
+      }
+
        @media @mobile {
          width: 100%;
        }
@@ -50,6 +54,10 @@
       .animate-duration(0.8s);
       .scale-up(2);
       transform-origin: right;
+
+      @media @tablet {
+        width: 35%;
+      }
 
        @media @mobile {
          width: 100%;
@@ -96,6 +104,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @tablet {
+      width: 100%;
+    }
+
     @media @mobile {
       width: 100%;
     }
@@ -113,6 +125,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-direction: column;
+    }
+
     @media @mobile{
       flex-direction: column;
     }
@@ -120,6 +136,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 95%;
+        margin: 0 auto;
+      }
 
       @media @mobile {
         width: 80%;
@@ -133,6 +154,16 @@
         width: 82%;
 
         .scale-up(1.5);
+
+        @media @tablet {
+          width: 100%;
+          padding: 3%;
+          margin-bottom: 3%;
+
+          &:hover {
+            transform: none;
+          }
+        }
 
         @media @mobile {
           width: 100%;

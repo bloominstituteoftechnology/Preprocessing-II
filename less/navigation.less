@@ -8,7 +8,14 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
+   
     
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
     @media @mobile {
       flex-direction: column;
       align-items: center;
@@ -20,6 +27,8 @@ nav {
       padding: 3% 0;
       color: @shark;
 
+
+
       @media @mobile {
         font-size: 3rem;
       }
@@ -28,6 +37,13 @@ nav {
     .nav-links {
       width: 40%;
       margin-top: 4.2%;
+
+      @media @tablet {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 2%;
+      }
 
       @media @mobile {
         width: 100%;
@@ -43,6 +59,10 @@ nav {
         color: @shark;
         margin-right: 9%;
         
+        @media @tablet {
+          margin: 0;
+        }
+
         @media @mobile {
           margin: 0;
           font-size: 1.5rem
