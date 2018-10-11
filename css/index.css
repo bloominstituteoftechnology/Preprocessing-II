@@ -196,6 +196,11 @@ nav {
   width: 100%;
   border-bottom: 2px dashed silver;
 }
+@media (max-width: 850px) {
+  nav {
+    padding: 0 30px;
+  }
+}
 nav .nav-items {
   display: flex;
   justify-content: space-between;
@@ -203,6 +208,11 @@ nav .nav-items {
   max-width: 800px;
   margin: 0 auto;
   padding: 25px 0;
+}
+@media (max-width: 850px) {
+  nav .nav-items h1 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 520px) {
   nav .nav-items {
@@ -252,6 +262,11 @@ nav .nav-items div a:hover {
 @media (max-width: 520px) {
   .home {
     padding: 0 22px;
+  }
+}
+@media (max-width: 850px) {
+  .home {
+    padding: 0 30px;
   }
 }
 .home header {
