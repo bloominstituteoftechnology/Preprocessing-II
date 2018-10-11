@@ -343,3 +343,42 @@ img {
     padding-top: 31px;
   }
 }
+.home .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 10px 0;
+  border-top: 2px dashed #C0C0C0;
+  width: 100%;
+}
+.home .contact label {
+  padding-bottom: 5px;
+}
+.home .contact input {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 25%;
+}
+.home .contact select {
+  margin-bottom: 5px;
+}
+.home .contact textarea {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.home .contact input[type='submit'] {
+  cursor: pointer;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: 1px solid #212529;
+  background-color: #C0C0C0;
+}
+.home .contact input[type='submit']:hover {
+  background-color: #FFEBCD;
+  color: #212529;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+}

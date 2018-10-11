@@ -108,4 +108,43 @@
       padding-top: 31px;
     }
   }
+
+  .contact {
+    .custom-layout(column, space-between, flex-start);
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding: 10px 0;
+    border-top: 2px dashed @navigation-border;
+    width: 100%;
+    label {
+      padding-bottom: 5px;
+    }
+    input {
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      width: 25%;
+    }
+    select {
+      margin-bottom: 5px;
+    }
+    textarea {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+
+    input[type='submit'] {
+      cursor: pointer;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border:1px solid @font-color;
+      background-color: @navigation-border;
+    }
+
+    input[type='submit']:hover {
+      background-color: @sandy-beach;
+      color: @font-color;
+      border:1px solid @navigation-border;
+      cursor: pointer;
+    }
+  }
 }// home
