@@ -4,11 +4,22 @@
 }
 
 .btn-style(@padding-tb: 15px, @padding-lr: 0, @bg-color: #008080, @width: 75%) {
-    padding: @padding-tb @padding-lr;
-    background-color: @bg-color;
-    width: @width;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 1.4rem;
-    color: @white;
+  padding: @padding-tb @padding-lr;
+  background-color: @bg-color;
+  width: @width;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  color: @white;
+}
+
+.rotate-anim(@transDuration: 2s, @transTiming: ~"ease-in-out", @borderR: 20px, @bgCol: #005D5D) {
+  transition: @transDuration all @transTiming;
+  &:hover {
+    transform: rotate(360deg);
+    border-radius: @borderR;
+    border: 3px solid white;
+    background-color: @bgCol;
+    background-blend-mode: normal;
+  }
 }

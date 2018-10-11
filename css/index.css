@@ -335,6 +335,14 @@ nav a {
   border-radius: 10px;
   font-size: 1.4rem;
   color: #FFFFFF;
+  transition: 2s all ease-in-out;
+}
+.home .content-pick .destination .btn:hover {
+  transform: rotate(360deg);
+  border-radius: 20px;
+  border: 3px solid white;
+  background-color: #005D5D;
+  background-blend-mode: normal;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
