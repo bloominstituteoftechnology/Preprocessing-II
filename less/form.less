@@ -87,13 +87,18 @@
     border-radius: 5px;
     color: @button-bg;
     font-size: 1.5rem;
+    .animate-duration(0.6s);
+
+      .scale-up(1.2);
+      &:hover,
+      &:hover{
+      background: @button-bg;
+      border: 1px solid @footer-bg;
+      color: @footer-bg;
+    }
   }
+
+  
 }
 
 
-.form input[type=submit]:hover,
-.form input[type=button]:hover{
-background: @button-bg;
-border: 1px solid @footer-bg;
-color: @footer-bg;
-}
