@@ -333,6 +333,9 @@ img {
     padding: 3% 0;
   }
 }
+.home .content-pick .destination a {
+  text-decoration: none;
+}
 .home .content-pick .destination .btn {
   background-color: #17A2B8;
   color: #FFFFFF;
@@ -343,6 +346,11 @@ img {
   padding-top: 3%;
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
+}
+.home .content-pick .destination .btn a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .home .content-pick .destination .btn:hover {
   cursor: pointer;
@@ -352,4 +360,11 @@ img {
     padding-top: 4%;
     height: 25%;
   }
+}
+.contact-form form {
+  padding: 4% 0;
+}
+.contact-form form textarea {
+  width: 40%;
+  height: 180px;
 }
