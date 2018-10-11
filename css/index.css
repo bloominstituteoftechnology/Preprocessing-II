@@ -255,3 +255,15 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: white;
+  border-radius: 11px;
+  width: 82.75%;
+  height: 43px;
+  margin-top: 2px;
+  padding-top: 12px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
