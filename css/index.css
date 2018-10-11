@@ -171,7 +171,7 @@ img {
 .supercont {
   margin: 0 auto;
   max-width: 1000px;
-  border-bottom: 1.5px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .supercont .top {
   margin: 0 auto;
@@ -179,7 +179,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  padding-top: 25px;
+  padding-bottom: 23px;
 }
 @media (max-width: 500px) {
   .supercont .top {
@@ -199,10 +200,13 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 1px;
 }
 @media (max-width: 800px) {
   .supercont .top nav {
     width: 60%;
+    justify-content: space-between;
+    padding-top: 0px;
   }
 }
 @media (max-width: 500px) {
@@ -244,7 +248,7 @@ img {
   }
 }
 .home .content-header {
-  padding-bottom: 14px;
+  padding-bottom: 11px;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
@@ -253,7 +257,7 @@ img {
   }
 }
 .home .content-header img {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -273,8 +277,9 @@ img {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
-    padding-right: 0%;
     height: auto;
+    padding-right: 0%;
+    padding-left: 0%;
   }
 }
 .home .content-section .img-content {
@@ -285,6 +290,7 @@ img {
   .home .content-section .img-content {
     width: 100%;
     height: auto;
+    padding-right: 0%;
     padding-left: 0%;
   }
 }
@@ -295,6 +301,7 @@ img {
   .home .content-section .img-content img {
     width: 100%;
     height: auto;
+    padding-right: 0%;
     padding-left: 0%;
   }
 }
@@ -307,6 +314,7 @@ img {
     display: flex;
     width: 100%;
     height: auto;
+    padding-right: 0%;
     padding-left: 0%;
   }
 }
@@ -328,6 +336,7 @@ img {
     width: 100%;
     height: auto;
     padding-right: 0%;
+    padding-left: 0%;
   }
 }
 .home .content-destination {
@@ -339,6 +348,7 @@ img {
     width: 100%;
     height: auto;
     padding-right: 0%;
+    padding-left: 0%;
   }
 }
 .home .content-destination img {
@@ -349,6 +359,7 @@ img {
     width: 100%;
     height: auto;
     padding-right: 0%;
+    padding-left: 0%;
   }
 }
 .home .content-pick {
@@ -363,6 +374,7 @@ img {
     width: 100%;
     height: auto;
     padding-right: 0%;
+    padding-left: 0%;
   }
 }
 .home .content-pick .destination {
@@ -373,6 +385,8 @@ img {
   .home .content-pick .destination {
     width: 100%;
     height: auto;
+    padding-right: 0%;
+    padding-left: 0%;
     padding: 0 10%;
   }
 }
@@ -404,6 +418,8 @@ img {
   .home .content-pick .destination .btn {
     width: 100%;
     height: auto;
+    padding-right: 0%;
+    padding-left: 0%;
     padding: 0 10%;
     margin-left: 0%;
   }
