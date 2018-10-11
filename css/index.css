@@ -180,6 +180,11 @@ img {
   font-weight: bold;
   background-color: #ffebcd;
 }
+@media (max-width: 800px) {
+  .header-nav a {
+    margin-right: 5px;
+  }
+}
 @media (max-width: 500px) {
   .header-nav {
     width: 100%;
@@ -319,13 +324,16 @@ img {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
   }
   .home .content-pick .destination {
     width: 80%;
+  }
+  .home .content-pick .destination .btn {
+    margin: 0 auto;
   }
 }
 .signup .content-intro {
