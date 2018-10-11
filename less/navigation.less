@@ -9,6 +9,9 @@ header {
     max-width: 1000px;
     margin: 0 auto;
 
+    @media @mobile {
+        flex-direction: column;
+    }
 
     h1 {
         // .btest;
@@ -19,5 +22,11 @@ header {
         .space;
         width: 35%;
         font-size: 1.4rem;
+
+        @media @mobile {
+            // .btest;
+            width: 70%;
+            padding-top: 5px;
+        }
     }
 } // header
