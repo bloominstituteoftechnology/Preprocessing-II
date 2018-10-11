@@ -179,6 +179,26 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .nav-container .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container .container h1 {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container .container .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .nav-container .container a {
   text-decoration: none;
   margin: 0rem 1.6rem;
