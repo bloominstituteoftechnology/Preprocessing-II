@@ -322,7 +322,7 @@ nav a {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 20px;
   }
