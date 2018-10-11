@@ -1,10 +1,14 @@
 .home {
+  .welcome-section{
+    padding: 30px 0px;
+    border-bottom: 2px dashed @navigation-border;
+  }
 
   .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: @margin-base;
+    .spread-flex();
+    flex-wrap: wrap; 
+  
 
    
     
@@ -50,12 +54,17 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .spread-flex();
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
+      .btn{
+        .default-btn();
+        @media @mobile{
+
+        }
+      }
   }
 }// home
