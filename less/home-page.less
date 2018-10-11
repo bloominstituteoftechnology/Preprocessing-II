@@ -3,6 +3,9 @@
   header {
     img {
       margin-bottom: 3%;
+      .animate-duration(0.8s);
+      .scale-up(1.2);
+      transform-origin: top;
     }
 
     h1 {
@@ -44,6 +47,9 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .animate-duration(0.8s);
+      .scale-up(2);
+      transform-origin: right;
 
        @media @mobile {
          width: 100%;
@@ -75,6 +81,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      .animate-duration(0.8s);
+      .scale-up(2);
+      transform-origin: left;
+      
 
       @media @mobile {
         order: 1;
@@ -92,6 +102,8 @@
 
     img {
       border-radius: 10px;
+      .animate-duration(0.8s);
+      .scale-up(1.5);
     }
   }
 
@@ -117,7 +129,10 @@
       .btn {
         // border: 1px solid red;
         .custom-btn(5%, #008080, @white);
+        .animate-duration(0.5s);
         width: 82%;
+
+        .scale-up(1.5);
 
         @media @mobile {
           width: 100%;

@@ -236,6 +236,11 @@ nav .nav-content .nav-links a {
 }
 .home header img {
   margin-bottom: 3%;
+  transition: all 0.8s ease-in-out;
+  transform-origin: top;
+}
+.home header img:hover {
+  transform: scale(1.2);
 }
 .home header h1 {
   font-size: 3.2rem;
@@ -273,6 +278,11 @@ nav .nav-content .nav-links a {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  transition: all 0.8s ease-in-out;
+  transform-origin: right;
+}
+.home .content-section .img-content:hover {
+  transform: scale(2);
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
@@ -303,6 +313,11 @@ nav .nav-content .nav-links a {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+  transition: all 0.8s ease-in-out;
+  transform-origin: left;
+}
+.home .inverse-content .img-content:hover {
+  transform: scale(2);
 }
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
@@ -320,6 +335,10 @@ nav .nav-content .nav-links a {
 }
 .home .content-destination img {
   border-radius: 10px;
+  transition: all 0.8s ease-in-out;
+}
+.home .content-destination img:hover {
+  transform: scale(1.5);
 }
 .home .content-pick {
   padding-top: 30px;
@@ -350,12 +369,16 @@ nav .nav-content .nav-links a {
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
   width: 82%;
 }
 .home .content-pick .destination .btn:hover {
   color: #008080;
   background: #FFFFFF;
   border: 1px solid #008080;
+}
+.home .content-pick .destination .btn:hover {
+  transform: scale(1.5);
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {

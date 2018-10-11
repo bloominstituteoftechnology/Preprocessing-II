@@ -15,3 +15,13 @@
     border: 1px solid @background;
   }
 }
+
+.animate-duration( @transition-duration){
+  transition: all @transition-duration ease-in-out;  
+}
+
+.scale-up(@size) {
+  &:hover {
+    transform: scale(@size);
+  }
+}
