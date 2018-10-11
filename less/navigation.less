@@ -1,8 +1,22 @@
 // Navigation Styles here
 .navbar-container {
-    
+    width: 100vw;
+    border-bottom: 2px dashed @navigation-border;
     .navbar {
-        border-bottom: 2px dashed @navigation-border;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .navbar-links {
+            width: 50%;
+            font-size: 1.6rem;
+            display: flex;
+            justify-content: space-between;
+            a {
+                font-weight: bold;
+                color: @shark;
+            }
+        }
     }
 }
-
