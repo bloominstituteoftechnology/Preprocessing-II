@@ -1,1 +1,13 @@
 // Mixins in here
+
+.btn(@color,@textColor) {
+  background-color: teal;
+  text-align: center;
+  color: @textColor;
+  padding: 10px 40px 10px 40px;
+  border-radius: 12px;
+
+  @media @mobile {
+    background-color: #11aecf;
+  }
+}
