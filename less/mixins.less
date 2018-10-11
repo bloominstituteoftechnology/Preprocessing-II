@@ -1,1 +1,14 @@
 // Mixins in here
+.border-bottom(@width: 2px, @style: dashed, @color: #C0C0C0) {
+  border-bottom: @width @style @color;
+}
+
+.btn-style(@padding-tb: 15px, @padding-lr: 0, @bg-color: #008080, @width: 75%) {
+    padding: @padding-tb @padding-lr;
+    background-color: @bg-color;
+    width: @width;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    color: @white;
+}
