@@ -8,7 +8,16 @@
         .centerContent();
         padding: 0 20%;
 
+        @media @mobile {
+            .centerMobile();
+            padding: 0 5%;
+        }
+
         .logo {
+            @media @mobile {
+                padding: 0 0 2% 0;
+            }
+            
             a {
                 .linkDecor();
                 font-family: @customFont;
@@ -19,6 +28,11 @@
         .nav-links {
             width: 40%;
             .centerContent();
+
+            @media @mobile {
+                width: 100%;
+            }
+
             a {
                 .linkDecor();
             } // a
