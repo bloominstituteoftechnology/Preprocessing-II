@@ -310,6 +310,10 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick a {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
@@ -338,6 +342,7 @@ nav a:hover {
 .btn {
   color: white;
   background-color: #008080;
+  /* width: 200px; */
   width: 200px;
   text-align: center;
   padding: 14px 0;
