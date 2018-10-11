@@ -159,17 +159,40 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 img {
   max-width: 100%;
   height: auto;
 }
 .container {
   max-width: 800px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px dashed green;
+  padding: 10px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  font-size: 1.4rem;
 }
 .footer {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
@@ -184,6 +207,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.home .content-section .main {
+  margin-top: -15px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed green;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -224,4 +252,21 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 200px;
+  height: 40px;
+  background: teal;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  color: teal;
+  background: white;
 }
