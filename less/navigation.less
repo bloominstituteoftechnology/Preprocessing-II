@@ -16,6 +16,14 @@ header {
     @media @phone {
         .centerAll();
     }
+    @media @phone {
+        width: 99%;
+    }
+        // order: -1;
+        // @media @phone {
+        //     width: 95%; // padding: 0 3%;
+        // }
+    }
     nav {
         width: 40%;
         display: flex;
@@ -26,6 +34,9 @@ header {
         font-size: 1.6rem;
         color: black;
         font-style: hide;
+        @media @phone {
+            justify-content: space-around;
+            width:90%;
         a {
             text-decoration: none;
             &:hover {
@@ -33,5 +44,8 @@ header {
                 background: @eastern-blue;
             }
         }
+    }
+    h1{
+        align-self: center;
     }
 }
