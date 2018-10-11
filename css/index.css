@@ -178,14 +178,37 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .header-top {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .header-top .title {
   margin: 0 12% 15px 0;
+}
+@media (max-width: 500px) {
+  .header-top .title {
+    margin: 0;
+    width: 40%;
+    text-align: center;
+  }
+  .header-top .title h1 {
+    font-size: 3.2rem;
+    padding: 0 0 7px 10.5%;
+  }
 }
 .header-top nav {
   width: 29%;
   margin: 0 0 15px 3%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .header-top nav {
+    width: 63%;
+    padding-top: 9px;
+  }
 }
 .header-top nav a {
   color: #212529;
@@ -204,6 +227,11 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    max-width: 500px;
+  }
+}
 .home .header-bottom {
   border-bottom: 2px dashed #C0C0C0;
   padding-top: 20px;
@@ -212,8 +240,8 @@ img {
 .home .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .home .content-section .text-content {
   width: 48%;
