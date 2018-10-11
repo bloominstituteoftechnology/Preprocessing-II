@@ -1,1 +1,16 @@
 // Mixins in here
+.custom-btn(@navigation-border,@button-bg) {
+  border: 1px solid @navigation-border;
+  background: @button-bg;
+  border-radius: 10px;
+  text-align: center;
+  width: 82%;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.mobile () {
+  @media @mobile {
+    width: 100%;
+  }
+}

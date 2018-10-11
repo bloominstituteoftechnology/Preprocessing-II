@@ -1,1 +1,36 @@
-// Navigation Styles here
+.header-wrap{
+    border-bottom:2px dashed @navigation-border;   
+}
+.header{
+    padding:24px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    @media @mobile{
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    @media @tablet{
+        padding:24px 5%;
+    }
+    h1{
+        width:100%;
+    }
+    .top-nav{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        width:100%;
+        a{
+        @media @mobile{
+            margin: 2% auto 0 auto;
+        }
+        margin:0 auto;
+        color:@font-color;
+        font-size:1.6rem;
+        text-decoration: none;
+        font-family:'Roboto';
+        }
+    }
+
+}
