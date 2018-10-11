@@ -371,3 +371,48 @@ header nav a {
     width: 90%;
   }
 }
+.vacation-form {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.submit-btn {
+  height: 12%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5rem;
+  align-items: center;
+  color: white;
+  background-color: teal;
+  border-radius: 6px;
+  width: 100px;
+}
+.vac-package-img {
+  width: 90%;
+  height: 90%;
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding: 5% 35% 5% 35%;
+}
+.input-div .checkboxes {
+  display: flex;
+  flex-direction: column;
+}
+.input-div .typed-content input[type=text] {
+  opacity: 0.3;
+}
+.input-div .typed-content .submit-btn {
+  margin-top: 10px;
+}
+.img-div {
+  display: flex;
+}
+.img-div div h2 {
+  font-size: 2rem;
+}
