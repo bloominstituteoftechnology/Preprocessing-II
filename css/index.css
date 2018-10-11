@@ -199,7 +199,9 @@ img {
 }
 @media (max-width: 500px) {
   .nav-container .navigation div h1 {
+    width: 100%;
     font-size: 3rem;
+    text-align: center;
   }
 }
 .nav-container .navigation nav {
