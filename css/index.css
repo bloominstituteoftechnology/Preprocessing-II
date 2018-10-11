@@ -168,12 +168,33 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 94%;
+  }
+}
 .header-nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
   padding: 10px;
   margin-right: 18px;
+}
+.header-nav a:hover {
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #ffebcd;
+}
+@media (max-width: 500px) {
+  .header-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .header-nav a {
+    margin-right: 0px;
+  }
 }
 .footer {
   width: 100%;
@@ -198,6 +219,13 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .header-container .header {
+    width: 98%;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+}
 .home .content-intro {
   border-bottom: 2px dashed silver;
 }
@@ -221,6 +249,21 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -233,12 +276,22 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 1;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -249,4 +302,31 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 12px;
+  width: 83%;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #1fc8e3;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }

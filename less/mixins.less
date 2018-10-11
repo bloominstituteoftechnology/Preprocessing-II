@@ -2,3 +2,26 @@
 .center() {
   margin: 0 auto;
 }
+
+.signup-btn() {
+  background-color: @button-bg;
+  color: @main-bg;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 12px;
+  width: 83%;
+
+  &:hover {
+    background-color: lighten(@button-bg, 10%);
+  }
+
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+.animate-fade() {
+
+}
