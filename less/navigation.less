@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
 
+
     .nav-container {
         width: 800px;
         padding: 20px  0 25px 0;
@@ -12,17 +13,32 @@
         justify-content: space-between;
         align-items: center;
 
+        @media @mobile {
+            flex-direction: column;
+            padding: 20px 0 10px 0;
+
+            h1 {
+                font-size: 3rem;
+            }//h1
+        }//media
+
+
         nav {
             width: 44%;
             padding-top: 5px;
             display: flex;
             justify-content: space-evenly;
 
+            @media @mobile {
+                width: 100%;
+                padding-top: 15px;
+            }//media
+
             a {
                 font-size: 1.6rem;
                 color: black;
                 text-decoration: none;
-            }
-        }
-    }
-}
+            }//a
+        }//nav
+    }//nav-container
+}//navigation-bar
