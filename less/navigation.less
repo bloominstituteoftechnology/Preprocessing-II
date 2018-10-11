@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+.nav {
+    .silver-border;
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+        .brand{
+            font-size: 4rem;
+            color: @font-color;
+            font-family: 'Indie Flower', cursive;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            padding-right: 20px;
+            li {
+                padding: 0px 15px;
+                a {
+                    color: @font-color;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
