@@ -1,17 +1,5 @@
 // Navigation Styles here
 
-.center() {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.flex() {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .nav-container {
     .center;
     margin: 0 auto;
@@ -51,10 +39,16 @@
             text-decoration: none;
             color: black;
 
+            &.active {
+                    font-weight: bold;
+                    color: #008080;
+                    }
+
             &:hover {
                 font-weight: bold;
             }
         }
+        
     }
 
     h1 {
@@ -63,8 +57,9 @@
         @media @mobile {
             width: 100%;
             text-align: center;
-            font-size: 2.8rem;
+            // font-size: 2.8rem;
             padding-bottom: 18px;
+            .resize();
         }
     }
 }

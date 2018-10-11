@@ -1,5 +1,17 @@
 // Mixins in here
 
+.center() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .button(@bg-color) {
     width: 83%;
     text-align: center;
@@ -32,4 +44,13 @@
         }
     };
     animation: grayout 2s both;
+}
+
+.resize() {
+        @keyframes resize {
+            100% {
+              font-size:2.8rem;
+            }
+        };
+        animation: resize 1s both;
 }

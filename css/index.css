@@ -221,6 +221,10 @@ img {
   text-decoration: none;
   color: black;
 }
+.nav-container nav a.active {
+  font-weight: bold;
+  color: #008080;
+}
 .nav-container nav a:hover {
   font-weight: bold;
 }
@@ -231,8 +235,13 @@ img {
   .nav-container h1 {
     width: 100%;
     text-align: center;
-    font-size: 2.8rem;
     padding-bottom: 18px;
+    animation: resize 1s both;
+  }
+  @keyframes resize {
+    100% {
+      font-size: 2.8rem;
+    }
   }
 }
 .footer {
@@ -378,6 +387,67 @@ img {
   }
 }
 .home .content-pick .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 0;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.contact img {
+  margin-bottom: 20px;
+}
+.contact h2 {
+  text-align: center;
+  width: 100%;
+}
+.contact .contactForm {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 40px 0;
+  padding-bottom: 40px;
+  align-content: center;
+  border: 1px solid #008080;
+}
+.contact .contactForm label {
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 15px 0 2px;
+}
+.contact .contactForm input {
+  padding: 5px 40px;
+  width: 100%;
+}
+.contact .contactForm select {
+  width: 100%;
+}
+.contact .contactForm textarea {
+  width: 100%;
+}
+.contact .contactForm a {
+  width: 83%;
+  text-align: center;
+  background-color: #008080;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  color: white;
+  margin: 1px;
+  padding: 13px 0;
+  margin-top: 40px;
+}
+@media (max-width:500px) {
+  .contact .contactForm a {
+    width: 100%;
+  }
+}
+.contact .contactForm a:hover {
   background-color: white;
   color: black;
   border: 1px solid black;
