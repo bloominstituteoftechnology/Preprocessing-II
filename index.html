@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
@@ -16,9 +16,31 @@
 
 <body>
 
-  
+  <div class="nav-bar">
+    <div>
+      <h1>Fun Bus</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </div>
+      
+    </nav>
+  </div>
+
+
      
   <div class="container home">
+
+      <header>
+        <img src="img/fun-bus.jpg" alt="">
+        <h1>Welcome To Fun Bus!</h1>
+        <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern.  
+          Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition 
+          theme travelblogger.  Adventure fun traveler pretty design website expedition.
+        </p>
+      </header>
    
     <section class="content-section">
       <div class="text-content">
@@ -31,7 +53,7 @@
       </div>
     </section>
     <section class="content-section inverse-content">
-      <div class="img-content">
+      <div class="img-content adv-img">
           <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
       <div class="text-content">
@@ -64,7 +86,34 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <section class="form-container">
+      <form action="" class="contact-form">
+        <h1>Contact Us!</h1><br>
+        <label>Travel Package:</label><br>
+        <select class="dropdown" name="package" >
+          <option value="sun">Fun in the Sun!</option>
+          <option value="mountain">Mountain Excursion!</option>
+          <option value="island">Island Getaway!</option>
+        </select><br>
+        <!-- <input type="radio" name="package" value="sun" checked>Fun in the Sun!<br>
+        <input type="radio" name="package" value="mountain" checked>Mountain Excursion!<br>
+        <input type="radio" name="package" value="island" checked>Island Getaway!<br> -->
+        <label>Name:</label><br>
+        <input class="line-input" type="text" name="name"><br>
+        <label>Email:</label><br>
+        <input class="line-input" type="email" name="email"><br>
+        <label>Phone:</label><br>
+        <input class="line-input" type="text" name="phone"><br>
+        <label>Message:</label><br>
+        <textarea class="block-input" type="text" name="message"></textarea><br>
+        <button class="submit-btn">Submit</button>
+      </form>
+    </section>
+
   </div><!-- container -->
+  
+
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
