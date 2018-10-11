@@ -255,3 +255,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #17A2B8;
+  width: 83%;
+  min-height: 44px;
+  color: white;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  border-color: #17A2B8;
+  cursor: pointer;
+}
