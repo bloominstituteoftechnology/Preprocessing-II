@@ -12,3 +12,100 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+// media layouts
+@mobile: ~"(max-width: 500px)";
+
+.phone() {
+    .container {
+        padding:0% 5%;
+    }
+
+    .nav-wrapper{
+        .nav {
+            width:80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            h2 {
+                padding-bottom: 10px;
+            }
+            div {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                a {
+                    font-size: 1.4rem;
+                    color:@font-color;
+                    text-decoration: none;
+                }
+                a:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    .home {
+        .content-section {
+            flex-direction: column;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+            
+            .text-content {
+            width: 100%;
+            padding-right: 0%;
+            }
+        
+            .img-content {
+                width: 100%;
+                padding-left: 0%;
+        
+                img {
+                    width:100%;
+                }
+            }
+        }
+        
+        .inverse-content {
+            flex-direction: column-reverse;
+
+        
+            .text-content {
+            padding-left: 0%;
+            padding-right: 0;
+            }
+        
+            .img-content {
+
+            padding-right: 0%;
+            padding-left: 0;
+            }
+        }
+
+        .content-destination {
+            width: 100%;
+        
+            img {
+            }
+        }
+
+        .content-pick {
+            flex-direction: column;
+            align-items: center;
+        
+            .destination {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+                .btn {
+                    width:100%;
+                }
+            }
+        }
+    }   
+}

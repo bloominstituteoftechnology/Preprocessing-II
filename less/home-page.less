@@ -1,7 +1,10 @@
 .home {
-  
-  .header {
 
+  .header {
+    border-bottom: 2px dashed @navigation-border;
+    img{
+      margin-bottom: 20px;
+    }
   }
 
   .content-section {
@@ -9,8 +12,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
@@ -60,6 +61,20 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:200px;
+        height:44px;
+        border-radius: 10px;
+        font-size: 1.8rem;
+        .btn-style(@eastern-blue,@white);
+      }
     }
   }
 }// home
+@media @mobile{
+  .phone();
+ }

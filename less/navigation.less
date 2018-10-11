@@ -1,19 +1,31 @@
 // Navigation Styles here
-.nav {
-    margin-top:20px;
-    display: flex;
-    justify-content: space-between;
+.nav-wrapper {
     border-bottom: 2px dashed @navigation-border;
-    h2 {
-
-    }
-    div {
+    .nav {
+        max-width:800px;
+        width:100%;
+        margin:20px auto 0;
         display: flex;
-        width: 50%;
         justify-content: space-between;
         align-items: center;
-        a{
+        margin-bottom: 10px;
 
+        h2 {
+            padding-bottom: 0px;
+        }
+        div {
+            display: flex;
+            width: 45%;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                font-size: 1.4rem;
+                color:@font-color;
+                text-decoration: none;
+            }
+            a:last-child {
+                margin-right: 15px;
+            }
         }
     }
 }
