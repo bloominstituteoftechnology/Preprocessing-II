@@ -1,1 +1,30 @@
 // Navigation Styles here
+
+nav {
+    margin-right: 58rem;
+
+    a {
+        margin-left: 3.5rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            cursor: pointer;
+            color: lighten(black, 50%);
+        }
+
+        @media @mobile {
+            margin-left: 6rem;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media @mobile {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0rem;
+
+    }
+}
