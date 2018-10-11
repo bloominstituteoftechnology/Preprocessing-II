@@ -1,1 +1,21 @@
-// Mixins in here
+.btn-mixin(@background, @color, @fontsize, @width, @padding, @minwidth, @radius) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @background;
+    color: @color;
+    font-size: @fontsize;
+    width: @width;
+    padding: @padding;
+    min-width: @minwidth;
+    border-radius: @radius;
+}
+
+.contactmix() {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
