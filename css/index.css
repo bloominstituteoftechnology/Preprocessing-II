@@ -169,8 +169,10 @@ img {
   margin: 0 auto;
 }
 header {
+  position: fixed;
   width: 100%;
   border-bottom: 2px dashed lightgray;
+  background: #FFFFFF;
 }
 header div {
   max-width: 800px;
@@ -225,6 +227,9 @@ header div nav a {
 .home .cta p {
   border-bottom: 2px dashed lightgray;
   padding-bottom: 20px;
+}
+.home .cta img {
+  margin-top: 82px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -331,4 +336,82 @@ header div nav a {
   font-size: 1.6rem;
   color: white;
   background: #17A2B8;
+}
+.home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #212529;
+  border: 1px solid #17A2B8;
+}
+.stretch-form .form-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.stretch-form .form-row input[type='email'],
+.stretch-form .form-row input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 14px;
+  width: 250px;
+  height: initial;
+}
+.stretch-form .form-row label {
+  margin: 15px 0 7px;
+  text-align: right;
+  width: 120px;
+  padding-right: 20px;
+  font-size: 1.6rem;
+}
+.stretch-form .form-row textarea,
+.stretch-form .form-row select {
+  width: 250px;
+  height: initial;
+}
+.stretch-form .legacy-form-row {
+  border: none;
+  margin: 40px 100px;
+  width: 200px;
+}
+.stretch-form .legacy-form-row legend {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  align-self: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.stretch-form .legacy-form-row .radio-label {
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+.stretch-form .legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
+.stretch-form .legacy-form-row div {
+  padding: 10px;
+}
+.stretch-form .btn {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid gray;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  background: #17A2B8;
+  margin-bottom: 40px;
+}
+.stretch-form .btn:hover {
+  background: #FFFFFF;
+  color: #212529;
+  border: 1px solid #17A2B8;
+}
+@media (max-width: 500px) {
+  .stretch-form .btn {
+    margin-left: 50px;
+  }
 }
