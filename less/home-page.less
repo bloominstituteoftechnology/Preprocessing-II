@@ -16,20 +16,39 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    // Breakpoints 
+    @media @mobile {
+      flex-direction: column;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      // Breakpoint
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      // Breakpoint
+      @media @mobile {
+        width: 100%;
+        order: -1;
+        margin-bottom: 30px;
+      }
+
+      // Children
       img {
         border-radius: 10px;
       }
+
     }
   }
 
