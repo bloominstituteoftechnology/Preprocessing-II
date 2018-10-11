@@ -15,7 +15,24 @@
 </head>
 
 <body>
+  <div class="navigation">
+    <h2 class="title">Fun Bus</h2>
+    <div class="buttonFlex">
+      <a href="" class="button one">Home</a>
+      <a href="" class="button two">About Us</a>
+      <a href="" class="button three">Blog</a>
+      <a href="" class="button four">Contact</a>
+    </div>
+  </div>
 
+  <div class="topimage">
+    <img src="img/fun-bus.jpg" alt="tiny bus" class="bus">
+  </div>
+
+  <div class="flavortext">
+    <h2>Welcome to Fun Bus!</h2>
+    <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+  </div>
   
      
   <div class="container home">
@@ -65,6 +82,57 @@
       </div>
     </section>
   </div><!-- container -->
+
+  <div class="contactForm">
+      <h4>Fill Out This Form for More Info!</h4>
+      <form>
+          <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Where Would You Like to Go?</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                    <option value="au">Australia</option>
+                    <option value="ca">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="au">Spain</option>
+                    <option value="ca">England</option>
+                    <option value="usa">China</option>
+                    <option value="au">Japan</option>
+                    <option value="ca">India</option>
+                    <option value="usa">Antarctica</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Tell us more!</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+        </form>
+  </div>
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
