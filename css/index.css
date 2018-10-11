@@ -169,7 +169,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .content-container {
     width: 90%;
     margin: 0 auto;
@@ -185,7 +185,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .home .header {
     width: 90%;
     margin: 0 auto;
@@ -199,7 +199,7 @@ img {
   align-items: center;
   width: 50%;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .home .header .navigation {
     width: 100%;
     justify-content: space-evenly;
