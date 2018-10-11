@@ -1,6 +1,5 @@
 @media (max-width: 500px) {
   .home {
-    border: 1px solid red;
     width: 100%;
     margin: 0 auto;
   }
