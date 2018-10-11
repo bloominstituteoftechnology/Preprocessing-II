@@ -1,3 +1,24 @@
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+}
+@keyframes darkenButton {
+  0% {
+    background-color: #17A2B8;
+  }
+  100% {
+    background-color: #0c525d;
+  }
+}
+@keyframes undarkenButton {
+  0% {
+    background-color: #0c525d;
+  }
+  100% {
+    background-color: #17A2B8;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +152,9 @@ table {
 }
 html {
   font-size: 62.5%;
+  animation: popIn;
+  animation-duration: 2s;
+  animation-direction: normal;
 }
 html,
 body {
@@ -205,6 +229,9 @@ nav .nav-items div a {
   color: black;
   font-size: 1.6rem;
   padding: 0 20px;
+}
+nav .nav-items div a:hover {
+  color: grey;
 }
 @media (max-width: 520px) {
   nav .nav-items div a {
@@ -326,9 +353,17 @@ nav .nav-items div a {
   color: #FFFFFF;
   border-radius: 15px;
   font-size: 2rem;
+  animation: undarkenButton;
+  animation-duration: 1s;
+  animation-direction: normal;
 }
 @media (max-width: 520px) {
   .home .content-pick .destination .btn {
     width: 100%;
   }
+}
+.home .content-pick .destination .btn:hover {
+  animation: darkenButton;
+  animation-duration: 1s;
+  animation-direction: normal;
 }
