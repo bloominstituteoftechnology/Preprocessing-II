@@ -254,3 +254,20 @@ header img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  width: 84%;
+  height: 18%;
+  background: teal;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  color: teal;
+  background: color;
+}
