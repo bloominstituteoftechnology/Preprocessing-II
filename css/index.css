@@ -170,8 +170,15 @@ img {
 }
 .supercont {
   margin: 0 auto;
+  width: 100%;
+  left: 0%;
+  right: 0%;
   max-width: 1000px;
   border-bottom: 2px dashed #C0C0C0;
+  position: fixed;
+  height: 90px;
+  background: white;
+  opacity: 0.96;
 }
 .supercont .top {
   margin: 0 auto;
@@ -222,6 +229,9 @@ img {
   color: #212529;
   margin-top: 8px;
 }
+.supercont .top nav a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 500px) {
   .supercont .top nav a {
     padding-bottom: 3px;
@@ -248,6 +258,7 @@ img {
   }
 }
 .home .content-header {
+  padding-top: 90px;
   padding-bottom: 11px;
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -364,7 +375,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
