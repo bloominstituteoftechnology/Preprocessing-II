@@ -89,9 +89,23 @@
     display: flex;
     justify-content: space-between;
 
+    // Breakpoints
+    @media @mobile {
+      flex-direction: column;
+    }
+
+    // Children
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      // Breakpoint
+      @media @mobile {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
       .btn {
         .button()
       }
