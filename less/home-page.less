@@ -18,14 +18,24 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        padding-left: 0;
+        width: 100%;
+        order: 1;
+      }
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -48,7 +58,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 100%;
+    }
     img {
       border-radius: 10px;
     }
@@ -59,15 +71,27 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        padding: 0 2rem 0 4.5rem;
+        width: 100%;
+      }
       .btn {
         text-align: center;
         font-size: 1.8rem;
         width: 83.5%;
         .btn(@white, 1.3rem, @button-bg, 15px, 1px solid @navigation-border);
+        @media @mobile {
+          width: 93.4%;
+          .btn(@white, 1.25rem, @button-bg, 15px, 1px solid @navigation-border);
+        }
       }
     }
   }
