@@ -221,6 +221,9 @@ img {
   text-decoration: none;
   color: black;
 }
+.nav-container nav a:hover {
+  font-weight: bold;
+}
 .nav-container h1 {
   margin: 0;
 }
@@ -258,6 +261,17 @@ img {
 }
 .home header .welcome img {
   margin-bottom: 0;
+}
+.home header .welcome img:hover {
+  animation: grayout 2s both;
+}
+@keyframes grayout {
+  0% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
 }
 .home header .welcome h2 {
   padding-top: 18px;
@@ -362,4 +376,10 @@ img {
   .home .content-pick .btn {
     width: 100%;
   }
+}
+.home .content-pick .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 0;
 }

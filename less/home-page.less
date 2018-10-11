@@ -12,6 +12,10 @@
 
       img {
         margin-bottom: 0;
+
+        &:hover {
+          .grayout();
+        }
       }
 
       h2 {
@@ -33,7 +37,6 @@
       @media @mobile {
         width: 100%;
       }
-
     }
 
     .img-content {
@@ -108,11 +111,10 @@
       @media @mobile {
         width: 100%;
       }
-
     }
 
     .btn {
-      .button;
+      .button(#008080);
     }
   }
 }// home

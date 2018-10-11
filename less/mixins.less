@@ -1,9 +1,9 @@
 // Mixins in here
 
-.button() {
+.button(@bg-color) {
     width: 83%;
     text-align: center;
-    background-color: #008080;
+    background-color: @bg-color;
     border-radius: 15px;
     font-size: 1.8rem;
     color: white;
@@ -12,6 +12,24 @@
 
     @media @mobile {
         width: 100%;
-      }
+    }
+
+    &:hover {
+       background-color: white;
+       color: black;
+       border: 1px solid black;
+       padding: 12px 0;
+    }
 }
 
+.grayout() {
+    @keyframes grayout {
+        0% {
+           filter: grayscale(0%);
+        }
+        100% {
+           filter: grayscale(100%);
+        }
+    };
+    animation: grayout 2s both;
+}
