@@ -344,3 +344,13 @@ img {
   font-size: 1.8rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+    padding-left: 4.5%;
+  }
+}
