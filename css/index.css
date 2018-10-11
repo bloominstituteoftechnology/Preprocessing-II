@@ -175,12 +175,12 @@ img {
   border-bottom: 1px dashed grey;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 25px 9%;
+  padding: 24px 10%;
 }
 .navigator nav {
   display: flex;
-  justify-content: space-around;
-  width: 40%;
+  justify-content: space-evenly;
+  width: 44%;
 }
 .navigator nav a {
   color: black;
