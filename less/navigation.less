@@ -12,13 +12,43 @@ nav {
     margin: 0 auto;
     padding: 25px 0;
 
+    @media @mobile {
+
+      flex-direction: column;
+      padding-top: 15px;
+      padding-bottom: 5px;
+
+      h1 {
+
+        font-size: 3rem;
+        padding-bottom: 20px;
+
+      }
+
+    }
+
     div {
+
+      @media @mobile {
+
+        .flex-container(space-around, flex-end);
+        width: 100%;
+        padding: 0 20px;
+
+      }
 
       a {
 
         text-decoration: none;
+        color: black;
         font-size: 1.6rem;
         padding: 0 20px;
+
+        @media @mobile {
+
+          padding: 0;
+
+        }
 
       }
 
