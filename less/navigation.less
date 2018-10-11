@@ -1,25 +1,51 @@
 // Navigation Styles here
 .top-bar {
-    .flex-row(space-between, center);
+    .flex-row(center, center);
     border-bottom: 2px @navigation-border dashed;
-    .margins-padding(0%, 2% 9% 2% 7%);
+    .margins-padding(0, 1% 0);
     .width-height(100%, auto);
-    position: absolute;
-    left: 0;
-    top: 0;
 
+    .navigation {
+        width: 800px;
+        .flex-row(space-between, center);
 
-
-    nav {
-
-        .flex-row(space-around, center);
-        .width-height(42%, auto);
-
-        a{
-            color: @shark;
-            text-decoration: none;
-            font-size: 1.6rem;
+        @media @tablet{
+            position: relative;
+            .margins-padding(0, 2%);
+            .width-height(100%, auto);
+            .flex-column(space-between, center);
+            flex-wrap: wrap;
         }
+
+        @media @mobile {
+            position: relative;
+            .margins-padding(0, 2%);
+            .width-height(100%, auto);
+            .flex-column(space-between, center);
+            flex-wrap: wrap;
+        }
+
+
+        nav {
+            .flex-row(space-around, center);
+            .width-height(45%, auto);
+
+            @media @tablet {
+                .width-height(100%, auto);
+                .margins-padding(0, 2% 0 0);
+            }
+
+            @media @mobile {
+                .width-height(100%, auto);
+                .margins-padding(0, 2% 0 0);
+            }
+            
+            a{
+                color: @shark;
+                text-decoration: none;
+                font-size: 1.6rem;
+            }
         
+        }
     }
 }
