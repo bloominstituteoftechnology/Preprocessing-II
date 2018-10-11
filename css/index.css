@@ -368,3 +368,35 @@ nav .nav-items div a:hover {
   animation-direction: forwards;
   background-color: #0c525d;
 }
+.home .vacation-form form {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.home .vacation-form form .labels {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 44%;
+  padding: 0 10px;
+}
+.home .vacation-form form .labels label {
+  font-size: 1.6rem;
+  padding-bottom: 16px;
+}
+.home .vacation-form form .inputs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 53%;
+  padding-bottom: 30px;
+  padding: 0 10px;
+}
+.home .vacation-form form .submit {
+  margin-bottom: 20px;
+}
