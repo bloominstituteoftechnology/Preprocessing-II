@@ -1,5 +1,7 @@
 // Mixins in here
 
+@customFont: 'Indie Flower', cursive;
+
 .linkDecor() {
     text-decoration: none;
     font-size: 1.6rem;
@@ -10,4 +12,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.customBtn(@width, @bgColor, @color, @fontSize) {
+    width: @width;
+    padding: 4% 0;
+    background-color: @bgColor;
+    border-radius: 10px;
+    color: @color;
+    text-align: center;
+    font-size: @fontSize;
 }

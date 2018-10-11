@@ -56,12 +56,18 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .customBtn(80%, teal, white, 1.6rem);
+      }
     }
   }
 
   header  {
-    width: 100%;
-    padding: 3% 0;
-    border-bottom: 2px dashed @navigation-border;
-  }
+    
+    .header-text-content {
+      margin-top: 2%;
+      border-bottom: 2px dashed @navigation-border;
+    }
+  } //header
 }// home

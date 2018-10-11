@@ -1,18 +1,27 @@
 // Navigation Styles here
 
 .navi-bar {
-    .centerContent();
-    
-    .logo {
-        a {
-            .linkDecor();
-        }
-    }
+    padding: 2% 0 2% 0;
+    border-bottom: 2px dashed @navigation-border;
 
-    .nav-links {
-        a {
-            .linkDecor();
-        }
-    }
-    
-}
+    .navigation {
+        .centerContent();
+        padding: 0 20%;
+
+        .logo {
+            a {
+                .linkDecor();
+                font-family: @customFont;
+                font-size: 4rem;
+            } // a
+        } // logo
+
+        .nav-links {
+            width: 40%;
+            .centerContent();
+            a {
+                .linkDecor();
+            } // a
+        } // nav links
+    } // navigation
+} //nav bar
