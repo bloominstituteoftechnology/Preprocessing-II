@@ -6,11 +6,25 @@ header{
     margin: 0 auto;
     .spread-flex();
     padding: 30px 0px;
-    justify-self: center; 
+    justify-self: center;
+
+    @media @mobile {
+        h1{
+            width:100%;
+            display: flex;
+            justify-content: center;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
     nav{
         width: 35%;
         display:flex;
         justify-content: space-around;
+        @media @mobile {
+            width: 100%;
+        }
         
         a{
             display: flex;
@@ -31,6 +45,11 @@ header{
         margin: 0 auto;
         display: flex;
         align-self: center;
+        @media @mobile{
+        width:96%;
+        padding-left:3%;
+        padding-right:1%;
+      }
    
     }
 }
