@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  color: #212529;
 }
 h1,
 h2,
@@ -167,6 +168,25 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.home .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.home .header .navigation a {
+  font-size: 1.6rem;
+  color: #212529;
+  text-decoration: none;
 }
 .footer {
   width: 100%;
