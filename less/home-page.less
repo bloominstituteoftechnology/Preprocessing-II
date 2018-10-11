@@ -1,21 +1,63 @@
 .home {
+  @media @mobile{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .banner{
+    width: 90%;
+    border-bottom: 2px dashed @silver;
+    padding-bottom: 15px;
+      @media @mobile{
+        h2{font-size: 3rem;}
+        p{font-size: 1.5rem;}
+      }
+
+    img{
+      width: 100%;
+      max-height: 300px;
+    }
+
+    h2{
+      margin-top: 20px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+      @media @mobile{
+        flex-flow: column wrap;
+        align-items: center;
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 20px;
 
-   
+        h2{
+          font-size: 3rem;
+          padding-top: 20px;
+        }
+
+        p{font-size: 1.5rem;}
+      }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+        @media @mobile{
+          width: 100%;
+          padding: 0 0 0 1%;
+        }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+        @media @mobile{
+          width: 100%;
+        }
 
       img {
         border-radius: 10px;
@@ -26,6 +68,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+      @media @mobile{
+        width: 90%;
+        flex-flow: column-reverse;
+      }
 
     .text-content {
       padding-left: 1%;
@@ -35,12 +81,22 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+        @media @mobile{
+          padding: 0 0 0 1%;
+        }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+      @media @mobile{
+        width: 100%;
+        padding: 0 4%;
+        
+        h2{font-size: 3rem;}
+        p{font-size: 1.5rem;}
+      }
 
     img {
       border-radius: 10px;
@@ -52,10 +108,27 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+      @media @mobile{
+        width: 90%;
+        flex-flow: column;
+        align-items: center;
+      }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+        @media @mobile{
+          width: 80%;
+        }
+
+      .btn{
+        button{
+          .buttons(@white, 10px, 80%, @eastern-blue);
+            @media @mobile{
+              .buttons(@white, 10px, 100%, @eastern-blue);
+            }
+        }
+      }
     }
   }
 }// home

@@ -1,1 +1,20 @@
-// Mixins in here
+.buttons (@color, @padding, @width, @bgcolor){
+  width: @width;
+  border: 1px solid @white;
+  color: @color;
+  text-align: center;
+  padding: @padding;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: @bgcolor;
+  .border-radius();
+}
+
+.border-radius (@radius: 10px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}

@@ -1,1 +1,32 @@
-// Navigation Styles here
+header{
+  width: 100%;
+  padding: 20px 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed @silver;
+    @media @mobile{
+      flex-flow: column;
+      padding-top: 15px;
+
+      h1{font-size: 3rem;}
+    }
+
+  nav{
+    @media @mobile{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 10px;
+    }
+    a{
+      text-decoration: none;
+      padding-left: 25px;
+      font-size: 1.5rem;
+      color: @shark;
+        @media @mobile{
+          padding: 0;
+        }
+    }
+  }
+}
