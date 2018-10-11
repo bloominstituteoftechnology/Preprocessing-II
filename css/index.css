@@ -333,6 +333,7 @@ img {
   color: white;
   text-align: center;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -343,6 +344,7 @@ img {
     color: white;
     text-align: center;
     font-size: 1.6rem;
+    cursor: pointer;
   }
 }
 @media (max-width: 500px) {
