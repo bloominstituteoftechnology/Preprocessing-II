@@ -177,15 +177,17 @@ img {
   justify-content: space-between;
   border-bottom: 1px dashed grey;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .top-bar {
     flex-direction: column;
     width: 90%;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 20px auto;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .top-bar h1 {
+    border: 1px solid red;
     width: 100%;
     align-self: center;
   }
@@ -199,7 +201,7 @@ img {
   font-size: 1.6rem;
   text-decoration: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .top-bar nav {
     width: 100%;
   }
@@ -228,7 +230,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
   }
@@ -237,7 +239,7 @@ img {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
   }
@@ -246,7 +248,7 @@ img {
   width: 48%;
   padding-left: 1%;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
     padding-bottom: 10px;
@@ -280,7 +282,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
   }
@@ -292,7 +294,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
   }
