@@ -1,1 +1,40 @@
 // Navigation Styles here
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px dashed  @navigation-border;
+
+    div {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        
+        nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: @font-color;
+                &:hover {
+                    .opacity-animation(1s,infinite);
+                }
+            }
+        }
+        @media @tablet {
+            padding: 20px 10%;
+        }
+        @media @mobile {
+            flex-direction: column;
+
+            nav {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+}
