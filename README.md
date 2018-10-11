@@ -4,9 +4,9 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+* [ x ] Fork the project into your GitHub user account
+* [ x ] Clone the forked project into a directory on your machine
+* [ x ] You are now ready to build this project with your preferred IDE
 
 ## Task 2: Set up your preprocessor
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
