@@ -268,3 +268,6 @@ img {
   border-color: #17A2B8;
   cursor: pointer;
 }
+.home .content-pick .destination .btn:hover {
+  background: #a7e9f4;
+}
