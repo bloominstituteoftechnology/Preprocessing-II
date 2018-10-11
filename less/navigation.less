@@ -1,12 +1,21 @@
 // Navigation Styles here
 header nav {
-    width: 50%;
+    width:30%;
     padding: 20px;
-    // margin-left: 50%;
+    padding-right: 0px;
     display:flex;
     justify-content: space-between;
     order: 2;
-    border: 1px solid gray;
+    margin-right: 10px;
+    margin-left: 250px;
+
+    @media @mobile {
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        padding:10px;
+        margin-left: 10px;
+    }
  }
 
     header nav a {
@@ -14,4 +23,5 @@ header nav {
           color: black;
           text-decoration: none;
           justify-content: flex-start;
+          padding-top: 10px;
       }
