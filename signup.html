@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Fun Bus Travel Agency - Solution</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="header-container">
+    <header class="header">
+      <h1>Fun Bus</h1>
+      <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+  </div>
+  
+  <div class="container signup">
+    <section class="content-intro">
+      <img src="img/fun-bus.jpg" alt="Yellow fun bus on the sand">
+    </section>
+   
+    <section class="content-intro">
+      <h2>Sign Up</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit ipsa excepturi aliquam laudantium nobis temporibus iure veniam et debitis placeat, ea quos dolor nemo incidunt itaque quis suscipit est!</p>
+
+    </section>
+    <section class="content-section section-form">
+      <!-- The signup form: -->
+      <div class="signup-form">
+        <form class="form">
+          <!-- Firstname input -->
+        <label for="firstname">First name:</label>
+        <input class="form__input" type="text" name="firstname" placeholder="Your first name">
+
+        <!-- Lastname input -->
+        <label for="lastname">Last name:</label>
+        <input class="form__input" type="text" name="lastname" placeholder="Your last name">
+        
+        <!-- e-mail input -->
+        <label for="email">e-mail:</label>
+        <input class="form__input" type="text" name="email" placeholder="Your email address">
+        
+        <!-- package selection input -->
+        <label for="packages">Package:</label>
+        <select class="form__input" name="packages">
+          <option value="" selected>select your package</option>
+          <option value="fun-sun">Fun In The Sun</option>
+          <option value="mountain">Mountain Excursion</option>
+          <option value="island">Island Gateway</option>
+        </select>
+
+        <!-- Special Instruction input -->
+        <label for="instruction">Special Instruction:</label>
+        <textarea class="form__input form__message" name="instruction" placeholder="Your message..."></textarea>
+        
+        <!-- Submit button -->
+        <input class="form__input form__button" type="submit" value="Submit">
+        </form>
+      </div>
+      <!-- end of contact form -->
+    </section>
+
+  </div><!-- container -->
+
+  <footer class="footer">
+    <p>Copyright Fun Bus 2018</p>
+  </footer>
+
+</body>
+</html>
