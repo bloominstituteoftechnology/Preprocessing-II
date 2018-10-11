@@ -1,1 +1,16 @@
 // Mixins in here
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.btn-primary () {
+  background-color: @eastern-blue;
+  width: 83%;
+  border-radius: 15px;
+  color: @white;
+  font-size: 1.8rem;
+  padding: 4%;
+  text-align: center;
+}
