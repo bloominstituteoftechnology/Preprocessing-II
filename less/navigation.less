@@ -1,1 +1,35 @@
 // Navigation Styles here
+
+.nav-bar {
+    .custom-layout();
+    width: 100%;
+    padding: 24px 100px;
+    border-bottom:2px dashed @navigation-border;
+
+    @media @mobile {
+        .custom-layout(column, space-between, center);
+        padding:17.5px 57.5px 8px;
+    }
+    nav {
+        width: 45%;
+        padding-left: 8px;
+        .custom-layout();
+        a {
+            text-decoration: none;
+            color: @font-color;
+            font-size: 1.6rem;
+        }
+
+        @media @mobile {
+            width: 100%;
+            padding-top:16px;
+            padding-left: 0;
+            justify-content: space-between;
+        }
+    }
+    h1 {
+        @media @mobile {
+            padding-left: 5px;
+        }
+    }
+}

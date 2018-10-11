@@ -1,1 +1,19 @@
 // Mixins in here
+
+.custom-layout(@direction: row, @content: space-between, @align: center) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @content;
+    align-items: @align;
+}
+
+.button-maker(@background, @main) {
+    background-color: @background;
+    color: @main;
+    font-size: 1.8rem;
+    text-align: center;
+    // justify-content: center;
+    padding: 13px 0;
+    max-width: 82.5%;
+    border-radius: 10px;
+}
