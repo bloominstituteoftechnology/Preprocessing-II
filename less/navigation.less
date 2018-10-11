@@ -27,6 +27,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 0 20px;
+
+        @media @mobile {
+            .center;
+            padding-bottom: 2px;
+        }
     }
 
     nav {
@@ -34,6 +39,12 @@
         width: 44%;
         align-content: center;
         justify-content: space-evenly;
+
+        @media @mobile {
+            width: 100%;
+            align-content: flex-end;
+        }
+
         a {
             font-size: 1.6rem;
             text-decoration: none;
@@ -42,7 +53,11 @@
     }
 
     h1 {
-        // width: 20%;
         margin: 0;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
