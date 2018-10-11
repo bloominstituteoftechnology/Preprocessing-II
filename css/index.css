@@ -212,7 +212,7 @@ img {
   color: #212529;
   font-size: 1.6rem;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 @media (max-width: 500px) {
   .header .top-nav a {
@@ -323,6 +323,9 @@ img {
   font-size: 2rem;
   padding: 10px 0;
   color: #ffffff;
+}
+.home .content-pick .destination .btn:hover {
+  background: #000000;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
