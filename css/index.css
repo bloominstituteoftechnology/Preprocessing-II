@@ -170,17 +170,19 @@ img {
 }
 .navbar-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  padding: 5% 0;
+  padding: 2% 0;
+  border-bottom: 2px dashed silver;
+  align-items: center;
 }
 .navbar-section div {
-  width: 50%;
+  width: 40%;
 }
 .navbar-section nav {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: space-evenly;
+  width: 40%;
 }
 .navbar-section nav a {
   text-decoration: none;
@@ -197,6 +199,12 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .header .header-img {
+  padding-bottom: 3%;
+}
+.home .header .header-text {
+  border-bottom: 2px dashed silver;
 }
 .home .content-section {
   margin: 30px 0;
@@ -243,4 +251,18 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #3f7f7f;
+  color: white;
+  width: 90%;
+  height: 15%;
+  border-radius: 12px;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.home .content-pick .destination .btn:hover {
+  cursor: pointer;
 }
