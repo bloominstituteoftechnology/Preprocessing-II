@@ -186,6 +186,7 @@ img {
   width: 100%;
   padding: 24px 100px;
   border-bottom: 2px dashed #C0C0C0;
+  background-color: #FFEBCD;
 }
 @media screen and (max-width: 500px) {
   .nav-bar {
@@ -343,7 +344,7 @@ img {
     padding-top: 31px;
   }
 }
-.home .contact {
+.home .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -354,29 +355,29 @@ img {
   border-top: 2px dashed #C0C0C0;
   width: 100%;
 }
-.home .contact label {
+.home .contact-form label {
   padding-bottom: 5px;
 }
-.home .contact input {
+.home .contact-form input {
   padding-bottom: 5px;
   margin-bottom: 10px;
   width: 25%;
 }
-.home .contact select {
+.home .contact-form select {
   margin-bottom: 5px;
 }
-.home .contact textarea {
+.home .contact-form textarea {
   width: 100%;
   margin-bottom: 35px;
 }
-.home .contact input[type='submit'] {
+.home .contact-form input[type='submit'] {
   cursor: pointer;
   padding-bottom: 0;
   margin-bottom: 0;
   border: 1px solid #212529;
   background-color: #C0C0C0;
 }
-.home .contact input[type='submit']:hover {
+.home .contact-form input[type='submit']:hover {
   background-color: #FFEBCD;
   color: #212529;
   border: 1px solid #C0C0C0;
