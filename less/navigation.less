@@ -2,12 +2,11 @@
 
 .navigation {
     width: 100%;
-    // padding: 20px 240px;
+    padding: 20px 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px dashed silver;
-    background-color: blue;
     
     nav {
       display: flex;
@@ -25,18 +24,19 @@
   @media only screen and (@mobile) {
     .navigation {
         width: 100%;
+        margin: 10px 0;
         padding: 0;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
         border-bottom: 2px dashed silver;
-        background-color: red;
     }
 
     .navigation nav {
-        display: flex;
-        justify-content: space-around;
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-around;
     }
 
     .navigation nav a {

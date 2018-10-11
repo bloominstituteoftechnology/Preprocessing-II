@@ -170,11 +170,11 @@ img {
 }
 .navigation {
   width: 100%;
+  padding: 20px 240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px dashed silver;
-  background-color: blue;
 }
 .navigation nav {
   display: flex;
@@ -189,15 +189,16 @@ img {
 @media only screen and (max-width: 500px) {
   .navigation {
     width: 100%;
+    margin: 10px 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     border-bottom: 2px dashed silver;
-    background-color: red;
   }
   .navigation nav {
+    margin: 10px 0;
     display: flex;
     justify-content: space-around;
   }
@@ -286,6 +287,11 @@ img {
   align-items: center;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 500px) {
   .home .header {
     height: auto;
@@ -366,5 +372,10 @@ img {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+}
+@media only screen and (max-width: 500px) and (max-width: 500px) {
+  .home .content-pick .btn {
+    width: 100%;
   }
 }
