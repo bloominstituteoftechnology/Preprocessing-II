@@ -184,7 +184,7 @@ img {
     justify-content: center;
     padding: 30px 0px 5px 0px;
   }
-  .header .nav_contain .left_side {
+  .header .nav_contain s .left_side {
     padding: 0px 0px 10px 0px;
   }
 }
@@ -273,6 +273,12 @@ img {
 .header_img_div {
   max-width: 800px;
   margin: 0 auto;
+}
+.header_img_div .header_img {
+  width: 100%;
+  /*    @media: @phone {
+      width: 50%;
+    }*/
 }
 .header_img_div .introduction {
   padding: 20px 0px 0px 0px;
