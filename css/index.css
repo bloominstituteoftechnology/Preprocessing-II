@@ -1,3 +1,20 @@
+.btn {
+  width: 200px;
+  height: 40px;
+  background: black;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  padding: 4%;
+  background: teal;
+}
+.btn:hover {
+  color: black;
+  background: white;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +185,20 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  margin-top: 2%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
+}
+nav a:hover {
+  color: blue;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +209,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed black;
+}
+.home .welcome {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
