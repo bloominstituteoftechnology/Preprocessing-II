@@ -315,6 +315,7 @@ img {
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
