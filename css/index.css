@@ -178,7 +178,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 30px 0;
+  padding: 24px 1%;
   border-bottom: 2px dashed lightgray;
 }
 nav .logo {
@@ -194,9 +194,10 @@ nav .logo {
 }
 nav .navLinks {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 30%;
+  padding-left: 3.5%;
 }
 nav .navLinks a {
   text-decoration: none;
@@ -310,12 +311,12 @@ nav .navLinks a {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  width: 85%;
+  width: 84.7%;
   background-color: #008080;
   color: white;
-  padding: 10px 0;
+  padding: 13.5px 0;
   border-radius: 15px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 @media (max-width: 500px) {
