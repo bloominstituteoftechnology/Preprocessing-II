@@ -1,3 +1,41 @@
+@keyframes beating {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
+@keyframes slideleft {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slideright {
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +169,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background: #FFEBCD;
 }
 html,
 body {
@@ -174,11 +213,12 @@ img {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px #C0C0C0 dashed;
+  border-bottom: 2px #212529 dashed;
   margin: 0;
   padding: 1% 0;
   width: 100%;
   height: auto;
+  background: #17A2B8;
 }
 .top-bar .navigation {
   width: 800px;
@@ -218,6 +258,11 @@ img {
     flex-wrap: wrap;
   }
 }
+.top-bar .navigation h1 {
+  animation-name: slideleft;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
 .top-bar .navigation nav {
   display: flex;
   flex-direction: row;
@@ -226,6 +271,9 @@ img {
   align-items: center;
   width: 45%;
   height: auto;
+  animation-name: slideright;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }
 @media (max-width: 800px) {
   .top-bar .navigation nav {
@@ -248,10 +296,16 @@ img {
   text-decoration: none;
   font-size: 1.6rem;
 }
+.top-bar .navigation nav a:hover {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  font-weight: bold;
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
+  border-top: 2px dashed #212529;
+  background: #17A2B8;
 }
 @media (max-width: 500px) {
   .footer {
@@ -281,7 +335,7 @@ img {
   }
 }
 .home .header-bottom {
-  border-bottom: 2px #C0C0C0 dashed;
+  border-bottom: 2px #212529 dashed;
 }
 .home .header-bottom img {
   margin: 0 0 2%;
@@ -358,9 +412,12 @@ img {
     width: 100%;
   }
 }
+.home .content-section .img-content img:hover {
+  border-radius: 50%;
+}
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #212529;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -409,7 +466,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #212529;
   display: flex;
   justify-content: space-between;
 }
@@ -466,6 +523,9 @@ img {
   padding: 5% 1%;
   width: 80%;
   height: auto;
+  animation-name: beating;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 800px) {
   .home .content-pick .destination .btn {

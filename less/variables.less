@@ -3,7 +3,7 @@
 @font-color: @shark;
 @button-bg: @eastern-blue;
 @main-bg:  @white;
-@navigation-border: @silver;
+@navigation-border: @shark;
 @footer-bg: @sandy-beach;
 
 // Colors
@@ -13,9 +13,62 @@
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
 
+
 //Borders
 @border: 1px black solid;
 
 //Device
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 800px)";
+
+//Animation 
+
+@keyframes beating {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(2px)
+    }
+
+    50% {
+        transform: translateX(-2px)
+    }
+
+    100% {
+        transform: translateX(2px)
+    }
+}
+
+@keyframes slideleft {
+
+   from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideright {
+
+    from {
+     margin-right: -100%;
+   }
+ 
+   to {
+     margin-right: 0%;
+   }
+ }

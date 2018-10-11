@@ -4,6 +4,7 @@
     border-bottom: 2px @navigation-border dashed;
     .margins-padding(0, 1% 0);
     .width-height(100%, auto);
+    background: @eastern-blue;
 
     .navigation {
         width: 800px;
@@ -25,10 +26,14 @@
             flex-wrap: wrap;
         }
 
+        h1 {
+            .animation3();
+        }
 
         nav {
             .flex-row(space-around, center);
             .width-height(45%, auto);
+            .animation4();
 
             @media @tablet {
                 .width-height(100%, auto);
@@ -39,11 +44,16 @@
                 .width-height(100%, auto);
                 .margins-padding(0, 2% 0 0);
             }
-            
+
             a{
                 color: @shark;
                 text-decoration: none;
                 font-size: 1.6rem;
+            }
+
+            a:hover {
+                .animation2();
+                font-weight: bold;
             }
         
         }
