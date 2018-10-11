@@ -445,17 +445,73 @@ img {
 }
 .home .form-content {
   margin: 2% 5%;
-  padding: 5% 2%;
-  background-color: lightgray;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.home .form-content .form-packages {
-  border: 1px solid red;
-  width: 50%;
+  padding: 5% 10%;
+  background-color: #FFEBCD;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  border: 2px dashed #17A2B8;
+}
+.home .form-content .form-packages {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+.home .form-content .form-packages .input-content {
+  margin: 0 0 5% 0;
+}
+.home .form-content .form-packages select {
+  margin: 0 0 5% 0;
+}
+.home .form-content .form-packages .input-special {
+  padding: 50px 0;
+  margin: 0 0 5% 0;
+}
+.home .form-content .form-customerInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+.home .form-content .form-customerInfo .input-content {
+  margin: 0 0 5% 0;
+}
+.home .form-content .form-title {
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 5% 0;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+}
+.home .form-content .submitBtn {
+  width: 50%;
+  padding: 4% 0;
+  background-color: #17A2B8;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin: 5% 0 0 0;
+}
+.home .form-content .submitBtn:hover {
+  animation-name: buttonAnim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonAnim {
+  from {
+    background-color: #17A2B8;
+  }
+  to {
+    background-color: #0c525d;
+  }
 }
