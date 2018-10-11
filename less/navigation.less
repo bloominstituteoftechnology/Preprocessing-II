@@ -1,6 +1,5 @@
 // Navigation Styles here
 
-// .container {
   nav {
     display: flex;
     justify-content: space-evenly;
@@ -11,6 +10,12 @@
     .logo {
       font-family: 'Indie Flower', cursive;
       font-size: 4rem;
+
+      @media @mobile {
+        order: -1;
+        margin: 10px 10%;
+        font-size: 3rem;
+      }
     }
 
     .navLinks {
@@ -24,6 +29,16 @@
         color: black;
         font-size: 1.6rem;
       }
+
+      @media @mobile {
+        width: 90%;
+        font-size: 1.4rem;
+        justify-content: space-between;
+      }
+    }
+
+    @media @mobile {
+      flex-wrap: wrap;
+      padding: 12px 3% 10px 7%;
     }
   }
-// }
