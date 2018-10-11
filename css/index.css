@@ -256,3 +256,13 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 13px 0;
+  width: 83%;
+  border-radius: 1.5rem;
+  font-style: bold;
+}
