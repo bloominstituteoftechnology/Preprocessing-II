@@ -16,19 +16,19 @@
 
 <body>
 
-  
+
   <header>
     <div class='navContainer'>
       <h1>Fun Bus</h1>
       <nav>
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Blog</a>
-        <a href="">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#form">Contact</a>
       </nav>
-    </div>      
+    </div>
   </header>
-       
+
   <div class="container home">
     <section class=content-header>
       <img src="./img/fun-bus.jpg" alt="The Fun Bus">
@@ -54,7 +54,7 @@
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
-     
+
     </section>
     <section class="content-destination">
       <h2>Pick Your Destination</h2>
@@ -79,6 +79,41 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+    <form action="#"><a name="form"></a>
+      <ul class="flex-outer">
+      <li>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" placeholder="Enter your first name here">
+      </li>
+      <li>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" placeholder="Enter your last name here">
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email here">
+      </li>
+      <li>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Enter your phone here">
+      </li>
+      <li>
+        <label for="trip">Trip</label>
+        <select name="trip">
+          <option value="Fun In The Sun">Fun In The Sun</option>
+          <option value="Mountain Excursion">Mountain Excursion</option>
+          <option value="Island Getaway">Island Getaway</option>
+          </select>
+      </li>
+      <li>
+        <label for="message">Message</label>
+        <textarea rows="6" id="message" data-placeholder="Enter your message here"></textarea>
+      </li>
+      <li>
+        <button type="submit">Submit</button>
+      </li>
+    </ul>
+    </form>
   </div><!-- container -->
 
   <footer class="footer">
