@@ -184,7 +184,7 @@ img {
     justify-content: center;
     padding: 30px 0px 5px 0px;
   }
-  .header .nav_contain s .left_side {
+  .header .nav_contain .left_side {
     padding: 0px 0px 10px 0px;
   }
 }
@@ -210,14 +210,46 @@ img {
   padding: 20px;
 }
 .home .content-section {
-  margin: 30px 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.home .content-section .img-content_mobile {
+  display: none;
+}
+@media (max-width: 530px) {
+  .home .content-section .img-content_mobile {
+    display: flex;
+    width: 95%;
+    padding-left: 1%;
+  }
+  .home .content-section .img-content_mobile img {
+    border-radius: 10px;
+  }
+}
+@media (max-width: 530px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+.home .content-section .img-content-1 {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .content-section .img-content-1 img {
+  border-radius: 10px;
+}
+@media (max-width: 530px) {
+  .home .content-section .img-content-1 {
+    display: none;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -225,6 +257,16 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 530px) {
+  .home .content-section .img-content {
+    display: flex;
+    width: 95%;
+    padding-left: 1%;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -276,12 +318,25 @@ img {
 }
 .header_img_div .header_img {
   width: 100%;
-  /*    @media: @phone {
-      width: 50%;
-    }*/
+}
+@media (max-width: 530px) {
+  .header_img_div .header_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 98%;
+  }
 }
 .header_img_div .introduction {
   padding: 20px 0px 0px 0px;
+}
+@media (max-width: 530px) {
+  .header_img_div .introduction {
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 2px dashed #C0C0C0;
+  }
 }
 .header_img_div .introduction h2 {
   font-weight: 400;
