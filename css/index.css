@@ -168,6 +168,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header-nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 10px;
+  margin-right: 18px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +185,24 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.header-container {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
+.header-container .header {
+  max-width: 800px;
+  width: 100%;
+  margin: 22px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .content-intro {
+  border-bottom: 2px dashed silver;
+}
+.home .content-intro img {
+  margin-bottom: 30px;
 }
 .home .content-section {
   margin: 30px 0;
