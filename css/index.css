@@ -355,7 +355,7 @@ nav .nav-items div a:hover {
   font-size: 2rem;
   animation: undarkenButton;
   animation-duration: 1s;
-  animation-direction: normal;
+  animation-direction: forwards;
 }
 @media (max-width: 520px) {
   .home .content-pick .destination .btn {
@@ -365,5 +365,6 @@ nav .nav-items div a:hover {
 .home .content-pick .destination .btn:hover {
   animation: darkenButton;
   animation-duration: 1s;
-  animation-direction: normal;
+  animation-direction: forwards;
+  background-color: #0c525d;
 }

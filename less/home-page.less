@@ -122,7 +122,7 @@
       .btn {
 
         .custom-btn(83%, 45px, @button-bg, @white);
-        .animation(undarkenButton, 1s);
+        .animation(undarkenButton, 1s, forwards);
 
         @media @mobile {
 
@@ -132,7 +132,8 @@
 
         &:hover {
 
-          .animation(darkenButton, 1s);
+          .animation(darkenButton, 1s, forwards);
+          background-color: darken(@button-bg, 20%);
 
         }
 
