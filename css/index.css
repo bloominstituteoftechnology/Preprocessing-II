@@ -171,7 +171,6 @@ img {
 nav {
   width: 40%;
   font-size: 1.6rem;
-  border: 0.5px solid red;
   display: flex;
 }
 nav a {
@@ -200,6 +199,11 @@ nav a {
   width: 1000px;
   margin-left: -100px;
   border-top: 2px dashed #C0C0C0;
+}
+.home .bus-intro {
+  border-bottom: 2px dashed #C0C0C0;
+  margin-top: 2%;
+  padding-bottom: 1.4%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -246,4 +250,16 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 83%;
+  height: 20%;
+  background: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  border-radius: 13px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
