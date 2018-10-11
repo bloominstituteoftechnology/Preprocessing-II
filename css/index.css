@@ -246,6 +246,8 @@ nav h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 98%;
+    padding: 0px 1% 0 2%;
   }
 }
 .home .top-Section .top-Div {
@@ -259,7 +261,7 @@ nav h1 {
 @media (max-width: 500px) {
   .home .top-Section .top-Div {
     width: 93%;
-    padding: 0 1% 0 6%;
+    padding: 20px 1% 20px 6%;
   }
 }
 .home .content-section {
@@ -406,5 +408,7 @@ nav h1 {
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 90%;
+    padding-bottom: 8px;
+    padding-top: 8px;
   }
 }
