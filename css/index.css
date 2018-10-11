@@ -187,6 +187,9 @@ header nav {
   color: black;
   font-style: hide;
 }
+header nav a {
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -199,7 +202,7 @@ header nav {
   padding: 20px;
 }
 .home .head-1 {
-  max-width: 1000px;
+  max-width: 900px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -213,7 +216,7 @@ header nav {
   justify-content: center;
 }
 .home .top-Section .top-Div {
-  padding: 25px 0 20px 0;
+  padding: 2px 0 20px 0;
   border-bottom: 2px dashed gray;
 }
 .home .content-section {
@@ -261,4 +264,27 @@ header nav {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 75%;
+  height: auto;
+  padding: 15px;
+  background: #17A2B8;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 12px;
+  border: 1px solid #17A2B8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  color: #17A2B8;
+  background: white;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    border: 10px dashed #17A2B8;
+  }
 }
