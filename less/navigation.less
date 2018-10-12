@@ -4,10 +4,7 @@ header{
     font-size: 4rem;
     padding-top: 30px;
     border-bottom: 2px dashed @navigation-border;
-    @media (max-width: 500px) {
-        width:100%;
-        flex-direction: column;
-    }
+   
     
       
 }
@@ -17,6 +14,10 @@ nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media @mobile {
+            width:100%;
+            flex-direction: column;
+        }
         
 
 
