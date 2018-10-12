@@ -360,6 +360,9 @@ nav .navLinks a {
     align-items: center;
   }
 }
+.contact header {
+  margin: 30px auto;
+}
 .contact form {
   margin-top: 30px;
   padding: 20px;
