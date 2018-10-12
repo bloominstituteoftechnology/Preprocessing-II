@@ -4,6 +4,12 @@ nav {
     width: 40%;
     padding-right: 3.8%;
     .flex-box(space-between, center);
+    
+    @media @mobile {
+        .flex-box(space-evenly, center);
+        width: 100%;
+
+    }
 
     a {
         .main-font();

@@ -6,27 +6,64 @@
     width: 100%;
     height: 90px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      .flex-box-mobile(space-around, center);
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
   }
+
+    @media @mobile {
+      header {
+        .flex-box-mobile(center, center);
+      }
+      img {
+        width: 90%;
+      }
+    }
+  
 
   .intro-content {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      .flex-box-mobile(space-around, flex-start);
+    }
   }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @mobile {
+      .flex-box-mobile(space-around, center);
+      margin-bottom: 5px;
+    }
   
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        .flex-box-mobile(space-around, flex-start);
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -37,6 +74,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      .flex-box-mobile(space-around, flex-start);
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -50,8 +92,12 @@
   }
 
   .content-destination {
-    width: 75%;
+    width: 100%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      margin-top: 20px;
+    }
 
     img {
       border-radius: 10px;
@@ -64,9 +110,18 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      .flex-box-mobile(space-around, center);
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        .flex-box-mobile(space-around, flex-start);
+        width: 87%;
+      }
 
       .btn {
         .standard-button(@button-bg, @main-bg);
