@@ -216,6 +216,9 @@ img {
   height: 240px;
   width: 100%;
 }
+.home .header-p {
+  padding-bottom: 23.5px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -263,12 +266,17 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  width: 85%;
-  font-size: 2rem;
+  width: 83.5%;
+  font-size: 1.8rem;
   text-align: center;
   border-radius: 15px;
   border: 1px solid #C0C0C0;
   background-color: #008280;
   color: #FFFFFF;
   padding: 1.25rem;
+}
+.footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
