@@ -194,6 +194,22 @@ img {
   font-size: 1.5rem;
   color: #1f1f2e;
 }
+@media (max-width:500px) {
+  .header {
+    display: flex;
+    width: 100%;
+    margin-left: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header nav {
+    width: 80%;
+  }
+  .header h2 {
+    margin-left: 20%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -269,4 +285,11 @@ img {
   background-color: #17A2B8;
   display: flex;
   justify-content: center;
+}
+@media (max-width:500px) {
+  .content-pick {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
