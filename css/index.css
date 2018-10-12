@@ -202,6 +202,10 @@ img {
   border-radius: 10px;
   width: 100%;
 }
+.btn a {
+  color: white;
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -276,6 +280,12 @@ header img {
   padding-bottom: 30px;
   border-bottom: 2px dashed #c0c0c0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -311,7 +321,7 @@ header img {
   .home .content-pick {
     width: 100%;
     display: block;
-    padding: 0 12%;
+    padding: 30px 12% 0;
   }
 }
 .home .content-pick .destination {
