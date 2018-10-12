@@ -268,12 +268,9 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+.home .content-section .text-content,
 .home .content-section .img-content {
-  width: 48%;
-  padding-left: 1%;
-}
-.home .content-section .img-content img {
-  border-radius: 10px;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .home .content-section .text-content,
@@ -281,6 +278,14 @@ img {
     width: 100%;
     padding: 0px;
   }
+}
+.home .content-section .text-content img,
+.home .content-section .img-content img {
+  min-height: 300px;
+}
+.home .content-section .img-content {
+  min-height: 300px;
+  height: 300px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -296,10 +301,8 @@ img {
   padding-left: 1%;
   padding-right: 0;
 }
-@media (max-width: 500px) {
-}
 .home .inverse-content .img-content {
-  padding-right: 1%;
+  margin-right: 1%;
   padding-left: 0;
 }
 .home .content-destination {
@@ -311,8 +314,32 @@ img {
     width: 100%;
   }
 }
+.home .content-destination .img-content,
 .home .content-destination img {
+  max-height: 200px;
+  height: 200px;
+}
+.home .content-destination .img-content:hover img,
+.home .content-destination img:hover img {
+  max-height: 200px;
+}
+.home .content-section .img-content,
+.home .content-destination .img-content {
+  position: relative;
+  overflow: hidden;
   border-radius: 10px;
+}
+.home .content-section .img-content:hover img,
+.home .content-destination .img-content:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.home .content-section img,
+.home .content-destination img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .home .content-pick {
   padding-top: 30px;
@@ -327,6 +354,12 @@ img {
     flex-direction: column;
   }
 }
+@media (max-width: 700px) {
+  .home .content-pick {
+    flex-direction: column;
+    padding-right: 0px;
+  }
+}
 .home .content-pick .destination {
   width: 27%;
   margin-bottom: 30px;
@@ -334,6 +367,13 @@ img {
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 700px) {
+  .home .content-pick .destination {
+    width: 75%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -356,4 +396,11 @@ img {
 .home .content-registration {
   display: flex;
   flex-wrap: wrap;
+}
+.home .content-section .img-content:hover img {
+  max-height: 300px;
+}
+.home .content-section .img-content img {
+  max-height: 300px;
+  height: 300px;
 }
