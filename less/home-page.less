@@ -14,6 +14,7 @@
         display: flex;
         width: 95%;
         padding-left: 1%;
+        margin: 0 auto;
         img {
           border-radius: 10px;
         }
@@ -30,6 +31,14 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+        @media @phone {
+          display: flex;
+          flex-direction: column; 
+          width: 95%;
+          margin: 0 auto;
+          padding: 30px 0px 0px 0px;
+        }
 
     }
 
@@ -52,9 +61,11 @@
       img {
         border-radius: 10px;
       }
+
       @media @phone {
         display: flex;
         width: 95%;
+        margin: 0 auto;
         padding-left: 1%;
         
         img {
@@ -83,6 +94,12 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      padding: 20px 0px 20px 0px;
+      width: 95%;
+      margin: 0 auto;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -94,9 +111,20 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      margin: 0px 0px 40px 0px;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px 0px 0px 0px;
+      }
     }
   
   }
@@ -110,6 +138,11 @@
   width:85%;
   background: @turq;
   
+  @media @phone {
+    width: 96%;
+    margin: 10px 0px 0px 0px;
+  }
+
   .border-radius();
 
     a {
