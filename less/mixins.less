@@ -1,1 +1,15 @@
 // Mixins in here
+
+.btn-design(@background-color: #008080, @color: #ffffff, @font-size: 1.7rem) {
+  background-color: @background-color;
+  color: @color;
+  font-size: @font-size;
+  padding: 10px;
+  .border-radius();
+}
+
+.border-radius (@radius: 10px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
