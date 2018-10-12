@@ -1,5 +1,9 @@
 .home {
 
+  .media-width-full{
+    width: 100%;
+  }
+
   .content-bus {
     padding-bottom: 3%;
     width: 100%;
@@ -7,6 +11,10 @@
     
     .img-content {
       width: 100%;
+
+      @media @mobile-view{
+        align-items: center;
+      }
 
       img {
         border-radius: 10px;
@@ -24,20 +32,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+  
+    @media @mobile-view{
+      flex-direction: column;
+    }
+    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile-view{
+        .media-width-full();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+          @media @mobile-view{
+            .media-width-full();
+          }
 
       img {
         border-radius: 10px;
+            @media @mobile-view{
+              .media-width-full();
+            }
       }
     }
   }
@@ -45,6 +66,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile-view{
+      flex-direction: column-reverse;
+      
+    }
 
     .text-content {
       padding-left: 1%;
@@ -60,9 +86,15 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile-view{
+      .media-width-full();
+    }
 
     img {
       border-radius: 10px;
+      @media @mobile-view{
+        .media-width-full();
+      }
     }
   }
 
@@ -73,12 +105,36 @@
     justify-content: space-between;
     padding-bottom: 20px;
 
+    @media @mobile-view {
+      flex-direction: column;
+        // width: 80%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @tablet-view {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media @mobile-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2% 12%;
+      }
+
       .btn{
-         .btn-mixin(@button-bg, @font-color, @width, @height, @font-size);
+         .btn-mixin(@button-bg, @main-bg, @width, @height, @font-size);
+
+         @media @mobile-view {
+          .btn-mixin(@button-bg, @main-bg, 100%, 25%, @font-size);
+          padding: 15px;
+         }
       }
     }
   }
