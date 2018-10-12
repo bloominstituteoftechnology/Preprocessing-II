@@ -193,7 +193,7 @@ img {
   font-size: 1.3rem;
 }
 .btn {
-  background-color: #008080;
+  background-color: #17a2b8;
   color: #ffffff;
   font-size: 1.7rem;
   padding: 10px;
@@ -205,6 +205,19 @@ img {
 .btn a {
   color: white;
   text-decoration: none;
+}
+.btn:hover {
+  animation-name: bcgc;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes bcgc {
+  0% {
+    background-color: #008080;
+  }
+  100% {
+    background-color: #000080;
+  }
 }
 .footer {
   width: 100%;
@@ -339,4 +352,48 @@ header img {
     display: block;
     width: 100%;
   }
+}
+.form_container {
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+}
+.form_container .form {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #c0c0c0;
+}
+.form_container .form legend {
+  width: 100%;
+  font-size: 2rem;
+  padding: 7px 0;
+  text-align: center;
+}
+.form_container .form ul {
+  width: 100%;
+}
+.form_container .form ul li {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 1.3rem;
+}
+.form_container .form ul li label {
+  width: 30%;
+}
+.form_container .form ul li input {
+  width: 70%;
+  height: 30px;
+}
+.form_container .form .btn-book {
+  width: 50%;
 }
