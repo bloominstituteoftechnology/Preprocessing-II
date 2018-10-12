@@ -210,6 +210,9 @@ nav {
     padding-bottom: 1rem;
   }
 }
+.links a:hover {
+  font-size: 2rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
