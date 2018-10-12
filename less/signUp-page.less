@@ -1,0 +1,45 @@
+.contact {
+
+  form {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid @eastern-blue;
+    background-color: @sandy-beach;
+  }
+
+  .info-perso {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      .label();
+    }
+
+    input {
+      padding: 15px;
+      .field();
+    }
+  }
+
+  .info-package {
+
+    display: flex;
+    flex-direction: column;
+
+    label {
+      .label();
+    }
+
+    select {
+      padding: 15px;
+      .field();
+    }
+
+    textarea {
+      margin-top: 20px;
+      .field();
+   }
+  }
+}

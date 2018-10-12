@@ -163,6 +163,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  text-decoration: none;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -356,4 +359,45 @@ nav .navLinks a {
     flex-direction: column;
     align-items: center;
   }
+}
+.contact form {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #17A2B8;
+  background-color: #FFEBCD;
+}
+.contact .info-perso {
+  display: flex;
+  flex-direction: column;
+}
+.contact .info-perso label {
+  margin: 20px 0;
+  font-size: 2.8rem;
+  color: #17A2B8;
+}
+.contact .info-perso input {
+  padding: 15px;
+  font-size: 1.6rem;
+  border: 1px solid #17A2B8;
+}
+.contact .info-package {
+  display: flex;
+  flex-direction: column;
+}
+.contact .info-package label {
+  margin: 20px 0;
+  font-size: 2.8rem;
+  color: #17A2B8;
+}
+.contact .info-package select {
+  padding: 15px;
+  font-size: 1.6rem;
+  border: 1px solid #17A2B8;
+}
+.contact .info-package textarea {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  border: 1px solid #17A2B8;
 }
