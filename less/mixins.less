@@ -1,1 +1,29 @@
-// Mixins in here
+// (example): .brdTop(border-top, dashed);
+.brdTop(@type) {
+  border-top: 2px @type @navigation-border;
+}
+
+.brdBot(@type) {
+  border-bottom: 2px @type @navigation-border;
+}
+
+.defaultBckRnd(@color) {
+  background-color: @color;
+}
+
+.desktopBtns() {
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 17%;
+  padding: 5.5% 0;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.85rem;
+
+  @media (max-width: ~'@{phoneView}') {
+    margin: 0;
+    padding: 5% 0;
+  }
+}

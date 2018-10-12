@@ -1,4 +1,18 @@
 .home {
+  @media (max-width: ~'@{phoneView}') {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    .brdBot(dashed);
+    img {
+      margin-bottom: 2.4%;
+    }
+
+    p {
+      margin-bottom: 1.4%;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,20 +20,33 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media (max-width: ~'@{phoneView}') {
+        width:100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media (max-width: ~'@{phoneView}') {
+        width:100%;
+        order: 1;
+      }
 
       img {
         border-radius: 10px;
       }
+    }
+
+    @media (max-width: ~'@{phoneView}') {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -42,6 +69,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media (max-width: ~'@{phoneView}') {
+      width:100%;
+    }
+    
     img {
       border-radius: 10px;
     }
@@ -53,9 +84,22 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: ~'@{phoneView}') {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media (max-width: ~'@{phoneView}') {
+        width: 100%;
+        padding: 0 6%;
+      }
+
+      .btn {
+        .desktopBtns();
+      }
     }
   }
 }// home

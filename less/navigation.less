@@ -1,1 +1,41 @@
-// Navigation Styles here
+.navigation {
+  max-width: ~'@{desktopHeaderFooterView}';
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25% 5.3%;
+  .brdBot(dashed);
+
+  @media (max-width: ~'@{phoneView}') {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    @media (max-width: ~'@{phoneView}') {
+      margin-bottom: 3%;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 2%;
+
+    @media (max-width: ~'@{phoneView}') {
+      padding-bottom: 2%;
+    }
+
+    a {
+      text-decoration: none;
+      color: @shark;
+      margin: 0 0.8vw;
+      font-size: 1.6rem;
+
+      @media (max-width: ~'@{phoneView}') {
+        margin: 0 4vw;
+        font-size: 2.1rem;
+      }
+    }
+  }
+}
