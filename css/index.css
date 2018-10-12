@@ -275,8 +275,32 @@ header .nav-container nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: #212529;
+  width: 200px;
+  height: 25%;
+  font-size: 2rem;
+  border: 1px solid #C0C0C0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+.home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
 }

@@ -71,10 +71,15 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+         .btn-mixin(@button-bg, @font-color, @width, @height, @font-size);
+      }
     }
   }
 }// home
