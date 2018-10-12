@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -173,9 +173,10 @@ img {
   flex-direction: row;
   height: 100px;
   justify-content: flex-end;
-  border-bottom: 1.5px dashed darkgray;
+  border-bottom: 2px dashed #C0C0C0;
   width: 100%;
   padding-top: 5%;
+  padding-bottom: 1%;
 }
 .top-navigation li,
 .top-navigation a {
@@ -184,17 +185,34 @@ img {
   color: black;
 }
 .top-navigation li {
-  padding-left: 30px;
+  padding-left: 70px;
   font-size: 1.5rem;
+}
+.top-navigation .logo {
+  padding-left: 0;
+  font-size: 3.5rem;
+  width: 136px;
+  margin: 0px 200px 0 0;
 }
 .logo {
   font-family: 'Indie Flower', cursive;
   font-size: 4.6rem;
-  position: absolute;
-  width: 20%;
-  left: 0;
-  margin: -25px 0 0 91px;
-  padding-top: 0.5%;
+  margin: 0 403px 0 0;
+  padding-left: 0;
+}
+.btn {
+  color: white;
+  background-color: #02BF8A;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
 }
 .footer {
   width: 100%;
@@ -252,4 +270,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.welcome {
+  margin-top: 5%;
+  border-bottom: 3px dashed darkgray;
+  padding-bottom: 1%;
+}
+@media (max-width: 0/0) {
+  .home {
+    background-color: red;
+  }
 }
