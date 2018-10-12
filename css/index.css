@@ -179,7 +179,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   padding: 24px 1%;
-  border-bottom: 2px dashed lightgray;
+  border-bottom: 2px dashed #C0C0C0;
 }
 nav .logo {
   font-family: 'Indie Flower', cursive;
@@ -201,7 +201,7 @@ nav .navLinks {
 }
 nav .navLinks a {
   text-decoration: none;
-  color: black;
+  color: #212529;
   font-size: 1.6rem;
 }
 @media (max-width: 500px) {
@@ -242,7 +242,7 @@ nav .navLinks a {
 .home .content-header {
   margin: 20px 0;
   padding-bottom: 10px;
-  border-bottom: 2px dashed lightgray;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -324,7 +324,7 @@ nav .navLinks a {
 .home .content-pick .destination .btn {
   width: 84.7%;
   background-color: #008080;
-  color: white;
+  color: #FFFFFF;
   padding: 13.5px 0;
   border-radius: 15px;
   font-size: 1.8rem;
