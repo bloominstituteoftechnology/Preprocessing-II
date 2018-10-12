@@ -1,8 +1,46 @@
 // Navigation Styles here
+@header-family: 'Indie Flower', cursive;
+@section-border: 2.2px dashed lightgray;
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: @section-border;
+  padding-bottom: 25px;
+}
+
 header {
   display: flex;
-  justify-content: row;
-  font-family: 'Indie Flower', cursive;
+  max-width: 800px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 25px;
+  align-items: center;
+  font-family: @header-family;
   text-decoration: none;
-  border: 1px solid red;
+
+  nav  a {
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.4rem;
+      margin-right: 24px;
+      color: black;
+    }
+}
+
+.yellowbus {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.top-content {
+  margin-top: 20px;
+  border-bottom: @section-border;
+  padding-bottom: 20px;
 }

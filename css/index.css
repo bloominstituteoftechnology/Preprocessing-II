@@ -168,12 +168,43 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2.2px dashed lightgray;
+  padding-bottom: 25px;
+}
 header {
   display: flex;
-  justify-content: row;
+  max-width: 800px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 25px;
+  align-items: center;
   font-family: 'Indie Flower', cursive;
   text-decoration: none;
-  border: 1px solid red;
+}
+header nav a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  margin-right: 24px;
+  color: black;
+}
+.yellowbus {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+.top-content {
+  margin-top: 20px;
+  border-bottom: 2.2px dashed lightgray;
+  padding-bottom: 20px;
 }
 .footer {
   width: 100%;
