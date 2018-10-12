@@ -1,1 +1,15 @@
 // Mixins in here
+.nav-bottom () {
+  border-bottom: 2px dashed @navigation-border;
+}
+
+.sign-up-button (@bg, @txt) {
+  width: 83.3%;
+  background-color: @bg;
+  color: @txt;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 14px 0;
+  border-radius: 15px;
+}
