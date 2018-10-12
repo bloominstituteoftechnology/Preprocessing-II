@@ -331,15 +331,18 @@ img {
 }
 .home .content-section .img-content:hover img,
 .home .content-destination .img-content:hover img {
-  -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .home .content-section img,
 .home .content-destination img {
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 .home .content-pick {
   padding-top: 30px;
