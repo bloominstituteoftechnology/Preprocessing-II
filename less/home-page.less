@@ -1,4 +1,22 @@
+@import "mixins.less";
+@import "variables.less";
+
+@media @mobile {
+  .home {
+    max-width:400px;
+    margin: 0 auto;
+  }
+}
+
+
 .home {
+
+  header {
+    border-bottom: 1px black dashed;
+    .header-text {
+      margin-top: 20px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,16 +24,28 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-right:0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width:100%;
+        padding-left:0;
+        display:flex;
+        justify-content:center;
+      }
 
       img {
         border-radius: 10px;
@@ -27,6 +57,9 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -53,9 +86,30 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+      }
+
+      .btn {
+        .buttonStyles(2rem, 5% 0, #558579, 10px, white);
+        text-align: center;
+      }
     }
   }
-}// home
+}
+
+// home
