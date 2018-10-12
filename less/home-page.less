@@ -29,6 +29,20 @@
         border-radius: 10px;
       }
     }
+
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-of-type(2) {
+      flex-direction: column-reverse;
+    }
+
+    .text-content,
+    .img-content {
+      width: 100%;
+    }
+  }
   }
 
   .inverse-content {
@@ -53,6 +67,10 @@
     img {
       border-radius: 10px;
     }
+
+  @media @mobile {
+    width: 100%;
+  }
   }
 
   .content-pick {
@@ -62,12 +80,25 @@
     justify-content: space-between;
 
     .destination {
-      width: 30%;
+      width: 27%;
       margin-bottom: 30px;
+
+      p {
+        text-align: justify;
+      }
 
       .btn {
         .button-style();
       }
     }
+
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+
+    .destination {
+      width: 80%;
+    }
+  }
   }
 }// home
