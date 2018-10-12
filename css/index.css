@@ -214,6 +214,7 @@ img {
   .nav-container .navigation nav {
     width: 100%;
     padding: 16px 2% 0 2%;
+    justify-content: space-around;
   }
 }
 .nav-container .navigation nav a {
@@ -232,6 +233,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  padding: 0 2%;
 }
 @media (max-width: 500px) {
   .home {
