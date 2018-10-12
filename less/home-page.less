@@ -1,24 +1,22 @@
 .home {
 
   .content-header {
+    border-bottom: 2px dashed silver;
+
     h2 {
       margin-top: 20px;
     }//h3
 
     p {
       margin-top: 5px;
+      margin-bottom: 10px;
     }//p
-
-    @media @mobile {
-      border-bottom: 2px dashed silver;
-    }//media
   }//content-header
 
   .content-section {
     margin: 30px 0;
-    display: flex;
+    .display-justify(space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
 
     @media @mobile {
       width: 90%;
@@ -108,8 +106,7 @@
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
+    .display-justify(center);
 
     @media @tablet {
       flex-wrap: wrap;
@@ -122,6 +119,10 @@
       width: 30%;
       margin-bottom: 30px;
 
+      @media @tablet {
+        padding: 0 5px;
+      }
+
       @media @mobile {
         width: 85%;
       }//media
@@ -129,10 +130,13 @@
       .btn {
         .universal-button();
 
+        @media @tablet {
+          margin-bottom: 20px;
+        }
+
         @media @mobile {
           height: 27%;
           width: 90%;
-          margin-bottom: 20px;
         }//media
       }//btn
     }//destination
