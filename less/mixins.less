@@ -1,12 +1,26 @@
 // Mixins in here
-.flex-box (@justify-content: flex-start, @align-content: flex-start) {
+.flex-box (@justify-content: flex-start, @align-items: flex-start) {
     display: flex;
     justify-content: @justify-content;
-    align-items: @align-content;
+    align-items: @align-items;
 }
 
 .main-font() {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     color: black;
+}
+
+.standard-button(@bgc, @color) {
+    background-color: @bgc;
+    color: @color;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 13px 0;
+    width: 83.5%;
+    border-radius: 15px;
+    
+    &:hover {
+        background-color: salmon;
+    }
 }
