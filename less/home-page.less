@@ -4,38 +4,92 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin: 35px 0;
+   
+    padding-left: 10px;
+    padding-right: 10px;
   }
   h2 {
     margin-top: 3%;
   }
+
+  .header-img {
+
+    @media @phone {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .top-img {
+
+      @media @phone {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+      }
+      margin-top: 20px;
+    }
+  }
   
   .content-section {
+
+    @media @phone {
+      display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    
-    
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        display: flex;
+        width: 100%;
+      }
+
+      
+
       img {
+
+        @media @phone {
+          display: flex;
+          width: 100%;
+        }
         border-radius: 10px;
+
+      
       }
     }
   }
 
   .inverse-content {
+
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+   
+    }
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
@@ -47,12 +101,29 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+        display: flex;
+        width: 100%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @phone {
+      display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        
+        
+
+    }
+
+   
 
     img {
       border-radius: 10px;
@@ -64,10 +135,28 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+   
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .destination {
-      width: 30%;
+      width: 100%;
       margin-bottom: 30px;
+
+      @media @phone {
+
+        .center();
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+      }
 
       .btn {
         .custom-btn(@width, @height, @background, @color);
