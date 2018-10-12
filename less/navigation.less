@@ -1,1 +1,49 @@
 // Navigation Styles here
+
+
+.navigation {
+  position: fixed;
+  top: 0;
+  background: @main-bg;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px dashed rgb(192,192,192);
+
+  
+
+  .nav-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+      margin: 20px auto;
+
+      @media (max-width: 500px) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;       
+      }
+
+      .nav {
+          width: 40%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          @media (max-width: 500px) {
+              width: 80%
+          }
+
+          a {
+              font-size: 1.4rem;
+              text-decoration: none;
+              color: black;
+
+              @media (max-width: 500px) {
+               font-size: 1.6rem;
+               margin-top: 10px;
+              }
+          } //a
+      } //.nav
+  } //nav-container
+} //main-navigation
