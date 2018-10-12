@@ -266,5 +266,9 @@ img {
   width: 85%;
   font-size: 2rem;
   text-align: center;
-  background-color: #17A2B8;
+  border-radius: 15px;
+  border: 1px solid #C0C0C0;
+  background-color: #008280;
+  color: #FFFFFF;
+  padding: 1.25rem;
 }
