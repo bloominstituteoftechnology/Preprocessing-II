@@ -368,6 +368,11 @@ nav .navLinks a {
   border: 2px solid #17A2B8;
   background-color: #FFEBCD;
 }
+@media (max-width: 500px) {
+  .contact form {
+    flex-direction: column;
+  }
+}
 .contact .info-perso {
   display: flex;
   flex-direction: column;
@@ -400,4 +405,32 @@ nav .navLinks a {
   margin-top: 20px;
   font-size: 1.6rem;
   border: 1px solid #17A2B8;
+}
+.contact .info-package .btn {
+  width: 84.7%;
+  background-color: #008080;
+  color: #FFFFFF;
+  padding: 13.5px 0;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 10px;
+  width: 50%;
+  border: 2px solid #17A2B8;
+}
+.contact .info-package .btn:hover {
+  background-color: #FFEBCD;
+  color: #008080;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .contact .info-package .btn {
+    width: 100%;
+    background-color: #17A2B8;
+  }
+  .contact .info-package .btn:hover {
+    background-color: #FFEBCD;
+    color: #17A2B8;
+    cursor: pointer;
+  }
 }

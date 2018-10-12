@@ -7,6 +7,10 @@
     justify-content: space-around;
     border: 2px solid @eastern-blue;
     background-color: @sandy-beach;
+
+    @media @mobile {
+      flex-direction: column;
+    }
   }
 
   .info-perso {
@@ -41,5 +45,15 @@
       margin-top: 20px;
       .field();
    }
+   .btn {
+        .medButton();
+        margin-top: 10px;
+        width: 50%;
+        border: 2px solid @eastern-blue;
+
+        @media @mobile {
+          .lgButton();
+        }
+    }
   }
 }
