@@ -8,9 +8,23 @@
   border-radius: 15px;
   font-size: 1.8rem;
   text-align: center;
+
+  &:hover {
+    .button-hover(@medButton-bg);
+  }
 }
 
 .lgButton() {
   width: 100%;
   background-color: @button-bg;
+
+  &:hover {
+    .button-hover(@button-bg);
+  }
+}
+
+.button-hover(@text-color) {
+  background-color: @sandy-beach;
+  color: @text-color;
+  cursor: pointer;
 }

@@ -330,10 +330,20 @@ nav .navLinks a {
   font-size: 1.8rem;
   text-align: center;
 }
+.home .content-pick .destination .btn:hover {
+  background-color: #FFEBCD;
+  color: #008080;
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
     background-color: #17A2B8;
+  }
+  .home .content-pick .destination .btn:hover {
+    background-color: #FFEBCD;
+    color: #17A2B8;
+    cursor: pointer;
   }
 }
 @media (max-width: 500px) {
