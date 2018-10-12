@@ -1,1 +1,20 @@
 // Mixins in here
+
+.home .content-pick .destination .btn {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 83.5%;
+    color: #FFFFFF;
+    background: #17A2B8;
+    padding: 1.3rem;
+    border: 1px solid #C0C0C0;
+    border-radius: 15px;
+  }
+
+  .btn (@text, @padding, @color, @radius, @border) {
+    color: @white;
+    background: @color;
+    padding: @padding;
+    border: @border;
+    border-radius: @radius;
+  }
