@@ -12,11 +12,16 @@ header {
         display: flex;
 
         a {
-            margin: 0 15px;
+            margin: 0 1.5rem;
             text-decoration: none;
             color: @shark;
             font-size: 1.6rem;
         }
+    }
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
 

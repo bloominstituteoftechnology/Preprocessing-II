@@ -1,11 +1,24 @@
 .home {
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
 
+}
   .main-header {
     width: 100%;
     display: block;
-
+    
     .header-img {
       margin-bottom: 20px;
+    }
+
+    p {
+      border-bottom: 2px dashed @navigation-border;
     }
   }
 
@@ -14,17 +27,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    padding-top: 20px;
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+    }
 
       img {
         border-radius: 10px;
@@ -35,6 +55,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+  }
 
     .text-content {
       padding-left: 1%;
@@ -61,10 +86,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 10%;
+  }
+  
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+    }
     }
   }
 }// home
