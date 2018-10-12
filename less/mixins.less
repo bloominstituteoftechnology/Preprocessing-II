@@ -1,1 +1,12 @@
 // Mixins in here
+.flex-box (@justify-content: flex-start, @align-content: flex-start) {
+    display: flex;
+    justify-content: @justify-content;
+    align-items: @align-content;
+}
+
+.main-font() {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
