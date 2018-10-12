@@ -318,6 +318,21 @@ img {
   padding: 1rem;
   width: 200px;
 }
+.home .content-pick .destination .btn:hover {
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;

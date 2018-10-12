@@ -8,4 +8,24 @@
     font-size: 2rem;
     padding:1rem;
     width:200px; //the parent is 240=800*.3
+    &:hover{
+        cursor: pointer;
+        .pulse-opacity(1.0, .5, 1s);
+    }
 }
+
+.pulse-opacity(@start,@end,@duration){
+    @keyframes pulse{
+        0%{
+            opacity:@start;
+        }
+        50%{
+            opacity:@end;
+        }
+        100%{
+            opacity:@start;
+        }
+    }
+    animation: pulse @duration infinite;
+}
+
