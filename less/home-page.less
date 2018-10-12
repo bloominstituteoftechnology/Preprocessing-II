@@ -24,7 +24,7 @@
 }
 
 .banner-container {
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: @dash-border;
   
   .banner-container__text {
     margin: @text-block-space;
@@ -119,4 +119,52 @@
       }
     }
   }
+
+  .content-pick {
+    border-bottom: @dash-border;
+
+  }
+  .contact-form {
+    padding-top: 30px;
+    font-size: 1.6rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    div {
+      margin: 10px 0;
+    }
+    label {
+      display: inline-block;
+      text-align: left;
+      padding-bottom: 5px;
+    }
+    input {
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 1.6rem;
+
+    }
+    textarea {
+      border: 1px solid black;
+      border-radius: 5px;
+      display: block;
+      width: 100%;
+    }
+    select {
+      border: 1px solid black;
+      border-radius: 5px;
+      appearance: menulist; 
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+    .package-desc {
+      display: inline-block;
+    }
+    button {
+      font-size: 1.6rem;
+    }
+  }
+
+  
 }// home

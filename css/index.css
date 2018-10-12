@@ -322,3 +322,46 @@ nav a {
     width: 96%;
   }
 }
+.home .content-pick {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .contact-form {
+  padding-top: 30px;
+  font-size: 1.6rem;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.home .contact-form div {
+  margin: 10px 0;
+}
+.home .contact-form label {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 5px;
+}
+.home .contact-form input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.6rem;
+}
+.home .contact-form textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+.home .contact-form select {
+  border: 1px solid black;
+  border-radius: 5px;
+  appearance: menulist;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.home .contact-form .package-desc {
+  display: inline-block;
+}
+.home .contact-form button {
+  font-size: 1.6rem;
+}
