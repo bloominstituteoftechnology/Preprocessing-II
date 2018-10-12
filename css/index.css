@@ -183,6 +183,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
 .navbar {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
