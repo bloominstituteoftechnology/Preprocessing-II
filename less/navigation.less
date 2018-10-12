@@ -2,24 +2,31 @@
 header{
     font-family: 'Indie Flower', cursive;
     font-size: 4rem;
-     border-top: 2px dashed @navigation-border;
+    padding-top: 30px;
+    border-bottom: 2px dashed @navigation-border;
+    @media (max-width: 500px) {
+        width:100%;
+        flex-direction: column;
+    }
     
-    nav{
+      
+}
+nav{    
         padding-top: 2%;
         padding-bottom: 2%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 2px dashed @navigation-border;
+        
 
 
-        div{
+    div{
             display:flex;
             align-items: center;
             
             
         
-            a{  
+        a{  
 
                 .fontstyle();
                 text-decoration: none;
@@ -31,5 +38,3 @@ header{
         }
     }
 
-    
-}   

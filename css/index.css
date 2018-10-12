@@ -169,24 +169,43 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  background-color: #17A2B8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
 header {
   font-family: 'Indie Flower', cursive;
   font-size: 4rem;
-  border-top: 2px dashed #C0C0C0;
+  padding-top: 30px;
+  border-bottom: 2px dashed #C0C0C0;
 }
-header nav {
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+nav {
   padding-top: 2%;
   padding-bottom: 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px dashed #C0C0C0;
 }
-header nav div {
+nav div {
   display: flex;
   align-items: center;
 }
-header nav div a {
+nav div a {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -206,6 +225,12 @@ header nav div a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .fun-bus {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .fun-bus h2 {
+  padding-top: 10px;
 }
 .home .content-section {
   margin: 30px 0;
