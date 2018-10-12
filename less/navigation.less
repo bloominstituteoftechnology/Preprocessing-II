@@ -8,9 +8,10 @@ header{
     border-bottom: 2px dashed @navigation-border;
     width: 100%;
 
-    @media @mobile-view {
-        width:100%;
-      }
+    // @media @mobile-view {
+    //     max-width: 500px;
+    //     // width: 100%;
+    //   }
     
     .nav-container{
         height: 100%;
@@ -24,6 +25,7 @@ header{
             justify-content: space-between;
             flex-direction: column;
         }
+
        .header-logo{
            color: @font-color;
        }
@@ -40,14 +42,15 @@ header{
                 // flex-wrap: nowrap;
                 justify-content: center;
             }
+            
              a{
                 font-size: 1.7rem;
                 color: @font-color;
                  padding: 4%;
-                 @media @mobile-view{
-                    font-size: 1.9rem;
-                    padding: 2.5% 4%;
-                 }
+                    @media @mobile-view{
+                        font-size: 1.9rem;
+                        padding: 2.5% 4%;
+                    }
                 //  justify-content: flex-end;
              }
        }

@@ -186,11 +186,6 @@ header {
   border-bottom: 2px dashed #C0C0C0;
   width: 100%;
 }
-@media (max-width: 500px) {
-  header {
-    width: 100%;
-  }
-}
 header .nav-container {
   height: 100%;
   display: flex;
