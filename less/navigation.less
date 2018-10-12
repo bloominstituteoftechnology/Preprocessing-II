@@ -1,1 +1,23 @@
 // Navigation Styles here
+.navbar {
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        .navbar-links {
+            width: 45%;
+            display: flex;
+            justify-content: space-around;
+            a {
+                font-size: 1.5rem;
+                font-weight: bolder;
+                color: @font-color;
+            }
+        }
+    }
+}
