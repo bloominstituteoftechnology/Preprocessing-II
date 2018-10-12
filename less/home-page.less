@@ -1,5 +1,9 @@
 .header-container {
   border-bottom: 2px dashed #C0C0C0;
+  @media @mobile {
+    width: 95%;
+    margin: 0 auto;
+  }
   
   .header-nav {
     display: flex;
@@ -14,8 +18,20 @@
     @media @mobile {
       flex-direction: column;
       padding: 15px 0;
+      .mobile-width();
       h1 {
         margin-bottom: 10px;
+      }
+
+      nav {
+        @media @mobile {
+          justify-content: space-between;
+          width: 100%;
+          a {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
       }
     }
 
