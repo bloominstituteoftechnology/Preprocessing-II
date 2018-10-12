@@ -322,12 +322,27 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 530px) {
+  .home .content-pick {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 530px) {
+  .home .content-pick .destination {
+    width: 90%;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
 .home .content-pick .destination .btn {
-  width: 83.5%;
+  width: 100%;
   font-size: 1.8rem;
   text-align: center;
   border-radius: 15px;
@@ -335,6 +350,11 @@ img {
   background-color: #008280;
   color: #FFFFFF;
   padding: 1.25rem;
+}
+@media (max-width: 530px) {
+  .home .content-pick .destination .btn {
+    background-color: #17A2B8;
+  }
 }
 .footer {
   width: 100%;

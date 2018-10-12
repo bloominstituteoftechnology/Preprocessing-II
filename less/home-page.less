@@ -109,17 +109,30 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 90%;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+      }
 
       .btn {
-        width: 83.5%;
+        width: 100%;
         font-size: 1.8rem;
         text-align: center;
         .btn-class (15px, 1px solid @navigation-border, @background, @white, 1.25rem);
-
+        @media @mobile {
+          background-color: @button-bg;
+        }  
         
       }
     }
