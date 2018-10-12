@@ -1,0 +1,52 @@
+.form_container {
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+
+  .form {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .border-radius();
+    background-color: @silver;
+
+    legend {
+      width: 100%;
+      font-size: 2rem;
+      padding: 7px 0;
+      text-align: center;
+    }
+
+    ul {
+      width: 100%;
+
+      li {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 8px;
+        font-size: 1.3rem;
+
+        label {
+          width: 30%;
+        }
+
+        input {
+          width: 70%;
+          height: 30px;
+        }
+      }
+    }
+    .btn-book {
+      width: 50%;
+    }
+  }
+}
+
+// html {
+//   background-color: red;
+// }
