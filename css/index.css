@@ -225,6 +225,11 @@ img {
   width: 100%;
   height: auto;
 }
+@media (max-width:500px) {
+  .home .top-img {
+    margin-bottom: 20px;
+  }
+}
 .home .welcome {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -274,6 +279,14 @@ img {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width:500px) {
+  .home .inverse-content .img-content {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 0%;
+  }
 }
 .home .content-destination {
   width: 75%;
