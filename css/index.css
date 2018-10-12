@@ -1,3 +1,13 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px 0px;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +177,16 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px 0px;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
 }
 .nav {
   display: flex;
