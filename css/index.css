@@ -331,3 +331,48 @@ header nav a {
 .home .content-pick .destination .btn:hover {
   cursor: pointer;
 }
+.home .contact {
+  border: 1px solid blue;
+}
+.home .contact h2 {
+  text-align: center;
+}
+.home .forms {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 3rem;
+  font-size: 1.5rem;
+  border: 1px solid red;
+}
+.home .forms .fill input {
+  font-size: 1.5rem;
+  border: 1px solid blue;
+}
+.home .check {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .check h2 {
+  text-align: center;
+}
+.home .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.home .buttons button {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #17A2B8;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.home .buttons button:hover {
+  cursor: pointer;
+}

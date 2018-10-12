@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Fun Bus Travel Agency - Solution</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+  <header>
+    <h1>Fun Bus</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container home">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>Welcome to Fun in the Sun where we can take care of any of your fun in the sun needs
+         Below is a form to help us better assist you, please fill out the information as
+         best as you can and a representative will contact you as soon as possible.</p>
+    </div>
+    <section class="forms">
+      <form class="fill" action="index.html" method="post">
+        First name: <input type="text" name="first" value=""><br><br>
+        Last name: <input type="text" name="last" value=""><br><br>
+        Birthday: <input type="date" name="bday" value=""><br><br>
+        Age: <input type="number" name="age" min="1" max="80" value=""><br><br>
+        Email: <input type="email" name="email" value=""><br><br>
+        Phone: <input type="tel" name="phone" value=""><br><br>
+
+      </form>
+      <form class="check" action="index.html" method="post">
+        <h2>Please Select a Package</h2>
+        <br>
+        Basic Fun <input type="checkbox" name="basic" value="0">
+        <br>
+        More Fun <input type="checkbox" name="more" value="0">
+        <br>
+        All Day Fun <input type="checkbox" name="allday" value="0">
+        <br>
+        FUN IN THE SUN! <input type="checkbox" name="fits" value="0">
+        <br>
+      </form>
+    </section>
+      <div class="buttons">
+        <button type="submit" name="submit">Submit</button>
+        <button type="reset" name="reset">Clear</button>
+      </div>
+
+  </div><!-- container -->
+
+  <footer class="footer">
+    <p>Copyright Fun Bus 2018</p>
+  </footer>
+  </div>
+</body>
+</html>

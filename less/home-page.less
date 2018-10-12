@@ -3,6 +3,7 @@
   @media @mobile{
     width: 90%
   }
+
   .top-content{
     border-bottom: 0.2rem dashed @navigation-border;
     .text-content{
@@ -99,7 +100,57 @@
       }
       .btn{
         .button();
+        }
+
       }
     }
   }
-}// home
+
+//contacts page
+.home{
+  .contact{
+    border: 1px solid blue;
+    h2{
+      text-align: center;
+    }
+  }
+  .forms{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    border: 1px solid red;
+
+    .fill{
+      input{
+        font-size: 1.5rem;
+        border: 1px solid blue;
+      }
+    }
+  }
+
+    .check{
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2{
+        text-align: center;
+      }
+      input{
+
+      }
+    }
+
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      button{
+        .button();
+        margin: 1rem;
+      }
+    }
+
+}
