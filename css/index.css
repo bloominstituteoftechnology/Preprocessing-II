@@ -188,7 +188,7 @@ nav .logo {
 @media (max-width: 500px) {
   nav .logo {
     order: -1;
-    margin: 10px 10%;
+    margin: 10px 12%;
     font-size: 3rem;
   }
 }
@@ -205,16 +205,22 @@ nav .navLinks a {
   font-size: 1.6rem;
 }
 @media (max-width: 500px) {
+  nav .navLinks a {
+    margin-right: 5.8%;
+  }
+}
+@media (max-width: 500px) {
   nav .navLinks {
-    width: 90%;
+    width: 95%;
     font-size: 1.4rem;
     justify-content: space-between;
+    padding-top: 3px;
   }
 }
 @media (max-width: 500px) {
   nav {
     flex-wrap: wrap;
-    padding: 12px 3% 10px 7%;
+    padding: 10px 3% 10px 7%;
   }
 }
 .footer {
@@ -227,6 +233,11 @@ nav .navLinks a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .footer p {
+    padding-left: 40px;
+  }
 }
 .home .content-header {
   margin: 20px 0;
@@ -323,8 +334,6 @@ nav .navLinks a {
   .home .content-pick .destination .btn {
     width: 100%;
     background-color: #17A2B8;
-    margin-bottom: 5px;
-    margin-top: 2px;
   }
 }
 @media (max-width: 500px) {
