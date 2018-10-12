@@ -1,6 +1,14 @@
 .home {
-
+  @media @mobile {
+    flex-direction: column;
+    width: 450px;
+  }
   .content-section {
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+      align-content: center;
+    }
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -9,11 +17,19 @@
    
     
     .text-content {
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
       width: 48%;
       padding-right: 1%;
     }
 
     .img-content {
+      @media @mobile {
+        width: 450px;
+        align-self: center;
+      }
       width: 48%;
       padding-left: 1%;
 
@@ -24,6 +40,9 @@
   }
 
   .inverse-content {
+    @media @mobile {
+      flex-direction: column-reverse;
+    } 
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
@@ -33,33 +52,56 @@
     }
 
     .img-content {
+      @media @mobile {
+        width: 450px;
+        align-self: center;
+      }
       padding-right: 1%;
       padding-left: 0;
     }
   }
 
   .content-destination {
+    @media @mobile {
+      width: 450px;
+      align-self: center;
+    }
     width: 75%;
     margin: 0 auto 30px;
 
     img {
       border-radius: 10px;
+      
     }
   }
 
   .content-pick {
+    @media @mobile {
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
     .destination {
+      @media @mobile {
+        width: 350px;
+        align-self: center;
+      }
       width: 30%;
       margin-bottom: 30px;
     }
   }
 
   .btn { 
+    @media @mobile {
+      width: 350px;
+      align-self: center;
+    }
     .btn-style(); 
   }
   
@@ -79,3 +121,40 @@
     border-bottom: 2px dashed @navigation-border;
   }
 }
+
+
+
+// @media @mobile {
+//   .home,
+//   .container {
+//     flex-direction: column;
+//     width: 450px;
+//     background-color: red;
+//     border: 1px solid black;
+//   }
+
+//   .content-section, 
+//   .inverse-content {
+//       display: flex;
+//       flex-direction: column-reverse;
+//       margin: 0 auto;
+//       padding: 0;
+//       width: 450px;
+//   }
+
+//   .text-content {
+//     width: 450px;
+//     padding: 0;
+//     margin: 0 auto;
+//   }
+
+//   .img-content {
+//     width: 450px;
+//     padding: 0;
+//     margin: 0 auto;
+// }
+  
+
+// .content-destination {
+//   width: 450px;
+// }
