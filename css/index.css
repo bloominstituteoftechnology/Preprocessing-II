@@ -159,7 +159,7 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   p {
     font-size: 1.8em;
   }
@@ -173,10 +173,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .container {
     width: 95%;
-    max-width: 500px;
   }
 }
 header {
@@ -187,7 +186,7 @@ header {
   border-bottom: 2px dashed #C0C0C0;
   width: 100%;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   header {
     width: 100%;
   }
@@ -198,7 +197,7 @@ header .nav-container {
   justify-content: space-between;
   align-items: center;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   header .nav-container {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -212,7 +211,7 @@ header .nav-container nav {
   width: 44%;
   justify-content: space-evenly;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   header .nav-container nav {
     display: flex;
     width: 100%;
@@ -224,7 +223,7 @@ header .nav-container nav a {
   color: #212529;
   padding: 4%;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   header .nav-container nav a {
     font-size: 1.9rem;
     padding: 2.5% 4%;
@@ -252,7 +251,7 @@ header .nav-container nav a {
 .home .content-bus .img-content {
   width: 100%;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-bus .img-content {
     align-items: center;
   }
@@ -270,7 +269,7 @@ header .nav-container nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
   }
@@ -279,7 +278,7 @@ header .nav-container nav a {
   width: 48%;
   padding-right: 1%;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
   }
@@ -288,7 +287,7 @@ header .nav-container nav a {
   width: 48%;
   padding-left: 1%;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
   }
@@ -296,7 +295,7 @@ header .nav-container nav a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-section .img-content img {
     width: 100%;
   }
@@ -305,7 +304,7 @@ header .nav-container nav a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .inverse-content {
     flex-direction: column-reverse;
   }
@@ -322,7 +321,7 @@ header .nav-container nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-destination {
     width: 100%;
   }
@@ -330,7 +329,7 @@ header .nav-container nav a {
 .home .content-destination img {
   border-radius: 10px;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-destination img {
     width: 100%;
   }
@@ -342,7 +341,7 @@ header .nav-container nav a {
   justify-content: space-between;
   padding-bottom: 20px;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
   }
@@ -358,7 +357,7 @@ header .nav-container nav a {
     align-items: center;
   }
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-pick .destination {
     display: flex;
     flex-direction: column;
@@ -381,16 +380,11 @@ header .nav-container nav a {
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
-@media "(max-width: 500px)" {
-  .home .content-pick .destination .btn {
-    width: 100%;
-  }
-}
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
 }
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   .home .content-pick .destination .btn {
     background-color: #17A2B8;
     color: #FFFFFF;
@@ -409,10 +403,5 @@ header .nav-container nav a {
   .home .content-pick .destination .btn:hover {
     background: #FFFFFF;
     color: #17A2B8;
-  }
-}
-@media "(max-width: 500px)" and "(max-width: 500px)" {
-  .home .content-pick .destination .btn {
-    width: 100%;
   }
 }
