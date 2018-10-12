@@ -27,6 +27,7 @@ header {
 .home {
 
   @media @mobile {
+    max-width: 500px;
     width: 95%;
   }
 
@@ -39,7 +40,6 @@ header {
 
     @media @mobile {
       flex-direction: column;
-
     }
 
     .text-content {
@@ -61,6 +61,10 @@ header {
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }

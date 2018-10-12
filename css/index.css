@@ -183,7 +183,7 @@ header nav {
   }
 }
 header nav .links {
-  width: 45%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
 }
@@ -231,6 +231,7 @@ header .intro-content {
 }
 @media (max-width: 500px) {
   .home {
+    max-width: 500px;
     width: 95%;
   }
 }
@@ -267,6 +268,11 @@ header .intro-content {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
