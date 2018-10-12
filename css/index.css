@@ -8,6 +8,19 @@
   text-align: center;
   padding-top: 4%;
 }
+@media (max-width:500px) {
+  .btn {
+    width: 100%;
+    color: white;
+    background-color: teal;
+    border-radius: 20px;
+    width: 360px;
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 4%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -178,30 +191,53 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width:500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 3%;
+  }
+}
 .nav-container {
   padding-top: 1.5%;
-  width: 100%;
-  height: 60px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   font-size: 2rem;
-  border-bottom: 1px dashed gray;
+  border-bottom: 1px dashed #C0C0C0;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 .nav-container h1 {
-  margin-left: 7%;
+  margin-left: 15%;
 }
 .nav-container .nav-list {
+  width: 40%;
   display: flex;
   justify-content: space-around;
-  margin-right: 9%;
+  margin-right: 10%;
 }
 .nav-container .nav-list a {
   font-size: 1.6rem;
   text-decoration: none;
-  display: inline-block;
-  padding: 8%;
-  padding-top: 0%;
+  padding-top: 10px;
+  color: black;
+}
+@media (max-width:500px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 4% 2px 4%;
+    border-bottom: 1px dashed #C0C0C0;
+  }
+  .nav-container h1 {
+    margin-left: 7%;
+    text-align: center;
+  }
+  .nav-container .nav-list {
+    width: 94%;
+    padding-bottom: 5px;
+  }
 }
 .footer {
   width: 100%;
@@ -237,6 +273,19 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -249,6 +298,13 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width:500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -256,13 +312,42 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .home .content-destination img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    width: 100%;
+    margin-left: 5%;
+    padding-top: 30px;
+    border-top: 2px dashed #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
