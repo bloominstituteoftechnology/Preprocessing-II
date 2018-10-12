@@ -1,3 +1,19 @@
+@media (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  h1 {
+    width: 100%;
+  }
+  .anchor {
+    margin-left: 12%;
+  }
+}
 .home .content-pick .destination .btn {
   text-align: center;
   font-size: 1.8rem;
