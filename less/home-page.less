@@ -1,21 +1,53 @@
+// Intro section
+
 .home {
+  @media @mobile{
+    width: 90%;
+    margin: 0 auto;
+  }
+ // intro section
+  .intro-section{
+
+    .info_section{
+      padding-top: 30px;
+
+      @media @mobile{
+        padding-top: @media_padding;
+      }
+    }
+  }
+
 
   .content-section {
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile{
+      padding-top: @media_padding;
+      flex-direction: column;
+      width: 100%;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: @mobile_width;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile{
+        width: @mobile_width;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +58,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +78,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      width: @mobile_width;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +93,89 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: @media_padding;
+      }
+
+      .btn{
+        .button-style(@eastern-blue, @white, 1.7rem);
+        padding: 5% 0px;
+        text-align: center;
+        border-radius: 10px;
+        width: 80%;
+
+        @media @mobile{
+          width: 100%;
+        }
+      }
     }
   }
+
+  // Form box
+  form{
+    border-radius: 10px;
+    box-shadow: 10px 10px @shark;
+    color: @white;
+    padding: 30px 3%;
+    margin: 20px 0px 40px;
+    background: @eastern-blue;
+
+    input{
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 15px;
+    }
+
+    input[type=text]{
+      width: 40%;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4 ease-in-out;
+    }
+    input[type=text]:focus {
+      width: 100%;
+    }
+
+    select{
+      padding: 20px;
+      margin: 10px 0px;
+      font-size: 1.4rem;
+    }
+
+    textarea{
+      padding: 10px;
+      border-radius: 15px;
+      font-size: 1.3rem;
+    }
+
+
+    h2{
+    text-align: center;
+    }
+
+    h4{
+      margin-top: 15px;
+    }
+
+    button{
+      .button-style(@white, @eastern-blue, 1.4rem);
+      margin: 10px 0px;
+      padding: 10px 0px;
+      text-align: center;
+      border-radius: 10px;
+      width: 25%;
+    }
+
+  }
+
 }// home

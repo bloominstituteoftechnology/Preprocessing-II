@@ -1,1 +1,419 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+hr {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  width: 100%;
+  border-top: 1px dashed silver;
+}
+header {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0% 1.5%;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header h1 {
+  -webkit-animation: fade-in 0.3s linear infinite alternate;
+  -moz-animation: fade-in 0.3s linear infinite alternate;
+  -animation: fade-in 0.3s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 30px;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.4rem;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+@media (max-width: 500px) {
+  .footer {
+    margin-top: 20px;
+    padding: 8px 0px;
+  }
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.home .intro-section .info_section {
+  padding-top: 30px;
+}
+@media (max-width: 500px) {
+  .home .intro-section .info_section {
+    padding-top: 20px;
+  }
+}
+.home .content-section {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    padding-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+.home .content-pick .destination .btn {
+  background: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  padding: 5% 0px;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+.home form {
+  border-radius: 10px;
+  box-shadow: 10px 10px #212529;
+  color: #FFFFFF;
+  padding: 30px 3%;
+  margin: 20px 0px 40px;
+  background: #17A2B8;
+}
+.home form input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.home form input[type=text] {
+  width: 40%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4 ease-in-out;
+}
+.home form input[type=text]:focus {
+  width: 100%;
+}
+.home form select {
+  padding: 20px;
+  margin: 10px 0px;
+  font-size: 1.4rem;
+}
+.home form textarea {
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+}
+.home form h2 {
+  text-align: center;
+}
+.home form h4 {
+  margin-top: 15px;
+}
+.home form button {
+  background: #FFFFFF;
+  color: #17A2B8;
+  font-size: 1.4rem;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 10px;
+  width: 25%;
+}
