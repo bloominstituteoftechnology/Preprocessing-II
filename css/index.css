@@ -229,6 +229,12 @@ header .border {
 header img {
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .nav-container h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
 .nav-container .navigation {
   width: 60%;
   justify-content: space-around;
