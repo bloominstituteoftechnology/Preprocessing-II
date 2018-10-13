@@ -6,21 +6,38 @@
 
     .nav-header {
         width: 100%;
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        @media @mobile {
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 1%;
+        }
+
+        h1 {
+            @media @mobile {
+                font-size: 3rem;
+                padding-bottom: 2%;
+            }
+        }
+
         .menu {
-            width: 50%;
+            width: 350px;
             display: flex;
             justify-content: space-evenly;
 
             .menu-item {
                 text-decoration: none;
                 font-size: 1.6rem;
-                color: black;
+                color: @font-color;
             }
+
+            @media @mobile {
+                width: 100%;
+                justify-content: space-around;
+              }
         }
     }
 }
