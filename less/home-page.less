@@ -130,14 +130,16 @@
         color: white;
         border-radius: 15px;
         text-align: center;
-        &:hover {
-          animation-duration: 1.1s;
-          animation-name: hover;
-          animation-iteration-count: infinite;
-          cursor: default;
-        }
         @media @phone {
           padding: 12px 30px;
+        }
+        /*btn animation & key-frames */
+        &:hover {
+          animation-duration: 1.167s;
+          animation-name: hover;
+          animation-iteration-count: infinite;
+          cursor: pointer;
+          animation-delay: .3s;
         }
         @keyframes hover {
             from {background-color: darkseagreen; color: #fff; border-color: black;}
