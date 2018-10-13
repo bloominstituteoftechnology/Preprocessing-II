@@ -1,24 +1,49 @@
   // Navigation Styles here
 
   body header{
-    max-width: 800px;
+    
     width: 100%;
-    margin: 0 auto;
-      .top1{
+    background: @main-bg;
+    height: 90px;
     border-bottom: 2px dashed @navigation-border;
+    position: fixed;
+        .top1{
+    height: 100%;
     display: flex;
     justify-content: space-between; 
     align-items: center;
     padding: 20px;
-      
-        nav{
-        display: flex;
-        width: 50%;
-        justify-content: space-evenly;
-       
-    }
-        a:link{
-            text-decoration: none;
-            color: @font-color;
+            
+        @media @mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+        }
+        .img-top {
+            @media @mobile {
+              font-size: 3rem;
+            }
         }
     }
+        
+        
+    
+        .nav{
+        display: flex;
+        width: 350px;
+        justify-content: space-evenly;
+        
+
+            @media @mobile{
+                width: 100%;
+                justify-content: space-around;
+
+            }
+        a{
+            text-decoration: none;
+            color: @font-color;
+        
+
+        }
+    }
+}
