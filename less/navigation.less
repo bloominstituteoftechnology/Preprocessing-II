@@ -32,8 +32,18 @@
                 a {
                     color: @font-color;
                     font-size: 1.6rem;
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+                &:nth-child(even):hover {
+                    .nav-transform(5deg, 1.3, 1deg, 0px);
+                }
+                &:nth-child(odd):hover {
+                    .nav-transform(-5deg, 1.3, -1deg, 0px);
                 }
             }
+
         }
     }
 }

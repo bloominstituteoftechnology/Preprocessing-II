@@ -1,11 +1,16 @@
 // Mixins in here
 
+/* Silver Dotter Border */
 .silver-border() {
     border-bottom: 2px dashed @silver;
 }
+
+/* Border Radius 10% */
 .border-radius(){
     border-radius: 10px;
 }
+
+/* Image hover Transition */
 .transition (@prop: all, @time: .03s, @ease: linear) {
     -webkit-transition: @prop @time @ease;
     -moz-transition: @prop @time @ease;
@@ -14,7 +19,7 @@
     transition: @prop @time @ease;
 }
 
-
+/* Image hover Scale */
 .scale (@factor) {
     -webkit-transform: scale(@factor);
     -moz-transform: scale(@factor);
@@ -22,5 +27,16 @@
     -o-transform: scale(@factor);
 }
 
+/* Nav hover Effect */
+.nav-transform (@rotate: 90deg, @scale: 10, @skew: 1deg, @translate: 20px) {
+    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+
+/* Media Query */
 @tablet: (max-width: 700px);
 @phone: (max-width: 500px);

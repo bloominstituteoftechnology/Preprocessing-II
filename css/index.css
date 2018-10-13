@@ -1,3 +1,9 @@
+/* Silver Dotter Border */
+/* Border Radius 10% */
+/* Image hover Transition */
+/* Image hover Scale */
+/* Nav hover Effect */
+/* Media Query */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -231,6 +237,23 @@ img {
   color: #212529;
   font-size: 1.6rem;
 }
+.nav nav ul li a:hover {
+  font-weight: bold;
+}
+.nav nav ul li:nth-child(even):hover {
+  -webkit-transform: rotate(5deg) scale(1.3) skew(1deg) translate(0px);
+  -moz-transform: rotate(5deg) scale(1.3) skew(1deg) translate(0px);
+  -o-transform: rotate(5deg) scale(1.3) skew(1deg) translate(0px);
+  -ms-transform: rotate(5deg) scale(1.3) skew(1deg) translate(0px);
+  transform: rotate(5deg) scale(1.3) skew(1deg) translate(0px);
+}
+.nav nav ul li:nth-child(odd):hover {
+  -webkit-transform: rotate(-5deg) scale(1.3) skew(-1deg) translate(0px);
+  -moz-transform: rotate(-5deg) scale(1.3) skew(-1deg) translate(0px);
+  -o-transform: rotate(-5deg) scale(1.3) skew(-1deg) translate(0px);
+  -ms-transform: rotate(-5deg) scale(1.3) skew(-1deg) translate(0px);
+  transform: rotate(-5deg) scale(1.3) skew(-1deg) translate(0px);
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -282,10 +305,14 @@ img {
 .home .content-section .text-content img,
 .home .content-section .img-content img {
   min-height: 300px;
+  height: 300px;
+  width: 100%;
 }
 .home .content-section .img-content {
-  min-height: 300px;
   height: 300px;
+}
+.home .content-section .img-content:hover img {
+  max-height: 300px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -309,11 +336,6 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width: 500px) {
-  .home .content-destination {
-    width: 100%;
-  }
-}
 .home .content-destination .img-content,
 .home .content-destination img {
   max-height: 200px;
@@ -322,6 +344,11 @@ img {
 .home .content-destination .img-content:hover img,
 .home .content-destination img:hover img {
   max-height: 200px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-section .img-content,
 .home .content-destination .img-content {
@@ -399,11 +426,4 @@ img {
 .home .content-registration {
   display: flex;
   flex-wrap: wrap;
-}
-.home .content-section .img-content:hover img {
-  max-height: 300px;
-}
-.home .content-section .img-content img {
-  max-height: 300px;
-  height: 300px;
 }
