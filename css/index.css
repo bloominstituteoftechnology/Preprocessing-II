@@ -171,9 +171,13 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .container {
     width: 93%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
     margin: 0 5%;
   }
 }
@@ -187,6 +191,11 @@ nav {
 nav .logo {
   font-family: 'Indie Flower', cursive;
   font-size: 4rem;
+}
+@media (max-width: 1000px) {
+  nav .logo {
+    margin-left: 2%;
+  }
 }
 @media (max-width: 500px) {
   nav .logo {
@@ -207,9 +216,18 @@ nav .navLinks a {
   color: #212529;
   font-size: 1.6rem;
 }
+nav .navLinks a:hover {
+  color: #17A2B8;
+}
 @media (max-width: 500px) {
   nav .navLinks a {
     margin-right: 5.8%;
+  }
+}
+@media (max-width: 1000px) {
+  nav .navLinks {
+    width: 50%;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 500px) {
@@ -218,6 +236,11 @@ nav .navLinks a {
     font-size: 1.4rem;
     justify-content: space-between;
     padding-top: 3px;
+  }
+}
+@media (max-width: 1000px) {
+  nav {
+    justify-content: space-between;
   }
 }
 @media (max-width: 500px) {
