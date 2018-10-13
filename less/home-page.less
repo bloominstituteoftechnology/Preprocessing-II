@@ -1,4 +1,36 @@
+header {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @mobile {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+    .intro{
+      width: 95%;
+    }
+
+  }
+
+
+  .intro-content {
+    margin: 20px 0;
+    .nav-bottom;
+    padding-bottom: 10px;
+
+  }
+}
+
+
 .home {
+
+  @media @mobile {
+    max-width: 500px;
+    width: 95%;
+  }
+
 
   .content-section {
     margin: 30px 0;
@@ -6,26 +38,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        .column-width;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        .column-width;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .nav-bottom;
 
     .text-content {
       padding-left: 1%;
@@ -35,6 +81,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 2;
+      }
     }
   }
 
@@ -45,17 +95,42 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      .column-width;
+    }
   }
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    border-top: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .btn {
+        .sign-up-button (@button-bg, @main-bg);
+
+        @media @mobile {
+          align-self: center;
+          width: 100%;
+        }
+      }
     }
   }
 }// home
