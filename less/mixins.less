@@ -1,1 +1,14 @@
 // Mixins in here
+button  {
+    @background-color: green;
+    @color: white;
+    @font-size: 1.5rem;
+    @padding: 5px;
+    @width: 10px;
+    @border-radius: 10px;
+}
+.btn (button){
+    -webkit-button: @background-color, @color, @font-size, @padding, @width, @border-radius;
+        -moz-button: @background-color, @color, @font-size, @padding, @width, @border-radius;
+        button: @background-color, @color, @font-size, @padding, @width, @border-radius;
+}
