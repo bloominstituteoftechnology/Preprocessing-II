@@ -386,6 +386,16 @@ nav .navLinks a:hover {
 .contact header {
   margin: 30px auto;
 }
+@media (max-width: 800px) {
+  .contact header h1 {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .contact header h1 {
+    font-size: 2.8rem;
+  }
+}
 .contact form {
   margin-top: 30px;
   padding: 20px;
@@ -413,6 +423,26 @@ nav .navLinks a:hover {
   font-size: 1.6rem;
   border: 1px solid #17A2B8;
 }
+@media (max-width: 800px) {
+  .contact .info-perso input {
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .contact .info-perso input {
+    padding: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .contact .info-perso {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .contact .info-perso {
+    width: 100%;
+  }
+}
 .contact .info-package {
   display: flex;
   flex-direction: column;
@@ -426,6 +456,16 @@ nav .navLinks a:hover {
   padding: 15px;
   font-size: 1.6rem;
   border: 1px solid #17A2B8;
+}
+@media (max-width: 800px) {
+  .contact .info-package select {
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .contact .info-package select {
+    padding: 15px;
+  }
 }
 .contact .info-package textarea {
   margin-top: 20px;
@@ -458,5 +498,15 @@ nav .navLinks a:hover {
     background-color: #FFEBCD;
     color: #17A2B8;
     cursor: pointer;
+  }
+}
+@media (max-width: 800px) {
+  .contact .info-package {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .contact .info-package {
+    width: 100%;
   }
 }
