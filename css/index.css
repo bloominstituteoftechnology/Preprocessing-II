@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 html,
 body {
@@ -171,34 +172,48 @@ img {
 .top-navigation {
   display: inline-flex;
   flex-direction: row;
-  height: 100px;
-  justify-content: flex-end;
+  height: 40px;
+  justify-content: space-between;
   border-bottom: 2px dashed #C0C0C0;
   width: 100%;
-  padding-top: 5%;
-  padding-bottom: 1%;
+  margin: 20px 310px 0 0;
+  font-family: 'Indie Flower', cursive;
+  font-size: 4rem;
+  padding-left: 0;
+  padding-right: 10px;
 }
-.top-navigation li,
-.top-navigation a {
+@media (max-width:500px) {
+  .top-navigation {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 10px;
+    padding-right: 2%;
+  }
+  .top-navigation .logo {
+    font-size: 2.5rem !important;
+    padding-left: 35px;
+    padding-top: 5px;
+  }
+}
+.top-navigation .logo {
+  font-size: 4rem;
+  margin: -10px 0px 0 -34px;
+}
+li,
+a {
   text-decoration: none;
   list-style-type: none;
   color: black;
 }
-.top-navigation li {
-  padding-left: 70px;
+li {
+  padding-left: 40px;
   font-size: 1.5rem;
-}
-.top-navigation .logo {
-  padding-left: 0;
-  font-size: 3.5rem;
-  width: 136px;
-  margin: 0px 200px 0 0;
-}
-.logo {
-  font-family: 'Indie Flower', cursive;
-  font-size: 4.6rem;
-  margin: 0 403px 0 0;
-  padding-left: 0;
+  text-align: center;
+  justify-content: center;
+  position: relative;
 }
 .btn {
   color: white;
@@ -210,6 +225,12 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+}
+@media (max-width:500px) {
+  .btn {
+    margin: 0 auto;
+    width: 70%;
+  }
 }
 a {
   text-decoration: none;
@@ -225,59 +246,103 @@ a {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .content-section {
+@media (max-width:500px) {
+  .home {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+.content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+@media (max-width:500px) {
+  .content-section .text-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+@media (max-width:500px) {
+  .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+    margin-bottom: -30px;
+  }
+}
+.content-section .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+@media (max-width:500px) {
+  .content-section .img-content img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+  flex-direction: row-reverse;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+@media (max-width:500px) {
+  .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .content-pick .destination {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 .welcome {
   margin-top: 5%;
   border-bottom: 3px dashed darkgray;
   padding-bottom: 1%;
-}
-@media (max-width: 0/0) {
-  .home {
-    background-color: red;
-  }
 }
