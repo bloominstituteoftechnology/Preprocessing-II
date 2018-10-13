@@ -178,9 +178,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 740px) {
-}
-@media (max-width: 740px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .container {
     width: 95%;
   }
