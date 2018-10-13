@@ -34,8 +34,12 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 
-  @media @mobile-view {
-    font-size: 1.8em;
+  @media @tablet-view{
+    font-size: 2rem;
+
+    @media @mobile-view {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -49,10 +53,14 @@ img {
   width: 100%;
   margin: 0 auto;
 
-  @media @mobile-view{
-    width: 95%;
-    // max-width: 500px;
-  }
+  @media @tablet-view{
+    // width: 95%;
 
+    @media @mobile-view{
+      width: 95%;
+      // max-width: 500px;
+    }
+
+  }
 }
 

@@ -159,9 +159,14 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 740px) {
   p {
-    font-size: 1.8em;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 740px) and (max-width: 500px) {
+  p {
+    font-size: 1.8rem;
   }
 }
 img {
@@ -173,7 +178,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 740px) {
+}
+@media (max-width: 740px) and (max-width: 500px) {
   .container {
     width: 95%;
   }
@@ -192,10 +199,14 @@ header .nav-container {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 740px) {
+  header .nav-container {
+    padding-bottom: 1%;
+  }
+}
 @media (max-width: 500px) {
   header .nav-container {
     flex-wrap: wrap;
-    justify-content: space-between;
     flex-direction: column;
   }
 }
@@ -206,9 +217,15 @@ header .nav-container nav {
   width: 44%;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
+@media (max-width: 740px) {
   header .nav-container nav {
     display: flex;
+    flex-wrap: nowrap;
+    width: 56%;
+  }
+}
+@media (max-width: 740px) and (max-width: 500px) {
+  header .nav-container nav {
     width: 100%;
     justify-content: center;
   }
@@ -218,9 +235,14 @@ header .nav-container nav a {
   color: #212529;
   padding: 4%;
 }
+@media (max-width: 740px) {
+  header .nav-container nav a {
+    font-size: 2rem;
+    padding: inherit;
+  }
+}
 @media (max-width: 500px) {
   header .nav-container nav a {
-    font-size: 1.9rem;
     padding: 2.5% 4%;
   }
 }
