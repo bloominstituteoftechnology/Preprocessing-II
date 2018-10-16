@@ -181,7 +181,8 @@ img {
   border-bottom: 2px dashed silver;
 }
 .navigation-section .nav-header {
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -330,15 +331,24 @@ img {
   }
 }
 .home .content-pick .destination .btn {
+  width: 84%;
+  height: 40px;
+  background: #17A2B8;
+  color: #FFFFFF;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   border-radius: 14px;
-  width: 84%;
-  background-color: #2997ab;
-  color: white;
   font-size: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   padding: 4%;
+}
+.home .content-pick .destination .btn:hover {
+  color: #17A2B8;
+  background: #FFFFFF;
+  border: 0.5px solid gray;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {

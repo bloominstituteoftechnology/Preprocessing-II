@@ -1,5 +1,28 @@
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .border-radius(@radius: 14px) {
     -webkit-border-radius: @radius;
        -moz-border-radius: @radius;
             border-radius: @radius;
+  }
+
+  .custom-btn(@width, @height, @background, @color) {
+    width: @width;
+    height: @height;
+    background: @background;
+    color: @color;
+    .border-radius();
+    font-size: 2rem;
+    .center();
+    cursor: pointer;
+  
+    &:hover {
+      color: @background;
+      background: @color;
+      border: 0.5px solid gray;
+    }
   }
