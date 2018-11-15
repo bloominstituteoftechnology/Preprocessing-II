@@ -199,7 +199,7 @@ img {
 .header {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
-  padding: 25px 10%;
+  padding: 2.5% 9%;
   display: flex;
   flex-direction: column;
 }
@@ -207,7 +207,7 @@ img {
   width: 100%;
   margin: 0 auto;
   border-bottom: 2px dashed #C0C0C0;
-  padding-bottom: 5px;
+  padding-bottom: 1%;
 }
 .home .content-welcome img {
   margin-bottom: 20px;
@@ -265,7 +265,7 @@ img {
   border-radius: 15px;
   font-size: 1.8rem;
   font-weight: bold;
-  width: 85%;
+  width: 84%;
   text-align: center;
-  padding: 15px 0;
+  padding: 13px 0;
 }
