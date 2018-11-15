@@ -168,6 +168,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav a {
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+  margin: 0 16px;
+}
+nav a:visited {
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +193,33 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home header h1 {
+  width: 25%;
+}
+.home header .header-image {
+  width: 100%;
+  margin-top: 26px;
+  position: relative;
+}
+.home header .header-image::before {
+  content: '';
+  height: 1px;
+  border-top: 2px dashed black;
+  width: 200%;
+  max-width: 1000px;
+  position: absolute;
+  margin: 0 -100px;
+}
+.home header .header-text {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed black;
 }
 .home .content-section {
   margin: 30px 0;
