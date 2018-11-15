@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -168,11 +168,47 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    padding: 0 5%;
+  }
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dashed silver;
+  padding: 2% 30%;
+}
+@media (max-width: 500px) {
+  header {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    width: 100%;
+    text-align: center;
+    padding: 3% 0;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 40%;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 10%;
+  }
 }
 nav a {
   font-size: 1.6rem;
@@ -182,7 +218,7 @@ nav a {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -190,14 +226,8 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 0.3rem dashed lightgrey;
-  padding: 4% 0;
-}
 .home .top-section {
-  border-bottom: 0.3rem dashed lightgrey;
+  border-bottom: 2px dashed silver;
 }
 .home .top-section .bus {
   margin-bottom: 3%;
@@ -212,16 +242,31 @@ nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -240,7 +285,7 @@ nav a {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }

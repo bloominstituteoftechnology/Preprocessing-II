@@ -1,9 +1,36 @@
 // Navigation Styles here
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dashed silver;
+  padding: 2% 30%;
+
+  @media @mobile {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1 {
+    @media @mobile {
+      width: 100%;
+      text-align: center;
+      padding: 3% 0;
+    }
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 40%;
+  @media @mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 10%;
+  }
   a {
     font-size: 1.6rem;
     color: black;
