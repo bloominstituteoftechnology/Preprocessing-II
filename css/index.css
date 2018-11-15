@@ -189,7 +189,7 @@ img {
 }
 @media (max-width: 500px) {
   .headpage .topnav {
-    width: 500px;
+    width: 100%;
     flex-direction: column;
   }
 }
@@ -197,14 +197,11 @@ img {
   text-decoration: none;
   color: black;
 }
-.headpage .topnav .toplinks {
-  display: flex;
-}
 .headpage .topnav .toplinks a {
   text-decoration: none;
   color: black;
   font-size: 1.6em;
-  padding: 20px;
+  padding: 15px;
 }
 .footer {
   width: 100%;
@@ -236,7 +233,7 @@ img {
 }
 @media (max-width: 500px) {
   .homeheader {
-    width: 500px;
+    width: 100%;
   }
 }
 .home .content-section {
@@ -249,7 +246,6 @@ img {
   .home .content-section {
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: center;
   }
 }
 .home .content-section .text-content {
@@ -259,6 +255,8 @@ img {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 .home .content-section .img-content {
@@ -268,6 +266,8 @@ img {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 .home .content-section .img-content img {
@@ -306,6 +306,11 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   width: 100%;

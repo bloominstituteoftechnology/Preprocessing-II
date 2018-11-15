@@ -8,7 +8,7 @@
     border-radius: 3px;
   }
   @media (max-width: 500px) {
-    width: 500px;
+    width: 100%;
   }
 }
 
@@ -22,7 +22,6 @@
     @media (max-width: 500px) {
       flex-wrap: nowrap;
       flex-direction: column;
-      justify-content: center;
     }
     
     .text-content {
@@ -30,6 +29,8 @@
       padding-right: 1%;
       @media (max-width: 500px) {
         width: 100%;
+        display: flex;
+        flex-direction: column;
       }
     }
 
@@ -38,6 +39,8 @@
       padding-left: 1%;
       @media (max-width: 500px) {
         width: 100%;
+        display: flex;
+        flex-direction: column;
       }
 
       img {
@@ -82,6 +85,9 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media (max-width: 500px){
+        width: 100%;
+      }
 
       .btn {
         .buttons(100%, 40px, white, rgb(52, 158, 149), 1.8em, 3px);
