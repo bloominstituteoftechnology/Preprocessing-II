@@ -1,12 +1,18 @@
-.home {
 
+.home {
+  header{
+    border-bottom: 2px dashed @silver;
+    padding-bottom: 20px;
+    img{
+      margin-bottom: 25px;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-   
+
     
     .text-content {
       width: 48%;
@@ -56,6 +62,9 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .button(10px, darken(@eastern-blue, 10%), 12px)
+      }
     }
   }
 }// home
