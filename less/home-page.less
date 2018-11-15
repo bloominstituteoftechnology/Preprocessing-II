@@ -101,6 +101,7 @@
       }
       img {
         border-radius: 10px;
+        box-shadow: 1px 1px 3px black;
         @media @mobile {
           width: 100%;
         }
@@ -130,6 +131,7 @@
       width: 100%;
     }
     img {
+      box-shadow: 1px 1px 3px black;
       border-radius: 10px;
     }
   }
@@ -201,7 +203,14 @@
           outline: none;
           border: 1px solid darken(@silver, 25%);
           background-color: darken(white, 10%);
+          box-shadow: 1px 1px 2px black;
+          transform: translateY(-1px);
         }
+      }
+      
+      select:focus {
+        box-shadow: none;
+        transform: translateY(0px);
       }
 
       input {

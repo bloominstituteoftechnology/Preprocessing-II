@@ -339,6 +339,7 @@ nav a:hover {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  box-shadow: 1px 1px 3px black;
 }
 @media (max-width: 500px) {
   .home .content-section .img-content img {
@@ -367,6 +368,7 @@ nav a:hover {
   }
 }
 .home .content-destination img {
+  box-shadow: 1px 1px 3px black;
   border-radius: 10px;
 }
 .home .content-pick {
@@ -459,6 +461,12 @@ nav a:hover {
   outline: none;
   border: 1px solid #808080;
   background-color: #e6e6e6;
+  box-shadow: 1px 1px 2px black;
+  transform: translateY(-1px);
+}
+.home .content-signup form select:focus {
+  box-shadow: none;
+  transform: translateY(0px);
 }
 .home .content-signup form input {
   font-size: 1.8rem;
