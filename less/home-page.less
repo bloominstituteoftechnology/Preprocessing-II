@@ -1,5 +1,12 @@
 .home {
 
+  header {
+    border-bottom: 2px dashed @navigation-border;
+    h2{
+      padding: 2rem 2rem 2rem 0;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +63,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+    .btn {
+      .button-creator(@width, @font-color, @button-bg);
+    }
     }
   }
 }// home
