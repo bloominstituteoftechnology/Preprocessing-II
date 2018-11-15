@@ -14,13 +14,20 @@
     
     .text-content {
       width: 48%;
+      
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        width: 100%;
+        text-align: center;
+      }
       img {
         border-radius: 10px;
       }
@@ -28,6 +35,7 @@
   }
 
   .inverse-content {
+    flex-direction: column-reverse;
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
