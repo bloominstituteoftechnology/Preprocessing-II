@@ -6,11 +6,23 @@
     flex-wrap: wrap;
     h1 {
       width: 25%;
+      @media @mobile {
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+        margin: -3px;
+      }
     }
     .header-image {
       width: 100%;
       margin-top: 26px;
       position: relative;
+      @media @mobile {
+        margin: 0 auto;
+        margin-top: 10px;
+        // border-top: 2px dashed @navigation-border;
+        width: 90%;
+      }
       &::before {
         content: ''; 
         height: 1px; 
@@ -19,12 +31,30 @@
         max-width: 1000px;
         position: absolute;
         margin: 0 -100px;
+        @media @mobile {
+          width: 150%;
+          max-width: 600px;
+          position: absolute;
+          margin: 0 -100px;
+        }
       }
     }
     .header-text {
       margin-top: 20px;
       padding-bottom: 10px;
       border-bottom: 2px dashed @navigation-border;
+      @media @mobile {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+  }
+  
+  .content-container {
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 
@@ -33,20 +63,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile {
+      width: 100%;
+    }
    
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        order: -1;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        width: 100%;
+      }
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -69,7 +109,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 100%;
+    }
     img {
       border-radius: 10px;
     }
@@ -79,11 +121,20 @@
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      width: 80%;
+      padding-top: 37px;
+      margin: 0 auto;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .btn {
