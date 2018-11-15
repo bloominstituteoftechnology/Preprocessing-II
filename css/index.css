@@ -183,9 +183,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 550px) {
+  .nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+}
 .nav div h1 {
-  padding-top: 25px;
+  padding-top: 10px;
   width: 100%;
+}
+@media (max-width: 550px) {
+  .nav div h1 {
+    padding-top: 20px;
+    font-size: 3rem;
+  }
 }
 .nav div div {
   display: flex;
@@ -194,12 +210,28 @@ img {
   align-items: flex-start;
   flex-wrap: nowrap;
 }
+@media (max-width: 550px) {
+  .nav div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
 .nav div div a {
   padding-top: 35px;
   text-decoration: none;
   color: black;
   margin-right: 7.7%;
   font-size: 1.6rem;
+}
+@media (max-width: 550px) {
+  .nav div div a {
+    margin-right: 0;
+    padding-top: 15px;
+    font-size: 1.65em;
+  }
 }
 .footer {
   width: 100%;

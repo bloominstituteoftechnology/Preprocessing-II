@@ -8,13 +8,27 @@
     width: 100%;
     margin: 0 auto;
 
+    @media @mobile {
+      .center(column, flex-start, center, nowrap);
+      text-align: center;
+    }
+
     h1 {
-      padding-top: 25px;
+      padding-top: 10px;
       width: 100%;
+
+      @media @mobile {
+        padding-top: 20px;
+        font-size: 3rem;
+      }
     }
 
     div {
       .center(row, flex-end, flex-start, nowrap);
+
+      @media @mobile {
+        .center(row, space-evenly, flex-start, nowrap);
+      }
 
       a {
         padding-top: 35px;
@@ -22,6 +36,12 @@
         color: black;
         margin-right: 7.7%;
         font-size: 1.6rem;
+
+        @media @mobile {
+          margin-right: 0;
+          padding-top: 15px;
+          font-size: 1.65em;
+        }
       }
     }
   }
