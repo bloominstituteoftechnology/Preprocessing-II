@@ -171,6 +171,20 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+header nav a {
+  margin-left: 10%;
+  font-family: "Helvetica Neue";
+  font-size: 1.5rem;
+  color: black;
+  font-style: "Helvetica Neue";
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
