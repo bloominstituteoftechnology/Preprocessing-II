@@ -282,11 +282,15 @@ header {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
-    text-align: center;
   }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   flex-direction: column-reverse;
@@ -304,6 +308,11 @@ header {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
