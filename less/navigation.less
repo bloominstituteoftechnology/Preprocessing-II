@@ -1,1 +1,41 @@
-// Navigation Styles here
+.nav-area {
+    padding-bottom: 25px;
+    border-bottom: 1px dashed @silver;
+    margin-top: 30px;
+
+    nav {
+        .make-flex(row, space-between);
+        .container-centering();
+
+        h1 {
+            a {
+                .remove-hyperlink-styling();
+            }
+        }
+
+        .nav-area--text-links {
+            .make-flex(row, space-evenly, center);
+            
+            a {
+                .remove-hyperlink-styling();
+                display: inline-block;
+                font-size: 1.6rem;
+                padding: 12.5px 17.5px;
+
+                &:hover {
+                    background-color: darken(@white, 20%);
+                    color: @white;
+                    font-weight: bold;                    
+                    .transition-control(500ms);
+                }
+
+                &:active {
+                    border: 2px dotted snow;
+                    margin-left: -4px;
+                    margin-bottom: -4px;
+                    .transition-control(0);
+                }
+            }
+        }
+    }
+}
