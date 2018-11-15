@@ -168,6 +168,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.logo-nav-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-nav-container nav {
+  display: flex;
+  align-items: center;
+}
+.logo-nav-container nav a {
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +194,11 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.wide-navigation {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 5px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,4 +245,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 80%;
+  padding: 1rem;
+  height: 4rem;
+  font-size: 2rem;
+  background-color: #007f7f;
+  text-align: center;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
