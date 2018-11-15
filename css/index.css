@@ -1,3 +1,10 @@
+.link-style {
+  text-decoration: none;
+  color: black;
+}
+.link-style:hover {
+  text-decoration: underline;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +174,34 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav a {
+  font-size: 1.6rem;
+}
+header {
+  border-bottom: 2px dashed silver;
+}
+.nav-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav-container nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container nav a {
+  text-decoration: none;
+  color: black;
+}
+.nav-container nav a:hover {
+  text-decoration: underline;
 }
 .footer {
   width: 100%;
