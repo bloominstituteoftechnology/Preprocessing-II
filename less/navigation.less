@@ -3,17 +3,24 @@
 .navbar{
     border-bottom: 2px dashed @silver;
 .navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    .layout(space-between, baseline);
     padding: 20px 0;
     max-width: 800px;
     width:100%;
     margin: 0 auto;
+    @media @mobile{
+        width: 90%;
+        .layout(center, center);
+        flex-direction:column;
+    }  
     nav{
-        display: flex;
-        justify-content: space-around;
+        .layout(space-between, center);
         width: 45%;
+        @media @mobile {
+            .layout(space-around, center);
+            margin-top: 15px;
+            width:100%;
+        }
     a{
         text-decoration: none;
         color: @shark;
