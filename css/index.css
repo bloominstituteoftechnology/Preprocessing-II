@@ -169,15 +169,26 @@ img {
   margin: 0 auto;
 }
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 36px;
-  width: 45%;
+  border-bottom: 2px dashed #C0C0C0;
 }
-nav a {
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 36px;
+  width: 100%;
+  align-items: baseline;
+}
+nav .container h1 {
+  width: 55%;
+}
+nav .container a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+}
+nav .container a:last-of-type {
+  margin-right: 3%;
 }
 .footer {
   width: 100%;
@@ -203,7 +214,7 @@ header img {
   width: 800px;
   max-width: 100%;
   height: auto;
-  margin: 36px 0 20px;
+  margin: 0 0 20px 0;
 }
 .home .content-section {
   margin: 30px 0;

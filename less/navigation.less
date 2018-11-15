@@ -1,17 +1,31 @@
 // Navigation Styles here
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 36px;
-  width: 45%;
-  
+  border-bottom: 2px dashed @navigation-border;
 
-  a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.6rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 36px;
+    width: 100%;
+    align-items: baseline;
+
+    h1 {
+      width: 55%;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.6rem;
+    
+
+      &:last-of-type {
+        margin-right: 3%;
+      }
+    }
   }
-  
 }
 
 
