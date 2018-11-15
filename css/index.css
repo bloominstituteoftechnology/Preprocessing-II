@@ -195,6 +195,18 @@ nav a {
 .home .top-main img {
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .home .top-main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+.home .top-main {
+  border-bottom: dashed black 1px;
+}
+.home .top-main img {
+  margin-bottom: 20px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
