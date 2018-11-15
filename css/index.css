@@ -191,6 +191,13 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .cta {
+  margin-bottom: 30px;
+}
+.home .cta .cta-text {
+  padding-top: 30px;
+  display: flex;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
