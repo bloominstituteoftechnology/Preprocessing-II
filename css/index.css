@@ -1,3 +1,10 @@
+.btn {
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+  padding: 5px 20px;
+  margin: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,12 +175,15 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+nav {
+  font-size: 1.6rem;
+  Width: 400px;
 }
-img {
+.fun-bus {
+  padding: 20px 280px 30px;
+}
+.fun-bus img {
+  margin: 20px 80px;
   width: 80%;
 }
 .footer {
@@ -192,6 +202,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.home .content-section header {
+  margin: 20px 0;
+  border-bottom: 1px solid black;
+  border-bottom: 1px dotted black;
+  width: 100%;
+  display: inline-block;
 }
 .home .content-section .text-content {
   width: 48%;

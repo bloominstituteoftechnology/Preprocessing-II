@@ -1,4 +1,14 @@
 // Mixins in here
-header [
-    #mixins.layout(space-between, baseline);
-]
+@btn-color: black;
+@btn-bg-color: white;
+
+
+.btn {
+    color: @btn-color;
+    background-color: @btn-bg-color;
+    font-size: 2rem; 
+    padding: 5px 20px;
+    margin: 10px;
+    #mixins.border-radius(10px);
+
+}
