@@ -169,37 +169,39 @@ img {
   margin: 0 auto;
 }
 nav {
+  border-bottom: 2px dashed #C0C0C0;
+}
+nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 10%;
-  border-bottom: 2px dashed #C0C0C0;
+  padding: 25px 0;
 }
 @media (max-width: 500px) {
-  nav {
+  nav .container {
     flex-direction: column;
     padding: 16px 10% 8px;
   }
 }
 @media (max-width: 500px) {
-  nav h1 {
+  nav .container h1 {
     font-size: 3rem;
     margin-bottom: 20px;
   }
 }
-nav .nav-links {
+nav .container .nav-links {
   max-width: 500px;
   width: 40%;
   display: flex;
   justify-content: space-evenly;
 }
 @media (max-width: 500px) {
-  nav .nav-links {
+  nav .container .nav-links {
     width: 100%;
     justify-content: space-between;
   }
 }
-nav .nav-links a {
+nav .container .nav-links a {
   font-size: 1.6rem;
   color: #212529;
   text-decoration: none;
