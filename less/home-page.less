@@ -100,13 +100,34 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      .center(column, center, center, nowrap);
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      padding-bottom: 1px;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0 9%;
+      }
+
+      p {
+        @media @mobile {
+          width: 100%;
+          padding: 0 10% 11px 0;
+        }
+      }
 
       .btn {
-        // the parametric mixin has default values that I set to be the these buttons, but it's easily stylable to whatever
-        .btn-template();
+        .btn-template(); // Parametric default values set for desktop layout
+
+        @media @mobile {
+          width: 100%;
+          .btn-template(@button-bg, white, 15px, 12px 4%, 2rem);
+        }
       }
     }
   }

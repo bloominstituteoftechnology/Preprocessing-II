@@ -351,9 +351,31 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 550px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  padding-bottom: 1px;
+}
+@media (max-width: 550px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0 9%;
+  }
+}
+@media (max-width: 550px) {
+  .home .content-pick .destination p {
+    width: 100%;
+    padding: 0 10% 11px 0;
+  }
 }
 .home .content-pick .destination .btn {
   width: 83%;
@@ -365,4 +387,18 @@ img {
   border-radius: 15px;
   padding: 13px 2%;
   font-size: 1.8rem;
+}
+@media (max-width: 550px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    width: 83%;
+    text-align: center;
+    background: #17a2b8;
+    color: white;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 12px 4%;
+    font-size: 2rem;
+  }
 }
