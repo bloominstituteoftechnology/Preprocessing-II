@@ -168,6 +168,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  width: 100%;
+  margin: 1% auto 0 auto;
+  padding-bottom: 1%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .header-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-nav nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-nav a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +203,13 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .banner-section {
+  padding-bottom: 2%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .banner-section h2 {
+  margin-top: 2%;
 }
 .home .content-section {
   margin: 30px 0;
