@@ -169,13 +169,36 @@ img {
   margin: 0 auto;
 }
 .nav {
+  border-bottom: 2px dashed black;
+  width: 100%;
+}
+.nav div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: nowrap;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav div h1 {
   padding-top: 25px;
-  margin-bottom: 500px;
+  width: 100%;
+}
+.nav div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.nav div div a {
+  padding-top: 35px;
+  text-decoration: none;
+  color: black;
+  margin-right: 7.7%;
+  font-size: 1.6rem;
 }
 .footer {
   width: 100%;

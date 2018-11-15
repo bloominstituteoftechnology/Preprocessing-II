@@ -1,5 +1,27 @@
 .nav {
-  .center(row, space-between, center, nowrap);
-  padding-top: 25px;
-  margin-bottom: 500px;
+  border-bottom: 2px dashed black;
+  width: 100%;
+  div {
+    .center(row, space-between, flex-start, nowrap);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    h1 {
+      padding-top: 25px;
+      width: 100%;
+    }
+
+    div {
+      .center(row, flex-end, flex-start, nowrap);
+
+      a {
+        padding-top: 35px;
+        text-decoration: none;
+        color: black;
+        margin-right: 7.7%;
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
