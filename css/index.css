@@ -196,6 +196,15 @@ header {
 header h1 {
   padding-left: 10%;
   width: 40%;
+  animation: flash 1s linear infinite alternate;
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 500px) {
   header h1 {

@@ -41,3 +41,13 @@
     width: 90%;
     margin: 0 auto;
 }
+
+.keyframes(@name; @arguments) {
+    @keyframes @name { 
+        @arguments(); 
+    }
+}
+
+.animation(@arguments) {
+    animation: @arguments;
+}
