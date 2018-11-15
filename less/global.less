@@ -43,4 +43,34 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile{
+    max-width:500px;
+    width:100%;
+    
+    header{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      
+    }
+    h1{
+      margin-bottom:1rem;
+    }
+    
+    nav{
+      display:flex;
+      justify-items:space-around;
+      
+
+    }
+
+    a{
+  margin-right: 5rem;
+      
+    }
+ 
+ 
+  }
+
 }
