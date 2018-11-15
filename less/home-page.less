@@ -18,6 +18,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      margin: 0;
+      flex-direction: column;
+    }
+
     
 
    
@@ -25,6 +30,11 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width:100%;
+        
+      }
     }
 
     .img-content {
