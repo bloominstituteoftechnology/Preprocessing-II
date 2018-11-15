@@ -1,22 +1,76 @@
-.home {
+a {
+  text-decoration: none;
+}
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    max-width: 800px;
+    margin: 0 auto;
+    @media @mobile {
+      max-width: 500px;
+      width: 90%;
+      margin: 0 5% 0 5%;
+    }
+  }
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px dashed @navigation-border;
+  padding: 40px 0 40px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+
+.home {
+  .welcome-section {
+    margin: 30px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      width: 90%;
+      margin: 30px 5% 0 5%;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: 30px 5% 0 5%;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        width: 100%;
+      }
       img {
         border-radius: 10px;
       }
@@ -26,6 +80,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,7 +99,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 90%;
+      margin: 20px 5% 20px 5%;
+    }
     img {
       border-radius: 10px;
     }
@@ -51,11 +112,121 @@
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
   }
-}// home
+
+  @media @mobile {
+    .content-pick {
+      padding-top: 30px;
+      border-top: 2px dashed @navigation-border;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 10% 30px 10%;
+      .destination {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @media @tablet {
+    .content-pick {
+      padding-top: 30px;
+      border-top: 2px dashed @navigation-border;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 10% 30px 10%;
+      .destination {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+} // home
+
+div.btn {
+  #button.button(@btn-bg);
+  align-self: center;
+}
+
+div.btn:hover {
+  #button.buttonhover(@button-bg);
+}
+
+.packages {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media @mobile {
+    align-items: center;
+    width: 90%;
+    margin: 30px 5% 0 5%;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+
+    .text {
+      width: 48%;
+      padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    .img-content {
+      width: 48%;
+      padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+      }
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.top-content-contact {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+}
+
+#thank-you {
+  background-color: rgba(118, 238, 102, 0.137);
+  max-width: 800px;
+  height: 50px;
+  text-align: center;
+  padding: 16px;
+}
+
+.textbox {
+  height: 200px;
+  width: 500px;
+}
+
+form {
+  margin: 0 0 30px 0;
+}
