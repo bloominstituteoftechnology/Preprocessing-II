@@ -177,6 +177,11 @@ nav .container {
   align-items: center;
   padding: 25px 0;
 }
+@media (max-width: 800px) {
+  nav .container {
+    padding: 25px 5%;
+  }
+}
 @media (max-width: 500px) {
   nav .container {
     flex-direction: column;
