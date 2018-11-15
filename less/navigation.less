@@ -1,1 +1,44 @@
 // Navigation Styles here
+header {
+       border-bottom: 2px dashed @navigation-border;
+  
+       div{ 
+           display: flex;
+           justify-content: space-between;
+           width: 100%;
+           margin-top: 15px;
+           margin-bottom: 15px;
+           align-items: baseline;
+           @media @phone {
+            flex-wrap: wrap;
+            width: 100%;
+            }
+       }
+       div h1 {
+        @media @phone {
+            margin: 0px 36% 15px 36%;
+            font-size: 3rem;
+        }
+       }
+
+nav{
+    width: 50%;
+    @media @phone {
+        width: 100%;
+        .center;
+        }
+  }
+    nav a {
+        text-decoration: none;
+        color: @font-color;
+        font-size: 1.6rem;
+        margin: 0 6%;
+
+        &:hover {
+            color: @button-bg;
+        }
+    }
+
+
+
+}
