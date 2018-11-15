@@ -71,6 +71,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media (max-width: 500px){
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -81,16 +85,25 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 500px){
+      flex-direction: column;
+      width: 100%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       @media (max-width: 500px){
-        width: 100%;
+        width: 75%;
+        margin: auto;
+        padding: 10px 0px;
       }
 
       .btn {
         .buttons(100%, 40px, white, rgb(52, 158, 149), 1.8em, 3px);
+        @media (max-width: 500px){
+          .buttons(100%, 40px, white, rgb(73, 196, 212), 1.8em, 3px);
+        }
       }
     }
   }
