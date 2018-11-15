@@ -184,7 +184,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding-top: 3rem;
+  padding-top: 2rem;
   width: 800px;
   margin: 0 auto;
 }
@@ -192,7 +192,8 @@ header nav {
   display: flex;
 }
 header nav a {
-  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  padding: 1.4rem 1.76rem 0;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
