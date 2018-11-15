@@ -165,7 +165,7 @@ img {
 }
 hr {
   margin: 0;
-  border-top: dashed 2px black;
+  border-top: dashed 2px silver;
 }
 .container {
   max-width: 800px;
@@ -187,6 +187,7 @@ hr {
 }
 .header nav a {
   text-decoration: none;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -200,7 +201,7 @@ hr {
   padding: 20px;
 }
 .home .content-main img {
-  margin: 0;
+  margin: -1px;
 }
 .home .content-main h1 {
   margin: 17px 0 10px 0;
@@ -208,7 +209,7 @@ hr {
 }
 .home .content-main p {
   line-height: 1.7;
-  border-bottom: dashed 2px black;
+  border-bottom: dashed 2px silver;
 }
 .home .content-section {
   margin: 30px 0;
@@ -230,7 +231,7 @@ hr {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
-  border-bottom: dashed 2px black;
+  border-bottom: dashed 2px silver;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -243,7 +244,6 @@ hr {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
-  border-bottom: dashed 2px black;
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -257,4 +257,13 @@ hr {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 13px;
+  width: 83%;
+  border-radius: 15px;
+  background-color: #17A2B8;
+  color: white;
 }
