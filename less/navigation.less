@@ -3,6 +3,10 @@
   border-bottom: 2px dashed @navigation-border;
   width: 100%;
 
+  @media @tablet {
+    padding: 10px 0 0;
+  }
+
   @media @mobile {
     padding-bottom: 6px;
   }
@@ -12,6 +16,11 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+
+    @media @tablet {
+      .center(row, space-between, center, nowrap);
+      padding: 0 4%;
+    }
 
     @media @mobile {
       .center(column, flex-start, center, nowrap);
@@ -31,6 +40,10 @@
     div {
       .center(row, flex-end, flex-start, nowrap);
 
+      @media @tablet {
+        .center(row, space-between, flex-start, nowrap);
+      }
+
       @media @mobile {
         .center(row, space-evenly, flex-start, nowrap);
       }
@@ -42,10 +55,25 @@
         margin-right: 7.7%;
         font-size: 1.6rem;
 
+        &:hover {
+          color: @button-bg;
+          text-decoration: underline;
+        }
+
+        @media @tablet {
+          padding-top: 20px;
+        }
+
         @media @mobile {
           margin-right: 0;
           padding-top: 15px;
           font-size: 1.65em;
+        }
+      }
+
+      a:last-child {
+        @media @tablet {
+          margin-right: 0;
         }
       }
     }
