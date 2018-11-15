@@ -1,1 +1,14 @@
 // Mixins in here
+.button(@bg-color, @font-color, @border-radius, @width) {
+    background: @bg-color;
+    color: @font-color;
+    border-radius: @border-radius;
+    width: @width;
+    font-size: 1.6rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    .button(@eastern-blue, white, 10px, 80%)
+}
