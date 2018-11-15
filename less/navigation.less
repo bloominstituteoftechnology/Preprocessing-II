@@ -2,12 +2,24 @@ header {
     margin-top: 3%;
     padding-bottom: 3%;
     .flexboxnav;
+    @media @mobile {
+        padding-bottom: 2%;
+    }
     nav {
         width: 40%;
+        @media @mobile {
+            width: 77%;
+            display: flex;
+            justify-content: space-between;
+        }
         a {
             text-decoration: none;
             margin-right: 9%;
             font-size: 1.6rem;
+            color: black;
+            @media @mobile {
+                margin-right: 0;
+            }
         }
     }
 }
