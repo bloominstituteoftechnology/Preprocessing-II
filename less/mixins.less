@@ -1,6 +1,23 @@
 // Mixins in here
-.s-between-bl {
+.s-between-bl() {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stackem() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-colors(@color, @background-color) {
+    color: @color;
+    background-color: @background-color;
 }
