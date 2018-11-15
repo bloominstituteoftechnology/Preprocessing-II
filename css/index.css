@@ -168,6 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+nav a {
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +189,12 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem dashed lightgray;
+  padding: 4% 0;
 }
 .home .content-section {
   margin: 30px 0;
