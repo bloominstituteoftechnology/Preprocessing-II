@@ -74,12 +74,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      margin: 0 11%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 100%;
+      }
+
       .btn {
         .button-style;
         width: 84%;
+
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
