@@ -172,11 +172,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 20px;
 }
 header a {
-  margin-right: 10px;
+  margin-right: 20px;
   color: #212529;
   text-decoration: none;
   font-size: 1.3rem;
@@ -237,4 +237,11 @@ header a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination button {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  padding: 0.5rem 2.4rem;
+  border-radius: 2rem;
 }
