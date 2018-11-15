@@ -168,6 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  align-content: flex-end;
+  font-size: 1.6rem;
+  margin-left: 33.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #212529;
+  margin-right: 2.7rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -198,6 +208,10 @@ img {
 }
 .home header {
   display: flex;
+  align-items: baseline;
+  padding: 2.2rem 0 2.7rem 0;
+  border-bottom: 2px dashed #C0C0C0;
+  color: #212529;
 }
 .home .inverse-content {
   padding-bottom: 30px;
