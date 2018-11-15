@@ -15,11 +15,19 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media @phone {
+        min-width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone {
+        width: 100%;
+        text-align: center;
+      }
 
       img {
         border-radius: 10px;
@@ -30,6 +38,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -46,6 +58,9 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+    }
     img {
       border-radius: 10px;
     }
