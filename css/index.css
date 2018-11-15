@@ -251,7 +251,7 @@ header h2 {
     margin: 0 3%;
   }
   header h2 {
-    margin: 0 3%;
+    margin: 2% 3%;
   }
   header p {
     margin: 0 3%;
@@ -281,8 +281,11 @@ header h2 {
     display: flex;
     flex-direction: column;
   }
+  .home .content-section .text-content {
+    width: 100%;
+  }
   .home .content-section .img-content {
-    max-width: 100%;
+    width: 100%;
     margin: 3%;
   }
 }
@@ -298,12 +301,26 @@ header h2 {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    order: 1;
+    padding: 0 2%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    margin: 2% 3%;
+    padding: 1% 3%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -315,7 +332,7 @@ header h2 {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
+.home .content-pick .btn {
   text-align: center;
   font-size: 1.8rem;
   padding: 15px 30px;
@@ -329,5 +346,10 @@ header h2 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 5% 3% 0 3%;
+    padding: 3% 8%;
+  }
+  .home .content-pick .destination {
+    width: 100%;
   }
 }
