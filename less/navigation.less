@@ -3,6 +3,18 @@ header {
     #mixins.layout(space-between, baseline);
     border-bottom: 2px dashed @navigation-border;
     padding:20px;
+    @media @phone{
+        flex-direction: column;
+        display:flex;
+        align-items:baseline;
+    }
+    h1 {
+    @media @phone{
+        display:flex;
+        padding: 0 30%;
+        margin-bottom:5px;
+    }
+    }
 }
 nav a {
     text-decoration: none;
