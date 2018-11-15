@@ -1,7 +1,7 @@
 .home {
 
   @media @mobile {
-    padding: 0 5%;
+    padding: 0 3.5%;
   }
   header {
     border-bottom: 2px dashed @navigation-border;
@@ -17,18 +17,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    @media @mobile {
-      // flex-direction: column;
-    }
-    
+ 
     .text-content {
       width: 48%;
       padding-right: 1%;
 
       @media @mobile {
         width: 100%;
-        padding-right: 0;
+        padding: 0;
       }
     }
 
@@ -38,11 +34,15 @@
 
       @media @mobile {
         width: 100%;
-        padding-right: 0;
+        padding: 0;
       }
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -89,7 +89,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 30px 8% 0;
+      padding: 30px 10% 0;
     }
 
     .destination {
