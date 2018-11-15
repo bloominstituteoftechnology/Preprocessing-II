@@ -199,6 +199,9 @@ nav a {
 nav a:visited {
   text-decoration: none;
 }
+nav a:hover {
+  animation: bounce 0.2s linear;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -366,12 +369,37 @@ nav a:visited {
   border-radius: 12px;
   font-size: 1.75rem;
   text-align: center;
+  transition: all 0.25s;
 }
 .home .content-pick .btn:hover {
   background-color: #117a8b;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
     width: 100%;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  65% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+  95% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
