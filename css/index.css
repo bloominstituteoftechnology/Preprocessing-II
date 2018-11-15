@@ -143,6 +143,15 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+@media (max-width: 500px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: bold;
+  }
+}
 h1 {
   font-size: 4rem;
 }
@@ -168,6 +177,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 100%;
+    width: 90%;
+  }
+}
 nav {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -179,8 +194,26 @@ nav .container {
   width: 100%;
   align-items: baseline;
 }
+@media (max-width: 500px) {
+  nav .container {
+    max-width: 100%;
+    width: 80%;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+    margin-top: 12px;
+  }
+}
 nav .container h1 {
   width: 55%;
+}
+@media (max-width: 500px) {
+  nav .container h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 14px;
+    font-size: 3rem;
+    font-weight: bold;
+  }
 }
 nav .container a {
   text-decoration: none;
@@ -226,13 +259,28 @@ header p {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-wrap: no wrap;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -240,6 +288,11 @@ header p {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -253,6 +306,11 @@ header p {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -262,9 +320,21 @@ header p {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: block;
+    margin: 0 auto;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .home .content-pick .destination .btn {
   width: 80%;
@@ -274,4 +344,12 @@ header p {
   border-radius: 12px;
   text-align: center;
   color: white;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+  }
 }
