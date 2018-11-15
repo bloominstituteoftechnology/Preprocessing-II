@@ -1,1 +1,22 @@
 // Mixins in here
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button(@width, @bg-color, @txt-color) {
+  width: @width;
+  background: @bg-color;
+  color: @txt-color;
+  border-radius: 10px;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  text-align: center;
+
+  &:hover {
+    background: @txt-color;
+    color: @bg-color;
+  }
+}
