@@ -1,1 +1,15 @@
 // Mixins in here
+.btn(@background) {
+  background-color: @background;
+  border-radius: 20%;
+  color: @white; 
+  font-size: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  text-align: center;
+  
+  &:active {
+    border-style: inset;
+    background-color: rgb(186, 186, 186);
+  }
+}
