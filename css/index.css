@@ -236,11 +236,24 @@ header nav a:hover {
   padding: 20px;
 }
 @media (max-width: 768px) {
+  .home {
+    margin: 1%;
+  }
   .home .cta .text-content {
     text-align: center;
   }
   .home .content-section .img-content {
     padding-bottom: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .content-pick .destination {
+    width: 100%;
   }
 }
 .home .cta {
@@ -297,11 +310,11 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.home .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .btn {
+.home .btn {
   padding: 1.5rem 3rem;
   border-radius: 1.5rem;
   font-size: 2rem;
@@ -311,7 +324,7 @@ header nav a:hover {
   transition-property: background-color;
   transition-duration: 0.5s;
 }
-.home .content-pick .btn:hover {
+.home .btn:hover {
   transition-property: background-color;
   transition-duration: 0.5s;
   background-color: #0c6e6e;

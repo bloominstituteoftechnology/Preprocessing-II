@@ -1,5 +1,8 @@
 .home {
   @media @tablet{
+    &{
+      margin: 1%;
+    }
     .cta{
       .text-content{
         text-align: center;
@@ -9,12 +12,22 @@
       .img-content{
         padding-bottom:3rem;
        
-      }
-
+      }    
     }
+
   }
   @media @mobile{
-   
+    &{
+      .content-pick{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+          .destination{
+            width: 100%;
+        }
+      }
+    }
+
   }
   
   .cta{
@@ -81,7 +94,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+  }
     .destination {
       width: 30%;
       margin-bottom: 30px;
@@ -95,6 +108,6 @@
       color: white;
       .transitionBackground(background-color, 0.5s, #0c6e6e);
     }
-  }
+  
 
 }// home
