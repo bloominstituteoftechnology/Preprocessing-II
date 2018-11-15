@@ -177,6 +177,7 @@ img {
 header {
   width: 100%;
   display: flex;
+  justify-content: center;
   justify-content: space-between;
   border-bottom: 2px dashed silver;
   padding: 2% 30%;
@@ -254,6 +255,7 @@ nav a {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    padding: 5%;
   }
 }
 .home .content-section .img-content img {
@@ -275,6 +277,12 @@ nav a {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding: 5%;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -310,7 +318,7 @@ nav a {
   }
 }
 .home .content-pick .destination .btn {
-  margin: 0 10%;
+  margin: 0 20% 0 10%;
   padding: 4% 0;
   font-size: 2rem;
   text-align: center;
