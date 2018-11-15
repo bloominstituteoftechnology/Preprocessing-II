@@ -166,6 +166,12 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -188,6 +194,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
 nav a {
   font-size: 1.6rem;
 }
@@ -203,11 +214,28 @@ header {
   align-items: center;
   padding: 20px 0;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-direction: column;
+    padding: 20px 0 10px 0;
+  }
+}
 .nav-container nav {
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-container nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .nav-container nav a {
   text-decoration: none;
