@@ -184,7 +184,6 @@ header div {
   margin: 0 auto;
   justify-content: space-between;
   align-items: baseline;
-  padding: 3% 0;
 }
 @media (max-width: 500px) {
   header div {
@@ -195,6 +194,7 @@ header div {
   }
 }
 header div a {
+  padding: 15px;
   display: flex;
   text-decoration: none;
   color: black;
@@ -208,6 +208,12 @@ header div nav a {
   text-decoration: none;
   font-size: 1.5rem;
   color: black;
+  transition: 0.2s;
+}
+header div nav a:hover {
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
 }
 @media (max-width: 500px) {
   header div nav {

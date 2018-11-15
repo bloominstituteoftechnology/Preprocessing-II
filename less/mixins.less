@@ -8,3 +8,12 @@
     border-radius: 10px;
     background-color: @bg-color;
 }
+
+.animation-mix(@time, @property, @bg-color, @text-color){
+    transition: @time;
+    &:hover{
+        transform: @property;
+        background-color: @bg-color;
+        color: @text-color;
+    }
+}
