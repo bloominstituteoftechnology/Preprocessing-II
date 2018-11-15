@@ -172,7 +172,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 25px 21% 0 21%;
+  margin: 37px 21% 0 21%;
   border-bottom: 2px dashed grey;
   padding-left: 8%;
   padding-right: 8%;
@@ -204,6 +204,11 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  border-bottom: 2px dashed grey;
+  padding-bottom: 9px;
+}
+.home header img {
+  margin-bottom: 22px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -250,4 +255,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background: #17A2B8;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  color: white;
+  padding: 12px 0px 12px 51px;
+  margin: 1px 41px 0px 2px;
 }
