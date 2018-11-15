@@ -1,1 +1,12 @@
 // Mixins in here
+
+.transitionBackground(@transitionType, @durationTime, @changeColorTo) {
+  transition-property: @transitionType;
+  transition-duration: @durationTime;
+  &:hover {
+    transition-property: @transitionType;
+    transition-duration: @durationTime;
+    background-color: @changeColorTo;
+  }
+}
+
