@@ -195,8 +195,8 @@ nav .nav-links {
 }
 @media (max-width: 500px) {
   nav .nav-links {
-    border: 1px solid red;
     width: 100%;
+    justify-content: space-between;
   }
 }
 nav .nav-links a {
@@ -215,6 +215,11 @@ nav .nav-links a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    padding: 0 5%;
+  }
+}
 .home header {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 10px;
@@ -228,13 +233,27 @@ nav .nav-links a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -242,6 +261,11 @@ nav .nav-links a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -255,6 +279,12 @@ nav .nav-links a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    margin: 0 0 30px;
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -264,9 +294,22 @@ nav .nav-links a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8% 0;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   font-size: 1.8rem;
@@ -278,4 +321,9 @@ nav .nav-links a {
   background-color: #17A2B8;
   color: #FFFFFF;
   border: 1px solid #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }
