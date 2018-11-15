@@ -168,6 +168,33 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-bottom: 2px dashed black;
+  padding-bottom: 2.3rem;
+}
+header .title {
+  margin: 2.3% 14% 0 0;
+  /* margin: 2.3% 32rem 0 0; */
+}
+header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  width: 29%;
+  margin-top: 21px;
+  margin-right: 3%;
+}
+header .nav a {
+  font-size: 1.55rem;
+  margin-right: 0.1%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;

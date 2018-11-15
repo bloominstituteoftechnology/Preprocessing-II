@@ -1,1 +1,24 @@
 // Navigation Styles here
+
+header {
+    .flexLayout(row, space-around, center);
+    border-bottom: 2px dashed black;
+    padding-bottom: 2.3rem;
+
+    .title {
+        margin: 2.3% 14% 0 0;
+        /* margin: 2.3% 32rem 0 0; */
+    }
+
+    .nav {
+        .flexLayout(row, space-between, baseline);
+        width: 29%;
+        margin-top:21px;
+        margin-right: 3%;
+
+        a {
+            font-size: 1.55rem;
+            margin-right: .1%;
+        }
+    }
+}
