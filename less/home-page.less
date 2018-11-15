@@ -7,7 +7,7 @@
   img {
     border-radius: 3px;
   }
-  @media (max-width: 500px) {
+  @media @mobile {
     width: 100%;
   }
 }
@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media (max-width: 500px) {
+    @media @mobile {
       flex-wrap: nowrap;
       flex-direction: column;
     }
@@ -27,7 +27,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media (max-width: 500px) {
+      @media @mobile {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -37,7 +37,7 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media (max-width: 500px) {
+      @media @mobile {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -52,7 +52,7 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-    @media (max-width: 500px) {
+    @media @mobile {
       flex-direction: column-reverse;
     }
 
@@ -71,7 +71,7 @@
     width: 75%;
     margin: 0 auto 30px;
 
-    @media (max-width: 500px){
+    @media @mobile{
       width: 100%;
     }
 
@@ -85,7 +85,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 500px){
+    @media @mobile{
       flex-direction: column;
       width: 100%;
     }
@@ -93,7 +93,7 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media (max-width: 500px){
+      @media @mobile{
         width: 75%;
         margin: auto;
         padding: 10px 0px;
@@ -102,12 +102,12 @@
       .btn {
         text-decoration: none;
         .buttons(100%, 40px, white, @button-bg, 1.8em, 3px);
-        @media (max-width: 500px){
+        @media @mobile{
           .buttons(100%, 40px, white, @button-bg, 1.8em, 3px);
         }
       .btn:hover {
         .anima1();
-        @media (max-width: 500px){
+        @media @mobile{
           .anima1();
         }
       }
