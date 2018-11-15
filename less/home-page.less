@@ -88,19 +88,9 @@ header {
 }// home
 
 div.btn {
-  color: rgb(236, 236, 236);
-  border-radius: 8px;
-  padding: 15px 20px 0px 20px;
-  margin: 20px 0 0 0;
-  width: 80%;
-  height: 45px;
-  background: @btn-bg;
-  text-align: center;
-  font-size: 1.4rem;
+  #button.button(@btn-bg);
 }
 
 div.btn:hover{
-color: rgb(236, 236, 236);
-background: @button-bg;
-transition: 0.2s;
+  #button.buttonhover(@button-bg);
 }
