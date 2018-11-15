@@ -67,7 +67,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 90%;
+    }
     img {
       border-radius: 10px;
     }
@@ -78,12 +80,24 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      padding: 28px 9% 0px;
+      margin: 0px 25px;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+        margin-bottom: 57px;
+      }
         .btn { 
-          .buttons(18%, 84%)
+          .buttons(20%, 84%);
+          @media @mobile {
+            .buttons(28%, 100%);
+          }
       }
         }
   }

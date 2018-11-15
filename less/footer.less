@@ -3,11 +3,17 @@
   border-top: 2px dashed silver;
   background: @sandy-beach;
   margin-top: 30px;
+    @media @mobile {
+      margin-top: 0;
+    }
   
   p {
     text-align: center;
     color: @font-color;
     font-size: 1.6rem;
     padding: 20px;
+    @media @mobile {
+      padding-top: 20px;
+    }
   }
 }

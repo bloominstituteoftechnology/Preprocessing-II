@@ -223,11 +223,21 @@ header nav a {
   background: #FFEBCD;
   margin-top: 30px;
 }
+@media (max-width: 500px) {
+  .footer {
+    margin-top: 0;
+  }
+}
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .footer p {
+    padding-top: 20px;
+  }
 }
 .home .CTA {
   margin-bottom: 10px;
@@ -301,6 +311,11 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 90%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -310,13 +325,26 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    padding: 28px 9% 0px;
+    margin: 0px 25px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    margin-bottom: 57px;
+  }
+}
 .home .content-pick .destination .btn {
   text-decoration: none;
-  height: 18%;
+  height: 20%;
   width: 84%;
   color: white;
   background-color: #17A2B8;
@@ -325,4 +353,18 @@ header nav a {
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    text-decoration: none;
+    height: 28%;
+    width: 100%;
+    color: white;
+    background-color: #17A2B8;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+  }
 }
