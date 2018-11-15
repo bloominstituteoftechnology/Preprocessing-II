@@ -26,7 +26,7 @@
         <a href="#">Home</a>
         <a href="#">About Us</a>
         <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#content-signup">Contact</a>
       </nav>
       <div class="header-image">
         <img src="img/fun-bus.jpg" alt="Fun bus">
@@ -73,18 +73,41 @@
         <div class="destination">
           <h4>Fun In The Sun</h4>
           <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-          <div class="btn">Sign Me Up!</div>
+          <a href="#content-signup"><div class="btn">Sign Me Up!</div></a>
         </div>
         <div class="destination">
           <h4>Mountain Excursion</h4>
           <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-          <div class="btn">Sign Me Up!</div>
+          <a href="#content-signup"><div class="btn">Sign Me Up!</div></a>
         </div>
         <div class="destination">
           <h4>Island Getaway</h4>
           <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-          <div class="btn">Sign Me Up!</div>
+          <a href="#content-signup"><div class="btn">Sign Me Up!</div></a>
         </div>
+      </section>
+
+      <section class="content-signup" id="content-signup">
+        <h2>Select Package!</h2>
+        <form autocomplete="off">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Full Name" name="name" required>
+          <label for="email">Email</label>
+          <input type="Email" placeholder="Email" name="email" required>
+          <label for="phone">Phone</label>
+          <input type="text" placeholder="Phone" name="phone" required>
+          <label for="package">Package</label>
+          <select name="package" required>
+            <option value="Fun In The Sun">Fun In The Sun</option>
+            <option value="Mountain Excursion">Mountain Excursion</option>
+            <option value="Island Getaway">Island Getaway</option>
+          </select>
+          <label for="instructions">Special Instructions</label>
+          <textarea name="instructions" 
+                    rows="3" 
+                    placeholder="Enter special instructions..."></textarea>
+          <input type="submit" value="Submit">
+        </form>
       </section>
     </div>
   </div><!-- container -->

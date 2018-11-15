@@ -158,12 +158,84 @@
         margin: 0 auto;
         padding: 20px 0;
       }
+
+      a {
+        text-decoration: none;
+        &:visited {
+          text-decoration: none;
+        }
+      }
     }
 
     .btn {
       .button(white, @button-bg, 12px);
       @media @tablet {
         margin: 0 auto;
+      }
+    }
+  }
+
+  .content-signup {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-top: 2px dashed @silver;
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+
+      label {
+        font-size: 2rem;
+        width: 90%;
+        margin: 0 auto;
+        padding: 12px;
+      }
+
+      input, select, textarea {
+        border-radius: 4px;
+        border: 1px solid @silver;
+        transition: all .5s;
+        &:focus {
+          outline: none;
+          border: 1px solid darken(@silver, 25%);
+          background-color: darken(white, 10%);
+        }
+      }
+
+      input {
+        font-size: 1.8rem;
+        width: 85%;
+        margin: 0 auto;
+        padding: 12px;
+        &[type="submit"] {
+          width: 200px;
+          margin: 12px auto;
+          transition: all .3s;
+          &:hover {
+            background-color: darken(white, 30%);
+            border: 1px solid @shark;
+            color: white;
+            cursor: pointer;
+            transform: translateY(-2px);
+            box-shadow: 0px 1px 3px black;
+          }
+        }
+      }
+
+      select {
+        font-size: 1.8rem;
+        width: 85%;
+        margin: 0 auto;
+        padding: 12px;
+      }
+      
+      textarea {
+        font-size: 1.8rem;
+        width: 85%;
+        margin: 0 auto;
+        padding: 12px;
       }
     }
   }

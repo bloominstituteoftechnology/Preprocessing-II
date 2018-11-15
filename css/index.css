@@ -398,6 +398,12 @@ nav a:hover {
     padding: 20px 0;
   }
 }
+.home .content-pick .destination a {
+  text-decoration: none;
+}
+.home .content-pick .destination a:visited {
+  text-decoration: none;
+}
 .home .content-pick .btn {
   width: 84%;
   padding: 14px 20px;
@@ -421,6 +427,68 @@ nav a:hover {
   .home .content-pick .btn {
     margin: 0 auto;
   }
+}
+.home .content-signup {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+}
+.home .content-signup form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.home .content-signup form label {
+  font-size: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px;
+}
+.home .content-signup form input,
+.home .content-signup form select,
+.home .content-signup form textarea {
+  border-radius: 4px;
+  border: 1px solid #C0C0C0;
+  transition: all 0.5s;
+}
+.home .content-signup form input:focus,
+.home .content-signup form select:focus,
+.home .content-signup form textarea:focus {
+  outline: none;
+  border: 1px solid #808080;
+  background-color: #e6e6e6;
+}
+.home .content-signup form input {
+  font-size: 1.8rem;
+  width: 85%;
+  margin: 0 auto;
+  padding: 12px;
+}
+.home .content-signup form input[type="submit"] {
+  width: 200px;
+  margin: 12px auto;
+  transition: all 0.3s;
+}
+.home .content-signup form input[type="submit"]:hover {
+  background-color: #b3b3b3;
+  border: 1px solid #212529;
+  color: white;
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0px 1px 3px black;
+}
+.home .content-signup form select {
+  font-size: 1.8rem;
+  width: 85%;
+  margin: 0 auto;
+  padding: 12px;
+}
+.home .content-signup form textarea {
+  font-size: 1.8rem;
+  width: 85%;
+  margin: 0 auto;
+  padding: 12px;
 }
 @keyframes bounce {
   0% {
