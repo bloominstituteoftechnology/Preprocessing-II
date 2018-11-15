@@ -17,6 +17,10 @@ header {
         }
     }
 
+    @media @tablet {
+        flex-direction: column;
+    }
+
     nav {
         font-size: 1.6rem;
         display: flex;
@@ -28,9 +32,17 @@ header {
             padding: 15px 0 0;
         }
 
+        @media @tablet {
+            width: 100%;
+            padding: 15px 0 0;
+        }
+
         a {
+
             color: @font-color;
             text-decoration: none;
+
+
         }
     }
 }
