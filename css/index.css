@@ -180,6 +180,12 @@ header div {
   align-items: baseline;
 }
 @media (max-width: 500px) {
+  header div {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
   header div h1 {
     margin: 0px 36% 15px 36%;
     font-size: 3rem;
@@ -187,6 +193,14 @@ header div {
 }
 header nav {
   width: 50%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header nav a {
   text-decoration: none;
