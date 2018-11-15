@@ -174,7 +174,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin: 30px 0;
+  margin-top: 30px;
   padding: 0px 12%;
   padding-bottom: 2%;
   border-bottom: 2px dashed #C0C0C0;
@@ -203,10 +203,18 @@ img {
   padding: 20px;
 }
 header {
-  border-bottom: 2 px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
+  margin: 30px 0;
 }
 header img {
   max-width: 100%;
+}
+header h2 {
+  margin-top: 2%;
+  padding-right: 1%;
+}
+header p {
+  margin-bottom: 2%;
 }
 .home .content-section {
   margin: 30px 0;
