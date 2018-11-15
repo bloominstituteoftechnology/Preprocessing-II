@@ -168,10 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  margin: 40px 0;
+}
 .nav-head {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.nav-head a {
+  text-decoration: none;
 }
 .footer {
   width: 100%;
