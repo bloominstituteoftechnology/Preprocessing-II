@@ -1,18 +1,23 @@
 // Navigation Styles here
-nav {
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px dashed @silver;
     padding: 20px 0;
-
+    @media @mobile {
+        flex-direction: column;
+    }
     h1 {
-        padding-right: 40%;
+        @media @mobile {
+            margin-bottom: 10px;
+        }
     }
     a {
         text-decoration: none;
         color: @font-color;
         font-size: 1.6rem;
         margin-right: 30px;
+        
     }
 }
