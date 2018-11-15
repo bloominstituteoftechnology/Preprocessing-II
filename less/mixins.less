@@ -1,1 +1,9 @@
-// Mixins in here
+#mixins() {
+    .btn-style(@btn-color: white, @btn-background: teal, @btn-padding: 10px 50px, @btn-radius: 16px, @btn-font: 1.8rem) {
+        color: @btn-color;
+        background: @btn-background;
+        padding: @btn-padding;
+        border-radius: @btn-radius;
+        font-size: @btn-font;
+    }
+}
