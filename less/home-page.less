@@ -1,9 +1,17 @@
 .home {
+  @media @tablet {
+    margin: 0 4%;
+  }
+
   @media @mobile {
     margin: 0 5%;
   }
 
   .header-image {
+    @media @tablet {
+      width: 92%;
+    }
+
     @media @mobile {
       width: 90%;
     }
@@ -18,6 +26,10 @@
       padding-bottom: 20px;
       border-bottom: 2px dashed @navigation-border;
 
+      @media @tablet {
+        width: 92%;
+      }
+
       @media @mobile {
         width: 90%;
       }
@@ -29,6 +41,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @tablet {
+      width: 92%;
+    }
 
     @media @mobile {
       width: 90%;
@@ -83,10 +99,20 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @tablet {
+      width: 92%;
+    }
+
     @media @mobile {
       width: 90%;
       margin: 0;
       padding-bottom: 30px;
+    }
+
+    p {
+      @media @tablet {
+        width: 92%;
+      }
     }
 
     img {
@@ -99,6 +125,10 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media @tablet {
+      width: 92%;
+    }
 
     @media @mobile {
       .center(column, center, center, nowrap);

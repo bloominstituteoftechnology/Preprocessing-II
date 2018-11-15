@@ -173,7 +173,7 @@ img {
   border-bottom: 2px dashed #c0c0c0;
   width: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .nav {
     padding: 10px 0 0;
   }
@@ -193,7 +193,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .nav div {
     display: flex;
     flex-direction: row;
@@ -230,7 +230,7 @@ img {
   align-items: flex-start;
   flex-wrap: nowrap;
 }
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .nav div div {
     display: flex;
     flex-direction: row;
@@ -259,7 +259,7 @@ img {
   color: #17a2b8;
   text-decoration: underline;
 }
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .nav div div a {
     padding-top: 20px;
   }
@@ -271,7 +271,7 @@ img {
     font-size: 1.65em;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .nav div div a:last-child {
     margin-right: 0;
   }
@@ -287,9 +287,19 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 840px) {
+  .home {
+    margin: 0 4%;
+  }
+}
 @media (max-width: 500px) {
   .home {
     margin: 0 5%;
+  }
+}
+@media (max-width: 840px) {
+  .home .header-image {
+    width: 92%;
   }
 }
 @media (max-width: 500px) {
@@ -304,6 +314,11 @@ img {
   padding-bottom: 20px;
   border-bottom: 2px dashed #c0c0c0;
 }
+@media (max-width: 840px) {
+  .home .header-section p {
+    width: 92%;
+  }
+}
 @media (max-width: 500px) {
   .home .header-section p {
     width: 90%;
@@ -314,6 +329,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 840px) {
+  .home .content-section {
+    width: 92%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section {
@@ -373,11 +393,21 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 840px) {
+  .home .content-destination {
+    width: 92%;
+  }
+}
 @media (max-width: 500px) {
   .home .content-destination {
     width: 90%;
     margin: 0;
     padding-bottom: 30px;
+  }
+}
+@media (max-width: 840px) {
+  .home .content-destination p {
+    width: 92%;
   }
 }
 .home .content-destination img {
@@ -388,6 +418,11 @@ img {
   border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 840px) {
+  .home .content-pick {
+    width: 92%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick {
