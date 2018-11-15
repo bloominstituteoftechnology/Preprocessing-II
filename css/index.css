@@ -183,7 +183,7 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -195,7 +195,6 @@ img {
   max-width: 880px;
   width: 80%;
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-content: baseline;
   margin: 20px auto 22px auto;
@@ -203,6 +202,27 @@ img {
 .head h1 {
   font-size: 3.2rem;
   margin-top: 5px;
+}
+@media (max-width: 500px) {
+  .head {
+    flex-direction: column;
+    align-items: center;
+  }
+  .head h1 {
+    font-size: 2.5rem;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .links {
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .links a {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
 }
 .top {
   max-width: 880px;
@@ -217,6 +237,11 @@ img {
   line-height: 1.5;
   font-size: 1.3rem;
   padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .top {
+    max-width: 500px;
+  }
 }
 .fulldash {
   border-bottom: 2px dashed silver;
@@ -248,9 +273,32 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    max-width: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+    margin-left: 5%;
+    margin-right: 0;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .home .content-section p {
+    padding-bottom: 5px;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -278,7 +326,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -304,5 +352,10 @@ img {
   height: 45px;
   width: 200px;
   border-radius: 12px;
-  background-color: #17A2B8;
+  background-color: #17a2b8;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    flex-direction: column;
+  }
 }
