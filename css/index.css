@@ -168,7 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .container {
     width: 92%;
   }
@@ -181,7 +181,7 @@ header {
   justify-content: space-between;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   header {
     flex-direction: column;
     justify-content: space-evenly;
@@ -197,7 +197,7 @@ header nav {
   justify-content: space-evenly;
   width: 44%;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   header nav {
     width: 100%;
     padding: 15px 0 0;
@@ -235,7 +235,7 @@ header nav a {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
   }
@@ -244,7 +244,7 @@ header nav a {
   width: 48%;
   padding-left: 1%;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .home .content-section .img-content {
     max-width: 500px;
     width: 100vw;
@@ -274,7 +274,7 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .home .content-destination {
     width: 100%;
   }
@@ -288,7 +288,7 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
     padding: 15px 0;
@@ -299,7 +299,7 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .home .content-pick .destination {
     width: 88%;
     margin: 7px 50px 23px;
@@ -314,7 +314,7 @@ header nav a {
   text-align: center;
   color: #FFFFFF;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 93%;
   }

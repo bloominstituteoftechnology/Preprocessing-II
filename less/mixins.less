@@ -1,11 +1,14 @@
 // Mixins in here
 
-.button-styles() {
+.button-styles(@width @font-size) {
     padding: 12px;
     background: @button-bg;
     border-radius: 10px;
-    width: 83%;
-    font-size: 2rem;
+    width: @width;
+    font-size: @font-size;
     text-align: center;
     color: @white;
   }
+
+//   width: 83%;
+//   font-size: 2rem;
