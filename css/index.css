@@ -5,6 +5,18 @@
 .link-style:hover {
   text-decoration: underline;
 }
+.button-style {
+  background-color: #17A2B8;
+  color: white;
+  padding: 13px;
+  width: 83%;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 15px;
+}
+.button-style:hover {
+  background-color: #1fc8e3;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,6 +154,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  color: #212529;
 }
 h1,
 h2,
@@ -264,4 +277,16 @@ header {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: white;
+  padding: 13px;
+  width: 83%;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 15px;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #1fc8e3;
 }
