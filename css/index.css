@@ -228,3 +228,6 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  color: blue;
+}
