@@ -196,15 +196,6 @@ header {
 header h1 {
   padding-left: 10%;
   width: 40%;
-  animation: flash 1s linear infinite alternate;
-}
-@keyframes flash {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @media (max-width: 500px) {
   header h1 {
@@ -256,6 +247,17 @@ header nav a {
   padding-bottom: 10px;
   width: 90%;
   margin: 0 auto;
+}
+.home .top-content img {
+  animation: flash 1s linear infinite alternate;
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .home .top-content h1 {
   padding: 10px 0;
@@ -368,4 +370,33 @@ header nav a {
     border-radius: 8px;
     width: 100%;
   }
+}
+.form {
+  width: 50%;
+  margin: 40px auto;
+  font-size: 2rem;
+}
+input {
+  width: 100%;
+  margin: 5px 0 30px 0;
+  padding: 2px;
+}
+.spec {
+  padding: 0 0 50px 0;
+}
+input[type=submit] {
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 5px;
+  padding: 14px 20px;
+  background: teal;
+  color: white;
+}
+input[type=submit]:hover {
+  background: #3EB1B7;
+}
+.select {
+  font-size: 2rem;
+  width: 50%;
+  margin: 40px auto;
 }
