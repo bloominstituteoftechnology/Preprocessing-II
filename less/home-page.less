@@ -5,6 +5,10 @@
     width:91%;
   }
   .header {
+    @media @phone {
+      margin-left: .3rem;
+    }
+
     .flexLayout(column);
     border-bottom: 2px dashed @navigation-border;
 
@@ -34,6 +38,7 @@
     @media @phone {
       margin-top: 2.7rem;
       flex-direction: column;
+      margin-left:.3rem;
     }
 
     
@@ -83,7 +88,7 @@
 
     @media @phone {
       flex-direction: column-reverse;
-      padding-bottom: 23px;
+      padding-bottom: 27px;
     }
 
     .text-content {
@@ -104,6 +109,7 @@
     @media @phone {
       width:100%;
       height:auto;
+      margin-left: .3rem;
     }
 
     img {
@@ -121,6 +127,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-right: .2rem;
     }
 
     .destination {
