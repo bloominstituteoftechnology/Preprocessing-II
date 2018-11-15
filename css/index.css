@@ -374,3 +374,64 @@ div.btn:hover {
   background: #17A2B8;
   transition: 0.2s;
 }
+.packages {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .packages {
+    align-items: center;
+    width: 90%;
+    margin: 30px 5% 0 5%;
+  }
+}
+.packages .item {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.packages .item .text {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .packages .item .text {
+    width: 100%;
+  }
+}
+.packages .item .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .packages .item .img-content {
+    width: 100%;
+  }
+}
+.packages .item .img-content img {
+  border-radius: 10px;
+}
+.top-content-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+}
+#thank-you {
+  background-color: rgba(118, 238, 102, 0.137);
+  max-width: 800px;
+  height: 50px;
+  text-align: center;
+  padding: 16px;
+}
+.textbox {
+  height: 200px;
+  width: 500px;
+}
+form {
+  margin: 0 0 30px 0;
+}
