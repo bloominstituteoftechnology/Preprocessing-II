@@ -1,21 +1,20 @@
 .home {
     // this is good 
-    .top-main {
-      border-bottom: dashed black 1px;
-      img {
-        margin-bottom: 20px;
-      }
-      @media @mobile {
-        margin-left: 5%;
-        margin-right: 5%;
-      }
-    }
-    //
   .top-main {
     border-bottom: dashed black 1px;
     img {
       margin-bottom: 20px;
     }
+    @media @mobile {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+  // this is new 
+  @media @mobile {
+    margin-left: 5%;
+    margin-right: 5%;
+    .layout(column, center, center);
   }
   .content-section {
     margin: 30px 0;
@@ -26,11 +25,24 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-wrap: wrap;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
 
       img {
         border-radius: 10px;
@@ -41,6 +53,14 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      .layout(column-reverse, center, center);
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 0%;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -60,8 +80,19 @@
     img {
       border-radius: 10px;
     }
+    @media @mobile {
+      .layout(column, center, center);
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      h2 {
+        align-self: flex-start;
+      }
+    }
+
   }
 
+  // this is area that needs work 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
@@ -77,7 +108,7 @@
       }
     }
   }
-
+//
 
 }// home
 
