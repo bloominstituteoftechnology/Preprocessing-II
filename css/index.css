@@ -169,25 +169,32 @@ img {
   margin: 0 auto;
 }
 header {
+  max-width: 930px;
+  margin: 0 auto;
+  border-bottom: 2px dashed lightgrey;
+}
+header div {
   display: flex;
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: baseline;
   padding: 3% 0;
-  border-bottom: 1px dashed grey;
 }
-header h1 {
+header div a {
   display: flex;
+  text-decoration: none;
+  color: black;
 }
-header nav {
+header div nav {
   display: flex;
   width: 40%;
   justify-content: space-evenly;
 }
-header nav a {
+header div nav a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: grey;
+  color: black;
 }
 .footer {
   width: 100%;
@@ -199,6 +206,16 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .main-content h2 {
+  margin-top: 2%;
+}
+.home .main-content #fun-buss-img {
+  margin-bottom: 2%;
+}
+.home .main-content p {
+  padding-bottom: 2%;
+  border-bottom: 2px dashed lightgrey;
 }
 .home .content-section {
   margin: 30px 0;
@@ -245,4 +262,14 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .btn {
+  text-align: center;
+  width: 80%;
+  justify-self: center;
+  font-size: 1.6rem;
+  color: white;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #008080;
 }
