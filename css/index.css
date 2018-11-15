@@ -226,7 +226,12 @@ nav .container .nav-links a {
 }
 nav .container .nav-links a:hover {
   text-decoration: underline;
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 .footer {
@@ -254,6 +259,9 @@ nav .container .nav-links a:hover {
 }
 .home .content-section {
   margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -320,6 +328,9 @@ nav .container .nav-links a:hover {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   border-bottom: 2px dashed #C0C0C0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
 }
@@ -352,7 +363,12 @@ nav .container .nav-links a:hover {
   border: 1px solid #C0C0C0;
 }
 .home .content-pick .destination .btn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 @media (max-width: 500px) {
@@ -385,6 +401,9 @@ nav .container .nav-links a:hover {
   font-weight: bold;
 }
 .home .contact form .customer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -412,6 +431,11 @@ nav .container .nav-links a:hover {
   }
 }
 .home .contact form input[type=submit]:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }

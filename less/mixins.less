@@ -13,6 +13,11 @@
 }
 
 .anim-hover(@transform, @transition) {
+    -webkit-transform: @transform;
+    -ms-transform: @transform;
     transform: @transform;
+    -moz-transition: @transition;
+    -webkit-transition: @transition;
+    -o-transition: @transition;
     transition: @transition;
 }
