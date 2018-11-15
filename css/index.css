@@ -170,12 +170,12 @@ img {
 }
 @media (max-width: 500px) {
   .container {
-    max-width: 500px;
+    max-width: 100%;
   }
 }
 .headpage {
   display: flex;
-  border-bottom: 2px dashed lightgrey;
+  border-bottom: 2px dashed #c0c0c0;
   height: 80px;
 }
 .headpage .topnav {
@@ -195,11 +195,11 @@ img {
 }
 .headpage .topnav .tophead a {
   text-decoration: none;
-  color: black;
+  color: #212529;
 }
 .headpage .topnav .toplinks a {
   text-decoration: none;
-  color: black;
+  color: #212529;
   font-size: 1.6em;
   padding: 15px;
 }
@@ -326,10 +326,11 @@ img {
   }
 }
 .home .content-pick .destination .btn {
+  text-decoration: none;
   width: 100%;
   height: 40px;
   color: #ffffff;
-  background-color: #349e95;
+  background-color: #17a2b8;
   font-size: 1.8em;
   border-radius: 3px;
   display: flex;
@@ -341,11 +342,19 @@ img {
     width: 100%;
     height: 40px;
     color: #ffffff;
-    background-color: #49c4d4;
+    background-color: #17a2b8;
     font-size: 1.8em;
     border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+.home .content-pick .destination .btn .btn:hover {
+  animation: animation1 2s ease 0s infinite normal;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn .btn:hover {
+    animation: animation1 2s ease 0s infinite normal;
   }
 }

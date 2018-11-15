@@ -100,11 +100,20 @@
       }
 
       .btn {
-        .buttons(100%, 40px, white, rgb(52, 158, 149), 1.8em, 3px);
+        text-decoration: none;
+        .buttons(100%, 40px, white, @button-bg, 1.8em, 3px);
         @media (max-width: 500px){
-          .buttons(100%, 40px, white, rgb(73, 196, 212), 1.8em, 3px);
+          .buttons(100%, 40px, white, @button-bg, 1.8em, 3px);
         }
+      .btn:hover {
+        .anima1();
+        @media (max-width: 500px){
+          .anima1();
+        }
+      }
       }
     }
   }
 }// home
+
+
