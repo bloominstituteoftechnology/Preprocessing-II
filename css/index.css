@@ -209,9 +209,15 @@ nav a {
 .home header {
   display: flex;
   align-items: baseline;
-  padding: 2.2rem 0 2.7rem 0;
+  padding: 2.2rem 0rem 2.7rem 0rem;
   border-bottom: 2px dashed #C0C0C0;
-  color: #212529;
+}
+.home .funbus {
+  margin-bottom: 2rem;
+}
+.home .top-content {
+  padding-bottom: 0.8rem;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content {
   padding-bottom: 30px;
