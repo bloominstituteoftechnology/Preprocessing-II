@@ -168,6 +168,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.headpage {
+  display: flex;
+  border-bottom: 1px dotted grey;
+  height: 80px;
+}
+.headpage .topnav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 800px;
+  margin: auto;
+  justify-content: space-between;
+}
+.headpage .topnav .tophead a {
+  text-decoration: none;
+  color: black;
+}
+.headpage .topnav .toplinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8em;
+  padding: 20px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
