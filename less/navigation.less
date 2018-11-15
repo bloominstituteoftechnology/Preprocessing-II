@@ -5,7 +5,12 @@
     margin: 0 auto;
     .layout(space-between, center);
 
-    @media @mobile {
+    @media @tablet {
+        max-width: 90%;
+        margin: 2% auto;
+    }
+
+    @media @mid {
         flex-direction: column;
         .layout(space-between, center);
 
@@ -14,15 +19,30 @@
         }
     }
 
+    // @media @mobile {
+    //     flex-direction: column;
+    //     .layout(space-between, center);
+
+    //     h1 {
+    //         margin-bottom: 1%;
+    //     }
+    // }
+
     nav {
         width: 40%;
         .layout(space-between, center);
 
-        @media @mobile {
+        @media @mid {
             .layout(space-around, center);
             width: 100%;
             margin-top: 2%;
         }
+
+        // @media @mobile {
+        //     .layout(space-around, center);
+        //     width: 100%;
+        //     margin-top: 2%;
+        // }
 
         
     }
