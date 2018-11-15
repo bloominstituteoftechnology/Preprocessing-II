@@ -1,3 +1,8 @@
+.s-between-bl {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +172,24 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 25px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navigation nav {
+  width: 40%;
+  border: 1px solid red;
+  display: flex;
+  margin-right: 15px;
+  justify-content: space-around;
+}
+.navigation nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 .footer {
   width: 100%;
