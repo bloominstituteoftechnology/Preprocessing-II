@@ -225,3 +225,15 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  text-decoration: none;
+  height: 18%;
+  width: 84%;
+  color: white;
+  background-color: #17A2B8;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
