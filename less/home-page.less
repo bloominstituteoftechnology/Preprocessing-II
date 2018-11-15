@@ -103,6 +103,9 @@
       .btn {
         .cta-btn(@button-bg, @white, @navigation-border);
       
+        &:hover {
+          .anim-hover(scale(1.1,1.1), 0.3s);
+        }
         @media @mobile {
           width:100%;
         }

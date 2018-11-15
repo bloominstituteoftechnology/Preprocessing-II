@@ -211,6 +211,11 @@ nav .container .nav-links a {
   color: #212529;
   text-decoration: none;
 }
+nav .container .nav-links a:hover {
+  text-decoration: underline;
+  transform: scale(1.1, 1.1);
+  transition: 0.2s;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -331,6 +336,10 @@ nav .container .nav-links a {
   background-color: #17A2B8;
   color: #FFFFFF;
   border: 1px solid #C0C0C0;
+}
+.home .content-pick .destination .btn:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {

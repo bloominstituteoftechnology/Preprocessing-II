@@ -41,6 +41,11 @@
                     font-size: 1.6rem;
                     color: @font-color;
                     text-decoration: none;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        .anim-hover(scale(1.1,1.1), 0.2s)
+                    }
                 }
             }
         }
