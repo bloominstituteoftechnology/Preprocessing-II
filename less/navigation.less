@@ -9,7 +9,7 @@ header {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px 0;
-    @media (max-width: 500px) {
+    @media @phone {
       flex-direction: column;
       align-items: center;
       padding-bottom: 10px;
@@ -25,7 +25,7 @@ nav {
   width: 45%;
   display: flex;
   justify-content: space-around;
-  @media (max-width: 500px) {
+  @media @phone {
     width: 100%;
   }
   a {
@@ -37,7 +37,7 @@ nav {
 }
 .main-img {
   padding-bottom: 20px;
-  @media (max-width: 500px) {
+  @media @phone {
     padding: 0 15px;
   }
 }

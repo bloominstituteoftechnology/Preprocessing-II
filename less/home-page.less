@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media (max-width: 500px) {
+    @media @phone {
       flex-direction: column;
       padding: 0 20px;
     }
@@ -12,7 +12,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media (max-width: 500px) {
+      @media @phone {
         width: 100%;
       }
     }
@@ -20,7 +20,7 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media (max-width: 500px) {
+      @media @phone {
         width: 100%;
         margin: 0 auto;
         order: 1;
@@ -50,7 +50,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-    @media (max-width: 500px) {
+    @media @phone {
       width: 100%;
       padding: 0 20px;
     }
@@ -65,7 +65,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 500px) {
+    @media @phone {
       flex-direction: column;
       align-items: center;
     }
@@ -73,7 +73,7 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media (max-width: 500px) {
+      @media @phone {
         width: 90%;
         padding: 0 30px;
       }
@@ -92,12 +92,12 @@
   .top-section {
     padding-bottom: 10px;
     h2 {
-      @media (max-width: 500px) {
+      @media @phone {
         padding: 15px 15px;
       }
     }
     p {
-      @media (max-width: 500px) {
+      @media @phone {
         padding: 0 15px;
         padding-bottom: 10px;
       }
