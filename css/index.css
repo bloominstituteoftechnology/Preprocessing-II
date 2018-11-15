@@ -263,12 +263,14 @@ header div nav a {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .btn {
-  text-align: center;
-  width: 80%;
-  justify-self: center;
-  font-size: 1.6rem;
+.home a {
+  text-decoration: none;
   color: white;
+}
+.home a .btn {
+  width: 80%;
+  text-align: center;
+  font-size: 1.6rem;
   padding: 10px 0;
   border-radius: 10px;
   background-color: #008080;
