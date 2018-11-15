@@ -7,12 +7,28 @@
         padding: 25px 10%;
         border-bottom: 2px dashed @navigation-border;
 
+        @media @mobile {
+            flex-direction: column;
+            padding: 15px 10%;
+        }
+
+        h1 {
+            @media @mobile {
+                font-size: 3rem;
+                margin-bottom: 10px;
+            }
+        }
+
         .nav-links {
             max-width: 500px;
             width: 40%;
             display: flex;
             justify-content: space-evenly;
 
+            @media @mobile {
+                border: 1px solid red;
+                width: 100%;
+            }
             a {
                 font-size: 1.6rem;
                 color: @font-color;

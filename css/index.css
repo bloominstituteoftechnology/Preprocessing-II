@@ -175,11 +175,29 @@ nav {
   padding: 25px 10%;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    padding: 15px 10%;
+  }
+}
+@media (max-width: 500px) {
+  nav h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+}
 nav .nav-links {
   max-width: 500px;
   width: 40%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  nav .nav-links {
+    border: 1px solid red;
+    width: 100%;
+  }
 }
 nav .nav-links a {
   font-size: 1.6rem;
