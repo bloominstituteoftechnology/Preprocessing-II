@@ -248,3 +248,11 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home button {
+  font-size: 1.8rem;
+  width: 20rem;
+  height: 4.5rem;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 12px;
+}
