@@ -170,7 +170,7 @@ img {
 }
 .headpage {
   display: flex;
-  border-bottom: 1px dotted grey;
+  border-bottom: 2px dashed lightgrey;
   height: 80px;
 }
 .headpage .topnav {
@@ -202,6 +202,16 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.homeheader {
+  max-width: 800px;
+  margin: auto;
+}
+.homeheader h2 {
+  margin: 10px 0px;
+}
+.homeheader img {
+  border-radius: 3px;
 }
 .home .content-section {
   margin: 30px 0;
