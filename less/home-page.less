@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
    
-   
     
     .text-content {
       width: 48%;
@@ -20,8 +19,10 @@
       img {
         border-radius: 10px;
       }
+
+      }
     }
-  }
+  
 
   .inverse-content {
     padding-bottom: 30px;
@@ -59,3 +60,28 @@
     }
   }
 }// home
+
+
+.logo {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  color: @eastern-blue;
+  background-color: @white;
+  font-size: 2rem; 
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 0 auto;
+
+  &:hover {
+    color: @white;
+    background-color: @eastern-blue;
+  }
+}
