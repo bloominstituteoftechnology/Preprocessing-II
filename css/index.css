@@ -169,7 +169,6 @@ img {
   margin: 0 auto;
 }
 nav {
-  border: solid green 2px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -239,13 +238,12 @@ nav a {
 header {
   width: 63%;
   margin-left: 18.5%;
-  border: solid red 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-bottom: dashed black 1px;
 }
 header h1 {
-  border: solid blue 2px;
   width: 26%;
 }
