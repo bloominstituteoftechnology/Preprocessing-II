@@ -1,3 +1,13 @@
+@keyframes kenburns-bottom {
+  0% {
+    transform: scale(0.75) translateY(0);
+    transform-origin: 50% 84%;
+  }
+  100% {
+    transform: scale(1) translateY(15px);
+    transform-origin: bottom;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -248,6 +258,7 @@ header img {
   max-width: 100%;
   height: auto;
   margin: 0 0 20px 0;
+  animation: kenburns-bottom 5s ease-out both;
 }
 header p {
   padding-bottom: 20px;
@@ -345,6 +356,12 @@ header p {
   text-align: center;
   color: white;
   font-weight: bold;
+}
+.home .content-pick .destination .btn:hover {
+  cursor: pointer;
+  background-color: #FFEBCD;
+  color: #17A2B8;
+  border: 2px solid #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {

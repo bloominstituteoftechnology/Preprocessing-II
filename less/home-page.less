@@ -12,6 +12,7 @@ header {
     max-width: 100%;
     height: auto;
     margin: 0 0 20px 0;
+    .kenburns(5s ease-out both);
   }
 
   p {
@@ -53,6 +54,7 @@ header {
 
       img {
         border-radius: 10px;
+        .fade-in(3s both);
       }
     }
   }
@@ -86,6 +88,7 @@ header {
 
     img {
       border-radius: 10px;
+      .fade-in(3s both);
     }
   }
 
@@ -110,8 +113,15 @@ header {
       }
 
       .btn {
-       .btn(80%, @button-bg, 10px 26px, 1.7rem, 12px);
+        .btn(80%, @button-bg, 10px 26px, 1.7rem, 12px);
         
+        &:hover {
+          cursor: pointer;
+          background-color:@sandy-beach;
+          color: @button-bg;
+          border: 2px solid @button-bg;
+        }
+
        @media @phone {
         margin: 0 auto;
         margin-bottom: 30px;
@@ -122,3 +132,4 @@ header {
     }
   }
 }// home
+

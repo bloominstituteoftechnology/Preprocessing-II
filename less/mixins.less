@@ -11,4 +11,21 @@
   font-weight: bold;
 }
 
+.kenburns(@time; @timing; @fill) {
+  animation-duration: @time;
+  animation-timing-function: ease-out;
+  animation-fill-mode: @fill;
+  animation: kenburns-bottom;
+}
 
+.fade-in(@time; @fill) {
+  animation-duration: @time;
+  animation-fill-mode: @fill;
+  animation: fade-in;
+  transition-timing-function: cubic-bezier(.39,.575,.565,1.000); 
+}
+
+
+
+
+ 
