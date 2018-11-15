@@ -223,7 +223,8 @@ a {
     justify-content: center;
     flex-wrap: nowrap;
     flex-direction: column;
-    padding-left: 2%;
+    margin-left: 3%;
+    margin-top: 3%;
   }
 }
 .home .content-section .text-content {
@@ -243,6 +244,7 @@ a {
   .home .content-section .img-content {
     width: 100%;
     padding-left: 0;
+    height: 100%;
   }
 }
 .home .content-section .img-content img {
