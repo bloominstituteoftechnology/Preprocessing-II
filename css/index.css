@@ -191,6 +191,8 @@ header nav a {
   padding-right: 40px;
 }
 .footer {
+  max-width: 800px;
+  margin: 0 auto;
   width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
@@ -253,4 +255,18 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background: teal;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+.home .content-pick .destination .btn:hover {
+  color: teal;
+  background: white;
+  border: 1px solid lightgray;
 }
