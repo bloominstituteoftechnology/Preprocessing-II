@@ -260,8 +260,10 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  border: 1px solid red;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  align-self: flex-end;
 }
