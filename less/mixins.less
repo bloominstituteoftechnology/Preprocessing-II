@@ -6,17 +6,26 @@
   align-items: center;
 }
 
+.phone-col-layout() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .button(@width, @bg-color, @txt-color) {
   width: @width;
   background: @bg-color;
   color: @txt-color;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 1.5rem 3rem;
   font-size: 1.6rem;
   text-align: center;
 
+
   &:hover {
     background: @txt-color;
     color: @bg-color;
+    border: 1px solid @bg-color;
+    cursor: pointer;
   }
 }

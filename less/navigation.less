@@ -1,26 +1,46 @@
 // Navigation Styles here
-
-nav {
+.nav-container {
   width: 100%;
   border-bottom: 2px dashed @silver;
 
-  .nav-items {
+ 
+  
+
+  .nav {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 2.4rem .6rem;
+    margin: 0 auto; 
     display: flex;
+    padding: 2.4rem .6rem;
     justify-content: space-between;
     align-items: baseline;
-
-    h1 {
-      margin-right: 40%;
+  
+    @media @phone {
+      .phone-col-layout;
+      padding: 0 .6rem;
     }
-
-    a {
-      font-size: 1.57em;
-      text-decoration: none;
-      color: @shark;
-      padding: 0 1.7rem;
+  
+    h1 {
+      @media @phone {
+        font-size: 3rem;
+        margin-top: 18px; 
+        margin-bottom: 18px;
+      }
+    }
+  
+    .nav-items {
+      margin-bottom: 5px;
+  
+      a {
+        font-size: 1.57em;
+        text-decoration: none;
+        color: @shark;
+        padding: 0 1.7rem;
+        @media @phone {
+          padding: 0 3rem;
+        }
+  
+      }
     }
   }
 }
+

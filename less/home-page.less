@@ -1,6 +1,7 @@
 .home {
+    padding: 0 3%;
 
-  header {
+  .header {
     max-width: 800px;
     margin: 0 auto;
     border-bottom: 2px dashed @silver;
@@ -21,16 +22,32 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @phone {
+      .phone-col-layout;
+      width: 100%;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+
+      @media @phone {
+        width: 100%;
+        order: 1;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .center;
+
+      @media @phone {
+        width: 100%;
+        padding-left: 0;
+        order: 2;
+      }
 
       img {
         border-radius: 10px;
@@ -56,7 +73,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @phone {
+      width: 100%;
+    }
     img {
       border-radius: 10px;
     }
@@ -68,12 +87,32 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      .phone-col-layout;
+      padding-bottom: 30px;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      h4 {
+        @media @phone {
+          margin-top: 3rem;
+        }
+      }
+
       .btn {
-        .button(20rem, @eastern-blue, @white)
+        .button(20rem, @eastern-blue, @white);
+
+        @media @phone {
+          .button(100%, @eastern-blue, @white);
+        }
       }
     }
   }
