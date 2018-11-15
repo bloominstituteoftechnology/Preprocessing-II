@@ -378,7 +378,6 @@ img {
   }
 }
 .home .content-pick .destination .btn {
-  width: 83%;
   text-align: center;
   background: #17a2b8;
   color: white;
@@ -387,18 +386,18 @@ img {
   border-radius: 15px;
   padding: 13px 2%;
   font-size: 1.8rem;
+  width: 83%;
 }
 @media (max-width: 550px) {
   .home .content-pick .destination .btn {
-    width: 100%;
-    width: 83%;
+    width: 88%;
     text-align: center;
     background: #17a2b8;
     color: white;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    padding: 12px 4%;
-    font-size: 2rem;
+    padding: 13px 4%;
+    font-size: 1.85rem;
   }
 }
