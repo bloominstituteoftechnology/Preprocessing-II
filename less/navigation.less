@@ -1,29 +1,37 @@
 // Navigation Styles here
 header {
     display: flex;
-    margin: 1.5rem 0;
-    justify-content: space-between; 
+    margin: 1.5rem 0 0;
+    justify-content: space-around; 
     width: 100%;
-    
     border-bottom: 2px dashed @silver;
 
     h1 {
-        padding: 1.5rem 0;
+        display:flex;
+        flex-wrap: nowrap;
+        padding: 1.5rem 9%;
         font-weight: 500;
     }
 
     nav {
         display: flex;
-        width: 600px;
-        justify-content: flex-end;
+        width: 
+        400px;
+        justify-content: space-around;
         align-items: baseline;
         font-size: 1.7rem;
         padding-top: 1.8rem;
+        padding-right: 9%;
     }
     a {
         text-decoration: none;
         color: black;
         padding: 1.2rem 2%;
         font-weight: 500;
+        &:hover {
+            color: @button-bg;
+            text-decoration: underline;
+        }
+
     }
 }

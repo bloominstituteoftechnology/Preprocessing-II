@@ -170,28 +170,35 @@ img {
 }
 header {
   display: flex;
-  margin: 1.5rem 0;
-  justify-content: space-between;
+  margin: 1.5rem 0 0;
+  justify-content: space-around;
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
 }
 header h1 {
-  padding: 1.5rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1.5rem 9%;
   font-weight: 500;
 }
 header nav {
   display: flex;
-  width: 600px;
-  justify-content: flex-end;
+  width: 400px;
+  justify-content: space-around;
   align-items: baseline;
   font-size: 1.7rem;
   padding-top: 1.8rem;
+  padding-right: 9%;
 }
 header a {
   text-decoration: none;
   color: black;
   padding: 1.2rem 2%;
   font-weight: 500;
+}
+header a:hover {
+  color: #17A2B8;
+  text-decoration: underline;
 }
 .footer {
   width: 100%;
@@ -204,49 +211,76 @@ header a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .top-content {
+  /* margin: 0, auto;*/
+}
+.home .top-content img {
+  padding-bottom: 2rem;
+}
+.home .text-top {
+  padding-bottom: 1.6rem;
+  margin: 20px 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.content-pick .destination .btn {
+  width: 80%;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  font-size: 2rem;
+  padding: 12px 0;
+  margin: 8px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+.content-pick .destination .btn:hover {
+  color: #17A2B8;
+  background-color: #117a8b;
 }
