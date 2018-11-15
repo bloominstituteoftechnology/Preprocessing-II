@@ -45,30 +45,60 @@ img {
   margin: 0 auto;
 
   @media @mobile{
+    
     max-width:500px;
     width:100%;
+    flex-wrap: wrap;
+    margin:0 auto;
+    
     
     header{
       display:flex;
       flex-direction:column;
       align-items:center;
+      padding-bottom: .5rem;
       
-    }
+    
     h1{
-      margin-bottom:1rem;
+      margin-bottom:2rem;
     }
     
     nav{
       display:flex;
       justify-items:space-around;
-      
-
-    }
+      }
 
     a{
-  margin-right: 5rem;
-      
+  margin-right: 4rem;
+  font-size:1.8rem; 
     }
+    
+  }
+  .bus{
+    padding:0 10px;
+    display:flex;
+    justify-content: center;
+  }
+
+   .content-section{ 
+   display: flex;
+  flex-direction: column;
+   justify-content: flex-start;
+   padding:0 10px;
+   .cb;
+
+  h2{
+    font-size: 5rem;
+  }
+   p{
+    
+    font-size: 2rem;
+   }
+     
+  
+    }
+
+
  
  
   }

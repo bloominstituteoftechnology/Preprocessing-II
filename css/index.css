@@ -172,21 +172,43 @@ img {
   .container {
     max-width: 500px;
     width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
   .container header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0.5rem;
   }
-  .container h1 {
-    margin-bottom: 1rem;
+  .container header h1 {
+    margin-bottom: 2rem;
   }
-  .container nav {
+  .container header nav {
     display: flex;
     justify-items: space-around;
   }
-  .container a {
-    margin-right: 5rem;
+  .container header a {
+    margin-right: 4rem;
+    font-size: 1.8rem;
+  }
+  .container .bus {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .container .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 10px;
+    border: 1px solid red;
+  }
+  .container .content-section h2 {
+    font-size: 5rem;
+  }
+  .container .content-section p {
+    font-size: 2rem;
   }
 }
 header {
