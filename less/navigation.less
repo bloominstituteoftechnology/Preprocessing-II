@@ -4,9 +4,9 @@
     border-bottom: 2px dashed @silver;
 .navigation{
     .layout(space-between, baseline);
+    .w-100();
     padding: 20px 0;
     max-width: 800px;
-    width:100%;
     margin: 0 auto;
     @media @mobile{
         width: 90%;
@@ -18,8 +18,8 @@
         width: 45%;
         @media @mobile {
             .layout(space-around, center);
+            .w-100();
             margin-top: 15px;
-            width:100%;
         }
     a{
         text-decoration: none;
