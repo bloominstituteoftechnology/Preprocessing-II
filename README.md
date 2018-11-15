@@ -33,12 +33,12 @@ Fun Bus is a travel agency looking for some help on their website. They want a n
 - [x] Review the [desktop design file](design-files/fun-bus-desktop.png). Notice the navigation, header, and buttons at the bottom of the page are missing.
 - [x] Navigation: Use the `navigation.less` file for all your navigation styling
 - [x] Main Header: Use the `home-page.less` file for the header styling.
-- [ ] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
+- [x] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
 
 ## Task 5: Mobile Updates Needed
 
 - [x] Use escaping to create a variable named `@mobile` that contains this value: `(max-width: 500px)`. Use the `variables.less` file to house your styling.
-- [ ] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating.
+- [x] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating.
 - [ ] Match the design file at `500px` as well as you can
 
 ## Stretch Goals:
