@@ -170,7 +170,7 @@ img {
 }
 .nav-area {
   padding-bottom: 25px;
-  border-bottom: 1px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   margin-top: 30px;
 }
 .nav-area nav {
@@ -273,6 +273,13 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  padding-bottom: 12.5px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header .bus-image {
+  margin-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
