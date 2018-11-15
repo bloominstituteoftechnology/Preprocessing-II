@@ -1,5 +1,9 @@
 .home {
 
+  @media @mobile{
+    padding: 0 25px;
+  }
+
   .intro-cont{
     border-bottom: 2px dashed black;
     padding-bottom: 10px;
@@ -15,19 +19,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      flex-direction: column;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+       width: 100%; 
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          width: 100%;
+        }
       }
     }
   }
@@ -35,6 +55,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    
+    @media @mobile{
+      flex-direction: column-reverse;    
+    }
 
     .text-content {
       padding-left: 1%;
@@ -51,6 +75,12 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      margin: 0;
+      width: 100%;
+      padding-bottom: 35px;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -62,9 +92,18 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      flex-direction: column;
+      padding: 28px 46px 0 46px;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 100%;
+      }
 
       .btn{
         display: inline-block;
@@ -76,6 +115,10 @@
         font-weight: bold;
         padding: 13px 52px;
         border-radius: 16px;
+
+        @media @mobile{
+          display: block;
+        }
       }
     }
   }
