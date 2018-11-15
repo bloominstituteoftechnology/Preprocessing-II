@@ -372,7 +372,7 @@ img {
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 80%;
-    margin: 0 auto 29px auto;
+    margin: 1px auto 29px auto;
   }
 }
 .home .content-pick .destination .btn {
