@@ -163,6 +163,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+label,
+legend {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -345,4 +357,12 @@ nav .container .nav-links a:hover {
   .home .content-pick .destination .btn {
     width: 100%;
   }
+}
+.home .contact {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+}
+.home .contact form {
+  width: 100%;
 }
