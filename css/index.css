@@ -175,7 +175,7 @@ nav .container {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  padding-bottom: 36px;
+  padding-bottom: 24px;
   width: 100%;
   align-items: baseline;
 }
@@ -265,4 +265,13 @@ header p {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 80%;
+  background-color: #17A2B8;
+  padding: 10px 26px;
+  font-size: 1.7rem;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
 }
