@@ -1,1 +1,9 @@
 // Mixins in here
+.useFlex(@flexdirection) {
+  display: flex;
+  flex-direction: @flexdirection;
+}
+
+.setIn(@top, @bottom) {
+  margin: @top 0 @bottom 0;
+}
