@@ -1,27 +1,19 @@
 // Navigation Styles here
 
-header {
-    width: 100%;
-    margin: 1% auto 0 auto;
-    padding-bottom: 1%;
-    border-bottom: 2px dashed @navigation-border;
+.header-nav {
+    max-width: 800px;
+    margin: 0 auto;
+    .layout(space-between, center);
 
-    .header-nav {
-        max-width: 800px;
-        margin: 0 auto;
+    nav {
+        width: 40%;
         .layout(space-between, center);
+    }
 
-        nav {
-            width: 40%;
-            .layout(space-between, center);
-        }
-    
-        a {
-            font-family: @main-font;
-            font-size: 1.6rem;
-            text-decoration: none;
-            color: @shark;
-        }
-    } 
-
-}
+    a {
+        font-family: @main-font;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: @shark;
+    }
+} 
