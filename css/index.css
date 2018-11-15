@@ -1,3 +1,16 @@
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -230,6 +243,7 @@ img {
   padding-bottom: 20px;
 }
 .home header img {
+  animation: bounceIn 2s;
   margin-bottom: 25px;
 }
 .home .content-section {

@@ -16,4 +16,23 @@
 .w-100(){
     width: 100%;
 };
-
+// Animations
+.bounceIn(@duration){
+    animation: bounceIn @duration;
+};
+@keyframes bounceIn{
+       .transform();
+    };
+    .transform (){
+        0%{
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        60%{
+            transform: scale(1.5);
+            opacity: 1;
+        }
+        100%{
+            transform: scale(1);
+        }
+    };
