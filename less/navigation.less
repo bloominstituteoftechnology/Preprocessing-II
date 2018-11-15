@@ -1,1 +1,43 @@
 // Navigation Styles here
+
+header {
+  border-bottom: 2px dashed @navigation-border;
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 10px;
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 16px;
+        padding-left: 0;
+      }
+    }
+  }
+}
+nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+  a {
+    font-size: 1.6rem;
+    padding-left: 10px;
+    color: @font-color;
+    text-decoration: none;
+  }
+}
+.main-img {
+  padding-bottom: 20px;
+  @media (max-width: 500px) {
+    padding: 0 15px;
+  }
+}
