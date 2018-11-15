@@ -16,3 +16,17 @@
     text-decoration: underline;
   }
 }
+
+
+.button-style() {
+    padding: 12px;
+    font-size: 1.8rem;
+    border-radius: 15px;
+    background: @button-bg;
+    color: white;
+    .layout;
+    
+    &:hover {
+      background-color: lighten(@button-bg, 10%);
+    }
+}

@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  color: #212529;
 }
 h1,
 h2,
@@ -261,4 +262,18 @@ header nav ahover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  padding: 12px;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  background: #17A2B8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84%;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #1fc8e3;
 }
