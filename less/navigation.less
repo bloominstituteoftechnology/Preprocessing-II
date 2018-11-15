@@ -1,1 +1,46 @@
 // Navigation Styles here
+
+header {
+  border-bottom: 2px dashed @navigation-border;
+  padding: 20px 0;
+  @media @mobile {
+    padding-bottom: 0px;
+  }
+
+  .nav-container {
+    #mixins.layout(space-between, center);
+    max-width: 800px;
+    margin: 0 auto;
+
+    @media @mobile {
+      flex-direction: column;
+      padding-bottom: 10px;
+      h1 {
+        font-size: 3rem;
+        padding-bottom: 20px;
+      }
+    }
+
+    nav {
+      font-size: 1.6rem;
+      @media @mobile {
+        width: 100%;
+        #mixins.layout(space-around, center);
+      }
+      a {
+        margin-right: 30px;
+        text-decoration: none;
+        color: black;
+        transition: all 0.1s ease;
+        @media @mobile {
+          margin-right: 0;
+        }
+
+        &:hover {
+          color: @button-bg;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
