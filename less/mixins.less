@@ -1,1 +1,14 @@
 // Mixins in here
+.guy(@color: #f44336, @height: 4px){
+    position: relative;
+    cursor: pointer;
+    bottom: 0px;
+    background-color: @color;
+    box-shadow: 0px 0px 0px darken(@color, 5%);
+    transition: bottom 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover{
+        bottom: @height;
+        box-shadow: 0px @height 0px darken(@color, 5%);
+    }
+}
