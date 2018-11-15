@@ -29,3 +29,31 @@
     cursor: pointer;
   }
 }
+
+.animate(@name, @cycle-length, @loops-count) {
+
+  animation-duration: @cycle-length;
+  animation-name: @name;
+  animation-iteration-count: @loops-count;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 100px;
+    width: 100%;
+  }
+
+  50% {
+    margin-left: -50%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100px;
+    width: 100%;
+  }
+}
+
+
+
+

@@ -1,3 +1,17 @@
+@keyframes slide {
+  from {
+    margin-left: 100px;
+    width: 100%;
+  }
+  50% {
+    margin-left: -50%;
+    width: 100%;
+  }
+  to {
+    margin-left: 100px;
+    width: 100%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,7 +190,7 @@ img {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
-  padding: 2.4rem 3%;
+  padding: 2.4rem 1rem;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -221,7 +235,8 @@ img {
   padding: 20px;
 }
 .home {
-  padding: 0 3%;
+  padding: 0 1rem;
+  overflow: hidden;
 }
 .home .header {
   max-width: 800px;
@@ -230,6 +245,9 @@ img {
 }
 .home .header h2 {
   margin-top: 2rem;
+  animation-duration: 10s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
 }
 .home .header p {
   padding-bottom: 2rem;
@@ -303,6 +321,9 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+  animation-duration: 10s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
 }
 .home .content-pick {
   padding-top: 30px;
