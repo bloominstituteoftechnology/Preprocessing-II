@@ -175,7 +175,7 @@ img {
   justify-content: space-between;
   align-items: baseline;
   margin-top: 30px;
-  padding: 0px 12%;
+  padding: 0px 13%;
   padding-bottom: 2%;
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -191,6 +191,28 @@ img {
   padding: 2%;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-content: center;
+  }
+  .nav-bar h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1%;
+  }
+  .nav-bar nav {
+    width: 100%;
+  }
+  .nav-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -204,17 +226,36 @@ img {
 }
 header {
   border-bottom: 2px dashed #C0C0C0;
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 header img {
   max-width: 100%;
 }
 header h2 {
-  margin-top: 2%;
+  margin-top: 3%;
   padding-right: 1%;
 }
 header p {
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+}
+header h2 {
+  margin-left: 1%;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header img {
+    max-width: 100%;
+    margin: 0 3%;
+  }
+  header h2 {
+    margin: 0 3%;
+  }
+  header p {
+    margin: 0 3%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -232,6 +273,18 @@ header p {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    max-width: 100%;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-section .img-content {
+    max-width: 100%;
+    margin: 3%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -261,4 +314,20 @@ header p {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 15px 30px;
+  width: 83%;
+  color: white;
+  background-color: #17A2B8;
+  border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
