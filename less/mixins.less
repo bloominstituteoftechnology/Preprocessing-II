@@ -1,1 +1,13 @@
 // Mixins in here
+
+.button(@text-color: @white, @bg-color: @button-bg, @border-color: @silver) {
+    color: @text-color;
+    background-color: darken(@bg-color, 10%);
+    border: 1px solid @border-color;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 85%;
+    text-align: center;
+    padding: 15px 0; 
+}
