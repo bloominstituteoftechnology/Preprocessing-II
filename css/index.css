@@ -231,6 +231,7 @@ nav {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  border: 1px solid red;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -239,6 +240,10 @@ nav {
   .home .content-section .img-content {
     width: 100%;
   }
+}
+.home .content-section .img-content:hover {
+  transition-duration: 3s;
+  transform: rotateX(360deg);
 }
 @media (max-width: 500px) {
   .home .content-section {
@@ -308,8 +313,43 @@ nav {
   font-size: 1.7rem;
   padding: 3% 0;
 }
+.home .btn:hover {
+  background: #0f6674;
+  color: black;
+}
 @media (max-width: 500px) {
   .home {
     max-width: 400px;
   }
+}
+.home form {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .home form {
+    width: 100%;
+  }
+}
+.home form .top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  font-size: 1.3rem;
+}
+.home form .text-area {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .home form .text-area {
+    width: 50%;
+  }
+}
+.home form .text-area input:hover {
+  background: #f4f4f4;
+  color: black;
 }

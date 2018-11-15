@@ -9,3 +9,13 @@
   font-size: 1.7rem;
   padding: 3% 0;
 }
+
+.hover (@bg-color, @color) {
+  background: @bg-color;
+  color: @color;
+}
+
+.rotate (@duration, @angle) {
+  transition-duration: @duration;
+  transform: rotateX(@angle);
+}
