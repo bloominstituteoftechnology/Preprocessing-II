@@ -65,6 +65,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile{
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -79,12 +82,23 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile{
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
     .destination {
+      @media @mobile{
+        width: 85%;
+        margin: 10px auto;
+      }
       width: 30%;
       margin-bottom: 30px;
+      
       .btn{
-        .button(10px, darken(@eastern-blue, 10%), 12px)
+        .button(10px, darken(@eastern-blue, 10%), 12px);
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }

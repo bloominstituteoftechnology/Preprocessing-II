@@ -295,6 +295,11 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -309,9 +314,21 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 85%;
+    margin: 10px auto;
+  }
 }
 .home .content-pick .destination .btn {
   border-radius: 10px;
@@ -321,4 +338,9 @@ img {
   color: #FFFFFF;
   text-align: center;
   font-size: 1.8rem;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }
