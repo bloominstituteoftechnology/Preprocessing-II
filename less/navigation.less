@@ -7,15 +7,27 @@
         .make-flex(row, space-between);
         .container-centering();
 
+        @media @device-size[mobile] {
+            .make-flex(column, space-around, center);
+        }
+
         h1 {
             a {
                 .remove-hyperlink-styling();
+            }
+
+            @media @device-size[mobile] {
+                margin-bottom: 20px;
             }
         }
 
         .nav-area--text-links {
             .make-flex(row, space-evenly, center);
-            
+
+            @media @device-size[mobile] {
+                justify-content: space-around;
+            }
+
             a {
                 .remove-hyperlink-styling();
                 display: inline-block;

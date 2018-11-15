@@ -182,15 +182,33 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .nav-area nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .nav-area nav h1 a {
   color: black;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .nav-area nav h1 {
+    margin-bottom: 20px;
+  }
 }
 .nav-area nav .nav-area--text-links {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-area nav .nav-area--text-links {
+    justify-content: space-around;
+  }
 }
 .nav-area nav .nav-area--text-links a {
   color: black;
