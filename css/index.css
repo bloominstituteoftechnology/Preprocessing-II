@@ -461,6 +461,41 @@ img {
   font-size: 1.8rem;
   width: 83%;
 }
+.home .content-pick .destination .btn:hover {
+  -webkit-animation: fade-in 0.5s linear 1 normal;
+  -moz-animation: fade-in 0.5s linear 1 normal;
+  animation: fade-in 0.5s linear 1 normal;
+}
+@-moz-keyframes fade-in {
+  0% {
+    background: white;
+    color: #c0c0c0;
+  }
+  100% {
+    background: #17a2b8;
+    color: white;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    background: white;
+    color: #c0c0c0;
+  }
+  100% {
+    background: #17a2b8;
+    color: white;
+  }
+}
+@keyframes fade-in {
+  0% {
+    background: white;
+    color: #c0c0c0;
+  }
+  100% {
+    background: #17a2b8;
+    color: white;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 88%;

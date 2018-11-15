@@ -155,6 +155,15 @@
         .btn-template(); // Parametric default values set for desktop layout
         width: 83%;
 
+        &:hover {
+          .keyframes(
+            fade-in;{0% {background: white; color: @silver;} 100% {background: @button-bg;
+              color: white;}}
+          );
+
+          .animation(fade-in 0.5s linear 1 normal);
+        }
+
         @media @mobile {
           width: 88%;
           .btn-template(@button-bg, white, 15px, 13px 4%, 1.85rem);
