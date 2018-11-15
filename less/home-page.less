@@ -9,9 +9,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
     .text-content {
       width: 48%;
       
@@ -39,10 +36,11 @@
   }
 
   .inverse-content {
-    flex-direction: column-reverse;
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
