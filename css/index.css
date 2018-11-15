@@ -168,8 +168,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.top-nav {
-  max-width: 800px;
+header {
+  border-bottom: 2px dashed silver;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .top-nav {
@@ -177,6 +178,13 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 16px 0 22px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .top-nav {
+    color: red;
+  }
 }
 .top-nav nav {
   width: 40%;
@@ -192,11 +200,6 @@ header nav a {
 header nav ahover {
   text-decoration: underline;
 }
-header {
-  border-bottom: 2px dashed silver;
-  max-width: 1000px;
-  margin: 0 auto;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -207,6 +210,11 @@ header {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .intro-section {
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed silver;
 }
 .home .content-section {
   margin: 30px 0;
