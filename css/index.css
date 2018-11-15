@@ -200,6 +200,13 @@ header nav div a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .intro-cont {
+  border-bottom: 2px dashed black;
+  padding-bottom: 10px;
+}
+.home .intro-cont .banner-img {
+  margin-bottom: 20px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
