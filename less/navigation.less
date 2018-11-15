@@ -1,6 +1,7 @@
 // Navigation Styles here
 
 header{
+    
     max-width: 930px;
     margin: 0 auto;
     border-bottom: 2px dashed lightgrey;
@@ -11,7 +12,12 @@ header{
         justify-content: space-between;
         align-items: baseline;
         padding: 3% 0;
-        
+        @media @mobile{
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            flex-direction: column;  
+            }
         a{
             display: flex;
             text-decoration: none;
@@ -25,6 +31,10 @@ header{
                 text-decoration: none;
                 font-size: 1.5rem;
                 color: black;
+            }
+            @media @mobile{
+                width: 100%;
+                margin-top: 15px;
             }
         }
     }
