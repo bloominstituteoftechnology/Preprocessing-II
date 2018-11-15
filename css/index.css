@@ -331,6 +331,11 @@ header {
 .home .content-pick .destination .btn:hover {
   background-color: #1fc8e3;
 }
+.home .content-pick .destination .btn:hover {
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;

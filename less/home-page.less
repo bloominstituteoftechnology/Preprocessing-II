@@ -91,6 +91,11 @@
         .button-style;
         width: 84%;
 
+        // use of parametic mixins
+        &:hover {
+          .box-shadow(0px, 5px, 10px)
+        }
+
         @media @phone {
           width: 100%;
         }
