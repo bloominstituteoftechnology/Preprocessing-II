@@ -180,14 +180,38 @@ header nav {
   margin: 0 auto;
   padding: 23px 0;
 }
+@media (max-width: 518px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 7px 0;
+  }
+}
+@media (max-width: 518px) {
+  header nav h1 {
+    font-size: 3rem;
+    margin-bottom: 13px;
+  }
+}
 header nav div {
   display: flex;
+}
+@media (max-width: 518px) {
+  header nav div {
+    width: 100%;
+    justify-content: space-evenly;
+  }
 }
 header nav div a {
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
   margin-right: 31px;
+}
+@media (max-width: 518px) {
+  header nav div a {
+    margin-right: 0px;
+  }
 }
 .footer {
   width: 100%;
