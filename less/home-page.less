@@ -12,6 +12,11 @@
         text-align: center;
         margin: -3px;
       }
+      @media @tablet {
+        width: 30%;
+        padding-left: 8px;
+        font-size: 2.8rem;
+      }
     }
     .header-image {
       width: 100%;
@@ -48,11 +53,20 @@
         margin: 0 auto;
         margin-top: 20px;
       }
+      @media @tablet {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
     }
   }
   
   .content-container {
     @media @mobile {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @media @tablet {
       width: 90%;
       margin: 0 auto;
     }
@@ -81,6 +95,9 @@
       padding-left: 1%;
       @media @mobile {
         width: 100%;
+      }
+      @media @tablet {
+        align-self: center;
       }
       img {
         border-radius: 10px;
@@ -135,10 +152,19 @@
       @media @mobile {
         width: 100%;
       }
+
+      @media @tablet {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
     }
 
     .btn {
       .button(white, @button-bg, 12px);
+      @media @tablet {
+        margin: 0 auto;
+      }
     }
   }
 }// home

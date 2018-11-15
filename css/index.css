@@ -190,6 +190,11 @@ nav {
     margin-bottom: 2px;
   }
 }
+@media (min-width: 501px) and (max-width: 799px) {
+  nav {
+    width: 70%;
+  }
+}
 nav a {
   font-size: 1.6rem;
   color: #212529;
@@ -227,6 +232,13 @@ nav a:hover {
     font-size: 3rem;
     text-align: center;
     margin: -3px;
+  }
+}
+@media (min-width: 501px) and (max-width: 799px) {
+  .home header h1 {
+    width: 30%;
+    padding-left: 8px;
+    font-size: 2.8rem;
   }
 }
 .home header .header-image {
@@ -270,7 +282,20 @@ nav a:hover {
     margin-top: 20px;
   }
 }
+@media (min-width: 501px) and (max-width: 799px) {
+  .home header .header-text {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
 @media (max-width: 500px) {
+  .home .content-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 501px) and (max-width: 799px) {
   .home .content-container {
     width: 90%;
     margin: 0 auto;
@@ -304,6 +329,11 @@ nav a:hover {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 799px) {
+  .home .content-section .img-content {
+    align-self: center;
   }
 }
 .home .content-section .img-content img {
@@ -361,6 +391,13 @@ nav a:hover {
     width: 100%;
   }
 }
+@media (min-width: 501px) and (max-width: 799px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}
 .home .content-pick .btn {
   width: 84%;
   padding: 14px 20px;
@@ -378,6 +415,11 @@ nav a:hover {
 @media (max-width: 500px) {
   .home .content-pick .btn {
     width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 799px) {
+  .home .content-pick .btn {
+    margin: 0 auto;
   }
 }
 @keyframes bounce {
