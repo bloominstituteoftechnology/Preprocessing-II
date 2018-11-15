@@ -1,1 +1,14 @@
 // Mixins in here
+
+.button(@h:0;@w:0;@radius:0;@color:#000) {
+  height: @h;
+  width: @w;
+  border-radius: @radius;
+  background-color: @color;
+}
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
