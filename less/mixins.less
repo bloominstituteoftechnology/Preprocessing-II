@@ -1,1 +1,27 @@
 // Mixins in here
+.button(){
+    .center;
+    .border-radius(8px);
+    background-color: @teal;
+    padding: 10px 0;
+    border: 1px solid @silver;
+    color: white;
+    font-size: 2rem;
+    width: 90%;
+
+    @media @mobile {
+        background-color: @mobile-teal;
+    }
+}
+
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
