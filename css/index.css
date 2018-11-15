@@ -222,7 +222,7 @@ nav .container .nav-links a {
   font-size: 1.6rem;
   padding: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home {
     padding: 0 3.5%;
   }
