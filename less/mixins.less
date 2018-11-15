@@ -12,9 +12,13 @@
     border-radius: @radius;
   }
 
-  .btn-style(@button-bg; @color) {
+  .btn-style(@button-bg, @color) {
     background-color: @button-bg;
     color: @color;
     padding: 12px 50px;
+  }
+  .animation(@duration, @delay) {
+    animation-duration: @duration;
+    animation-delay: @delay;
   }
 }

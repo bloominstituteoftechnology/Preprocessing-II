@@ -186,6 +186,10 @@ header .nav-container {
   max-width: 800px;
   margin: 0 auto;
 }
+header .nav-container h1 {
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+}
 @media (max-width: 500px) {
   header .nav-container {
     flex-direction: column;

@@ -11,6 +11,9 @@ header {
     #mixins.layout(space-between, center);
     max-width: 800px;
     margin: 0 auto;
+    h1 {
+      #mixins.animation(2.5s, 0.5s);
+    }
 
     @media @mobile {
       flex-direction: column;
