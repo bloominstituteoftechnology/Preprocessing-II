@@ -235,6 +235,14 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination button {
+  background-color: #3B8C81;
+  width: 85%;
+  height: 30px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.5rem;
+}
 header {
   width: 63%;
   margin-left: 18.5%;
