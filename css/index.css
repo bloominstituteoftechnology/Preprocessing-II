@@ -173,15 +173,19 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .header .header-nav {
     flex-direction: column;
     align-items: center;
-    padding-top: 1%;
   }
   .header .header-nav h1 {
     font-size: 3rem;
     margin-bottom: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .header .header-nav {
+    padding-top: 1%;
   }
 }
 .header .header-nav nav {
@@ -190,6 +194,11 @@ img {
   justify-content: space-evenly;
   align-items: center;
   width: 44%;
+}
+@media (max-width: 800px) {
+  .header .header-nav nav {
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
   .header .header-nav nav {
@@ -220,9 +229,14 @@ img {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home {
     margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home {
     width: 93%;
   }
 }
@@ -240,6 +254,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .home .content-section {
+    align-items: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -289,7 +308,7 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .content-destination {
     width: 100%;
   }
@@ -303,15 +322,25 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .content-pick {
     flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
     align-items: center;
   }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -328,6 +357,11 @@ img {
   width: 84%;
   text-align: center;
   padding: 13px 0;
+}
+@media (max-width: 800px) {
+  .home .content-pick .btn {
+    width: 50%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {

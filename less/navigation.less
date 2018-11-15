@@ -7,15 +7,18 @@
         flex-direction: row;
         justify-content: space-between;
 
-        @media @mobile {
+        @media @tablet {
             flex-direction: column;
-            align-items: center;
-            padding-top: 1%;
+            align-items: center;    
             
-                h1 {
-                    font-size: 3rem;
-                    margin-bottom: 4%;
-                }
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 4%;
+            }
+        }
+
+        @media @mobile {
+            padding-top: 1%;
         }
 
         nav {
@@ -24,6 +27,10 @@
             justify-content: space-evenly;
             align-items: center;
             width: 44%;
+            
+            @media @tablet {
+                width: 80%;
+            }
 
             @media @mobile {
                 justify-content: space-between;

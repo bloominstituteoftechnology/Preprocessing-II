@@ -8,8 +8,11 @@
 
 .home {
 
-  @media @mobile {
+  @media @tablet {
     margin: 0 auto;
+    width: 90%;
+}
+  @media @mobile {
     width: 93%;
   }
 
@@ -31,8 +34,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @tablet {
+      align-items: center;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -84,7 +89,7 @@
     width: 75%;
     margin: 0 auto 30px;
 
-    @media @mobile {
+    @media @tablet {
       width: 100%;
     }
 
@@ -99,14 +104,22 @@
     display: flex;
     justify-content: space-between;
 
-    @media @mobile {
+    @media @tablet {
       flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media @mobile {
       align-items: center;
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media @tablet {
+        width: 100%;
+      }
 
       @media @mobile {
         width: 80%;
@@ -115,6 +128,10 @@
 
     .btn {
       .button();
+
+      @media @tablet {
+        width:50%;
+      }
 
       @media @mobile {
         width: 100%;
