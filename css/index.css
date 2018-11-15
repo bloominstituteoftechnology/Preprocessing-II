@@ -188,12 +188,15 @@ img {
 .main-navigation .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .main-navigation .nav-container .nav {
   width: 50%;
-  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
+}
+.main-navigation .nav-container .nav .nav a {
+  align-items: center;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav {

@@ -1,28 +1,29 @@
 // Navigation Styles here
 .main-navigation {
-    margin: 20px;
-    border-bottom: 1px dashed @navigation-border;
+  margin: 20px;
+  border-bottom: 1px dashed @navigation-border;
 
-.nav-container {
+  .nav-container {
     display: flex;
     justify-content: space-between;
-    
-    .nav {
-        
-        width: 50%;
-        border: 1px solid blue;
-        display:flex;
-        justify-content: space-between;
-        
-    @media @mobile{
-        background: green;
-    
-        .nav a {
-            font-style: none;
+    align-items: center;
 
+    .nav {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+
+      .nav a {
+        align-items: center;
+      }
+
+      @media @mobile {
+        background: green;
+
+        .nav a {
+          font-style: none;
         }
-            }
-        }
+      }
     }
+  }
 }
-    
