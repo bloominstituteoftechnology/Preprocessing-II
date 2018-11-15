@@ -14,18 +14,21 @@
   margin: 0 auto;
 
   @media @phone {
-    color: red;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0 10px 0;
   }
 
-  
-}
-  .top-nav nav {
+  nav {
     width: 40%;
-    .layout(space-around)
-  }  
-  
-  header nav a {
+    .layout(space-around);
+    
+    @media @phone {
+      width: 100%;
+    }
+  }
+
+  a {
     .links;
   }
-
-
+}

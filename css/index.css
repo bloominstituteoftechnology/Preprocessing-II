@@ -147,6 +147,12 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -169,6 +175,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
 header {
   border-bottom: 2px dashed silver;
   max-width: 1000px;
@@ -184,7 +195,9 @@ header {
 }
 @media (max-width: 500px) {
   .top-nav {
-    color: red;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0 10px 0;
   }
 }
 .top-nav nav {
@@ -193,12 +206,17 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-header nav a {
+@media (max-width: 500px) {
+  .top-nav nav {
+    width: 100%;
+  }
+}
+.top-nav a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
 }
-header nav ahover {
+.top-nav ahover {
   text-decoration: underline;
 }
 .footer {
