@@ -216,6 +216,10 @@ header img {
   height: auto;
   margin: 0 0 20px 0;
 }
+header p {
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
