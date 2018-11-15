@@ -1,4 +1,16 @@
 .home {
+  padding: 0 4%;
+border: 2px solid blue;
+
+.top-section {
+  // margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed @navigation-border;
+
+  .fun-bus{
+    margin-bottom: 30px;
+  }
+}
 
   .content-section {
     margin: 30px 0;
@@ -57,5 +69,17 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
+    .btn {
+      .button-styler(100%, 40px, @button-bg, @main-bg);
+      a {
+        .button-styler(100%, 40px, @button-bg, @main-bg);
+        text-decoration: none;
+      }
+
+  }
+
+
+
   }
 }// home
