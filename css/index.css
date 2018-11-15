@@ -187,7 +187,7 @@ header div {
 }
 @media (max-width: 500px) {
   header div h1 {
-    margin: 0px 36% 15px 36%;
+    margin: 0px 30% 15px 30%;
     font-size: 3rem;
   }
 }
@@ -206,7 +206,7 @@ header nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
-  margin: 0 6%;
+  margin: 0 5%;
 }
 header nav a:hover {
   color: #17A2B8;
@@ -224,7 +224,6 @@ header nav a:hover {
 }
 .home {
   padding: 0 4%;
-  border: 2px solid blue;
 }
 .home .top-section {
   padding-bottom: 30px;
@@ -239,20 +238,46 @@ header nav a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+@media (max-width: 500px) {
+  .home .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+@media (max-width: 500px) {
+  .home .img-content {
+    width: 100%;
+  }
+}
+.home .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -266,6 +291,11 @@ header nav a:hover {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -275,9 +305,20 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+    padding-left: 8%;
+  }
 }
 .home .content-pick .btn {
   width: 100%;
