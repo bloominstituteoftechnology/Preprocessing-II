@@ -70,12 +70,21 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      flex-direction: column;
+      margin: 0 11%;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
       .btn {
         .button-style;
+        @media @mobile {
+          width: 100%;
+        }
       }// .btn
     }// .destination
   }// .content-pick
