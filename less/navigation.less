@@ -1,7 +1,12 @@
 .nav {
   padding-bottom: 23px;
-  border-bottom: 2px dashed @silver;
+  border-bottom: 2px dashed @navigation-border;
   width: 100%;
+
+  @media @mobile {
+    padding-bottom: 6px;
+  }
+
   div {
     .center(row, space-between, flex-start, nowrap);
     max-width: 800px;
