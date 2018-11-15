@@ -168,6 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: baseline;
+  margin: 30px 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
