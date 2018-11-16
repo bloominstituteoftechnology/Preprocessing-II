@@ -170,7 +170,7 @@ img {
 }
 .nav-container {
   width: 100%;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .nav-container .nav-content-container {
   display: flex;
