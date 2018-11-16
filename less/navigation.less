@@ -1,1 +1,23 @@
 // Navigation Styles here
+.nav-container {
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+    display: flex;
+    justify-content: center;
+
+    div {
+        width: 800px;
+        .layout(space-between, baseline, row);
+
+        nav {
+            width: 45%;
+            .layout(space-evenly, flex-end, row);
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: @font-color;
+                font-weight: bold;
+            }
+        }
+    }
+}

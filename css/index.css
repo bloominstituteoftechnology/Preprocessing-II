@@ -145,6 +145,7 @@ h5 {
 }
 h1 {
   font-size: 4rem;
+  margin: 25px 0;
 }
 h2 {
   font-size: 3.2rem;
@@ -167,6 +168,32 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-container {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: center;
+}
+.nav-container div {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+}
+.nav-container div nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.nav-container div nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #212529;
+  font-weight: bold;
 }
 .footer {
   width: 100%;
