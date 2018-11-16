@@ -168,7 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-a {
+header {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+header .welcome {
+  margin-top: 3%;
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  margin-top: 3%;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
@@ -184,34 +201,18 @@ a {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home header {
-  margin: 2.5% 0;
-}
-.home header .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 3%;
-}
-@media (max-width: 500px) {
-  .home header .navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.home header .header-section {
+.home .header-section {
   border-top: 2px dashed lightgrey;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
-  margin: 3% 0;
+  margin: 3% 1%;
 }
-.home header .header-verbage {
+.home .header-section .header-verbage {
   margin-top: 2%;
 }
 @media (max-width: 500px) {
-  .home header .header-verbage {
+  .home .header-section .header-verbage {
     margin: 2% 2%;
     padding-top: 2%;
     padding-left: 2%;
@@ -224,6 +225,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 3%;
+  margin: 3% 1%;
 }
 @media (max-width: 500px) {
   .home .content-section {
@@ -295,6 +297,7 @@ a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  margin: 3% 1%;
 }
 @media (max-width: 500px) {
   .home .content-pick {
