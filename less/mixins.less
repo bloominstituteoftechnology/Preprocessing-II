@@ -35,6 +35,40 @@
     }
 }
 
+// Destination picker styles
+
+#destinations {
+    .signup-button(@bg-color, @font-color, @font-size, @padding-height, @padding-width, @hover-bg-color: @font-color, @hover-font-color: @bg-color) {
+        display: inline-block;
+        text-align: center;
+        background-color: @bg-color;
+        color: @font-color;
+        font-size: @font-size;
+        font-weight: bold;
+        cursor: pointer;
+        padding: @padding-height @padding-width;
+        #prefixed > .border-radius(15px);
+        
+        @media @device-size[tablet-dfirst] {
+            font-size: @font-size * 0.75;
+            padding: (@padding-height * 0.85) (@padding-width / 4);
+        }
+
+        @media @device-size[mobile] {
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: @hover-bg-color;
+            color: @hover-font-color;
+        }
+
+        &:active {
+            .offset-border-effect(2px, dotted, @bg-color);
+        }
+    }
+}
+
 // Form styles
 
 #fun-bus-form {

@@ -417,13 +417,13 @@ img {
   }
 }
 .home .content-pick .destination--button {
-  background-color: #17A2B8;
   display: inline-block;
-  cursor: pointer;
   text-align: center;
+  background-color: #17A2B8;
+  color: snow;
   font-size: 1.6rem;
-  color: #FFFFFF;
   font-weight: bold;
+  cursor: pointer;
   padding: 15px 20%;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -433,7 +433,8 @@ img {
 }
 @media (max-width: 800px) {
   .home .content-pick .destination--button {
-    padding: 17.5px 10%;
+    font-size: 1.2rem;
+    padding: 12.75px 5%;
   }
 }
 @media (max-width: 500px) {

@@ -89,32 +89,7 @@
         }
 
         .destination--button {
-            background-color: @eastern-blue;
-            display: inline-block;
-            cursor: pointer;
-            text-align: center;
-            font-size: 1.6rem;
-            color: @white;
-            font-weight: bold;
-            padding: 15px 20%;
-            #prefixed > .border-radius(15px);
-            
-            @media @device-size[tablet-dfirst] {
-                padding: 17.5px 10%;
-            }
-
-            @media @device-size[mobile] {
-                width: 100%;
-            }
-
-            &:hover {
-                background-color: @sandy-beach;
-                color: @shark;
-            }
-
-            &:active {
-                .offset-border-effect(2px, dotted, @eastern-blue);
-            }
+            #destinations > .signup-button(@eastern-blue, @snow, 1.6rem, 15px, 20%, @sandy-beach, @shark);
         }
     }
 
