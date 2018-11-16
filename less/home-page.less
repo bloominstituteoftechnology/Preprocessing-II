@@ -31,26 +31,31 @@
                 .border-radius-prefixed(10px);  
             }
         }
-    }
 
-    .inverse-content {
-        padding-bottom: 30px;
-        border-bottom: 2px dashed @navigation-border;
-
-        .text-content {
-            padding-left: 1%;
-            padding-right: 0;
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed @navigation-border;
 
             @media @device-size[mobile] {
-                order: -1;
-                padding: 0;
+                .make-flex(column);
             }
-        }
 
-        .img-content {
-            padding-right: 1%;
-            padding-left: 0;
-            .full-mobile-width();
+            .text-content {
+                padding-left: 1%;
+                padding-right: 0;
+
+                @media @device-size[mobile] {
+                    order: -1;
+                    padding: 0;
+                }
+            }
+
+            .img-content {
+                padding-right: 1%;
+                padding-left: 0;
+                .full-mobile-width();
+            }
         }
     }
 
