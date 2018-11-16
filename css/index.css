@@ -261,14 +261,11 @@ header {
   flex-wrap: wrap;
   align-items: baseline;
 }
-header h2 {
-  margin-top: 12px;
-}
 header img {
   width: 800px;
   max-width: 100%;
   height: auto;
-  margin: 0 0 30px 0;
+  margin: 0 0 16px 0;
 }
 header p {
   padding-bottom: 20px;
@@ -306,58 +303,58 @@ header p {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.home .content-section .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
-  .home .inverse-content {
+  .home .content-section .inverse-content {
     flex-direction: column-reverse;
   }
 }
-.home .inverse-content .text-content {
+.home .content-section .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.home .content-section .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.home .content-section .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 @media (max-width: 500px) {
-  .home .content-destination {
+  .home .content-section .content-destination {
     width: 100%;
   }
 }
-.home .content-destination img {
+.home .content-section .content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.home .content-section .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .home .content-pick {
+  .home .content-section .content-pick {
     display: block;
     margin: 0 auto;
   }
 }
-.home .content-pick .destination {
+.home .content-section .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .home .content-pick .destination {
+  .home .content-section .content-pick .destination {
     width: 80%;
     margin: 0 auto;
   }
 }
-.home .content-pick .destination .btn {
+.home .content-section .content-pick .destination .btn {
   width: 80%;
   background-color: #17A2B8;
   padding: 10px 26px;
@@ -367,14 +364,14 @@ header p {
   color: white;
   font-weight: bold;
 }
-.home .content-pick .destination .btn:hover {
+.home .content-section .content-pick .destination .btn:hover {
   cursor: pointer;
   background-color: #FFEBCD;
   color: #17A2B8;
   border: 2px solid #17A2B8;
 }
 @media (max-width: 500px) {
-  .home .content-pick .destination .btn {
+  .home .content-section .content-pick .destination .btn {
     margin: 0 auto;
     margin-bottom: 30px;
     width: 100%;
