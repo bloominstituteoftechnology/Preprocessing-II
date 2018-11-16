@@ -1,4 +1,4 @@
-// General eused styles
+// General reusable styles
 
 .container-centering() {
     max-width: @container-max-width;
@@ -48,7 +48,7 @@
         width: 100%;
         padding: 10px 20px;
         border: 1px solid @eastern-blue;
-        .border-radius-prefixed(5px);
+        #prefixed > .border-radius(5px);
         margin: 10px 0 20px;
     }
 
@@ -71,13 +71,13 @@
         cursor: pointer;
         padding: 10px 25px;
         border: 1px solid @shark;
-        .border-radius-prefixed(3px);
-        .box-shadow-prefixed(inset 0px -3px 7px 0px @eastern-blue);
+        #prefixed > .border-radius(3px);
+        #prefixed > .box-shadow(inset 0px -3px 7px 0px @eastern-blue);
         margin-left: 1%;
     
         &:hover {
             background-color: @eastern-blue;
-            .transition-control-prefixed(500ms);
+            #prefixed > .transition-control(500ms);
         }
 
         &:active {
@@ -87,38 +87,39 @@
     }
 }
 
-
 // Vender prefixing aids
 
-.transition-control-prefixed(@duration, @delay: 0) {
-    -webkit-transition-duration: @duration;
-    -moz-transition-duration: @duration;
-    -o-transition-duration: @duration;
-    -ms-transition-duration: @duration;
-    transition-duration: @duration;
-    -webkit-transition-delay: @delay;
-    -moz-transition-delay: @delay;
-    -o-transition-delay: @delay;
-    -ms-transition-delay: @delay;
-    transition-delay: @delay;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    -ms-transition-property: all;
-    transition-property: all;
-}
+#prefixed {
+    .transition-control(@duration, @delay: 0) {
+        -webkit-transition-duration: @duration;
+        -moz-transition-duration: @duration;
+        -o-transition-duration: @duration;
+        -ms-transition-duration: @duration;
+        transition-duration: @duration;
+        -webkit-transition-delay: @delay;
+        -moz-transition-delay: @delay;
+        -o-transition-delay: @delay;
+        -ms-transition-delay: @delay;
+        transition-delay: @delay;
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -o-transition-property: all;
+        -ms-transition-property: all;
+        transition-property: all;
+    }
 
-.border-radius-prefixed(@radius) {
-    -webkit-border-radius: @radius;
-    -moz-border-radius: @radius;
-    -o-border-radius: @radius;
-    -ms-border-radius: @radius;
-    border-radius: @radius;
-}
+    .border-radius(@radius) {
+        -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+        -o-border-radius: @radius;
+        -ms-border-radius: @radius;
+        border-radius: @radius;
+    }
 
-.box-shadow-prefixed(...) {
-    -webkit-box-shadow: @arguments;
-    -moz-box-shadow: @arguments;
-    -o-box-shadow: @arguments;
-    -ms-box-shadow: @arguments;
+    .box-shadow(...) {
+        -webkit-box-shadow: @arguments;
+        -moz-box-shadow: @arguments;
+        -o-box-shadow: @arguments;
+        -ms-box-shadow: @arguments;
+    }
 }
