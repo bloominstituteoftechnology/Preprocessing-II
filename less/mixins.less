@@ -2,6 +2,10 @@
     max-width: @container-max-width;
     width: 100%;
     margin: 0 auto;
+
+    @media @device-size[tablet-dfirst] {
+        width: 95%;
+    }
 }
 
 .make-flex(@flex-direction: row, @justify-content: flex-start,@align-items: flex-start) {
