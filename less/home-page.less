@@ -22,6 +22,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @mobile {
+      margin: 33px 0;
+    }
     
     .text-content {
       width: 48%;
@@ -42,6 +46,10 @@
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 445px;
+        }
       }
     }
   }
@@ -72,10 +80,11 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 12% 30px;
     
     @media @mobile {
       width: 100%;
+      margin: 0;
     }
 
     img {
@@ -84,6 +93,7 @@
       @media @mobile {
         padding: 2%;
         border-radius: 20px;
+        margin-bottom: 11px;
       }
     }
   }
@@ -96,7 +106,7 @@
 
     @media @mobile {
       flex-direction: column;
-      padding: 10%;
+      padding: 7% 10%;
     }
 
     .destination {
