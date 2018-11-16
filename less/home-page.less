@@ -1,34 +1,4 @@
 .home {
-  @media @tablet{
-    &{
-      margin: 1%;
-    }
-    .cta{
-      .text-content{
-        text-align: center;
-      }
-    }
-    .content-section{
-      .img-content{
-        padding-bottom:3rem;
-       
-      }    
-    }
-
-  }
-  @media @mobile{
-    &{
-      .content-pick{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-          .destination{
-            width: 100%;
-        }
-      }
-    }
-
-  }
   
   .cta{
     
@@ -101,5 +71,72 @@
   }
   .btn{
     .button-creator(1.5rem, 3rem);
+  }
+
+  .form-style{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+    h3{
+      width: 100%;
+      font-size: 3em;
+      text-align: center;
+    }
+    form{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 1rem;
+      width: 100%;
+    }
+    input{
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+    }
+    button{
+      padding: 1rem;
+      background:none;
+    }
+    textarea{
+      font-size: 1.5rem;
+      text-align: left;
+      margin-bottom: 1rem;
+      resize: none;
+    }
+  }
+
+  @media @tablet{
+    &{
+      margin: 1%;
+    }
+    .cta{
+      .text-content{
+        text-align: center;
+      }
+    }
+    .content-section{
+      .img-content{
+        padding-bottom:3rem;
+       
+      }    
+    }
+    .form-style{
+      width:100%;
+    }
+  }
+  @media @mobile{
+    &{
+      .content-pick{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+          .destination{
+            width: 100%;
+        }
+      }
+    }
   }
 }// home

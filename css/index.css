@@ -236,27 +236,6 @@ header nav a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
-@media (max-width: 768px) {
-  .home {
-    margin: 1%;
-  }
-  .home .cta .text-content {
-    text-align: center;
-  }
-  .home .content-section .img-content {
-    padding-bottom: 3rem;
-  }
-}
-@media (max-width: 500px) {
-  .home .content-pick {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .home .content-pick .destination {
-    width: 100%;
-  }
-}
 .home .cta {
   border-bottom: 2px dashed silver;
 }
@@ -329,4 +308,62 @@ header nav a:hover {
   transition-property: background-color;
   transition-duration: 0.5s;
   background-color: #0c6e6e;
+}
+.home .form-style {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+}
+.home .form-style h3 {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+}
+.home .form-style form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.home .form-style input {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.home .form-style button {
+  padding: 1rem;
+  background: none;
+}
+.home .form-style textarea {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  resize: none;
+}
+@media (max-width: 768px) {
+  .home {
+    margin: 1%;
+  }
+  .home .cta .text-content {
+    text-align: center;
+  }
+  .home .content-section .img-content {
+    padding-bottom: 3rem;
+  }
+  .home .form-style {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
