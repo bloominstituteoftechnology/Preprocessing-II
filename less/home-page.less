@@ -38,11 +38,11 @@
         border-bottom: 2px dashed @navigation-border;
 
         .text-content {
-            order: -1;
             padding-left: 1%;
             padding-right: 0;
 
             @media @device-size[mobile] {
+                order: -1;
                 padding: 0;
             }
         }
@@ -67,11 +67,20 @@
     .content-pick {
         padding-top: 30px;
         border-top: 2px dashed @navigation-border;
-        .make-flex(row, space-between);
+        margin-bottom: 20px;
+        .make-flex(row, space-between, flex-start, wrap);
+
+        @media @device-size[tablet-dfirst] {
+            .make-flex(column);
+        }
 
         .destination {
-            width: 30%;
-            margin-bottom: 30px;
+            margin: 15px 15px;
+
+            @media @device-size[tablet-dfirst] {
+                width: 80%;
+                margin: 20px auto;
+            }
         }
 
         .destination--button {
@@ -82,18 +91,24 @@
             font-size: 1.6rem;
             color: @white;
             font-weight: bold;
-            padding: 10px 20%;
-            .border-radius-prefixed(10px);
+            padding: 15px 24%;
+            .border-radius-prefixed(15px);
+            
+            @media @device-size[tablet-dfirst] {
+                padding: 17.5px 15%;
+            }
+
+            @media @device-size[mobile] {
+                width: 100%;
+            }
 
             &:hover {
                 background-color: @sandy-beach;
                 color: @shark;
-                .transition-control-prefixed(500ms);
             }
 
             &:active {
                 .offset-border-effect(2px, dotted, @eastern-blue);
-                .transition-control-prefixed(0);
             }
         }
     }
