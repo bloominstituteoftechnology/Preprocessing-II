@@ -143,18 +143,14 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
-  animation: move 4s 1;
-  animation-timing-function: ease-out;
+  animation: neon1 1.5s ease-in-out infinite alternate;
 }
-@keyframes move {
+@keyframes neon1 {
   from {
-    transform: translateX(-2500px);
-  }
-  50% {
-    transform: translateX(500px) rotate(6deg);
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
   }
   to {
-    transform: translate(0) rotate(-4deg);
+    text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 8px #fff, 0 0 14px #228DFF, 0 0 20px #228DFF, 0 0 25px #228DFF, 0 0 30px #228DFF, 0 0 55px #228DFF;
   }
 }
 h1 {
@@ -176,18 +172,14 @@ p {
 img {
   max-width: 100%;
   height: auto;
-  animation: move 4s 1;
-  animation-timing-function: ease-out;
+  animation: neon1 1.5s ease-in-out infinite alternate;
 }
-@keyframes move {
+@keyframes neon1 {
   from {
-    transform: translateX(-2500px);
-  }
-  50% {
-    transform: translateX(500px) rotate(6deg);
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
   }
   to {
-    transform: translate(0) rotate(-4deg);
+    text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 8px #fff, 0 0 14px #228DFF, 0 0 20px #228DFF, 0 0 25px #228DFF, 0 0 30px #228DFF, 0 0 55px #228DFF;
   }
 }
 .container {
