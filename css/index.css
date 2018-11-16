@@ -169,6 +169,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 2%;
+  }
+}
 .nav-container {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
@@ -197,6 +202,29 @@ img {
 }
 .nav-container div nav a:hover {
   text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .nav-container div nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .nav-container div nav a {
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container div {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-container div h1 {
+    font-size: 3.2rem;
+    padding: 0;
+    margin: 20px 0 15px;
+  }
 }
 .footer {
   width: 100%;
