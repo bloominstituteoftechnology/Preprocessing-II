@@ -1,28 +1,25 @@
 // Navigation Styles here
-
-.nav-content {
-	margin: 1% 0;
-	display: flex;
-	justify-content: space-around;
-	align-items: baseline;
-	.nav-bar {
+.nav {
+	border-bottom: 1px dashed @shark;
+	padding-bottom: 1%;
+	margin-top: 1%;
+	.nav-content {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		p {
-			// width: 100%;
+		align-items: baseline;
+		.logo {
+			max-width: 100%;
+		}
+		.nav-bar {
+			max-width: 100%;
+			display: flex;
 			a {
+				margin-left: 30px;
+				font-size: 1.4rem;
 				text-decoration: none;
 				color: @shark;
 			}
 		}
 	}
-	// .nav-items {
-	// 	display: flex;
-	// 	align-content: space-between;
-	// 	margin: 10%;
-	// 	a {
-	// 		text-decoration: none;
-	// 		color: @shark;
-	// 	}
-	// }
 }

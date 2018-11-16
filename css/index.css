@@ -168,17 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav-content {
-  margin: 1% 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+.nav {
+  border-bottom: 1px dashed #212529;
+  padding-bottom: 1%;
+  margin-top: 1%;
 }
-.nav-content .nav-bar {
+.nav .nav-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
-.nav-content .nav-bar p a {
+.nav .nav-content .logo {
+  max-width: 100%;
+}
+.nav .nav-content .nav-bar {
+  max-width: 100%;
+  display: flex;
+}
+.nav .nav-content .nav-bar a {
+  margin-left: 30px;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #212529;
 }
