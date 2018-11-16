@@ -1,9 +1,13 @@
 .home {
 
-  .header-content {
+ .header-content {
     border-bottom: 2px dashed grey;
     border-top: 2px dashed grey;
     padding-bottom: 10px;
+
+    @media @mobile {
+      margin: 0 5px;
+    }
 
 h2 {
     margin-top: 20px;
@@ -16,16 +20,33 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
-    .text-content {
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 25px 5px;
+    }
+
+   .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: auto;
+        height: auto;
+        padding-left: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -37,14 +58,33 @@ h2 {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      dipslay: flex;
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
 
+    @media @mobile {
+      padding-left: 0;
+    }
+
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        padding-right: 0;
+      }
+
+      @media @mobile {
+        width: auto;
+        height: auto;
+        padding-right: 0;
+      }
     }
   }
 
@@ -52,8 +92,19 @@ h2 {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: auto;
+      height: auto;
+      margin: 0 5px 25px 5px;
+    }
+
     img {
       border-radius: 10px;
+
+      @media @mobile {
+        width: auto;
+        height: auto;
+      }
     }
   }
 
@@ -63,19 +114,33 @@ h2 {
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 75%;
+      }
 
       .btn {
 
         button {
           #mixins.btn-style;
+
+          @media @mobile {
+            #mixins.btn-style (white, teal, 10px 125px, 16px, 1.6rem);
+          }
+          }
         }
       }
     }
   }
-}
 
 
 
