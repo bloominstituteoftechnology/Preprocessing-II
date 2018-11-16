@@ -90,6 +90,31 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    h2 {
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    p {
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
     }
 
     .img-content {
@@ -174,7 +199,7 @@
             padding: 10px 30px;
             margin: 10px;
             border-radius: 10px;
-        }
+      }
     }
   }
-}// home
+} 
