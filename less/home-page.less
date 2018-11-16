@@ -9,7 +9,6 @@
     
     h2  {
       margin-top: 2rem;
-      .animate(slide, 10s, infinite);
     }
 
     p {
@@ -129,6 +128,59 @@
 
         @media @phone {
           .button(100%, @eastern-blue, @white);
+        }
+      }
+    }
+  }
+
+  .content-input {
+    border-top: 2px dashed @navigation-border;
+    margin: 30px 0;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    .user-info-form {
+      width: 63%;
+      margin: 15px auto; 
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid @eastern-blue;
+      border-radius: 15px;
+      padding: 20px;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      select, input, label {
+        margin: 5px;
+      }
+
+      select {
+        width: 100%;
+        height: 30px;
+      }
+      input {
+        width: 61%;
+
+        @media @phone {
+          width: 60%;
+        }
+      }
+
+      input[type='submit'] {
+       width: 100%;
+      }
+
+      label {
+        width: 34%;
+        text-align: right;
+
+        @media @phone {
+          width: 33%;
         }
       }
     }

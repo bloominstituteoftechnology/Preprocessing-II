@@ -173,6 +173,11 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+label {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -223,17 +228,6 @@ img {
     padding: 0 3rem;
   }
 }
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
-}
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
-}
 .home {
   padding: 0 1rem;
   overflow: hidden;
@@ -245,9 +239,6 @@ img {
 }
 .home .header h2 {
   margin-top: 2rem;
-  animation-duration: 10s;
-  animation-name: slide;
-  animation-iteration-count: infinite;
 }
 .home .header p {
   padding-bottom: 2rem;
@@ -386,4 +377,66 @@ img {
     border: 1px solid #17A2B8;
     cursor: pointer;
   }
+}
+.home .content-input {
+  border-top: 2px dashed #C0C0C0;
+  margin: 30px 0;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .content-input .user-info-form {
+  width: 63%;
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #17A2B8;
+  border-radius: 15px;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .home .content-input .user-info-form {
+    width: 100%;
+  }
+}
+.home .content-input .user-info-form select,
+.home .content-input .user-info-form input,
+.home .content-input .user-info-form label {
+  margin: 5px;
+}
+.home .content-input .user-info-form select {
+  width: 100%;
+  height: 30px;
+}
+.home .content-input .user-info-form input {
+  width: 61%;
+}
+@media (max-width: 500px) {
+  .home .content-input .user-info-form input {
+    width: 60%;
+  }
+}
+.home .content-input .user-info-form input[type='submit'] {
+  width: 100%;
+}
+.home .content-input .user-info-form label {
+  width: 34%;
+  text-align: right;
+}
+@media (max-width: 500px) {
+  .home .content-input .user-info-form label {
+    width: 33%;
+  }
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
 }
