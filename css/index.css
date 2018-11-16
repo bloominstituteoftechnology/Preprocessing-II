@@ -196,15 +196,16 @@ header .header-container nav {
   width: 35%;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header .header-container nav {
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+}
 header .header-container nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
-}
-@media (max-width: 500px) {
-  header .header-container nav {
-    justify-content: space-around;
-  }
 }
 @media (max-width: 500px) {
   header .header-container {

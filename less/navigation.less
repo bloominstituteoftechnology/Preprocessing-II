@@ -22,14 +22,15 @@ header {
 			width: 35%;
 			justify-content: space-between;
 
+			@media @phone {
+				justify-content: space-around;
+				padding-bottom: 10px;
+			}
+
 			a {
 				text-decoration: none;
 				color: @font-color;
 				font-size: 1.6rem;
-			}
-
-			@media @phone {
-				justify-content: space-around;
 			}
 		}
 
