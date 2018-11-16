@@ -2,6 +2,8 @@
 
   @media @mobile {
     background: gray;
+    display: flex;
+    flex-direction: column;
 
   }
 
@@ -79,9 +81,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%
+      }
+
+      p {
+        @media @mobile {
+          width: 100%
+        }
+      }
 
       .button {
             color: white;

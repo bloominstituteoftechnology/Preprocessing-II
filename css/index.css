@@ -197,6 +197,8 @@ header nav a {
 @media (max-width: 500px) {
   .home {
     background: gray;
+    display: flex;
+    flex-direction: column;
   }
 }
 .home .header header {
@@ -253,9 +255,27 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination p {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .button {
   color: white;
