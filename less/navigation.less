@@ -1,1 +1,81 @@
-// Navigation Styles here
+.nav {
+  padding-bottom: 23px;
+  border-bottom: 2px dashed @navigation-border;
+  width: 100%;
+
+  @media @tablet {
+    padding: 10px 0 0;
+  }
+
+  @media @mobile {
+    padding-bottom: 6px;
+  }
+
+  div {
+    .center(row, space-between, flex-start, nowrap);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @tablet {
+      .center(row, space-between, center, nowrap);
+      padding: 0 4%;
+    }
+
+    @media @mobile {
+      .center(column, flex-start, center, nowrap);
+      text-align: center;
+    }
+
+    h1 {
+      padding-top: 10px;
+      width: 100%;
+
+      @media @mobile {
+        padding-top: 20px;
+        font-size: 3rem;
+      }
+    }
+
+    div {
+      .center(row, flex-end, flex-start, nowrap);
+
+      @media @tablet {
+        .center(row, space-between, flex-start, nowrap);
+      }
+
+      @media @mobile {
+        .center(row, space-evenly, flex-start, nowrap);
+      }
+
+      a {
+        padding-top: 35px;
+        text-decoration: none;
+        color: black;
+        margin-right: 7.7%;
+        font-size: 1.6rem;
+
+        &:hover {
+          color: @button-bg;
+          text-decoration: underline;
+        }
+
+        @media @tablet {
+          padding-top: 20px;
+        }
+
+        @media @mobile {
+          margin-right: 0;
+          padding-top: 15px;
+          font-size: 1.65em;
+        }
+      }
+
+      a:last-child {
+        @media @tablet {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
