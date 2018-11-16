@@ -17,3 +17,20 @@
     align-items: @a-items;
     flex-direction: @flex-dir;
 }
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	        animation: @arguments;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name {
+        @arguments(); 
+    }
+	@-webkit-keyframes @name {
+        @arguments(); 
+    }
+	@keyframes @name {
+        @arguments(); 
+    }
+}
