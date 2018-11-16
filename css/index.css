@@ -144,6 +144,12 @@ body {
     overflow-x: hidden;
   }
 }
+@media (min-width: 501px) and (max-width: 799px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
 h1,
 h2,
 h3,
