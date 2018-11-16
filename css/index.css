@@ -242,6 +242,7 @@ header {
 .home .content-pick .btn {
   width: 85%;
   background-color: #17A2B8;
+  color: #FFFFFF;
   height: 20%;
   display: flex;
   justify-content: center;
