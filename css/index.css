@@ -167,17 +167,23 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 nav {
   width: 350px;
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
 nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
-  font-weight: bold;
 }
 .footer {
   width: 100%;
@@ -197,6 +203,20 @@ nav a {
   padding: 34px 0;
   border-bottom: 1px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home header {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home header h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    padding: 17px 0;
+  }
+}
 .home .welcome {
   padding: 20px 0 10px 0;
   border-bottom: 1px dashed #C0C0C0;
@@ -207,13 +227,28 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -221,6 +256,12 @@ nav a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -234,6 +275,12 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    margin: 0;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -243,16 +290,28 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 .home .content-pick .destination .btn {
   color: white;
   background-color: #17A2B8;
   font-size: 2rem;
   text-align: center;
-  width: 200px;
+  width: 100%;
   padding: 10px 0;
   border-radius: 10px;
 }
