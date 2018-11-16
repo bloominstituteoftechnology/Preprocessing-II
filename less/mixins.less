@@ -1,1 +1,55 @@
 // Mixins in here
+.flex-space-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column() {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-me-up-btn(@text-clr, @bkgrnd-clr) {
+  width: 83%;
+  color: @text-clr;
+  font-size: 1.8em;
+  text-align: center;
+  background-color: @bkgrnd-clr;
+  border-radius: 15px;
+  padding: 13px 0;
+}
+
+// based on: http://animista.net/play/basic/slide-fwd/slide-fwd-center
+.animate-flip-color-shift-right() {
+  animation: flip-clr-shift-rt 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  @keyframes flip-clr-shift-rt {
+    0% {
+      transform: translateX(0);
+      .sign-me-up-btn(@white, @eastern-blue);
+      //width: 83%;
+    }
+    100% {
+      transform: translateX(20px);
+      .sign-me-up-btn(@eastern-blue, @white);
+      //width: 100%;
+    }
+  }
+}
+
+.animate-flip-color-shift-left() {
+  animation: flip-clr-shift-lt 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  @keyframes flip-clr-shift-lt {
+    0% {
+      transform: translateX(20px);
+      .sign-me-up-btn(@eastern-blue, @white);
+      //width: 83%;
+    }
+    100% {
+      transform: translateX(0);
+      .sign-me-up-btn(@white, @eastern-blue);
+      //width: 100%;
+    }
+  }
+}

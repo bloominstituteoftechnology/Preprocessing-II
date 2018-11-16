@@ -1,4 +1,29 @@
+header {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 10px 93px 25px 92px;
+  border-bottom: 2px dashed @navigation-border;
+  .flex-space-between;
+  @media @mobile {
+    .flex-column;
+    padding: 8px 0 ;
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
+
 .home {
+  
+  .welcome-section {
+    img {
+      padding-bottom: 10px;
+    }
+    article {
+    padding: 10px 0; 
+    }
+    border-bottom: 2px dashed @navigation-border;
+  }
 
   .content-section {
     margin: 30px 0;
@@ -21,6 +46,7 @@
         border-radius: 10px;
       }
     }
+
   }
 
   .inverse-content {
@@ -56,6 +82,49 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .animate-flip-color-shift-left;
+        &:hover {
+          .animate-flip-color-shift-right;
+        }
+      }
+    }
+  }
+
+  @media @mobile {
+    padding: 0 18px;
+    .content-section {
+      .flex-column;
+      width: 100%;
+
+      .text-content {
+        width: 100%;
+      }
+  
+      .img-content {
+        width: 100%;
+        padding: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .inverse-content {
+      flex-direction: column-reverse;
+    }
+    .content-destination {
+      width: 100%;
+      margin: 0 auto 30px;
+    }
+    .content-pick {
+      .flex-column;
+      .destination {
+        width: 100%;
+        padding: 0 45px;
+        .btn {
+          width: 100%;
+        }
+      }
     }
   }
 }// home
