@@ -1,3 +1,5 @@
+// Reused styles
+
 .container-centering() {
     max-width: @container-max-width;
     width: 100%;
@@ -8,7 +10,7 @@
     }
 }
 
-.make-flex(@flex-direction: row, @justify-content: flex-start,@align-items: flex-start) {
+.make-flex(@flex-direction: row, @justify-content: flex-start,@align-items: flex-start, @wrap: nowrap) {
     display: flex;
     flex-direction: @flex-direction;
     justify-content: @justify-content;
@@ -20,7 +22,22 @@
     text-decoration: none;
 }
 
-.transition-control(@duration, @delay: 0) {
+.offset-border-effect(@border-size, @border-type, @border-color) {
+    border: @arguments;
+    margin-left: @border-size / -2px;
+    margin-bottom: @border-size * -2px;
+}
+
+.full-mobile-width() {
+    @media @device-size[mobile] {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+// Vender prefixing aids
+
+.transition-control-prefixed(@duration, @delay: 0) {
     -webkit-transition-duration: @duration;
     -moz-transition-duration: @duration;
     -o-transition-duration: @duration;
@@ -38,3 +55,10 @@
     transition-property: all;
 }
 
+.border-radius-prefixed(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    -ms-border-radius: @radius;
+    border-radius: @radius;
+}

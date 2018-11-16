@@ -1,6 +1,6 @@
 .nav-area {
     padding-bottom: 25px;
-    border-bottom: 2px dashed @silver;
+    border-bottom: 2px dashed @navigation-border;
     margin-top: 30px;
 
     nav {
@@ -9,12 +9,15 @@
 
         @media @device-size[tablet-dfirst] {
             .make-flex(column, space-around, center);
-            
         }
 
         h1 {
             a {
                 .remove-hyperlink-styling();
+
+                &:active {
+                    .offset-border-effect(2px, dotted, @shark);
+                }
             }
 
             @media @device-size[tablet-dfirst] {
@@ -44,14 +47,12 @@
                     background-color: darken(@white, 20%);
                     color: @white;
                     font-weight: bold;                    
-                    .transition-control(500ms);
+                    .transition-control-prefixed(500ms);
                 }
 
                 &:active {
-                    border: 2px dotted snow;
-                    margin-left: -4px;
-                    margin-bottom: -4px;
-                    .transition-control(0);
+                    .offset-border-effect(2px, dotted, @snow);
+                    .transition-control-prefixed(0);
                 }
             }
         }

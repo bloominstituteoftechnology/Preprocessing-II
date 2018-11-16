@@ -1,7 +1,7 @@
 .home {
     header {
         padding-bottom: 12.5px;
-        border-bottom: 2px dashed @silver;
+        border-bottom: 2px dashed @navigation-border;
 
         .bus-image {
             margin-bottom: 20px;
@@ -10,21 +10,25 @@
 
     .content-section {
         margin: 30px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        .make-flex(row, space-between, flex-start, wrap);
         
+        @media @device-size[mobile] {
+            .make-flex(column);
+        }
+
         .text-content {
             width: 48%;
             padding-right: 1%;
+            .full-mobile-width();
         }
 
         .img-content {
             width: 48%;
             padding-left: 1%;
+            .full-mobile-width();
 
             img {
-            border-radius: 10px;
+                .border-radius-prefixed(10px);  
             }
         }
     }
@@ -34,34 +38,63 @@
         border-bottom: 2px dashed @navigation-border;
 
         .text-content {
+            order: -1;
             padding-left: 1%;
             padding-right: 0;
+
+            @media @device-size[mobile] {
+                padding: 0;
+            }
         }
 
         .img-content {
             padding-right: 1%;
             padding-left: 0;
+            .full-mobile-width();
         }
     }
 
     .content-destination {
         width: 75%;
         margin: 0 auto 30px;
+        .full-mobile-width();
 
         img {
-            border-radius: 10px;
+            .border-radius-prefixed(10px);
         }
     }
 
     .content-pick {
         padding-top: 30px;
         border-top: 2px dashed @navigation-border;
-        display: flex;
-        justify-content: space-between;
+        .make-flex(row, space-between);
 
         .destination {
             width: 30%;
             margin-bottom: 30px;
+        }
+
+        .destination--button {
+            background-color: @eastern-blue;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1.6rem;
+            color: @white;
+            font-weight: bold;
+            padding: 10px 20%;
+            .border-radius-prefixed(10px);
+
+            &:hover {
+                background-color: @sandy-beach;
+                color: @shark;
+                .transition-control-prefixed(500ms);
+            }
+
+            &:active {
+                .offset-border-effect(2px, dotted, @eastern-blue);
+                .transition-control-prefixed(0);
+            }
         }
     }
 } // home
