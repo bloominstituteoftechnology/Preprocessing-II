@@ -3,6 +3,11 @@
   header {
     border-bottom:  2px dashed @navigation-border;
 
+    @media @mobile {
+      
+      margin: 0 20px;
+    }
+
     div {
       margin: 15px 0;
     }
@@ -15,16 +20,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      padding: 0 20px;
+      
+    }
+
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+       @media @mobile {
+        width: 100%;
+      }
     }
-
+    
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        height: auto;
+      }
 
       img {
         border-radius: 10px;
@@ -35,6 +54,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      
+    }
 
     .text-content {
       padding-left: 1%;
@@ -51,6 +76,11 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 90%;
+      margin: 5% 5%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -61,16 +91,28 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 30px;
+
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+     
+        
+      }
 
       .btn {
         font-size: 1.8rem;
         padding: 10px 20px;
         border-radius: 15px;
-       .button-creator (@button-width, @main-bg, @button-bg);
+        .button-creator (@button-width, @main-bg, @button-bg);
 
       
 
