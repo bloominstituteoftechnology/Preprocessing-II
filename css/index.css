@@ -354,11 +354,11 @@ img {
   padding: 1.5rem 3rem;
   font-size: 1.6rem;
   text-align: center;
+  border: 1px solid #17A2B8;
 }
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
-  border: 1px solid #17A2B8;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -370,11 +370,11 @@ img {
     padding: 1.5rem 3rem;
     font-size: 1.6rem;
     text-align: center;
+    border: 1px solid #17A2B8;
   }
   .home .content-pick .destination .btn:hover {
     background: #FFFFFF;
     color: #17A2B8;
-    border: 1px solid #17A2B8;
     cursor: pointer;
   }
 }
@@ -387,18 +387,13 @@ img {
   align-items: center;
 }
 .home .content-input .user-info-form {
-  width: 63%;
+  width: 450px;
   margin: 15px auto;
   display: flex;
   flex-wrap: wrap;
   border: 1px solid #17A2B8;
   border-radius: 15px;
   padding: 20px;
-}
-@media (max-width: 500px) {
-  .home .content-input .user-info-form {
-    width: 100%;
-  }
 }
 .home .content-input .user-info-form select,
 .home .content-input .user-info-form input,
