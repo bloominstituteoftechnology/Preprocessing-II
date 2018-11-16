@@ -13,9 +13,13 @@
   text-align: center;
   font-size: 1.8rem;
   border-radius: 15px;
+  transition: all 0.15s;
 }
 .button-style:hover {
   background-color: #1fc8e3;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -350,9 +354,13 @@ header {
   text-align: center;
   font-size: 1.8rem;
   border-radius: 15px;
+  transition: all 0.15s;
 }
 .home .content-pick .destination .btn:hover {
   background-color: #1fc8e3;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
