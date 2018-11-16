@@ -8,6 +8,14 @@
     transform-origin: bottom;
   }
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -253,12 +261,14 @@ header {
   flex-wrap: wrap;
   align-items: baseline;
 }
+header h2 {
+  margin-top: 12px;
+}
 header img {
   width: 800px;
   max-width: 100%;
   height: auto;
-  margin: 0 0 20px 0;
-  animation: kenburns-bottom 5s ease-out both;
+  margin: 0 0 30px 0;
 }
 header p {
   padding-bottom: 20px;
