@@ -11,6 +11,10 @@ header {
 
 		p {
 			font-size: 3rem;
+
+			@media @phone {
+				text-align: center;
+			}
 		}
 
 		nav {
@@ -22,6 +26,19 @@ header {
 				text-decoration: none;
 				color: @font-color;
 				font-size: 1.6rem;
+			}
+
+			@media @phone {
+				justify-content: space-around;
+			}
+		}
+
+		@media @phone {
+			flex-direction: column;
+
+			div,
+			nav {
+				width: 100%;
 			}
 		}
 	}
