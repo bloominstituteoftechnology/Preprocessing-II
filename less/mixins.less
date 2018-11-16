@@ -22,14 +22,34 @@
 }
 
 // based on: http://animista.net/play/basic/slide-fwd/slide-fwd-center
-.animate-grow() {
-  animation: grow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  @keyframes grow {
+.animate-flip-color-shift-right() {
+  animation: flip-clr-shift-rt 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  @keyframes flip-clr-shift-rt {
     0% {
-      -webkit-transform: translateZ(0);
+      transform: translateX(0);
+      .sign-me-up-btn(@white, @eastern-blue);
+      //width: 83%;
     }
     100% {
-      -webkit-transform: translateZ(200px);
+      transform: translateX(20px);
+      .sign-me-up-btn(@eastern-blue, @white);
+      //width: 100%;
+    }
+  }
+}
+
+.animate-flip-color-shift-left() {
+  animation: flip-clr-shift-lt 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  @keyframes flip-clr-shift-lt {
+    0% {
+      transform: translateX(20px);
+      .sign-me-up-btn(@eastern-blue, @white);
+      //width: 83%;
+    }
+    100% {
+      transform: translateX(0);
+      .sign-me-up-btn(@white, @eastern-blue);
+      //width: 100%;
     }
   }
 }
