@@ -137,6 +137,7 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 @media (max-width: 500px) {
   html,
