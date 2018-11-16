@@ -1,1 +1,21 @@
 // Mixins in here
+.button (@border-size, @border-type, @border-color) {
+  border: @border-size @border-type @border-color;
+  border-radius: 10px;
+  background: @button-bg;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-size: 1.7rem;
+  padding: 3% 0;
+}
+
+.hover (@bg-color, @color) {
+  background: @bg-color;
+  color: @color;
+}
+
+.rotate (@duration, @angle) {
+  transition-duration: @duration;
+  transform: rotateX(@angle);
+}
