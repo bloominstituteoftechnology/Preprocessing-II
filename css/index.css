@@ -194,6 +194,11 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    background: gray;
+  }
+}
 .home .header header {
   width: 100%;
   margin-top: 40px;
