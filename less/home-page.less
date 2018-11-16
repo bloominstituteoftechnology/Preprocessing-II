@@ -1,9 +1,9 @@
 header {
   width: 100%;
-  margin-top: 10px;
-  padding: 0 75px 25px 75px;
-  .flex-space-between;
+  margin: 0 auto 0 auto;
+  padding: 10px 93px 25px 92px;
   border-bottom: 2px dashed @navigation-border;
+  .flex-space-between;
   @media @mobile {
     .flex-column;
     padding: 8px 0 ;
@@ -14,7 +14,7 @@ header {
 }
 
 .home {
-
+  
   .welcome-section {
     img {
       padding-bottom: 10px;
@@ -83,7 +83,12 @@ header {
       width: 30%;
       margin-bottom: 30px;
       .btn {
-        .sign-me-up-btn;
+        .sign-me-up-btn(@white, @eastern-blue);
+        &:hover {
+          .sign-me-up-btn(@eastern-blue, @white);
+          .animate-grow;
+          -webkit-transform: translateZ(200px);
+        }
       }
     }
   }

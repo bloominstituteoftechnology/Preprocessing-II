@@ -200,12 +200,12 @@ nav a {
 }
 header {
   width: 100%;
-  margin-top: 10px;
-  padding: 0 75px 25px 75px;
+  margin: 0 auto 0 auto;
+  padding: 10px 93px 25px 92px;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   header {
@@ -281,6 +281,25 @@ header {
   background-color: #17A2B8;
   border-radius: 15px;
   padding: 13px 0;
+}
+.home .content-pick .destination .btn:hover {
+  width: 83%;
+  color: #17A2B8;
+  font-size: 1.8em;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 13px 0;
+  animation: grow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-transform: translateZ(200px);
+}
+@keyframes grow {
+  0% {
+    -webkit-transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(200px);
+  }
 }
 @media (max-width: 500px) {
   .home {
