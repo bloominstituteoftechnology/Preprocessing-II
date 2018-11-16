@@ -1,1 +1,28 @@
 // Navigation Styles here
+header {
+	border-bottom: 2px dashed @navigation-border;
+
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		max-width: 800px;
+		margin: 0 auto;
+
+		p {
+			font-size: 3rem;
+		}
+
+		nav {
+			display: flex;
+			width: 35%;
+			justify-content: space-between;
+
+			a {
+				text-decoration: none;
+				color: @font-color;
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
