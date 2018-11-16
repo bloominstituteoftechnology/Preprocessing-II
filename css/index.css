@@ -171,12 +171,11 @@ img {
 header nav {
   display: flex;
   justify-content: space-around;
-  width: 40%;
 }
 header nav a {
   font-size: 2rem;
   color: #212529;
-  padding-right: 10px;
+  padding-right: 15px;
   text-decoration: none;
 }
 .footer {
@@ -214,6 +213,19 @@ header nav a {
   flex-wrap: wrap;
   border-bottom: 2px dashed silver;
   padding: 25px 0;
+}
+.home .image-content {
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .image-content img {
+  padding-bottom: 15px;
+}
+.home .text-content {
+  padding-top: 25px;
+}
+.home .img-content {
+  padding-top: 25px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
