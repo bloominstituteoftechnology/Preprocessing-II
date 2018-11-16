@@ -415,7 +415,7 @@ img {
   font-size: 1.6rem;
   color: #FFFFFF;
   font-weight: bold;
-  padding: 15px 24%;
+  padding: 15px 20%;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -o-border-radius: 15px;
@@ -424,7 +424,7 @@ img {
 }
 @media (max-width: 800px) {
   .home .content-pick .destination--button {
-    padding: 17.5px 15%;
+    padding: 17.5px 10%;
   }
 }
 @media (max-width: 500px) {
