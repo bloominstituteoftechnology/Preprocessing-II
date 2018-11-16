@@ -1,3 +1,19 @@
+.homeheader {
+  max-width: 800px;
+  margin: auto;
+  border-bottom: 2px dashed @navigation-border;
+  h2 {
+    margin-top: 5px;
+  }
+  img {
+    border-radius: 3px;
+    padding-bottom: 10px;
+  }
+  @media @mobile {
+    width: 100%;
+  }
+}
+
 .home {
 
   .content-section {
@@ -5,17 +21,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    @media @mobile {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +54,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +73,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -52,10 +87,35 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      flex-direction: column;
+      width: 100%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 75%;
+        margin: auto;
+        padding: 10px 0px;
+      }
+
+      .btn {
+        text-decoration: none;
+        .buttons(100%, 40px, white, @button-bg, 1.8em, 5px);
+        @media @mobile{
+          .buttons(100%, 40px, white, @button-bg, 1.8em, 5px);
+        }
+      .btn:hover {
+        .anima1();
+        @media @mobile{
+          .anima1();
+        }
+      }
+      }
     }
   }
 }// home
+
+
