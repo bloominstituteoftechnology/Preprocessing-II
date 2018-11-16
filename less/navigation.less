@@ -8,11 +8,31 @@ nav {
   padding: 25px 7%;
   border-bottom: 2px dashed @navigation-border;
 
+  @media @mobile {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+
+    h1 {
+      font-size: 3rem;
+
+      @media @mobile {
+        padding-bottom: 15px;
+      }
+    }
+  }
+
 
   .nav-bar {
-    width: 20%px;
+    width: 20%;
     display: flex;
     justify-content: flex-end;
+
+    @media @mobile {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
   a {
