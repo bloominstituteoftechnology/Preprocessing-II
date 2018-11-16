@@ -1,1 +1,32 @@
 // Navigation Styles here
+
+nav {
+    .layout(space-evenly, center);
+    .border-tool(0, 0, 2px, 0, dashed, @navigation-border);
+
+    .navbar {
+        .layout(space-between, center);
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @font-color;
+        }
+        width: 40%;
+
+        @media @mobile {
+            .layout (space-evenly, center);
+
+            width: 100%;
+            a {
+                padding: 10px 0;
+
+            }
+        }
+    }
+
+    @media @mobile {
+        .layout(space-around, center, column);
+    }
+}
+
