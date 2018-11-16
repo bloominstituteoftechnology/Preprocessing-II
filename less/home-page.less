@@ -9,6 +9,14 @@
 
   .header {
 
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+    }
+
     header {
       width: 100%;
       margin-top: 40px;
@@ -20,6 +28,15 @@
         width: 100%;
         margin-top: 50%;
         font-size: 4rem;
+
+        a {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-content: center;
+
+        }
       }
 
     }
@@ -93,7 +110,11 @@
       margin-bottom: 30px;
 
       @media @mobile {
-        width: 100%
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
       }
 
       p {

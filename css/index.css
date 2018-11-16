@@ -201,6 +201,15 @@ header nav a {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .home .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+}
 .home .header header {
   width: 100%;
   margin-top: 40px;
@@ -212,6 +221,13 @@ header nav a {
   width: 100%;
   margin-top: 50%;
   font-size: 4rem;
+}
+.home .header header .h2 a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
 }
 .home .content-section {
   margin: 30px 0;
@@ -270,6 +286,10 @@ header nav a {
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
   }
 }
 @media (max-width: 500px) {
