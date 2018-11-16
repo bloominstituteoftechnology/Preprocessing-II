@@ -175,11 +175,6 @@ header nav {
 header nav a {
   color: black;
 }
-button {
-  width: 85%;
-  height: 60px;
-  border-radius: 20%;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -243,4 +238,15 @@ header {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  width: 85%;
+  background-color: #17A2B8;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  margin-bottom: 20%;
+  font-size: 2rem;
 }
