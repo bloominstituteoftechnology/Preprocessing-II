@@ -264,8 +264,8 @@ img {
   height: 45px;
   border-radius: 16px;
   background-color: teal;
+  border: 1px solid silver;
   color: white;
-  border: 1px solid lightgray;
   font-size: 1.8rem;
   text-align: center;
   padding-top: 14px;
