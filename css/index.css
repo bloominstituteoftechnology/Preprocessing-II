@@ -196,30 +196,6 @@ header nav {
 header nav a {
   text-decoration: none;
 }
-@media (max-width : 800px) {
-  .container header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .container header nav a {
-    width: 54%;
-  }
-}
-@media (max-width: 500px) {
-  .container header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .container header nav a {
-    display: flex;
-    justify-content: space-between;
-    color: black;
-  }
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -246,7 +222,7 @@ header nav a {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .home .content-section .text-content {
     margin-left: 5%;
     width: 100%;
@@ -263,7 +239,7 @@ header nav a {
     justify-content: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .home .content-section .img-content {
     margin-left: 4.5%;
     width: 100%;
@@ -280,7 +256,7 @@ header nav a {
   padding-left: 1%;
   padding-right: 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .home .inverse-content .text-content {
     margin-left: 5%;
     width: 100%;
@@ -290,7 +266,7 @@ header nav a {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .home .inverse-content .img-content {
     margin-bottom: width: 100%;
   }
@@ -299,7 +275,7 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .home .content-destination {
     width: 98%;
   }
@@ -313,7 +289,7 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .home .content-pick {
     display: flex;
     flex-direction: column;
@@ -325,7 +301,7 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .home .content-pick .destination {
     display: flex;
     flex-direction: column;
@@ -345,7 +321,7 @@ header nav a {
     width: 54%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .container header {
     display: flex;
     flex-direction: column;
@@ -358,14 +334,34 @@ header nav a {
     color: black;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   .mydiv {
     margin: 3% 3% 3% 5%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400 px) {
   h4 {
     margin: 0 53% 0 0;
     color: #212529;
+  }
+}
+body {
+  animation: anim 5s linear 2s infinite alternate;
+}
+@keyframes anim {
+  0% {
+    background-color: #cc99ff;
+  }
+  25% {
+    background-color: #8c1aff;
+  }
+  50% {
+    background-color: #330066;
+  }
+  75% {
+    background-color: #0d001a;
+  }
+  100% {
+    background-color: lightyellow;
   }
 }
