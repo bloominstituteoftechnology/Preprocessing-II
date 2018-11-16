@@ -338,4 +338,7 @@ header p {
     width: 98%;
     padding: 10px 0;
   }
+  .home .inverse-content .img-content {
+    order: 2;
+  }
 }
