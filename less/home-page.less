@@ -1,11 +1,13 @@
 .homeheader {
   max-width: 800px;
   margin: auto;
+  border-bottom: 2px dashed @navigation-border;
   h2 {
-    margin: 10px 0px;
+    margin-top: 5px;
   }
   img {
     border-radius: 3px;
+    padding-bottom: 10px;
   }
   @media @mobile {
     width: 100%;
@@ -101,9 +103,9 @@
 
       .btn {
         text-decoration: none;
-        .buttons(100%, 40px, white, @button-bg, 1.8em, 3px);
+        .buttons(100%, 40px, white, @button-bg, 1.8em, 5px);
         @media @mobile{
-          .buttons(100%, 40px, white, @button-bg, 1.8em, 3px);
+          .buttons(100%, 40px, white, @button-bg, 1.8em, 5px);
         }
       .btn:hover {
         .anima1();

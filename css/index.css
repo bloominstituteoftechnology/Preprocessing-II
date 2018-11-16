@@ -224,12 +224,14 @@ img {
 .homeheader {
   max-width: 800px;
   margin: auto;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .homeheader h2 {
-  margin: 10px 0px;
+  margin-top: 5px;
 }
 .homeheader img {
   border-radius: 3px;
+  padding-bottom: 10px;
 }
 @media (max-width: 500px) {
   .homeheader {
@@ -332,7 +334,7 @@ img {
   color: #ffffff;
   background-color: #17a2b8;
   font-size: 1.8em;
-  border-radius: 3px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +346,7 @@ img {
     color: #ffffff;
     background-color: #17a2b8;
     font-size: 1.8em;
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
