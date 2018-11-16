@@ -418,6 +418,8 @@ img {
   border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #c0c0c0;
 }
 @media (max-width: 840px) {
   .home .content-pick {
@@ -508,4 +510,32 @@ img {
     padding: 13px 4%;
     font-size: 1.85rem;
   }
+}
+.home .form {
+  padding: 30px 0;
+  font-size: 1.6rem;
+}
+.home .form form label,
+.home .form form select {
+  display: inline-block;
+  padding-top: 20px;
+  margin-right: 1%;
+}
+.home .form form input {
+  height: 20px;
+}
+.home .form form textarea {
+  height: 150px;
+  width: 60%;
+  margin-top: 10px;
+}
+.home .form form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.home .form form input {
+  margin-top: 20px;
 }

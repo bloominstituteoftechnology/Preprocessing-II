@@ -125,6 +125,8 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
 
     @media @tablet {
       width: 92%;
@@ -168,6 +170,37 @@
           width: 88%;
           .btn-template(@button-bg, white, 15px, 13px 4%, 1.85rem);
         }
+      }
+    }
+  }
+
+  .form {
+    padding: 30px 0;
+    font-size: 1.6rem;
+    form {
+      label,
+      select {
+        display: inline-block;
+        padding-top: 20px;
+        margin-right: 1%;
+      }
+
+      input {
+        height: 20px;
+      }
+
+      textarea {
+        height: 150px;
+        width: 60%;
+        margin-top: 10px;
+      }
+
+      div {
+        .center(column, flex-start, flex-start, nowrap);
+      }
+
+      input {
+        margin-top: 20px;
       }
     }
   }
