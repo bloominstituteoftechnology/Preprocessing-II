@@ -15,6 +15,17 @@
         margin: 2.3% 14% 0 0;
         /* margin: 2.3% 32rem 0 0; */
 
+        &:hover {
+            .keyframes(change-color;{
+                0% { color: red; }
+                25% { color: blue; }
+                65% { color: grey; }
+                100% { color: black; }
+                });
+        
+            .animation(change-color 3s)
+        }
+
         @media @phone {
             margin: 0;
             font-size:3rem;

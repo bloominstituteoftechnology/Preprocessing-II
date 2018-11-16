@@ -192,6 +192,53 @@ img {
   margin: 2.3% 14% 0 0;
   /* margin: 2.3% 32rem 0 0; */
 }
+.section-nav .title:hover {
+  -webkit-animation: change-color 3s;
+  -moz-animation: change-color 3s;
+  animation: change-color 3s;
+}
+@-moz-keyframes change-color {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  65% {
+    color: grey;
+  }
+  100% {
+    color: black;
+  }
+}
+@-webkit-keyframes change-color {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  65% {
+    color: grey;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes change-color {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  65% {
+    color: grey;
+  }
+  100% {
+    color: black;
+  }
+}
 @media (max-width: 500px) {
   .section-nav .title {
     margin: 0;
