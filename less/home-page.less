@@ -14,6 +14,10 @@
         @media @tablet {
           background-color: @bus-yellow;
         }
+
+        @media @mobile {
+          background: none;
+        }
         
       
         .header-verbage {
@@ -51,7 +55,8 @@
       flex-direction: column;
       margin-left: 3%;
       margin-top:3%;
-            
+      border-top: 2px dashed @navigation-border; 
+           
     }
   
 
@@ -82,6 +87,10 @@
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 95%;
+        }
               
       } 
     }
@@ -98,11 +107,16 @@
 
     @media @mobile {
       flex-direction: column-reverse;
+      border-bottom: 2px dashed @navigation-border
     }
 
     .text-content {
       padding-left: 1%;
-      padding-right: 0;
+      padding-right: 1%;
+
+      @media @tablet {
+        margin-top: 2%;
+      }
     }
 
     .img-content {
@@ -129,13 +143,15 @@
       padding-left: 4%;
       padding-top: 2%;
       padding-right: 2%;
-          } 
+      background: none;
+    } 
 
     img {
       border-radius: 10px;
 
       @media @tablet {
         width: 98%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-content: center;
