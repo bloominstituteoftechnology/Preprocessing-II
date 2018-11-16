@@ -10,3 +10,10 @@
     font-weight: bold;
     border-radius: 15px;
 }
+
+.flex-justify-align-dir(@j-content: center;  @a-items: flex-start; @flex-dir: row) {
+    display: flex;
+    justify-content: @j-content;
+    align-items: @a-items;
+    flex-direction: @flex-dir;
+}
