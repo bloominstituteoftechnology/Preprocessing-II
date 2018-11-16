@@ -193,14 +193,29 @@
         height: 150px;
         width: 60%;
         margin-top: 10px;
+
+        @media @mobile {
+          width: 80%;
+        }
       }
 
       div {
         .center(column, flex-start, flex-start, nowrap);
       }
 
-      input {
+      input:last-child {
         margin-top: 20px;
+        .btn-template(@button-bg, white, 15px, 13px 4%, 1.85rem);
+        height: 50px;
+
+        &:hover {
+          .keyframes(
+            fade-in;{0% {background: white; color: @silver;} 100% {background: @button-bg;
+              color: white;}}
+          );
+
+          .animation(fade-in 0.5s linear 1 normal);
+        }
       }
     }
   }
