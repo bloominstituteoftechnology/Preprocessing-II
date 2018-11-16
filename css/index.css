@@ -423,7 +423,8 @@ header .hero {
   }
 }
 #contact input,
-#contact textarea {
+#contact textarea,
+select {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
 }
@@ -435,11 +436,15 @@ fieldset {
   margin: 0 0 10px;
 }
 #contact input,
-#contact textarea {
+#contact textarea,
+select {
   width: 100%;
   border: 1px solid #C0C0C0;
   margin: 0 0 5px;
   padding: 10px;
+}
+#contact select {
+  height: 35px;
 }
 #contact textarea {
   height: 100px;
