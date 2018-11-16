@@ -1,4 +1,33 @@
 .home {
+  
+
+  @media @phone {
+    width:91%;
+  }
+  .header {
+    @media @phone {
+      margin-left: .3rem;
+    }
+
+    .flexLayout(column);
+    border-bottom: 2px dashed @navigation-border;
+
+    .bus {
+      margin-bottom: 2.4rem;
+
+      @media @phone {
+        margin-bottom: 2.1rem;
+      }
+    }
+
+    p {
+      padding-bottom: 2rem;
+
+      @media @phone {
+        padding-bottom: 2.3rem;
+      }
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,19 +35,49 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      margin-top: 2.7rem;
+      flex-direction: column;
+      margin-left:.3rem;
+    }
+
+    
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width:100%;
+        padding: 0;
+
+        h2 {
+          @media @phone {
+            padding-bottom: 1.2rem;
+          }
+        }
+        
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width:100%;
+      }
+      
+
       img {
         border-radius: 10px;
+
+        @media @phone {
+          width:100%;
+          height:auto;
+        }
       }
     }
   }
@@ -26,6 +85,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column-reverse;
+      padding-bottom: 27px;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +106,12 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width:100%;
+      height:auto;
+      margin-left: .3rem;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +123,30 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: .2rem;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width:80%;
+        margin: 1px auto 29px auto;
+      }
+
+      .btn {
+        .buttonFactor();
+
+        @media @phone {
+          width: 100%;
+    
+        }
+      }
     }
   }
 }// home

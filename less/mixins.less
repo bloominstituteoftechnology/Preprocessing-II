@@ -1,1 +1,35 @@
 // Mixins in here
+
+.flexLayout(@direction:row, @justify:flex-start ,@align:stretch , @wrap: nowrap) {
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+    flex-wrap: @wrap
+}
+
+.buttonFactor() {
+    background: #007574;
+    width: 20rem;
+
+    //height: 4.5rem;
+    padding: 1.3rem 2rem;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #EBFBFE;
+}
+
+//animation mixin
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
