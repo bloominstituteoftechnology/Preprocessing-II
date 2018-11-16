@@ -70,7 +70,7 @@
     }
 
     .content-pick {
-        padding-top: 30px;
+        padding-top: 20px;
         border-top: 2px dashed @navigation-border;
         margin-bottom: 20px;
         .make-flex(row, space-between, flex-start, wrap);
@@ -114,6 +114,32 @@
 
             &:active {
                 .offset-border-effect(2px, dotted, @eastern-blue);
+            }
+        }
+    }
+
+    .select-package {
+        padding-top: 20px;
+        border-top: 2px dashed @navigation-border;
+        margin-bottom: 20px;
+
+        form {
+            margin-top: 15px;
+
+            label {
+                #fun-bus-form > .form--label();
+            }
+    
+            input[type="text"], input[type="email"], select {
+                #fun-bus-form > .form--textfield();
+            }
+    
+            textarea {
+                #fun-bus-form > .form--textarea();
+            }
+
+            input[type="submit"] {
+                #fun-bus-form > .form--submit-button();
             }
         }
     }

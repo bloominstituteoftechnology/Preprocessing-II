@@ -74,7 +74,30 @@
                     <div class="destination--button">Sign Me Up!</div>
                 </div>
             </section>
-        </div><!-- container -->
+            <section class="select-package">
+                <h2>Book a travel package now:</h2>
+                <form>
+                    <label for="firstname">First name :</label>
+                    <input type="text" placeholder="Enter your first name" required>
+                    <label for="lastname">Last name :</label>
+                    <input type="text" placeholder="Enter your last name" required>
+                    <label for="email">Email address :</label>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <label for="contact-number">Contact number :</label>
+                    <input type="text" placeholder="Enter your first name">
+                    <label for="package">Package :</label>
+                    <select required>
+                        <option selected disabled hidden value="">Choose a package:</option>
+                        <option>Solo package (up to 2 persons)</option>
+                        <option>Family package (up to 10 persons)</option>
+                        <option>Party package (up to 20 persons)</option>
+                    </select>
+                    <label for="extra-info">Other information :</label>
+                    <textarea placeholder="Enter any requests, instructions or other important information here."></textarea>
+                    <input type="submit" value="Book">
+                </form>
+            </section>
+        </div>
         <footer class="footer">
             <p>Copyright Fun Bus 2018</p>
         </footer>

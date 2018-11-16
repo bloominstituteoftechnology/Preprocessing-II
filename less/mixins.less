@@ -1,4 +1,4 @@
-// Reused styles
+// General eused styles
 
 .container-centering() {
     max-width: @container-max-width;
@@ -35,6 +35,59 @@
     }
 }
 
+// Form styles
+
+#fun-bus-form {
+    .form--label() {
+        display: block;
+        font-size: 1.8rem;
+        font-family: "Indie Flower";
+    }
+
+    .form--textfield() {
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid @eastern-blue;
+        .border-radius-prefixed(5px);
+        margin: 10px 0 20px;
+    }
+
+    .form--textarea() {
+        display: block;
+        font-family: Roboto;
+        width: 90%;
+        height: 100px;
+        padding: 10px 20px;
+        margin: 10px 0 20px;
+    }
+
+    .form--submit-button() {
+        background-color: @summer-sky;
+        display:inline-block;
+        color: @snow;
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px 25px;
+        border: 1px solid @shark;
+        .border-radius-prefixed(3px);
+        .box-shadow-prefixed(inset 0px -3px 7px 0px @eastern-blue);
+        margin-left: 1%;
+    
+        &:hover {
+            background-color: @eastern-blue;
+            .transition-control-prefixed(500ms);
+        }
+
+        &:active {
+            position:relative;
+            top:1px;
+        }
+    }
+}
+
+
 // Vender prefixing aids
 
 .transition-control-prefixed(@duration, @delay: 0) {
@@ -61,4 +114,11 @@
     -o-border-radius: @radius;
     -ms-border-radius: @radius;
     border-radius: @radius;
+}
+
+.box-shadow-prefixed(...) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
 }
