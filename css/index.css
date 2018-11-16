@@ -339,8 +339,8 @@ header .hero {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
-  -webkit-animation: scale-in-ver-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-ver-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: scale-in-ver-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-ver-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
@@ -421,4 +421,38 @@ header .hero {
   .home .content-pick .btn {
     background-color: #3ba2b7;
   }
+}
+#contact input,
+#contact textarea {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+}
+#contact {
+  padding: 25px;
+  margin: 10px 0;
+}
+fieldset {
+  margin: 0 0 10px;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  border: 1px solid #C0C0C0;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+#contact textarea {
+  height: 100px;
+}
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  background: #26817f;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+#contact button[type="submit"]:hover {
+  background-color: #3ba2b7;
 }
