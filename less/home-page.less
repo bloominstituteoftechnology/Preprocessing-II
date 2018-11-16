@@ -11,9 +11,14 @@
         flex-wrap: wrap;
         margin: 3% 1%;
         
+        @media @tablet {
+          background-color: @bus-yellow;
+        }
+        
       
         .header-verbage {
           margin-top: 2%;
+          padding-left: 2%;
 
           @media @mobile {
             margin: 2% 2%;
@@ -26,13 +31,18 @@
   
 
   .content-section {
-    border-top: 2px dashed lightgrey;
+    border-top: 2px dashed @silver;
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 3%;
     margin: 3% 1%;
+
+    @media @tablet {
+      border-top: 2px dashed @bus-yellow;
+      width: 100%;
+    }
 
     @media @mobile {
       //display: flex;
@@ -82,6 +92,10 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @tablet {
+      border-bottom: 2px dashed @bus-yellow;
+    }
+
     @media @mobile {
       flex-direction: column-reverse;
     }
@@ -99,7 +113,14 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+    padding-left: 2%;
+
+    @media @tablet {
+      background: @bus-yellow;
+      width: 100%;
+      padding-bottom: 5%;;
+    }
 
     @media @mobile {
       width: 100%;
@@ -108,10 +129,19 @@
       padding-left: 4%;
       padding-top: 2%;
       padding-right: 2%;
-    } 
+          } 
 
     img {
       border-radius: 10px;
+
+      @media @tablet {
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+        border-radius: 10px;
+      }
 
       
     }
@@ -126,19 +156,24 @@
     justify-content: space-between;
     margin: 3% 1%;
 
-    @media @mobile {
-      flex-direction: column;
-      width: 100%;
-      margin-top: 2%;
-      padding-left: 10%;
-      padding-top: 6%;
-      padding-right: 10%;
-      
+    @media @tablet {
+      border-top: 2px dashed @bus-yellow;
     }
+
+      @media @mobile {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2%;
+        padding-left: 10%;
+        padding-top: 6%;
+        padding-right: 10%;
+      }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      
 
       @media @mobile {
         width: 100%;
