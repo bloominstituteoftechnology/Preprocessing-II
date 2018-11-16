@@ -195,6 +195,9 @@ img {
   color: #212529;
   font-weight: bold;
 }
+.nav-container div nav a:hover {
+  text-decoration: underline;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -263,4 +266,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 83%;
+  color: white;
+  background-color: #17A2B8;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  padding: 12px 0;
+}
+.home .content-pick .destination .btn:hover {
+  cursor: pointer;
 }
