@@ -1,24 +1,110 @@
 .home {
 
+  header {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+      width: 25%;
+      @media @mobile {
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+        margin: -3px;
+      }
+      @media @tablet {
+        width: 30%;
+        padding-left: 8px;
+        font-size: 2.8rem;
+      }
+    }
+    .header-image {
+      width: 100%;
+      margin-top: 26px;
+      position: relative;
+      @media @mobile {
+        margin: 0 auto;
+        margin-top: 10px;
+        // border-top: 2px dashed @navigation-border;
+        width: 90%;
+      }
+      &::before {
+        content: ''; 
+        height: 1px; 
+        border-top: 2px dashed @navigation-border;
+        width: 200%;
+        max-width: 1000px;
+        position: absolute;
+        margin: 0 -100px;
+        @media @mobile {
+          width: 150%;
+          max-width: 600px;
+          position: absolute;
+          margin: 0 -100px;
+        }
+      }
+    }
+    .header-text {
+      margin-top: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px dashed @navigation-border;
+      @media @mobile {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      @media @tablet {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+  }
+  
+  .content-container {
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @media @tablet {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile {
+      width: 100%;
+    }
    
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        order: -1;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        width: 100%;
+      }
+      @media @tablet {
+        align-self: center;
+      }
       img {
         border-radius: 10px;
+        box-shadow: 1px 1px 3px black;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -41,8 +127,11 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 100%;
+    }
     img {
+      box-shadow: 1px 1px 3px black;
       border-radius: 10px;
     }
   }
@@ -51,11 +140,112 @@
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      width: 80%;
+      padding-top: 37px;
+      margin: 0 auto;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
+
+      @media @tablet {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+
+      a {
+        text-decoration: none;
+        &:visited {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .btn {
+      .button(white, @button-bg, 12px);
+      @media @tablet {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .content-signup {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-top: 2px dashed @silver;
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+
+      label {
+        font-size: 2rem;
+        width: 90%;
+        margin: 0 auto;
+        padding: 12px;
+      }
+
+      input, select, textarea {
+        border-radius: 4px;
+        border: 1px solid @silver;
+        transition: all .5s;
+        &:focus {
+          outline: none;
+          border: 1px solid darken(@silver, 25%);
+          background-color: darken(white, 10%);
+          box-shadow: 1px 1px 2px black;
+          transform: translateY(-1px);
+        }
+      }
+      
+      select:focus {
+        box-shadow: none;
+        transform: translateY(0px);
+      }
+
+      input {
+        font-size: 1.8rem;
+        width: 85%;
+        margin: 0 auto;
+        padding: 12px;
+        &[type="submit"] {
+          width: 200px;
+          margin: 12px auto;
+          transition: all .3s;
+          &:hover {
+            background-color: darken(white, 30%);
+            border: 1px solid @shark;
+            color: white;
+            cursor: pointer;
+            transform: translateY(-2px);
+            box-shadow: 0px 1px 3px black;
+          }
+        }
+      }
+
+      select {
+        font-size: 1.8rem;
+        width: 85%;
+        margin: 0 auto;
+        padding: 12px;
+      }
+      
+      textarea {
+        font-size: 1.8rem;
+        width: 85%;
+        margin: 0 auto;
+        padding: 12px;
+      }
     }
   }
 }// home

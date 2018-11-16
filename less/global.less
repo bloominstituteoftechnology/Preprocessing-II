@@ -4,10 +4,21 @@
 
 html {
   font-size: 62.5%;
+  color: @shark;
 }
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  @media @mobile {
+    overflow-x: hidden;
+    //This is to allow 100% screen width border above heading image
+  }
+  @media @tablet {
+    overflow-x: hidden;
+    //This is to allow 100% screen width border above heading image
+  }
 }
 
 h1, h2, h3, h4, h5 {

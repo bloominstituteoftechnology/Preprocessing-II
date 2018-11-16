@@ -1,1 +1,23 @@
 // Mixins in here
+.button(@color, @bg-color, @border-radius) {
+    width: 84%;
+    padding: 14px 20px;
+    color: @color;
+    background-color: @bg-color;
+    border-radius: @border-radius;
+    font-size: 1.75rem;
+    text-align: center;
+    transition: all .25s;
+    &:hover {
+        background-color: darken(@bg-color, 10%);
+        cursor: pointer;
+    }
+
+    @media @mobile {
+        width: 100%;
+      }
+}
+
+.bounce-animation(@duration) {
+ animation: bounce @duration linear;
+}

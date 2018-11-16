@@ -1,1 +1,29 @@
 // Navigation Styles here
+nav {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media @mobile {
+        width: 100%;
+        font-size: 1.6rem;
+        justify-content: space-evenly;
+        margin-top: 15px;
+        margin-bottom: 2px;
+      }
+    @media @tablet {
+        width: 70%;
+    }
+    a {
+        font-size: 1.6rem;
+        color: @shark;
+        text-decoration: none;
+        margin: 0 16px;
+        &:visited {
+            text-decoration: none;
+        }
+        &:hover {
+            .bounce-animation(.2s);
+        }
+    }
+}
