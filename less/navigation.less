@@ -1,6 +1,11 @@
 // Navigation Styles here
 
 .heading-container {
+
+    border-bottom: 2px dashed silver;
+    max-width: 1000px;
+    margin: 0 auto;
+
     .nav-container {
         display: flex;
         justify-content: space-between;
@@ -10,18 +15,20 @@
         padding: 0 40px;
         margin: 0 auto;
         margin-top: 30px;
-        border-bottom: 2px dashed silver;
+        
         padding-bottom: 30px;
     
-        
+        nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
 
         nav a {
             text-decoration: none;
             color: black;
             font-size: 1.6rem;
-            padding-right: 30px;
-            margin-left: 10px;
-            margin-right: 0;
         }
     }
 }
