@@ -222,7 +222,7 @@ header nav a {
     width: 100%;
   }
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   .home .content-section .text-content {
     margin-left: 5%;
     width: 100%;
@@ -239,7 +239,7 @@ header nav a {
     justify-content: center;
   }
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   .home .content-section .img-content {
     margin-left: 4.5%;
     width: 100%;
@@ -256,7 +256,10 @@ header nav a {
   padding-left: 1%;
   padding-right: 0;
 }
-@media (max-width: 400 px) {
+.home .inverse-content .text-content h2 {
+  margin-top: 10%;
+}
+@media (max-width: 500px) {
   .home .inverse-content .text-content {
     margin-left: 5%;
     width: 100%;
@@ -266,7 +269,7 @@ header nav a {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   .home .inverse-content .img-content {
     margin-bottom: width: 100%;
   }
@@ -275,8 +278,9 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   .home .content-destination {
+    margin-top: 10%;
     width: 98%;
   }
 }
@@ -289,7 +293,7 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   .home .content-pick {
     display: flex;
     flex-direction: column;
@@ -301,7 +305,7 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   .home .content-pick .destination {
     display: flex;
     flex-direction: column;
@@ -321,7 +325,7 @@ header nav a {
     width: 54%;
   }
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   .container header {
     display: flex;
     flex-direction: column;
@@ -334,34 +338,98 @@ header nav a {
     color: black;
   }
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   .mydiv {
     margin: 3% 3% 3% 5%;
   }
 }
-@media (max-width: 400 px) {
+@media (max-width: 500px) {
   h4 {
-    margin: 0 53% 0 0;
+    width: 100%;
+    margin-left: 5%;
     color: #212529;
   }
 }
+/****************animation*************/
 body {
   animation: anim 5s linear 2s infinite alternate;
 }
 @keyframes anim {
   0% {
-    background-color: #cc99ff;
+    background-color: #f0f0f5;
   }
   25% {
-    background-color: #8c1aff;
+    background-color: #e0e0eb;
   }
   50% {
-    background-color: #330066;
+    background-color: #d0d0e1;
   }
   75% {
-    background-color: #0d001a;
+    background-color: #b1b1cd;
   }
   100% {
-    background-color: lightyellow;
+    background-color: #63639c;
+  }
+}
+/***************Form styling*************/
+form {
+  margin-top: 30%;
+}
+form input[type="submit"] {
+  background-color: #17A2B8;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: 'Indie Flower', cursive;
+}
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+}
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }
