@@ -1,1 +1,21 @@
 // Mixins in here
+
+.button (@b-radius:7%, @paddin:5%, @clr:white, @b-clr:#018080, @wdth:80%){
+
+border-radius: @b-radius;
+padding: @paddin;
+color: @clr;
+background: @b-clr;
+width: @wdth;
+}
+
+  .content-pick{
+      .destination {
+          .btn {
+              .button;
+              font-size:1.8rem;
+              text-align: center;
+        
+          }
+      }
+  }
