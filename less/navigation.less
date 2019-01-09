@@ -8,6 +8,15 @@ nav {
     align-items: baseline;
     justify-content: space-between;
     padding: 20px 0;
+
+    @media @mobile {
+      display: block;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   ul {
@@ -15,6 +24,10 @@ nav {
     width: 40%;
     display: flex;
     justify-content: space-around;
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 }
 

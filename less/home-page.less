@@ -1,8 +1,18 @@
 .home {
 
+  @media @mobile {
+    padding: 0 15px;
+  }
+
   header {
+    border-bottom: 2px dashed silver;
+
     h2 {
       margin-top: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
     }
   }
 
@@ -12,11 +22,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
-      padding-right: 1%;
+      padding-right: 1%;      
     }
 
     .img-content {
@@ -25,6 +33,13 @@
 
       img {
         border-radius: 10px;
+      }
+    }
+
+    .text-content, .img-content {
+      @media @mobile {
+        width: 100%;
+        // padding: 0;
       }
     }
   }
@@ -41,12 +56,21 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 1;
+      }
+
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -58,15 +82,27 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+    @media @mobile {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     }
 
     .btn {
       font-size: 2rem;
       .make-btn(@white, @button-bg);      
+
+    @media @mobile {
+      display: block;
+      text-align: center;
+    }
     }
   }
 }// home
