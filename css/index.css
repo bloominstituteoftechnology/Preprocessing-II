@@ -168,6 +168,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-section {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  flex-wrap: nowrap;
+}
+.nav-section nav {
+  width: 40%;
+  margin-top: 2%;
+}
+.nav-section nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #212529;
+  padding-right: 10%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
