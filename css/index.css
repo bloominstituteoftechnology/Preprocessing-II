@@ -1,3 +1,11 @@
+.btn {
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: #17A2B8;
+  padding: 5%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -311,10 +319,10 @@ nav a {
 .home .content-pick .destination .btn {
   display: flex;
   justify-content: center;
-  background-color: #17A2B8;
-  padding: 5%;
   border-radius: 10px;
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
+  background-color: #17A2B8;
+  padding: 5%;
 }

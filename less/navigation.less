@@ -6,13 +6,13 @@ nav {
     align-items: baseline;
     border-bottom: 2px dashed @navigation-border;
 
-    @media (max-width: 500px) {
+    @media @max500 {
         flex-direction: column;
     }
 
     h2 {
 
-        @media (max-width: 500px) {
+        @media @max500 {
         margin-left: 150px;
         }
 
@@ -24,7 +24,7 @@ nav {
         justify-content: space-around;
         margin-left: 20px;
 
-        @media (max-width: 500px) {
+        @media @max500 {
             width: 90%;
         }
     }    
