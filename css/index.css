@@ -1,3 +1,20 @@
+.b_db {
+  border: 1px solid dodgerblue;
+}
+.b_rb {
+  border: 1px solid rebeccapurple;
+}
+.b_dp {
+  border: 1px solid deeppink;
+}
+.b_fg {
+  border: 1px solid forestgreen;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +184,34 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  max-width: 800px;
+  width: 100%;
+  margin: 1.75% auto;
+  font-size: 1.75rem;
+  color: #212529;
+  border: 1px solid deeppink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #LOGO {
+  border: 1px solid rebeccapurple;
+  width: 20%;
+  font-size: 3rem;
+}
+header nav {
+  border: 1px solid forestgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 43%;
+  justify-content: space-evenly;
+}
+header nav a {
+  text-decoration: none;
+  color: #212529;
 }
 .footer {
   width: 100%;
