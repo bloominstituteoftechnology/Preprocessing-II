@@ -1,3 +1,11 @@
+header {
+  border-bottom: 2px dashed @navigation-border;
+
+  h2 {
+    margin-top: 25px;
+  }
+}
+
 .home {
 
   .content-section {
@@ -56,6 +64,15 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+
+    .btn {
+      width: 100%;
+      color: @main-bg;
+      background-color: @btn-color;
+      font-size: 1.8rem;
+      padding: 12px 40px;
+      #mixins.border-radius(14px);
     }
   }
 }// home

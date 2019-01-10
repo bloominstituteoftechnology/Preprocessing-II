@@ -168,9 +168,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.navigation nav a {
+  margin-right: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #212529;
+  font-weight: 900;
+}
+hr {
+  border-top: 2px dashed #C0C0C0;
+  margin: 0;
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -178,6 +197,12 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+header h2 {
+  margin-top: 25px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,4 +249,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #008080;
+  font-size: 1.8rem;
+  padding: 12px 40px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
 }
