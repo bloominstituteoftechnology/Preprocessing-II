@@ -146,9 +146,19 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.8rem;
+  }
 }
 h4 {
   font-size: 2.5rem;
@@ -158,6 +168,11 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 img {
   max-width: 100%;
@@ -230,19 +245,37 @@ img {
   border-bottom: 2px dashed #c0c0c0;
   padding: 20px 0;
 }
+.home header .header-text h1 {
+  margin-bottom: 10px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
