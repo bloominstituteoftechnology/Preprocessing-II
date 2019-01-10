@@ -177,7 +177,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav {
+.container .nav {
   margin: 20px auto;
   padding: 20px 0;
   display: flex;
@@ -185,17 +185,17 @@ img {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
-.nav .title {
-  width: 50%;
+.container .nav .title {
+  width: 49.5%;
 }
-.nav .nav-items {
-  width: 50%;
+.container .nav .nav-items {
+  width: 49.5%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
-.nav .nav-items a {
+.container .nav .nav-items a {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 .footer {
   width: 100%;
