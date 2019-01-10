@@ -4,9 +4,9 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] Fork the project into your GitHub user account
+* [X] Clone the forked project into a directory on your machine
+* [X] You are now ready to build this project with your preferred IDE
 
 ## Task 2: Set up your preprocessor
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
@@ -29,8 +29,8 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 
 ## Task 4: Desktop Updates Needed
-* [ ] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
-* [ ] Navigation: Use the `navigation.less` file for all your navigation styling
+* [X] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
+* [X] Navigation: Use the `navigation.less` file for all your navigation styling
 * [ ] Main Header: Use the `home-page.less` file for the header styling.
 * [ ] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
 
