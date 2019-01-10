@@ -1,8 +1,8 @@
 // Mixins in here
-.flex-class() {
+.flex-class(@jcontent: center; @f-direction: row) {
 	display: flex;
-	justify-content: center;
+	justify-content: @j-content;
 	align-items: center;
-	flex-direction: row;
+	flex-direction: @f-direction;
 	flex-wrap: nowrap;
 }
