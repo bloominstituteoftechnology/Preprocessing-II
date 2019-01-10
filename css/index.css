@@ -170,6 +170,15 @@ img {
 }
 .btn {
   background-color: #17A2B8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 60px;
+  color: white;
+  font-size: 2rem;
+  border-radius: 20px;
 }
 #nav {
   display: flex;
