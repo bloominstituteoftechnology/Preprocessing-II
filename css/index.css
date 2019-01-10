@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -168,19 +168,41 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 425px;
+  }
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
   padding: 20px 5%;
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    flex-direction: column;
+    padding: 10px 2%;
+    height: 85px;
+    justify-content: space-between;
+  }
+}
 .nav-container .nav-text {
   font-family: "Indie Flower", cursive;
   font-size: 3.6rem;
+}
+@media (max-width: 500px) {
+  .nav-container nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 2rem;
+    width: 100%;
+  }
 }
 .nav-container nav a {
   font-size: 1.6rem;
@@ -188,10 +210,15 @@ img {
   margin-left: 4rem;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .nav-container nav a {
+    margin-left: 2rem;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -200,7 +227,7 @@ img {
   padding: 20px;
 }
 .home header .header-text {
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
   padding: 20px 0;
 }
 .home .content-section {
@@ -222,7 +249,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -241,7 +268,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -253,8 +280,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #17A2B8;
-  color: #FFFFFF;
+  background-color: #17a2b8;
+  color: #ffffff;
   height: 40px;
   border-radius: 12px;
   text-align: center;

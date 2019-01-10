@@ -7,17 +7,33 @@
   width: 100%;
   max-width: 1000px;
 
+  @media @mobile {
+    flex-direction: column;
+    padding: 10px 2%;
+    height: 85px;
+    justify-content: space-between;
+  }
+
   .nav-text {
     font-family: "Indie Flower", cursive;
     font-size: 3.6rem;
   }
 
   nav {
+    @media @mobile {
+      .flex(space-evenly);
+      padding-right: 2rem;
+      width: 100%;
+    }
     a {
       font-size: 1.6rem;
       color: black;
       margin-left: 4rem;
       text-decoration: none;
+
+      @media @mobile {
+        margin-left: 2rem;
+      }
     }
   }
 }
