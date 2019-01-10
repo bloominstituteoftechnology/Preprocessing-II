@@ -150,6 +150,11 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  h2 {
+    padding: 0 1%;
+  }
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
@@ -158,6 +163,11 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    padding: 0 1% 10px 1%;
+  }
 }
 img {
   max-width: 100%;
@@ -178,6 +188,11 @@ img {
   font-size: 1.6rem;
   text-align: center;
   padding: 10px 20px;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
 }
 header {
   width: 100%;
@@ -242,28 +257,65 @@ header .header-top nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    padding: 0;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding-right: 0;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -274,7 +326,23 @@ header .header-top nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination p {
+    padding: 0 0 10px 0;
+  }
 }
