@@ -168,6 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  width: 80%;
+  height: 36px;
+  background-color: #17A2B8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 10px 20px;
+}
 header {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
