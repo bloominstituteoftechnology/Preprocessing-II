@@ -1,3 +1,12 @@
+.btn {
+  text-align: center;
+  width: 200px;
+  padding: 12px 0;
+  color: #FFFFFF;
+  background-color: #157D84;
+  border-radius: 15px;
+  font-size: 1.8rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -199,10 +208,10 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .welcome {
+.header .welcome {
   margin-bottom: 30px;
 }
-.home .welcome .welcome-text {
+.header .welcome .welcome-text {
   padding-top: 30px;
   display: flex;
 }
