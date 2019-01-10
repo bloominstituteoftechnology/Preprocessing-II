@@ -2,5 +2,6 @@
 {
   "name" : "Preprocessing-II",
   "description" : "Lambda School project",
-  "tags" : "none"
+  "tags" : "none",
+  "template" : "vanilla"
 }
