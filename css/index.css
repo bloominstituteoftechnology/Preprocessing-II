@@ -176,6 +176,7 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   height: 60px;
+  width: 200px;
   color: white;
   font-size: 2rem;
   border-radius: 20px;
