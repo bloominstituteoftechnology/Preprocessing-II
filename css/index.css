@@ -169,7 +169,7 @@ img {
   margin: 0 auto;
 }
 .nav {
-  margin: 20px 0;
+  margin: 20px auto;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -184,7 +184,7 @@ img {
   display: flex;
   justify-content: flex-end;
 }
-.nav a {
+.nav .nav-items a {
   text-decoration: none;
   font-size: 1.6rem;
 }
