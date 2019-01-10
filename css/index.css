@@ -185,9 +185,17 @@ img {
   color: white;
   border: none;
   border-radius: 10px;
+  border-bottom: 2px solid #b2b2b2;
   font-size: 1.6rem;
   text-align: center;
   padding: 10px 20px;
+}
+.btn:hover {
+  color: #17A2B8;
+  background-color: white;
+  border: 1px solid #b2b2b2;
+  border-top: 2px solid #b2b2b2;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .btn {

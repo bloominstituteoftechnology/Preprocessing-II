@@ -7,9 +7,17 @@
     color: @color;
     border: none;
     border-radius: @radius;
+    border-bottom: 2px solid #b2b2b2;
     font-size: 1.6rem;
     text-align: center;
     padding: 10px 20px;
+    &:hover {
+        color: @button-bg;
+        background-color: white;
+        border: 1px solid #b2b2b2;
+        border-top: 2px solid #b2b2b2;
+        cursor: pointer;
+    }
     @media @mobile {
         width: 100%;
     }
