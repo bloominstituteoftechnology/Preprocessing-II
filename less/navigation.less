@@ -9,10 +9,23 @@ section.header-section {
     align-items: center;
     padding-bottom: 2rem;
     
+    @media @mobile {
+            flex-direction: column;   
+    }
+
     a {
         text-decoration: none;  
         font-size: 1.6rem;
         padding: 2rem;
-        }
+        color: gray;
+           
     }
+   }
+
+    
 }
+
+// @media @mobile {
+    //     flex-direction: column;   
+    // }
+    
