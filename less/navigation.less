@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+nav {
+  border-bottom: 2px dashed silver;
+
+  .container {
+    padding: 20px 0;
+    text-align: center;
+    
+    h1 {
+      margin-bottom: 10px;
+    }
+    
+    @media @desktop {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      h1 {
+        margin: 0;
+      }
+    }
+  }
+
+  ul {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    @media @desktop {
+      width: 40%;
+    }
+  }
+}
+
