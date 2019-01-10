@@ -169,6 +169,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+nav ul .logo {
+  flex: 1;
+}
+nav ul .logo h2 {
+  font-size: 40px;
+}
+nav ul .item {
+  padding: 0 20px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -179,6 +197,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  font-size: 16px;
 }
 .home .content-section {
   margin: 30px 0;
