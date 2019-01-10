@@ -1,1 +1,25 @@
 // Navigation Styles here
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 2px dashed @silver;
+
+    nav {
+        display: flex;
+        padding: 0 20px;
+
+        a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.6rem;
+            color: @shark;
+
+            &:hover {
+                color: @eastern-blue;
+            }
+        }
+    }
+}
