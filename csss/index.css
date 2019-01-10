@@ -185,10 +185,6 @@ img {
   font-size: 1.5rem;
   color: #212529;
 }
-.dashed-line {
-  border-bottom: 2px dashed #C0C0C0;
-  padding: 0 0 1rem;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -249,10 +245,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home .content-pick .btn {
   width: 18rem;
   height: 4rem;
   color: #FFFFFF;
@@ -262,11 +255,7 @@ img {
   background-color: #17A2B8;
   border-radius: 10px;
 }
-.home .content-pick .btn-container:hover {
+.home .content-pick .btn:hover {
   background-color: #148ea1;
   cursor: pointer;
-}
-.home .content-pick .btn-container a {
-  text-decoration: none;
-  color: #FFFFFF;
 }
