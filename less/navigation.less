@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+
+    h2 {
+
+        @media (max-width: 500px) {
+        margin-left: 150px;
+        }
+
+    }
+
+    .links {
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 20px;
+
+        @media (max-width: 500px) {
+            width: 90%;
+        }
+    }    
+
+    a{
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: black;
+    }
+}
