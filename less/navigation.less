@@ -1,1 +1,48 @@
 // Navigation Styles here
+body {
+  .nav {
+    border-bottom: 0.2rem dashed @navigation-border;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 0;
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    h1 {
+      @media @mobile {
+        font-size: 3.1rem;
+        margin: 1.3rem 0;
+      }
+      @media (max-width: 82rem) {
+        margin-left: 1rem;
+      }
+    }
+    nav {
+      display: flex;
+      width: 43.5%;
+      justify-content: space-evenly;
+      a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-family: "Roboto", sans-serif;
+        color: #000000;
+        @media @mobile {
+          font-size: 1.65rem;
+        }
+      }
+      @media @mobile {
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 0.2rem;
+      padding-bottom: 0.3rem;
+    }
+  }
+}
