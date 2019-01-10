@@ -47,6 +47,12 @@ body html {
   width: 100%;
   font-size: 62.5%;
 }
+.container-home header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
