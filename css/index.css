@@ -172,29 +172,22 @@ header {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
 }
-.header-top {
+header .header-top {
   padding: 30px 20px 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.header-top nav {
+header .header-top nav {
   width: 30%;
   display: flex;
   justify-content: space-between;
 }
-.header-top nav a {
+header .header-top nav a {
   text-decoration: none;
   color: #212529;
   padding: 5px;
   font-size: 1.2rem;
-}
-.header-bottom img {
-  margin-bottom: 30px;
-}
-.header-bottom p {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
 }
 .footer {
   width: 100%;
@@ -206,6 +199,13 @@ header {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.header-bottom img {
+  margin-bottom: 30px;
+}
+.header-bottom p {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
