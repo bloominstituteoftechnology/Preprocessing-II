@@ -231,6 +231,13 @@ header nav a {
 .home {
   width: 100%;
   border: 1px solid deeppink;
+  /*  width: @bwid;
+      font-size: @fsize;
+      padding: @bpad;
+      margin: @bmarg;
+      color: @col;
+      background: @bkgr;
+      .bround(@rnding); is NOT a parameter*/
 }
 .home .content-header {
   padding-top: 3%;
@@ -282,4 +289,15 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .btn {
+  width: 80%;
+  font-size: 1.75rem;
+  padding: 1.5rem;
+  margin: 0rem;
+  color: #FFFFFF;
+  background: #17A2B8;
+  font-weight: bolder;
+  border-radius: 1.5rem;
+  text-align: center;
 }
