@@ -1,7 +1,12 @@
-
 {
-  "name" : "Preprocessing-II",
-  "description" : "Lambda School project",
-  "tags" : "none",
-  "template" : "vanilla"
+  "name": "Preprocessing-II",
+  "description": "Lambda School project",
+  "tags": "none",
+  "template": "vanilla",
+  "dependencies": {
+    "less": "3.9.0"
+  },
+  "devDependencies": {
+    "@types/less": "3.0.0"
+  }
 }
