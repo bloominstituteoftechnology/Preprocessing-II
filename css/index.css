@@ -170,19 +170,23 @@ img {
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   border-bottom: 0.2rem dashed silver;
-  margin: 3% 0% 3%  0%;
+  margin-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
 }
 nav div {
-  width: 50%;
-  border: 1px solid black;
-  justify-content: space-evenly;
+  width: 42%;
+  display: flex;
+  justify-content: space-between;
 }
 nav a {
   text-decoration: none;
   font-size: 1.6rem;
-  border: 1px solid black;
+  color: black;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 .footer {
   width: 100%;
