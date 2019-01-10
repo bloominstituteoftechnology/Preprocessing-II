@@ -314,9 +314,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .home .content-pick .btn {
   display: flex;
@@ -329,4 +340,10 @@ img {
   text-align: center;
   width: 80%;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 }
