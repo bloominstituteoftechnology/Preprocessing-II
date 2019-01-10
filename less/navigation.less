@@ -3,7 +3,6 @@
 
 .container {
     nav {
-    margin: 20px auto;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -15,13 +14,17 @@
         }
 
         .nav-items {
-            width: 49.5%;
+            width: 40%;
             display: flex;
             justify-content: space-around;
 
             a {
                 text-decoration: none;
-                font-size: 2.5rem;
+                font-size: 1.6rem;
+
+                &:link, :hover, :visited, :active {
+                    text-decoration: none;
+                }
             }
         }
     }
