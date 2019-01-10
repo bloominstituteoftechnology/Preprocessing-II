@@ -1,10 +1,10 @@
-// Mixins in here
-.background(@color: transparent; @img: none; @size: auto auto; @repeat: repeat; @pos: center center) {
+//General Styles
+.background(@color: transparent; @image: none; @size: auto auto; @repeat: repeat; @position: center center) {
     background-color: @color;
-    background-image: @img;
+    background-image: @image;
     background-size: @size;
     background-repeat: @repeat;
-    background-position: @pos;
+    background-position: @position;
 }
 .border(@width: 0; @color: transparent; @radius: 0; @style: solid) {
     border-color: @color;
@@ -30,4 +30,11 @@
     font-weight: @weight;
     line-height: @line-height;
     text-align: @align;
+}
+//Objects
+.signup-button {
+    .background(@button-bg);
+    .border(@radius: 1.5rem);
+    .size(4.5rem, 20rem);
+    .text(#fff, @text-font, 1.8rem, center, bold, @line-height: 4.5rem);
 }

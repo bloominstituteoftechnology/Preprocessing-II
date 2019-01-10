@@ -1,3 +1,23 @@
+.signup-button {
+  background-color: #0A7F7F;
+  background-image: none;
+  background-size: auto auto;
+  background-repeat: repeat;
+  background-position: center center;
+  border-color: transparent;
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 0;
+  height: 4.5rem;
+  width: 20rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 4.5rem;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,7 +189,7 @@ img {
   margin: 0 auto;
 }
 .navigation {
-  border-color: #bbb;
+  border-color: #C0C0C0;
   border-radius: 0;
   border-style: dashed;
   border-width: 0 0 0.2rem 0;
@@ -221,6 +241,26 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home header .header-description {
+  border-color: #C0C0C0;
+  border-radius: 0;
+  border-style: dashed;
+  border-width: 0 0 0.2rem 0;
+  padding: 2.2rem 0 1rem 0;
+}
+.home header .header-image {
+  height: 100%;
+  width: 100%;
+}
+.home header .header-image figure {
+  height: 24rem;
+  width: 100%;
+  background-color: transparent;
+  background-image: url("../img/fun-bus.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -266,4 +306,24 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  background-color: #0A7F7F;
+  background-image: none;
+  background-size: auto auto;
+  background-repeat: repeat;
+  background-position: center center;
+  border-color: transparent;
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 0;
+  height: 4.5rem;
+  width: 20rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 4.5rem;
+  text-align: center;
 }
