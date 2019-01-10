@@ -168,6 +168,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  background-color: #17A2B8;
+}
 #nav {
   display: flex;
   justify-content: space-between;
