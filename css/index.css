@@ -249,3 +249,15 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  height: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 80%;
+  font-size: 1.6rem;
+}
