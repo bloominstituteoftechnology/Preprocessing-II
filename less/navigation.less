@@ -1,12 +1,22 @@
 // Navigation Styles here
 
 
-.nav-items{
+.nav {
+    margin: 20px 0;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     border-bottom: 2px dashed @navigation-border;
+
+    .title {
+        width: 50%;
+    }
+
+    .nav-items {
+        width: 50%;
+        justify-content: flex-end;
+    }
 
     a {
         text-decoration: none;
