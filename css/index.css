@@ -168,6 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.topheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 0.125rem dashed darkgray;
+}
+.topheader a {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +191,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .welcomeinfo {
+  margin: 1.5rem 0;
+  padding-top: 1rem;
+}
+.home .welcometext {
+  padding-right: 2rem;
+  border-bottom: 0.125rem dashed darkgray;
 }
 .home .content-section {
   margin: 30px 0;
