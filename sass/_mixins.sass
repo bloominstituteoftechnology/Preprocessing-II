@@ -1,0 +1,20 @@
+@mixin flexbox() 
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+
+
+@mixin buttons()
+    .btn
+        background-color: darken($eastern-blue, 10)
+        color: $white
+        font-size: 1.6rem
+        padding: 1.6rem
+        border-radius: 12px
+        text-align: center
+        cursor: pointer
+        &:hover
+            border: 2px solid $navigation-border

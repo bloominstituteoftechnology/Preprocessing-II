@@ -1,0 +1,16 @@
+.nav-container
+    @include flexbox()
+    align-items: baseline
+    justify-content: space-between
+    border-bottom: 1px dashed $navigation-border
+    h1
+        margin-left: 10rem
+    nav
+        ul
+            @include flexbox
+            justify-content: flex-end
+            li
+                padding: 3rem 2rem
+                font-size: 1.6rem
+                &:nth-child(4)
+                    margin-right: 10rem

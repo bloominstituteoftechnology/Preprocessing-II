@@ -91,6 +91,35 @@ img {
   margin: 0 auto;
 }
 
+.nav-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px dashed #C0C0C0;
+}
+.nav-container h1 {
+  margin-left: 10rem;
+}
+.nav-container nav ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-container nav ul li {
+  padding: 3rem 2rem;
+  font-size: 1.6rem;
+}
+.nav-container nav ul li:nth-child(4) {
+  margin-right: 10rem;
+}
+
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -148,6 +177,23 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+
+header h2 {
+  margin: 1rem 0;
+}
+
+.btn {
+  background-color: #117a8b;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 2px solid #C0C0C0;
 }
 
 /*# sourceMappingURL=index.css.map */
