@@ -60,6 +60,9 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  font-weight: 600;
+}
 .home header {
   border-bottom: 2px dashed #c0c0c0;
   width: 100%;
@@ -117,4 +120,17 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+  height: 30px;
 }

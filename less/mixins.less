@@ -1,1 +1,14 @@
 // Mixins in here
+.button(@justify,@align,@background, @color, @f-size, @radius) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  padding: 0 40px;
+  background-color: @background;
+  color: @color;
+  font-size: @f-size;
+  border-radius: @radius;
+  text-align: center;
+  width: 60%;
+  height: 30px;
+}
