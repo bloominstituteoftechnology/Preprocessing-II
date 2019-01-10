@@ -1,1 +1,7 @@
-/* LESS needs to be processed */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background-color: red;
+}
