@@ -187,17 +187,14 @@ nav a {
   text-decoration: none;
   font-size: 1.6rem;
   color: black;
-  padding-top: 1%;
-  padding-bottom: 1%;
   padding-left: 5%;
   padding-right: 5%;
 }
 nav section {
   justify-content: space-evenly;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 2%;
   font-weight: bold;
-  width: 45%;
+  width: 46%;
 }
 .footer {
   width: 100%;
@@ -261,4 +258,12 @@ nav section {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  font-size: 2rem;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 10px;
 }
