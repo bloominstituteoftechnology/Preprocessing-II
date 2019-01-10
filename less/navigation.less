@@ -1,1 +1,19 @@
-// Navigation Styles here
+.navigation {
+    .border(0 0 .2rem 0, #bbb, 0, dashed);
+    .flex(center);
+    .navigation-container {
+        .flex(space-between, center);
+        .size(8.75rem, @max-width);
+        .navigation-title {
+            .flex()
+        }
+        .navigation-links {
+            .flex(space-between);
+            .size(@width: fit-content);
+            a {
+                .text(@size: 1.6rem, @decoration: none);
+                margin-right: 3.1rem;
+            }
+        }
+    }
+}
