@@ -6,3 +6,14 @@
     align-items: @align;
     align-content: @align;
 }
+
+.button-design (@height; @width; @radius; @text-color; @bg-color; @font-size) {
+    height: @height;
+    width: @width;
+    border-radius: @radius;
+    color: @text-color;
+    background-color: @bg-color;
+    font-size: @font-size;
+
+    .flex(center; center);
+}
