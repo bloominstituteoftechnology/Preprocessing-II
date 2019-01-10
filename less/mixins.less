@@ -1,1 +1,52 @@
 // Mixins in here
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.border-radius(@radius: 10px) {
+    -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.border-color(@width: 1px, @style: solid, @color: black) {
+    border: @arguments;
+}
+.button-width-height(@width: 90%; @height: 3rem){
+    width: @width;
+    height: @height;
+}
+
+.button-text-align {
+    .center();
+}
+
+.button-font-size(@font-size: 1.5rem) {
+    font-size: @font-size;
+}
+
+.button-background-and-text-color(@backgroundColor: @DarkCyan; @textColor: @white){
+    background-color: @backgroundColor;
+    color: @textColor;
+}
+
+.text-decoration-and-color (@text-decoration: none; @color: @white){
+    text-decoration: none;
+    color: @white;
+}
+
+.btn {
+    a {
+        .text-decoration-and-color();
+    }
+    .border-radius();
+    .border-color();
+    .button-width-height();
+    .button-background-and-text-color();
+    .button-text-align();
+    .button-font-size();
+}
