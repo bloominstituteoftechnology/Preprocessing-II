@@ -257,3 +257,6 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+#banner {
+  margin: 0 auto;
+}
