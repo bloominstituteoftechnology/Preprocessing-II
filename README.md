@@ -15,7 +15,7 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 * [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
-## Task 3: Import LESS Files
+## Task 3: Import LESS Files -done
 
 * [ ] Navigate to your `index.less` file. Notice the file is blank.  In order for you to see the styles for this project you must import them in a certain order.  That order is as follows:
 
