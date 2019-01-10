@@ -40,18 +40,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-* {
-  box-sizing: border-box;
+nav {
+  border: 1px solid blue;
+  justify-content: space-evenly;
 }
-body html {
-  width: 100%;
-  font-size: 62.5%;
-}
-.container-home header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+nav a {
+  margin: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 .footer {
   width: 100%;
@@ -63,6 +59,18 @@ body html {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  border-bottom: 2px dashed #c0c0c0;
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .intro {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;

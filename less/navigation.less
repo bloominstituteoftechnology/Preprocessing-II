@@ -1,21 +1,12 @@
 // Navigation Styles here
 
-.flex(@direction, @justify, @align) {
-  display: flex;
-  flex-direction: @direction;
-  justify-content: @justify;
-  align-items: @align;
-}
-* {
-  box-sizing: border-box;
-}
-body html {
-  width: 100%;
-  font-size: 62.5%;
-}
+nav {
+  border: 1px solid blue;
+  justify-content: space-evenly;
 
-.container-home {
-  header {
-    .flex(row, space-between, center);
+  a {
+    margin: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
   }
 }
