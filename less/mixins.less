@@ -1,1 +1,22 @@
 // Mixins in here
+
+.button() {
+    width: 16rem;
+    height: 3.5rem;
+    color: @white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: @button-bg;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: darken(@button-bg, 4%);
+        cursor: pointer;
+    }
+}
+
+.border() {
+    border-button: 2px dashed @black;
+    padding: 0 0 1rem;
+}

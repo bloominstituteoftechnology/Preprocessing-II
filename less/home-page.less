@@ -1,41 +1,61 @@
 .home {
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+  .header {
+    img {
+      padding-bottom: 1.5rem;
     }
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
 
-      img {
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem 1rem;
+    }
+
+
+    .content-section {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .text-content {
+        width: 50%;
+        padding-right: 2%;
+
+      .img-content {
         border-radius: 10px;
+        width: 50%;
+        }
+        .inverse-content {
+          padding-bottom: 30px; 
       }
     }
   }
+}
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+
+  @media @phone {
+    flex-direction: column;
 
     .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+      width: 100%;
+      padding: 0 2 rem;
     }
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
+  }
+
+
+
+  @media @phone {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 2rem;
   }
 
   .content-destination {
@@ -47,6 +67,18 @@
     }
   }
 
+
+@media @phone {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+
+  .destination {
+    width: 100%;
+    align-content: center;
+  }
+
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
@@ -56,6 +88,17 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .button;
+
+      a {
+        text-decoration: none;
+        color: @white;
+      }
     }
   }
 }// home
