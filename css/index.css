@@ -221,7 +221,6 @@ header nav a {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
   }
