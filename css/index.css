@@ -169,6 +169,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
 nav {
   padding-bottom: 20px;
   border-bottom: 2px dashed #C0C0C0;
@@ -183,6 +188,9 @@ nav ul {
     flex-wrap: wrap;
   }
 }
+nav ul .item {
+  padding: 0 20px;
+}
 nav ul .item a {
   text-decoration: none;
   color: black;
@@ -193,6 +201,10 @@ nav ul .item a:hover {
 nav ul .logo {
   flex: 1;
 }
+nav ul .logo a {
+  color: black;
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   nav ul .logo {
     flex-basis: 100%;
@@ -201,9 +213,6 @@ nav ul .logo {
 }
 nav ul .logo h2 {
   font-size: 40px;
-}
-nav ul .item {
-  padding: 0 20px;
 }
 .footer {
   width: 100%;
@@ -215,15 +224,6 @@ nav ul .item {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
-}
-.container {
-  width: 90%;
-  margin-top: 20px;
-}
-@media (max-width: 500px) {
-  .container {
-    width: 95%;
-  }
 }
 .home header {
   font-size: 16px;
