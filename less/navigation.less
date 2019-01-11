@@ -3,17 +3,38 @@
 
 
   #nav {
-    .flex-class(@j-content: space-between; @f-direction: row);
+    .flex-class(@j-content: space-around; @f-direction: row);
     margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: @b-bottom;
+
+    h2 {
+      margin-left: @h-margin;
+    }
+
+
 
     nav {
-     width: 40%;
+     width: 30%;
+     margin-right: @h-margin;
     .flex-class(@j-content: space-between; @f-direction: row);
     a {
     	text-decoration: none;
     	color: black;
     	font-size: 1.6rem;
+      }
     }
+
+    @media @mobile {
+
+      width: 100%;
+      .flex-class(@j-content: space-between; @f-direction: column);
+      h2 { margin: 0;}
+      nav { margin: 0;}
+
+      nav {
+        flex-direction: space-around;
+        width: 80%;
+      }
     }
   }

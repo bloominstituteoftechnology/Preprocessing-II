@@ -183,15 +183,20 @@ img {
 }
 #nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-top: 20px;
-  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 2px dashed grey;
+}
+#nav h2 {
+  margin-left: 100px;
 }
 #nav nav {
-  width: 40%;
+  width: 30%;
+  margin-right: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -202,6 +207,26 @@ img {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  #nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #nav h2 {
+    margin: 0;
+  }
+  #nav nav {
+    margin: 0;
+  }
+  #nav nav {
+    flex-direction: space-around;
+    width: 80%;
+  }
 }
 .footer {
   width: 100%;
@@ -214,12 +239,22 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
 .home header {
   border-bottom: 2px dashed grey;
 }
 .home header img {
   margin-bottom: 10px;
-  border-top: 2px dashed grey;
 }
 .home header section h1 {
   margin-bottom: 10px;
@@ -232,6 +267,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -269,7 +314,27 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
