@@ -246,9 +246,19 @@ nav ul .item {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    flex: 1 1 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    flex: 1 1 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -261,9 +271,19 @@ nav ul .item {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: 0;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 1;
+  }
 }
 .home .content-destination {
   width: 75%;

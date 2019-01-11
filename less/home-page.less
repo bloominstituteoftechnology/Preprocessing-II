@@ -21,22 +21,31 @@
     }
   }
 
+      // CONTENT // 
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        flex: 1 1 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        flex: 1 1 100%;
+      }
+      
 
       img {
         border-radius: 10px;
@@ -48,20 +57,35 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+      order: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 1;
+        
+      }
     }
   }
+
+
+      // Destination //
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    
 
     img {
       border-radius: 10px;
