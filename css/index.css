@@ -100,9 +100,7 @@ img {
   align-items: baseline;
   justify-content: space-between;
   border-bottom: 1px dashed #C0C0C0;
-}
-.nav-container h1 {
-  margin-left: 10rem;
+  width: 100%;
 }
 .nav-container nav ul {
   display: -webkit-box;
@@ -115,9 +113,6 @@ img {
 .nav-container nav ul li {
   padding: 3rem 2rem;
   font-size: 1.6rem;
-}
-.nav-container nav ul li:nth-child(4) {
-  margin-right: 10rem;
 }
 
 .footer {
@@ -194,6 +189,44 @@ header h2 {
 }
 .btn:hover {
   border: 2px solid #C0C0C0;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-container {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-container h1 {
+    width: 100%;
+    color: red;
+    text-align: center;
+  }
+
+  .content-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .content-section .text-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .content-section .img-content {
+    width: 100%;
+  }
+
+  .inverse-content {
+    flex-direction: column-reverse;
+  }
+
+  .content-pick {
+    width: 100%;
+    flex-direction: column;
+  }
+  .content-pick .destination {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
