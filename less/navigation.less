@@ -9,14 +9,27 @@
     align-items: center;
     border-bottom: 2px dashed @navigation-border;
 
+        @media @max500 {
+            display: flex;
+            flex-direction: column;
+        }
+
         .title {
             width: 49.5%;
+
+            @media @max500 {
+                width: 100%;
+            }
         }
 
         .nav-items {
             width: 40%;
             display: flex;
             justify-content: space-around;
+
+            @media @max500 {
+                width: 100%;
+            }
 
             a {
                 text-decoration: none;

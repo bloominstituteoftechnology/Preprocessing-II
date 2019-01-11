@@ -184,13 +184,29 @@ img {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container nav .title {
   width: 49.5%;
+}
+@media (max-width: 500px) {
+  .container nav .title {
+    width: 100%;
+  }
 }
 .container nav .nav-items {
   width: 40%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container nav .nav-items {
+    width: 100%;
+  }
 }
 .container nav .nav-items a {
   text-decoration: none;
