@@ -251,3 +251,13 @@ nav ul .item {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .btn {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  background: #17A2B8;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 80%;
+}
