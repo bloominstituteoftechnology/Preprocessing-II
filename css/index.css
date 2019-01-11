@@ -417,3 +417,18 @@ header .header-top nav a:hover {
     padding: 0 0 10px 0;
   }
 }
+.contact {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.contact .content-section {
+  width: 70%;
+  border: 1px solid red;
+  padding: 10px;
+}
+.contact .contact-form {
+  width: 30%;
+  border: 1px solid red;
+  padding: 10px;
+}

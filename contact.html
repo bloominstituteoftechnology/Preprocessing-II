@@ -24,12 +24,84 @@
             
         <div class="header-bottom container">
             <img src="./img/fun-bus.jpg" alt="Yellow bus with luggage on the top of it">
-            <h2>Welcome To Fun Bus!</h2>
-            <p>Darn travelblogger expedition, darn wanderlust blogger excursion blogger pretty wanderlust wanderlust. Modern excursion colorful cute excursion theme design. Whimsical blogger traveler clean webdesign whimsical, whimsical design wanderlust pretty.</p>
         </div>
 
         <div class="container contact">
-            fjljl
+            <section class="content-section"> <!--left side-->
+                <div class="welcome">
+                    <h2>Welcome To Fun Bus!</h2>
+                    <p>Darn travelblogger expedition, darn wanderlust blogger excursion blogger pretty wanderlust wanderlust. Modern excursion colorful cute excursion theme design. Whimsical blogger traveler clean webdesign whimsical, whimsical design wanderlust pretty.</p>
+                </div>
+                <div class="packages">
+
+                    <h2>Our Packages</h2>
+
+                    <h4>Wildlife Tourism Package</h4>
+                    <img src="./img/wildlife.png" alt="elephants">
+                    <p>Whimsical traveling fun Travel cute darn, colorful modern blogger cute. WordPress traveling design darn pretty, WordPress whimsical traveling whimsical whimsical simple clean. Travel organized colorful, expedition darn modern simple blogger modern pretty simple webdesign traveler.</p>
+
+                    <h4>Honeymoon Tourism Package</h4>
+                    <img src="./img/honeymoon.png" alt="Couple on the beach">
+                    <p>Pretty Travel travelblogger colorful website, traveling traveler traveler whimsical website whimsical pretty wanderlust darn. Travel clean design design Travel wanderlust, theme webdesign. Fun Travel design simple excursion Travel design, traveling theme design.</p>
+
+                    <h4>Wellness Tourism Package</h4>
+                    <img src="./img/wellness.png" alt="People practicing yoga">
+                    <p>Design whimsical pretty traveler pretty theme webdesign blogger. Adventure traveler theme clean wanderlust fun blogger colorful modern, travelblogger whimsical darn whimsical WordPress. Organized adventure modern whimsical modern expedition whimsical.</p>
+
+                    <h4>Cruise Tourism Package</h4>
+                    <img src="./img/cruise.png" alt="Cruise ship">
+                    <p>Simple design traveling expedition wanderlust WordPress website travelblogger traveling. Design colorful colorful, WordPress expedition WordPress design whimsical clean clean. Clean blogger colorful travelblogger traveling, pretty darn modern traveling modern.</p>
+                </div>
+            </section>
+
+            <section class="contact-form"> <!--right side-->
+
+                <h2>Request a Call Back</h2>
+
+                <form> <!------------FORM starts-------------->
+
+                    <!--Packages-->
+                    <p>Select packages you're interested in.<br> <span class="note">(You can select more then one option by holding down control on a PC or command key on a Mac while selecting different options.)</span></p>
+                    <select name="packages" size="4" multiple="multiple">
+                        <option value="wildlife">Wildlife Tourism Package</option>
+                        <option value="honeymoon">Honeymoon Tourism Package</option>
+                        <option value="wellness">Wellness Tourism Package</option>
+                        <option value="cruise">Cruise Tourism Package</option>
+                    </select>
+
+                    <!--Name-->
+                    <p>Name</p>
+                    <input type="text" name="name" size="25" maxlength="45">
+
+                    <!--Phone-->
+                    <p>Phone number <br><span class="note">Format: 123-456-7890</span></p>
+                    <input type="tel" name="phone" size="25" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+
+                    <!--Email-->
+                    <p>Email</p>
+                    <input type="email" name="email" size="25">
+                    
+                    <!--Comments-->
+                    <p>Anything else we should know?</p>
+                    <textarea name="comments" cols="23" rows="10">Enter your comments...</textarea>
+
+                    <!--Button-->
+                    <div class="btn">Submit</div>
+
+                </form>   <!-----------FORM ends--------------->
+            </section>
         </div>
+
+
+
+
+
+
+
+        <footer class="footer">
+        <p>Copyright Fun Bus 2018</p>
+        </footer>
+
     </body>
 </html>
