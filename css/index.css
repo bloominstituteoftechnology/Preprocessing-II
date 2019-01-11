@@ -1,3 +1,37 @@
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .navigation h1 {
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 500px) {
+  .header-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .text-content {
+    width: 100px;
+  }
+}
+.btn {
+  background-color: #17A2B8;
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
