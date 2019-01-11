@@ -1,15 +1,34 @@
 .home {
   font-weight: 600;
+  @media @mobile {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+  }
   header {
-    border-bottom: 2px dashed #c0c0c0;
     width: 100%;
-    border-bottom: 2px dashed @navigation-border;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+
+    @media @mobile {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
   }
 
+  h2 {
+    @media @mobile {
+      font-size: 2.4rem;
+    }
+  }
+  .dashed-border {
+    overflow: hidden;
+    margin: 0 -98%;
+    border-bottom: 2px dashed @navigation-border;
+  }
   .intro {
     border-bottom: 2px dashed @navigation-border;
   }

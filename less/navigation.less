@@ -1,11 +1,16 @@
 // Navigation Styles here
 
 nav {
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   a {
     margin: 20px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-decoration: none;
+    color: black;
+
+    @media @mobile {
+      font-size: 2rem;
+    }
   }
 }
