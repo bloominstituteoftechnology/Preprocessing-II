@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -135,6 +135,8 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  width: 876px;
+  margin: auto;
 }
 h1,
 h2,
@@ -167,6 +169,20 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding-left: 1.2rem;
+  font-size: 1.5rem;
+}
+.funbus {
+  margin-bottom: 2%;
 }
 .footer {
   width: 100%;
