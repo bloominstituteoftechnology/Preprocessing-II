@@ -178,8 +178,26 @@ nav ul {
   justify-content: center;
   align-items: baseline;
 }
+@media (max-width: 500px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+}
+nav ul .item a {
+  text-decoration: none;
+  color: black;
+}
+nav ul .item a:hover {
+  text-decoration: underline;
+}
 nav ul .logo {
   flex: 1;
+}
+@media (max-width: 500px) {
+  nav ul .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 nav ul .logo h2 {
   font-size: 40px;
@@ -201,9 +219,19 @@ nav ul .item {
 .container {
   width: 90%;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
 .home header {
   font-size: 16px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home header {
+    margin-top: 20px;
+  }
 }
 .home header .top {
   padding-top: 20px;
