@@ -1,13 +1,10 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,6 +53,27 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .btn-style(10px, #17a2b8, 20rem, 3rem);
+        @media (max-width: 680px) {
+          width: 13rem;
+          padding-left: 11.5%;
+        }
+        @media (max-width: 500px) {
+          width: 8.75rem;
+          padding-left: 8.5%;
+          font-size: 1.2rem;
+          height: 2.5rem;
+        }
+      }
     }
   }
-}// home
+} // homes
+section.top-content {
+  margin-bottom: 30px;
+  border-bottom: dashed 2px @navigation-border;
+  img {
+    margin-bottom: 30px;
+  }
+}
