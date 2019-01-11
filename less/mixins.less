@@ -1,1 +1,7 @@
 // Mixins in here
+
+//allows you to set a specific dashed silver border with the parameter being where to put it
+//e.g. border-top
+.dashed-border(@border-loc; @border-color) {
+  @{border-loc}: 2px dashed @border-color;
+}
