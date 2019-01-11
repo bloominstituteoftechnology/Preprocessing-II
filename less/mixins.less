@@ -1,1 +1,23 @@
 // Mixins in here
+.flex-centered  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-creator (@color, @width, @height) {
+    font-size: 1.7rem;
+    width: @width;
+    height: @height;
+    background-color: @color;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    .flex-centered;
+
+}
+.btn {
+.button-creator(rgb(46, 126, 123), 180px, 40px);
+@media @phone{
+    .button-creator(rgb(46, 126, 123), 320px, 40px);
+}
+}

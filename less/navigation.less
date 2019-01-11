@@ -1,1 +1,41 @@
 // Navigation Styles here
+
+    .main-header  {
+      display: flex;
+      width: 100%;
+      border-bottom: 2px dashed @navigation-border;
+      
+.inside-header {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+      align-items: center;
+      padding-top: 25px;
+      padding-bottom: 30px;
+      @media @phone{
+        flex-direction: column;
+    }
+}
+      h1 {
+        font-size: 4.5rem;
+      }
+      nav{
+        display: flex;
+        justify-content: space-between;
+        height: 20px;
+          line-height: 25px;
+          width: 45%;
+          @media @phone{
+            width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+        a{
+          font-size: 1.6rem;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
