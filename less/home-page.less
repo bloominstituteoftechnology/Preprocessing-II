@@ -52,12 +52,24 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        .mobile-content-section
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile {
+        .mobile-content-section
+      }
     }
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+
+
   } //.inverse-content
 
   .content-destination {
