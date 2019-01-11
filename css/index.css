@@ -173,6 +173,12 @@ header {
   padding: 25px 0;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
 header .header-wrapper {
   max-width: 800px;
   display: flex;
@@ -195,8 +201,8 @@ header .header-wrapper .logo {
 }
 @media (max-width: 500px) {
   header .header-wrapper .logo {
-    font-size: 2.5rem;
-    padding-bottom: 10px;
+    font-size: 3rem;
+    padding-bottom: 15px;
   }
 }
 header .header-wrapper nav {
