@@ -136,6 +136,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  font-size: 1.6rem;
+}
 h1,
 h2,
 h3,
@@ -156,7 +159,6 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
   padding-bottom: 10px;
 }
 img {
@@ -175,9 +177,18 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-content: flex-end;
+  align-items: center;
   padding: 25px 10%;
   border-bottom: 2px dashed #C0C0C0;
+}
+header nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
 }
 .footer {
   width: 100%;

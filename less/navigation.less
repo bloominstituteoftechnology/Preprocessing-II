@@ -1,7 +1,14 @@
 header {
   .flex;
-  align-content: flex-end;
+  align-items: center;
   padding: 25px 10%;
   .dashed-border(border-bottom; @navigation-border);
-  
+  nav {
+    width: 45%;
+    .flex(space-evenly);
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
