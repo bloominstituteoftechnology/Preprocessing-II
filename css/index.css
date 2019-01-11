@@ -271,6 +271,10 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  height: auto;
+  width: 450px;
+}
 .home header .header-description {
   border-color: #C0C0C0;
   border-radius: 0;
@@ -282,8 +286,16 @@ img {
   height: 100%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home header .header-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
 .home header .header-image figure {
-  height: 24rem;
+  height: 13.5rem;
   width: 100%;
   background-color: transparent;
   background-image: url("../img/fun-bus.jpg");
@@ -297,16 +309,43 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    height: auto;
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    height: auto;
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -316,13 +355,29 @@ img {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: 1;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 2;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    height: auto;
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -333,9 +388,23 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    height: auto;
+    width: 80%;
+  }
 }
 .home .content-pick .btn {
   background-color: #0A7F7F;
@@ -356,4 +425,15 @@ img {
   font-weight: bold;
   line-height: 4.5rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    background-color: #17A2B8;
+    background-image: none;
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-position: center center;
+    height: auto;
+    width: 100%;
+  }
 }

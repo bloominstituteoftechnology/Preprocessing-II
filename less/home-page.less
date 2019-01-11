@@ -1,4 +1,6 @@
 .home {
+  .size(@width: 450px);
+
   header {
     .header-description {
       .border(0 0 0.2rem 0, @navigation-border, @style: dashed);
@@ -6,8 +8,12 @@
     }
     .header-image {
       .size(100%, 100%);
+      @media (max-width: @screen-small) {
+        .flex(center);
+      }
+
       figure {
-        .size(24rem, 100%);
+        .size(13.5rem, 100%);
         .background(@image: url("../img/fun-bus.jpg"), @size: contain);
       }
     }
@@ -17,16 +23,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: @screen-small) {
+      .flex(@direction: column);
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media (max-width: @screen-small) {
+        .size(@width: 100%);
+      }
     }
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media (max-width: @screen-small) {
+        .size(@width: 100%);
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
+        @media (max-width: @screen-small) {
+          .size(@width: 100%);
+        }
       }
     }
   }
@@ -36,15 +56,24 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media (max-width: @screen-small) {
+        order: 1;
+      }
     }
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media (max-width: @screen-small) {
+        order: 2;
+      }
     }
   }
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media (max-width: @screen-small) {
+      .size(@width: 100%);
+    }
     img {
       border-radius: 10px;
     }
@@ -54,12 +83,22 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media (max-width: @screen-small) {
+      .flex(@align: center, @direction: column);
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media (max-width: @screen-small) {
+        .size(@width: 80%);
+      }
     }
     .btn {
       .signup-button();
+      @media (max-width: @screen-small) {
+        .background(@eastern-blue);
+        .size(@width: 100%);
+      }
     }
   }
 }
