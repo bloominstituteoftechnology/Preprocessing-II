@@ -8,9 +8,17 @@
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 
+    @media @mobile {
+        .flex(@flexdir: column; @alignitems: center);
+    }
 
     nav {
         width: 40%;
+
+        @media @mobile {
+            margin-top: 10px;
+            width: 70%;
+        }
 
         a {
             padding-left: 7%;
