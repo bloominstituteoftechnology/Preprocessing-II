@@ -313,6 +313,7 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .home .content-pick {
@@ -346,4 +347,44 @@ img {
   .home .content-pick .destination .btn {
     padding: 10px 120px;
   }
+}
+.home .form-container {
+  margin-bottom: 30px;
+}
+.home .form-container h4 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 3rem;
+}
+.home .form-container .form {
+  font-size: 1.6rem;
+}
+.home .form-container .form input[type=text],
+.home .form-container .form select,
+.home .form-container .form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.home .form-container .form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.home .form-container .form input[type=submit]:hover {
+  background-color: #45a049;
+}
+.home .form-container .form .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
