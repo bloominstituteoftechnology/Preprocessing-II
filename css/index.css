@@ -170,6 +170,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 5%;
+  }
+}
 body {
   max-width: 1000px;
   margin: 0 auto;
@@ -191,6 +196,21 @@ a {
 }
 .nav nav a {
   color: black;
+}
+@media (max-width: 500px) {
+  .nav nav {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    padding: 15px 0 10px 0;
+  }
+  .nav h1 {
+    font-size: 3rem;
+    margin-bottom: 18px;
+  }
 }
 .footer {
   width: 100%;
