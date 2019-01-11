@@ -1,3 +1,5 @@
+
+
 .home {
   .content-section {
     margin: 30px 0;
@@ -46,6 +48,13 @@
     }
   }
 
+  .btnmix(@width, @hieght) {
+    border: 1px solid black;
+    border-radius: 5%;
+    width: @width;
+    height: @hieght;
+}
+
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
@@ -55,6 +64,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    
+      button {
+        .btnmix(15rem, 5rem);
+        background-color: #008087;
+        color: white;
+      }
     }
   }
 }// home
