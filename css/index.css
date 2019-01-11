@@ -232,6 +232,14 @@ nav {
 .home .header {
   margin-top: 100px;
 }
+.home .header-content {
+  padding-bottom: 16px;
+  border-bottom: 2px dashed #C0C0C0;
+  margin-top: 26px;
+}
+.home .header-content h2 {
+  font-size: 3.6rem;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
