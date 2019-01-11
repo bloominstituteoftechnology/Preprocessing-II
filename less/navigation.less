@@ -5,11 +5,17 @@ header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        // border: 1px solid red;
+
+        @media @mobile {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-bottom: 2%;
+        }
         a {
             text-decoration: none;
             font-size: 1.8rem;
             color:gray;  
         }
     }
-}
+    }
