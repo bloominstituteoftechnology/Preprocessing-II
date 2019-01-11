@@ -170,6 +170,7 @@ img {
 }
 @media (max-width:500px) {
   .container {
+    max-width: 450px;
     width: 100%;
     border: 1px solid orange;
     margin-right: 2%;
@@ -215,7 +216,7 @@ nav {
   display: flex;
   border: 1px solid black;
   width: 34%;
-  height: 30px;
+  height: 40px;
 }
 @media (max-width:500px) {
   nav {
