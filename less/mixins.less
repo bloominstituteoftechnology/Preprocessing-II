@@ -1,1 +1,32 @@
 // Mixins in here
+.button-style-1(@width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background: @button-bg;
+    color: @main-bg;
+    width: @width;
+    height: 40px;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+        .opacity-animation(1s,infinite);
+        border: 5px solid @footer-bg;
+    }
+}
+
+.opacity-animation(@cycle-time, @num-cycles){
+    animation-name: opacity-animation;
+    animation-duration: @cycle-time;
+    animation-iteration-count: @num-cycles;
+}
+
+@keyframes opacity-animation {
+    0% {opacity: 1; transform: rotate(0deg);}
+    25% {opacity: .75; transform: rotate(-1deg);}
+    50% {opacity: .5; transform: rotate(-2deg);}
+    75% {opacity: .75; transform: rotate(-1deg);}
+    100% {opacity: 1; transform: rotate(0deg);}
+} 
