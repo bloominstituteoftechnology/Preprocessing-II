@@ -8,14 +8,24 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 98%;
+        order: -1;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 98%;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -39,6 +49,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 98%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -50,21 +64,31 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        padding: 5%;
+        width: 98%;
+      }
       .btn {
         .btn-style(10px, #17a2b8, 20rem, 3rem);
         @media (max-width: 680px) {
           width: 13rem;
           padding-left: 11.5%;
         }
-        @media (max-width: 500px) {
-          width: 8.75rem;
-          padding-left: 8.5%;
-          font-size: 1.2rem;
-          height: 2.5rem;
+        @media @mobile {
+          width: 98%;
+          font-size: 1.6rem;
+          height: 4.5rem;
+          padding-left: 40%;
         }
       }
     }
