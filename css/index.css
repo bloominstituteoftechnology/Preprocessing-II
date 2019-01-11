@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width 500px) {
+  .container {
+    max-width: 480px;
+    width: 100%;
+  }
+}
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -209,9 +215,19 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width 500px) {
+  .home .content-section .text-content {
+    width: 96%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width 500px) {
+  .home .content-section .img-content {
+    width: 96%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -241,9 +257,49 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width 500px) {
+  .home .content-pick {
+    width: 96%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 82%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background: #17a2B8;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding-top: 3.5%;
+  padding-left: 25%;
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 3rem;
+}
+@media (max-width: 680px) {
+  .home .content-pick .destination .btn {
+    width: 13rem;
+    padding-left: 11.5%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 8.75rem;
+    padding-left: 8.5%;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin-bottom: 30px;
+  }
 }
 .home .content-pick .btn {
   background: #17A2B8;
