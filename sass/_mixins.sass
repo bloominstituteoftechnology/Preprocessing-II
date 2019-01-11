@@ -1,0 +1,63 @@
+@mixin flexbox() 
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+@mixin easeOut
+    transition: all 0.2s ease-in-out
+
+@mixin slide
+    animation: slide 1s ease-out both
+
+@mixin jello
+    animation: jello-horizontal ease-in-out 1s both
+
+
+@mixin buttons()
+    .btn
+        background-color: darken($eastern-blue, 10)
+        color: $white
+        font-size: 1.6rem
+        padding: 1.6rem
+        border-radius: 12px
+        text-align: center
+        cursor: pointer
+        &:hover
+            border: 2px solid $navigation-border
+            @include jello
+
+
+@keyframes slide
+    0%
+        opacity: 0
+        transform: translateY(-100px)
+    50%
+        opacity: .5
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+@keyframes jello-horizontal 
+  0% 
+    transform: scale3d(1, 1, 1)
+  
+  30% 
+    transform: scale3d(1.25, 0.75, 1)
+  
+  40% 
+    transform: scale3d(0.75, 1.25, 1)
+  
+  50% 
+    transform: scale3d(1.15, 0.85, 1)
+  
+  65% 
+    transform: scale3d(0.95, 1.05, 1)
+  
+  75% 
+    transform: scale3d(1.05, 0.95, 1)
+  
+  100% 
+    transform: scale3d(1, 1, 1)
+

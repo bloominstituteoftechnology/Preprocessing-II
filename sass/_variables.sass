@@ -1,0 +1,48 @@
+// Colors
+$white: #FFFFFF
+$silver: #C0C0C0
+$shark: #212529
+$eastern-blue: #17A2B8
+$sandy-beach: #FFEBCD
+$mobile: "screen and (max-width: 500px)"
+
+// Color assignments
+$font-color: $shark
+$button-bg: $eastern-blue
+$main-bg:  $white
+$navigation-border: $silver
+$footer-bg: $sandy-beach
+
+@mixin mediaSm()    
+    @media #{$mobile}
+        .nav-container
+            nav
+                flex-flow: row wrap
+                align-items: center
+                justify-content: center
+                ul
+                    li
+                        padding: 1rem 1rem
+            h1
+                width: 100%
+                text-align: center
+        .home
+            padding: 0 2rem
+            .content-section
+                flex-direction: column
+                width: 100%
+                .text-content
+                    width: 100%
+                    margin: 0
+                    padding: 0 
+                .img-content
+                    width: 100%
+                    text-align: center
+            .inverse-content
+                flex-direction: column-reverse
+            .content-pick
+                width: 100%
+                flex-direction: column
+                .destination
+                    width: 100%
+                    padding: 0 5rem
