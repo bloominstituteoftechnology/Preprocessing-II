@@ -338,9 +338,32 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding-top: 8px;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .content-pick-wrapper {
+    margin: 5% 7% 2% 7%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination-margin {
+    margin-bottom: 0px;
+  }
 }
 .home .content-pick .btn {
   border: 1px solid;
