@@ -1,1 +1,53 @@
 // Navigation Styles here
+
+    nav {
+        padding: 20px;
+        border-bottom: dashed @silver;
+        
+        .nav-bar {
+            .row(row, space-between);
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+
+            h1 {
+                
+                .logo {
+                    color: @shark;
+                    font-size: 3.6rem;
+                    text-decoration: none;
+                }
+                
+            }   
+
+            .navbar {
+                margin-top: 12px;
+                font-size: 1.5rem;
+                @font-color: @shark;
+                width: 100%;
+
+                a { 
+                color: @shark;
+                text-decoration: none;
+                padding: 20px;
+                }
+            }
+        }
+    }
+
+@media @mobile {
+    nav {
+        .nav-bar {
+          .column(column, center);
+            .navbar {
+                width: 100%;
+                .row(row, center);
+
+                a {
+                   width: 100%;
+                   
+                }
+        }
+      }
+    }   
+}
