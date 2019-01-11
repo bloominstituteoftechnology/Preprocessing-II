@@ -10,8 +10,9 @@
     margin-top: 26px;
 
     @media @mobile {
-      padding: 0 5% 1% 5%;
-      //padding-bottom: 1%;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-bottom: 3%;
     }
 
     h2 {
@@ -27,6 +28,8 @@
 
     @media @mobile {
       flex-direction: column;
+      margin-right: 5%;
+      margin-left: 5%;
       //width: 100%;
     }
 
@@ -37,7 +40,7 @@
       padding-right: 1%;
 
       @media @mobile {
-        padding: 0 5%;
+        padding: unset;
         width: auto;
       }
     }
@@ -47,7 +50,7 @@
       padding-left: 1%;
 
       @media @mobile {
-        padding: 4%;
+        padding: unset;
         width: 100%;
       }
 
@@ -71,9 +74,9 @@
       padding-right: 0;
 
       @media @mobile {
-        padding: 0 5%;
-        width:auto;
         margin-top: 20px;
+        padding: unset;
+        //width:auto;
       }
     }
 
@@ -82,7 +85,7 @@
       padding-left: 0;
 
       @media @mobile {
-        padding: 0 4%;
+        padding: unset;
         width: 100%;
       }
 
@@ -101,6 +104,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 90%;
+    }
 
     img {
       border-radius: 10px;
