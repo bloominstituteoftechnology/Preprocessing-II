@@ -1,1 +1,116 @@
 // Follow the order in the readme
+
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
+
+.centered {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 2px;
+}
+
+
+	.centered-mobile {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: column;
+		margin: 2px;
+    }
+    
+    header {
+		.centered();
+
+		nav {
+			.centered();
+			width: 65%;
+
+			@media (max-width: 500px) {
+				.centered-mobile();
+			}
+
+			a {
+
+				@media (max-width: 500px) {
+                    .centered-mobile();
+                }
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+    }
+    
+    .top-content {
+		.centered();
+
+		@media (max-width: 500px) {
+			.centered-mobile();
+		}
+
+			p {
+
+				@media (max-width: 500px) {
+					.centered-mobile()
+				}
+				text-align: center;
+			}
+		}
+    
+    
+  
+	.middle-content {
+		.centered();
+
+		@media (max-width: 500px) {
+			.centered-mobile();
+		}
+
+		p {
+		
+			@media (max-width: 500px) {
+				.centered-mobile();
+			}
+		}
+
+
+		.left-content {
+			// background-color: greenyellow;
+
+			width: 30%;
+			.header-font();
+
+			
+
+			@media (max-width: 500px) {
+				width: 80%;
+			}
+
+			li {
+				.centered-mobile();
+
+				@media (max-width: 500px) {
+					.centered-mobile();
+				}
+			}
+		
+			}
+		}
+
+		p {
+            .centered-mobile();
+            
+			@media (max-width: 500px) {
+				.para-font-mobile();
+			}
+
+			text-align: center;
+		}
+     //content
