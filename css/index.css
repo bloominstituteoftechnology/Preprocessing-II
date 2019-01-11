@@ -239,7 +239,6 @@ header nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
-  color: red;
 }
 .home .content-pick .destination {
   width: 30%;
