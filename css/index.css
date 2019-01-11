@@ -303,7 +303,6 @@ nav {
 }
 @media (max-width: 500px) {
   .home .inverse-content .text-content {
-    margin-top: 20px;
     padding: unset;
   }
 }
@@ -313,8 +312,8 @@ nav {
 }
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
+    order: 2;
     padding: unset;
-    width: 100%;
   }
 }
 .home .inverse-content .img-content img {
