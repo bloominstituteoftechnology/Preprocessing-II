@@ -1,3 +1,31 @@
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-pick .destination {
+    width: 100%;
+  }
+}
+.btn {
+  background-color: #1a7c74;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  font-size: 16px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
