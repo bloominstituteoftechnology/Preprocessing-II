@@ -1,7 +1,14 @@
 // Mixins in here
 
-.btn(@color:white, @bgcolor: darkcyan) {
-    font-size: 1.6rem;
-    color: @color;
-    background-color: @bgcolor;
+// .btn(@color:white, @bgcolor: darkcyan) {
+//     font-size: 1.6rem;
+//     color: @color;
+//     background-color: @bgcolor;
+// }
+
+.button (@height; @width; @radius; @bg) {
+    height: @height;
+    width: @width;
+    border-radius: @radius;
+    background-color: @bg;
 }
