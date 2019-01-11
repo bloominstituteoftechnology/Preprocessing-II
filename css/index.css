@@ -41,7 +41,6 @@ img {
   margin: 0 auto;
 }
 nav {
-  border: 1px solid blue;
   justify-content: space-evenly;
 }
 nav a {
@@ -52,7 +51,7 @@ nav a {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -64,16 +63,15 @@ nav a {
   font-weight: 600;
 }
 .home header {
-  border-bottom: 2px dashed #c0c0c0;
   width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .home .intro {
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -94,7 +92,7 @@ nav a {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -113,7 +111,7 @@ nav a {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -126,8 +124,8 @@ nav a {
   justify-content: row;
   align-items: center;
   padding: 0 40px;
-  background-color: #17A2B8;
-  color: #FFFFFF;
+  background-color: #17a2b8;
+  color: #ffffff;
   font-size: 1.2rem;
   border-radius: 10px;
   text-align: center;
