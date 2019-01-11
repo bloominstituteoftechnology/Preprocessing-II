@@ -1,11 +1,12 @@
 // Mixins in here
-.btn {
+.btn(@color: white, @bgcolor: darkcyan;) {
     font-size: 1.7rem;
-    color: white;
-    background-color: darkcyan;
+    color: @color;
+    background-color: @bgcolor;
     width: 80%;
     height: 40px;
     border-radius: 13px;
     text-align: center;
     padding-top: 12px;
 }
+
