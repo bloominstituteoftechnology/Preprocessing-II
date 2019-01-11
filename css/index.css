@@ -251,6 +251,10 @@ header nav a {
   text-decoration: none;
   color: #212529;
 }
+header nav a:hover {
+  color: #17A2B8;
+  font-size: 1.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
