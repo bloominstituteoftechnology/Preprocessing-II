@@ -168,6 +168,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+}
+.nav-links {
+  text-decoration: none;
+  color: black;
+  margin: 0 2px;
+  font-size: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.header-main {
+  padding-top: 30px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -184,6 +207,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
 }
 .home .content-section .text-content {
   width: 48%;
