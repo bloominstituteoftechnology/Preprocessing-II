@@ -222,6 +222,11 @@ a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 501px) and (max-width: 820px) {
+  .nav nav {
+    padding: 25px 20px;
+  }
+}
 @media (max-width: 500px) {
   .nav nav {
     flex-direction: column;
@@ -256,6 +261,11 @@ a:hover {
   padding: 0 20px;
   align-self: center;
 }
+@media (min-width: 501px) and (max-width: 820px) {
+  .nav nav ul li {
+    font-size: 1.4rem;
+  }
+}
 @media (max-width: 500px) {
   .nav nav ul li {
     font-size: 1.4rem;
@@ -272,6 +282,11 @@ a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (min-width: 501px) and (max-width: 820px) {
+  .home {
+    padding: 0 20px;
+  }
+}
 .home .content-header {
   width: 100%;
   margin: 0 auto 120px;
@@ -285,37 +300,10 @@ a:hover {
 }
 .home .content-header h2 {
   margin: 15px 0 0 0;
-  -webkit-animation: fade-in 1s linear infinite alternate;
-  -moz-animation: fade-in 1s linear infinite alternate;
-  animation: fade-in 1s linear infinite alternate;
 }
 @media (max-width: 500px) {
   .home .content-header h2 {
     padding: 0 20px;
-  }
-}
-@-moz-keyframes fade-in {
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fade-in {
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @media (max-width: 500px) {
@@ -443,4 +431,33 @@ a:hover {
   padding: 15px 0;
   border: 0;
   cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  -webkit-animation: fade-in 1s linear infinite alternate;
+  -moz-animation: fade-in 1s linear infinite alternate;
+  animation: fade-in 1s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }

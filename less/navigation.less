@@ -12,6 +12,9 @@
         padding: 25px 0;
         display: flex;
         justify-content: space-between;
+        @media @small {
+            padding: 25px 20px;
+        }
         @media @mobile {
             flex-direction: column;
             padding: 15px 0;
@@ -38,6 +41,9 @@
                 font-size: 1.6rem;
                 padding: 0 20px;
                 align-self: center;
+                @media @small {
+                    font-size: 1.4rem;
+                }
                 @media @mobile {
                     font-size: 1.4rem;
                 }

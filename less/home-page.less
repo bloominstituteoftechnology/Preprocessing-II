@@ -1,4 +1,7 @@
 .home {
+  @media @small {
+    padding: 0 20px;
+  }
   .content-header {
     width: 100%;
     margin: 0 auto 120px;
@@ -14,11 +17,6 @@
       @media @mobile {
         padding: 0 20px;
       }
-      .keyframes(fade-in;{
-        50% { opacity: 0.5; }
-        100% { opacity: 1; }
-      });
-      .animation(fade-in 1s linear infinite alternate);
     }
     p {
       @media @mobile {
@@ -127,6 +125,13 @@
       }
       .btn {
         .btn(darkcyan; white; 15px; 2rem);
+      }
+      .btn:hover {
+        .keyframes(fade-in;{
+          75% { opacity: 0.75; }
+          100% { opacity: 1; }
+        });
+        .animation(fade-in 1s linear infinite alternate);
       }
     }
   }
