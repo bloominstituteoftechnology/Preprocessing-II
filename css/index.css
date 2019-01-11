@@ -174,19 +174,19 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
-header {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 10%;
   border-bottom: 2px dashed #C0C0C0;
 }
-header nav {
+.nav nav {
   width: 45%;
   display: flex;
   justify-content: space-evenly;
 }
-header nav a {
+.nav nav a {
   text-decoration: none;
   color: black;
 }
