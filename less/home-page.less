@@ -100,14 +100,17 @@ header {
     }
 
     .btn {
-      width: 100%;
+      width: 83%;
       color: @main-bg;
       background-color: @btn-color;
       font-size: 1.8rem;
+      font-weight: bold;
+      text-align: center;
       padding: 12px 40px;
       #mixins.border-radius(14px);
 
       @media @mobile {
+        width: 100%;
         background-color: @button-bg;
         text-align: center;
       }

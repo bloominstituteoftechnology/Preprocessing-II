@@ -350,10 +350,12 @@ header h2 {
   }
 }
 .home .content-pick .btn {
-  width: 100%;
+  width: 83%;
   color: #FFFFFF;
   background-color: #008080;
   font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
   padding: 12px 40px;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
@@ -361,6 +363,7 @@ header h2 {
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
+    width: 100%;
     background-color: #17A2B8;
     text-align: center;
   }
