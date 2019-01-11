@@ -1,3 +1,14 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.width {
+  width: 100%;
+}
+.padding {
+  padding-right: 1%;
+  padding-left: 0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,13 +183,14 @@ img {
   width: 100%;
   height: 90px;
   border-bottom: 2px dashed #C0C0C0;
-  position: fixed;
 }
 .main-navigation .nav-container {
   height: 100%;
+  width: 60%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin-left: 275px;
 }
 .nav {
   width: 350px;
@@ -189,6 +201,25 @@ img {
   font-size: 1.6rem;
   color: #212529;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  .main-navigation .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 0;
+    width: 100%;
+  }
+  .main-navigation .nav-container .logo-heading {
+    font-size: 3rem;
+  }
+  .main-navigation .nav-container .nav {
+    width: 80%;
+    justify-content: space-around;
+  }
 }
 .footer {
   width: 100%;
@@ -211,8 +242,8 @@ img {
 .home .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -230,8 +261,8 @@ img {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content .text-content {
-  padding-left: 1%;
-  padding-right: 0;
+  padding-right: 1%;
+  padding-left: 0;
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -265,30 +296,18 @@ img {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 45px;
 }
 @media (max-width: 500px) {
   .container {
-    width: 80%;
-    margin: 0;
+    width: 90%;
   }
-  .main-navigation .nav-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 10px;
-    width: 80%;
-  }
-  .main-navigation .nav-container .logo-heading {
-    font-size: 3rem;
-    width: 80%;
-  }
-  .main-navigation .nav-container .nav {
+  .container-home {
     width: 100%;
-    justify-content: space-around;
+    padding: 0 10px;
   }
   .home .content-section .text-content {
     width: 100%;
+    margin: 0;
     padding: 0;
   }
   .home .content-section .img-content {
@@ -300,9 +319,11 @@ img {
   }
   .home .inverse-content .text-content {
     order: 1;
+    width: 100%;
   }
   .home .inverse-content .img-content {
     order: 2;
+    width: 100%;
   }
   .home .content-destination {
     width: 100%;
@@ -311,7 +332,7 @@ img {
     flex-wrap: wrap;
   }
   .home .content-pick .destination {
-    width: 80%;
+    width: 100%;
     margin: 0 auto 30px;
   }
   .home .content-pick .destination .btn {

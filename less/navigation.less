@@ -2,26 +2,43 @@
 .main-navigation {
   width: 100%;
   height: 90px;
-  border-bottom: 2px dashed @silver;;
-  position: fixed;
+  border-bottom: 2px dashed @silver;
 }
-
 .main-navigation .nav-container {
   height: 100%;
-  display: flex;
+  width: 60%;
+  .flex;
   align-items: center;
-  justify-content: space-between;
+  margin-left: 275px;
 }
-
 .nav {
   width: 350px;
   display: flex;
   justify-content: space-evenly;
-
-
   a {
     font-size: 1.6rem;
     color: @shark;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  
+  .main-navigation .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 0;
+    width: 100%;
+  }
+  .main-navigation .nav-container .logo-heading {
+    font-size: 3rem;
+  }
+  .main-navigation .nav-container .nav {
+    width: 80%;
+    justify-content: space-around;
   }
 }
