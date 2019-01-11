@@ -14,6 +14,11 @@
       @media @mobile {
         padding: 0 20px;
       }
+      .keyframes(fade-in;{
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+      });
+      .animation(fade-in 1s linear infinite alternate);
     }
     p {
       @media @mobile {
@@ -56,6 +61,10 @@
       img {
         border-radius: 10px;
       }
+      img:hover { 
+        border-radius: 0px; 
+        .transition(0.75s);
+      }
     }
   }
 
@@ -92,6 +101,10 @@
     }
     img {
       border-radius: 10px;
+    }
+    img:hover { 
+      border-radius: 0px; 
+      .transition(0.75s);
     }
   }
 

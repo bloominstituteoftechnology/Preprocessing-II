@@ -173,6 +173,40 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+a {
+  color: #212529;
+  text-decoration: none;
+}
+a:hover {
+  color: #17A2B8;
+  -webkit-animation: fade-in 1s linear infinite alternate;
+  -moz-animation: fade-in 1s linear infinite alternate;
+  animation: fade-in 1s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .nav {
   background: #FFFFFF;
   position: absolute;
@@ -217,6 +251,7 @@ img {
 }
 .nav nav ul li {
   color: #212529;
+  font-weight: bolder;
   font-size: 1.6rem;
   padding: 0 20px;
   align-self: center;
@@ -250,10 +285,37 @@ img {
 }
 .home .content-header h2 {
   margin: 15px 0 0 0;
+  -webkit-animation: fade-in 1s linear infinite alternate;
+  -moz-animation: fade-in 1s linear infinite alternate;
+  animation: fade-in 1s linear infinite alternate;
 }
 @media (max-width: 500px) {
   .home .content-header h2 {
     padding: 0 20px;
+  }
+}
+@-moz-keyframes fade-in {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @media (max-width: 500px) {
@@ -298,6 +360,12 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+.home .content-section .img-content img:hover {
+  border-radius: 0px;
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -336,6 +404,12 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+.home .content-destination img:hover {
+  border-radius: 0px;
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -367,4 +441,6 @@ img {
   text-align: center;
   width: 90%;
   padding: 15px 0;
+  border: 0;
+  cursor: pointer;
 }

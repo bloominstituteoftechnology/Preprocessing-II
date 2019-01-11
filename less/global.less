@@ -47,3 +47,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+
+a { 
+  color: @font-color; 
+  text-decoration: none;
+}
+a:hover {
+  color: @eastern-blue;
+  .keyframes(fade-in;{
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  });
+  .animation(fade-in 1s linear infinite alternate);
+}
+
