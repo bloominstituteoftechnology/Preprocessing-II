@@ -1,3 +1,14 @@
+.home .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7.5px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
