@@ -169,7 +169,6 @@ img {
   margin: 0 auto;
 }
 header {
-  border: 1px red solid;
   margin: 25px 0;
   display: flex;
 }
@@ -178,7 +177,6 @@ header h1 {
 }
 header nav {
   width: 50%;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: flex-end;
