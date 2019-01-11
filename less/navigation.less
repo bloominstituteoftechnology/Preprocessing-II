@@ -21,8 +21,15 @@
 
         .nav__logo {
             @media @mobile {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 margin-bottom: 15px;
+            }
+        }
+
+        .nav__link-container {
+            @media @mobile {
+                width: 100%;
+                .flex(@justify:space-evenly);
             }
         }
 
@@ -30,6 +37,10 @@
             .normalize(black);
             font-size: 1.6rem;
             padding-right: 29px;
+
+            @media @mobile {
+                padding: 0;
+            }
         }
     }
 }

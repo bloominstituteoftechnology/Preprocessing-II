@@ -198,8 +198,17 @@ img {
 }
 @media (max-width: 500px) {
   .navigation--border .navigation .nav__logo {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .navigation--border .navigation .nav__link-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
   }
 }
 .navigation--border .navigation .nav__link {
@@ -207,6 +216,11 @@ img {
   color: black;
   font-size: 1.6rem;
   padding-right: 29px;
+}
+@media (max-width: 500px) {
+  .navigation--border .navigation .nav__link {
+    padding: 0;
+  }
 }
 .footer {
   width: 100%;
