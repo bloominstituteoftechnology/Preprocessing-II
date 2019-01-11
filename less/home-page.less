@@ -1,8 +1,7 @@
 .home {
   width: 100%;
-  border: 4px solid red;
   @media @mob500 {
-    width: 90%;
+    width: 95.5%;
     margin: 0 auto;
   }
 
@@ -11,7 +10,7 @@
     padding-bottom: 1.5%;
     border-bottom: 2px dashed @navigation-border;
     @media @mob500 {}
-      padding: 5% 0;
+      padding: 4% 0;
   }
 
   .content-section {
@@ -105,8 +104,11 @@
       width: 30%;
       margin-bottom: 30px;
       @media @mob500 {
-        width: 90%;
+        width: 84%;
         margin: 5% auto;
+        &:last-child{
+          padding-bottom: 2%;
+      }
       }
     }
   }

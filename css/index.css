@@ -203,7 +203,6 @@ img {
   }
 }
 header {
-  border: 1px solid deeppink;
   max-width: 800px;
   width: 100%;
   margin: 1.75% auto;
@@ -221,7 +220,6 @@ header {
   }
 }
 header #LOGO {
-  border: 1px solid rebeccapurple;
   width: 20%;
   font-size: 4rem;
   font-family: 'Indie Flower', cursive;
@@ -231,11 +229,10 @@ header #LOGO {
     width: 100%;
     text-align: center;
     font-size: 3rem;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
   }
 }
 header nav {
-  border: 1px solid forestgreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -245,7 +242,7 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
-    width: 83%;
+    width: 87.5%;
     font-size: 1.5rem;
     justify-content: space-between;
   }
@@ -267,7 +264,6 @@ header nav a {
 }
 .home {
   width: 100%;
-  border: 4px solid red;
   /*  width: @bwid;
       font-size: @fsize;
       padding: @bpad;
@@ -278,7 +274,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   .home {
-    width: 90%;
+    width: 95.5%;
     margin: 0 auto;
   }
 }
@@ -286,7 +282,7 @@ header nav a {
   padding-top: 3%;
   padding-bottom: 1.5%;
   border-bottom: 2px dashed #C0C0C0;
-  padding: 5% 0;
+  padding: 4% 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -384,8 +380,11 @@ header nav a {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 90%;
+    width: 84%;
     margin: 5% auto;
+  }
+  .home .content-pick .destination:last-child {
+    padding-bottom: 2%;
   }
 }
 .home .btn {
