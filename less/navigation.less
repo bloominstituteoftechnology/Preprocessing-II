@@ -7,9 +7,23 @@ header {
         .flex(space-between; center);
         padding: 25px 0;
 
+        @media @mobile {
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 5px;
+            h1 {
+                padding-bottom: 15px;
+            }
+        }
+
         nav {
             width: 45%;
             .flex(space-evenly; center);
+
+            @media @mobile {
+                width: 100%;
+                justify-content: space-around;
+            }
 
             a {
                 font-size: 1.6rem;
