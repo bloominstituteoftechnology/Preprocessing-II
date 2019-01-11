@@ -5,15 +5,28 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
+
+    nav {
+        margin-top: 10px;
+        font-size: 1.8rem;
+        color: @shark;
+        
+        a {
+            padding-left: 10px;
+
+            @media @mobile {
+                padding: 5px 30px;
+
+
+            }
+        }
+    }
+    
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-header nav {
-    margin-top: 10px;
-    font-size: 1.8rem;
-    color: @shark;
-}
 
-header nav a {
-    color: @shark;
-    padding-left: 10px;
-}
