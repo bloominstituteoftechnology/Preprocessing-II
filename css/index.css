@@ -132,8 +132,8 @@ table {
 html {
   font-size: 62.5%;
 }
-html,
-body {
+body,
+html {
   font-family: 'Roboto', sans-serif;
   width: 800px;
   margin: auto;
@@ -164,6 +164,7 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  border-top: 2px dashed #C0C0C0;
 }
 .container {
   max-width: 800px;
