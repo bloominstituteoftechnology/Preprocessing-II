@@ -172,6 +172,13 @@ img {
   border-bottom: 2px dashed #C0C0C0;
   padding: 24px 0;
 }
+@media (max-width: 500px) {
+  .navigation--border {
+    padding: 0 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
 .navigation--border .navigation {
   max-width: 800px;
   margin: 0 auto;
@@ -179,6 +186,17 @@ img {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+}
+@media (max-width: 500px) {
+  .navigation--border .navigation {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .navigation--border .navigation .nav__logo {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
 }
 .navigation--border .navigation .nav__link {
   text-decoration: none;
