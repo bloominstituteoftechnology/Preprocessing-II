@@ -1,1 +1,34 @@
 // Navigation Styles here
+header {
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: 2px dashed @navigation-border;
+
+  .header-wrapper {
+    max-width: 800px;
+    .flex(@justify:space-between; @align:center);
+    margin: 0 auto;
+
+    .logo {
+      font-family: 'Indie Flower', cursive;
+      font-size: 4rem;
+      border: 1px solid blue;
+    }
+
+    nav {
+      .flex(@justify: flex-end);
+      border: 1px solid green;
+
+      a {
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: semi-bold;
+        color: @shark;
+        white-space: nowrap;
+        
+      }
+    }    
+
+  }
+}

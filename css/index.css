@@ -168,6 +168,39 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .header-wrapper {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .header-wrapper .logo {
+  font-family: 'Indie Flower', cursive;
+  font-size: 4rem;
+  border: 1px solid blue;
+}
+header .header-wrapper nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: normal;
+  border: 1px solid green;
+}
+header .header-wrapper nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+  color: #212529;
+  white-space: nowrap;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
