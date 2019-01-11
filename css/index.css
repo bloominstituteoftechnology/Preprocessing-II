@@ -232,8 +232,8 @@ header nav a {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    border: 1px solid red;
   }
 }
 .home .content-section .img-content {
