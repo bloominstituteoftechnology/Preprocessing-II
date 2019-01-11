@@ -6,14 +6,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -31,6 +31,11 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  p {
+    font-size: 2.4rem;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -43,16 +48,18 @@ img {
 nav {
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  nav {
+    font-size: 2rem;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+}
 nav a {
   margin: 20px;
   font-size: 1.4rem;
   text-decoration: none;
   color: black;
-}
-@media (max-width: 500px) {
-  nav a {
-    font-size: 2rem;
-  }
 }
 .footer {
   width: 100%;
@@ -68,13 +75,6 @@ nav a {
 .home {
   font-weight: 600;
 }
-@media (max-width: 500px) {
-  .home {
-    display: flex;
-    justify-content: column;
-    align-items: center;
-  }
-}
 .home header {
   width: 100%;
   display: flex;
@@ -85,8 +85,7 @@ nav a {
 @media (max-width: 500px) {
   .home header {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: baseline;
   }
 }
 @media (max-width: 500px) {

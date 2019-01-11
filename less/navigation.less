@@ -2,15 +2,15 @@
 
 nav {
   justify-content: space-between;
-
+  @media @mobile {
+    font-size: 2rem;
+    flex-direction: column;
+    border: 1px solid red;
+  }
   a {
     margin: 20px;
     font-size: 1.4rem;
     text-decoration: none;
     color: black;
-
-    @media @mobile {
-      font-size: 2rem;
-    }
   }
 }

@@ -1,10 +1,5 @@
 .home {
   font-weight: 600;
-  @media @mobile {
-    display: flex;
-    justify-content: column;
-    align-items: center;
-  }
   header {
     width: 100%;
     display: flex;
@@ -14,16 +9,15 @@
 
     @media @mobile {
       flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-end;
+      justify-content: baseline;
     }
   }
-
   h2 {
     @media @mobile {
       font-size: 2.4rem;
     }
   }
+
   .dashed-border {
     overflow: hidden;
     margin: 0 -98%;
