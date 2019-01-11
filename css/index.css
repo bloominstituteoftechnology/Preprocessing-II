@@ -227,11 +227,18 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+@media (max-width: 500px) {
+  .home .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
@@ -273,19 +280,15 @@ nav a {
   .content-pick {
     display: flex;
     flex-direction: column;
+    width: 290%;
+    padding: 40px;
   }
 }
 .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 500px) {
-  .content-pick .destination {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.content-pick .destination .btn {
+.content-pick .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +299,7 @@ nav a {
   color: #FFFFFF;
   width: 80%;
 }
-.content-pick .destination .btn:hover {
+.content-pick .btn:hover {
   color: #008080;
   background: #FFFFFF;
   border: 1px solid #008080;
