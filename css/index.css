@@ -250,4 +250,16 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .content-pick .btn {
+  width: 80%;
+  height: 45px;
+  font-size: 1.8rem;
+  border: none;
+  background-color: rgb(4 123 113);
+  border-radius: 14px;
+  color: white;
 }
