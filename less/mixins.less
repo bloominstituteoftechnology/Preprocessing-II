@@ -11,18 +11,18 @@
   justify-content: @justify;
 }
 
-.sign-up-btn(@bgcolor; @color) {
+.sign-up-btn(@bgcolor) {
   .flex(center);
   align-items: center;
   width: 82.5%;
   height: 43px;
-  color: @color;
+  color: white;
   background: @bgcolor;
   border-radius: 10px;
 }
 
-.mobile-content-section() {
-  width: 100%;
+.mobile-content-section(@width: 100%) {
+  width: @width;
   padding-left: 0;
   padding-right: 0;
 }
