@@ -168,6 +168,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.flex {
+  display: flex;
+}
+header {
+  border-bottom: dashed 2px #C0C0C0;
+}
+header div.navigation {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 3% 0 3%;
+}
+header div.navigation nav {
+  display: flex;
+  width: 40%;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header div.navigation nav a {
+  text-decoration: none;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
