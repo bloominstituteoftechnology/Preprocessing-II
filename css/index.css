@@ -203,12 +203,12 @@ img {
   }
 }
 header {
+  border: 1px solid deeppink;
   max-width: 800px;
   width: 100%;
   margin: 1.75% auto;
   font-size: 1.75rem;
   color: #212529;
-  border: 1px solid deeppink;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -340,9 +340,19 @@ header nav a {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: 0;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 1;
+  }
 }
 .home .content-destination {
   width: 75%;
