@@ -3,11 +3,26 @@
   .welcomeinfo {
     margin: 1.5rem 0;
     padding-top: 1rem;
+
+    @media @mobile {
+      padding-left: 1rem;
+    }
+  }
+
+  .bus {
+
+    @media @mobile {
+      padding: 0 1rem;
+    }
   }
 
   .welcometext {
     padding-right: 2rem;
     border-bottom: .125rem dashed darkgray;
+
+    @media @mobile {
+      padding: 1.5rem 1rem;
+    }
   }
 
   .content-section {
@@ -21,14 +36,28 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 1rem;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding: 1rem;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -40,17 +69,32 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        order: 0;
+        padding: 1rem;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 1;
+        padding: 1rem;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+      padding: 1rem;
+    }
 
     img {
       border-radius: 10px;
@@ -63,12 +107,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 75%;
+      }
+
       .btn {
-        .buttons;
+        .buttons;        
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
