@@ -248,5 +248,17 @@ img {
 }
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
+}
+.home .content-pick .destination p {
+  margin-bottom: 16px;
+}
+.home .content-pick .destination .btn {
+  text-decoration: none;
+  color: white;
+  background-color: teal;
+  padding: 10px 53px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.8rem;
 }
