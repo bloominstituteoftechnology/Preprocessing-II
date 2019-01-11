@@ -264,3 +264,14 @@ header .header-wrapper nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .btn {
+  width: 85%;
+  height: auto;
+  padding: 15px 20px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background: #0f6674;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+}
