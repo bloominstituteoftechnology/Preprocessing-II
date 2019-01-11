@@ -26,6 +26,12 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .inverse-content {
@@ -70,6 +76,13 @@
         text-align: center;
       }
     }
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
-
+  @media @mobile {
+    padding-left: 30px;
+}
 }// home
