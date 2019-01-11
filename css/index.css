@@ -168,12 +168,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.nav {
   display: flex;
-  justify-content: flex-end;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
 }
-nav a {
+.nav h2 {
+  padding-top: 10px;
+}
+.nav nav {
+  font-size: 1.6rem;
+}
+.nav nav a {
   text-decoration: none;
+  color: #212529;
+  padding-left: 10px;
 }
 .footer {
   width: 100%;
