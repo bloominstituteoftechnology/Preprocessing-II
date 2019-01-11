@@ -195,13 +195,13 @@ nav a {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 3px dotted lightgray;
+  border-bottom: 2px dashed lightgray;
 }
 .header h1 {
   margin: 0 120px;
 }
 .home .top-section {
-  border-bottom: 3px dotted lightgray;
+  border-bottom: 2px dashed lightgray;
 }
 .home .top-section h2 {
   margin-top: 20px;
