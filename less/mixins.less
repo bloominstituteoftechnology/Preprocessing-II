@@ -1,1 +1,24 @@
 // Mixins in here
+
+.flexbox(@fdir: row; @wrap: no-wrap; @justify: center; @aligncontent: baseline;) {
+    display: flex;
+    flex-direction: @fdir;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-content: @aligncontent;
+}
+
+.button {
+    background-color: @button-bg;
+    width: 83%;
+    border-radius: 15px;
+    color: white;
+    font-size: 2rem;
+    height: 45px;
+    .flexbox(@justify: center; @aligncontent: center;);
+}
+
+.mobile-button {
+    .button;
+    width: 98%;
+}
