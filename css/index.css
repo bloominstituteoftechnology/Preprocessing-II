@@ -168,6 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navigation--border {
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 24px 0;
+}
+.navigation--border .navigation {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.navigation--border .navigation .nav__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  padding-right: 29px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
