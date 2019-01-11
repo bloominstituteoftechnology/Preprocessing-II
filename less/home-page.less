@@ -2,16 +2,17 @@
 
   .content-header {
     width: 100%;
-    margin: 0 auto 110px;
+    margin: 0 auto 120px;
     position: relative;
     border-bottom: 2px dashed @navigation-border;
     padding-bottom: 15px;
-    top: 80px;
-
+    top: 90px;
     img {
       border-radius: 0px;
     }
-    h2 { margin: 15px 0 0 0; }
+    h2 { 
+      margin: 15px 0 0 0; 
+    }
   }
 
   .content-section {
@@ -66,10 +67,21 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      padding: 0 20px 0 0;
+      @media @mobile {
+        padding: 0 20px;
+        width: 100%;
+      }
+      .btn {
+        .btn(darkcyan; white; 15px; 2rem);
+      }
     }
   }
 }// home

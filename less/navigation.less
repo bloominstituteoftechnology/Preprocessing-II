@@ -6,15 +6,22 @@
     left: 0;
     border-bottom: 2px dashed silver;
     z-index: 1;
-
     nav {
         max-width: 800px;
         margin: 0 auto;
-        padding: 20px 0;
+        padding: 25px 0;
         display: flex;
         justify-content: space-between;
+        @media @mobile {
+            flex-direction: column;
+            padding: 15px 0;
+        }
         .nav-logo { 
             display: flex;
+            @media @mobile {
+                justify-content: center;
+                margin: 0 0 10px 0;
+            }
             h1 { 
                 flex: 0 0 auto;
             }
@@ -22,10 +29,17 @@
         ul {
             display: flex;
             justify-content: flex-end;
+            @media @mobile {
+                justify-content: space-evenly;
+            }
             li {
                 color: @font-color;
-                font-size: 1.7rem;
-                padding: 0 10px;
+                font-size: 1.6rem;
+                padding: 0 20px;
+                align-self: center;
+                @media @mobile {
+                    font-size: 1.4rem;
+                }
             }
         }
     }
