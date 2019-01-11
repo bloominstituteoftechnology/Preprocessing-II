@@ -24,4 +24,17 @@
     	font-size: 1.6rem;
       }
     }
+
+    @media @mobile {
+
+      width: 100%;
+      .flex-class(@j-content: space-between; @f-direction: column);
+      h2 { margin: 0;}
+      nav { margin: 0;}
+
+      nav {
+        flex-direction: space-around;
+        width: 80%;
+      }
+    }
   }
