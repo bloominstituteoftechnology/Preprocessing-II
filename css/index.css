@@ -189,7 +189,7 @@ nav a {
   font-weight: bold;
   color: black;
 }
-hr {
+#navHr {
   width: 125%;
   margin-right: 25%;
   border: 1.5px dashed lightgrey;
@@ -250,4 +250,19 @@ hr {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+header h2 {
+  margin-top: 15px;
+}
+header hr {
+  border: 1.5px dashed lightgrey;
+}
+button {
+  font-size: 1.6rem;
+  width: 80%;
+  background-color: #048a8a;
+  border-radius: 12px;
+  border: none;
+  height: 45px;
+  color: white;
 }
