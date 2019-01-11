@@ -183,15 +183,20 @@ img {
 }
 #nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-top: 20px;
-  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 2px dashed grey;
+}
+#nav h2 {
+  margin-left: 100px;
 }
 #nav nav {
-  width: 40%;
+  width: 30%;
+  margin-right: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -219,7 +224,6 @@ img {
 }
 .home header img {
   margin-bottom: 10px;
-  border-top: 2px dashed grey;
 }
 .home header section h1 {
   margin-bottom: 10px;
