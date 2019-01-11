@@ -1,1 +1,17 @@
 // Mixins in here
+.button(@height) {
+  width: 80%;
+  height: @height;
+  font-weight: bold;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @button-bg;
+  border-radius: 15px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
