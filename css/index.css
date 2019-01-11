@@ -265,7 +265,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     padding-right: 0;
-    width: 100%;
+    width: 95%;
   }
 }
 .home .content-section .img-content {
@@ -275,7 +275,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     padding-left: 0;
-    width: 100%;
+    width: 95%;
   }
 }
 .home .content-section .img-content img {
@@ -303,6 +303,7 @@ img {
 }
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
+    width: 95;
     order: 1;
   }
 }
@@ -339,6 +340,6 @@ img {
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 80%;
-    margin-left: 5%;
+    margin-left: 7%;
   }
 }
