@@ -179,8 +179,22 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .navigation .nav-bar {
+    max-width: 500px;
+    flex-direction: column;
+  }
+}
 .navigation .logo {
   padding: 24px 0px;
+}
+@media (max-width: 500px) {
+  .navigation .logo {
+    font-size: 3rem;
+    text-align: center;
+    padding: 15px 0px 15px 10px;
+    border: 1px solid blue;
+  }
 }
 .navigation ul {
   display: flex;
@@ -190,10 +204,23 @@ img {
   font-size: 1.6rem;
   padding-top: 35px;
 }
+@media (max-width: 500px) {
+  .navigation ul {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    border: 1px solid red;
+  }
+}
 .navigation a {
   text-decoration: none;
   font-weight: bold;
   color: #212529;
+}
+@media (max-width: 500px) {
+  .navigation a {
+    margin-left: 15px;
+  }
 }
 .footer {
   width: 100%;
