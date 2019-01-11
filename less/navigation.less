@@ -1,1 +1,29 @@
 // Navigation Styles here
+
+.navigation {
+    border-bottom: 2px dashed @navigation-border;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @sm{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+
+        
+        a{
+            padding: 0 15px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    }
+
+}
