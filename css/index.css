@@ -1,6 +1,6 @@
 .border {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem dashed #C0C0C0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -152,16 +152,26 @@ h1 {
 }
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.1rem;
+  }
 }
 img {
   max-width: 100%;
@@ -176,14 +186,33 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 header h1 {
   padding-left: 1rem;
 }
+@media (max-width: 500px) {
+  header h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
 header nav {
   padding-left: 1rem;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding-left: 0rem;
+  }
 }
 header nav a {
   padding-left: 3rem;
@@ -192,39 +221,64 @@ header nav a {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 0.2rem dashed silver;
   background: #FFEBCD;
 }
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
-  padding: 20px;
+  padding: 2rem;
 }
 .home .content-section {
-  margin: 30px 0;
+  margin: 3rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 97%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    padding-bottom: 1rem;
+    width: 97%;
+  }
+}
 .home .content-section .img-content img {
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 .home .welocome-section {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem dashed #C0C0C0;
 }
 .home .inverse-content {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -236,18 +290,50 @@ header nav a {
 }
 .home .content-destination {
   width: 75%;
-  margin: 0 auto 30px;
+  margin: 0 auto 3rem;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 97%;
+  }
 }
 .home .content-destination img {
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 .home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  padding-top: 3rem;
+  border-top: 0.2rem dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
+}
+.home .content-pick .destination .btn {
+  background: #008080;
+  border-radius: 4rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 1.3rem;
+  width: 14rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 27rem;
+    background: #17A2B8;
+  }
+}
+@media screen {
+  .home .content-pick .destination {
+    width: 91%;
+  }
 }

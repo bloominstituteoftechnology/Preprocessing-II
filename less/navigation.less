@@ -3,14 +3,24 @@
 
 header{
   .flex(space-evenly; baseline);
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
-
+  padding-bottom: 3.0rem;
+  border-bottom: .2rem dashed #C0C0C0;
+    @media @mobile{
+        .flex(center, center);
+        flex-direction: column;     
+    }
   h1{
       padding-left: 1rem;
+      @media @mobile{
+          text-align: center;
+          padding-bottom: 1rem;
+      }
   }
   nav{
       padding-left: 1rem;
+      @media @mobile {
+          padding-left: 0rem;
+      }
   a {
     padding-left: 3rem;
     text-decoration: none;

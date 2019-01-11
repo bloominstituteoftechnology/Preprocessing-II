@@ -9,6 +9,23 @@
 
 //border Mixins 
 .border{
-padding-bottom: 30px;
-border-bottom: 2px dashed @navigation-border;
+padding-bottom: 3.0rem;
+border-bottom: .2rem dashed @navigation-border;
+}
+
+//button style Mixin
+
+.buttonstyle(@radius){
+  background: #008080;
+  border-radius: @radius;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 1.3rem;
+  width: 14rem;
+  @media @mobile{
+    width: 27rem;
+    background: #17A2B8;
+  }
 }
