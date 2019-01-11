@@ -1,5 +1,7 @@
 * 
   box-sizing: border-box
+  @include easeOut
+
 html 
   font-size: 62.5%
 
@@ -11,6 +13,7 @@ h1, h2, h3, h4, h5
 
 h1 
   font-size: 4rem
+  @include jello
 
 h2 
   font-size: 3.2rem
@@ -28,6 +31,7 @@ p
 img 
   max-width: 100%
   height: auto
+  @include slide
   
 .container 
   max-width: 800px

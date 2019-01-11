@@ -1,3 +1,39 @@
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
  * * v2.0 | 20110126
  * * License: none (public domain) */
@@ -44,6 +80,7 @@ table {
 
 * {
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
 html {
@@ -60,6 +97,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+  animation: jello-horizontal ease-in-out 1s both;
 }
 
 h2 {
@@ -81,6 +119,7 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  animation: slide 1s ease-out both;
 }
 
 .container {
@@ -164,6 +203,7 @@ img {
 }
 .home .content-destination img {
   border-radius: 10px;
+  animation: slide 1s ease-out both;
 }
 .home .content-pick {
   padding-top: 30px;
@@ -194,6 +234,7 @@ header h2 {
 }
 .btn:hover {
   border: 2px solid #C0C0C0;
+  animation: jello-horizontal ease-in-out 1s both;
 }
 
 @media screen and (max-width: 500px) {
