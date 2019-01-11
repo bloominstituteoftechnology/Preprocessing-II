@@ -168,6 +168,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.home nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.home .navLink {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+}
+.home .navLink a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 0px 10px 0px 10px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
