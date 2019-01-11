@@ -4,16 +4,34 @@
     .navigation-container {
         .flex(space-between, center);
         .size(8.75rem, @max-width);
-        .navigation-title {
-            .flex()
+        @media (max-width: @screen-small) {
+            .flex(space-evenly, center, @direction: column);
         }
+
+        .navigation-title {
+            .flex();
+            @media (max-width: @screen-small) {
+                .text(@family: @header-font, @size: 3rem);
+            }
+        }
+
         .navigation-links {
             .flex(space-between);
             .size(@width: fit-content);
+            @media (max-width: @screen-small) {
+                .size(1.6rem, 38.6rem);
+            }
+
             a {
                 .text(@size: 1.6rem, @decoration: none);
                 margin-right: 3.1rem;
+                @media (max-width: @screen-small) {
+                    margin: 0;
+                }
             }
         }
     }
 }
+
+// .text(@color: inherit; @family: inherit; @size: inherit; @align: inherit; @weight: normal; @line-height: normal; @decoration: none)
+// .flex(@justify: start; @align: start; @direction: row)
