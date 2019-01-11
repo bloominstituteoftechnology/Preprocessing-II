@@ -168,6 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+}
+nav a:link,
+a:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +196,27 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  margin-top: 2rem;
+}
+.home header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.home header.inverse-content {
+  padding-bottom: 5px;
+}
+@media (max-width: 500px) {
+  .home header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.home .hero-img {
+  margin-bottom: 2rem;
 }
 .home .content-section {
   margin: 30px 0;
@@ -193,8 +232,21 @@ img {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -208,6 +260,12 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    order: 2;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -215,13 +273,47 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.home .btn {
+  background-color: #17A2B8;
+  border-radius: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  padding: 1.5rem 0;
+}
+.home .btn:hover {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

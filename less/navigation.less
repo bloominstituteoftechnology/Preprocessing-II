@@ -1,20 +1,18 @@
 // Navigation Styles here
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        @media @phone {
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+
+    }
     nav a:link, a:visited{
-      margin-left: 2rem;
+      
       font-size: 1.6rem;
       text-decoration: none;
       color: black;
     }
-
-    @media @phone {
-        flex-direction: column;
-        align-items: center;
-        nav {
-            margin-top: 1rem;
-        }
-    }
-  }
