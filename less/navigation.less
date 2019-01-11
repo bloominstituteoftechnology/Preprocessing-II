@@ -7,6 +7,13 @@
     align-items: baseline;
     margin-top: 30px;
     margin-bottom: 30px;
+
+    #mixins.keyframes(fade-in;{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+		});
+
+	#mixins.animation(fade-in 3s );
     
     @media @mobile {
         width: 100%;
