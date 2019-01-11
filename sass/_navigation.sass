@@ -1,12 +1,14 @@
 .nav-container
-    @include flexbox()
-    align-items: baseline
-    justify-content: space-between
-    border-bottom: 1px dashed $navigation-border
-    width: 100%
+    border-bottom: 2px dashed $navigation-border
     nav
+        @include flexbox()
+        align-items: baseline
+        justify-content: space-between
+        margin: 0 auto
+        max-width: 800px
+        width: 100%
         ul
-            @include flexbox
+            @include flexbox()
             justify-content: flex-end
             li
                 padding: 3rem 2rem

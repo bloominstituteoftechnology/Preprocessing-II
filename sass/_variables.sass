@@ -13,30 +13,36 @@ $main-bg:  $white
 $navigation-border: $silver
 $footer-bg: $sandy-beach
 
-@mixin mediaSm    
+@mixin mediaSm()    
     @media #{$mobile}
         .nav-container
-            flex-flow: row wrap
-            align-items: center
-            justify-content: center
+            nav
+                flex-flow: row wrap
+                align-items: center
+                justify-content: center
+                ul
+                    li
+                        padding: 1rem 1rem
             h1
                 width: 100%
-                color: red
                 text-align: center
-
-        .content-section
-            flex-direction: column
-            width: 100%
-            .text-content
+        .home
+            padding: 0 2rem
+            .content-section
+                flex-direction: column
                 width: 100%
-                margin: 0
-                padding: 0 
-            .img-content
+                .text-content
+                    width: 100%
+                    margin: 0
+                    padding: 0 
+                .img-content
+                    width: 100%
+                    text-align: center
+            .inverse-content
+                flex-direction: column-reverse
+            .content-pick
                 width: 100%
-        .inverse-content
-            flex-direction: column-reverse
-        .content-pick
-            width: 100%
-            flex-direction: column
-            .destination
-                width: 90%
+                flex-direction: column
+                .destination
+                    width: 100%
+                    padding: 0 7rem
