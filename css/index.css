@@ -201,6 +201,18 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.home .content-section .header {
+  border-top: 2px dashed gray;
+  border-bottom: 2px dashed gray;
+  margin-bottom: 20px;
+}
+.home .content-section .header h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.home .content-section .header p {
+  margin-bottom: 10px;
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
