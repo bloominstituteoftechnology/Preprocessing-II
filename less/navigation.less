@@ -1,1 +1,32 @@
 // Navigation Styles here
+.nav {
+    background: @white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-bottom: 2px dashed silver;
+    z-index: 1;
+
+    nav {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        .nav-logo { 
+            display: flex;
+            h1 { 
+                flex: 0 0 auto;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            li {
+                color: @font-color;
+                font-size: 1.7rem;
+                padding: 0 10px;
+            }
+        }
+    }
+}
