@@ -182,7 +182,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px dashed #c0c0c0;
+  border-bottom: 2px dashed #C0C0C0;
   border-radius: 10px;
   padding-bottom: 10px;
 }
@@ -194,11 +194,6 @@ header nav a {
   text-decoration: none;
   font-size: 1.8rem;
   margin: 0 50px 0 0;
-}
-#banner {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
 }
 .footer {
   width: 100%;
@@ -217,46 +212,59 @@ header nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 #banner {
   margin: 0 auto;
+}
+.topText {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.btn {
+  background-color: #008080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.6rem;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
 }
