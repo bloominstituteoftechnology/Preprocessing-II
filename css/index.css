@@ -362,3 +362,6 @@ a {
     align-items: center;
   }
 }
+.stretch nav a:hover {
+  transform: scale(1.3);
+}
