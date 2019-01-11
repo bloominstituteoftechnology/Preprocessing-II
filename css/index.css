@@ -198,6 +198,9 @@ nav ul .item {
   font-size: 1.6rem;
   padding: 20px;
 }
+.container {
+  width: 90%;
+}
 .home header {
   font-size: 16px;
   border-bottom: 2px dashed #C0C0C0;
