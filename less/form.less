@@ -1,0 +1,56 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+
+    form {
+        width: 60%;
+        font-size: 1.6rem;
+        border: 1px solid black;
+        padding: 10px 20px 20px;
+        margin: 40px 0;
+        box-shadow: 0 10px 20px lightgrey;
+        @media @tablet {
+            width: 80%;
+        }
+
+        @media @mobile {
+            width: 100%;
+        }
+        h1 {
+            display: inline-block;
+            padding: 10px;
+            border-bottom: 2px dashed @navigation-border;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            font-size: 2rem;
+            margin: 15px 0 2px;
+        }
+        .dropdown, .line-input {
+            width: 100%;
+            padding: 0 10px;
+            font-size: 1.8rem;
+        }
+        .block-input {
+            width: 100%;
+            min-height: 200px;
+            font-size: 2.3rem;
+            
+        }
+        .submit-btn {
+            .button-style-1(35%);
+        }
+    }
+} 
