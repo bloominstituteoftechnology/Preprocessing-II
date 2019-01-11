@@ -184,14 +184,12 @@ header .header-wrapper {
 header .header-wrapper .logo {
   font-family: 'Indie Flower', cursive;
   font-size: 4rem;
-  border: 1px solid blue;
 }
 header .header-wrapper nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: normal;
-  border: 1px solid green;
 }
 header .header-wrapper nav a {
   margin: 0 20px;
