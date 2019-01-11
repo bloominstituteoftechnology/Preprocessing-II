@@ -189,6 +189,7 @@ section.header-section .nav {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2rem;
+  font-family: 'Sarabun', sans-serif;
 }
 @media (max-width: 500px) {
   section.header-section .nav {
@@ -200,6 +201,9 @@ section.header-section .nav a {
   font-size: 1.6rem;
   padding: 2rem;
   color: gray;
+}
+section.header-section a:hover {
+  background-color: chocolate;
 }
 .footer {
   width: 100%;
