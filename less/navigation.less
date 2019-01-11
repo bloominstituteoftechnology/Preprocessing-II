@@ -9,13 +9,27 @@ header {
     .flex(@justify:space-between; @align:center);
     margin: 0 auto;
 
+    @media @mobile {
+      .flex(@direction:column;@align:center);
+    }
+
     .logo {
       font-family: 'Indie Flower', cursive;
       font-size: 4rem;
+
+      @media @mobile {
+        font-size: 2.5rem;
+        padding-bottom: 10px;
+      }
     }
 
     nav {
       .flex(@justify: flex-end);
+
+      @media @mobile {
+        .flex(@justify:space-evenly);
+        width: 100%;
+      }
 
       a {
         margin: 0 20px;
@@ -24,6 +38,10 @@ header {
         font-weight: semi-bold;
         color: @shark;
         white-space: nowrap;
+
+        // @media @mobile {
+        //   margin: 0 25px;
+        // }
       }
     }    
 
