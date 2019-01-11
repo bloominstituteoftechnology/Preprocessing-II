@@ -177,6 +177,7 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  border: 1px solid green;
 }
 .btn {
   width: 80%;
