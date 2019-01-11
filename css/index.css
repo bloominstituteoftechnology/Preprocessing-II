@@ -232,6 +232,9 @@ nav {
 .home .header {
   margin-top: 100px;
 }
+.home .img-wrapper {
+  margin: 0 5%;
+}
 .home .header-content {
   padding-bottom: 16px;
   border-bottom: 2px dashed #C0C0C0;
