@@ -198,6 +198,18 @@ header .header-wrapper {
 header .header-wrapper .logo {
   font-family: 'Indie Flower', cursive;
   font-size: 4rem;
+  animation-name: logo-appearance;
+  animation-duration: 4s;
+}
+@keyframes logo-appearance {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(120%, 0, 0);
+    opacity: 1;
+  }
 }
 @media (max-width: 500px) {
   header .header-wrapper .logo {
@@ -252,6 +264,18 @@ header .header-wrapper nav a {
 .home .banner .text-content h1 {
   font-size: 3.2rem;
   margin-top: 15px;
+  animation-name: headline-appearance;
+  animation-duration: 4s;
+}
+@keyframes headline-appearance {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(50%, 0, 0);
+    opacity: 1;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -379,6 +403,11 @@ header .header-wrapper nav a {
   font-size: 1.8rem;
   text-align: center;
   cursor: pointer;
+  transition: 0.2s;
+}
+.home .content-pick .btn:hover {
+  transform: scale(1.15);
+  background: #1fc8e3;
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {

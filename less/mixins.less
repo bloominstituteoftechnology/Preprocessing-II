@@ -25,3 +25,28 @@
   cursor: pointer;
 }
 
+//Animations
+.hoverEffect() {
+  &:hover {
+    transform: scale(1.15);
+    background: lighten(@button-bg, 10%);
+  }
+}
+
+.moveElement(@name; @duration;@length:100%) {
+  & {
+    animation-name: @name;  
+    animation-duration: @duration;
+  }
+
+  @keyframes @name {
+    0% { 
+      transform : translate3d(0, 0, 0);
+      opacity: 0;
+    }
+    50%{ 
+      transform: translate3d(@length, 0, 0);
+      opacity: 1;
+    }
+  }
+}

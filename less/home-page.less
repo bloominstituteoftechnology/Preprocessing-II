@@ -14,6 +14,8 @@
       h1 {
         font-size: 3.2rem;
         margin-top: 15px;
+
+        .moveElement(@name:headline-appearance;@duration:4s;@length:50%);
       }
     }
   }
@@ -130,6 +132,8 @@
       @bgColor:darken(@button-bg,15%);
       @bRadius: 15px; @paddingHeight: 15px; @paddingWidth: 20px;
       @fontSize: 1.8rem; @textAlign: center);
+      transition: .2s;
+      .hoverEffect();
 
       @media @mobile {
         width: 100%;

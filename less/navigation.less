@@ -18,9 +18,13 @@ header {
       .flex(@direction:column;@align:center);
     }
 
+    
+
     .logo {
       font-family: 'Indie Flower', cursive;
       font-size: 4rem;
+
+      .moveElement(@name:logo-appearance;@duration:4s;@length:120%);
 
       @media @mobile {
         font-size: 3rem;
