@@ -1,7 +1,12 @@
 // Navigation Styles here
 #header-container{
   border-bottom: 2px dashed @navigation-border;
-  padding-bottom: .35%;
+  padding-bottom: .4%;
+  @media @mob500 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
 }
 
 
@@ -13,9 +18,20 @@ header{
   color: @shark;
   .b_dp();
   .flex-row();
+  @media @mob500 {
+    flex-direction: column;
+    font-size: .5rem;
+  }
+
   #LOGO{
     .b_rb();
     width: 20%;
+    @media @mob500 {
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      padding-bottom: 3%;
+    }
     font-size: 4rem;
     font-family: 'Indie Flower', cursive;
   }
@@ -24,6 +40,11 @@ header{
     .flex-row();
     width: 43%;
     justify-content: space-evenly;
+    @media @mob500 {
+      width: 83%;
+      font-size: 1.5rem;
+      justify-content: space-between;
+    }
     a{
       text-decoration: none;
       color: @shark;

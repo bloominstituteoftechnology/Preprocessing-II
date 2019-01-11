@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -185,9 +186,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+}
 #header-container {
   border-bottom: 2px dashed #C0C0C0;
-  padding-bottom: 0.35%;
+  padding-bottom: 0.4%;
+}
+@media (max-width: 500px) {
+  #header-container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 header {
   max-width: 800px;
@@ -199,6 +212,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    font-size: 0.5rem;
+  }
 }
 header #LOGO {
   border: 1px solid rebeccapurple;
@@ -206,13 +226,29 @@ header #LOGO {
   font-size: 4rem;
   font-family: 'Indie Flower', cursive;
 }
+@media (max-width: 500px) {
+  header #LOGO {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 3%;
+  }
+}
 header nav {
   border: 1px solid forestgreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 43%;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 83%;
+    font-size: 1.5rem;
+    justify-content: space-between;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -231,7 +267,7 @@ header nav a {
 }
 .home {
   width: 100%;
-  border: 1px solid deeppink;
+  border: 4px solid red;
   /*  width: @bwid;
       font-size: @fsize;
       padding: @bpad;
@@ -240,10 +276,17 @@ header nav a {
       background: @bkgr;
       .bround(@rnding); is NOT a parameter*/
 }
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .home .content-header {
   padding-top: 3%;
   padding-bottom: 1.5%;
   border-bottom: 2px dashed #C0C0C0;
+  padding: 5% 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -252,16 +295,42 @@ header nav a {
   justify-content: space-between;
   line-height: 1;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -279,6 +348,11 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -289,9 +363,20 @@ header nav a {
   justify-content: space-between;
   line-height: 1.25;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+    margin: 5% auto;
+  }
 }
 .home .btn {
   width: 83%;
@@ -303,4 +388,17 @@ header nav a {
   font-weight: bolder;
   border-radius: 1.5rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+    font-size: 1.75rem;
+    padding: 1.25rem;
+    margin: 0rem;
+    color: #FFFFFF;
+    background: #17A2B8;
+    font-weight: bolder;
+    border-radius: 1.5rem;
+    text-align: center;
+  }
 }
