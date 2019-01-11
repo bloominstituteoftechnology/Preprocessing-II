@@ -9,6 +9,11 @@
     border-bottom: 2px dashed @navigation-border;
     margin-top: 26px;
 
+    @media @mobile {
+      padding: 0 5% 1% 5%;
+      //padding-bottom: 1%;
+    }
+
     h2 {
       font-size: 3.6rem;
     }
@@ -20,20 +25,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      //width: 100%;
+    }
+
 
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        padding: 0 5%;
+        width: auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        padding: 4%;
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
+
     }
   }
 
@@ -44,11 +69,32 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding: 0 5%;
+        width:auto;
+        margin-top: 20px;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        padding: 0 4%;
+        width: 100%;
+      }
+
+      img {
+        border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
+
+
     }
   }
 
