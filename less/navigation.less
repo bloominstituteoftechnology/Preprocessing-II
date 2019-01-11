@@ -6,11 +6,7 @@ header{
     border-bottom: 2px dashed @navigation-border;
     border-radius: 10px;
     padding-bottom: 10px;
-    @media @mobile{
-        flex-direction: column;
-        margin: 10px 0px 0px 50px;
-        
-    }
+  
   
     & h1 {
         margin: 10px 0 0 100px;
@@ -22,6 +18,10 @@ header{
         font-size: 1.8rem;
         margin: 0 50px 0 0; 
   }
+  @media @mobile{
+    flex-direction: column;
+    margin:0 0 0 4%;
+}
 }
   
   
