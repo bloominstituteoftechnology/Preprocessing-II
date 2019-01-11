@@ -170,7 +170,7 @@ img {
 }
 .nav-wrapper {
   background-color: white;
-  border-bottom: 2px dashed lightgray;
+  border-bottom: 2px dashed #C0C0C0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -252,4 +252,13 @@ nav {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  border: 1px solid;
+  border-radius: 14px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 2rem;
+  padding: 12px;
+  width: 100%;
 }
