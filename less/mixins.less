@@ -1,7 +1,14 @@
 // Mixins in here
 
+// flex Mixins 
 .flex(@justify-content; @align-items ){
   display: flex;
   justify-content: @justify-content;
   align-items: @align-items;
+}
+
+//border Mixins 
+.border{
+padding-bottom: 30px;
+border-bottom: 2px dashed @navigation-border;
 }

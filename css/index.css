@@ -1,3 +1,7 @@
+.border {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -213,6 +217,10 @@ header nav a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+.home .welocome-section {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content {
   padding-bottom: 30px;
