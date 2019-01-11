@@ -7,9 +7,13 @@
     padding: 24px 0;
     border-bottom: 2px dashed @silver;
 
+    @media @mobile {
+        padding-bottom: 10px;
+    }
+
     nav {
         display: flex;
-        padding: 0 20px;
+        padding-top: 15px;
 
         a {
             text-decoration: none;
@@ -21,5 +25,14 @@
                 color: @eastern-blue;
             }
         }
+
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
+    @media @mobile {
+        flex-direction: column;
     }
 }
