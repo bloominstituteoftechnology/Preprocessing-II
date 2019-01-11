@@ -1,1 +1,40 @@
 // Navigation Styles here
+
+header {
+    width: 100%;
+    .flexbox(@justify: space-between);
+    align-items: baseline;
+    padding: 20px 0 30px 0;
+
+        @media @mobile {
+            .flexbox(@fdir: column;);
+            align-items: center;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            @media @mobile {
+                font-size: 3rem;
+                padding-bottom: 20px;
+            }
+        }
+
+        nav {
+            width: 40%;
+            padding-right: 4%;
+            .flexbox(@justify: space-between);
+
+                @media @mobile {
+                    .flexbox(@justify: space-around);
+                    width: 100%;
+                    padding-right: 2%;
+                    padding-left: 2%;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color: black;
+                }
+        }
+}
