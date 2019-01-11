@@ -159,6 +159,10 @@ h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
+h5 {
+  font-size: 2.2rem;
+  padding: 10px 12% 10px 0;
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -177,7 +181,6 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid green;
 }
 .btn {
   width: 80%;
@@ -417,18 +420,66 @@ header .header-top nav a:hover {
     padding: 0 0 10px 0;
   }
 }
+.header-bottom p {
+  border-bottom: none;
+}
 .contact {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+  margin-bottom: 30px;
 }
 .contact .content-section {
-  width: 70%;
-  border: 1px solid red;
+  width: 69.5%;
+  border: 2px dashed #C0C0C0;
   padding: 10px;
+  margin: 0 0.5% 0 0;
+}
+.contact .content-section .packages {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .content-section .packages h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.contact .content-section .packages div {
+  width: 49%;
+  padding: 10px;
+  margin: 0.5%;
+  background-color: #f7f7f7;
 }
 .contact .contact-form {
-  width: 30%;
-  border: 1px solid red;
+  width: 29.5%;
+  margin: 0 0 0 0.5%;
+  border: 2px dashed #C0C0C0;
   padding: 10px;
+}
+.contact .contact-form h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.contact .contact-form form {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5%;
+  background-color: #f7f7f7;
+}
+.contact .contact-form form span.note {
+  font-size: 1rem;
+}
+.contact .contact-form form p {
+  padding-bottom: 2px;
+}
+.contact .contact-form form select,
+.contact .contact-form form input,
+.contact .contact-form form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact .contact-form div {
+  margin: 0 auto 20px auto;
 }

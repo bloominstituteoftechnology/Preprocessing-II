@@ -1,17 +1,64 @@
+.header-bottom {
+    p {
+        border-bottom: none;
+    }
+}
+
 .contact {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 30px; 
     .content-section {
-        width: 70%;
-        border: 1px solid red;
+        width: 69.5%;
+        border: 2px dashed @navigation-border;
         padding: 10px;
+        margin: 0 0.5% 0 0;
+        .packages {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            h2 {
+                width: 100%;
+                text-align: center;
+                padding-top: 10px;
+            }
+            div {
+                width: 49%;
+                padding: 10px;
+                margin: 0.5%;
+                background-color: rgb(247, 247, 247);
+            }
+        }
     }
     .contact-form {
-        width: 30%;
-        border: 1px solid red;
+        width: 29.5%;
+        margin: 0 0 0 0.5%;
+        border: 2px dashed @navigation-border;
         padding: 10px;
-
+        h2 {
+            width: 100%;
+            text-align: center;  
+            padding-top: 10px;
+        }
+        form {
+            width: 100%;
+            padding: 10px;
+            margin: 0.5%;
+            background-color: rgb(247, 247, 247);
+            span.note {
+                font-size: 1rem;
+            }
+            p {
+                padding-bottom: 2px;
+            }
+            select, input,textarea {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        div {
+            margin: 0 auto 20px auto;
+        }
     }
-
 }
