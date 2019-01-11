@@ -1,5 +1,8 @@
 // Navigation Styles here
 
+//Animation Setup
+@keyframes underline-anim {.keyframes-mixin(text-decoration; none; underline)}
+
 header {
     border-bottom: 2px dashed @navigation-border;
 
@@ -29,6 +32,7 @@ header {
                 font-size: 1.6rem;
                 text-decoration: none;
                 color: @font-color;
+                .hover-anim(underline-anim; 1s);
             }
         }
     }

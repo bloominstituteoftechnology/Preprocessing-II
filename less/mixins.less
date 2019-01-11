@@ -17,3 +17,15 @@
 
     .flex(center; center);
 }
+
+.keyframes-mixin (@prop; @from; @to) {
+    from {@prop: @from;}
+    to {@prop: @to;}
+}
+
+.hover-anim (@anim-name, @speed) {
+    &:hover {
+        animation-name: @anim-name;
+        animation-duration: @speed; 
+    }
+}
