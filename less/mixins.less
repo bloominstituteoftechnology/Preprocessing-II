@@ -1,1 +1,19 @@
 // Mixins in here
+.transitionBackground(@transitionType, @durationTime, @changeColorTo) {
+    transition-property: @transitionType;
+    transition-duration: @durationTime;
+    &:hover {
+      transition-property: @transitionType;
+      transition-duration: @durationTime;
+      background-color: @changeColorTo;
+    }
+  }
+  .button-creator(@height, @width){
+    padding: @height @width;
+    border-radius: 1.5rem;
+    font-size:2rem;
+    text-align: center;
+    background-color:darkcyan;
+    color: white;
+    .transitionBackground(background-color, 0.5s, #0c6e6e);
+  }
