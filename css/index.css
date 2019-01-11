@@ -177,10 +177,10 @@ header {
 header nav {
   margin-top: 10px;
   font-size: 1.8rem;
-  color: black;
+  color: #212529;
 }
 header nav a {
-  color: black;
+  color: #212529;
   padding-left: 10px;
 }
 .footer {
@@ -239,6 +239,7 @@ header nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  color: red;
 }
 .home .content-pick .destination {
   width: 30%;
