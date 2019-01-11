@@ -8,6 +8,12 @@
   width: 100%;
 }
 
+.logo {
+  @media @mobile {
+    margin-bottom: 12px;
+  }
+}
+
 nav {
   .page-centering;
   display: flex;
@@ -15,6 +21,18 @@ nav {
   align-items: center;
   height: 100px;
   z-index: 1;
+
+  @media @mobile {
+    .flex-col;
+  }
+}
+
+.nav-item-wrapper {
+  @media @mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 .nav-item {
@@ -24,5 +42,9 @@ nav {
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media @mobile {
+    margin-right: unset;
   }
 }
