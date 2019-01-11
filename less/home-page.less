@@ -1,5 +1,6 @@
 .container {
   width: 90%;
+  margin-top: 20px;
 
   @media @mobile {
     width: 95%;
@@ -94,20 +95,38 @@
     }
   }
 
+  // Destination pick //
+
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
     }
 
     .btn {
-      .buttons();
+      .buttons(80%);
 
-    }
-  }
-}// home
+      @media @mobile {
+        .buttons(100%);
+      }
+
+   }
+  } 
+}

@@ -1,19 +1,21 @@
 // Mixins in here
 
-.buttons() {
+.buttons(@width) {
     font-size: 20px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 12px;
     text-align: center;
     background: @button-bg;
     color: @white;
     padding: 10px;
-    width: 80%;
+    width: @width;
     cursor: pointer;
     transition: ease-in-out 0.250s;
+    margin-bottom: 25px;
 
     &:hover {
         background: @white;
         color: @button-bg;
     }
+
 }
