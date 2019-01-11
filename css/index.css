@@ -197,6 +197,13 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .header-content {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 10px;
+}
+.home .header-content img {
+  padding-bottom: 20px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
