@@ -173,12 +173,11 @@ img {
   align-items: baseline;
   justify-content: space-between;
   width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .nav h2 {
   padding-top: 10px;
-}
-.nav nav {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 .nav nav a {
   text-decoration: none;
@@ -197,7 +196,6 @@ img {
   padding: 20px;
 }
 .home header {
-  border-top: 2px dashed #C0C0C0;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
@@ -245,4 +243,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  font-size: 2rem;
+  color: white;
+  padding-top: 5px;
+  height: 40px;
+  width: 190px;
+  border-radius: 12px;
+  background-color: #17A2B8;
+  text-align: center;
 }
