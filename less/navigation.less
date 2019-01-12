@@ -1,1 +1,38 @@
-// Navigation Styles here
+/* Navigation Styles here */
+
+.nav-container {
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background-color: @white;
+	width: 100%;
+	height: @navbar-height;
+	padding-bottom: 20px;
+	border-bottom: 2px dashed @navigation-border;
+  
+	.navbar {
+		.flex(@main-axis: space-between);
+		height: @navbar-height;
+		
+		h1 {
+	    	color: @font-color;
+	  	}
+
+	  	nav {
+			.flex(@main-axis: space-around);
+	  		width: 325px;
+
+		  	a {
+	  			font-size: 1.6rem;
+				font-weight: bold;
+	  			color: @font-color;
+	  			text-decoration: none;
+			}
+	  	}
+	}
+}
+
+.nav-spacer {
+	width: 100%;
+	height: @navbar-height;
+}

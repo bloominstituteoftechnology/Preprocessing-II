@@ -1,4 +1,5 @@
 /* Follow the order in the readme */
+/* Mixins in here */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,6 +170,48 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+/* Navigation Styles here */
+.nav-container {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 90px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.nav-container .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  height: 90px;
+}
+.nav-container .navbar h1 {
+  color: #212529;
+}
+.nav-container .navbar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  width: 325px;
+}
+.nav-container .navbar nav a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #212529;
+  text-decoration: none;
+}
+.nav-spacer {
+  width: 100%;
+  height: 90px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -180,11 +223,21 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home header {
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header img {
+  margin-bottom: 20px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -220,9 +273,27 @@ img {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  font-size: 1.8rem;
+  height: 40px;
+  width: 200px;
+  border-radius: 12px;
 }
