@@ -8,13 +8,23 @@ nav {
     padding-bottom: 1%;
     width: 100%;
     @media (@mobile) {
-        width: 90%;
-        
+        width:100%;
+        h1 {
+            font-size: 3rem;
+        }
     }
     div {
-        width: 42%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0%;
+        padding-bottom: 0%;
+        div { 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     }
     a {
         text-decoration: none;
