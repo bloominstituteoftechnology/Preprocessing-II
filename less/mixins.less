@@ -1,1 +1,55 @@
 // Mixins in here
+
+#flexMixins () {
+  
+  .nav () {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#spacingMixins () {
+  .marginTopBottom () {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .border {
+    border-bottom: 1px dashed @silver;
+    border-bottom-width: 0.2rem;
+  }
+}
+
+#fontMixins () {
+  
+  .bold () {
+    font-weight: bold;
+  }
+
+  .normalize () {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#buttonMixins () {
+  .border(@width; @style; @color) {
+    border: @width @style @color;
+  }
+  .radius(@border-radius) {
+    border-radius: @border-radius;
+  }
+  .background(@background) {
+    background-color: @background;
+  }
+  .color(@color) {
+    color: @color;
+  }
+  .height(@height) {
+    height: @height;
+  }
+  .fontSize(@fontSize) {
+    font-size: @fontSize;
+  }
+}

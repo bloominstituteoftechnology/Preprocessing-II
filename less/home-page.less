@@ -6,16 +6,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      padding-left: 10%;
+      padding-right: 10%;
+      flex-direction: column;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+        font-weight: bold;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -27,14 +42,30 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone {
+      padding-left: 10%;
+      padding-right: 10%;
+      flex-direction: column-reverse;
+      font-weight: bold;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @phone {
+        width: 100%;
+        font-weight: bold;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -42,8 +73,20 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+      flex-direction: column;
+      font-weight: bold;
+    }
+
     img {
       border-radius: 10px;
+
+      @media @phone {
+        width: 100%
+      }
     }
   }
 
@@ -53,9 +96,56 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      padding-left: 10%;
+      padding-right: 10%;
+      flex-direction: column;
+      font-weight: bold;
+      width: 100%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 100%;
+      }
+      
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #buttonMixins.border(2px; solid; black);
+        #buttonMixins.radius(10px);
+        #buttonMixins.background(#17A2B8);
+        #buttonMixins.color(white);
+        #buttonMixins.height(40px);
+        #buttonMixins.fontSize(1.6rem);
+      }
+    }
+  }
+
+  .welcome {
+    #fontMixins.bold;
+    #spacingMixins.marginTopBottom;
+    #spacingMixins.border;
+
+    @media @phone {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  .nav-border {
+    #spacingMixins.border;
+
+    width: 200vw;
+    margin-left: -100vw;
+
+    @media @phone {
+      width: 100%;
+      margin-left: 0%;
     }
   }
 }// home
