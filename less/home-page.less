@@ -55,6 +55,7 @@
     border-bottom: 2px dashed @navigation-border;
 
     @media @max500 {
+      width: 100%;
       display: flex;
       flex-direction: column-reverse;
     }
@@ -99,8 +100,13 @@
       margin-bottom: 30px;
 
       @media @max500 {
+        width: 100%;
         display: flex;
         flex-direction: column;
+
+        .btn {
+          width: 100%;
+        }
       }
     }
   }
