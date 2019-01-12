@@ -1,6 +1,10 @@
 .home {
+
+  padding-top: 42px;
+
   width: 100%;
   @media @mob500 {
+    padding-top: 92px;
     width: 95.5%;
     margin: 0 auto;
   }
@@ -41,8 +45,8 @@
       width: 48%;
       padding-left: 1%;
       @media @mob500 {
-        margin: 0;
-        padding: 0;
+    //    margin: 0;
+    //    padding: 0;
         width: 100%;
       }
 
@@ -123,8 +127,23 @@
       background: @bkgr;
       .bround(@rnding); is NOT a parameter*/
 
+   .btn-container{
+     .flex-row();
+     height: 6rem;
+     display: flex;
+
+   }
+
   .btn{
+    box-sizing: border-box;
+    text-decoration: none;
     .paraButton(83%; 1.75rem; 1.25rem; 0rem; @white; @eastern-blue; bolder);
+    &:hover{
+      background: lightpink;
+      color: darkslateblue;
+      border: 2px solid steelblue;
+    }
+
     @media @mob500 {
       .paraButton(100%; 1.75rem; 1.25rem; 0rem; @white; @eastern-blue; bolder);
 
