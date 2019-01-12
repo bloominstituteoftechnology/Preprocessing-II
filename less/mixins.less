@@ -1,10 +1,16 @@
 // Mixins in here
-.button(@radius: 5px) {
+.button(@radius: 5px, @pad: 5px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: @radius;
     background: @button-bg;
-    padding: 1rem;
+    padding: @pad;
     width: 80%;
+}
+
+.button-animation(@bg-color, @color) {
+    background-color: @bg-color;
+    border: 1px solid @button-bg;
+    color: @color;
 }
