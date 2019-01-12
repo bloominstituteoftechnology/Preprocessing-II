@@ -1,84 +1,144 @@
-.home {
-  
+//.container{
 
-  .top-header{
-    .format-header;
-  }
-
-  .bus-section{
-    width:100%;
-    
-  }
-
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+  .home {
+    @media @mobile{
+      max-width: @width-setter;
+      
+      padding: 5%;
+    }
+    .top-header{
+      .format-header;
+      @media @mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px dashed @navigation-border;
+      }
     }
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+    .bus-section{
+      width:100%;
+      border-bottom: 2px dashed @navigation-border;
+      img{
+        padding-bottom: 1.5%;
+      }
+      
+    }
+
+    .content-section {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media @mobile{                
+        //display: flex;
+        //flex-direction: column; 
+        //justify-content: center;
+        //align-items: center;
+        width: 100%;
+      }
+    }
+
+    
+      
+      .text-content {
+        width: 48%;
+        padding-right: 1%;
+        @media @mobile{
+          width: 100%;
+        }
+      }
+
+      .img-content {
+        width: 48%;
+        padding-left: 1%;
+        @media @mobile{
+          width: 100%;
+        }
+
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .inverse-content {
+      padding-bottom: 30px;
+      border-bottom: 2px dashed @navigation-border;      
+
+      .text-content {
+        padding-left: 1%;
+        padding-right: 0;
+      }
+
+      .img-content {
+        padding-right: 1%;
+        padding-left: 0;
+      }
+      @media @mobile{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    .content-destination {
+      width: 75%;
+      margin: 0 auto 30px;
 
       img {
         border-radius: 10px;
       }
-    }
-  }
-
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+      @media @mobile{                
+        display: flex;
+        flex-direction: column; 
+        //justify-content: center;
+        //align-items: center;
+        width: 100%;
+      }
     }
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
+    .content-pick {
+      padding-top: 30px;
+      border-top: 2px dashed @navigation-border;
+      display: flex;
+      justify-content: space-between;
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+      .destination {
+        width: 30%;
+        margin-bottom: 30px;
+      }
 
-    img {
-      border-radius: 10px;
-    }
-  }
+      //Parametric Mix-In
+      .btn{
+        .fix-buttons(@button-bg, @main-bg); 
+      }
+      
+      @media @mobile{                
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .destination{
+          width: 85%;
+        }
+        .btn{
+          background-color: @button-bg;
+          border: 1px solid @button-bg;
+          border-radius: 10px 10px 10px 10px;
+          color: @main-bg;
+          font-size: 2rem;
+          padding: 3%;
+          text-align: center;          
+          }
+        }
+      }
+     
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
-
-    //Parametric Mix-In
-    .btn{
-      .fix-buttons(@button-bg, @main-bg); 
-    }
-  }
-  @media @mobile{
-    .go-mobile(@width-setter);
-}
-
-
+/**/
+//}
 
   
 // home
