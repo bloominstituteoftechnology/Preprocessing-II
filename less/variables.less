@@ -1,5 +1,5 @@
 
-// Color assignments 
+// Color assignments
 @font-color: @shark;
 @button-bg: @eastern-blue;
 @main-bg:  @white;
@@ -12,3 +12,68 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+//Escaping
+
+@media (max-width: 500px) {
+
+  nav {
+    .nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+    .name > h1 {
+      font-size: 3rem;
+    }
+
+    .navigation {
+      padding: 0 0 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navigation > a {
+      font-size: 1.6rem;
+    }
+  } //nav
+
+  .header {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 100%;
+
+    .content-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      .text-content {
+        width: 100%;
+      }
+
+      .img-content {
+        width: 100%;
+      }
+    }
+
+    .content-pick {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .destination {
+        width: 100%;
+      }
+    }
+  } //.container
+}

@@ -1,1 +1,35 @@
 // Navigation Styles here
+nav {
+  width: 100%;
+  margin: 15px auto 0;
+  border-bottom: 2px dashed @silver;
+
+  .nav {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .name {
+    margin: 10px 0;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: @shark;
+      margin: 0 15px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+}
