@@ -2,12 +2,25 @@
 
 .container {
   nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
     ul {
       display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 50%;
       li {
         list-style: none;
         a {
           text-decoration: none;
+          font-size: 1.8rem;
+          color: @font-color;
+
+          &:hover {
+            border-bottom: 3px solid @shark;
+            // transition: 2s;
+          }
         }
       }
     }
