@@ -14,13 +14,26 @@
 		.flex(@main-axis: space-between);
 		height: @navbar-height;
 		
+		@media @mobile {
+			.flex(@dir: column; @main-axis: space-around; );
+		}
+
 		h1 {
 	    	color: @font-color;
+
+	    	@media @mobile {
+	    		font-size: 3.2rem;
+	    		margin-top: 5px;
+	    	}
 	  	}
 
 	  	nav {
-			.flex(@main-axis: space-around);
-	  		width: 325px;
+			.flex(@main-axis: space-around; );
+	  		width: 300px;
+			
+			@media @mobile {
+				width: 100%;
+			}
 
 		  	a {
 	  			font-size: 1.6rem;
