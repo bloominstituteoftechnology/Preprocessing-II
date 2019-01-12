@@ -4,24 +4,31 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    .flex(space-between, baseline);
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    .flex(@alignitems: baseline);
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     @media @mobile {
         .flex(@flexdir: column; @alignitems: center);
     }
 
+    h1 {
+        width: 100%;
+        
+        @media @mobile {
+            text-align: center;
+        }
+    }
+
     nav {
-        width: 40%;
+        width: 100%;
+        .flex(@justify: space-around);
 
         @media @mobile {
             margin-top: 10px;
-            width: 70%;
         }
 
         a {
-            padding-left: 7%;
             color: @font-color;
             font-size: 1.6rem;
             text-decoration: none;
