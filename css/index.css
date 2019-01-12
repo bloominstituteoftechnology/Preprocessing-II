@@ -172,10 +172,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  background-color: #008080;
+  color: white;
+  padding: 7px 25px;
+  border-radius: 9px;
+}
 header {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 15px 20px 0;
   padding: 20px;
   font-size: 1.8rem;
   border-bottom: 2px dashed #C0C0C0;
@@ -187,7 +193,7 @@ header nav {
   padding-right: 30px;
 }
 header nav a {
-  padding: 0 8px;
+  padding: 8px;
   text-decoration: none;
   color: black;
 }
@@ -249,7 +255,7 @@ header nav a {
   margin-bottom: 30px;
 }
 .top-section .bus-img {
-  padding-bottom: 4px;
+  padding-bottom: 20px;
 }
 .top-section p {
   border-bottom: 2px dashed #C0C0C0;
