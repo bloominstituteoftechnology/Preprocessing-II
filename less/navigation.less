@@ -5,11 +5,22 @@
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+
+    @media @phone {
+      flex-direction: column;
+      text-align: center;
+    }
+
     ul {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       width: 50%;
+
+      @media @phone {
+        justify-content: space-around;
+        width: 100%;
+      }
       li {
         list-style: none;
         a {
