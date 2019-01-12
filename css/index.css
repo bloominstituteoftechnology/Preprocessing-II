@@ -318,6 +318,11 @@ header nav a {
   width: 30%;
   margin-bottom: 3rem;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    text-align: center;
+  }
+}
 .home .content-pick .destination .btn {
   background: #008080;
   border-radius: 4rem;
