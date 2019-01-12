@@ -173,21 +173,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  body {
+    margin: 5%;
+  }
+}
 body h1 {
-  padding-left: 101px;
+  padding-left: ;
   margin-left: 101px;
 }
 body header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
   padding: 15px;
   padding-bottom: 15px;
   margin: 20px 0;
   border-bottom: 2px dashed grey;
 }
+@media (max-width: 500px) {
+  body header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 body header nav {
-  padding-right: 120px;
   margin-right: 120px;
 }
 body header nav a {
@@ -219,12 +229,28 @@ body header nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 97%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 97%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 97%;
+    border: 5px solid red;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -238,9 +264,19 @@ body header nav a {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 1;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 99%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -251,13 +287,35 @@ body header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 97%;
+  }
+}
 .home .content-pick .btn {
   background-color: #17A2B8;
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 20px;
   border-radius: 10px;
+  display: flex;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    display: flex;
+    flex-direction: row;
+  }
 }
