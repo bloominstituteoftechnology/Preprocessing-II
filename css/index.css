@@ -1,3 +1,14 @@
+@keyframes animation {
+  from {
+    background-color: #FFEBCD;
+  }
+  50% {
+    background-color: #C0C0C0;
+  }
+  100% {
+    background-color: #FFEBCD;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -231,7 +242,10 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background-color: #FFEBCD;
+  animation-name: animation;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
 }
 .footer p {
   text-align: center;
