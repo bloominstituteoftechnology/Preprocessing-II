@@ -187,6 +187,7 @@ header h1 {
   header h1 {
     width: 100%;
     text-align: center;
+    padding-bottom: 10px;
   }
 }
 header nav {
