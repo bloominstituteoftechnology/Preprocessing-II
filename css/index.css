@@ -178,7 +178,6 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
   }
 }
 header h1 {
@@ -244,16 +243,39 @@ header nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    padding-left: 0;
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
