@@ -350,8 +350,14 @@ nav {
     padding-top: 8px;
   }
 }
+.home .content-pick .content-pick-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 500px) {
   .home .content-pick .content-pick-wrapper {
+    flex-direction: column;
+    align-items: center;
     margin: 5% 7% 2% 7%;
   }
 }
