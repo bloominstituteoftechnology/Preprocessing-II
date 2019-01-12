@@ -183,6 +183,13 @@ header {
 header h1 {
   width: 46%;
 }
+@media (max-width: 500px) {
+  header h1 {
+    border: 1px solid red;
+    width: 100%;
+    text-align: center;
+  }
+}
 header nav {
   width: 50%;
   display: flex;
@@ -191,8 +198,10 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
-    width: 45%;
-    align-content: space-between;
+    border: 1px solid red;
+    width: 100%;
+    justify-content: space-around;
+    padding-right: 3%;
   }
 }
 header nav a {
@@ -211,6 +220,10 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .fun-bus-section {
+  padding-top: 30px;
+  border-bottom: 2px dashed #C8C8C8;
 }
 .home .content-section {
   margin: 30px 0;

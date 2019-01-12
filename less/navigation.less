@@ -11,6 +11,11 @@ header {
 
   h1 {
     width: 46%;
+    @media @mobile {
+      border: 1px solid red;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   nav {
@@ -19,8 +24,10 @@ header {
     align-items: center;
     justify-content: flex-end;
     @media @mobile {
-      width: 45%;
-      align-content: space-between;
+      border: 1px solid red;
+      width: 100%;
+      justify-content: space-around;
+      padding-right: 3%;
     }
 
     a {
