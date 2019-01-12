@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fun Bus Travel Agency - Solution</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+ <!--  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Courgette|Indie+Flower|Kaushan+Script|Maven+Pro|Niconne|Raleway|Roboto" rel="stylesheet">
+
+
   <link href="css/index.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
@@ -15,22 +18,133 @@
   <![endif]-->
 </head>
 
-<body>
+  <body>
 
-<div id = "header-container">
-  <header>
-    <div id = "LOGO"> Fun Bus</div>
-    <nav>
-      <a href = "index.html"> Home </a>
-      <a href = #About> About Us</a>
-      <a href = "#Blog"> Blog </a>
-      <a href = "form_vacationPackage.html"> Contact </a>
-    </nav>
+    <div id = "header-container">
+      <header>
+        <div id = "LOGO"> Fun Bus</div>
+        <nav>
+          <a href = "index.html"> Home </a>
+          <a href = #About> About Us</a>
+          <a href = "#Blog"> Blog </a>
+          <a href = "form_vacationPackage.html"> Contact </a>
+        </nav>
 
-  </header>
-</div>
+      </header>
+    </div>
+
+
+    <div class = "form_container">
+
+      <div class = "customer">
+
+
+        <div class = "contact">
+          <div class = "customerINFO name">
+            <label for =  "firstName"> First Name </label>
+            <input type = "text" id = "firstName" name = "firstName"> </input>
+          </div>
+
+          <div class = "customerINFO name">
+            <label for =  "lastName"> Last Name </label>
+            <input type = "text" id = "lastName" name = "lastName"> </input>
+          </div>
+
+          <div class = "customerINFO email">
+            <label for =  "email"> email </label>
+            <input type = "text" id = "email" name = "lastName"> </input>
+          </div>
+        </div>
+
+        <div class = " instruction">
+          <label for = "instruction"> Do you have any special instructions on how to be contacted?</label>
+          <textarea id = "instruction" name = "instruction" placeholder = "please explain your instructions "></textarea>
+        </div>
+
+      </div>  <!-- end customer -->
+
+      <div class = "options">
+        <p class = "vacation_options"> What kind of vacation are you looking for? </p>
+        <div class = "check exotic">
+          <label for =  "exotic"> Exotic Locations </label>
+          <input class = "chk" type = "checkbox" id = "exotic" name = "exotic"> </input>
+        </div>
+
+        <div class = "check euro">
+          <label for =  "euro"> European Dream </label>
+          <input class = "chk" type = "checkbox" id = "euro" name = "euro"> </input>
+        </div>
+
+        <div class = "check cruise">
+          <label for =  "cruise"> Romantic Cruise </label>
+          <input class = "chk" type = "checkbox" id = "cruise" name = "cruise"> </input>
+        </div>
+
+        <div class = "check resort">
+          <label for =  "resort"> Getaway Resort </label>
+          <input class = "chk" type = "checkbox" id = "resort" name = "resort"> </input>
+        </div>
+
+        <div class = "check historical">
+          <label for =  "historical"> Historical Locations </label>
+          <input class = "chk" type = "checkbox" id = "historical" name = "historical"> </input>
+        </div>
+
+        <div class = "check size family">
+          <label for =  "family"> Family Fun </label>
+          <input class = "chk" type = "checkbox" id = "family" name = "family"> </input>
+        </div>
+
+        <div class = "check size couples">
+          <label for =  "couples"> Couples Escape </label>
+          <input class = "chk" type = "checkbox" id = "couples" name = "couples"> </input>
+        </div>
+
+        <div class = "check size group">
+          <label for =  "group"> Travel groups </label>
+          <input class = "chk" type = "checkbox" id = "group" name = "group"> </input>
+        </div>
+
+        <div class = "check size group">
+          <label for =  "single"> Single adventures </label>
+          <input class = "chk" type = "checkbox" id = "single" name = "single"> </input>
+        </div>
+
+      </div> <!-- end options -->
+
+      <div class = "request">
+        <label for = "request"> Tell us about your dream vacation, we will make it happen!</label>
+        <textarea id = "request" name = "request" placeholder = "your dream vacation..."></textarea>
+      </div>
+
+      <div class = "submit-container">
+        <button class = "submit_btn" onclick = "simpleAlert()">Submit</button>
+      </div>
+
+      <footer class="footer">
+        <p>Copyright Fun Bus 2018</p>
+      </footer>
+
+
+    </div> <!-- end form-container -->
 
 
 
-</body>
+
+
+
+
+    <script>
+      function simpleAlert() {
+        alert("does nothing but reset form! ");
+
+      }
+
+    </script>
+
+
+
+
+
+  </body>
 </html>
