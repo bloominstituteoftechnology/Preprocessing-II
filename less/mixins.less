@@ -1,7 +1,22 @@
 // Mixins in here
-
-.border-radius(@radius: 5px) {
+.border-radius(@radius) {
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
   border-radius: @radius;
+}
+
+.bluebutton {
+  color: white;
+  background: @button-bg;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 850;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .border-radius(18px);
+  width: 95%;
+}
+
+.dashedline {
+  border-bottom: @navigation-border 2px dashed;
 }

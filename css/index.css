@@ -1,3 +1,19 @@
+.bluebutton {
+  color: white;
+  background: #17A2B8;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 850;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  width: 95%;
+}
+.dashedline {
+  border-bottom: #C0C0C0 2px dashed;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -248,11 +264,29 @@ nav .links a {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: #C0C0C0 2px dashed;
   display: flex;
   justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .btn {
+  color: white;
+  background: #17A2B8;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 850;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  width: 95%;
+}
+.home header {
+  border-bottom: #C0C0C0 2px dashed;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
