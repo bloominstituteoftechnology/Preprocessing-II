@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+nav {
+    
+    flex-direction: row;
+    padding: 20px 0;
+    border-bottom: 2px dashed @silver;
+
+    .nav-container {
+        width: 32%;
+        margin: 0 auto;
+        display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    @media @phone {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: #000;
+        padding-right: 20px;
+    }
+}
