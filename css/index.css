@@ -185,7 +185,6 @@ header h1 {
 }
 @media (max-width: 500px) {
   header h1 {
-    border: 1px solid red;
     width: 100%;
     text-align: center;
   }
@@ -198,7 +197,6 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
-    border: 1px solid red;
     width: 100%;
     justify-content: space-around;
     padding-right: 3%;
