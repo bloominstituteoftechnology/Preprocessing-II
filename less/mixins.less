@@ -1,1 +1,32 @@
 // Mixins in here
+
+// flex Mixins 
+.flex(@justify-content; @align-items ){
+  display: flex;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+
+//border Mixins 
+.border{
+padding-bottom: 3.0rem;
+border-bottom: .2rem dashed @navigation-border;
+}
+
+//button style Mixin
+
+//mobile added 
+.buttonstyle(@radius){
+  background: #008080;
+  border-radius: @radius;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 1.3rem;
+  width: 14rem;
+  @media @mobile{
+    width: 27rem;
+    background: #17A2B8;
+  }
+}
