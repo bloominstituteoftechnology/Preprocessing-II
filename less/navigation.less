@@ -1,1 +1,30 @@
 // Navigation Styles here
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: 1px dotted gray;
+
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 1.6rem;
+
+    li {
+      margin-right: 10px;
+
+      a {
+        text-decoration: none;
+        color: gray;
+        
+        &:hover {
+          color: darkgray;
+        }
+      }
+    }
+  }
+}

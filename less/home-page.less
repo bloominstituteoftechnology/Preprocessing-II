@@ -1,5 +1,15 @@
 .home {
 
+  .introOne {
+    border-bottom: 1px dotted gray;
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -11,15 +21,30 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
+      .img-content {
+        width: 48%;
+        padding-left: 1%;
+        
+        
+  
+        img {
+          border-radius: 10px;
+        }
+
+      @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      
     }
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
+    
     }
   }
 
@@ -27,9 +52,16 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      
     }
 
     .img-content {
@@ -42,6 +74,8 @@
     width: 75%;
     margin: 0 auto 30px;
 
+
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +87,45 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      font-size: 1.2rem;
+      border: 1px solid black;
+      border-radius: 7px;
+      background-color: lightblue;
+      color: black;
+
+      @media (max-width: 500px) {
+        padding-left: 32%;
+        padding-bottom: 10%;
+        font-size: 1.6rem;
+        height: 20px;
+        
+      }
+
+      &:hover{
+        background-color: gray;
+        color:lavender;
+
+      }
+      width: 90%;
+      height: 40px;
+      padding-left: 28%;
+      padding-top: 7%;
     }
   }
 }// home
