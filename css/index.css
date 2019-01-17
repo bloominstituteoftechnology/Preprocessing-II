@@ -245,6 +245,23 @@ nav h1 {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .top-content {
+  border-bottom: 2px dashed #C0C0C0;
+}
 .home .top-content h2 {
   padding: 15px 0;
+}
+.home .top-content p {
+  padding-bottom: 30px;
+}
+.home .btn {
+  width: 80%;
+  height: 35px;
+  background-color: #17A2B8;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
