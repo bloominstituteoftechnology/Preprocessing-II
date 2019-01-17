@@ -7,17 +7,28 @@
 }
 
 nav {
-    .custom-flex(space-between, center);
+    .custom-flex(space-around, center);
     height: 90px;
     width: 790px;
     margin: 0 auto;
-    
-    a {
+    @media @mobile {
+        width: 400px;
+        flex-direction: column;
+    }
+    .as a {
         text-decoration: none;
         color: @shark;
         font-size: 1.6rem;
+        padding: 20px;
+        @media @mobile {
+            
+        }
     }
     h1 {
         padding-right: 30%;
+        @media @mobile {
+            display: block;
+            padding-right: 0%;
+        }
     }
 }
