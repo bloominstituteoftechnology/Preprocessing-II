@@ -1,1 +1,36 @@
 // Follow the order in the readme
+@import 'variables.less';
+@import 'mixins.less';
+@import 'reset.less';
+@import 'global.less';
+@import 'navigation.less';
+@import 'footer.less';
+@import 'home-page.less';
+
+@mobile: ~"(max-width: 500px)";
+
+.flexible(@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.intro-section {
+  .flexible(column, flex-start, flex-start);
+  img {
+    width: 100%;
+  }
+}
+header {
+  .flexible(row, space-between, center);
+  span {
+    font-size: 4rem;
+  }
+  nav {
+    .flexible(row, flex-start, center);
+    a {
+      text-decoration: none;
+    }
+  }
+}
