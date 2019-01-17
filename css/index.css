@@ -227,11 +227,19 @@ img {
   color: black;
   font-size: 1.6rem;
   padding-right: 29px;
+  transition: 0.5s;
 }
 @media (max-width: 500px) {
   .navigation--border .navigation .nav__link {
     padding: 0;
   }
+}
+.navigation--border .navigation .nav__link:hover {
+  font-size: 1.6rem;
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 .footer {
   width: 100%;
