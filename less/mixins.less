@@ -1,1 +1,18 @@
 // Mixins in here
+
+.button {
+  width: max-content;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.8rem;
+  padding: 1.2rem 5rem;
+  border-radius: 18px;
+  background-color: @button-bg;
+
+  @media @phone {
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+}

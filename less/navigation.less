@@ -1,1 +1,44 @@
-// Navigation Styles here
+
+
+
+.navbar{
+  max-width: 1000px;
+  margin: 2rem auto 0 auto;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px dashed @navigation-border;
+
+  h1 {
+    @media @phone {
+      text-align: center;
+    }
+  }
+
+  @media @phone {
+    flex-direction: column;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-right: 2.5rem;
+    padding-top: 1.8rem;
+
+    li {
+      &:not(:last-child){
+        padding-right: 3.1rem;
+      }
+    }
+  }
+
+}
+
