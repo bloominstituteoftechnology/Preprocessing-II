@@ -183,6 +183,11 @@ img {
     max-width: 90%;
   }
 }
+@media (max-width: 900px) {
+  .container {
+    max-width: 90%;
+  }
+}
 .navigation--border {
   border-bottom: 2px dashed #C0C0C0;
   padding: 24px 0;
@@ -211,6 +216,11 @@ img {
   .navigation--border .navigation .nav__logo {
     font-size: 2.8rem;
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .navigation--border .navigation .nav__logo {
+    padding-left: 10px;
   }
 }
 @media (max-width: 500px) {
@@ -308,7 +318,7 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .home .content-destination {
     width: 100%;
   }
@@ -322,7 +332,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .home .content-pick {
     flex-direction: column;
   }
@@ -331,11 +341,12 @@ img {
   width: 30%;
   margin-bottom: 43px;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .home .content-pick .destination {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 40px;
+    text-align: center;
   }
 }
 .home .content-pick .destination p {
@@ -350,7 +361,7 @@ img {
   text-align: center;
   font-size: 1.8rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .home .content-pick .destination .btn {
     padding: 10px 120px;
   }
