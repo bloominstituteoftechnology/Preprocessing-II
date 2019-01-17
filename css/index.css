@@ -168,11 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px dashed #C0C0C0;
+  height: 90px;
+  width: 790px;
+  margin: 0 auto;
 }
 nav a {
   text-decoration: none;
@@ -238,4 +244,7 @@ nav h1 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .top-content h2 {
+  padding: 15px 0;
 }
