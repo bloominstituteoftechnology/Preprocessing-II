@@ -313,7 +313,6 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .home .content-pick {
@@ -348,21 +347,20 @@ img {
     padding: 10px 120px;
   }
 }
-.home .form-container {
+.form-container {
   margin-bottom: 30px;
 }
-.home .form-container h4 {
+.form-container h4 {
   margin-top: 30px;
-  margin-bottom: 10px;
-  text-align: center;
+  margin-bottom: 15px;
   font-size: 3rem;
 }
-.home .form-container .form {
+.form-container .form {
   font-size: 1.6rem;
 }
-.home .form-container .form input[type=text],
-.home .form-container .form select,
-.home .form-container .form textarea {
+.form-container .form input[type=text],
+.form-container .form select,
+.form-container .form textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -372,7 +370,7 @@ img {
   margin-bottom: 16px;
   resize: vertical;
 }
-.home .form-container .form input[type=submit] {
+.form-container .form input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -380,11 +378,6 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-.home .form-container .form input[type=submit]:hover {
+.form-container .form input[type=submit]:hover {
   background-color: #45a049;
-}
-.home .form-container .form .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
 }
