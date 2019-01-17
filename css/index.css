@@ -168,6 +168,26 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  color: #17A2B8;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.btn:hover {
+  color: #FFFFFF;
+  background-color: #17A2B8;
+}
 header {
   width: 100%;
   display: flex;
