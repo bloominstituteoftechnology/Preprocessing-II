@@ -1,12 +1,16 @@
 .btn {
-  text-align: center;
-  width: 100px;
-  height: 45px;
-  background-color: green;
-  border: 1px solid black;
+  font-size: 1.92rem;
+  font-weight: bold;
+  width: 90%;
+  height: 20%;
+  background-color: teal;
+  color: white;
   border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+}
+.btn:hover {
+  background-color: white;
+  color: teal;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -180,19 +184,23 @@ img {
 }
 header {
   width: 100%;
+  display: flex;
   border-bottom: 2px dashed silver;
 }
 header nav {
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
   display: flex;
-  flex-wrap: row;
-  justify-content: space-evenly;
 }
 header nav a {
+  margin: auto;
+  align-self: flex-start;
+  color: #212529;
   font-size: 1.6rem;
-  padding: 3%;
 }
 header nav h1 {
-  padding: 2%;
+  align-self: flex-end;
 }
 .footer {
   width: 100%;
