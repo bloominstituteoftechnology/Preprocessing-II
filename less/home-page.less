@@ -98,6 +98,11 @@
     .custom-button(80%, 35px, @button-bg);
     @media @mobile {
       width: 90%;
+        .keyframes(fade-in;{
+          0% { opacity: .2; }
+          100% { opacity: 1; }
+          });
+        .animation(fade-in 1s linear infinite alternate)
     }
   }
 }// home
