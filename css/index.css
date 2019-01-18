@@ -187,16 +187,17 @@ nav {
   justify-content: space-between;
   margin-top: 2%;
 }
-nav h1 {
-  text-align: left;
-  padding-right: 25%;
-}
 nav a:link {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
   text-align: right;
   padding-top: 1%;
+}
+@media (max-width: 500px) {
+  nav a:link {
+    font-size: 2rem;
+  }
 }
 .footer {
   width: 100%;
