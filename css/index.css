@@ -2,11 +2,11 @@
   height: 50px;
   width: 200px;
   background-color: #008080;
+  text-align: center;
   padding-top: 6%;
   border-radius: 10px;
   font-size: 18px;
   color: white;
-  text-align: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
