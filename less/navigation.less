@@ -33,12 +33,18 @@ nav {
         margin-left: 0%;
         display: flex;
         justify-content: center;
+        border-bottom: 2px dashed lightgray;
+        padding-bottom: 4%;
     }
 
     .fun-bus {
         //width: 100%;
         font-size: 60px;
         margin-top: 2%;
+
+        @media @mobile {
+            font-size: 2rem;
+        }
     }
 
     a:link {
@@ -48,6 +54,11 @@ nav {
         text-align: right;
         padding-top: 1%;
         padding-left: 20px;
+
+        @media @mobile {
+            font-size: 18px;
+            margin-right: 8%;
+        }
     }    
 }
 
