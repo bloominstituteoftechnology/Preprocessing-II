@@ -235,6 +235,11 @@ nav a:link {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    padding: 2%;
+  }
+}
 .home .main-header {
   margin-top: 3%;
   border-bottom: 2px dashed lightgray;
@@ -270,7 +275,7 @@ nav a:link {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
-    padding-left: 10%;
+    padding-left: 6%;
   }
 }
 .home .content-section .img-content img {
@@ -291,7 +296,7 @@ nav a:link {
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
     width: 100%;
-    padding-left: 10%;
+    padding-left: 6%;
     margin-bottom: 5%;
   }
 }
@@ -325,6 +330,7 @@ nav a:link {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 9%;
   }
 }
 .home .content-pick .destination {
@@ -339,7 +345,6 @@ nav a:link {
 @media (max-width: 500px) {
   .home .content-pick .btn {
     padding-top: 3%;
-    width: 90%;
-    margin-left: 4%;
+    width: 100%;
   }
 }
