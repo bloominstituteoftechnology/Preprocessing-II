@@ -14,13 +14,13 @@
   }
 
 //buttons
-.custom-btn(@width: 200px, @height: 50px, @bgcolor: @white, @font-color, @fontsize: 1.4rem) {
+.custom-btn(@width, @height, @bgcolor, @font-color, @fontsize) {
     width: @width;
     height: @height;
     background-color: @bgcolor;
     color: @eastern-blue;
     font-size: @fontsize;
-    border: 1px solid black;
+    border: 1px @shark;
     .border-radius(15px);
     .center;
     cursor: pointer;
@@ -28,7 +28,6 @@
     
     &:hover {
       color: @white;
-      background-color: @eastern-blue;
-      
+      background-color: @eastern-blue;  
     }
   }
