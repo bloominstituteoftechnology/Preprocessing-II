@@ -18,6 +18,11 @@
 @tabletnormal:   800px;
 @mobilenormal:   500px;
 
-@desktop ~" ( max-depth: @{desktopnormal} )";
-@tablet  ~" ( max-depth: @{tabletnormal} )";
-@mobile  ~" ( max-depth: @{mobilenormal} )";
+@desktop: ~" ( max-depth: @{desktopnormal} )";
+@tablet:  ~" ( max-depth: @{tabletnormal} )";
+@mobile:  ~" ( max-depth: @{mobilenormal} )";
+
+@displaytype-normal: @desktopnormal;
+@displaytype-tablet: @tabletnormal;
+@displaytype-normal: @mobilenormal;
+
