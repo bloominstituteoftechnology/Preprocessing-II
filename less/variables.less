@@ -12,3 +12,12 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+// Display
+@desktopnormal: 1024px;
+@tabletnormal:   800px;
+@mobilenormal:   500px;
+
+@desktop ~" ( max-depth: @{desktopnormal} )";
+@tablet  ~" ( max-depth: @{tabletnormal} )";
+@mobile  ~" ( max-depth: @{mobilenormal} )";
