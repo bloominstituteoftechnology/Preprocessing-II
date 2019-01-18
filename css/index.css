@@ -177,14 +177,26 @@ img {
   font-size: 10px;
   padding: 20px;
   margin: 0 auto;
-  width: 100%;
 }
 @media  ( max-depth: 800px ) {
   .top-menu {
-    display: 800px;
+    display: flex;
     margin: 0 auto;
-    width:  ( max-depth: 800px );
+    width: 800px;
   }
+}
+@media  ( max-depth: 500px ) {
+  .top-menu {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+  }
+}
+.btn button {
+  width: 120px;
+  border-radius: 8px;
+  background-color: teal;
+  color: white;
 }
 .footer {
   width: 100%;
@@ -242,4 +254,11 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .nav-top-text {
+  font-family: "Indie Flower, cursive";
+  justify-content: flex-start;
+  font-size: 30px;
+  margin: 0 -85px;
+  align-items: center;
 }
