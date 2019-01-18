@@ -1,20 +1,20 @@
 // Mixins in here
 
-/*.button (@width; @height; @color){
-    button: @width @height @color;
+//****PARAMETRIC MIXIN****//
+.button(@height; @width; @color; @text-align; @padding-top; @border-radius) {
+    height: @height;
+    width: @width;
+    background-color: @color;
+    text-align: @text-align;
+    padding-top: @padding-top;
+    border-radius: @border-radius;
 }
 
 .btn {
-    .button(50px, 20px, green);
-}*/
-
-.btn {
-    width: 200px;
-    height: 50px;
+    .button(50px, 200px, #008080, center, 6%, 10px);
     font-size: 18px;
     color: white;
     text-align: center;
-    padding-top: 6%;
-    background-color:#008080;
-    border-radius: 10px;
 }
+
+//****PARAMETRIC MIXIN END****//
