@@ -266,7 +266,19 @@ header nav h1 {
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .home {
+  body {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .top-content,
+  .text-content,
+  .content-pick,
+  .destination,
+  .img-content,
+  .content-destination {
+    width: 85%;
+    margin: auto;
     color: red;
   }
 }

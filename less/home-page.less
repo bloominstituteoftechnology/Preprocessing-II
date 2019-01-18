@@ -67,7 +67,14 @@
 
 
 @media (max-width: 500px) {
-  .home {
-    color: red;
+  body {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-content, .text-content, .content-pick, .destination, .img-content, .content-destination {
+    .margins();
+    color: red; 
   }
 }
