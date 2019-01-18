@@ -3,14 +3,14 @@
   font-weight: bold;
   width: 90%;
   height: 20%;
-  background-color: teal;
-  color: white;
+  background-color: #17A2B8;
+  color: #FFFFFF;
   border-radius: 10px;
   cursor: pointer;
 }
 .btn:hover {
-  background-color: white;
-  color: teal;
+  background-color: #FFFFFF;
+  color: #17A2B8;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -264,4 +264,9 @@ header nav h1 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home {
+    color: red;
+  }
 }
