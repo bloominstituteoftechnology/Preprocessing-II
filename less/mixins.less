@@ -1,21 +1,21 @@
 // Mixins in here
 .border(@type, @color) {
-    border-bottom: 2px @type @color;
+  border-bottom: 2px @type @color;
 }
 
 .button() {
-    text-align: center;
-    border-radius: 13px;
-    font-size: 2rem;
-    width: 200px;
-    padding: 10px 0;
-    color: @main-bg;
-    background: @button-bg;
-    &:hover {
-        color: @button-bg;
-        background: @main-bg;
-        cursor: pointer;
-        border: 1px solid black;
-        transition: all .5s ease;
-    }
+  text-align: center;
+  border-radius: 13px;
+  font-size: 2rem;
+  width: 200px;
+  padding: 10px 0;
+  color: @main-bg;
+  background: @button-bg;
+  &:hover {
+    color: @button-bg;
+    background: @main-bg;
+    cursor: pointer;
+    // border: 1px solid black;
+    transition: all 0.3s ease-in;
+  }
 }

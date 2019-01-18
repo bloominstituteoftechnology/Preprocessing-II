@@ -1,34 +1,40 @@
-// Navigation Styles here 
+// Navigation Styles here
 
 header {
-    .border(dashed, @navigation-border);
-    div {
-        max-width: 800px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        padding: 25px 0;
-        @media @mobile {
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 0;
+  .border(dashed, @navigation-border);
+  div {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0;
+    }
+    nav {
+      width: 45%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      @media @mobile {
+        width: 90%;
+        justify-content: space-around;
+        padding-top: 15px;
+      }
+      a {
+        color: @font-color;
+        text-decoration: none;
+        font-size: 1.6rem;
+        &:hover {
+          transform: scale(1.08);
+          transition: all 0.03s ease;
         }
-        nav {
-            width: 45%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            @media @mobile {
-                width: 90%;
-                justify-content: space-around;
-                padding-top: 15px;
-            }
-            a {
-                color: @font-color;
-                text-decoration: none;
-                // border: 1px solid black;
-                font-size: 1.6rem;
-            }//a
-        }//nav
-    }//div
-}//header
+        @media @mobile {
+          margin-bottom: 10px;
+        }
+      } //a
+    } //nav
+  } //div
+} //header

@@ -1,103 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Fun Bus Travel Agency - Solution</title>
+    <title>Fun Bus Travel Agency - Solution</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-<header>
-    <div>
-      <h1>Fun Bus</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <div class="container home">
-    <section class="intro">
-      <img src="/img/fun-bus.jpg" alt="image of bus">
-      <h2>Welcome to Fun Bus!</h2>
-      <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition</p>
-    </section>
-    <section class="content-section">
-      <div class="text-content">
-        <h2>Let's Go!</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
-        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
+  <body>
+    <header>
+      <div>
+        <h1 class="logo">Fun Bus</h1>
+        <nav class="nav-links">
+          <a href="#">Home</a> <a href="#">About Us</a> <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
       </div>
-      <div class="img-content">
-        <img src="img/adventure.jpg" alt="Let's go on an adventure!">
-      </div>
-    </section>
-    <section class="content-section inverse-content">
-      <div class="img-content">
-          <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
-      </div>
-      <div class="text-content">
-        <h2>Adventure Awaits</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
-        <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
-      </div>
-     
-    </section>
-    <section class="content-destination">
-      <h2>Pick Your Destination</h2>
-      <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-      <img src="img/destination.jpg" alt="Second slide">
-    </section>
-    <section class="content-pick">
-
-      <div class="destination">
-        <h4>Fun In The Sun</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
-      </div>
-      <div class="destination">
-        <h4>Mountain Excursion</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
-      </div>
-      <div class="destination">
-        <h4>Island Getaway</h4>
-        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
-      </div>
-    </section>
-    <section class="vacation-form">
-      <form>
-        <h2>More Information?</h2>
-        Your Name
-        <input type="name" name="name" placeholder="First and Last Name">
-        Email Address
-        <input type="email" name="email" placeholder="Email">
-        Vacation Package
-        <select name="vacation-package">
+    </header>
+    <div class="container home">
+      <!-- Top intro section -->
+      <section class="intro">
+        <div class="header-image">
+          <!-- <img src="img/fun-bus.jpg" alt="image of bus" /> -->
+        </div>
+        <h2>Welcome to Fun Bus!</h2>
+        <p>
+          Traveling expedition modern, clean webdesign blogger clean website
+          theme website modern. Design pretty design, travelblogger adventure
+          WordPress wanderlust theme blogger website expedition theme
+          travelblogger. Adventure fun traveler pretty design website expedition
+        </p>
+      </section>
+      <!-- Main content section -->
+      <section class="content-section" id="top">
+        <div class="text-content">
+          <h2>Let's Go!</h2>
+          <p>
+            Adventure webdesign pretty design design, excursion cute WordPress
+            blogger design webdesign adventure. Pretty simple traveling fun
+            WordPress wanderlust darn simple organized.
+          </p>
+          <p>
+            Expedition colorful design simple excursion blogger blogger design
+            WordPress design, design organized website theme.
+          </p>
+        </div>
+        <div class="img-content">
+          <img src="img/korea.jpeg" alt="Let's go on an adventure!" />
+        </div>
+      </section>
+      <section class="content-section inverse-content" id="bottom">
+        <div class="img-content">
+          <img
+            src="img/japan.jpeg"
+            class="img-fluid rounded"
+            alt="Lets have fun!"
+          />
+        </div>
+        <div class="text-content">
+          <h2>Adventure Awaits</h2>
+          <p>
+            Adventure webdesign pretty design design, excursion cute WordPress
+            blogger design webdesign adventure. Pretty simple traveling fun
+            WordPress wanderlust darn simple organized.
+          </p>
+          <p>
+            Expedition colorful design simple excursion blogger blogger design
+            WordPress design, design organized website theme.
+          </p>
+        </div>
+      </section>
+      <!-- Destinations -->
+      <section class="content-destination">
+        <h2>Pick Your Destination</h2>
+        <p>
+          Expedition excursion design darn excursion fun, clean simple organized
+          WordPress Travel colorful webdesign. Traveler blogger website design
+          expedition clean excursion traveling.
+        </p>
+        <img src="img/destination.jpg" alt="Second slide" />
+      </section>
+      <!-- Vacation choices -->
+      <section class="content-pick">
+        <div class="destination">
+          <h4>Fun In The Sun</h4>
+          <p>
+            Expedition excursion design excursion fun, clean simple organized
+            WordPress Travel colorful webdesign. Traveler blogger website design
+            expedition clean excursion traveling.
+          </p>
+          <div class="btn">Sign Me Up!</div>
+        </div>
+        <div class="destination">
+          <h4>Mountain Excursion</h4>
+          <p>
+            Expedition excursion design excursion fun, clean simple organized
+            WordPress Travel colorful webdesign. Traveler blogger website design
+            expedition clean excursion traveling.
+          </p>
+          <div class="btn">Sign Me Up!</div>
+        </div>
+        <div class="destination">
+          <h4>Island Getaway</h4>
+          <p>
+            Expedition excursion design excursion fun, clean simple organized
+            WordPress Travel colorful webdesign. Traveler blogger website design
+            expedition clean excursion traveling.
+          </p>
+          <div class="btn">Sign Me Up!</div>
+        </div>
+      </section>
+      <!-- Form for vacations -->
+      <section class="vacation-form">
+        <form>
+          <h2>More Information?</h2>
+          Your Name
+          <input type="name" name="name" placeholder="First and Last Name" />
+          Email Address
+          <input type="email" name="email" placeholder="Email" /> Vacation
+          Package
+          <select name="vacation-package">
             <option value="select">Select Vacation Package</option>
             <option value="fun-in-the-sun">Fun In The Sun</option>
             <option value="mountain-excursion">Mountain Excursion</option>
             <option value="island-getaway">Island Getaway</option>
-        </select>
-        <textarea name="instructions" id="" cols="30" rows="10" placeholder="Any special instructions?"></textarea>
-      </form>
-    </section>
-  </div><!-- container -->
+          </select>
+          <textarea
+            name="instructions"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Any special instructions?"
+          ></textarea>
+        </form>
+      </section>
+    </div>
+    <!-- container -->
 
-  <footer class="footer">
-    <p>Copyright Fun Bus 2018</p>
-  </footer>
+    <footer class="footer"><p>Copyright Fun Bus 2018</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-</body>
+    <script src="animations.js "></script>
+  </body>
 </html>
