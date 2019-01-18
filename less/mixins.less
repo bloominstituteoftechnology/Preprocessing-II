@@ -1,37 +1,34 @@
-// Mixins below variables
+// Mixins in here
 
-.border-radius (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;
-
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
+.custom-button(@bg, @color) {
+  border: 1px solid black;
+  display:flex;
+  justify-content: center;
+  font-size:1.2rem;
+  width: 185px;
+  padding: 10px;
+  .border-radius(12px);
+  text-decoration: none;
+  background: @button2;
+  color: @button1;
+  
+  &:hover {
+    background: @button1;
+    color: @bg;
+    cursor:pointer;
+  }
 }
 
-.opacity (@opacity: 0.5) {
-	-webkit-opacity: 	@opacity;
-	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
 }
 
-.box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
-}
-
-.rotate (@deg) {
-	-webkit-transform: rotate(@deg);
-	-moz-transform: 	 rotate(@deg);
-	-ms-transform: 		 rotate(@deg);
-	-o-transform: 		 rotate(@deg);
-}
-
-.skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
-	-moz-transform: 	 skew(@deg, @deg2);
-	-ms-transform: 		 skew(@deg, @deg2);
-	-o-transform: 		 skew(@deg, @deg2);
+.center() {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
