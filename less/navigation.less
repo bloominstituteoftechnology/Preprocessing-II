@@ -8,15 +8,35 @@ body {
     padding-top: 2%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+h1 {
+    @media @mobile {
+        text-align: center;
+    }
 }
 
 nav {
     display: flex;
     margin-top: 2%;
-    margin-left: 50%;
+    margin-left: 20%;
+
+    @media @mobile {
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        justify-content: center;
+    }
 
     .fun-bus {
-        width: 400px;
+        //width: 100%;
         font-size: 60px;
         margin-top: 2%;
     }
