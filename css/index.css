@@ -202,7 +202,7 @@ body {
 nav {
   display: flex;
   margin-top: 2%;
-  margin-left: 20%;
+  margin-left: 50%;
 }
 @media (max-width: 500px) {
   nav {
@@ -248,9 +248,20 @@ nav a:link {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
