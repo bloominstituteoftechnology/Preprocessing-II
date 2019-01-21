@@ -171,7 +171,6 @@ img {
 hr {
   margin: 0 0 0 0;
   border-top: 2px dashed #C0C0C0;
-  color: #C0C0C0;
 }
 .main-header {
   margin: 0 auto;
@@ -268,4 +267,102 @@ hr {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-header nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-header nav a {
+    margin-right: 50px;
+  }
+  .main-header nav a:nth-child(4) {
+    margin-right: 0;
+  }
+  .home {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home header img[src="img/fun-bus.jpg"] {
+    margin-left: 4%;
+    width: 93%;
+  }
+  .home header .welcome-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home header .welcome-text h2,
+  .home header .welcome-text p {
+    padding-left: 4%;
+  }
+  .home .content-section {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-section .img-content {
+    max-width: 500px;
+    width: 96%;
+    padding-left: 2%;
+  }
+  .home .content-section .img-content img[src="img/adventure.jpg"] {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home .content-section .text-content {
+    max-width: 500px;
+    width: 100%;
+    padding-left: 3%;
+  }
+  .home .content-section .text-content p {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: none;
+  }
+  .home .inverse-content .img-content {
+    max-width: 500px;
+    width: 96%;
+    padding-left: 2%;
+  }
+  .home .inverse-content .img-content img[src="img/fun.jpg"] {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home .content-destination {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 2% 0 2%;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    max-width: 500px;
+    width: 75%;
+  }
+  .home .content-pick .destination .btn {
+    font-size: 1.6rem;
+    margin-left: 0;
+    padding-top: 7px;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #008080;
+  }
 }
