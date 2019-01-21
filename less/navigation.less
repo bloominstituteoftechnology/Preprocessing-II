@@ -1,1 +1,33 @@
 // Navigation Styles here
+
+hr {
+	margin: 0 0 0 0;
+	border-top: 2px dashed @navigation-border;
+}
+
+.main-header {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	width: 100%;
+	max-width: 800px;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			margin-right: 25px;
+			font-size: 1.6rem;
+			text-decoration: none;
+			color: black;
+		}
+
+		a:nth-child(4) {
+			margin-right: 0;
+		}
+	}
+}
