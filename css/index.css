@@ -245,3 +245,10 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+header .container {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+.welcome p {
+  border-bottom: 2px dashed #C0C0C0;
+}
