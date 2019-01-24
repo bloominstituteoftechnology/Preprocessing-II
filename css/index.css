@@ -252,3 +252,12 @@ header .container {
 .welcome p {
   border-bottom: 2px dashed #C0C0C0;
 }
+.btn {
+  background-color: #17A2B8;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  padding: 4%;
+  width: 150px;
+}
