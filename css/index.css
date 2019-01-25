@@ -188,6 +188,11 @@ nav a {
   font-size: 1.5rem;
   padding: 5px;
 }
+@media (max-width: 500px) {
+  nav a {
+    color: blue;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -260,4 +265,9 @@ header .container {
   color: white;
   padding: 4%;
   width: 150px;
+}
+@media ((max-width: 500px)) {
+  nav a {
+    color: blue;
+  }
 }
