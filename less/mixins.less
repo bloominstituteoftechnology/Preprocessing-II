@@ -1,1 +1,51 @@
 // Mixins in here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.border-radius(@radius) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+
+.custom-btn(@width: 300px, @height: 200px, @bgcolor: white, @font-color: black) {
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    color: @font-color;
+    border: 1px solid black;
+    .border-radius(10px);
+    .center;
+    cursor: pointer;
+    margin: 20px 0;
+    
+    @media @tablet {
+        font-size: 18px;
+    }
+    
+    @media @mobile {
+        font-size: 20px;
+    }
+
+.btn {
+    .custom-btn(100px, 45px, green, black);
+}}
+
+.topper() {
+	width: 20%;   
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 0 57% 35px;
+    font-size: 1.4rem;
+}
+
+.navs() {
+    text-decoration: none;
+    color: @font-color;
+    font-size: 1.4rem;
+}
