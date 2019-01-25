@@ -1,3 +1,40 @@
+@media (max-width: 500px) {
+  .header {
+    background: #17A2B8;
+  }
+  .header .top {
+    border: 1px solid red;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header nav {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 0 10px 0;
+  }
+  .header .top h2 {
+    border: 1px solid blue;
+    width: 160px;
+    padding: 0 15px 0px;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-header .text-content {
+    width: 99%;
+    padding-right: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .content-section .text-content {
+    width: 99%;
+    padding-right: 1%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -211,7 +248,6 @@ img {
 }
 .home .main-header .text-content {
   margin: 10px 0;
-  width: 800px;
 }
 .home .main-header .img-header {
   margin-bottom: 20px;

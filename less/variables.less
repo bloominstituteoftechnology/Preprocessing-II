@@ -1,4 +1,3 @@
-
 // Color assignments 
 @font-color: @shark;
 @button-bg: @eastern-blue;
@@ -12,3 +11,30 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+// Mobile design styling
+
+@tablet: ~"(max-width: 800px)";
+@mobile: ~"(max-width: 500px)";
+
+
+.header {
+    @media @mobile{    
+        background: @eastern-blue;    
+        .top();   
+    } 
+}
+
+.main-header .text-content {  
+    @media @mobile{    
+        .text-content();    
+    }  
+}        
+
+.content-section .text-content {
+    @media @mobile{
+        .text-content();
+    }
+}
+
+
