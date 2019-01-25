@@ -11,14 +11,26 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width:   auto;
+        margin:  0 auto;
+        
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      border: 1px solid purple;
+      flex-direction: column;
+      
       img {
         border-radius: 10px;
+        @media @mobile {
+          
+          
+        }
       }
     }
   }
@@ -44,6 +56,9 @@
 
     img {
       border-radius: 10px;
+      @media @mobile {
+
+      }
     }
   }
 
@@ -52,9 +67,10 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
     .destination {
-      width: 30%;
+      width: 100%;
       margin-bottom: 30px;
     }
   }
@@ -66,4 +82,7 @@
     margin: 0 -85px;
     align-items: center;
   }
+
+ 
+ 
 }// home
