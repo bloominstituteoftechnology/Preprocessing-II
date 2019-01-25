@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .border-radius(@radius) {
 	border-radius: @radius;
@@ -30,22 +30,37 @@
     @media @mobile {
         font-size: 20px;
     }
-
-.btn {
-    .custom-btn(100px, 45px, green, black);
-}}
+}    
 
 .topper() {
+    border: 1px solid red;
 	width: 20%;   
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    margin: 0 57% 35px;
-    font-size: 1.4rem;
+    margin: 0 57% 0px;
+    font-size: 2.rem;
 }
 
 .navs() {
     text-decoration: none;
     color: @font-color;
     font-size: 1.4rem;
+}
+
+.btn() {
+    border: 1px solid darkcyan;
+    background: darkcyan;
+    .border-radius(15px);
+    width: 200px;
+    height: 45px;
+    .center();
+    color: @white;
+    font-size: 40px;
+}    
+
+.top() {
+	width: 24%;
+	padding: 0 0 0 4%;
+	margin: 0 0.2% 0 0;
 }
