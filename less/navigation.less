@@ -19,14 +19,27 @@ nav {
         text-decoration: none;
         color: @shark;
         font-size: 1.5rem;
-        padding:5px;
-    }
-    
+        padding:10px;
+
+}
 }
 
-// Mobile View //
-@media @mobile{
-    nav a{
-        color: blue;
+ // Mobile View //
+        
+ @media @mobile{
+        .top{
+        display:flex;
+        flex-direction: column;
+        border: 1px solid red;
+        }
+        h1{
+            
+        }
+        nav {
+            border:1px solid blue;
+            width:100%;
+            margin: 0 auto;
+            
+        }
+        
     }
-  }

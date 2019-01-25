@@ -186,11 +186,18 @@ nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.5rem;
-  padding: 5px;
+  padding: 10px;
 }
 @media (max-width: 500px) {
-  nav a {
-    color: blue;
+  .top {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+  nav {
+    border: 1px solid blue;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .footer {
@@ -265,9 +272,4 @@ header .container {
   color: white;
   padding: 4%;
   width: 150px;
-}
-@media ((max-width: 500px)) {
-  nav a {
-    color: blue;
-  }
 }
