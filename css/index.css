@@ -170,19 +170,16 @@ img {
 }
 .top {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 2%;
   border-bottom: 2px dashed #C0C0C0;
 }
-h1 {
-  margin-right: 25%;
+.top nav {
+  margin-left: 35%;
 }
-nav {
-  margin-left: 5%;
-}
-nav a {
+.top a {
   text-decoration: none;
   color: #212529;
   font-size: 1.5rem;
@@ -192,12 +189,14 @@ nav a {
   .top {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
   }
-  nav {
-    border: 1px solid blue;
+  .top nav {
     width: 100%;
     margin: 0 auto;
+    padding-top: 3%;
+  }
+  .top nav a {
+    margin-right: 13.5%;
   }
 }
 .footer {
