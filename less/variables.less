@@ -25,17 +25,51 @@
     } 
 }
 
-.main-header .text-content {  
-    @media @mobile{    
-        .text-content();    
-    }  
-}        
-
-.content-section .text-content {
-    @media @mobile{
-        .text-content();
+.content-section {
+    @media @mobile {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+       
     }
+    .text-content p {
+        @media @mobile {
+            border: 1px solid red;
+            width: 210%;
+
+        }
+    }
+    .img-content {
+        @media @mobile {
+            border: 1px solid green;
+           
+        
+            img {
+                @media @mobile {
+                    border: 1px solid red;
+                    width: 298%;
+                    padding-left: 1%;
+                    border-radius: 10px;
+                }    
+            }
+        }    
+    }
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 .content-pick .destination {
     @media @mobile{
