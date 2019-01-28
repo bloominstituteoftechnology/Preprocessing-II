@@ -2,7 +2,12 @@
 
 .header {
     border-bottom: 2px dashed @navigation-border;
-
+   
+    @media @mobile {
+        width: 480px;
+        margin: 0 2%;
+    }
+    
     h2 {
         width: 15%;
         height: 50px;

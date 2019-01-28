@@ -54,49 +54,31 @@
     }    
 }
 
-.content-destination {
-    @media @mobile {
-        border: 1px solid gray;
-        width: 10%;
-    }
-}
-.content-destination  {
-    @media @mobile {
-        border: 1px solid rebeccapurple; 
-        width: 120%;
-        margin: 0 0 0px;
+
+.content-destination {    
+    p {
+        @media @mobile {
+        width: 100%;
+        }
     }    
     img {
       border-radius: 10px;
     }
-  }
+}
 
 
 
 
 
 .content-pick {
-    @media @mobile {
-        border: 1px solid blue;  
+    @media @mobile {  
         flex-direction: column; 
-        padding: 0 5% 0 15%;  
-    }
-    
+        padding: 0 3% 0 10%;  
+    } 
     .destination p, h4 {
         @media @mobile{
-            border: 1px solid red;
             width: 295%;      
         }
-    
-       .btn {
-            @media @mobile {
-                border: 1px solid green;
-                width: 295%;
-            }
-        }
-    }
-
-
-    
+    }   
 }
 
