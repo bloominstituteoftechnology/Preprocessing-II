@@ -51,9 +51,6 @@
     width: 100%;
   }
 }
-.content-destination img {
-  border-radius: 10px;
-}
 @media (max-width: 500px) {
   .content-pick {
     flex-direction: column;
