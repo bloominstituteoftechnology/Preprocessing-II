@@ -22,37 +22,65 @@
 }
 @media (max-width: 500px) {
   .content-section {
-    border: 1px solid red;
+    border: 1px solid orange;
     display: flex;
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
   .content-section .text-content p {
-    border: 1px solid red;
     width: 210%;
   }
 }
 @media (max-width: 500px) {
   .content-section .img-content {
     border: 1px solid green;
+    width: 70%;
   }
 }
 @media (max-width: 500px) and (max-width: 500px) {
   .content-section .img-content img {
     border: 1px solid red;
-    width: 298%;
-    padding-left: 1%;
+    width: 300%;
+    padding-left: 0%;
     border-radius: 10px;
   }
 }
 @media (max-width: 500px) {
-  .content-pick .destination .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed #C0C0C0;
-    display: flex;
+  .content-destination {
+    border: 1px solid gray;
+    width: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .content-destination {
+    border: 1px solid rebeccapurple;
+    width: 120%;
+    margin: 0 0 0px;
+  }
+}
+.content-destination img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .content-pick {
+    border: 1px solid blue;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 0 5% 0 15%;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick .destination p,
+  .content-pick h4 {
+    border: 1px solid red;
+    width: 295%;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick .destination p .btn,
+  .content-pick h4 .btn {
+    border: 1px solid green;
+    width: 295%;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -235,7 +263,7 @@ img {
   font-size: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: centr;
+  justify-content: center;
   padding: 40px 2px 0;
 }
 .header nav {
