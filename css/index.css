@@ -272,3 +272,36 @@ header .container {
   padding: 4%;
   width: 150px;
 }
+@media (max-width: 500px) {
+  header .container {
+    padding: 20px;
+  }
+  .home .content-section .text-content {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+  .home .content-section .img-content {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header .container {
+    max-width: 75%;
+    margin: 0 auto 30px;
+  }
+}
