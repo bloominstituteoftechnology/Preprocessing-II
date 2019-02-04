@@ -1,15 +1,14 @@
-// Follow the order in the readme
+// Variables and Mixins
+@import 'variables.less';
+@import 'mixins.less';
 
+// Reset and Global Styles
+@import 'reset.less';
+@import 'global.less';
 
-// Vars and Mixins Here because they are lazy loaded
-@import "variables";
-@import "mixins";
+// Reusable components
+@import 'navigation.less';
+@import 'footer.less';
 
-// General Styles Here
-@import "reset";
-@import "global";
-
-// Components Here
-@import "navigation";
-@import "footer";
-@import "home-page";
+// Page Specific
+@import 'home-page.less';

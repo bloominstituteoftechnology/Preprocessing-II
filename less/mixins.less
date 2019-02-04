@@ -1,33 +1,32 @@
-// Mixins in here
-
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .border-radius(@radius) {
-	border-radius: @radius;
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-}  
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
 
-.center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+  .border-radius(15px);
+  .center;
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  color: @font-color;
+  border: 1px solid @silver;
+  cursor: pointer;
+  font-size: @font-size;
 
-//buttons
-.custom-btn(@width, @height, @bgcolor, @font-color, @fontsize) {
-    width: @width;
-    height: @height;
-    background-color: @bgcolor;
-    color: @eastern-blue;
-    font-size: @fontsize;
-    border: 1px @shark;
-    .border-radius(15px);
-    .center;
-    cursor: pointer;
-    margin: 20px 0;
-    
-    &:hover {
-      color: @white;
-      background-color: @eastern-blue;  
-    }
+  @media @mobile {
+    width: 100%;
   }
+  
+  &:hover {
+    background: @white;
+    color: @button-bg;
+  }
+}

@@ -163,50 +163,61 @@ img {
   max-width: 100%;
   height: auto;
 }
-header {
+.container {
+  max-width: 800px;
   width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+.main-navigation {
+  width: 100%;
+  height: 90px;
+  background: #FFFFFF;
+  border-bottom: 2px dashed #C0C0C0;
+  position: fixed;
+}
+.main-navigation .nav-container {
+  height: 100%;
   display: flex;
-  border-bottom: 2px dashed silver;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
-  header {
+  .main-navigation .nav-container {
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    padding-top: 10px;
   }
 }
-header nav {
-  width: 600px;
-  justify-content: flex-end;
+@media (max-width: 500px) {
+  .main-navigation .nav-container .logo-heading {
+    font-size: 3rem;
+  }
+}
+.main-navigation .nav-container .nav {
+  width: 350px;
   display: flex;
+  justify-content: space-evenly;
 }
 @media (max-width: 500px) {
-  header nav {
-    justify-content: center;
-    flex-direction: row;
+  .main-navigation .nav-container .nav {
+    width: 100%;
+    justify-content: space-around;
   }
 }
-header nav a {
+.main-navigation .nav-container .nav a {
+  font-size: 1.6rem;
+  color: #212529;
   text-decoration: none;
-  color: black;
-  padding: 20px;
-  font-size: 1.5rem;
-}
-header nav a:hover {
-  text-decoration: underline;
-  color: black;
-}
-.welcome {
-  border-bottom: 2px dashed silver;
-}
-.welcome img {
-  padding-bottom: 10px;
-  margin: 0;
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -214,6 +225,17 @@ header nav a:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .intro {
+  padding: 90px 0 10px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .intro img {
+  max-width: 100%;
+  height: auto;
+}
+.home .intro h2 {
+  margin-top: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -228,20 +250,25 @@ header nav a:hover {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
-    flex-direction: row;
+    padding: 0;
   }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home .content-section .img-content {
+  .home .content-section .img-content img {
     width: 100%;
-    flex-direction: row;
   }
 }
 .home .inverse-content {
@@ -254,7 +281,7 @@ header nav a:hover {
 }
 @media (max-width: 500px) {
   .home .inverse-content .text-content {
-    order: 0;
+    order: 1;
   }
 }
 .home .inverse-content .img-content {
@@ -263,12 +290,17 @@ header nav a:hover {
 }
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
-    order: 1;
+    order: 2;
   }
 }
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -279,38 +311,42 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    justify-content: center;
     width: 80%;
+    margin: 0 auto 30px;
   }
 }
-@media (max-width: 500px) {
-  .home .content-pick {
-    flex-flow: column;
-  }
-}
-.btn {
-  width: 200px;
-  height: 50px;
-  background-color: #FFFFFF;
-  color: #17A2B8;
-  font-size: 1.4rem;
-  border: 1px #212529;
-  border-radius: 15px;
+.home .content-pick .destination .btn {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  margin: 20px 0;
-}
-.btn:hover {
-  color: #FFFFFF;
+  width: 200px;
+  height: 45px;
   background-color: #17A2B8;
+  color: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+.home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
 }
