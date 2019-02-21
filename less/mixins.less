@@ -1,10 +1,22 @@
-.button(@width: 100%) {
+.button(@width: 100%, @bg-color: @eastern-blue) {
   padding: 13px 0;
   width: @width;
   border-radius: 15px;
-  background-color: @teal;
+  background-color: @bg-color;
   color: @white;
   font-weight: bold;
   font-size: 1.8rem;
   text-align: center;
+}
+
+.flex-column-mb {
+  @media @mobile {
+    flex-direction: column;
+  }
+}
+
+.full-mb {
+  @media @mobile {
+    width: 100%;
+  }
 }
