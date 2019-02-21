@@ -1,0 +1,21 @@
+{
+  "name": "preprocessing-two",
+  "version": "1.0.0",
+  "description": "Fun Bus is a travel agency looking for some help on their website.  They want a new navigation, new header, and new buttons on the home page. They also want a mobile version of their site styled.  Use your preprocessing knowledge to accomplish their tasks.",
+  "scripts": {
+    "less": "less-watch-compiler less css index.less",
+    "bs": "browser-sync start --server --files *.html, css/*.css --port 8000",
+    "start": "concurrently \"npm run bs\" \"npm run less\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glweems/Preprocessing-II.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glweems/Preprocessing-II/issues"
+  },
+  "homepage": "https://github.com/glweems/Preprocessing-II#readme"
+}
