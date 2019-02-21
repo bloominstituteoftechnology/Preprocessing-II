@@ -238,6 +238,11 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 @media (max-width: 500px) {
   .container {
     padding: 0 3rem;
@@ -279,6 +284,11 @@ nav a {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
+}
+@media (max-width: 1000px) {
+  .header-wrapper .header {
+    padding: 3rem 2rem;
+  }
 }
 @media (max-width: 500px) {
   .header-wrapper .header {
