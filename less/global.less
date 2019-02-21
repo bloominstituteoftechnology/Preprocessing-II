@@ -16,6 +16,12 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+
+  @media @mobile {
+    padding: 2rem;
+
+    font-size: 3rem;
+  }
 }
 
 h2 {
@@ -48,4 +54,8 @@ a {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    padding: 0 3rem;
+  }
 }

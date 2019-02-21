@@ -1,10 +1,18 @@
 // Navigation Styles here
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 335px;
+
+    @media @mobile {
+        width: 100%;
+    }
+
     a {
+        display: inline-block;
         text-decoration: none;
         font-size: 1.6rem;
-        margin-right: 29px;
         color: black;
     }
 }
