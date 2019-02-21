@@ -1,4 +1,29 @@
+@import "mixins.less";
+
+.header-wrapper {
+  .dashedBorder();
+  width: 100%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+  }
+}
+
 .home {
+  .btn {
+    .coloredButton(@eastern-blue);
+  }
+  .cta {
+    .dashedBorder();
+    padding-bottom: .8rem;
+
+    h2 {
+      padding-top: 2rem;
+    }
+  }
 
   .content-section {
     margin: 30px 0;

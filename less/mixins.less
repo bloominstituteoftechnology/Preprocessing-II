@@ -1,1 +1,23 @@
 // Mixins in here
+
+.dashedBorder() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coloredButton(@bg-color: green, @font-color: white, @wide: 85%){
+    .center();
+
+    background: @bg-color;
+    color: @font-color;
+    border-radius: 1.5rem;
+    padding: 1.2rem;
+    font-size: 2rem;
+    width: @wide;
+
+}
