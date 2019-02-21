@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 25px;
+  }
+}
 .container header {
   height: 90px;
   display: flex;
