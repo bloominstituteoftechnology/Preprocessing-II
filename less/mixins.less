@@ -1,4 +1,6 @@
 // Mixins in here
+
+// Button
 .custom-button(@width: 200px, @bg-color:@eastern-blue, @font-color: @white) {
   background-color: @bg-color;
   color: @font-color;
@@ -14,4 +16,11 @@
     background-color: @font-color;
     color: @bg-color;
   }
+}
+
+// Mobile Columns
+.column() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
