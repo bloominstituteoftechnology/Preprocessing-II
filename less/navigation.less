@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media @mobile {
+      flex-direction: column;
+      justify-content: space-around;
+    }
 
     &:after {
       position: absolute;
@@ -19,6 +23,10 @@
     h2 {
       font-size: 4.0rem;
       padding-top: 5px;
+      @media @mobile {
+        padding-top: 12px;
+        font-size: 3.0rem;
+      }
     }
 
     nav {
@@ -26,6 +34,11 @@
       display: flex;
       justify-content: space-between;
       padding-right: 30px;
+      @media @mobile {
+        padding-right: 0;
+        width: 85%;
+        flex-wrap: wrap;
+      }
 
       a {
         color: black;

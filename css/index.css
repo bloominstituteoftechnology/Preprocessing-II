@@ -179,6 +179,12 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 .container header:after {
   position: absolute;
   left: 0;
@@ -192,11 +198,24 @@ img {
   font-size: 4rem;
   padding-top: 5px;
 }
+@media (max-width: 500px) {
+  .container header h2 {
+    padding-top: 12px;
+    font-size: 3rem;
+  }
+}
 .container header nav {
   width: 320px;
   display: flex;
   justify-content: space-between;
   padding-right: 30px;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    padding-right: 0;
+    width: 85%;
+    flex-wrap: wrap;
+  }
 }
 .container header nav a {
   color: black;
