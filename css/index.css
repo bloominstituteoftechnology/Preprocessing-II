@@ -183,6 +183,10 @@ img {
     display: flex;
     margin: 0 auto;
     width: 90%;
+    text-decoration: none;
+  }
+  .nav-top-text {
+    text-decoration: none;
   }
 }
 @media (max-width: 500px) {
@@ -190,6 +194,7 @@ img {
     display: flex;
     margin: 0 auto;
     width: 90%;
+    text-decoration: none;
   }
 }
 .btn button {
@@ -228,7 +233,6 @@ img {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
-  border: 1px solid purple;
   flex-direction: column;
 }
 .home .content-section .img-content img {
@@ -253,21 +257,52 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination img {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-}
-.home .content-pick .destination {
   width: 100%;
+}
+
+.home .content-pick .destination {
+  width: 30%;
   margin-bottom: 30px;
 }
+
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0;
+    flex-direction: column;
+  }
+}
+
 .home .nav-top-text {
   font-family: "Indie Flower, cursive";
   justify-content: flex-start;
   font-size: 30px;
   margin: 0 -85px;
   align-items: center;
+}
+.home .inverse-content {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+.home .inverse-content .img-content {
+  display: flex;
+  width: 50%;
 }
