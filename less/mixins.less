@@ -1,1 +1,25 @@
 // Mixins in here
+
+.flex() {
+  display: flex;
+}
+
+.flex-row() {
+  .flex();
+  flex-direction: row;
+}
+
+.border-bottom() {
+  border-bottom: @dotted-border;
+}
+
+.padding-x(@padding: 1rem) {
+  padding-left: @padding;
+  padding-right: @padding;
+}
+
+.flex-column() {
+  .flex();
+  flex-direction: column;
+  align-content: space-between;
+}
