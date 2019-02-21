@@ -168,6 +168,39 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.container header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header:after {
+  position: absolute;
+  left: 0;
+  content: " ";
+  display: block;
+  border-bottom: 2px dashed #C0C0C0;
+  height: 90px;
+  width: 100%;
+}
+.container header h2 {
+  font-size: 4rem;
+  padding-top: 5px;
+}
+.container header nav {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.container header nav a {
+  color: black;
+  font-size: 1.6rem;
+  padding-bottom: 5px;
+}
+.container header nav a:link {
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;

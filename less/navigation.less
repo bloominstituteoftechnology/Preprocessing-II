@@ -1,1 +1,41 @@
 // Navigation Styles here
+.container {
+  header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      content: " ";
+      display: block;
+      border-bottom: 2px dashed @navigation-border;
+      height: 90px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 4.0rem;
+      padding-top: 5px;
+    }
+
+    nav {
+      width: 320px;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 30px;
+
+      a {
+        color: black;
+        font-size: 1.6rem;
+        padding-bottom: 5px;
+
+        &:link {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
