@@ -168,6 +168,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 30px 0;
+}
+header h1 {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+}
+header nav {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #212529;
+  padding-left: 40px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
