@@ -3,6 +3,7 @@
 header.main-header {
     // .Flex(center, normal, row);
     border-bottom: 2px dashed @navigation-border;
+    padding: 0 5%;
 }
 
 header.main-header div.inner {
@@ -21,7 +22,7 @@ header.main-header div.inner {
 
 header.main-header div.inner h1 {
     font-size: @h1FontSize;
-    width: 50%;
+    width: 45%;
 }
 
 @media @mobile {
@@ -32,11 +33,10 @@ header.main-header div.inner h1 {
 
 header.main-header div.inner nav {
     .Flex(flex-end, center, row);
-    width: 50%;
+    width: 45%;
 }
 @media @mobile {
     header.main-header div.inner nav {
-        .Flex(flex-end, center, column);
         width: 100%;
     }
 }
