@@ -7,7 +7,7 @@ header.main-header {
 }
 
 header.main-header div.inner {
-    .Flex(flex-end, center, row);
+    .Flex(space-between, center, row);
     max-width: 800px;
     margin: 0 auto;
     font-size: @normalFontSize;
@@ -15,7 +15,8 @@ header.main-header div.inner {
 
 @media @mobile {
     header.main-header div.inner {
-        .Flex(flex-end, center, column);
+        .Flex(space-between, center, column);
+        flex-wrap: wrap;
         max-width: 500px;
     }
 }
@@ -28,6 +29,8 @@ header.main-header div.inner h1 {
 @media @mobile {
     header.main-header div.inner h1 {
         width: 100%;
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
