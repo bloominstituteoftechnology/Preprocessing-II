@@ -1,1 +1,11 @@
 // Mixins in here
+.Flex(@justify, @align, @direction) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.Pad(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+    padding: @top @right @bottom @left;
+}
