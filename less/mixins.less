@@ -1,1 +1,55 @@
-// Mixins in here
+
+.navigation {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; 
+    border-bottom: 2px dashed @navigation-border;
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media @mobile {
+            max-width: 500px;
+            flex-direction: column;
+        }
+    }
+
+    .logo {
+        padding: 24px 0px;
+
+        @media @mobile {
+            font-size: 3.0rem;
+            text-align: center;
+            padding: 15px 0px 15px 10px;
+            border: 1px solid blue;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 350px;
+        font-size: 1.6rem;
+        padding-top: 35px;
+
+        @media @mobile {
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 8px;
+            border: 1px solid red;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: @font-color;
+
+        @media @mobile {
+            margin-left: 15px;
+        }
+    }
+}
