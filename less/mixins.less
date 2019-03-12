@@ -1,1 +1,30 @@
 // Mixins in here
+.button(){
+    background-color: @eastern-blue;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    color: @white;
+    width: 80%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 25%;
+}
+
+.btn-mobile(){
+    background-color: @eastern-blue;
+    border-radius: 12px;
+    font-size: 2rem;
+    color: @white;
+    width: 95%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 30%;
+    margin-bottom: 2%
+}
+
+.footer-animation(@seconds){
+    background-color: @footer-bg;
+    animation-name: animation;
+    animation-duration: @seconds;
+    animation-iteration-count: 3;
+}
