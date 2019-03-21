@@ -46,4 +46,4 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 * [ ] Style the site to look good at all sizes, not just desktop and phone
 
 
-
+EDITED.
