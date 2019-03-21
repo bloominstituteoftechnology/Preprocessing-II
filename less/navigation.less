@@ -1,1 +1,35 @@
 // Navigation Styles here
+.nav-container {
+    height: 100px;
+    min-width: 100%;
+    border-bottom: 2px dashed grey;
+    display: flex;
+    justify-content: space-around;
+
+    .nav-content {
+        width: 800px;
+        padding: 50px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: @shark;
+        padding: 20px;
+        font-size: 1.5rem;
+
+        &:hover {
+            text-decoration: overline;
+            font-size: 1.6rem;
+            color: @eastern-blue;
+        }
+    }
+
+}
+
+//Here I did some nesting
+
+
