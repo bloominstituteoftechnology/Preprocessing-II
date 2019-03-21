@@ -1,0 +1,12 @@
+{
+  "name": "Preprocessing-II",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:djtorel/Preprocessing-II.git",
+  "author": "Dominic Torruellas <dom@domtorr.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}
