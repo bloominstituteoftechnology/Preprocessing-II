@@ -4,20 +4,7 @@
     min-width: 100%;
     border-bottom: 2px dashed grey;
     display: flex;
-    justify-content: space-around;
-
-    @media (max-width: 500px) {
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: green;
-
-    }
-
-    // @media @mobile {
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     bakground-color: red;
-    // }
+    justify-content: space-between;
 
     .nav-content {
         width: 800px;
@@ -26,6 +13,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media @phone {
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0px;
+            margin: 0px;
+    
+        }
     }
 
     a {
