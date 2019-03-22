@@ -175,6 +175,13 @@ img {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: green;
+  }
+}
 .nav-container .nav-content {
   width: 800px;
   padding: 50px;

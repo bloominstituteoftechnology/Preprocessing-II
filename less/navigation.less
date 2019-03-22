@@ -6,6 +6,19 @@
     display: flex;
     justify-content: space-around;
 
+    @media (max-width: 500px) {
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: green;
+
+    }
+
+    // @media @mobile {
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     bakground-color: red;
+    // }
+
     .nav-content {
         width: 800px;
         padding: 50px;
@@ -31,5 +44,3 @@
 }
 
 //Here I did some nesting
-
-
