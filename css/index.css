@@ -183,10 +183,22 @@ img {
     padding-bottom: 10px;
   }
 }
+@media (max-width: 970px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .top h1 {
   margin-left: 275px;
 }
 @media (max-width: 500px) {
+  .top h1 {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 970px) {
   .top h1 {
     margin-left: 0px;
     text-align: center;
@@ -198,6 +210,12 @@ img {
   align-items: center;
 }
 @media (max-width: 500px) {
+  .top nav {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 970px) {
   .top nav {
     margin-right: auto;
     margin-left: auto;
@@ -322,11 +340,23 @@ img {
     align-items: center;
   }
 }
+@media (max-width: 645px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
+}
+@media (max-width: 645px) {
   .home .content-pick .destination {
     width: 75%;
   }
@@ -344,6 +374,11 @@ img {
   color: aqua;
 }
 @media (max-width: 500px) {
+  .home .content-pick .destination .btn button:hover {
+    width: 75%;
+  }
+}
+@media (max-width: 645px) {
   .home .content-pick .destination .btn button:hover {
     width: 75%;
   }

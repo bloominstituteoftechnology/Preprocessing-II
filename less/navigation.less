@@ -13,10 +13,20 @@
         padding-bottom: 10px;
     }
 
+    @media @smdesktop {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     h1 {
         margin-left: 275px;
 
         @media @mobile {
+            margin-left: 0px;
+            text-align: center;
+        }
+        @media @smdesktop {
             margin-left: 0px;
             text-align: center;
         }
@@ -27,6 +37,10 @@
         align-items: center;
 
         @media @mobile {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @media @smdesktop {
             margin-right: auto;
             margin-left: auto;
         }
