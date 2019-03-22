@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+.container{
+
+   header{
+    width: 100%;
+    margin: 0 auto;
+    
+     .nav-content{
+        .apply-flex;
+        .center-with-max-width;
+        padding:2%;
+        align-items: center;
+
+        h1{
+            width: 50%
+        }
+
+        nav{   
+            .apply-flex;
+            justify-content: space-between;
+            width: 50%;
+
+            a{
+                .link-reset;
+            }
+        }    
+     }
+
+     hr{
+         margin: 0;
+        border-top:2px dashed @navigation-border;
+        width: 100%;
+     }
+    }
+}

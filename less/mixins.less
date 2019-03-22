@@ -1,1 +1,26 @@
 // Mixins in here
+.apply-flex(@orentation: row){
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.link-reset{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: @shark;
+
+}
+
+.center-with-max-width{
+    max-width: @max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button(@size-h , @size-w, @border-r, @color ){
+    padding: 2%;
+    height: @size-h;
+    width: @size-w;
+    border-radius: @border-r;
+    background-color: @color;
+}
