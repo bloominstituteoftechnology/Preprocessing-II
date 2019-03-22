@@ -3,6 +3,9 @@
   .hero-content{
     .center-with-max-width;
     border-bottom:2px dashed @navigation-border;
+    @media @phone{
+      width: 90%;
+    }
 
     #hero-img{
         margin-bottom: 3%
@@ -12,24 +15,42 @@
   .main-section-wrapper{
      .center-with-max-width;
 
+     @media @phone{
+       width: 90%;
+     }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @phone{
+      .apply-flex(column);
+    }
     
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone{
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone{
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
+        @media @phone{
+          width: 100%;
+        }
       }
     }
   }
@@ -37,6 +58,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone{
+       display: flex;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -46,12 +70,20 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @phone{
+        order: 1;
+     }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @phone{
+      width: 100%;
+      margin: 0 auto 5% auto;
+    }
 
     img {
       border-radius: 10px;
@@ -64,9 +96,20 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone{
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom:5%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone{
+        width: 80%;
+        margin: 3% auto;
+      }
     
       .btn{
         display: flex;
@@ -75,6 +118,14 @@
         .button(50px , 85%, 10px,@button-bg);
         color: white;
         font-size: 1.8rem;
+
+        @media @phone{
+          width: 100%;
+        }
+
+        &:hover{
+         background-color: darken(@button-bg, 20%);
+          }
       }
 
     }

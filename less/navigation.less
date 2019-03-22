@@ -9,17 +9,31 @@
      .nav-content{
         .apply-flex;
         .center-with-max-width;
+
+        @media @phone {
+            .apply-flex(column);
+             text-align: center;
+        }
+
         padding:2%;
         align-items: center;
 
         h1{
-            width: 50%
+            width: 50%;
+            @media @phone {
+                font-size:2.4rem;
+                margin-bottom:3%;
+            }
         }
 
         nav{   
             .apply-flex;
             justify-content: space-between;
             width: 50%;
+
+            @media @phone{
+                width:80%;
+            }
 
             a{
                 .link-reset;
@@ -28,7 +42,7 @@
      }
 
      hr{
-         margin: 0;
+        margin: 0;
         border-top:2px dashed @navigation-border;
         width: 100%;
      }

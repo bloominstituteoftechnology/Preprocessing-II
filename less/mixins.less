@@ -1,7 +1,7 @@
 // Mixins in here
 .apply-flex(@orentation: row){
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: @orentation wrap;
 }
 
 .link-reset{
@@ -23,4 +23,9 @@
     width: @size-w;
     border-radius: @border-r;
     background-color: @color;
+}
+
+.phone-border{
+    border-bottom:2px dashed @navigation-border;
+    margin-bottom:2%;
 }
