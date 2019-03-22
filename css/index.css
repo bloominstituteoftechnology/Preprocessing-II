@@ -1,3 +1,17 @@
+/*.btn {
+  background-color: red;
+  width: 75%;    //check for width padding setting on p tags
+  height: 3rem;
+  border-radius:20px;
+} */
+.bttn {
+  background-color: teal;
+  width: 80%;
+  height: 4rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -192,6 +206,17 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home img {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.home .welcome {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
