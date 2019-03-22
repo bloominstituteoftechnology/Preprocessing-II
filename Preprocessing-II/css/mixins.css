@@ -1,0 +1,8 @@
+.btn {
+  max-width: 100px;
+  height: 25px;
+  background: dodgerblue(31, 142, 161);
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: white;
+}
