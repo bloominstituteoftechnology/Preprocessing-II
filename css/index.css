@@ -168,6 +168,20 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+/*.btn {
+  background-color: red;
+  width: 75%;    //check for width padding setting on p tags
+  height: 3rem;
+  border-radius:20px;
+} */
+.bttn {
+  background-color: teal;
+  width: 80%;
+  height: 4rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -225,7 +239,8 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-/*BACKGROUND COLOR HERE */
+/*BACKGROUND COLOR HERE  
 body {
-  background-color: blue;
-}
+    background-color: blue;
+} 
+*/
