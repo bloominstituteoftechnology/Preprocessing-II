@@ -196,6 +196,24 @@ img {
   color: white;
   font-size: 2rem;
 }
+.navwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navwrapper .navsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  text-decoration: none;
+}
+.navwrapper .navsection a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  padding: 30px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
