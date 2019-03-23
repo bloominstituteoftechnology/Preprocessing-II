@@ -12,3 +12,17 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+// mobile
+@mobile: ~"(min-width: 500px)";
+
+header {
+    display: flex;
+    font-size: 2rem;
+    padding: 10px;
+  
+    @media @@mobile {
+      padding: 20px;
+    }
+}
+    

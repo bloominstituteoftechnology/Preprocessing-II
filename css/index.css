@@ -1,3 +1,8 @@
+@media (min-width: 500px) {
+  h1 {
+    display: flex;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,11 +173,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
-  margin-left: 50%;
-  font-size: 16px;
-  color: gray ;
+.btn {
+  background-color: #17A2B8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
 }
 .footer {
   width: 100%;
@@ -187,7 +206,15 @@ nav {
 }
 .home header {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   padding: 25px;
+  border-bottom: dotted;
+  width: 100%;
+}
+.home .top-content {
+  margin-top: 20px;
+  border-bottom: dotted;
 }
 .home .content-section {
   margin: 30px 0;
