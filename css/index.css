@@ -176,6 +176,8 @@ header {
   border-bottom: 2px dashed #C0C0C0;
    position: sticky;
    top: 0;
+   background-color: white;
+   opacity: .9;
 }
 @media (max-width: 500px) {
   header {
