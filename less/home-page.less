@@ -1,11 +1,21 @@
 .home {
 
+  @media @mobile {
+    max-width: 500px;
+  }
+
   header {
     border-bottom: 2px dashed @navigation-border;
     padding-bottom: 1%; 
     
     .header-img {
       padding-bottom: 2%; 
+    }
+
+    @media @mobile {
+      max-width: 500px;
+      padding-right: 5%; 
+      padding-left: 5%; 
     }
 
   }
@@ -16,11 +26,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        max-width: 500px;
+        width: 100%; 
+        display: flex; 
+        flex-wrap: wrap; 
+        padding-right: 5%; 
+        padding-left: 5%; 
+      }
     }
 
     .img-content {
@@ -29,8 +46,32 @@
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          max-width: 500px;
+          width: 100%; 
+          padding-right: 5%; 
+          padding-left: 5%; 
+        }
+      }
+
+      @media @mobile {
+        max-width: 500px;
+        width: 100%; 
+        display: flex; 
+        padding-right: 5%; 
+        padding-left: 5%; 
       }
     }
+    
+    @media @mobile {
+      max-width: 500px;
+      display: flex; 
+      flex-direction: column; 
+      padding-right: 5%; 
+      padding-left: 5%; 
+    }
+
   }
 
   .inverse-content {
@@ -45,6 +86,14 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile {
+      max-width: 500px;
+      display: flex; 
+      flex-direction: column-reverse; 
+      padding-right: 5%; 
+      padding-left: 5%; 
     }
   }
 
@@ -70,7 +119,24 @@
       .btn {
         .btnstyle(); 
       }
-  } 
+
+      @media @mobile {
+        max-width: 500px;
+        width: 100%; 
+        padding-right: 5%; 
+        padding-left: 5%;
+      }
+    }
+    
+    @media @mobile {
+      max-width: 500px;
+      width: 100%; 
+      display: flex; 
+      flex-direction: column;  
+      align-items: center; 
+
+    }
+    
   }
 
 
