@@ -168,6 +168,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px dashed gray;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 40%;
+}
+.content-section .fun-bus {
+  width: 100%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
