@@ -1,17 +1,27 @@
 // Navigation Styles here
-header{
-    display: flex;
-    padding: 10px;
-    border-bottom: 1px dashed gray;
-    justify-content: space-between;
+header {
+    .header();
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 40%;
+    @media @phone {
+        flex-direction: column;
+        text-align: center;
     }
-}
-.content-section .fun-bus{
-    width: 100%;
+    nav {
+        width:45%;
+        justify-content: space-around;
+        display: flex;
+        @media @phone {
+            width: 100%;
+            margin-top: 10px;
+        }
+        a {
+            justify-content: center;
+            .navtext();
+        }
+    }
+    h1 {
+        @media @phone {
+            margin: 10px 0;
+        }
+    }
 }
