@@ -1,1 +1,4 @@
-/* LESS needs to be processed */
+html,
+body {
+  background-color: red;
+}
