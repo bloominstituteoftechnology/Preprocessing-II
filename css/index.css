@@ -89,3 +89,8 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  padding: 2rem;
+  background-color: #008080;
+  margin-right: 2rem;
+}
