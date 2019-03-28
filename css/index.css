@@ -240,3 +240,13 @@ nav {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  width: 70%;
+  padding: 4% 8% 4% 8%;
+  background-color: teal;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 90%;
+  border: 1px solid gray;
+}
