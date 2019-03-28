@@ -1,14 +1,19 @@
 // Navigation Styles here
 
-nav {
-    width: 100%; 
+.nav-container {
     display: flex; 
-    justify-content: space-around; 
-    border-bottom: 2px dashed @navigation-border; 
-    padding-top: 2%; 
-    padding-bottom: 2%; 
+    width: 100%; 
+    justify-content: space-around;
+
+    nav {
+        width: 80%; 
+        display: flex;
+        justify-content: space-around; 
+    }
 
     @media @mobile {
-        max-width: 500px;
+        width: 100%; 
+        flex-wrap: wrap; 
       }
+
 }
