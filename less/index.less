@@ -12,7 +12,7 @@
 header{
     border-bottom: 1px solid black;
     margin: 20px 0;
-    padding: 10px 0;
+    padding: 10px;
      display:flex;
      justify-content: space-evenly;
     text-align: center;
@@ -34,18 +34,34 @@ header{
   }
  
 
-}
-.images{
-    
-    justify-content:center;
-
-    img{
-
-
 
 }
 
+
+
+.custom-btn(@width:200px,@backgroundcolor:grey,@font:red){
+    margin-top:0px;
+    margin-right:10px;
+    margin-bottom:20px;
+    background-color:@backgroundcolor;
+    height:45px;
+    border-radius: 30px;
+    width:@width;
+    font-size:2rem;
+    color:@font; 
 }
+
+.btn-container{
+
+.custom-btn(190px, blue, white);
+
+}
+
+
+
+
+
+  
 
 
 
