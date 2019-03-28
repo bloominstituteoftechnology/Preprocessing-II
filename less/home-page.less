@@ -11,6 +11,13 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media(max-width:500px){
+        flex-direction:center;
+        align-content: center;
+        width:100%;
+        margin-left:20px;
+        margin-right: 20px;
+      }
     }
 
     .img-content {
@@ -19,9 +26,14 @@
 
       img {
         border-radius: 10px;
+        
       }
     }
+    @media(max-width:500px){
+      margin-left: 30px;
+      
     
+    }
   }
 
   .inverse-content {

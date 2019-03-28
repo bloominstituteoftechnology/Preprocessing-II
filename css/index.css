@@ -189,12 +189,26 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    flex-direction: center;
+    align-content: center;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    margin-left: 30px;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -239,6 +253,12 @@ header nav {
 header nav a {
   margin-left: 20px;
   font-size: 20px;
+}
+@media (max-width:500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .btn-container {
   margin-top: 0px;
