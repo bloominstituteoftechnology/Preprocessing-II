@@ -7,69 +7,22 @@
 @import "footer";
 @import "home-page";
 
-@phone: ~"(max-width:500px)";
+.btn-container {
+  .custom-btn(190px, blue, white);
 
-header{
-    border-bottom: 1px solid black;
-     display:flex;
-     justify-content: space-evenly;
-     padding-top:20px;
-    text-align: center;
- 
-    nav{
-      justify-content:space-evenly;
-
-      a{
-          margin-left:20px;
-          font-size:20px;  
-      }
-
-    }
-@media @phone {
-    flex-direction: column;
-    align-items: center;
-  }
-
-}
-
-
-
-
-.custom-btn(@width:200px,@backgroundcolor:grey,@font:red){
-    margin-top:0px;
-    margin-right:10px;
-    margin-bottom:20px;
-    background-color:@backgroundcolor;
-    height:45px;
-    border-radius: 30px;
-    width:@width;
-    font-size:2rem;
-    color:@font; 
-}
-
-.btn-container{
-
-.custom-btn(190px, blue, white);
-
-@media @phone{
+  @media @phone{
     width:240px;
     font-size:10px;
     color:grey;
     background-color:pink;
+  }
 }
 
-}
-
-
-.first-contain{
+.first-contain {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    border-top:1px dotted black;
-
-    @media @phone{
-        justify-contain:center;
-    }
+    border-top:1px dotted black; 
 }
 
 
