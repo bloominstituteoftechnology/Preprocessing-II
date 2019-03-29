@@ -15,8 +15,8 @@
         flex-direction:center;
         align-content: center;
         width:100%;
-      
-        margin-right: 20px;
+        margin-right: 10px;
+        margin-left:10px
       }
     }
 
@@ -26,6 +26,11 @@
 
       img {
         border-radius: 10px;
+        @media @phone{
+          width:400px;
+          height:150px;
+          margin-left:10px;
+        }
         
       }
     }
@@ -45,6 +50,8 @@
 
     @media (max-width:500px){
      flex-direction:column-reverse;
+     margin-left:20px;
+     margin-right:20px;
       
     }
 
@@ -62,7 +69,7 @@
     img {
       border-radius: 10px;
     }
-    @media (max-width:500px){
+    @media @phone{
       margin-left:20px;
       margin-right:10px;
       
@@ -86,6 +93,7 @@
       flex-direction:column;
       width:1150px;
       margin-left:10px;
+    
   }
   }
 }// home

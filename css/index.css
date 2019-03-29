@@ -214,7 +214,8 @@ header nav a {
     flex-direction: center;
     align-content: center;
     width: 100%;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 .home .content-section .img-content {
@@ -223,6 +224,13 @@ header nav a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content img {
+    width: 400px;
+    height: 150px;
+    margin-left: 10px;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -235,6 +243,8 @@ header nav a {
 @media (max-width: 500px) {
   .home .inverse-content {
     flex-direction: column-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 .home .inverse-content .img-content {
@@ -248,7 +258,7 @@ header nav a {
 .home .content-destination img {
   border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .home .content-destination {
     margin-left: 20px;
     margin-right: 10px;
@@ -297,4 +307,13 @@ header nav a {
   flex-wrap: wrap;
   justify-content: center;
   border-top: 1px dotted black;
+}
+.first-contain .about {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width:500px) {
+  .first-contain img {
+    width: 100%;
+  }
 }
