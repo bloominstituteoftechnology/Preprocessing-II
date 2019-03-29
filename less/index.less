@@ -11,10 +11,9 @@
 
 header{
     border-bottom: 1px solid black;
-    margin: 20px 0;
-    padding: 10px;
      display:flex;
      justify-content: space-evenly;
+     padding-top:20px;
     text-align: center;
  
     nav{
@@ -35,6 +34,7 @@ header{
 
 
 
+
 .custom-btn(@width:200px,@backgroundcolor:grey,@font:red){
     margin-top:0px;
     margin-right:10px;
@@ -51,20 +51,26 @@ header{
 
 .custom-btn(190px, blue, white);
 
-@media @iphome{
-    width: 90%;
-    height: 50px;
-    font-size: 2.5rem;
+@media @phone{
+    width:240px;
+    font-size:10px;
+    color:grey;
+    background-color:pink;
 }
 
 }
 
 
+.first-contain{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    border-top:1px dotted black;
 
-
-
-  
-
+    @media @phone{
+        justify-contain:center;
+    }
+}
 
 
 
