@@ -1,1 +1,43 @@
 // Mixins in here
+
+.flex() {
+    display:flex;
+    justify-content: center;
+}
+
+.header() {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom:10px;
+    justify-content: space-between;
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.navtext() {
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+}
+
+
+// custom button
+
+.border-radius() {
+    border-radius: 68px 68px 68px 68px;
+-moz-border-radius: 68px 68px 68px 68px;
+-webkit-border-radius: 68px 68px 68px 68px;
+border: 0px solid #000000;
+}
+.custom-button(@button-bg,@font-color) {
+border: none;
+width: 60%;
+padding: 5px;
+text-align: center;
+text-decoration: none;
+.border-radius();
+&:hover {
+    background-color: @button-bg;
+}
+}
