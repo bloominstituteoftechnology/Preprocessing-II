@@ -348,7 +348,7 @@ img {
   width: 200px;
   height: 45px;
   background-color: #17A2B8;
-  color: pointer;
+  color: #FFFFFF;
   font-size: 1.8rem;
 }
 @media (max-width:500px) {
