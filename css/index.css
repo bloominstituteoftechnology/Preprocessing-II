@@ -1,3 +1,9 @@
+.header {
+  padding: 15px;
+}
+.img {
+  border-radius: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -161,7 +167,6 @@ p {
 }
 img {
   max-width: 100%;
-  height: auto;
 }
 .container {
   max-width: 800px;
@@ -169,24 +174,22 @@ img {
   margin: 0 auto;
 }
 header {
-  border-bottom: 1px solid black;
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 20px;
-  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 header nav {
-  justify-content: space-evenly;
+  display: flex;
+  margin: 10px 0;
+  padding: 10px;
 }
 header nav a {
-  margin-left: 20px;
+  margin-left: 5%;
+  color: #1d205a;
+  text-decoration: none;
+  margin-left: 30px;
   font-size: 20px;
-}
-@media (max-width:500px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .footer {
   width: 100%;
@@ -219,7 +222,6 @@ header nav a {
   }
 }
 .home .content-section .img-content {
-  width: 48%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
@@ -227,9 +229,8 @@ header nav a {
 }
 @media (max-width:500px) {
   .home .content-section .img-content img {
-    width: 400px;
-    height: 150px;
-    margin-left: 10px;
+    width: 80%;
+    margin-left: 30px;
   }
 }
 .home .inverse-content {
@@ -251,6 +252,13 @@ header nav a {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width:500px) {
+  .home .inverse-content .img-content .imges2 {
+    height: 230px;
+    width: 100%;
+    margin-left: 50px;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -260,8 +268,25 @@ header nav a {
 }
 @media (max-width:500px) {
   .home .content-destination {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-right: 10px;
+  }
+}
+.home .first-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px dotted black;
+}
+.home .first-contain .about {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width:500px) {
+  .home .first-contain img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
   }
 }
 .home .content-pick {
@@ -293,6 +318,7 @@ header nav a {
   width: 190px;
   font-size: 2rem;
   color: white;
+  cursor: pointer;
 }
 @media (max-width:500px) {
   .btn-container {
@@ -300,20 +326,5 @@ header nav a {
     font-size: 10px;
     color: grey;
     background-color: pink;
-  }
-}
-.first-contain {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-top: 1px dotted black;
-}
-.first-contain .about {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-@media (max-width:500px) {
-  .first-contain img {
-    width: 100%;
   }
 }
