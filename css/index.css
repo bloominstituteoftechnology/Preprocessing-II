@@ -168,6 +168,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.top-header {
+  display: flex;
+}
+.img {
+  margin: center;
+  border-width: 25px 30px 30px 20px;
+  padding-right: 20px 0;
+  border-top: 2px dashed black;
+}
+.nav {
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  align-self: center;
+  align-content: center;
+}
+.nav-link {
+  margin-right: 60px;
+  text-decoration: none;
+  color: #9c9c9c;
+  font-size: 1.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
