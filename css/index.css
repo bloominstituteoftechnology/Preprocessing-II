@@ -1,3 +1,36 @@
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  flex-direction: column;
+  align-items: center;
+  .destination {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .text-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,15 +201,8 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav {
-  margin-bottom: 30px;
-  margin-left: 50px;
-}
-.nav .nav-link {
-  margin-right: 60px;
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
+nav {
+  margin-left: 62px;
 }
 .footer {
   width: 100%;
@@ -189,11 +215,15 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.top-header {
+header {
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+  padding: 20px 0;
   display: flex;
-  margin-right: 50px;
-  width: 89%;
-  justify-content: center;
+  justify-content: space-between;
+}
+header h2 {
+  font-size: 2rem;
 }
 .img {
   margin: center;
@@ -263,8 +293,4 @@ img {
   padding: 1rem;
   font-size: 1.6rem;
   margin-right: 20px;
-}
-@media screen and (max-width: 500px) {
-  flex-direction: column;
-  align-items: center;
 }
