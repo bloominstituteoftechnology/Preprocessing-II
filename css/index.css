@@ -257,7 +257,7 @@ img {
 .home .content-pick .destination .btn {
   border: 2px solid black;
   color: white;
-  border-radius: 2px;
+  border-radius: 15px;
   background-color: teal;
   text-align: center;
   padding: 1rem;
