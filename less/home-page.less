@@ -9,6 +9,12 @@ header {
   h2 {
     font-size: 3rem;
   }
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px 0;
+    margin-bottom: 20px;
+  }
 }
 
 .img {
@@ -26,6 +32,8 @@ header {
   }
 }
 
+// Mobile media queries nested
+
 .home {
 
   .content-section {
@@ -33,15 +41,30 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 70%;
+        align-items: center;
+        margin-left: 60px;
+      }
 
       img {
         border-radius: 10px;
@@ -52,6 +75,10 @@ header {
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      width: 100%;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -78,6 +105,13 @@ header {
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+        .destination {
+            width: 100%;
+      }
+    }
 
     .destination {
       width: 30%;
@@ -95,53 +129,7 @@ header {
   }
 }// home
 
-// Mobile media queries
 
-@media screen and (max-width: 500px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 20px 0;
-      }
-}
 
-@media screen and (max-width: 500px) {
-    h2 {
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-  .text-content {
-    flex-direction: column-reverse;
-    justify-content: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-    .content-section {
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .inverse-content {
-        width: 100%;
-        flex-direction: column-reverse;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .content-pick {
-        flex-direction: column;
-        width: 100%;
-          .destination {
-                width: 100%;
-          }
-    }
-}
 
 
