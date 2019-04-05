@@ -264,3 +264,7 @@ img {
   font-size: 1.6rem;
   margin-right: 20px;
 }
+@media screen and (max-width: 500px) {
+  flex-direction: column;
+  align-items: center;
+}
