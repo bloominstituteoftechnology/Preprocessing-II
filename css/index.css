@@ -170,9 +170,11 @@ img {
 }
 .nav {
   margin-bottom: 30px;
-  align-self: auto;
+  margin-left: 50px;
 }
-.nav-link {
+.nav .nav-link {
+  margin-right: 60px;
+  text-decoration: none;
   color: black;
   font-size: 1.5rem;
 }
@@ -189,7 +191,9 @@ img {
 }
 .top-header {
   display: flex;
-  width: 80%;
+  margin-right: 50px;
+  width: 89%;
+  justify-content: center;
 }
 .img {
   margin: center;
@@ -198,7 +202,7 @@ img {
   border-top: 2px dashed black;
 }
 .welcome {
-  margin-top: 40px;
+  margin-top: 20px;
   border-bottom: 2px dashed black;
 }
 .welcome h2 {
@@ -252,8 +256,11 @@ img {
 }
 .home .content-pick .destination .btn {
   border: 2px solid black;
-  color: teal;
-  border-radius: 5px;
-  padding: 20px;
+  color: white;
+  border-radius: 2px;
+  background-color: teal;
+  text-align: center;
+  padding: 1rem;
   font-size: 1.6rem;
+  margin-right: 20px;
 }
