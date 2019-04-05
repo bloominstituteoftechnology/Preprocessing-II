@@ -1,11 +1,9 @@
 // Mixins in here
 
-.button-mixin (@border, @color){
-    border: 2px solid black;
-    color: teal;
+.custom-button (@border, @color){
+    border: @border;
+    color: @color;
 }
 
-.btn {
-    .button-mixin (@border, @color);
-}
+
 

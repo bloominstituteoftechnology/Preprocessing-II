@@ -169,16 +169,11 @@ img {
   margin: 0 auto;
 }
 .nav {
-  justify-content: space-between;
   margin-bottom: 30px;
-  margin-left: 50px;
-  align-self: center;
-  align-content: center;
+  align-self: auto;
 }
 .nav-link {
-  margin-right: 100px;
-  text-decoration: none;
-  color: #9c9c9c;
+  color: black;
   font-size: 1.5rem;
 }
 .footer {
@@ -194,14 +189,20 @@ img {
 }
 .top-header {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 80%;
 }
 .img {
   margin: center;
   border-width: 25px 30px 30px 20px;
   padding-right: 20px 0;
   border-top: 2px dashed black;
+}
+.welcome {
+  margin-top: 40px;
+  border-bottom: 2px dashed black;
+}
+.welcome h2 {
+  margin-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -248,4 +249,11 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  border: 2px solid black;
+  color: teal;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1.5rem;
 }
