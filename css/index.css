@@ -10,11 +10,6 @@
   }
 }
 @media screen and (max-width: 500px) {
-  nav {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 500px) {
   flex-direction: column;
   align-items: center;
   .destination {
@@ -29,6 +24,20 @@
   .text-content {
     flex-direction: column-reverse;
     align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -203,6 +212,16 @@ img {
 }
 nav {
   margin-left: 62px;
+  text-decoration: none;
+  text-decoration-color: black;
+  justify-content: center;
+}
+nav a {
+  margin-left: 20px;
+  font-size: 2rem;
+}
+nav .first-anchor {
+  margin-left: 0;
 }
 .footer {
   width: 100%;
@@ -216,14 +235,14 @@ nav {
   padding: 20px;
 }
 header {
-  border-bottom: 1px solid black;
   margin: 20px 0;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 header h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .img {
   margin: center;
