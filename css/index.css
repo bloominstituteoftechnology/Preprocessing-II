@@ -300,19 +300,16 @@ header h2 {
   }
   .home .content-pick .destination {
     width: 100%;
+    margin-bottom: 30px;
   }
-}
-.home .content-pick .destination {
-  width: 30%;
-  margin-bottom: 30px;
-}
-.home .content-pick .destination .btn {
-  border: 2px solid black;
-  color: white;
-  border-radius: 15px;
-  background-color: teal;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.6rem;
-  margin-right: 20px;
+  .home .content-pick .destination .btn {
+    border-radius: 15px;
+    background-color: teal;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-right: 20px;
+    text-align: center;
+    border: 2px solid black;
+    color: white;
+  }
 }
