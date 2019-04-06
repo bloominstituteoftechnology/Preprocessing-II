@@ -296,7 +296,6 @@ header h2 {
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
-    width: 100%;
   }
   .home .content-pick .destination {
     width: 100%;
@@ -305,10 +304,10 @@ header h2 {
   .home .content-pick .destination .btn {
     border-radius: 15px;
     background-color: teal;
+    text-align: center;
     padding: 1rem;
     font-size: 1.6rem;
     margin-right: 20px;
-    text-align: center;
     border: 2px solid black;
     color: white;
   }
