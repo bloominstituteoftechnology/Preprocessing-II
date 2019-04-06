@@ -61,7 +61,7 @@
     width: 75%;
     margin: 0 auto 30px;
 
-    @media @mobile {
+    @media @tablet {
       width: 100%;
     }
 
@@ -75,9 +75,8 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
-
-    @media @mobile {
+    
+    @media @tablet {
       flex-direction: column;
     }
 
@@ -85,10 +84,11 @@
       width: 30%;
       margin-bottom: 43px;
 
-      @media @mobile {
+      @media @tablet {
         width: 80%;
         margin: 0 auto;
         margin-bottom: 40px;
+        text-align: center;
       }
 
       p {
@@ -99,7 +99,7 @@
         .normalize(white);
         .buttonize(teal;1.8rem);
 
-        @media @mobile {
+        @media @tablet {
           padding: 10px 120px;
         }
       }
