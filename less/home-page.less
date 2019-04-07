@@ -1,5 +1,16 @@
-.home {
+html,body {
+  .bg-color();
+}
 
+.home {
+  .header-content {
+    margin: 30px 0;
+    padding-bottom: 5px;
+    width: 100%;
+    border-bottom: 2px dashed lightgray;
+  }
+  
+  
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +67,42 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .button-me();
+      }
     }
   }
 }// home
+
+.top-section  {
+  @media @mobile {
+    max-width: 73%;
+    margin: 0 auto;
+    .header-content {
+       margin-top: 4.5%;  
+      h2 {
+        .fontsize-med();
+      }
+      p {
+        .fontsize-small();
+      margin-bottom: 2%;
+      }
+    }
+  }
+}
+
+.home {
+  @media @mobile {
+  .content-section {
+  margin-left: 13%;
+  max-width: 73%;
+  margin: 0 auto;
+  flex-direction: column;
+  .text-content {
+    h2 {
+      .fontsize-med();
+    }
+   }
+  }
+ }
+}

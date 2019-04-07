@@ -1,1 +1,48 @@
 // Navigation Styles here
+
+.navigation {
+    border-bottom: 2px dashed lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    }
+    .links{
+        display: flex;
+        a{
+            text-decoration: none;
+            padding: 35px 25px 37px 0px;
+            margin-left: 10px;
+            color: black;
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
+    }
+
+    .navigation {
+        @media @mobile {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        h1{
+            @media @mobile {
+                margin: 3% 0% 0% 1%;
+                font-size: 2.4rem;
+            }
+    
+        }
+        .links {
+            @media @mobile {
+                width: 81%;
+                margin: 0 auto;
+            }   
+        }
+        a {
+            @media @mobile {
+                padding: 11px 6px 8px 8px;
+                margin: 1px 0px 0px 36px;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
