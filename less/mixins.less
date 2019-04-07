@@ -1,1 +1,28 @@
 // Mixins in here
+
+.flex(@direction, @justify: flex-start, @align: flex-start) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.button(@font-size) {
+    background: @button-bg;
+    color: white;
+    padding: 10px 0;
+    width: 85%;
+    text-align: center;
+    font-size: @font-size;
+    .border-radius(15px);
+}

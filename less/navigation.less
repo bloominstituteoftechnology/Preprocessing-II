@@ -1,1 +1,50 @@
 // Navigation Styles here
+
+.top {
+    width: 100%;
+    
+    border-bottom: 2px dashed silver;
+
+
+    .container-top {
+        .flex(row, center, center);
+        margin:0 auto;
+        width: 800px;
+        height: 100px;
+
+        @media @mobile {
+            .flex(column, center, center);
+            text-align: center;
+        }
+    
+
+    h1 {
+        width: 55%;
+
+        @media @mobile {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+
+
+    .main-nav {
+        .flex(row, space-between, center);
+        width: 45%;
+        padding-right: 5%;
+
+        @media @mobile {
+            width: 100%;
+            .flex(row, space-around, center);
+        }
+
+
+    }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.6rem;
+        }
+    }
+}
