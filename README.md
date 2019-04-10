@@ -4,13 +4,13 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 1: Set Up The Project With Git
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
@@ -46,12 +46,12 @@ Follow these steps for completing your project.
 
 ## Task 5: Mobile Updates Needed
 * [ ] Use escaping to create a variable named `@mobile` that contains this value: `(max-width: 500px)`.  Use the `variables.less` file to house your styling.
-* [ ] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating. 
-* [ ] Match the design file at `500px` as well as you can 
+* [ ] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating.
+* [ ] Match the design file at `500px` as well as you can
 
-## Stretch Goals: 
+## Stretch Goals:
 * [ ] Create an animation mixin using parametric mixins
-* [ ] Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions. 
+* [ ] Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions.
 * [ ] Style the site to look good at all sizes, not just desktop and phone
 
 
