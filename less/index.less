@@ -1,1 +1,19 @@
 // Follow the order in the readme
+
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'global';
+@import 'navigation';
+@import 'footer';
+@import 'home-page';
+
+.btn {
+  .btn-style(white, 15px, @button-bg);
+  transition: 1.5s;
+
+  &:hover {
+    transition: 1.5s;
+    background-color: darkblue;
+  }
+}

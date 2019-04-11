@@ -1,1 +1,62 @@
 // Navigation Styles here
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 25px 0;
+  width: 100%;
+  border-bottom: dashed lightgrey 2px;
+  transition: 1.0s;
+
+  @media @mobile {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
+    border-bottom: dashed silver 2px;
+    transition: 1.0s;
+  }
+
+  @media @tablet {
+    justify-content: space-evenly;
+    transition: 1s;
+  }
+
+
+  h1 {
+    @media @mobile {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      transition: 1.0s;
+    }
+
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    margin-left: 310px;
+    transition: 1.0s;
+
+    @media @mobile {
+      justify-content: center;
+      margin-left: 0;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      transition: 1.0s;
+    }
+
+    @media @tablet {
+      margin-left: 0;
+      transition: 1.0s;
+    }
+    
+    a {
+      padding: 0 20px;
+      text-decoration: none;
+      color: black;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+}
