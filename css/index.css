@@ -261,3 +261,12 @@ img {
   font-size: 2rem;
   padding: 5% 20%;
 }
+@media (max-width: 500px) {
+  .navigation .nav-content {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .navigation .nav-content .links {
+    word-spacing: 20px;
+  }
+}
