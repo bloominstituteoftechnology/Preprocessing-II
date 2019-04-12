@@ -1,2 +1,33 @@
 // Navigation Styles here
 
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px dashed @silver;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    .nav-content {
+    max-width: @maxWidth;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .links {
+        word-spacing: 10px;
+    }
+
+    .links a {
+        text-decoration: none;
+        font-weight: bold;
+        color:@shark;
+        font-size: 1.5rem;
+        
+    }
+}
+
+
