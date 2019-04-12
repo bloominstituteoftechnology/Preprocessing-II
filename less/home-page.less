@@ -1,6 +1,15 @@
 .home {
+  @media @mobile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
 
+  
   .fun-bus{
+
+    }
+
     display: flex;
     flex-wrap: wrap;
     padding-top: 30px;
@@ -33,6 +42,39 @@
     img{
       padding-top: 30px;
     }
+
+    @media @mobile{
+      div.title{
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+        h2{
+          display: flex;
+          width: 100%;
+          margin: auto;
+          justify-content: center;
+          padding-right: 0;
+        }
+        
+         
+      
+       a{
+         padding-bottom: 20px;
+       }
+        
+      }
+
+      img{
+        padding-top: 0;
+      }
+
+      div.welcome{
+        border-bottom: @bottom-border;
+      }
+    
+      padding: 0 30px;
+
   }
 
   .content-section {
@@ -56,11 +98,24 @@
       
     }
 
+    @media @mobile{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+
+      .text-content{
+        width: 100%;
+      }
+
+      .img-content{
+        width: 100%;
+      }
+
+    }
+
   }
 
-  @media @mobile{
-    color:yellow;
-  }
 
   .inverse-content {
     padding-bottom: 30px;
@@ -75,6 +130,12 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
   }
 
   .content-destination {
@@ -96,6 +157,19 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+
+      .destination{
+        width: 100%;
+        padding: 0 30px;
+      }
+    }
+
   }
 
   .btn button{
