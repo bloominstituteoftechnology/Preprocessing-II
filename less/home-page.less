@@ -5,6 +5,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media(max-width: 500px) {
+      flex-direction: column;
+      width: 100%;
+
+      div.text-content {
+        width: 100%;
+      }
+
+      div.img-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
 
    
     
@@ -56,6 +71,47 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      button {
+        .button-mix(@button-bg, 200px, 30px, white, none, 5px);
+      }
+    }
+    @media(max-width: 500px) {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
     }
   }
+
+  div.top-img {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80%;
+    }
+
+  }
 }// home
+
+header {
+  padding-bottom: 5%;
+  border-bottom: 1px dashed @navigation-border;
+
+  .logo-mobile {
+    display: none;
+  }
+
+  @media(max-width: 500px) {
+
+    display: flex;
+    flex-direction: column;
+    .logo {
+      display: none;
+    }
+    .logo-mobile{
+      display: unset;
+      margin: 0 auto;
+    }
+  }
+}
+

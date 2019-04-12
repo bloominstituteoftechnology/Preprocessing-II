@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+
+    h2.logo {
+        color: @font-color;
+        padding-bottom: 0;
+    }
+
+    div.buttons {
+        flex-grow: 100;
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+
+        a {
+            font-size: 2rem;
+            padding-left: 2%;
+            align-self: center;
+            text-decoration: none;
+            color: @font-color;
+        }
+    }
+
+    @media(max-width: 500px) {
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        div.buttons {
+            justify-content: inherit;
+        }
+    }
+}
