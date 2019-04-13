@@ -1,5 +1,4 @@
 .home {
-  margin-left: 20px;
 
   .content-section {
     margin: 30px 0;
@@ -94,8 +93,6 @@
     justify-content: space-between;
 
     @media @mobile {
-      padding: 0 20px;
-      width: 97%;
       flex-direction: column;
     }
 
@@ -104,9 +101,8 @@
       margin-bottom: 30px;
 
       @media @mobile {
-        padding: 0 70px;
-        width: 99%;
-        margin-top: 10px;
+        width: 80%;
+        margin: 0 60px;
       }
     }
   }
@@ -133,4 +129,9 @@
 }
 .btn {
   .buttons();
+
+  @media @mobile {
+    width: 90%;
+    margin-bottom: 10px;
+  }
 }

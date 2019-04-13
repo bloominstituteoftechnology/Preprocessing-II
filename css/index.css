@@ -222,9 +222,6 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home {
-  margin-left: 20px;
-}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -312,8 +309,6 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick {
-    padding: 0 20px;
-    width: 97%;
     flex-direction: column;
   }
 }
@@ -323,9 +318,8 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    padding: 0 70px;
-    width: 99%;
-    margin-top: 10px;
+    width: 80%;
+    margin: 0 60px;
   }
 }
 .topimg {
@@ -359,4 +353,10 @@ img {
   font-size: 2rem;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 90%;
+    margin-bottom: 10px;
+  }
 }
