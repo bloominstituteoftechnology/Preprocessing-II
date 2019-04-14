@@ -1,1 +1,26 @@
 // Mixins in here
+
+.button() {
+    background: gray;
+    color: white;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    padding: 8px;
+    font-size: 2em;
+}
+
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
