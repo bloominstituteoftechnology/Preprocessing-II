@@ -1,1 +1,35 @@
 // Mixins in here
+.cButton() {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @eastern-blue;
+    border-radius: 15px;
+    height: 40px;
+    margin-right: 35px;
+    font-size: 1.8rem;
+}
+
+.custom-button(@bg, @color) {
+    background: @bg;
+    color: @color;
+    padding: 10px;
+    display: flex;
+   justify-content: center; 
+   align-items: center;
+   border-radius: 15px;
+   height: 40px;
+   margin-right: 35px;
+   font-size:1.8rem;
+
+   &:hover {
+       color: @bg;
+       background: @color;
+       cursor: pointer;
+       border: 3px dashed @bg;
+   }
+  }
+
+
+//   @eastern-blue
