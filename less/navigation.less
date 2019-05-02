@@ -12,12 +12,16 @@ header {
     max-width: 800px;
     padding: 2% 0;
 
+    @media @tablet {
+      padding: 2% 3%;
+    }
+
     @media @mobile {
-      flex-flow: column wrap;
+      .flex(@flow: column wrap);
     }
 
     .logo {
-      .half-width();
+      width: 30%;
 
       @media @mobile {
         .full-width();
@@ -26,10 +30,11 @@ header {
     }
 
     nav {
-      .half-width();
+      width: 70%;
       .flex(space-between, center);
 
       @media @mobile {
+        .flex(space-around, center);
         .full-width();
       }
     }

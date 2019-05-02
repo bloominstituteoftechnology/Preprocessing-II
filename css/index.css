@@ -164,9 +164,14 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
   width: 100%;
+  max-width: 800px;
   margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0 5%;
+  }
 }
 header {
   display: flex;
@@ -185,13 +190,21 @@ header .navbar {
   max-width: 800px;
   padding: 2% 0;
 }
+@media screen and (max-width: 800px) {
+  header .navbar {
+    padding: 2% 3%;
+  }
+}
 @media screen and (max-width: 500px) {
   header .navbar {
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
     flex-flow: column wrap;
   }
 }
 header .navbar .logo {
-  width: 48%;
+  width: 30%;
 }
 @media screen and (max-width: 500px) {
   header .navbar .logo {
@@ -200,7 +213,7 @@ header .navbar .logo {
   }
 }
 header .navbar nav {
-  width: 48%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,6 +221,10 @@ header .navbar nav {
 }
 @media screen and (max-width: 500px) {
   header .navbar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
     width: 100%;
   }
 }
@@ -252,7 +269,6 @@ header .navbar nav a:hover {
 }
 .home .content-section .text-content {
   width: 48%;
-  padding-right: 1%;
 }
 .home .content-section .img-content {
   width: 48%;

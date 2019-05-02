@@ -40,7 +40,11 @@ img {
 }
 
 .container {
+  .full-width();
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
+
+  @media @tablet {
+    padding: 0 5%;
+  }
 }
