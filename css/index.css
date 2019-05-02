@@ -177,8 +177,7 @@ nav {
   padding-bottom: 20px;
 }
 nav a {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1.6rem;
   text-decoration: none;
 }
 .footer {
@@ -193,7 +192,8 @@ nav a {
   padding: 20px;
 }
 header {
-  border-bottom: 2px dashed gray;
+  width: 100%;
+  border-bottom: 2px dashed silver;
   padding: 20px 40px;
   margin: 20px 0;
 }
