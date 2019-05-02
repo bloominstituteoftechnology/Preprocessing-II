@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 h1,
@@ -172,7 +172,7 @@ img {
 }
 nav {
   display: flex;
-  margin: 3rem;
+  margin: 3.1rem 3rem 1rem;
 }
 nav h2 {
   padding: 1rem;
@@ -183,7 +183,7 @@ nav ul {
   padding-left: 30%;
 }
 nav ul li {
-  padding: 2rem;
+  padding: 2.2rem 2.2rem 0;
   font-size: 1.7rem;
 }
 nav ul li a {
@@ -250,6 +250,6 @@ hr {
   width: 30%;
   margin-bottom: 30px;
 }
-header img {
-  margin: 0 3rem;
+header h2 {
+  padding-top: 20px;
 }
