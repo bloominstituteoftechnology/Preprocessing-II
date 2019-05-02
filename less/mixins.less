@@ -1,5 +1,15 @@
 // Mixins in here
-.flex-display(@justify-content){
+.flex-display(@justify-content, @flex-direction){
     display: flex;
     justify-content: @justify-content;
+    flex-direction: @flex-direction;
+}
+
+.button-style(@color){
+    background-color: @color;
+        padding: 1.5rem 2rem;
+        border-radius: 10px;
+        color: @white;
+        text-align: center;
+        font-size: 1.5rem;
 }

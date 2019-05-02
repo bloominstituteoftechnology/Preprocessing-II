@@ -10,6 +10,10 @@ html, body {
   font-family: 'Roboto', sans-serif;
   max-width: 900px;
   margin: 0 auto;
+
+  @media @mobile{
+    max-width: 100%;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -43,6 +47,9 @@ img {
 
 .container {
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
+
+  @media @mobile{
+    width: 90%;
+  }
 }
