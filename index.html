@@ -13,6 +13,7 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  
 </head>
 
 <body>
@@ -53,12 +54,14 @@
           theme.</p>
       </div>
       <div class="img-content">
-        <img src="img/adventure.jpg" alt="Let's go on an adventure!">
+        <img src="img/adventure.jpg" title="Let's go on an adventure!"
+        alt="A photo of a map spread open on a table, where someone is planning an adventure">
       </div>
     </section>
     <section class="content-section inverse-content">
       <div class="img-content">
-        <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
+        <img src="img/fun.jpg" class="img-fluid rounded" tite="Lets have fun!"
+        alt="A photo of a small motorboat cruising through the canals of Venice. Colorful homes line the sides of the canal">
       </div>
       <div class="text-content">
         <h2>Adventure Awaits</h2>
@@ -73,7 +76,8 @@
       <h2>Pick Your Destination</h2>
       <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign.
         Traveler blogger website design expedition clean excursion traveling.</p>
-      <img src="img/destination.jpg" alt="Second slide">
+        <img src="img/destination.jpg" title="Your adventure awaits!"
+        alt="A photo of a canoe moored on the shore of Thailand's idyllic Phra Nang beach. In the background, dramatic cliffs rise from the clear waters.">
     </section>
     <section class="content-pick">
 
@@ -81,20 +85,50 @@
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
           Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn"><button>Sign Me Up!</button></div>
+        <div class="btn"><a href="#book" title="Sign me up"><button>Sign Me Up!</button></a></div>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
           Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn"><button>Sign Me Up!</button></div>
+        <div class="btn"><a href="#book" title="Sign me up"><button>Sign Me Up!</button></a></div>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
           Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn"><button>Sign Me Up!</button></div>
+        <div class="btn"><a href="#book" title="Sign me up"><button>Sign Me Up!</button></a></div>
       </div>
+    </section>
+
+    <section class="book-vacation">
+        <a name="book"><h2>Choose Your Adventure</h2></a>
+        <form class="contact" method="post" action="https://formspree.io/fromthehart@pm.me">
+          <fieldset>
+              <select name="destination" tabindex="1" required>
+                  <option value="destination" selected disabled>Destination</option>
+                  <option value="capetown">Cape Town, South Africa</option>
+                  <option value="chalan">Chalan Kanoa, Northern Mariana Islands, US</option>
+                  <option value="zakopane">Zakopane, Poland</option>
+                  <option value="mumbai">Mumbai, India</option>
+                </select>
+          </fieldset>
+          <fieldset>
+            <input name="name" placeholder="Name" type="text" tabindex="2" required >
+          </fieldset>
+          <fieldset>
+            <input name="email" placeholder="E-mail" type="email" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input name="phone" placeholder="Phone number" type="tel" tabindex="4">
+          </fieldset>
+          <fieldset>
+            <textarea name="message" placeholder="Special instructions" tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button type="submit" id="contact-submit" tabindex="6" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
     </section>
   </div><!-- container -->
 

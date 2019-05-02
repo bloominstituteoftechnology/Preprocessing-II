@@ -144,7 +144,7 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -165,7 +165,7 @@ img {
 }
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 775px;
   margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
@@ -270,16 +270,38 @@ header .navbar nav a:hover {
 .home .content-section .text-content {
   width: 48%;
 }
+@media screen and (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media screen and (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+  flex-flow: row wrap;
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media screen and (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-flow: column-reverse wrap;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -293,18 +315,32 @@ header .navbar nav a:hover {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media screen and (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  align-items: initial;
+  flex-flow: row wrap;
 }
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0 10%;
+  }
 }
 .home .content-pick button {
   background-color: #317e80;
@@ -316,7 +352,65 @@ header .navbar nav a:hover {
   padding: 10px 0;
   text-align: center;
   width: 85%;
+  cursor: pointer;
 }
 .home .content-pick button:hover {
-  border: 1px solid #212529;
+  border: 2px solid #212529;
+}
+@media screen and (max-width: 500px) {
+  .home .content-pick button {
+    width: 100%;
+  }
+}
+.home .book-vacation {
+  width: 100%;
+  padding: 30px 0;
+}
+.home .book-vacation .contact fieldset {
+  width: 100%;
+}
+.home .book-vacation .contact input[type="text"],
+.home .book-vacation .contact input[type="email"],
+.home .book-vacation .contact input[type="tel"],
+.home .book-vacation .contact input[type="url"],
+.home .book-vacation .contact select,
+.home .book-vacation .contact textarea {
+  width: 100%;
+  background: white;
+  margin: 10px 0 5px;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+.home .book-vacation .contact select {
+  height: 50px;
+  color: black;
+}
+.home .book-vacation .contact textarea {
+  height: 100px;
+}
+.home .book-vacation .contact button {
+  margin-top: 15px;
+  background-color: #317e80;
+  border: none;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 2rem;
+  height: 50px;
+  padding: 10px 0;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+}
+.home .book-vacation .contact button:hover {
+  border: 2px solid #212529;
+}
+@media screen and (max-width: 800px) {
+  .home .book-vacation .contact button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home .book-vacation .contact button {
+    width: 100%;
+  }
 }
