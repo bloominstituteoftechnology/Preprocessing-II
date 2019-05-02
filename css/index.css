@@ -248,6 +248,15 @@ nav .navi {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background-color: teal;
+  border-radius: 14px;
+  padding: 1.3rem;
+  text-align: center;
+  color: white;
+  font-size: 1.7em;
+  width: 190px;
+}
 header {
   border-bottom: 2px dashed #b3b3b3;
   padding-bottom: 1.7rem;
