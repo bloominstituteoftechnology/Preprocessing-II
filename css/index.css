@@ -172,6 +172,12 @@ header {
   border-bottom: 2px dashed gray;
   padding: 20px;
 }
+nav {
+  margin-left: 75%;
+  display: flex;
+  color: gray;
+  font-size: 2rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
