@@ -1,1 +1,23 @@
 // Mixins in here
+.flexbase(){
+  display: flex;
+  color: @font-color;
+  align-items: baseline;
+  //flex-wrap: nowrap;
+}
+.MediaTablet(@rules){
+  @media @tablet-down {@rules();}
+}
+.MediaPhone(@rules){
+  @media @phone-down {@rules();}
+}
+.MediaSmPhone(@rules){
+  @media @small-phone-down {@rules();}
+}
+.mediaflex(){
+  .MediaTablet({
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    });
+}

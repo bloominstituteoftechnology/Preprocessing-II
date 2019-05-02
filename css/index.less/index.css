@@ -168,31 +168,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.Header {
-  width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
-  margin-top: 1%;
-}
-.Nav {
-  margin: auto;
-  max-width: 800px;
-  display: flex;
-  color: #212529;
-  align-items: baseline;
-  justify-content: space-between;
-}
-nav {
-  display: flex;
-  color: #212529;
-  align-items: baseline;
-  justify-content: space-between;
-}
-a {
-  width: 100px;
-  text-align: right;
-  color: #212529;
-  text-decoration: none;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -210,41 +185,16 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
-  .home .content-section {
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-  }
-}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
-}
-@media (max-width: 767px) {
-  .home .content-section .text-content {
-    width: 100%;
-  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-@media (max-width: 767px) {
-  .home .content-section .img-content {
-    width: 100%;
-    order: -1;
-  }
-}
 .home .content-section .img-content img {
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .home .content-section .img-content img {
-    width: 100%;
-    border-radius: 10px;
-    margin-right: 0 2%;
-  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -258,31 +208,12 @@ a {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width: 767px) {
-  .home .inverse-content .img-content {
-    width: 100%;
-    border-radius: 10px;
-    margin: 2%;
-  }
-}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width: 767px) {
-  .home .content-destination {
-    width: 100%;
-  }
-}
 .home .content-destination img {
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .home .content-destination img {
-    width: 100%;
-    border-radius: 10px;
-    margin: 2%;
-  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -290,29 +221,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
-  .home .content-pick {
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-  }
-}
 .home .content-pick .destination {
+  width: 30%;
   margin-bottom: 30px;
-}
-@media (max-width: 767px) {
-  .home .content-pick .destination {
-    width: 100%;
-    padding: 0 10%;
-  }
-}
-.home .content-pick .btn {
-  text-align: center;
-  border: 1px black solid;
-  border-radius: 25px;
-  background-color: #17A2B8;
-  color: #212529;
-}
-.home .content-pick .btn h2 {
-  padding: 5%;
 }
