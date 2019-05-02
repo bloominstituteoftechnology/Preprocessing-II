@@ -1,1 +1,49 @@
 // Navigation Styles here
+
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul{
+    
+}
+
+.navigation ul a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 500px){
+.navigation{
+        display:flex;
+        flex-direction: column;
+    }
+    .navigation ul{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        order: -1;
+    }
+
+    .navigation img{
+        width: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .round-image{
+        display: none;
+    }
+    .rect-image img{
+        width: 100%;
+    }
+  
+  .logo{
+    text-align: center
+  }
+  
+}
