@@ -179,6 +179,9 @@ header {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+  height: 85px;
+  background: #FFFFFF;
+  position: fixed;
   border-bottom: 2px dashed #C0C0C0;
 }
 header .navbar {
@@ -247,6 +250,9 @@ header .navbar nav a:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  padding-top: 85px;
 }
 .home .header-content {
   border-bottom: 2px dashed #C0C0C0;
