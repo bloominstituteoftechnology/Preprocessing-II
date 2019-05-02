@@ -172,6 +172,7 @@ img {
 }
 nav {
   display: flex;
+  justify-content: flex-start;
   margin: 3.1rem 3rem 1rem;
 }
 nav h2 {
