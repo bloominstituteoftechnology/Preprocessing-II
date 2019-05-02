@@ -1,20 +1,32 @@
 .home {
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .header-content {
+    border-bottom: 2px dashed @navigation-border;
 
-   
+    img {
+      margin-bottom: 30px;
+    }
+
+    .text-content {
+      .full-width();
+
+      p {
+        padding: 2% 0;
+      }
+    }
+  } // header-content
+
+  .content-section {
+    .flex(space-between);
+    margin: 30px 0;
     
     .text-content {
-      width: 48%;
+      .half-width();
       padding-right: 1%;
     }
 
     .img-content {
-      width: 48%;
+      .half-width();
       padding-left: 1%;
 
       img {

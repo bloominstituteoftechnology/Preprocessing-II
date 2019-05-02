@@ -231,18 +231,31 @@ header .navbar nav a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .header-content {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .header-content img {
+  margin-bottom: 30px;
+}
+.home .header-content .text-content {
+  width: 100%;
+}
+.home .header-content .text-content p {
+  padding: 2% 0;
+}
 .home .content-section {
-  margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: initial;
+  flex-flow: row wrap;
+  margin: 30px 0;
 }
 .home .content-section .text-content {
-  width: 48%;
+  width: 50%;
   padding-right: 1%;
 }
 .home .content-section .img-content {
-  width: 48%;
+  width: 50%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
