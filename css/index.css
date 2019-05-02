@@ -168,6 +168,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+body a {
+  text-decoration: none;
+}
+nav {
+  border-bottom: 2px dashed #8c8c8c;
+  width: 100%;
+  padding: 5rem;
+}
+nav h1 {
+  margin-left: 74px;
+  float: left;
+  display: inline-block;
+}
+nav a {
+  font-family: 'Roboto', sans-serif;
+  color: #4d4d4d;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+nav .navi {
+  float: right;
+  display: inline-block;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;

@@ -1,1 +1,48 @@
 // Navigation Styles here
+
+
+// Variable Syntax 
+
+@titlefont: 'Indie Flower', cursive;
+@contentfont: 'Roboto', sans-serif;
+@fontsize: 1.6rem;
+@lightergray: #4d4d4d;
+
+// Mixins
+
+
+// All the lovely elements
+
+body {
+    a {
+        text-decoration: none; 
+    }
+}
+
+nav {
+    border-bottom: 2px dashed #8c8c8c;
+    width: 100%;
+    padding: 5rem;
+  
+    
+    h1 {
+        margin-left: 74px;
+        float: left;
+        display: inline-block;
+    }
+    a {
+        font-family: @contentfont;
+        color: @lightergray;
+        font-size: @fontsize;
+        padding: 1rem;
+    }
+    a:hover {
+
+    }
+
+    .navi {
+        float: right; 
+        display: inline-block;
+    }
+
+}
