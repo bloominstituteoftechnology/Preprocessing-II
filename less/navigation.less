@@ -1,1 +1,37 @@
 // Navigation Styles here
+
+header {
+    border-bottom: 2px dashed @navigation-border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .title {
+        text-align: left;
+        display: inline-block;
+        margin: 30px;
+        padding-left: 40px;
+        padding-right: 328px;
+    }
+	nav {
+		padding: 10px 10px 10px 10px;
+		display: flex;
+        justify-content: flex-end;
+        align-items: center;
+		top: 0;
+        margin-right: 60px;
+
+		a {
+			text-align: right;
+			color: grey;
+			text-decoration: none;
+			padding: 0 15px 0px;
+            color: black;
+            h3 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.7rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
