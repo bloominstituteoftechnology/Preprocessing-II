@@ -1,1 +1,16 @@
 // Mixins in here
+
+.full-width() {
+  width: 100%;
+}
+
+.half-width() {
+  width: 50%;
+}
+
+.flex(@justify: initial, @align: initial, @flow: row wrap) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-flow: @flow;
+}

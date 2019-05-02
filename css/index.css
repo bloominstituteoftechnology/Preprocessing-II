@@ -168,6 +168,58 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 800px;
+  padding: 2%;
+}
+@media screen and (max-width: 500px) {
+  header .navbar {
+    flex-flow: column wrap;
+  }
+}
+header .navbar .logo {
+  width: 50%;
+}
+@media screen and (max-width: 500px) {
+  header .navbar .logo {
+    width: 100%;
+    text-align: center;
+  }
+}
+header .navbar nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 500px) {
+  header .navbar nav {
+    width: 100%;
+  }
+}
+header .navbar nav a {
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+header .navbar nav a:hover {
+  color: #17A2B8;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
