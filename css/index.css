@@ -191,20 +191,7 @@ header .navbar {
   flex-flow: row wrap;
   width: 100%;
   max-width: 800px;
-  padding: 2% 0;
-}
-@media screen and (max-width: 800px) {
-  header .navbar {
-    padding: 2% 3%;
-  }
-}
-@media screen and (max-width: 500px) {
-  header .navbar {
-    display: flex;
-    justify-content: initial;
-    align-items: initial;
-    flex-flow: column wrap;
-  }
+  padding: 2%;
 }
 header .navbar .logo {
   width: 30%;

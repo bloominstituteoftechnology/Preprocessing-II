@@ -6,23 +6,13 @@ header {
   height: 85px;
   background: @main-bg;
   position: fixed;
-
-
   border-bottom: 2px dashed @navigation-border;
 
   .navbar {
     .flex(space-between, center);
     .full-width();
     max-width: 800px;
-    padding: 2% 0;
-
-    @media @tablet {
-      padding: 2% 3%;
-    }
-
-    @media @mobile {
-      .flex(@flow: column wrap);
-    }
+    padding: 2%;
 
     .logo {
       width: 30%;
