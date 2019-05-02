@@ -144,6 +144,12 @@ body {
     max-width: 100%;
   }
 }
+@media (max-width: 810px) {
+  html,
+  body {
+    max-width: 100%;
+  }
+}
 h1,
 h2,
 h3,
@@ -175,6 +181,11 @@ img {
   max-width: 800px;
   margin: 0 auto;
 }
+@media (max-width: 810px) {
+  .container {
+    width: 90%;
+  }
+}
 @media (max-width: 500px) {
   .container {
     width: 90%;
@@ -185,6 +196,14 @@ nav {
   justify-content: flex-start;
   flex-direction: row;
   margin: 3.1rem 3rem 1rem;
+}
+@media (max-width: 810px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 500px) {
   nav {
@@ -203,6 +222,11 @@ nav ul {
   flex-direction: row;
   padding-left: 30%;
 }
+@media (max-width: 810px) {
+  nav ul {
+    padding: 0;
+  }
+}
 @media (max-width: 500px) {
   nav ul {
     padding: 0;
@@ -211,6 +235,11 @@ nav ul {
 nav ul li {
   padding: 2.2rem 2.2rem 0;
   font-size: 1.7rem;
+}
+@media (max-width: 810px) {
+  nav ul li {
+    padding: 2.5rem 2.5rem 0;
+  }
 }
 @media (max-width: 500px) {
   nav ul li {
@@ -227,7 +256,7 @@ hr {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -271,7 +300,7 @@ hr {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 @media (max-width: 500px) {
   .home .inverse-content {
@@ -301,7 +330,7 @@ hr {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -328,16 +357,16 @@ hr {
   background-color: #117a8b;
   padding: 1.5rem 2rem;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
-    background-color: #17A2B8;
+    background-color: #17a2b8;
     padding: 1.5rem 2rem;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     font-size: 1.5rem;
   }

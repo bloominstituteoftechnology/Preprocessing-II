@@ -3,6 +3,10 @@
 nav {
   .flex-display(flex-start, row);
   margin: @nav-margin;
+  @media @tablet{
+    .flex-display(center, column);
+    align-items: center;
+  }
   @media @mobile{
     .flex-display(center, column);
     align-items: center;
@@ -13,15 +17,24 @@ nav {
   ul {
     .flex-display(flex-end, row);
     padding-left: 30%;
+    @media @tablet{
+        padding: 0;
+    }
     @media @mobile{
         padding: 0;
     }
     li {
       padding: 2.2rem 2.2rem 0;
       font-size: 1.7rem;
+
+      @media @tablet{
+        padding: 15.rem 2.5rem 0;
+    }
+
       @media @mobile{
           padding: 1rem 1.5rem 0;
       }
+     
       a {
         text-decoration: none;
         color: black;
