@@ -1,11 +1,3 @@
-header {
-  border-bottom: 2px dashed gray;
-  margin: 10px 0;
-}
-h1 {
-  padding: 10px;
-  align-self: flex-start;
-}
 nav {
   margin-left: 60%;
   display: flex;
