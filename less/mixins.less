@@ -1,1 +1,22 @@
 // Mixins in here
+
+.customLayout(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.btnStyle(@fntColor: black, @bckgrdColor: white) {
+    font-size: 2rem;
+    text-align: center;
+    color: @fntColor;
+    background-color: @bckgrdColor;
+    padding: 10px 0px 10px 0px;
+    .border-radius(15px);
+}
