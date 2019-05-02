@@ -172,9 +172,9 @@ body a {
   text-decoration: none;
 }
 nav {
-  border-bottom: 2px dashed #8c8c8c;
+  border-bottom: 2px dashed #b3b3b3;
   width: 100%;
-  padding: 5rem;
+  padding: 6rem;
 }
 nav h1 {
   margin-left: 74px;
@@ -247,4 +247,8 @@ nav .navi {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+header {
+  border-bottom: 2px dashed #b3b3b3;
+  padding-bottom: 1.7rem;
 }

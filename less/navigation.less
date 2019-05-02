@@ -9,7 +9,9 @@
 @lightergray: #4d4d4d;
 
 // Mixins
-
+.bottom-class() {
+    border-bottom: 2px dashed #b3b3b3;
+  }
 
 // All the lovely elements
 
@@ -20,9 +22,9 @@ body {
 }
 
 nav {
-    border-bottom: 2px dashed #8c8c8c;
+    .bottom-class();
     width: 100%;
-    padding: 5rem;
+    padding: 6rem;
   
     
     h1 {
@@ -46,3 +48,4 @@ nav {
     }
 
 }
+
