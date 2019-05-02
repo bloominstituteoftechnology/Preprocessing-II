@@ -180,7 +180,7 @@ header {
   flex-flow: row wrap;
   width: 100%;
   height: 85px;
-  background: #FFFFFF;
+  background: #FFEBCD;
   position: fixed;
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -225,7 +225,7 @@ header .navbar nav a {
   text-decoration: none;
 }
 header .navbar nav a:hover {
-  color: #317e80;
+  color: #000000;
 }
 .footer {
   width: 100%;
