@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 380px;
+  }
+}
 body a {
   text-decoration: none;
 }
@@ -180,6 +185,11 @@ nav h1 {
   margin-left: 74px;
   float: left;
   display: inline-block;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    padding: 2px;
+  }
 }
 nav a {
   font-family: 'Roboto', sans-serif;
@@ -212,43 +222,73 @@ nav .navi {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
+.home .content-section img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+@media (max-width: 500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+@media (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+  }
+}
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+  }
+}
+.destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
+@media (max-width: 500px) {
+  .destination {
+    width: 100%;
+  }
+}
+.btn {
   background-color: teal;
   border-radius: 14px;
   padding: 1.3rem;
@@ -256,6 +296,11 @@ nav .navi {
   color: white;
   font-size: 1.7em;
   width: 190px;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
 }
 header {
   border-bottom: 2px dashed #b3b3b3;
