@@ -69,5 +69,14 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
+    button {
+      .button-style(
+        85%, 50px, 10px 0, // Width, height, padding
+        none, 15px, // Border, border-radius
+        @button-bg, @white, @shark, // background-color, color, :hover color
+        2rem // font-size
+      ); 
+    }
   }
 }// home

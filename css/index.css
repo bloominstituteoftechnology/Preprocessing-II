@@ -218,7 +218,7 @@ header .navbar nav a {
   text-decoration: none;
 }
 header .navbar nav a:hover {
-  color: #17A2B8;
+  color: #317e80;
 }
 .footer {
   width: 100%;
@@ -289,4 +289,18 @@ header .navbar nav a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick button {
+  background-color: #317e80;
+  border: none;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 2rem;
+  height: 50px;
+  padding: 10px 0;
+  text-align: center;
+  width: 85%;
+}
+.home .content-pick button:hover {
+  border: 1px solid #212529;
 }
