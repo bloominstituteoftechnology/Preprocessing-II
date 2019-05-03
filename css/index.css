@@ -238,7 +238,7 @@ nav ul li {
 }
 @media (max-width: 810px) {
   nav ul li {
-    padding: 2.5rem 2.5rem 0;
+    padding: 5rem 2.5rem 0;
   }
 }
 @media (max-width: 500px) {
