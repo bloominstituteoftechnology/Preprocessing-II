@@ -1,4 +1,5 @@
 // Mixins in here
+@mobile: ~"max-width: 500px";
 
 
 .btn {
@@ -11,5 +12,10 @@
     border-radius: 10px;
     width: 170px;
     height: 40px;
+
+@media @mobile {
+    font-size: 12px;
+}
+
 
 }

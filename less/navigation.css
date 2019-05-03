@@ -10,12 +10,10 @@ nav a {
   font-size: 1.6rem;
   text-decoration: none;
 }
-@mobile {
+@media max-width: 500px {
   nav {
-    flex-direction: row;
+    align-self: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: none;
-    align-items: center;
   }
 }

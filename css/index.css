@@ -9,6 +9,11 @@
   width: 170px;
   height: 40px;
 }
+@media max-width: 500px {
+  .btn {
+    font-size: 12px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -191,13 +196,11 @@ nav a {
   font-size: 1.6rem;
   text-decoration: none;
 }
-@media (max-width: 500px) {
+@media max-width: 500px {
   nav {
-    flex-direction: column;
+    align-self: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: none;
-    align-items: center;
   }
 }
 .footer {
@@ -211,27 +214,29 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  flex-direction: column;
+  align-items: center;
+}
 header {
   width: 100%;
   border-bottom: 2px dashed silver;
   padding: 20px;
   margin: 20px 0;
 }
+@media max-width: 500px {
+  header {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}
 h1 {
   font-size: 4rem;
   padding-left: 40px;
 }
-@media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+@media max-width: 500px {
   h1 {
-    flex-wrap: wrap;
-    margin: auto;
-    width: 100%;
-    align-items: center;
+    align-content: center;
   }
 }
 .home .content-section {
@@ -239,6 +244,11 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media max-width: 500px {
+  .home .content-section {
+    flex-direction: column;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
