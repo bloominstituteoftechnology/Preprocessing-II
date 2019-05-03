@@ -12,5 +12,8 @@
 @media max-width: 500px {
   .btn {
     font-size: 12px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
   }
 }
