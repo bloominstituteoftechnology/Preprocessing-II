@@ -1,12 +1,12 @@
 
 
 
-@media (max-width: 500px) {
+@media( max-width: 500px ) {
   flex-direction: column;
   align-items: center;
 }
 
-@mobile: ~"max-width: 500px";
+@mobile: ~"(max-width: 500px)";
 
 
 
@@ -18,7 +18,6 @@ header {
 
 @media @mobile {
   margin-bottom: 20px;
-  flex-direction: column;
 }
 
 }
@@ -30,7 +29,8 @@ h1 {
   padding-left: 40px;
 
 @media @mobile {
-  align-content: center;
+  align-items: center;
+  flex-direction: column;
   
 }
 
@@ -46,6 +46,7 @@ h1 {
   @media @mobile {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .content-section {
@@ -73,6 +74,7 @@ h1 {
     @media @mobile {
       flex-direction: column;
       align-content: center;
+      width: 100%;
     }
 
 
@@ -98,6 +100,7 @@ h1 {
       display: flex;
       flex-direction: column;
       align-content: center;
+      width: 100%;
     }
 
   }
@@ -112,8 +115,10 @@ h1 {
 
     @media @mobile {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       align-content: center;
+      width: 100%;
     }
 
 
@@ -130,12 +135,16 @@ h1 {
       margin-bottom: 30px;
     }
     @media @mobile {
+      flex-wrap: wrap;
+      display: inline;
       flex-direction: column;
-      align-content: center;
+    
+      width: 100%;
     }
   .btn {
     @media @mobile {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
     }
   }

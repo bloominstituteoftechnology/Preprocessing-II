@@ -10,11 +10,10 @@ nav a {
   font-size: 1.6rem;
   text-decoration: none;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   nav {
     align-self: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
   }
 }

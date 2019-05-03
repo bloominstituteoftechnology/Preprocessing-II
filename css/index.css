@@ -9,12 +9,16 @@
   width: 170px;
   height: 40px;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .btn {
     display: flex;
-    font-size: 12px;
+    font-size: 2rem;
     flex-direction: column;
-    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .btn {
+    color: white;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -199,12 +203,11 @@ nav a {
   font-size: 1.6rem;
   text-decoration: none;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   nav {
     align-self: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
   }
 }
 .footer {
@@ -228,25 +231,26 @@ header {
   padding: 20px;
   margin: 20px 0;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   header {
     margin-bottom: 20px;
-    flex-direction: column;
   }
 }
 h1 {
   font-size: 4rem;
   padding-left: 40px;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   h1 {
-    align-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .home {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 .home .content-section {
@@ -266,10 +270,11 @@ h1 {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
     align-content: center;
+    width: 100%;
   }
 }
 .home .inverse-content {
@@ -284,11 +289,12 @@ h1 {
   padding-right: 1%;
   padding-left: 0;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .home .inverse-content {
     display: flex;
     flex-direction: column;
     align-content: center;
+    width: 100%;
   }
 }
 .home .content-destination {
@@ -298,11 +304,13 @@ h1 {
 .home .content-destination img {
   border-radius: 10px;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .home .content-destination {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    width: 100%;
   }
 }
 .home .content-pick {
@@ -315,15 +323,18 @@ h1 {
   width: 30%;
   margin-bottom: 30px;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .home .content-pick {
+    flex-wrap: wrap;
+    display: inline;
     flex-direction: column;
-    align-content: center;
+    width: 100%;
   }
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .home .content-pick .btn {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
 }

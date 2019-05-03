@@ -1,5 +1,5 @@
 // Mixins in here
-@mobile: ~"max-width: 500px";
+@mobile: ~"(max-width: 500px)";
 
 
 .btn {
@@ -15,9 +15,13 @@
 
 @media @mobile {
     display: flex;
-    font-size: 12px;
+    font-size: 2rem;
     flex-direction: column;
-    width: 40%;
+   
+}
+
+@media( max-width: 500px ) {
+    color: white;
 }
 
 
