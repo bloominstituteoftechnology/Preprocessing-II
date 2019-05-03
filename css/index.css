@@ -196,6 +196,8 @@ nav {
   justify-content: flex-start;
   flex-direction: row;
   margin: 3.1rem 3rem 1rem;
+  border-bottom: 2px dashed #c0c0c0;
+  padding-bottom: 1rem;
 }
 @media (max-width: 810px) {
   nav {
