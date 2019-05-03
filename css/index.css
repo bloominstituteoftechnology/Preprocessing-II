@@ -13,8 +13,7 @@
   .btn {
     font-size: 12px;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 80%;
+    width: 40%;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
