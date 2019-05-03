@@ -242,3 +242,19 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  width: 112px;
+  height: 30px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: grey;
+  border-radius: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
