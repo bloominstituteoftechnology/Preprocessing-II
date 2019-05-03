@@ -44,12 +44,6 @@ h1 {
 .home {
 
 
-  @media @mobile {
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -57,11 +51,7 @@ h1 {
     justify-content: space-between;
 
    
-@media @mobile {
-  flex-direction: column;
-}
 
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -75,17 +65,19 @@ h1 {
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      flex-direction: column;
+      align-content: center;
+    }
+
+
+
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
-
-@media @mobile {
-  flex-direction: column;
-  align-content: center;
-}
 
 
     .text-content {
@@ -97,6 +89,12 @@ h1 {
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      flex-direction: column;
+      align-content: center;
+    }
+
   }
 
   .content-destination {
@@ -106,6 +104,13 @@ h1 {
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      flex-direction: column;
+      align-content: center;
+    }
+
+
   }
 
   .content-pick {
@@ -118,5 +123,11 @@ h1 {
       width: 30%;
       margin-bottom: 30px;
     }
+    @media @mobile {
+      flex-direction: column;
+      align-content: center;
+    }
+
+
   }
 }// home
