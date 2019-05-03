@@ -9,12 +9,26 @@ header {
 }
 
 
+
 h1 {
   font-size: 4rem;
   padding-left: 40px;
 }
 
+@media @mobile {
+  header {
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
 
+  h1 {
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 
 
