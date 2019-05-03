@@ -11,6 +11,7 @@
 }
 @media max-width: 500px {
   .btn {
+    display: flex;
     font-size: 12px;
     flex-direction: column;
     width: 40%;
@@ -279,6 +280,7 @@ h1 {
 }
 @media max-width: 500px {
   .home .inverse-content {
+    display: flex;
     flex-direction: column;
     align-content: center;
   }
@@ -292,6 +294,7 @@ h1 {
 }
 @media max-width: 500px {
   .home .content-destination {
+    display: flex;
     flex-direction: column;
     align-content: center;
   }
@@ -310,5 +313,11 @@ h1 {
   .home .content-pick {
     flex-direction: column;
     align-content: center;
+  }
+}
+@media max-width: 500px {
+  .home .content-pick .btn {
+    display: flex;
+    flex-direction: column;
   }
 }
