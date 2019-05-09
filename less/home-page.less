@@ -26,7 +26,7 @@ header {
 
 h1 {
   font-size: 4rem;
-  padding-left: 40px;
+  margin-left: 40px;
 
 @media @mobile {
   align-items: center;
@@ -141,6 +141,8 @@ h1 {
   }
 
   .content-pick {
+    width: 75%;
+    margin: 0 auto 30px;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
@@ -149,14 +151,15 @@ h1 {
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
     }
     @media @mobile {
       flex-wrap: wrap;
       display: inline;
       flex-direction: column;
-    
       width: 100%;
     }
+    
   .btn {
     @media @mobile {
       display: flex;

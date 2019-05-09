@@ -238,7 +238,7 @@ header {
 }
 h1 {
   font-size: 4rem;
-  padding-left: 40px;
+  margin-left: 40px;
 }
 @media (max-width: 500px) {
   h1 {
@@ -327,6 +327,8 @@ h1 {
   }
 }
 .home .content-pick {
+  width: 75%;
+  margin: 0 auto 30px;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
