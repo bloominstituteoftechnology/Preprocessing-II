@@ -219,6 +219,7 @@ nav a {
   align-items: center;
 }
 header {
+  max-width: 800px;
   width: 100%;
   border-bottom: 2px dashed silver;
   padding: 20px;
@@ -350,6 +351,11 @@ h1 {
   width: 30%;
   margin-bottom: 30px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .content-pick .btn {
