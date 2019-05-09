@@ -1,3 +1,26 @@
+.btn {
+  color: white;
+  background-color: #17A2B8;
+  font-size: 1.9rem;
+  display: block;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 170px;
+  height: 40px;
+}
+@media (max-width: 500px) {
+  .btn {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .btn {
+    color: white;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +191,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  margin-left: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  color: gray;
+  align-self: flex-end;
+  padding-bottom: 20px;
+}
+nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  nav {
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +220,38 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+  padding: 20px;
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  header {
+    margin-bottom: 20px;
+  }
+}
+h1 {
+  font-size: 4rem;
+  padding-left: 40px;
+}
+@media (max-width: 500px) {
+  h1 {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -196,6 +270,13 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -208,12 +289,29 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -224,4 +322,19 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+    display: inline;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
