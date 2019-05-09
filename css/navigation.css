@@ -2,18 +2,21 @@ nav {
   margin-left: 60%;
   display: flex;
   justify-content: space-evenly;
-  color: gray;
-  align-self: flex-end;
   padding-bottom: 20px;
+  padding-right: 30px;
 }
 nav a {
   font-size: 1.6rem;
   text-decoration: none;
 }
+nav a:hover {
+  text-shadow: 0 0 5px aqua;
+}
 @media (max-width: 500px) {
   nav {
-    align-self: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
   }
 }

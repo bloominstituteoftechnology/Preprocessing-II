@@ -9,15 +9,7 @@
   width: 170px;
   height: 40px;
 }
-@media (max-width: 500px) {
-  .btn {
-    display: flex;
-    font-size: 2rem;
-    flex-direction: column;
-  }
-}
-@media (max-width: 500px) {
-  .btn {
-    color: white;
-  }
+.btn:hover {
+  background-image: linear-gradient(#006280, #00ffb3, #006280);
+  color: darkslategray;
 }
