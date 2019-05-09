@@ -289,23 +289,36 @@ h1 {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
-  width: 48%;
-  padding-left: 1%;
-}
-.home .content-section .img-content img {
-  border-radius: 10px;
-}
 @media (max-width: 500px) {
-  .home .content-section {
+  .home .content-section .text-content {
     flex-direction: column;
     align-content: center;
     width: 100%;
   }
 }
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -315,31 +328,14 @@ h1 {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width: 500px) {
-  .home .inverse-content {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
-  }
-}
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-@media (max-width: 500px) {
-  .home .content-destination {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
-  }
-}
-.home .content-pick {
+.content-pick {
   width: 75%;
   margin: 0 auto 30px;
   padding-top: 30px;
@@ -347,12 +343,12 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .home .content-pick {
+  .content-pick {
     flex-wrap: wrap;
     display: inline;
     flex-direction: column;
@@ -360,7 +356,7 @@ h1 {
   }
 }
 @media (max-width: 500px) {
-  .home .content-pick .btn {
+  .content-pick .btn {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
