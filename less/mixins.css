@@ -1,0 +1,16 @@
+.btn {
+  color: white;
+  background-color: #17A2B8;
+  font-size: 1.9rem;
+  display: block;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 170px;
+  height: 40px;
+}
+@media (max-width: 500px) {
+  .btn {
+    font-size: 2rem;
+  }
+}

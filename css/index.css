@@ -11,14 +11,7 @@
 }
 @media (max-width: 500px) {
   .btn {
-    display: flex;
     font-size: 2rem;
-    flex-direction: column;
-  }
-}
-@media (max-width: 500px) {
-  .btn {
-    color: white;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -289,6 +282,11 @@ h1 {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
@@ -342,17 +340,16 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-.content-pick .destination {
-  width: 30%;
-  margin-bottom: 30px;
-}
 @media (max-width: 500px) {
   .content-pick {
     flex-wrap: wrap;
-    display: inline;
     flex-direction: column;
-    width: 100%;
   }
+}
+.content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .content-pick .btn {
