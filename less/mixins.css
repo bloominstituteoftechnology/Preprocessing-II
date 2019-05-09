@@ -9,8 +9,3 @@
   width: 170px;
   height: 40px;
 }
-@media (max-width: 500px) {
-  .btn {
-    font-size: 2rem;
-  }
-}

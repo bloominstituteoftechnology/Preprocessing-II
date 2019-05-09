@@ -9,11 +9,6 @@
   width: 170px;
   height: 40px;
 }
-@media (max-width: 500px) {
-  .btn {
-    font-size: 2rem;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -355,12 +350,5 @@ h1 {
 @media (max-width: 500px) {
   .content-pick .destination {
     width: 90%;
-  }
-}
-@media (max-width: 500px) {
-  .content-pick .btn {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
 }
