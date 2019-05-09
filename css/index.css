@@ -10,7 +10,8 @@
   height: 40px;
 }
 .btn:hover {
-  background-image: linear-gradient(aquamarine, #006280);
+  background-image: linear-gradient(#006280, #a4ebf0, #006280);
+  color: darkslategray;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
