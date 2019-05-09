@@ -9,6 +9,9 @@ nav a {
   font-size: 1.6rem;
   text-decoration: none;
 }
+nav a:hover {
+  text-shadow: 0 0 5px aqua;
+}
 @media (max-width: 500px) {
   nav {
     text-align: center;
