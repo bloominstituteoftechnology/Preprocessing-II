@@ -89,11 +89,6 @@ h1 {
       width: 48%;
       padding-right: 1%;
 
-      @media @mobile {
-        flex-direction: column;
-        align-content: center;
-        width: 100%;
-      }
 
 
     }
@@ -152,13 +147,18 @@ h1 {
     width: 75%;
     margin: 0 auto 30px;
 
-
+    @media @mobile {
+      display: inline;
+      flex-direction: column;
+    }
 
     img {
       border-radius: 10px;
+
+      }
   }
 
-  }
+  
 
   .content-pick {
     width: 75%;

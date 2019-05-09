@@ -289,13 +289,6 @@ h1 {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width: 500px) {
-  .home .content-section .text-content {
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
-  }
-}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
@@ -331,6 +324,12 @@ h1 {
 .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .content-destination {
+    display: inline;
+    flex-direction: column;
+  }
 }
 .content-destination img {
   border-radius: 10px;
