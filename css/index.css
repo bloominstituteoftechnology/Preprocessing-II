@@ -195,7 +195,6 @@ nav {
   margin-left: 60%;
   display: flex;
   justify-content: space-evenly;
-  color: black;
   padding-bottom: 20px;
   padding-right: 30px;
 }
@@ -205,9 +204,10 @@ nav a {
 }
 @media (max-width: 500px) {
   nav {
-    align-self: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
   }
 }
 .footer {
@@ -242,6 +242,8 @@ h1 {
 }
 @media (max-width: 500px) {
   h1 {
+    margin: 0;
+    text-align: center;
     align-items: center;
     flex-direction: column;
   }
