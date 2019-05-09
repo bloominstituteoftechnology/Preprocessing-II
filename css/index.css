@@ -252,6 +252,12 @@ h1 {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .img-bus {
+    width: 90%;
+    height: 90%;
+  }
+}
 .welcome {
   width: 75%;
   margin: 0 auto 30px;
@@ -259,6 +265,11 @@ h1 {
   flex-wrap: wrap;
   padding: 10px;
   border-bottom: 2px dashed silver;
+}
+@media (max-width: 500px) {
+  .welcome {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .home {
