@@ -10,5 +10,5 @@
   height: 40px;
 }
 .btn:hover {
-  background-color: #00cc87;
+  background-image: linear-gradient(aquamarine, #006280);
 }
