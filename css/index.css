@@ -350,5 +350,12 @@ h1 {
 @media (max-width: 500px) {
   .content-pick .destination {
     width: 90%;
+    text-align: left;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick .btn {
+    width: 100%;
+    text-align: center;
   }
 }
