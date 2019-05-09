@@ -195,7 +195,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  text-shadow: 0 0 5px aqua;
+  text-shadow: 0 0 10px #00ffb3;
 }
 @media (max-width: 500px) {
   nav {
