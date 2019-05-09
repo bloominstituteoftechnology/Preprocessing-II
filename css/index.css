@@ -195,9 +195,9 @@ nav {
   margin-left: 60%;
   display: flex;
   justify-content: space-evenly;
-  color: gray;
-  align-self: flex-end;
+  color: black;
   padding-bottom: 20px;
+  padding-right: 30px;
 }
 nav a {
   font-size: 1.6rem;
