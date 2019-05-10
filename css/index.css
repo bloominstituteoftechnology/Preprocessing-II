@@ -184,7 +184,7 @@ img {
   margin: 0 auto;
 }
 nav {
-  margin-left: 60%;
+  margin-left: 50%;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 20px;
@@ -193,6 +193,7 @@ nav {
 nav a {
   font-size: 1.6rem;
   text-decoration: none;
+  padding-bottom: 20px;
 }
 nav a:hover {
   text-shadow: 0 0 10px #00ffb3;
@@ -222,7 +223,6 @@ header {
   border-bottom: 2px dashed silver;
   padding-left: 45px;
   padding-right: 45px;
-  margin: 20px 0;
 }
 @media (max-width: 500px) {
   header {
@@ -232,6 +232,7 @@ header {
 h1 {
   font-size: 4rem;
   margin-left: 40px;
+  padding-top: 40px;
 }
 @media (max-width: 500px) {
   h1 {
