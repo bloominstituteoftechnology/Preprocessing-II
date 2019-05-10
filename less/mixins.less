@@ -1,1 +1,40 @@
 // Mixins in here
+// Mixins in here
+.custom-layout(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
+// usage
+.custom-layout(flex-end, center);
+
+.btn-class {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+  
+    &:hover {
+      // The compiled color returned is #006667 
+      background-color: darken(teal, 5%)
+    }
+  }
+
+  // Escaped values
+@tablet: ~"(min-width: 500px)";
+@desktop: ~"(min-width: 500px)";
+
+h1 {
+  font-size: 2rem;
+  padding: 10px;
+
+  @media @tablet {
+    padding: 20px;
+  }
+
+  @media @desktop {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+}
