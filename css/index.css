@@ -180,13 +180,30 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -194,6 +211,11 @@ a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -207,6 +229,12 @@ a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width:500px) {
+  .home .content-destination {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -216,9 +244,19 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   width: 80%;
@@ -233,7 +271,9 @@ a {
 nav {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
-  height: 80px;
+  height: auto;
+  padding: 20px 0 0;
+  margin: 20px 0 0 0;
 }
 nav .nav-bar {
   width: 85%;
@@ -251,6 +291,18 @@ nav .nav-bar .navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width:500px) {
+  nav .nav-bar {
+    flex-direction: column;
+  }
+  nav .nav-bar section {
+    width: 100%;
+  }
+  nav .nav-bar .heading {
+    text-align: center;
+    padding-bottom: 10px ;
+  }
 }
 header {
   border-bottom: 2px dashed #C0C0C0;

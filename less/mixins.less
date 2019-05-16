@@ -1,8 +1,12 @@
 // Mixins in here
 
 
+
 .center(@justify,@align){
     display:flex;
     justify-content: @justify;
     align-items: @align;
 }
+
+
+@phone: ~"(max-width:500px)";

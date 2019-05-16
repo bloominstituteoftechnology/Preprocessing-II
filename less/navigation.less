@@ -3,7 +3,9 @@
 nav {
   width: 100%;
   border-bottom: @botm-border;
-  height: 80px;
+  height: auto;
+  padding: 20px 0 0;
+  margin:20px 0 0 0;
   .nav-bar {
     width: 85%;
     max-width: 800px;
@@ -15,6 +17,17 @@ nav {
     }
     .navigation {
       .center(space-around, center);
+    }
+
+    @media @phone{
+      flex-direction: column;
+      section{
+        width:100%;
+      }
+      .heading{
+        text-align: center;
+        padding-bottom:10px ;
+      }
     }
   }
 }
