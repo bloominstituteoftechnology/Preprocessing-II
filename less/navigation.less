@@ -1,6 +1,20 @@
 // Navigation Styles here
 
 nav {
-  width: 90%;
-  display: flex;
+  width: 100%;
+  border-bottom: 2px dashed @navigation-border;
+  height: 80px;
+  .nav-bar {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    .center(space-between, center);
+    section {
+      width: 50%;
+    }
+    .navigation {
+      .center(space-around, center);
+    }
+  }
 }
