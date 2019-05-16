@@ -1,11 +1,28 @@
 .home {
 
+
+  .top-content{
+    border-top:2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
+    margin-bottom:20px;
+    
+    img{
+      min-width: 100%;
+      margin-bottom: 25px;
+
+    }
+
+    .text-content{
+      margin-bottom: 20px;
+    }
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
    
     
     .text-content {
@@ -56,6 +73,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .custom-btn();
+      }
     }
   }
 }// home
