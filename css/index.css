@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -165,7 +165,7 @@ img {
 }
 .container {
   max-width: 800px;
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
 }
 a {
@@ -220,13 +220,23 @@ a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  width: 80%;
+  background: #17A2B8;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 15px;
+  border: 1px thin #FFEBCD;
+  font-size: 1.8rem;
+  color: #fff;
+}
 nav {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
   height: 80px;
 }
 nav .nav-bar {
-  width: 100%;
+  width: 85%;
   max-width: 800px;
   margin: 0 auto;
   height: 100%;
@@ -241,6 +251,16 @@ nav .nav-bar .navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .bottom-content {
+  margin: 10px 0;
+}
+header img {
+  width: 100%;
+  margin: 0 auto;
 }
 .footer {
   width: 100%;
