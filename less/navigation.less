@@ -5,11 +5,11 @@
     max-width: 880px;
     margin: 0 auto;
     margin-top: 25px;
-
+    
     .funbus{
         border-bottom: 2px dashed grey;
     }
-    
+
     img{
         border-top: 2px dashed grey;
         margin-bottom: 20px;
@@ -18,6 +18,22 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
+        @media(max-width: 500px){
+            display: flex;
+            flex-direction: column;
+            h1{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .anchor{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+    
+        }
+    
 
         a{
             margin-right: 20px;
@@ -26,8 +42,8 @@
             font-size: 1.7rem;
             text-decoration-color: black;
         }
-
-        
     }
 }
+
+//Mobile Setup
 
