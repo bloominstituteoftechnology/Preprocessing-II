@@ -1,1 +1,24 @@
 // Mixins in here
+.flex(@justify:space-between;@items:center;@content:center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @items;
+    align-content: @content;
+}
+
+.trb {
+    border: 1px solid red;
+}
+
+.normalize(@color) {
+    text-decoration: none;
+    color: @color;
+}
+
+.button(@color;@fontsize) {
+    background-color: @color;
+    padding-top:15px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: @fontsize;
+}
