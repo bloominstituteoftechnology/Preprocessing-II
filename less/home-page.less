@@ -1,24 +1,74 @@
 .home {
 
+  // @media @mobile {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 75%;
+  //   margin: 0 auto 30px;
+  // }
+
+
+  header {
+    border-bottom: 2px dashed @navigation-border;
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+
+
+
+
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      width: 75%;
+      margin: 0 auto 30px;
+      justify-content: center;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        // flex-direction: column;
+        width: 100%;
+        margin: 0 auto 30px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        border-radius: 10px;
+        width: 75%
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          border-radius: 10px;
+          width: 75%
+        }
       }
     }
   }
@@ -27,14 +77,36 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+      width: 75%;
+      margin: 0 auto 30px;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        width: 100%;
+        margin: 0 auto 30px;
+        max-width: 100%;
+        height: auto;
+        padding: 0 auto;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+     
+      @media @mobile {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 30px;
+        padding: 0px;
+      }
     }
   }
 
@@ -53,9 +125,25 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      width: 75%;
+      margin: 0 auto 30px;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
+
+      @media @mobile {
+        flex-direction: column;
+        width: 75%;
+        margin: 0 auto 30px;
+      }
+
+      button {
+        .custom-button;
+      }
+    } 
   }
 }// home

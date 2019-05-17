@@ -1,1 +1,22 @@
 // Mixins in here
+
+.custom-layout (@justfy, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+// .btn() {
+//     .custom-layout(space-between, center);
+//  }
+
+.custom-button(){
+    display: block;
+    background-color: teal;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
