@@ -169,26 +169,17 @@ img {
   margin: 0 auto;
 }
 .funstart {
-  border-bottom: 2px dashed #c0c0c0;
-}
-.navtitle {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
+  border-bottom: 2px dashed #C0C0C0;
 }
 nav {
   display: flex;
   justify-content: flex-end;
   align-content: space-around;
   font-size: 2rem;
-  margin-bottom: 25px;
 }
 .banner {
   margin: 0 auto;
-}
-.img-bus {
-  margin: 20px;
-  border-top: 2px dashed #c0c0c0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .footer {
   width: 100%;
@@ -246,4 +237,11 @@ nav {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
