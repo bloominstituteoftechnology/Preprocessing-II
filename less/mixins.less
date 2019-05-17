@@ -1,1 +1,24 @@
 // Mixins in here
+
+.custom-button(@font-color: black, @button-bg: white) {
+    color: @font-color;
+    background-color: @button-bg;
+    border: 1px solid ;
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;    
+    width: 85%;   
+    font-size: 2rem;
+
+    @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+      }
+}
+
+ .border () {
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+ }
