@@ -5,6 +5,12 @@ header{
     display:flex;
     flex-flow:row nowrap;
 
+  @media @mobile{
+      display:flex;
+      flex-direction: column;
+      height:auto;
+  }
+
     h1{
         display: flex;
         align-self: center;
@@ -16,6 +22,13 @@ header{
         align-items: center;
         justify-content: flex-end;
         margin-left: 360px;
+
+        @media @mobile{
+            display:flex;
+            flex-flow: row nowrap;
+            margin-left:0px;
+            justify-content: center;
+        }
 
         a{
             text-decoration: none;
