@@ -168,18 +168,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.funstart {
-  border-bottom: 2px dashed #C0C0C0;
-}
-nav {
+header {
   display: flex;
-  justify-content: flex-end;
-  align-content: space-around;
-  font-size: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px ;
+  margin-bottom: 0px;
+  margin-left: 270px;
+  margin-right: 270px;
+  padding: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+  max-width: 100%;
+}
+.nav {
+  color: black;
+}
+.a {
+  font-size: 12rem;
 }
 .banner {
   margin: 0 auto;
   border-bottom: 2px dashed #C0C0C0;
+  max-width: 100%;
+}
+.welcome {
+  margin-top: 20px;
 }
 .footer {
   width: 100%;
