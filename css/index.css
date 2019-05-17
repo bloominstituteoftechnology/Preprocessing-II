@@ -136,6 +136,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+nav {
+  font-size: 2rem;
+}
 h1,
 h2,
 h3,
@@ -153,6 +156,9 @@ h2 {
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+}
+.btn {
+  font-size: 2rem;
 }
 p {
   line-height: 1.5;
@@ -174,17 +180,17 @@ header {
   justify-content: space-between;
   margin-top: 10px ;
   margin-bottom: 0px;
-  margin-left: 270px;
-  margin-right: 270px;
+  margin-left: 250px;
+  margin-right: 265px;
   padding: 20px;
+}
+.dots {
   border-bottom: 2px dashed #C0C0C0;
   max-width: 100%;
 }
 .nav {
-  color: black;
-}
-.a {
-  font-size: 12rem;
+  display: flex;
+  justify-content: space-around;
 }
 .banner {
   margin: 0 auto;
@@ -257,4 +263,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  height: 45px;
+  border-radius: 8px;
 }
