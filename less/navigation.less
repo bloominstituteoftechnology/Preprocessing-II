@@ -3,22 +3,41 @@
 
 header{
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 10px ;
   margin-bottom:0px;
   margin-left: 250px;
   margin-right: 265px;
   padding: 20px;
+
+  @media (max-width:500px) {
+    flex-direction: column;
+    align-items: center;
+ }
+
 }
 
 .dots{
     .dash;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-around;
+.fun-bus{
+
+    @media(max-width:500px){
+
+        margin-bottom: 15px;
+    }
+}
+   .nav {
+
+    @media(max-width:500px){
+        display:flex;
+        flex-wrap:wrap;
+    }
+    
+
+
+
 }
 
 

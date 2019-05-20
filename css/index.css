@@ -159,6 +159,15 @@ h4 {
 }
 .btn {
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  border-radius: 8px;
+  height: 45px;
+  color: #FFFFFF;
+  background-color: #17A2B8;
 }
 p {
   line-height: 1.5;
@@ -176,7 +185,6 @@ img {
 }
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 10px ;
   margin-bottom: 0px;
@@ -184,13 +192,26 @@ header {
   margin-right: 265px;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .dots {
   border-bottom: 2px dashed #C0C0C0;
   max-width: 100%;
 }
-.nav {
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 500px) {
+  .fun-bus {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .banner {
   margin: 0 auto;
@@ -217,54 +238,43 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-.home .content-pick .destination .btn {
-  background-color: #17A2B8;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-right: 40px;
-  height: 45px;
-  border-radius: 8px;
 }
