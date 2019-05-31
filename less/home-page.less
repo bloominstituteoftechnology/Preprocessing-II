@@ -1,13 +1,28 @@
 .home {
 
+.fun-bus{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 0;
+border-bottom: 2px dashed @navigation-border;
+a{
+
+
+  background-color: red;
+
+  align-items: flex-end;
+}
+
+}
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -57,5 +72,16 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    .btn{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+background-color: @button-bg;
+color: @white;
+height: 38px;
+width:85%;
+border-radius: 10px;
+font-size: 1.6rem;
+ }
   }
 }// home
