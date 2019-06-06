@@ -5,14 +5,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+    }
     nav {
         margin: 0px 25px 0px 0px;
+        @media @phone {
+            width: 100%;
+            margin: 0;
+        }
         ul {
             display: flex;
             justify-content: flex-end;
+            @media @phone {
+                justify-content: space-around;
+            }
                 li {
                     padding-right: 30px;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
+                    @media @phone {
+                        padding: 0 0 10px 0;
+                    }
                 }
         }
     }
