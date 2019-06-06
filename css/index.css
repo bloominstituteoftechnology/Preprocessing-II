@@ -252,3 +252,15 @@ header .top {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .btn {
+  border: 1px solid #C0C0C0;
+  background-color: #17A2B8;
+  color: white;
+  border-radius: 40px;
+  width: 70%;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
