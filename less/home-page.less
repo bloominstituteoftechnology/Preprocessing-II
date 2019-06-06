@@ -2,9 +2,15 @@
 
     .top-content {
         border-bottom: @border-bottom;
+        @media @phone {
+            .mobile-content();
+        }
     }
         img {
             margin-bottom: 10px;
+            @media @phone {
+
+            }
         }
         h2 {
             margin-top: 10px;
@@ -15,20 +21,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @phone {
+        .mobile-content();
+        margin-top: 10px;
+    }
 
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+          width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone {
+          width: 100%;
+
+      }
 
       img {
         border-radius: 10px;
+        width: 100%;
       }
     }
   }
@@ -36,6 +53,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -51,6 +72,12 @@
   .content-destination {
     width: 75%;
     margin: 30px auto 20px;
+    @media @phone {
+        max-width: 450px;
+        margin: 20px 16px 0 16px;
+        width: 100%;
+    }
+
 
     img {
       border-radius: 10px;
@@ -63,12 +90,21 @@
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
+    @media @phone {
+        .mobile-content();
+        width: 80%;
+        flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       display: flex;
       .button-section (column, flex-start);
       margin-bottom: 30px;
+      @media @phone {
+          width: 100%;
+          align-content: center;
+      }
       .btn {
           text-align: center;
           font-size: 2rem;
@@ -77,6 +113,10 @@
           color: white;
           background-color: #008080;
           width: 85%;
+          @media @phone {
+              width: 100%;
+              background-color: #17A2B8;
+          }
       }
     }
   }
