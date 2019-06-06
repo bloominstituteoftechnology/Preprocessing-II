@@ -175,18 +175,18 @@ header {
   align-items: baseline;
 }
 header nav {
-  margin: 10px 30px 0px 0px;
+  margin: 0px 25px 0px 0px;
 }
 header nav ul {
   display: flex;
   justify-content: flex-end;
 }
 header nav ul li {
-  padding-right: 22px;
+  padding-right: 30px;
   font-size: 1.6rem;
 }
 header .logo {
-  margin: 10px 30px 0px 30px;
+  margin: 10px 30px 0px 22px;
 }
 header .logo p {
   font-family: 'Indie Flower', cursive;
@@ -243,7 +243,7 @@ header .logo p {
 }
 .home .content-destination {
   width: 75%;
-  margin: 0 auto 30px;
+  margin: 30px auto 20px;
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -253,9 +253,10 @@ header .logo p {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  margin-right: 10px;
 }
 .home .content-pick .destination {
-  width: 26%;
+  width: 29%;
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
@@ -265,4 +266,5 @@ header .logo p {
   padding: 12px;
   color: white;
   background-color: #008080;
+  width: 85%;
 }
