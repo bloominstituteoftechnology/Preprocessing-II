@@ -10,3 +10,12 @@
     text-align: @textAlign;
     border-radius: 10px;
 }
+
+.animationBlink(@color, @duration){
+        color: @color;
+        animation-duration: @duration;
+        text-decoration: none;
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
