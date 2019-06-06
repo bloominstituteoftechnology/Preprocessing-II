@@ -1,1 +1,44 @@
 // Navigation Styles here
+
+
+header {
+    border-bottom: 1px dashed black;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+
+    nav {
+        display: flex;
+        
+        font-size: 1.5rem;
+
+        a {
+            
+            padding: 1.5rem;
+
+        }
+        
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+   header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    align-items: center;
+
+       h1 {
+           order: -1;
+           flex-direction: column;
+           justify-content: center;
+       }
+   }
+
+}

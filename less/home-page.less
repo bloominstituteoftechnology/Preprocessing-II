@@ -1,3 +1,7 @@
+
+
+
+
 .home {
 
   .content-section {
@@ -5,6 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
    
     
@@ -56,6 +61,83 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+        .btn {
+          .button(center, center);
+        }
     }
+
+   
   }
+
+
+  @media (max-width: 500px) {
+
+    .content-section {
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+
+
+      .text-content {
+        width: 95%;
+      }
+      
+
+      .img-content {
+        
+        width: 95%;
+        
+        
+      }
+    }
+      
+
+    .last-section {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  
+
+      
+
+    }
+
+
+
+    .inverse-content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+
+    .content-destination {
+
+      p {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+
+
+  }
+
+
+ 
+
+
+
+
+
+
+
+
 }// home

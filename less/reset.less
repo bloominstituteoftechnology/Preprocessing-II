@@ -46,3 +46,70 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+.bus {
+	
+	display: flex;
+	
+	margin: 0 auto;
+	width: 60%;
+	justify-content: center;
+	
+}
+
+.welcome {
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	
+	border-bottom: 1px dashed black;
+
+		h2 {
+			display: flex;
+			justify-content: flex-start;
+			padding: 1rem;
+			
+			width: 60%;
+
+		}
+
+		p {
+			
+			margin-right: 30%;
+			margin-left: 20%
+		}
+
+
+}
+
+
+@media (max-width: 500px) {
+
+	.bus {
+		display: flex;
+		margin: 0 auto;
+		width: 90%;
+		height: 60%;
+	}
+
+
+	.welcome {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		
+		h2 {
+
+		}
+
+		p {
+			margin: 0 auto;
+			padding: 1rem;
+		}
+
+	}
+
+}
