@@ -185,6 +185,21 @@ nav .navLinks a {
   margin-bottom: 3rem;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  nav .logo {
+    width: 100%;
+  }
+  nav .navLinks a {
+    font-size: 1.2rem;
+    margin-left: none;
+    margin-right: 3rem;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -260,4 +275,30 @@ nav .navLinks a {
   background-color: #008080;
   text-align: center;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    padding: 0 2rem;
+  }
+  .home .content-section {
+    justify-content: space-evenly;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    padding-left: none;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding-right: none;
+  }
+  .home .content-destination {
+    width: 100%;
+  }
+  .home .content-pick {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .home .content-pick .destination {
+    width: 90%;
+  }
 }
