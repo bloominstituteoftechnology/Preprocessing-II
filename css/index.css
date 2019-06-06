@@ -206,6 +206,12 @@ header .logo p {
 .home .top-content {
   border-bottom: 2px dashed lightgrey;
 }
+.home img {
+  margin-bottom: 10px;
+}
+.home h2 {
+  margin-top: 10px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -249,6 +255,14 @@ header .logo p {
   justify-content: space-between;
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: 26%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  background-color: #008080;
 }
