@@ -7,6 +7,12 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px dashed  silver;
+
+    @media @mobile {
+        flex-direction: column;
+        alin-items: center;
+        // font-size: 1rem;
+    }
 }
 header nav {
 	border: 1px solid green;
@@ -18,12 +24,26 @@ header nav {
         font-size: 1.5rem;
         text-decoration: none;
     }
+    @media @mobile {
+        flex-direction: row;
+        alin-items: center;
+        margin-right: 0;
+        justify-content:space-between;
+        width: 100%
+    }
 }
 
 header .top {
     border: 1px solid blue;
     width: 50%;
     margin-left: 17%;
+    @media @mobile {
+        // flex-direction: column;
+        alin-items: center;
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 // header nav .navigate {
