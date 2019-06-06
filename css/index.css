@@ -293,6 +293,9 @@ nav .navLinks a {
     width: 100%;
     padding-right: none;
   }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
   .home .inverse-content {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -300,6 +303,10 @@ nav .navLinks a {
   .home .inverse-content .img-content {
     width: 100%;
     padding: 0;
+    margin: 0 auto;
+  }
+  .home .inverse-content .img-content img {
+    width: 100%;
   }
   .home .inverse-content .text-content {
     width: 100%;
