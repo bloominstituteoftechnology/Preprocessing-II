@@ -256,7 +256,10 @@ header .logo p {
   margin-right: 10px;
 }
 .home .content-pick .destination {
-  width: 29%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
