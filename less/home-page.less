@@ -86,6 +86,19 @@
 
       .btn {
         .btnStyle(center,80%);
+        .animationBlink(white, 600ms);
+
+        @keyframes blink{
+          from {
+            opacity: 1;
+          }
+        
+          to {
+            color: black;
+            background-color: @silver;
+            opacity: 0.9;
+          }
+        }
       }
     }
 

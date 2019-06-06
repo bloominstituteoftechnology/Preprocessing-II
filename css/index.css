@@ -188,7 +188,7 @@ nav .navLinks a {
 @media (max-width: 500px) {
   nav {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
   }
   nav .logo {
@@ -197,6 +197,8 @@ nav .navLinks a {
   nav .navLinks a {
     font-size: 1.2rem;
     margin-left: none;
+  }
+  nav .navLinks a:not(:last-child) {
     margin-right: 5rem;
   }
 }
@@ -284,7 +286,6 @@ nav .navLinks a {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  color: white;
   font-size: 1.5rem;
   width: 80%;
   height: 3.5rem;
@@ -292,6 +293,22 @@ nav .navLinks a {
   background-color: #008080;
   text-align: center;
   border-radius: 10px;
+  color: white;
+  animation-duration: 600ms;
+  text-decoration: none;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    color: black;
+    background-color: #C0C0C0;
+    opacity: 0.9;
+  }
 }
 @media (max-width: 500px) {
   .home {

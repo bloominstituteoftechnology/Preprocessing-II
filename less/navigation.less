@@ -31,7 +31,7 @@ nav {
 @media @mobile {
     nav{
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         text-align: center;
         
 
@@ -43,6 +43,10 @@ nav {
         a {
             font-size: 1.2rem;
             margin-left: none;
+        }
+
+
+        a:not(:last-child){
             margin-right: 5rem;
         }
     } 
