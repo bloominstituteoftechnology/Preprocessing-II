@@ -4,9 +4,15 @@
 	display: flex;
     justify-content: space-between;
     padding-top: 30px;
+
+    @media( max-width: 500px ) {
+        display: flex;
+        flex-direction: column;
+      }
+		
         nav {
         padding-top: 15px;
-        }
+    }
     
         a {
         text-decoration: none;
@@ -15,4 +21,13 @@
         padding: 20px;
         font-size: 20px;
         }
+
+        h1{ 
+            @media( max-width: 500px ) {
+                display: flex;
+                justify-content: center;
+              }
+        }
+
+        
 }
