@@ -1,1 +1,16 @@
 // Mixins in here
+
+.custom-btn() {
+    display: block;
+    background-color: #008080;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px; 
+}
+
+.btn {
+    .custom-btn();
+}
