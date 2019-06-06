@@ -1,8 +1,13 @@
 .home {
   .welcome-section {
     .welcome-content {
-      padding: 18px 0 12px 0;
+      padding: 16px 0 10px 0;
       border-bottom: 2px dashed @navigation-border;
+    }
+    @media @phone {
+      .welcome-content {
+        padding: 16px 2% 10px 4%;
+      }
     }
   }
   .content-section {
@@ -63,7 +68,7 @@
       .btn {
         .button-genie(teal; black);
         &:hover {
-          .button-genie(blue);
+          .button-genie(bluep);
         }
       }
     }

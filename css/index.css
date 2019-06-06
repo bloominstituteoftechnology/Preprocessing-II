@@ -175,7 +175,15 @@ header {
   margin: 0px auto;
   padding: 35px 0%;
   width: 100%;
-  border-bottom: 2.5px dashed #C0C0C0;
+  border-bottom: 2.5px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 12px;
+  }
 }
 header h1 {
   width: 40%;
@@ -197,7 +205,7 @@ nav a {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -206,8 +214,13 @@ nav a {
   padding: 20px;
 }
 .home .welcome-section .welcome-content {
-  padding: 18px 0 12px 0;
-  border-bottom: 2px dashed #C0C0C0;
+  padding: 16px 0 10px 0;
+  border-bottom: 2px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  .home .welcome-section .welcome-content {
+    padding: 16px 2% 10px 4%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -228,7 +241,7 @@ nav a {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -247,7 +260,7 @@ nav a {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -269,7 +282,7 @@ nav a {
 .home .content-pick .destination .btn:hover {
   padding-top: 15px;
   border-radius: 12px;
-  background-color: blue;
+  background-color: bluep;
   color: white;
   cursor: crosshair;
   height: 35px;
