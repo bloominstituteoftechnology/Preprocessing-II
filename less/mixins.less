@@ -1,1 +1,30 @@
 // Mixins in here
+
+// flexbox
+.layout (@j; @a) {
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.mobile-layout (@a:center; @j:center) {
+    display: flex;
+    flex-direction: column;
+    align-items: @a;
+    justify-content: @j;
+    width: 100%;
+    padding: 0;
+}
+
+// buttons
+.btn-style (@width) {
+    background: @button-bg;
+    color: white;
+    width: @width;
+    border: 1px solid @navigation-border;
+    border-radius: 1rem;
+    .layout(center, center);
+    padding: 2rem 0;
+    font-size: 1.6rem;
+}
+

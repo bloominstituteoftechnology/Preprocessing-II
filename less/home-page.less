@@ -1,16 +1,70 @@
+
+
+header {
+  width: 100%;
+  padding-top: 1rem;
+  .layout(space-between, center);
+  border-bottom: 2px dashed @navigation-border;
+  @media @mobile {
+    .mobile-layout(center, center);
+  }
+  .header-content{
+    width: 85%;
+    @media @mobile {
+      .mobile-layout();
+    }
+    nav {
+      .layout(space-evenly, flex-end);
+      a {
+        padding: 3rem;
+        @media @mobile {
+          padding: 1rem;
+        }
+      }
+      
+    }
+  }
+}
+
 .home {
+  width: 85%;
+
+  .cta {
+    border-bottom: 2px dashed @navigation-border;
+    div {
+      width: 100%;
+    }
+    .img-content {
+      padding-bottom: 1.2rem;
+    }
+  }
 
   .content-section {
-    margin: 30px 0;
+    div {
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+    margin: 3rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      .mobile-layout(center, center);
+    }
+   }
 
-   
+   .inverse-content {
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+  }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .mobile-layout(bottom, center);
+      }
     }
 
     .img-content {
@@ -24,7 +78,7 @@
   }
 
   .inverse-content {
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
     border-bottom: 2px dashed @navigation-border;
 
     .text-content {
@@ -40,7 +94,10 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto 3rem;
+    @media @mobile {
+      .mobile-layout();
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +109,28 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
+      @media @mobile {
+        width: 80%;
+      }
+      .btn {
+        .btn-style(80%);
+        @media @mobile{
+          .btn-style(100%;);
+          padding: 1rem;
+        }
+      }
     }
-  }
-}// home
+  } 
+
+
+footer {
+  width: 100%;
+}
