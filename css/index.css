@@ -197,7 +197,7 @@ nav .navLinks a {
   nav .navLinks a {
     font-size: 1.2rem;
     margin-left: none;
-    margin-right: 3rem;
+    margin-right: 5rem;
   }
 }
 .footer {
@@ -266,7 +266,7 @@ nav .navLinks a {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .btn {
+.home .content-pick .destination .btn {
   color: white;
   font-size: 1.5rem;
   width: 80%;
@@ -279,9 +279,11 @@ nav .navLinks a {
 @media (max-width: 500px) {
   .home {
     padding: 0 2rem;
+    width: 100%;
   }
   .home .content-section {
     justify-content: space-evenly;
+    width: 100%;
   }
   .home .content-section .text-content {
     width: 100%;
@@ -291,14 +293,37 @@ nav .navLinks a {
     width: 100%;
     padding-right: none;
   }
+  .home .inverse-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding: 0;
+  }
+  .home .inverse-content .text-content {
+    width: 100%;
+  }
   .home .content-destination {
     width: 100%;
   }
   .home .content-pick {
     flex-wrap: wrap;
     width: 100%;
+    padding: 3rem 2rem 0 2rem;
   }
   .home .content-pick .destination {
-    width: 90%;
+    width: 98%;
+    margin-left: auto;
+  }
+  .home .content-pick .destination .btn {
+    color: white;
+    font-size: 1.5rem;
+    width: 98%;
+    height: 3.5rem;
+    padding: 1rem;
+    background-color: #008080;
+    text-align: center;
+    border-radius: 10px;
   }
 }

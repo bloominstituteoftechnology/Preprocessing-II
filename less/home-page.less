@@ -68,11 +68,13 @@
     .destination {
       width        : 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .btnStyle(center,80%);
+      }
     }
 
-    .btn {
-      .btnStyle(center);
-    }
+    
 
   }
 
@@ -83,9 +85,11 @@
 @media @mobile {
   .home {
     padding: 0 2rem;
+    width: 100%;
 
     .content-section{
       justify-content: space-evenly;
+      width: 100%;
         
   .text-content {
     width        : 100%;
@@ -95,8 +99,24 @@
    .img-content {
      width: 100%;
      padding-right: none;
+     margin-left
    } 
-    }
+
+  }
+
+  .inverse-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+   .img-content {
+     width: 100%;
+     padding: 0;
+   }
+   
+   .text-content {
+     width: 100%;
+   }
+  }
 
     .content-destination {
       width: 100%;
@@ -105,9 +125,15 @@
     .content-pick {
       flex-wrap: wrap;
       width: 100%;
+      padding: 3rem 2rem 0 2rem;
 
       .destination {
-        width: 90%;
+        width: 98%;
+        margin-left: auto;
+
+        .btn {
+          .btnStyle(center,98%);
+        }
       }
     }
   }
