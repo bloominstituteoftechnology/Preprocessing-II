@@ -126,9 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html {
-  font-size: 62.5%;
-}
 * {
   box-sizing: border-box;
 }
@@ -177,12 +174,11 @@ img {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: flex-end;
 }
 .static-navbar a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #212529;
   font-size: 2rem;
 }
 .static-navbar a:hover {
@@ -245,4 +241,20 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  max-width: 100%;
+  width: 80rem;
+  margin: auto;
+  font-size: 2.6rem;
+}
+header {
+  width: 100%;
+  display: flex;
+}
+header h1 {
+  order: -1;
 }
