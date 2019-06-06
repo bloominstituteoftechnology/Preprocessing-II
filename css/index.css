@@ -352,6 +352,7 @@ header .logo p {
   color: white;
   background-color: #008080;
   width: 85%;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
