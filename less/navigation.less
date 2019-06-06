@@ -5,15 +5,30 @@ header {
     margin-top: 20px;
     justify-content: space-between;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+      }
     h1 {
         width: 20%;
         margin-top: 22px;
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+          }
         }
 
     nav {
         margin-top: 20px;    
         justify-content: flex-end;
         display: flex;
+        @media @mobile {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+          }
         
         a {
             display: block;
