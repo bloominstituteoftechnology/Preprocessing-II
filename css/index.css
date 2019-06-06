@@ -225,23 +225,6 @@ nav .navLinks a {
   padding-bottom: 1rem;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .content-section .head-content h2 {
-  color: #FFEBCD;
-  animation-duration: 500ms;
-  text-decoration: none;
-  animation-name: blink;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-@keyframes blink {
-  from {
-    opacity: 1;
-  }
-  to {
-    color: black;
-    opacity: 0.9;
-  }
-}
 .home .content-section .head-content img {
   margin-bottom: 2rem;
 }
