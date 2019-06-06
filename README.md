@@ -4,25 +4,25 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 1: Set Up The Project With Git
 
-- [ ] Create a forked copy of this project.
+- [0] Create a forked copy of this project.
 - [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [0] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [0] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [0] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [0] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [0] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [] Add your project manager as a reviewer on the pull-request
+- [] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Task 2: Set up your preprocessor
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [0] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [0] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [0] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [0] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 3: Import LESS Files
 
@@ -38,10 +38,10 @@ Follow these steps for completing your project.
 
 
 ## Task 4: Desktop Updates Needed
-* [ ] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
-* [ ] Navigation: Use the `navigation.less` file for all your navigation styling
-* [ ] Main Header: Use the `home-page.less` file for the header styling.
-* [ ] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
+* [0] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
+* [0] Navigation: Use the `navigation.less` file for all your navigation styling
+* [0] Main Header: Use the `home-page.less` file for the header styling.
+* [0] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
 
 
 ## Task 5: Mobile Updates Needed
