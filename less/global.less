@@ -15,23 +15,42 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+    font-size: 4rem;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+       width: 100%;
+     } 
+   
 }
 
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  border: orange 1px solid;
+  width: 85%;
+
+   @media (max-width: 500px) {
+    flex-direction: column;
+     width: 100%;
+   } 
 }
 
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
-
+dd
 p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+     width: 100%;
+     border: 1px orange solid
+   } 
 }
 
 img {
@@ -40,7 +59,15 @@ img {
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 500px ) {
+    .displayflex;
+    justify-content:center;
+    padding: 20px;
+    background: lightblue;
+    font-size: 10px;
+
+  }
 }
