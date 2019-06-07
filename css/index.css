@@ -256,7 +256,6 @@ nav a {
   .home header {
     width: 100%;
     padding: 0 40px;
-    background: pink;
   }
 }
 .home header img {
@@ -287,6 +286,14 @@ nav a {
     padding: 0 40px;
     width: 100%;
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .home .content-section {
+    padding: 0 40px;
+    width: 100%;
+    flex-direction: row;
     align-items: center;
   }
 }
@@ -365,6 +372,14 @@ nav a {
 @media (max-width: 500px) {
   .content-pick {
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .content-pick {
+    padding: 0 40px;
+    width: 100%;
+    flex-direction: row;
     align-items: center;
   }
 }
