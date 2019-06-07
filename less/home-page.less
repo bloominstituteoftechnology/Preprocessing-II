@@ -4,26 +4,59 @@
   
   
   .header {
-    size: 80%;
-    margin: 0% 0 0% 20%;
-    text-align: right;
-  }
+    display: flex;
+    margin: 2% 0 0 20%;
+    .idiot-box(green);
+    
 
-  #header-title {
+    #header-title {
       
     display: flex;
-    width: 50%;
-   
+    width: 30%;
     margin-left: 20%;
      }
-    
-      h1 {
-        display: inline-block;
-        position: relative;
-        left: 20%; 
-        } 
+
 
     
+      // h1 {
+      //   display: flex;
+      //   justify-items: flex-start;
+         
+      //   } 
+    
+  
+
+        @media @mobile {
+          .header {
+            margin: 5% 20% 0 5%;
+            justify-content: space-between; 
+
+            #header-title {      
+              display: flex;
+              justify-content: flex-start;
+              width: 30%;
+              margin-left: 10%;
+               }
+              
+                h1 {
+                  display: flex;
+                  justify-items: flex-start;
+                   
+                  }   
+            
+    
+          }
+        }    
+      } //header
+
+  #fun-bus-box {
+    display: flex;
+    // size: 90%
+  }
+    img {
+    width: 80%;
+    height: auto;
+    }
   
   .content-section {
     margin: 30px 0;
@@ -42,9 +75,9 @@
         width: 215%;
         margin: -5% 20% 3% 0%;
         padding-bottom: 2.625%;
-        border: 1px solid red;
         flex-wrap: wrap;
         border-bottom: 1px dashed black;
+        
 
       }
 
@@ -57,7 +90,7 @@
         border-radius: 10px;
       }
     }
-  }
+  } //.content-sction
 
   .inverse-content {
     padding-bottom: 30px;
@@ -90,26 +123,18 @@
     display: flex;
     justify-content: space-between;
 
-    .btn {
-      display: flex;
-      padding: 40% 10%;
-      border-radius: 10px;
-      background-color: teal;
-      color: white;
-      cursor: pointer;
-      font-size: large;
-    
-        &:hover {
-          background-color: darken(teal, 5%);
-      }
-
-  }
+   
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      .btn {
+        .button();
+        }
+  
+        }
+
   
     }
-  }
-}// home
+  } //home

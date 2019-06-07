@@ -170,11 +170,16 @@ img {
 }
 nav {
   display: flex;
-  width: 15%;
-  justify-content: space-around;
-  margin-left: 53%;
-  padding-left: 5%;
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 35%;
+  padding-left: 0%;
   flex-wrap: nowrap;
+  border-type: solid;
+  border-width: 1px;
+  border-style: solid;
+  color: green;
 }
 nav a {
   display: flex;
@@ -184,9 +189,22 @@ nav a {
   margin: 0% 5% 0 10%;
   font-size: 1.625rem;
   padding-right: 5%;
-  align-items: flex-start;
+  align-items: center;
 }
-nav a:first-child {
+@media (max-width: 500px) {
+  nav a nav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    padding-left: 5%;
+    flex-wrap: nowrap;
+  }
+  nav a nav a {
+    background: red;
+    font-size: medium;
+  }
+}
+nav a a:first-child {
   margin-left: 55%;
   padding-left: 9%;
 }
@@ -202,19 +220,40 @@ nav a:first-child {
   padding: 20px;
 }
 .home .header {
-  size: 80%;
-  margin: 0% 0 0% 20%;
-  text-align: right;
-}
-.home #header-title {
   display: flex;
-  width: 50%;
+  margin: 2% 0 0 20%;
+  border-type: solid;
+  border-width: 1px;
+  border-style: solid;
+  color: green;
+}
+.home .header #header-title {
+  display: flex;
+  width: 30%;
   margin-left: 20%;
 }
-.home h1 {
-  display: inline-block;
-  position: relative;
-  left: 20%;
+@media (max-width: 500px) {
+  .home .header .header {
+    margin: 5% 20% 0 5%;
+    justify-content: space-between;
+  }
+  .home .header .header #header-title {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    margin-left: 10%;
+  }
+  .home .header .header h1 {
+    display: flex;
+    justify-items: flex-start;
+  }
+}
+.home #fun-bus-box {
+  display: flex;
+}
+.home img {
+  width: 80%;
+  height: auto;
 }
 .home .content-section {
   margin: 30px 0;
@@ -231,7 +270,6 @@ nav a:first-child {
   width: 215%;
   margin: -5% 20% 3% 0%;
   padding-bottom: 2.625%;
-  border: 1px solid red;
   flex-wrap: wrap;
   border-bottom: 1px dashed black;
 }
@@ -269,17 +307,23 @@ nav a:first-child {
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .btn {
-  padding: 10px 40px;
-  border-radius: 10px;
-  background-color: teal;
-  color: white;
-  cursor: pointer;
-}
-.home .content-pick .btn:hover {
-  background-color: #006667;
-}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: teal;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem 4rem;
+  width: 20rem;
+  height: 5rem;
+  font-size: large;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #006667;
 }

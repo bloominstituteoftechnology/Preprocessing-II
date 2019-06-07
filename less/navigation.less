@@ -1,11 +1,13 @@
 nav {
     display: flex;
-    width: 15%;
-    justify-content: space-around;
-    margin-left: 53%;
-    padding-left: 5%;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35%;
+    padding-left: 0%;
     flex-wrap: nowrap;
-    
+    .idiot-box(green);
+  
 
     a {
         display: flex;
@@ -15,14 +17,28 @@ nav {
         margin: 0% 5% 0 10%;
         font-size: 1.625rem;
         padding-right: 5%;
-        align-items: flex-start;
-        
-        
-        
-    }
+        align-items: center;
 
-    a:first-child {
-        margin-left: 55%;
-        padding-left: 9%
-    }
-}
+    @media @mobile {
+        
+        nav {
+                display: flex;
+                justify-content: space-around;
+                margin-left: 20%;
+                padding-left: 5%;
+                flex-wrap: nowrap;
+            
+            
+            a {
+            background: red;
+            font-size: medium;
+                }
+            }
+        }
+
+        a:first-child {
+            margin-left: 55%;
+            padding-left: 9%;
+            }
+} //nav a
+} // nav
