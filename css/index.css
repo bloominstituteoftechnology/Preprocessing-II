@@ -177,6 +177,7 @@ header nav a {
   padding: 2rem;
   font-size: 1.5rem;
   color: #212529;
+  font-weight: bold;
 }
 .footer {
   width: 100%;
@@ -200,6 +201,7 @@ header {
     flex-direction: column;
     width: 90%;
     padding: 10px;
+    align-content: center;
   }
 }
 .logo-title {
@@ -207,8 +209,8 @@ header {
 }
 @media (max-width: 500px) {
   .logo-title {
-    width: 90%;
-    padding: 10px;
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
 }
@@ -296,6 +298,7 @@ header {
     flex-direction: column;
     width: 90%;
     padding: 10px;
+    order: 2;
   }
 }
 .home .content-destination {
@@ -361,12 +364,18 @@ header {
     padding: 20px;
     width: 90%;
     margin: auto;
-    padding: 10px;
   }
 }
 .middle-content {
   border-bottom: 2px dashed #C0C0C0;
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+  }
 }
