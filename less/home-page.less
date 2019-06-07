@@ -10,7 +10,15 @@
     @media @mobile {
       width: 100%;
       padding: 0 40px;
+      background: white;
     }
+
+    @media @tablet {
+      width: 100%;
+      padding: 0 40px;
+      background: pink;
+    }
+
   }
 
   header img {
@@ -37,18 +45,20 @@
     flex-direction: column;
     align-content: center;
 
-    @media @tablet {
+    // @media @tablet {
 
-      width: 760px;
-      margin: 0 20px;
-      padding: 0 100px;
-    }
+    //   max-width: 760px;
+    //   margin: 0 20px;
+    //   padding: 0 100px;
+    //   background-color: red;
+    // }
 
-    @media @mobile {
-      flex-direction: column;
-      max-width: 500px;
-      margin: 0 20px;
-    }
+    // @media @mobile {
+    //   flex-direction: column;
+    //   max-width: 500px;
+    //   margin: 0 20px;
+    //   background: orange;
+    // }
   }
 
   .content-section {
