@@ -17,7 +17,7 @@
 //links
 
 .links-nav() {
-    color: @gray;
+    color: @black;
     font-size: 1.5rem;
     text-decoration: @no-text-decoration;
 }
@@ -62,11 +62,13 @@
 
 //buttons
 
-.button-design(@btn-color, @btn-txt-color, @btn-font-size, @btn-padding, @btn-width) {
-    background-color: btn-color;
+.btn-design(@btn-color, @btn-txt-color, @btn-font-size, @btn-padding, @btn-width, @btn-radius, @btn-align) {
+    background: @btn-color;
     color: @btn-txt-color;
     font-size: @btn-font-size;
     padding: @btn-padding;
     width: @btn-width;
+    border-radius: @btn-radius;
+    text-align: @btn-align;
 
 }

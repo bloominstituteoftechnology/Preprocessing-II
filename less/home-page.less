@@ -1,10 +1,11 @@
 .home {
 
-  main {
-    max-width: 80%;
-  }
 
   header {
+    display: flex;
+    //justify-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
@@ -24,8 +25,13 @@
 
 
   .container-home {
+
     width: 100%;
+
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 
   .content-section {
@@ -89,14 +95,11 @@
 
   }
 
-  // .btn {
+  .destination .btn {
+    .btn-design(teal, white, 2em, @btn-padding, @btn-width, @btn-radius, @btn-align);
 
-  //   .button-design(@btn-color, @btn-txt-color, @btn-font-size, @btn-padding, @btn-width);
 
 
-  // }
+  }
+
 }
-
-// .btn {
-//   width: 50px
-// }

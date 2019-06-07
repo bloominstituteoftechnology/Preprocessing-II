@@ -1,10 +1,9 @@
 // Navigation Styles here
 .container-nav {
     display: flex;
-    justify-content: flex-end;
     flex-direction: row;
     align-items: center;
-    //justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 75px;
     border-bottom: @dashed-border;
@@ -15,16 +14,17 @@
 
 .nav-links-container {
     width: 50%;
+
 }
 
 nav {
     .custom-layout-row(row, @align, @justify, @row-wrap);
-    width: 100%;
+
 }
 
 nav a {
-    text-align: center;
     padding: 15px 0;
+    margin-left: -150px;
     .links-nav();
 
 }
@@ -33,5 +33,6 @@ nav a {
     display: flex;
     width: 50%;
     justify-content: flex-start;
+    margin-left: 90px;
 
 }
