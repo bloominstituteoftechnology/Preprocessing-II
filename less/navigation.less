@@ -8,12 +8,21 @@
     height: 75px;
     border-bottom: @dashed-border;
 
+    @media @mobile {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
 
 
 }
 
 .nav-links-container {
     width: 50%;
+
+    @media @mobile {
+        width: 100%;
+    }
 
 }
 
@@ -26,6 +35,10 @@ nav a {
     padding: 15px 0;
     margin-left: -150px;
     .links-nav();
+
+    @media @mobile {
+        margin-left: 0;
+    }
 
 }
 
