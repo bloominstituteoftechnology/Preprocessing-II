@@ -132,6 +132,9 @@ table {
 html {
   font-size: 62.5%;
 }
+body {
+  width: 100%;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -150,65 +153,59 @@ h1 {
   h1 {
     flex-direction: column;
     width: 100%;
-  }
-}
-h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
-  border: orange 1px solid;
-  width: 85%;
-}
-@media (max-width: 500px) {
-  h2 {
-    flex-direction: column;
-    width: 100%;
+    font-size: 33px;
+    padding: 10px 0;
   }
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
-dd p {
+p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 @media (max-width: 500px) {
-  dd p {
+  p {
     flex-direction: column;
     width: 100%;
-    border: 1px orange solid;
+    border: 4px hotpink solid;
   }
 }
 img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 100%;
-  margin: 0 auto;
+@media (max-width: 500px) {
+  img {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background: lightblue;
-    font-size: 10px;
+  .bus {
+    margin: 0 10px;
   }
 }
 nav {
-  width: 100%;
+  width: 8    0%;
   display: flex;
   flex-wrap: wrap;
 }
 nav .title {
-  width: 25%;
+  width: 100%;
 }
 @media (max-width: 500px) {
   nav .title .fun-bus {
+    width: 1 00%;
     font-size: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: flex-end;
   }
 }
 nav .menubar {
@@ -223,21 +220,18 @@ nav .menubar {
   nav .menubar {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     justify-content: space-around;
     font-size: 15px;
-    border: orange 1px solid;
   }
-}
-.menubar h2 {
-  font-size: 2.3rem;
 }
 hr {
   border-top: 1px dashed #000;
   width: 100%;
 }
 footer {
-  width: 100%;
+  width: 80%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
@@ -253,32 +247,50 @@ footer p {
     background: #FFEBCD;
   }
 }
-.home .content-section {
-  margin: 30px 0;
-  width: 85%;
+.home {
+  border: red 2px solid;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: lightblue;
+    font-size: 10px;
+    border: yellow 2px solid;
+  }
+}
+.home .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+.home .container .content-section {
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   justify-content: center;
 }
+.home .container .content-section .text-content {
+  padding-right: 1%;
+}
+.home .container .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .container .content-section .img-content img {
+  border-radius: 10px;
+}
 @media (max-width: 500px) {
-  .home .content-section {
+  .home .container .content-section {
     width: 85%;
     flex-direction: column;
     justify-content: center;
     width: 90%;
   }
-}
-.home .content-section .text-content {
-  width: 48%;
-  padding-right: 1%;
-}
-.home .content-section .img-content {
-  width: 48%;
-  padding-left: 1%;
-}
-.home .content-section .img-content img {
-  border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -293,7 +305,7 @@ footer p {
   padding-left: 0;
 }
 .home .content-destination {
-  width: 75%;
+  width: 90%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
@@ -321,17 +333,7 @@ footer p {
   .home .content-pick .destination {
     flex-direction: column;
     font-size: 10px;
-    width: 90%;
-  }
-}
-@media (max-width: 500px) {
-  .home .content-pick .destination h4 {
-    font-size: 25px;
-  }
-}
-@media (max-width: 500px) {
-  .home .content-pick .destination p {
-    font-size: 17px;
+    width: 100%;
   }
 }
 .home .content-pick .destination .btn {
@@ -340,6 +342,6 @@ footer p {
   text-decoration: bold;
   border-radius: 18px;
   padding: 20px;
-  width: 370px;
+  width: 100%;
   text-align: center;
 }
