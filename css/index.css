@@ -1,3 +1,14 @@
+@mobile (max-width: 500px);
+.book-flight-btn-1 {
+  display: block;
+  background-color: #22939b;
+  margin: 0 10px 20px;
+  cursor: progress;
+  width: 30px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +178,33 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  word-spacing: 2rem;
+}
+header nav a:hover {
+  background-color: #f0f030;
+  opacity: 0.5;
+}
+.intro {
+  padding: 30px 0 0 0;
+  border-bottom: 2px dashed #c0c0c0;
+}
+.intro h2 {
+  display: flex;
 }
 .footer {
   width: 100%;
