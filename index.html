@@ -15,22 +15,23 @@
 </head>
 
 <body>
-  <nav class="container flex flex-justify-between">
+  <nav>
+  <div class="flex flex-justify-between">
       <h1>Fun Bus</h1>
-      <ul class="flex flex-items-center">
+      <ul class="flex flex-items-center flex-no-response flex-justify-between">
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-  </nav>
-  <header class="container flex flex-column">
-    <img src="img/fun-bus.jpg" alt="What a fun bus this is.">
-    <h2>Welcome To Fun Bus!</h2>
-    <p>Travelling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelbloggger. Adventure fun traveler pretty design website expedition.</p>
+  </div>
+</nav>
+  <header class="container">
+    <img src="img/fun-bus.jpg" alt="What a fun bus this is." class="img-content">
+    <h2 class="text-content">Welcome To Fun Bus!</h2>
+    <p class="text-content">Travelling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelbloggger. Adventure fun traveler pretty design website expedition.</p>
   </header>
   <div class="container home">
-   <hr>
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -78,7 +79,9 @@
   </div><!-- container -->
 
   <footer class="footer">
-    <p>Copyright Fun Bus 2018</p>
+    <p>&copy; Copyright Fun Bus <script>
+      document.write(new Date().getFullYear());
+      </script></p>
   </footer>
 
 </body>

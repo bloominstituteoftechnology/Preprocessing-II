@@ -1,1 +1,25 @@
 // Navigation Styles here
+nav {
+    border-bottom: 2px dashed @navigation-border;
+    div{
+        max-width: 800px;
+        margin: auto;
+    a {
+        color: #000;
+        font-size: 2rem;
+        text-decoration: none;
+        transition: all .2s;
+        &:hover {
+            text-decoration: underline;
+            color: #ff0;
+            text-shadow: 0 0 1rem rgba(black, .5);
+        }
+    }
+    @media @phone {
+        align-items: center;
+        h1{
+            margin-bottom: -3rem;
+        }
+    }
+}
+}
