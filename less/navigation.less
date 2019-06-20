@@ -1,1 +1,87 @@
 // Navigation Styles here
+
+// variables and mixins
+
+.displayFlex (@justify, @align @direction) {
+    display: flex;
+    flex-direction: row;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.width-margin (){
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+@media @mobile {
+
+}
+
+// LESS css Code
+
+header {
+    width: 100%;
+    border-bottom: 2px dashed #c0c0c0;
+    height: 6rem;
+
+    
+    .header{
+        .width-margin();
+        display:flex;
+        justify-content: space-between;
+
+        @media @mobile {
+        flex-direction: column;
+
+        h1 {
+            text-align:center;}
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        ul {
+            display:flex; 
+            justify-content: space-between;
+            li {
+                padding-left: 3rem;
+             
+            } 
+        }
+    
+   // .displayFlex(flex-end, center);
+   
+        a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: black;
+        // word-spacing: 2.0rem;
+    
+
+        &:hover {
+            background-color: (rgb(240, 240, 48));
+            opacity: 0.5;
+        }
+        }
+      }
+    }
+
+    header img {
+        border-top: 2px dashed #c0c0c0;
+
+    }
+
+.intro {
+    padding: 30px 0 0 0;
+    border-bottom: 2px dashed #c0c0c0;
+
+    h2 {
+        display: flex;
+
+        }
+    } 
+
+    

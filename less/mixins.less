@@ -1,1 +1,25 @@
 // Mixins in here
+
+
+.button-pmixin(@bg-color, @cursor, @width, @height, @border-radius) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @bg-color;
+  margin: auto;
+  cursor: @cursor;
+  width: @width;
+  height: @height;
+  font-size: 2rem;
+  border-radius: @border-radius;
+  color: white;
+}
+
+.btn {
+    .button-pmixin(rgb(34, 147, 155), pointer, 75%, 50px, 20px);
+
+    @media @mobile {
+      width:100%;
+    }
+}
+
