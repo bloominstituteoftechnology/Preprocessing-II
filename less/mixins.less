@@ -2,16 +2,24 @@
 
 
 .button-pmixin(@bg-color, @cursor, @width, @height, @border-radius) {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: @bg-color;
-  margin: 0 10px 20px;
+  margin: auto;
   cursor: @cursor;
   width: @width;
   height: @height;
   font-size: 2rem;
   border-radius: @border-radius;
+  color: white;
 }
 
-.book-flight-btn-1 {
-    .button-pmixin(rgb(34, 147, 155), progress, 30px, 50px, 20px);
+.btn {
+    .button-pmixin(rgb(34, 147, 155), pointer, 75%, 50px, 20px);
+
+    @media @mobile {
+      width:100%;
+    }
 }
+
