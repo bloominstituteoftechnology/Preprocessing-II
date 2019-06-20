@@ -17,8 +17,9 @@
 
       @media @mobile {
         width: 100%;
-        &:nth-of-type(2) {
-        order: -1;
+        // &:nth-of-type(2) {
+        // order: -1;
+        flex-direction: column-reverse;
         }
       }
     }
@@ -29,11 +30,17 @@
 
       @media @mobile {
         width: 100%;
-   
+        margin: 0 auto;
       }
 
+      
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
+  
       }
     }
   }
@@ -50,6 +57,11 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -57,9 +69,19 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+      margin: 0 auto;
+    }
+
 
     img {
       border-radius: 10px;
+
+      @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 
