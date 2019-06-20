@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Lambda School Project - Advanced CSS - Preprocessing I",
   "scripts": {
-    "compile-less": "lessc less/main.less css/index.css",
+    "compile-less": "lessc less/index.less css/index.css",
     "devserver": "live-server",
-    "watch-less": "less-watch-compiler less css main.less",
+    "watch-less": "less-watch-compiler less css index.less",
     "start": "npm-run-all --parallel devserver watch-less"
   },
   "author": "Mikey Nichols",
