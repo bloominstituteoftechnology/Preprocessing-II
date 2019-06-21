@@ -7,11 +7,28 @@
     padding-bottom: 20px;
     border-bottom: @border;
 
+    @media @phone {
+        flex-flow: column;
+    }
+
+    h1 {
+        @media @phone {
+            margin-bottom: 20px;
+        }
+    }
+
     nav {
+
         
         a {
             font-size: 1.5rem;
             margin: 10px;
+            text-decoration: none;
+            color: black;
+
+            @media @phone {
+                margin: 0px 30px;
+            }
         }
     }
     
