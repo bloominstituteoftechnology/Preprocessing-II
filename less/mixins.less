@@ -1,1 +1,14 @@
 // Mixins in here
+
+.displayFlex(@justify,  @align-i) {
+    display: flex;
+    justify-content: @justify;
+    align-content: @align-i;
+}
+
+.displayBtn(@align-i, @justify, @background) {
+    display: flex;
+    align-items: @align-i;
+    justify-content: @justify;
+    background-color: @background;
+}

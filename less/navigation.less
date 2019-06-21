@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+.nav-head {
+    .displayFlex(space-around, center);
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+
+    .fun-bus {
+        margin-left: 230px; 
+        @media @mobile {
+            margin-left: 170px;
+        }
+        p {
+            font-family: 'Indie Flower', cursive;
+            font-size: 3.2rem;
+            }
+    }
+
+    .navigation {
+        margin-top: 10px;
+        margin-right: 230px;
+    @media @mobile {
+        display: inline;
+        padding: 100px;
+        } 
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        padding: 20px;
+        font-size: 2.2rem;
+    }
+    @media @mobile {
+            display: block;
+            color: purple;
+    }
+}
