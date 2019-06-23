@@ -169,17 +169,21 @@ img {
   margin: 0 auto;
 }
 .top-home {
-  display: flex;
-  justify-content: flex-start;
-  justify-content: space-between;
   width: 100%;
-  align-items: center;
-  padding-bottom: 20px;
   border-bottom: 1px dashed black;
 }
+.top-home div {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  align-items: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
 @media (max-width: 500px) {
-  .top-home {
+  .top-home div {
     flex-flow: column;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -210,7 +214,6 @@ img {
   padding: 20px;
 }
 .home .content-section {
-  margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

@@ -1,14 +1,19 @@
 .top-home {
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
     width: 100%;
-    align-items: center;
-    padding-bottom: 20px;
     border-bottom: @border;
 
-    @media @phone {
-        flex-flow: column;
+    div{
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+        align-items: center;
+        padding-bottom: 20px;   
+        margin: 0 auto;
+
+        @media @phone {
+            flex-flow: column;
+            width: 90%;
+        }
     }
 
     h1 {
