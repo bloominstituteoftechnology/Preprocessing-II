@@ -1,13 +1,10 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,16 +53,17 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-    .btn-class {
-      padding: 10px 40px;
-      border-radius: 10px;
-      background-color: teal;
-      color: white;
-      cursor: pointer;
-      &:hover {
-        background-color: darken(teal, 5%)
+      .btn {
+        color: @font-color;
+        background-color: @button-bg;
+        padding: 10px 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: darken(teal, 5%);
+          color: @white;
+        }
       }
     }
   }
-}// home
+} // home

@@ -1,1 +1,31 @@
 // Navigation Styles here
+header {
+  .border-bottom();
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: baseline;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+
+    nav {
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      a {
+        color: @shark;
+        text-decoration: none;
+        font-size: 1.6rem;
+        &:hover {
+          color: @eastern-blue;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

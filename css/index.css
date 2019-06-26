@@ -168,6 +168,34 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  border-bottom: 2px #C0C0C0 dashed;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: baseline;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+}
+header div nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+header div nav a {
+  color: #212529;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+header div nav a:hover {
+  color: #17A2B8;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -225,13 +253,14 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .btn-class {
+.home .content-pick .destination .btn {
+  color: #212529;
+  background-color: #17A2B8;
   padding: 10px 40px;
   border-radius: 10px;
-  background-color: teal;
-  color: white;
   cursor: pointer;
 }
-.home .content-pick .btn-class:hover {
+.home .content-pick .destination .btn:hover {
   background-color: #006667;
+  color: #FFFFFF;
 }

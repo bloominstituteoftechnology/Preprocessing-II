@@ -1,1 +1,14 @@
 // Mixins in here
+.custom-buttons(@color, @background){
+    display: flex;
+    color: @color;
+    background-color: @background;
+}
+.border-bottom() {
+    border-bottom: 2px @navigation-border dashed;
+}
+.image-style() {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
