@@ -172,19 +172,17 @@ header {
   border-bottom: 2px #C0C0C0 dashed;
 }
 header div {
+  width: 100%;
+  max-width: 80rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  vertical-align: baseline;
+  align-items: baseline;
   margin: 0 auto;
-  width: 90%;
-  max-width: 800px;
 }
 header div nav {
   width: 40%;
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 header div nav a {
   color: #212529;
@@ -243,24 +241,30 @@ header div nav a:hover {
 .home .content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
+.content-pick button.btn {
   color: #212529;
   background-color: #17A2B8;
-  padding: 10px 40px;
   border-radius: 10px;
   cursor: pointer;
+  padding: 10px 40px;
+  box-shadow: 0 9px #999;
 }
-.home .content-pick .destination .btn:hover {
+.content-pick button.btn:hover {
   background-color: #006667;
   color: #FFFFFF;
+}
+.content-pick button.btn:hover:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

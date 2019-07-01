@@ -1,21 +1,18 @@
 // Navigation Styles here
 header {
-  .border-bottom();
+  border-bottom: @border_bottom;
 
   div {
+    width: 100%;
+    max-width: 80rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    vertical-align: baseline;
+    align-items: baseline;
     margin: 0 auto;
-    width: 90%;
-    max-width: 800px;
-
     nav {
       width: 40%;
       display: flex;
-      justify-content: space-around;
-      margin: 0 auto;
+      justify-content: space-between;
       a {
         color: @shark;
         text-decoration: none;

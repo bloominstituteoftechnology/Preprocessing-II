@@ -22,7 +22,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @border_bottom;
 
     .text-content {
       padding-left: 1%;
@@ -43,26 +43,29 @@
       border-radius: 10px;
     }
   }
+}
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  button.btn {
+    .custom-buttons(@font-color, @button-bg, 10px, pointer);
+    padding: 10px 40px;
+    box-shadow: 0 9px #999;
+    &:hover {
+      background-color: darken(teal, 5%);
+      color: @white;
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-      .btn {
-        color: @font-color;
-        background-color: @button-bg;
-        padding: 10px 40px;
-        border-radius: 10px;
-        cursor: pointer;
-        &:hover {
-          background-color: darken(teal, 5%);
-          color: @white;
-        }
+      &:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
       }
     }
   }
