@@ -1,6 +1,7 @@
 // Navigation Styles here
 header {
-  border-bottom: @border_bottom;
+  border-bottom: @border-bottom;
+
 
   div {
     width: 100%;
@@ -9,10 +10,22 @@ header {
     justify-content: space-between;
     align-items: baseline;
     margin: 0 auto;
+      @media @mobile{
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10%;
+      align-items:  center;
+    }
+    
+    
     nav {
       width: 40%;
       display: flex;
       justify-content: space-between;
+      @media @mobile{
+        width: 100%;
+      }
+
       a {
         color: @shark;
         text-decoration: none;
