@@ -177,7 +177,7 @@ header {
 header h1 {
   font-size: 3rem;
 }
-@media (max-width 500px) {
+@media (max-width: 500px) {
   header h1 {
     font-size: 2rem;
   }
@@ -191,12 +191,12 @@ header nav a {
   color: gray;
   margin-right: 40px;
 }
-@media (max-width 500px) {
+@media (max-width: 500px) {
   header nav a {
     padding: 10px;
   }
 }
-@media (max-width 500px) {
+@media (max-width: 500px) {
   header nav {
     flex-direction: column;
     align-items: center;
@@ -217,7 +217,7 @@ header nav a {
   margin-top: 24px;
   margin-bottom: 30px;
 }
-@media (max-width 500px) {
+@media (max-width: 500px) {
   .home .header-img {
     margin-bottom: 10px;
   }
@@ -232,12 +232,28 @@ header nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -251,7 +267,7 @@ header nav a {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width 500px) {
+@media (max-width: 500px) {
   .home .inverse-content {
     width: 100%;
     flex-direction: column-reverse;
@@ -264,7 +280,7 @@ header nav a {
 .home .content-destination img {
   border-radius: 10px;
 }
-@media (max-width 500px) {
+@media (max-width: 500px) {
   .home .content-destination {
     width: 100%;
     padding-left: 1%;
@@ -280,7 +296,14 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .btn {
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 22px 10% 0 10%;
+    margin-bottom: 2px;
+  }
+}
+.home .content-pick .destination .btn {
   border: 1px solid darkgray;
   max-width: 150px;
   font-size: 15px;
@@ -291,4 +314,17 @@ header nav a {
   text-align: center;
   background: #17A2B8;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
