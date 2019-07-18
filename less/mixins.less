@@ -9,13 +9,13 @@
     align-items: @a;
 }
 
-.signUpBtn(){
+.signUpBtn(@c:@white, @w:200px,@fs:2rem){
     display: block;
     background-color: @button-bg;
-    color: @white;
+    color: @c;
     cursor: pointer;
-    width: 200px;
+    width: @w;
     height: 45px;
-    font-size: 2rem;
+    font-size: @fs;
     border-radius: 10px;
 }
