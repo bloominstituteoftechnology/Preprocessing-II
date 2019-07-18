@@ -8,6 +8,15 @@
         .flex-settings(space-between, center);
         .paddings(20px, 20px);
         color: @font-color;
+
+        @media @tablet {
+            flex-direction: column;
+            .flex-settings(center, center);
+
+            h1 {
+                padding-bottom: 20px;
+            }
+        }
     }
 
 
@@ -16,6 +25,10 @@
 nav {
     .flex-settings(space-between, center);
     width: 40%;
+
+    @media @tablet{
+        width: 100%;
+    }
 
     a {
         .p-and-a();
