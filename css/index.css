@@ -198,6 +198,10 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .intro-section {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 2%;
+}
 .home .intro-section img {
   margin-bottom: 3%;
 }
@@ -242,6 +246,15 @@ header nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+.home .content-pick .btn {
+  border-radius: 10px;
+  background-color: #128294;
+  padding: 0.8em 0.2em;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-right: 15%;
 }
 .home .content-pick .destination {
   width: 30%;
