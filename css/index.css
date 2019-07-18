@@ -168,6 +168,37 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  border: 2px solid purple;
+  width: 100%;
+  height: 40px;
+  background: beige;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu {
+  border: 2px dashed red;
+  width: 40%;
+  height: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn:hover {
+  background-color: #006667;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -185,24 +216,16 @@ html {
 .home .wrapper {
   width: 95%;
   height: 60px;
-}
-.home .nav-container {
-  width: 95%;
-  height: 40px;
-  display: flex;
+  border: solid dashed black;
   margin-top: 20px;
-}
-.home .fun {
-  width: 120px;
-  height: 35px;
-  margin-right: 300px;
-  font-size: 20px;
-}
-.home .menu {
-  width: 500px;
-  height: 35px;
   display: flex;
   justify-content: space-evenly;
+}
+.home .fun {
+  border: 2px dashed red;
+  width: 25%;
+  height: 35px;
+  margin-right: 300px;
   font-size: 20px;
 }
 .home .bus-photo {
