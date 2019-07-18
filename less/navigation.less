@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 40px;
+    h1 {
+        font-size: 3rem;
+        @media @mobile {
+            font-size: 2rem;
+        }
+    }
+
+    nav {
+        justify-content: space-between;
+        align-content: center;
+
+        a{
+            font-size: 1.5rem;
+            color: gray;
+            @media @mobile {
+                padding: 10px;
+              }
+        }
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+          }
+    }
+}

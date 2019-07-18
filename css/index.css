@@ -168,6 +168,39 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-top: 40px;
+}
+header h1 {
+  font-size: 3rem;
+}
+@media (max-width 500px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+header nav {
+  justify-content: space-between;
+  align-content: center;
+}
+header nav a {
+  font-size: 1.5rem;
+  color: gray;
+}
+@media (max-width 500px) {
+  header nav a {
+    padding: 10px;
+  }
+}
+@media (max-width 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
