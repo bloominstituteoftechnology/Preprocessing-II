@@ -71,6 +71,10 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    a {
+      text-decoration:none;
+      color:white;
+    }
     .btn {
       .button-style(lighten(@eastern-blue,2%));
     }
@@ -83,6 +87,16 @@
     }
     @media @mobile {
       flex-direction:column;
+    }
+  }
+  .form-section {
+    width:100%;
+    background-color:skyblue;
+    padding:5%;
+    .btn {
+      .button-style(lighten(@eastern-blue,2%));
+      margin:auto;
+      width:80%;
     }
   }
 }// home

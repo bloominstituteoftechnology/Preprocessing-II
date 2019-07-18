@@ -300,6 +300,10 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick a {
+  text-decoration: none;
+  color: white;
+}
 .home .content-pick .btn {
   border-radius: 10px;
   background-color: #18aac1;
@@ -322,4 +326,20 @@ header nav a {
   .home .content-pick {
     flex-direction: column;
   }
+}
+.home .form-section {
+  width: 100%;
+  background-color: skyblue;
+  padding: 5%;
+}
+.home .form-section .btn {
+  border-radius: 10px;
+  background-color: #18aac1;
+  padding: 0.8em 0.2em;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-right: 15%;
+  margin: auto;
+  width: 80%;
 }
