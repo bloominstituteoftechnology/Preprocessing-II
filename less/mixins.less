@@ -1,1 +1,33 @@
 // Mixins in here
+
+.btn{
+    background-color:#338377;
+    width: 85%;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    &:hover{
+        background-color: lightblue;
+        color: black;
+    }
+}
+
+// .btn(@bg-color:#FFBF27, @width:200px, @font:#000){
+//     display: block;
+//     background-color: @bg-color;
+//     margin: 0 10px 20px;
+//     cursor: pointer;
+//     width: @width;
+//     height: 45px;
+//     font-size: 2rem;
+//     border-radius: 10px;
+//     color:@font;
+  
+//      &:hover{
+//       background-color:@font;
+//       color:@bg-color; 
+//     }
