@@ -178,7 +178,7 @@ img {
 nav {
   margin: 0% auto;
   margin-top: 1%;
-  padding: 3% 0%;
+  padding: 1% 0%;
   width: 69.5%;
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -195,14 +195,15 @@ nav div div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: end;
   margin-right: 0px;
 }
 nav div div a {
-  width: 20%;
+  width: 22%;
   text-decoration: none;
   color: #212529;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  text-align: left;
 }
 @media (max-width: 500px) {
   nav {
