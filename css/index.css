@@ -310,6 +310,7 @@ nav a:hover {
   .home .content-pick {
     flex-direction: column;
     width: 70%;
+    margin: 0 auto;
   }
   .home .content-pick .destination {
     width: 100%;
