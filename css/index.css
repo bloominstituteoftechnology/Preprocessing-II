@@ -178,6 +178,14 @@ img {
   align-items: center;
   align-content: center;
 }
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .navigation div {
   width: 35%;
   display: flex;
@@ -191,6 +199,16 @@ img {
 }
 .navigation div a:hover {
   color: white;
+}
+@media (max-width: 500px) {
+  .navigation div {
+    width: 100%;
+    padding-top: 2%;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
 }
 .home header div {
   margin: 2% auto;
