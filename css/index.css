@@ -331,6 +331,8 @@ header nav a {
   width: 100%;
   background-color: skyblue;
   padding: 5%;
+  border-radius: 12px;
+  margin: 5% 0;
 }
 .home .form-section .btn {
   border-radius: 10px;
@@ -342,4 +344,12 @@ header nav a {
   margin-right: 15%;
   margin: auto;
   width: 80%;
+}
+.home .form-section input,
+.home .form-section select,
+.home .form-section textarea {
+  border-radius: 12px;
+}
+.home .form-section textarea {
+  width: 100%;
 }
