@@ -1,5 +1,13 @@
 .home {
-
+  header{
+    div{
+      margin: 2% auto;
+      p{
+        border-bottom: 2px dashed @navigation-border;
+        padding-bottom: 2%;
+      }
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +64,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .signUpBtn();
+        .displayflex(center, center);
+      }
     }
   }
 }// home

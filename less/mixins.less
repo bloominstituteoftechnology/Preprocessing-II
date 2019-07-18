@@ -1,1 +1,22 @@
 // Mixins in here
+
+//varibles
+
+//mixin
+.displayflex(@j, @a){
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.signUpBtn(){
+    display: block;
+    background-color: @button-bg;
+    color: @white;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
