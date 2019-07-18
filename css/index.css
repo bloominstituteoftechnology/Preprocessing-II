@@ -169,8 +169,8 @@ img {
   margin: 0 auto;
 }
 nav {
+  display: flex;
   justify-content: space-evenly;
-  border: 1px solid red;
 }
 nav a {
   text-decoration: none;
@@ -190,7 +190,7 @@ nav a {
 }
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   margin-top: 30px;
@@ -198,7 +198,6 @@ header {
 }
 header h1 {
   padding-bottom: 30px;
-  margin-left: 12%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -245,4 +244,17 @@ header h1 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: teal;
+  margin: 20px auto;
+  cursor: pointer;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #fff;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #fff;
+  color: teal;
 }

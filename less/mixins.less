@@ -1,1 +1,31 @@
 // Mixins in here
+
+.buttons (@bg-color:teal, @font:#fff) {
+  background-color: @bg-color;
+  margin: 20px auto;
+  cursor: pointer;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: @font;
+
+  &:hover {
+    background-color: @font;
+    color: @bg-color;
+  }
+
+  // @media @phone {
+  //   .buttons {
+  //     width: 90%;
+  //     height: 50px;
+  //     font-size: 2.5rem;
+  //   }
+  // }
+
+  // @media( max-width: 400px ) {
+  //   . {
+  //     background: green;
+  //     color: white;
+  //   }
+  // }
+}
