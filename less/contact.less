@@ -32,5 +32,25 @@ main {
         display: flex;
         flex-direction: column;
     }
+
+    .contact-button {
+        border: @silver 1px solid;
+        .button(@shark, 40px, 50%);
+        .flex-settings(center,center);
+        margin-top: 20px;
+
+        &:hover {
+            background: @eastern-blue;
+            font-weight: bold;
+        }
+        
+        @media @mobile {
+            width: 100%;
+        }
+
+        p {
+            padding-bottom: 0px;
+        }
+    }
     
 }

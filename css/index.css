@@ -373,3 +373,35 @@ main {
   display: flex;
   flex-direction: column;
 }
+.wrapper .contact-button {
+  border: #C0C0C0 1px solid;
+  background: #212529;
+  height: 40px;
+  width: 50%;
+  border-radius: 15px;
+  border: 1px solid #C0C0C0;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.wrapper .contact-button:hover {
+  background: #C0C0C0;
+  color: #212529;
+}
+.wrapper .contact-button:hover {
+  background: #17A2B8;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .wrapper .contact-button {
+    width: 100%;
+  }
+}
+.wrapper .contact-button p {
+  padding-bottom: 0px;
+}
