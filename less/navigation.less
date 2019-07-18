@@ -6,11 +6,22 @@ header {
     > * {
         width: 43%;
         margin: 4% 8%;
+        @media @mobile {
+            width:100%;
+            text-align:center;
+            margin: 2% 0%;
+        }
+    }
+    @media @mobile {
+        flex-direction:column;
     }
     nav {
         display:flex;
         justify-content:space-between;
         align-items:center;
+        @media @mobile {
+            justify-content:space-around;
+        }
         a {
             text-decoration:none;
             font-size: 18px;
