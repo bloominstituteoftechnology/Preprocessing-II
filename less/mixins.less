@@ -1,1 +1,19 @@
 // Mixins in here
+.button(@fontSize:18px){//used the parameteric mixin technically
+    background-color: @button-bg;
+    color: @button-color;
+    width: 84%;
+    height: 17%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px 30px 10px 30px;
+    font-size: @fontSize;
+
+}
+
+.flexBox(@flow, @justify, @align){
+    display: flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-items: @align;
+}

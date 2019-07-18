@@ -1,1 +1,54 @@
 // Navigation Styles here
+
+nav{
+    margin: 0% auto;
+    margin-top: 1%;
+    padding: 3% 0%;
+    width: 69.5%;
+
+    border-bottom: 2px dashed @navigation-border;
+    div{
+        .flexBox(row nowrap, space-between, center);
+        margin: 0 auto;
+        width: 800px;
+        div{
+            width: 40%;
+            .flexBox(row nowrap, space-between, stretch);
+            margin-right: 0px;
+
+            a{
+                width: 20%;
+                text-decoration: none;
+                color: @shark;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media @mobile{
+        margin: 0%;
+        border-bottom: 2px dashed @navigation-border;
+        width: 100%;
+        div{
+            margin: 0% 0%;
+            .flexBox(column wrap, center, center);
+            margin-bottom: 0%;
+
+            h1{
+                margin: 10px 0px;
+            }
+
+            div{
+                width: 100%;
+                .flexBox(row nowrap, space-around, center);
+
+                a{
+                    width: 13%;
+                    text-decoration: none;
+                    color: @shark;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
