@@ -1,4 +1,12 @@
 .home {
+  .header-img {
+    margin-top: 24px;
+    margin-bottom: 30px;
+
+    @media @mobile {
+      margin-bottom: 10px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -36,6 +44,10 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile {
+      width: 100%;
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -44,6 +56,10 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      width: 100%;
+      padding-left: 1%;
     }
   }
 
@@ -57,5 +73,9 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    .btn{
+      .create-button(@eastern-blue, @white);
+    }
   }
-}// home
+}
+// home

@@ -14,18 +14,20 @@ header {
 
     nav {
         justify-content: space-between;
-        align-content: center;
+        align-self: center;
 
         a{
             font-size: 1.5rem;
             color: gray;
+            margin-right:40px;
+            
             @media @mobile {
                 padding: 10px;
               }
-        }
-        @media @mobile {
-            flex-direction: column;
-            align-items: center;
           }
-    }
+            @media @mobile {
+                flex-direction: column;
+                align-items: center;
+              }   
+        }
 }
