@@ -1,1 +1,35 @@
 // Mixins in here
+
+.flex-settings(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.paddings(@top, @bottom){
+    padding-top: @top;
+    padding-bottom: @bottom;
+}
+
+.p-and-a() {
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+.button(@color, @height, @width){
+    background: @color;
+    height: @height;
+    width: @width;
+    border-radius: 15px;
+    border: 1px solid @silver;
+    color: @white;
+    font-weight: bold;
+    .p-and-a();
+    .flex-settings(center,center);
+
+    &:hover{
+        background: @silver;
+        color: @shark;
+    }
+}
+
