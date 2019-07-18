@@ -85,6 +85,10 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @tablet{
+      flex-direction: column;
+      .displayflex(center, center);
+    }
     @media @mobile{
       flex-direction: column;
       .displayflex(center, center);
@@ -93,12 +97,18 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @tablet{
+        width: 70%;
+      }
       @media @mobile {
         width: 70%;
       }
       .btn{
         .signUpBtn();
         .displayflex(center, center);
+        @media @tablet{
+          width: 100%;
+        }
         @media @mobile {
           width: 100%;
         }
