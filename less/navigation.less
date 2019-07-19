@@ -5,8 +5,7 @@
     justify-content: space-between;
     align-items: center;
     @media @mobile {
-        flex-wrap: wrap;
-        justify-content: center;
+        .mobileflex();
     }
 
     
@@ -15,8 +14,8 @@
         display: flex;
         justify-content: space-around;
         @media @mobile {
-            width: 100%;
-            flex-direction: row;
+            .mobileflex();
+            justify-content: space-between;
         }
     }
 
