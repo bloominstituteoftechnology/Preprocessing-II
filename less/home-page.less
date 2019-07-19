@@ -16,6 +16,7 @@
 
       img {
         border-radius: 10px;
+        .radius();
       }
     }
   }
@@ -23,22 +24,28 @@
 .middle-section {
   display: flex;
   flex-direction: column;
+  .marginten();
+  border-top: 1px dotted grey;
 
   .first-child {
     display: flex;
     flex-direction: row-reverse;
+    .marginten();
 
     img {
       width: 50%;
+      .radius();
     }
   }
 
   .second-child {
     display: flex;
     flex-direction: row-reverse;
+    .marginten();
 
     img {
       width: 50%;
+      .radius();
     }
   }
 }
@@ -46,15 +53,27 @@
 .pick {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background: red;
+  .custom-layout(space-between, center);
+  .marginten();
+  margin-left: 150px;
+  width: 60%;
 
   img {
     width: 50%;
+    .radius();
   }
 }
 
 .content-pick {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  .marginten();
+  border-top: 1px dotted grey;
+  align-content: space-around;
+}
+
+.btn {
+  .tealbuttn();
+  .radius();
 }
