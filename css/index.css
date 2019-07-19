@@ -6,16 +6,6 @@
   width: 100%;
   margin: 0 auto;
 }
-.tealbuttn {
-  background-color: teal;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
 .radius {
   border-radius: 8px;
 }
@@ -194,21 +184,35 @@ header nav {
   justify-content: space-around;
   width: 30%;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.home .content-section .text-content .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home .content-section .text-content img {
   border-radius: 10px;
   border-radius: 8px;
 }
@@ -217,6 +221,13 @@ header nav {
   flex-direction: column;
   padding: 10px;
   border-top: 1px dotted grey;
+}
+@media (max-width: 500px) {
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .middle-section .first-child {
   display: flex;
@@ -232,7 +243,7 @@ header nav {
   flex-direction: row-reverse;
   padding: 10px;
 }
-.middle-section .second-child img {
+.middle-section img {
   width: 50%;
   border-radius: 8px;
 }
@@ -253,20 +264,9 @@ header nav {
   display: flex;
   text-align: center;
   width: 100%;
-  padding: 10px;
   border-top: 1px dotted grey;
   align-content: space-around;
-}
-.btn {
-  background-color: teal;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 8px;
+  padding: 10px;
 }
 .footer {
   width: 100%;
