@@ -1,20 +1,24 @@
 // Mixins in here
 
-.btn{
-    background-color:#338377;
-    width: 85%;
+.btn-mixin(@btn-color:#338377, @width: 85%, @font:white){
+    background-color: @btn-color;
+    width: @width;
     text-align: center;
     padding-top: 12px;
     cursor: pointer;
     height: 45px;
     font-size: 2rem;
     border-radius: 10px;
-    color: white;
+    color: @font;
+    
     &:hover{
         background-color: lightblue;
         color: black;
+        
     }
 }
+
+
 
 // .btn(@bg-color:#FFBF27, @width:200px, @font:#000){
 //     display: block;
@@ -31,3 +35,18 @@
 //       background-color:@font;
 //       color:@bg-color; 
 //     }
+
+
+
+// .button-container{
+//     .custom-layout(center, center);
+//   }
+//   .sign-up{
+//     .custom-button(green, 400px, white);
+//   }
+//   .check-in{
+//     .custom-button(lavender, 300px, purple);
+//   }
+//   .book-flight-btn {
+//    .custom-button();
+//   }

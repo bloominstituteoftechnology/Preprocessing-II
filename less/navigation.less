@@ -3,30 +3,40 @@
 .nav-header{
     border-bottom: 2px dashed #C0C0C0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+    @media @mobile{
+        flex-direction: column;
+        width: 100%;
+    }
+      }
+    //     @media @mobile-variable-name {
+//     some mobile width styling 
+//     }
+
+
+
 .fun-bus{
     margin: auto;
-    margin-right: 11%;
-
+    
 }
 
 .nav-bar{
     margin: auto;
-    margin-left: 11%;
-}
-
-nav a{
-    padding: 20px;
 }
 
 .bus-img{
     display: flex;
     margin: auto;
     width: 800px;
+    @media @mobile{
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .welcome-text{
@@ -35,4 +45,9 @@ nav a{
     padding-top: 30px;
     padding-bottom: 20px;
     border-bottom: 2px dashed #C0C0C0;
+    @media @mobile{
+        flex-direction: column;
+        width: 100%;
+    }
+
 }
