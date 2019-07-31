@@ -1,1 +1,23 @@
 // Mixins in here
+.btn-generator{
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: @button-bg;
+    width: 80%;
+    color: white;
+    text-align: center;
+    font-weight: 580;
+
+    @media (max-width: 500px) {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+.animation{
+    animation-name: hover;
+	animation-duration: 2s;
+    animation-fill-mode: forwards;
+}

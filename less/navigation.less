@@ -1,1 +1,44 @@
 // Navigation Styles here
+.top-nav{
+    margin: 0 auto;
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .nav{
+        margin-top: 1%;
+        margin-left: 6%;
+        margin-bottom: 3%;
+    }
+
+    .navigation{
+        font-size: 1.2rem;
+        margin-top: 3%;
+        margin-right: 2%;
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            .animation();
+            padding: 10px;
+        }
+    }
+}
