@@ -168,10 +168,10 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.containerhome .NavHeader {
+.body .containerhome .NavHeader {
   width: 75%;
 }
-.containerhome .NavHeader .PageTitle .nav a {
+.body .containerhome .NavHeader .PageTitle .nav a {
   text-decoration: none;
 }
 .footer {
