@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.containerhome .NavHeader {
+  width: 75%;
+}
+.containerhome .NavHeader .PageTitle .nav a {
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
