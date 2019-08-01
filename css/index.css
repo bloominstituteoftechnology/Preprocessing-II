@@ -186,8 +186,9 @@ img {
   padding: 20px;
 }
 .home .BusHeader-Section {
-  border-top-style: dashed;
-  border-top-color: #17A2B8;
+  border-bottom-style: dashed;
+  border-bottom-color: #C0C0C0;
+  border-bottom-width: 2px;
 }
 .home .BusHeader-Section .WelcomeTitle {
   text-decoration: bold;
