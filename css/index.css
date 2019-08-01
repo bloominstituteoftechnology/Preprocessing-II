@@ -197,6 +197,9 @@ img {
   border-bottom-color: #C0C0C0;
   border-bottom-width: 2px;
 }
+.home .BusHeader-Section img {
+  padding-bottom: 2rem;
+}
 .home .BusHeader-Section .WelcomeTitle {
   text-decoration: bold;
 }
