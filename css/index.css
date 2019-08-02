@@ -174,10 +174,22 @@ header {
   align-items: center;
   margin: 50px 0px;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    margin: 20px 0px 0px 0px;
+  }
+}
 nav {
   display: flex;
   justify-content: space-around;
   width: 50%;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 nav a {
   text-decoration: none;
