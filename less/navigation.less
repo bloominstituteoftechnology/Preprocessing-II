@@ -6,13 +6,21 @@
     .PageTitle {
       display: flex;
       border: 1px solid red;
+      justify-content: space-between;
+      @media @mobile{
+        display: flex;
+        flex-direction: column;
+      }
       nav{
-        display: flexbox;
-        justify-content: flex-end;
+        justify-content: right;
+        align-content: right;
+        width: 95%;
+        display: flex;
+        border: 1px solid red;
         a{
-        display: flexbox; 
+          padding: .50rem; 
         color: @font-color;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-decoration: none;
         }
       } 

@@ -180,15 +180,25 @@ img {
 .container .NavHeader .PageTitle {
   display: flex;
   border: 1px solid red;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .NavHeader .PageTitle {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .NavHeader .PageTitle nav {
-  display: flexbox;
-  justify-content: flex-end;
+  justify-content: right;
+  align-content: right;
+  width: 95%;
+  display: flex;
+  border: 1px solid red;
 }
 .container .NavHeader .PageTitle nav a {
-  display: flexbox;
+  padding: 0.5rem;
   color: #212529;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 .footer {
@@ -284,15 +294,11 @@ img {
     flex-direction: column;
   }
 }
-.container .content-pick .btn {
-  width: 100%;
+.container .content-pick .button {
+  width: 90%;
   height: 4rem;
   background-color: #17A2B8;
   border-radius: 12px;
   font-size: 2.5rem;
-}
-@media (max-width: 500px) {
-  .container .content-pick .btn {
-    text-size: 1rem;
-  }
+  border: 1px solid red;
 }
