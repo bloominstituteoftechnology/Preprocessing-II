@@ -1,4 +1,12 @@
 // Mixins in here
+
+.hoverfun(@color1){
+  background-color:@color1;
+&:hover {
+	// The compiled color returned is #006667 
+    background-color: darken(@color1,15%)
+  }
+}
 .sbutton(@pad,@radius,@bkcolor,@txtcolor,@width,@size) {
     padding: @pad;
     border-radius: @radius;
@@ -6,7 +14,27 @@
     color: @txtcolor;
     width: @width;
     font-size:@size; 
-    &:hover {
-      background-color: darken(@bkcolor, 5%);
-    }
+    .hoverfun(@bkcolor)
+ 
   }
+
+  
+.animation(@time){
+  @keyframes funbus{
+    0%   {background-color:red; left:0px; top:0px;}
+    10%  {background-color:yellow; left:40px; top:0px;}
+    20%  {background-color:blue; left:40px; top:80px;}
+    30%  {background-color:green; left:0px; top:80px;}
+    40% {background-color :gold; left:0px; top:0px;}
+    50% {background-color:purple; left:40px; top:0px;}
+    60% {background-color:rgb(0, 81, 128); left:40px; top:80px;}
+    70% {background-color:rgb(128, 73, 0); left:0px; top:80px;}
+    80% {background-color:aqua; left:0px; top:40px;}
+    100% {background-color:silver; left:0px; top:0px;}
+  };
+
+    position: relative;
+    animation-name: funbus;
+    animation-duration:@time;
+  
+}
