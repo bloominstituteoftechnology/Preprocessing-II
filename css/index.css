@@ -255,6 +255,7 @@ img {
 }
 @media (max-width: 500px) {
   .inverse-content {
+    display: flex;
     flex-direction: column-reverse;
   }
 }
@@ -264,12 +265,25 @@ img {
 }
 @media (max-width: 500px) {
   .inverse-content .text-content {
+    display: flex;
     flex-direction: column-reverse;
   }
 }
 .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .inverse-content .img-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content img {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .content-destination {
   width: 75%;

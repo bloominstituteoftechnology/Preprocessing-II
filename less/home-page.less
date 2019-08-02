@@ -34,19 +34,42 @@
     border-bottom: 2px dashed 
     @navigation-border;
     @media @mobile{
+      display: flex;
       flex-direction: column-reverse;
     }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
       @media @mobile{
+       display: flex;
+       flex-direction: column-reverse;
+      }
+      h2{
+        @media @mobile{
+        display: flex;
         flex-direction: column-reverse;
       }
+        p{
+          @media @mobile{
+            display: flex;
+            flex-direction: column-reverse;
+          }
+        }
     }
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile{
+        display: flex;
+        flex-direction: column-reverse;
+      }
     }
+      img{
+        @media @mobile{
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
   }
 
   .content-destination {
@@ -90,4 +113,3 @@
         }    
       }
   }
-
