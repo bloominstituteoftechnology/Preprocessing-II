@@ -1,1 +1,12 @@
 // Mixins in here
+.sbutton(@pad,@radius,@bkcolor,@txtcolor,@width,@size) {
+    padding: @pad;
+    border-radius: @radius;
+    background-color: @bkcolor;
+    color: @txtcolor;
+    width: @width;
+    font-size:@size; 
+    &:hover {
+      background-color: darken(@bkcolor, 5%);
+    }
+  }
