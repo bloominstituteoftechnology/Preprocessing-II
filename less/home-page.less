@@ -71,13 +71,16 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media @mobile{
+      @media @mobile {
         display: flexbox;
         flex-direction: column;
       }
     }
-      .button{
-        .btnstyle();    
+      .btn button {
+        .btnstyle();
+        @media mobile {
+          .buttonstyle();
+        }    
       }
   }
 }
