@@ -1,3 +1,21 @@
+header img,
+.content-destination img {
+  transition: transform 3s;
+}
+header img:hover,
+.content-destination img:hover {
+  transform: scale(1.3);
+}
+.content-section img {
+  transition: transform 2s;
+}
+.content-section img:hover {
+  transform: translate(50px, 50px);
+}
+.intro-content:hover {
+  background-color: lightblue;
+  opacity: 0.9;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,6 +191,11 @@ img {
     width: 450px;
   }
 }
+@media (max-width: 700px) {
+  .container {
+    width: 625px;
+  }
+}
 header {
   width: 100%;
 }
@@ -187,6 +210,11 @@ header .top-bar {
 @media (max-width: 500px) {
   header .top-bar h1 {
     transform: scale(0.8);
+  }
+}
+@media (max-width: 700px) {
+  header .top-bar h1 {
+    transform: scale(0.9);
   }
 }
 header .top-bar nav {
@@ -334,11 +362,22 @@ header .fun-bus {
     padding: 0 0 30px 0;
   }
 }
+@media (max-width: 700px) {
+  .home .content-pick .destination {
+    width: 38%;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
     width: 100%;
     margin: auto;
+  }
+}
+@media (max-width: 700px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 .home .intro-content {
