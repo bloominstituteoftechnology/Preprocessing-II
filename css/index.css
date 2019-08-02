@@ -182,12 +182,12 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 1.8rem;
-  color: black;
+  color: #212529;
 }
 hr {
   border-style: dashed;
   border-width: 2px;
-  color: lightgrey;
+  color: #C0C0C0;
   margin: 0;
 }
 .footer {
@@ -256,11 +256,11 @@ hr {
 hr {
   border-style: dashed;
   border-width: 1px;
-  color: lightgrey;
+  color: #C0C0C0;
 }
 .btn {
-  background-color: #008080;
-  color: #fff;
+  background-color: #17A2B8;
+  color: #212529;
   font-size: 2rem;
   padding: 15px;
   border-radius: 13px;
