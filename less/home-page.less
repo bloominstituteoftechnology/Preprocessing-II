@@ -6,9 +6,6 @@
       img{
        padding-bottom: 2rem;
       }
-      .WelcomeTitle{
-        text-decoration: bold;
-      }
   }
   .content-section {
     margin: 30px 0;
@@ -20,7 +17,6 @@
       padding-right: 1%;
       @media @mobile{
       display: flexbox;
-      align-content: flex-start;
       }
         .Pgraph1{
           @media @mobile{
@@ -28,7 +24,7 @@
             flex-direction: row;
           }
         }
-  }
+    }
     .img-content {
       width: 48%;
       padding-left: 1%;
@@ -41,18 +37,16 @@
           display: flex;
         }
       }
-    
+    }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
@@ -62,7 +56,6 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
     img {
       border-radius: 10px;
     }
@@ -77,9 +70,16 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-      button {
-        .button();
+      @media @mobile{
+        display: flexbox;
+        flex-direction: column;
       }
+    }
+      .btn {
+        .button();
+          @media @mobile{
+          text-size: 1rem;
+          }
+        }
   }
-}// home
+ }

@@ -1,9 +1,7 @@
-.button {
-  width: 100%;
-  height: 4rem;
-  background-color: #17A2B8;
-  border-radius: 12px;
-  font-size: 2.5rem;
+.center {
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -175,19 +173,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.containerhome .NavHeader {
-  padding: 2rem;
-  width: 75%;
+.container .NavHeader {
+  padding: 1.5rem;
+  width: 100%;
 }
-.containerhome .NavHeader .PageTitle {
+.container .NavHeader .PageTitle {
   align-content: left;
   justify-content: left;
+  margin-left: 3rem;
+  display: flex;
 }
-.containerhome .NavHeader .PageTitle .nav {
+.container .NavHeader .PageTitle .nav {
   align-content: right;
   justify-content: right;
 }
-.containerhome .NavHeader .PageTitle .nav a {
+.container .NavHeader .PageTitle .nav a {
   text-decoration: none;
 }
 .footer {
@@ -209,19 +209,11 @@ img {
 .home .BusHeader-Section img {
   padding-bottom: 2rem;
 }
-.home .BusHeader-Section .WelcomeTitle {
-  text-decoration: bold;
-}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .home .content-section {
-    display: flexbox;
-  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -229,16 +221,31 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
-    display: flex;
+    display: flexbox;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content .Pgraph1 {
+    display: flexbox;
+    flex-direction: row;
   }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    display: flex;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
-  display: column;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    display: flex;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -269,10 +276,21 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick button {
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    display: flexbox;
+    flex-direction: column;
+  }
+}
+.home .content-pick .btn {
   width: 100%;
   height: 4rem;
   background-color: #17A2B8;
   border-radius: 12px;
   font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    text-size: 1rem;
+  }
 }
