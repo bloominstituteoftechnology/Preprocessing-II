@@ -1,8 +1,3 @@
-.center {
-  margin: 0 auto;
-  justify-content: center;
-  align-content: center;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -182,18 +177,29 @@ img {
   display: flex;
   border: 1px solid red;
   justify-content: space-between;
-  align-content: left;
 }
 @media (max-width: 500px) {
   .container .NavHeader .PageTitle {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
   }
 }
 .container .NavHeader .PageTitle nav {
-  margin-left: width: 95%;
+  justify-content: flex-end;
+  width: 45%;
   display: flex;
   border: 1px solid red;
+}
+@media (max-width: 500px) {
+  .container .NavHeader .PageTitle nav {
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
 }
 .container .NavHeader .PageTitle nav a {
   padding: 0.5rem;

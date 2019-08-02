@@ -8,16 +8,20 @@
       display: flex;
       border: 1px solid red;
       justify-content: space-between;
-      align-content: left;
       @media @mobile{
         display: flex;
         flex-direction: column;
+        .center();
       }
-      nav{
-        margin-left: 
-        width: 95%;
+      nav{ 
+        justify-content: flex-end;
+        width: 45%;
         display: flex;
         border: 1px solid red;
+        @media @mobile{
+          .center();
+          width: 100%;
+        }
         a{
         padding: .50rem; 
         color: @font-color;
