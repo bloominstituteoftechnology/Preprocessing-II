@@ -1,1 +1,19 @@
 // Mixins in here
+.btn(@button_text, @button_width, @button_height, @button_color){
+    width: @button_width;
+    padding: @button_height 2px;
+    font-size: @button_text;
+    border-radius: 15px;
+    background-color:@button_color;
+    color: white;
+    text-align: center;
+
+    @media @mobile{
+        .contentFill();
+      }
+}
+
+.contentFill(){
+    width:100%;
+    margin:auto;
+}
