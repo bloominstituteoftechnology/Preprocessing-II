@@ -372,10 +372,7 @@ header h1 {
   background-color: teal;
 }
 .home .content-pick .destination .btn .sbutton:hover {
-  background-color: #003334;
-}
-.home .content-pick .destination .btn .sbutton:hover {
-  background-color: #004d4d;
+  background-color: #001a1a;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn .sbutton {

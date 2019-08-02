@@ -3,8 +3,8 @@
 .hoverfun(@color1){
   background-color:@color1;
 &:hover {
-	// The compiled color returned is #006667 
-    background-color: darken(@color1,15%)
+
+    background-color: darken(@color1,20%)
   }
 }
 .sbutton(@pad,@radius,@bkcolor,@txtcolor,@width,@size) {
@@ -14,7 +14,7 @@
     color: @txtcolor;
     width: @width;
     font-size:@size; 
-    .hoverfun(@bkcolor)
+    .hoverfun(@bkcolor);
  
   }
 
