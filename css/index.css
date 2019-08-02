@@ -178,9 +178,11 @@ img {
   width: 100%;
 }
 .container .NavHeader .PageTitle {
+  width: 100%;
   display: flex;
   border: 1px solid red;
   justify-content: space-between;
+  align-content: left;
 }
 @media (max-width: 500px) {
   .container .NavHeader .PageTitle {
@@ -189,9 +191,7 @@ img {
   }
 }
 .container .NavHeader .PageTitle nav {
-  justify-content: right;
-  align-content: right;
-  width: 95%;
+  margin-left: width: 95%;
   display: flex;
   border: 1px solid red;
 }
