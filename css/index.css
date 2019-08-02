@@ -303,3 +303,8 @@ img {
   border: 1px solid red;
   color: #FFFFFF;
 }
+@media (max-width: 500px) {
+  .container .content-pick .btn button {
+    font-size: 2rem;
+  }
+}
