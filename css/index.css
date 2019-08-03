@@ -6,10 +6,11 @@
   font-size: 2.5rem;
   color: #FFFFFF;
 }
-.center {
+.Center {
+  border: 1px solid red;
   margin: 0 auto;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -195,9 +196,10 @@ img {
   .container .NavHeader .PageTitle {
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
     margin: 0 auto;
     justify-content: center;
-    align-content: center;
+    align-items: center;
   }
 }
 .container .NavHeader .PageTitle nav {
@@ -208,9 +210,10 @@ img {
 }
 @media (max-width: 500px) {
   .container .NavHeader .PageTitle nav {
+    border: 1px solid red;
     margin: 0 auto;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100%;
   }
 }
@@ -233,7 +236,7 @@ img {
 }
 .container .BusHeader-Section {
   border-bottom-style: dashed;
-  border-bottom-style: #C0C0C0;
+  border-bottom-color: #C0C0C0;
   border-bottom-width: 2px;
 }
 .container .BusHeader-Section img {
@@ -249,6 +252,10 @@ img {
   .container .content-section {
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
 }
 .container .content-section .text-content {
@@ -265,6 +272,11 @@ img {
 .container .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .container .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .container .inverse-content .text-content {
   padding-left: 1%;
@@ -294,8 +306,12 @@ img {
 }
 @media (max-width: 500px) {
   .container .content-pick {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
+    border: 1px solid red;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
 }
 .container .content-pick .destination {
@@ -305,6 +321,10 @@ img {
 @media (max-width: 500px) {
   .container .content-pick .destination {
     width: 75%;
+    border: 1px solid red;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
 }
 .container .content-pick .destination button {
@@ -317,6 +337,6 @@ img {
 }
 @media (max-width: 500px) {
   .container .content-pick .destination button {
-    font-size: 1.5rem;
+    font: 1.5rem;
   }
 }
