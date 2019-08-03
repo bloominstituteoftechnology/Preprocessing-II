@@ -1,7 +1,7 @@
 .container {
   .BusHeader-Section {
    border-bottom-style: dashed;
-   border-bottom-style: @navigation-border;
+   border-bottom-color: @navigation-border;
    border-bottom-width: 2px;
     img{
       padding-bottom: 2rem;
@@ -16,17 +16,15 @@
     @media @mobile{
       display: flex;
       flex-direction: column;
+      .Center();
     }
-
     .text-content {
       width: 48%;
       padding-right: 1%;
     }
-
     .img-content {
       width: 48%;
       padding-left: 1%;
-
       img {
         border-radius: 10px;
       }
@@ -36,12 +34,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0; 
@@ -54,33 +50,32 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
     img {
       border-radius: 10px;
     }
   }
-
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
     @media @mobile {
-      display: flexbox;
+      display: flex;
       flex-direction: column;
+      .Center();
     }
-
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media @mobile{
+      @media @mobile {
         width: 75%;
+        .Center();
       }
       button {
         .btnstyle();
         @media @mobile{
-          font-size: @btn-m-font;
-        }
+          .btnstyle(@btn-m-font);
+        } 
       } 
     }
   }
