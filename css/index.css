@@ -1,3 +1,16 @@
+.btnstyle {
+  width: 90%;
+  height: 4rem;
+  background-color: #17A2B8;
+  border-radius: 12px;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+.center {
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -220,14 +233,13 @@ img {
 }
 .container .BusHeader-Section {
   border-bottom-style: dashed;
-  border-bottom-color: #C0C0C0;
+  border-bottom-style: #C0C0C0;
   border-bottom-width: 2px;
 }
 .container .BusHeader-Section img {
   padding-bottom: 2rem;
 }
 .container .content-section {
-  border: 1px solid red;
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
@@ -235,6 +247,7 @@ img {
 }
 @media (max-width: 500px) {
   .container .content-section {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -246,108 +259,64 @@ img {
   width: 48%;
   padding-left: 1%;
 }
-.container .content-section img {
+.container .content-section .img-content img {
   border-radius: 10px;
 }
-.inverse-content {
+.container .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width: 500px) {
-  .inverse-content {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.inverse-content .text-content {
+.container .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-@media (max-width: 500px) {
-  .inverse-content .text-content {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-@media (max-width: 500px) {
-  .inverse-content .text-content h2 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-@media (max-width: 500px) {
-  .inverse-content .text-content h2 p {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.inverse-content .text-content .img-content {
+.container .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
 @media (max-width: 500px) {
-  .inverse-content .text-content .img-content {
+  .container .inverse-content .img-content {
     display: flex;
-    flex-direction: column-reverse;
   }
 }
-@media (max-width: 500px) {
-  .inverse-content .text-content img {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.inverse-content .content-destination {
+.container .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.inverse-content .content-destination img {
+.container .content-destination img {
   border-radius: 10px;
 }
-.inverse-content .content-pick {
-  border: 1px solid red;
+.container .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .inverse-content .content-pick {
-    width: 75%;
-    display: flex;
+  .container .content-pick {
+    display: flexbox;
     flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    align-content: center;
   }
 }
-.inverse-content .content-pick .destination {
+.container .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .inverse-content .content-pick .destination {
+  .container .content-pick .destination {
     width: 75%;
-    display: flex;
-    flex-direction: column;
   }
 }
-@media (max-width: 500px) {
-  .inverse-content .content-pick .destination p {
-    display: flex;
-  }
-}
-.inverse-content .content-pick .btn button {
+.container .content-pick .destination button {
   width: 90%;
   height: 4rem;
   background-color: #17A2B8;
   border-radius: 12px;
   font-size: 2.5rem;
-  border: 1px solid red;
   color: #FFFFFF;
 }
 @media (max-width: 500px) {
-  .inverse-content .content-pick .btn button {
-    font-size: 2rem;
+  .container .content-pick .destination button {
+    font-size: 1.5rem;
   }
 }
