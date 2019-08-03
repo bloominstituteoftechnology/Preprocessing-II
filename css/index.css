@@ -256,7 +256,7 @@ img {
 @media (max-width: 500px) {
   .inverse-content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .inverse-content .text-content {
@@ -269,37 +269,50 @@ img {
     flex-direction: column-reverse;
   }
 }
-.inverse-content .img-content {
+@media (max-width: 500px) {
+  .inverse-content .text-content h2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content .text-content h2 p {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.inverse-content .text-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
 @media (max-width: 500px) {
-  .inverse-content .img-content {
+  .inverse-content .text-content .img-content {
     display: flex;
     flex-direction: column-reverse;
   }
 }
 @media (max-width: 500px) {
-  .inverse-content img {
+  .inverse-content .text-content img {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-.content-destination {
+.inverse-content .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.content-destination img {
+.inverse-content .content-destination img {
   border-radius: 10px;
 }
-.content-pick {
+.inverse-content .content-pick {
+  border: 1px solid red;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .content-pick {
+  .inverse-content .content-pick {
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -308,23 +321,23 @@ img {
     align-content: center;
   }
 }
-.content-pick .destination {
+.inverse-content .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .content-pick .destination {
+  .inverse-content .content-pick .destination {
     width: 75%;
     display: flex;
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
-  .content-pick .destination p {
+  .inverse-content .content-pick .destination p {
     display: flex;
   }
 }
-.content-pick .btn button {
+.inverse-content .content-pick .btn button {
   width: 90%;
   height: 4rem;
   background-color: #17A2B8;
@@ -334,7 +347,7 @@ img {
   color: #FFFFFF;
 }
 @media (max-width: 500px) {
-  .content-pick .btn button {
+  .inverse-content .content-pick .btn button {
     font-size: 2rem;
   }
 }
