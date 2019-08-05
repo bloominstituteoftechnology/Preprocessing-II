@@ -1,13 +1,14 @@
 .home {
-
+  @media @mobile {
+    width: 100%;
+    border: 1px solid red;
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -41,7 +42,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      border: 1px solid red;
+    }
     img {
       border-radius: 10px;
     }
@@ -58,4 +61,4 @@
       margin-bottom: 30px;
     }
   }
-}// home
+} // home
