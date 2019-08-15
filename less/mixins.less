@@ -1,8 +1,29 @@
 // Mixins in here
 
+//mixin for navbar
+.navbar{
+    .flex-between();
+    padding:4% 0;  
+    font-weight: 590; 
+    
+   
+    nav{
+        .flex-between();
+        font-family:inherit; 
+        font-size:1.8em; 
+        min-width:40%; 
 
+        
+        a{
+            text-decoration: none; 
+            color: @shark; 
+        }
+    }
+}
 
-
+.border-bottom{
+    border-bottom: 2px dashed @navigation-border;
+}
 //button mixin
 
 .button(@color:@white, @max-width:82%, @background:@eastern-blue, @font-family:inherit){
@@ -15,3 +36,8 @@
     text-align: center; 
     border-radius: 15px; 
 }
+.flex-between{
+    display:flex; 
+    justify-content:space-between; 
+}
+
