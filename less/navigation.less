@@ -1,1 +1,32 @@
 // Navigation Styles here
+.container {
+  .NavHeader {
+    padding: 3rem;
+    width: 100%;
+    .PageTitle {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media @mobile{
+        display: flex;
+        flex-direction: column;
+        .Center();
+      }
+      nav{ 
+        justify-content: flex-end;
+        width: 45%;
+        display: flex;
+        @media @mobile {
+          .Center();
+          width: 100%;
+        }
+        a {
+        padding: .50rem; 
+        color: @font-color;
+        font-size: 2rem;
+        text-decoration: none;
+        }
+      } 
+    } 
+  }  
+}
