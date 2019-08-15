@@ -173,7 +173,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 22%;
+  padding: 2% 17%;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
@@ -185,7 +185,6 @@ img {
 @media (max-width: 500px) {
   .header h1 {
     padding: 15px 0;
-    font-size: 2rem;
   }
 }
 .header .navTop {
@@ -200,14 +199,14 @@ img {
   }
 }
 .header .navTop a {
-  padding: 0 20px;
+  padding: 0 15px;
   text-decoration: none;
   color: black;
   font-size: 12px;
 }
 @media (max-width: 500px) {
   .header .navTop a {
-    padding: 0px;
+    padding: 0 10px;
   }
 }
 .footer {
