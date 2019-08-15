@@ -1,1 +1,78 @@
 // Navigation Styles here
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .welcome {
+    .we();
+    @media @mobile {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+  .top {
+    .topnav();
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  .funbus {
+    display: flex;
+    margin-left: 520px;
+    @media @mobile {
+      display: flex;
+      margin-left: 15rem;
+      width: 40%;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin-left: 250px;
+    @media @mobile {
+      display: flex;
+      align-content: flex-end;
+      margin-top: 2rem;
+      margin-left: 2rem;
+      width: 100%;
+    }
+  }
+  a {
+    color: @font-color;
+    text-decoration: none;
+    font-size: 15px;
+    @media @mobile {
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-end;
+      width: 100%;
+    }
+  }
+}
+
+.buspic {
+  width: 800px;
+  @media @mobile {
+    width: 100%;
+  }
+}
+button {
+  .buttonc(center, center);
+  @media @mobile {
+    display: flex;
+    width: 35rem;
+  }
+}

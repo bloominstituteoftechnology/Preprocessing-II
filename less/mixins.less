@@ -1,1 +1,30 @@
 // Mixins in here
+.we () {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 4rem 0 2rem 0;
+  width: 800px;
+  border-bottom: 1px dashed @navigation-border;
+}
+.topnav() {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px dashed @navigation-border;
+  width: 100%;
+  padding: 3rem;
+}
+
+//Parametric Mixins
+
+.buttonc (@justify,@align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  border-radius: 1rem;
+  height: 5rem;
+  width: 20rem;
+  font-size: 2rem;
+  background-color: @button-bg;
+  color: white;
+}
