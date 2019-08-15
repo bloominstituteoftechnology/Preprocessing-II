@@ -3,9 +3,15 @@
 //mixin for navbar
 .navbar{
     .flex-between();
-    padding:4% 0;  
+    padding:3% 0;  
     font-weight: 590; 
-    
+    @media @mobile{
+        .flex-column(column); 
+        padding:4% 8%;
+        h1{
+            text-align: center; 
+        }
+    }
    
     nav{
         .flex-between();
@@ -19,6 +25,8 @@
             color: @shark; 
         }
     }
+
+
 }
 
 .border-bottom{
@@ -28,7 +36,7 @@
 
 .button(@color:@white, @max-width:82%, @background:@eastern-blue, @font-family:inherit){
     color:@color; 
-    padding: 5%; 
+    padding: 3%; 
     max-width:@max-width; 
     background:@background; 
     font-size: 2em; 
@@ -36,6 +44,19 @@
     text-align: center; 
     border-radius: 15px; 
 }
+
+
+//flex
+
+.flex-column(@column:column){
+    display:flex; 
+    flex-direction:@column; 
+    justify-content:center;
+    align-items:center; 
+     
+
+}
+
 .flex-between{
     display:flex; 
     justify-content:space-between; 
