@@ -1,1 +1,22 @@
 // Navigation Styles here
+header {
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+  padding: 20px 0;
+  border-bottom: 2px dashed @navigation-border;
+  .navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    .links  {
+       margin-right: 10px;
+       a {
+         margin-left: 12px;
+         text-decoration: none;
+         font-size: 1.6rem;
+         color: black;
+       }
+    }
+  }
+}
