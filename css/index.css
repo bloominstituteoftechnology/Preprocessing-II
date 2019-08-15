@@ -1,3 +1,6 @@
+@bg {
+  background-color: #5F9EA0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,16 +171,88 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
+.top {
+  margin-left: 18%;
+  margin-right: 18%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dashed lightgray;
+  padding: 30px;
+  padding-left: 20px;
 }
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
+@media (max-width: 500px) {
+  .top {
+    width: 90%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 0;
+  }
+}
+.top .navbar {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .top .navbar {
+    width: 100%;
+  }
+}
+.top .navbar .fun {
+  width: 50%;
+  margin: 10px;
+}
+@media (max-width: 500px) {
+  .top .navbar .fun {
+    width: 100%;
+  }
+}
+.top .navbar .links {
+  text-align: right;
+  word-spacing: 30px;
+}
+@media (max-width: 500px) {
+  .top .navbar .links {
+    text-align: center;
+  }
+}
+.top .navbar .links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-align: right;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 2px dashed lightgray;
+  margin-left: 18%;
+  margin-right: 18%;
+}
+@media (max-width: 500px) {
+  .header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+.header .img1 {
+  image-orientation: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .header .img1 {
+    margin: 0;
+  }
+}
+.header h2 {
+  padding-top: 30px;
+  width: 100%;
+}
+.header p {
+  width: 100%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -185,16 +260,49 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -224,4 +332,28 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  display: block;
+  background-color: #17A2B8;
+  margin: 10px 20px 10px 20px;
+  padding-top: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
 }
