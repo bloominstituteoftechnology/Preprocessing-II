@@ -4,7 +4,7 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 1: Set Up The Project With Git
 
-- [ ] Create a forked copy of this project.
+- [ x] Create a forked copy of this project.
 - [ ] Add your team lead as collaborator on Github.
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
