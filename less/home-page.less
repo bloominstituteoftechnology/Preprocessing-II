@@ -1,24 +1,39 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 95%;
+        .paddingmobile();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+        align-self: center;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 95%;
+        }
       }
     }
   }
@@ -27,9 +42,17 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        width: 95%;
+        .paddingmobile();
+      }
     }
 
     .img-content {
@@ -42,6 +65,11 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 93%;
+      margin: 0 2% 3rem 4%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +81,45 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+        margin: 0 4% 2rem 9%;
+      }
     }
   }
-}// home
+} // home
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+.mainHeader {
+  .headerContent {
+    .imgHeader {
+      @media @mobile {
+        padding: 0 2.5rem;
+      }
+    } //closes imgHeader
+  } //closes headerContent
+  h2 {
+    padding: 1.5rem 0rem;
+    @media @mobile {
+      margin-left: 2.5rem;
+    }
+  } //closes h2
+  p {
+    border-bottom: 2px dashed silver;
+    @media @mobile {
+      padding: 0 2rem 2rem 2rem; //TRBL
+    }
+  } //closes p
+} //closes mainHeader
+
+//BTN mixins are in mixin.less
+.btn {
+  .btn();
+  .center();
+}

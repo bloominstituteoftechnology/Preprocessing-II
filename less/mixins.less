@@ -1,1 +1,34 @@
 // Mixins in here
+
+.center() {
+  // Allows something to be centered horizontally and vertically
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} //closes mixin
+
+.blackfontnodeco() {
+  color: black;
+  text-decoration: none;
+}
+
+//BTN .less is in home-page.less
+.btn(@width: 20rem, @bg-color: teal, @font-color: white) {
+  height: 4rem;
+  border: 1px solid teal;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: @width;
+  color: @font-color;
+  background-color: @bg-color;
+  @media @mobile {
+    width: 40rem;
+    background: rgb(23, 162, 184);
+    border: none;
+  }
+}
+
+.paddingmobile() {
+  margin: 0 2rem 2rem 2rem;
+}

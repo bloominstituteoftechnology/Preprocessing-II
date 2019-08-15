@@ -1,1 +1,29 @@
 // Navigation Styles here
+// -----------------------------------------------------------------------------------------------------------
+.navContainer {
+  display: flex;
+  border-bottom: 2px dashed silver;
+  justify-content: space-evenly;
+  padding: 2rem;
+  @media @mobile {
+    //mobile nav bar
+    flex-direction: column;
+    text-align: center;
+  }
+  .navTitle {
+    margin-right: 10rem;
+    @media @mobile {
+      text-align: center;
+      margin-left: 8rem;
+    }
+  } //closes the navTitle
+  .navigation {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+  } //closes the navigation
+  a {
+    .blackfontnodeco();
+    margin: 0 3rem;
+  } //closes nav a
+} //closes navContainer
+// -----------------------------------------------------------------------------------------------------------
