@@ -168,6 +168,37 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+/* example */
+/* example */
+.class1 {
+  -webkit-animation: fade-in 2s linear alternate;
+  -moz-animation: fade-in 2s linear alternate;
+  animation: fade-in 2s linear alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 nav {
   display: flex;
   max-width: 1000px;
@@ -175,6 +206,13 @@ nav {
   padding: 10px 0;
   border-bottom: 2px dashed #C0C0C0;
   justify-content: space-around;
+}
+@media  (max-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media  (max-width: 500px) {
   nav {
@@ -189,6 +227,13 @@ nav {
   align-items: center;
   font-size: 1.6rem;
   width: 40%;
+}
+@media  (max-width: 1024px) {
+  .nav-links {
+    display: flex;
+    width: 90%;
+    align-items: center;
+  }
 }
 @media  (max-width: 500px) {
   .nav-links {
@@ -317,6 +362,11 @@ nav {
 }
 @media  (max-width: 500px) {
   .btn {
+    width: 100%;
+  }
+}
+@media  (max-width: 1024px) {
+  .top-image {
     width: 100%;
   }
 }
