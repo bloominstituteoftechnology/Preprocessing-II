@@ -1,1 +1,24 @@
 // Mixins in here
+
+.custom-btn(@btn-color:#008080, @width: 80%, @height:15%){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @btn-color;
+    cursor: pointer;
+    width: @width;
+    height: @height;
+    border-radius: 10px;
+    color: @white;
+    .font-btn();
+
+    &:hover{
+        background-color:@white;
+        color: @btn-color;
+    }
+}
+
+.font-btn(@font-size:15px){
+    font-size: @font-size;
+    padding: 5px;
+}

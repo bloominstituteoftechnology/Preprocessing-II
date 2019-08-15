@@ -1,5 +1,17 @@
 .home {
 
+  .img-top {
+    
+    div h2 {
+      padding-top: 20px;
+    }
+
+    div p {
+      border-bottom: 2px dashed @navigation-border;
+      padding-bottom: 20px;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -53,7 +65,11 @@
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
+      
+      .btn {
+        .custom-btn();
+      }
     }
   }
 }// home

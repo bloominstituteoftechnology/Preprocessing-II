@@ -173,8 +173,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 320px;
-  border-bottom: 2px dashed silver;
+  padding: 2% 22%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .header .navTop {
   width: 40%;
@@ -196,6 +196,13 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .img-top div h2 {
+  padding-top: 20px;
+}
+.home .img-top div p {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 20px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -241,5 +248,22 @@ img {
 }
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008080;
+  cursor: pointer;
+  width: 80%;
+  height: 15%;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 5px;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #FFFFFF;
+  color: #008080;
 }
