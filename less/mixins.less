@@ -1,1 +1,24 @@
 // Mixins in here
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-margin-bottom{
+    margin-bottom: 20px;
+}
+.buttons(@radius:10px,@btn-width:85%,@text-size: 1.6rem){
+    border-radius: @radius;
+    background-color: @button-bg;
+    width: @btn-width;
+    font-size: @text-size;
+    text-align: center;
+    padding: 10px;
+    color: @white;
+}
