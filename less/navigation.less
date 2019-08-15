@@ -8,16 +8,39 @@
     padding: 2% 22%; // padding: 20px 320px;
     border-bottom: 2px dashed @navigation-border;
     
+    @media @mobile {
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    h1 {
+        @media @mobile {
+            padding: 15px 0; 
+            font-size: 2rem;
+        }
+    }
+
     .navTop {
         width: 40%;
         display: flex;
         // justify-items: space-between;
+
+        @media @mobile {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
 
         a {
             padding: 0 20px;
             text-decoration: none;
             color: black;
             font-size: 12px;
+
+            @media @mobile {
+                padding: 0px;
+            }
         }
     }
 }
