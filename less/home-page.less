@@ -26,10 +26,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
     }
 
     .img-content {
@@ -42,10 +43,15 @@
     width: 75%;
     margin: 0 auto 30px;
 
+      @media @mobile{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      }
     img {
       border-radius: 10px;
     }
-  }
+  
 
   .content-pick {
     padding-top: 30px;
@@ -53,9 +59,15 @@
     display: flex;
     justify-content: space-between;
 
+  }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .button();
+
+      @media @mobile{
+        margin: 0;
+      }
     }
   }
-}// home
+// home
