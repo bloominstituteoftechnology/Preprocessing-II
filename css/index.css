@@ -173,7 +173,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 17%;
+  padding: 2% 22%;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
