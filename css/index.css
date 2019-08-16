@@ -1,3 +1,14 @@
+.btn {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: royalblue;
+  border-radius: 4%;
+  text-align: center;
+  width: 90%;
+  height: 20px;
+  padding-top: 5px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
