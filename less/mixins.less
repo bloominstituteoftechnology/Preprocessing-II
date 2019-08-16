@@ -1,1 +1,18 @@
 // Mixins in here
+
+.custom-button(@width: 20rem, @bg-color:rgb(77, 178, 209), @font-color: white) {
+    background-color: @bg-color;
+    color: @font-color;
+    cursor: pointer;
+    padding: 1rem 5%;
+    width: @width;
+    font-size: 2rem;
+    border-radius: 1.3rem;
+    text-align: center;
+
+    @media @mobile {  
+        width: 100%;
+        height: 50px;
+        font-size: 25px;
+      }
+}
