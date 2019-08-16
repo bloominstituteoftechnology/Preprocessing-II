@@ -1,1 +1,40 @@
-// Navigation Styles here
+.top-home {
+    width: 100%;
+    border-bottom: @border;
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+        align-items: center;
+        padding-bottom: 20px;   
+        margin: 0 auto;
+
+        @media @phone {
+            flex-flow: column;
+            width: 90%;
+        }
+    }
+
+    h1 {
+        @media @phone {
+            margin-bottom: 20px;
+        }
+    }
+
+    nav {
+
+        
+        a {
+            font-size: 1.5rem;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+
+            @media @phone {
+                margin: 0px 30px;
+            }
+        }
+    }
+    
+}
