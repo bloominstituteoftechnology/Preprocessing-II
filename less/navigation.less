@@ -10,10 +10,18 @@ header {
   .navbar {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    @media @mobile {
+      justify-content: center;
+    }
+    
     .links  {
-       margin-right: 10px;
+      display: flex;
+      justify-content: space-evenly;
        a {
          margin-left: 12px;
          text-decoration: none;

@@ -182,11 +182,20 @@ header {
 header .navbar {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header .navbar {
+    justify-content: center;
+  }
 }
 header .navbar .links {
-  margin-right: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 header .navbar .links a {
   margin-left: 12px;
@@ -258,6 +267,7 @@ header .navbar .links a {
 @media (max-width: 500px) {
   .home .inverse-content .text-content {
     width: 100%;
+    order: 0;
   }
 }
 .home .inverse-content .img-content {
@@ -267,6 +277,7 @@ header .navbar .links a {
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
     width: 100%;
+    order: 1;
   }
 }
 .home .content-destination {
