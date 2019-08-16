@@ -1,1 +1,408 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media mobile {
+  .container {
+    width: 90%;
+  }
+}
+.nav-bar {
+  border-bottom: 2px dashed silver;
+  background: #FFEBCD;
+}
+.nav-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #212529;
+}
+@media (max-width: 800px) {
+  .nav-bar .container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-bar .container h1 {
+    padding-bottom: 20px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+  }
+}
+nav a {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #212529;
+}
+nav a:hover {
+  color: #C0C0C0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home .bus-intro {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed silver;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
+.home .btn {
+  background: #17A2B8;
+  height: 40px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #C0C0C0;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .btn:hover {
+  background: #C0C0C0;
+  color: #212529;
+}
+main {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Marsyangdi_valley_with_Annapurna_II_-_Annapurna_Circuit%2C_Nepal_-_panoramio.jpg/1920px-Marsyangdi_valley_with_Annapurna_II_-_Annapurna_Circuit%2C_Nepal_-_panoramio.jpg");
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  main {
+    background: #C0C0C0;
+    height: 60vh;
+  }
+}
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: #C0C0C0;
+  opacity: 0.7;
+}
+@media (max-width: 800px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+.wrapper .contact-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .contact-button {
+  border: #C0C0C0 1px solid;
+  background: #212529;
+  height: 40px;
+  width: 50%;
+  border-radius: 15px;
+  border: 1px solid #C0C0C0;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.wrapper .contact-button:hover {
+  background: #C0C0C0;
+  color: #212529;
+}
+.wrapper .contact-button:hover {
+  background: #17A2B8;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .wrapper .contact-button {
+    width: 100%;
+  }
+}
+.wrapper .contact-button p {
+  padding-bottom: 0px;
+}

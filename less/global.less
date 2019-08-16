@@ -29,8 +29,7 @@ h4 {
 }
 
 p {
-  line-height: 1.5;
-  font-size: 1.6rem;
+  .p-and-a();
   padding-bottom: 10px;
 }
 
@@ -41,6 +40,10 @@ img {
 
 .container {
   max-width: 800px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
+
+  @media mobile {
+    width: 90%;
+  }
 }

@@ -1,0 +1,56 @@
+main {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Marsyangdi_valley_with_Annapurna_II_-_Annapurna_Circuit%2C_Nepal_-_panoramio.jpg/1920px-Marsyangdi_valley_with_Annapurna_II_-_Annapurna_Circuit%2C_Nepal_-_panoramio.jpg");
+    height: 90vh;
+    position: relative;
+    .flex-settings(center, center);
+
+    @media @mobile {
+        background: @silver;
+        height: 60vh;
+    }
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    .flex-settings(center, center);
+    border-radius: 15px;
+    background: @silver;
+    opacity: 0.7;
+
+    @media @tablet {
+        width: 80%;
+    }
+
+    @media @tablet {
+        width: 90%;
+    }
+
+    .contact-form {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-button {
+        border: @silver 1px solid;
+        .button(@shark, 40px, 50%);
+        .flex-settings(center,center);
+        margin-top: 20px;
+
+        &:hover {
+            background: @eastern-blue;
+            font-weight: bold;
+        }
+        
+        @media @mobile {
+            width: 100%;
+        }
+
+        p {
+            padding-bottom: 0px;
+        }
+    }
+    
+}
