@@ -174,7 +174,8 @@ img {
   padding: 1%;
 }
 .top nav {
-  width: 50%;
+  max-width: 400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -251,13 +252,49 @@ img {
   background-color: teal;
   color: #fff;
 }
-.top,
-.welcome {
+.top {
   border-bottom: 1px dashed black;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .top {
+    flex-direction: column;
+  }
+  .top h1 {
+    text-align: center;
+  }
+}
 .welcome {
+  border-bottom: 1px dashed black;
+  width: 100%;
   margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+  }
+  .text-content,
+  .img-content {
+    width: 90% !important;
+    padding: 6%;
+  }
+  .inverse-content {
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+  }
+  .content-destination {
+    width: 100%;
+  }
+  .content-pick {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+  .content-pick .destination {
+    margin: 2% auto;
+    width: 70% !important;
+  }
 }
 form {
   max-width: 700px;

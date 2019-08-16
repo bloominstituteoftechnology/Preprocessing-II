@@ -67,10 +67,55 @@
 }
 
 //Top
-.top, .welcome{
+.top{
   border-bottom: 1px dashed black;
   width:100%;
+  @media @mobile{
+    flex-direction: column;
+    h1{
+      text-align: center;
+    }
+  }
+
 }
 .welcome{
+  border-bottom: 1px dashed black;
+  width:100%;
   margin:2% 0;
 }
+
+//Mobile
+
+@media @mobile{
+  .content-section {
+    flex-direction:column;
+  }
+
+  .text-content,.img-content{
+    width: 90% !important;
+    padding: 6%;
+  }
+
+  .inverse-content {
+    display:flex;
+    flex-direction: column;
+    padding: 6%;
+    
+    }
+
+    .content-destination {
+      width: 100%;
+}
+
+.content-pick {
+          width:100%;
+          margin:0;
+          flex-direction: column;
+
+          .destination{
+            margin: 2% auto;
+            width:70% !important;
+            
+          }
+        }
+    }
