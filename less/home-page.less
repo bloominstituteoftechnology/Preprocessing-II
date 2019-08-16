@@ -1,13 +1,8 @@
 .home {
-
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .flexBox(row wrap, space-between, stretch);
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -50,12 +45,94 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flexBox(row nowrap, space-between, stretch);
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
+
+    .btn{
+      .button();
+    }
   }
-}// home
+
+  @media @mobile{
+    .content-section {
+      margin: 30px 0;
+      .flexBox(column wrap, space-between, stretch);
+  
+      .text-content {
+        width: 100%;
+        padding-right: 0%;
+      }
+  
+      .img-content {
+        width: 100%;
+        padding-left: 0%;
+  
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+  
+    .inverse-content {
+      padding-bottom: 30px;
+      border-bottom: 2px dashed @navigation-border;
+      flex-direction: column-reverse;
+
+      .text-content {
+        padding-left: 0%;
+        padding-right: 0;
+      }
+  
+      .img-content {
+        padding-right: 0%;
+        padding-left: 0;
+        padding-bottom: 20px;
+      }
+    }
+  
+    .content-destination {
+      width: 100%;
+      margin: 0 auto 30px;
+  
+      img {
+        border-radius: 10px;
+      }
+    }
+  
+    .content-pick {
+      padding-top: 30px;
+      border-top: 2px dashed @navigation-border;
+      .flexBox(row wrap, center, center);
+  
+      .destination {
+        width: 75%;
+        margin-bottom: 30px;
+      }
+  
+      .btn{
+        .button();
+        width: 100%;
+      }
+    }
+  }
+}
+// home
+
+
+//header
+header{
+  border-bottom: 2px dashed @silver;
+  
+  h2{
+    padding-top: 20px;
+    padding-bottom: 10px 
+  }
+  
+  p{
+    padding-bottom: 20px;
+  }
+}
