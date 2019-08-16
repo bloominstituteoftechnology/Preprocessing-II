@@ -1,1 +1,26 @@
 // Mixins in here
+
+@link-color: teal;
+@link-color-hover : lighten(@link-color, 10%);
+
+@radius: 15px; 
+
+.btn {
+    border-radius: @radius;
+    border: 1px solid white;
+    background-color: @link-color;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.7rem;
+    @media @mobile {
+        width: 100%;
+        color: black;
+}
+
+    &:hover {
+        background-color: @link-color-hover;
+    }
+
+
+}
