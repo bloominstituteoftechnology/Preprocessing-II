@@ -1,11 +1,32 @@
 // Navigation Styles here
 
-// header {
-//     .flex-baseline(space-between);
-//     padding: 1rem;
-//     background-color: @primaryColor;
-//     color: @white;
+header {
+    .flex-baseline(space-between);
+    padding: 1rem;
+    background-color: @primaryColor;
+    color: @white;
+    border: 3px solid rgb(128, 19, 19);
   
-//     // @media (max-width: 550px) {
-//     // //   flex-direction: column;
-//     }
+    @media @tablet {
+        flex-direction: column;
+    }
+
+    @media @mobile {
+        background: green;
+        color: #fff;
+    }
+}
+
+nav {
+    width: 50%;
+    .flex-baseline();
+    justify-content: space-between;
+
+    @media @tablet {
+        width: 100%;
+    }
+
+    & a{
+        font-size: 1.5rem;
+    }
+}
