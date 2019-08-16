@@ -1,1 +1,17 @@
 // Mixins in here
+.button(){
+    display:block;
+    background: teal;
+    margin:0 10px 20px;
+    cursor:pointer;
+    width:33%;
+    text-align:center;
+    height: 25px;
+    font-size:2rem;
+    border-radius:15px;
+    color:seashell;
+
+    @media @mobile{
+        flex-direction:column;
+    }
+}
