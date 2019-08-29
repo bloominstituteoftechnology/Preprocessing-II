@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  padding-bottom: 40px;
+  border-bottom: dashed 2px gray;
+  display: flex;
+  justify-content: flex-end;
+}
+nav h1 {
+  position: absolute;
+  left: 10px;
+  margin: 20px;
+}
+nav a {
+  font-size: 18px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+nav a:visited {
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
