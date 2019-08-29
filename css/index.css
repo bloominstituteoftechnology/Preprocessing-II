@@ -257,7 +257,7 @@ header a:active {
   margin-bottom: 30px;
 }
 .home .btn {
-  background: green;
+  background: #008080;
   font-size: 2rem;
   display: block;
   border-style: solid;
@@ -273,7 +273,7 @@ header a:active {
 .home .btn:hover {
   cursor: pointer;
   background: white;
-  color: green;
+  color: #008080;
 }
 .footer {
   width: 100%;
