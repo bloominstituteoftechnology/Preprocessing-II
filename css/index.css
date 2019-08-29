@@ -205,6 +205,11 @@ header .innerHead {
 header .innerHead .title {
   width: 49%;
 }
+.home .textBlock {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
