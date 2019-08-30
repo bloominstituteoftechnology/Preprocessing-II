@@ -170,7 +170,7 @@ img {
 }
 nav {
   padding-bottom: 40px;
-  border-bottom: dashed 2px gray;
+  border-bottom: dashed 2px #C0C0C0;
   display: flex;
   justify-content: flex-end;
 }
@@ -178,6 +178,7 @@ nav h1 {
   position: absolute;
   left: 10px;
   margin: 20px;
+  padding-left: 9%;
 }
 nav a {
   font-size: 18px;
@@ -199,6 +200,21 @@ nav a:visited {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  display: inline-block;
+  padding-bottom: 20px;
+  width: 70%;
+  position: relative;
+  margin-left: 12%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header img {
+  padding-bottom: 2%;
+  width: 100%;
+}
+header h3 {
+  font-size: 28px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -245,4 +261,15 @@ nav a:visited {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  border: 1px solid #C0C0C0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 80%;
+  color: white;
+  background-color: teal;
 }
