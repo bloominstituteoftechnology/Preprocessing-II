@@ -1,9 +1,12 @@
 // Mixins in here
 
-.flex(@direction: column; @justify: flex-start; @align: center){
+.flex(@direction: row; @justify: center; @align: center){
     display: flex;
+    flex-direction: @direction;
     justify-content: @justify;
     align-content: @align;
+    align-items: @align;
+    justify-items: @justify;
 }
 
 .spacing(@padding: 10px; @border: 1px solid black; @margin: 10px 10px){

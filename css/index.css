@@ -168,6 +168,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 20px;
+    border: none;
+    margin: 0;
+  }
+}
 .divider {
   border-bottom: 2px dashed #cdcdcd;
 }
@@ -188,12 +195,25 @@ img {
   font-weight: 700;
 }
 header nav {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
   padding: 20px 0;
   border: none;
   margin: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  justify-items: space-between;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: space-between;
+    justify-items: center;
+  }
 }
 header nav .nav-links a {
   padding: 0;

@@ -2,9 +2,11 @@
 
 header{
     nav{
-        .flex(column; space-between; center);
         .spacing(20px 0; none; none;);
-
+        .flex(row; space-between; center);
+        @media @phone{
+            .flex(column; center; space-between);
+        }
         .nav-links{
             a{
                 .spacing(0; none; 0 20px;);
