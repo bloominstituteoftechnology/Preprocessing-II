@@ -7,11 +7,11 @@ html {
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: @secondary-font;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: @primary-font;
 }
 
 h1 {
@@ -43,4 +43,20 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.divider {
+  border-bottom: 2px dashed #cdcdcd;
+} 
+
+.home{
+  .top-content{
+    .spacing(0; none; 20px 0;);
+    border-bottom: 2px dashed #cdcdcd;
+  }
+}
+
+.btn{
+  .button(15px 20px; #008080; white; 15px);
+  .font(@secondary-font; 1.7rem; 700);
 }

@@ -1,1 +1,27 @@
 // Mixins in here
+
+.flex(@direction: column; @justify: flex-start; @align: center){
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.spacing(@padding: 10px; @border: 1px solid black; @margin: 10px 10px){
+    padding: @padding;
+    border: @border;
+    margin: @margin;
+}
+
+.font(@family: arial; @size: 1.8rem; @weight: 300){
+    font-family: @family;
+    font-size: @size;
+    font-weight: @weight;
+}
+
+.button(@padding: 10px 20px; @background: lightblue; @color: lightpink; @radius){
+    padding: @padding;
+    background: @background;
+    color: @color;
+    border-radius: @radius;
+    text-align: center;
+}
