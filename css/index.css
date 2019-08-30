@@ -180,11 +180,29 @@ nav {
   justify-content: space-between;
   padding: 20px 0;
 }
+@media (max-width: 515px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 10px;
+  }
+}
+@media (max-width: 515px) {
+  nav .links {
+    padding: 10px 0 0;
+  }
+}
 nav a {
   padding-right: 20px;
   text-decoration: none;
   color: black;
   font-size: 18px;
+}
+@media (max-width: 515px) {
+  nav a {
+    padding: 0 30px;
+  }
 }
 .footer {
   width: 100%;
@@ -260,4 +278,9 @@ nav a {
   width: 80%;
   text-align: center;
   font-size: 18px;
+}
+@media (max-width: 515px) {
+  .btn {
+    color: red;
+  }
 }

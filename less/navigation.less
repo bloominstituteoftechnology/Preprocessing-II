@@ -13,14 +13,29 @@ nav {
     justify-content: space-between;
     padding: 20px 0;
 
+        @media (max-width: 515px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 10px;
+    }
+
+.links {
+    @media (max-width: 515px) {
+        padding: 10px 0 0;
+    }
+    }
+
+
     a {
         padding-right: 20px;
         text-decoration: none;
         color: black;
         font-size: 18px;
 
-        // @media (max-width: 515px){
-        //     color: red;
-        // }
+        @media (max-width: 515px) {
+            padding: 0 30px;
+        }
+
     }
 }
