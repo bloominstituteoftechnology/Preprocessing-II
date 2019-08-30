@@ -168,7 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .container {
     width: 90%;
   }
@@ -180,7 +180,7 @@ nav {
   border-bottom: 2px dashed #C0C0C0;
   padding: 1%;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   nav {
     flex-direction: column;
   }
@@ -190,7 +190,7 @@ nav ul {
   width: 100%;
   margin-top: 4%;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   nav ul {
     margin-top: 0;
     justify-content: center;
@@ -209,7 +209,7 @@ nav p {
   padding-left: 10%;
   padding-top: 1%;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   nav p {
     padding-left: 40%;
     padding-top: 0%;
@@ -233,7 +233,7 @@ header {
   margin: 0 auto;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   header {
     width: 90%;
   }
@@ -254,7 +254,7 @@ header h1 {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .home .content-section .text-content {
     width: 100%;
   }
@@ -263,7 +263,7 @@ header h1 {
   width: 48%;
   padding-left: 1%;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .home .content-section .img-content {
     width: 100%;
     padding: 0;
@@ -277,7 +277,7 @@ header h1 {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .home .inverse-content {
     flex-direction: column-reverse;
   }
@@ -290,7 +290,7 @@ header h1 {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .home .img-content {
     width: 100%;
   }
@@ -299,7 +299,7 @@ header h1 {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .home .content-destination {
     width: 100%;
   }
@@ -307,7 +307,7 @@ header h1 {
 .home .content-destination img {
   border-radius: 10px;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .home .content-destination img {
     width: 100%;
   }
