@@ -194,6 +194,11 @@ img {
   font-size: 1.7rem;
   font-weight: 700;
 }
+.btn:hover {
+  background: #005c80;
+  color: white;
+  transition: 0.7s;
+}
 header nav {
   padding: 20px 0;
   border: none;
