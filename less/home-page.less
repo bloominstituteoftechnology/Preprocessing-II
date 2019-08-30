@@ -5,7 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
    
     
     .text-content {
@@ -57,5 +56,31 @@
       width: 30%;
       margin-bottom: 30px;
     }
+  }
+
+  .header-content {
+    border-bottom: 2px dashed @navigation-border;
+      .img-content{
+        border-top: 2px dashed @navigation-border;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        display: flex;
+        justify-content: center;
+        
+        img {
+          max-width: 800px;
+          width: 100%;
+        }
+      }
+      .text-content {
+        margin-bottom: 20px;
+          h2 {
+            margin-top: 20px;
+          }
+      }
   }
 }// home
