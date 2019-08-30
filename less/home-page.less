@@ -69,6 +69,19 @@
 
   img {
     padding-bottom: 20px;
+
+    @media (max-width: 515px){
+      width: 90%;
+      margin: 0 20px 0;
+    }
+  }
+
+  .header-text {
+    @media (max-width: 515px){
+      width: 90%;
+      margin: 0 20px 0;
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -83,6 +96,6 @@
   font-size: 18px;
 
   @media (max-width: 515px){
-    color: red;
-}
+    background-color: @button-bg;
+  }
 }

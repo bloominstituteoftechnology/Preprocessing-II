@@ -270,6 +270,19 @@ nav a {
 .header img {
   padding-bottom: 20px;
 }
+@media (max-width: 515px) {
+  .header img {
+    width: 90%;
+    margin: 0 20px 0;
+  }
+}
+@media (max-width: 515px) {
+  .header .header-text {
+    width: 90%;
+    margin: 0 20px 0;
+    padding-bottom: 10px;
+  }
+}
 .btn {
   background-color: #008080;
   color: white;
@@ -281,6 +294,6 @@ nav a {
 }
 @media (max-width: 515px) {
   .btn {
-    color: red;
+    background-color: #17A2B8;
   }
 }
