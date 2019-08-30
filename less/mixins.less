@@ -1,1 +1,36 @@
 // Mixins in here
+
+.flex(@direction: row; @justify: center; @align: center){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-content: @align;
+    align-items: @align;
+    justify-items: @justify;
+}
+
+.spacing(@padding: 10px; @border: 1px solid black; @margin: 10px 10px){
+    padding: @padding;
+    border: @border;
+    margin: @margin;
+}
+
+.font(@family: arial; @size: 1.8rem; @weight: 300){
+    font-family: @family;
+    font-size: @size;
+    font-weight: @weight;
+}
+
+.button(@padding: 10px 20px; @background: lightblue; @color: lightpink; @radius){
+    padding: @padding;
+    background: @background;
+    color: @color;
+    border-radius: @radius;
+    text-align: center;
+}
+
+.hover-animation(@background; @color; @transition){
+    background: @background;
+    color: @color;
+    transition: @transition;
+}
