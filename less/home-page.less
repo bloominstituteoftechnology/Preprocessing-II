@@ -10,11 +10,17 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+        @media @mobile {
+          width: 100%;
+        }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+        @media @mobile {
+          width: 100%;
+        }
 
       img {
         border-radius: 10px;
@@ -40,7 +46,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 100%;
+      margin-bottom: 20px;
+    }
     img {
       border-radius: 10px;
     }
@@ -74,6 +83,10 @@
         img {
           max-width: 800px;
           width: 100%;
+            @media @mobile {
+              max-width: 500px;
+              width: 80%;
+            }
         }
       }
       .text-content {
@@ -86,5 +99,30 @@
 
   .btn {
     .button-style();
+  }
+
+  @media @mobile {
+    .mobile-hidden {
+      display: none;
+    }
+    .mobile-img {
+      display: auto;
+    }
+
+    .content-pick {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+        .destination {
+          width: 85%;
+        }
+    }
+    
+  }
+  .mobile-img {
+    display: none;
   }
 }// home

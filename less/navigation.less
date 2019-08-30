@@ -5,21 +5,40 @@ header {
     .title {
         font-weight: 500;
     }
+        @media @mobile {
+            margin-bottom: 5px;
+        }
 
     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        h1 {
+            @media @mobile {
+                margin-bottom: 12px;
+            }
+        }
+
+            @media @mobile {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
         ul {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
         }
         a {
             margin-right: 30px;
             text-decoration: none;
             color: @font-color;
             font-size: 16px;
+                @media @mobile {
+                    margin: 0;
+                }
         }
     }
 }
