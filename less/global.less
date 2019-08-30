@@ -44,3 +44,38 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: @mobile){
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    .content-pick {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+
+      .destination {
+        width: 85%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  @media (max-width: @mobile){
+    
+    .content-section{
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+    }
+    .text-content{
+      width: 80%;
+    }
+    .img-content{
+      display: none;
+    }
+  }
