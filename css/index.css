@@ -182,6 +182,13 @@ header {
   align-items: none;
   padding-bottom: 30px;
 }
+@media only screen and (max-width:515px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 header nav {
   padding-top: 12px;
 }
@@ -201,6 +208,12 @@ header a:active {
 .welCome {
   width: 100%;
   margin: 0 auto;
+  border-top: 1px gray dashed;
+}
+@media only screen and (max-width:515px) {
+  .welCome {
+    padding: 0 20px 20px 20px;
+  }
 }
 .welCome img {
   margin: 0 auto;
@@ -218,13 +231,31 @@ header a:active {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media only screen and (max-width:515px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0 20px 0 20px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media only screen and (max-width:515px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media only screen and (max-width:515px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -232,6 +263,12 @@ header a:active {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media only screen and (max-width:515px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -245,6 +282,11 @@ header a:active {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media only screen and (max-width:515px) {
+  .home .content-destination {
+    width: 90%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -254,9 +296,22 @@ header a:active {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width:515px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media only screen and (max-width:515px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 30px 50px 0 50px;
+  }
 }
 .home .btn {
   background: #008080;
@@ -276,6 +331,44 @@ header a:active {
   cursor: pointer;
   background: white;
   color: #008080;
+}
+@media only screen and (max-width:515px) {
+  .home .btn {
+    width: 100%;
+  }
+}
+.home .travelForm {
+  text-align: center;
+}
+.home .travelForm form {
+  text-align: center;
+}
+.home .travelForm input {
+  margin: 20px;
+  font-size: 1.8rem;
+}
+.home .travelForm button {
+  background: #008080;
+  margin: 0 auto;
+  font-size: 2rem;
+  display: block;
+  border-style: solid;
+  width: 180px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  border-radius: 12px;
+}
+.home .travelForm button:hover {
+  cursor: pointer;
+  background: white;
+  color: #008080;
+}
+@media only screen and (max-width:515px) {
+  .home .travelForm button {
+    width: 80%;
+  }
 }
 .footer {
   width: 100%;

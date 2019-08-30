@@ -5,7 +5,14 @@ header{
     margin: 0 auto;
     .flexPrime(none,space-between,none,none,none);
     padding-bottom:30px;
-    
+
+    @media @mobile{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
 
     nav{
         padding-top:12px;

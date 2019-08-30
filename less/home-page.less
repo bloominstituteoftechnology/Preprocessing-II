@@ -1,6 +1,11 @@
 .welCome{
   width:100%;
   margin: 0 auto;
+  border-top:1px gray dashed;
+
+  @media @mobile{
+    padding:0 20px 20px 20px;
+  }
 
   img{
     margin: 0 auto;
@@ -19,6 +24,7 @@
 
 
 .home {
+  
 
   .content-section {
     margin: 30px 0;
@@ -26,19 +32,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      display:flex;
+      flex-direction:column;
+      align-content: center;
+      padding:0 20px 0 20px;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media @mobile{
+        width:100%;
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width:100%;
+      }
+
       img {
         border-radius: 10px;
+
+       
       }
     }
   }
@@ -47,9 +70,16 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile{
+      display:flex;
+      flex-direction:column-reverse;
+    }
+   
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      
     }
 
     .img-content {
@@ -62,6 +92,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      width:90%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -73,13 +107,50 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width:100%;
+        padding:30px 50px 0 50px;
+      }
     }
   }
 
   .btn{
     .signMeUp();
+
+    @media @mobile{
+      width:100%;
+    }
   }
-}// home
+
+  .travelForm{
+    text-align:center;
+    
+    form{
+      text-align:center;
+    }
+
+    input{
+      margin:20px;
+      font-size:1.8rem;
+    }
+    button{
+      .submit();
+
+      @media @mobile{
+        width:80%;
+      }
+    }
+  }
+}
+// home
