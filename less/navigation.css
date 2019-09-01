@@ -1,0 +1,19 @@
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  border-bottom: 1px dashed gray;
+}
+.main-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.main-header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  margin-right: 20px;
+}

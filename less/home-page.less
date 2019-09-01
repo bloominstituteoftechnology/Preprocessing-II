@@ -1,13 +1,11 @@
-.home {
 
   .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
+     
+     margin: 30px 0;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: flex-start; 
+  
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -16,16 +14,22 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
 
       img {
         border-radius: 10px;
+        margin-bottom: 30px;
       }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: 1px dashed gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
 
     .text-content {
       padding-left: 1%;
@@ -49,7 +53,7 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    border-top: 1px dashed gray;
     display: flex;
     justify-content: space-between;
 
@@ -57,5 +61,29 @@
       width: 30%;
       margin-bottom: 30px;
     }
+     .btn {
+    height: 10px;
+    .button-box(20rem; 15px; teal);
+    color:white;
+    padding: 0 40px 40px; 
+    margin: 20px 0;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 35px;
+    border-top: 5px;
+    }
+   
+   .Welcome{
+        border-bottom: 1px dashed gray;
+        margin-top: 20px;
+   }
   }
-}// home
+ @media @mobile {
+  .content-section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ }

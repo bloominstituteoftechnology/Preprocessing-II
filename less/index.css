@@ -194,7 +194,7 @@ img {
 }
 .footer p {
   text-align: center;
-  color: gray;
+  color: #212529;
   font-size: 1.6rem;
   padding: 20px;
   font-weight: bold;
@@ -251,8 +251,8 @@ img {
   margin-bottom: 30px;
 }
 .content-pick .btn {
-  height: 10px;
   width: 20rem;
+  height: 10px;
   border-radius: 15px;
   background-color: teal;
   color: white;
@@ -264,15 +264,7 @@ img {
   line-height: 35px;
   border-top: 5px;
 }
-.content-pick .Welcome {
+.Welcome {
   border-bottom: 1px dashed gray;
   margin-top: 20px;
-}
-@media (max-width: 500px) {
-  .content-section {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
