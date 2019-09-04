@@ -174,11 +174,23 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
+@media ( max-width: 500px ) {
+  nav {
+    margin-top: 60px;
+  }
+}
 nav h1 {
   position: absolute;
   left: 10px;
   margin: 20px;
   padding-left: 9%;
+}
+@media ( max-width: 500px ) {
+  nav h1 {
+    position: absolute;
+    left: 120px;
+    top: 0px;
+  }
 }
 nav a {
   font-size: 18px;
@@ -186,6 +198,11 @@ nav a {
   padding-top: 20px;
   padding-right: 20px;
   text-decoration: none;
+}
+@media ( max-width: 500px ) {
+  nav a {
+    padding-right: 43px;
+  }
 }
 nav a:visited {
   color: black;
@@ -209,6 +226,12 @@ header {
   margin-left: 12%;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media ( max-width: 500px ) {
+  header {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
 header img {
   padding-bottom: 2%;
   width: 100%;
@@ -222,13 +245,31 @@ header h3 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .home .content-section {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media ( max-width: 500px ) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media ( max-width: 500px ) {
+  .home .content-section .img-content {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -258,9 +299,21 @@ header h3 {
   display: flex;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .home .content-pick {
+    flex-direction: column;
+    margin-left: 30px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  margin-left: 30px;
+}
+@media ( max-width: 500px ) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .btn {
   border: 1px solid #C0C0C0;

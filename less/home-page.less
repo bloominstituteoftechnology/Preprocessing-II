@@ -5,7 +5,10 @@ header{
   position: relative;
   margin-left: 12%;
   border-bottom: 2px dashed @navigation-border;
-  
+  @media @mobile{
+    margin-left: 0px;
+    width: 100%;
+  }
 
     img{
       
@@ -32,17 +35,31 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile{
+      flex-direction: column;
+      margin-left: 20px;
+      
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width: 100%;
+        padding-right: 0;
+      }
     }
+
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width: 100%;
+        margin-bottom: 10px;
+      }
 
       img {
         border-radius: 10px;
@@ -79,24 +96,24 @@ header{
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      flex-direction: column;
+      margin-left: 30px;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      margin-left: 30px;
+      @media @mobile{
+        width: 80%;
+      }
     }
 
     .btn{
 
       .button(80%; white; teal;)
-      // background-color: teal;
-      // border: 1px solid @navigation-border;
-      // color: white;
-      // text-align: center;
-      // text-decoration: none;
-      // font-size: 16px;
-      // padding: 10px 10px;
-      // border-radius: 10px;
-      // width: 80%;
+     
       
     }
   }
