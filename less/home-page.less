@@ -1,20 +1,35 @@
 
   .content-section {
-     
      margin: 30px 0;
      display: flex;
      justify-content: space-evenly;
      align-items: flex-start; 
-  
+     border-bottom: 1px dashed gray; 
+     @media @mobile{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      
+      }
+ 
     .text-content {
+  
       width: 48%;
       padding-right: 1%;
+      margin-top: 20px; 
+      @media @mobile{
+        width: 90%;
+      
+        }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-      
+      @media @mobile{
+        width: 90%; 
+        padding: 0 10px;
+        }
 
       img {
         border-radius: 10px;
@@ -30,7 +45,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start; 
-
+    @media @mobile{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 10px;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -39,13 +59,18 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      margin-top: 40px;
+      
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile{
+      width: 90%; 
+      padding: 0 10px;
+      }
     img {
       border-radius: 10px;
     }
@@ -56,10 +81,19 @@
     border-top: 1px dashed gray;
     display: flex;
     justify-content: space-between;
-
+ @media @mobile {
+      flex-direction: column;
+      align-content: center;
+      margin: 30px;
+      }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 90%;
+        align-content: center;
+        padding: 0 30px;
+        }
     }
      .btn {
     height: 10px;
@@ -72,18 +106,25 @@
     text-align: center;
     line-height: 35px;
     border-top: 5px;
+    @media @mobile{
+      .button-box(30rem; 8px; @eastern-blue;)
     }
+    
+    .Welcome {
+      margin-bottom: 20px;
+      @media @mobile{
+        width: 90%;
+        margin: 20px; 
+      }
+  
    
-   .Welcome{
-        border-bottom: 1px dashed gray;
-        margin-top: 20px;
+   .fun-bus{
+     margin-bottom: 20px;
+     @media @mobile{
+       width: 90%;
+       margin: 0 auto;
+     }
    }
   }
- @media @mobile {
-  .content-section {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
- }
+} 
+}

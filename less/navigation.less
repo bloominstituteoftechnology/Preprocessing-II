@@ -5,8 +5,14 @@
     justify-content: space-between;
     align-items: flex-start; 
     margin-bottom: 20px; 
-    margin-top: 40px;
-    border-bottom: 1px dashed gray;    
+    margin-top: 60px;
+    border-bottom: 1px dashed gray; 
+    @media @mobile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        padding: 0 0 10px;
+    } 
 }
 .main-header h2{
     font-size: 40px;
@@ -18,5 +24,6 @@
     color: black;
     font-size: 1.4rem;
     margin-right: 20px; 
-   
+    padding: 0 20px;
+    font-weight: bold;
 }
