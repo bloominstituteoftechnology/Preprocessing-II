@@ -1,21 +1,79 @@
+header {
+  display:flex;
+  flex-direction:row;
+  justify-content:Center;
+  margin-bottom:20px;
+
+  @media (@mobile) {
+    flex-direction:column;
+  }
+
+  h1 {
+    width:200px;
+    margin-top:20px;
+    margin-right:250px;
+
+    @media (@mobile) { 
+      margin-left:170px;
+    }
+  }
+
+  nav {
+    display:flex;
+    width:350px;
+    justify-content:space-evenly;
+    align-items:center;
+    font-size:1.6rem;
+    margin-top:20px;
+    @media (@mobile) {
+      width:500px;
+    }
+  }
+}
+
+hr {
+  border:1px dashed @silver;
+  margin-bottom:0px;
+}
 .home {
 
+  .funBusWelcome {
+    margin-top:20px;
+    @media (@mobile) {
+      width:450px;
+      margin-left:20px;
+      border-bottom:1px dashed @silver;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media (@mobile) {
+      flex-direction:column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media (@mobile) {
+        width:450px;
+        margin-left:20px;
+        margin-bottom:20px
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media (@mobile) {
+        width:500px;
+        margin-left:30px;
+      }
 
       img {
         border-radius: 10px;
@@ -26,7 +84,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media (@mobile) {
+      flex-direction:column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -42,6 +102,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media (@mobile) {
+      width:450px;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -52,10 +116,26 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media (@mobile) {
+      flex-direction:column;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media (@mobile) {
+        width:400px;
+        margin-left:40px;
+      }
+
+      .btn {
+        .border-radius(20px);
+        background-color:@eastern-blue;
+        font-size:2rem;
+        color:@white;
+        padding:15px;
+        text-align:center;
+      }
     }
   }
-}// home
+}
+// home
