@@ -1,1 +1,14 @@
 // Mixins in here
+.setBtn(@align){
+    padding: 18px;
+    background: #1f7a7a;
+    border-radius: 8%;
+    text-align: @align;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.btn{
+    .setBtn(center);
+}
