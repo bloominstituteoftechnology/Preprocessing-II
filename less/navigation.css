@@ -1,0 +1,30 @@
+header {
+  border-bottom: 2px dashed lightgray;
+  display: flex;
+  justify-content: center;
+}
+header div {
+  width: 790px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+}
+header div nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+header div nav a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.5rem;
+}
+.head {
+  border-bottom: 2px dashed lightgray;
+}
+.head h2 {
+  margin: 2rem 0 1rem 0;
+  line-height: 1;
+}
