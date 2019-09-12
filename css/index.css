@@ -1,3 +1,27 @@
+.btn {
+  display: flex;
+  margin: 10px;
+  cursor: pointer;
+  height: 45px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: teal;
+  text-align: center;
+  justify-content: center;
+  padding: 13px;
+}
+.btn:hover {
+  background-color: aquamarine;
+}
+@media (max-width: 500px) {
+  .btn .btn {
+    width: 90%;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +192,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  display: flex;
+  margin: 10px;
+  cursor: pointer;
+  height: 45px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: teal;
+  text-align: center;
+  justify-content: center;
+  padding: 13px;
+}
 .navigation {
   border-bottom: 1px dashed grey;
   display: flex;
@@ -187,6 +223,8 @@ nav {
 nav a {
   margin-left: 20px;
   text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
 }
 .footer {
   width: 100%;
