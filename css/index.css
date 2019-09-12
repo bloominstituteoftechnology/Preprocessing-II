@@ -168,6 +168,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-content {
+  height: 100px;
+  max-width: 100%;
+}
+.nav-content .navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px;
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
+.nav-content .navigation .navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+.nav-content .navigation nav a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +246,15 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .btn {
+  display: flex;
+  background-color: #1b595e;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  color: white;
 }
