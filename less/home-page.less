@@ -6,6 +6,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
+    @media screen and (max-width: 500px){
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -60,12 +66,16 @@
   .btn{
     display: flex;  
     background-color: rgb(27, 89, 94);
-    
     cursor: pointer;
     width: 200px;
     height: 40px;
     font-size: 1.8rem;
     border-radius: 10px;
     color: white;
+  }
+
+  .newbox{
+    margin: 6%;
+    padding-left: 40px;
   }
 }// home

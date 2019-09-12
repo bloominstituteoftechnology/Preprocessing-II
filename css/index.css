@@ -179,6 +179,14 @@ img {
   width: 100%;
   border-bottom: 2px dashed silver;
 }
+@media screen and (max-width: 500px) {
+  .nav-content .navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .nav-content .navigation .navLinks {
   display: flex;
   justify-content: space-between;
@@ -201,11 +209,27 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media screen and (max-width: 500px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -256,4 +280,8 @@ img {
   font-size: 1.8rem;
   border-radius: 10px;
   color: white;
+}
+.home .newbox {
+  margin: 6%;
+  padding-left: 40px;
 }
