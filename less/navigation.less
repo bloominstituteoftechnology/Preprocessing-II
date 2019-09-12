@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+header { 
+    .flex(center, center);
+    flex-wrap: wrap;
+    border-bottom: 2px dashed @navigation-border;
+    padding: 10px;
+    
+    .navbar {
+        .flex(space-between, center);
+        .width();
+        @media @phone{
+            .flex(center, center);
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        a{
+            .font(black,1.3rem);
+            text-decoration: none;
+            padding: 2%;
+            width: 25%;
+            @media @phone{
+                 font-size: 1.1rem
+                }
+        }//end a tags
+        nav {
+            .flex(space-between, center);
+            width: 60%;
+        } // end nav
+    }//end navbar
+}//end header

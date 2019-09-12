@@ -1,1 +1,32 @@
 // Mixins in here
+
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify; 
+    align-items: @align;
+}
+
+.font(@color, @size) {
+    color: @color;
+    font-size: @size;
+}
+
+.button(@background, @text, @width, @height) {
+    background-color: @background;
+    width: @width;
+    height: @height;
+    color: @text;
+    margin: 1%;
+    border: none;
+    border-radius: 14px;
+    text-align: center;
+    &:hover {
+        color: @background;
+        background-color: @text;
+    }
+}
+
+.width() {
+    width: 80%;
+    max-width: 900px;
+}
