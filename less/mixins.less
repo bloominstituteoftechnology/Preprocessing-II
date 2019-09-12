@@ -1,1 +1,29 @@
 // Mixins in here
+
+.btn{
+    display:flex;
+    margin:10px;
+    cursor: pointer;
+    height: 45px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: teal;
+    text-align:center;
+    justify-content: center;
+    padding:13px;
+
+    
+    &:hover{
+        background-color: aquamarine;
+    }
+
+    @media(max-width:500px){
+        .btn {                                       
+            width: 90%;
+            height: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
