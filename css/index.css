@@ -273,7 +273,7 @@ nav a:hover {
 }
 .home footer {
   display: flex;
-  width: 500px;
+  width: 75%;
 }
 @media (max-width: 560px) {
   .container {
@@ -293,10 +293,15 @@ nav a:hover {
     width: 100vw;
     justify-content: space-evenly;
   }
+  .container section h2 {
+    display: flex;
+    width: 100vw;
+    border: 1px solid red;
+  }
   .container .content-section,
   .container .content-pick {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     border: 1px solid red;
@@ -304,6 +309,17 @@ nav a:hover {
   .container .inverse-content {
     display: flex;
     flex-direction: column-reverse;
+    border: 1px solid red;
+  }
+  .container p {
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+  }
+  .container h4 {
     border: 1px solid red;
   }
 }
