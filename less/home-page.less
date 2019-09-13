@@ -1,4 +1,18 @@
 .home {
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .top-content {
+    margin: 10px 0;
+    border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
+    img {
+      margin-bottom: 15px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,8 +20,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -58,4 +70,75 @@
       margin-bottom: 30px;
     }
   }
-}// home
+
+  // Start of my code for project //
+
+  .btnWrapper {
+    .btnColor(darkcyan, white);
+  }
+
+  footer {
+    display: flex;
+    width: 75%;
+  }
+} // home
+
+// Media Queries //
+@media @mobile {
+  .container {
+    header {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      nav {
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+      }
+    }
+    .border();
+    section h2 {
+      display: flex;
+      width: 100vw;
+      .border();
+    }
+    .content-section,
+    .content-pick {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+
+      .border();
+    }
+    .inverse-content {
+      display: flex;
+      flex-direction: column-reverse;
+      .border();
+    }
+
+    // .text-content {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: flex-start;
+    // }
+
+    p {
+      display: flex;
+      justify-content: start;
+      // flex-wrap: wrap;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      .border();
+    }
+
+    h4 {
+      .border();
+    }
+  }
+}
