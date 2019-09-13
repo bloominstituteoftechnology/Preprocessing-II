@@ -246,6 +246,9 @@ img {
   justify-content: space-between;
 }
 .home .content-pick .destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 30%;
   margin-bottom: 30px;
 }
@@ -270,4 +273,12 @@ img {
     justify-content: space-between;
     align-items: center;
   }
+}
+.btn {
+  border-radius: 10px;
+  width: 80%;
+  background: teal;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
 }
