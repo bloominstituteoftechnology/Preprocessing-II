@@ -1,13 +1,14 @@
 .home {
-
+  @media @mobile{
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    } 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -20,6 +21,13 @@
       img {
         border-radius: 10px;
       }
+    }
+  
+    @media @mobile{
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    flex-flow: wrap;
     }
   }
 
@@ -53,9 +61,36 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      width: 100%;
+      display:flex;
+      justify-content: space-between;
+      flex-direction:column;
+       align-items: center;
+      flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
+    
   }
 }// home
+
+.welcome{
+ border-bottom: 2px dashed gray;
+  padding: 10px 0;
+
+}
+
+.btn{
+  .customBtn(150px, 60px, black, 20px );
+  @media @mobile{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+    flex-flow: wrap;
+  }
+}
