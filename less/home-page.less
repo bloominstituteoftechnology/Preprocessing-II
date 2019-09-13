@@ -84,26 +84,49 @@
 // Media Queries //
 @media @mobile {
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-  }
+    header {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      nav {
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+      }
+    }
+    .border();
+    // section h2 {
+    //   display: flex;
+    //   justify-content: flex-start;
+    //   width: 100vw;
+    //   .border();
+    // }
+    .content-section,
+    .content-pick {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
 
-  .container header {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-  }
+      .border();
+    }
+    .inverse-content {
+      display: flex;
+      flex-direction: column-reverse;
+      .border();
+    }
 
-  .container header nav {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  h1 {
-    width: 20%;
-    align-self: center;
+    // p {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   width: 50vw;
+    //   margin: 0;
+    //   padding: 0;
+    //   .border();
+    // }
   }
 }

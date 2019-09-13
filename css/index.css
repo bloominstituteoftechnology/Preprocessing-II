@@ -275,25 +275,35 @@ nav a:hover {
   display: flex;
   width: 500px;
 }
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
+    border: 1px solid red;
   }
   .container header {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .container header h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
   .container header nav {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    width: 100vw;
+    justify-content: space-evenly;
   }
-  h1 {
-    width: 20%;
-    align-self: center;
+  .container .content-section,
+  .container .content-pick {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+  }
+  .container .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid red;
   }
 }
