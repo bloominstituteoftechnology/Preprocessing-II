@@ -254,14 +254,20 @@ img {
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 500px) {
   .content-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+@media (max-width: 500px) {
   .content-pick {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }

@@ -66,24 +66,31 @@
   }
 }// home
 
-@media @mobile{
+
   .container-home{
+    @media @mobile{
     display: flex; 
     flex-direction: column;
-
+    }
 
 
   }
   .content-section{
+    @media @mobile{
     display: flex; 
     flex-direction: column;
-    justify-content:  center;
-    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    }
   }
 
   .content-pick{
+    @media @mobile{
     display: flex; 
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
   }
-}
 
+  
