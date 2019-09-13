@@ -1,40 +1,106 @@
 .home {
 
+  header {
+    display: flex;
+    align-items: baseline;
+    padding: 2.2rem 0rem 2.7rem 0rem;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      flex-direction: column;
+      padding-top: 1.9rem;
+      padding-bottom: 1rem;
+
+      h1 {
+        text-align: center;
+        margin-left: 19.5rem;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .funbus {
+    margin-bottom: 2rem;
+
+    @media @phone {
+      height: auto;
+      width: 90%;
+      margin-left: 2.3rem;
+    }
+  }
+
+  .top-content {
+    padding-bottom: 0.8rem;
+    .border();
+
+    @media @phone {
+      margin: 0 2.5rem;
+    }
+  }
+
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @phone {
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+        padding: 0 2.5rem;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @phone {
+        width: 100%;
+        padding: 0 5rem;
+      }
 
       img {
         border-radius: 10px;
       }
     }
   }
+  
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone {
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @phone {
+        width: 100%;
+        padding: 0 2.5rem;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+        width: 100%;
+        padding: 0 5rem;
+      }
     }
   }
 
@@ -42,8 +108,14 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+      padding: 0 2.5rem;
+    }
+
     img {
       border-radius: 10px;
+      
     }
   }
 
@@ -53,9 +125,34 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 100%;
+        padding: 0 5rem;
+      }
+    }
+    
+  }
+
+  button {
+    font-size: 1.8rem;
+    width: 20rem;
+    height: 4.5rem;
+    background-color: @button-bg;
+    color: @white;
+    border-radius: 12px;
+
+    @media @phone {
+      width: 35rem;
+      margin-left: 2.5rem; 
     }
   }
+
 }// home
