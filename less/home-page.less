@@ -71,16 +71,8 @@
     }
   }
 
-  .btnWrap {
-    display: flex;
-    justify-content: center;
-    button {
-      width: 100%;
-      height: 40px;
-      border-radius: 15px;
-      font-size: 1.5rem;
-      .btn(seagreen, white);
-    }
+  .btnWrapper {
+    .btnColor(darkcyan, white);
   }
 
   footer {
@@ -88,3 +80,30 @@
     width: 500px;
   }
 } // home
+
+// Media Queries //
+@media @mobile {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .container header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .container header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  h1 {
+    width: 20%;
+    align-self: center;
+  }
+}
