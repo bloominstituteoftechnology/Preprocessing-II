@@ -158,6 +158,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-weight: bold;
 }
 img {
   max-width: 100%;
@@ -168,28 +169,36 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.header1 {
+#header1 {
   display: flex;
   justify-content: flex-end;
   justify-content: space-around;
   border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 3%;
+  width: 100%;
+  margin: 0 auto;
 }
-.header1 .logo {
+#header1 .logo {
   font-family: "Indie Flower", cursive;
   font-size: 3rem;
   margin-top: 2%;
-  margin-left: 8.5%;
+  margin-left: 12%;
 }
-.header1 nav {
-  display: flex;
-  justify-content: space-around;
+#header1 nav {
+  flex-wrap: nowrap;
+  width: 40%;
+  padding-top: 3%;
+  margin-left: -7%;
 }
-.header1 .navLinks {
-  display: flex;
-  flex-direction: row;
+#header1 nav a {
   justify-content: space-between;
   font-size: 2rem;
-  margin-top: 8%;
+  text-decoration: none;
+  color: #212529;
+  margin: 3%;
+}
+#header2 #bus-img {
+  padding-bottom: 3%;
 }
 .footer {
   width: 100%;
@@ -247,4 +256,17 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick button {
+  background-color: #17A2B8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 90%;
+  align-content: center;
 }
