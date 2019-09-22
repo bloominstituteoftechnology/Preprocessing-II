@@ -1,25 +1,73 @@
 .home {
 
+  .header {
+    margin-top: 100px;
+  }
+
+  .img-wrapper {
+    @media @mobile {
+      margin: 0 5%;
+    }
+  }
+
+  .header-content {
+    padding-bottom: 16px;
+    border-bottom: 2px dashed @navigation-border;
+    margin-top: 26px;
+
+    @media @mobile {
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-bottom: 3%;
+    }
+
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      flex-direction: column;
+      margin-right: 5%;
+      margin-left: 5%;
+      //width: 100%;
+    }
+
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        padding: unset;
+        width: auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        padding: unset;
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
+
     }
   }
 
@@ -30,17 +78,42 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding: unset;
+        //width:auto;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 2;
+        padding: unset;
+        //width: 100%;
+      }
+
+      img {
+        border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
+
+
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 90%;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +126,44 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      margin: 5%;
+      padding-top: 8px;
+
+    }
+
+    .content-pick-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      @media @mobile {
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 7% 2% 7%;
+      }
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: auto;
+      }
+
     }
+
+    .destination-margin {
+      @media @mobile {
+        margin-bottom: 0px;
+      }
+    }
+
+    .btn {
+      .button;
+    }
+
   }
 }// home
