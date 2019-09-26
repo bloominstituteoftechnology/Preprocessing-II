@@ -168,27 +168,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navigation {
-  display: flex;
-  margin: 3% auto;
+.navbox {
+  width: 100%;
+  border-bottom: 2px dashed silver;
 }
-.navigation .headline {
+.navbox .navigation {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
-  width: 70%;
-  justify-content: baseline;
-  border: 1px solid black;
+  padding: 2% 0;
 }
-.navigation .nav {
+.navbox .navigation .headline {
   display: flex;
-  width: 30%;
-  border: 1px solid red;
-  align-content: center;
+  width: 50%;
 }
-.navigation .nav a {
+.navbox .navigation .nav {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbox .navigation .nav a {
+  font-size: 16px;
   text-decoration: none;
   color: black;
-  text-align: center;
-  margin: 0 2%;
 }
 .footer {
   width: 100%;
