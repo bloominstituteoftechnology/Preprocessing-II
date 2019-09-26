@@ -193,6 +193,9 @@ img {
   text-decoration: none;
   color: black;
 }
+.navbox .navigation .nav a:hover {
+  color: silver;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
