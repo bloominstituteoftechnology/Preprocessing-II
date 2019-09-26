@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Fun Bus Travel Agency - Solution</title>
 
@@ -15,11 +16,24 @@
 </head>
 
 <body>
-
-  
+  <div class="nav-container">
+    <nav class="nav">
+      <h1>Fun Bus</h1>
+      <div class="nav-items">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </div>
      
   <div class="container home">
-   
+    <header class="header">
+      <img src="img/fun-bus.jpg" alt="">
+      <h2>Welcome To Fun Bus!</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nostrum, saepe dolore accusantium soluta sint maxime quae similique atque corporis nesciunt vitae quaerat possimus autem? Asperiores exercitationem ea labore tempore.</p>
+    </header>
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -64,6 +78,27 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <section class="content-input">
+      <h4>Sign Up For Special Offers!</h4>
+      <form class="user-info-form" action="">
+        <select name="destinations">
+          <option value="Fun In The Sun" selected>Fun In The Sun</option>
+          <option value="Mountain Excursion">Mountain Excursion</option>
+          <option value="Island Getaway">Island Getaway</option>
+        </select>
+        <label for="">Name: </label>
+        <input type="text">
+        <label for="">Email: </label>
+        <input type="email">
+        <label for="">Phone: </label>
+        <input type="number">
+        <label for="">Special Instructions: </label>
+        <input type="textarea">
+        <input type="submit">
+      </form>
+    </section>
+
   </div><!-- container -->
 
   <footer class="footer">
