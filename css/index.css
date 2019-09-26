@@ -169,20 +169,26 @@ img {
   margin: 0 auto;
 }
 .navigation {
-  width: 100%;
   display: flex;
-  align-content: space-between;
   margin: 3% auto;
 }
-.navigation .nav {
-  width: 30%;
+.navigation .headline {
+  display: flex;
+  width: 70%;
   justify-content: baseline;
+  border: 1px solid black;
+}
+.navigation .nav {
+  display: flex;
+  width: 30%;
+  border: 1px solid red;
+  align-content: center;
 }
 .navigation .nav a {
   text-decoration: none;
   color: black;
   text-align: center;
-  margin: 3%;
+  margin: 0 2%;
 }
 .footer {
   width: 100%;
