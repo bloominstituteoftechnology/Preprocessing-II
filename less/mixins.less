@@ -1,1 +1,23 @@
 // Mixins in here
+.btn(@b-radius, @b-color, @t-color, @t-size, @b-width) {
+    border-radius: @b-radius;
+    background-color: @b-color;
+    color: @t-color;
+    font-size: @t-size;
+    width: @b-width;
+    padding: 4% 0%;
+    text-align: center;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: darken(@b-color, 10%);
+        font-weight:600;
+        color: yellow;
+    
+    }
+}
+
+//usage
+.btn {
+    .btn(8px, teal, white, 1.5rem, 75%);
+}

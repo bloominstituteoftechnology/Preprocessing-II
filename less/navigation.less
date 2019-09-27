@@ -1,1 +1,40 @@
 // Navigation Styles here
+
+.navigation-bar {
+    @media @mobile {
+        flex-direction: column;
+        width: 90%;
+    }
+   
+    display: flex;
+    align-items: center;
+    // border: 2px solid blue; for debugging purposes
+    padding: 4% 0;
+    margin: 0 -20%;
+    border-bottom: 2px dashed @navigation-border;
+    width: 150%;
+
+    h1{
+        margin-left: 13%
+    }
+
+   
+}
+
+nav {
+    width: 100%;
+    // border: 2px solid blue; for debugging purpsoses
+    padding-left: 28%;
+    // margin-right: 7%;
+}
+
+a {
+    // @media @mobile {
+        
+    //     margin-right: .1%
+    // }
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    margin: 1em .9rem;
+}
