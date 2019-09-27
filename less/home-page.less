@@ -1,16 +1,22 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      margin: 0 3% 0 3%;
+    }
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+      }
     }
 
     .img-content {
@@ -20,42 +26,71 @@
       img {
         border-radius: 10px;
       }
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 5x;
+      }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      width: 90%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
-      border-radius: 10px;
+      .img-content {
+        padding-right: 1%;
+        padding-left: 0;
+      }
     }
   }
+}
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+  @media @mobile {
+    margin: 0 3% 0 3%;
+  }
+  @media @mobile {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
+    @media @mobile {
+      margin-left: 18%;
+      width: 70%;
     }
   }
-}// home
+}
+.content-destination {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 70%;
+  margin: 0 0 5% 13%;
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+// home

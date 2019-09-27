@@ -1,1 +1,52 @@
 // Navigation Styles here
+
+header {
+  @media @mobile {
+    margin: 0 3% 0 3%;
+  }
+}
+header nav {
+  display: flex;
+  border-bottom: 2px dashed @navigation-border;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1%;
+  padding-top: 2%;
+  max-width: 800px;
+  margin: 0 auto;
+  @media @mobile {
+    flex-direction: column;
+  }
+  a {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    color: @shark;
+    text-decoration: none;
+    &:hover {
+      // The compiled color returned is #006667
+      color: lighten(@shark, 55%);
+    }
+  }
+}
+header .header-bus {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1%;
+  padding-top: 2%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+header .header-h2 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1%;
+  padding-top: 2%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 2px dashed @navigation-border;
+}
