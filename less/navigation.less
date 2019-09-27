@@ -18,6 +18,11 @@
             width: 100%;
             justify-content: center;
             padding: 2% 0;
+        }
+        @media @tablet{
+            width: 100%;
+            padding: 3% 0;
+            justify-content: center;
         }}
 
     .nav{
@@ -36,11 +41,18 @@
         @media @mobile {
             width: 100%;
             justify-content: space-around;}
+
+            @media @tablet {
+                width: 100%;
+                justify-content: space-around
+            }
         }
     @media @mobile {
         width: 90%;
         flex-direction: column;
     }
+
+    .tablet-vp();
     }
 
     

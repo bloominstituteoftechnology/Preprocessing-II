@@ -3,6 +3,12 @@
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .tablet-vp {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -199,6 +205,13 @@ img {
     padding: 2% 0;
   }
 }
+@media (max-width: 768px) {
+  .navbox .navigation .headline {
+    width: 100%;
+    padding: 3% 0;
+    justify-content: center;
+  }
+}
 .navbox .navigation .nav {
   display: flex;
   width: 50%;
@@ -219,9 +232,21 @@ img {
     justify-content: space-around;
   }
 }
+@media (max-width: 768px) {
+  .navbox .navigation .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 @media (max-width: 500px) {
   .navbox .navigation {
     width: 90%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .navbox .navigation {
+    width: 100%;
     flex-direction: column;
   }
 }
