@@ -168,6 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header-container {
+  display: flex;
+  width: 100%;
+  background: #FFFFFF;
+  top: 0;
+  z-index: 2;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navigation {
+  display: flex;
+  align-items: right;
+}
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
