@@ -1,50 +1,53 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
- 
-
-
-html, body {
+}
+html html,
+html body {
   font-family: 'Roboto', sans-serif;
-
-
-h1, h2, h3, h4, h5 {
+}
+html html h1,
+html body h1,
+html html h2,
+html body h2,
+html html h3,
+html body h3,
+html html h4,
+html body h4,
+html html h5,
+html body h5 {
   font-family: 'Indie Flower', cursive;
 }
-
-h1 {
+html html h1,
+html body h1 {
   font-size: 4rem;
 }
-
-h2 {
+html html h2,
+html body h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
-
-h4 {
+html html h4,
+html body h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
-
-p {
+html html p,
+html body p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
-
-img {
+html html img,
+html body img {
   max-width: 100%;
   height: auto;
 }
-
-.container {
+html html .container,
+html body .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
-}
-}
-
