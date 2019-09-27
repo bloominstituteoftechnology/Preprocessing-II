@@ -2,24 +2,30 @@
 
 
 
-.header-container { 
+.header-container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     background: @main-bg;
     top: 0;
     z-index: 2;
-    border-bottom: 2px dashed @silver;
-}
+    border-bottom: 2px dashed @silver;}
 
-.navigation {
+& { 
+    .navigation {
     display: flex;
     align-items: right;
-    
+    }    
 }
+
+
+    
+
 
 nav a {
     padding: 20px;
     text-decoration: none;
     color: @shark;
 }
+
  
