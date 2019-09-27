@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 .navbox {
   width: 100%;
   border-bottom: 2px dashed silver;
@@ -182,6 +187,13 @@ img {
   display: flex;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .navbox .navigation .headline {
+    width: 100%;
+    justify-content: center;
+    padding: 2% 0;
+  }
+}
 .navbox .navigation .nav {
   display: flex;
   width: 50%;
@@ -195,6 +207,18 @@ img {
 }
 .navbox .navigation .nav a:hover {
   color: silver;
+}
+@media (max-width: 500px) {
+  .navbox .navigation .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .navbox .navigation {
+    width: 90%;
+    flex-direction: column;
+  }
 }
 .footer {
   width: 100%;

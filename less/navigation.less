@@ -12,7 +12,13 @@
 
     .headline {
         display: flex;
-        width: 50%;}
+        width: 50%;
+        
+        @media @mobile{
+            width: 100%;
+            justify-content: center;
+            padding: 2% 0;
+        }}
 
     .nav{
         display: flex;
@@ -27,8 +33,15 @@
             &:hover {
                 color: silver;
             }}
-        
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;}
         }
-    
+    @media @mobile {
+        width: 90%;
+        flex-direction: column;
     }
+    }
+
+    
 }
