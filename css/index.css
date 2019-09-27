@@ -168,6 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.bton {
+  background-color: #17A2B8;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 95%;
+  cursor: pointer;
+}
+.bton:hover {
+  background-color: #117a8b;
+}
 .navBar {
   display: flex;
   flex-direction: row;
@@ -247,12 +264,35 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination h4,
+.home .content-pick .destination p {
+  text-align: center;
+}
+.home .content-pick .destination .button {
+  background-color: #17A2B8;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 95%;
+  cursor: pointer;
+}
+.home .content-pick .destination .button:hover {
+  background-color: #117a8b;
+}
 .footer {
   width: 100%;
   background-color: #fcf4e7;
   border-top: 2px dashed #C0C0C0;
 }
-.footer .flexRowC(flex; row; center;) p {
+.footer p {
+  display: block;
+  text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
