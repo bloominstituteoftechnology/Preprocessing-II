@@ -1,1 +1,41 @@
 // Navigation Styles here
+
+.navbar {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+        @media (max-width: 515px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 10px;
+    }
+
+.links {
+    @media (max-width: 515px) {
+        padding: 10px 0 0;
+    }
+    }
+
+
+    a {
+        padding-right: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+
+        @media (max-width: 515px) {
+            padding: 0 30px;
+        }
+
+    }
+}
