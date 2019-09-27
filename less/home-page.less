@@ -9,6 +9,11 @@
       .header {
         display: block;
         .dash(30px; @hr;);
+
+        @media @cell {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
       }
 
   .content-section {
@@ -16,37 +21,66 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-  
-    
+
+    @media @cell {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;      
+    }
+     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @cell {
+        width: 90%;
+      }
+      
+      
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @cell {
+        width: 90%;
+        justify-content: center;
+      }
 
       img {
         border-radius: 10px;
       }
       }
     }
-  
-
 
   .inverse-content {
     .dash(30px; @hr;);
+
+    @media @cell {
+      display: flex;
+      flex-flow: wrap-reverse;
+      justify-content: center;
+    }
     
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @cell {
+        width: 90%;
+        justify-content: center;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @cell {
+        width: 90%;
+        justify-content: center;
+      }
     }
   }
 
@@ -54,8 +88,20 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @cell {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;   
+    }
+
+
     img {
       border-radius: 10px;
+
+      @media @cell {
+        width: 100%;
+        justify-content: stretch;
+      }
     }
   }
 
@@ -63,9 +109,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media @cell {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+      text-align: center;     
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @cell {
+        width: 90%;
+        justify-content: center;
+      }
 
      h4, p {
         text-align: center;

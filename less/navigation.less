@@ -4,37 +4,75 @@
 @import "mixins";
 @import "variables";
 
+.animated {
+  animation-duration: 6s;
+  animation-delay: 0s;
 
-
+  @media @cell {
+    display: block;
+    // border: 8px solid red;
+    
+    
+  }
+  
 
 .navBar {
-  .flexRowC(flex, row, center);
-    padding: 1.5%;
+  .flexRowC(flex, row, center);    
+    padding: 15px;
     background-color: @sandy-beach;
-    border-bottom: 2px dashed @silver;
+    border-bottom: @hr;
+
+    @media @cell {
+      display: block;
+      margin-top: 2%;    
+    }
+
     .FB {
       // border: 2px solid dodgerblue;
-      display: flex;
+      .flexRowC(flex, row, center);
       margin-left: 27%;
-      margin-right: 5%;
-      justify-content: center;
-      vertical-align: middle;
-      padding-left: 1%;        
-      }
+      margin-right: 5%;      
+      padding-left: 1%;
+
+      @media @cell {
+        vertical-align: middle;
+        // border: 2px solid dodgerblue;
+     }
+      
+    }
   
       .links {
         // border: 2px solid rgb(107, 245, 176);
-            .flexRowC(flex, row, center);
+            .flexRow(flex, row);
             justify-content: space-between;
             width: 32%;
             padding-right: 1.5%;
             padding-left: 8%;
+
+            @media @cell {
+              justify-content: space-between;
+              // border: 2px solid rgb(107, 245, 176);
+              width: 100%;
+              margin-top: 5%;
+              margin-bottom: 1%;
+              
+            }
             
             a {
               .navText(@none: none; @shark; @rem: 1.5rem;);
+              .flexRow(flex, row);
+              justify-content: space-between;
+               
 
-            }
-            
+              @media @cell {
+                padding-left: 5%;
+                padding-right: 5%;
+                vertical-align: middle;
+           
         }
-}
-      
+      }
+    }
+  }
+}//ani
+  
+
