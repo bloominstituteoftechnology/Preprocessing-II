@@ -1,1 +1,30 @@
 // Navigation Styles here
+header {
+	border-bottom: @navigation-border dashed 2px;
+
+	h1 {
+		margin: 0 20px;
+	}
+
+	.flex-container {
+		padding: 15px 0;
+		.flex-box(space-between, center, row);
+		@media @mobile {
+			.flex-box(space-between, center, column);
+		}
+	}
+}
+
+nav.nav-box {
+	.flex-box(space-around, center, row);
+	font-size: 1.5rem;
+	width: 40%;
+	margin: 15px;
+	// margin-right: 0;
+	a {
+		.reset-link();
+	}
+	@media @mobile {
+		width: 100%;
+	}
+}

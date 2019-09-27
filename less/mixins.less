@@ -1,1 +1,27 @@
 // Mixins in here
+.flex-box(@justify, @align, @direction) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.reset-link() {
+	text-decoration: none;
+	color: black;
+}
+
+.btnPrimary(@btnColor, @btnBgColor) {
+	width: 200px;
+	padding: 10px;
+	font-size: 21px;
+	text-align: center;
+	color: @btnColor;
+	background: @btnBgColor;
+	border-radius: 15px;
+}
+
+.mobile() {
+	flex-flow: column nowrap;
+	align-items: center;
+}
