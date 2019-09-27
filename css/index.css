@@ -168,9 +168,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav1 {
+div .nav1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 16px;
 }
 .nav1 a {
