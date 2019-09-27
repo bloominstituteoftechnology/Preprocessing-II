@@ -1,12 +1,23 @@
+@import "variables";
+@import "mixins";
+
+
+
+
 .home {
+
+      .header {
+        display: block;
+        .dash(30px; @hr;);
+      }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    
+  
     
     .text-content {
       width: 48%;
@@ -20,13 +31,14 @@
       img {
         border-radius: 10px;
       }
+      }
     }
-  }
+  
+
 
   .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
+    .dash(30px; @hr;);
+    
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -48,8 +60,6 @@
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
@@ -58,4 +68,4 @@
       margin-bottom: 30px;
     }
   }
-}// home
+} //home

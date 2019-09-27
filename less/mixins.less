@@ -1,1 +1,26 @@
-// Mixins in here
+// Mixins in here//
+@import "variables";
+
+.flexRowC(@flex: flex; @row: row; @center: center;){
+	display: @flex;
+	flex-direction: @row;
+	align-items: @center;
+}
+
+.flexRow(@flex: flex; @row: row;){
+	display: @flex;
+	flex-direction: @row;
+	
+}
+
+.navText(@none: none; @color: black; @rem: 1.5rem;){
+    text-decoration: @none;
+    color: @color;
+    font-size: @rem;
+}
+
+.dash(@pad: 30px; @hrParam: @hr;){
+    padding-bottom: @pad;
+    border-bottom: @hrParam;
+}
+    

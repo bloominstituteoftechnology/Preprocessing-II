@@ -1,1 +1,40 @@
 // Navigation Styles here
+//mix-ins//
+
+@import "mixins";
+@import "variables";
+
+
+
+
+.navBar {
+  .flexRowC(flex, row, center);
+    padding: 1.5%;
+    background-color: @sandy-beach;
+    border-bottom: 2px dashed @silver;
+    .FB {
+      // border: 2px solid dodgerblue;
+      display: flex;
+      margin-left: 27%;
+      margin-right: 5%;
+      justify-content: center;
+      vertical-align: middle;
+      padding-left: 1%;        
+      }
+  
+      .links {
+        // border: 2px solid rgb(107, 245, 176);
+            .flexRowC(flex, row, center);
+            justify-content: space-between;
+            width: 32%;
+            padding-right: 1.5%;
+            padding-left: 8%;
+            
+            a {
+              .navText(@none: none; @shark; @rem: 1.5rem;);
+
+            }
+            
+        }
+}
+      

@@ -168,41 +168,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navBar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1.5%;
-  background-color: #fcf4e7;
-  border-bottom: 2px dashed #C0C0C0;
-}
-.navBar .FB {
-  display: flex;
-  margin-left: 27%;
-  margin-right: 5%;
-  justify-content: center;
-  vertical-align: middle;
-  padding-left: 1%;
-}
-.navBar .links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 32%;
-  padding-right: 1.5%;
-  padding-left: 8%;
-}
-.navBar .links a {
-  text-decoration: none;
-  color: #212529;
-  font-size: 1.5rem;
-}
-.home .header {
-  display: block;
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
-}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -240,6 +205,8 @@ img {
   border-radius: 10px;
 }
 .home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
@@ -249,10 +216,11 @@ img {
 }
 .footer {
   width: 100%;
-  background-color: #fcf4e7;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
 }
-.footer .flexRowC(flex; row; center;) p {
+.footer p {
+  text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;

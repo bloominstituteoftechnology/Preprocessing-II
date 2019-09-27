@@ -1,0 +1,30 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5%;
+  background-color: #fcf4e7;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navBar .FB {
+  display: flex;
+  margin-left: 27%;
+  margin-right: 5%;
+  justify-content: center;
+  vertical-align: middle;
+  padding-left: 1%;
+}
+.navBar .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 32%;
+  padding-right: 1.5%;
+  padding-left: 8%;
+}
+.navBar .links a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.5rem;
+}
