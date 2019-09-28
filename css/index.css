@@ -172,7 +172,7 @@ header {
   display: inline;
 }
 header h1 {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 header div {
   display: flex;
@@ -193,7 +193,7 @@ div .nav1 {
 .bus {
   width: 90%;
   margin: 50px;
-  padding: 20px;
+  padding: 10px;
 }
 .footer {
   width: 100%;
