@@ -1,11 +1,13 @@
 // Navigation Styles here
 
-.navigation-bar {
-    @media @mobile {
+@media @mobile {
+    .container {
+        display: flex;
         flex-direction: column;
-        width: 90%;
+        
     }
-   
+}
+.navigation-bar {
     display: flex;
     align-items: center;
     // border: 2px solid blue; for debugging purposes
@@ -14,8 +16,16 @@
     border-bottom: 2px dashed @navigation-border;
     width: 150%;
 
+    @media @mobile {
+        flex-direction: column;
+    }
+
     h1{
-        margin-left: 13%
+        margin-left: 13%;
+
+        @media @mobile {
+        margin-left: 0%;
+        }
     }
 
    
@@ -25,16 +35,16 @@ nav {
     width: 100%;
     // border: 2px solid blue; for debugging purpsoses
     padding-left: 28%;
-    // margin-right: 7%;
 }
 
 a {
-    // @media @mobile {
-        
-    //     margin-right: .1%
-    // }
     font-size: 2rem;
-    color: black;
+    color:@shark;
     text-decoration: none;
     margin: 1em .9rem;
+    
+    &:hover{
+        color: @white;
+        background-color:@shark;
+    }
 }
