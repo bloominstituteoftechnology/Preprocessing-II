@@ -168,6 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-content: ceter;
+}
+hi {
+  font-size: 40px;
+  color: #212529;
+}
+a {
+  text-decoration: none;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -231,4 +244,13 @@ img {
   border-radius: 10px;
   padding: 20px;
   font-size: 29px;
+}
+.home .heade {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.home .heade hi {
+  font-size: 40px;
 }
