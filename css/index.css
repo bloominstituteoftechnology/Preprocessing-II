@@ -174,12 +174,15 @@ img {
 }
 .navigation .top-left {
   width: 50%;
+  margin-left: 10%;
 }
 .navigation .navbar a {
   text-decoration: none;
   color: black;
-  font-size: 2vh;
+  font-size: 3vh;
   padding: 10px;
+  margin-top: 20px;
+  justify-content: space-evenly;
 }
 .footer {
   width: 100%;
@@ -239,6 +242,35 @@ img {
   margin-bottom: 30px;
 }
 .intro {
-  border: 1px solid red;
   margin-bottom: 20px;
 }
+.funbus-intro {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navigation {
+  padding: 10px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.btn {
+  border: red;
+  background-color: teal;
+  color: white;
+  padding: 10%;
+  text-align: center;
+  font-size: 2.5vh;
+  border-radius: 8px;
+}
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid yellow;
+  }
+}
+
