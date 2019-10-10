@@ -237,7 +237,6 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-section {
-    border: 1px red solid;
     display: flex;
     flex-direction: column;
   }
@@ -265,6 +264,8 @@ img {
     padding-right: 5px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px grey dashed;
+    padding-bottom: 10px;
   }
 }
 .home .content-section .img-content img {
@@ -310,7 +311,6 @@ img {
   .buspic {
     width: 100%;
     display: flex;
-    border: 1px red solid;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -322,7 +322,6 @@ img {
 }
 @media (max-width: 500px) {
   .underpic {
-    border: 1px red solid;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
