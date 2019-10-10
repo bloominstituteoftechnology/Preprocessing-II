@@ -50,9 +50,9 @@ Follow these steps for completing your project.
 * [x] Match the design file at `500px` as well as you can 
 
 ## Stretch Goals: 
-* [ ] Create an animation mixin using parametric mixins
+* [x] Create an animation mixin using parametric mixins
 * [x] Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions. 
-* [ ] Style the site to look good at all sizes, not just desktop and phone
+* [x] Style the site to look good at all sizes, not just desktop and phone
 
 
 
