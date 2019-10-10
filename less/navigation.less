@@ -1,1 +1,33 @@
 // Navigation Styles here
+header {   
+    padding: 2% 0;
+    .borderBottom();
+  
+    .container {
+      .displayFlex(space-between, row, center);
+  
+      @media @mobile {
+          .displayFlex(center, column, center);
+
+          h1 {
+              padding: 4% 0;
+          }
+      }  
+
+      nav {
+        width: 35%;
+        .displayFlex(space-between, row, center);
+
+        @media @mobile {
+            .displayFlex(space-evenly, row, center);
+            width: 100%;
+        }
+  
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.6em;
+        }
+      }
+    }
+  }

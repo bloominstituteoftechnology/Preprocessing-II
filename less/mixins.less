@@ -1,1 +1,23 @@
 // Mixins in here
+
+.displayFlex(@justify: center, @direction: row, @align: center) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.borderBottom(@width: 2px, @style: dashed) {
+    border-bottom: @width @style @navigation-border;
+}
+
+.btnStyles(@bg-color: seagreen, @txt-color: white, @width: 200px) {
+    background-color: @bg-color;
+    color: @txt-color;
+    width: @width;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    font-size: 2rem;
+}
