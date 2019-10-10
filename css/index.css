@@ -171,12 +171,10 @@ img {
 .wrapper {
   width: 100%;
   max-width: 1000px;
-  border: 2px solid orange;
   margin: 0 auto;
   box-sizing: inherit;
 }
 header {
-  border: 2px solid blue;
   display: flex;
   align-items: center;
   padding: 3% 0;
@@ -232,7 +230,6 @@ header nav a:hover {
   padding: 20px;
 }
 .home {
-  border: 2px solid red;
   width: 98%;
 }
 .home .content-section {
