@@ -364,4 +364,50 @@ header div {
   border-radius: 15px;
   padding: 10px 10px;
   width: 85%;
+  cursor: pointer;
+}
+.home .bookings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  border-top: 2px dashed #C0C0C0;
+  padding-top: 30px;
+}
+.home .bookings input[type="text"],
+.home .bookings input[type="email"],
+.home .bookings input[type="tel"],
+.home .bookings textarea,
+.home .bookings select {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+  font-family: inherit;
+}
+.home .bookings input[type="submit"] {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #008080;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 10px;
+  cursor: pointer;
+  width: 85%;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+}
+.home .bookings form {
+  margin-top: 15px;
+  width: 100%;
+}
+.home .bookings form label {
+  text-transform: uppercase;
 }

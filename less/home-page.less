@@ -134,4 +134,41 @@ header {
       }
     }
   }
+
+  .bookings {
+    .flexbox(column, center, center);
+    text-align: center;
+    font-size: 1.6rem;
+    border-top: 2px dashed @silver;
+    padding-top: 30px;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea, select {
+      width: 85%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid black;
+      font-family: inherit;
+    }
+
+    input[type="submit"] {
+      .sign-up-button(#008080);
+      width: 85%;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border: none;
+    }
+    form {
+      margin-top: 15px;
+      width: 100%;
+
+      label {
+        text-transform: uppercase;
+      }
+    }
+  }
 }// home
