@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  border-bottom: dashed #C0C0C0 0.5rem;
+}
+header .navbar {
+  display: flex;
+  width: 100%;
+  margin: 2% 0;
+  align-items: baseline;
+}
+header .navbar div {
+  width: 50%;
+}
+header .navbar nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .navbar nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
