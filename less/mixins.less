@@ -1,7 +1,6 @@
-.displayFlex(@direction, @justify){
+.displayFlex(@direction){
     display: flex;
     flex-direction: @direction;
-    justify-content: @justify;
 }
 
 .ctaBtn(){
@@ -10,9 +9,12 @@
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     width:85%;
-    height:16%;
+    height:40px;
     border-radius:15px;
     text-align: center;
-    padding-top: 5%;
-    margin-bottom: 15px;
+    padding-top: 10px;
+
+    @media @mobile{
+        width: 100%;
+    }
 }
