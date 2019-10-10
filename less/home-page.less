@@ -17,6 +17,7 @@
 
     @media @mobile {
       flex-direction: column;
+      justify-content: center;
       align-items: center;
     }
 
@@ -35,10 +36,12 @@
 
       @media @mobile {
         width: 100%;
+        padding-left: 3%;
       }
 
       img {
         border-radius: 10px;
+
       }
     }
   }
@@ -60,7 +63,11 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
+
+      @media @mobile {
+        padding-left: 3%;
+      }
+     }
   }
 
   .content-destination {
