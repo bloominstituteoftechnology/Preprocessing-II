@@ -177,17 +177,17 @@ img {
   font-size: 1.2rem;
   align-items: center;
 }
+.navflex a {
+  text-decoration: none;
+  color: black;
+}
 .headercontain {
   border: 1px blue solid;
   display: flex;
   justify-content: space-between;
   width: 90%;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-#title {
+.headercontain #title {
   border: 1px green solid;
   width: 44%;
   display: flex;
