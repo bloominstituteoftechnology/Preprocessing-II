@@ -1,1 +1,56 @@
-// Navigation Styles here
+.main-navigation {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  
+    @media @mobile500 {
+      padding-bottom: 10px;
+    }
+  
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 80%;
+  
+      @media @mobile500 {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+  
+      .logo-heading {
+        margin-top: 15px;
+  
+        .keyframes(wave; {
+          0% { color: palevioletred; background: paleturquoise; }
+          25% { color: greenyellow; background: gold; }
+          50% { color: cornflowerblue; background: cornflowerblue; }
+          75% { color: gold; background: greenyellow; }
+          100% { color: paleturquoise; background: palevioletred; }
+        });
+  
+  
+        @media @mobile500 {
+          width: 100%;
+          flex-basis: 100%;
+          margin: 15px 0;
+        }
+      }
+  
+      .nav {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.6rem;
+        width: 40%;
+  
+        @media @mobile500 {
+          width: 100%;
+          flex-basis: 100%;
+          justify-content: space-between;
+        }
+      }
+    }
+  
+  }
