@@ -169,7 +169,6 @@ img {
   margin: 0 auto;
 }
 .navflex {
-  border: 1px red solid;
   display: flex;
   justify-content: flex-end;
   justify-content: space-around;
@@ -252,4 +251,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.buspic {
+  width: 100%;
+  padding-left: 160px;
+  padding-right: 60px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
 }
