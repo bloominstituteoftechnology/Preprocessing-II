@@ -1,1 +1,43 @@
-// Mixins in here
+// Mixins in here//
+@import "variables";
+
+.flexRowC(@flex: flex; @row: row; @center: center;){
+	display: @flex;
+	flex-direction: @row;
+	align-items: @center;
+}
+
+.flexRow(@flex: flex; @row: row;){
+	display: @flex;
+	flex-direction: @row;
+	
+}
+
+.navText(@none: none; @color: black; @rem: 1.5rem;){
+    text-decoration: @none;
+    color: @color;
+    font-size: @rem;
+}
+
+.dash(@pad: 30px; @hrParam: @hr;){
+    padding-bottom: @pad;
+    border-bottom: @hrParam;
+}
+.bton {
+    background-color: @eastern-blue;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 12px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 95%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@eastern-blue, 10%)
+      }
+}
