@@ -188,6 +188,11 @@ img {
   padding-right: opx;
   padding-left: 0px;
 }
+@media (max-width: 500px) {
+  .navflex {
+    width: 100%;
+  }
+}
 .navflex a {
   text-decoration: none;
   color: black;
@@ -199,6 +204,13 @@ img {
   width: 100%;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .headercontain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .headercontain #title {
   width: 40%;
