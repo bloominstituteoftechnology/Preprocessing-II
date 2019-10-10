@@ -1,1 +1,18 @@
-// Mixins in here
+.displayFlex(@direction, @justify){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+.ctaBtn(){
+    background-color: @button-bg;
+    color: @white;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    width:85%;
+    height:16%;
+    border-radius:15px;
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 15px;
+}

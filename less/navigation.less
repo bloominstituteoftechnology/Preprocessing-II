@@ -1,1 +1,24 @@
-// Navigation Styles here
+nav{
+    .displayFlex(row, space-between);
+    padding:2% 0;
+    border-bottom: 2px dashed @navigation-border;
+
+    h1{
+        margin-left: 15%;
+    }
+}
+
+.links{
+    font-family: 'Roboto', sans-serif;
+    width: 30%;
+    padding: 0 2%;
+    margin-right: 15%;
+    .displayFlex(row, space-between);
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color: @shark;
+        font-size: 1.6rem;
+    }
+}
