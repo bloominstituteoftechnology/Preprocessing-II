@@ -184,6 +184,13 @@ img {
 }
 a {
   text-decoration: none;
+  color: black;
+}
+#title {
+  border: 1px green solid;
+  width: 44%;
+  display: flex;
+  justify-content: center;
 }
 .footer {
   width: 100%;
