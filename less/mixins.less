@@ -8,15 +8,17 @@
     height: @height;
 }
 
+.flexstyle(@just-cont, @align) {
+display: flex;
+justify-content: @just-cont;
+align-items: @align;
+}
 
 
 
 .btn {
     .buttonstyle(teal, white, 10px, 1.5rem, 40px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+    .flexstyle(center, center);
    
     
 
