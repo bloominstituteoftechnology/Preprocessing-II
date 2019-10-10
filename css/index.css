@@ -236,6 +236,11 @@ header .container nav a {
     padding: 0 4%;
   }
 }
+@media (min-width: 501px) {
+  .home {
+    padding: 0 4%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -306,20 +311,53 @@ header .container nav a {
     width: 100%;
   }
 }
+@media (min-width: 501px) {
+  .home .content-destination {
+    width: 80%;
+  }
+}
+@media (min-width: 800px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (min-width: 800px) {
+  .home .content-destination img {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .home .content-pick {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 501px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 800px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -332,6 +370,16 @@ header .container nav a {
     width: 80%;
   }
 }
+@media (min-width: 501px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
+@media (min-width: 800px) {
+  .home .content-pick .destination {
+    widfth: 30%;
+  }
+}
 .home .content-pick .btn {
   background-color: #17A2B8;
   color: white;
@@ -341,6 +389,10 @@ header .container nav a {
   padding: 12px;
   text-align: center;
   font-size: 2rem;
+}
+.home .content-pick .btn:hover {
+  background-color: white;
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
@@ -402,6 +454,10 @@ header .container nav a {
   padding: 12px;
   text-align: center;
   font-size: 2rem;
+}
+.home .content-form .btn:hover {
+  background-color: white;
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-form .btn {
