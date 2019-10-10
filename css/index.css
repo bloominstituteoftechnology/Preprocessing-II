@@ -175,7 +175,7 @@ header {
 header .navbar {
   display: flex;
   width: 100%;
-  margin: 2% auto;
+  margin: 0 auto;
   align-items: baseline;
   max-width: 800px;
 }
