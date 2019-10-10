@@ -9,6 +9,10 @@ header {
       margin: 0 auto;
       padding-bottom: 20px;;
 
+      @media @tablet {
+        .flexbox(column, center, center);
+      }
+
       @media @mobile {
        .flexbox(column, center, center);
       }
@@ -18,6 +22,8 @@ header {
 .home {
 
   .intro-content {
+    border-bottom: 2px dashed @silver;
+    padding-bottom: 10px;
     img {
       margin: -30px auto 0;
     }
@@ -32,16 +38,32 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @tablet {
+      .flexbox(row, center, center);
+    }
+
+    @media @mobile {
+      .flexbox(column, center, flex-start);
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: unset;
+        padding-right: unset;
+       }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: unset;
+       }
 
       img {
         border-radius: 10px;
@@ -52,6 +74,10 @@ header {
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      .flexbox(column-reverse, center, center);
+    }
 
     .text-content {
       padding-left: 1%;
@@ -68,6 +94,10 @@ header {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: unset;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -79,9 +109,25 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      .flexbox(column, center, center);
+    }
+
+    @media @mobile {
+      .flexbox(column, center, center);
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 65%;
+      }
+
+      @media @mobile {
+        width: 75%;
+      }
     
       .btn {
         .sign-up-button(#008080);
