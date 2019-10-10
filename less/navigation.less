@@ -1,1 +1,53 @@
 // Navigation Styles here
+
+header {
+//   border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  padding: 3% 0;
+  width: 98%;
+  margin-left: 2%;
+  border-bottom: 2px dashed @navigation-border;
+
+  @media @phone {
+    // border: 2px solid blue;
+    margin:0;
+    width:100%;
+    flex-direction: column;
+  }
+
+  h1 {
+    width: 40%;
+    // border:2px solid blue;
+    padding-left: 7.8%;
+  }
+
+  nav {
+    // border: 2px solid green;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+
+    @media @phone{
+        width:100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.mainheader {
+  border-bottom: 2px dashed @navigation-border;
+
+  h2 {
+    margin-top: 2%;
+  }
+}
