@@ -180,6 +180,11 @@ nav a {
   padding: 0 25px;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  nav a {
+    margin-top: 18px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -204,6 +209,14 @@ header div {
   max-width: 800px;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .content-section {
   margin: 30px 0;
