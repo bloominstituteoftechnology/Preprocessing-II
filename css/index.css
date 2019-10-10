@@ -169,7 +169,6 @@ img {
   margin: 0 auto;
 }
 header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   margin: 4% 0;
@@ -181,6 +180,7 @@ header nav {
   align-items: center;
 }
 header nav a {
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
 }
@@ -194,6 +194,16 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .under-header {
+  border-bottom: 2px dashed lightgray;
+  padding-bottom: 2%;
+}
+.home .under-header img {
+  border-top: 2px dashed lightgray;
+}
+.home .under-header h1 {
+  margin: 3% 0;
 }
 .home .content-section {
   margin: 30px 0;
