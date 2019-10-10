@@ -218,6 +218,12 @@ header div {
     align-items: center;
   }
 }
+.home .intro-content img {
+  margin: -30px auto 0;
+}
+.home .intro-content h2 {
+  margin-top: 20px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
