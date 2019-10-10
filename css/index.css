@@ -213,9 +213,10 @@ img {
   }
 }
 .headercontain #title {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: center;
+  padding-right: 20px;
 }
 .footer {
   width: 100%;
@@ -293,5 +294,15 @@ img {
 .underpic {
   border-bottom: 1px grey dashed;
   width: 90%;
-  padding-left: 160px;
+  padding-left: 230px;
+}
+@media (max-width: 500px) {
+  .underpic {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+    width: 100%;
+  }
 }

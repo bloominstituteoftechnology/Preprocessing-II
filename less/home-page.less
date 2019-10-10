@@ -81,7 +81,18 @@
 .underpic {
   border-bottom: 1px grey dashed;
   width: 90%;
-  padding-left: 160px;
+  padding-left: 230px;
+ 
+  @media @mobile {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+    width: 100%;
+    
+
+  }
  
 
 }
