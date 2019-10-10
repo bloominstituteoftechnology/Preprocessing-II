@@ -176,7 +176,8 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 4% 0;
+  border-bottom: 2px dashed lightgray;
+  padding: 2% 0;
 }
 @media (max-width: 500px) {
   header {
@@ -184,17 +185,27 @@ header {
     align-items: center;
   }
 }
+header h1 {
+  margin-left: 18.5%;
+}
+@media (max-width: 500px) {
+  header h1 {
+    margin: 0;
+  }
+}
 header nav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-right: 15%;
 }
 @media (max-width: 500px) {
   header nav {
     width: 100%;
     justify-content: space-around;
     padding-top: 3%;
+    margin: 0;
   }
 }
 header nav a {
@@ -216,9 +227,6 @@ header nav a {
 .home .under-header {
   border-bottom: 2px dashed lightgray;
   padding-bottom: 2%;
-}
-.home .under-header img {
-  border-top: 2px dashed lightgray;
 }
 .home .under-header h1 {
   margin: 3% 0;
