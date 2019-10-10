@@ -251,3 +251,11 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.btn button {
+  border-radius: 15px;
+  background-color: #17A2B8;
+  width: 80%;
+  height: 45px;
+  color: white;
+  font-size: 2rem;
+}
