@@ -168,6 +168,32 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  margin: 30px auto;
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+header div nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+header div nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 25px;
+  font-size: 1.6rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
