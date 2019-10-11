@@ -168,6 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.content-pick {
+  border-top: 1px dashed grey;
+}
+.content-pick .btn {
+  display: block;
+  background-color: teal;
+  margin: 0 1% 1% 0;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+.content-pick .btn:hover {
+  background-color: white;
+  color: teal;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -207,10 +225,10 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .tinybus {
-  border-top: 1px dashed grey;
-  border-bottom: 1px dashed grey;
-  max-width: 100%;
+.tinybus {
+  width: 100%;
+  border-top: 2px dashed silver;
+  border-bottom: 2px dashed silver;
 }
 .home header {
   padding: 2% 0;

@@ -1,1 +1,17 @@
 // Mixins in here
+.my-btn(@bg-color: teal, @width: 200px, @txt-color: white){
+    display: block;
+    background-color: @bg-color;
+    margin: 0 1% 1% 0;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@txt-color;
+    
+    &:hover{
+      background-color: @txt-color;
+      color: @bg-color;
+    }
+}
