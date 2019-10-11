@@ -3,8 +3,8 @@
     border-top: 1px dashed grey;
     .btn {
        .my-btn();
-    }
-}
+    }//closes btn
+ }//closes content-pick
 
 
     nav {
@@ -12,8 +12,8 @@
         justify-content: space-between;
         margin: 0 0;
         width: 100vw;
-        // border-bottom: 2px dashed gray;
-
+    
+        
 
             .links {
             display: flex;
@@ -22,22 +22,27 @@
             height: 7vh;
             padding: .65%;
             margin-top: 2%;
+           
             .innerlinks {
                 width: 100vw;
+            
             }
             h2 {
                 width: 89vw;
                 margin-bottom: 4%;
                 height: 5vh;
             }
-        }//closes the links           
+            }//closes the links           
            
         a {
-            // margin-left: 8%;
+            
             text-decoration: none;
             font-size: 1.4rem;
             color: @shark;
             padding: 6%;
+            @media @phone {
+                text-align: center;
+            }
            
         }//closes a
     }//closes nav

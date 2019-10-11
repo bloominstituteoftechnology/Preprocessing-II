@@ -214,6 +214,11 @@ nav a {
   color: #212529;
   padding: 6%;
 }
+@media (max-width: 500px) {
+  nav a {
+    text-align: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
