@@ -1,1 +1,71 @@
 // Navigation Styles here
+.content-pick {
+    border-top: 1px dashed grey;
+    .btn {
+       .my-btn();
+    }//closes btn
+ }//closes content-pick
+
+.home {
+    
+    
+    nav {
+        // display: flex;
+        
+        // margin: 0 0;
+        // width: 100vw;
+        // background: cadetblue;
+        height: 3%;
+        width: 100%;
+        border-bottom: 1px dashed silver;
+    
+        
+
+            .links {
+            // display: flex;
+            // justify-content: space-between;
+            width: 93vw;
+            height: 7vh;
+            padding: .65%;
+            margin-top: 2%;
+                @media @phone {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 80%;
+            }
+           
+            .innerlinks {
+                display: flex;
+                flex-direction: row-reverse;
+                height: 1%;
+                // width: 100vw;
+                @media @phone {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+            
+            }
+            h2 {
+                width: 100%;
+                margin-bottom: 5% 0;
+                height: 1%;
+                @media @phone {
+                    
+                }
+            }
+            }//closes the links           
+           
+        a {
+            
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: @shark;
+            padding: 6%;
+           
+           
+        }//closes a
+    }//closes nav
+}

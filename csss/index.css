@@ -182,44 +182,45 @@ img {
   border-radius: 10px;
   color: white;
 }
-.home nav {
-  height: 3%;
-  width: 100%;
-  border-bottom: 1px dashed silver;
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+  width: 100vw;
 }
-.home nav .links {
+nav .links {
+  display: flex;
+  justify-content: space-between;
   width: 93vw;
   height: 7vh;
   padding: 0.65%;
   margin-top: 2%;
 }
 @media (max-width: 500px) {
-  .home nav .links {
+  nav .links {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 80%;
   }
 }
-.home nav .links .innerlinks {
-  display: flex;
-  flex-direction: row-reverse;
-  height: 1%;
+nav .links .innerlinks {
+  width: 100vw;
 }
 @media (max-width: 500px) {
-  .home nav .links .innerlinks {
+  nav .links .innerlinks {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
 }
-.home nav .links h2 {
-  width: 100%;
-  margin-bottom: 5% 0;
-  height: 1%;
+nav .links h2 {
+  width: 89vw;
+  margin-bottom: 4%;
+  height: 5vh;
 }
-.home nav a {
+nav a {
   text-decoration: none;
   font-size: 1.4rem;
   color: #212529;
@@ -236,6 +237,11 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.tinybus {
+  width: 100%;
+  border-top: 2px dashed silver;
+  border-bottom: 2px dashed silver;
+}
 .home header {
   padding: 2% 0;
 }
@@ -246,9 +252,6 @@ img {
     display: flex;
     width: 80%;
   }
-}
-.home .lilbus {
-  margin: 2% 0;
 }
 .home .content-section {
   margin: 30px 0;
