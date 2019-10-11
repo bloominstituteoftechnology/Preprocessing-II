@@ -1,1 +1,14 @@
 // Mixins in here
+
+.buttonMan(@background, @width: 2rem, @text) {
+  display: block;
+  background-color: @background;
+  margin: 0 -1rem;
+  width: @width;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  color: @text;
+}
+
+@phone: ~"(max-width: 500px)";

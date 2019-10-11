@@ -1,1 +1,50 @@
 // Navigation Styles here
+.navigation {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+
+    @media @phone {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a {
+      text-decoration: none;
+      padding-left: 3rem;
+      padding-bottom: 2rem;
+      margin-top: -3rem;
+      font-size: 1.8rem;
+      color: black;
+    }
+  }
+}
+
+.logo {
+  border-top: 3px dashed grey;
+
+  @media @phone {
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+  }
+}
+
+h1 {
+  @media @phone {
+    margin-bottom: 6rem;
+    margin-left: 17rem;
+  }
+}
+
+//begin welcome section
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  p {
+    border-bottom: 0.3rem dashed grey;
+  }
+}
