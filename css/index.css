@@ -160,13 +160,41 @@ p {
   padding-bottom: 10px;
 }
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+  width: 100vw;
+}
+nav .links {
+  display: flex;
+  justify-content: space-between;
+  width: 93vw;
+  height: 7vh;
+  padding: 0.65%;
+  margin-top: 2%;
+}
+nav .links .innerlinks {
+  width: 100vw;
+}
+nav .links h2 {
+  width: 89vw;
+  margin-bottom: 4%;
+  height: 5vh;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #212529;
+  padding: 6%;
 }
 .footer {
   width: 100%;
@@ -178,6 +206,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .tinybus {
+  border-top: 1px dashed grey;
+  border-bottom: 1px dashed grey;
+  max-width: 100%;
+}
+.home header {
+  padding: 2% 0;
 }
 .home .content-section {
   margin: 30px 0;
