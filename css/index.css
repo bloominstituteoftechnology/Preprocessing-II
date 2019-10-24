@@ -168,21 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav-bar {
+header {
   display: flex;
   justify-content: space-between;
+  border-bottom: 3px dashed #C0C0C0;
   align-items: center;
-  margin-top: 3%;
 }
-.nav-bar h1 {
+header h1 {
   width: 20%;
+  margin: 3% 0;
 }
-.nav-bar nav {
+header nav {
   width: 40%;
+  margin: 3% 0;
 }
-.nav-bar nav a {
+header nav a {
   text-decoration: none;
-  color: black;
+  color: #212529;
   font-size: 1.6rem;
   padding: 4%;
 }
@@ -214,6 +216,13 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+.home .welcome-section h2 {
+  padding-top: 3%;
+}
+.home .welcome-section p {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 3%;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -242,4 +251,17 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  padding: 5%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 75%;
+  cursor: pointer;
+}
+.home .content-pick .btn:hover {
+  opacity: 0.5;
 }
