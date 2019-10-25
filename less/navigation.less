@@ -1,1 +1,30 @@
-// Navigation Styles here
+//mixins
+.displayFlex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.topnav{
+    .displayFlex(space-between, center);
+    width: 99%;
+    margin: 1%;
+    padding: 2%;
+    border-bottom: 2px dashed darkgrey;
+
+}
+
+nav{
+    .displayFlex(space-between, center);
+}
+
+nav a{
+    .displayFlex(space-between, center);
+    font-size: 1.2em;
+    white-space: nowrap;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-decoration: none;
+    color: black;
+
+}
