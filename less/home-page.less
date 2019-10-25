@@ -1,21 +1,70 @@
 .home {
 
+.jumbotron {
+     display: flex;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  background-color: darkgreen;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 6px;
+  font-size: 2rem;
+  padding: 1%;
+
+  @media @mobile {
+    margin-left: 35%;
+  }
+  
+}
+
+.info {
+    // display: flex;
+    // align-items: center;
+
+    margin-top: 2%;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      margin-top: 4%;
+      width: 100%;
+      text-align: center;
+  }
+}
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 8%;
+        
+      }
 
       img {
         border-radius: 10px;
@@ -27,20 +76,37 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding-top: 6%;
+        width: 90%;
+        text-align: center;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        padding-left: 7%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +119,20 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
+  
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }// home
