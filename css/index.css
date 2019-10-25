@@ -174,6 +174,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes navswitch {
+  from {
+    color: #212529;
+  }
+  to {
+    color: #17A2B8;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -193,6 +201,10 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 4%;
+}
+header nav a:hover {
+  animation-name: navswitch;
+  animation-duration: 2s;
 }
 @media (max-width: 500px) {
   header {
@@ -246,6 +258,7 @@ header nav a {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    padding: 0;
   }
 }
 .home .content-section .img-content img {
@@ -275,6 +288,11 @@ header nav a {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding: 0;
+  }
 }
 .home .content-destination {
   width: 75%;

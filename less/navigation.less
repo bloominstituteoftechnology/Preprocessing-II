@@ -19,7 +19,11 @@ header {
             text-decoration: none;
             color: @font-color;
             font-size: 1.6rem;
-            padding: 4%;
+            padding: 4%;            
+        
+            &:hover {
+              .nav-mix(navswitch, 2s);
+            }
         }
     }
     @media @mobile {
@@ -33,7 +37,5 @@ header {
                 padding: 6%;
             }
         }     
-        
-    
     }
 }
