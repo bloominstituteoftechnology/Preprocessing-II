@@ -1,25 +1,51 @@
 // Navigation Styles here
+
+
+
 .nav-div {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
     padding: 5% 0;
     margin: 0;
-    
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 2%;
+      
+      
+     
+    }
     
-   
-  }//nav-div
     nav {
       display: flex;
       justify-content: space-between;
-      width: 30%;
+      width: 40%;
       font-size: 1.5rem;
+
+      @media @mobile {
+        width: 100%;
+        padding-top: 5%;
+        argin-bottom: 0;
+       
+      }
       a {
         text-decoration: none;
         color: black;
       }// a
+
+      
       
     }//nav
+
+    
+ 
+
+    
+   
+  }//nav-div
+
+  
