@@ -315,6 +315,7 @@ header nav a:hover {
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
@@ -351,4 +352,8 @@ header nav a:hover {
     width: 100%;
     padding: 3% 0;
   }
+}
+.home .content-pick .form-section h2 {
+  margin: 30px 0;
+  text-align: center;
 }

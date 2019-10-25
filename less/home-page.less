@@ -92,9 +92,10 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    
       @media @mobile {
         display: block;
         padding: 5% 10%;
@@ -127,5 +128,12 @@
           padding: 3% 0;
         }
     }  
+  
+    .form-section {
+      h2 {
+        margin: 30px 0;
+        text-align: center;
+      }
+    }      
   }
 }// home
