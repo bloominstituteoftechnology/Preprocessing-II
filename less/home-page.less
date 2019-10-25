@@ -8,6 +8,7 @@
     justify-content: space-between;
     @media @mobile {
       flex-direction: column;
+      padding: @padding-500px;
       
     }
 
@@ -25,7 +26,7 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-      
+
       @media @mobile {
         width: 100%;
         
@@ -62,8 +63,8 @@
     width: 75%;
     margin: 0 auto 30px;
     @media @mobile {
-      margin: 0;
-      
+      // margin: 0;
+      width: 90%;
     }
 
     img {
@@ -91,7 +92,7 @@
 
 
       @media @mobile {
-        width: 80%;
+        width: @width;
         
       }
     }
@@ -115,15 +116,33 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  // max-width: 800px;
+  
   width: 100%;
   margin: 0 auto;
 
+  @media @mobile {
+    margin-top: 5%;
+  }
+
   
   
+  img {
+    width: @width;
+
+    @media @mobile {
+      width: 90%;
+    }
+  
+  }
   .header-text {
     padding: 5% 0;
     border-bottom: 4px dashed lightgray;
+    width: @width;
+
+    @media @mobile {
+      width: 90%;
+    }
     }// header-text
 
   
