@@ -1,1 +1,36 @@
 // Mixins in here
+.flex-box(){
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-reverse(){
+    display:flex;
+    flex-direction: column-reverse;
+}
+.flex(@flex,@align){
+    display:flex;
+    flex-direction:@flex;
+    align-items:@align;
+}
+
+ .box-size(@w,@p){
+     width:@w;
+     padding:@p;
+
+ }
+.btn-mixins(@bg-color,@color){
+       text-align: center;
+       border-radius: 10px;
+       background:@bg-color;
+       color:@color;
+       padding:10px;
+       font-size: 1.8rem;
+       &:hover{
+           opacity: 0.5;
+       }
+
+}
+@mobile:~"(max-width:450px)";
+ 
+    
