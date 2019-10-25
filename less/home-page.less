@@ -7,10 +7,11 @@
       display:flex;
       justify-content:space-between;
       border-bottom:2px dashed @navigation-border;
-     padding:10px;
-     @media(max-width:450px){
-       .flex-box();
-       align-items: center;
+      padding:10px;
+     @media @mobile {
+      .flex(column,center);
+      //  .flex-box();
+      //  align-items: center;
 
      }
 
@@ -18,7 +19,7 @@
     .header-section{
       border-bottom:2px dashed @navigation-border;
       .img-header{
-        @media(max-width:450px){
+        @media @mobile {
           width:100%;
         } 
       }
@@ -33,26 +34,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media(max-width:450px){
-      
-      // display:flex;
-      // flex-direction: column;
+    @media @mobile{
+      .flex-box();
     }
 
    
     
     .text-content {
-      width: 48%;
-      padding-right: 1%;
-      @media(max-width:450px){
+      .box-size(48%,1%);
+      @media @mobile{
         width:100%;
       } 
     }
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
-      @media(max-width:450px){
+      .box-size(48%,1%);
+      //  width: 48%;
+      //   padding-left: 1%;
+      @media @mobile {
         width:100%;
       }
 
@@ -65,10 +64,8 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-    @media(max-width:450px){
-      display:flex;
-      flex-direction:column-reverse;
-
+    @media @mobile{
+      .flex-reverse();
     }
 
     .text-content {
@@ -85,7 +82,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-    @media(max-width:450px){
+    @media @mobile{
       width:100%;
     }
 
@@ -100,25 +97,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    @media(max-width:450px){
-      display:flex;
-      flex-direction: column-reverse;
+    @media @mobile {
+      .flex-reverse();
     }
 
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media(max-width:450px){
+      @media @mobile {
         width:100%;
       }
      .btn{
-       text-align: center;
-       border-radius: 10px;
-       background: @eastern-blue;
-       color:white;
-       padding:10px;
-       font-size: 1.8rem;
+      .btn-mixins(@eastern-blue,@white);
      }
     }
   }
