@@ -1,1 +1,18 @@
-// Mixins in here
+
+.displayFlex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.basicData(@color, @bgcolor, @fsize, @pdng, @radius, @width){
+    color: @color;
+    background-color: @bgcolor;
+    font-size: @fsize;
+    padding: @pdng;
+    border-radius: @radius;
+    width: @width
+}
+.btn{
+    .displayFlex(center, center);
+    .basicData(white; @eastern-blue; 1.45em; 8px; 10px; 200px);
+}

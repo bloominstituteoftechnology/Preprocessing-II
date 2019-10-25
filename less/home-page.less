@@ -1,21 +1,44 @@
+.displayFlex(@justify, @align){
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
 .home {
-
+  .header{
+    display: flex;
+    flex-direction: column;
+    .header-paragraph{
+      width: 100%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
+    justify-content: center;
+    @media @mobile{
+        width: 100%;
+        padding: 0;
+      }
     .text-content {
       width: 48%;
       padding-right: 1%;
+      align-items: flex-start;
+      @media @mobile{
+        width: 100%;
+        padding: 7%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width: 100%;
+        padding-left: 7%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,36 +49,63 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile{
+        width: 100%;
+        padding: 7%;
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile{
+        width: 100%;
+        padding-left: 7%;
+      }
     }
   }
-
+  }
   .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
+      margin: 0 auto 30px;
+      padding: 10%;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      img{
       border-radius: 10px;
+      }
     }
-  }
-
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    text-align: left;
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 75%;
+        align-items: flex-start;
+        p{
+          padding-top: 2%;
+          padding-bottom: 10%;
+        }
+        .btn{
+          position: relative;
+          left: 40px;
+        }
+        }
+      }
     }
   }
-}// home
