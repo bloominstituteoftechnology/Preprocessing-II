@@ -1,5 +1,5 @@
 
-// Color assignments 
+// Color assignments
 @font-color: @shark;
 @button-bg: @eastern-blue;
 @main-bg:  @white;
@@ -12,3 +12,81 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+//mobile
+@mobile: ~"(max-width: 500px)";
+
+.topnav{
+    @media @mobile{
+        h1{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav{
+            width: 90%;
+        }
+        .displayFlex(center, center);
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.header{
+    @media @mobile{
+        padding: 7%;
+        .header-paragraph{
+            margin: 0;
+            padding-left: 1%;
+        }
+    }
+}
+
+.content-section{
+    @media @mobile{
+       flex-direction: column;
+       align-items: center;
+          }
+        }
+.text-content{
+    @media @mobile{
+        .displayFlex(center, center);
+        width: 100%;
+        flex-direction: column;
+        p{
+            width: 100%;
+        }
+    }
+}
+
+.inverse-content {
+    @media @mobile{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .text-content{
+                width: 100%;
+                padding: 7%;
+      }
+     }
+    }
+ .content-destination{
+     @media @mobile{
+        margin: 0;
+        padding: 5%;
+     }
+ }
+ .content-pick{
+    @media @mobile{
+        margin: 0;
+        padding: 7%;
+        .displayFlex(center, center);
+        flex-direction: column;
+        }
+    }
+.destination{
+    @media @mobile{
+        padding-bottom: 10%;
+        .displayFlex(center, center);
+        flex-direction: column;
+    }
+}
