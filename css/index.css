@@ -168,6 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
 .main-header {
   display: flex;
   flex-direction: row;
@@ -183,11 +196,17 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0 0 10px;
+    margin-top: 20px;
   }
 }
 .main-header h2 {
   font-size: 40px;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .main-header h2 h2 {
+    margin-bottom: 20px;
+  }
 }
 .main-header a {
   text-decoration: none;
@@ -221,26 +240,29 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 25px;
   }
 }
 .content-section .text-content {
-  width: 48%;
-  padding-right: 1%;
+  width: 50%;
+  padding-right: 5%;
   margin-top: 20px;
 }
 @media (max-width: 500px) {
   .content-section .text-content {
-    width: 90%;
+    width: 105%;
+    padding: 0;
+    margin-left: 15px;
   }
 }
 .content-section .img-content {
-  width: 48%;
+  width: 45%;
   padding-left: 1%;
 }
 @media (max-width: 500px) {
   .content-section .img-content {
-    width: 90%;
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 5px;
   }
 }
 .content-section .img-content img {
@@ -260,17 +282,22 @@ img {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 }
 .inverse-content .text-content {
-  padding-left: 1%;
-  padding-right: 0;
+  padding-left: 5%;
 }
 .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
   margin-top: 40px;
+  margin: 10px;
+}
+@media (max-width: 500px) {
+  .inverse-content .img-content .img-fluid-rounded {
+    margin-left: 20px;
+  }
 }
 .content-destination {
   width: 75%;
@@ -305,8 +332,10 @@ img {
 @media (max-width: 500px) {
   .content-pick .destination {
     width: 90%;
+    justify-content: center;
     align-content: center;
     padding: 0 30px;
+    margin-left: 20px;
   }
 }
 .content-pick .btn {
@@ -314,7 +343,7 @@ img {
   width: 20rem;
   border-radius: 15px;
   background-color: teal;
-  color: white;
+  color: #FFFFFF;
   padding: 0 40px 40px;
   margin: 20px 0;
   font-size: 20px;

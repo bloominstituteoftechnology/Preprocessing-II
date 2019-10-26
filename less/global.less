@@ -1,3 +1,4 @@
+@import "variables";
 * {
   box-sizing: border-box;
 }
@@ -43,6 +44,18 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @mobile{
+     .container{
+       width:100%;
+       padding: 0 20px;
+     }
+  }
  } 
+ @media (max-width: 500px){
+  html,body{
+    max-width:100%;
+    overflow-x: hidden;
+  }
+  }
  
 
