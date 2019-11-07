@@ -29,7 +29,7 @@ Follow these steps for completing your project.
 * [ ] Navigate to your `index.less` file. Notice the file is blank.  In order for you to see the styles for this project you must import them in a certain order.  That order is as follows:
 
 1. `variables.less`
-2. `mixins.less`
+2. `mixins.less`   
 3. `reset.less`
 4. `global.less`
 5. `navigation.less`

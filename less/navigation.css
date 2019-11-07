@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navigation nav {
+  line-height: 35px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.navigation nav a {
+  text-decoration: none;
+  color: black;
+}
