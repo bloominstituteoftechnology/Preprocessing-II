@@ -185,11 +185,17 @@ img {
   display: flex;
   justify-content: flex-end;
   padding-right: 2rem;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .navigation .nav {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media (min-width: 1000px) {
+  .navigation .nav {
+    margin-right: 53rem;
   }
 }
 .navigation .nav a {
@@ -203,6 +209,11 @@ img {
 @media (max-width: 500px) {
   .navigation .nav a {
     padding: 0 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  h1 {
+    padding-left: 55rem;
   }
 }
 @media (max-width: 500px) {

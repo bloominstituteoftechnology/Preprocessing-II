@@ -15,10 +15,15 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 2rem;
+    margin: 0 auto;
 
     @media @phone {
       display: flex;
       justify-content: space-between;
+    }
+
+    @media @desktop {
+      margin-right: 53rem;
     }
 
     a {
@@ -35,7 +40,11 @@
     }
   }
 }
-
+h1 {
+  @media @desktop {
+    padding-left: 55rem;
+  }
+}
 .logo {
   @media @phone {
     margin: 0 auto;
