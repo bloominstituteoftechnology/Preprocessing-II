@@ -1,5 +1,4 @@
-// Navigation Styles here
-//@import 'variables.less';
+// Navigation Styles here 
 
 .navigation{
     display: flex;
@@ -7,12 +6,23 @@
     padding: 2%;
     border-bottom: 2px dashed @silver;
 
+    @media @mobile{
+        flex-direction: column;
+        text-align: center;
+    }
+
     nav{
         line-height: 35px;
         font-size: 1.3rem;
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: 35%;
+
+        @media @mobile{
+            width: 100%;
+            text-align: center;
+            justify-content: space-around;
+        }
         a{
             text-decoration: none;
             color: black;
