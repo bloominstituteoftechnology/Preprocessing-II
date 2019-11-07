@@ -1,9 +1,20 @@
 // Mixins in here
 
 .flex(@direction: row, @content: space-evenly, @align: center) {
-    display: flex;
-    flex-direction: @direction ;
-    justify-content: @content;
-    align-items: @align;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: @direction ;
+  justify-content: @content;
+  align-items: @align;
+  flex-wrap: nowrap;
+}
+
+.button(@bgcolor: @eastern-blue, @color: @white, @size: 1.7em) {
+	background-color: @bgcolor;
+	color: @color;
+	font-size: @size;
+	border: 1px solid gray;
+	border-radius: 10px;
+	padding: 4% 15%;
+	width: 80%;
+	text-align: center;
 }
