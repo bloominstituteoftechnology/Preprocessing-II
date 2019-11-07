@@ -1,1 +1,23 @@
 // Mixins in here
+.button() {
+  color:white;
+  font-size:1.5rem;
+  background-color: darkcyan;
+  padding: 5%;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 85%;
+}
+
+.btnAnim(@init, @mid2, @mid3){
+  @keyframes buton {
+    0% {background-color: @init;}
+    25% {background-color: @mid2;}
+    50% {background-color: @mid3;}
+    75% {background-color: @mid2;}
+    100% {background-color: @init;}
+  }
+  animation-name: buton;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+}
