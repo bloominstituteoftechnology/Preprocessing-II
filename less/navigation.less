@@ -5,11 +5,17 @@ header{
     justify-content: space-between;
     padding: .75%;
 	border-bottom: 2px dashed @navigation-border;
-	/*@media @mobile {
+	@media @mobile {
 		flex-wrap: wrap;
-	  }*/
+		align-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+	  }
     .fun-bus{
-        margin-left: 20%;
+		margin-left: 20%;
+		@media @mobile{
+			margin: 0%;
+		}
     }
     
 	nav{
@@ -20,8 +26,11 @@ header{
         align-content: flex-end;
         margin-right: 12%;
     @media @mobile {
+		width: 100%;
 		flex-wrap: wrap;
 		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
 	}  
 		
 	}

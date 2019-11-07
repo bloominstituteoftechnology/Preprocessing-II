@@ -3,12 +3,20 @@
   .welcome-section{
     padding-bottom: 20px;
     border-bottom: 2px dashed @navigation-border;
-    /*@media screen and (max-width: 500px) {
-      width: 100%;
-    }*/
+    @media @mobile{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    div{
+      width: 70%;
+     
+    }
+    }
+    
     img{
       margin-bottom: 2%;
     }
+
   }
 
   .content-section {

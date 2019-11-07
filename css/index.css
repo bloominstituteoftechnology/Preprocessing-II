@@ -174,12 +174,22 @@ header {
   justify-content: space-between;
   padding: 0.75%;
   border-bottom: 2px dashed #C0C0C0;
-  /*@media @mobile {
-		flex-wrap: wrap;
-	  }*/
+}
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 header .fun-bus {
   margin-left: 20%;
+}
+@media (max-width: 500px) {
+  header .fun-bus {
+    margin: 0%;
+  }
 }
 header nav {
   width: 20%;
@@ -191,8 +201,11 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
   }
 }
 header nav a {
@@ -218,9 +231,16 @@ header nav a:hover {
 .home .welcome-section {
   padding-bottom: 20px;
   border-bottom: 2px dashed #C0C0C0;
-  /*@media screen and (max-width: 500px) {
-      width: 100%;
-    }*/
+}
+@media (max-width: 500px) {
+  .home .welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .welcome-section div {
+    width: 70%;
+  }
 }
 .home .welcome-section img {
   margin-bottom: 2%;
