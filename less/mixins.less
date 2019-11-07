@@ -1,1 +1,14 @@
 // Mixins in here
+.buttonMan(@textColor, @backColor, @width: 12rem) {
+  color: @textColor;
+  background-color: @backColor;
+  display: block;
+  border-radius: 2rem;
+  width: @width;
+  font-size: 30px;
+  padding: 1rem;
+}
+
+//escape
+
+@phone: ~"(max-width: 500px)";

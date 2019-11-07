@@ -1,1 +1,40 @@
 // Navigation Styles here
+.navH1 {
+  padding-top: 3rem;
+
+  @media @phone {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+}
+
+.navigation {
+  border-bottom: 3px dashed grey;
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+
+    @media @phone {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a {
+      text-decoration: none;
+      padding-left: 3rem;
+      padding-bottom: 2rem;
+      margin-top: -3rem;
+      font-size: 1.8rem;
+      color: black;
+    }
+  }
+}
+
+.logo {
+  @media @phone {
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+  }
+}
