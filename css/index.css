@@ -169,15 +169,14 @@ img {
   margin: 0 auto;
 }
 header {
-  height: 17%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0.75%;
   border-bottom: 2px dashed #C0C0C0;
 }
 header .fun-bus {
-  align-self: auto;
+  margin-left: 20%;
 }
 header nav {
   width: 20%;
@@ -185,12 +184,13 @@ header nav {
   justify-content: space-between;
   align-items: center;
   align-content: flex-end;
-  margin-left: 18%;
+  margin-right: 12%;
 }
 header nav a {
   text-decoration: none;
   color: grey;
   font-size: 1.8rem;
+  margin: 0 2%;
 }
 header nav a:hover {
   color: black;
@@ -235,6 +235,11 @@ header nav a:hover {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section.inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -260,6 +265,11 @@ header nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
@@ -267,6 +277,24 @@ header nav a:hover {
 .home .content-pick .btn {
   width: 80%;
   background: #17A2B8;
+  color: white;
+  border-radius: 8px;
+  padding: 5% 6%;
+  border: none;
+  font-weight: bold;
+}
+.home .content-pick .btn2 {
+  width: 90%;
+  background: orange;
+  color: white;
+  border-radius: 8px;
+  padding: 5% 6%;
+  border: none;
+  font-weight: bold;
+}
+.home .content-pick .btn3 {
+  width: 90%;
+  background: purple;
   color: white;
   border-radius: 8px;
   padding: 5% 6%;
