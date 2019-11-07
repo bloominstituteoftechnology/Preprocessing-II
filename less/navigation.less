@@ -4,7 +4,10 @@ header{
 	display: flex;
     justify-content: space-between;
     padding: .75%;
-    border-bottom: 2px dashed @navigation-border;
+	border-bottom: 2px dashed @navigation-border;
+	/*@media @mobile {
+		flex-wrap: wrap;
+	  }*/
     .fun-bus{
         margin-left: 20%;
     }
@@ -16,7 +19,10 @@ header{
 		align-items: center;
         align-content: flex-end;
         margin-right: 12%;
-        
+    @media @mobile {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}  
 		
 	}
 	nav a{
