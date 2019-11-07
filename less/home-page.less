@@ -5,18 +5,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      justify-content: center;
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 500px;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @phone {
+          margin-left: 2rem;
+        }
       }
+    }
+  }
+
+  .coffee {
+    @media @phone {
+      width: 90%;
     }
   }
 

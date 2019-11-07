@@ -10,7 +10,7 @@
 }
 
 .navigation {
-  border-bottom: 3px dashed grey;
+  border-bottom: 2px dashed grey;
   .nav {
     display: flex;
     justify-content: flex-end;
@@ -28,13 +28,18 @@
       margin-top: -3rem;
       font-size: 1.8rem;
       color: black;
+
+      @media @phone {
+        padding: 0 2rem;
+      }
     }
   }
 }
 
 .logo {
   @media @phone {
-    padding-bottom: 2rem;
-    padding-right: 1rem;
+    margin: 0 auto;
+    width: 95%;
+    padding-left: 2rem;
   }
 }
