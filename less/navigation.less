@@ -1,1 +1,54 @@
 // Navigation Styles here
+.navH1 {
+  padding-top: 3rem;
+
+  @media @phone {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+}
+
+.navigation {
+  border-bottom: 2px dashed lightgrey;
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    margin: 0 auto;
+
+    @media @phone {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media @desktop {
+      margin-right: 53rem;
+    }
+
+    a {
+      text-decoration: none;
+      padding-left: 3rem;
+      padding-bottom: 2rem;
+      margin-top: -3rem;
+      font-size: 1.8rem;
+      color: black;
+
+      @media @phone {
+        padding: 0 2rem;
+      }
+    }
+  }
+}
+h1 {
+  @media @desktop {
+    padding-left: 55rem;
+  }
+}
+.logo {
+  @media @phone {
+    margin: 0 auto;
+    width: 95%;
+    padding-left: 2rem;
+  }
+}
