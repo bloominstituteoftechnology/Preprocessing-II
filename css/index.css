@@ -310,6 +310,7 @@ nav .container .links a {
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -333,6 +334,9 @@ nav .container .links a {
   color: #FFFFFF;
   text-shadow: 0 0.1rem 0 #212529;
 }
+.home .content-pick .destination .trip-btn:hover {
+  background-color: #212529;
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .trip-btn {
     display: block;
@@ -349,6 +353,9 @@ nav .container .links a {
     color: #FFFFFF;
     text-shadow: 0 0.1rem 0 #212529;
   }
+  .home .content-pick .destination .trip-btn:hover {
+    background-color: #212529;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -360,4 +367,57 @@ nav .container .links a {
     flex-direction: column;
     align-items: center;
   }
+}
+.home #contact {
+  width: 75%;
+  margin: 3rem auto;
+}
+@media (max-width: 500px) {
+  .home #contact {
+    width: 100%;
+  }
+}
+.home #contact input[type=text],
+.home #contact select {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0;
+  border: 0.2rem solid #C0C0C0;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+.home #contact textarea {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0;
+  border: 0.2rem solid #C0C0C0;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+.home #contact input[type=submit] {
+  text-align: center;
+  display: block;
+  background: #17A2B8;
+  font-size: 1.8rem;
+  cursor: pointer;
+  width: 18rem;
+  height: 4.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #C0C0C0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-shadow: 0 0.1rem 0 #212529;
+  font-size: 1.6rem;
+}
+.home #contact input[type=submit]:hover {
+  background-color: #212529;
+}
+.home #contact div {
+  border-radius: 5px;
+  background-color: #FFEBCD;
+  padding: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }

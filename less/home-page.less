@@ -87,6 +87,7 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
     .flex(space-between, center);
 
     .destination {
@@ -111,25 +112,51 @@
       align-items: center;
     }
   }
-}// home
 
-// .book-flight-btn {
-//   display: block;
-//   background-color: #FFBF27;
-//   margin: 0 10px 20px;
-//   cursor: pointer;
-//   width: 200px;
-//   height: 45px;
-//   font-size: 2rem;
-//   border-radius: 10px;
+  #contact {
+    width: 75%;
+    margin: 3.0rem auto;
 
-//   @media( max-width: 515px) {
-//     width: 90%; 
-//     height: 50px;
-//     font-size: 2.5rem;
-//   } // closes media query
-  
-//   @media( max-width: 400px ) {
-//     background: green;
-//     color: white;
-//   }
+    @media @mobile {
+      width: 100%;
+    }
+
+    input[type=text], select {
+      width: 100%;
+      padding: 1.2rem 2.0rem;
+      margin: 0.8rem 0;
+      // display: inline-block;
+      border: 0.2rem solid @silver;
+      border-radius: 1.0rem;
+      
+      font-size: 1.6rem;
+    }
+   
+    textarea {
+      width: 100%;
+      padding: 1.2rem 2.0rem;
+      margin: 0.8rem 0;
+      border: 0.2rem solid @silver;
+      border-radius: 1.0rem;
+
+      font-size: 1.6rem;
+    }
+
+    input[type=submit] {  
+      text-align: center;
+
+      .btn(@width: 18.0rem);
+      font-size: 1.6rem;
+    }
+    
+    
+    div {
+      border-radius: 5.0px;
+      background-color: @sandy-beach;
+      padding: 2.0rem;
+
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+}
