@@ -1,1 +1,21 @@
-// Mixins in here
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btn (@bg-color: @button-bg, @text-color: @btn-color, @width: 20.0rem) {
+    display: block;
+    background: @bg-color;
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: @width;
+    height: 4.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid @btn-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @text-color;
+    text-shadow: 0 0.1rem 0 @btn-shadow;
+}
