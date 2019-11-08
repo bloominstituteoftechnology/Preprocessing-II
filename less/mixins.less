@@ -1,1 +1,15 @@
 // Mixins in here
+.new-btn(@bg-color: @button-bg, @width: 90%, @font-color:white){
+    width: @width;
+    background: @bg-color;
+    color: @font-color;
+    border-radius: 8px;
+    padding: 5% 6%;
+    border: none;
+    font-weight: bold;
+  }
+  .box-shadow-mixin (@arguments) {
+    -webkit-box-shadow:@arguments;
+    -mox-box-shadow: @arguments;
+    box-shadow: @arguments;
+  }
