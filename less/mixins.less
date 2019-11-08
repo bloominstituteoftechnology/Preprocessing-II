@@ -1,1 +1,28 @@
 // Mixins in here
+.customButton (@butnColor,@size, @font-color){
+    display: block;
+    background-color: @butnColor;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @size;
+    height: 2em;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color;
+    text-align: center;
+    padding: 4%;
+}
+.pStyle() {
+
+        line-height: 1.5;
+        font-size: 1.5rem;
+    
+}
+
+.hoverAnim () {
+    &:hover {
+        color: #17A2B8;
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+}
