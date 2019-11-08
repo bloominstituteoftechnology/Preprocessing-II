@@ -1,1 +1,34 @@
 // Navigation Styles here
+.navigation {
+    .display(space-between, no-wrap);
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px 20px 0px;
+    border-bottom: .3rem dashed gray;  
+    @media @mobile {
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        width: 100%;
+        height: auto;
+        @media @mobile {
+            .display(center, no-wrap);
+            margin-bottom: 15px;
+        }
+    } 
+
+    nav {
+        width: 100%;
+        .display(space-around, no-wrap);
+        margin-right: 10px;
+
+        
+        a {
+            .fontDecorate(none, 1.5rem, black, none);
+        }
+    }
+
+
+}
