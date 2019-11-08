@@ -1,16 +1,29 @@
 .home {
 
+  .content-about {
+    width: 100%;
+    padding: 1.5rem 0;
+    border-bottom: 2px dashed @navigation-border;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      flex-direction: column;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
@@ -19,6 +32,16 @@
 
       img {
         border-radius: 10px;
+      }
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+        // img is only 400 x 300 px, 
+        // so it doesn't fill container width. 
+        // hence, flexbox stretch is used
+        .flex(center, stretch);
+        flex-direction: column;
       }
     }
   }
@@ -30,11 +53,21 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
+      @media @mobile {
+        padding: 0;
+        
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+   
+    @media @mobile {
+      .flex(space-around, center);
+      flex-direction: column-reverse;
     }
   }
 
@@ -45,17 +78,85 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    border-bottom: 2px dashed @navigation-border;
+    .flex(space-between, center);
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .trip-btn {
+        .btn();
+
+        @media @mobile {
+          .btn(@width: 35.0rem);
+        }
+      }
+
+      @media @mobile {
+        width: 78%;
+      }
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
     }
   }
-}// home
+
+  #contact {
+    width: 75%;
+    margin: 3.0rem auto;
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    input[type=text], select {
+      width: 100%;
+      padding: 1.2rem 2.0rem;
+      margin: 0.8rem 0;
+      // display: inline-block;
+      border: 0.2rem solid @silver;
+      border-radius: 1.0rem;
+      
+      font-size: 1.6rem;
+    }
+   
+    textarea {
+      width: 100%;
+      padding: 1.2rem 2.0rem;
+      margin: 0.8rem 0;
+      border: 0.2rem solid @silver;
+      border-radius: 1.0rem;
+
+      font-size: 1.6rem;
+    }
+
+    input[type=submit] {  
+      text-align: center;
+
+      .btn(@width: 18.0rem);
+      font-size: 1.6rem;
+    }
+    
+    
+    div {
+      border-radius: 5.0px;
+      background-color: @sandy-beach;
+      padding: 2.0rem;
+
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+}
