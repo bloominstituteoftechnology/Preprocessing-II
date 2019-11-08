@@ -1,1 +1,15 @@
 // Mixins in here
+.dash-one{
+    border-bottom: 2px dashed @silver;
+}
+.custom-btn(@bg-color:@eastern-blue, @size: 200px, @font-color:@white){
+    display: block;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @size;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color;
+}
