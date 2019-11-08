@@ -1,24 +1,50 @@
 .home {
 
+
+  header {
+    border-bottom: .3rem dashed lightgray;
+    padding-bottom: 15px;
+
+    h2 {
+        margin: 15px 0px 5px 0px;
+    }
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+     .display(center, wrap);
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        padding: 0;
+        width: 100%;
+        .display(center, wrap);
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          padding: 0;
+          width: 100%;
+        }
       }
     }
   }
@@ -26,7 +52,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @mobile {
+      display: flex; 
+      flex-direction: column-reverse;
+    }
+    
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -41,6 +71,11 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+      padding-bottom: 30px;
+      border-bottom: 2px dashed @navigation-border;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +87,27 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-wrap: wrap;
+      margin-right: 13%;
+      margin-left: 13%;
+      padding-top: 0;
+      border-top: none;
+    } 
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
+
+      .btn {
+        .createButton(10px, 20%, 1.7rem, none, white, @eastern-blue, 10px, 1px, none, black);
+        @media @mobile {
+          width: 100%;
+        }
+      }
     }
   }
-}// home
+}
