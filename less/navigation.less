@@ -1,1 +1,43 @@
 // Navigation Styles here
+nav {
+	max-width:1000px;
+	width: 93%;
+	margin: 0 auto;
+  .flex(row, space-between, center );
+	padding: 5%;
+	border-bottom: 2px dashed @silver;
+
+	@media @mobile {
+		flex-direction: column;
+		width: 100%;
+		padding: 0; 
+	}
+  h2 {
+		font-weight: bold;
+
+		@media @mobile {
+			margin: 5% 0 2%;
+		}
+	}
+	
+	div {
+		width: 40%; 
+
+		@media @mobile {
+			width: 100%;
+		}
+		
+		.flex() ;
+
+		a {
+			color: black;	
+			text-decoration: none;
+			margin: 5%;
+			font-size: 1.5em;
+
+			@media @mobile {
+				margin: 0 0 2%;
+			}
+		}
+	}
+}
