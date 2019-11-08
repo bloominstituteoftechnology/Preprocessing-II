@@ -221,6 +221,8 @@ img {
   .home .inverse-content .text-content {
     width: 85%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .home .inverse-content .img-content {
@@ -266,14 +268,29 @@ img {
     padding: 2% 5%;
   }
 }
-body {
-  background-color: red ;
-}
 .nav a {
   padding: 2%;
   float: right;
   flex-direction: column-reverse;
+  color: darkgreen;
+}
+.nav a:hover {
+  color: navy;
+}
+header.h2 {
+  margin-right: ;
 }
 .logo {
-  align-content: center;
+  margin: 0 auto;
+  display: flex;
+}
+.btn {
+  height: 35px;
+  width: 60%;
+  border-radius: 20%;
+  background-color: darkgreen ;
+}
+.welcomeToFunBus {
+  margin-left: 12% ;
+  margin-top: 2% ;
 }
