@@ -203,7 +203,7 @@ img {
   text-decoration: none;
   color: black;
 }
-.navigation hr {
+hr {
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -317,6 +317,9 @@ img {
   text-align: center;
   font-size: 2rem;
   width: 80%;
+}
+.home .content-pick .destination .btn:hover {
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
