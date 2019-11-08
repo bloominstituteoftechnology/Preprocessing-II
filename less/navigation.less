@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    border-bottom: 2px dashed @silver;
+    padding-bottom:0;
+    //border-bottom: 2px dashed @silver;
 
     @media @mobile{
         flex-direction: column;
@@ -27,6 +28,14 @@
             text-decoration: none;
             color: black;
         }
-        
+    }// nav
+    hr{
+        width: 100vw;
+        position: relative;
+        left: calc(-50vw + 50%);
+        border-top: 2px dashed @silver;
+        margin-bottom:0;
+        padding-bottom:0;
+        border-bottom: 0;
     }
 }
