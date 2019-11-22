@@ -1,10 +1,17 @@
 // Mixins in here
-.btn{
+.responsive(@maxWidth; @rules) {
+    @media only screen and (max-width: @maxWidth) {
+        @rules();
+    }
+}
+
+.btn(){
     padding: 5%;
     border-radius: 10px;
     background-color: rgb(9, 116, 116);
     color: white;
     cursor: pointer;
+    text-align: center;
   
     &:hover {
     // The compiled color returned is #006667 
