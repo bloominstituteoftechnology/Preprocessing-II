@@ -19,16 +19,19 @@
 
     .anchor {
       a {
-          border: solid blue;
-            text-decoration: none;
-            font-size: 1.6rem;
-            color: @shark;
-            padding: 10px;
-            display: block;
+        //   border: solid blue;
+          text-decoration: none;
+          font-size: 1.6rem;
+          color: @shark;
+          padding: 10px;
+          margin: 10px;
+          font-weight: 800px;
 
             &:hover {
-                
-            }
+                color: @button-bg;
+                background-color: darken(@button-bg, 40%);
+                border-radius: 10px;
+                }
         }
     }   
 }
