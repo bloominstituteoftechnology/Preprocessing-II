@@ -14,18 +14,12 @@
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
 
-.container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 1.8rem;
 
-    @media (max-width: 500px) {
-        .container {
-            width: 90%;
-            margin: 0 5%;
-        }
-        
-}
 
-}
+     @media (max-width: 540px) {
+         .home, .content-section, .nav-bar, .header-content {
+         flex-direction: column;
+         background-color: orange;
+         }
+
+    }
