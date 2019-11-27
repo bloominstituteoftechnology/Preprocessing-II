@@ -19,6 +19,19 @@
     align-items: center;
 }
 
+// Parametric Mixins
+#button() {
+    .layout (@j-content: center, @a-items: center) {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: @j-content;
+    align-items: @a-items;
+    }
+    .border-radius (@radius) {
+        border-radius: @radius;
+    }
+}
+
 // .btn a {
 //     width: 175px;
 //     height: 40px;
@@ -33,17 +46,3 @@
 //     cursor: pointer;
 //     text-decoration: none;
 // }
-
-// Parametric Mixins
-#button() {
-    .layout (@j-content: center, @a-items: center) {
-    display: flex;
-    font-size: 1.8rem;
-    justify-content: @j-content;
-    align-items: @a-items;
-    }
-    .border-radius (@radius) {
-        border-radius: @radius;
-    }
-}
-

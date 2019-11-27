@@ -19,10 +19,20 @@
 @border-bottom: 2px dashed @navigation-border;
 
 
-     @media (max-width: 540px) {
-         .home, .content-section, .nav-bar, .header-content {
-         flex-direction: column;
-         background-color: orange;
-         }
+//Media Queries/Variable
+@mobile: (max-width: 500px);
 
-    }
+@media @mobile {
+     .home, .content-section, .nav-bar, .header-content {
+          flex-direction: column;
+          align-content: center;
+          width: 100%;
+
+          background-color: orange;
+     }
+
+     .home .content-section .text-content, .img-content {
+          width: 100%;
+          margin: 0 auto;
+     }
+}

@@ -41,7 +41,7 @@ Follow these steps for completing your project.
 * [ ] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
 * [d] Navigation: Use the `navigation.less` file for all your navigation styling
 * [d] Main Header: Use the `home-page.less` file for the header styling.
-* [ ] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
+* [d] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
 
 
 ## Task 5: Mobile Updates Needed

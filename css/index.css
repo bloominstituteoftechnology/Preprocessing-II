@@ -1,10 +1,17 @@
-@media (max-width: 540px) {
+@media (max-width: 500px) {
   .home,
   .content-section,
   .nav-bar,
   .header-content {
     flex-direction: column;
+    align-content: center;
+    width: 100%;
     background-color: orange;
+  }
+  .home .content-section .text-content,
+  .img-content {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
