@@ -7,20 +7,6 @@
     background-color: orange;
   }
 }
-.btn a {
-  width: 175px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  background-color: #17A2B8;
-  color: #FFFFFF;
-  border-radius: 20px;
-  border: 2px solid #C0C0C0;
-  cursor: pointer;
-  text-decoration: none;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -285,4 +271,18 @@ img {
   margin: 0 auto;
   font-size: 1.8rem;
   border-bottom: 2px dashed #C0C0C0;
+}
+.btn a {
+  width: 175px;
+  height: 40px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #C0C0C0;
+  cursor: pointer;
+  text-decoration: none;
 }

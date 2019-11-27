@@ -13,26 +13,37 @@
 
 // Mixins
 
-.btn a {
-    width: 175px;
-    height: 40px;
+.center() {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
-    background-color: @button-bg;
-    color: @white;
-    border-radius: 20px;
-    border: 2px solid @silver;
-    cursor: pointer;
-    text-decoration: none;
-
-
-
-
 }
+
+// .btn a {
+//     width: 175px;
+//     height: 40px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 1.8rem;
+//     background-color: @button-bg;
+//     color: @white;
+//     border-radius: 20px;
+//     border: 2px solid @silver;
+//     cursor: pointer;
+//     text-decoration: none;
+// }
 
 // Parametric Mixins
-.button-mixin () {
-
+#button() {
+    .layout (@j-content: center, @a-items: center) {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: @j-content;
+    align-items: @a-items;
+    }
+    .border-radius (@radius) {
+        border-radius: @radius;
+    }
 }
+
