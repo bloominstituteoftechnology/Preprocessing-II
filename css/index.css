@@ -7,6 +7,20 @@
     background-color: orange;
   }
 }
+.btn a {
+  width: 175px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 20px;
+  border: 2px solid #C0C0C0;
+  cursor: pointer;
+  text-decoration: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -178,14 +192,22 @@ img {
   margin: 0 auto;
 }
 .nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  border: solid purple;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.nav-bar .anchor {
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .nav-bar .anchor a {
   text-decoration: none;
@@ -257,10 +279,10 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.header-content {
+.main-header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   font-size: 1.8rem;
-  border: solid black;
+  border-bottom: 2px dashed #C0C0C0;
 }
