@@ -1,17 +1,15 @@
-@media (max-width: 500px) {
-  .home,
-  .content-section,
+@media screen and (max-width: 500px) {
   .nav-bar,
-  .header-content {
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
-    background-color: orange;
-  }
-  .home .content-section .text-content,
-  .img-content {
+  .anchor,
+  a,
+  .header-content,
+  .content-section,
+  .text-content {
+    display: block;
     width: 100%;
     margin: 0 auto;
+    padding: 0;
+    background-color: orange;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -201,6 +199,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background: orange;
 }
 .nav-bar .anchor a {
   text-decoration: none;
@@ -209,6 +208,7 @@ img {
   padding: 10px;
   margin: 10px;
   font-weight: 800px;
+  border: solid blue;
 }
 .nav-bar .anchor a:hover {
   color: #17A2B8;

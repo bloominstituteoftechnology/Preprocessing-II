@@ -20,19 +20,15 @@
 
 
 //Media Queries/Variable
-@mobile: (max-width: 500px);
 
-@media @mobile {
-     .home, .content-section, .nav-bar, .header-content {
-          flex-direction: column;
-          align-content: center;
-          width: 100%;
+// @mobile: (max-width: 500px);
 
-          background-color: orange;
-     }
-
-     .home .content-section .text-content, .img-content {
+@media screen and (max-width: 500px) {
+     .nav-bar, .anchor, a, .header-content, .content-section, .text-content {
+          display: block;
           width: 100%;
           margin: 0 auto;
-     }
+          padding: 0;
+          background-color: orange;
+     }    
 }
