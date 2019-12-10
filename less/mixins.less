@@ -1,1 +1,25 @@
 // Mixins in here
+
+.buttonstyle(@back-col, @text-col, @radius, @fontsize, @height){
+    background: @back-col;
+    color: @text-col;
+    border-radius: @radius;
+    font-size: @fontsize;
+    height: @height;
+}
+
+.flexstyle(@just-cont, @align) {
+display: flex;
+justify-content: @just-cont;
+align-items: @align;
+}
+
+
+
+.btn {
+    .buttonstyle(teal, white, 10px, 1.5rem, 40px);
+    .flexstyle(center, center);
+   
+    
+
+}

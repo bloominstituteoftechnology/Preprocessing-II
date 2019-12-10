@@ -6,16 +6,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px grey dashed;
+
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media @mobile {
+        justify-content: row;
+        width: 100%;
+        padding-left: 20px;
+
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        
+
+      }
 
       img {
         border-radius: 10px;
@@ -24,8 +48,15 @@
   }
 
   .inverse-content {
-    padding-bottom: 30px;
+    padding-bottom: @paddingStyle;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-left: @paddingStyle;
+      padding-right: @paddingStyle;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -48,14 +79,71 @@
   }
 
   .content-pick {
-    padding-top: 30px;
+    padding-top: @paddingStyle;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: @paddingStyle;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+
+      }
     }
   }
 }// home
+
+.buspic {
+  width: 100%;
+  padding-left: 160px;
+  padding-right: 60px;
+  display: flex;
+  justify-content: center;
+
+  @media @mobile {
+    width: 100%;
+    display: flex;
+   padding-left: @paddingStyle;
+   padding-right: @paddingStyle;
+
+  }
+  
+}
+
+.underpic {
+  border-bottom: 1px grey dashed;
+  width: 90%;
+  padding-left: 230px;
+  
+ 
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: @paddingStyle;
+    width: 100%;
+    padding-right: @paddingStyle;
+    
+
+  }
+ 
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
