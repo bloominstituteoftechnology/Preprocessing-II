@@ -15,11 +15,27 @@
 </head>
 
 <body>
-
-  
-     
+  <Header>
+    <h1>Fun Bus</h1>
+    <nav>
+      <a href="">Home</a>
+      <a href="">About Us</a>
+      <a href="">Blog</a>
+      <a href="">Contact</a>
+    </nav>
+    
+  </Header>
+<div class = "top-div">
+  <img src="img/fun-bus.jpg" alt="Picture of a bus in the desert." class="fun-bus">
+</div>
   <div class="container home">
-   
+  
+    <section class = "welcome-section">
+      <h2>Welcome To Fun Bus!</h2>
+        <p>
+          Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition. 
+        </p>
+    </section>
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -65,7 +81,46 @@
       </div>
     </section>
   </div><!-- container -->
-
+  <section class = "vacation-form">
+    <form>
+      <div class = "input-div">
+        <div class = "checkboxes">
+          <input type="radio" name="vacation-package" checked>$2000.00 Deluxe Package<br>
+          <input type="radio" name="vacation-package">$1500.00 Business Package<br>
+          <input type="radio" name="vacation-package">$1000.00 Family Package<br>
+          <input type="radio" name="vacation-package">$500.00 Basic Package
+        </div>
+        </form>
+        <div class = "typed-content">
+          <h2>Name:</h2><br>
+          <input type="text" value ="Name">
+          <h2>Email:</h2><br>
+          <input type="text" value = "Email">
+          <h2>Phone number:</h2><br>
+          <input type="text" value = "Number">
+          <input class='submit-btn' type="submit">
+        </div>
+      </div>
+     
+    <div class = "img-div">
+      <div>
+        <h2>Deluxe Package</h2>
+        <img src="img/deluxe-pic.jpeg" alt="" class = 'vac-package-img'>
+      </div>
+      <div>
+        <h2>Business Package</h2>
+        <img src="img/business-pic.jpeg" alt="" class='vac-package-img'>
+      </div>
+      <div>
+        <h2>Family Package</h2>
+        <img src="img/family-pic.jpeg" alt="" class='vac-package-img'>
+      </div>
+      <div>
+        <h2>Basic Package</h2>
+        <img src="img/basic-pic.jpeg" alt="" class='vac-package-img'> 
+      </div>
+  </div>
+</section>
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
