@@ -350,3 +350,8 @@ img {
     padding-right: 30px;
   }
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
