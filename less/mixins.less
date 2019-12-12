@@ -1,1 +1,20 @@
 // Mixins in here
+
+.btnMixin(@bgColorBtn, @txtColorBtn) {
+    background-color:@bgColorBtn;
+    // color of button #007d7c;
+    border:none;
+    color: @txtColorBtn;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 1.8rem;
+    padding: 14px 40px;
+    border-radius: 12px;
+    margin: 3% 5%;
+}
+
+.btn {
+    .btnMixin(#007d7c, white);
+
+}
