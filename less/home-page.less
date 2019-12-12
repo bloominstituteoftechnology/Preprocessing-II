@@ -1,4 +1,19 @@
 .home {
+  header{
+    width:100%;
+    .displayflex(space-between, center);
+    // border-bottom: 3px dashed @navigation-border;
+    padding:2% 0;
+    align-items: center;
+
+  } 
+
+  .top-text{
+    .displayflex(space-between,flex-start);
+    flex-direction: column;
+    padding: 30px 0;
+    border-bottom: 2px dashed @navigation-border;
+  }
 
   .content-section {
     margin: 30px 0;
@@ -26,6 +41,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    // .displayflex(space-evenly,flex-start);
+    // flex-direction: column;
+
 
     .text-content {
       padding-left: 1%;
@@ -57,5 +75,19 @@
       width: 30%;
       margin-bottom: 30px;
     }
+  }
+  .btn{
+    background-color:@button-bg;
+    color:@white;
+    text-align: center;
+    width:80%;
+    // display:flex;
+    // justify-content: center;
+    align-self: flex-start;
+    border-radius: 8px;
+    padding:10px 30px;
+    font-size:2rem;
+    // align-item: center;
+    // .displayflex(@align:center);
   }
 }// home
