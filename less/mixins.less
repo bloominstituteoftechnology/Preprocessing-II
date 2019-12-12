@@ -1,1 +1,49 @@
 // Mixins in here
+
+//Global Use
+.center{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+//Navagation Mixins
+
+
+.flex-center(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+
+//Sign me Up button Mixin
+
+.btnn(@btnjustify){
+    font-size: @btnfontsize;
+    width:80%;
+    padding:5%;
+    border:1px solid grey;
+    border-radius: 10%;
+    display:flex;
+    justify-content: @btnjustify;
+    background-color:rgba(2, 56, 18, 0.842);
+    color:white;
+}
+
+//Media Q's Mixins
+.phone{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+//Hover Mixin
+.hover{
+    &:hover{
+        background-color:red;
+    }
+}
+        
+      

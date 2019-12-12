@@ -1,6 +1,30 @@
+//Header
+header{
+  .hover();
+  @media @phone{
+
+    &{
+      width:50%;
+      .phone();
+     
+     }
+    
+  }
+  .center();
+}
 .home {
 
   .content-section {
+    .hover();
+    @media @phone{
+
+      &{
+        .phone();
+       
+       }
+      
+    }
+    
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +48,7 @@
   }
 
   .inverse-content {
+    .hover();
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
@@ -39,6 +64,16 @@
   }
 
   .content-destination {
+    .hover();
+    @media @phone{
+
+      &{
+        width:50%;
+       .phone();
+       
+       }
+      
+    }
     width: 75%;
     margin: 0 auto 30px;
 
@@ -48,14 +83,34 @@
   }
 
   .content-pick {
+    
+    @media @phone{
+
+      &{
+        .phone();
+       
+       }
+      
+    }
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
     .destination {
+      
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .hover();
+        .btnn(center);
+      }
     }
   }
+  
 }// home
+.form{
+  .flex-center(center, center);
+
+  
+}
