@@ -5,9 +5,16 @@
     align-content: @align;
 }
 
-.buttonbox(@btncolor){
+.buttonbox(@btncolor,@txtcolor,@boxradius, @boxwidth, @txtalign){
     background-color:@btncolor;
-    padding:30px 0;
-    border:1px solid black
+    color:@txtcolor;
+    text-align: @txtalign;
+    width:@boxwidth;
+    // display:flex;
+    // justify-content: center;
+    //align-self: flex-start;
+    border-radius: @boxradius;
+    padding:15px 30px;
+    font-size:2rem;
 
 }
