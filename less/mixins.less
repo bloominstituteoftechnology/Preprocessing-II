@@ -1,1 +1,31 @@
-// Mixins in here
+.custom-btn() {
+    display: block;
+    background-color: @eastern-blue;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    padding-left: 18%;
+    padding-top: 5%;
+    border-radius: 10px;
+    color: @white;
+}
+img{
+    animation-duration: 8s;
+    animation-delay: 0s;        
+    animation-name: bus;
+    animation-timing-function: ease-in; 
+     }
+    
+    @keyframes bus{
+    0% {opacity: 0%;}
+    25% {opacity: 25%;}
+    50% {opacity: 50%;}
+    75% {opacity: 75%;}
+    100% {opacity: 100%;}
+}
+div .btn{
+    margin-left: 30%;
+    margin-top: 2%;
+}
