@@ -1,1 +1,18 @@
 // Mixins in here
+.nav-mix() {
+    display: flex;
+    justify-content: space-between;
+}
+.button-content (@button-bg, @white){
+    display: block;
+    background-color: @button-bg;
+    margin: 0 -2px 0px;
+    padding: 4%;
+    padding-left: 25%;
+    padding-top: 6%;
+    width: 90%;
+    height: 45px;
+    font-size: 1.7rem;
+    border-radius:17px;
+    color:@white;
+  }

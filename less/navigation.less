@@ -1,1 +1,37 @@
 // Navigation Styles here
+nav {
+    margin:0 auto;
+    width:100%;
+    border-bottom: 2px dashed @navigation-border;
+    padding: 1%;
+    .bignav {
+        max-width: 800px;
+        margin:0 auto;
+        .nav-mix();
+        align-items: baseline;
+        @media @phone {
+          display: flex;  
+          flex-direction: column;
+    }
+    }
+    .links {
+        width: 30%;
+        .nav-mix();
+        font-size: 1.6rem;
+    }
+
+}
+
+/*@media @phone {
+    .bignav{
+        display:flex;
+        flex-direction: column;
+        .logo{
+            display: flex;
+            justify-content: center;
+        }
+        .links {
+            .nav-mix();
+  }  
+}
+}*/
