@@ -1,1 +1,97 @@
 // Follow the order in the readme
+
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'global';
+@import 'navigation';
+@import 'footer';
+@import 'home-page';
+
+
+
+html {
+    color: rgb(83, 74, 74);
+ 
+
+   button {
+       color: rgb(255, 255, 255);
+       background-color:rgb(15, 177, 177);  
+       border: 2px dotted rgb(133, 197, 223);
+       width: 200px; 
+       border-radius: 5px;
+   } 
+
+ .intro {
+    margin: 0 23%;
+ }
+   img {
+       border-radius: 3%;
+   }
+   div {
+    padding: 3% 0;
+  }
+
+
+ @media @mobile {
+    width: 100%;
+    padding: 5%;
+    color: rgb(44, 42, 42);
+
+    header {
+        height: 10vh;
+       width: 80%;
+       padding: 0 15%;
+       .space();
+       align-items: center;
+    
+    }
+    
+    .navigation {
+       width: 42%;
+       font-size:1rem;
+       .space();
+    }
+    
+    a{
+       margin:0 -20%; 
+    }
+
+
+
+
+ .home .content-section{
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 -30%;
+    padding: 0 auto;
+    }
+    button {
+        color: rgb(255, 255, 255);
+        background-color:rgb(15, 177, 177);  
+        border: 2px dotted rgb(133, 197, 223);
+        width: 100px; 
+        border-radius: 5px;
+    } 
+ 
+  .intro {
+      width:80%;
+    margin: 0 3%;
+    padding: 0 0 0 8%;
+  }
+    img {
+        border-radius: 3%;
+    }
+    div {
+     padding: 3% 0 0 0%;
+   }
+
+   p {
+       font-size: 2rem;
+   }
+
+
+
+ }   /*This Bracket Cloeses --- @media @mobile ---*/
+
+}    /*This Bracket Cloeses --- HTML---*/
