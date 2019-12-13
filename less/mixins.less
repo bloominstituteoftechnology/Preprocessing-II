@@ -4,3 +4,16 @@
   justify-content: @j;
   align-items: @a;
 }
+
+.button(@btn-width, @btn-font-size, @btn-text-color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background: @button-bg;
+  width: @btn-width;
+  color: @btn-text-color;
+  font-size: @btn-font-size;
+  padding: 5% 3%;
+  border-radius: 15px;
+}
