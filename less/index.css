@@ -1,17 +1,3 @@
-.center {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-.phone {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.hover:hover {
-  background-color: red;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -182,47 +168,10 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navagation {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 3px dotted grey;
-}
-@media (max-device-width: 500px) {
-  .navagation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.navagation h1 {
-  font-size: 4rem;
-}
-.navagation nav {
-  display: flex;
-  justify-content: space-around;
-  width: 45%;
-  font-size: 1.5rem;
-}
-.navagation nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
-}
-@media (max-device-width: 500px) {
-  .footer {
-    width: 50%;
-    margin-left: 23%;
-  }
 }
 .footer p {
   text-align: center;
@@ -230,39 +179,11 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-header {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-header:hover {
-  background-color: red;
-}
-@media (max-device-width: 500px) {
-  header {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.home .content-section:hover {
-  background-color: red;
-}
-@media (max-device-width: 500px) {
-  .home .content-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -279,9 +200,6 @@ header:hover {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content:hover {
-  background-color: red;
-}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -294,18 +212,6 @@ header:hover {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination:hover {
-  background-color: red;
-}
-@media (max-device-width: 500px) {
-  .home .content-destination {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -315,34 +221,7 @@ header:hover {
   display: flex;
   justify-content: space-between;
 }
-@media (max-device-width: 500px) {
-  .home .content-pick {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-.home .content-pick .destination .btn {
-  font-size: 2rem;
-  width: 80%;
-  padding: 5%;
-  border: 1px solid grey;
-  border-radius: 10%;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(2, 56, 18, 0.842);
-  color: white;
-}
-.home .content-pick .destination .btn:hover {
-  background-color: red;
-}
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
