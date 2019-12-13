@@ -1,4 +1,5 @@
 * {
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -48,10 +49,12 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @phone {
+  }
 }
 
 hr {
   border-top-width: 2px;
   border-top-style: dashed;
-  border-top-color: grey;
+  border-top-color: @navigation-border;
 }
