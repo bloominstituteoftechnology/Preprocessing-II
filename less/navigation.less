@@ -1,1 +1,31 @@
 // Navigation Styles here
+header {
+  nav {
+    border-bottom: 2px dashed @navigation-border;
+    .center(space-between, center);
+    padding: 2%;
+    @media @phone {
+      .center(space-around, center);
+      flex-direction: column;
+    }
+
+    .topRow {
+      .center(space-evenly, none);
+      width: 50%;
+      @media @phone {
+        .center(space-evenly, center);
+        width: 100%;
+        margin-top: 2%;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.4rem;
+        @media @phone {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
