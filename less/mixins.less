@@ -1,1 +1,35 @@
 // Mixins in here
+
+.btnMixin(@bgColorBtn, @txtColorBtn) {
+    background-color:@bgColorBtn;
+    // color of button #007d7c;
+    border:none;
+    color: @txtColorBtn;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.8rem;
+    padding: 14px 40px;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.headerMargins {
+    margin-top:1%;
+    margin-right: @headerMrg;
+    margin-left: @headerMrg;
+}
+
+.headerPadding {
+    padding-right: @headerPad;
+    padding-left: @headerPad;
+}
+
+.borderDashBtm {
+    border-bottom: 2px dashed @silver;
+}
+
+.phoneMargins {
+    margin-left:@marginPhone;
+    margin-right: @marginPhone;
+}
