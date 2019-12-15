@@ -1,1 +1,18 @@
 // Navigation Styles here
+
+nav {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media @mobile {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: @font-color;
+        font-size: 1.6rem;
+    } 
+}

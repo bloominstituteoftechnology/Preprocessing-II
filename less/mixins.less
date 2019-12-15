@@ -1,1 +1,14 @@
 // Mixins in here
+
+#mixins() {
+
+    .btn(@t-color, @b-color, @f-size, @t-align, @width, @pad, @b-radius) {
+        color: @t-color;
+        background-color: @b-color;
+        font-size: @f-size;
+        text-align: @t-align;
+        width: @width;
+        padding: @pad;
+        border-radius: @b-radius;
+    }
+}
