@@ -1,1 +1,30 @@
 // Mixins in here
+
+.layout(@j-c: flex-start, @a-i: flex-start, @f-d: row) {
+    display: flex;
+    // flex-wrap: nowrap;
+    flex-direction: @f-d;
+    justify-content: @j-c;
+    align-items: @a-i;
+}
+
+.border-tool(@b-top: 1px, @b-right: 1px, @b-bot: 1px, @b-left: 1px, @b-color: black, @b-style: solid) {
+    border-top: @b-top @b-style @b-color;
+    border-right: @b-right @b-style @b-color;
+    border-bottom: @b-bot @b-style @b-color;
+    border-left: @b-left @b-style @b-color;
+}
+
+.btn {
+color: @white;
+    .layout (center, center);
+    background-color: @button-bg;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+  
+  &:hover {
+    color: @white;
+    background-color: darken(@button-bg, 20%);
+  }
+}
