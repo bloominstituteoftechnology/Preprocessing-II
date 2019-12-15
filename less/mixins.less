@@ -1,1 +1,35 @@
 // Mixins in here
+.flex-settings{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.format-links {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;   
+}
+
+.format-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-bottom: 2px dashed @navigation-border;
+}
+
+//Parametric Mixin
+.fix-buttons(@bgcolor,@fontcolor){
+    background-color: @bgcolor;
+    border: 1px solid @bgcolor;
+    border-radius: 10px 10px 10px 10px;
+    color: @fontcolor;
+    font-size: 2rem;
+    padding: 8%;
+    text-align: center;
+}
+
+
+
