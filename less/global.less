@@ -8,6 +8,7 @@ html {
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  
 }
 
 h1, h2, h3, h4, h5 {
@@ -40,7 +41,16 @@ img {
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
+  max-width: @global-width;
+  
   margin: 0 auto;
+  @media @tablet{
+    max-width: 100%;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
 }
