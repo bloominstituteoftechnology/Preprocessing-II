@@ -1,29 +1,61 @@
 .home {
+  @media @mobile {
+    width: 95%;
+  }
+  .main-header {
+    .header-text {
+
+      h2 {
+        margin: 20px 0px;
+        padding-bottom: 0px;
+      }
+
+      p {
+        border-bottom: 2px dashed @navigation-border;
+        padding-bottom: 20px;
+      }
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    @media @mobile {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+         @media @mobile {
+           .mobile-width;
+           margin-top: 10px;
+         }
     }
+ 
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .mobile-width;
+        order: 1;
+      }
+    }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          .mobile-width;
+        }
       }
     }
   }
 
-  .inverse-content {
+.inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
@@ -41,9 +73,16 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+          @media @mobile {
+          .mobile-width;
+          padding-bottom: 20px;
+        }
 
     img {
       border-radius: 10px;
+          @media @mobile {
+          .mobile-width;
+        }
     }
   }
 
@@ -52,10 +91,38 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+      @media @mobile {
+        .mobile-width;
+        flex-direction: column;
+
+      }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+        @media @mobile {
+          .mobile-width;
+          display: flex;
+          flex-direction: column;
+          padding: 0px 8% 25px;
+        }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        padding: 10px;
+        border-radius: 20px;
+        width: 85%;
+        .buttons(@button-text, @button-background);
+      }
+
+      .btn:hover {
+        background-color: darken(@button-text,10%);
+        color: @button-background;
+      }
     }
+
   }
-}// home
+// home
