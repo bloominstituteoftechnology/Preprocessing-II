@@ -1,1 +1,28 @@
-// Mixins in here
+#mixins() {
+    .layout(@j-content, @a-items ) {
+      display: flex;
+      justify-content: @j-content;
+      align-items: @a-items;
+      
+    }
+    .border-radius(@radius) {
+         -webkit-border-radius: @radius;
+         -moz-border-radius: @radius;
+        border-radius: @radius;
+
+        @media @mobile {
+
+            #mixins .border-radius(100px);
+      
+           
+            } 
+      }
+      .button-layout(){
+        color: @white;
+        background-color: @eastern-blue;
+        font-size: 2rem; 
+        padding: 5px 20px;
+
+       
+      }
+}
