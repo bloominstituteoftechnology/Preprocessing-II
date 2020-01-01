@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name=”viewport” content=”width-device-width, initial-scale=1.0”>
   <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
@@ -17,9 +17,25 @@
 <body>
 
   
-     
+  <section class="nav-bar">
+    <div class="nav-container">
+      <h1 class="title">Fun Bus</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </section>
   <div class="container home">
-   
+   <section class="main-header">
+     <div class="header-img">
+       <img src="img/fun-bus.jpg" alt="It's a Fun Bus">
+     </div>
+     <h2>Welcome To Fun Bus!</h2>
+     <p>You won't believe how fun this bus is. Some say it's the most fun bus to ever hit the road. The fun is ubiqutous. It saturates the air. Can you feel it? It's the fun entering your bloodstream through your lungs. What about oxygen? Don't worry about it, my friend. You are fun bus now. Please pick up some passengers.</p>
+   </section>
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -63,6 +79,30 @@
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
+    </section>
+    <section class="select-package">
+        <h4>Select a Package</h4>
+        <div class="form">
+          <input class="input" type="text" placeholder="Name">
+        </div>
+        <div class="form">
+          <input class="input" type="text" placeholder="Email Address">
+        </div>
+        <div class="form">
+          <input class="input" type="text" placeholder="Phone Number">
+        </div>
+        <div class="form">
+          <select class="input">
+            <option value="select">Select your package</option>
+            <option value="sun">Fun in the Sun</option>
+            <option value="mountain">Mountain Excusion</option>
+            <option value="island">Island Getaway</option>
+            </select>
+        </div>
+        <div class="form">
+          <textarea class="input" type="text" placeholder="Special Instructions" style="width: 250px;"></textarea>
+        </div>
+        <div class="submit">Submit</div>
     </section>
   </div><!-- container -->
 
