@@ -1,1 +1,22 @@
 // Mixins in here
+
+.btn-class() {
+    padding: 10px 40px;
+    border-radius: 1.4rem;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken(teal, 5%)
+    }
+  }
+
+
+  .btn{
+      .btn-class();
+      font-size: 2rem;
+      text-align: center;
+
+  }
+
