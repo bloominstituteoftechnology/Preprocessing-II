@@ -1,53 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+.sitewidth {
+  width: 90%;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+.topBar {
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: dashed 2px lightgrey;
 }
-body {
-	line-height: 1;
+.topBar nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-ol, ul {
-	list-style: none;
+.welcome {
+  width: 90%;
+  margin: 0 auto;
 }
-blockquote, q {
-	quotes: none;
+.welcome img {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: auto;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+.welcome div {
+  width: 60%;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.welcome div p {
+  font-size: 1.2rem;
 }
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+hr {
+  border: dashed 2px lightgrey;
+  width: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
-
-Html{
-	font-size: 62.5%;
+.containers {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+.content-section div {
+  width: 45%;
+}
+.content-section div p {
+  font-size: 1.3rem;
+}
+.content-section div h2 {
+  font-size: 1.7rem;
+}
+.content-section .img-content {
+  display: flex;
+  align-items: flex-start;
+}
+.content-section .img-content img {
+  width: 95%;
+  height: 350px;
+  border-radius: 2%;
+}
+.content-destination {
+  width: 60%;
+  margin: 0 auto;
+}
+.content-destination p {
+  width: 80%;
+  font-size: 1.3rem;
+}
+.content-destination h2 {
+  font-size: 1.7rem;
+}
+.content-destination img {
+  width: 100%;
+  height: 250px;
+  border-radius: 2%;
+  opacity: 0.7;
+}
