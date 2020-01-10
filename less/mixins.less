@@ -1,1 +1,17 @@
 // Mixins in here
+.displayFlex(@j, @a) {
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.signButton() {
+    border-radius: 13px;
+    background: teal;
+    width: 78%;
+    height: 18%;
+
+    &:hover {
+        background: darken(teal, 8%);
+    }
+   }
