@@ -2,6 +2,20 @@
 * {
   box-sizing: border-box;
 }
+.btn-layout (@justify,@align) {
+  justify-content:@justify;
+  align-items:@align;
+}
+.btn-border(){
+  margin:1%;
+  padding:2%;
+  border-radius:10px;
+}
+.btn-color(){
+  background-color:teal;
+  border:1px solid white;
+}
+
 
 html {
   font-size: 62.5%;
@@ -23,12 +37,12 @@ html, body {
   }
 }
 section {
-  border: 1px solid purple;
+  
   display: flex;
   justify-content: space-around;
   .text-content {
-    border: 1px solid red;
-  padding: 5%;
+    
+  padding: 2%;
   width:45%;
   }
 }
@@ -41,8 +55,8 @@ section {
   justify-content: space-around;
   align-items:center;
   .box {
-    border: 1px solid red;
-  padding: 5%;
+   
+  padding: 2%;
   width:75%;
   height:25%;
   }
@@ -80,17 +94,13 @@ p {
 }
 .bottom {
   width:95%;
-  border:solid green;
+  
   display:flex;
   margin:1%;
   padding:2%;
 }
-.btn  {
-  border: 1px solid white;
-  margin: 1%;
-  padding: 2%;
-  border-radius: 10px;
-  background-color:teal;
-  text-align:center;
+.btn {  
+.btn-layout(flex-end,center);
+.btn-border();
+.btn-color();  
 }
-

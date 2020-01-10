@@ -149,13 +149,11 @@ body {
   height: 25%;
 }
 section {
-  border: 1px solid purple;
   display: flex;
   justify-content: space-around;
 }
 section .text-content {
-  border: 1px solid red;
-  padding: 5%;
+  padding: 2%;
   width: 45%;
 }
 .destination {
@@ -168,8 +166,7 @@ section .text-content {
   align-items: center;
 }
 .destination .box {
-  border: 1px solid red;
-  padding: 5%;
+  padding: 2%;
   width: 75%;
   height: 25%;
 }
@@ -203,18 +200,18 @@ p {
 }
 .bottom {
   width: 95%;
-  border: solid green;
   display: flex;
   margin: 1%;
   padding: 2%;
 }
 .btn {
-  border: 1px solid white;
+  justify-content: flex-end;
+  align-items: center;
   margin: 1%;
   padding: 2%;
   border-radius: 10px;
   background-color: teal;
-  text-align: center;
+  border: 1px solid white;
 }
 nav {
   display: flex;
