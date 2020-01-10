@@ -1,1 +1,14 @@
 // Mixins in here
+.flex-mix {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-mix(@w, @h, @btn-color, @c, @fs, @br){
+    width: @w;
+    height: @h;
+    background-color: @btn-color;
+    color: @c;
+    font-size: @fs;
+    border-radius: @br;
+}
