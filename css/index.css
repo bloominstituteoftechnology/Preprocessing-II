@@ -156,6 +156,13 @@ section .text-content {
   padding: 2%;
   width: 45%;
 }
+@media (max-width:500px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .destination {
   width: 95%;
   border-top: dotted black;
@@ -169,6 +176,13 @@ section .text-content {
   padding: 2%;
   width: 75%;
   height: 25%;
+}
+@media (max-width:500px) {
+  .destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 h1,
 h2,
