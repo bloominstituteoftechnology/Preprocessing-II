@@ -22,6 +22,31 @@ html, body {
     
   }
 }
+section {
+  border: 1px solid purple;
+  display: flex;
+  justify-content: space-around;
+  .text-content {
+    border: 1px solid red;
+  padding: 5%;
+  width:45%;
+  }
+}
+.destination{
+  width:95%;
+  border-top:dotted black;
+  border-bottom:dotted black;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items:center;
+  .box {
+    border: 1px solid red;
+  padding: 5%;
+  width:75%;
+  height:25%;
+  }
+}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
@@ -47,13 +72,25 @@ p {
   padding-bottom: 10px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
+.bottom {
+  width:95%;
+  border:solid green;
+  display:flex;
+  margin:1%;
+  padding:2%;
+}
+.btn  {
+  border: 1px solid white;
+  margin: 1%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color:teal;
+  text-align:center;
+}
+
