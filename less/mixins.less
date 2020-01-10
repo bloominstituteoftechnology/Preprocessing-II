@@ -1,1 +1,38 @@
 // Mixins in here
+
+
+
+// nav a 
+.flex-item(@j,@a){
+justify-content:@j;
+align-items: @a;
+}
+
+//button 
+
+.btn(@bor,@bor-r,@pad,@bac,@tex,@col,@font){
+border:@bor ;
+border-radius:@bor-r;
+padding:@pad;
+background:@bac;
+text-align:@tex;
+
+color:@col;
+font-size:@font
+}
+
+
+// hover
+
+.hover(@co){
+    color:@co;
+    &:hover{
+        color: @co;
+    }
+}
+
+
+
+// parametric mixin
+
+@mobile: ~ "(max-width:500px)";
