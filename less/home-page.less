@@ -5,17 +5,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
+      @media @mobile {
+        display: block;
+      }
+  
     .text-content {
       width: 48%;
       padding-right: 1%;
+    
+      @media @mobile {
+        width: 100%;      
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;  
+        padding: 0;   
+      }
 
       img {
         border-radius: 10px;
@@ -23,9 +34,27 @@
     }
   }
 
+
+  .welcome-section {
+    
+    h2 {
+      padding-top: 3%;
+    }
+
+    p {
+      border-bottom: 2px dashed @navigation-border;
+      padding-bottom: 3%;
+    }
+  }
+ 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+      @media @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+      }
 
     .text-content {
       padding-left: 1%;
@@ -35,6 +64,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    
+      @media @mobile {
+        padding: 0;
+      }
     }
   }
 
@@ -42,20 +75,65 @@
     width: 75%;
     margin: 0 auto 30px;
 
+      @media @mobile {
+        width: 100%;
+        margin: 0
+      }
+
     img {
       border-radius: 10px;
+
+      @media @mobile {
+        margin-bottom: 7%;
+      }
     }
   }
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+      @media @mobile {
+        display: block;
+        padding: 5% 10%;
+      }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+        @media @mobile {
+          width: 100%;
+        }
     }
+
+    .btn {
+      .btn-mix(@button-bg, @main-bg);
+      padding: 5%;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.6rem;
+      width: 75%;
+      cursor: pointer;
+    
+        &:hover {
+          opacity: 0.5;
+        }
+        
+        @media @mobile {
+          width: 100%;
+          padding: 3% 0;
+        }
+    }  
+  
+    .form-section {
+      h2 {
+        margin: 30px 0;
+        text-align: center;
+      }
+    }      
   }
 }// home

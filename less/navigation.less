@@ -1,1 +1,41 @@
 // Navigation Styles here
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px dashed @navigation-border;
+    align-items: center;
+    
+    h1 {
+        width: 20%;
+        margin: 3% 0;
+    }
+
+    nav {
+        width: 40%;    
+        margin: 3% 0;    
+    
+        a {
+            text-decoration: none;
+            color: @font-color;
+            font-size: 1.6rem;
+            padding: 4%;            
+        
+            &:hover {
+              .nav-mix(navswitch, 2s);
+            }
+        }
+    }
+    @media @mobile {
+        flex-direction: column;
+                
+        h1, nav {
+            width: 100%;
+            text-align: center;            
+        
+            a {
+                padding: 4%;
+            }
+        }     
+    }
+}
