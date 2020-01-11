@@ -30,11 +30,22 @@ Html {
 .topBar nav {
   width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+.topBar nav a {
+  text-decoration: none;
+  color: black;
+}
+.topBar nav a div {
+  font-size: 1.7rem;
+}
+.topBar nav a div:hover {
+  color: lightseagreen;
 }
 .topBar h1 {
   font-family: 'Indie Flower', cursive;
+  font-size: 3rem;
 }
 .welcome {
   width: 90%;
@@ -46,10 +57,14 @@ Html {
   height: auto;
 }
 .welcome div {
-  width: 60%;
+  width: 100%;
+}
+.welcome div h2 {
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
 }
 .welcome div p {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
 hr {
   border: dashed 2px lightgrey;
@@ -70,12 +85,16 @@ hr {
 }
 .content-section div {
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .content-section div p {
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 .content-section div h2 {
-  font-size: 1.7rem;
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
 }
 .content-section .img-content {
   display: flex;
@@ -91,15 +110,50 @@ hr {
   margin: 0 auto;
 }
 .content-destination p {
-  width: 80%;
-  font-size: 1.3rem;
+  width: 100%;
+  font-size: 2rem;
 }
 .content-destination h2 {
-  font-size: 1.7rem;
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
 }
 .content-destination img {
   width: 100%;
   height: 250px;
   border-radius: 2%;
   opacity: 0.7;
+}
+.content-pick {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.content-pick div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+.content-pick div h4 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 0%;
+}
+.content-pick div p {
+  font-size: 2rem;
+}
+.content-pick div a {
+  background-color: lightseagreen;
+  text-decoration: none;
+  width: 300px;
+  height: 30px;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+.content-pick div a div {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 auto 0 auto;
+  padding-top: 2%;
 }

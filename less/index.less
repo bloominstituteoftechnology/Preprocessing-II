@@ -34,12 +34,31 @@ Html{
     nav{
         width: 50%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
+
+
+        a{
+            text-decoration: none;
+            color: black;
+
+            
+            div{
+                
+                font-size: 1.7rem;
+            }
+
+            div:hover{
+                color: lightseagreen;
+            }
+
+        }
+        
     }
 
     h1{
         font-family: 'Indie Flower', cursive; 
+        font-size: 3rem;
     }
 
 
@@ -58,10 +77,15 @@ Html{
     }
 
     div{
-        width: 60%;
+        width: 100%;
+
+        h2{
+            font-size: 3rem;
+            font-family: 'Indie Flower', cursive; 
+        }
 
         p{
-            font-size: 1.2rem;
+            font-size: 2.2rem;
         }
     }
 
@@ -92,14 +116,19 @@ hr{
 
     div{
         width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
 
         p{
-            font-size: 1.3rem;
+            font-size: 2.0rem;
 
         }
 
         h2{
-            font-size: 1.7rem;
+            font-size: 3rem;
+            font-family: 'Indie Flower', cursive; 
         }
     }
 
@@ -122,12 +151,13 @@ hr{
     margin: 0 auto;
 
     p{
-        width: 80%;
-        font-size: 1.3rem;
+        width: 100%;
+        font-size: 2.0rem;
     }
 
     h2{
-        font-size: 1.7rem;
+        font-size: 3rem;
+        font-family: 'Indie Flower', cursive; 
 
     }
 
@@ -139,3 +169,57 @@ hr{
     }
 
 }
+
+
+.content-pick{
+
+    .sitewidth();
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    div{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+
+        h4{
+            font-family: 'Indie Flower', cursive;
+            font-size: 2.5rem; 
+            margin-bottom: 0%;
+            
+        }
+
+        p{
+            font-size: 2rem;
+        }
+
+        a{
+            background-color: lightseagreen;
+            text-decoration: none;
+            width: 300px;
+            height: 30px;
+            border-radius: 5%;
+            margin: 0 auto;
+
+            div{
+                color: white;
+                font-size: 1.2rem;
+                margin: 0 auto 0 auto;
+               padding-top: 2%;
+
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+}
+
