@@ -1,1 +1,47 @@
 // Navigation Styles here
+.topBar{
+    height: 10vh;
+    .sitewidth();
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: dashed 2px lightgrey;
+    
+
+
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (@mobile){
+            display: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            .fontbasis();
+
+            
+            div{
+                .fontbasis();
+                font-size: 1.7rem;
+            }
+
+            div:hover{
+                color: lightseagreen;
+            }
+
+        }
+        
+    }
+
+    h1{
+        font-family: 'Indie Flower', cursive; 
+        font-size: 3rem;
+    }
+
+
+}
