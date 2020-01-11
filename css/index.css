@@ -16,6 +16,9 @@ Html {
   font-size: 1.6rem;
   padding: 20px;
 }
+.fontbasis {
+  font-family: sans-serif;
+}
 .sitewidth {
   width: 90%;
 }
@@ -33,11 +36,18 @@ Html {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 550px) {
+  .topBar nav {
+    display: none;
+  }
+}
 .topBar nav a {
   text-decoration: none;
   color: black;
+  font-family: sans-serif;
 }
 .topBar nav a div {
+  font-family: sans-serif;
   font-size: 1.7rem;
 }
 .topBar nav a div:hover {
@@ -59,12 +69,23 @@ Html {
 .welcome div {
   width: 100%;
 }
-.welcome div h2 {
+@media (max-width: 550px) {
+  .welcome div {
+    margin: 0 auto 0 auto;
+  }
+}
+.welcome h2 {
   font-size: 3rem;
   font-family: 'Indie Flower', cursive;
 }
-.welcome div p {
+@media (max-width: 550px) {
+  .welcome h2 {
+    padding-top: 3%;
+  }
+}
+.welcome p {
   font-size: 2.2rem;
+  font-family: sans-serif;
 }
 hr {
   border: dashed 2px lightgrey;
@@ -79,31 +100,35 @@ hr {
 .content-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
+  justify-content: space-around;
   width: 90%;
+  margin-bottom: 3%;
 }
 .content-section div {
-  width: 45%;
+  width: 350px;
+  height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .content-section div p {
   font-size: 2rem;
+  font-family: sans-serif;
 }
 .content-section div h2 {
   font-size: 3rem;
   font-family: 'Indie Flower', cursive;
 }
-.content-section .img-content {
-  display: flex;
-  align-items: flex-start;
-}
 .content-section .img-content img {
-  width: 95%;
+  width: 500px;
   height: 350px;
   border-radius: 2%;
+}
+@media (max-width: 550px) {
+  .content-section .img-content img {
+    width: 350px;
+    height: auto;
+  }
 }
 .content-destination {
   width: 60%;
@@ -112,6 +137,7 @@ hr {
 .content-destination p {
   width: 100%;
   font-size: 2rem;
+  font-family: sans-serif;
 }
 .content-destination h2 {
   font-size: 3rem;
@@ -142,6 +168,7 @@ hr {
 }
 .content-pick div p {
   font-size: 2rem;
+  font-family: sans-serif;
 }
 .content-pick div a {
   background-color: lightseagreen;
@@ -156,4 +183,5 @@ hr {
   font-size: 1.2rem;
   margin: 0 auto 0 auto;
   padding-top: 2%;
+  font-family: sans-serif;
 }
