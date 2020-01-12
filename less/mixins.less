@@ -1,1 +1,9 @@
 // Mixins in here
+
+.border(@style; @width; @radius; @color;) {
+    border: @style @width @radius @color;
+ }
+
+.btn {
+    .border (solid; 3px; 3px; grey);
+}
