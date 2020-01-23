@@ -1,1 +1,20 @@
 // Mixins in here
+
+.btn(@color: white, @b-color: #008080) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 2em;
+    width: 100%;
+    font-size: 2em;
+    color: @color;
+    background-color: @b-color;
+  }
+
+
+  .bounce(@duration: 2s, @delay: 1s) {
+      animation-duration: 2s;
+      animation-delay: 1s;
+      animation-name: bounceIn;
+  }
