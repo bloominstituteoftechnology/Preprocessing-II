@@ -1,1 +1,13 @@
 // Mixins in here
+
+.btn{(@color: white, @background-color: #008080)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 2em;
+    width: 100%;
+    font-size: 2em;
+    color: @color
+    background-color: @background-color
+  }
