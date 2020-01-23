@@ -2,8 +2,10 @@
 
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media @mobile {
+    flex-direction: column;
+}
 
     .logo {
         width: 50%;
@@ -13,7 +15,7 @@ nav {
     .links {
         display: flex;
         justify-content: flex-end;
-        width: 100%;
+        width: 50%;
         align-items: center;
 
         a {
@@ -30,3 +32,4 @@ nav {
     align-items: center;
     justify-content: center;
 }
+

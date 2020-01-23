@@ -170,8 +170,11 @@ img {
 }
 nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+@media (max-width: 499px) {
+  nav {
+    flex-direction: column;
+  }
 }
 nav .logo {
   width: 50%;
@@ -180,7 +183,7 @@ nav .logo {
 nav .links {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  width: 50%;
   align-items: center;
 }
 nav .links a {
