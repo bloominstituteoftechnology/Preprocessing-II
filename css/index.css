@@ -1,3 +1,16 @@
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -216,6 +229,9 @@ h1 {
   padding: 3%;
   width: 30%;
   text-align: center;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-name: bounceIn;
 }
 @media (max-width: 500px) {
   h1 {
@@ -250,6 +266,9 @@ header h3 {
 }
 header p {
   padding: 0 10%;
+}
+.home {
+  padding: 2%;
 }
 .home .content-section {
   margin: 30px 0;
