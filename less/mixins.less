@@ -1,1 +1,23 @@
 // Mixins in here
+.borders() {
+    border-bottom: lightgrey dashed 2px ;
+}
+.flex(@display, @justify-content) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons(@background){
+  border-radius: 10px;
+  background: teal;
+  padding: 5%; 
+  width: 75%;
+  text-align: center;
+  color: white;
+  
+}
+
+.wrapit() {
+    display: flex;
+    flex-wrap: wrap;
+}
