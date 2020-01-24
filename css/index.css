@@ -1,3 +1,11 @@
+.btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 16px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,19 +180,45 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: red;
+  padding-top: 6rem;
+  padding-bottom: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header h2 {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  header h2 {
+    text-align: center;
+  }
 }
 header nav {
-  margin: 4rem;
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: red;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: center;
+  }
 }
 header nav a {
   text-decoration: none;
+  font-size: 1.6rem;
+  padding-left: 20px;
+  color: black;
+}
+.separator {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .footer {
   width: 100%;
@@ -197,6 +231,20 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.home .welcome {
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .welcome img {
+    margin-bottom: 10px;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -207,9 +255,21 @@ header nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    height: auto;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -217,6 +277,12 @@ header nav a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -230,6 +296,11 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 95%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -239,7 +310,23 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
