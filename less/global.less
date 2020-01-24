@@ -40,7 +40,17 @@ img {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 80rem;
   width: 100%;
   margin: 0 auto;
+  @media @mobile{
+    width:90%}
+}
+
+.btn{
+  .button(rgb(5, 66, 66));
+  @media @mobile{
+    background-color:@button-bg;
+    width:100%;
+  }
 }
