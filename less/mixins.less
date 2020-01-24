@@ -1,1 +1,27 @@
 // Mixins in here
+.buttonstyle(@button-bg, @main-bg, @font-size: 16px){
+    background-color: @button-bg;
+    color: @main-bg;
+    border-radius: 8px;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn {
+    .buttonstyle(@button-bg, @main-bg);
+}
+
+// // Color assignments 
+// @font-color: @shark;
+// @button-bg: @eastern-blue;
+// @main-bg:  @white;
+// @navigation-border: @silver;
+// @footer-bg: @sandy-beach;
+
+// // Colors
+// @white: #FFFFFF;
+// @silver: #C0C0C0;
+// @shark: #212529;
+// @eastern-blue: #17A2B8;
+// @sandy-beach: #FFEBCD;
