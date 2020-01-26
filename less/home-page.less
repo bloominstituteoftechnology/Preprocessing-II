@@ -1,42 +1,77 @@
 .home {
 
+  .main-header{
+  }
+  
+  .welcome{
+    display: none;
+
+    @media @mobile{
+      display: block;
+      margin-top: 3%;
+      border-bottom: 3px dotted @navigation-border;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+    }   
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+
+      @media @mobile{
+        width: 100%;
+      }
+      
+    }//.text-content
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width: 100%;
+        padding-left: 0;
+      }
+
       img {
         border-radius: 10px;
-      }
-    }
-  }
+
+        @media @mobile{
+          width: 100%;
+        }
+      }//.img
+    }// .img-content
+  }//.content-section
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+
+      
+    }// .text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+    }//.img-content
+  }// .inverse-content
 
   .content-destination {
     width: 75%;
@@ -44,8 +79,8 @@
 
     img {
       border-radius: 10px;
-    }
-  }
+    }// img
+  }// .content-destination
 
   .content-pick {
     padding-top: 30px;
@@ -53,9 +88,35 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
+
+      @media @mobile{
+        width: 80%;
+        margin-left: 10%;
+      }
+
+    
+
+      .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 15%;
+
+        @media @mobile {
+          width: 90%;
+        }
+
+        button{
+          .button(100%, 10%, 2rem)
+        }// button
+      }// .btn
+    }// .destination
+  }//.content pick
 }// home
