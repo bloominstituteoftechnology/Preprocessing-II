@@ -1,1 +1,45 @@
-// Navigation Styles here
+
+
+.navWrapper {
+   width: 100%;
+   padding: 40px 0 40px 0;
+   border-bottom: 2px dashed silver;
+   .flex(space-evenly, center);
+
+   @media @phone {
+       padding: 10px 0 10px 0;
+       justify-content: space-between;
+       flex-direction: column;
+   }
+  
+  h1 {
+      @media @phone {
+          padding-bottom: 10px;
+      }
+  }
+
+   nav {
+       
+   
+
+   a {
+       text-decoration: none;
+       margin-right: 40px;
+
+      @media @phone {
+          margin-top: 20px;
+      }
+       
+       
+    &:hover {
+        .animation(1s, 1s);
+        text-decoration: underline;
+    }
+
+   }
+   
+   
+   
+  
+   }
+}

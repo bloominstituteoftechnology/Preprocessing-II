@@ -1,1 +1,34 @@
-// Mixins in here
+.flex (@justify, @align) {
+ display: flex;
+ justify-content: @justify;
+ align-items: @align;   
+}
+
+.button (@radius, @bgcolor) {
+    width: 90%;
+    height: 40px;
+    padding: 10px 40px;
+    border-radius: @radius;
+    background-color: @bgcolor;
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.animation (@duration, @delay) {
+    
+    @keyframes opacityFlash {
+        0%      {opacity: 1;}
+        25%     {opacity: 0.8;}
+        50%     {opacity: 0.5;}
+        75%     {opacity: 0.3;}
+        100%    {opacity: 0;}
+    } 
+
+   animation: opacityFlash infinite linear alternate;
+   animation-duration: @duration;
+   animation-delay: @delay;
+
+    }

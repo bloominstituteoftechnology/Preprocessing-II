@@ -1,24 +1,64 @@
 .home {
 
+  header {
+    width: 100%;
+
+  .header-text {
+    border-bottom: 2px dashed silver;
+
+  
+
+    h1 {
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @phone {
+          width: 100vw;
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -53,9 +93,27 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 70%;
+      }
+
+      .btn {
+        .button(12px, teal);
+
+        @media @phone {
+          margin-left: 10px;
+        }
+      }
     }
   }
 }// home
