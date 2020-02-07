@@ -242,6 +242,7 @@ nav a {
   padding: 10px;
   font-size: 1.6rem;
   background: teal;
+  border-radius: 25px;
   border: none;
 }
 .home .content-pick .destination .btn a {
