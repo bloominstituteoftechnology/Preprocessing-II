@@ -228,6 +228,18 @@ nav a {
     flex-direction: column;
   }
 }
+.home .content-section .adventure {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 30rem;
+}
+.home .content-section .adventure .text {
+  width: 30vw;
+}
+.home .content-section .adventure .img {
+  margin-right: 5.9rem;
+  border-radius: 10rem;
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
