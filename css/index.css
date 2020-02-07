@@ -259,7 +259,9 @@ nav a {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2%;
   }
 }
 .home .content-pick .destination .btn {
