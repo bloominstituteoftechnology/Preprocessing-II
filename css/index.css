@@ -180,7 +180,7 @@ nav {
   border-bottom: 2px dotted grey;
   padding-bottom: 3rem;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -218,7 +218,7 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .home .content-section {
     display: flex;
     justify-content: space-evenly;
@@ -230,7 +230,7 @@ nav a {
   width: 48%;
   padding-right: 1%;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .home .content-section .text-content {
     max-width: 800px;
     width: 100%;
@@ -245,14 +245,14 @@ nav a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .home .content-section .img-content img {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
   }
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .home .content-section .img-content {
     max-width: 800px;
     width: 100%;
@@ -298,7 +298,7 @@ nav a {
   font-size: 20px;
   color: white;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .home .content-pick {
     display: flex;
     justify-content: space-around;
