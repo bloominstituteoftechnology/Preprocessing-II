@@ -178,7 +178,8 @@ nav {
   margin: 0 auto;
   font-size: 2rem;
   border-bottom: 2px dotted grey;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 @media (max-width: 500px) {
   nav {
