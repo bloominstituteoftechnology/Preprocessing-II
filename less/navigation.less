@@ -4,12 +4,19 @@ nav {
     .width;
     font-size: 2rem;
     border-bottom: 2px dotted grey;
-    border-width: 150%;
     padding-bottom: 3rem;
+    @media @mobile {
+        .flexy(space-between, center, column);
+        .nav{
+            border: 2px solid red;
+            .width;
+        }
+    }
      a {
         text-decoration: none;
         color: black;
         margin-left: 4rem;
+        }  
     }
-}
+
 
