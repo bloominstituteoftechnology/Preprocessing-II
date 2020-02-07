@@ -174,6 +174,11 @@ nav {
   width: 50%;
   justify-content: space-around;
 }
+@media only screen and ((max-width: 500px)) {
+  nav {
+    width: 100%;
+  }
+}
 nav a {
   padding: 3%;
   margin: auto;
@@ -201,9 +206,19 @@ nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -233,9 +248,19 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   text-align: center;
@@ -256,6 +281,17 @@ nav a {
 .home header {
   display: flex;
 }
+@media (max-width: 500px) {
+  .home header {
+    flex-direction: column;
+  }
+}
 .home header #logo {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .home header #logo {
+    width: 100%;
+    text-align: center;
+  }
 }
