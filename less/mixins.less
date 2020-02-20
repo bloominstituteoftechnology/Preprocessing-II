@@ -1,1 +1,37 @@
 // Mixins in here
+
+.flex(@just:center, @align:center){
+    display: flex;
+    justify-content: @just;
+    align-items: @align;
+}
+
+.direction(@dir:row, @wrap:wrap){
+    flex-flow: @dir @wrap;
+}
+
+.links(@color:black, @decor:none){
+    color: @color;
+    text-decoration: @decor;
+}
+
+.bordered(@size, @style, @color){
+    border-bottom: @size @style @color;
+}
+.button-lay(){
+    background-color: @button-bg;
+    color: @main-bg;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+    width: 70%;
+    height: 7vh;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+
+    &:hover{
+        cursor: pointer;
+        background-color: white;
+        color: @button-bg;
+    }
+}
