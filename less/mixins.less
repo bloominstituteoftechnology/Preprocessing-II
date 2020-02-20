@@ -1,1 +1,35 @@
 // Mixins in here
+.flex(@dir: row, @wrap: nowrap, @jc: center, @ai: center){
+    display: flex;
+    flex-flow: @dir @wrap;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.btn(@bgcolor, @txtcolor:black) {
+    width: 100%;
+    margin: 0 auto;
+    
+    background-color: @bgcolor;
+    color: @txtcolor;
+    
+    padding: 15px 0;
+
+    border-radius: 10px;
+
+    font-size: 1.7rem;
+
+    .flex();
+}
+
+.rotate {
+    &:hover {
+        animation: rotate 1s ease-in-out;
+    }
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(1000deg); }
+	100% { transform: rotate(0deg); }
+}
