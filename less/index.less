@@ -1,13 +1,60 @@
 // Follow the order in the readme
 // Vars and Mixins
-@import “variables”;
-@import “mixins”;
-// General Styles Here
-@import “reset”;
-@import “general-styles”;
-// Components Here
-@import “header”;
-@import “t cta”;
-@import “main-content”;
-@import “contact”;
-@import “footer”;
+@import: “variables”;
+@import: “mixins”;
+// // General Styles Here
+@import: “reset”;
+@import: “general-styles”;
+// // Components Here
+@import: “header”;
+@import: “t cta”;
+@import: “main-content”;
+@import: “contact”;
+@import: "global.less";
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+} 
+
+h1{
+    text-align: center;
+}
+.home{
+    border: 1px dash black;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted grey;
+    align-items: center;
+    h1{
+        width: 45%;
+    }
+    nav {
+        // border-bottom: 1px dotted grey;
+        // display: inline-block;
+        display: flex;
+        width:30%;
+        margin-right: 17%;
+        justify-content: space-around;
+        a{
+            margin: 2%;
+        }
+    }
+}
+.bus{
+    width: 900px;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+section{
+    width: 95%;
+    margin: 0 auto;
+}
