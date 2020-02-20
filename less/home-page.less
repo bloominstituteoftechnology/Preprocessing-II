@@ -6,20 +6,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+      @media @phone {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        // background-color:pink;
+      }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width:80%;
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width:80%;
+      }
+     
+
       img {
         border-radius: 10px;
       }
+
     }
   }
 
@@ -27,9 +43,20 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+      @media @phone {
+        flex-direction:column-reverse;
+        align-content: center;
+        // background-color: blue;
+      }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @phone {
+        width:80%;
+      }
+      
     }
 
     .img-content {
@@ -63,4 +90,9 @@
 
 .btn{
   .custom-btn(#1E88F3, 200px, white);
+
+  @media @phone {
+    width:100%;
+  }
+
 }
