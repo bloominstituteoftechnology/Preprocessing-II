@@ -1,1 +1,17 @@
 // Mixins in here
+
+.buttonStyles(@color-font, @color-bg, @color-hover) {
+    background-color: @color-bg;
+    color: @color-font;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 12px 40px;
+    width: 83%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: @color-hover;
+    }
+  }
