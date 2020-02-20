@@ -1,1 +1,23 @@
 // Mixins in here
+.displayFlexRow(@just, @align) {
+  display: flex;
+  justify-content: @just;
+  align-items: @align;
+}
+
+.custom-btn(@bg-color:#2e8b57, @width:200px, @font-color:#fff) {
+  display: block;
+  background-color: @bg-color;
+  cursor: pointer;
+  width: @width;
+  height: 45px;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  color: @font-color;
+  text-align: center;
+  padding: 5%;
+  &:hover {
+    background-color: @font-color;
+    color: @bg-color;
+  }
+}
