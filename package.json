@@ -1,0 +1,24 @@
+{
+  "name": "preprocessors-ii",
+  "version": "1.0.0",
+  "description": "Fun Bus is a travel agency looking for some help on their website.  They want a new navigation, new header, and new buttons on the home page. They also want a mobile version of their site styled.  Use your preprocessing knowledge to accomplish their tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "less-watch-compiler less css index.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexJoeb/Preprocessing-II.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexJoeb/Preprocessing-II/issues"
+  },
+  "homepage": "https://github.com/AlexJoeb/Preprocessing-II#readme",
+  "devDependencies": {
+    "less": "^3.11.1",
+    "less-watch-compiler": "^1.14.6"
+  }
+}
