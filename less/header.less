@@ -1,0 +1,28 @@
+header{
+    border-bottom: 2px dashed grey;
+    padding: 4%;
+    .headerContent{
+        margin: auto;
+        max-width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            a{
+                color:@font-color;
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+            @media @mobile{
+                width:100%
+            }
+        }
+        @media @mobile{
+            .displayFlex(column,space-evenly,center);
+        }
+    }
+
+  }
