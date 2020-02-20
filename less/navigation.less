@@ -1,15 +1,32 @@
 // Navigation Styles here
-.navigation{
-    .displayFlexRow(space-between,center);
-    a{
-        text-decoration: none;
-        font-size: 1.7rem;
-        color:black;
-    }
+
+header{
+    width:100vw;
+    border-bottom: 3px dashed silver;
+    margin: 0 auto;
+    div{
+        width:80%;
+        max-width:800px;
+        margin: 0 auto;
+        .displayFlexRow(space-between,center); 
+        @media @mobile{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width:100%;
+        }
     nav{
         width:45%;
         .displayFlexRow(space-around,center);
+        a{
+            text-decoration: none;
+            font-size: 1.7rem;
+            color:black;
+        }
+        @media @mobile{
+            width:100%;
+        }
     }
+}
     padding: 3% 0 3%;
-    border-bottom: 3px dashed silver;
 }
