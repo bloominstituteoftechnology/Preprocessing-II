@@ -1,3 +1,29 @@
+header{
+  
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15.4%;
+  border-bottom: 5%;
+  background-color: lightblue;
+
+    h1{
+       font-size: 6rem;
+       margin-top: 3%;
+    }
+  }
+.bus-pic{
+  margin-left: 15%;
+  }
+
+.welcome-para{
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 .home {
 
   .content-section {
@@ -39,11 +65,14 @@
   }
 
   .content-destination {
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    width: 75%;  
     margin: 0 auto 30px;
 
     img {
       border-radius: 10px;
+      
     }
   }
 
@@ -52,10 +81,39 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    margin:1;
+    
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .btn-layout();
+      }
     }
   }
 }// home
+
+//mobile
+@media @mobile{
+  body{
+  display: flex;
+  flex-direction: column;
+  margin: none;
+  }
+  .bus-pic{
+    width: 69.5%;
+  }
+  .content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .content-pick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
