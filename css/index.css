@@ -1,3 +1,8 @@
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-content: column;
+}
 .btn {
   display: flex;
   justify-content: center;
@@ -122,6 +127,12 @@ section {
 body {
   line-height: 1;
 }
+@media (max-width: 500px) {
+  body {
+    padding: 0 5%;
+    background-color: orangered;
+  }
+}
 ol,
 ul {
   list-style: none;
@@ -191,11 +202,17 @@ header {
   align-items: center;
   margin: 0% auto;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-content: column;
+  }
+}
 header nav {
   width: 250px;
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
 }
 header nav a {
   text-decoration: none;
@@ -219,7 +236,7 @@ header nav a {
 .home .funBus img {
   margin: 20px 0 20px 0;
 }
-.home .funBus h1 {
+.home .funBus h2 {
   margin-right: 20px;
 }
 .home .content-section {

@@ -49,12 +49,16 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 0% auto;
-    // max-width: 50%;
+    
+    @media(max-width: 500px){
+        .centered();
+    }
+
     nav{
         width: 250px;
         display: flex;
         justify-content: space-between;
-        margin-left: auto;
+        // margin-left: auto;
         a{
             text-decoration: none;
             font-size: 1.6rem;
