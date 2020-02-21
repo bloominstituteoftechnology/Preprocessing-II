@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+
     @media @mobile {
       flex-direction: column; 
       justify-content: center;
@@ -81,16 +82,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; 
+    }
+
       @media @mobile {
         width: 90%;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
       }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+        @media @tablet {
+          width: 90%;
+          margin: 5%;
+
+        }
 
         @media @mobile {
           width: 100%;
@@ -99,7 +110,11 @@
         }
 
         button{
-          .bttn(@eastern-blue, 75%, @white); 
+          .bttn(@eastern-blue, 75%, @white);
+
+              @media @tablet{
+                .bttn(@eastern-blue, 50%, @white);
+              }
 
               @media @mobile{
                 .bttn(@eastern-blue, 100%, @white);

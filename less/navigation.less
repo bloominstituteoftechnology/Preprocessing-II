@@ -34,10 +34,12 @@
       border-bottom: 2px dashed @navigation-border;
       width: 100%;
       margin-left: 5%;
+        @media @tablet {
+          flex-wrap: wrap;
+          margin: 0 auto;
+        }
 
         @media @mobile {
-            flex-wrap: wrap;
-            margin: 0 auto;
             padding-bottom: 2vh;
             
         }
@@ -48,6 +50,14 @@
             width: 40%;
             font-size: 1.7rem;
             margin-right: 10%;
+
+            @media @tablet {
+              width: 100%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-evenly;
+
+            }
 
             @media @mobile{
                 width: 100%;
@@ -63,10 +73,14 @@
                 justify-content: start;
                 width: 75%;
                 
-                @media @mobile {
+                @media @tablet {
                     width: 100%;
                     justify-content: center;
+                    margin-bottom: 3vh;
+                }
 
+                @media @mobile {
+                  margin-bottom: 5vh;
                 }
             }
     }
