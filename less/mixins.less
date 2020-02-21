@@ -1,1 +1,24 @@
 // Mixins in here
+
+// This is a mixin
+.custom(@bgcolor, @width, @color){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bgcolor;
+    margin: 0 10px 20px;
+    width:@width ; 
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@color ;
+
+    &:hover{
+        background-color: orange;
+    }
+}
+
+
+.btn{
+    .custom(red, 200px, white);
+}
