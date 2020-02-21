@@ -198,6 +198,9 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .top {
+  border-bottom: 2px dashed lightgrey;
+}
 .home .funBus img {
   margin: 20px 0 20px 0;
 }
