@@ -225,3 +225,59 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+html {
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+  border-bottom: dashed grey;
+}
+@media (max-width:500px) {
+  header {
+    background-color: yellow;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header nav {
+  font-size: 1.5rem;
+  display: flex;
+  width: 50vh;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #805050;
+}
+.inputimg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mywork {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-bottom: dashed grey;
+  margin: 0 auto;
+}
+@media (max-width:500px) {
+  h1 {
+    padding-bottom: 20px;
+  }
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid black;
+    width: 100%;
+  }
+  .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
