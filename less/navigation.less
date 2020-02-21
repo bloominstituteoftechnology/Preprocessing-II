@@ -1,7 +1,9 @@
 // Navigation Styles here\
-.flex(@justify, align) {
+.datBorder() {
+    border-bottom: 1px grey dashed;
+}
+.flex(@justify, @align) {
     display: flex;
-
     justify-content: @justify;
     align-items: @align;
 }
@@ -9,10 +11,17 @@ nav {
     display: flex;
     justify-content: space-between;
     div {
+        width: 40%;
         margin: 0 10%;
-        padding: 3%;
-        a {
-        }
+        padding: 1%;
     }
-    border-bottom: 1px grey dashed;
+    .links {
+        width: 50%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5%;
+        border: 1px solid red;
+    }
+    .datBorder();
 }
