@@ -1,3 +1,11 @@
+body{
+  @media @mobile{
+    body{
+    display: flex;
+    flex-direction: column;
+    padding: none;
+    }
+}
 header{
   
   font-family: 'Roboto', sans-serif;
@@ -17,6 +25,9 @@ header{
   }
 .bus-pic{
   margin-left: 15%;
+  @media @mobile{
+    width: 69.5%
+    }
   }
 
 .welcome-para{
@@ -31,18 +42,30 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    }
 
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width:75%;
+      }
     }
+
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile{
+        width: 75%;
+        margin: 1%
+      }
       img {
         border-radius: 10px;
       }
@@ -72,7 +95,6 @@ header{
 
     img {
       border-radius: 10px;
-      
     }
   }
 
@@ -82,38 +104,23 @@ header{
     display: flex;
     justify-content: space-between;
     margin:1;
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-
+      @media @mobile {
+      width: 75%;
+      }
       .btn{
         .btn-layout();
       }
     }
   }
-}// home
-
-//mobile
-@media @mobile{
-  body{
-  display: flex;
-  flex-direction: column;
-  margin: none;
-  }
-  .bus-pic{
-    width: 69.5%;
-  }
-  .content-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .content-pick{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
 }
