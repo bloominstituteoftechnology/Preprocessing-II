@@ -174,8 +174,8 @@ nav {
 }
 nav div {
   width: 40%;
-  margin: 0 10%;
   padding: 1%;
+  margin: 0 5%;
 }
 nav .links {
   width: 50%;
@@ -183,7 +183,10 @@ nav .links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 5%;
-  border: 1px solid red;
+  justify-items: end;
+  align-items: center;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 .footer {
   width: 100%;
@@ -196,21 +199,29 @@ nav .links {
   font-size: 1.6rem;
   padding: 20px;
 }
+h2 {
+  font-size: 3rem;
+}
+p {
+  line-height: 3.5rem;
+  font-size: 2rem;
+}
 .home .content-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .home .content-section .text-content {
-  width: 48%;
+  width: 45%;
   padding-right: 1%;
 }
 .home .content-section .img-content {
-  width: 48%;
+  width: 45%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
   border-radius: 2%;
+  width: 80%;
 }
 .home .inverse-content {
   padding-bottom: 4%;
@@ -253,6 +264,11 @@ nav .links {
   color: white;
   padding: 3% 0;
   border-radius: 6px;
+  margin: 5% 2% 0%;
+}
+.home .content-pick .destination button:hover {
+  background-color: #00b3b3;
+  cursor: pointer;
 }
 .bannerHome {
   width: 100%;

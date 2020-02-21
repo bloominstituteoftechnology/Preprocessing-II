@@ -4,6 +4,13 @@
     width: @width;
     color: @textColor;
 }
+h2 {
+    font-size: 3rem;
+}
+p {
+    line-height: 3.5rem;
+    font-size: 2rem;
+}
 .home {
     .content-section {
         display: flex;
@@ -11,16 +18,17 @@
         justify-content: space-between;
 
         .text-content {
-            width: 48%;
+            width: 45%;
             padding-right: 1%;
         }
 
         .img-content {
-            width: 48%;
+            width: 45%;
             padding-left: 1%;
 
             img {
                 border-radius: 2%;
+                width: 80%;
             }
         }
     }
@@ -67,6 +75,11 @@
                 .button(teal, 70%, white);
                 padding: 3% 0;
                 border-radius: 6px;
+                margin: 5% 2% 0%;
+                &:hover {
+                    background-color: lighten(teal, 10%);
+                    cursor: pointer;
+                }
             }
         }
     }
