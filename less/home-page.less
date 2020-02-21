@@ -1,28 +1,71 @@
 
+.block{
+  display: flex;
+  width:100%;
+  margin: 5% auto;
+  
+  .welcome{
+    margin: 2% 0;
+    font-size: 2.6rem
+  }
+  p {
+    font-size: 1.7rem;
+  }
+
+}
+
+
 
 .home {
   width: 100%;
   margin: 0 auto;
+
+  .welcoming{
+    h2{
+      font-size: 4rem;
+    }
+    @media(max-width:500px){
+      width: 95%;
+      margin: 0 auto;
+    } 
+  }
+
  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media(max-width:500px){
+      flex-direction: column;
+      width: 95%;
+      margin: 0 auto;
+    } 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media (max-width: 500px){
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media (max-width: 500px){
+        width: 100%;
+      }
       img {
         border-radius: 10px;
+      }
+    }
+    .reverse-this{
+     
+      @media (max-width: 500px){
+        display: flex;
+        flex-direction: column-reverse;
       }
     }
   }
@@ -30,11 +73,13 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+   
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
+
  
     .img-content {
       padding-right: 1%;
@@ -45,7 +90,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media (max-width:500px){
+      width:90%;
+      margin: 0 auto;
+    }
     img {
       border-radius: 10px;
     }
@@ -56,10 +104,28 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media (max-width: 500px){
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media (max-width: 500px){
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    button.btn{
+      display: block;
+      background-color: #5b8c5a;
+      margin: 0 10px 20px;
+      width: 80%;
+      height: 45px;
+      font-size: 2rem;
+      border-radius: 10px;
+      color:white;
     }
   }
 }

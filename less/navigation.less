@@ -6,37 +6,64 @@ h1{
     text-align: center;
 }
 
-.nav-bar #borderline{
-    border-bottom: 2px dashed @navigation-border;
-}
+
 
 .flex-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h1{
-       
+    @media (max-width:500px){
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        
+        h1{
+            // display: flex;
+            // flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: red; 
+            margin: 0 0 0 0;
+        }
+
+        nav{ 
+            // justify-content: center;
+            // align-items:center;
+            // width: 100%;
+            justify-content: space-between;
+            margin: 2% auto;
+            a{
+                font-size: 1.4rem;
+                margin: 0 auto;
+            }
+        } 
     }
+    h1{
+        width:100%;
+        }
+ 
     nav {
         // border-bottom: 1px dotted grey;
         // display: inline-block;
         display: flex;
-        width:30%;
-        justify-content: space-around;
-        margin: 4% 0;
+        width: 100%;
+        justify-content: space-between;
 
-        a{
-            font-size: 1.2rem;
-        }
+
+        // a{
+        //     font-size: 1.4rem;
+        // }
     }
 }
 
+header{
+    border-bottom: 2px dashed grey;
+}
 
 section{
     width: 95%;
     margin: 0 auto;
 }
 
-.btn{
-    
-}
