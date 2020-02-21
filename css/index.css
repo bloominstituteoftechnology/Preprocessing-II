@@ -130,7 +130,6 @@ body {
 @media (max-width: 500px) {
   body {
     padding: 0 5%;
-    background-color: orangered;
   }
 }
 ol,
@@ -249,9 +248,20 @@ header nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    margin-bottom: 5%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;

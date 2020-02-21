@@ -5,6 +5,7 @@
   // Dashed Line
   .top{
   border-bottom: 2px dashed lightgrey;
+  
   }
   .funBus{
     
@@ -23,15 +24,28 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    // @media(max-width:499px){
+    //   background-color: palegreen;
+    // }
    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        // .centered();
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile{
+        width: 100%;
+        margin-bottom: 5%;
+      }
 
       img {
         border-radius: 10px;
