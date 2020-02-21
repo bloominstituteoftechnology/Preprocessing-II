@@ -169,6 +169,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0% auto;
+}
+header nav {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
