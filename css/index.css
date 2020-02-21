@@ -7,13 +7,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: aqua;
   margin: 0 10px 20px;
   width: 200px;
   height: 45px;
   font-size: 2rem;
   border-radius: 10px;
-  color: white;
+  color: purple;
+}
+@media (max-width: 500px) {
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-content: column;
+    width: 100%;
+  }
 }
 .btn:hover {
   background-color: orange;
@@ -145,7 +153,6 @@ body {
 @media (max-width: 500px) {
   body {
     padding: 0 5%;
-    background-color: orangered;
   }
 }
 ol,

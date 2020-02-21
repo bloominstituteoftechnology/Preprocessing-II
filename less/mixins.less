@@ -24,7 +24,11 @@
 //     }
 
 .btn{
-    .custom(red, 200px, white);
+    @media @mobile{
+        .centered();
+        width: 100%;
+        }
+    .custom(aqua, 200px, purple);
 }
 
 // @media @mobile{
