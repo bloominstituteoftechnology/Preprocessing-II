@@ -18,10 +18,19 @@
     }
 }
 
+// @media @mobile{
+//     .btn{.custom(orange, 200px, purple);
+//     }
+//     }
 
 .btn{
     .custom(red, 200px, white);
 }
+
+// @media @mobile{
+//     .btn{.custom(orange, 200px, purple);
+//     }
+//     }
 
 @mobile: ~"(max-width: 500px)";
 
@@ -32,3 +41,6 @@
 // @media @phone{
 //     .centered();
 // }
+@media @mobile{
+.custom(orange, 200px, purple);
+}

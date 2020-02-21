@@ -18,6 +18,21 @@
 .btn:hover {
   background-color: orange;
 }
+@media (max-width: 500px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  margin: 0 10px 20px;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: purple;
+  :hover {
+    background-color: orange;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -130,6 +145,7 @@ body {
 @media (max-width: 500px) {
   body {
     padding: 0 5%;
+    background-color: orangered;
   }
 }
 ol,
@@ -282,6 +298,14 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    display: flex;
+    flex-direction: column;
+    align-content: column;
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -291,7 +315,19 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-content: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
