@@ -167,6 +167,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+h1 {
+  text-align: center;
+}
+.nav-bar #borderline {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-box nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  margin: 4% 0;
+}
+.flex-box nav a {
+  font-size: 1.2rem;
+}
+section {
+  width: 95%;
+  margin: 0 auto;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -177,6 +201,10 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  width: 100%;
+  margin: 0 auto;
 }
 .home .content-section {
   margin: 30px 0;
@@ -223,44 +251,4 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-.container {
-  width: 900px;
-  margin: 0 auto;
-}
-h1 {
-  text-align: center;
-}
-.home {
-  border: 1px dash black;
-  width: 100%;
-  margin: 0 auto;
-}
-.flex-box {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dotted grey;
-  align-items: center;
-}
-.flex-box h1 {
-  width: 45%;
-}
-.flex-box nav {
-  display: flex;
-  width: 30%;
-  margin-right: 17%;
-  justify-content: space-around;
-}
-.flex-box nav a {
-  margin: 2%;
-}
-.bus {
-  width: 900px;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-section {
-  width: 95%;
-  margin: 0 auto;
 }
