@@ -1,1 +1,92 @@
 // Navigation Styles here
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    width: 100%;
+  
+    div{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  
+      img{
+        margin-left: 5%;
+        width: 100%;
+        margin-right: 5%;
+        display: inline-block;
+
+            @media @mobile {
+                width: 90%;
+                margin: 0 5%;
+            }
+
+      }
+    }
+  
+    .top-navigation {
+      display: flex;
+      padding-bottom: 4vh;
+      border-bottom: 2px dashed @navigation-border;
+      width: 100%;
+      margin-left: 5%;
+        @media @tablet {
+          flex-wrap: wrap;
+          margin: 0 auto;
+        }
+
+        @media @mobile {
+            padding-bottom: 2vh;
+            
+        }
+  
+          nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 40%;
+            font-size: 1.7rem;
+            margin-right: 10%;
+
+            @media @tablet {
+              width: 100%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-evenly;
+
+            }
+
+            @media @mobile{
+                width: 100%;
+                margin: 0 auto;
+            }
+                a {
+                text-decoration: none;
+                color: black;
+                }
+            }
+            .funbus{
+                display: flex; 
+                justify-content: start;
+                width: 75%;
+                
+                @media @tablet {
+                    width: 100%;
+                    justify-content: center;
+                    margin-bottom: 3vh;
+                }
+
+                @media @mobile {
+                  margin-bottom: 5vh;
+                }
+            }
+    }
+  
+    }  
+
+    
+
+  
