@@ -169,31 +169,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  background-color: yellow;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 2px dashed lightgrey;
-}
-header div {
-  display: flex;
-  justify-content: center;
-  background-color: red;
-}
-header nav {
-  padding: 2.5% 0;
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-}
-header nav a {
-  font-size: 1.5rem;
-  color: blue;
-  text-decoration: none;
-  width: 25%;
-  justify-content: space-evenly;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
