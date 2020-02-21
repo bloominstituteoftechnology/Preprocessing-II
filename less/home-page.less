@@ -1,18 +1,4 @@
 
-.block{
-  display: flex;
-  width:100%;
-  margin: 5% auto;
-  
-  .welcome{
-    margin: 2% 0;
-    font-size: 2.6rem
-  }
-  p {
-    font-size: 1.7rem;
-  }
-
-}
 
 
 
@@ -20,23 +6,51 @@
   width: 100%;
   margin: 0 auto;
 
+  .block{
+    display: flex;
+    width:100%;
+    margin: 0 auto;
+    
+    .welcome{
+      margin: 0 0;
+      font-size: 2.6rem
+    }
+    p {
+      font-size: 1.7rem;
+    }
+
+  } 
+  
+  .bus{
+    @media @phoneScreen {
+    width:90%;
+    margin: 0 3%;
+    }
+  }
+
   .welcoming{
     h2{
       font-size: 4rem;
+      margin: 0 auto;
     }
-    @media(max-width:500px){
+    @media @phoneScreen {
       width: 95%;
       margin: 0 auto;
     } 
   }
-
+  .border-top{
+    border-top: 2px dashed @navigation-border;
+    margin:3% 0;
+  }
  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media(max-width:500px){
+
+
+    @media @phoneScreen {
       flex-direction: column;
       width: 95%;
       margin: 0 auto;
@@ -46,7 +60,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media (max-width: 500px){
+      @media @phoneScreen{
         width: 100%;
       }
     }
@@ -54,18 +68,29 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media (max-width: 500px){
+
+      @media @phoneScreen {
         width: 100%;
       }
+
       img {
         border-radius: 10px;
       }
+      .img-fluid{
+        margin-right: 5%;
+      }
     }
     .reverse-this{
+      display:flex;
+      margin: 0 auto;
      
-      @media (max-width: 500px){
+      @media @phoneScreen {
         display: flex;
         flex-direction: column-reverse;
+      }
+
+      .text-adventure{
+        padding-left: 5%;
       }
     }
   }
@@ -90,7 +115,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-    @media (max-width:500px){
+    @media @phoneScreen {
       width:90%;
       margin: 0 auto;
     }
@@ -104,14 +129,14 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 500px){
+    @media @phoneScreen {
       flex-wrap: wrap;
       margin: 0 auto;
     }
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media (max-width: 500px){
+      @media @phoneScreen {
         width: 90%;
         margin: 0 auto;
       }
