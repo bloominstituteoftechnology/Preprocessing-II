@@ -106,9 +106,6 @@ section {
 }
 body {
   line-height: 1;
-  margin: 0% 0%;
-  box-sizing: border-box;
-  max-width: 100%;
 }
 ol,
 ul {
@@ -132,9 +129,6 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
-}
-* {
-  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
@@ -174,9 +168,6 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-.main-content {
-  margin: 0 15%;
 }
 header {
   background-color: yellow;
