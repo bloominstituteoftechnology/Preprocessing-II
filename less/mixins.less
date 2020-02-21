@@ -1,1 +1,50 @@
 // Mixins in here
+
+// This is a mixin
+.custom(@bgcolor, @width, @color){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bgcolor;
+    margin: 0 10px 20px;
+    width:@width ; 
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@color ;
+
+    &:hover{
+        background-color: orange;
+    }
+}
+
+// @media @mobile{
+//     .btn{.custom(orange, 200px, purple);
+//     }
+//     }
+
+.btn{
+    @media @mobile{
+        .centered();
+        width: 100%;
+        }
+    .custom(aqua, 200px, purple);
+}
+
+// @media @mobile{
+//     .btn{.custom(orange, 200px, purple);
+//     }
+//     }
+
+@mobile: ~"(max-width: 500px)";
+
+// @media @tablet{
+//     This is an example on how to set=up
+// }
+
+// @media @phone{
+//     .centered();
+// }
+@media @mobile{
+.custom(orange, 200px, purple);
+}
