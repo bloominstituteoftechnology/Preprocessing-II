@@ -1,32 +1,42 @@
 // Mixins in here
-.navflex(){
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+
+.fontPlusPadding(@fs, @pb){
+    font-size: @fs;
+    padding-bottom: @pb;
+}
+.mixflex(@d, @f, @j, @a, @t){
+    display: @d;
+    flex-direction: @f;
+    justify-content: @j;
+    align-items: @a;
+    text-align: @t;
 }
 
 .navstyles(){
-    font-size: 2rem;
+    .fontPlusPadding(2rem, 1px);
+    //font-size: 2rem;
     margin: 10px;
     text-decoration: none;
     color: @shark;
 }
 
-.buttonStyle(){
+.buttonStyle(@hvar, @wvar){
     background-color: @eastern-blue;
-    color: white;
-    padding: 12px 20px;
+    color: @white;
+    .fontPlusPadding(@pFontSize, 12px 20px)
+    //font-size: 1.5rem;
+    //padding: 12px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    height: 15%;
-    width: 80%;
-    font-size: 14px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    height: @hvar;
+    width: @wvar;
+    .mixflex(flex, row, center, center, center)
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: center;
+    //align-items: center;
+    //text-align: center;
      &:hover{
         background-color: @sandy-beach;
         width: 85%;
@@ -36,3 +46,4 @@
         transition: ease-in 2s;
     }
 }
+

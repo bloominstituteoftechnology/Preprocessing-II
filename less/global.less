@@ -15,23 +15,27 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  .fontPlusPadding(4rem, @sPaddingSize);
+  //font-size: 4rem;
 }
 
 h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
+  .fontPlusPadding(3.2rem, @sPaddingSize);
+  //font-size: 3.2rem;
+  //padding-bottom: 10px;
 }
 
 h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
+  .fontPlusPadding(2.5rem, @sPaddingSize);
+  //font-size: 2.5rem;
+  //padding-bottom: 10px;
 }
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
+  .fontPlusPadding(@pFontSize, @sPaddingSize);
+  //font-size: 1.6rem;
+  //padding-bottom: 10px;
 }
 
 img {
@@ -46,7 +50,7 @@ img {
 }
 
 nav{
-  .navflex();
+  .mixflex(flex, row, space-around, flex-start, center);
   ul{
     .navflex();
     a{
@@ -56,5 +60,5 @@ nav{
 }
 
 .btn{
-  .buttonStyle();
+  .buttonStyle(15%, 80%);
 }

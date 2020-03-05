@@ -145,6 +145,7 @@ h5 {
 }
 h1 {
   font-size: 4rem;
+  padding-bottom: 1px;
 }
 h2 {
   font-size: 3.2rem;
@@ -182,24 +183,25 @@ nav ul {
 }
 nav ul a {
   font-size: 2rem;
+  padding-bottom: 1px;
   margin: 10px;
   text-decoration: none;
   color: #212529;
 }
 .btn {
   background-color: #17A2B8;
-  color: white;
+  color: #FFFFFF;
   padding: 12px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   height: 15%;
   width: 80%;
-  font-size: 14px;
+  font-size: 1.5rem;
   display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .btn:hover {
   background-color: #FFEBCD;
