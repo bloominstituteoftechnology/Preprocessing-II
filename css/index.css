@@ -168,6 +168,47 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+nav ul a {
+  font-size: 2rem;
+  margin: 10px;
+  text-decoration: none;
+  color: #212529;
+}
+.btn {
+  background-color: #17A2B8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 15%;
+  width: 80%;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: #FFEBCD;
+  width: 85%;
+  height: 20%;
+  color: #212529;
+  font-size: 2rem;
+  transition: ease-in 2s;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;

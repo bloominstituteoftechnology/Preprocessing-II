@@ -1,1 +1,38 @@
 // Mixins in here
+.navflex(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.navstyles(){
+    font-size: 2rem;
+    margin: 10px;
+    text-decoration: none;
+    color: @shark;
+}
+
+.buttonStyle(){
+    background-color: @eastern-blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 15%;
+    width: 80%;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+     &:hover{
+        background-color: @sandy-beach;
+        width: 85%;
+        height: 20%;
+        color: @shark;
+        font-size: 2rem;
+        transition: ease-in 2s;
+    }
+}
