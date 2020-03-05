@@ -1,16 +1,35 @@
 .home {
 
+
+  .welcome-content{
+    
+    border-bottom: 2px dashed @navigation-border;
+
+  
+  .bus-content{
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+  }
+}
+ 
+
   .content-section {
+ 
     margin: 30px 0;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
+  
+    box-sizing: border-box;
 
    
     
     .text-content {
+      
       width: 48%;
       padding-right: 1%;
+      box-sizing: border-box;
+     
     }
 
     .img-content {
@@ -21,41 +40,90 @@
         border-radius: 10px;
       }
     }
+  
   }
-
-  .inverse-content {
+  .content-section-inverse-content {
+   
+    display: flex ;
+    
+    justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
     .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+      
+      width: 50%;
+      padding-left: 2%;
+      padding-right: 0%;
     }
 
     .img-content {
+      
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
+      display: flex;
+      align-items: center;
       border-radius: 10px;
+      padding-bottom: 30px;
     }
   }
+ 
+  .content-destination {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px;
+    border-bottom: 2px dashed @navigation-border;
+   
+   
+  
+ 
+  .your-destination{
+    display: flex;
+    display: inline;
+    justify-content: space-between;
+  }
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+  .destination-image{
+  
+    margin: 7% 0;
+
+    img{
+      width: 100%;
+    }
+
+  }
+}
+
+  .content-choice {
+   
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
+    border-bottom: 2px dashed @navigation-border;
+   
 
     .destination {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        background: teal;
+        color: white;
+        display:inline-block;
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        
+      }
     }
   }
-}// home
+}
+ //home
+
+  
+
