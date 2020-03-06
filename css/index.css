@@ -214,81 +214,81 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .welcome-content {
-  border-bottom: 2px dashed #C0C0C0;
+#home .welcome-content {
+  border-bottom: 1px dashed #C0C0C0;
 }
-.home .welcome-content .bus-content {
+#home .welcome-content .bus-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
 }
-.home .content-section {
+#home .content-section {
   margin: 30px 0;
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
-.home .content-section .text-content {
+#home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
   box-sizing: border-box;
 }
-.home .content-section .img-content {
+#home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+#home .content-section .img-content img {
   border-radius: 10px;
 }
-.home .content-section-inverse-content {
+#home .content-section-inverse-content {
   display: flex ;
   justify-content: space-between;
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .content-section-inverse-content .text-content {
+#home .content-section-inverse-content .text-content {
   width: 50%;
   padding-left: 2%;
   padding-right: 0%;
 }
-.home .content-section-inverse-content .img-content {
+#home .content-section-inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
   display: flex;
+  width: 80%;
   align-items: center;
   border-radius: 10px;
   padding-bottom: 30px;
 }
-.home .content-destination {
+#home .content-destination {
   display: flex;
   flex-direction: column;
   margin: 0 auto 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .content-destination .your-destination {
+#home .content-destination .your-destination {
   display: flex;
   display: inline;
   justify-content: space-between;
 }
-.home .content-destination .destination-image {
+#home .content-destination .destination-image {
   margin: 7% 0;
 }
-.home .content-destination .destination-image img {
+#home .content-destination .destination-image img {
   width: 100%;
 }
-.home .content-choice {
+#home .content-choice {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .content-choice .destination {
+#home .content-choice .destination {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-choice .destination .btn {
+#home .content-choice .destination .btn {
   background: teal;
   color: white;
   text-decoration: none;
