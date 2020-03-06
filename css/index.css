@@ -3,7 +3,7 @@
   width: 100%;
   margin: 0 auto;
 }
-@keyframes example {
+@keyframes colors {
   0% {
     background-color: #d1f533;
     left: 0px;
@@ -204,7 +204,7 @@ img {
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  animation-name: example;
+  animation-name: colors;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
