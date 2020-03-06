@@ -175,16 +175,33 @@ img {
 }
 #home {
   display: flex;
+  padding: 20px;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #home nav {
   display: flex;
   justify-content: space-between;
+  font-size: 10px;
   width: 60%;
   padding: 15px;
 }
 #home nav a {
   text-decoration: none;
+}
+@media (max-width:500px) {
+  #home nav a {
+    display: row;
+  }
+  #home nav a .bus-image {
+    padding: 20px;
+  }
 }
 .footer {
   width: 100%;
