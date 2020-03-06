@@ -1,1 +1,39 @@
 // Mixins in here
+.signUpButton(
+    @font-size, @text-color, 
+    @background-color, @font-weight, 
+    @text-align, @border-radius, 
+    @display, @justify-content, @padding) {
+
+    font-size: @font-size;
+    color: @text-color;
+    background-color: @background-color;
+    font-weight: @font-weight;
+    text-align: @text-align;
+    border-radius: @border-radius;
+    display: @display;
+    justify-content: @justify-content;
+    padding: @padding;
+}
+
+.content-margin() {
+    @media @mobile {
+    margin: 0 2rem;
+  }
+}
+
+.mobile-position(@display, @direction, @margin-top) {
+  @media @mobile {
+    display: @display;
+    flex-direction: @direction;
+    margin-top: @margin-top;
+  }
+ 
+    
+}
+
+.mobile-width(@width-size) {
+  @media @mobile {
+    width: @width-size;
+  }
+}

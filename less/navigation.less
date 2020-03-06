@@ -2,27 +2,43 @@
 
 //TODO: make border in nav extend accross the page
 //TODO: increase font size on nav-links
- .home {
- 
+ .nav {
+     display: flex;
+     border-bottom: 1px dashed grey;
+     @media @mobile {
+         flex-direction: column;
+     }
+     h1 {
+        margin-right: 50%;
+        padding-top: 2rem;
+        justify-content: flex-start;
+        @media @mobile {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 0;
+        }
+    }
     .main-nav {
         display: flex;
-        border-bottom: 1px dashed grey;
         padding: 2rem;
-
-        h1 {
-            margin-right: 50%;
-            justify-content: flex-start;
-        }
-
+        justify-content: center;
         .nav-link {
             justify-content: flex-end;
             align-items: center;
             margin: 2rem 0rem 0rem 2rem;
             color: black;
-            font-size: 1rem;
+            font-weight: bold;
+            @media @mobile {
+                display: flex;
+                margin: 0 8%;
+                flex-direction: row;
+                
+            }
         }
         a:nth-child(n) {
             text-decoration: none;
         }     
      }
+
 }
