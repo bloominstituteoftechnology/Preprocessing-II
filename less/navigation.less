@@ -5,13 +5,25 @@
    
     .nav{
         justify-content: space-evenly;
-        width: 80%;
-        
+        width: 100%;
+
+        @media @mobile {
+            display: flex;
+            width: 95%;
+            justify-content: space-evenly;
+        }
+
+
         a{
             font-size: 1.5rem;
             padding: 10%;
             margin-bottom: 10%;
             color: plum;
+
+            @media @mobile {
+                padding: 0px;
+                
+            }
         }
     }
 }
