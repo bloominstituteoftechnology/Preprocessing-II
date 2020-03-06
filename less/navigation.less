@@ -1,1 +1,62 @@
 // Navigation Styles here
+
+.center(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+body .nav {
+  border-bottom: 0.2rem dashed #c0c0c0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2.4rem 0;
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  body .nav h1 {
+    font-size: 3.1rem;
+    margin: 1.3rem 0;
+  }
+}
+@media (max-width: 82rem) {
+  body .nav h1 {
+    margin-left: 1rem;
+  }
+}
+body .nav nav {
+  display: flex;
+  width: 43.5%;
+  justify-content: space-evenly;
+}
+body .nav nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+@media (max-width: 500px) {
+  body .nav nav a {
+    font-size: 1.65rem;
+  }
+}
+@media (max-width: 500px) {
+  body .nav nav {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 500px) {
+  body .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+  }
+}
