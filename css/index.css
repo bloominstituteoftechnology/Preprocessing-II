@@ -168,6 +168,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.home .main-nav {
+  display: flex;
+  border-bottom: 1px dashed grey;
+  padding: 2rem;
+}
+.home .main-nav h1 {
+  margin-right: 50%;
+  justify-content: flex-start;
+}
+.home .main-nav .nav-link {
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0rem 0rem 2rem;
+  color: black;
+  font-size: 1rem;
+}
+.home .main-nav a:nth-child(n) {
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
