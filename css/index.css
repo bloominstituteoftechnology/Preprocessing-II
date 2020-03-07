@@ -5,7 +5,7 @@
 }
 @keyframes colors {
   0% {
-    background-color: #d1f533;
+    background-color: #33f5a4;
     left: 0px;
     top: 0px;
   }
@@ -228,7 +228,7 @@ img {
     align-items: center;
   }
 }
-#home nav a .bus-image {
+#home nav .bus-image {
   padding: 20px;
 }
 .footer {
