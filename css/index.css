@@ -1,3 +1,7 @@
+/* a boilerplate mixin that i use for all my keyframes
+ refactored from vanilla CSS to LESS */
+/* the main mixin that all the other mixins pass through
+this mixin is the only one used in the regular CSS*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +172,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+a:link {
+  text-decoration: none;
+}
 .nav {
   display: flex;
   border-bottom: 1px dashed grey;
@@ -235,6 +242,9 @@ img {
   margin: 1rem 1rem 1rem 0;
 }
 .home .content-section {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
@@ -250,6 +260,72 @@ img {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 0.15;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  35% {
+    opacity: 0.35;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  45% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0.55;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  65% {
+    opacity: 0.65;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
   }
 }
 .home .content-section .text-content {
@@ -274,6 +350,9 @@ img {
   border-radius: 10px;
 }
 .home .inverse-content {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -289,6 +368,72 @@ img {
     margin-top: 2rem;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 0.15;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  35% {
+    opacity: 0.35;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  45% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0.55;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  65% {
+    opacity: 0.65;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -298,8 +443,77 @@ img {
   padding-left: 0;
 }
 .home .content-destination {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   width: 75%;
   margin: 0 auto 30px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 0.15;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  35% {
+    opacity: 0.35;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  45% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0.55;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  65% {
+    opacity: 0.65;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-destination {
@@ -311,6 +525,9 @@ img {
   border-radius: 10px;
 }
 .home .content-pick {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
@@ -321,18 +538,107 @@ img {
     margin: 0 2rem;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 0.15;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  35% {
+    opacity: 0.35;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  45% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0.55;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  65% {
+    opacity: 0.65;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .content-pick .destination {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .home .content-pick .destination .btn {
   font-size: 2rem;
-  color: white;
-  background-color: teal;
+  color: #FFFFFF;
+  background-color: #17A2B8;
   font-weight: bold;
   text-align: center;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   padding: 5% 10%;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: #17A2B8;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 5% 20%;
+  }
+}
+.home .content-pick .destination .btn a {
+  color: white;
 }
