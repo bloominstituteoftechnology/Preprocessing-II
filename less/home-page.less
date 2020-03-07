@@ -1,29 +1,48 @@
 .home {
-
+  
+ 
+  
+  header {
+    border-bottom: 1px dashed grey;
+    .content-margin();
+    .intro {
+      margin: 1rem 1rem 1rem 0;
+    }
+  }
   .content-section {
+    .content-margin();
+    .mobile-position(flex, column, 2rem);
+    .fadeIn();
+
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      .mobile-width(98%);
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .mobile-width(100%);
 
       img {
         border-radius: 10px;
+        
       }
     }
   }
 
   .inverse-content {
+    .content-margin();
+    .mobile-position(flex, column-reverse, 2rem);
+    .fadeIn();
+    
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
@@ -39,15 +58,22 @@
   }
 
   .content-destination {
+    .fadeIn();
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 90%;
+      margin: 2rem;
+    }
     img {
       border-radius: 10px;
+ 
     }
   }
 
   .content-pick {
+    .content-margin();
+    .fadeIn();
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
@@ -56,6 +82,23 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        .mobile-position(flex, column, 0);
+      } 
+     
+      .btn {
+        .signUpButton(2rem, bold, center, 15px, flex, center, 5% 10%);
+  
+        @media @mobile {
+          .signUpButton(2rem, bold, center, 15px,flex, center, 5% 20%);
+  
+        }
+        a {
+            color: white;
+           
+        }
+       
+      }
     }
   }
 }// home
