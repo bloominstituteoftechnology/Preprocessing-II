@@ -1,16 +1,41 @@
-.home {
+#home {
+
+ @media @mobile{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ 
+
+  .welcome-content{
+    
+    border-bottom: 1px dashed @navigation-border;
+
+  
+  .bus-content{
+    padding-bottom: 30px;
+    border-bottom: 1px dashed @navigation-border;
+  }
+}
+}
 
   .content-section {
+ 
     margin: 30px 0;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
+   .media();
+   // box-sizing: border-box;
 
    
     
     .text-content {
+      
       width: 48%;
       padding-right: 1%;
+     // box-sizing: border-box;
+     
     }
 
     .img-content {
@@ -21,41 +46,97 @@
         border-radius: 10px;
       }
     }
+  
   }
-
-  .inverse-content {
+  .content-section-inverse-content {
+   
+    display: flex ;
+    
+    justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    .media();
 
     .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+      
+      width: 100%;
+      padding-left: 2%;
+      padding-right: 0%;
     }
 
     .img-content {
+      
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
+      display: flex;
+      //width:80%;
+      align-items: center;
       border-radius: 10px;
+      padding-bottom: 30px;
     }
   }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+ 
+  .content-destination {
     display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px;
+    border-bottom: 2px dashed @navigation-border;
+   
+   
+  
+ 
+  .your-destination{
+    display: flex;
+    display: inline;
     justify-content: space-between;
+  }
+
+  .destination-image{
+  
+    margin: 7% 0;
+
+    img{
+      width: 100%;
+    }
+
+  }
+}
+
+  .content-choice {
+   
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 2px dashed @navigation-border;
+    .media();
+     
+
 
     .destination {
-      width: 30%;
-      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      justify-content: space-evenly;
+      .media();
+
+      .btn{
+        background: teal;
+        color: white;
+        display:inline-block;
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+      }
+      }
     }
   }
-}// home
+
+ //home
+
+  
+
+
+  
+
