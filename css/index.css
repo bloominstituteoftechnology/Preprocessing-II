@@ -7,6 +7,10 @@
   text-decoration: none;
   color: black;
 }
+.hr-style {
+  border: 1.5px dashed grey;
+  margin: 0.8%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -178,6 +182,10 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+hr {
+  border: 1.5px dashed grey;
+  margin: 0.8%;
+}
 header {
   width: 90%;
 }
@@ -188,7 +196,7 @@ header nav {
   padding: 15;
 }
 header nav a {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-left: -20%;
   position: relative;
   right: 10%;
@@ -204,6 +212,21 @@ header img {
   width: 80%;
   position: relative;
   left: 10%;
+}
+header .head {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+  position: relative;
+  left: 9%;
+}
+header .head h2 {
+  font-weight: bold;
+}
+header .head p {
+  font-size: 1.8rem;
 }
 .footer {
   width: 100%;
