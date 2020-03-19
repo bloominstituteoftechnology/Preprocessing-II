@@ -281,6 +281,13 @@ header .head p {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick .btn button {
+  background-color: #17A2B8;
+  color: #FFEBCD;
+  width: 80%;
+  border-radius: 28px;
+  line-height: 2.5;
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
