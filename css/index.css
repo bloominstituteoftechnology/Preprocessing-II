@@ -204,9 +204,27 @@ header nav a {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  header nav a {
+    left: 0;
+    margin: 3%;
+  }
+}
 header nav h2 {
   font-size: 4.5rem;
   margin-right: 30%;
+}
+@media (max-width: 500px) {
+  header nav h2 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
 }
 header img {
   width: 80%;

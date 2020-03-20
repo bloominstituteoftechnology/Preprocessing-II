@@ -10,12 +10,28 @@ header{
             position: relative;
             right: 10%;
             left: 1%;
-            .afix()
+            .afix();
+
+            @media @mobile{
+                left: 0;
+                margin: 3%;
+            } // this closes the achor media tag
         } // this closes the acnhor tag
         h2{
             font-size: @fonts2;
             margin-right: 30%;
-        }
+
+            @media @mobile{
+                margin-right: 0;
+            } // this closes the h2 media tag
+        } // this closes the h2 tag
+
+        @media @mobile{
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+        } // this closes the nav media tag
+
     } // this closes the nav tag 
     img{
         width: 80%;
@@ -37,9 +53,9 @@ header{
     }
     p{
         font-size: @fonts1;
+
     }
 }
-
 
 
 
