@@ -1,1 +1,22 @@
 // Mixins in here
+
+.anyName (@direction, @justify, @border, @paddingLeft, @paddingTop, @width, @height, @backgroundColor, @color, @fontSize) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    border-radius: @border;
+    padding-left: @paddingLeft;
+    padding-top: @paddingTop;
+    width: @width;
+    height: @height;
+    background-color: @backgroundColor;
+    color: @color;
+    font-size: @fontSize;
+    
+}
+
+
+
+.btn {
+    .anyName(row, space-between, 10px, 12.5%, 5%, 70%, 18%, #008081, #FFFFFF, 20px);
+} // this closes .btn
