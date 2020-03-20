@@ -1,1 +1,63 @@
 // Navigation Styles here
+header{
+    width: 90%;
+    nav{
+        .flex1();
+        padding: 15;
+        a{
+            font-size:@fonts1;
+            margin-left: -20%;
+            position: relative;
+            right: 10%;
+            left: 1%;
+            .afix();
+
+            @media @mobile{
+                left: 0;
+                margin: 3%;
+            } // this closes the achor media tag
+        } // this closes the acnhor tag
+        h2{
+            font-size: @fonts2;
+            margin-right: 30%;
+
+            @media @mobile{
+                margin-right: 0;
+            } // this closes the h2 media tag
+        } // this closes the h2 tag
+
+        @media @mobile{
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+        } // this closes the nav media tag
+
+    } // this closes the nav tag 
+    img{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+.head{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    position: relative;
+    left: 9%;
+
+    h2{
+        font-weight: bold;
+    }
+    p{
+        font-size: @fonts1;
+
+    }
+}
+
+
+
+
+} // this closes the header

@@ -1,1 +1,30 @@
 // Mixins in here
+
+.flex1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.afix{
+    text-decoration: none;
+    color: black;
+}
+
+.hr-style{
+    border: 1.5px dashed grey;
+    margin: 0.8%;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+}
+
+
+.sbutton(@bcolor, @fcolor){
+    background-color: @bcolor;
+    color: @fcolor;
+}
