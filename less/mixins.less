@@ -1,1 +1,24 @@
 // Mixins in here
+.flexbox() {
+    display:flex;
+    flex-wrap:wrap;
+}
+.custom-btn (@width:150px, @bg-color:teal, @color:white) {
+   display:block;
+   background-color:@bg-color;
+   margin: 0 20px 0 0;
+   padding:10px 5px 5px 5px;
+   width:@width;
+   height:40px;
+   font-size:2em;
+   border-radius:10px;
+   color:@color;
+   text-align: center;
+   background-color: red;
+   animation-name: example;
+   animation-duration: 10s;
+   @keyframes example {
+       from {background-color: red;}
+       to {background-color: yellow;}
+     }
+    }
