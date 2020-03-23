@@ -1,1 +1,79 @@
 // Navigation Styles here
+
+//*** VARIABLES  ***//
+
+@marginRight: 10%;
+
+
+body{
+    margin-top: 1%;
+}
+
+.top {
+
+border-bottom: 3px dashed lightgrey;
+margin-bottom: 0%;
+margin-left: 21%;
+margin-right: 21%;
+display:flex;
+flex-wrap: wrap;
+flex-direction: row;
+
+@media @mobile {
+    
+    flex-direction: column
+}
+
+
+
+h1 {
+    width: 41%;
+} // this closes h1
+@media @mobile {
+    h1 {
+       
+        width:60%;
+        margin-left: 23%;
+    } // this closes @media h1
+} // this closes @media
+
+
+.navigate {
+font-size: 16px;
+font-weight: bold;
+width: 45%;
+padding-bottom: 3%;
+text-align: center;
+margin-left: 14%;
+} // this closes .navigate
+@media @mobile{
+    .navigate {
+        
+        flex-direction: row;
+        width:100%;
+        justify-content: space-between;
+        font-size: 15px;
+        margin-left: 0%;
+    } // this closes @media .navigate
+} //this closes @media
+
+
+.homey {
+margin-right: @marginRight;
+ 
+
+} // this closes .homey
+
+.about {
+    margin-right: @marginRight;
+} // this closes .about
+
+.blog {
+    margin-right: @marginRight;
+} // this closes .blog
+
+.contact {
+    margin-right: 0%;
+} // this closes .contact
+
+} // this closes .top
