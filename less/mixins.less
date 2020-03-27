@@ -10,3 +10,17 @@
     padding: @padding;
     border-radius: @borderRadius;
 }
+
+.animation1(@fbg, @tbg, @fc, @tc) {
+    animation-name: a1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    @keyframes a1 {
+        from {background-color: @fbg;}
+        to{background-color: @tbg;}
+        from {color: @fc;}
+        to {color: @tc;}
+
+    }
+}

@@ -201,6 +201,26 @@ img {
     font-size: 1.2rem;
   }
 }
+.home .nav a:hover {
+  animation-name: a1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  border-radius: 20px;
+}
+@keyframes a1 {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: purple;
+  }
+  from {
+    color: black;
+  }
+  to {
+    color: lightgreen;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
