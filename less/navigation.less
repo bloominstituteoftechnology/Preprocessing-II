@@ -3,15 +3,20 @@
 .home {
     .nav {
         .displayFlex(space-between, center);
-        border-bottom: 2px dashed silver;
+        border-bottom: 2px dashed @navigation-border;
         padding: 40px 0px;
 
-        @media @mobile {
+        @media @mobileL {
             display: flex;
             flex-direction: column;
+            flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
             padding: 10px 0px;
+        }
+
+        @media @tablet {
+            margin: 5%;
         }
 
         a {
@@ -19,6 +24,10 @@
             text-decoration: none;
             padding: 20px;
             color: @font-color;
+
+            @media @mobileS {
+                font-size: 1.2rem;
+            }
         }
     }
 }
