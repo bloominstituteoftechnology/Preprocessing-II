@@ -1,15 +1,24 @@
 // Navigation Styles here
 
 .home {
-    .header {
+    .nav {
         .displayFlex(space-between, center);
         border-bottom: 2px dashed silver;
         padding: 40px 0px;
 
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+        }
+
         a {
-            font-size: 20px;
+            font-size: 1.7rem;
             text-decoration: none;
             padding: 20px;
+            color: @font-color;
         }
     }
 }

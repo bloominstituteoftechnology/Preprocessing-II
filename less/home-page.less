@@ -1,20 +1,43 @@
 .home {
-  .topContent {
+  .header {
     display: flex;
     flex-direction: column;
+
+    @media @mobile {
+      width: 85%;
+      align-items: center;
+      justify-content: center;
+      margin: 0px auto;
+    }
 
     .content {
       border-bottom: 2px dashed silver;
       padding: 15px 0px;
     }
   }
+  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+   @media @mobile {
+     flex-direction: column;
+     align-content: center;
+     justify-content: center;
+     border: 1px solid black;
+
+     .text-content {
+       width: 100%;
+       border: 1px solid green;
+     }
+
+     .img-content {
+       width: 100%;
+       border: 1px solid red;
+     }
+   }
     
     .text-content {
       width: 48%;
@@ -64,6 +87,16 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button(@button-bg, 15px, 10px);
+        font-size: 2rem;
+        color: white;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }// home
