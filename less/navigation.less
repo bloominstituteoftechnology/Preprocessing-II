@@ -1,1 +1,25 @@
 // Navigation Styles here
+.navContainer{
+    .fullBrdr();
+    
+    nav{
+        padding: 2% 0;
+        .flexin(row, space-between);
+        @media @phone{
+            .flexin(column, center);
+        }
+        .navBar{
+            width:45%;
+            .flexin(row, space-evenly);
+            
+            a{
+                .font(1.4rem);
+                color:black;
+                @media @phone {
+                    padding: 0 10%;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }//nav closes
+    }

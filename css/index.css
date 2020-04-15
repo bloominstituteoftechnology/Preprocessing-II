@@ -168,6 +168,42 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navContainer {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navContainer nav {
+  padding: 2% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .navContainer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.navContainer nav .navBar {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navContainer nav .navBar a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  .navContainer nav .navBar a {
+    padding: 0 10%;
+    white-space: nowrap;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -179,11 +215,25 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .imgSect {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .imgSect div {
+  padding: 2% 0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -199,6 +249,14 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -221,7 +279,32 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15%;
+}
+.home .content-pick .destination .btnContainer .btn {
+  padding: 2% 0;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  display: block;
+  margin: 0 3% 8%;
+  cursor: pointer;
+  width: 85%;
+  font-size: 1.5rem;
+  border-radius: 10px;
 }

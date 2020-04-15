@@ -1,12 +1,18 @@
 .home {
-
+  .imgSect{
+    .fullBrdr();
+    div{
+      padding: 2% 0;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    @media @phone{
+      .flexin(column, center);
+    }
     
     .text-content {
       width: 48%;
@@ -27,6 +33,10 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone{
+      .flexin(column-reverse, center)
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -42,6 +52,8 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +65,24 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone{
+      .flexin(column, center);
+      
+    }
+
     .destination {
+      
       width: 30%;
       margin-bottom: 30px;
+      
+      .btnContainer{
+        .center();
+        padding-right: 15%;
+        .btn{
+          padding: 2% 0;
+          .bttn();
+        }
+    }
     }
   }
 }// home
