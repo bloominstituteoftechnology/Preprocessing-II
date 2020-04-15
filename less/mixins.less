@@ -1,1 +1,29 @@
 // Mixins in here
+.flexin(@direction, @justify, @alignItem:center){
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @alignItem;
+}
+.font(@size, @txtDecor:none){
+    font-size: @size;
+    text-decoration: @txtDecor;
+}
+.fullBrdr(){
+    border-bottom:2px dashed @silver;
+}
+.bttn(){
+    color:@main-bg; 
+    background-color: @button-bg;
+    display:block;
+    margin: 0 3% 8%;
+    cursor: pointer;
+    width: 85%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.center(){
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
