@@ -1,1 +1,39 @@
 // Navigation Styles here
+
+.nav-bar {
+    // margin: 0 auto;
+    .container;
+    height: 90px;
+    //   position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @main-bg;
+    border-bottom: @border-bottom;
+
+    .anchor {
+      width: 55%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: orange;
+
+
+      a {
+          text-decoration: none;
+          font-size: 1.6rem;
+          color: @shark;
+          padding: 10px;
+          margin: 10px;
+          font-weight: 800px;
+          border: solid blue;
+
+            &:hover {
+                color: @button-bg;
+                background-color: darken(@button-bg, 40%);
+                border-radius: 10px;
+                }
+        }
+    }   
+}

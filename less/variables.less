@@ -6,9 +6,29 @@
 @navigation-border: @silver;
 @footer-bg: @sandy-beach;
 
+
 // Colors
 @white: #FFFFFF;
 @silver: #C0C0C0;
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+
+// Borders
+@border-bottom: 2px dashed @navigation-border;
+
+
+//Media Queries/Variable
+
+// @mobile: (max-width: 500px);
+
+@media screen and (max-width: 500px) {
+     .nav-bar, .anchor, a, .header-content, .content-section, .text-content {
+          display: block;
+          width: 100%;
+          margin: 0 auto;
+          padding: 0;
+          background-color: orange;
+     }    
+}

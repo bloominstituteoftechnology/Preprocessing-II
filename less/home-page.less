@@ -1,18 +1,19 @@
+
 .home {
 
+  //Attempted placing .header-content here but couldn't get the nesting to work
+
   .content-section {
-    margin: 30px 0;
+    padding: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
     }
-
+     
     .img-content {
       width: 48%;
       padding-left: 1%;
@@ -21,6 +22,7 @@
         border-radius: 10px;
       }
     }
+    
   }
 
   .inverse-content {
@@ -58,4 +60,24 @@
       margin-bottom: 30px;
     }
   }
-}// home
+}  // home
+
+.main-header {
+  .container;
+  font-size: 1.8rem;
+  border-bottom: 2px dashed @navigation-border;
+}
+
+.btn a {
+  width: 175px;
+  height: 40px;
+  display: flex;
+  font-size: 1.8rem;
+  background-color: @button-bg;
+  color: @white;
+  #button.layout(center, center);
+  #button.border-radius(20px);
+  border: 2px solid @silver;
+  cursor: pointer;
+  text-decoration: none;
+}

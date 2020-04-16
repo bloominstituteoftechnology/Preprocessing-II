@@ -1,1 +1,48 @@
 // Mixins in here
+
+// /Media Queries
+
+// @tablet: (max-width: 800px);
+
+// @mobile: (max-width: 500px) {
+//     .container;
+//     background-color: orange;
+//     width: 90%;
+//     margin: 0 5%;
+// }
+
+// Mixins
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Parametric Mixins
+#button() {
+    .layout (@j-content: center, @a-items: center) {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: @j-content;
+    align-items: @a-items;
+    }
+    .border-radius (@radius) {
+        border-radius: @radius;
+    }
+}
+
+// .btn a {
+//     width: 175px;
+//     height: 40px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 1.8rem;
+//     background-color: @button-bg;
+//     color: @white;
+//     border-radius: 20px;
+//     border: 2px solid @silver;
+//     cursor: pointer;
+//     text-decoration: none;
+// }
