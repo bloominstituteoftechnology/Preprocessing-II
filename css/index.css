@@ -168,6 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.topNav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.topNav h2 {
+  width: 50%;
+}
+.topNav h2 nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +237,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  padding: auto;
+  font-size: 2rem;
+  background-color: lightskyblue;
 }
