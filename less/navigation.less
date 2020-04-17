@@ -1,22 +1,22 @@
 .home {
+  // @media @mobile(center, center);
   nav {
     height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .flexbox(space-between, center);
     position: relative;
-    div {
-      width: 42%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+  }
+  div {
+    width: 42%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-      a {
-        text-decoration: none;
-        color: black;
-      }
+    a {
+      text-decoration: none;
+      color: black;
     }
   }
+
   nav::after {
     content: "";
     margin: 0 -160px;

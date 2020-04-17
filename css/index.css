@@ -175,13 +175,13 @@ img {
   align-items: center;
   position: relative;
 }
-.home nav div {
+.home div {
   width: 42%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.home nav div a {
+.home div a {
   text-decoration: none;
   color: black;
 }
@@ -189,7 +189,7 @@ img {
   content: "";
   margin: 0 -160px;
   position: absolute;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
   width: 140%;
   bottom: 0;
   left: 0;
@@ -197,7 +197,7 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -214,7 +214,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 5% 0;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -229,7 +229,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -248,7 +248,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
