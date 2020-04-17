@@ -1,1 +1,21 @@
 // Navigation Styles here
+.font-mixin{
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 2%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed silver;
+    .nav{
+        width: 35%;
+        a{
+            .font-mixin();
+        }
+    }
+}
