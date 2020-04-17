@@ -1,17 +1,29 @@
 .home {
   nav {
-    // width: 40%;
+    height: 10vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    h1 {
-      margin-right: 38%;
+    position: relative;
+    div {
+      width: 42%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
-    a {
-      text-decoration: none;
-      color: black;
-      justify-self: flex-end;
-      margin: 5% 3.5%;
-    }
+  }
+  nav::after {
+    content: "";
+    margin: 0 -160px;
+    position: absolute;
+    border-bottom: 2px dashed @navigation-border;
+    width: 140%;
+    bottom: 0;
+    left: 0;
   }
 }

@@ -169,18 +169,30 @@ img {
   margin: 0 auto;
 }
 .home nav {
+  height: 10vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.home nav div {
+  width: 42%;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
-.home nav h1 {
-  margin-right: 38%;
-}
-.home nav a {
+.home nav div a {
   text-decoration: none;
   color: black;
-  justify-self: flex-end;
-  margin: 5% 3.5%;
+}
+.home nav::after {
+  content: "";
+  margin: 0 -160px;
+  position: absolute;
+  border-bottom: 2px dashed #C0C0C0;
+  width: 140%;
+  bottom: 0;
+  left: 0;
 }
 .footer {
   width: 100%;
@@ -202,6 +214,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 5% 0;
+  border-top: 2px dashed #C0C0C0;
 }
 .home .content-section .text-content {
   width: 48%;
