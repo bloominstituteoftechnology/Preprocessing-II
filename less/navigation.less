@@ -1,1 +1,28 @@
 // Navigation Styles here
+
+#fbNav
+{
+  .flex(row, space-between, center);
+  border-bottom: 1px black dashed;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2.5rem;
+
+  @media @maxWidth
+      {
+     	width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+  ul
+  {
+    .flex(row, space-between, flex-start);
+    li
+    {
+      margin: 0 1rem;
+      font-size: 2rem;
+    }  
+  }
+}
