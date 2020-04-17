@@ -196,9 +196,14 @@ img {
   padding: 20px;
   color: #212529;
 }
+@media (max-width: 800px) {
+  .home .nav a {
+    font-size: 1.15rem;
+  }
+}
 @media (max-width: 400px) {
   .home .nav a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .home .nav a:hover {
