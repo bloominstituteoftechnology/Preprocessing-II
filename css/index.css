@@ -168,6 +168,10 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  background-color: teal;
+  width: 50%;
+}
 .font-mixin {
   color: black;
   text-decoration: none;
