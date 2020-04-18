@@ -5,14 +5,14 @@
     max-width:800px;
     margin: 0 auto;
     border-bottom:2px dashed lightgrey;
-    @media(max-width:500px){
+    @media(@mobile){
         flex-direction:column;
         justify-content:space-between;
       }
 
     h2{
         width:50%;
-        @media(max-width:500px){
+        @media(@mobile){
             align-self:center;
             text-align:center;
         }
@@ -23,7 +23,7 @@
         display:flex;
         justify-content:space-around;
         align-items:center;
-        @media(max-width:500px){
+        @media(@mobile){
             width: 100%;
         }
         a{

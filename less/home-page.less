@@ -1,5 +1,5 @@
 .home {
-  @media(max-width:500px){
+  @media(@mobile){
     width:90%;
   }
   header{
@@ -14,7 +14,7 @@
     justify-content: space-between;
     padding-top:30px;
     border-top:2px dashed lightgrey;
-    @media(max-width:500px){
+    @media(@mobile){
       flex-direction:column;
       width:100%;
     }
@@ -24,7 +24,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media(max-width:500px){
+      @media(@mobile){
         width:100%;
       }
     }
@@ -32,7 +32,7 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media(max-width:500px){
+      @media(@mobile){
         width:100%;
       }
       img {
@@ -53,7 +53,7 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-      @media(max-width:500px){
+      @media(@mobile){
         order:1;
       }
     }
@@ -62,7 +62,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-    @media(max-width:500px){
+    @media(@mobile){
       width:100%;
     }
 
@@ -76,7 +76,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    @media(max-width:500px){
+    @media(@mobile){
       flex-direction:column;
       width:80%;
       margin-left:20px;
@@ -85,13 +85,13 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media(max-width:500px){
+      @media(@mobile){
         width:100%;
       }
     
       .btn{
         .btn();
-        @media(max-width:500px){
+        @media(@mobile){
           width:100%;
         }
         
