@@ -1,4 +1,7 @@
 .home {
+  @media(max-width:500px){
+    width:90%;
+  }
   header{
     margin:auto;
     h2{padding-top:30px;}
@@ -50,12 +53,18 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media(max-width:500px){
+        order:1;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media(max-width:500px){
+      width:100%;
+    }
 
     img {
       border-radius: 10px;
@@ -69,7 +78,8 @@
     justify-content: space-between;
     @media(max-width:500px){
       flex-direction:column;
-      width:100%;
+      width:80%;
+      margin-left:20px;
     }
 
     .destination {
@@ -78,8 +88,12 @@
       @media(max-width:500px){
         width:100%;
       }
+    
       .btn{
         .btn();
+        @media(max-width:500px){
+          width:100%;
+        }
         
       }
     }
