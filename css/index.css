@@ -217,6 +217,10 @@ img {
   border-top: 2px dashed #c0c0c0;
 }
 .home .content-section .text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 48%;
   padding-right: 1%;
 }
