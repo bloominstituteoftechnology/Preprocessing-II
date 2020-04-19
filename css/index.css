@@ -185,21 +185,11 @@ img {
   flex-direction: column;
   position: relative;
 }
-.home nav nav::after {
-  content: "";
-  margin: 0 -160px;
-  position: absolute;
-  border-bottom: 2px dashed #c0c0c0;
-  width: 140%;
-  bottom: 0;
-  left: 0;
-}
 @media (max-width:500px) {
   .home nav {
     width: 100%;
     align-items: flex-end;
     justify-content: center;
-    border: 1px solid green;
     align-self: center;
   }
 }
@@ -209,7 +199,6 @@ img {
     width: 100%;
     justify-self: center;
     align-self: flex-start;
-    border: 1px solid red;
     text-align: center;
   }
 }
@@ -223,12 +212,25 @@ img {
   .home nav div {
     width: 100%;
     justify-content: space-evenly;
-    border: 1px solid blue;
   }
 }
 .home nav div a {
   text-decoration: none;
   color: black;
+}
+.home nav::after {
+  content: "";
+  margin: 0 -160px;
+  position: absolute;
+  border-bottom: 2px dashed #c0c0c0;
+  width: 140%;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width:500px) {
+  .home nav::after {
+    margin: 0 -100px;
+  }
 }
 .footer {
   width: 100%;
