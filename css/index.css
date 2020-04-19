@@ -172,6 +172,7 @@ img {
   .home {
     width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -188,6 +189,11 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width:500px) {
+  .home div {
+    justify-content: space-evenly;
+  }
 }
 .home div a {
   text-decoration: none;
