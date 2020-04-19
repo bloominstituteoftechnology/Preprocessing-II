@@ -1,1 +1,16 @@
 // Mixins in here
+.Cntr-flx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-btn(@font-size, @background, @color) {
+  .Cntr-flx;
+  font-size: @font-size;
+  background: @background;
+  color: @color;
+  border-radius: 25px;
+  width: 80%;
+  height: 45px;
+}
