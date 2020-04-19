@@ -170,11 +170,11 @@ img {
 }
 @media (max-width:500px) {
   .home {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    padding: 5%;
   }
 }
 .home nav {
@@ -182,12 +182,21 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   position: relative;
+}
+.home nav nav::after {
+  content: "";
+  margin: 0 -160px;
+  position: absolute;
+  border-bottom: 2px dashed #c0c0c0;
+  width: 140%;
+  bottom: 0;
+  left: 0;
 }
 @media (max-width:500px) {
   .home nav {
     width: 100%;
-    height: 8vh;
     align-items: flex-end;
     justify-content: center;
     border: 1px solid green;
@@ -196,41 +205,30 @@ img {
 }
 @media (max-width:500px) {
   .home nav h1 {
-    font-size: 3.2rem;
+    font-size: 2rem;
     width: 100%;
     justify-self: center;
     align-self: flex-start;
     border: 1px solid red;
     text-align: center;
-    margin-top: 2%;
   }
 }
-.home div {
+.home nav div {
   width: 42%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width:500px) {
-  .home div {
-    justify-content: space-evenly;
+  .home nav div {
     width: 100%;
-    margin: 0 auto;
+    justify-content: space-evenly;
     border: 1px solid blue;
   }
 }
-.home div a {
+.home nav div a {
   text-decoration: none;
   color: black;
-}
-.home nav::after {
-  content: "";
-  margin: 0 -160px;
-  position: absolute;
-  border-bottom: 2px dashed #c0c0c0;
-  width: 140%;
-  bottom: 0;
-  left: 0;
 }
 .footer {
   width: 100%;
