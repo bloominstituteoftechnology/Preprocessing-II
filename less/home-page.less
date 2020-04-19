@@ -1,16 +1,17 @@
 .home {
   max-width: 800px;
   width: @width;
-
+  //for mobile only
   @media @mob-500{
     width: 90%;    
   }
-
+  // for the text above the line 
   .top-cont-mod{
-    border-bottom: 1px dashed @navigation-border;
-    
+    padding-bottom: 15px;
+    border-bottom: 2px dashed @navigation-border;
+    //for the bus pic on the header
     img{
-      margin-bottom: 0px;
+      margin-bottom: 20px;
     }
   }
 
@@ -60,7 +61,7 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-
+      //if order is not 1 at 500 the image will not be ordered
       @media @mob-500 {
         order: 1;
       }
@@ -94,19 +95,19 @@
     justify-content: space-between;
 
     .destination {
-      width: 30%;
+      width: 50%;
       margin-bottom: 30px;
-
+      //making the button passing size,color,bg-color
       .btn {
         .make-btn(1.8rem, #008080, white);
-        
+        //making the button with a differnt shade of green
         @media @mob-500 {
           .make-btn(1.8rem, #17A2B8, white);
           width: 100%;
           margin-bottom: 20px;
         }
       }
-
+      
       @media @mob-500 {
         width: 80%;
         margin: 0 auto;
