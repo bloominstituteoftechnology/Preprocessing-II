@@ -1,9 +1,40 @@
 // Navigation Styles here
+//main nav with 3 items
 .main-nav {
 padding-bottom: 25px;
 border-bottom: 1px dashed @navigation-border;
 max-width: 1000px;
 width: 100%;
 margin: 0 auto;
-}
 
+//
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80%;
+
+  @media @mob-500 {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+//top text 'Fun Bus'
+  .big-txt{
+    width: 100%;
+    flex-basis: 100%;
+    margin: 15px 0;
+  }
+  .mnu-link{
+    display: flex;
+    justify-content:space-around ;
+    width: 40%;
+    font-size: 1.6rem;
+
+    @media @mob-500 {
+      width: 100%;
+      flex-basis: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+}
