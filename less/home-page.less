@@ -57,18 +57,23 @@
     justify-content: space-between;
 
     .destination {
+      width: 30%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-end;
-      h4 {
-        width: 25%;
-        p {
-          width: 25%;
+      flex-direction: column;
 
-          .btn {
-            align-self: center;
-          }
+      h4 {
+        align-self: flex-start;
+      }
+      p {
+        align-items: flex-start;
+      }
+      .btn {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        button {
+          .button(80%, center, 15px, #ffffff, 2%, #17a2b8);
+          line-height: 2;
         }
       }
     }
