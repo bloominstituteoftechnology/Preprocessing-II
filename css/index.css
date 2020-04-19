@@ -175,6 +175,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 }
 .home nav {
@@ -183,6 +184,21 @@ img {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+@media (max-width:500px) {
+  .home nav {
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid green;
+  }
+}
+@media (max-width:500px) {
+  .home nav h1 {
+    font-size: 2.5rem;
+    width: 100%;
+    align-self: flex-start;
+    border: 1px solid red;
+  }
 }
 .home div {
   width: 42%;
@@ -193,6 +209,9 @@ img {
 @media (max-width:500px) {
   .home div {
     justify-content: space-evenly;
+    align-items: space-between;
+    width: 100%;
+    border: 1px solid blue;
   }
 }
 .home div a {

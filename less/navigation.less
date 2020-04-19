@@ -5,15 +5,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
   nav {
     height: 10vh;
     .flexbox(space-between, center);
     position: relative;
+    @media @mobile {
+      align-items: flex-end;
+      justify-content: center;
+      border: 1px solid green;
+    }
+    h1 {
+      @media @mobile {
+        // margin: 3%;
+        font-size: 2.5rem;
+        width: 100%;
+        align-self: flex-start;
+        border: 1px solid red;
+      }
+    }
   }
   div {
     @media @mobile {
       justify-content: space-evenly;
+      align-items: space-between;
+      width: 100%;
+      border: 1px solid blue;
     }
     width: 42%;
     display: flex;
