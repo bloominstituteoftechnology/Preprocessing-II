@@ -10,6 +10,11 @@
     justify-content: space-between;
     padding: 5% 0;
     border-top: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
     .text-content {
       .flexbox(center, center);
@@ -17,12 +22,10 @@
       width: 48%;
       padding-right: 1%;
       @media @mobile {
-        // height: 20vh;
-        border: 1px color red;
+        width: 100%;
         p {
           @media @mobile {
-            // height: 20%;
-            border: 1px solid blue;
+            width: 100%;
           }
         }
       }
@@ -34,8 +37,7 @@
       @media @mobile {
         .flexbox(center, flex-end);
         flex-flow: row nowrap;
-        height: 20%;
-        border: 1px solid blue;
+        width: 100%;
       }
 
       img {
@@ -46,6 +48,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -87,7 +93,6 @@
       }
       .btn {
         display: flex;
-        justify-content: flex-end;
         width: 100%;
         button {
           .button(80%, center, 15px, #ffffff, 2%, #17a2b8);
