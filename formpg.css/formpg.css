@@ -174,9 +174,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.pageContainer .Form h1 {
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+}
+.pageContainer .Form h2 {
   color: #f0d32f;
   text-shadow: 3px 3px black;
+  border: 1px solid red;
 }
 .pageContainer .Form div {
   display: flex;
