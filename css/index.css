@@ -168,15 +168,35 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.home .nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
   padding: 40px 0px;
 }
+.nav .navContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .nav .navContainer {
+    flex-direction: column;
+  }
+}
+.nav .navContainer .head {
+  padding-right: 15%;
+}
+@media (max-width: 800px) {
+  .nav .navContainer .head {
+    padding-right: 0%;
+    padding-bottom: 4%;
+  }
+}
 @media (max-width: 500px) {
-  .home .nav {
+  .nav {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -186,27 +206,27 @@ img {
   }
 }
 @media (max-width: 800px) {
-  .home .nav {
+  .nav {
     margin: 5%;
   }
 }
-.home .nav a {
+.nav a {
   font-size: 1.7rem;
   text-decoration: none;
   padding: 20px;
   color: #212529;
 }
 @media (max-width: 800px) {
-  .home .nav a {
+  .nav a {
     font-size: 1.15rem;
   }
 }
 @media (max-width: 400px) {
-  .home .nav a {
+  .nav a {
     font-size: 1rem;
   }
 }
-.home .nav a:hover {
+.nav a:hover {
   animation-name: a1;
   animation-duration: 3s;
   animation-iteration-count: infinite;

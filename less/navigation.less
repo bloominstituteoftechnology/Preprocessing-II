@@ -1,42 +1,61 @@
 // Navigation Styles here
 
-.home {
-    .nav {
-        .displayFlex(space-between, center);
-        border-bottom: 2px dashed @navigation-border;
-        padding: 40px 0px;
 
-        @media @mobileL {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0px;
-        }
+.nav {
+    .displayFlex(space-between, center);
+    border-bottom: 2px dashed @navigation-border;
+    padding: 40px 0px; 
+
+    .navContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
 
         @media @tablet {
-            margin: 5%;
+            flex-direction: column;
         }
 
-        a {
-            font-size: 1.7rem;
-            text-decoration: none;
-            padding: 20px;
-            color: @font-color;
+        .head {
+            padding-right: 15%;
 
             @media @tablet {
-                font-size: 1.15rem;
-            }
-            
-            @media @mobileS {
-                font-size: 1rem;
+                padding-right: 0%;
+                padding-bottom: 4%;
             }
         }
+    }
 
-        a:hover {
-            .animation1(white, purple, black, lightgreen);
-            border-radius: 20px;
+    @media @mobileL {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }
+
+    @media @tablet {
+        margin: 5%;
+    }
+
+    a {
+        font-size: 1.7rem;
+        text-decoration: none;
+        padding: 20px;
+        color: @font-color;
+
+        @media @tablet {
+            font-size: 1.15rem;
         }
+        
+        @media @mobileS {
+            font-size: 1rem;
+        }
+    }
+
+    a:hover {
+        .animation1(white, purple, black, lightgreen);
+        border-radius: 20px;
     }
 }
