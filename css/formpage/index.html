@@ -6,34 +6,38 @@
     <title>Select Package</title>
   </head>
   <body>
-    <section class="Form">
-      <h1>Contact</h1>
-      <div>
-        <label for="fullname">Full Name</label>
-        <input type="text" name="fullname" placeholder="Full Name" />
+    <section class="pageContainer">
+      <div class="Form">
+        <h1>Contact</h1>
+        <div>
+          <label for="fullname">Full Name</label>
+          <input type="text" name="fullname" placeholder="Full Name" />
+        </div>
+        <!--closes fullname div-->
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" placeholder="Phone Number" />
+        </div>
+        <!--closes phone div-->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email" />
+        </div>
+        <!--closes email div-->
+        <div>
+          <label for="special">Special Instructions</label>
+          <textarea
+            name="special"
+            cols="30"
+            rows="10"
+            placeholder="Special Instructions"
+          ></textarea>
+        </div>
+        <!--closes special div-->
+        <button>Submit</button>
       </div>
-      <!--closes fullname div-->
-      <div>
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" placeholder="Phone Number" />
-      </div>
-      <!--closes phone div-->
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="Email" />
-      </div>
-      <!--closes email div-->
-      <div>
-        <label for="special">Special Instructions</label>
-        <textarea
-          name="special"
-          cols="30"
-          rows="10"
-          placeholder="Special Instructions"
-        ></textarea>
-      </div>
-      <!--closes special div-->
-      <button>Submit</button>
+      <!--closes form div-->
     </section>
+    <!--closes pageContainer-->
   </body>
 </html>

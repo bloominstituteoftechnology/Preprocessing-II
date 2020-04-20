@@ -174,3 +174,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.pageContainer .Form h1 {
+  color: green;
+  text-shadow: 3px 3px black;
+}
+.pageContainer .Form div {
+  display: flex;
+  flex-direction: column;
+}
+.pageContainer .Form div label {
+  height: 7vh;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  font-size: 3rem;
+  color: green;
+  font-weight: bold;
+  background: radial-gradient(#d8f98b, orange, red);
+  font-family: "Indie Flower", cursive;
+}
