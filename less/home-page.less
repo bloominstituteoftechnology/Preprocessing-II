@@ -13,7 +13,6 @@
     @media @mobile {
       flex-direction: column;
       align-items: center;
-      justify-content: center;
     }
 
     .text-content {
@@ -77,16 +76,24 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-flow: row wrap;
+    }
 
     .destination {
       width: 30%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      border: 1px solid red;
+      @media @mobile {
+        width: 100%;
+      }
 
       h4 {
         align-self: flex-start;
+        @media @mobile {
+          width: 100%;
+        }
       }
       p {
         align-items: flex-start;
@@ -94,11 +101,16 @@
       .btn {
         display: flex;
         width: 100%;
+        @media @mobile {
+          width: 100%;
+        }
         button {
           .button(80%, center, 15px, #ffffff, 2%, #17a2b8);
           line-height: 2;
-          border: 1px solid blue;
           justify-self: flex-start;
+          @media @mobile {
+            width: 100%;
+          }
         }
       }
     }
