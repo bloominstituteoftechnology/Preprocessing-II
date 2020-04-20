@@ -3,11 +3,50 @@
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  #checkbox {
+    width: 50%;
+    .flexbox(space-between, center);
+    align-self: flex-start;
+    .container {
+      input {
+        width: 50%;
+      }
+      .checkmark {
+      }
+      .container:hover input ~ .checkmark {
+        background-color: @funbus;
+      }
+      .container input:checked ~ .checkmark {
+        background-color: green;
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      .container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
   .form {
-    border: 1px solid red;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     h2 {
-      color: rgb(240, 211, 47);
-      text-shadow: 3px 3px black;
+      color: @funbus;
+      .Tshadow(3px, 3px, black);
     }
     div {
       display: flex;
@@ -17,10 +56,13 @@
         text-align: center;
         text-shadow: 2px 2px black;
         font-size: 3rem;
-        color: green;
+        color: @eastern-blue;
         font-weight: bold;
-        background: radial-gradient(#d8f98b, orange, blue);
+        background: radial-gradient(#d8f98b, orange, @eastern-blue);
         font-family: "Indie Flower", cursive;
+      }
+      textarea {
+        height: 10vh;
       }
     }
   }

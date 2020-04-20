@@ -181,7 +181,8 @@ img {
   border: 1px solid blue;
 }
 .contact nav h1 {
-  color: blue;
+  color: orange;
+  text-shadow: 3px 3px black;
 }
 .contact nav div {
   display: flex;
@@ -196,11 +197,48 @@ img {
   width: 80%;
   margin: 0 auto;
 }
+.contact #checkbox {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+}
+.contact #checkbox .container input {
+  width: 50%;
+}
+.contact #checkbox .container .container:hover input ~ .checkmark {
+  background-color: orange;
+}
+.contact #checkbox .container .container input:checked ~ .checkmark {
+  background-color: green;
+}
+.contact #checkbox .container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.contact #checkbox .container .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.contact #checkbox .container .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 .contact .form {
-  border: 1px solid red;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .contact .form h2 {
-  color: #f0d32f;
+  color: orange;
   text-shadow: 3px 3px black;
 }
 .contact .form div {
@@ -212,8 +250,11 @@ img {
   text-align: center;
   text-shadow: 2px 2px black;
   font-size: 3rem;
-  color: green;
+  color: #17a2b8;
   font-weight: bold;
-  background: radial-gradient(#d8f98b, orange, blue);
+  background: radial-gradient(#d8f98b, orange, #17a2b8);
   font-family: "Indie Flower", cursive;
+}
+.contact .form div textarea {
+  height: 10vh;
 }
