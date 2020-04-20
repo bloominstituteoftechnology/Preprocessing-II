@@ -134,17 +134,23 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
+}
+@media (max-width:500px) {
+  h1 {
+    font-size: 3.2rem;
+    padding-bottom: 3%;
+  }
 }
 h2 {
   font-size: 3.2rem;
@@ -212,6 +218,7 @@ img {
   .home nav div {
     width: 100%;
     justify-content: space-evenly;
+    padding-bottom: 2%;
   }
 }
 .home nav div a {
@@ -262,9 +269,29 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    border: 1px color red;
+  }
+}
+@media (max-width:500px) and (max-width:500px) {
+  .home .content-section .text-content p {
+    border: 1px solid blue;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: row nowrap;
+    height: 20%;
+    border: 1px solid blue;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -298,6 +325,8 @@ img {
   width: 30%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
 }
 .home .content-pick .destination h4 {
   align-self: flex-start;
@@ -307,7 +336,7 @@ img {
 }
 .home .content-pick .destination .btn {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 100%;
 }
 .home .content-pick .destination .btn button {
@@ -318,4 +347,6 @@ img {
   padding: 2%;
   background-color: #17a2b8;
   line-height: 2;
+  border: 1px solid blue;
+  justify-self: flex-start;
 }

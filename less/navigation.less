@@ -31,14 +31,15 @@
     }
 
     div {
-      @media @mobile {
-        width: 100%;
-        justify-content: space-evenly;
-      }
       width: 42%;
       display: flex;
       justify-content: space-around;
       align-items: center;
+      @media @mobile {
+        width: 100%;
+        justify-content: space-evenly;
+        padding-bottom: 2%;
+      }
 
       a {
         text-decoration: none;

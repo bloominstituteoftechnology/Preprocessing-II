@@ -16,11 +16,27 @@
       flex-direction: column;
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        // height: 20vh;
+        border: 1px color red;
+        p {
+          @media @mobile {
+            // height: 20%;
+            border: 1px solid blue;
+          }
+        }
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .flexbox(center, flex-end);
+        flex-flow: row nowrap;
+        height: 20%;
+        border: 1px solid blue;
+      }
 
       img {
         border-radius: 10px;
@@ -60,6 +76,8 @@
       width: 30%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      border: 1px solid red;
 
       h4 {
         align-self: flex-start;
@@ -69,11 +87,13 @@
       }
       .btn {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         width: 100%;
         button {
           .button(80%, center, 15px, #ffffff, 2%, #17a2b8);
           line-height: 2;
+          border: 1px solid blue;
+          justify-self: flex-start;
         }
       }
     }
