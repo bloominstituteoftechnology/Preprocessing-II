@@ -1,6 +1,7 @@
 .contact {
   nav {
     .flexbox(space-around, center);
+    flex-direction: column;
     border: 1px solid blue;
     h1 {
       color: @funbus;
@@ -8,6 +9,14 @@
     }
     div {
       .flexbox(space-evenly, center);
+      width: 100%;
+      border: 1px solid blue;
+      a {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+      }
     }
   }
 }

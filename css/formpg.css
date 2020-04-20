@@ -178,6 +178,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   border: 1px solid blue;
 }
 .contact nav h1 {
@@ -188,6 +189,14 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  border: 1px solid blue;
+}
+.contact nav div a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
 .contact {
   display: flex;
