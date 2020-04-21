@@ -213,9 +213,6 @@ img {
   align-items: center;
   align-self: flex-start;
 }
-.contact #checkbox .package {
-  width: 50%;
-}
 .contact #checkbox .container input {
   width: 50%;
 }
