@@ -4,11 +4,15 @@
   width: 80%;
   margin: 0 auto;
   #checkbox {
-    width: 50%;
+    width: 100%;
     .flexbox(space-between, center);
-    align-self: flex-start;
+    align-self: flex-end;
     .package {
-      // width: 50%;
+      width: 20%;
+      border: 2px solid green;
+    }
+    label {
+      margin: 1%;
     }
     .container {
       input {
@@ -43,6 +47,7 @@
   }
   .form {
     width: 50%;
+    align-self: center;
     display: flex;
     flex-direction: column;
     h2 {

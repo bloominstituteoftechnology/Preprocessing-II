@@ -207,11 +207,18 @@ img {
   margin: 0 auto;
 }
 .contact #checkbox {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: flex-start;
+  align-self: flex-end;
+}
+.contact #checkbox .package {
+  width: 20%;
+  border: 2px solid green;
+}
+.contact #checkbox label {
+  margin: 1%;
 }
 .contact #checkbox .container input {
   width: 50%;
@@ -243,6 +250,7 @@ img {
 }
 .contact .form {
   width: 50%;
+  align-self: center;
   display: flex;
   flex-direction: column;
 }
