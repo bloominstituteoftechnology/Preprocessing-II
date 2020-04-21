@@ -1,1 +1,16 @@
-// Mixins in here
+.flexbox(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+.button(@width, @text-align, @border-radius, @color, @padding, @background-color) {
+  width: @width;
+  text-align: @text-align;
+  border-radius: @border-radius;
+  color: @color;
+  padding: @padding;
+  background-color: @background-color;
+}
+.Tshadow(@horizontal, @vertical, @color) {
+  text-shadow: @horizontal @vertical @color;
+}

@@ -1,31 +1,56 @@
 .home {
+  img {
+    margin-bottom: 2%;
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 5% 0;
+    border-top: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
-   
-    
     .text-content {
+      .flexbox(center, center);
+      flex-direction: column;
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        p {
+          @media @mobile {
+            width: 100%;
+          }
+        }
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .flexbox(center, flex-end);
+        flex-flow: row nowrap;
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
       }
     }
   }
-
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -46,16 +71,48 @@
       border-radius: 10px;
     }
   }
-
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-flow: row wrap;
+    }
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media @mobile {
+        width: 100%;
+      }
+
+      h4 {
+        align-self: flex-start;
+        @media @mobile {
+          width: 100%;
+        }
+      }
+      p {
+        align-items: flex-start;
+      }
+      .btn {
+        display: flex;
+        width: 100%;
+        @media @mobile {
+          width: 100%;
+        }
+        button {
+          .button(80%, center, 15px, #ffffff, 2%, #17a2b8);
+          line-height: 2;
+          justify-self: flex-start;
+          @media @mobile {
+            width: 100%;
+          }
+        }
+      }
     }
   }
-}// home
+} // home
