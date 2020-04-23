@@ -176,22 +176,17 @@ body {
 }
 body .containernav {
   display: flex;
-  justify-content: baseline;
+  align-items: flex-end;
   padding: 5% 0% 2.5% 0%;
 }
-body .containernav .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  text-align: end;
-}
-body .containernav .nav a {
+body .containernav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
-  display: flex;
-  justify-content: space-between;
   padding: 1.5rem;
+}
+intro h5 {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .footer {
   width: 100%;
@@ -220,6 +215,10 @@ body .containernav .nav a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+.home h5 {
+  border-top: 2px dashed #C0C0C0;
+  margin: 2rem;
 }
 .home .inverse-content {
   padding-bottom: 30px;
