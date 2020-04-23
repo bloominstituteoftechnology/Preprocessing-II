@@ -249,3 +249,16 @@ intro h5 {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #008080;
+  border-radius: 15rem 5px;
+  padding: 15px;
+  margin-right: 10rem;
+  font-size: 1.5rem white bold;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+}
