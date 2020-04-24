@@ -1,1 +1,19 @@
-// Navigation Styles here
+body {
+    .contain();
+
+    .containernav {
+        @media @mobile {
+            .mobile();
+        }
+        display:flex;
+        align-items: flex-end;
+        padding: 5% 0% 2.5% 0%;
+
+        a {
+            text-decoration: none;
+            color: @shark;
+            font-size: 1.6rem;           
+            padding: 1.5rem;           
+        }           
+    }
+}    

@@ -1,1 +1,52 @@
 // Mixins in here
+.contain() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .inversecontent() {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+  }
+
+  // btn add in parametric
+  .buttonp (@j, @t){
+    display: flex;
+    justify-content: @j;
+    text-align: @t;
+    background-color: #008080;
+    border-radius: 15rem 5px;
+    padding: 15px;
+    margin-right:10.0rem;
+    font-size: 1.5rem white bold;
+  }
+
+  .mobile(){
+    display: flex;
+    Flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 1.0rem;
+
+    .btn {
+      width:100%;
+    }
+    .btn:hover {
+       background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+       }
+
+    }
+    .keyframes(@name; @arguments) {
+      @-moz-keyframes @name { @arguments(); }
+      @-webkit-keyframes @name { @arguments(); }
+      @keyframes @name { @arguments(); }
+    }
+    
+    .animation(@arguments) {
+      -webkit-animation: @arguments;
+      -moz-animation: @arguments;
+      animation: @arguments;
+    }
