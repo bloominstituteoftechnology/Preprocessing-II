@@ -192,6 +192,9 @@ body .containernav {
   body .containernav .btn {
     width: 100%;
   }
+  body .containernav .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  }
 }
 body .containernav a {
   text-decoration: none;
@@ -211,6 +214,9 @@ body .containernav a {
   }
   intro .btn {
     width: 100%;
+  }
+  intro .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   }
 }
 intro h5 {
@@ -246,6 +252,9 @@ intro h5 {
   .home .content-section .btn {
     width: 100%;
   }
+  .home .content-section .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -263,6 +272,9 @@ intro h5 {
   }
   .home .content-section .text-content .btn {
     width: 100%;
+  }
+  .home .content-section .text-content .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   }
 }
 .home .content-section .img-content {
@@ -282,6 +294,9 @@ intro h5 {
   .home .content-section .img-content .btn {
     width: 100%;
   }
+  .home .content-section .img-content .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -298,6 +313,9 @@ intro h5 {
   }
   .home .content-section .img-content img .btn {
     width: 100%;
+  }
+  .home .content-section .img-content img .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   }
 }
 .home h5 {
@@ -321,6 +339,9 @@ intro h5 {
   .home .inverse-content .btn {
     width: 100%;
   }
+  .home .inverse-content .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -338,6 +359,9 @@ intro h5 {
   }
   .home .inverse-content .text-content .btn {
     width: 100%;
+  }
+  .home .inverse-content .text-content .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   }
 }
 .home .inverse-content .img-content {
@@ -361,6 +385,9 @@ intro h5 {
   .home .content-destination .btn {
     width: 100%;
   }
+  .home .content-destination .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -377,6 +404,9 @@ intro h5 {
   }
   .home .content-destination img .btn {
     width: 100%;
+  }
+  .home .content-destination img .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   }
 }
 .home .content-pick {
@@ -398,6 +428,9 @@ intro h5 {
   .home .content-pick .btn {
     width: 100%;
   }
+  .home .content-pick .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  }
 }
 .home .content-pick .destination {
   width: 30%;
@@ -415,6 +448,9 @@ intro h5 {
   }
   .home .content-pick .destination .btn {
     width: 100%;
+  }
+  .home .content-pick .destination .btn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   }
 }
 .home .content-pick .destination .btn {
