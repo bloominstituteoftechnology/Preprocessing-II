@@ -159,9 +159,10 @@ h1 {
 }
 
 h2 {
-  font-size: 3.8rem;
+  font-size: 3.3rem;
   padding-bottom: 10px;
-
+  margin-left: 22px;
+  align-content: center;
 }
 
 h4 {
@@ -181,7 +182,7 @@ img {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
@@ -194,7 +195,6 @@ nav {
 }
 
 nav a {
-  margin-left: 20px;
   font-size: 2rem;
   text-decoration: none;
   color: teal;
@@ -241,7 +241,7 @@ header {
 }
 
 header h2 {
-  font-size: 3rem;
+  font-size: 3.8rem;
 }
 
 @media (max-width: 500px) {
@@ -266,6 +266,10 @@ header h2 {
 }
 
 .welcome h2 {
+  margin-bottom: 20px;
+}
+
+.destination {
   margin-bottom: 20px;
 }
 
