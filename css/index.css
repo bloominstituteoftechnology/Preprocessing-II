@@ -139,6 +139,15 @@ table {
 
 html {
   font-size: 62.5%;
+  --text-color-normal: #0a244d;
+  --text-color-light: #8cabd9;
+}
+
+html[data-theme='dark'] {
+  --text-color-normal: hsl(210, 10%, 62%);
+  --text-color-light: hsl(210, 15%, 35%);
+  --text-color-richer: hsl(210, 50%, 72%);
+  --text-color-highlight: hsl(25, 70%, 45%);
 }
 
 html,
@@ -153,6 +162,14 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+
+/*------------------- CODE begins here ---------------------------*/
+
+/*.darkmode {
+
+}
+
+*/
 
 h1 {
   font-size: 4rem;
@@ -201,7 +218,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: lightgrey;
+  color: darkgrey;
 }
 
 nav .first-anchor {
@@ -244,15 +261,6 @@ header h2 {
   font-size: 3.8rem;
 }
 
-@media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20px 0;
-    margin-bottom: 20px;
-  }
-}
-
 .img {
   margin: center;
   border-width: 25px 30px 30px 20px;
@@ -278,6 +286,15 @@ header h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -375,5 +392,16 @@ header h2 {
     margin-right: 20px;
     border: 2px solid black;
     color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: .65;
+    transition: opacity .1s ease-in-out;
+  }
+
+  img:hover {
+    opacity: 1;
   }
 }
