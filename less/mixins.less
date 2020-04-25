@@ -1,1 +1,22 @@
 // Mixins in here
+    .flexbox(@j,@a){
+        display: flex;
+        justify-content: @j;
+        align-items: @a;
+    }
+
+    .direction(@dir){
+        display: flex;
+        flex-direction: @dir;
+    }
+
+    .button(@bc,@c,@br){
+        background-color: @bc;
+        color: @c;
+        border-radius: @br;
+    }
+    
+    .margin{
+        margin-left:20px;
+        margin-right:20px;
+    }

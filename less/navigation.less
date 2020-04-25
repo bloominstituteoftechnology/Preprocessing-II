@@ -1,1 +1,26 @@
 // Navigation Styles here
+.navbar{
+    .flexbox(space-between,baseline);
+        border-bottom: 2px dashed @navigation-border;
+        padding-left: 310px;
+        padding-right: 310px;
+    nav{ 
+        a{
+            margin-right: 30px;
+            margin-left: 10px;
+            text-decoration: none;
+            color:black;font-size: 1.4rem;
+        }
+    }
+
+    @media @mobile{
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        align-items: center;
+        
+    //     nav{
+    //         @direction(row);
+    //     }
+    }
+}
