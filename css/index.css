@@ -171,7 +171,6 @@ img {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-bottom: 5%;
   border-bottom: 2px dashed grey;
 }
@@ -197,11 +196,18 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .fun-bus {
+  border-bottom: 2px dashed grey;
+}
+.home .fun-bus .bus {
+  margin-bottom: 15px;
+  width: 100%;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -243,10 +249,11 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.fun-bus {
-  border-bottom: 2px dashed grey;
-}
-.fun-bus .bus {
-  margin-bottom: 15px;
-  width: 100%;
+.home .content-pick .destination .btn {
+  background-color: teal;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
 }
