@@ -1,0 +1,43 @@
+
+body.contact {
+    flex-flow: column nowrap;
+
+    h2 {
+        padding: 20px 0;
+
+        @media @mobile {
+            text-align: center;
+        }
+    }
+}
+
+
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media @mobile {
+        padding: 20px;
+    }
+
+    input, textarea {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        width: 50%;
+        border: 1px solid gray;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+
+    input[type="submit"] {
+        .buttonstyle(#fff,@my-btn-color,10px);
+    
+        &:hover {
+        background-color: lighten(@my-btn-color,10);
+        cursor: pointer;
+        }
+    }
+}

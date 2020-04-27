@@ -6,19 +6,39 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      padding: 20px;
+      flex-flow: column nowrap;
+      align-content: center;
+      
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          min-width: 100%;
+        }
       }
     }
   }
@@ -26,6 +46,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-flow: column-reverse nowrap;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -45,6 +69,11 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      padding: 20px;
+      width: 100%;
+    }
   }
 
   .content-pick {
@@ -56,6 +85,58 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0 70px;
+      }
+
+    }
+
+    @media @mobile {
+      flex-flow: column nowrap;
+    }
+
+  }
+
+  .btn {
+    padding: 15px 25px;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+    .buttonstyle(#fff,@my-btn-color,10px);
+
+    &:hover {
+      background-color: lighten(@my-btn-color,10);
+      cursor: pointer;
     }
   }
 }// home
+
+header {
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+    img {
+      margin-bottom: 20px;
+      max-width: 800px;
+
+      @media @mobile {
+        max-width: 500px; 
+      }
+    }
+
+    .header-content {
+      width: 100%;
+      max-width: 800px;
+      padding: 20px 0;
+      border-bottom: 2px dashed @navigation-border;
+
+      @media @mobile {
+        padding: 20px;
+        
+      }
+    }
+}
