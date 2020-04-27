@@ -1,1 +1,57 @@
 // Navigation Styles here
+
+.nav {
+    max-width: 800px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 0;
+    
+    @media @mobile {
+        max-width: 500px;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 20px 0 10px 0;
+    }
+
+    nav {
+        margin-top: 20px;  
+        
+        a {
+            margin: 0 10px;
+            font-size: 2rem;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                color: red;
+            }
+
+            @media @mobile {
+                font-size: 1.5rem;
+            }
+        }
+
+        .current {
+            color: red;
+        }
+
+        @media @mobile {
+            margin-top: 10px;
+        }
+
+    }
+
+    .logo {
+        font-family: 'Indie Flower', cursive;
+        font-size: 5rem;
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
