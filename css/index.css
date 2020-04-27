@@ -186,6 +186,13 @@ img {
 .navContainer .navBar a {
   text-decoration: none;
   font-size: 2.3rem;
+  color: #17A2B8;
+}
+@media (max-width: 500px) {
+  .navContainer .navBar a {
+    font-size: 4rem;
+    color: powderblue;
+  }
 }
 .footer {
   width: 100%;
@@ -246,8 +253,8 @@ img {
 }
 .home .content-pick .destination button {
   width: 20rem;
-  color: white;
-  background-color: #1ae6c4;
+  color: #FFFFFF;
+  background-color: #17A2B8;
   padding: 2rem;
   border-radius: 8rem;
   font-size: 2.3rem;

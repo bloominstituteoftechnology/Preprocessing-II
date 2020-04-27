@@ -29,6 +29,11 @@
       width: 48%;
       padding-left: 1%;
 
+      @media (max-width: 500px) {
+        width: fit-content;
+        height: auto;
+      }
+
       img {
         border-radius: 10px;
       }
@@ -47,6 +52,16 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media (max-width: 500px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+
+      }
+
     }
   }
 
@@ -65,23 +80,24 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
       
       button {
         width: 20rem;
-        .button (@white, blue, 2rem, 8rem, 2.3rem)
-
-        // color: white;
-        // background-color: mediumaquamarine;
-        // padding: 2.0rem; 
-        // border-radius: 8rem;
-
+        .button (@white, @eastern-blue, 2rem, 8rem, 2.3rem);
         
+          @media@mobil {
+            .button (@white, rgb(207, 22, 22), 6rem, 2rem, 2.3rem);
 
+        }  
       }
-      
     }
   }
 }// home
