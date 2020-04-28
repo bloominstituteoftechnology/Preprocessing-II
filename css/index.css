@@ -204,8 +204,8 @@ img {
 @media (max-width:500px) {
   .container-home .heading {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 2%;
   }
 }
@@ -355,6 +355,7 @@ img {
 .container-home .content-pick .destination .btn a {
   color: white;
   text-decoration: none;
+  width: 100%;
 }
 .container-home .content-pick .destination .btn:hover {
   background-color: #4cd3e9;
