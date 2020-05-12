@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+body .navigation {
+  background-color: red;
+}
+body .navigation h2 {
+  font-size: 60px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
