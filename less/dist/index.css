@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px dotted black;
+}
+nav .logo {
+  width: 40%;
+  margin: auto 0 auto 6%;
+}
+nav .links {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto 0;
+  font-size: 1.3rem;
+}
+nav a {
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +199,21 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+:hover {
+  background-color: pink;
+  color: yellow;
+}
+.btn {
+  display: block;
+  background-color: green;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
 }
 .home .content-section {
   margin: 30px 0;

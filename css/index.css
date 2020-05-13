@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px dotted black;
+}
+nav .logo {
+  width: 40%;
+  margin: auto 0 auto 6%;
+}
+nav .links {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto 0;
+  font-size: 1.3rem;
+}
+nav a {
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +199,20 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.btn {
+  background-color: #17A2B8;
+  margin: 5% 0;
+  cursor: pointer;
+  width: 12.5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  height: 4rem;
+  padding: 3%;
+}
+.btn:hover {
+  background-color: pink;
 }
 .home .content-section {
   margin: 30px 0;

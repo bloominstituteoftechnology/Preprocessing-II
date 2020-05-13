@@ -1,8 +1,8 @@
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: @sandy-beach;
-  
+  background:@sandy-beach;
+
   p {
     text-align: center;
     color: @font-color;
@@ -10,3 +10,28 @@
     padding: 20px;
   }
 }
+
+
+
+
+.custom-btn(@bg-color:#008080, @width:20rem, @font-color:white){
+  
+  background-color: @bg-color;
+  margin: 5% 0;
+  cursor: pointer;
+  width: @width;
+  font-size: 2rem;
+  border-radius: 10px;
+  color:@font-color;
+  height: 4rem;
+  padding: 3%;
+}
+
+  .btn{
+    .custom-btn(#17A2B8, 12.5rem, white);
+
+    &:hover{
+   
+      background-color:pink;
+    }
+  }
