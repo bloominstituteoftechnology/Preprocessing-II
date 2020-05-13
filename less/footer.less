@@ -2,11 +2,28 @@
   width: 100%;
   border-top: 2px dashed silver;
   background: @sandy-beach;
-  
+
   p {
     text-align: center;
     color: @font-color;
     font-size: 1.6rem;
     padding: 20px;
+  }
+}
+
+.btn {
+  .custom-btn(#17a2b8, 15rem, white);
+  text-align: center;
+
+  @media @phone {
+    width: 40rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  &:hover {
+    background-color: pink;
   }
 }

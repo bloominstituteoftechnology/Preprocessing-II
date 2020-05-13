@@ -1,0 +1,2 @@
+nav{display:flex;justify-content:space-between;width:100%;margin:0 auto;border-bottom:2px dotted #000}nav .logo{width:40%;margin:auto 0 auto 6%}nav .links{width:40%;display:flex;justify-content:space-evenly;margin:auto 0;font-size:1.3rem}nav a{text-decoration:none}
+/*# sourceMappingURL=navigation.min.css.map */
