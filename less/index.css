@@ -1,3 +1,12 @@
+.buttonStyle {
+  padding: 5%;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -347,12 +356,4 @@ header .headerContent nav a {
   width: 80%;
   text-align: center;
 }
-.buttonStyle {
-  padding: 5%;
-  background-color: #17a2b8;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  width: 80%;
-  text-align: center;
-}
+/*# sourceMappingURL=index.css.map */
