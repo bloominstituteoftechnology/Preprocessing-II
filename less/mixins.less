@@ -1,1 +1,16 @@
 // Mixins in here
+.buttonStyle{
+  padding: 5%;
+  background-color: @button-bg;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+.displayFlex(@direction,@justify,@align){
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
