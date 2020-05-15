@@ -1,1 +1,47 @@
 // Navigation Styles here
+
+
+nav {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    height:96px;
+}
+
+nav h1 {
+    width:60%;
+}
+
+nav a {
+    font-size:1.6rem;
+    text-decoration:none;
+    color:black;
+}
+
+hr.header-border {
+    border:1.2px dashed lightGray;
+    margin:0 -10vh;
+    width:120%;
+}
+
+@media @phone{
+    nav {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:space-evenly;
+    }
+
+    nav h1 {
+        width:100%;
+        text-align:center;
+    }
+
+    nav a {
+        font-size:1.6rem;
+        text-decoration:none;
+        color:black;
+    }
+}

@@ -1,12 +1,15 @@
 .home {
 
+  main {
+    margin:30px 0;
+    border-bottom:2px dashed @navigation-border;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
@@ -21,6 +24,19 @@
         border-radius: 10px;
       }
     }
+
+    @media@phone {
+      flex-direction:column;
+
+    .text-content {
+      width:96%;
+      padding:12px 2%;
+    }
+
+    .img-content {
+      width:100%;
+    }
+  }
   }
 
   .inverse-content {
@@ -36,6 +52,12 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media@phone {
+
+      flex-direction:column-reverse;
+
+    }
   }
 
   .content-destination {
@@ -45,17 +67,65 @@
     img {
       border-radius: 10px;
     }
+
+    @media@phone {
+      width:100%;
+    }
   }
 
-  .content-pick {
+  input { 
+    width:32%;
+    display:flex;
+    flex-direction:row;
+    padding:12px;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+
+    @media@phone {
+      width:100%;
+      flex-direction:column;
+      margin:6px 0;
+    }
+  }
+
+  textarea {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    padding:12px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:18px 0;
+
+    @media@phone {
+      margin:6px 0;
+    }
+  }
+
+  form {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
+
+    @media@phone {
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+
+      .destination {
+        width:80%;
+      }
+    }
+  }
+
+  .btn {
+    .buttons(@button-bg,@font-color);
   }
 }// home
