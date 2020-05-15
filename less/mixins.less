@@ -1,1 +1,19 @@
 // Mixins in here
+.buttons(@button-bg,@font-color) {
+    background:@button-bg;
+    color:darken(@font-color,20%);
+    width:100%;
+    padding:12px;
+    border-radius:15px;
+    margin:10px 0;
+    text-align:center;
+    font-size:1.75rem;
+    font-weight:bold;
+    opacity:0.6;
+    transition:2s; // Stretch goal!
+    cursor:pointer;
+}
+
+.buttons:hover {
+    opacity:1;
+}

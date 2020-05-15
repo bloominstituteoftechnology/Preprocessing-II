@@ -1,3 +1,6 @@
+.buttons:hover {
+  opacity: 1;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,61 +171,50 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  width: 100vw;
-  margin: 1rem 0;
-  padding: 1rem 0;
-}
-header nav {
-  width: 100%;
-  margin: 0 10%;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-header nav h1 {
-  flex-basis: 51%;
-}
-header nav div {
-  display: flex;
-  flex-basis: 49%;
-}
-header nav div a {
-  text-decoration: none;
-  font-size: 2rem;
-  color: black;
-  margin: 0 2%;
-}
-@media (max-width: 500px) {
-  header nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: hotpink;
+@media (max-width:500px) {
+  .container {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 5%;
   }
 }
-.logo {
-  border-top: dotted silver;
-  margin-bottom: 2rem;
+nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-home {
-  width: 100vw;
-  margin: 1rem 0;
-  padding: 1rem 0;
-  border-bottom: dotted silver;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.content-section {
-  margin: 1rem 0;
-  padding: 1rem 0;
-  display: flex;
-  justify-content: center;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 96px;
+}
+nav h1 {
+  width: 60%;
+}
+nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+hr.header-border {
+  border: 1.2px dashed lightGray;
+  margin: 0 -10vh;
+  width: 120%;
+}
+@media (max-width:500px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav h1 {
+    width: 100%;
+    text-align: center;
+  }
+  nav a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+  }
 }
 .footer {
   width: 100%;
@@ -235,9 +227,14 @@ header nav div a {
   font-size: 1.6rem;
   padding: 20px;
 }
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@media (max-width:500px) {
+  .footer p {
+    font-weight: bold;
+  }
+}
+.home main {
+  margin: 30px 0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -256,6 +253,18 @@ body {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 96%;
+    padding: 12px 2%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -268,6 +277,11 @@ body {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -275,13 +289,72 @@ body {
 .home .content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
+.home input {
+  width: 32%;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media (max-width:500px) {
+  .home input {
+    width: 100%;
+    flex-direction: column;
+    margin: 6px 0;
+  }
+}
+.home textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+@media (max-width:500px) {
+  .home textarea {
+    margin: 6px 0;
+  }
+}
+.home form {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.home .content-pick .destination {
+.home form .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home form .destination {
+    width: 80%;
+  }
+}
+.home .btn {
+  background: #17A2B8;
+  color: #000000;
+  width: 100%;
+  padding: 12px;
+  border-radius: 15px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  opacity: 0.6;
+  transition: 2s;
+  cursor: pointer;
 }

@@ -1,69 +1,47 @@
 // Navigation Styles here
-header {
-    width: 100vw;
-    margin: 1rem 0;
-    padding: 1rem 0;
-    
+
+
+nav {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    height:96px;
+}
+
+nav h1 {
+    width:60%;
+}
+
+nav a {
+    font-size:1.6rem;
+    text-decoration:none;
+    color:black;
+}
+
+hr.header-border {
+    border:1.2px dashed lightGray;
+    margin:0 -10vh;
+    width:120%;
+}
+
+@media @phone{
     nav {
-    width: 100%;
-    margin: 0 10%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    
-        h1 {
-            flex-basis: 51%;
-
-        }
-
-
-        div {
-            display: flex;
-            flex-basis: 49%;        
-            a {
-                text-decoration: none;
-                font-size: 2rem;
-                color: black;
-                margin: 0 2%;
-            }
-        }
-
-        @media (max-width: 500px) {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: hotpink;
-
-        }
-        
-    }
-}
-.logo {
-    border-top: dotted silver;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.container-home {
-    width: 100vw;
-    margin: 1rem 0;
-    padding: 1rem 0;
-    border-bottom: dotted silver;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-}
-
-.content-section {
-    margin: 1rem 0;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    .text-content {
-
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:space-evenly;
     }
 
+    nav h1 {
+        width:100%;
+        text-align:center;
+    }
+
+    nav a {
+        font-size:1.6rem;
+        text-decoration:none;
+        color:black;
+    }
 }
