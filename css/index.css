@@ -1,3 +1,12 @@
+.btn {
+  background-color: #17A2B8;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  color: white;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,22 +181,68 @@ img {
   display: flex;
 }
 .anchors {
-  margin: 2rem;
-  font-size: 1.3rem;
+  margin: 1rem;
+  font-size: 1.4rem;
+  margin-top: 3rem;
 }
 .nav-bar {
   display: flex;
-  border: 3px solid black;
   justify-content: flex-end;
 }
 .container .nav-bar p {
   width: 80%;
+  margin-top: 3rem;
+  font-family: 'Indie Flower', cursive;
+  font-size: 3.2rem;
 }
 a {
-  margin: 2rem;
-  font-size: 1.3rem;
+  margin: 1rem;
+  font-size: 1.4rem;
+  margin-top: 3rem;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20rem;
+  }
+  .navdisplay {
+    display: flex;
+    justify-content: center;
+    border: 3px solid blue;
+    width: 100%;
+    margin-top: 30rem;
+  }
+  .anchors {
+    margin: 1rem;
+    font-size: 1.4rem;
+    margin-top: 5rem;
+    padding-right: 5.5rem;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    border: 3px solid blue;
+    width: 100%;
+    margin-top: 30rem;
+  }
+  .container .nav-bar p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.4rem;
+    border: 3px solid black;
+  }
+  a {
+    margin: 1rem;
+    font-size: 1.4rem;
+    margin-top: 5rem;
+    padding-right: 5.5rem;
+    text-decoration: none;
+    color: black;
+    border: 3px solid red;
+  }
 }
 .footer {
   width: 100%;
@@ -216,6 +271,16 @@ a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+.home header {
+  width: 100%;
+  border-top: 2px dashed #C0C0C0;
+}
+.home header .funny {
+  margin-bottom: 2rem;
+}
+.home header p {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content {
   padding-bottom: 30px;
