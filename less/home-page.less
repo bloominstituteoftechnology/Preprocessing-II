@@ -11,6 +11,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
     }
 
     .img-content {
@@ -51,16 +52,20 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
+      
+      
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
     }
   }
 
   .content-destination {
-    width: 75%;
+    width: 100%;
     margin: 0 auto 30px;
 
     img {
@@ -86,8 +91,98 @@
 
 @media @mobile {
 
+  body{
+    border:1px solid @silver;
+
+    
+  }
+  .content-section{
+
+    display:flex;
+    
+    
+    
+  }
+
+  .text-content{
+    display:flex;
+    flex-wrap: wrap;
   
+    
+  
+  }
 
 
+  .img-content{
+    display:flex;
+    
+    
+  }
+
+  .one{order:2;
+      flex:2;}
+  .two{order:-1;
+      flex:2;}
+  .three{
+    flex:2;
+  }
+
+  .four{
+    flex:2;
+  }
+
+
+
+  .content-destination{
+    
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+
+  .content-pick{
+
+    display: flex;
+    
+    flex-wrap: wrap;
+
+    
+    
+  }
+
+  .destination{
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+  }
+
+  .six{
+    flex:2;
+    flex-basis: 100%; 
+    padding:2rem;
+    
+  }
+
+  .seven{
+    flex:2;
+    flex-basis: 100%;
+    padding:2rem;
+  }
+
+  .eight{
+    flex:2;
+    flex-basis: 100%;
+    padding:2rem; 
+  }
+
+  .btn{
+    flex-basis: 100%;
+  }
+
+
+
+
+  
   
 }
