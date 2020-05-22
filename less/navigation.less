@@ -1,1 +1,29 @@
 // Navigation Styles here
+header{
+	.displayFlex(space-evenly,center);
+		@media@mobile{
+			.displayFlex(space-between,center);
+			flex-direction:column;
+		}
+	h1{  
+		@media @mobile{
+		margin:15px;
+		}
+	}
+.main-nav
+{	border-bottom:@navigation-border;
+			ul{
+				.displayFlex(space-evenly,center);
+				flex-wrap:wrap;
+				@media @mobile{
+					.displayFlex(space-evenly,flex-end);
+				}
+				li{
+				margin-left:15px;
+				font-size:1.2rem;
+
+				}
+				
+			}
+	}
+}

@@ -1,1 +1,7 @@
-/* LESS needs to be processed */
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "global";
+@import "navigation";
+@import "footer";
+@import "home-page";
