@@ -1,27 +1,24 @@
 // Navigation Styles here
 
-.container-head header {
-  width: 68%;
-  height: 90px;
-  margin: 0px auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 40px;
- 
-
   .menu {
     text-decoration: none;
-    color: @font-color;
     font-size: 1.5rem;
     text-decoration: none;
     color: @font-color;
     font-size: 1.5rem;
     padding: 20px;
-  }
-}
+    }
 
-.btn button {
-  .button();
+    .menu a {
+
+      @media @mobile {
+      width: 100%;
+      align-self: center;
+    }
+  }
+  
+//header
+
+  .btn a {
+    .button (@white)
 }

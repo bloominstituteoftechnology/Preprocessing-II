@@ -1,7 +1,18 @@
 // Mixins in here
 
-.button {
-    background-color: @eastern-blue;
-    color: white;
+.button(@color) {
+    background: @button-bg;
+    color: @color;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 45px;
+    border-radius: 1.5rem;
+    align-items: center;
     font-size: 2rem;
+
+    @media @mobile {
+        width: 100%;
+        margin: 0px auto;
+      }
 }
