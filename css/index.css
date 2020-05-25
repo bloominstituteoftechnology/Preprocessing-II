@@ -175,9 +175,19 @@ img {
   padding: 20px;
 }
 @media (max-width: 500px) {
-  .menu a {
-    width: 100%;
-    align-self: center;
+  .main-header {
+    margin: 0px auto;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: padding: 0px 40px;
+    height: 30px;
+  }
+  nav a {
+    margin: 0px auto;
   }
 }
 .btn a {
@@ -208,7 +218,7 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.container-head header {
+.containers {
   width: 68%;
   box-sizing: border-box;
   display: flex;
@@ -219,9 +229,9 @@ img {
   padding: 30px 20px 30px 0px;
 }
 @media (max-width: 500px) {
-  .container-head header .main-header {
-    width: 100%;
-    margin: 10px 0px 20px 0px;
+  .containers {
+    display: flex;
+    flex-direction: column;
   }
 }
 .home {
@@ -244,6 +254,7 @@ img {
     align-items: center;
     padding-left: 10px;
     padding-top: 30px;
+    margin: 0px auto;
   }
 }
 .home .content-section .img-content {

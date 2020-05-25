@@ -1,5 +1,5 @@
 
-.container-head header {
+.containers {
   width: 68%;
   box-sizing: border-box;
   display: flex;
@@ -9,15 +9,25 @@
   margin: 0px auto;
   padding: 30px 20px 30px 0px;
 
-    .main-header {
-
-      @media @mobile {
-      width: 100%;
-      margin: 10px 0px 20px 0px;  
-      
+    @media @mobile {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+    
   }
- }
-}  
+//   .main-header {
+//     @media @mobile {
+//     display: flex;
+//     flex-direction: column;
+//   }
+//  }
+}
+// a {
+//   @media @mobile {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-evenly;
+//   }
 
 .home {
 
@@ -39,6 +49,7 @@
         align-items: center;
         padding-left: 10px;
         padding-top: 30px;
+        margin: 0px auto;
       }
     }
 
@@ -111,7 +122,6 @@
       }
     }
   }// home
-
 
 
 
