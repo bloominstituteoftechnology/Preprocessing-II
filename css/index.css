@@ -1,3 +1,25 @@
+.font-class {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.button-class {
+  background-color: teal;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 75%;
+}
+.btn {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: teal;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 75%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
