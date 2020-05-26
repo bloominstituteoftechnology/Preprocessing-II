@@ -183,11 +183,7 @@ img {
   nav {
     display: flex;
     justify-content: center;
-    margin: padding: 0px 40px;
     height: 30px;
-  }
-  nav a {
-    margin: 0px auto;
   }
 }
 .btn a {
@@ -195,6 +191,7 @@ img {
   color: #FFFFFF;
   display: flex;
   justify-content: center;
+  text-decoration: none;
   width: 200px;
   height: 45px;
   border-radius: 1.5rem;
@@ -254,6 +251,7 @@ img {
     align-items: center;
     padding-left: 10px;
     padding-top: 30px;
+    padding-bottom: 20px;
     margin: 0px auto;
   }
 }
