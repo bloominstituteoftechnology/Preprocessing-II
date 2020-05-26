@@ -1,3 +1,5 @@
+
+
 .home {
 
   header{
@@ -12,6 +14,10 @@
     .intro{
       padding: 2rem 0;
     }
+    @media @tablet{
+      flex-direction: column;
+      padding: 2rem;
+    }
   }
   
 
@@ -20,6 +26,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @tablet{
+      padding: 2rem;
+    }
 
    
     
@@ -67,10 +76,20 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @tablet{
+      flex-direction: column;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .button();
+      }
+      @media @tablet{
+        width: 90%;
+      }
     }
   }
 }// home

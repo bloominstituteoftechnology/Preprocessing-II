@@ -207,11 +207,22 @@ nav a:hover {
 .home header .intro {
   padding: 2rem 0;
 }
+@media (max-width: 500px) {
+  .home header {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    padding: 2rem;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -249,7 +260,28 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  padding: 1.5rem;
+  background-color: #17A2B8;
+  border: 1px solid lightgray;
+  border-radius: 1.75rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+  }
 }
