@@ -322,10 +322,17 @@ header .main-nav ul li {
 }
 .home .destination .btn {
   border-radius: 12px;
-  padding: 12px 28px;
   font-size: 16px;
   background-color: #008CBA;
   color: white;
+  padding: 12px 28px;
+}
+.home .destination .btn:hover {
+  transition: ease 3s;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 @media (max-width:500px) {
   .home .destination .btn {
