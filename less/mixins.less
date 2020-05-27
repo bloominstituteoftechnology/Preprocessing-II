@@ -1,1 +1,53 @@
 // Mixins in here
+
+.flexAlign(@justify,@align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+
+.centerColumn(){
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.buttonStyle(){
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow:inset 0px -3px 7px 0px #29bbff;
+    color: white;
+    background-color:#008080;
+    font-size: 2rem;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+    &:hover {
+        background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+        background-color:#0688fa;
+    }
+
+    .btn:active {
+        position:relative;
+        top:1px;
+    }
+}
+
+
+.column() {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
