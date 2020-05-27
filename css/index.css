@@ -327,6 +327,11 @@ header .main-nav ul li {
   color: white;
   padding: 12px 28px;
 }
+@media (max-width:500px) {
+  .home .destination .btn {
+    background-color: green;
+  }
+}
 .home .destination .btn:hover {
   transition: ease 3s;
   -moz-transform: rotate(360deg);
