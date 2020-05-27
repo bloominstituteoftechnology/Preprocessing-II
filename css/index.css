@@ -188,6 +188,22 @@ img {
     margin: 0 auto;
 }
 
+.Nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    font-size: large;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #000;
+}
+
+.Nav nav {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+}
+
 .footer {
     width: 100%;
     border-top: 2px dashed silver;
@@ -256,16 +272,4 @@ img {
 .home .content-pick .destination {
     width: 30%;
     margin-bottom: 30px;
-}
-
-.Nav {
-    display: flex;
-    width: 90%;
-    margin: auto;
-}
-
-.Nav nav {
-    color: black;
-    text-decoration: none;
-    display: flex;
 }
