@@ -245,6 +245,10 @@ img {
     display: flex;
     flex-direction: column;
   }
+  body .middleContainer {
+    display: flex;
+    justify-content: space-between;
+  }
   body .text-content {
     display: flex;
     flex-wrap: wrap;
@@ -253,6 +257,10 @@ img {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  body .container-Home .content-section {
+    padding: 20px;
+    margin: 10px;
   }
 }
 .home .content-section {
