@@ -1,1 +1,115 @@
 // Navigation Styles here
+
+@nodecor: none;
+.navdisplay{
+
+    display:flex;
+    
+}
+
+.anchors{
+    margin:1rem;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+
+}
+
+.nav-bar{
+
+    .navdisplay();
+    justify-content: flex-end;
+    
+}
+    .container  .nav-bar p{
+        width:80%;
+        margin-top: 3rem;
+        font-family: 'Indie Flower', cursive;
+        font-size: 3.2rem;
+        
+        
+    }
+
+    a{
+        .anchors();
+        text-decoration: @nodecor;
+        color:black
+    }
+
+//mobile
+
+@media @mobile {
+    .container {
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+        
+        
+      }
+        .navdisplay{
+
+            display:flex;
+            justify-content: center;
+            
+            width:100%;
+            
+            
+        }
+        
+        .anchors{
+            margin:1rem;
+            font-size: 1.6rem;
+            margin-top: 5rem;
+            padding-right:5.5rem;
+        
+        }
+        
+        .nav-bar{
+
+        
+            .navdisplay();
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            
+            
+            
+        }
+            .container  .nav-bar p{
+                
+                
+                font-family: 'Indie Flower', cursive;
+                font-size: 2.9rem;
+                
+                margin-left: 14rem;
+
+                
+                
+                
+                
+                
+                
+                
+                
+            }
+        
+            a{
+                .anchors();
+                text-decoration: @nodecor;
+                color:black;
+                
+                flex-direction: row;
+                margin:0;
+                
+                
+            }
+
+   
+
+
+            .break{
+                flex-basis: 100%;
+                height:0;
+            }
+}
+
+
