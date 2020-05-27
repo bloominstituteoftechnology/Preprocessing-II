@@ -1,1 +1,26 @@
 // Mixins in here
+//flex
+.displayFlex(@justify,@align){
+	display:flex;
+	justify-content:@justify;
+	align-items:@align;
+	}
+//button
+.button(@radius,@rotate){
+	border-radius:@radius;
+	font-size:16px;
+	background-color: #008CBA;
+	color:white;
+	padding: 12px 28px;
+	@media @mobile{
+		background-color:green;
+	}
+	&:hover{
+	transition:ease 3s;
+	-moz-transform:rotate(@rotate);
+	-webkit-transform:rotate(@rotate);
+	-o-transform:rotate(@rotate);
+	transform:rotate(@rotate);
+	
+	}
+}

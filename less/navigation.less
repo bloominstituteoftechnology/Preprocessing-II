@@ -1,1 +1,42 @@
 // Navigation Styles here
+
+header{
+	width:100%;
+	margin-top:15px;
+	border-bottom: 2px dashed @navigation-border;
+	.displayFlex(space-evenly,center);
+	padding-bottom:20px;
+		@media@mobile{
+			.displayFlex(space-between,stretch);
+			flex-direction:column;
+			padding-bottom:10px;
+		}
+	h1{  
+		margin-left:35px;
+		@media @mobile{
+		text-align:center;
+		margin:15px;
+		}
+	}
+.main-nav
+{	
+			ul{
+				.displayFlex(space-evenly,stretch);
+				flex-wrap:wrap;
+				@media @mobile{
+					width:100%;
+					.displayFlex(space-between,stretch);
+				}
+				li{
+				margin:20px;
+				font-size:1.5rem;
+				font-weight:bold;
+				@media @mobile{
+				margin:10px;
+				}
+
+				}
+			 
+			}
+	}
+}
