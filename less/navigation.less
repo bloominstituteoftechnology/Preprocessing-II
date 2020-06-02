@@ -1,1 +1,33 @@
 // Navigation Styles here
+
+nav {
+  width: 100%;
+  border-bottom: @botm-border;
+  height: auto;
+  padding: 20px 0 0;
+  margin:20px 0 0 0;
+  .nav-bar {
+    width: 85%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    .center(space-between, center);
+    section {
+      width: 50%;
+    }
+    .navigation {
+      .center(space-around, center);
+    }
+
+    @media @phone{
+      flex-direction: column;
+      section{
+        width:100%;
+      }
+      .heading{
+        text-align: center;
+        padding-bottom:10px ;
+      }
+    }
+  }
+}
