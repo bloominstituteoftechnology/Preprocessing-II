@@ -1,1 +1,54 @@
 // Navigation Styles here
+header {
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: 2px dashed @navigation-border;
+
+  @media @mobile {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .header-wrapper {
+    max-width: 800px;
+    .flex(@justify:space-between; @align:center);
+    margin: 0 auto;
+
+    @media @mobile {
+      .flex(@direction:column;@align:center);
+    }
+
+    
+
+    .logo {
+      font-family: 'Indie Flower', cursive;
+      font-size: 4rem;
+
+      .moveElement(@name:logo-appearance;@duration:4s;@length:120%);
+
+      @media @mobile {
+        font-size: 3rem;
+        padding-bottom: 15px;
+      }
+    }
+
+    nav {
+      .flex(@justify: flex-end);
+
+      @media @mobile {
+        .flex(@justify:space-evenly);
+        width: 100%;
+      }
+
+      a {
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: semi-bold;
+        color: @shark;
+        white-space: nowrap;
+      }
+    }    
+
+  }
+}
