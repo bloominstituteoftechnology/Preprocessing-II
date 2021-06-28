@@ -1,24 +1,60 @@
 .home {
 
+  @media @mobile {
+    .center;
+    padding: 0 3px;
+  }
+
+  header {
+    border-bottom: 2px dashed black;
+    padding-bottom: 11px;
+    .welcome {
+
+      img {
+        margin-bottom: 0;
+
+        &:hover {
+          .grayout();
+        }
+      }
+
+      h2 {
+        padding-top: 18px;
+      }
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding:0;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+          padding:0;
+        }
       }
     }
   }
@@ -26,6 +62,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+      margin-top: 0;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +83,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +98,77 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      width: 100%;
+      flex-direction: column;
+      padding: 28px 10% 0;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      .button(#008080);
     }
   }
 }// home
+
+.contact {
+  .flex;
+  .center;  
+  width: 100%;
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contactForm{
+    .center;
+    align-content: space-between;
+    width: 100%;
+    margin: 40px 0;
+    padding-bottom: 40px;
+    align-content: center;
+    border: 1px solid #008080;
+    
+    label {
+      font-size: 1.6rem;
+      width: 100%;
+    }
+
+    input {
+      padding: 5px 40px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    select {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    a {
+      .button(#008080);
+      font-size: 1.6rem;
+      padding: 13px 40px;
+
+      
+    }
+  }
+}

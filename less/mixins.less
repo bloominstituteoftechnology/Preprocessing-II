@@ -1,1 +1,57 @@
 // Mixins in here
+
+.center() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button(@bg-color) {
+    width: 83%;
+    text-align: center;
+    background-color: @bg-color;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    color: white;
+    margin: 1px;
+    padding: 13px 0;
+    text-decoration: none;
+
+    @media @mobile {
+        width: 100%;
+    }
+
+    &:hover {
+       background-color: white;
+       color: black;
+       border: 1px solid black;
+       padding: 12px 0;
+    }
+}
+
+.grayout() {
+    @keyframes grayout {
+        0% {
+           filter: grayscale(0%);
+        }
+        100% {
+           filter: grayscale(100%);
+        }
+    };
+    animation: grayout 2s both;
+}
+
+.resize() {
+        @keyframes resize {
+            100% {
+              font-size:2.8rem;
+            }
+        };
+        animation: resize 1s both;
+}
