@@ -6,16 +6,27 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Indie Flower', cursive;
 }
 
 h1 {
   font-size: 4rem;
+
+  @media @mobile {
+    font-size: 3rem;
+  }
 }
 
 h2 {
