@@ -1,1 +1,23 @@
 // Mixins in here
+
+// .btn(blue)
+.flex-baseline(@justify: center, @align: center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-btn(@size: 1.5rem, @color: blue){
+    border: 3px solid @color;
+    border-radius: 5px;
+    font-size: @size;
+
+    &:hover {
+       background: red;
+       color: @shark;  
+    }
+}
+
+// .btn(@color){
+//     border: 1px solid @color;
+// }
