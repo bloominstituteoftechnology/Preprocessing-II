@@ -1,31 +1,75 @@
 .home {
 
+  // Phone
+  @media @mobile {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  // Heading content
+  .content-header {
+    margin-top: 90px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed @navigation-border;
+
+      .text-content {
+        margin-top: 20px;
+      }
+  }
+
+  // Content section
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    // Phone
+    @media @mobile {
+      flex-direction: column;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      // Phone
+      @media @mobile {
+        width: 100%;
+        padding-right: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
-      img {
-        border-radius: 10px;
+      // Phone
+      @media @mobile {
+        width: 100%;
+        padding-left: 0;
       }
+
+      img {
+        .border-radius(10px);
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
+      
     }
   }
 
+  // Inverse content
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    // Phone
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -38,24 +82,50 @@
     }
   }
 
+  // Destination content
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
+    // Phone
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
-      border-radius: 10px;
+      .border-radius(10px);
     }
   }
 
+  // Pick content
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    // Phone
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      // Phone
+      @media @mobile {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-right: 4%;
+        margin-left: 4%;
+        width: 100%;
+      }
     }
+  }
+
+  // Buttons
+  .btn {
+    .button-creator(84%, 45px, 15px, @button-bg, @white);
   }
 }// home
