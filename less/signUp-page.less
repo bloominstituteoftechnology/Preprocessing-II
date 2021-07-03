@@ -1,0 +1,102 @@
+.contact {
+
+  header {
+    margin: 30px auto;
+
+    h1 {
+      @media @tablet-sm {
+        font-size: 3.2rem;
+      }
+
+      @media @mobile {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  form {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid @eastern-blue;
+    background-color: @sandy-beach;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+  }
+
+  .info-perso {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      .label();
+    }
+
+    input {
+      padding: 15px;
+      .field();
+
+      @media @tablet-sm {
+        padding: 10px;
+      }
+
+      @media @mobile {
+        padding: 15px;
+      }
+    }
+
+    @media @tablet-sm {
+      width: 45%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  .info-package {
+
+    display: flex;
+    flex-direction: column;
+
+    label {
+      .label();
+    }
+
+    select {
+      padding: 15px;
+      .field();
+
+      @media @tablet-sm {
+        padding: 10px;
+      }
+      @media @mobile {
+        padding: 15px;
+      }
+    }
+
+    textarea {
+      margin-top: 20px;
+      .field();
+    }
+    .btn {
+        .medButton();
+        margin-top: 10px;
+        width: 50%;
+        border: 2px solid @eastern-blue;
+
+        @media @mobile {
+          .lgButton();
+        }
+    }
+
+    @media @tablet-sm {
+      width: 50%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
+  }
+}

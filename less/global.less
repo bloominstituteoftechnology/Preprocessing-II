@@ -39,8 +39,24 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @tablet {
+    width: 93%;
+  }
+
+  @media @mobile {
+      // width: 93%;
+      margin: 0 5%;
+  }
+
+  
+
 }
