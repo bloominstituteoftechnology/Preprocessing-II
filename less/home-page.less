@@ -11,14 +11,25 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width:   auto;
+        margin:  0 auto;
+        
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      flex-direction: column;
+      
       img {
         border-radius: 10px;
+        @media @mobile {
+          
+          
+        }
       }
     }
   }
@@ -44,6 +55,13 @@
 
     img {
       border-radius: 10px;
+      @media @mobile {
+        display:         flex;
+        width:           50%;
+        justify-content: center;
+        align-items:     center;
+        margin:          0 10px 0;
+      }
     }
   }
 
@@ -52,10 +70,31 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
     .destination {
-      width: 30%;
+      width: 100%;
       margin-bottom: 30px;
     }
   }
+
+  .nav-top-text {
+    font-family: "Indie Flower, cursive";
+    justify-content: flex-start;
+    font-size: 30px;
+    margin: 0 -85px;
+    align-items: center;
+  }
+
+  .inverse-content {
+    display:   flex;
+    width:     100%;
+    flex-flow: row wrap;
+  }
+
+  .inverse-content .img-content {
+    display: flex;
+    width:   50%;
+  }
+ 
 }// home
