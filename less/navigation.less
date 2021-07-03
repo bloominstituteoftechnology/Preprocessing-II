@@ -1,1 +1,41 @@
-// Navigation Styles here
+
+
+nav{
+  max-width: 800px; 
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0%; 
+  border-bottom: @border; 
+  .flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  
+  .navbar{ 
+    a{
+      padding: 25px;
+      font-size: 1.7rem; 
+      text-decoration: none; 
+      color: black; 
+      
+      @media @mobile{
+        font-size: 1.6rem; 
+      }
+    }
+  }
+  .navLogo{ 
+    padding-top: 10px;
+
+    h2{
+        font-size: 4.0rem; 
+
+        @media @mobile{
+          font-size: 3.1rem; 
+          padding-bottom: 15px; 
+        }
+    }
+  }
+  @media @mobile{
+    flex-direction: column; 
+    padding: 10px 0%; 
+  }
+}

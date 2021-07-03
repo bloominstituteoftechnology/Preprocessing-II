@@ -1,1 +1,14 @@
-// Mixins in here
+.flex(){
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.button(@border: 1px solid white, @width: 80%, @padding: 13px, @background-color: teal){
+    border: @border; 
+    width: @width; 
+    padding: @padding; 
+    background-color: @background-color;
+    border-radius: 15px; 
+    font-size: 2rem; 
+    color: white;
+}
