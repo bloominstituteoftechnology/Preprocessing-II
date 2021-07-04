@@ -5,17 +5,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .mobile-width();
+        padding-right: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .mobile-width();
+      }
 
       img {
         border-radius: 10px;
@@ -26,15 +38,26 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      .mobile-flex();
+      .mobile-width();
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile{
+        .mobile-width();
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile {
+        .mobile-width();
+
+      }
     }
   }
 
@@ -42,8 +65,18 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      .mobile-width();
+    }
+
     img {
       border-radius: 10px;
+      @media @mobile {
+        .mobile-width();
+      }
+    }
+    h4 {
+      padding-top: 20px;
     }
   }
 
@@ -52,10 +85,109 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .mobile-width();
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+      }
     }
   }
 }// home
+
+.topimage{
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  border-top: 2px dashed @navigation-border;
+}
+
+.bus {
+  width: 100%;
+  margin: 0 auto;
+  @media @mobile {
+    .mobile-width();
+    max-height: 150px;
+  }
+}
+.flavortext {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 25px;
+  border-bottom: 2px dashed @navigation-border;
+  @media @mobile {
+    .mobile-width();
+  }
+}
+
+.content-pick .destination .btn {
+  .bottom-buttons();
+  @media @mobile {
+    .mobile-width();
+  }
+}
+
+.contactForm {
+  width: 58%;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: @button-bg;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: @navigation-border;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row {
+  padding: 5px 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
