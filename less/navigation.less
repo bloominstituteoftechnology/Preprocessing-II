@@ -1,1 +1,51 @@
 // Navigation Styles here
+// .head-1 {
+//     max-width: 1000px;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center
+// }
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px dashed gray;
+    padding: 20px 0 15px 0;
+    width: 100%;
+    @media @phone {
+        .centerAll();
+    }
+    @media @phone {
+        width: 99%;
+    }
+        // order: -1;
+        // @media @phone {
+        //     width: 95%; // padding: 0 3%;
+        // }
+    }
+    nav {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        padding: 10px 0;
+        font-size: 1.6rem;
+        color: black;
+        font-style: hide;
+        @media @phone {
+            justify-content: space-around;
+            width:90%;
+        a {
+            text-decoration: none;
+            &:hover {
+                color: white;
+                background: @eastern-blue;
+            }
+        }
+    }
+    h1{
+        align-self: center;
+    }
+}

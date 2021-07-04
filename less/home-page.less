@@ -1,61 +1,128 @@
 .home {
-
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+    .head-1 {
+        max-width: 860px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center
     }
+    .top-Section {
+        width: 100%; // border-top: 2px dashed gray; // border-bottom: 2px dashed
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media @phone {
+            .centerAll();
+            width: 98%;
+            padding: 0px 1% 0 2%;
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
+        }
+        .top-Div {
+            padding: 20px 0 20px 0;
+            border-bottom: 2px dashed gray;
+            .centerAll();
+            @media @phone {
+                width: 93%;
+                padding: 20px 1% 20px 6%;
+            }
+        }
     }
-  }
-
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+    .content-section {
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media @phone {
+            .centerAll();
+            justify-content: space-between
+        }
+        .text-content {
+            width: 48%;
+            padding-right: 1%;
+            @media @phone {
+                width: 85%;
+                padding: 0 3%;
+            }
+        }
+        .img-content {
+            width: 48%;
+            padding-left: 1%;
+            @media @phone {
+                width: 85%; // padding: 0 %;
+            }
+            img {
+                border-radius: 10px;
+            }
+        }
     }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+    .inverse-content {
+        padding-bottom: 30px;
+        border-bottom: 2px dashed @navigation-border;
+        @media @phone {
+            .centerAll();
+            justify-content: space-between
+        }
+        @media @phone {
+            width: 99%;
+        }
+        .text-content {
+            padding-left: 1%;
+            padding-right: 0;
+            order: -1;
+            @media @phone {
+                width: 95%; // padding: 0 3%;
+            }
+        }
+        .img-content {
+            padding-right: 1%;
+            padding-left: 0;
+            @media @phone {
+                width: 95%;
+                padding: 0 1% 0 2%;
+            }
+        }
     }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
-      border-radius: 10px;
+    .content-destination {
+        width: 75%;
+        margin: 0 auto 30px;
+        @media @phone {
+            width: 95%;
+            margin: 0 2%;
+        }
+        img {
+            border-radius: 10px;
+            @media @phone {
+                width: 97%;
+                padding-bottom: 15px;
+            }
+        }
     }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+    .content-pick {
+        padding-top: 30px;
+        border-top: 2px dashed @navigation-border;
+        display: flex;
+        justify-content: space-between;
+        @media @phone {
+            .centerAll();
+            justify-content: space-between
+        }
+        .destination {
+            width: 30%;
+            margin-bottom: 30px;
+            @media @phone {
+                // justify-content: space-between;
+                width: 90%;
+            }
+            .btn {
+                .custom-btn();
+                @media @phone {
+                    // justify-content: space-between;
+                    width: 90%;
+                    padding-bottom: 8px;
+                    padding-top: 8px;
+                    // height: ;
+                }
+            }
+        }
     }
-  }
-}// home
+} // home
