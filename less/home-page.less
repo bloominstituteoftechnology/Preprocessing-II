@@ -1,4 +1,12 @@
 .home {
+  header {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+    
+    .header-content {
+      padding: 10px;
+          }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -45,6 +53,7 @@
     img {
       border-radius: 10px;
     }
+
   }
 
   .content-pick {
@@ -56,6 +65,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .buttonMaker(@eastern-blue);
+      }
     }
   }
+
+  
 }// home
