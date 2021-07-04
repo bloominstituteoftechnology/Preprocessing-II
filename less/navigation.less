@@ -1,1 +1,47 @@
 // Navigation Styles here
+
+
+nav{
+    .border-bottom;
+    display: flex;
+    
+    .nav-desktop {
+        display: flex;
+        @media @phone {
+            display: inline;
+        }
+    }
+
+
+    .container {
+    h2 {
+        margin-right: auto; 
+        padding:25px 0;
+        
+        @media @phone {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+    }
+}
+}
+.main-nav {
+    padding:25px 0;
+    display: flex;
+    justify-content: flex-end;
+    @media @phone {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    
+    li a {
+        padding: 25px;
+        text-decoration: none;
+        color: @shark;
+        font-size: 1.4rem;
+        
+    }
+
+}
