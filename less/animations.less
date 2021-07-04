@@ -1,0 +1,39 @@
+// Site animations
+
+@keyframes popIn {
+
+	0% { transform: scale(0); }
+
+}
+
+@keyframes darkenButton {
+
+  0% {
+
+    background-color: @button-bg;
+
+  }
+
+  100% {
+
+    background-color: darken(@button-bg, 20%);
+
+  }
+
+}
+
+@keyframes undarkenButton {
+
+  0% {
+
+    background-color: darken(@button-bg, 20%);
+
+  }
+
+  100% {
+
+    background-color: @button-bg;
+
+  }
+
+}
