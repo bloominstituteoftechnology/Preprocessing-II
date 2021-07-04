@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+.navbar{
+    border-bottom: 2px dashed @silver;
+.navigation{
+    .layout(space-between, baseline);
+    .w-100();
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    @media @mobile{
+        width: 90%;
+        .layout(center, center);
+        flex-direction:column;
+    }  
+    nav{
+        .layout(space-between, center);
+        width: 45%;
+        @media @mobile {
+            .layout(space-around, center);
+            .w-100();
+            margin-top: 15px;
+        }
+    a{
+        text-decoration: none;
+        color: @shark;
+        font-size: 1.6rem;
+    }
+    }
+    }
+}
