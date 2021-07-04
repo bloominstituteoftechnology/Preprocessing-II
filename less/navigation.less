@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+.main-navigation {
+    .dashedbot();
+    .nav-container {
+        .flexstretch();
+        @media @mobile{
+            .flexcolumn()
+        }
+    h1{
+        padding: 2.3rem 0;
+        @media @mobile{
+            padding: 1.5rem 0;
+            font-size: 3.2rem;
+        }
+    }
+    nav {
+        .flexstretch();
+        justify-content: space-evenly;
+        width: 44%;
+        @media @mobile{
+            justify-content: space-between;
+            width: 85%;
+            padding-bottom: 8px;
+        }
+    }
+    a{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        .transition(.1s);
+        &:hover{
+            padding-bottom: 10px;
+        }
+    }
+  }
+}
