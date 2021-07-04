@@ -1,1 +1,29 @@
 // Navigation Styles here
+
+header {
+    .flex-jc-al(space-between, center);
+    width: 100%;
+    max-width: 800px;
+    height: 80px;
+    margin: 0 auto;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 50%;
+        .flex-jc-al(space-between, center);
+
+        @media @mobile {
+            width: 100%;
+            padding: 0 5%;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: black;
+    }
+}
