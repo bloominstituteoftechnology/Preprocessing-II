@@ -1,46 +1,100 @@
 .home {
 
+  max-width: 900px;
+
+  @media @mobile {
+    width: 90%;
+  }
+
+  .header {
+
+    .header-img {
+      padding-bottom: 3%;
+    }
+
+    .header-text {
+      border-bottom: 2px dashed @navigation-border;
+    }
+  }
+
   .content-section {
-    margin: 30px 0;
+    margin: 3% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding: 0; 
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
+
       }
     }
   }
 
   .inverse-content {
-    padding-bottom: 30px;
+    padding-bottom: 3%;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        padding: 0;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto 3%;
+
+    @media @mobile {
+      width: 100%;
+      margin: 0;
+      padding-bottom: 8%;
+    }
 
     img {
       border-radius: 10px;
@@ -48,14 +102,37 @@
   }
 
   .content-pick {
-    padding-top: 30px;
+    padding-top: 3%;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 3%;
+
+      @media @mobile {
+        width: 80%; 
+        padding: 3% 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .btn {
+        .btn();
+
+        @media @mobile {
+          padding-top: 4%;
+          height: 25%;
+        }
+      }
     }
   }
 }// home
