@@ -1,4 +1,17 @@
 .home {
+    color:@font-color;
+
+  .main-header{
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 10px;
+    h1{
+      padding-top:18px;
+      font-size: 3.2rem;
+    }
+    p{
+      padding-top: 12px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,8 +19,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,6 +67,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .button-template(83%, 18%, 17px, 1.85rem);
+        padding-bottom:13px;
+
+      }
     }
   }
 }// home
