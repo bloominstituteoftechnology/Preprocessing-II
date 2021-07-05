@@ -1,1 +1,37 @@
-// Navigation Styles here
+.nav-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  border-bottom: 2px dashed @navigation-border;
+}
+.nav {
+  width: 80%;
+  margin: auto;
+  font-size: 1.6rem;
+  display: flex;
+  padding: 2.4rem 0;
+  justify-content: flex-start;
+  align-items: center;
+  @media @mobile {
+    padding: 1.8rem 0 0.8rem;
+    text-align: center;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 60%;
+    @media @mobile {
+      font-size: 3rem;
+      width: 100%;
+    }
+  }
+  &__list {
+    justify-content: space-between;
+    width: 36%;
+    display: flex;
+    @media @mobile {
+      width: 96.5%;
+      justify-content: space-between;
+      padding: 1.6rem 0 0;
+    }
+  }
+}
