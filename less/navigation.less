@@ -1,1 +1,33 @@
-// Navigation Styles here
+
+
+nav {
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    
+
+    a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding-bottom: 20px;
+
+
+        &:hover {
+            text-shadow: 0 0 10px @bright;
+        }
+
+    }
+
+    @media @mobile {
+        text-align: center;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 0;
+       
+    }
+    
+}
+
+
