@@ -1,24 +1,60 @@
 .home {
 
+  padding-top: 42px;
+
+  width: 100%;
+  @media @mob500 {
+    padding-top: 92px;
+    width: 95.5%;
+    margin: 0 auto;
+  }
+
+  .content-header{
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+    border-bottom: 2px dashed @navigation-border;
+    @media @mob500 {}
+      padding: 4% 0;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    line-height: 1;
+    @media @mob500 {
+      width: 100%;
+      padding: 0;
+      flex-direction: column;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mob500 {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mob500 {
+    //    margin: 0;
+    //    padding: 0;
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
+        @media @mob500 {
+          width: 100%;
+        }
       }
     }
   }
@@ -30,17 +66,27 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mob500 {
+        order: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mob500 {
+        order: 1;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mob500 {
+      width: 100%;
+    }
+
 
     img {
       border-radius: 10px;
@@ -52,10 +98,58 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    line-height: 1.25;
+
+    @media @mob500 {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mob500 {
+        width: 84%;
+        margin: 5% auto;
+        &:last-child{
+          padding-bottom: 2%;
+      }
+      }
     }
   }
+
+  // This is here as reminder of params
+  // using parametric mixin for button
+  /*  width: @bwid;
+      font-size: @fsize;
+      padding: @bpad;
+      margin: @bmarg;
+      color: @col;
+      background: @bkgr;
+      .bround(@rnding); is NOT a parameter*/
+
+   .btn-container{
+     .flex-row();
+     height: 6rem;
+     display: flex;
+
+   }
+
+  .btn{
+    box-sizing: border-box;
+    text-decoration: none;
+    .paraButton(83%; 1.75rem; 1.25rem; 0rem; @white; @btn_color; bolder);
+    &:hover{
+      background: lightpink;
+      color: darkslateblue;
+      border: 2px solid steelblue;
+    }
+
+    @media @mob500 {
+      .paraButton(100%; 1.75rem; 1.25rem; 0rem; @white; @btn_color; bolder);
+
+
+    }
+  }
+
+
 }// home

@@ -1,1 +1,60 @@
 // Mixins in here
+
+// debug
+.b_db{
+  border: 1px solid dodgerblue;
+}
+
+.b_rb{
+  border: 1px solid rebeccapurple;
+}
+
+.b_dp{
+  border: 1px solid deeppink;
+}
+
+.b_fg{
+  border: 1px solid forestgreen;
+}
+
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+
+.bround(@arguments) {
+  border-radius: @arguments;
+}
+
+.paraButton(@bwid; @fsize; @bpad; @bmarg;  @col; @bkgr; @fw: normal){
+  width: @bwid;
+  font-size: @fsize;
+  padding: @bpad;
+  margin: @bmarg;
+  color: @col;
+  background: @bkgr;
+  font-weight: @fw;
+  .bround(1.5rem); // this mixin is NOT a param
+  text-align: center; // not a param
+}
+
+// animation mixin
+.hov(@col, @fsize) {
+  color: @col;
+  font-size: @fsize;
+
+}
+
