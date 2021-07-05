@@ -1,6 +1,11 @@
 .home {
 
+.header-content{
+  border-bottom:2px dashed silver;
+}
+
   .content-section {
+    
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -54,8 +59,47 @@
     justify-content: space-between;
 
     .destination {
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+    
       width: 30%;
       margin-bottom: 30px;
     }
   }
 }// home
+
+
+  .container-home{
+    @media @mobile{
+    display: flex; 
+    flex-direction: column;
+    }
+
+
+  }
+  .content-section{
+    @media @mobile{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+  }
+
+  .content-pick{
+    @media @mobile{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+  }
+
+  .btn {
+    border-radius: 10px;
+    width: 80%;
+    .btn-Mix(teal, white);
+    font-size: 1.6rem;
+    text-align: center;
+  }
