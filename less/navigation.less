@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+  .navHeader {
+    .center;
+    flex-direction:row;
+    border-bottom: @navigation-border;
+    @media @phone{ 
+        flex-direction: column;
+    }
+   
+    h1 {
+        text-align: left;
+    }
+    nav {
+        .navBar;
+        margin-left: 275px;
+        margin-right:0px;
+        @media @phone{ 
+            flex-direction: row;
+            margin-left: 0px;
+        }
+        a {
+            color:@shark;
+            text-decoration: none;
+            line-height: 1.5;
+            font-size: 1.6rem;
+            padding-bottom: 15px;
+            margin: 11px;  
+            margin-bottom: 12px;
+        }
+      
+
+}
+  }
