@@ -1,24 +1,33 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+    @media @mobile {
+      flex-direction: column;
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 90%;
+        margin: auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 90%;
+        margin: auto;
+      }
 
       img {
         border-radius: 10px;
+        margin: auto;
+        display: block;
       }
     }
   }
@@ -30,6 +39,11 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      h2 {
+        @media @mobile {
+          margin-top: 15px;
+        }
+      }
     }
 
     .img-content {
@@ -41,9 +55,16 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 90%;
+      margin: auto;
+    }
 
     img {
       border-radius: 10px;
+      @media @mobile {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -52,10 +73,70 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+        margin: 30px auto;
+      }
+      .btn {
+        .destination-btn(@button-bg, white);
+      }
     }
   }
-}// home
+  // top main header
+  .main-header {
+    border-bottom: 2px dashed grey;
+    @media @mobile {
+      width: 90%;
+      margin: auto;
+    }
+    img {
+      // border-top: 2px dashed grey;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+  }
+  // contact
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    margin: 30px auto;
+    @media @mobile {
+      width: 90%;
+    }
+    h3 {
+      font-size: 3rem;
+      // border: 1px solid black;
+      background: @button-bg;
+      color: white;
+      padding: 10px;
+    }
+    input,
+    select,
+    textarea {
+      border: 1px solid black;
+      margin: 10px;
+      padding: 10px;
+    }
+    #message {
+      margin-bottom: 10px;
+    }
+    #submit {
+      background: @button-bg;
+      color: white;
+      font-size: 2.7rem;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+}
