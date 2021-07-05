@@ -1,1 +1,42 @@
 // Mixins in here
+
+@blue-ivy: #3090C7;
+@mobile: ~"(max-width: 500px)";
+
+.button-maker(@width, @height, @bg-color, @color, @border-r) {
+    width: @width;
+    height: @height;
+    background: @bg-color;
+    color: @color;
+    border-radius: @border-r;
+    border: @bg-color;
+
+    &:hover {
+	background: @color;
+	color: @bg-color;
+	border: @bg-color;
+    }
+}
+
+
+.home {
+    .content-pick {
+	.destination {
+	    /* border: 1px solid red; */
+	    .btn {
+		width: 100%;
+		margin: auto;
+		.button-maker(230px, 45px, teal, white, 15px);
+		font-size: 2rem;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media @mobile {
+		    width: 100%;
+		    .button-maker(100%, 45px, @blue-ivy, white, 15px);
+		}
+	    }
+	}
+    }    
+}
