@@ -1,1 +1,48 @@
 // Navigation Styles here
+nav {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed gray;
+    p{
+        .indieTitle();
+        margin-left: 29%;
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+
+    .links  {
+        align-self: center;
+        font-family: "Roboto";
+        margin-right: 29%;
+        font-size: 2em;
+
+        a{
+            text-decoration: none;
+            margin-right: 20px;
+            color: black;
+        }
+
+        a:hover {
+            border-bottom: 1px solid black;
+        }
+    }
+    @media @mobile {
+        max-width: 500px;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        p {
+            padding-top: 0px;
+            margin-left: 35%
+        }
+
+        .links {
+            margin-right: 0px;
+            a {
+                margin-right: 40px;
+            }
+        }
+    }
+}
