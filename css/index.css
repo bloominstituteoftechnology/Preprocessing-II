@@ -1,1 +1,338 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media only screen and (max-width: 500px) {
+  .top-header {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+nav {
+  margin: 1.25rem;
+}
+nav a {
+  padding: 1.25rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .home {
+    padding: 5%;
+  }
+}
+.content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  .content-section {
+    display: inline-block;
+  }
+}
+.content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media only screen and (max-width: 500px) {
+  .content-section .text-content {
+    width: 100%;
+  }
+}
+.content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.content-section .img-content img {
+  border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .content-section .img-content {
+    width: 100%;
+  }
+}
+.inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+.content-destination img {
+  border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+  }
+}
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+  }
+}
+.content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .content-pick .destination {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+  }
+}
+.funbus-content-section {
+  border-bottom: 2px dashed;
+  padding-top: 3.125rem;
+}
+.btn {
+  border: 1px solid #17A2B8;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 200px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #17A2B8;
+  color: whitesmoke;
+}
+.btn:hover {
+  background: black;
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  .btn {
+    border: 1px solid #17A2B8;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 400px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #17A2B8;
+    color: whitesmoke;
+    width: 100%;
+  }
+  .btn:hover {
+    background: black;
+    cursor: pointer;
+  }
+}

@@ -1,61 +1,100 @@
 .home {
+  @media @phone {
+    padding: 5%;
+  }
+}
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
+.content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media @phone {
+    display: inline-block;
+  }
+  .text-content {
+    width: 48%;
+    padding-right: 1%;
+    @media @phone{
+      width: 100%;
     }
   }
-
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
+  .img-content {
+    width: 48%;
+    padding-left: 1%;
     img {
       border-radius: 10px;
     }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+    @media @phone{
+      width: 100%;
     }
   }
-}// home
+}
+.inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed @navigation-border;
+  .text-content {
+    padding-left: 1%;
+    padding-right: 0;
+  }
+  .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
+}
+.content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+  img {
+    border-radius: 10px;
+  }
+  @media @phone{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+
+
+    }
+}
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+  @media @phone {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    // border: 3px solid red;
+  }
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
+    @media @phone{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: center;
+      // border: 3px solid red;
+
+      }
+  }
+}
+
+// home
+.funbus-content-section {
+  border-bottom: 2px dashed;
+  padding-top: 3.125rem;
+}
+
+.btn {
+  .btn-maker();
+  @media @phone{
+    .btn-maker-big();
+      width: 100%;
+    }
+  }
