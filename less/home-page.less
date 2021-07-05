@@ -1,7 +1,8 @@
 .home {
 
   .content-section {
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,15 +39,25 @@
     }
   }
 
-  .content-destination {
-    width: 75%;
+  .content-destination.inset {
     margin: 0 auto 30px;
+    text-align: center;
 
     img {
       border-radius: 10px;
     }
   }
 
+.content-destination h2, .content-destination p {
+  text-align: left;
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-destination img {
+  width: 65%;
+}
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
@@ -59,3 +70,11 @@
     }
   }
 }// home
+
+header {
+  padding: 2.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
