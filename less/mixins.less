@@ -1,1 +1,33 @@
 // Mixins in here
+
+.button(@color, @font-s: 1.8rem, @text-color:white) {
+        background: @color;
+        border-radius: 10px;
+        font-size: @font-s;
+        color: @text-color;  
+        padding: 12px 0px 12px 51px;
+        margin: 1px 41px 0px 2px;  
+}
+
+.glow() {
+
+        // animation: move 4s 1;
+        // animation-timing-function:ease-out;
+
+        // @keyframes move {
+        // from {transform: translateX(-2500px);}
+        // 50% {transform: translateX(500px) rotate(6deg);}
+        // to {transform: translate(0) rotate(-4deg);}
+        // }
+
+        
+        animation : neon1 1.5s ease-in-out infinite alternate;
+        @keyframes neon1 {
+        from {
+          text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+        }
+        to {
+          text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 8px #fff, 0 0 14px #228DFF, 0 0 20px #228DFF, 0 0 25px #228DFF, 0 0 30px #228DFF, 0 0 55px #228DFF;
+        }
+      }
+}
