@@ -1,21 +1,80 @@
+.header-container {
+  border-bottom: 2px dashed #C0C0C0;
+  @media @mobile {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: @text-block-space;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    
+    @media @mobile {
+      flex-direction: column;
+      padding: 15px 0;
+      .mobile-width();
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      nav {
+        @media @mobile {
+          justify-content: space-between;
+          width: 100%;
+          a {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.banner-container {
+  border-bottom: @dash-border;
+  
+  .banner-container__text {
+    margin: @text-block-space;
+  }
+
+}
+
 .home {
 
   .content-section {
-    margin: 30px 0;
+    margin: @text-block-space;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +85,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +103,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +117,70 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      flex-direction: column;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+        margin: 0 auto 30px auto;
+      }
+      .btn {
+        .btn-primary();
+        @media @mobile {
+          width: 96%;
+        }
+      }
     }
   }
+
+  .content-pick {
+    border-bottom: @dash-border;
+
+  }
+  .contact-form {
+    padding: 30px 0;
+    font-size: 1.6rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    div {
+      margin: 10px 0;
+    }
+    label {
+      display: inline-block;
+      text-align: left;
+      padding-bottom: 5px;
+    }
+    input {
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 1.6rem;
+
+    }
+    textarea {
+      border: 1px solid black;
+      border-radius: 5px;
+      display: block;
+      width: 100%;
+    }
+    select {
+      border: 1px solid black;
+      border-radius: 5px;
+      appearance: menulist; 
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+    .package-desc {
+      display: inline-block;
+    }
+    button {
+      font-size: 1.6rem;
+    }
+  }
+
+  
 }// home
