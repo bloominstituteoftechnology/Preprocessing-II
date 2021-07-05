@@ -1,21 +1,44 @@
 .home {
 
+  .header-section {
+    margin: 0 0 30px;
+    border-bottom: 2px dashed @navigation-border;
+    
+    .img-header {
+      width: 100%;
+      height: auto;
+    }
+
+    .header-content {
+      width: 100%;
+      margin: 20px 0 10px;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-   
+    justify-content: space-between;   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -27,20 +50,38 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      display: flex;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        padding: 0;
+        order: 1;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+      margin: 15px 0 30px;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +94,39 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-wrap: wrap;
+      padding: 30px 45px 0;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      .btn {
+        .custom-button(@button-bg-index, white, 200px);
+        font-size: 1.8rem;
+        border-radius: 15px;
+        text-align: center;
+        padding: 13px;
+        .transition(background, 1s, ease);
+
+        &:hover {
+          background: @button-bg;
+        }
+
+        @media @mobile {
+          .custom-button(@button-bg, white, 100%);
+
+          &:hover {
+            background: @button-bg-index;
+          }
+        }
+      }
     }
   }
 }// home

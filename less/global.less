@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  .animation(fadeIn, 1s, ease);
 }
 
 html, body {
@@ -37,10 +38,27 @@ p {
 img {
   max-width: 100%;
   height: auto;
+
+  @media @mobile {
+    width: 100%;
+  }
 }
 
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    padding: 0 25px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
