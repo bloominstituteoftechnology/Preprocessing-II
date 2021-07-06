@@ -1,1 +1,43 @@
 // Navigation Styles here
+
+nav {
+    width: 40%;
+    font-size: 1.6rem;
+    border: .5px solid red;
+    display: flex;
+    
+   
+    
+    a {
+        text-decoration: none;
+        color: @shark;
+        margin-right: 9.5%;
+        
+       
+    }
+}
+
+// MOBILE VERSION
+
+@media @mobile {
+    nav {
+        width: 100%;
+        font-size: 1.6rem;
+        border: .5px solid red;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+        
+        
+       
+        
+        a {
+            text-decoration: none;
+            color: @shark;
+            margin: 0;
+            
+            
+           
+        }
+    }
+}
