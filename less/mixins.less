@@ -1,1 +1,61 @@
 // Mixins in here
+
+@customFont: 'Indie Flower', cursive;
+@customWidth_1: 100%;
+
+.linkDecor() {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.centerContent() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customBtn(@width, @bgColor, @color, @fontSize) {
+    width: @width;
+    padding: 4% 0;
+    background-color: @bgColor;
+    border-radius: 10px;
+    color: @color;
+    text-align: center;
+    font-size: @fontSize;
+    cursor: pointer;
+
+    &:hover {
+        .animBtn(@button-bg, darken(@button-bg, 20%), 0.5s);
+    }
+}
+
+.centerMobile() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.centerTablet() {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;    
+}
+
+.animBtn (@bgColorFrom, @bgColorTo, @durSec) {
+    @keyframes buttonAnim {
+        from {background-color: @bgColorFrom;}
+        to {background-color: @bgColorTo;}
+    }
+
+    animation-name: buttonAnim;
+    animation-duration: @durSec;
+    animation-fill-mode: forwards;
+
+}
+

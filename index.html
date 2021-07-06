@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
@@ -16,9 +16,35 @@
 
 <body>
 
+  <nav class="navi-bar">
+    <div class="navigation">
+      <div class="logo">
+          <a href="#">Fun Bus</a>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>  
+    </div>
+  </nav>
   
      
   <div class="container home">
+
+
+
+    <header>
+      <img src="img/fun-bus.jpg" alt="Fun Bus Image">
+      <div class="header-text-content">
+        <h2>Welcome to Fun Bus!</h2>
+        <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern.
+          Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition
+          theme travelblogger. Adventure fun traveler pretty design website expedition.
+        </p>
+      </div>
+    </header>
    
     <section class="content-section">
       <div class="text-content">
@@ -63,6 +89,35 @@
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
+    </section>
+
+    <section class="form-content">
+      <div class="form-title">Select Your Vacation</div>
+      <form action="#">
+        <div class="form-packages">
+          <label for="">Select Package</label>
+          <select name="Vacations" id="">
+            <option value="">Fun in the Sun</option>
+            <option value="">Mountain Excursion</option>
+            <option value="">Island Getaway</option>
+          </select>
+          <label for="">Special Instructions</label>
+          <input type="text" class="input-special">
+        </div>
+      </form>
+      <form action="#">
+        <div class="form-customerInfo">
+          <label for="">First Name</label>
+          <input type="text" class="input-content">
+          <label for="">Last Name</label>
+          <input type="text" class="input-content">
+          <label for="">Phone Number</label>
+          <input type="text" class="input-content">
+          <label for="">Email</label>
+          <input type="text" class="input-content">
+        </div>
+      </form>
+      <div class="submitBtn">Submit</div>
     </section>
   </div><!-- container -->
 
