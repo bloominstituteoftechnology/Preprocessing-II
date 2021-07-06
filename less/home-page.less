@@ -5,20 +5,46 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @phone {
+      width:90%;
+      flex-direction:column;
+      margin-left:5%;
+      margin-right:5%;
+  
+}
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+        width:98%;
+        justify-content: center;
+        align-items: center;
+        margin-left:5%;
+          margin-right:5%;
+          flex-wrap:wrap;
+}
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone {
+        width:98%;
+        margin-left:5%;
+        margin-right:5%;
+        padding:0;
+}
 
       img {
         border-radius: 10px;
+        @media @phone {
+          width:98%;
+          margin-left:5%;
+          margin-right:5%;
+  }
       }
     }
   }
@@ -26,6 +52,15 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone {
+      width:90%;
+      justify-content: center;
+      align-items: center;
+      margin-left:5%;
+        margin-right:5%;
+        flex-wrap:wrap;
+        flex-direction:column-reverse;
+}
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +76,15 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @phone {
+      width:90%;
+      justify-content: center;
+      align-items: center;
+      margin-left:5%;
+        margin-right:5%;
+        flex-wrap:wrap;
+        flex-direction:column-reverse;
+}
 
     img {
       border-radius: 10px;
@@ -53,9 +97,31 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      width:100%;
+      justify-content: flex-start;
+      align-items: left;
+      margin-left:5%;
+        margin-right:5%;
+        flex-wrap:wrap;
+        flex-direction:column-reverse;
+}
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        width:90%;
+      }
+    }
+    .btn{
+      .button(@button-bg, 200px, #fff );
+      @media @phone {
+        width:90%;
+        
+  }
     }
   }
+    
+
 }// home

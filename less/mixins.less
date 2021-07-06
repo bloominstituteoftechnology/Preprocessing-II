@@ -1,1 +1,29 @@
 // Mixins in here
+
+.flex(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+
+}
+
+@bg{
+    background-color:#5F9EA0
+
+}
+
+
+
+.button(@button-bg, @width:200px, @font-color:@shark){
+    display:block;
+    background-color: @button-bg;
+    margin: 10px 20px 10px 20px;
+    padding-top:10px;
+    cursor:pointer;
+    width: @width;
+    height:45px;
+    border-radius:15px;
+    color:@font-color;
+    font-size:2rem;
+    text-align:center;
+} 
