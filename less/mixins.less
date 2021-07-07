@@ -1,1 +1,30 @@
 // Mixins in here
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.img-responsive() {
+    max-width: 100%;
+    height: auto;
+}
+.custom-button(@bg: @button-bg; @color: @main-bg) {
+    border: 1px solid black;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;
+
+    transition: all .5s;
+    background: @bg;
+    color: @color;
+
+    
+    &:hover {
+      background: @color;
+      color: @bg;
+      transition-duration: .5s;
+    }
+  }

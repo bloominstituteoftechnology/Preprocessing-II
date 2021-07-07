@@ -1,22 +1,41 @@
 .home {
+  header {
+    border-top: @border;
+    max-width: @max-width;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    }
+  
+
+  .intro-section {
+    padding-bottom: 20px;
+    border-bottom: @border;
+  }
 
   .content-section {
     margin: 30px 0;
-    display: flex;
+    .flex(space-between, default);
     flex-wrap: wrap;
-    justify-content: space-between;
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      }
       img {
         border-radius: 10px;
       }
@@ -25,7 +44,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @border;
 
     .text-content {
       padding-left: 1%;
@@ -35,13 +54,19 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        order: 1;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+        width: 100%;
+      }
     img {
       border-radius: 10px;
     }
@@ -49,13 +74,30 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    border-top: @border;
+    .flex(space-between, default);
+
+    @media (max-width: 720px) {
+      .flex(center, default);
+      flex-wrap: wrap;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media (max-width: 720px) {
+        width: 90%;
+        margin: 15px auto;
+      }
+
+      .btn {
+        .custom-button(@button-bg, @main-bg);
+
+        @media (max-width: 720px) {
+          max-width: 100%;
+        }
+      }
     }
   }
 }// home
