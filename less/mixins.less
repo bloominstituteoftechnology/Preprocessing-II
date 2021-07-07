@@ -1,1 +1,18 @@
 // Mixins in here
+
+.center() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-btn(@color:white, @width:200px) {
+    color: @color;
+    background-color: @btn-color;
+    /* width: 200px; */
+    width: @width;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 20%;
+    font-size: 2rem;
+}
