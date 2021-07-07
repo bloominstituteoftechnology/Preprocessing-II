@@ -1,1 +1,59 @@
 // Navigation Styles here
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	width: 100%;
+	margin: auto;
+	border-bottom: 1px dashed @shark;
+
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		margin: auto;
+		align-items: center;
+		padding: 20px 0;
+		width: 100%;
+		max-width: 1050px;
+		@media @mobile {
+		max-width: 450px;
+		height: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 10px 0;
+		}
+	}
+
+	a {
+		display: inline-block;
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: @shark;
+		@media @mobile {
+			display: inline;
+			padding-top: 5px;
+			font-size: 1.7rem;
+
+
+		}
+	}
+
+	a:first-child {
+		display: block;
+		font-size: 4rem;
+		text-decoration: none;
+		font-family: @main-family;
+		margin-right: 350px;
+		@media @mobile {
+			width: 100%;
+				max-width: 500px;
+				text-align: center;
+					font-size: 3.5rem;
+				padding-bottom: 5px;
+				padding-top: 0px;
+		}
+	}
+
+}
