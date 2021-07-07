@@ -1,1 +1,25 @@
 // Navigation Styles here
+header{
+  .flexnavi();
+  @media @mobile{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.4rem;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    @media @mobile{
+      width: 100%;
+      margin-top: 1rem;
+    }
+    a{
+      text-decoration: none;
+      color: @font-color;
+    }
+  }
+}

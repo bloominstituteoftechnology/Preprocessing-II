@@ -1,21 +1,46 @@
 .home {
+  width: 80%;
+  @media @mobile{
+    width: 90%
+  }
 
+  .top-content{
+    border-bottom: 0.2rem dashed @navigation-border;
+    .text-content{
+      margin-top: 2rem;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile{
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      margin: 2.6rem 0;
+    }
 
-   
-    
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +51,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      display: flex;
+      flex-flow: column-reverse wrap;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +70,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile{
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +84,73 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      padding-left: 8%;
+      padding-right: 8%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 100%;
+      }
+      .btn{
+        .button();
+        }
+
+      }
     }
   }
-}// home
+
+//contacts page
+.home{
+  .contact{
+    border: 1px solid blue;
+    h2{
+      text-align: center;
+    }
+  }
+  .forms{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    border: 1px solid red;
+
+    .fill{
+      input{
+        font-size: 1.5rem;
+        border: 1px solid blue;
+      }
+    }
+  }
+
+    .check{
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2{
+        text-align: center;
+      }
+      input{
+
+      }
+    }
+
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      button{
+        .button();
+        margin: 1rem;
+      }
+    }
+
+}
