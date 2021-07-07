@@ -1,1 +1,26 @@
 // Mixins in here
+
+.center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border(){
+	border-bottom: 2px dashed @navigation-border;
+}
+
+.home-btn(@bg-color, @txt-color){
+	width:80%;
+    padding:0 10%;
+    height: 40px;
+    border-radius: 10px;
+    background: @bg-color;
+    text-align: center;
+    display:flex;
+    border: 1px solid lightgray;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: @txt-color;
+}
