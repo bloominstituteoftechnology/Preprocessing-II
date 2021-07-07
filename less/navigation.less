@@ -1,1 +1,46 @@
 // Navigation Styles here
+header {
+       border-bottom: 2px dashed @navigation-border;
+  
+       div{ 
+           display: flex;
+           justify-content: space-between;
+           width: 100%;
+           margin-top: 15px;
+           margin-bottom: 15px;
+           align-items: baseline;
+           @media @mobile {
+            flex-wrap: wrap;
+            width: 100%;
+                        }
+       }
+       div h1 {
+        @media @mobile {
+            margin: 0px 30% 15px 30%;
+            font-size: 3rem;
+            
+        }
+       }
+
+nav{
+    width: 50%;
+    @media @mobile {
+        width: 100%;
+        .center;
+    
+        }
+  }
+    nav a {
+        text-decoration: none;
+        color: @font-color;
+        font-size: 1.6rem;
+        margin: 0 5%;
+
+        &:hover {
+            color: @button-bg;
+        }
+    }
+
+
+
+}
