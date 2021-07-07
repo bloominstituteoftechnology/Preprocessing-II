@@ -1,1 +1,44 @@
 // Mixins in here
+
+.button-maker(@width, @height, @button-bg) {
+    max-width: @width;
+    height: @height;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    background: @button-bg;
+    border: 1px solid @button-bg;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover {
+      background: @white;
+      color: @button-bg;
+      border: 1px solid @button-bg;
+      cursor: pointer;
+    }
+}
+
+.mobile-wrap() {
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.keyframes(@name, @duration, @iterations) {
+  @keyframes color {
+    25% {color: black;}
+    50% {color: orange;}
+    100% {color: darkgoldenrod;}
+  }
+
+  animation-name: color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
