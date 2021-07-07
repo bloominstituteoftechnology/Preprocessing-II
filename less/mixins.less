@@ -1,1 +1,35 @@
 // Mixins in here
+
+@phone ~"( max-width: 400px)";
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+.button-creator(@width, @height, @bg-color, @font-color) {
+    .border-radius(5px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @silver;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: @font-color;
+      color: @bg-color;
+    }
+  }
+
+.sign-me-up-btn() {
+    .button-creator(150px, 30px, teal, white);
+}

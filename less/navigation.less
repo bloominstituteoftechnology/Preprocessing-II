@@ -1,1 +1,42 @@
 // Navigation Styles here
+
+
+
+.main-navigation {
+    border-bottom: dashed black 1px;
+    
+
+
+    .nav-container {
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding-bottom: 10px;
+        nav {
+            margin-top: 10px;
+            margin-right: 5%;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media @mobile {
+                width: 90%;
+                justify-content: space-between;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            a:hover {
+                cursor: pointer;
+                color: blue;
+            }
+        }
+    }
+}
