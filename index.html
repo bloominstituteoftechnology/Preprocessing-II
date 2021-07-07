@@ -15,11 +15,29 @@
 </head>
 
 <body>
-
-  
      
   <div class="container home">
-   
+
+    <nav class="nav">
+      <div class="nav-title">
+        <h1>Fun Bus</h1>
+      </div>
+      <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <header class="header">
+      <img class="bus-img" src="img/fun-bus.jpg" alt="Great Idea! Company logo.">
+      <div class="header-text">
+        <h2>Welcome to Fun Bus!</h2>
+        <p> Curabitur facilisis turpis eget tempor eleifend. Vestibulum sit amet vestibulum enim. Praesent sagittis sollicitudin est. Nulla rutrum magna ut mi molestie, vitae suscipit dolor bibendum. Nullam ut odio turpis. Mauris molestie nisi ut ipsum semper, id consequat est rhoncus.</p>
+      </div>
+    </header>
+
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -64,6 +82,36 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+
+        <label for="phone-number">Phone Number</label>
+        <input type="text" id="phone-number" name="phone-number" placeholder="Your contact number..">
+    
+        <label for="country">Vacation Package</label>
+        <select id="country" name="country">
+            <option value="england">Premium</option>
+            <option value="australia">Luxury</option>
+            <option value="canada">Super Luxury</option>
+            <option value="colombia">Wildly Excessive</option>
+        </select>
+    
+        <label for="subject">Special Instructions</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+        
+    </form>
+
   </div><!-- container -->
 
   <footer class="footer">
