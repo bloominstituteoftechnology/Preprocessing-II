@@ -1,1 +1,17 @@
 // Mixins in here
+.button-design(@radius: 10px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    border: 1px solid black;
+    text-align: center;
+    background-color: @eastern-blue;
+    color: @main-bg;
+    font-size: 2rem;
+    padding: 7px 0;
+    margin-right: 20px;
+}
+
+.btn {
+    .button-design();
+}
