@@ -1,1 +1,36 @@
 // Mixins in here
+
+.button(@padding, @width, @color, @font-size) {
+    padding: @padding;
+    width: @width;
+    text-align: center;
+    color: @color;
+    font-size: @font-size;
+    background-color: teal;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.flex-justify-align-dir(@j-content: center;  @a-items: flex-start; @flex-dir: row) {
+    display: flex;
+    justify-content: @j-content;
+    align-items: @a-items;
+    flex-direction: @flex-dir;
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	        animation: @arguments;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name {
+        @arguments(); 
+    }
+	@-webkit-keyframes @name {
+        @arguments(); 
+    }
+	@keyframes @name {
+        @arguments(); 
+    }
+}
