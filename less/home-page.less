@@ -1,23 +1,44 @@
 .home {
 
+  header {
+    padding-bottom: 10px;
+    border-bottom: 2px dashed @silver;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-   
+    .flex(@main-axis: space-between; @wrap: wrap; @cross-axis: flex-start);
+  
+    @media @mobile {
+      .flex(@dir: column; @main-axis: flex-start);
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-right: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding-left: 0;
+      }
+
       img {
+        width: 100%;
         border-radius: 10px;
       }
     }
@@ -27,20 +48,37 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      .flex(@dir: column-reverse; @main-axis: flex-start);
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding-left: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        padding-right: 0;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
 
     img {
       border-radius: 10px;
@@ -50,12 +88,27 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flex(@main-axis: space-between);
+
+    @media @mobile {
+      .flex(@dir: column; @main-axis: flex-start);
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+      }
+
+      .btn {
+        .button();
+
+        @media @mobile {
+          .button(@ht: 45px; @wd: 100%);
+        }
+      }
     }
   }
 }// home
