@@ -1,1 +1,52 @@
 // Navigation Styles here
+
+
+.container {
+    @media @max500 {
+        width: 90%;
+    }
+
+    nav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed @navigation-border;
+
+        @media @max500 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // background-color: red;
+        }
+
+        .title {
+            width: 49.5%;
+            display: flex;
+            justify-content: center;
+
+            @media @max500 {
+                width: 100%;
+            }
+        }
+
+        .nav-items {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @media @max500 {
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.6rem;
+
+                &:link, :hover, :visited, :active {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
