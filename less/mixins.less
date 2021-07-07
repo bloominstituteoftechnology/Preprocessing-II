@@ -1,1 +1,22 @@
 // Mixins in here
+
+
+
+
+.button-maker(@bgColor:#17a2bb, @width: 80%, @height: 45px, ) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:@height;
+    width:@width;
+    background-color: @bgColor;
+    color:white;
+    border-radius: 15px;
+    font-size:2rem;
+   
+    &:hover {
+      border: 1px solid @bgColor;
+      background-color: white;
+      color: @bgColor;
+    }
+ }
