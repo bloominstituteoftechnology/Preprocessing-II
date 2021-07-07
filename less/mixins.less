@@ -1,1 +1,18 @@
 // Mixins in here
+.custom-btn(@c:white){
+    height:45px;
+    width:200px;
+    border-radius:10px;
+    color:@c;
+    background-color: darken(@button-bg, 10%);
+    font-size:1.8rem;
+    .center();
+
+
+}
+
+.center(){
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
