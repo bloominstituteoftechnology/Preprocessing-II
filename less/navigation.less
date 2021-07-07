@@ -1,1 +1,81 @@
 // Navigation Styles here
+.navigation {
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: dashed 2px @navigation-border;
+
+
+    a {
+       text-decoration: none;
+       color: black;
+       margin-right: 25px;
+       font-size: 1.4rem;
+      
+    }
+
+    a:hover {
+        color: teal;
+        transition: 0.3s;
+    }
+
+    .nav {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px auto;
+        align-items: center;
+        animation-duration: 1.5s;
+        animation-name: slideinTop;
+
+        nav{
+            @media @minimobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                a{
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-top: dashed 2px @navigation-border;
+                    width: 150px;
+                    text-align: center;
+                }
+
+                a:last-child{
+                    padding-bottom: 0px;
+                }
+            }
+        }
+
+        @media @mobile {
+            flex-direction: column;
+            // justify-content: space-around;
+            animation: none;
+
+            a {
+                margin-left: 30px;
+            }
+
+            h1 {
+                margin-bottom: 25px;
+            }
+        }
+
+        @media @tablet {
+            flex-direction: column;
+            // justify-content: space-around;
+            animation: none;
+
+            a {
+                margin-left: 30px;
+            }
+
+            h1 {
+                margin-bottom: 25px;
+            }
+        }
+       
+    }
+}
