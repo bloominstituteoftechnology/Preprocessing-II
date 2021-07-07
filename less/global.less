@@ -8,6 +8,7 @@ html {
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  color: @font-color;
 }
 
 h1, h2, h3, h4, h5 {
@@ -16,6 +17,10 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+  @media @mobile {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+  }
 }
 
 h2 {
@@ -43,4 +48,12 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @mobile {
+    width: 95%;
+  }
+}
+nav {
+  a {
+    font-size: 1.6rem;
+  }
 }

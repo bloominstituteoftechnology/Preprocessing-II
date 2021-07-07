@@ -1,1 +1,28 @@
-// Navigation Styles here
+// Navigation Styl
+header {
+    border-bottom: 2px dashed silver;
+}
+.nav-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    
+    .justify-flex(space-between, center);
+    padding: 20px 0;
+    @media @mobile {
+        .justify-flex(center, space-around);
+        flex-direction: column;
+        padding: 20px 0 10px 0;
+    }
+    nav {
+        width: 50%;
+        .justify-flex(space-between);
+        @media @mobile {
+            width: 100%;
+            .justify-flex(space-around);
+        }
+        a {
+            .link-style;
+        }//a 
+    }//nav
+}//.nav-container
