@@ -1,1 +1,31 @@
-// Navigation Styles here
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0 4rem 0;
+  max-width: 800px;
+
+  @media @mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .nav__logo {
+    .spin(1);
+
+    @media @mobile {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .nav__menu {
+
+    .nav__menu--item {
+      text-decoration: none;
+      color: black;
+      font-size: 1.7rem;
+      margin: 0 1.5rem;
+    }
+  }
+}
