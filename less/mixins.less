@@ -1,1 +1,53 @@
 // Mixins in here
+
+.header-flex() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-up-button(@radius) {
+    background: teal;
+    color: white;
+    border-radius: @radius;
+    text-align: center;
+    width: 80%;
+    padding: 10px 0;
+    font-size: 1.5rem;
+
+    &:hover {
+        color: teal;
+        background: white;
+        border: 1px solid lightgray;
+    }
+}
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-sign-up(@radius, @bg-color) {
+    background: @bg-color;
+    color: white;
+    border-radius: @radius;
+    width: 100%;
+}
+
+.ninety() {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.keyframes(@name; @arguments) {
+    @keyframes @name { 
+        @arguments(); 
+    }
+}
+
+.animation(@arguments) {
+    animation: @arguments;
+}
