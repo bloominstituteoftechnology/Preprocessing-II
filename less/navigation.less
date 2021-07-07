@@ -1,1 +1,24 @@
 // Navigation Styles here
+
+.content-nav{
+    .flexMix(space-between, center);
+    margin: 20px auto;
+
+    @media @mobile {
+        .flexMix();
+        flex-direction: column;
+
+    }
+
+    a{
+        padding: 0px 20px;
+        color: @font-color;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+}
+
+.dashed-underline{
+    .underline(3px);
+}
