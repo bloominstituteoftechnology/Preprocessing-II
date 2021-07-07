@@ -30,7 +30,7 @@ h4 {
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 10px;
 }
 
@@ -40,7 +40,17 @@ img {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 880px;
   width: 100%;
   margin: 0 auto;
+  padding: 0.25%;
+  @media @mobile{
+    padding: 5%;
+  }
+}
+
+@media @mobile{
+  .home{
+    padding: 0 5%;
+  }
 }
