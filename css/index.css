@@ -1,1 +1,308 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.destination .btn {
+  background: #14615d;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 40px 40px 40px 40px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 150px;
+}
+.nav-flex-styling {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1.6rem;
+  font-family: 'Roboto';
+}
+.nav-flex-styling a {
+  text-decoration: none;
+}
+.nav-flex-styling a:link {
+  color: #212529;
+}
+.nav-flex-styling a:visited {
+  color: #212529;
+}
+.fun-bus-styling {
+  font-family: 'Indie Flower';
+  font-size: 3rem;
+}
+.fun-bus-cta {
+  border-bottom: 2px dashed gray;
+}
+.fun-bus-cta .fun-bus-phrase {
+  font-family: 'Indie Flower';
+  font-size: 3rem;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .content-section .text-content {
+  padding-right: 1%;
+}
+.home .content-section .img-content {
+  padding-left: 1%;
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+.img-content {
+  width: 100%;
+  max-width: 49%;
+}
+.header-container-styling {
+  color: #212529;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px dashed gray;
+}
+@media (Max-width: 500px) {
+  .header-container-styling {
+    flex-direction: column;
+  }
+  .header-container-styling .fun-bus-styling {
+    text-align: center;
+  }
+  .header-container-styling .nav-flex-styling {
+    margin-bottom: 15px;
+  }
+}
+.text-content {
+  width: 100%;
+  max-width: 48% ;
+}
+@media (Max-width: 500px) {
+  .top-content {
+    display: flex ;
+    flex-direction: column ;
+    width: 100%;
+  }
+  .text-content {
+    width: 100%;
+    max-width: 500px;
+  }
+  .img-content {
+    width: 100%;
+    max-width: 65% ;
+  }
+}
+/* Below lies code from prior attempts */

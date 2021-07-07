@@ -1,1 +1,18 @@
 // Mixins in here
+.nav-flex-mixin() {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.button-style(@background; @color; @border; ) {
+
+    background: @background ;
+    color: @color ;
+    border: @border ;
+}
+
+.flex-column-mixin(){
+    display: flex ;
+    flex-direction: column ;
+}

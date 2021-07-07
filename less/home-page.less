@@ -1,61 +1,173 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
     .text-content {
-      width: 48%;
       padding-right: 1%;
     }
-
     .img-content {
-      width: 48%;
       padding-left: 1%;
-
       img {
         border-radius: 10px;
       }
     }
   }
-
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
     }
   }
-
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
     img {
       border-radius: 10px;
     }
   }
-
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
   }
-}// home
+} // home
+
+.img-content {
+  width: @width ;
+  max-width: 49%;
+}
+.header-container-styling {
+ 
+  color: @font-color ;
+ 
+  width: @width ;
+ 
+  max-width: 800px;
+ 
+  display: flex;
+ 
+  flex-direction: row;
+ 
+  justify-content: space-between;
+ 
+  border-bottom: 2px dashed gray;
+ 
+  @media @mobile {
+ 
+    flex-direction: column;
+ 
+    .fun-bus-styling {
+ 
+      text-align: @center ;
+ 
+    }
+ 
+    .nav-flex-styling {
+ 
+      margin-bottom: 15px;
+ 
+    }
+ 
+  }
+}
+
+
+
+// .text-content {
+//   p {
+//     font-size: @font-size ;
+//   }
+//   h2 {
+//     font-size: 3.6rem;
+//   }
+//   width: 100% ;
+// }
+
+
+
+// * {
+//   border: 1px solid black !important;
+// }
+
+
+
+
+
+
+
+
+
+
+.text-content {
+  width: @width;
+  max-width: 48% ;
+}
+
+
+@media @mobile {
+  .top-content {
+   
+    .flex-column-mixin();
+    width: @width ;
+  }
+  .text-content {
+    width:  @width ;
+    max-width: 500px;
+  }
+
+  .img-content{
+    width: @width;
+    max-width: 65% ;
+
+  }
+}
+
+/* Below lies code from prior attempts */
+
+
+// @media @mobile {
+//   .top-content {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//   }
+// }
+
+// @media @mobile {
+//   .inverse-content {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column-reverse;
+//   }
+// }
+
+// .top-content .text-content {
+//   width: @width ;
+//   max-width: 500px;
+//   border: 2px solid blue !important;
+
+//   .img-content {
+
+//     .text-content ;
+//    p {
+//      background: blue !important;
+//    }
+//   }
+// }
+// .text-content {
+//   border: 2px solid blue !important ;
+// }
+
