@@ -1,61 +1,211 @@
 .home {
+    .content-section {
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .text-content {
+            width: 48%;
+            padding-right: 1%;
+            @media @tablet {
+                width: 100%;
+            }
+            @media @mobile {
+                margin-left: 5%;
+                width: 100%;
+            }
+        }
+        .img-content {
+            width: 48%;
+            padding-left: 1%;
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+            @media @tablet {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            @media @mobile {
+                margin-left: 4.5%;
+                width: 100%;
+            }
+            img {
+                border-radius: 10px;
+            }
+        }
     }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
+    .inverse-content {
+        padding-bottom: 30px;
+        border-bottom: 2px dashed @navigation-border;
+        .text-content {
+            padding-left: 1%;
+            padding-right: 0;
+            h2{
+                margin-top: 10%;
+            }
+            @media @mobile {
+                margin-left:5%;
+                width: 100%;
+            }
+        }
+        .img-content {
+            padding-right: 1%;
+            padding-left: 0;
+            @media @mobile {
+                margin-bottom: 
+                    width: 100%;
+            }
+        }
     }
-  }
+    .content-destination {
+        width: 75%;
+        margin: 0 auto 30px;
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+        @media @mobile {
+            margin-top: 10%;
+            width: 98%;
+        }
+        img {
+            border-radius: 10px;
+        }
     }
+    .content-pick {
+        padding-top: 30px;
+        border-top: 2px dashed @navigation-border;
+        display: flex;
+        justify-content: space-between;
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }  
+        .destination {
+            width: 30%;
+            margin-bottom: 30px;
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+            @media @mobile {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+        }
     }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
-  }
 }// home
+.container header  {
+    
+    @media @tablet{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        nav a {
+            width: 54%;
+        }
+    }
+       @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+           
+           nav a {
+               display: flex;
+               justify-content: space-between;
+               color:black;
+           }
+       }
+    }
+
+.mydiv {
+    @media @mobile {
+        margin: 3% 3% 3% 5%;
+    }
+}
+h4{
+    @media @mobile {
+        width: 100%;
+        margin-left: 5%;
+        color:#212529; 
+    }
+}
+/****************animation*************/
+body{
+        animation: anim 5s linear 2s infinite alternate;
+    }
+    
+   @keyframes anim {
+         0%   {background-color:#f0f0f5; }
+    25%  {background-color:#e0e0eb;}
+    50%  {background-color:#d0d0e1; }
+    75%  {background-color:#b1b1cd; }
+    100% {background-color:#63639c; }
+    }
+
+/***************Form styling*************/
+form {
+    margin-top: 30%;
+}
+
+form input[type="submit"] {
+    background-color: #17A2B8;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
