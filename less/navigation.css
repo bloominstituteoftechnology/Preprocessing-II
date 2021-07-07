@@ -1,0 +1,16 @@
+nav {
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  nav {
+    font-size: 2rem;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+}
+nav a {
+  margin: 20px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
