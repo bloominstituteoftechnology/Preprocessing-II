@@ -1,1 +1,74 @@
 // Mixins in here
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.border-radius(@radius: 10px) {
+    -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.border-color(@width: 1px, @style: solid, @color: black) {
+    border: @arguments;
+}
+.button-width-height(@width: 90%; @height: 3rem){
+    width: @width;
+    height: @height;
+}
+
+.button-text-align {
+    .center();
+}
+
+.button-font-size(@font-size: 1.5rem) {
+    font-size: @font-size;
+}
+
+.button-background-and-text-color (@backgroundColor: @DarkCyan; @textColor: @white){
+    background-color: @backgroundColor;
+    color: @textColor;
+}
+
+.text-decoration-and-color (@text-decoration: none; @color: @white){
+    text-decoration: @text-decoration;
+    color: @color;
+}
+
+.btn {
+    a {
+        .text-decoration-and-color();
+    }
+    .border-radius();
+    .border-color();
+    .button-width-height();
+    .button-background-and-text-color();
+    .button-text-align();
+    .button-font-size();
+    &:hover {
+        .bounce();
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px) }
+    60% {-webkit-transform: translateY(-20px);}
+} 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-20px);}
+} 
+
+
+.bounce {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
