@@ -1,1 +1,30 @@
 // Mixins in here
+
+.defaultBorderBottom() {
+  border-bottom: @navigation-border 2px dashed;
+}
+
+.containerMaker(@width) {
+  margin: 0 auto;
+  max-width: @width;
+  min-width: 300px;
+}
+
+.defaultButton() {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: @white;
+  background: @button-bg;
+  padding: 13px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.hoverLink(@bg,@font){
+    color:@font;
+    background:@bg;
+    transition: all 0.5s;
+}
