@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Fun Bus Travel Agency - Solution</title>
 
@@ -16,9 +17,25 @@
 
 <body>
 
-  
+  <header>
+    <div class="container">
+        <h1>Fun Bus</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+    </div>
+  </header>
      
   <div class="container home">
+
+    <section class="welcome">
+      <img src="img/fun-bus.jpg" alt="Fun Bus">
+      <h2>Welcome To Fun Bus!</h2>
+      <p>Traveling expedition moder, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
+    </section>
    
     <section class="content-section">
       <div class="text-content">
@@ -64,6 +81,29 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <section class="cta-form">
+        <h2>Book Now</h2>
+        <form>
+          <h3>Choose a Package</h3>
+          <select id="package-select">
+            <option value=""> -- Please choose an option -- </option>
+            <option value="fun-in-the-sun">Fun In The Sun</option>
+            <option value="mountain-excursion">Mountain Excursion</option>
+            <option value="island-getaway">Island Getaway</option>
+          </select>
+          <h3>Choose a Date</h3>
+          <input type="date" name="" id="">
+          <h3>Name</h3>
+          <input type="text" placeholder="Required*" required>
+          <h3>Email</h3>
+          <input type="email" placeholder="Required*" required>
+          <h3>Any special requests?</h3>
+          <textarea cols="30" rows="10"></textarea>
+          <button class="btn">Submit</button>
+        </form>
+      </section>
+
   </div><!-- container -->
 
   <footer class="footer">
