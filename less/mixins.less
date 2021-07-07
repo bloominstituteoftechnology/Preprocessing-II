@@ -1,1 +1,24 @@
 // Mixins in here
+.nav-link-creator() {
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+}
+.button-creator(@bgc: none;
+@wt: none;
+@ht: none;
+@br: none;
+@fc: black;
+) {
+	
+	justify-content: center;
+	height: @ht;
+	width: @wt;
+	border-radius: @br;
+	align-items: center;
+	font-size: 1.7rem;
+	background-color: @bgc;
+	color: @fc;
+	
+	
+}
