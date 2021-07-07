@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 2px dashed @silver;
+
+    @media @mobile {
+        padding-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        padding-top: 15px;
+
+        a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.6rem;
+            color: @shark;
+
+            &:hover {
+                color: @eastern-blue;
+            }
+        }
+
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
+    @media @mobile {
+        flex-direction: column;
+    }
+}
