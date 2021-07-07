@@ -1,1 +1,43 @@
 // Mixins in here
+.center{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.aTagStyling(){
+    .custom-font-styling;
+    padding:5px;
+    font-weight:bold;
+    color:black;
+    text-decoration:none;
+    &:hover{
+        text-decoration:underline;
+        background:teal;
+    }
+}
+.custom-font-styling(){
+    font-size:1.6rem;
+}
+.border-radius(){
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.content-border(){
+    padding-bottom:3%;
+    border-bottom:2px dashed @navigation-border;
+}
+.button-styling(@bg-color){
+    .custom-font-styling();
+    .center;
+    height:40px;
+    .border-radius;
+    background-color:@bg-color;
+    color:@white;
+    cursor: pointer;
+    &:hover{
+        background:@white;
+        color:teal;
+        border:2px solid @silver;
+    }
+}
