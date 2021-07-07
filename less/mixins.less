@@ -1,1 +1,20 @@
 // Mixins in here
+
+.btn(@width){
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 13px;
+    width: @width;
+    border-radius: 15px;
+    background-color: @button-bg;
+    color: white;
+}
+.display(@j-content, @a-items) {
+    display: flex;
+    justify-content: @j-content;
+    align-items: @a-items;
+}
+
+.border() {
+    border-bottom: dashed 2px silver;
+}

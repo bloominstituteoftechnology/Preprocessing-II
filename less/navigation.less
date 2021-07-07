@@ -1,1 +1,27 @@
 // Navigation Styles here
+
+.header {
+    .display(space-between, center);
+    margin: 24px 0;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    h1{
+        @media @mobile {
+            margin-bottom: 15px;
+        } 
+    }
+    nav{
+        .display(space-around, center);
+        // border: 1px red solid;
+        font-size: 1.6rem;
+        width: 340px;
+
+        a {
+            text-decoration: none;
+            color: @font-color;
+        }
+    }
+}
