@@ -1,1 +1,40 @@
 // Navigation Styles here
+.navSection{
+  width:100%;
+  border-bottom:1px dashed gray;
+  .navDiv{
+  @media(@mobile){
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1{
+    width:40%;
+  }
+  nav{
+  @media(@mobile){
+    width:100%;
+  }
+  display:flex;
+  justify-content: space-around;
+  width:40%;
+  margin-right:1%;
+  padding:30px 0;
+
+
+  a{
+    text-decoration: none;
+    font-size:1.6rem;
+    color:black;
+    margin: 5px;
+  }
+}}
+
+
+  }
