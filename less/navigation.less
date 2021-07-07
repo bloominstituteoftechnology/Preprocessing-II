@@ -1,1 +1,57 @@
 // Navigation Styles here
+
+
+// Variable Syntax 
+
+@titlefont: 'Indie Flower', cursive;
+@contentfont: 'Roboto', sans-serif;
+@fontsize: 1.6rem;
+@lightergray: #4d4d4d;
+
+// Mixins
+.bottom-class() {
+    border-bottom: 2px dashed #b3b3b3;
+  }
+
+// All the lovely elements
+
+body {
+    a {
+        text-decoration: none; 
+    }
+}
+
+nav {
+    .bottom-class();
+    width: 100%;
+    padding: 6rem;
+  
+    
+    h1 {
+        margin-left: 74px;
+        float: left;
+        display: inline-block;
+
+        @media @mobile {
+         
+            padding: 2px;
+          }
+        }
+    
+    a {
+        font-family: @contentfont;
+        color: @lightergray;
+        font-size: @fontsize;
+        padding: 1rem;
+     
+    }
+
+
+    .navi {
+        float: right; 
+        display: inline-block;
+    }
+   
+
+}
+
