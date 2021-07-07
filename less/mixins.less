@@ -1,1 +1,30 @@
 // Mixins in here
+
+.makebutton(@width, @height, @background, @border-radius){
+    width: @width;
+    height: @height;
+    background-color: @background;
+    border-radius:@border-radius;
+}
+        .btn {
+            .makebutton(100%, 45px, #17A2B8, 15px);
+            border: 1px solid silver;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 1.8rem;
+            cursor: pointer;
+
+            @media @phone{
+                width: 100%;
+            }
+
+            
+            &:hover {
+                background: #FFFFFF;
+                color: #17A2B8;
+
+            }
+        }
+    
