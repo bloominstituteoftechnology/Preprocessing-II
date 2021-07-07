@@ -1,1 +1,23 @@
 // Mixins in here
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexbox-col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: @button-bg;
+    color: @white;
+    width: 90%;
+    border-radius: 15px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 2em;
+}
