@@ -1,1 +1,54 @@
 // Navigation Styles here
+.header-top {
+  .dashedBorder();
+
+  height: 75px;
+  width: 125%;
+  margin: 0 auto;
+  margin-left: -13%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media @mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title {
+      margin: 0 12% 15px 0;
+      @media @mobile {
+        margin: 0;
+        width:40%;
+        text-align: center;
+
+        h1 {
+          font-size: 3.2rem;
+          padding: 0 0 7px 10.5%;
+        }
+      }
+
+
+  }
+
+  nav {
+    width: 29%;
+
+    margin: 0 0 15px 3%;
+
+    .space-between();
+
+    @media @mobile {
+      width: 63%;
+      padding-top: 9px;
+    }
+
+    a{
+      color: @font-color;
+      font-size: 1.6rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
