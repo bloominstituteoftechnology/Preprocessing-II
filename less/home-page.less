@@ -5,20 +5,42 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 6%;
+    @media @mobile {
+      margin: 0 5%;
+      padding-top: 8%;
+      
+    }
+    
+
+    
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: @mobile-width;
+        padding-bottom: 3%;
+        
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: @mobile-width;
+      }
 
       img {
         border-radius: 10px;
+        margin-top: -3%;
+        @media @mobile {
+          margin-right: -3%;
+          width: @mobile-width;
+        }
       }
     }
   }
@@ -26,6 +48,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +66,11 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: @mobile-width;
+      margin: 5%;
+      padding-right: 10%;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +82,71 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 5%;
+      padding-right: 10%;
+
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: @mobile-dest-width;
+        margin-left: 13%;
+      }
+      
+      button {
+        padding: 6% 20%;
+        border-radius: 14px;
+        background: #008080;
+        color: @white;
+        font-size: 1.8rem;
+        @media @mobile {
+          padding: 4% 20%;
+          font-size: 1.6rem;
+          width: 100%;
+          background: @eastern-blue;
+          
+        }
+      }
     }
   }
 }// home
+
+header { 
+  border-top: 2px dashed silver;
+  width: 125%;
+  margin-left: -12.5%;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  margin-bottom: -2%;
+  @media @mobile {
+    padding-left: @mobile-padding;
+    padding-right: @mobile-padding;
+  }
+  
+
+
+  img {
+    margin-bottom: 2%;
+    @media @mobile {
+      margin-bottom: 4%;
+    }
+  }
+
+  h1 {
+    margin-top: 2%;
+  }
+  p {
+    padding-bottom: 3%;
+    border-bottom: 2px dashed silver;
+    @media @mobile {
+      padding-bottom: 5%;
+    }
+  }
+}
+
