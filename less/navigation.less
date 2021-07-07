@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+.container {
+  .header {
+    .custom-layout(space-between, center);
+    margin-top: 20px;
+    padding: 20px 0;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @tablet {
+      width: 90%;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .navigation {
+      .custom-layout(space-between, center);
+      width: 50%;
+      @media @tablet {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+      a {
+        font-size: 1.6rem;
+        color: @font-color;
+        text-decoration: none;
+      }
+    } // navigation
+  }
+
+  .border {
+    border: 1px dashed @navigation-border;
+  }
+}
