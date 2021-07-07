@@ -1,1 +1,34 @@
 // Mixins in here
+//mixins
+
+
+.make-container() {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.make-phone() {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.making-button(@bgc, @textcolor,@radius){
+    max-width: 200px;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: @bgc;
+    color: @textcolor;
+    border-radius: @radius;
+    &:hover {
+        background: @textcolor;
+        border: 1px solid @bgc;
+        color: @bgc;
+        animation-name: jump;
+        animation-duration: 1s;
+    }
+}
