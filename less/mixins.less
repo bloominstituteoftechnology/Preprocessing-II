@@ -1,1 +1,49 @@
 // Mixins in here
+
+.button (@b-radius:4px, @paddin:5%, @clr:white, @b-clr:#018080, @wdth:80%){
+
+border-radius: @b-radius;
+padding: @paddin;
+color: @clr;
+background: @b-clr;
+width: @wdth;
+}
+
+  .content-pick{
+      .destination {
+          .btn {
+              .button;
+              font-size:1.8rem;
+              text-align: center;
+              @media @mobile {
+               background-color: #18A2B8;
+               border-radius: 10px;
+               padding: 4% 0;
+
+            }
+          }
+      }
+  }
+
+  .first-mixins(){
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .second-mixins(){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .third-mixins(){
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fourth-mixins(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
