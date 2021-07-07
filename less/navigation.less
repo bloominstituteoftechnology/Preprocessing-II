@@ -1,1 +1,54 @@
 // Navigation Styles here
+
+
+.navigation{
+    width: @100percent-width;
+    .flexing-boxes(row, wrap, center, center);
+    .borderBtm-styling(@border-size, @border-type, @border-color);
+
+    div{
+        width: @100percent-width;
+        max-width: @max-width;
+        margin: 20px auto;
+        .flexing-boxes(row, nowrap, space-evenly, center);
+
+        h2{
+            width: 80%;
+            padding: 20px 0;
+            .fonts(4rem, @shark);
+        }
+    
+        a{
+            width: 20%;
+            margin: 10px 2%;
+            padding: 20px 0;
+            text-decoration: none;
+            text-align: center;
+            .fonts(1.6rem, @shark);
+
+            &:hover{
+                .fonts(1.6rem, @eastern-blue);
+            }
+        }    
+    }
+
+    @media @mobile500{
+        font-size: 5rem;
+        div{
+            width: 95%;
+            margin: 15px auto 0px 0;
+            .flexing-boxes(row, wrap, space-evenly, center);
+
+            h2{
+                width: @100percent-width;
+                text-align: center;
+                padding: 0px 0;
+            }
+
+            a{
+                margin: 0 auto;
+                padding: 10px 0;
+            }
+        }
+    }
+}

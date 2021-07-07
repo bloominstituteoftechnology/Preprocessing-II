@@ -1,1 +1,53 @@
 // Mixins in here
+
+
+.flexing-boxes(@flx-direction: row, @flx-wrap: nowrap, @flx-justify, @flx-align-content: center){
+    display: flex ;
+    flex-flow: @flx-direction @flx-wrap;
+    justify-content:@flx-justify;
+    align-content: @flx-align-content;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.borderBtm-styling(@brdr-size, @brdr-type, @brdr-color){
+    border-bottom: @brdr-size @brdr-type @brdr-color;
+}
+
+.borderTop-styling(@brdr-size, @brdr-type, @brdr-color){
+    border-top: @brdr-size @brdr-type @brdr-color;
+}
+
+.fonts(@font-size, @font-color: @shark){
+    font-size: @font-size;
+    color: @font-color;
+}
+
+.custom-button(@bgcolor, @txtcolor, @btn-width: @100percent-width, @vertical-padding: 0,  @border-radius: 5px){
+    width: @btn-width;
+    background-color: @bgcolor;
+    padding: @vertical-padding 0;
+    .border-radius(@border-radius);
+    .fonts(@btn-font-size, @txtcolor);
+    text-align: center;
+}
+
+
+.img-animate(@value, @translate-X, @shadow-color){
+    -webkit-transform: scale(@value);
+        -ms-transform: scale(@value);
+        transform: scale(@value);
+
+        box-shadow:
+                0px 10px 30px @shadow-color;
+        -webkit-transform: translateX(@translate-X);
+        transform: translateX(@translate-X);
+
+}
