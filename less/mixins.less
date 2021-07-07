@@ -1,1 +1,18 @@
 // Mixins in here
+
+.button-maker(@bgColor: #367E7F, @width: 200px, @height: 40px, @mt: 10px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: @width;
+    height: @height;
+    background-color: @bgColor;
+    color: white;
+    margin-top: @mt;
+    border-radius: 10px;
+}
+
+.btn {
+    .button-maker()
+}
