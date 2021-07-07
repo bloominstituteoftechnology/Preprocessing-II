@@ -1,1 +1,31 @@
 // Navigation Styles here
+.nav-container{
+    .flex();
+    .dashed-border-bottom();
+    position: fixed;
+    width: @width-100percent;
+}
+.main-header{
+    .flex(space-between, center);
+    .padding-20px();
+    background-color: @white;
+    width: @width-100percent;
+    max-width: 800px;
+    nav a{
+        text-decoration: none;
+        color:@shark;
+        margin: 0 15px;
+        font-size: 1.6rem;
+    }
+}
+
+@media @mobile-max-500px{
+    .main-header{
+        flex-direction: column;
+        padding-bottom: 10px;
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+        }
+    }
+}
