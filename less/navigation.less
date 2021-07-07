@@ -1,1 +1,51 @@
-// Navigation Styles here
+.top-bar{
+    display: flex;
+    border-bottom: 1px dashed grey;
+    max-width: 880px;
+    width: 90%;
+    margin: 0 auto;
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    }
+
+   
+.fun-bus{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3.5rem;
+    width: 200px;
+    padding-top: 15px;
+    margin-left: 25px;
+    @media @mobile{
+        text-align:center;
+        margin: 0 auto;
+    }
+   
+}
+
+.nav-list{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    margin-left: 13%;
+    @media @mobile{
+        justify-content: flex-end;
+        padding-right:5%;
+        margin-left: 0%;
+    }
+    
+    a{
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 45px;
+    text-decoration:none;
+    color:black;
+    &:hover {
+        color: orange;
+    }
+    }
+    }
