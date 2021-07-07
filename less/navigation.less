@@ -1,1 +1,61 @@
 // Navigation Styles here
+.main-navigation {
+    border-bottom: 2px dashed @navigation-border;
+
+    .logo-heading {
+
+        @media @tablet {
+            margin: 10px 43% 20px 43%;
+            font-size: 3rem;
+        }
+
+        @media @phone {
+            margin: 0px 36% 15px 36%;
+            font-size: 3rem;
+        }
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+         
+        @media @phone {
+            flex-wrap: wrap;
+            width: 100%;
+            }
+
+        @media @tablet {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .nav {
+            width: 50%;
+            flex-wrap: nowrap;
+
+            @media @phone {
+                width: 100%;
+                .center;
+                }
+
+            @media @tablet {
+                width: 100%;
+                .center;
+            }
+
+            .nav-link {
+                text-decoration: none;
+                color: @font-color;
+                font-size: 1.6rem;
+                margin: 0 6%;
+
+                &:hover {
+                    color: @button-bg;
+                }
+            }
+        }//.nav
+    }//nav-container
+}//.main-navigation
