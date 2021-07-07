@@ -1,1 +1,16 @@
 // Mixins in here
+.flex(@JC, @AI) {
+    display: flex;
+    justify-content: @JC;
+    align-items: @AI;
+
+}
+
+.buttonMixin(@buttonColor, @textColor, @borderColor) {
+  background-color: @buttonColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: @textColor;
+  border: 1px solid @borderColor;
+}

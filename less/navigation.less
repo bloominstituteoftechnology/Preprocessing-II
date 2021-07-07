@@ -1,1 +1,40 @@
 // Navigation Styles here
+.navBar {
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    .flex(space-between, center);
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    h1 {
+        margin-left: 24%;
+        @media @phone {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    .hyperLinks {
+        width: 25%;
+        margin-right: 24%;
+        font-size: 1.6rem;
+        .flex(space-around, center);
+        @media @phone {
+            width: 90%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        }
+
+}
