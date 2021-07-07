@@ -2,7 +2,7 @@
 
 Fun Bus is a travel agency looking for some help on their website.  They want a new navigation, new header, and new buttons on the home page. They also want a mobile version of their site styled.  Use your preprocessing knowledge to accomplish their tasks.
 
-## Task 1: Set Up The Project With Git
+## Task 1: Set Up The Project With Git 
 
 - [ ] Create a forked copy of this project.
 - [ ] Add your team lead as collaborator on Github.
@@ -53,6 +53,6 @@ Follow these steps for completing your project.
 * [ ] Create an animation mixin using parametric mixins
 * [ ] Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions. 
 * [ ] Style the site to look good at all sizes, not just desktop and phone
-
+ 
 
 
