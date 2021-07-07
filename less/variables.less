@@ -12,3 +12,25 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+//Responsive (Escaping)
+@mobile: ~"(max-width: 500px)";
+
+@media @mobile {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    .anchor {
+       margin-left: 12%;
+    }
+}
