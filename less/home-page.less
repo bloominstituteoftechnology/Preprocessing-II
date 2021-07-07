@@ -1,10 +1,18 @@
 .home {
 
+  max-width: 1024px;
+	width: 90%;
+	border: 1px solid red;
+	margin: 0 auto;
+	padding: 0 5%;
+
+  .cta-section{
+    border-bottom: 1px dashed @navigation-border;
+  }
+
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .flex-space-between();
 
    
     
@@ -21,6 +29,15 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      flex-wrap: wrap;
+
+      .text-content {
+        width: 96%;
+        padding-right: 1%;
+      }
+    }
   }
 
   .inverse-content {
@@ -30,11 +47,17 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        order: 1;
+      }
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
     }
   }
 
@@ -56,6 +79,14 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+
+        hover{
+          background-color: @button-hover-bg;
+        }
+        .button-builder(@button-width, @button-height, @font-color, @button-bg);
+      }
     }
   }
 }// home
