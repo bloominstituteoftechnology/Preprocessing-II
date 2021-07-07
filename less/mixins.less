@@ -1,1 +1,19 @@
 // Mixins in here
+
+.border-radius(@radius: 5px) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+  .btn {
+    .border-radius();
+    background-color: #008080;
+    height: auto;
+    padding: 1rem;
+    font-size: x-large;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
