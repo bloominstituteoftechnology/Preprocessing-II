@@ -1,1 +1,56 @@
 // Navigation Styles here
+.container.nav {
+  max-width: 100%;
+  padding: 0;
+  .border-style();
+
+  @media @phone {
+    max-width: 500px;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-header {
+    width: 800px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+    @media @phone {
+      display:flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin: 20px 0;
+    }
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 42%;
+    @media @phone {
+      width: 100%;
+      display: flex;
+      padding-top: 10px;
+    }
+    a {
+      font-size: 1.6rem;
+      color: @shark;
+      text-decoration: none;
+      
+      &:hover {
+        color: @eastern-blue;
+        text-decoration: underline;
+      }
+
+
+    }
+  }
+}

@@ -20,12 +20,12 @@ h1 {
 
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
+  .headerfont-stuff();
 }
 
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
+  .headerfont-stuff();
 }
 
 p {
@@ -37,10 +37,15 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  .imageShake(1s, infinite);
 }
 
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @phone {
+    width: 500px;
+    max-width: 95%;
+  }
 }
