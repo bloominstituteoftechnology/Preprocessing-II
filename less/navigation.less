@@ -1,1 +1,36 @@
 // Navigation Styles here
+.main-navigation {
+    border-bottom: 1px dashed black;
+    width: 100%;
+    @media @phone {
+        position: fixed;
+        background-color: white;
+    }
+    .nav-container {
+        .flex-custom(space-between, none);
+        padding: 10px 0px 10px 0px;
+        .nav {
+            align-self: center;
+            width: 40%;
+            .flex-custom(space-around, none);
+            .nav-link {
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: black;
+            }
+            @media @phone {
+                .flex-custom(space-around, row);
+                width: 100%;
+            }
+        }
+        .logo-heading {
+            @media @phone {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        @media @phone {
+            .flex-custom(none, column);
+        }
+    }
+}
