@@ -1,24 +1,55 @@
 .home {
+  margin-top: 60px;
+
+  .welcome-section {
+    
+    border-bottom: 1px dashed @navigation-border;
+
+    h1 {
+      margin: 15px 0;
+      @media @mobile {
+        width: 96%;
+      }  
+    }
+
+    p {
+      @media @mobile {
+        width: 96%;
+      } 
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media @mobile {
+      flex-direction: column;
+      .center; 
+    }
    
     
     .text-content {
       width: 48%;
-      padding-right: 1%;
+        @media @mobile {
+          width: 96%;
+        }
     }
 
     .img-content {
       width: 48%;
-      padding-left: 1%;
+        @media @mobile {
+          width: 96%;
+          .center;
+        }
+
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -26,14 +57,18 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+      .center; 
+    }
 
     .text-content {
-      padding-left: 1%;
+      padding-left: 0;
       padding-right: 0;
     }
 
     .img-content {
-      padding-right: 1%;
+      padding-right: 0;
       padding-left: 0;
     }
   }
@@ -41,6 +76,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 96%;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +90,33 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      .center;
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 70%;
+      }
+      
+      .btn {
+        .center;
+        .button-maker(100%, 35px, @button-bg, 1.8rem, 1px, @main-bg);
+        border-radius: 10px;
+        color: @main-bg;
+        @media @mobile {
+          height: 40px;
+        } 
+
+        &:hover {
+          background-color: @font-color;
+          color: @button-bg;
+          cursor: pointer; 
+        }
+      }
     }
   }
 }// home
