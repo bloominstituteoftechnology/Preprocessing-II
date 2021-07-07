@@ -1,0 +1,18 @@
+.flx-r {
+  display: flex;
+  flex-direction: row;
+}
+.flx-c {
+  display: flex;
+  flex-direction: column;
+}
+.just-btwn {
+  justify-content: space-between;
+}
+.aln-ctr {
+  align-items: center;
+}
+.full-width {
+  width: 100%;
+}
+/*# sourceMappingURL=mixins.css.map */

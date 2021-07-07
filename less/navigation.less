@@ -1,1 +1,41 @@
-// Navigation Styles here
+nav {
+  .flx-r;
+  .full-width;
+  .just-btwn;
+  .pad-top(20px);
+  .pad-bot(20px);
+
+  .links {
+    width: 50%;
+    .just-end;
+    .aln-ctr;
+    .flx-r;
+
+    a {
+      margin-right: 10%;
+      color: @shark;
+      text-decoration: none;
+      font-size: 1.3rem;
+    }
+  }
+
+  @media @mobile {
+    .flx-c;
+    .just-ctr;
+
+    .links {
+      .full-width;
+      .just-btwn;
+
+      a {
+        font-size: @mobile-font;
+        margin: 0;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      .marg-bot(20px);
+    }
+  }
+}
