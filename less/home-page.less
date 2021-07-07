@@ -1,4 +1,17 @@
 .home {
+  .top-content {
+
+    border-bottom: dashed @navigation-border 2px;
+    .intro {
+      padding: 2% 0;
+    }
+
+    @media @mobile {
+      margin: 0 3%;
+    }
+
+  }
+
 
   .content-section {
     margin: 30px 0;
@@ -11,16 +24,31 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 80%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 80%;
+      }
 
       img {
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
   }
 
   .inverse-content {
@@ -36,6 +64,11 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+     flex-direction: column-reverse;
+    }
+
   }
 
   .content-destination {
@@ -45,6 +78,11 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 90%;
+    }
+
   }
 
   .content-pick {
@@ -56,6 +94,29 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      button {
+        .button();
+        @media @mobile {
+          width: 100%;
+        }
+      }
+      @media @mobile {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+      }
+  
     }
+
+    @media @mobile {
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
   }
+
+
+
 }// home
