@@ -1,1 +1,21 @@
 // Mixins in here
+.flexboxnav() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media @mobile {
+        flex-direction: column;
+    }
+}
+.buttons(@height, @width) {
+    text-decoration: none;
+    height: @height;
+    width: @width;
+    color: white;
+    background-color: @eastern-blue;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
