@@ -16,9 +16,26 @@
 
 <body>
 
-  
+  <header>
+    <div>
+      <h1>Fun Bus</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    </header>
      
   <div class="container home">
+
+    <section class="cta">
+      <div id="line"></div>
+      <img src="img/fun-bus.jpg" alt="fun">
+      <h2>Welcome To Fun Bus!</h2>
+      <p>Travelling expedition modern, clean webdesign blogger clean website theme websit modern. Design pretty design, tavelblogger adventure WordPress wanderlust theme blogger website expedition theme traveblogger. Adventure fun traveler pretty design wesite expedition.</p>
+    </section>
    
     <section class="content-section">
       <div class="text-content">
@@ -30,6 +47,7 @@
         <img src="img/adventure.jpg" alt="Let's go on an adventure!">
       </div>
     </section>
+
     <section class="content-section inverse-content">
       <div class="img-content">
           <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
@@ -46,8 +64,8 @@
       <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
       <img src="img/destination.jpg" alt="Second slide">
     </section>
-    <section class="content-pick">
 
+    <section class="content-pick">
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -64,6 +82,68 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <!-- Stretch -->
+
+    <section class="stretch-form">
+
+      <fieldset class='legacy-form-row'>
+        <legend>Packages</legend>
+        <div>
+        <input id='destination-1'
+               name='destination'
+               type='radio'
+               value='Fun' />
+        <label for='destination-1' class='radio-label'>Fun in the Sun</label>
+      </div>
+      <div>
+        <input id='destination-2'
+               name='destination'
+               type='radio'
+               value='MountainExcursion'
+               checked />
+        <label for='destination-2' class='radio-label'>Mountain Excursion</label>
+      </div>
+      <div>
+        <input id='destination-3'
+               name='destination'
+               type='radio'
+               value='IslandGetaway'
+               checked />
+        <label for='destination-3' class='radio-label'>Island Getaway</label>
+      </div>
+      </fieldset>
+
+
+      
+        <form action='' method='get' class='info-form'>
+          <div class='form-row'>
+            <label for='full-name'>Name</label>
+            <input id='full-name' name='full-name' type='text'/>
+          </div>
+    
+          <div class='form-row'>
+            <label for='email'>Email</label>
+            <input id='email'
+                   name='email'
+                   type='email'
+                   placeholder='joe@example.com'/>
+          </div>
+          <div class='form-row'>
+            <label for='phone'>Phone</label>
+            <input id='phone' name='phone' type='text'/>
+          </div>
+          <div class='form-row'>
+            <label for='notes'>Notes</label>
+            <input id='notes' name='notes' type='text'/>
+          </div>
+          <div class="btn">Submit</div>
+
+        </form>
+        
+
+    </section>
+
   </div><!-- container -->
 
   <footer class="footer">

@@ -1,0 +1,74 @@
+.stretch-form{
+
+
+
+    .form-row {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start; 
+        margin-bottom: 20px;
+
+        input[type='email'],
+        input[type='text'] {
+            background-color: #FFFFFF;
+            border: 1px solid #D6D9DC;
+            border-radius: 3px;
+            padding: 7px;
+            font-size: 14px;
+            width: 250px;
+            height: initial;
+        }
+
+        label{
+            margin: 15px 0 7px;
+            text-align: right;
+            width: 120px;
+            padding-right: 20px;
+            font-size: 1.6rem;
+        }
+
+        textarea,
+        select {
+            width: 250px;
+            height: initial;
+        }
+    }  
+    
+    //    inputs      ---
+
+    .legacy-form-row {
+        border: none;
+        margin: 40px 100px;
+        width: 200px;
+
+        legend {
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            align-self: center;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .radio-label {
+
+            font-size: 14px;
+            padding: 0 20px 0 10px;
+        }
+        input[type='radio'] {
+            margin-top: 2px;
+        }
+        div{
+            padding: 10px;
+        }
+        
+    }
+    .btn{
+        .button-style();
+        margin-bottom: 40px;
+        @media @mobile{
+            margin-left: 50px;
+        }
+    }
+}
+  
