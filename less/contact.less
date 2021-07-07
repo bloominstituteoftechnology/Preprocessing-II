@@ -1,0 +1,33 @@
+.contact {
+
+    form {
+        background-color: #deefee;
+        margin: 0 auto;
+        padding: 100px 50px;
+        width: 80%;
+        font-size: 1.6rem;
+
+        label {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input[type=text], select {
+            .contactmix();
+        }
+
+        input[type=submit] {
+            .btn-mixin(#137e84, #FFFFFF, 1.8rem, 40%, 2% 7%, 200px, 15px);
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        textarea {
+            .contactmix();
+            color: gray;
+            height: 250px;
+            background-color: #f8f8f8;
+        }
+    }
+}
