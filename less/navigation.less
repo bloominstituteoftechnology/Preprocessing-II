@@ -1,1 +1,28 @@
 // Navigation Styles here
+    nav {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-links {
+            width: 45%;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                color: @shark;
+            }
+        }
+
+        @media @mobile {
+            flex-direction: column;
+
+            .nav-links {
+                width: 90%;
+                justify-content: space-around;
+            }
+        }
+    }
