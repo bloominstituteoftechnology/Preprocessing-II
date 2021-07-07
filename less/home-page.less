@@ -1,16 +1,25 @@
 .home {
+  .header-image {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed silver;
+  
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
+  }
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+     
     }
 
     .img-content {
@@ -57,5 +66,10 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    
+    .btn {
+      .btn-creator(200px, 45px, 16px, teal, 1px solid silver, white);
+    }
+
   }
 }// home
