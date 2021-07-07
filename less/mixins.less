@@ -1,1 +1,17 @@
 // Mixins in here
+.floating-nav() {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: @main-bg;
+}
+
+.buttons(@width, @radius) {
+  width: @width;
+  padding: 13px 0;
+  background: @eastern-blue;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  border-radius: @radius;
+}
