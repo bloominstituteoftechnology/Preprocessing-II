@@ -1,21 +1,47 @@
+// main: index.less
 .home {
+  header {
+    padding: 20px 0;
+    border-bottom: 2px dashed @shark;
+    
+  }
+  header .img-box {
+    width: 100%;
+  }
+  header img {
+    @media @mobile {
+      margin: 0 3%;
+      width: 90%;
+    }
+  }
 
+  header h1 {
+    padding: 20px 0;
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+      width: 95%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 95%;
+        }
 
       img {
         border-radius: 10px;
@@ -25,7 +51,8 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    
+    //border-bottom: 2px dashed @navigation-border;
 
     .text-content {
       padding-left: 1%;
@@ -37,19 +64,25 @@
       padding-left: 0;
     }
   }
+  
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    
 
     img {
       border-radius: 10px;
     }
-  }
+    
 
+  }
+  button {
+    .button-style(white, 75%, @eastern-blue, 10px )
+  }
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    //border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
