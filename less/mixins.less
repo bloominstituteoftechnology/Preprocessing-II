@@ -1,1 +1,20 @@
 // Mixins in here
+
+.flex(@justify: ""; @alignitems: ""; @flexdir: "") {
+    display: flex;
+    justify-content: @justify;
+    align-items: @alignitems;
+    flex-direction: @flexdir;
+}
+
+.button(@bgcolor: @button-bg; @color: white) {
+    height: 35px;
+    width: 100%;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: @color;
+    background-color: @bgcolor;
+    border: 1px solid black;
+    border-radius: 10px;
+}

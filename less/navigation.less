@@ -1,1 +1,37 @@
 // Navigation Styles here
+
+.nav-section {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    .flex(@alignitems: baseline);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media @mobile {
+        .flex(@flexdir: column; @alignitems: center);
+    }
+
+    h1 {
+        width: 100%;
+        
+        @media @mobile {
+            text-align: center;
+        }
+    }
+
+    nav {
+        width: 100%;
+        .flex(@justify: space-around);
+
+        @media @mobile {
+            margin-top: 10px;
+        }
+
+        a {
+            color: @font-color;
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+    }
+}
