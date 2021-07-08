@@ -1,1 +1,33 @@
 // Mixins in here
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.button-creator(@bgColor:blue, @width: 100px, @height: 40px, @mt: 10px) {
+    font-size: 1.8rem;
+    width: @width;
+    height: @height;
+    background-color: @bgColor;
+    color: white;
+    margin-top: @mt;
+    border-radius: 10px;
+    .flex-centered;
+   
+    &:hover {
+      border: 1px solid @bgColor;
+      background-color: white;
+      color: @bgColor;
+    }
+ }
+ .keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
