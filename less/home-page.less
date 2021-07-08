@@ -1,4 +1,27 @@
-.home {
+.container-home {
+    width: 880px;
+    margin: auto;
+
+
+    /* Header Styles */
+
+  header {
+     width: 100%;
+   .margin(2em, 2em);
+   .display(space-between, 0);
+   
+  }
+
+
+  .top-content {
+      border-top : 2px dashed @navigation-border;
+      .text-content {
+        .margin(2em, 2em);
+        
+
+      }
+      border-bottom : 2px dashed @navigation-border;
+  }
 
   .content-section {
     margin: 30px 0;
@@ -56,6 +79,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+          .custom-button(#17A2B8, #FFFFFF);
+      }
     }
   }
 }// home
