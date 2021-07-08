@@ -1,1 +1,31 @@
 // Mixins in here
+
+.flex (@justify: center; @align: center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    align-content: @align;
+}
+
+.button-design (@height; @width; @radius; @text-color; @bg-color; @font-size) {
+    height: @height;
+    width: @width;
+    border-radius: @radius;
+    color: @text-color;
+    background-color: @bg-color;
+    font-size: @font-size;
+
+    .flex(center; center);
+}
+
+.keyframes-mixin (@prop; @from; @to) {
+    from {@prop: @from;}
+    to {@prop: @to;}
+}
+
+.hover-anim (@anim-name, @speed) {
+    &:hover {
+        animation-name: @anim-name;
+        animation-duration: @speed; 
+    }
+}
