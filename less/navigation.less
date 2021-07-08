@@ -1,1 +1,44 @@
 // Navigation Styles here
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  float: right;
+
+  @media @mobile {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  a {
+    font-size: 1.5rem;
+    color: #212529;
+    text-decoration: none;
+    opacity: 1;
+    margin-bottom: 10px;
+    
+    &:hover {
+      text-decoration: underline;
+      color: @silver;
+      
+    }
+    @media @mobile {
+      width: 100%;
+      .flex-center();
+      margin: 0 auto;
+    }
+}
+}
+    h1 {
+    position: relative;
+    top: 19px;
+    font-size: 3.6rem;
+    display: flex-start;
+
+    @media @mobile {
+      .flex-center();
+      top: -15px;
+    }
+}
