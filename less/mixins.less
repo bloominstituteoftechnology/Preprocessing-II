@@ -1,1 +1,17 @@
 // Mixins in here
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.button-factory (@fontColor, @fontSize, @backgroundColor, @height, @width, @radius){
+    color: @fontColor;
+    background-color: @backgroundColor;
+    height: @height;
+    width: @width;
+    border-radius: @radius;
+    font-size: @fontSize;
+.center;
+}
