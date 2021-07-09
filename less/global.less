@@ -34,6 +34,16 @@ p {
   padding-bottom: 10px;
 }
 
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: @font-color;
+
+  &:hover {
+    .animate(skewX(-45deg));
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -44,3 +54,4 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+

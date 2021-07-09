@@ -1,1 +1,29 @@
 // Navigation Styles here
+.nav-wrapper {
+    .flex-display(row, space-between, center);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    .nav {
+        width: 50%;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    
+    ul {
+        .flex-display(row, space-between, center);
+        width: 100%;
+
+        @media @mobile {
+            .flex-display(row, space-around, center);
+            margin-top: 10px;
+        }
+    }
+
+    @media @mobile {
+        .flex-display(column, center, center);
+    }
+}
