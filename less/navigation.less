@@ -1,1 +1,39 @@
 // Navigation Styles here
+nav {
+  #flexMixins.nav;
+  #spacingMixins.marginTopBottom;
+
+  @media @phone {
+    flex-direction: column;
+  }
+
+  h1 {
+    width: 50%;
+    #fontMixins.bold;
+
+    @media @phone {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .links {
+    @media @phone {
+      flex-direction: row;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  a {
+    #fontMixins.normalize;
+
+    @media @phone {
+      font-weight: bold;
+    }
+    
+    padding-right: 5%;
+    font-size: 1.6rem;
+  }
+}
