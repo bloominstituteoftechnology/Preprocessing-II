@@ -1,1 +1,43 @@
 // Navigation Styles here
+header {
+
+    border-bottom: 2px dashed @navigation-border;
+
+    .main-header {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap:wrap; 
+        justify-content: space-between;
+        padding: 15px 0;
+        // background-color: aqua;
+
+        @media @phone {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+    h1 {
+        // background-color: purple;
+    }
+
+    nav {
+        display:flex;
+        // background-color: salmon;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+
+        @media @phone {
+            width:100%;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+    }
+    
+}
