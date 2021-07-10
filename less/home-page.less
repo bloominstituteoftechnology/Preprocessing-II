@@ -1,4 +1,84 @@
+
+.header {
+  // border: 1px solid blue;
+  .header-style;
+  .flex-header;
+
+  @media @tablet {
+    // border: 3px solid goldenrod;
+    justify-content: space-around;
+  }
+
+  @media @phone {
+      flex-direction: column;
+      height: 120px;
+  }
+  
+  h2 {
+      margin: 20px 0 0 0;
+      @media @phone {
+          align-self: center;
+          // border: 1px solid aqua;
+      }
+  } //h2
+
+  
+
+  nav {
+      // border: 6px solid gold;
+      width: 45%;
+      .flex-nav;
+
+      @media @phone {
+          width: 100%;
+          padding: 20px 0 20px 0;
+      }
+
+      a {
+        .nav-a-style;
+      }
+      
+  } // nav
+} //.header
+
+
+.container.home {
+  // border: 1px solid red;
+
+
+  .content-pick {
+    .btn {
+        .button-creator();
+        .flex-center();
+
+    }
+  }
+} // .container.home
+
+
 .home {
+  .main-header {
+    border-bottom: 2px dashed lightgray;
+
+    @media @tablet {
+      .img-content {
+        padding: 20px;
+      }
+    } 
+
+    .text-content {
+      @media @tablet {
+        padding-left: 2%;
+      }
+    }
+
+    @media @phone {
+      padding: 0 0 0 10px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+  } //.main-header
 
   .content-section {
     margin: 30px 0;
@@ -6,22 +86,37 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @phone {
+      flex-direction: column;
+      padding: 0 0 0 10px;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @tablet {
+        padding-left: 2%;
+      }
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
       img {
         border-radius: 10px;
+        @media @tablet {
+          padding-right: 2%;
+        }
       }
-    }
-  }
+      @media @phone {
+        width: 100%;
+      }
+    } //.img-content
+  }//.content-section
 
   .inverse-content {
     padding-bottom: 30px;
@@ -35,8 +130,15 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+      @media @tablet {
+        padding-left: 2%;
+      }
+      @media @phone {
+        order: 2;
+      }
+    } //.img-content
+
+  } //.inverse-content
 
   .content-destination {
     width: 75%;
@@ -53,9 +155,117 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @tablet {
+        padding-left: 2%;
+      }
+      @media @phone {
+        width: 80%;
+      }
     }
   }
 }// home
+
+
+// Add signup.html styling here
+// Copied & Pasted - need refractoring
+
+
+.form-style-1 {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px 'Roboto', sans-serif;
+    // font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+    width: 49%;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+.form-style-1 .field-select{
+    width: 100%;
+}
+.form-style-1 .field-textarea{
+    height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    background: teal;
+    width: 40%;
+    height: 50px;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: white;
+    border: 1px solid teal;
+    color: teal;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.form-style-1 .required{
+    color:red;
+}
