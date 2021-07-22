@@ -1,1 +1,46 @@
 // Mixins in here
+
+// Level 1
+.center() {
+  margin: 0 auto;
+}
+
+// Level 2
+.bottom-space(@space: 20px) {
+  margin: @space;
+}
+
+.custom-layout(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.custom-button(@bg, @color) {
+  width: 81%;
+  border: 2px solid @button-bg;
+  border-radius: 13px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: @bg;
+  color: @color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @color;
+    color: @bg;
+  }
+}
+
+.fadein(@sec) {
+  animation: fadein @sec;
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

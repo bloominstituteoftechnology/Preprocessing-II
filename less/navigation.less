@@ -1,1 +1,49 @@
 // Navigation Styles here
+.fixed-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px dashed @navigation-border;
+  background-color: @main-bg;
+
+  .navbar-container {
+    .center;
+    max-width: @container-width;
+
+    @media @tablet {
+      width: 95%;
+    }
+  }
+}
+
+.navbar-container {
+  .custom-layout(space-between, center);
+  padding: 20px 0;
+
+  @media @mobile {
+    flex-direction: column;
+    padding: 8px 0;
+  }
+}
+
+.main-nav {
+  .custom-layout(space-evenly, flex-start);
+  width: 44%;
+
+  @media @mobile {
+    width: 100%;
+  }
+
+  a {
+    // padding: 0 5%;
+    color: @font-color;
+    text-decoration: none;
+
+    &:hover {
+      color: @button-bg;
+
+      // Animation
+      .fadein(1s);
+    }
+  }
+}
