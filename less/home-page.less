@@ -1,21 +1,57 @@
 .home {
 
+  header {
+    
+    border-bottom: @dashedBorder;
+
+    
+    img {
+      margin-bottom: 15px;
+      @media @mobile {
+        width: 95%;
+    }
+
+     
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p{
+      margin-bottom: 15px;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -25,7 +61,12 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @dashedBorder;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -49,13 +90,31 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    border-top: @dashedBorder;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+      }
+    
+      .btn {
+        display: flex;
+        justify-content: center;
+        .sign-me-up-button(@button-bg, @main-bg);
+      }
+    
     }
+
+  
   }
 }// home

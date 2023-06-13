@@ -1,1 +1,18 @@
 // Mixins in here
+
+.sign-me-up-button (@bkg-color, @text-color) {
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    background: @bkg-color;
+    color: @text-color;
+    border-radius: 10px;
+    font-size: 20px;
+        
+    &:hover {
+        background: @text-color;
+        color: @bkg-color;
+    }
+
+}
